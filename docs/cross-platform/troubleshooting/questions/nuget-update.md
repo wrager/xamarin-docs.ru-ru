@@ -1,0 +1,29 @@
+---
+title: "Как обновить NuGet"
+ms.topic: article
+ms.prod: xamarin
+ms.assetid: 40DDE713-DE80-422F-BE34-A732E40C3F81
+ms.technology: xamarin-cross-platform
+author: asb3993
+ms.author: amburns
+ms.openlocfilehash: e087321b792b0e1ef96a9cbd741cfe4c849114ec
+ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/27/2018
+---
+# <a name="how-can-i-update-nuget"></a>Как обновить NuGet
+
+NuGet обновления, расширения и надстроек можно найти в разделе **обновления** вкладке **диспетчера пакетов NuGet**. Меньше подробные навигации для поиска обновлений в Visual Studio для компьютеров Mac и Visual Studio. 
+
+Проверьте следует отметить, что обновления будет *только* будет отображаться в этих меню, если у вас последняя поддерживаемая версия NuGet в интегрированной среде разработки установлены:
+
+## <a name="visual-studio"></a>Visual Studio
+1. Откройте **Сервис > расширения и обновления > обновлений > коллекции Visual Studio**
+2. Выберите **диспетчера пакетов NuGet для Visual Studio [Year]**
+
+## <a name="visual-studio-for-mac"></a>Visual Studio для Mac
+
+1. Откройте **Visual Studio для Mac > Диспетчер надстроек > обновлений > расширения интегрированной среды разработки**
+2. Выберите **управление пакетами NuGet**
+
