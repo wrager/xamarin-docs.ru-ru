@@ -1,0 +1,114 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Xamarin.Android
+metadata:
+  description: "Xamarin.Android предоставляет полный пакет SDK для Android для разработчиков .NET."
+  author: conceptdev
+  ms.author: crdun
+  ms.date: 02/17/2018
+  ms.topic: landing-page
+  ms.openlocfilehash: 95b576880adef44c3a3c4b601d7ce04498d351da
+  ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 02/27/2018
+abstract:
+  description: "Xamarin.Android предоставляет полный пакет SDK для Android для разработчиков .NET. Создавайте собственные приложения Android с помощью C# и F # в Visual Studio."
+  menu:
+    items:
+    - href: ~/android/samples/
+      text: "Примеры Android"
+    - href: https://developer.xamarin.com/releases/android/
+      text: "Заметки о выпуске"
+    - href: https://developers.google.com/
+      text: "Документация для разработчиков Google"
+    - href: /visualstudio/
+      text: Visual Studio
+sections:
+- title: "Приступая к работе"
+  items:
+  - type: paragraph
+    text: "Сведения о создании приложения Android с помощью Xamarin и C#."
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      text: "Установка"
+      href: ~/android/get-started/installation/index.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_mobileapp.svg
+      text: "Привет, Android"
+      href: ~/android/get-started/hello-android/hello-android-quickstart.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_mobileapp.svg
+      text: "Приложения с поддержкой нескольких экранов"
+      href: ~/android/get-started/hello-android-multiscreen/hello-android-multiscreen-quickstart.md
+- title: "Направляющие"
+  items:
+  - type: grid
+    style: columns
+    className: column50
+    items:
+    - type: list
+      style: cards
+      className: cardsB
+      items:
+      - href: ~/android/get-started/index.md
+        html: "Руководства, которые помогут вам начать работу с Xamarin.Android. Убедитесь в том, что все установлено правильно, и создайте свое первое приложение Mac."
+        image:
+          src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+          href: ~/android/get-started/index.md
+        title: "Начало работы"
+      - href: ~/android/user-interface
+        html: "Дополнительные сведения о полном наборе мини-приложений элементов управления пользовательского интерфейса, доступного на Android."
+        image:
+          src: ~/media/icons/i_user-interface.svg
+          href: ~/android/user-interface/
+        title: "Пользовательский интерфейс"
+      - href: ~/android/deploy-test/
+        html: "Инструкции по созданию и развертыванию приложений в Google Play, а также советы по их предварительному тестированию!"
+        image:
+          src: ~/media/icons/i_deploy-test.svg
+          href: ~/android/deploy-test/
+        title: "Развертывание и тестирование"
+      - href: ~/android/wear/
+        html: "Разработка приложений для Android Wear."
+        image:
+          src: ~/media/icons/i_android-wear.svg
+          href: ~/android/wear/
+        title: Android Wear
+    - type: list
+      style: cards
+      className: cardsB
+      items:
+      - href: ~/android/app-fundamentals/
+        html: "Все, что вам нужно знать для создания приложений Android, например работа с файлами, изображениями, базами данных и т. д."
+        image:
+          src: ~/media/icons/i_app-build.svg
+          href: ~/android/app-fundamentals/
+        title: "Принципы работы приложения"
+      - href: ~/android/platform/
+        html: "Использование функций платформы Android (например, проверка подлинности по отпечаткам пальцев) и новейших функций в Android 8.0 Oreo."
+        image:
+          src: ~/media/icons/i_platform.svg
+          href: ~/android/platform/
+        title: "Функции платформы"
+      - href: ~/android/internals/
+        html: "Дополнительные сведения о структуре Xamarin.Android и помощь по использованию функций, например локализации и специальных возможностей."
+        image:
+          src: https://docs.microsoft.com/en-us/media/common/i_advanced.svg
+          href: ~/android/internals/
+        title: "Дополнительные понятия и внутренние компоненты"
+- title: "Ссылка"
+  items:
+  - type: list
+    style: cards
+    className: cardsD
+    items:
+    - title: API
+      html: "<p><a href=\"https://developer.xamarin.com/api/root/monodroi-lib/\">Документация по API Android</a></p><p><a href=\"https://docs.microsoft.com/en-us/dotnet/api/?view=xamarinandroid-7.1\">Библиотека базовых классов</a></p>"
+    - title: "Примеры"
+      html: "<p><a href=\"https://developer.xamarin.com/samples/android/all/\">Примеры Android</a></p>"
+    - title: "Книги"
+      html: "<p><a href=\"https://developer.xamarin.com/workbooks#android\">Книги по Android</a></p>"

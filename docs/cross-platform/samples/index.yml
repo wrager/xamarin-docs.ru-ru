@@ -1,0 +1,69 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "Примеры кроссплатформенных приложений"
+metadata:
+  description: "Примеры кроссплатформенных приложений Xamarin для разработчиков мобильных приложений."
+  author: conceptdev
+  ms.author: crdun
+  ms.date: 02/17/2018
+  ms.topic: article
+  ms.openlocfilehash: c5e8c04dcc5a9bf18af0dd9ce2dcd85b6b760836
+  ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 02/27/2018
+abstract:
+  description: "Примеры кроссплатформенных приложений Xamarin и образцы кода, которые помогут вам начать создавать мобильные приложения с помощью C# и Xamarin."
+  menu:
+    items:
+    - href: https://developer.xamarin.com/samples/
+      text: "Все образцы Xamarin"
+sections:
+- title: 
+  items:
+  - type: list
+    style: cards
+    className: cardsW
+    items:
+    - href: https://developer.xamarin.com/samples/xamarin-forms/Todo/
+      html: "В этом примере представлен список приложений списка задач. Их данные сохраняются в локальной базе данных SQLite."
+      image:
+        src: images/todo.png
+        href: https://developer.xamarin.com/samples/xamarin-forms/Todo/
+      title: "Список задач"
+    - href: https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/
+      html: "Это знакомая всем игра с некоторыми изменениями. Десять ошибок, скрытые в сетке плиток (9 x 9). Чтобы выиграть, необходимо найти и пометить все ошибки."
+      image:
+        src: images/bugsweeper.png
+        href: https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/
+      title: BugSweeper
+    - href: https://developer.xamarin.com/samples/xamarin-forms/RpnCalculator/
+      html: "Калькулятор RPN (обратная польская нотация) позволяет вводить числа и выполнять операции без использования клавиши скобок или знака равенства."
+      image:
+        src: images/rpncalc.png
+        href: https://developer.xamarin.com/samples/xamarin-forms/RpnCalculator/
+      title: "Калькулятор RPN"
+    - href: https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SpinPaint/
+      html: "Программа имитирует циклический диск, чтобы вы могли рисовать касанием пальца. Программа SpinPaint реагирует на касание, рисуя линию, но она также дублирует эту линию в трех зеркальных отображениях в других трех квадрантах диска."
+      image:
+        src: images/spinpaint.png
+        href: https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SpinPaint/
+      title: SpinPaint
+    - href: https://developer.xamarin.com/samples/xamarin-forms/XamlSamples/
+      html: "XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода."
+      image:
+        src: images/xaml.png
+        href: https://developer.xamarin.com/samples/xamarin-forms/XamlSamples/
+      title: "Образцы XAML"
+    - href: https://developer.xamarin.com/samples/mobile/LivePlayer/XamagonXuzzleLP/
+      html: "XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода."
+      image:
+        src: images/xuzzle.png
+        href: https://developer.xamarin.com/samples/mobile/LivePlayer/XamagonXuzzleLP/
+      title: Xuzzle
+    - href: https://developer.xamarin.com/samples/
+      html: "Доступ к полному набору примеров кроссплатформенных приложений Xamarin и образцов кода."
+      image:
+        src: ~/media/shared/sample-download.svg
+        href: https://developer.xamarin.com/samples/
+      title: "Все образцы Xamarin"
