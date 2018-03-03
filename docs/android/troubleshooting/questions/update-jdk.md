@@ -1,0 +1,60 @@
+---
+title: "Как обновить версию Java Development Kit (JDK)?"
+description: "В этой статье показано, как обновить версию Java Development Kit (JDK) на Windows и Mac."
+ms.topic: article
+ms.prod: xamarin
+ms.assetid: 4b3ac51d-18dd-4034-87b4-4365194e4ece
+ms.technology: xamarin-android
+author: mgmclemore
+ms.author: mamcle
+ms.date: 02/16/2018
+ms.openlocfilehash: 126d4b2eaf1c2408704c0f2d11c2f88a7c25f406
+ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/27/2018
+---
+# <a name="how-do-i-update-the-java-development-kit-jdk-version"></a>Как обновить версию Java Development Kit (JDK)?
+
+_В этой статье показано, как обновить версию Java Development Kit (JDK) на Windows и Mac._
+
+## <a name="overview"></a>Обзор
+
+Xamarin.Android использует Java Development Kit (JDK) для интеграции с Android SDK для приложений Android построения и запуска конструктора Android. Последние версии пакета SDK Android (API 24 и более поздние версии) требуют JDK 8 (1.8). Если вы еще не обновлен до JDK 8, выполните следующие действия, чтобы установить и включить его.
+
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+
+1.  Загрузка JDK 8 (1.8) из [веб-сайте Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html):
+
+    ![Снимок экрана JDK загрузки на веб-сайте Oracle](update-jdk-images/image1.png)
+
+2.  Выберите 64-разрядную версию, чтобы разрешить визуализацию [пользовательские элементы управления](https://developer.xamarin.com/releases/vs/xamarin.vs_4/xamarin.vs_4.2/#androiddesignercustomcontrols) в конструкторе Xamarin Android:
+
+    ![При выборе пакета JDK Windows x64 для загрузки на странице загрузки JDK](update-jdk-images/image2.png)
+
+3.  Запустите .exe и установите **средства разработки**:
+
+    ![Установка средства разработки в программе установки JDK](update-jdk-images/image3.png)
+
+4.  Откройте Visual Studio и обновление **Java Development Kit расположение** для указания нового JDK в **средства > Параметры > Xamarin > Параметры Android > Java Development Kit расположение > Изменение**:
+
+    ![Параметр Path для JDK на странице настроек Android IDE](update-jdk-images/image4.png)
+
+Не забудьте перезапустить Visual Studio после обновления расположения.
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
+1.  Загрузка JDK 8 (1.8) из [веб-сайте Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html):
+
+    ![Снимок экрана JDK загрузки на веб-сайте Oracle](update-jdk-images/image1.png)
+
+2.  Откройте файл .dmg и запустите установщик .pkg:
+
+    ![Запустив установщик JDK на macOS](update-jdk-images/image5.png)
+
+Mac OS автоматически установит новую версию JDK по умолчанию, обновив **/System/Library/Frameworks/JavaVM.framework/Versions/Current**. Можно затем убедиться, что **пакет SDK для Java (JDK)** расположение задается ожидаемое значение по умолчанию **/usr** под **Visual Studio для Mac > Параметры > проекты > расположения пакета SDK > Android > Java (JDK) пакета SDK > расположение**:
+
+![Настройка расположения JDK на странице Android расположение пакета SDK](update-jdk-images/image6.png)
+
+-----
+
