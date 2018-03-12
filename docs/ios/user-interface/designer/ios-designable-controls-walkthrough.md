@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: e78b76a531e9f8ea88adca46fc59b2063fce14cc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3e12e33b254e58759043ed838d5c34dd7bd024fd
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="walkthrough---using-custom-controls-with-the-xamarin-designer-for-ios"></a>Пошаговое руководство. Использование пользовательских элементов управления с помощью конструктора Xamarin для iOS
 
@@ -33,13 +33,13 @@ _Эта статья содержит пошаговое руководство,
 1. Создайте новое решение из **iOS > приложения > одним приложением представление > C#** шаблона, назовите его `ScratchTicket`и продолжайте работу мастера создания проекта:
 
 
-    [![](ios-designable-controls-walkthrough-images/01new.png "Создание нового решения")](ios-designable-controls-walkthrough-images/01new.png)
+    [![](ios-designable-controls-walkthrough-images/01new.png "Создание нового решения")](ios-designable-controls-walkthrough-images/01new.png#lightbox)
 
 
 1. Создать новый файл пустым классом с именем `ScratchTicketView`:
 
 
-    [![](ios-designable-controls-walkthrough-images/02new.png "Создайте новый класс ScratchTicketView")](ios-designable-controls-walkthrough-images/02new.png)
+    [![](ios-designable-controls-walkthrough-images/02new.png "Создайте новый класс ScratchTicketView")](ios-designable-controls-walkthrough-images/02new.png#lightbox)
 
 
 1. Добавьте следующий код для `ScratchTicketView` класса:
@@ -168,63 +168,50 @@ _Эта статья содержит пошаговое руководство,
     
 1. Дважды щелкните `Main.storyboard` файл, чтобы открыть его в конструкторе:
 
-    
-    [![](ios-designable-controls-walkthrough-images/03new.png "Конструктор iOS")](ios-designable-controls-walkthrough-images/03new.png)
-
+    [![](ios-designable-controls-walkthrough-images/03new.png "Конструктор iOS")](ios-designable-controls-walkthrough-images/03new.png#lightbox)
 
 
 1. Перетаскивание **представление изображения** из **элементов** на представление в раскадровку.
 
-    
-    [![](ios-designable-controls-walkthrough-images/04new.png "Добавить представление изображения в макет")](ios-designable-controls-walkthrough-images/04new.png)
+    [![](ios-designable-controls-walkthrough-images/04new.png "Добавить представление изображения в макет")](ios-designable-controls-walkthrough-images/04new.png#lightbox)
 
 
 1. Выберите **представление изображения** и изменить его **изображения** свойства `Monkey.png`.
 
-    
-    [![](ios-designable-controls-walkthrough-images/05new.png "Свойства образа изображение представления Monkey.png")](ios-designable-controls-walkthrough-images/05new.png)
+    [! [] (ios проектирование-элементы управления-Пошаговое руководство образы и 05new.png «изображение представления изображения параметр свойства Monkey.png)](ios-designable-controls-walkthrough-images/05new.png#lightbox)
 
     
 1. Как мы используем классы размер нам нужно будет ограничивать это представление изображения. Щелкните изображение дважды, чтобы перевести в режим ограничения. Давайте ограничить его центр, нажав кнопку закрепления center дескриптор и его выравнивание по вертикали и горизонтали:
-    
-    
-    [![](ios-designable-controls-walkthrough-images/06new.png "Выравнивание по центру изображения")](ios-designable-controls-walkthrough-images/06new.png)
 
-    
+    [![](ios-designable-controls-walkthrough-images/06new.png "Выравнивание по центру изображения")](ios-designable-controls-walkthrough-images/06new.png#lightbox)
+
 1. Чтобы ограничить значения высоты и ширины, щелкните закрепление размер маркеров (маркеры костей форме) и выберите ширины и высоты соответственно:
 
-    
-    [![](ios-designable-controls-walkthrough-images/07new.png "Добавление ограничений")](ios-designable-controls-walkthrough-images/07new.png)
+    [![](ios-designable-controls-walkthrough-images/07new.png "Добавление ограничений")](ios-designable-controls-walkthrough-images/07new.png#lightbox)
 
 
 1. Обновление кадра, в зависимости от ограничений, нажав кнопку "Обновить" на панели инструментов:
 
-
-    [![](ios-designable-controls-walkthrough-images/08new.png "Ограничения инструментов")](ios-designable-controls-walkthrough-images/08new.png)
+    [![](ios-designable-controls-walkthrough-images/08new.png "Ограничения инструментов")](ios-designable-controls-walkthrough-images/08new.png#lightbox)
 
 
 1. Затем выполните построение проекта, чтобы **Scratch представление билет** будет отображаться в разделе **настраиваемых компонентов** на панели инструментов:
 
-    
-    [![](ios-designable-controls-walkthrough-images/09new.png "Компоненты пользовательских элементов")](ios-designable-controls-walkthrough-images/09new.png)
+    [![](ios-designable-controls-walkthrough-images/09new.png "Компоненты пользовательских элементов")](ios-designable-controls-walkthrough-images/09new.png#lightbox)
 
 
 1. Перетаскивание **Scratch представление билет** , чтобы он отображался над изображением monkey. Измените перетащите маркеры, чтобы представление билет Scratch охватывает monkey полностью, как показано ниже:
 
-    
-    [![](ios-designable-controls-walkthrough-images/10new.png "Представление временных файлов билет через представление изображения")](ios-designable-controls-walkthrough-images/10new.png)
-
+    [![](ios-designable-controls-walkthrough-images/10new.png "Представление временных файлов билет через представление изображения")](ios-designable-controls-walkthrough-images/10new.png#lightbox)
 
 1. Ограничить представление билет Scratch представление изображения, нарисовав ограничивающий прямоугольник, чтобы выбрать оба представления. Выберите параметры, чтобы ограничить его ширину, высоту, Center и среднего и обновление рамки, в зависимости от ограничений, как показано ниже:
- 
-    
-    [![](ios-designable-controls-walkthrough-images/11new.png "Центрирование и добавление ограничений")](ios-designable-controls-walkthrough-images/11new.png)
+
+    [![](ios-designable-controls-walkthrough-images/11new.png "Центрирование и добавление ограничений")](ios-designable-controls-walkthrough-images/11new.png#lightbox)
 
 
 1. Запустите приложение и «scratch off» изображение для отображения полей monkey.
 
-
- [ ![](ios-designable-controls-walkthrough-images/10-app.png "Запустите образец приложения")](ios-designable-controls-walkthrough-images/10-app.png)
+    [![](ios-designable-controls-walkthrough-images/10-app.png "Запустите образец приложения")](ios-designable-controls-walkthrough-images/10-app.png#lightbox)
 
 ## <a name="adding-design-time-properties"></a>Добавление свойств во время разработки
 
@@ -286,7 +273,7 @@ public override void Draw(CGRect rect)
 
 Включая `ExportAttribute` и `BrowsableAttribute` со значением аргумента `true` результатов в свойстве, будет отображаться в конструкторе **свойство** панель. Изменение свойства в другое изображение, входящий в состав проекта, такие как `FillTexture2.png`, приводит к обновление элемента управления во время разработки, как показано ниже:
 
- [ ![](ios-designable-controls-walkthrough-images/11-customproperty.png "Изменение свойства времени разработки")](ios-designable-controls-walkthrough-images/10-app.png)
+ [![](ios-designable-controls-walkthrough-images/11-customproperty.png "Изменение свойства времени разработки")](ios-designable-controls-walkthrough-images/10-app.png#lightbox)
 
 ## <a name="summary"></a>Сводка
 

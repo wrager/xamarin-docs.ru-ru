@@ -1,6 +1,6 @@
 ---
 title: "Макеты Xamarin.Forms"
-description: "Xamarin.Forms макеты используются для создания элементов управления пользовательского интерфейса в логической структуры."
+description: "Xamarin.Forms макеты используются для создания элементов управления пользовательского интерфейса в visual структуры."
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: F4180997-BA21-453A-9958-D1E2940DF050
@@ -8,148 +8,106 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/12/2016
-ms.openlocfilehash: ecea0f55360fcde7a50c52bb33c45a2c5fff5eeb
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
-ms.translationtype: HT
+ms.openlocfilehash: aa16c5aa0304b012aa6197e192ef073b472817cc
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="xamarinforms-layouts"></a>Макеты Xamarin.Forms
 
-_Xamarin.Forms макеты используются для создания элементов управления пользовательского интерфейса в логической структуры._
+_Xamarin.Forms макеты используются для создания элементов управления пользовательского интерфейса в visual структуры._
 
-<style>.tableimg {Максимальная ширина: нет! важные;}</style>
+[ `Layout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout) И [ `Layout<T>` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout%3CT%3E/) классы в Xamarin.Forms — это специализированный подтипы представлений, которые действуют как контейнеры для представления и другие макеты. `Layout` Сам класс является производным от [ `View` ](views.md). Объект `Layout` производный класс обычно содержит логику, чтобы задать положение и размеры дочерних элементов в приложениях Xamarin.Forms.
 
-## <a name="layouts"></a>Макеты
+ [ ![](layouts-images/layouts-sml.png "Типы макета Xamarin.Forms")](layouts-images/layouts.png#lightbox "типы макета Xamarin.Forms")
 
-[`Layout`](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout) Класса в Xamarin.Forms является подтипом специализированные представления, который служит контейнером для других схемах или представления. Как правило, он содержит логику для настроить положение и размеры дочерних элементов в приложениях Xamarin.Forms.
+Классы, производные от `Layout` можно разделить на две категории:
 
- [ ![](layouts-images/layouts-sml.png "Типы макета Xamarin.Forms")](layouts-images/layouts.png "типы макета Xamarin.Forms")
+## <a name="layouts-with-single-content"></a>Макеты с содержимым одного
 
-<br clear="all" />
+Эти классы являются производными от [ `Layout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout/), который определяет [ `Padding` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Layout.Padding/) и [ `IsClippedToBounds` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Layout.IsClippedToBounds/) свойства.
 
-Поддерживает Xamarin.Forms:
+<a name="contentView" />
 
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-<thead>
-    <th>
-      <strong>Тип</strong>
-    </th>
-    <th>
-      <strong>Описание</strong>
-    </th>
-    <th style="min-width:400px">
-      <strong>Screenshot</strong>
-    </th>
-  </thead>
-  <tbody>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPresenter/">ContentPresenter</a>
-    </td>
-    <td valign="top">
-Диспетчер макет шаблона представления. Используется в <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ControlTemplate/">ControlTemplate</a> для пометки, где отображаются данные, отображаемые.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/Templates/ControlTemplates/SimpleTheme/SimpleTheme/App.xaml"><img src="layouts-images/ContentPresenter.png" title="Пример ContentPresenter" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ContentView/">ContentView</a>
-    </td>
-    <td valign="top">
-Элемент с одиночное содержимое. ContentView имеет очень мало использование. Он предназначен для использования в качестве базового класса для определяемой пользователем составных представлений.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/ContentViewDemoPage.cs"><img src="layouts-images/ContentView.png" title="Пример ContentView" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Frame/">Кадра</a>
-    </td>
-    <td valign="top">
-Элемент, содержащий один из дочерних элементов, с некоторыми параметрами обрамления. Рамка иметь значение по умолчанию <a href="https://developer.xamarin.com/api/property/Xamarin.Forms.Layout.Padding/">Xamarin.Forms.Layout.Padding</a> 20.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/FrameDemoPage.cs"><img src="layouts-images/Frame.png" title="Пример создания" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/">ScrollView</a>
-    </td>
-    <td valign="top">
-Требуется возможность прокрутки, если содержимое элемента.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/ScrollViewDemoPage.cs"><img src="layouts-images/ScrollView.png" title="Пример ScrollView" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.TemplatedView/">TemplatedView</a>
-    </td>
-    <td valign="top">
-Элемент, который отображает содержимое с помощью шаблона элемента управления и базовый класс для <a href=""/api/type/Xamarin.Forms.ContentView/">ContentView</a>.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/tree/master/Templates/ControlTemplates/"><img src="layouts-images/TemplatedView.png" title="Пример TemplatedView" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.AbsoluteLayout/">AbsoluteLayout</a>
-    </td>
-    <td valign="top">
-Размещает дочерние элементы в абсолютные запрошенной позиции. Пользователь, которому назначен привязки и границы определяет положение и размер элемента управления.
-    </td>
-    <td valign="top">
-      <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/AbsoluteLayoutDemoPage.cs"><img src="layouts-images/AbsoluteLayout.png" title="Пример AbsoluteLayout" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/">Grid</a>
-    </td>
-    <td valign="top">
-Макет, содержащий сгруппированные по строкам и столбцам представления.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/GridDemoPage.cs"><img src="layouts-images/Grid.png" title="Пример сетки" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/">RelativeLayout</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Layout/%601">макета</a> , использующий <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/">ограничение</a>s макет его дочерних элементов.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/RelativeLayoutDemoPage.cs"><img src="layouts-images/RelativeLayout.png" title="Пример RelativeLayout" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/">StackLayout</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Layout/">макета</a> , размещает дочерние элементы в одну строку, которая может быть ориентированную горизонтально или вертикально. Этот макет будет настройка дочерних границы автоматически во время цикла разметки. Границы, пользователь будет перезаписан и поэтому не следует задавать для дочернего элемента пользователем.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/StackLayoutDemoPage.cs"><img src="layouts-images/StackLayout.png" title="Пример StackLayout" class="tableimg">
-    </a></td>
-  </tr>
-  </tbody>
-</table>
+### <a name="contentview"></a>ContentView
 
+|     |     |
+| --- | --- |
+| [`ContentView`](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentView/) содержит один дочерний элемент, который устанавливается с [ `Content` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ContentView.Content/) свойство. `Content` Свойство может быть установлено одно `View` производный класс, включая другие `Layout` производных продуктов. `ContentView` в основном используется как элемент структурного и служит базовым классом для [ `Frame` ](#frame).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentView/) | [![Пример ContentView](layouts-images/ContentView.png "пример ContentView")](layouts-images/ContentView-Large.png#lightbox "ContentView пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ContentViewDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ContentViewDemoPage.xaml) |
+|     |     |
 
+<a named="frame" />
+
+### <a name="frame"></a>Кадр
+
+|     |     |
+| --- | --- |
+| [ `Frame` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Frame/) Класс является производным от [ `ContentView` ](#contentView) и отображает прямоугольную рамку вокруг его потомка. `Frame` имеет значение по умолчанию [ `Padding` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Layout.Padding/) значение 20, а также определяет [ `OutlineColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Frame.OutlineColor/), [ `CornerRadius` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Frame.CornerRadius/), и [ `HasShadow` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Frame.HasShadow/)свойства.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.Frame/) | [![Пример фрейма](layouts-images/Frame.png "фрейма пример")](layouts-images/Frame-Large.png#lightbox "фрейма пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/FrameDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/FrameDemoPage.xaml) |
+|     |     |
+
+<a name="scrollView" />
+
+### <a name="scrollview"></a>ScrollView
+
+|     |     |
+| --- | --- |
+| [`ScrollView`](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) возможна прокрутка его содержимое. Задать [ `Content` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ScrollView.Content/) свойство к представлению или макет слишком велик для отображения на экране. (Содержимое `ScrollView` очень часто [ `StackLayout` ](#stackLayout).) Задать [ `Orientation` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ScrollView.Orientation/) свойство, указывающее, если прокрутка следует вертикальная, по горизонтали или оба.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) / [руководство](~/xamarin-forms/user-interface/layouts/scroll-view.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/) | [![Пример ScrollView](layouts-images/ScrollView.png "пример ScrollView")](layouts-images/ScrollView-Large.png#lightbox "ScrollView пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ScrollViewDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ScrollViewDemoPage.xaml) |
+|     |     |
+
+### <a name="templatedview"></a>TemplatedView
+
+|     |     |
+| --- | --- |
+| [`TemplatedView`](https://developer.xamarin.com/api/type/Xamarin.Forms.TemplatedView/) Отображает содержимое с помощью шаблона элемента управления и является базовым классом для [ `ContentView` ](#contentView).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.TemplatedView/) / [руководства](~/xamarin-forms/app-fundamentals/templates/control-templates/index.md) | [![Пример TemplatedView](layouts-images/TemplatedView.png "пример TemplatedView")](layouts-images/TemplatedView.png#lightbox "TemplatedView пример") |
+|     |     |
+
+### <a name="contentpresenter"></a>ContentPresenter
+
+|     |     |
+| --- | --- |
+| [`ContentPresenter`](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPresenter/) представляет собой диспетчер макета для шаблонного представлений, используемых в [ `ControlTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ControlTemplate/) для пометки, где отображается содержимое, должна быть предоставлена.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPresenter/) / [руководства](~/xamarin-forms/app-fundamentals/templates/control-templates/index.md) | [![Пример ContentPresenter](layouts-images/ContentPresenter.png "примере ContentPresenter")](layouts-images/ContentPresenter.png#lightbox "ContentPresenter пример") |
+|     |     |
+
+## <a name="layouts-with-multiple-children"></a>Макеты с несколькими дочерними элементами
+
+Эти классы являются производными от [ `Layout<View>` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout%3CT%3E/).
+
+<a name="stackLayout" />
+
+### <a name="stacklayout"></a>StackLayout
+
+|     |     |
+| --- | --- |
+| [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) размещает дочерние элементы в стеке, либо по горизонтали или по вертикали в зависимости от [ `Orientation` ](https://developer.xamarin.com/api/property/Xamarin.Forms.StackLayout.Orientation/) свойство. [ `Spacing` ](https://developer.xamarin.com/api/property/Xamarin.Forms.StackLayout.Spacing/) Свойство определяет расстояние между дочерние элементы и имеет значение по умолчанию 6.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) / [руководство](~/xamarin-forms/user-interface/layouts/stack-layout.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/)| [![Пример StackLayout](layouts-images/StackLayout.png "пример StackLayout")](layouts-images/StackLayout-Large.png#lightbox "StackLayout пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/StackLayoutDemoPage.cs) / [XAML-страницы]((https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/StackLayoutDemoPage.xaml)) |
+|     |     |
+
+<a name="grid" />
+
+### <a name="grid"></a>Сетка
+
+|     |     |
+| --- | --- |
+| [`Grid`](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) размещает дочерние элементы в сетке из строк и столбцов. Позиции дочерней таблицы указывается с помощью [вложенные свойства](~/xamarin-forms/xaml/attached-properties.md) [ `Row` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.RowProperty/), [ `Column` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.ColumnProperty/), [ `RowSpan` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.RowSpanProperty/), и [ `ColumnSpan` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.ColumnSpanProperty/).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) / [руководство](~/xamarin-forms/user-interface/layouts/grid.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/) | [![Пример сетки](layouts-images/Grid.png "пример сетки")](layouts-images/Grid-Large.png#lightbox "пример сетки")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/GridDemoPage.cs) / [XAML-страницы]((https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/GridDemoPage.xaml)) |
+|     |     |
+
+### <a name="absolutelayout"></a>AbsoluteLayout
+
+|     |     |
+| --- | --- |
+| [`AbsoluteLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.AbsoluteLayout/) размещает дочерние элементы в определенные расположения относительно его родительского элемента. Позиции дочерней таблицы указывается с помощью [вложенные свойства](~/xamarin-forms/xaml/attached-properties.md) [ `LayoutBounds` ](https://developer.xamarin.com/api/field/Xamarin.Forms.AbsoluteLayout.LayoutBoundsProperty/) и [ `LayoutFlags` ](https://developer.xamarin.com/api/field/Xamarin.Forms.AbsoluteLayout.LayoutFlagsProperty/). `AbsoluteLayout` Полезна для анимации позиций представлений.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.AbsoluteLayout/) / [руководство](~/xamarin-forms/user-interface/layouts/absolute-layout.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/) | [![Пример AbsoluteLayout](layouts-images/AbsoluteLayout.png "пример AbsoluteLayout")](layouts-images/AbsoluteLayout-Large.png#lightbox "AbsoluteLayout пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/AbsoluteLayoutdDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/AbsoluteLayout.xaml) с [кода](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/AbsoluteLayout.xaml.cs) |
+|     |     |
+
+### <a name="relativelayout"></a>RelativeLayout
+
+|     |     |
+| --- | --- |
+| [`RelativeLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/) размещает дочерние элементы относительно `RelativeLayout` себя или своих одноуровневых элементов. Позиции дочерней таблицы указывается с помощью [вложенные свойства](~/xamarin-forms/xaml/attached-properties.md) , которые задаются для объектов типа [ `Constraint` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/) и [ `BoundsConstraint` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/)/ [руководство](~/xamarin-forms/user-interface/layouts/relative-layout.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/) | [![Пример RelativeLayout](layouts-images/RelativeLayout.png "пример RelativeLayout")](layouts-images/RelativeLayout-Large.png#lightbox "RelativeLayout пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/RelativeLayoutDemoPage.cs) / [XAML-страницы]((https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/RelativeLayoutDemoPage.xaml)) |
+|     |     |
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Введение в Xamarin.Forms](~/xamarin-forms/get-started/introduction-to-xamarin-forms.md)
-- [Коллекция Xamarin.Forms (пример)](https://developer.xamarin.com/samples/FormsGallery/)
-- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/tag/Xamarin.Forms/)
-- [Документация по API-интерфейса Xamarin.Forms](https://developer.xamarin.com/api/namespace/Xamarin.Forms)
+- [Образец Xamarin.Forms FormsGallery](https://developer.xamarin.com/samples/FormsGallery/)
+- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/xamarin-forms/all/)
+- [Документация по API-интерфейса Xamarin.Forms](https://developer.xamarin.com/api/root/Xamarin.Forms/)
