@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/17/2016
-ms.openlocfilehash: d258d993d8452c0c93c53d875d81683a294f80d3
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: dc728e5817a7d1d61d7745120bca7f05641ce76f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="global-styles"></a>Глобальные стили
 
@@ -60,7 +60,7 @@ _Стили можно сделать доступными глобально, �
 
 Это приводит к появлению показано на следующем снимке экрана:
 
-[![](application-images/application-styles-1.png "Пример глобального стилей")](application-images/application-styles-1-large.png "примере глобальные стили")
+[![](application-images/application-styles-1.png "Пример глобального стилей")](application-images/application-styles-1-large.png#lightbox "примере глобальные стили")
 
 Дополнительные сведения о создании стилей на странице [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/), в разделе [явные стили](~/xamarin-forms/user-interface/styles/explicit.md) и [неявных стилей](~/xamarin-forms/user-interface/styles/implicit.md).
 
@@ -98,9 +98,9 @@ _Стили можно сделать доступными глобально, �
 
 Исходный `buttonStyle`, определенного на уровне приложения, переопределяется `buttonStyle` экземпляр, определенный на уровне страниц. Кроме того, стиль уровня страницы переопределяется уровень управления `buttonStyle`. Таким образом [ `Button` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) экземпляров отображается синий цвет, как показано на следующем снимке экрана:
 
-[![](application-images/application-styles-2.png "Переопределение стилей пример")](application-images/application-styles-2-large.png "переопределение пример стилей")
+[![](application-images/application-styles-2.png "Переопределение стилей пример")](application-images/application-styles-2-large.png#lightbox "переопределение пример стилей")
 
-## <a name="creating-a-global-style-in-c35"></a>Создание глобальных стиля нов &#35;
+## <a name="creating-a-global-style-in-c35"></a>Создание глобальных стиля в C&#35;
 
 [`Style`](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) экземпляры можно добавить в приложение [ `Resources` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Resources/) коллекции для C#, создав новую [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/)и затем добавив `Style` экземпляров `ResourceDictionary`, как показано в следующем примере кода:
 

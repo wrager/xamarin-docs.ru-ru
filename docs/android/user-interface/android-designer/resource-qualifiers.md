@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/29/2018
-ms.openlocfilehash: 56fee71f2ed36b682d323bae1225430ff991f140
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: bff6d917fc4ce65daed329f15d6648bbfe0dd069
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="resource-qualifiers-and-visualization-options"></a>Квалификаторы ресурсов и параметры визуализации
 
 _В этом разделе объясняется, как определять ресурсы, которые будут использоваться только в том случае, если некоторые значения квалификатора сопоставляются. Простой пример — это ресурс строки доменного языка. По умолчанию, можно определить строковый ресурс с других дополнительных ресурсов, определенных для дополнительных языков. Все типы ресурсов могут иметь полное имя, включая сам макет._
 
-<a name="Custom_Device_Configurations" />
 
 ## <a name="custom-device-configurations"></a>Пользовательские настройки
 
@@ -30,11 +29,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Меню селектора устройства](resource-qualifiers-images/vs/01-device-selector-sml.png)](resource-qualifiers-images/vs/01-device-selector.png)
+[![Меню селектора устройства](resource-qualifiers-images/vs/01-device-selector-sml.png)](resource-qualifiers-images/vs/01-device-selector.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Меню селектора устройства](resource-qualifiers-images/xs/01-device-selector-sml.png)](resource-qualifiers-images/xs/01-device-selector.png)
+[![Меню селектора устройства](resource-qualifiers-images/xs/01-device-selector-sml.png)](resource-qualifiers-images/xs/01-device-selector.png#lightbox)
 
 -----
 
@@ -43,11 +42,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Диспетчер AVD](resource-qualifiers-images/vs/02-device-definitions-sml.png)](resource-qualifiers-images/vs/02-device-definitions.png)
+[![Диспетчер AVD](resource-qualifiers-images/vs/02-device-definitions-sml.png)](resource-qualifiers-images/vs/02-device-definitions.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Диспетчер AVD](resource-qualifiers-images/xs/02-device-definitions-sml.png)](resource-qualifiers-images/xs/02-device-definitions.png)
+[![Диспетчер AVD](resource-qualifiers-images/xs/02-device-definitions-sml.png)](resource-qualifiers-images/xs/02-device-definitions.png#lightbox)
 
 -----
 
@@ -57,11 +56,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Клонирование устройства](resource-qualifiers-images/vs/03-clone-sml.png)](resource-qualifiers-images/vs/03-clone.png)
+[![Клонирование устройства](resource-qualifiers-images/vs/03-clone-sml.png)](resource-qualifiers-images/vs/03-clone.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Клонирование устройства](resource-qualifiers-images/xs/03-clone-sml.png)](resource-qualifiers-images/xs/03-clone.png)
+[![Клонирование устройства](resource-qualifiers-images/xs/03-clone-sml.png)](resource-qualifiers-images/xs/03-clone.png#lightbox)
 
 -----
 
@@ -70,11 +69,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Настраиваемые параметры устройства](resource-qualifiers-images/vs/04-custom-sml.png)](resource-qualifiers-images/vs/04-custom.png)
+[![Настраиваемые параметры устройства](resource-qualifiers-images/vs/04-custom-sml.png)](resource-qualifiers-images/vs/04-custom.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Настраиваемые параметры устройства](resource-qualifiers-images/xs/04-custom-sml.png)](resource-qualifiers-images/xs/04-custom.png)
+[![Настраиваемые параметры устройства](resource-qualifiers-images/xs/04-custom-sml.png)](resource-qualifiers-images/xs/04-custom.png#lightbox)
 
 -----
 
@@ -83,11 +82,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Обновленные определения](resource-qualifiers-images/vs/05-updated-device-definitions-sml.png)](resource-qualifiers-images/vs/05-updated-device-definitions.png)
+[![Обновленные определения](resource-qualifiers-images/vs/05-updated-device-definitions-sml.png)](resource-qualifiers-images/vs/05-updated-device-definitions.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Обновленные определения](resource-qualifiers-images/xs/05-updated-device-definitions-sml.png)](resource-qualifiers-images/xs/05-updated-device-definitions.png)
+[![Обновленные определения](resource-qualifiers-images/xs/05-updated-device-definitions-sml.png)](resource-qualifiers-images/xs/05-updated-device-definitions.png#lightbox)
 
 -----
 
@@ -96,11 +95,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Настраиваемые параметры устройства отображается в списке устройств](resource-qualifiers-images/vs/06-nexus-5-custom-sml.png)](resource-qualifiers-images/vs/06-nexus-5-custom.png)
+[![Настраиваемые параметры устройства отображается в списке устройств](resource-qualifiers-images/vs/06-nexus-5-custom-sml.png)](resource-qualifiers-images/vs/06-nexus-5-custom.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Настраиваемые параметры устройства отображается в списке устройств](resource-qualifiers-images/xs/06-nexus-5-custom-sml.png)](resource-qualifiers-images/xs/06-nexus-5-custom.png)
+[![Настраиваемые параметры устройства отображается в списке устройств](resource-qualifiers-images/xs/06-nexus-5-custom-sml.png)](resource-qualifiers-images/xs/06-nexus-5-custom.png#lightbox)
 
 -----
 
@@ -109,16 +108,15 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Настраиваемые параметры устройства используется](resource-qualifiers-images/vs/07-custom-in-use-sml.png)](resource-qualifiers-images/vs/07-custom-in-use.png)
+[![Настраиваемые параметры устройства используется](resource-qualifiers-images/vs/07-custom-in-use-sml.png)](resource-qualifiers-images/vs/07-custom-in-use.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Настраиваемые параметры устройства используется](resource-qualifiers-images/xs/07-custom-in-use-sml.png)](resource-qualifiers-images/xs/07-custom-in-use.png)
+[![Настраиваемые параметры устройства используется](resource-qualifiers-images/xs/07-custom-in-use-sml.png)](resource-qualifiers-images/xs/07-custom-in-use.png#lightbox)
 
 -----
 
 
-<a name="resource_qualifier_options" />
 
 ## <a name="resource-qualifier-options"></a>Параметры классификатора ресурсов
 
@@ -126,11 +124,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Параметры классификатора ресурсов](resource-qualifiers-images/vs/08-resource-qual-opt-sml.png)](resource-qualifiers-images/vs/08-resource-qual-opt.png)
+[![Параметры классификатора ресурсов](resource-qualifiers-images/vs/08-resource-qual-opt-sml.png)](resource-qualifiers-images/vs/08-resource-qual-opt.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Параметры классификатора ресурсов](resource-qualifiers-images/xs/08-resource-qual-opt-sml.png)](resource-qualifiers-images/xs/08-resource-qual-opt.png)
+[![Параметры классификатора ресурсов](resource-qualifiers-images/xs/08-resource-qual-opt-sml.png)](resource-qualifiers-images/xs/08-resource-qual-opt.png#lightbox)
 
 -----
 
@@ -144,7 +142,6 @@ Android доступен на множество устройств и уров�
 Каждый из этих в раскрывающемся меню открывается новый диалоговым окнам, где можно выбрать и настроить квалификаторами ресурсов (как описано далее).
 
 
-<a name="Language_and_Region" />
 
 ### <a name="language"></a>Язык
 
@@ -152,11 +149,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Добавление языка или региона](resource-qualifiers-images/vs/09-add-language-region-sml.png)](resource-qualifiers-images/vs/09-add-language-region.png)
+[![Добавление языка или региона](resource-qualifiers-images/vs/09-add-language-region-sml.png)](resource-qualifiers-images/vs/09-add-language-region.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Добавление языка или региона](resource-qualifiers-images/xs/09-add-language-region-sml.png)](resource-qualifiers-images/xs/09-add-language-region.png)
+[![Добавление языка или региона](resource-qualifiers-images/xs/09-add-language-region-sml.png)](resource-qualifiers-images/xs/09-add-language-region.png#lightbox)
 
 -----
 
@@ -169,7 +166,7 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Список языков](resource-qualifiers-images/xs/10-languages-sml.png)](resource-qualifiers-images/xs/10-languages.png)
+[![Список языков](resource-qualifiers-images/xs/10-languages-sml.png)](resource-qualifiers-images/xs/10-languages.png#lightbox)
 
 -----
 
@@ -182,7 +179,7 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Язык и регион выбранных](resource-qualifiers-images/xs/11-language-region-added-sml.png)](resource-qualifiers-images/xs/11-language-region-added.png)
+[![Язык и регион выбранных](resource-qualifiers-images/xs/11-language-region-added-sml.png)](resource-qualifiers-images/xs/11-language-region-added.png#lightbox)
 
 -----
 
@@ -190,7 +187,6 @@ Android доступен на множество устройств и уров�
 Обратите внимание, что если вы добавляете новый язык, но не создаются новые ресурсы для он больше не будет добавлен язык отображаться при очередном открытии проекта.
 
 
-<a name="ui_mode" />
 
 ### <a name="ui-mode"></a>Режим пользовательского интерфейса
 
@@ -198,7 +194,7 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Меню в режиме пользовательского интерфейса](resource-qualifiers-images/vs/12-ui-mode-sml.png)](resource-qualifiers-images/vs/12-ui-mode.png)
+[![Меню в режиме пользовательского интерфейса](resource-qualifiers-images/vs/12-ui-mode-sml.png)](resource-qualifiers-images/vs/12-ui-mode.png#lightbox)
 
 Ниже этого списка перечислены режимы ночь **не ночь** и **ночь**, а затем направлениями макета **слева направо** и **справа налево** (для сведения о **слева направо** и **справа налево** , обнаружить [LayoutDirection](https://developer.xamarin.com/api/type/Android.Util.LayoutDirection/).
 Последние элементы в **параметры классификатора ресурсов** диалогового окна, **округления экраны** (для использования с Android носят) или **округляет экраны** (сведения о цикле и экраны не циклическим. в разделе [макеты](https://developer.android.com/training/wearables/ui/layouts.html)).
@@ -206,7 +202,7 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Меню в режиме пользовательского интерфейса](resource-qualifiers-images/xs/12-ui-mode-sml.png)](resource-qualifiers-images/xs/12-ui-mode.png)
+[![Меню в режиме пользовательского интерфейса](resource-qualifiers-images/xs/12-ui-mode-sml.png)](resource-qualifiers-images/xs/12-ui-mode.png#lightbox)
 
 Ниже этого списка перечислены режимы ночь **не ночь** и **ночь**, а затем направлениями макета **слева направо** и **справа налево**. Дополнительные сведения о режимах Android пользовательского интерфейса см. в разделе [UiModeManager](https://developer.xamarin.com/api/type/Android.App.UiModeManager/).
 Сведения о **слева направо** и **справа налево** , обнаружить [LayoutDirection](https://developer.xamarin.com/api/type/Android.Util.LayoutDirection/).
@@ -215,12 +211,11 @@ Android доступен на множество устройств и уров�
 
 Последний элемент в **параметры классификатора ресурсов** диалоговое окно **Round экрана** меню. В этом меню можно выбрать либо **округления экраны** (для использования с Android носят) или **прямоугольный экраны**:
 
-[ ![Round меню экрана](resource-qualifiers-images/xs/13-round-screen-sml.png)](resource-qualifiers-images/xs/13-round-screen.png)
+[![Round меню экрана](resource-qualifiers-images/xs/13-round-screen-sml.png)](resource-qualifiers-images/xs/13-round-screen.png#lightbox)
 
 -----
 
 
-<a name="Action_Bar" />
 
 ## <a name="action-bar-settings"></a>Параметры панели действий
 
@@ -232,7 +227,7 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Параметры панели действий](resource-qualifiers-images/xs/13b-action-bar-sml.png)](resource-qualifiers-images/xs/13b-action-bar.png)
+[![Параметры панели действий](resource-qualifiers-images/xs/13b-action-bar-sml.png)](resource-qualifiers-images/xs/13b-action-bar.png#lightbox)
 
 -----
 
@@ -246,7 +241,6 @@ Android доступен на множество устройств и уров�
 -   **Вкладки** &ndash; режима навигации перехода. Вместо текста заголовка статическим этот режим представляет ряд вкладок для навигации в действии.
 
 
-<a name="Themes" />
 
 ## <a name="themes"></a>Темы
 
@@ -254,11 +248,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Дополнительные темы списка](resource-qualifiers-images/vs/15-theme-menu-sml.png "более темы списка")](resource-qualifiers-images/vs/15-theme-menu.png)
+[![Дополнительные темы списка](resource-qualifiers-images/vs/15-theme-menu-sml.png "более темы списка")](resource-qualifiers-images/vs/15-theme-menu.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Дополнительные темы списка](resource-qualifiers-images/xs/14-theme-menu-sml.png)](resource-qualifiers-images/xs/14-theme-menu.png)
+[![Дополнительные темы списка](resource-qualifiers-images/xs/14-theme-menu-sml.png)](resource-qualifiers-images/xs/14-theme-menu.png#lightbox)
 
 -----
 
@@ -271,12 +265,11 @@ Android доступен на множество устройств и уров�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Теперь доступна "светлой" теме](resource-qualifiers-images/xs/15-light-theme-sml.png)](resource-qualifiers-images/xs/15-light-theme.png)
+[![Теперь доступна "светлой" теме](resource-qualifiers-images/xs/15-light-theme-sml.png)](resource-qualifiers-images/xs/15-light-theme.png#lightbox)
 
 -----
 
 
-<a name="Android_Version" />
 
 ## <a name="android-version"></a>Версия Android
 
@@ -293,7 +286,7 @@ Android **версии** селектор задает Android версию, и�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Список версий Android](resource-qualifiers-images/xs/16-android-version-sml.png)](resource-qualifiers-images/xs/16-android-version.png)
+[![Список версий Android](resource-qualifiers-images/xs/16-android-version-sml.png)](resource-qualifiers-images/xs/16-android-version.png#lightbox)
 
 Требуемой версии .NET framework, которые можно задать в параметрах проекта в разделе **параметры проекта > сборки > Общие** раздела. Дополнительные сведения о целевой версии платформы см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md).
 

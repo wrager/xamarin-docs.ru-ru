@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: f77a9b8d3bb69bb47d973a56aed5ad1d49f9a02d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5131b4d09f01af6a6e8bed28a2df27bc801dfb80
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="custom-button"></a>Пользовательские кнопки
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 02/27/2018
 
 Щелкните правой кнопкой мыши и загрузить три ниже изображения, а затем скопируйте их в **ресурсы и drawable** каталога проекта. Они будут использоваться для различные состояния кнопок.
 
- [![Android зеленый значок нормальное состояние](custom-button-images/android-normal.png)](custom-button-images/android-normal.png) [ ![Android оранжевый значок конкретное состояние](custom-button-images/android-focused.png)](custom-button-images/android-focused.png) [ ![Android желтый значок нажатом состоянии](custom-button-images/android-pressed.png)](custom-button-images/android-pressed.png)
+ [![Android зеленый значок нормальное состояние](custom-button-images/android-normal.png)](custom-button-images/android-normal.png#lightbox) [ ![Android оранжевый значок конкретное состояние](custom-button-images/android-focused.png)](custom-button-images/android-focused.png#lightbox) [ ![Android желтый значок нажатом состоянии](custom-button-images/android-pressed.png)](custom-button-images/android-pressed.png#lightbox)
 
 Создайте новый файл в **ресурсы или drawable** каталог с именем **android_button.xml**. Вставьте следующий XML-код:
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/27/2018
 
 
 > [!NOTE]
-> **Примечание:** порядок `<item>` важные элементы. При этом drawable есть ссылка, `<item>`являются обхода в порядке, чтобы определить, какой из них лучше всего подходит для текущего состояния кнопки.
+> Порядок `<item>` важные элементы. При этом drawable есть ссылка, `<item>`являются обхода в порядке, чтобы определить, какой из них лучше всего подходит для текущего состояния кнопки.
 > Так как «normal» образа последней, является ли он применяется, если условия `android:state_pressed` и `android:state_focused` равны false.
 
 Откройте **Resources/layout/Main.axml** и добавьте [ `Button` ](https://developer.xamarin.com/api/type/Android.Widget.Button/) элемента:

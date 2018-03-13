@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: c4a88f875b4082f85b1c5565de2a24548e7b8874
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 8e90bc3974247066a714cb44b6648a83cdb58cf5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="push-notifications-in-ios"></a>Push-уведомлений в iOS
 
@@ -45,37 +45,37 @@ Push-уведомлений необходимо соблюдать следую
 
 1.  Для создания сертификатов перейдите на iOS подготовки портала на веб-сайте Apple, как показано на следующем снимке экрана (Обратите внимание, пункт меню идентификаторы приложений слева):
 
-    [ ![](remote-notifications-in-ios-images/image5new.png "Портал Провизионирования на веб-сайте яблоки iOS")](remote-notifications-in-ios-images/image5new.png)
+    [![](remote-notifications-in-ios-images/image5new.png "Портал Провизионирования на веб-сайте яблоки iOS")](remote-notifications-in-ios-images/image5new.png#lightbox)
 
 2.  Затем перейдите к разделу приложения идентификаторов и создать новый идентификатор приложения, как показано на следующем снимке экрана:
 
-    [ ![](remote-notifications-in-ios-images/image6new.png "Перейдите к разделу идентификаторы приложений и создать новый идентификатор приложения")](remote-notifications-in-ios-images/image6new.png)
+    [![](remote-notifications-in-ios-images/image6new.png "Перейдите к разделу идентификаторы приложений и создать новый идентификатор приложения")](remote-notifications-in-ios-images/image6new.png#lightbox)
 
 3.  При нажатии кнопки на  **+**  кнопки, можно ввести описание и идентификатор пакета для идентификатора приложения, как показано на следующем снимке экрана:
 
-    [ ![](remote-notifications-in-ios-images/image7new.png "Введите описание и идентификатор пакета для идентификатора приложения")](remote-notifications-in-ios-images/image7new.png)
+    [![](remote-notifications-in-ios-images/image7new.png "Введите описание и идентификатор пакета для идентификатора приложения")](remote-notifications-in-ios-images/image7new.png#lightbox)
 
 4. Убедитесь в том выбрать **явный идентификатор приложения** и идентификатор пакета не заканчивается `*` . Это создаст идентификатор, который хорошо подходит для нескольких приложений, и принудительной уведомления сертификаты должны быть для одного приложения.
 
 1. Установите службы приложения, **Push-уведомления**:
 
-    [ ![](remote-notifications-in-ios-images/image8new.png "Выберите Push-уведомлений")](remote-notifications-in-ios-images/image8new.png)
+    [![](remote-notifications-in-ios-images/image8new.png "Выберите Push-уведомлений")](remote-notifications-in-ios-images/image8new.png#lightbox)
 
 2. И нажмите клавишу **отправить** для подтверждения регистрации нового идентификатора приложения:
 
-    [ ![](remote-notifications-in-ios-images/image9new.png "Подтверждение регистрации нового идентификатора приложения")](remote-notifications-in-ios-images/image9new.png)
+    [![](remote-notifications-in-ios-images/image9new.png "Подтверждение регистрации нового идентификатора приложения")](remote-notifications-in-ios-images/image9new.png#lightbox)
 
 3.  Далее необходимо создать сертификат для идентификатора приложения. В панели навигации слева найдите **сертификаты > все** и выберите `+` кнопки, как показано на следующем снимке экрана:
 
-    [ ![](remote-notifications-in-ios-images/image10new.png "Создание сертификата для идентификатора приложения")](remote-notifications-in-ios-images/image8.png)
+    [![](remote-notifications-in-ios-images/image10new.png "Создание сертификата для идентификатора приложения")](remote-notifications-in-ios-images/image8.png#lightbox)
 
 4.  Выберите, будут ли вы хотели бы использовать сертификат разработки или рабочей среде:
 
-    [ ![](remote-notifications-in-ios-images/image11new.png "Выберите сертификат, разработки или производства")](remote-notifications-in-ios-images/image11new.png)
+    [![](remote-notifications-in-ios-images/image11new.png "Выберите сертификат, разработки или производства")](remote-notifications-in-ios-images/image11new.png#lightbox)
 
 5. А затем выберите новый идентификатор приложения, который мы только что создали.
 
-    [ ![](remote-notifications-in-ios-images/image12new.png "Выберите только что созданный новый идентификатор приложения")](remote-notifications-in-ios-images/image12new.png)
+    [![](remote-notifications-in-ios-images/image12new.png "Выберите только что созданный новый идентификатор приложения")](remote-notifications-in-ios-images/image12new.png#lightbox)
 
 6.  При этом отобразится инструкциям проведет вас через процесс создания *запрос подписи сертификата* с помощью **доступ к цепочке ключей** приложение на компьютере Mac.
 
@@ -85,11 +85,11 @@ Push-уведомлений необходимо соблюдать следую
 
 9.  После создания профиля подготовки, откройте **Xcode Организатор** и обновить его. При создании профиля подготовки не отображается, может оказаться необходимым загрузить профиль с портал Провизионирования iOS и импортировать его вручную. На следующем снимке экрана показан пример организатора добавлены профиль подготовки:
 
-    [ ![](remote-notifications-in-ios-images/image13new.png "Этот снимок экрана: пример Организатор с профиль подготовки, добавленный")](remote-notifications-in-ios-images/image13new.png)
+    [![](remote-notifications-in-ios-images/image13new.png "Этот снимок экрана: пример Организатор с профиль подготовки, добавленный")](remote-notifications-in-ios-images/image13new.png#lightbox)
 
 10.  На этом этапе необходимо настроить проект для использования нового профиля подготовки Xamarin.iOS. Это делается с **параметры проекта** диалогового окна в разделе **подписывание пакета iOS** вкладки, как отображение на следующем снимке экрана:
 
-    [ ![](remote-notifications-in-ios-images/image11.png "Настройка Xamarin.iOS проект для использования нового профиля подготовки")](remote-notifications-in-ios-images/image11.png)
+    [![](remote-notifications-in-ios-images/image11.png "Настройка Xamarin.iOS проект для использования нового профиля подготовки")](remote-notifications-in-ios-images/image11.png#lightbox)
 
 
 

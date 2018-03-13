@@ -4,14 +4,15 @@ description: "Изучите эффекты и при наличии преоб�
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: CBB3CD72-4377-4EA3-A768-0C4228229FC2
 author: charlespetzold
 ms.author: chape
 ms.date: 03/23/2017
-ms.openlocfilehash: c87f9a561ac2f7a8c3da1c1e4ab839431073fcb9
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 146093e15651316e84947e2bd81eeee3bf55cedb
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="the-rotate-transform"></a>Преобразования вращения
 
@@ -57,7 +58,7 @@ using (SKPaint textPaint = new SKPaint
 
 Так как поворот, собранных вокруг верхнего левого угла холста, для большинства углов, задайте в этой программе текст поворачивается уместиться на экране:
 
-[![](rotate-images/basicrotate-small.png "Тройной снимок экрана со страницей основные Поворот")](rotate-images/basicrotate-large.png "тройной экрана основные Поворот страницы")
+[![](rotate-images/basicrotate-small.png "Тройной снимок экрана со страницей основные Поворот")](rotate-images/basicrotate-large.png#lightbox "тройной экрана основные Поворот страницы")
 
 Очень часто имеет смысл поворот нечто по центру относительно указанной основной точки указанных версий [ `RotateDegrees` ](https://developer.xamarin.com/api/member/SkiaSharp.SKCanvas.RotateDegrees/p/System.Single/System.Single/System.Single/) и [ `RotateRadians` ](https://developer.xamarin.com/api/member/SkiaSharp.SKCanvas.RotateRadians/p/System.Single/System.Single/System.Single/) методов:
 
@@ -85,7 +86,7 @@ using (SKPaint textPaint = new SKPaint
 
 Теперь текст вращается вокруг точки, используемой для позиционирования текста, который является по горизонтали по центру текстового шаблона:
 
-[![](rotate-images/centeredrotate-small.png "Тройной снимок экрана со страницей по центру Поворот")](rotate-images/centeredrotate-large.png "тройной экрана поворот по центру страницы")
+[![](rotate-images/centeredrotate-small.png "Тройной снимок экрана со страницей по центру Поворот")](rotate-images/centeredrotate-large.png#lightbox "тройной экрана поворот по центру страницы")
 
 Как и в случае с версией по центру `Scale` метод, по центру версию `RotateDegrees` вызова представляет собой ярлык:
 
@@ -139,7 +140,7 @@ canvas.DrawText(Title, 0, 0, textPaint);
 
 Как правило, существует несколько способов для объединения вращения и перемещения. **Поворачивать текст** страница создает следующий результат:
 
-[![](rotate-images/rotatedtext-small.png "Тройной снимок экрана со страницей поворачивать текст")](rotate-images/rotatedtext-large.png "тройной снимок экрана со страницей поворачивать текст")
+[![](rotate-images/rotatedtext-small.png "Тройной снимок экрана со страницей поворачивать текст")](rotate-images/rotatedtext-large.png#lightbox "тройной снимок экрана со страницей поворачивать текст")
 
 Вот `PaintSurface` обработчик [ `RotatedTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/RotatedTextPage.cs) класса:
 
@@ -363,7 +364,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Часы определенно работает, несмотря на то, что стрелки вместо грубый:
 
-[![](rotate-images/uglyanalogclock-small.png "Тройное снимок экрана со страницей сложный текст аналогом часов")](rotate-images/uglyanalogclock-large.png "Triple screenshot of the Ugly Analog page")
+[![](rotate-images/uglyanalogclock-small.png "Тройное снимок экрана со страницей сложный текст аналогом часов")](rotate-images/uglyanalogclock-large.png#lightbox "Triple screenshot of the Ugly Analog page")
 
 
 ## <a name="related-links"></a>Связанные ссылки

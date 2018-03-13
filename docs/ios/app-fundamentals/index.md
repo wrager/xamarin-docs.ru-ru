@@ -3,16 +3,16 @@ title: "Принципы работы приложения"
 description: "Основные понятия приложения"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: DBBAA086-BB0F-8161-DF44-632F4F5DFE5D
+ms.assetid: 608403AE-B09F-4D9C-8F59-F9DE9F0B1CF1
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/21/2017
-ms.openlocfilehash: 9cace37a9e762a49a90963591931793d30d05453
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f6c0bb75327f0c14d314a0e7ad9d114fd17c2a57
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="application-fundamentals"></a>Принципы работы приложения
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 02/27/2018
 В этой статье приведены изменения системы безопасности, которые обеспечивает безопасность транспорта приложения на приложение iOS 9, что означает для проектов Xamarin.iOS, включают параметры конфигурации ATS и включают как отказаться от ATS, если это необходимо. Поскольку ATS включен по умолчанию, все подключения к Интернету небезопасные вызовет исключение в приложениях iOS 9 (если она явно разрешен).
 
 
-## <a name="backgroundingiosapp-fundamentalsbackgroundingindexmd"></a>[Backgrounding](~/ios/app-fundamentals/backgrounding/index.md)
+## <a name="backgroundingiosapp-fundamentalsbackgroundingindexmd"></a>[Фоновая обработка](~/ios/app-fundamentals/backgrounding/index.md)
 
 Фоновая обработка или backgrounding — это процесс, позволяющий приложениям выполнять задачи в фоновом режиме, пока другое приложение выполняется на переднем плане. Данное руководство служит вводные сведения о фоновой обработки в iOS.
 
@@ -56,7 +56,7 @@ Xamarin.iOS можно использовать те же классы System.IO
 
 `NSUserDefaults` Класс предоставляет способ для операций ввода-вывода приложения и расширения для программного взаимодействия с системой всей системы по умолчанию. С помощью системы по умолчанию, пользователь может настроить поведение приложения или стиля в соответствии с их предпочтениями (с учетом разработки приложения). Например, чтобы представить данные в vs метрики Имперский измерения или выберите тему данного пользовательского интерфейса.
 
-## <a name="touchiosapp-fundamentalstouchindexmd"></a>[Сенсорный ввод](~/ios/app-fundamentals/touch/index.md)
+## <a name="touchiosapp-fundamentalstouchindexmd"></a>[Сенсорные технологии](~/ios/app-fundamentals/touch/index.md)
 
 Сенсорных экранов на многих современных устройств позволяет пользователям быстро и эффективно взаимодействовать с устройствами естественным и интуитивно понятным способом. Такое взаимодействие не ограничивается только обнаружение простых touch — можно использовать жесты также. Например масштабирование сжатием жестов является очень распространенным примером этого — сжатия часть экрана с двумя пальцами, которые пользователь может увеличить или уменьшить. В этом руководстве рассматриваются сенсорный ввод и жестов в iOS.
 

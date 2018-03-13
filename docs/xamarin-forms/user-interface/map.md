@@ -3,16 +3,16 @@ title: "Карта"
 description: "Xamarin.Forms использует схему собственного API-интерфейсов для каждой платформы."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 22288ABF-57BE-47A9-ACC3-AC604D787C46
+ms.assetid: 59CD1344-8248-406C-9144-0C8A67141E5B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 98e6cade952e656046c6c0981a0b73ff0894c9d6
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 2f0ad800ed1ab3a336f10dd4431e234ac4ff9675
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="map"></a>Карта
 
@@ -28,7 +28,7 @@ Xamarin.Forms.Maps использует схему собственного API-
 
 Элемент управления карты используется в [MapsSample](https://developer.xamarin.com/samples/WorkingWithMaps/) пример, который приведен ниже.
 
- [ ![Карты в образце MobileCRM](map-images/maps-zoom-sml.png "пример элемента управления карты")](map-images/maps-zoom.png "пример элемента управления карты")
+ [![Карты в образце MobileCRM](map-images/maps-zoom-sml.png "пример элемента управления карты")](map-images/maps-zoom.png#lightbox "пример элемента управления карты")
 
 Функциональные возможности карты можно улучшить путем создания [сопоставить пользовательское средство отрисовки](~/xamarin-forms/app-fundamentals/custom-renderer/map/index.md).
 
@@ -103,7 +103,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 Без действительного ключа API управления карты будет отображаться как серые поля на Android.
 
 > [!NOTE]
-> **Примечание**: помните, что необходимо создать другой ключ, с помощью файла ключей, используемого для подписания версии любого приложения, который загружается в магазине Google Play. Ключ, созданная для разработки и отладка не будет работать и загрузить из Google Play приложение будет нарушили Отображение карты. Также следует помнить, повторное создание ключа if приложения **имя пакета** изменения.
+> Помните, что необходимо создать другой ключ, с помощью файла ключей, используемого для подписания версии любого приложения, который загружается в магазине Google Play. Ключ, созданная для разработки и отладка не будет работать и загрузить из Google Play приложение будет нарушили Отображение карты. Также следует помнить, повторное создание ключа if приложения **имя пакета** изменения.
 
 Также необходимо включить соответствующие разрешения, щелкнув правой кнопкой мыши проект Android и выбрав **параметры > сборки > приложения Android** и отсчет следующее:
 
@@ -185,7 +185,7 @@ slider.ValueChanged += (sender, e) => {
 };
 ```
 
- [ ![Карты с zoom](map-images/maps-zoom-sml.png "Масштаб карты управления")](map-images/maps-zoom.png "Масштаб карты элементов управления")
+ [![Карты с zoom](map-images/maps-zoom-sml.png "Масштаб карты управления")](map-images/maps-zoom.png#lightbox "Масштаб карты элементов управления")
 
 ### <a name="map-pins"></a>Булавки
 

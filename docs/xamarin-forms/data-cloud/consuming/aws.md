@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/20/2016
-ms.openlocfilehash: 590e39deb7972df9e45064bb1a96e533a1fc9856
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5604477ff182711a63ba2b0e6bbcbbcc082a76ed
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="consuming-an-amazon-simpledb-service"></a>Использование службы Amazon SimpleDB
 
@@ -141,7 +141,7 @@ public async Task<List<TodoItem>> RefreshDataAsync ()
 `SelectAsync` Метод принимает `SelectRequest` экземпляр в качестве параметра, который указывает `Select` выражение в его запроса `SelectExpression` свойство. Выражение запроса имеет аналогичен формату стандартного SQL `SELECT` инструкции. Дополнительные сведения о выражении запроса см. в разделе [использование инструкции Select для создания запросов SimpleDB Amazon](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/UsingSelect.html) Amazon веб-сайта.
 
 > [!NOTE]
-> **Примечание**: Следуйте правилам кавычек при построении выражения запроса. Дополнительные сведения см. в разделе [выберите правила для заключения в кавычки](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/QuotingRulesSelect.html) Amazon веб-сайта.
+> Следите за тем следовать правилам кавычек, при создании выражения запроса. Дополнительные сведения см. в разделе [выберите правила для заключения в кавычки](http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/QuotingRulesSelect.html) Amazon веб-сайта.
 
 `SelectAsync` Метод возвращает ответ, содержащий коллекцию элементов и связанных атрибутов, соответствующих выражения запроса. Эта коллекция преобразуется в `List` из `TodoItem` экземпляров для отображения.
 

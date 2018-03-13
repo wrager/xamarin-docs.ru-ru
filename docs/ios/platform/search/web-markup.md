@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 63bc1f0ed13fe65b36e95978da9ccc2ea8d4481c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 8812c6a234e05e4d651effbeb83a7bcad38dc683
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="search-with-web-markup"></a>Поиск с веб-разметка
 
@@ -20,12 +20,12 @@ ms.lasthandoff: 02/27/2018
 
 Если ваше приложение iOS уже поддерживает мобильные глубокое связывание и веб-сайте представлены прямые ссылки на содержимое в приложения, Apple _Applebot_ программа-обходчик будет индексировать это содержимое и автоматическое добавление индексов облака:
 
-[ ![](web-markup-images/webmarkup01.png "Обзор облачных индекса")](web-markup-images/webmarkup01.png)
+[![](web-markup-images/webmarkup01.png "Обзор облачных индекса")](web-markup-images/webmarkup01.png#lightbox)
 
 Apple обнаружатся эти результаты в результатах поиска Spotlight и Safari поиска.
 Если пользователь нажимает на одну из этих результатов (и у них есть приложение установлено), то они будут выполнены для содержимого в приложении:
 
-[ ![](web-markup-images/webmarkup02.png "Deep, связывание с веб-сайта в результатах поиска")](web-markup-images/webmarkup02.png)
+[![](web-markup-images/webmarkup02.png "Deep, связывание с веб-сайта в результатах поиска")](web-markup-images/webmarkup02.png#lightbox)
 
 ## <a name="enabling-web-content-indexing"></a>Включение индексирования содержимого Web
 
@@ -154,7 +154,7 @@ Rich результаты более приятной и могут помочь
 
 Ниже показан пример метаданные с веб-сайта, предоставляя широкие возможности поиска результаты конечному пользователю:
 
-[ ![](web-markup-images/deeplink01.png "Полнофункциональный поиск результатов посредством разметки структурированных данных")](web-markup-images/deeplink01.png)
+[![](web-markup-images/deeplink01.png "Полнофункциональный поиск результатов посредством разметки структурированных данных")](web-markup-images/deeplink01.png#lightbox)
 
 Apple в настоящее время поддерживает следующие типы схем из schema.org:
 

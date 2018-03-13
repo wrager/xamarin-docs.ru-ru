@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 278b9e782073a26dc04bac9418613ea4c09db445
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7b6d0901f8b01668626fc3b6a70a091e99e2287e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -46,7 +46,7 @@ _В этой статье описаны известные проблемы. м
 1. В Visual Studio для Mac, щелкните правой кнопкой мыши файл проекта Xamarin.tvOS в **обозревателе решений** и выберите **параметры**.
 2. Выберите **tvOS построения** и убедитесь, что вы находитесь в **выпуска** конфигурации: 
 
-    [ ![](troubleshooting-images/ts01.png "Выберите tvOS параметры построения")](troubleshooting-images/ts01.png)
+    [![](troubleshooting-images/ts01.png "Выберите tvOS параметры построения")](troubleshooting-images/ts01.png#lightbox)
 3. Добавить `--bitcode=asmonly` для **mtouch дополнительные аргументы** поле и нажмите кнопку **ОК** кнопки.
 4. Перестройте приложение в **выпуска** конфигурации.
 
@@ -124,7 +124,7 @@ _«Приложений, которые содержат только срез a
 
 Если вы используете сторонних производителей библиотеки (например, MonoGame) и вашей версии компиляции завершилась серию сообщения об ошибках, заканчивающиеся на `Task "MTouch" execution -- FAILED`, попробуйте добавить `-gcc_flags="-framework OpenAL"` для вашей **касания дополнительные аргументы**:
 
-[ ![](troubleshooting-images/mtouch01.png "Выполнение задачи MTouch")](troubleshooting-images/mtouch01.png)
+[![](troubleshooting-images/mtouch01.png "Выполнение задачи MTouch")](troubleshooting-images/mtouch01.png#lightbox)
 
 Следует также добавить `--bitcode=asmonly` в **сенсорный ввод дополнительных аргументов**, установлено в качестве параметры компоновщика **все связи** и выполните чистую компиляции.
 

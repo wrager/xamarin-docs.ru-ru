@@ -4,14 +4,15 @@ description: "Узнайте, как анимация SkiaSharp изображе
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 31C96FD6-07E4-4473-A551-24753A5118C3
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: c91cb064ea3973294c3a9dd8e07f3c4b0627fe34
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e18ef7c77c1d5c93d53882233c65a56e5567fcd7
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="basic-animation"></a>Базовая анимация
 
@@ -141,7 +142,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Метод вычисляет максимальное radius, в зависимости от размера области отображения, а Минимальный радиус, исходя из максимального radius. `scale` Значение анимируется от 0 до 1, а значение 0, поэтому метод использует его для вычислений `xRadius` и `yRadius` , лежит в диапазоне между `minRadius` и `maxRadius`. Эти значения используются для рисования и заливка эллипса:
 
-[![](animation-images/pulsatingellipse-small.png "Тройной снимок экрана со страницей пульсирующего эллипс")](animation-images/pulsatingellipse-large.png "тройной снимок экрана со страницей пульсирующего эллипса")
+[![](animation-images/pulsatingellipse-small.png "Тройной снимок экрана со страницей пульсирующего эллипс")](animation-images/pulsatingellipse-large.png#lightbox "тройной снимок экрана со страницей пульсирующего эллипса")
 
 Обратите внимание, что `SKPaint` объект создается в `using` блока. Как и во многих классах SkiaSharp `SKPaint` является производным от `SKObject`, который является производным от `SKNativeObject`, который реализует [ `IDisposable` ](https://developer.xamarin.com/api/type/System.IDisposable/) интерфейса. `SKPaint` переопределяет `Dispose` метод для освобождения неуправляемых ресурсов.
 
@@ -244,7 +245,7 @@ public class ExpandingCirclesPage : ContentPage
 
 Результатом является то, что изображение выглядит одинаковыми, если `t` равен 0, когда `t` имеет значение 1, а круги, по-видимому, поочередно раскройте остальные навсегда:
 
-[![](animation-images/expandingcircles-small.png "Тройной снимок экрана со страницей расширение круги")](animation-images/expandingcircles-large.png "тройной снимок экрана со страницей круги, развертывание")
+[![](animation-images/expandingcircles-small.png "Тройной снимок экрана со страницей расширение круги")](animation-images/expandingcircles-large.png#lightbox "тройной снимок экрана со страницей круги, развертывание")
 
 
 ## <a name="related-links"></a>Связанные ссылки

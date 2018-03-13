@@ -7,18 +7,17 @@ ms.assetid: CEE90F8A-164B-4155-813A-7537A665A7E7
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/14/2017
-ms.openlocfilehash: 2048056415e0969e13e305b1dbba8bdb7ffabd30
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 7b1314c12bf97a2fa21911c747e3066858116a5f
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="binding-an-eclipse-library-project"></a>Привязка проекта библиотеки служб Eclipse
 
 _В этом пошаговом руководстве описывается использование шаблонов проекта Xamarin.Android для привязки проекта библиотеки Eclipse Android._
 
-<a name=overview />
 
 ## <a name="overview"></a>Обзор
 
@@ -28,36 +27,34 @@ _В этом пошаговом руководстве описывается и
 Проекты библиотеки Android отличаются от обычных проектов Android, в том, что они не компилируются в APK и не сами по себе, развертываемых на устройстве. Вместо этого проект библиотеки Android предназначен для ссылки на проект приложения Android. При построении проекта Android приложения сначала компиляции проекта библиотеки Android. Проект приложения Android затем поглощается в скомпилированную библиотеку Android проекта и включить код и ресурсы в APK для распространения. Из-за этого отличия Создание привязки для проекта библиотеки Android немного отличается от создания привязки для Java. JAR или. AAR-файл.
 
 
-<a name="Walkthrough" />
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
 Использование библиотеки Android проекта в проекте Xamarin.Android привязки Java необходимо сначала собрать проект библиотеки Android в Eclipse. Следующем снимке экрана показан пример одного проекта библиотеки Android после компиляции. 
 
-[ ![Пример проекта библиотеки в Eclipse](binding-a-library-project-images/build-lib-in-eclipse.png)](binding-a-library-project-images/build-lib-in-eclipse.png)
+[![Пример проекта библиотеки в Eclipse](binding-a-library-project-images/build-lib-in-eclipse.png)](binding-a-library-project-images/build-lib-in-eclipse.png#lightbox)
 
 Обратите внимание, что исходный код из проекта библиотеки Android был скомпилирован во временный. JAR-файл с именем **android mapviewballoons.jar**, и что ресурсы были скопированы в **bin/res и обработайте** папки. 
 
 После компиляции проекта библиотеки Android в Eclipse, его можно затем привязать с помощью проекта Xamarin.Android Java привязки. Первый. Необходимо создать ZIP-файл, содержащее **bin** и **res** папки проекта библиотеки Android. Важно удалить промежуточные **обработайте** подкаталог, чтобы ресурсы находятся в **bin/res**. На следующем рисунке показан содержимое одного такого. ZIP-файл: 
 
-[ ![Содержимое .zip проекта библиотеки Android](binding-a-library-project-images/contents-of-zip-file.png)](binding-a-library-project-images/contents-of-zip-file.png)
+[![Содержимое .zip проекта библиотеки Android](binding-a-library-project-images/contents-of-zip-file.png)](binding-a-library-project-images/contents-of-zip-file.png#lightbox)
 
 Это. ZIP-файл добавляется проект привязки Java Xamarin.Android, как показано на следующем снимке экрана:
 
-[ ![Почтовый индекс добавляемого Java привязки проекта](binding-a-library-project-images/zip-in-binding-project.png)](binding-a-library-project-images/zip-in-binding-project.png)
+[![Почтовый индекс добавляемого Java привязки проекта](binding-a-library-project-images/zip-in-binding-project.png)](binding-a-library-project-images/zip-in-binding-project.png#lightbox)
 
 Обратите внимание, что действие построения. ZIP-файл автоматически устанавливается **LibraryProjectZip**.
 
 Если таковые имеются. JAR файлов, которые необходимы для проекта библиотеки Android, они должны быть добавлены к **JAR-файлов** папки проекта библиотеки привязки Java и **действие при построении** значение **ReferenceJar**. Пример этого можно увидеть на снимке экрана ниже: 
 
-[ ![Значение ReferenceJar действие построения](binding-a-library-project-images/set-to-referencejar.png)](binding-a-library-project-images/set-to-referencejar.png)
+[![Значение ReferenceJar действие построения](binding-a-library-project-images/set-to-referencejar.png)](binding-a-library-project-images/set-to-referencejar.png#lightbox)
 
 После выполнения этих действий, можно использовать проекта Xamarin.Android Java привязки, как описано ранее в этом документе.
 
 > [!NOTE]
-> **Примечание**: компиляция проектов Android библиотеки в других интегрированных средах разработки в настоящее время не поддерживается. Других интегрированных средах разработки, не может создать структуру каталогов или файлов в **bin** папку как Eclipse. 
+> Компиляция проектов Android библиотеки в других интегрированных средах разработки в настоящее время не поддерживается. Других интегрированных средах разработки, не может создать структуру каталогов или файлов в **bin** папку как Eclipse. 
 
-<a name="Summary" /> 
 
 ## <a name="summary"></a>Сводка
 

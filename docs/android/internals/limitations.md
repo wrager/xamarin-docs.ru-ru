@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: 11a7c9dcbe9481209d2eb90ff9d981f7437a1c99
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1b970432d7cd5b6a84b8af72ab616493f3cd36a7
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="limitations"></a>Ограничения
 
@@ -19,13 +19,11 @@ ms.lasthandoff: 02/27/2018
 
 Существуют следующие ограничения Xamarin.Android, по сравнению с рабочего стола моно:
 
-<a name="Limited_Dynamic_Language_Support" />
 
 ## <a name="limited-dynamic-language-support"></a>Только динамические языковая поддержка
 
  [Android с помощью вызываемых оболочек](~/android/platform/java-integration/android-callable-wrappers.md) необходимы в любое время Android среда выполнения должна вызывать управляемый код. Android с помощью вызываемых оболочек создаются во время компиляции, на основе статического анализа IL. В результате выполнения этого: вы *нельзя* служит динамическими языками (IronPython, IronRuby, т. д.) в любом сценарии, которых требуется создание подклассов типов Java (включая косвенные подклассы), нет способа извлечения этих динамических типов во время компиляции для создания необходимых Android вызываемых оболочек.
 
-<a name="Limited_Java_Generation_Support" />
 
 ## <a name="limited-java-generation-support"></a>Поддержка создания ограниченной Java
 
@@ -88,7 +86,6 @@ class MyIntentService : IntentService {
 }
 ```
 
-<a name="Generic_Csharp_classes" />
 
 ### <a name="generic-c-classes"></a>Универсальные классы C#
 
@@ -150,7 +147,6 @@ class MyIntentService : IntentService {
     }
     ```
 
-<a name="Partial_Java_Generics_Support" />
 
 ## <a name="partial-java-generics-support"></a>Поддержка универсальных шаблонов частичного Java
 
@@ -160,7 +156,7 @@ class MyIntentService : IntentService {
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Android с помощью вызываемых оболочек](~/android/platform/java-integration/android-callable-wrappers.md)
+- [Вызываемые программы-оболочки Android](~/android/platform/java-integration/android-callable-wrappers.md)
 - [Работа с JNI](~/android/platform/java-integration/working-with-jni.md)
 - [ExportAttribute](https://developer.xamarin.com/api/type/Java.Interop.ExportAttribute/)
 - [SuperString](https://developer.xamarin.com/api/property/Java.Interop.ExportAttribute.SuperArgumentsString/)

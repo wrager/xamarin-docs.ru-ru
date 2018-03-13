@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: de37fd1e014938edcacec187ceeed572e573b379
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 8376ce2ccff6732fa0c89d6030b9af36d29c5085
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="search-with-nsuseractivity"></a>Поиск с NSUserActivity
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 02/27/2018
 
 Опыта работы с iOS 9, `NSUserActivity` можно индексировать (открытого и закрытого) и поиске с поиску Spotlight и Safari. Пометив `NSUserActivity` как поиск и добавление метаданных индексируемых действия могут быть перечислены в результатах поиска на устройстве iOS.
 
-[ ![](nsuseractivity-images/apphistory01.png "Обзор журнала приложений")](nsuseractivity-images/apphistory01.png)
+[![](nsuseractivity-images/apphistory01.png "Обзор журнала приложений")](nsuseractivity-images/apphistory01.png#lightbox)
 
 Если пользователь выбирает результат поиска, которому принадлежит действие из приложения, приложение будет запущено и описаны действия `NSUserActivity` будет перезапущена и для пользователя.
 
@@ -58,7 +58,7 @@ Apple предлагает, использовать обратное DNS-нот
 
 Чтобы создать необходимые идентификаторы типа действий для поддержки данной возможности, измените **Info.plist** файла и переключитесь в **источника** представления. Добавить `NSUserActivityTypes` раздел и создавать идентификаторы в следующем формате:
 
-[ ![](nsuseractivity-images/type01.png "Ключ NSUserActivityTypes и необходимые идентификаторы в редакторе plist")](nsuseractivity-images/type01.png)
+[![](nsuseractivity-images/type01.png "Ключ NSUserActivityTypes и необходимые идентификаторы в редакторе plist")](nsuseractivity-images/type01.png#lightbox)
 
 В приведенном выше примере мы создали один новый идентификатор типа действия для действия "Поиск" (`com.xamarin.platform`). При создании собственных приложений, замените содержимое `NSUserActivityTypes` массива с идентификаторами тип действия, относящиеся к действия приложения поддерживает.
 
@@ -87,7 +87,7 @@ activity.BecomeCurrent();
 
 Нам удалось Добавление дополнительных сведений, задав `ContentAttributeSet` свойство нашей `NSUserActivity` следующим образом:
 
-[ ![](nsuseractivity-images/apphistory02.png "Обзор поиска подробностей сложения")](nsuseractivity-images/apphistory02.png)
+[![](nsuseractivity-images/apphistory02.png "Обзор поиска подробностей сложения")](nsuseractivity-images/apphistory02.png#lightbox)
 
 С помощью `ContentAttributeSet` можно создать результаты широкие возможности поиска, склонить конечным пользователям взаимодействовать с ними.
 
@@ -114,7 +114,7 @@ public override bool ContinueUserActivity (UIApplication application, NSUserActi
 
 Обратите внимание, что это же переопределяющий метод, используемый для ответа на запросы перемещение вручную. Теперь при нажатии на ссылку из нашего приложения в результатах поиска Spotlight нашего приложения будет выведен на передний план (или запуска, если она еще не работает) и будет отображаться содержимое, навигации или компонента, представленного этой ссылки:
 
-[ ![](nsuseractivity-images/apphistory03.png "Восстановите предыдущее состояние из поиска")](nsuseractivity-images/apphistory03.png)
+[![](nsuseractivity-images/apphistory03.png "Восстановите предыдущее состояние из поиска")](nsuseractivity-images/apphistory03.png#lightbox)
 
 <a name="indexing" />
 

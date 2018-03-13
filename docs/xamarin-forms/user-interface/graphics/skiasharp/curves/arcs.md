@@ -4,14 +4,15 @@ description: "Узнайте, как определять дуги тремя р
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: F1DA55E4-0182-4388-863C-5C340213BF3C
 author: charlespetzold
 ms.author: chape
 ms.date: 05/10/2017
-ms.openlocfilehash: 236f5da78022d6f6482ed66ffd439c4cd15766a3
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 390c8f4634ea38ecb93e3f21175db00fef27b8e4
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="three-ways-to-draw-an-arc"></a>Три способа, чтобы нарисовать дугу
 
@@ -100,7 +101,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Как видите, начальный угол и угол поворота может принимать отрицательные значения.
 
-[![](arcs-images/anglearc-small.png "Тройной снимок экрана со страницей угол дуги")](arcs-images/anglearc-large.png "тройной снимок экрана со страницей угол дуги")
+[![](arcs-images/anglearc-small.png "Тройной снимок экрана со страницей угол дуги")](arcs-images/anglearc-large.png#lightbox "тройной снимок экрана со страницей угол дуги")
 
 Такой подход к созданию дугу является типовой простым и легко производные параметрического уравнения, которые описывают дуги. Знание размера и расположения эллипса и угла начала и очистка, начальная и конечная точки дуги можно вычислить с помощью простого тригонометрические функции:
 
@@ -205,11 +206,11 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Новый `SKPath` объекта создается для каждого среза круговой диаграммы. Путь состоит из строки в центре то `ArcTo` обратно нарисовать дуги, а другая строка результаты center `Close` вызова. Эта программа отображает «Разрезанная» сегментами, перемещая их все в центре на 50 пикселей. Эта задача требует вектор в направлении среднюю угол поворота для каждого среза:
 
-[![](arcs-images/explodedpiechart-small.png "Тройной снимок экрана со страницей Разрезанная круговая диаграмма")](arcs-images/explodedpiechart-large.png "тройной снимок экрана со страницей Разрезанная круговая диаграмма")
+[![](arcs-images/explodedpiechart-small.png "Тройной снимок экрана со страницей Разрезанная круговая диаграмма")](arcs-images/explodedpiechart-large.png#lightbox "тройной снимок экрана со страницей Разрезанная круговая диаграмма")
 
 Чтобы увидеть, как оно выглядит без «развертывание», просто закомментировать `Translate` вызова:
 
-[![](arcs-images/explodedpiechartunexploded-small.png "Тройной снимок экрана со страницей Разрезанная круговая диаграмма без развертывания")](arcs-images/explodedpiechartunexploded-large.png "тройной снимок экрана со страницей Разрезанная круговая диаграмма без развертывания")
+[![](arcs-images/explodedpiechartunexploded-small.png "Тройной снимок экрана со страницей Разрезанная круговая диаграмма без развертывания")](arcs-images/explodedpiechartunexploded-large.png#lightbox "тройной снимок экрана со страницей Разрезанная круговая диаграмма без развертывания")
 
 ## <a name="the-tangent-arc"></a>Касательной дуги
 
@@ -413,7 +414,7 @@ public partial class TangentArcPage : InteractivePage
 
 Вот **дуги тангенс** страница, выполняемая на всех трех платформах:
 
-[![](arcs-images/tangentarc-small.png "Тройной снимок экрана со страницей дуги тангенс")](arcs-images/tangentarc-large.png "тройной снимок экрана со страницей тангенс дуги")
+[![](arcs-images/tangentarc-small.png "Тройной снимок экрана со страницей дуги тангенс")](arcs-images/tangentarc-large.png#lightbox "тройной снимок экрана со страницей тангенс дуги")
 
 На устройстве с Windows Mobile почти colinear тремя точками и дуги очень мал.
 
@@ -490,7 +491,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот программу на трех платформ.
 
-[![](arcs-images/roundedheptagon-small.png "Тройной снимок экрана со страницей округленное Heptagon")](arcs-images/roundedheptagon-large.png "тройной снимок экрана со страницей округленное Heptagon")
+[![](arcs-images/roundedheptagon-small.png "Тройной снимок экрана со страницей округленное Heptagon")](arcs-images/roundedheptagon-large.png#lightbox "тройной снимок экрана со страницей округленное Heptagon")
 
 ## <a name="the-elliptical-arc"></a>Эллиптической дуги
 
@@ -585,7 +586,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Здесь выполняется на трех платформах:
 
-[![](arcs-images/ellipticalarc-small.png "Тройной снимок экрана со страницей эллиптической дуги")](arcs-images/ellipticalarc-large.png "тройной снимок экрана со страницей эллиптической дуги")
+[![](arcs-images/ellipticalarc-small.png "Тройной снимок экрана со страницей эллиптической дуги")](arcs-images/ellipticalarc-large.png#lightbox "тройной снимок экрана со страницей эллиптической дуги")
 
 **Дуги бесконечность** страница использует эллиптической дуги для рисования знак бесконечности. Знак бесконечности основана на двух кругов с радиусы 100 единиц измерения, разделенные 100 единиц.
 
@@ -653,7 +654,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Код использует `Bounds` свойство `SKPath` определяет размеры синус бесконечность его масштабированию размер полотна:
 
-[![](arcs-images/arcinfinity-small.png "Тройной снимок экрана со страницей бесконечность дуги")](arcs-images/arcinfinity-large.png "тройной снимок экрана со страницей бесконечность дуги")
+[![](arcs-images/arcinfinity-small.png "Тройной снимок экрана со страницей бесконечность дуги")](arcs-images/arcinfinity-large.png#lightbox "тройной снимок экрана со страницей бесконечность дуги")
 
 Результат кажется слишком маленьким, подразумевает, что `Bounds` свойство `SKPath` сообщает размером, превышающим путь.
 
@@ -661,7 +662,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Чтобы получить более строгого соответствия, используйте `TightBounds` свойство, которое исключает контрольные точки. Ниже приведен в альбомном режиме и с помощью программы `TightBounds` , чтобы получить границы пути:
 
-[![](arcs-images/arcinfinitytightbounds-small.png "Тройной снимок экрана со страницей бесконечность дуги с границами тесной")](arcs-images/arcinfinitytightbounds-large.png "тройной снимок экрана со страницей бесконечность дуги с тесной границами")
+[![](arcs-images/arcinfinitytightbounds-small.png "Тройной снимок экрана со страницей бесконечность дуги с границами тесной")](arcs-images/arcinfinitytightbounds-large.png#lightbox "тройной снимок экрана со страницей бесконечность дуги с тесной границами")
 
 Несмотря на то, что соединения между дуги, а также прямые линии, математически smooth, может показаться немного внезапные изменение дуги на прямой линии. На следующей странице представлен лучше знак бесконечности.
 

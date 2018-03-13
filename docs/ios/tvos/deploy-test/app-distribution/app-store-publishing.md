@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: a3c9c76ce173606d206166b2bcfb9760eb5634ac
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: abb8ee30828e5d9856b9fd72cca8adb669959818
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="publishing-to-the-apple-tv-app-store"></a>Публикации в магазине приложений Apple TV
 
@@ -154,12 +154,12 @@ Apple предоставляет набор специальных служб п
     ![](app-store-publishing-images/buildxs01new.png "Выберите конфигурации выпуска")
 2. В меню **Сборка** выберите **Архивировать для публикации**:
 
-    [ ![](app-store-publishing-images/buildxs02new.png "Выберите "Архивирование для публикации"")](app-store-publishing-images/buildxs02new.png)
+    [![](app-store-publishing-images/buildxs02new.png "Выберите архив для публикации")](app-store-publishing-images/buildxs02new.png#lightbox)
 3. После создания архива появится представление **Архивы**:
 
-    [ ![](app-store-publishing-images/buildxs03new.png "Представление архивы")](app-store-publishing-images/buildxs03new.png)
+    [![](app-store-publishing-images/buildxs03new.png "Представление архивы")](app-store-publishing-images/buildxs03new.png#lightbox)
 
-#<a name="3-sign-and-distribute-your-app"></a>&#3;# подписание и распространение приложения
+### <a name="sign-and-distribute-your-app"></a>Подписывание и распространение приложения
 
 Каждый раз при сборке приложения для архивирования автоматически открывается представление *Архивы*, где отображаются все заархивированные проекты, сгруппированные по решениям. По умолчанию в этом представлении отображаются только открытые на данный момент решения. Чтобы просмотреть все решения с архивами, выберите параметр **Показать все архивы**.
 
@@ -169,19 +169,19 @@ Apple предоставляет набор специальных служб п
 
 1. Выберите **подписание и распространение...** , приведенный ниже:
 
-    [ ![](app-store-publishing-images/buildxs04new.png ", Выберите theSign и распределить...")](app-store-publishing-images/buildxs04new.png)
+    [![](app-store-publishing-images/buildxs04new.png ", Выберите theSign и распределить...")](app-store-publishing-images/buildxs04new.png#lightbox)
 2. Откроется мастер публикации. Выберите **App Store** в качестве канала распространения, чтобы создать пакет, и откройте загрузчик приложений:
 
-    [ ![](app-store-publishing-images/distribute01.png "Выберите канал распространения App Store")](app-store-publishing-images/distribute01.png)
+    [![](app-store-publishing-images/distribute01.png "Выберите канал распространения App Store")](app-store-publishing-images/distribute01.png#lightbox)
 3. На экране профиль подготовки выберите удостоверения подписи и соответствующий профиль подготовки или переподписать с другим удостоверением.
 
-    [ ![](app-store-publishing-images/distribute02.png "Выберите удостоверение подписывания и соответствующий профиль подготовки")](app-store-publishing-images/distribute02.png)
+    [![](app-store-publishing-images/distribute02.png "Выберите удостоверение подписывания и соответствующий профиль подготовки")](app-store-publishing-images/distribute02.png#lightbox)
 4. Проверьте сведения о пакете и затем нажмите кнопку **Опубликовать**, чтобы сохранить пакет `.ipa`:
 
-    [ ![](app-store-publishing-images/distribute03.png "Проверьте сведения о пакете")](app-store-publishing-images/distribute03.png)
+    [![](app-store-publishing-images/distribute03.png "Проверьте сведения о пакете")](app-store-publishing-images/distribute03.png#lightbox)
 5. После сохранения файла `.ipa` ваше приложение готово для загрузки в iTunes Connect с помощью загрузчика приложений:
 
-    [ ![](app-store-publishing-images/distribute04.png "Передан iTunes подключиться через загрузчик приложения")](app-store-publishing-images/distribute04.png)
+    [![](app-store-publishing-images/distribute04.png "Передан iTunes подключиться через загрузчик приложения")](app-store-publishing-images/distribute04.png#lightbox)
 
 После того как была создана и архивирована сборка для распространения, все готово для отправки приложения в iTunes Connect.
 
@@ -196,15 +196,15 @@ Apple предоставляет набор специальных служб п
 
 2. Щелкните *Deliver Your App* (Доставить приложение) и нажмите кнопку *Choose* (Выбрать):
 
-    [ ![](app-store-publishing-images/publishvs01.png "Выбор команды "Deliver Your App" (Доставить приложение)")](app-store-publishing-images/publishvs01.png)
+    [![](app-store-publishing-images/publishvs01.png "Выберите доставка приложения")](app-store-publishing-images/publishvs01.png#lightbox)
 
 3. Выберите ранее созданный ZIP- или IPA-файл и нажмите кнопку **OK**.
 4. Загрузчик приложения выполнит проверку файла:
 
-    [ ![](app-store-publishing-images/publishvs02.png "Экран проверки загрузчика приложений")](app-store-publishing-images/publishvs02.png)
+    [![](app-store-publishing-images/publishvs02.png "Экран проверки загрузчика приложений")](app-store-publishing-images/publishvs02.png#lightbox)
 5. Нажмите кнопку *Next* (Далее). Приложение будет проверено на соответствие требованиям App Store:
 
-    [ ![](app-store-publishing-images/publishvs03.png "Приложения, проверяемого в хранилище приложения")](app-store-publishing-images/publishvs03.png)
+    [![](app-store-publishing-images/publishvs03.png "Приложения, проверяемого в хранилище приложения")](app-store-publishing-images/publishvs03.png#lightbox)
 6. Нажмите кнопку **Send** (Отправить), чтобы отправить приложение на проверку в компанию Apple.
 7. После успешной загрузки появится соответствующее сообщение загрузчика приложений.
 
@@ -214,7 +214,7 @@ Apple предоставляет набор специальных служб п
 
 При входе в iTunes Connect и выберите приложение из списка доступных приложений, состояние в iTunes Connect теперь должно показывать, в том, что это **ожидание проверки** (временно считывать **отправить получил** во время его обработки):
 
-[ ![](app-store-publishing-images/image21.png "Состояние в iTunes подключения, показывающий время ожидания проверки")](app-store-publishing-images/image21.png)
+[![](app-store-publishing-images/image21.png "Состояние в iTunes подключения, показывающий время ожидания проверки")](app-store-publishing-images/image21.png#lightbox)
 
 <a name="Troubleshooting" />
 
@@ -233,6 +233,6 @@ Apple предоставляет набор специальных служб п
 
 - [Работа со значками и изображениями](~/ios/tvos/app-fundamentals/icons-images.md)
 - [Подготовка отправки вашего приложения для новых Apple TV](https://developer.apple.com/tvos/submit/)
-- [Советы по отправке в магазин приложений](https://developer.apple.com/appstore/resources/submission/tips.html)
-- [Общие приложения отклонений](https://developer.apple.com/app-store/review/rejections/)
-- [Рекомендации по оценке App Store](https://developer.apple.com/appstore/resources/approval/guidelines.html)
+- [Советы по отправке в App Store](https://developer.apple.com/appstore/resources/submission/tips.html)
+- [Частые причины отклонения приложений](https://developer.apple.com/app-store/review/rejections/)
+- [Руководство по оценке приложений App Store](https://developer.apple.com/appstore/resources/approval/guidelines.html)

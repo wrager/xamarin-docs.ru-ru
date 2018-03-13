@@ -3,16 +3,16 @@ title: "Часть 5. От привязок данных для MVVM"
 description: "Схема архитектуры Model-View-ViewModel (MVVM) и, следовательно с XAML в виду. Шаблон обеспечивает разделение между трех слоев программного обеспечения — пользовательского интерфейса XAML, который называется представления; базовых данных, называемых моделью. и в роли посредника между представления и модель, вызывается ViewModel. Представление и ViewModel обычно соединяются через привязки данных, определенные в XAML-файле. BindingContext для представления обычно представляет собой экземпляр ViewModel."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 1D6164F9-4ECE-43A6-B583-1F5D5EFC1DDF
+ms.assetid: 48B37D44-4FB1-41B2-9A5E-6D383B041F81
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: b16aa2456cdae7a08f8f9ee8adbc32c124e78e18
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 207bf7649d588f973b400cb452d9d8b246955cdb
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="part-5-from-data-bindings-to-mvvm"></a>Часть 5. От привязок данных для MVVM
 
@@ -59,7 +59,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 Конечно большой проблемой является дата и время набор после сначала при построении страницы и никогда не изменений:
 
-[ ![](data-bindings-to-mvvm-images/oneshotdatetime.png "Представление, содержащее дату и время")](data-bindings-to-mvvm-images/oneshotdatetime-large.png "представление, содержащее дату и время")
+[![](data-bindings-to-mvvm-images/oneshotdatetime.png "Представление, содержащее дату и время")](data-bindings-to-mvvm-images/oneshotdatetime-large.png#lightbox "представление, содержащее дату и время")
 
 XAML-файл может отображать часов, которые всегда показывает текущее время, но его необходимо написать код, чтобы помочь. Если решения с точки зрения MVVM модели и ViewModel являются классами, написан полностью в коде. Представление чаще всего XAML-файл, который ссылается на свойства, определенные в ViewModel через привязки данных.
 
@@ -142,7 +142,7 @@ namespace XamlSamples
 
 `Binding` Расширения разметки на `Text` свойство `Label` форматы `DateTime` свойство. Ниже приведен список.
 
-[ ![](data-bindings-to-mvvm-images/clock.png "Представление, содержащее дату и время с помощью ViewModel")](data-bindings-to-mvvm-images/clock-large.png "представление, содержащее дату и время с помощью ViewModel")
+[![](data-bindings-to-mvvm-images/clock.png "Представление, содержащее дату и время с помощью ViewModel")](data-bindings-to-mvvm-images/clock-large.png#lightbox "представление, содержащее дату и время с помощью ViewModel")
 
 Можно также получить доступ к свойствам объекта `DateTime` свойства ViewModel, разделив их точками:
 
@@ -292,7 +292,7 @@ namespace XamlSamples
 
 Привязка на каждом `Label` значение по умолчанию `OneWay`. Ему нужно только отобразить значение. Однако привязки для каждого `Slider` — `TwoWay`. Это позволяет `Slider` инициализированную из ViewModel. Обратите внимание, что `Color` свойству `Blue` при создании экземпляра ViewModel. Однако изменения в `Slider` также необходимо указать новое значение для свойства в ViewModel, который затем вычисляет новый цвет.
 
-[ ![](data-bindings-to-mvvm-images/hslcolorscroll.png "С помощью привязки данных двусторонняя MVVM")](data-bindings-to-mvvm-images/hslcolorscroll-large.png "MVVM с помощью двусторонней привязки данных")
+[![](data-bindings-to-mvvm-images/hslcolorscroll.png "С помощью привязки данных двусторонняя MVVM")](data-bindings-to-mvvm-images/hslcolorscroll-large.png#lightbox "MVVM с помощью двусторонней привязки данных")
 
 ## <a name="commanding-with-viewmodels"></a>Выполнение команд с ViewModels
 
@@ -553,7 +553,7 @@ namespace XamlSamples
 
 `Command` Свойства первого `Button` , которая отображается в этом разметки привязан к `DeleteCharCommand`; остальные привязаны к `AddCharCommand` с `CommandParameter` именно таким же, как символ, который отображается на `Button` начертания. Вот программы в действии:
 
-[ ![](data-bindings-to-mvvm-images/keypad.png "Калькулятор с помощью команд и MVVM")](data-bindings-to-mvvm-images/keypad-large.png "калькулятора с помощью команд и MVVM")
+[![](data-bindings-to-mvvm-images/keypad.png "Калькулятор с помощью команд и MVVM")](data-bindings-to-mvvm-images/keypad-large.png#lightbox "калькулятора с помощью команд и MVVM")
 
 ### <a name="invoking-asynchronous-methods"></a>Вызов асинхронных методов
 
@@ -678,7 +678,7 @@ XAML-файл для `MainPage` определяет `ListBox` которого 
 
 Страницы отображаются в прокручиваемый список:
 
-[ ![](data-bindings-to-mvvm-images/mainpage.png "Прокручиваемый список страниц")](data-bindings-to-mvvm-images/mainpage-large.png "прокручиваемый список страниц")
+[![](data-bindings-to-mvvm-images/mainpage.png "Прокручиваемый список страниц")](data-bindings-to-mvvm-images/mainpage-large.png#lightbox "прокручиваемый список страниц")
 
 Обработчик в файле кода активируется, когда пользователь выбирает элемент. Задает обработчик `SelectedItem` свойство `ListBox` к `null` создает выбранной страницы и переходит к нему:
 
@@ -695,6 +695,12 @@ private async void OnListViewItemSelected(object sender, SelectedItemChangedEven
     }
 }
 ```
+
+## <a name="video"></a>Видео
+
+> [!VIDEO https://youtube.com/embed/DYRLcqG2BAY]
+
+**Xamarin развивать 2016: MVVM просто с Xamarin.Forms и призмы**
 
 ## <a name="summary"></a>Сводка
 

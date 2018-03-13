@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/11/2017
-ms.openlocfilehash: 2acaef5fd42b867e88fb9b81d401ea752480124a
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 81d4aec3153a4cb7bbb0f3577c5a67acd430f279
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="listview-performance"></a>Производительность элемента управления ListView
 
@@ -45,7 +45,7 @@ public enum ListViewCachingStrategy
 ```
 
 > [!NOTE]
-> **Примечание**: игнорирует универсальной платформы Windows (UWP) [ `RetainElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RetainElement/) кэширование стратегии, поскольку он всегда использует кэширования для повышения производительности. Таким образом, по умолчанию он ведет себя как если бы [ `RecycleElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElement/) применяется стратегия кэширования.
+> Игнорирует универсальной платформы Windows (UWP) [ `RetainElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RetainElement/) кэширование стратегии, поскольку он всегда использует кэширования для повышения производительности. Таким образом, по умолчанию он ведет себя как если бы [ `RecycleElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElement/) применяется стратегия кэширования.
 
 ### <a name="retainelement"></a>RetainElement
 
@@ -101,14 +101,14 @@ public class CustomCell : ViewCell
 Когда [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) использует [ `DataTemplateSelector` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) установите [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/), [ `RecycleElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElement/) кэширования стратегия не кэширует `DataTemplate`s. Вместо этого `DataTemplate` выбран для каждого элемента данных в списке.
 
 > [!NOTE]
-> **Примечание**: [ `RecycleElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElement/) стратегию кэширования имеет необходимое условие, представленные в Xamarin.Forms 2.4, что при [ `DataTemplateSelector` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) будет предложено выбрать [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/) , каждая из которых `DataTemplate` должен возвращать же [ `ViewCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) типа. Например, если [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) с `DataTemplateSelector` , могут возвращать либо `MyDataTemplateA` (где `MyDataTemplateA` возвращает `ViewCell` типа `MyViewCellA`), или `MyDataTemplateB` (где `MyDataTemplateB`возвращает `ViewCell` типа `MyViewCellB`), когда `MyDataTemplateA` возвращается, она должна вернуть `MyViewCellA` или будет вызвано исключение.
+> [ `RecycleElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElement/) Стратегию кэширования имеет необходимое условие, представленные в Xamarin.Forms 2.4, что при [ `DataTemplateSelector` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) будет предложено выбрать [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/), каждая из которых `DataTemplate` должен возвращать же [ `ViewCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) типа. Например, если [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) с `DataTemplateSelector` , могут возвращать либо `MyDataTemplateA` (где `MyDataTemplateA` возвращает `ViewCell` типа `MyViewCellA`), или `MyDataTemplateB` (где `MyDataTemplateB`возвращает `ViewCell` типа `MyViewCellB`), когда `MyDataTemplateA` возвращается, она должна вернуть `MyViewCellA` или будет вызвано исключение.
 
 ### <a name="recycleelementanddatatemplate"></a>RecycleElementAndDataTemplate
 
 [ `RecycleElementAndDataTemplate` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElementAndDataTemplate/) Стратегию кэширования лежит [ `RecycleElement` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElement/) стратегия кэширования, гарантируя, кроме того, что при [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) использует [ `DataTemplateSelector` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) установите [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/), `DataTemplate`s кэшируются на тип элемента в списке. Таким образом `DataTemplate`s выбрать один раз на тип элемента, а не один раз для каждого экземпляра элемента.
 
 > [!NOTE]
-> **Примечание**: [ `RecycleElementAndDataTemplate` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElementAndDataTemplate/) стратегию кэширования имеет необходимое условие, `DataTemplate`, возвращаемый [ `DataTemplateSelector` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) необходимо использовать [ `DataTemplate` ](https://developer.xamarin.com/api/constructor/Xamarin.Forms.DataTemplate.DataTemplate/p/System.Type/) конструктор, принимающий `Type`.
+> [ `RecycleElementAndDataTemplate` ](https://developer.xamarin.com/api/field/Xamarin.Forms.ListViewCachingStrategy.RecycleElementAndDataTemplate/) Стратегию кэширования имеет необходимое условие, `DataTemplate`, возвращаемый [ `DataTemplateSelector` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/) необходимо использовать [ `DataTemplate` ](https://developer.xamarin.com/api/constructor/Xamarin.Forms.DataTemplate.DataTemplate/p/System.Type/) конструктор, принимающий `Type`.
 
 ### <a name="setting-the-caching-strategy"></a>Установка стратегии кэширования
 

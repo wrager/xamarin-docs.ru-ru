@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/25/2017
-ms.openlocfilehash: e9d3e2eecd4c03e7b3046e1ad86dd8a0d70a7f73
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 23a8fcd0633757bfffdb1761c3fc811268341b96
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-row-actions"></a>Работа с действиями строк
 
@@ -177,7 +177,7 @@ table.Delegate = tableDelegate;
 
 При запуске приведенного выше кода и вставляет пользователя, оставшегося на строку таблицы **Hi** кнопка будет отображаться вместо **удалить** кнопки, которая отображается по умолчанию:
 
-[ ![](row-action-images/action01.png "Кнопка Hi, будет отображаться вместо «удалить»")](row-action-images/action01.png)
+[![](row-action-images/action01.png "Кнопка Hi, будет отображаться вместо «удалить»")](row-action-images/action01.png#lightbox)
 
 Если пользователь нажимает кнопку **Hi** кнопки `Hello World!` записываются в консоль в Visual Studio для Mac или Visual Studio при запуске приложения в режиме отладки.
 

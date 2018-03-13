@@ -7,18 +7,17 @@ ms.assetid: 23F57634-2EF9-5C15-C710-B3E19A5AF7E1
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 06/14/2017
-ms.openlocfilehash: 2e54bfc4bea3955dc80a747c4ecce485b78ada1d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 136484644779ac40e661f50ff19cf15884c864c2
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="jelly-bean-features"></a>Функции быть, с ягодами jelly
 
 _В этом документе предоставит общий обзор новых возможностей для разработчиков, которые впервые появились в Android 4.1. Эти возможности включают: расширенный уведомления, обновления для Android луч для совместного использования больших файлов мультимедиа, одноранговая сеть сетевого обнаружения, анимацию, новые разрешения обновлений._
 
-<a name="Overview" />
 
 
 ## <a name="overview"></a>Обзор
@@ -31,21 +30,18 @@ Android 4.1 (уровень API 16), также известный как «Jell
 
 Finally в Android 4.1 добавлены несколько новых разрешений.
 
- <a name="Requirements" />
 
 
 ## <a name="requirements"></a>Требования
 
 Для разработки приложений Xamarin.Android использование Jelly быть, с ягодами требует Xamarin.Android 4.2.6 или более поздней версии и Android 4.1 (уровень API 16) быть установлены через диспетчер Android SDK, как показано на следующем снимке экрана:
 
-[![Выбор в диспетчере Android SDK Android 4.1](jelly-bean-images/image1.png)](jelly-bean-images/image1.png)
+[![Выбор в диспетчере Android SDK Android 4.1](jelly-bean-images/image1.png)](jelly-bean-images/image1.png#lightbox)
 
- <a name="What's_New" />
 
 
 ## <a name="whats-new"></a>Новые возможности
 
- <a name="Animations" />
 
 
 ### <a name="animations"></a>Анимации
@@ -79,7 +75,6 @@ animator.Start();
 
 Как `TimeAnimator` экземпляр запущен, он будет вызывать `ITimeAnimator.ITimeListener`, который затем следует войти как долго animator была запущена и как долго его как была со времени последнего метод был вызван.
 
- <a name="Application_Stack_Navigation" />
 
 
 ### <a name="application-stack-navigation"></a>Стек навигации приложения
@@ -98,7 +93,6 @@ animator.Start();
 -   `OnCreateNavigateUpTaskStack` — Этот метод переопределяется, когда необходимо обеспечить полный контроль над созданием искусственного стека.
 
 
- <a name="Camera" />
 
 
 ### <a name="camera"></a>Камера
@@ -149,19 +143,16 @@ button.Click += (sender, args) => mediaActionPlayer.Play(MediaActionSoundType.Sh
 mediaActionPlayer.Release();
 ```
 
- <a name="Connectivity" />
 
 
 ### <a name="connectivity"></a>Подключение
 
- <a name="Android_Beam" />
 
 
 #### <a name="android-beam"></a>Android луч.
 
 Android луч — это технология на основе NFC, которая позволяет взаимодействовать друг с другом два Android устройства. Android 4.1 реализована Улучшенная поддержка для передачи больших файлов. При использовании нового метода `NfcAdapter.SetBeamPushUris()` Android будут переключаться между альтернативный транспортные механизмы (например, Bluetooth) для достижения скорости быстрой передачи.
 
- <a name="Network_Services_Discovery" />
 
 
 #### <a name="network-services-discovery"></a>Сетевое обнаружение служб
@@ -173,14 +164,12 @@ Android 4.1 содержит новые API для обнаружения слу
 
 Для обнаружения служб в сети и реализация `Nsd.DiscoveryListener` передаваемый `NsdManager.discoverServices()`.
 
- <a name="Network_Usage" />
 
 
 #### <a name="network-usage"></a>Использование сети
 
 Новый метод `ConnectivityManager.IsActiveNetworkMetered` позволяет проверить, если он подключен к сети отслеживаемой устройства. Этот метод можно использовать для управления использованием данных, точно информирования пользователей о том, что может быть ресурсоемким расходов для операций с данными.
 
- <a name="WiFi_Direct_Service_Discovery" />
 
 
 #### <a name="wifi-direct-service-discovery"></a>Обнаружение службы Wi-Fi Direct
@@ -195,14 +184,12 @@ Android 4.1 содержит новые API для обнаружения слу
 -   `SetUpnpServiceResponseListener()` — Этот метод используется для регистрации обратных вызовов, вызываемый при получении ответа на запросы обнаружения Upnp.
 
 
- <a name="Content_Providers" />
 
 
 ### <a name="content-providers"></a>Поставщики содержимого
 
 `ContentResolver` Класс получил новый метод `AcquireUnstableContentProvider`. Этот метод позволяет приложению получить поставщик содержимого «нестабильной». Как правило когда приложение получает поставщика содержимого и аварийно завершает работу, поставщика содержимого, поэтому будет приложение. Для вызова этого метода приложение не произойдет сбой в случае отказа поставщика содержимого. Вместо этого `Android.OS.DeadObjectionException` будет создано из вызовов для поставщика содержимого для оповещения приложения, которое поставщик содержимого исчезла. Поставщик содержимого «нестабильной» полезно при взаимодействии с поставщиками содержимого из других приложений — это менее вероятно, что дефектный код из другого приложения будет влиять на другое приложение.
 
- <a name="Copy_and_Paste_With_Intents" />
 
 
 ### <a name="copy-and-paste-with-intents"></a>Копирование и вставку целей
@@ -214,14 +201,11 @@ Android 4.1 содержит новые API для обнаружения слу
 -   **URI** — это может быть любой URI, таких как HTTP закладки или URI для поставщика содержимого.
 
 
- <a name="Isolated_Services" />
 
 
 ### <a name="isolated-services"></a>Изолированное служб
 
 Изолированной службы является служба, которая выполняется в собственном процессе специальные и не имеет разрешений свои собственные. Только связь со службой, когда запуске службы и привязка к нему через API-Интерфейс службы. Можно объявить службу как изолированное, присвоив свойству `IsolatedProcess="true"` в `ServiceAttribute` , используемая для оформления класса службы.
-
- <a name="Media" />
 
 
 ### <a name="media"></a>Мультимедиа
@@ -245,7 +229,6 @@ Android 4.1 содержит новые API для обнаружения слу
 -   `MediaRouterActionProvider` и `MediaRouteButton` — эти классы позволяют обеспечить согласованность пользовательского интерфейса при выборе и воспроизведение мультимедиа.
 
 
- <a name="Notifications" />
 
 
 ### <a name="notifications"></a>Уведомления
@@ -255,26 +238,25 @@ Android 4.1 позволяет приложениям, большую гибко
 -   `Notification.BigPictureStyle` — Это вспомогательный класс, который будет создавать уведомления, которые будут иметь изображения в них. На рисунке показан пример уведомления с больших изображений.
 
 
- [ ![Снимок экрана примера BigPictureStyle уведомления](jelly-bean-images/image2.png)](jelly-bean-images/image2.png)
+ [![Снимок экрана примера BigPictureStyle уведомления](jelly-bean-images/image2.png)](jelly-bean-images/image2.png#lightbox)
 
 -   `Notification.BigTextStyle` — Это вспомогательный класс, который будет создавать уведомления, которые будут иметь несколько строк текста, такие как электронная почта. На следующем снимке экрана можно увидеть пример стиля новый уведомления:
 
 
- [ ![Снимок экрана примера BigTextStyle уведомления](jelly-bean-images/image3.png)](jelly-bean-images/image3.png)
+ [![Снимок экрана примера BigTextStyle уведомления](jelly-bean-images/image3.png)](jelly-bean-images/image3.png#lightbox)
 
 -   `Notification.InboxStyle` — Это вспомогательный класс, который будет создавать уведомления, которые содержат список строк, таких как фрагменты из сообщения электронной почты, как показано на этом снимке экрана:
 
 
- [ ![Снимок экрана примера Notification.InboxStyle уведомления](jelly-bean-images/image4.png)](jelly-bean-images/image4.png)
+ [![Снимок экрана примера Notification.InboxStyle уведомления](jelly-bean-images/image4.png)](jelly-bean-images/image4.png#lightbox)
 
 Это можно добавить кнопки до двух действий в нижней части сообщения уведомления, когда для уведомления используется стиль Обычный или больше.
 Пример этого можно увидеть на следующем снимке экрана, где отображаются кнопки действий в нижней части уведомления:
 
- [ ![Снимок экрана примера действие кнопок, отображаемых ниже уведомление](jelly-bean-images/image5.png)](jelly-bean-images/image5.png)
+ [![Снимок экрана примера действие кнопок, отображаемых ниже уведомление](jelly-bean-images/image5.png)](jelly-bean-images/image5.png#lightbox)
 
 `Notification` Класс получил новый константы, которые позволяют разработчику указать одно из пяти уровней приоритета для уведомления. Они могут быть установлены для уведомления при помощи `Priority` свойство.
 
- <a name="Permissions" />
 
 
 ### <a name="permissions"></a>Разрешения
@@ -290,7 +272,6 @@ Android 4.1 позволяет приложениям, большую гибко
 
 Важные изменения в Обратите внимание `READ_EXTERNAL_STORAGE` — в настоящее время это разрешение предоставляется автоматически системой Android. Будущие версии Android потребуется приложения, чтобы запросить это разрешение, прежде чем предоставить разрешение.
 
- <a name="Summary" />
 
 
 ## <a name="summary"></a>Сводка

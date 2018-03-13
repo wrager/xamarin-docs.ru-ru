@@ -5,20 +5,24 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: 410C5D19-AA3C-4E0D-B799-E288C5803226
 ms.technology: xamarin-forms
+ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
 ms.date: 07/11/2016
-ms.openlocfilehash: b2decf1331764ed6b1696126d8b23318e329e0c7
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 38d3b6da0dd33e038f2d50209280f2983faf6013
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="application-indexing-and-deep-linking"></a>Индексирование приложения и глубокое связывание
 
 _Индексирование приложения позволяет приложениям, в противном случае — забывается после использует несколько оставаться применимо, в результатах поиска. Глубокое связывание позволяет приложениям реагировать на результат поиска, который содержит данные приложений, как правило, перейдя на страницу, на которые ссылается прямая ссылка. В этой статье показано, как использовать приложение индексирования и глубокое связывание для предоставления доступа к содержимому приложения Xamarin.Forms для поиска на устройствах iOS и Android._
 
-## <a name="overview"></a>Обзор
+> [!VIDEO https://youtube.com/embed/UJv4jUs7cJw]
+
+**Глубокие связывания с Xamarin.Forms и Azure, с [университета Xamarin](https://university.xamarin.com/)**
+
 
 Индексирование Xamarin.Forms приложения и глубокое связывание предоставляют API для публикации метаданных для приложения индексирования, как пользователи перемещаются между приложениями. Затем можно искать индексированное содержимое, в поиску Spotlight, Google поиск или поиск в Интернете. Нажав на результат поиска, который содержит прямая ссылка будет срабатывать событие, которое может обрабатываться с помощью приложения и обычно используется для перехода к странице, на которые ссылается прямая ссылка.
 
@@ -31,7 +35,7 @@ _Индексирование приложения позволяет прило
 Дополнительные сведения об использовании базы данных SQLite см. в разделе [работа с локальной базы данных](~/xamarin-forms/app-fundamentals/databases.md).
 
 > [!NOTE]
-> **Примечание**: приложения Xamarin.Forms индексирования и глубокие связывания функциональность доступна только для iOS и Android платформы и требует iOS 9 и API 23 соответственно.
+> Xamarin.Forms приложения индексирования и сложного связывания функциональность доступна только для iOS и Android платформ и требует iOS 9 и API 23 соответственно.
 
 ## <a name="setup"></a>Установка
 
@@ -106,7 +110,7 @@ Application.Current.AppLinks.RegisterLink (appLink);
 Это добавляет [ `AppLinkEntry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.AppLinkEntry/) экземпляра в приложение [ `AppLinks` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.AppLinks/) коллекции.
 
 > [!NOTE]
-> **Примечание**: `RegisterLink` метод может также использоваться для обновления содержимого, которая индексируется для страницы.
+> `RegisterLink` Метод может также использоваться для обновления содержимого, которая индексируется для страницы.
 
 Один раз [ `AppLinkEntry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.AppLinkEntry/) экземпляр был зарегистрирован для индексирования, он может отображаться в результатах поиска. На следующем рисунке показан индексированное содержимое, в результатах поиска на платформе iOS:
 
@@ -123,7 +127,7 @@ Application.Current.AppLinks.DeregisterLink (appLink);
 Эта функция удаляет [ `AppLinkEntry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.AppLinkEntry/) экземпляра из приложения [ `AppLinks` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.AppLinks/) коллекции.
 
 > [!NOTE]
-> **Примечание**: В ОС Android не удается удалить индексированное содержимое из результатов поиска.
+> В Android не удается удалить индексированное содержимое из результатов поиска.
 
 <a name="responding" />
 
@@ -211,7 +215,7 @@ pageLink.KeyValues.Add("companyName", "Xamarin");
 - `shouldAddToPublicIndex` — `string` любого `true` или `false` , управляет ли добавить индексированное содержимое индекса общедоступном облаке компании Apple, который затем могут быть представлены пользователям, которые еще не установили приложение на устройстве iOS. Однако только потому, что содержимое задана для открытого индексирования, это не значит, что он автоматически добавляется к индексу общедоступном облаке компании Apple. Дополнительные сведения см. в разделе [открытый индексирования поиска](~/ios/platform/search/nsuseractivity.md). Обратите внимание, что этот ключ должно быть присвоено `false` при добавлении личных данных [ `KeyValues` ](https://developer.xamarin.com/api/property/Xamarin.Forms.IAppLinkEntry.KeyValues/) коллекции.
 
 > [!NOTE]
-> **Примечание**: `KeyValues` коллекции не используется на платформе Android.
+> `KeyValues` Коллекции не используется на платформе Android.
 
 Дополнительные сведения о перемещение вручную см. в разделе [Общие сведения о переадресации](~/ios/platform/handoff.md).
 

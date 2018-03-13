@@ -8,21 +8,21 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 07/15/2017
-ms.openlocfilehash: 1a5120f088fca6997eef3a1bc27126b442380cac
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b54adc28e318b263052bb6073390556a198cffe7
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="device-provisioning"></a>Подготовка устройств
 
-_После успешной установки Xamarin.iOS для разработки приложений для iOS можно приступать к подготовке устройства iOS. В этом руководстве описано, как запрашивать сертификаты и профили разработки, работать со службами приложений и развертывать приложения на устройстве._
+_Установив Xamarin.iOS для разработки приложений для iOS можно приступать к подготовке устройства iOS. В этом руководстве описано, как запрашивать сертификаты и профили разработки, работать со службами приложений и развертывать приложения на устройстве._
 
 При разработке приложения Xamarin.iOS важно проверить его не только в симуляторе, но и развернув на физическом устройстве. При работе на физическом устройстве можно выявить ошибки и проблемы с производительностью, вызванные ограничениями оборудования, такими как память или подключение к сети. Чтобы тестировать программы на физическом устройстве, его необходимо *подготовить*, а также уведомить Apple о том, что устройство будет использоваться для тестирования.
 
 Выделенные разделы на приведенном ниже рисунке содержат шаги, необходимые для подготовки iOS к тестированию:
 
-[![](images/provisioningdiagram.png "Выделенные разделы на этом рисунке содержат шаги, необходимые для подготовки iOS к тестированию")](images/provisioningdiagram.png)
+[![](images/provisioningdiagram.png "Выделенные разделы на этом рисунке содержат шаги, необходимые для подготовки iOS к тестированию")](images/provisioningdiagram.png#lightbox)
 
 Следующим шагом после этого является распространение приложения. Дополнительные сведения о развертывании см. в руководствах [Распространение приложений](~/ios/deploy-test/app-distribution/index.md).
 
@@ -84,4 +84,4 @@ Apple предоставляет ряд специальных служб при
 - [Бесплатная подготовка](~/ios/get-started/installation/device-provisioning/free-provisioning.md)
 - [Распространение приложений](~/ios/deploy-test/app-distribution/index.md)
 - [Устранение неполадок](~/ios/deploy-test/troubleshooting.md)
-- [Руководство Apple по распространению приложений](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html)
+- [Руководство Apple. Распространение приложений](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html)

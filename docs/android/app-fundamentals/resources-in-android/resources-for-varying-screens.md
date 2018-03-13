@@ -6,18 +6,17 @@ ms.assetid: 3D17DE45-115C-7192-5685-44F8EEE07DCC
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 10/12/2017
-ms.openlocfilehash: aeb7115e3c7521f6679e8802eb759d7e56ba1cfe
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: fcd77d97d492baee441cfd428e58ea83525f927e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="creating-resources-for-varying-screens"></a>Создание ресурсов для разных экранов
 
 Android сам работает на различных устройствах, каждое из которых самые разнообразные решения, размеров и плотностей экрана. Выполняет масштабирование и размера для обеспечения работы приложения на этих устройствах Android, но это может привести к неоптимальной работы. Например изображения могут быть нечеткими, образов может занимать слишком много (или недостаточно) экрана чего положения элементов пользовательского интерфейса в макете будут перекрываться или быть слишком далеко друг от друга.
 
-<a name="Concepts" />
 
 ## <a name="concepts"></a>Основные понятия
 
@@ -39,7 +38,6 @@ Android сам работает на различных устройствах, 
 
 Для решения этой проблемы предпочитает использовать платформы Android *плотность независимых пикселях (dp)* макетов экрана. С помощью плотность независимых точках, пользователь должен иметь один и тот же физический размер на экранах с различные плотности будут отображаться элементы пользовательского интерфейса.
 
-<a name="Supporting_Various_Screen_Sizes_and_Densities" />
 
 ## <a name="supporting-various-screen-sizes-and-densities"></a>Поддержка различных размеров и плотности
 
@@ -49,7 +47,6 @@ Android обрабатывает большую часть работы, для 
 Android будет масштабироваться drawables во время выполнения до соответствующего размера.
 Тем не менее существует возможность, что это масштабирование вызовет точечные рисунки, чтобы быть нечеткими. Чтобы избежать этого, может потребоваться предоставить альтернативный ресурсы для различные плотности. При разработке устройств для нескольких разрешений и плотности экрана, оказались проще со более высокое или плотность изображения и затем уменьшения масштаба. Это предотвратит стирают ни искривления, могут быть связаны с изменением размеров.
 
-<a name="Declare_the_Screen_Size_the_Application_Supports" />
 
 ### <a name="declare-the-screen-size-the-application-supports"></a>Объявите приложение поддерживает размер экрана
 
@@ -59,29 +56,21 @@ Android будет масштабироваться drawables во время в
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Манифеста Android](resources-for-varying-screens-images/01-android-manifest-vs-sml.png)](resources-for-varying-screens-images/01-android-manifest-vs.png)
-
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
-
-[![Манифеста Android](resources-for-varying-screens-images/01-android-manifest-xs-sml.png)](resources-for-varying-screens-images/01-android-manifest-xs.png)
-
------
-
+[![Манифеста Android](resources-for-varying-screens-images/01-android-manifest-vs-sml.png)](resources-for-varying-screens-images/01-android-manifest-vs.png#lightbox)
 
 **AndroidManifest.xml** добавляется **свойства** каталога. Затем этот файл редактируется для включения [поддерживает экраны](http://developer.android.com/guide/topics/manifest/supports-screens-element.html):
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
-
-[![Добавление экранов поддерживает](resources-for-varying-screens-images/02-adding-supports-screens-vs-sml.png)](resources-for-varying-screens-images/02-adding-supports-screens-vs.png)
+[![Добавление экранов поддерживает](resources-for-varying-screens-images/02-adding-supports-screens-vs-sml.png)](resources-for-varying-screens-images/02-adding-supports-screens-vs.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Добавление экранов поддерживает](resources-for-varying-screens-images/02-adding-supports-screens-xs-sml.png)](resources-for-varying-screens-images/02-adding-supports-screens-xs.png)
+[![Манифеста Android](resources-for-varying-screens-images/01-android-manifest-xs-sml.png)](resources-for-varying-screens-images/01-android-manifest-xs.png#lightbox)
+
+**AndroidManifest.xml** добавляется **свойства** каталога. Затем этот файл редактируется для включения [поддерживает экраны](http://developer.android.com/guide/topics/manifest/supports-screens-element.html):
+
+[![Добавление экранов поддерживает](resources-for-varying-screens-images/02-adding-supports-screens-xs-sml.png)](resources-for-varying-screens-images/02-adding-supports-screens-xs.png#lightbox)
 
 -----
-
-
-<a name="Provide_Alternate_Layouts_for_Different_Screen_Sizes" />
 
 ### <a name="provide-alternate-layouts-for-different-screen-sizes"></a>Укажите альтернативный макеты для разных размеров
 
@@ -148,7 +137,6 @@ Android будет масштабироваться drawables во время в
 -----
 
 
-<a name="Provide_Different_Bitmaps_for_Different_Screen_Densities" />
 
 ### <a name="provide-different-bitmaps-for-different-screen-densities"></a>Укажите другой растровые изображения для плотности другой экран
 
@@ -162,17 +150,15 @@ Android будет масштабироваться drawables во время в
 
 ![Снимки экрана с ресурсов, связанных с плотность](resources-for-varying-screens-images/07-density-specific-resources.png)
 
-<a name="Create_Varying_Density_Resources_with_Android_Asset_Studio" />
 
 ### <a name="create-varying-density-resources-with-android-asset-studio"></a>Создать различные плотности ресурсы с ОС Android Studio
 
 Создание таких изображений различные плотности может быть несколько утомительным. Таким образом, Google создал документации программы, которой могут уменьшить трудоемкость, связанные с созданием растровых изображения вызывается [ **Android Studio активов**](https://romannurik.github.io/AndroidAssetStudio/).
 
-[![ОС Android Studio](resources-for-varying-screens-images/08-android-asset-studio-sml.png)](resources-for-varying-screens-images/08-android-asset-studio.png)
+[![ОС Android Studio](resources-for-varying-screens-images/08-android-asset-studio-sml.png)](resources-for-varying-screens-images/08-android-asset-studio.png#lightbox)
 
 Этот веб-сайт помогут при создании точечных рисунков, который нацелен на четыре общих плотностей экрана, предоставляя один образ. Android Studio активов затем создайте растровые изображения с помощью некоторых настроек и подождите, пока их можно скачать в виде ZIP-файл.
 
-<a name="Tips_for_Multiple_Screens" />
 
 ## <a name="tips-for-multiple-screens"></a>Советы для нескольких экранов
 
@@ -189,7 +175,6 @@ Android выполняется на огромное количество уст
 
 - **Использовать LayoutParams высоты и ширины** — при определении элементов пользовательского интерфейса в макете в XML-файл приложения Android с помощью **wrap_content** и **fill_parent** значения будут иметь дополнительные успех Убедитесь, правильную взглянуть на различных устройствах, чем при использовании пикселей или плотность независимых элементов. Эти значения измерения вызвать Android для масштабирования ресурсов растровое изображение соответствующим образом. По этой же причине плотность независимые единицы зарезервированы лучше всего для при указании поля и заполнение элементов пользовательского интерфейса.
 
-<a name="Testing_Multiple_Screens" />
 
 ## <a name="testing-multiple-screens"></a>Тестирование несколько экранов
 

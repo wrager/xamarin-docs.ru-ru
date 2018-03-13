@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 01/05/2018
-ms.openlocfilehash: cc4407be9dee7e19dbf1f3cc03b3b88191717e6f
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 0c68d2cfd43eb535fe2e02b5662250cb6e453ddd
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширения разметки XAML
 
@@ -137,7 +137,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 Ниже приведен пример, запущенного на всех трех платформ.
 
-[![Демонстрация x: Static](consuming-images/staticdemo-small.png "Демонстрация x: Static")](consuming-images/staticdemo-large.png "Демонстрация x: Static")
+[![Демонстрация x: Static](consuming-images/staticdemo-small.png "Демонстрация x: Static")](consuming-images/staticdemo-large.png#lightbox "Демонстрация x: Static")
 
 <a name="reference" />
 
@@ -181,7 +181,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 Оба `x:Reference` выражения используйте сокращенную версию `ReferenceExtension` имя класса, а также помогает избежать `Name=` часть выражения. В первом примере `x:Reference` расширения разметки, внедренных в `Binding` расширения разметки. Обратите внимание, что `Source` и `StringFormat` параметров разделяются запятыми. Вот программу на всех трех платформ.
 
-[![Демонстрация x: Reference](consuming-images/referencedemo-small.png "Демонстрация x: Reference")](consuming-images/referencedemo-large.png "Демонстрация x: Reference")
+[![Демонстрация x: Reference](consuming-images/referencedemo-small.png "Демонстрация x: Reference")](consuming-images/referencedemo-large.png#lightbox "Демонстрация x: Reference")
 
 <a name="type" />
 
@@ -236,7 +236,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 Вот на главной странице открытия **расширения разметки**:
 
-[![Главной страницы](consuming-images/mainpage-small.png "Main страницы")](consuming-images/mainpage-large.png "главной страницы")
+[![Главной страницы](consuming-images/mainpage-small.png "Main страницы")](consuming-images/mainpage-large.png#lightbox "главной страницы")
 
 Каждый `CommandParameter` свойству `x:Type` расширение разметки, которое ссылается на один из других страниц. `Command` Свойство привязано к свойству с именем `NavigateCommand`. Это свойство определено в `MainPage` файл кода программной части:
 
@@ -319,7 +319,7 @@ public partial class TypeDemoPage : ContentPage
 
 Метод, который является выполняются при `Button` нажатии создает новый экземпляр аргумента, устанавливает его `VerticalOptions` свойство и добавляет его в `StackLayout`. Три `Button` элементы совместно использовать страницу с динамически созданным представления:
 
-[![Демонстрация x: Type](consuming-images/typedemo-small.png "Демонстрация x: Type")](consuming-images/typedemo-large.png "Демонстрация x: Type")
+[![Демонстрация x: Type](consuming-images/typedemo-small.png "Демонстрация x: Type")](consuming-images/typedemo-large.png#lightbox "Демонстрация x: Type")
 
 <a name="array" />
 
@@ -376,7 +376,7 @@ public partial class TypeDemoPage : ContentPage
 
 `ViewCell` Создается простой `BoxView` для каждой записи цвет:
 
-[![Демонстрация x: Array](consuming-images/arraydemo-small.png "Демонстрация x: Array")](consuming-images/arraydemo-large.png "Демонстрация x: Array")
+[![Демонстрация x: Array](consuming-images/arraydemo-small.png "Демонстрация x: Array")](consuming-images/arraydemo-large.png#lightbox "Демонстрация x: Array")
 
 Существует несколько способов, чтобы указать отдельные `Color` элементов в этом массиве. Можно использовать `x:Static` расширения разметки:
 
@@ -449,7 +449,7 @@ public partial class TypeDemoPage : ContentPage
 
 Вот программу на трех платформ.
 
-[![x: Null Демонстрация](consuming-images/nulldemo-small.png "Демонстрация x: Null")](consuming-images/nulldemo-large.png "Демонстрация x: Null")
+[![x: Null Демонстрация](consuming-images/nulldemo-small.png "Демонстрация x: Null")](consuming-images/nulldemo-large.png#lightbox "Демонстрация x: Null")
 
 Обратите внимание, четыре из `Label` элементы имеют шрифт serif, но центр `Label` имеет стандартный шрифт sans serif.
 

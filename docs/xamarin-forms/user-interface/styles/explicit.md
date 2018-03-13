@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/17/2016
-ms.openlocfilehash: 43a1a5ee6a8bd9d53f6fd44be935ae7573db6812
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1fbc12288527c053a24041aa6c49cc1a4abdde55
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="explicit-styles"></a>Явные стили
 
@@ -64,7 +64,7 @@ _Явный стиль —, выборочно применять к элеме�
 
 [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) Определяет три *явных* стили, примененные к странице [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) экземпляров. Каждый `Style` используется для отображения текста в другой цвет, а для параметра шрифта параметры размера и горизонтальные и вертикальные макета. Каждый `Style` применяется к другому `Label` , установив его [ `Style` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Style/) свойства с помощью `StaticResource` расширения разметки. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](explicit-images/explicit-styles.png "Пример явной стилей")](explicit-images/explicit-styles-large.png "Пример явной стилей")
+[![](explicit-images/explicit-styles.png "Пример явной стилей")](explicit-images/explicit-styles-large.png#lightbox "Пример явной стилей")
 
 Кроме того, конечный [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) имеет [ `Style` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) применяемый к нему, но также переопределяет [ `TextColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Label.TextColor/) свойство для разных `Color`значение.
 
@@ -95,7 +95,7 @@ _Явный стиль —, выборочно применять к элеме�
 
 Дополнительные сведения о создании стилей в приложении [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/), в разделе [глобальные стили](~/xamarin-forms/user-interface/styles/application.md).
 
-## <a name="creating-an-explicit-style-in-c35"></a>Создание явный стиль нов &#35;
+## <a name="creating-an-explicit-style-in-c35"></a>Создание явный стиль в C&#35;
 
 [`Style`](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) экземпляры можно добавить на страницу [ `Resources` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Resources/) коллекции для C#, создав новую [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/)и затем добавив `Style` экземпляров `ResourceDictionary`, как показано в Следующий пример кода:
 

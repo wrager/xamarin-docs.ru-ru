@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 1e3139eb4c94264c91307f6f8a69b183f3bf7fa6
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f4917eafff020bb0e2d14a27d3c1a44d1d4087d7
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="layout-options"></a>Параметры макета
 
@@ -25,11 +25,11 @@ ms.lasthandoff: 02/27/2018
 
 При изменении размера окна, например при повороте устройства и изменение ориентации, система автоматически изменится представления в соответствии с правилами автоматическое изменение размера этого окна. Эти правила можно задать в C# с помощью `AutoresizingMask` свойство `UIView` или в **панель свойств** из iOS конструктора, как показано ниже:
 
- [ ![](layout-options-images/image41.png "Visual Studio для Mac конструктора")](layout-options-images/image41.png)
+ [![](layout-options-images/image41.png "Visual Studio для Mac конструктора")](layout-options-images/image41.png#lightbox)
 
 При выборе элемента управления, это позволяет вручную указать расположение и размеры элемента управления, а также выбор **автоматическое изменение размера** поведение. Как показано на следующем снимке экрана, можно использовать пружины и struts в автоматическое изменение размера элемента управления для определения связи выбранное представление для его родительский объект:
 
- [ ![](layout-options-images/image42.png "Visual Studio для Mac конструктора")](layout-options-images/image42.png)
+ [![](layout-options-images/image42.png "Visual Studio для Mac конструктора")](layout-options-images/image42.png#lightbox)
 
 Настройка *spring* приведет к представления для изменения размера на основе ширину или высоту его родительского представления. Настройка *strut* станет поддерживать постоянное расстояние между ним и его родительского представления для этой конкретной границы представления.
 
@@ -43,7 +43,7 @@ textfield1.AutoresizingMask = UIViewAutoresizing.FlexibleRightMargin | UIViewAut
 
 Чтобы проверить параметры автоматическое изменение размера, включение различных **поддерживаемые ориентации устройства** в параметрах проекта:
 
- [ ![](layout-options-images/image43a.png "Параметры автоматическое изменение размера")](layout-options-images/image43a.png)
+ [![](layout-options-images/image43a.png "Параметры автоматическое изменение размера")](layout-options-images/image43a.png#lightbox)
 
 В коде можно использовать следующий код, который вызывает два текстовых элементов управления для изменения размера по горизонтали:
 
@@ -56,11 +56,11 @@ imageview1.AutoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutor
 
 Также можно настроить с помощью конструктора элементов управления. Выбор struts как короткая ниже вызовет изображение оставаться по правому краю, не будучи обрезанным в нижней части представления:
 
- [ ![](layout-options-images/autoresize.png "AutoRotation")](layout-options-images/autoresize.png)
+ [![](layout-options-images/autoresize.png "AutoRotation")](layout-options-images/autoresize.png#lightbox)
 
 Эти снимки экрана показано, как изменить размер элементов управления, или положение сами при повороте экрана.
 
- [ ![](layout-options-images/image44a.png "AutoRotation")](layout-options-images/image44a.png)
+ [![](layout-options-images/image44a.png "AutoRotation")](layout-options-images/image44a.png#lightbox)
 
 Обратите внимание, что представление текста и текстовое поле и растянуть остаться без изменений слева правой границы, из-за `FlexibleWidth` параметр. Изображение имеет верхнего и левого поля гибкий, это означает, что он сохраняет нижнего и правого полей — Сохранение изображения во время повороте экрана. Сложные макеты обычно требуется сочетание этих параметров чтобы сохранить согласованность пользовательского интерфейса и элементов управления из перекрывающихся при изменении границ представления (из-за смены или другое событие изменения размера) каждого видимого элемента управления.
 

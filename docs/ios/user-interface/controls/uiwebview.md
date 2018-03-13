@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 83e01bba82713b55a0a69858c2a83aa243f71588
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 70703797792a2f667a2eb20cbc45d1736e5e6b9d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="web-views"></a>Веб-представления
 
@@ -40,7 +40,7 @@ webView.LoadRequest(new NSUrlRequest(new NSUrl(url)));
 
 Получается следующий веб-представление.
 
-[ ![](uiwebview-images/webview.png "Эффект ScalesPagesToFit")](uiwebview-images/webview.png)
+[![](uiwebview-images/webview.png "Эффект ScalesPagesToFit")](uiwebview-images/webview.png#lightbox)
 
 Дополнительные сведения об использовании `UIWebView`, см. следующие рецепты:
 
@@ -68,7 +68,7 @@ webView.LoadRequest(new NSUrlRequest(new NSUrl(url)));
 
 Получается следующий веб-представление.
 
-[ ![](uiwebview-images/wkwebview.png "Пример веб-представление без ScalesPagesToFit")](uiwebview-images/wkwebview.png)
+[![](uiwebview-images/wkwebview.png "Пример веб-представление без ScalesPagesToFit")](uiwebview-images/wkwebview.png#lightbox)
 
 Важно обратить внимание, что `WKWebView` находится в пространстве имен WebKit, их необходимо добавить это с помощью директивы в начало класса.
 
@@ -98,7 +98,7 @@ PresentViewController(sfViewController, true, null);
 
 Получается следующий веб-представление.
 
-[ ![](uiwebview-images/sfsafariviewcontroller.png "Пример веб-представление с SFSafariViewController")](uiwebview-images/sfsafariviewcontroller.png)
+[![](uiwebview-images/sfsafariviewcontroller.png "Пример веб-представление с SFSafariViewController")](uiwebview-images/sfsafariviewcontroller.png#lightbox)
 
 ## <a name="safari"></a>Safari
 
@@ -113,7 +113,7 @@ UIApplication.SharedApplication.OpenUrl(url);
 
 Получается следующий веб-представление.
 
-[ ![](uiwebview-images/safari.png "Веб-страницы, представленных в Safari")](uiwebview-images/safari.png)
+[![](uiwebview-images/safari.png "Веб-страницы, представленных в Safari")](uiwebview-images/safari.png#lightbox)
 
 Переход пользователей приложения в Safari обычно всегда следует избегать. Большинство пользователей не ожидает перехода за пределами приложения, поэтому при покидании приложения пользователи могут никогда не возвращается, по существу выполняется прерывание обязательств.
 

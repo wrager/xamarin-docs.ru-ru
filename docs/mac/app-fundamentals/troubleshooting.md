@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: f7ded8fdc1274f7c98d8f7134f6a87c7ba767646
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9b0d757c951f9244beb093a0a9b13ac1d069b507
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="reporting-bugs"></a>Регистрации ошибок
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 02/27/2018
 
 Отладчик подключается к приложениям Xamarin.Mac через TCP, это означает, что по умолчанию при включении песочницы, не удается подключиться к приложению, поэтому при попытке запустить приложение без соответствующих разрешений, который включен, возникает сообщение об ошибке *«не удалось подключиться к отладчик»*. 
 
-[![Изменение прав](troubleshooting-images/debug01.png "редактирование прав")](troubleshooting-images/debug01-large.png)
+[![Изменение прав](troubleshooting-images/debug01.png "редактирование прав")](troubleshooting-images/debug01-large.png#lightbox)
 
 **Разрешить исходящих сетевых соединений (клиент)** разрешение является требуемую для отладчика, включение этого класса, позволит отладку в обычном режиме. Поскольку нельзя выполнять отладку без него, мы обновили `CompileEntitlements` целевого объекта для `msbuild` для автоматического добавления этого разрешения прав для любого приложения, изолированным для отладки только сборок. Построения выпуска следует использовать права, указанные в файле прав, без изменений.
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 02/27/2018
 
 Это могут быть устранены, открыв параметры проекта Xamarin.Mac, перейдите в **построения Mac** > **интернационализации** и проверка **Западная** Интернационализация:
 
-[![Изменение параметров построения](troubleshooting-images/issue01.png "параметры построения редактирования")](troubleshooting-images/issue01-large.png)
+[![Изменение параметров сборки](troubleshooting-images/issue01.png "Editing the build options")](troubleshooting-images/issue01-large.png#lightbox)
 
 ### <a name="failed-to-compile-mm5103"></a>Не удалось скомпилировать (mm5103)
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/27/2018
 
 Если дважды щелкнуть **Entitlements.plist** будет отображен файл в редакторе прав:
 
-[![Изменение прав](troubleshooting-images/entitlements02.png "редактирование прав")](troubleshooting-images/entitlements02-large.png)
+[![Изменение прав](troubleshooting-images/entitlements02.png "редактирование прав")](troubleshooting-images/entitlements02-large.png#lightbox)
 
 Для существующих проектов Xamarin.Mac, необходимо вручную создать **Entitlements.plist** файл путем щелчка правой кнопкой мыши проект в **Pad решения** и выбрав **добавить**  >  **Новый файл...** . Затем выберите **Xamarin.Mac** > **пустой список свойств**:
 
@@ -108,7 +108,7 @@ ms.lasthandoff: 02/27/2018
 
 Введите `Entitlements` имя и нажмите кнопку **New** кнопки. Если проект ранее файл прав, будет предложено добавить его в проект, а не создавать новый файл:
 
-[![Проверка перезаписи файла](troubleshooting-images/entitlements04.png "проверка перезаписи файла")](troubleshooting-images/entitlements04-large.png)
+[![Проверка перезаписи файла](troubleshooting-images/entitlements04.png "проверка перезаписи файла")](troubleshooting-images/entitlements04-large.png#lightbox)
 
 ## <a name="contacting-support-business-or-enterprise-licenses"></a>Обращение в службу поддержки (business или корпоративных лицензий)
 
@@ -124,14 +124,14 @@ ms.lasthandoff: 02/27/2018
 
 Ваши отзывы очень важны для нас. Если проблемы с Xamarin.Mac обнаружены:
 
-- Поиск [проблема репозитория](https://github.com/xamarin/xamarin-macios/issues) 
-- Перед переходом к проблемам GitHub Xamarin проблемы были отслежены на [Bugzilla](https://bugzilla.xamarin.com/describecomponents.cgi). Выполните поиск существует соответствующих проблем.
-- Если не удается найти соответствующий проблемы, отправьте новый выпуск в [репозитории GitHub проблема](https://github.com/xamarin/xamarin-macios/issues/new).
+- Проверьте [репозиторий проблем](https://github.com/xamarin/xamarin-macios/issues). 
+- До перехода на GitHub проблемы Xamarin отслеживались в [Bugzilla](https://bugzilla.xamarin.com/describecomponents.cgi). Попробуйте найти там похожие проблемы.
+- Если вы не можете найти проблему, с которой столкнулись, поместите ее описание в [репозиторий проблем GitHub](https://github.com/xamarin/xamarin-macios/issues/new).
 
-Вопросы GitHub, все открытые. Скрыть комментарии или вложения невозможна. 
+Все проблемы GitHub находятся в открытом доступе. Здесь нет возможности скрыть комментарии или вложения. 
 
-Укажите объем следующие возможности:                                                                                                                                          
+Предоставьте следующие сведения с максимально возможными подробностями.                                                                                                                                          
 
-- Простой пример воспроизведения проблемы. Это **бесценным** там, где это возможно. 
-- Трассировка стека полного сбоя.
-- Код C# вокруг сбоя. 
+- Простой пример, воспроизводящий проблему, если это возможно. Такая помощь будет **бесценной**. 
+- Полная трассировка стека после сбоя.
+- Код C#, относящийся к проявлению сбоя. 

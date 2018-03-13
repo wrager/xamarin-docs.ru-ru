@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 08/21/2017
-ms.openlocfilehash: a963922dfdc07164b7c20f84be4f0b87440bff13
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4a7947c40d80c0ff8cb35dab54a11907280335d9
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="listview-parts-and-functionality"></a>Части ListView и функциональные возможности
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -31,41 +30,36 @@ ms.lasthandoff: 02/27/2018
 
 Использовать эти снимки экрана basic `ListView` элемента управления для отображения быстро прокрутку и индекс секции к просмотру:
 
-[![Снимки экрана приложений, используя обычные старые строки быстрый прокрутку и индекс секции](parts-and-functionality-images/listviewparts.png)](parts-and-functionality-images/listviewparts.png)
+[![Снимки экрана приложений, используя обычные старые строки быстрый прокрутку и индекс секции](parts-and-functionality-images/listviewparts.png)](parts-and-functionality-images/listviewparts.png#lightbox)
 
 Элементы, которые составляют `ListView` описаны более подробно ниже:
 
-<a name="Rows" />
 
 ## <a name="rows"></a>Строки
 
 Каждая строка имеет свой собственный `View`. Представление может быть одним из встроенных представлений, определенных в `Android.Resources`, или пользовательское представление. Каждой строке можно использовать один и тот же макет представления или они могут различаться. Существуют примеры в этом документе с помощью встроенных макетов и другим пользователям о том, как определить пользовательские макеты.
 
-<a name="Adapter" />
 
 ## <a name="adapter"></a>Адаптер
 
 `ListView` Для элемента управления `Adapter` для предоставления форматированный `View` для каждой строки. Android имеет встроенные адаптеры и представления, которые можно использовать, или пользовательские классы могут быть созданы.
 
-<a name="Fast_Scrolling" />
 
 ## <a name="fast-scrolling"></a>Быстрая прокрутка
 
 Если `ListView` содержит много строк данных fast прокрутку можно включить, чтобы помочь пользователю перейти к любой части списка. Fast прокрутка «полоса прокрутки» может быть при необходимости включено (и настраиваемые на уровне API 11 и более поздней версии).
 
-<a name="Section_Index" />
 
 ## <a name="section-index"></a>Индекс секции
 
 Во время прокрутки длинных списках, индекс дополнительный раздел предоставляет пользователю отзыв на какие-либо часть списка просматривает в настоящий момент. Подходит только в длинных списках, обычно в сочетании с быстрой прокрутки.
 
-<a name="Classes_Overview" />
 
 ## <a name="classes-overview"></a>Общие сведения о классах
 
 Основных классов, используемых для отображения `ListViews` показано ниже:
 
-[![UML-схема, иллюстрирующая связи между ListView и связанных классов](parts-and-functionality-images/image2.png)](parts-and-functionality-images/image2.png)
+[![UML-схема, иллюстрирующая связи между ListView и связанных классов](parts-and-functionality-images/image2.png)](parts-and-functionality-images/image2.png#lightbox)
 
 Назначение каждого класса описан ниже.
 

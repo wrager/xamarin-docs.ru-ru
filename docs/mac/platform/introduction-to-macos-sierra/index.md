@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: d81776dcb48d33927ffde4087ceb3f408b38d16f
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 036e1ddc95f8eabec3e87c13c25cad972c29a5d1
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-macos-sierra"></a>Общие сведения о macOS Сьерра
 
@@ -52,7 +52,7 @@ macOS Сьерра включает новую платформу ApplePay Javas
 
 MacOS современных приложений, таких как Apple веб-браузера Safari, страниц word процессора и номера разворота лист открыть много новых технологий для унифицированной, зависящие от контекста пользовательского интерфейса, выполняющий с традиционные элементы пользовательского интерфейса, такие как плавающие панели и нескольких Windows.
 
-[ ![Пример окна с вкладками Mac](images/content08.png)](images/content08.png)
+[![Пример окна с вкладками Mac](images/content08.png)](images/content08.png#lightbox)
 
 Наш [macOS создание современных приложений](~/mac/platform/introduction-to-macos-sierra/modern-cocoa-apps.md) руководство охватывает несколько советов, функции и методы разработчик может использовать для выполнения сборки приложения в Xamarin.Mac современных macOS.
 
@@ -152,5 +152,5 @@ Apple предоставляет следующие рекомендации п�
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Образцы Mac](https://developer.xamarin.com/samples/mac/)
+- [Примеры Mac](https://developer.xamarin.com/samples/mac/)
 - [Новые возможности OS X 10.12](https://developer.apple.com/library/prerelease/content/releasenotes/MacOSX/WhatsNewInOSX/Articles/OSXv10.html#//apple_ref/doc/uid/TP40017145-SW1)

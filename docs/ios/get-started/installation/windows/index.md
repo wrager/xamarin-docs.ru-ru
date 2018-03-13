@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/29/2017
-ms.openlocfilehash: e3416b0551bafcd7ab87b21eafbe56b733f359a4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cfbe2df23317ee3ad11c9970ab892ddcc251b9d6
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="installing-xamarinios-on-windows"></a>Установка Xamarin.iOS в Windows
 
@@ -34,7 +34,7 @@ Xamarin.iOS для Visual Studio поддерживает конфигураци
 
 На схеме ниже представлен рабочий процесс разработки с помощью Xamarin.iOS в общей форме:
 
-[![Рабочий процесс разработки с помощью Xamarin.iOS](images/xma2.png)](images/xma2.png)
+[![Рабочий процесс разработки с помощью Xamarin.iOS](images/xma2.png)](images/xma2.png#lightbox)
 
 > [!IMPORTANT]
 >  Для сборки проектов Visual Studio запускает отдельный процесс MSBuild. Этот процесс создает новое подключение к компьютеру Mac, то есть во время выполнения сборки в среде Visual Studio между компьютерами Windows и Mac имеются два подключения SSH. При сборке из [командной строки](~/ios/get-started/installation/windows/connecting-to-mac/index.md) создается только один процесс MSBuild. Для простоты все подключения на схеме представлены одной стрелкой.
@@ -44,7 +44,7 @@ Xamarin.iOS для Visual Studio поддерживает конфигураци
 Расширение Xamarin.iOS для Visual Studio дает удивительную возможность: оно позволяет разработчикам создавать, выполнять сборку и отладку приложений iOS на компьютере Windows с помощью интегрированной среды разработки Visual Studio. Однако оно не может использоваться отдельно — приложения iOS невозможно создавать без компилятора Apple и развертывать без сертификатов и средств подписывания кода Apple. Это означает, что расширению Xamarin.iOS для Visual Studio требуется подключение к подключенному к сети компьютеру с Mac OS X для выполнения этих задач. После настройки работа со средствами Xamarin максимально удобна.
 
 
-<a name="system-requirements">
+<a name="system-requirements"/>
 
 ### <a name="system-requirements"></a>Требования к системе
 
@@ -72,13 +72,9 @@ Xamarin.iOS для Visual Studio поддерживает конфигураци
 
 **Компьютер Windows должен иметь возможность подключения к компьютеру Mac по сети.**
 
-<a name="appleaccount" />
-
 ### <a name="apple-developer-account"></a>Учетная запись разработчика Apple
 
 Для развертывания приложений на устройстве или их отправки в App Store требуется учетная запись разработчика Apple. Чтобы расширение Xamarin.iOS для Visual Studio могло работать, на подключенном к сети компьютере Mac должны быть созданы и установлены соответствующие сертификаты разработчика и профили подготовки. Инструкции по получению сертификата разработки и подготовке устройства см. в статье [Подготовка устройств](~/ios/get-started/installation/device-provisioning/index.md).
-
-<a name="features" />
 
 ## <a name="features"></a>Функции 
 
@@ -100,6 +96,7 @@ Xamarin.iOS для Visual Studio позволяет создавать, реда
 
 ## <a name="configuring-your-mac"></a>Настройка компьютера Mac
 
+<a name="installation"/>
 
 ### <a name="installation"></a>Установка
 
@@ -148,7 +145,7 @@ Xamarin.iOS для Visual Studio позволяет создавать, реда
 
 Настроив компьютер Mac, можно приступать к настройке компьютера Windows.
 
-<a name="windowsinstallation">
+<a name="windowsinstallation"/>
 
 ## <a name="windows-installation"></a>Установка в Windows
 
@@ -159,7 +156,7 @@ Xamarin можно установить в составе установки Vis
 После завершения процесса установки нужно выполнить еще ряд действий, чтобы подготовить систему к работе:
 
 - [Подключите Visual Studio к компьютеру Mac](#connectingtomac) — для сборки проектов Xamarin.iOS среду Visual Studio необходимо подключить к узлу сборки Mac.
-- [Настройте панель инструментов Visual Studio](#Visual_Studio_Toolbar_Overview) — это позволит легко получать доступ к функциям Xamarin.iOS в Visual Studio.
+- [Настройте панель инструментов Visual Studio](#toolbar) — это позволит легко получать доступ к функциям Xamarin.iOS в Visual Studio.
 
 <a name="connectingtomac" /> 
 
@@ -171,19 +168,19 @@ Xamarin.iOS для Visual Studio подключается к узлу сборк
 
 - Выберите пункт меню **Сервис > Параметры**, а затем в узле **Xamarin** выберите элемент **Параметры iOS**:
 
-  [![Экран параметров iOS](images/image2.png)](images/image2.png)
+  [![Экран параметров iOS](images/image2.png)](images/image2.png#lightbox)
 
 - Если на компьютере Mac правильно [настроен](#configuration) **удаленный вход**, вы сможете выбрать этот компьютер в списке.
 
-  [![Диалоговое окно выбора удаленного узла](images/xma3.png)](images/xma3.png)
+  [![Диалоговое окно выбора удаленного узла](images/xma3.png)](images/xma3.png#lightbox)
 
 - Появится запрос на ввод учетных данных администратора узла Mac:
 
-  [![Диалоговое окно входа](images/xma4.png)](images/xma4.png)
+  [![Диалоговое окно входа](images/xma4.png)](images/xma4.png#lightbox)
 
 - После подключения рядом с именем компьютера появится значок "Подключение выполнено успешно":
 
-  [![Диалоговое окно удаленного узла со значком успешного подключения рядом с именем компьютера](images/image6.png)](images/image6.png)
+  [![Диалоговое окно удаленного узла со значком успешного подключения рядом с именем компьютера](images/image6.png)](images/image6.png#lightbox)
 
 При каждом запуске Visual Studio подключение будет устанавливаться повторно.
 
@@ -197,7 +194,7 @@ Xamarin.iOS для Visual Studio подключается к узлу сборк
 
 Чтобы настроить панель инструментов, сначала откройте меню **Вид > Панели инструментов** и убедитесь в том, что пункт **iOS** выбран. Чтобы панель инструментов отображалась, пункт меню должен быть отмечен, как показано на снимке экрана:
 
-[![Выберите "Панели инструментов" > "iOS"](images/image31.png)](images/image31.png)
+[![Выберите "Панели инструментов" > "iOS"](images/image31.png)](images/image31.png#lightbox)
 
 ### <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -208,11 +205,11 @@ Xamarin.iOS для Visual Studio подключается к узлу сборк
 - Выберите пункт **Добавить или удалить кнопки**
 - Выберите элемент **Платформы решения**
 
-[![Выберите элемент "Платформы решения"](images/image35.png)](images/image35.png)
+[![Выберите элемент "Платформы решения"](images/image35.png)](images/image35.png#lightbox)
 
 Панели элементов **Стандартная** и **iOS** теперь должны выглядеть примерно так, как показано на этом снимке экрана:
 
-[![Панели элементов "Стандартная" и "iOS" теперь должны выглядеть примерно так, как показано на этом снимке экрана](images/image36.png)](images/image36.png)
+[![Панели элементов "Стандартная" и "iOS" теперь должны выглядеть примерно так, как показано на этом снимке экрана](images/image36.png)](images/image36.png#lightbox)
 
 Завершив настройку панели инструментов, можно приступать к использованию Xamarin iOS для Visual Studio.
 

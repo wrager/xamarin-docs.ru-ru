@@ -8,17 +8,17 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 7eea7231ec4300a368e4612cbed2ba4ebc044a26
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 807ae6554d029120ad28f8fb8cc6c57ba3b58c8c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="annotations-and-overlays--walkthrough"></a>Заметки и наложения — Пошаговое руководство
 
 Приложение, которое мы собираемся в данном пошаговом руководстве показан ниже:
 
- [![](ios-maps-walkthrough-images/00-map-overlay.png "Пример приложения MapKit")](ios-maps-walkthrough-images/00-map-overlay.png)
+ [![](ios-maps-walkthrough-images/00-map-overlay.png "Пример приложения MapKit")](ios-maps-walkthrough-images/00-map-overlay.png#lightbox)
  
 Можно найти полный код в **MapsWalkthroughComplete** папку внутри [карты демонстрационный пример](https://developer.xamarin.com/samples/monotouch/MapDemo/).
 
@@ -279,7 +279,7 @@ ms.lasthandoff: 02/27/2018
 
 Запустите приложение. Теперь у нас есть интерактивной карты с пользовательской заметкой и наложение! Коснитесь заметку, а изображение Остине отображается, как показано ниже:
 
- [![](ios-maps-walkthrough-images/01-map-image.png "Коснитесь заметку, а изображение Остине")](ios-maps-walkthrough-images/01-map-image.png)
+ [![](ios-maps-walkthrough-images/01-map-image.png "Коснитесь заметку, а изображение Остине")](ios-maps-walkthrough-images/01-map-image.png#lightbox)
 
 ## <a name="summary"></a>Сводка
 

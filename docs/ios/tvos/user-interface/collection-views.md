@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: f0201e114f55e0610aceb68f98fae60a801afc68
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f943d6b88d2fd7f38759fb32ecb612e102266657
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-collection-views"></a>Работа с представлениями коллекции
 
@@ -20,7 +20,7 @@ _В этой статье описывается проектирование и
 
 Представления коллекций позволяют группу содержимое будет отображаться с использованием произвольного макеты. С помощью встроенной поддержки, они позволяют легко создавать макеты вид сетки или линейного, поддерживая пользовательских макетов.
 
-[ ![](collection-views-images/collection01.png "Пример представления коллекции")](collection-views-images/collection01.png)
+[![](collection-views-images/collection01.png "Пример представления коллекции")](collection-views-images/collection01.png#lightbox)
 
 Представление коллекции поддерживает коллекцию элементов с помощью делегата и источником данных для обеспечения взаимодействия с пользователем и содержимое коллекции. Так как представление коллекции основан на подсистемы разметки, которое не зависит от самого представления, предоставляя структуру можно легко изменить представление представление коллекции данных на лету.
 
@@ -103,36 +103,36 @@ public CityCollectionView (IntPtr handle) : base (handle)
 1. В **обозревателе решений**, дважды щелкните файл `Main.storyboard` и откройте его в конструкторе iOS.
 1. Добавить представление изображения, метки кнопки на существующие и настроить их на следующий вид: 
 
-    [ ![](collection-views-images/collection02.png "Пример макета")](collection-views-images/collection02.png)
+    [![](collection-views-images/collection02.png "Пример макета")](collection-views-images/collection02.png#lightbox)
 1. Назначьте **имя** представление изображения и метки в **вкладку графического** из **свойства обозревателя**. Пример: 
 
-    [ ![](collection-views-images/collection03.png "Имя параметра")](collection-views-images/collection03.png)
+    [![](collection-views-images/collection03.png "Имя параметра")](collection-views-images/collection03.png#lightbox)
 1. Затем перетащите раскадровку контроллер представление коллекции: 
 
-    [ ![](collection-views-images/collection04.png "Контроллер представление коллекции")](collection-views-images/collection04.png)
+    [![](collection-views-images/collection04.png "Контроллер представление коллекции")](collection-views-images/collection04.png#lightbox)
 1. Перетаскивание с помощью кнопки на контроллер представление коллекции и выберите **Push** из всплывающего окна: 
 
-    [ ![](collection-views-images/collection05.png "Выберите из контекстного меню Push")](collection-views-images/collection05.png)
+    [![](collection-views-images/collection05.png "Выберите из контекстного меню Push")](collection-views-images/collection05.png#lightbox)
 1. При запуске приложения станет представление коллекции будет показывать всякий раз, когда пользователь нажимает кнопку.
 1. Выберите представление коллекции и введите следующие значения в **вкладка «Макет»** из **свойства обозревателя**: 
 
-    [ ![](collection-views-images/collection06.png "Обозреватель свойств")](collection-views-images/collection06.png)
+    [![](collection-views-images/collection06.png "Обозреватель свойств")](collection-views-images/collection06.png#lightbox)
 1. Определяет размер отдельных ячеек и границы между ячейками и внешнего края представление коллекции.
 1. Выберите контроллер представление коллекции и задайте его класс `CityCollectionViewController` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection07.png "Задайте класс CityCollectionViewController")](collection-views-images/collection07.png)
+    [![](collection-views-images/collection07.png "Задайте класс CityCollectionViewController")](collection-views-images/collection07.png#lightbox)
 1. Выберите представление коллекции и задайте его класс `CityCollectionView` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection08.png "Задайте класс CityCollectionView")](collection-views-images/collection08.png)
+    [![](collection-views-images/collection08.png "Задайте класс CityCollectionView")](collection-views-images/collection08.png#lightbox)
 1. Выберите ячейку представления коллекции и задайте его класс `CityCollectionViewCell` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection09.png "Задайте класс CityCollectionViewCell")](collection-views-images/collection09.png)
+    [![](collection-views-images/collection09.png "Задайте класс CityCollectionViewCell")](collection-views-images/collection09.png#lightbox)
 1. В **вкладку графического** убедитесь, что **макета** — `Flow` и **направления прокрутки** — `Vertical` для представления коллекции: 
 
-    [ ![](collection-views-images/collection10.png "Вкладка мини-приложения")](collection-views-images/collection10.png)
+    [![](collection-views-images/collection10.png "Вкладка мини-приложения")](collection-views-images/collection10.png#lightbox)
 1. Выберите ячейку представления коллекции и задайте его **удостоверение** для `CityCell` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection11.png "Задать удостоверение для CityCell")](collection-views-images/collection11.png)
+    [![](collection-views-images/collection11.png "Задать удостоверение для CityCell")](collection-views-images/collection11.png#lightbox)
 1. Сохраните изменения.
     
 
@@ -143,34 +143,34 @@ public CityCollectionView (IntPtr handle) : base (handle)
 1. В **обозревателе решений**, дважды щелкните файл `Main.storyboard` и откройте его в конструкторе iOS.
 1. Добавить представление изображения, метки кнопки на существующие и настроить их на следующий вид: 
 
-    [ ![](collection-views-images/collection02vs.png "Настройка макета")](collection-views-images/collection02vs.png)
+    [![](collection-views-images/collection02vs.png "Настройка макета")](collection-views-images/collection02vs.png#lightbox)
 1. Назначьте **имя** представление изображения и метки в **вкладку графического** из **свойства обозревателя**. Пример: 
 
-    [ ![](collection-views-images/collection03vs.png "Обозреватель свойств")](collection-views-images/collection03vs.png)
+    [![](collection-views-images/collection03vs.png "Обозреватель свойств")](collection-views-images/collection03vs.png#lightbox)
 1. Затем перетащите раскадровку контроллер представление коллекции: 
 
-    [ ![](collection-views-images/collection04vs.png "Контроллер представление коллекции")](collection-views-images/collection04vs.png)
+    [![](collection-views-images/collection04vs.png "Контроллер представление коллекции")](collection-views-images/collection04vs.png#lightbox)
 1. Перетаскивание с помощью кнопки на контроллер представление коллекции и выберите **Push** из всплывающего окна: 
 
-    [ ![](collection-views-images/collection05vs.png "Выберите из контекстного меню Push")](collection-views-images/collection05vs.png)
+    [![](collection-views-images/collection05vs.png "Выберите из контекстного меню Push")](collection-views-images/collection05vs.png#lightbox)
 1. При запуске приложения станет представление коллекции будет показывать всякий раз, когда пользователь нажимает кнопку.
 1. Выберите представление коллекции и в **вкладка «Макет»** из **свойства обозревателя** введите **ширина** как _361_ и  **Высота** как _256_ 
 1. Определяет размер отдельных ячеек и границы между ячейками и внешнего края представление коллекции.
 1. Выберите контроллер представление коллекции и задайте его класс `CityCollectionViewController` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection07vs.png "Задайте класс CityCollectionViewController")](collection-views-images/collection07vs.png)
+    [![](collection-views-images/collection07vs.png "Задайте класс CityCollectionViewController")](collection-views-images/collection07vs.png#lightbox)
 1. Выберите представление коллекции и задайте его класс `CityCollectionView` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection08vs.png "Задайте класс CityCollectionView")](collection-views-images/collection08vs.png)
+    [![](collection-views-images/collection08vs.png "Задайте класс CityCollectionView")](collection-views-images/collection08vs.png#lightbox)
 1. Выберите ячейку представления коллекции и задайте его класс `CityCollectionViewCell` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection09vs.png "Задайте класс CityCollectionViewCell")](collection-views-images/collection09vs.png)
+    [![](collection-views-images/collection09vs.png "Задайте класс CityCollectionViewCell")](collection-views-images/collection09vs.png#lightbox)
 1. В **вкладку графического** убедитесь, что **макета** — `Flow` и **направления прокрутки** — `Vertical` для представления коллекции: 
 
-    [ ![](collection-views-images/collection10vs.png "Вкладка указанное мини-приложения")](collection-views-images/collection10vs.png)
+    [![](collection-views-images/collection10vs.png "Вкладка указанное мини-приложения")](collection-views-images/collection10vs.png#lightbox)
 1. Выберите ячейку представления коллекции и задайте его **удостоверение** для `CityCell` в **вкладку графического**: 
 
-    [ ![](collection-views-images/collection11vs.png "Задать удостоверение для CityCell")](collection-views-images/collection11vs.png)
+    [![](collection-views-images/collection11vs.png "Задать удостоверение для CityCell")](collection-views-images/collection11vs.png#lightbox)
 1. Сохраните изменения.
     
 
@@ -806,17 +806,17 @@ public override void ViewWillAppear (bool animated)
 
 Все на месте Если построение и запуск приложения, основное представление отображается с Город по умолчанию:
 
-[ ![](collection-views-images/run01.png "Главный экран")](collection-views-images/run01.png)
+[![](collection-views-images/run01.png "Главный экран")](collection-views-images/run01.png#lightbox)
 
 Если пользователь щелкнуть **выберите представление** будет отображаться кнопка представление коллекции:
 
-[ ![](collection-views-images/run02.png "Представление коллекции")](collection-views-images/run02.png)
+[![](collection-views-images/run02.png "Представление коллекции")](collection-views-images/run02.png#lightbox)
 
 Все города с его `CanSelect` свойство `false` отображается серым цветом, и пользователь не сможет установить фокус на него. Когда пользователь выделяет элемент (сделать его фокус) отображается заголовок, и они могут использовать эффект фокусировки, чтобы тонкости наклона изображения в трехмерном пространстве.
 
 Когда пользователь щелкает выберите изображение, представление коллекции закрывается, и основное представление отображается повторно с использованием нового образа:
 
-[ ![](collection-views-images/run03.png "Новый образ на начальном экране")](collection-views-images/run03.png)
+[![](collection-views-images/run03.png "Новый образ на начальном экране")](collection-views-images/run03.png#lightbox)
 
 <a name="Creating-Custom-Layout-and-Reordering-Items" />
 

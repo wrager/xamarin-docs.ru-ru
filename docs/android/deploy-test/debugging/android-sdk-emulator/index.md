@@ -8,23 +8,21 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: d1cb0f6a329604dcac4943eaf39f838bcba38793
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 956b9e4e280545c8e11925697fced4b9d4e40693
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-sdk-emulator"></a>Эмулятор SDK для Android
 
 _В этом руководстве описано, как использовать эмулятор пакета SDK для Android Google в Visual Studio._
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
 Для моделирования разнообразных устройств эмулятор SDK для Android Google можно запускать в различных конфигурациях. Каждая из этих конфигураций создается в виде _виртуального устройства_. В этом руководстве вы узнаете, как запускать эмулятор из Visual Studio и устранять распространенные проблемы.
 
-<a name="sections" />
 
 ## <a name="sections"></a>Разделы
 
@@ -39,7 +37,6 @@ _В этом руководстве описано, как использова�
 Информацию о настройке эмулятора SDK для Android и создании виртуальных устройств см. в статье [Настройка эмулятора Android](~/android/get-started/installation/android-emulator/index.md).
 
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

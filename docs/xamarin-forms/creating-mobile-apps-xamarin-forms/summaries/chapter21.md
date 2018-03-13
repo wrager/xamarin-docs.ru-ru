@@ -3,14 +3,15 @@ title: "Сводка главе 21. Transform"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 3642F112-C7FA-4A74-9000-F9087BA89AD9
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 378ce3fb39cfb5c42d5ec7611415f5420146a9cc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: afb8e2fff58583dc8648c55839649c96cb68b6ba
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-21-transforms"></a>Сводка главе 21. Transform
 
@@ -49,7 +50,7 @@ Xamarin.Forms поддерживает три основных типа прео
 
 Один общих свойствах преобразования используется немного смещения отрисовки текста. Это показано в [ **TextOffsets** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter21/TextOffsets) образца:
 
-[![Снимок экрана: три смещает текст](images/ch21fg03-small.png "смещает текст")](images/ch21fg03-large.png "смещает текст")
+[![Снимок экрана: три смещает текст](images/ch21fg03-small.png "смещает текст")](images/ch21fg03-large.png#lightbox "смещает текст")
 
 Другим эффектом является для подготовки к просмотру нескольких копий `Label` выглядеть 3D блока, таких, как показано в [ **BlockText** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter21/BlockText) образца.
 
@@ -101,7 +102,7 @@ Xamarin.Forms поддерживает три основных типа прео
 
 [ **BoxViewClock** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter21/BoxViewClock) использует `BoxView` для более сложных графики, включая деления помечает вокруг циферблата часов и передает то поворот мало расстояние от своей стороны:
 
-[![Снимок экрана тройной BoxView часов](images/ch21fg17-small.png "аналогом циферблат")](images/ch21fg17-large.png "аналогом циферблат")
+[![Снимок экрана тройной BoxView часов](images/ch21fg17-small.png "аналогом циферблат")](images/ch21fg17-large.png#lightbox "аналогом циферблат")
 
 В дополнение к этому [ `SecondBackEaseConverter` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/SecondBackEaseConverter.cs) класса в **Xamarin.FormsBook.Toolkit** вызывает секундной стрелки будет выглядеть немного смещают до перехода вперед, а затем переместите обратно в правильное положение.
 

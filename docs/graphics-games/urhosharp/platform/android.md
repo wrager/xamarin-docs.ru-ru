@@ -1,17 +1,17 @@
 ---
 title: "Поддержка UrhoSharp Android"
-description: "Android определенные настройки и компоненты"
+description: "Android определенные настройки и компоненты для UrhoSharp."
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 8409BD81-B1A6-4F5D-AE11-6BBD3F7C6327
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
-ms.openlocfilehash: 5100fd4ac573021e088a88446f5f6559d49c4972
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f99b8d2d9f779bc0cf14d76c110d9769ec49ad53
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="urhosharp-android-support"></a>Поддержка UrhoSharp Android
 
@@ -21,11 +21,11 @@ _Android определенные настройки и компоненты_
 
 В следующих страницах, предполагается, что `MyGame` является подклассом `Application` класса.
 
-# <a name="architectures"></a>Архитектуры
+## <a name="architectures"></a>Архитектуры
 
 **Поддерживаемые архитектуры**: x86 armeabi, armeabi v7a
 
-# <a name="create-a-project"></a>Создание проекта
+## <a name="create-a-project"></a>Создание проекта
 
 Создание проекта Android и добавьте пакет UrhoSharp NuGet.
 
@@ -33,7 +33,7 @@ _Android определенные настройки и компоненты_
 
 ![Установка проектов](android-images/image-3.png "добавить данные с ресурсами, к каталогу активы")
 
-# <a name="configure-and-launching-urho"></a>Настройка и запуск Urho
+## <a name="configure-and-launching-urho"></a>Настройка и запуск Urho
 
 Добавление с помощью инструкций для `Urho` и `Urho.Android` пространства имен, а затем добавьте следующий код для инициализации Urho, а также для запуска приложения.
 
@@ -45,7 +45,7 @@ UrhoSurface.RunInActivity<MyGame>();
 
 Откроется действие во весь экран с игрой как содержимое.
 
-# <a name="custom-embedding-of-urho"></a>Внедрение пользовательских Urho
+## <a name="custom-embedding-of-urho"></a>Внедрение пользовательских Urho
 
 Можно также, что Urho взять на себя экрана всего приложения и ее использование в качестве компонента приложения, можно создать `SurfaceView` через:
 

@@ -5,20 +5,23 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: 7C0605D9-9B7F-4002-9B60-2B5DAA3EA30C
 ms.technology: xamarin-forms
+ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
 ms.date: 06/16/2017
-ms.openlocfilehash: 41e28366a856f5f0c12db6087117aebb4de72844
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 5013b35828cecc2e38600839f306f3c0fc1366b9
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="consuming-an-azure-cosmos-db-document-database"></a>Использование базы данных служб Azure Cosmos DB документа
 
 _База данных документа Azure Cosmos DB является NoSQL базы данных, которая предоставляет высокоскоростной доступ к документам JSON, предоставляющие доступ к службе быстрое высокодоступные, масштабируемые базы данных для приложений, требующих удобный масштабирования и глобальные репликации. В этой статье описывается использование клиентской библиотеки Microsoft Azure DocumentDB интегрировать базе данных Azure Cosmos DB документа в приложении Xamarin.Forms._
 
-## <a name="overview"></a>Обзор
+> [!VIDEO https://youtube.com/embed/BoVH12igmbg]
+
+**Microsoft Azure Cosmos DB, по [университета Xamarin](https://university.xamarin.com/)**
 
 Учетная запись базы данных Azure Cosmos DB документа может предоставляться с помощью подписки Azure. Каждая учетная запись базы данных может иметь ноль или несколько баз данных. Документ базы данных в базу данных Cosmos Azure — это логический контейнер для коллекциями документов и пользователей.
 

@@ -3,16 +3,17 @@ title: "Привязка библиотеки iOS"
 description: "Том, как делать собственные библиотеки iOS (и CocoaPods) доступны в приложениях Xamarin."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: DBBAA086-BB0F-8161-DF44-632F4F5DFE5D
+ms.assetid: EBDC50DC-B44B-4003-AB2B-1EEB868A5E01
 ms.technology: xamarin-ios
+ms.custom: xamu-video
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 3afe1a03299e600502d49b1db039af4c6642e131
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: eb3edb007885d9fe839c2407a2581c9824e109c9
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="binding-ios-libraries"></a>Привязка библиотеки iOS
 
@@ -39,7 +40,11 @@ _Том, как делать собственные библиотеки iOS (и
 Эта страница содержит пошаговое руководство по использованию создается проект iOS привязки, используя открытый исходный код [ **InfColorPicker** ](https://github.com/InfinitApps/InfColorPicker) Objective-C проекта в качестве примера. **InfColorPicker** библиотека предоставляет контроллер для повторного использования представления, разрешить пользователю выбирать цвета в его представление HSB выбора цвета более удобной для пользователей.
 Цели Sharpie будет использоваться для помощи в процессе привязки.
 
+## <a name="xamarin-university-lightning-lecture"></a>Лекции Молния университета Xamarin
 
+> [!VIDEO https://youtube.com/embed/ZUoPLcmnf1o]
+
+**iOS привязок в C/C++ с [университета Xamarin](https://university.xamarin.com/)**
 
 ## <a name="related-links"></a>Связанные ссылки
 

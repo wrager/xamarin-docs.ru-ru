@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/30/2017
-ms.openlocfilehash: bbf20155fe097f0229aa28c1f0d046cb3ef31a63
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 83e58625438a0b50d89ca8dac3e940c8742e5aec
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-android-assets"></a>С помощью средств Android
 
@@ -20,7 +20,6 @@ _Активы_ позволяют включить произвольные фа
 Активы, добавлен в проект будут отображаться так же, как в файловой системе, может считывать из приложения с помощью [AssetManager](https://developer.xamarin.com/api/type/Android.Content.Res.AssetManager/).
 В этой демонстрации простых мы собираемся добавить ресурс текстового файла в свой проект прочитать его с помощью `AssetManager`и отображает его текстового представления.
 
-<a name="Add_Asset_to_Project" />
 
 ## <a name="add-asset-to-project"></a>Добавьте проект активов
 
@@ -36,13 +35,12 @@ Visual Studio должен иметь набор **действие при по�
 
 Visual Studio для Mac должен иметь набор **действие при построении** этот файл **AndroidAsset**:
 
-[![При выборе режима построения AndroidAsset](android-assets-images/asset-properties-xs-sml.png)](android-assets-images/asset-properties-xs.png)
+[![При выборе режима построения AndroidAsset](android-assets-images/asset-properties-xs-sml.png)](android-assets-images/asset-properties-xs.png#lightbox)
 
 -----
 
 Выбор правильного **BuildAction** гарантирует, что файл будет упакована в APK во время компиляции.
 
-<a name="Reading_Assets" />
 
 ## <a name="reading-assets"></a>Средства чтения
 
@@ -71,7 +69,6 @@ protected override void OnCreate (Bundle bundle)
 }
 ```
 
-<a name="Running_the_Application" />
 
 ## <a name="running-the-application"></a>Запуск приложения
 

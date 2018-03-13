@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/07/2017
-ms.openlocfilehash: 3a7d89d9b0f383d365b18364e5d902ee0642f395
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: c28ddc09b07066de67f5c974cf5c2128726c6932
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="integrating-azure-active-directory-b2c-with-azure-mobile-apps"></a>Интеграция Azure Active Directory B2C с Azure мобильных приложений
 
@@ -21,7 +21,7 @@ _Azure Active Directory B2C — это Облачное решение упра�
 ![](~/media/shared/preview.png "Этот API является в настоящее время в предварительной версии")
 
 > [!NOTE]
-> **Примечание**: [библиотеки проверки подлинности Microsoft](https://www.nuget.org/packages/Microsoft.Identity.Client) находится на стадии предварительной версии, но подходит для использования в рабочей среде. Тем не менее может критически важных изменений в API, формат внутреннего кэша и другие механизмы библиотеку, которая может повлиять на приложения.
+> [Библиотеки проверки подлинности Microsoft](https://www.nuget.org/packages/Microsoft.Identity.Client) находится на стадии предварительной версии, но подходит для использования в рабочей среде. Тем не менее может критически важных изменений в API, формат внутреннего кэша и другие механизмы библиотеку, которая может повлиять на приложения.
 
 ## <a name="overview"></a>Обзор
 
@@ -72,7 +72,7 @@ Azure Active Directory B2C может использоваться для упр
 
 Следующий снимок экрана демонстрирует эту конфигурацию:
 
-[![](azure-ad-b2c-mobile-app-images/client-flow-config-sml.png "Настройка Azure Active Directory B2C")](azure-ad-b2c-mobile-app-images/client-flow-config.png "конфигурации Azure Active Directory B2C")
+[![](azure-ad-b2c-mobile-app-images/client-flow-config-sml.png "Настройка Azure Active Directory B2C")](azure-ad-b2c-mobile-app-images/client-flow-config.png#lightbox "конфигурации Azure Active Directory B2C")
 
 Политики, используемых в Azure Active Directory B2C клиента также должны быть настроены так, что URL-адрес ответа же пользовательскую схему URL-адрес, за которым следует `://auth/`. Следующий снимок экрана демонстрирует эту конфигурацию:
 
@@ -158,7 +158,7 @@ public async Task<bool> LogoutAsync()
 
 Следующий снимок экрана демонстрирует эту конфигурацию:
 
-[![](azure-ad-b2c-mobile-app-images/server-flow-config-sml.png "Настройка Azure Active Directory B2C")](azure-ad-b2c-mobile-app-images/server-flow-config.png "конфигурации Azure Active Directory B2C")
+[![](azure-ad-b2c-mobile-app-images/server-flow-config-sml.png "Настройка Azure Active Directory B2C")](azure-ad-b2c-mobile-app-images/server-flow-config.png#lightbox "конфигурации Azure Active Directory B2C")
 
 Политики, используемых в Azure Active Directory B2C клиента также должны быть настроены так, что URL-адрес ответа адрес мобильного приложения Azure, за которым следует `/.auth/login/aad/callback`. Следующий снимок экрана демонстрирует эту конфигурацию:
 

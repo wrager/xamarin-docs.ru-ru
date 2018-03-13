@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 11/17/2017
-ms.openlocfilehash: 0c2765551c16be605bc78d9ef32a91fd2c4ead8c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9602e4d99e8f5c004fe75ab724bb3746aca46003
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="resource-dictionaries"></a>Словари ресурсов
 
@@ -83,10 +83,10 @@ _Ресурсы XAML — определения объектов, которые
 
 Первый [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) экземпляр получает и использует `LabelPageHeadingStyle` ресурсов, которые определены на уровне приложения [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/), со вторым `Label` экземпляра Получение и использование `LabelNormalStyle` ресурсов, которые определены на уровне элемента управления `ResourceDictionary`. Аналогичным образом [ `Button` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) экземпляр получает и использует `NormalTextColor` ресурсов, которые определены на уровне приложения `ResourceDictionary`и `MediumBoldText` ресурсов, которые определены на уровне элемента управления `ResourceDictionary`. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](resource-dictionaries-images/screenshots-sml.png "Потребление ресурсов ResourceDictionary")](resource-dictionaries-images/screenshots.png "потребление ресурсов ResourceDictionary")
+[![](resource-dictionaries-images/screenshots-sml.png "Потребление ресурсов ResourceDictionary")](resource-dictionaries-images/screenshots.png#lightbox "потребление ресурсов ResourceDictionary")
 
 > [!NOTE]
-> **Примечание**: ресурсы, относящиеся к одной странице не должно быть включено в словаре ресурсов уровня приложения, таким образом ресурсов будет затем проанализирован при запуске приложения, а не требуется для страницы. Дополнительные сведения см. в разделе [уменьшить размер словаря ресурсов приложения](~/xamarin-forms/deploy-test/performance.md).
+> Ресурсы, относящиеся к одной странице не должно быть включено в приложения уровне словаря ресурсов, таким образом ресурсы, затем можно проанализировать при запуске приложения, а не требуется для страницы. Дополнительные сведения см. в разделе [уменьшить размер словаря ресурсов приложения](~/xamarin-forms/deploy-test/performance.md).
 
 ## <a name="overriding-resources"></a>Переопределение ресурсы
 
@@ -118,7 +118,7 @@ _Ресурсы XAML — определения объектов, которые
 
 Исходный `PageBackgroundColor` и `NormalTextColor` экземпляров, определенные на уровне приложения, будут переопределяться `PageBackgroundColor` и `NormalTextColor` экземпляров, определенные на уровне страницы. Таким образом, цвет фона страницы становится синим, а текст на странице yellow, как показано на следующих снимках экрана:
 
-[![](resource-dictionaries-images/overridding-screenshots-sml.png "Переопределение ресурсы ResourceDictionary")](resource-dictionaries-images/overridding-screenshots.png "переопределение ResourceDictionary ресурсы")
+[![](resource-dictionaries-images/overridding-screenshots-sml.png "Переопределение ресурсы ResourceDictionary")](resource-dictionaries-images/overridding-screenshots.png#lightbox "переопределение ResourceDictionary ресурсы")
 
 Тем не менее, обратите внимание, что в фоновом режиме окна [ `NavigationPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) по-прежнему желтый, так как [ `BarBackgroundColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.NavigationPage.BarBackgroundColor/) свойству присвоено значение `PageBackgroundColor` ресурсов, определенных в приложении уровень [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/).
 
@@ -175,7 +175,7 @@ _Ресурсы XAML — определения объектов, которые
 1. Ресурсы, содержащиеся в словарях ресурсов, которые были объединены через `MergedDictionaries` коллекции в порядке их перечисления в `MergedDictionaries` свойство.
 
 > [!NOTE]
-> **Примечание**: поиск в словарях ресурсов может быть вычислительных задач, если приложение содержит несколько словарей больших ресурсов. Таким образом Убедитесь, что каждой страницы в приложении только использует словари ресурсов, которые подходят для страницы, чтобы избежать ненужного поиска.
+> Поиск в словарях ресурсов может быть вычислительных задач, если приложение содержит несколько словарей больших ресурсов. Таким образом Убедитесь, что каждой страницы в приложении только использует словари ресурсов, которые подходят для страницы, чтобы избежать ненужного поиска.
 
 ## <a name="summary"></a>Сводка
 

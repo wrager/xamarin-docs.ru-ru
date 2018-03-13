@@ -4,14 +4,15 @@ description: "Создание перспективы и конический э
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 785F4D13-7430-492E-B24E-3B45C560E9F1
 author: charlespetzold
 ms.author: chape
 ms.date: 04/14/2017
-ms.openlocfilehash: 3fda8524b824042aa4aba07853da2801baf47027
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2e2e83404bc93bd07885008b868c51eba2ff7140
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="non-affine-transforms"></a>Аффинные преобразования
 
@@ -226,7 +227,7 @@ public partial class TestPerspectivePage : ContentPage
 
 Ниже приведены некоторые примеры.
 
-[![](non-affine-images/testperspective-small.png "Тройной снимок экрана со страницей перспективы "Тест"")](non-affine-images/testperspective-large.png "тройной снимок экрана со страницей перспективы "Тест"")
+[![](non-affine-images/testperspective-small.png "Тройной снимок экрана со страницей перспективы "Тест"")](non-affine-images/testperspective-large.png#lightbox "тройной снимок экрана со страницей перспективы "Тест"")
 
 Во время экспериментов с ползунки, вы обнаружите, что значения за пределы 0.0066 или ниже –0.0066 привести к внезапно становятся части и сочетаются изображения. Преобразуемые точечного рисунка — квадрат 300 пикселей. Преобразования относительно его центра, поэтому координаты растрового изображения в диапазоне от –150 до 150. Помните, что значение z "является:
 
@@ -390,13 +391,13 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Далее приводятся некоторые примеры.
 
-[![](non-affine-images/tapertransform-small.png "Тройной снимок экрана со страницей конический преобразования")](non-affine-images/tapertransform-large.png "тройной снимок экрана со страницей конический преобразования")
+[![](non-affine-images/tapertransform-small.png "Тройной снимок экрана со страницей конический преобразования")](non-affine-images/tapertransform-large.png#lightbox "тройной снимок экрана со страницей конический преобразования")
 
 Другой тип обобщенный-аффинных преобразований — трехмерного поворота, как показано в следующей статье [вращения трехмерной](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/3d-rotation.md).
 
 Аффинного преобразования может преобразовать прямоугольник в любой выпуклая четырехугольника осуществляется плавный. Это продемонстрировано на **Показать Non-аффинное** страницы. Это очень похоже на **Показать аффинное** страницу [матрица преобразует](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/matrix.md) статьи, за исключением того, что он имеет четвертый `TouchPoint` для работы в четвертой углу растрового изображения:
 
-[![](non-affine-images/shownonaffinematrix-small.png "Тройной снимок экрана со страницей Показать Non-аффинное")](non-affine-images/shownonaffinematrix-large.png "тройной снимок экрана со страницей Показать Non-аффинное")
+[![](non-affine-images/shownonaffinematrix-small.png "Тройной снимок экрана со страницей Показать Non-аффинное")](non-affine-images/shownonaffinematrix-large.png#lightbox "тройной снимок экрана со страницей Показать Non-аффинное")
 
 При условии, что не пытайтесь создайте внутреннюю угол один из углов точечного рисунка больше 180 градусов или две стороны пересекать друг друга, успешно вычисляется преобразование с помощью данного метода из [ `ShowNonAffineMatrixPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/ShowNonAffineMatrixPage.xaml.cs) класса:
 

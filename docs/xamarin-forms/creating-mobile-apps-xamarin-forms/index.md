@@ -8,15 +8,15 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/03/2016
-ms.openlocfilehash: b6054b4037b14a73cb5bfe50b619e805fdcf1737
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: caee0d685838f7c0a54e19611fdf72df5730c037
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="creating-mobile-apps-with-xamarinforms-book-first-edition"></a>Создание мобильных приложений с помощью Xamarin.Forms книги первый выпуск
 
-<p><img src="Images/Cover-sml.png" title="Создание мобильных приложений с помощью Xamarin.Forms книги" align="left"/>Последнюю версию книги Чарльз Петцольд - <i>Создание мобильных приложений с помощью Xamarin.Forms</i> - было отправлено (электронную) нажмите клавишу и теперь доступен для загрузки!</p>
+<p><img src="Images/Cover-sml.png" title="Создание мобильных приложений с помощью Xamarin.Forms книги" align="left" />Последнюю версию книги Чарльз Петцольд - <i>Создание мобильных приложений с помощью Xamarin.Forms</i> - было отправлено (электронную) нажмите клавишу и теперь доступен для загрузки!</p>
 
 Это *первый выпуск* имеет 27 глав, а также рассматривается Xamarin.Forms&nbsp;2.x, включая анимации, MVVM, триггеры, режимы работы, пользовательские макеты, пользовательские модули подготовки отчетов и многое другое.
 Глава 28 теперь доступна через Интернет между отдельные разделы, перечисленные ниже.

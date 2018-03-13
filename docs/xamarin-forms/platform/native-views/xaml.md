@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/24/2016
-ms.openlocfilehash: fc44b2a6080832d11c610661244172ad4a6a0716
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: f4345e107a32c3a583c246fe5dbe24590960c870
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="native-views-in-xaml"></a>Собственные представления в XAML
 
@@ -51,13 +51,13 @@ _Собственные представления из iOS, Android и унив
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
         xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
-        xmlns:formsAndroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
+        xmlns:androidLocal="clr-namespace:SimpleColorPicker.Droid;assembly=SimpleColorPicker.Droid;targetPlatform=Android"
         xmlns:win="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255,
             Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
         x:Class="NativeViews.NativeViewDemo">
     <StackLayout Margin="20">
         <ios:UILabel Text="Hello World" TextColor="{x:Static ios:UIColor.Red}" View.HorizontalOptions="Start" />
-        <androidWidget:TextView Text="Hello World" x:Arguments="{x:Static formsandroid:Forms.Context}" />
+        <androidWidget:TextView Text="Hello World" x:Arguments="{x:Static androidLocal:MainActivity.Instance}" />
         <win:TextBlock Text="Hello World" />
     </StackLayout>
 </ContentPage>
@@ -72,7 +72,7 @@ _Собственные представления из iOS, Android и унив
 > [!NOTE]
 > Обратите внимание, что стили нельзя использовать с представлениями в машинном коде, поскольку стили можно только свойства, которые архивируются `BindableProperty` объектов.
 
-Конструкторы Android мини-приложения, как правило, требуют Android `Context` объект в качестве аргумента и это доступна через `Xamarin.Forms.Platform.Android.Forms.Context` объекта. Таким образом, при создании мини-приложение Android в XAML, `Context` объект обычно должен быть передан в конструктор мини-приложения с помощью `x:Arguments` атрибутом `x:Static` расширения разметки. Дополнительные сведения см. в разделе [передачи аргументов собственного представления](#passing_arguments).
+Конструкторы Android мини-приложения, как правило, требуют Android `Context` как аргумент и это можно сделать доступными через статическое свойство в `MainActivity` класса. Таким образом, при создании мини-приложение Android в XAML, `Context` объект обычно должен быть передан в конструктор мини-приложения с помощью `x:Arguments` атрибутом `x:Static` расширения разметки. Дополнительные сведения см. в разделе [передачи аргументов собственного представления](#passing_arguments).
 
 > [!NOTE]
 > Обратите внимание, именование собственного представления с `x:Name` не поддерживается в проекте переносимой библиотеки классов (PCL) или общего ресурса проекта (SAP). Это приведет к созданию переменной собственный тип, что вызовет ошибку компиляции. Однако собственного представления может быть заключен в `ContentView` экземпляров и получить в файле кода, при условии, что используется SAP. Дополнительные сведения см. в разделе [ссылками собственного представления из кода](#native_view_code).
@@ -90,7 +90,7 @@ _Собственные представления из iOS, Android и унив
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
         xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
-        xmlns:formsAndroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
+        xmlns:androidLocal="clr-namespace:SimpleColorPicker.Droid;assembly=SimpleColorPicker.Droid;targetPlatform=Android"
         xmlns:win="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255,
             Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
         xmlns:local="clr-namespace:NativeSwitch"
@@ -101,7 +101,7 @@ _Собственные представления из iOS, Android и унив
         <ios:UISwitch On="{Binding Path=IsSwitchOn, Mode=TwoWay, UpdateSourceEventName=ValueChanged}"
             OnTintColor="{x:Static ios:UIColor.Red}"
             ThumbTintColor="{x:Static ios:UIColor.Blue}" />
-        <androidWidget:Switch x:Arguments="{x:Static formsAndroid:Forms.Context}"
+        <androidWidget:Switch x:Arguments="{x:Static androidLocal:MainActivity.Instance}"
             Checked="{Binding Path=IsSwitchOn, Mode=TwoWay, UpdateSourceEventName=CheckedChange}"
             Text="Enable Entry?" />
         <win:ToggleSwitch Header="Enable Entry?"
@@ -135,7 +135,7 @@ _Собственные представления из iOS, Android и унив
         xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
         xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
         xmlns:androidGraphics="clr-namespace:Android.Graphics;assembly=Mono.Android;targetPlatform=Android"
-        xmlns:formsAndroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
+        xmlns:androidLocal="clr-namespace:SimpleColorPicker.Droid;assembly=SimpleColorPicker.Droid;targetPlatform=Android"
         xmlns:winControls="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
         xmlns:winMedia="clr-namespace:Windows.UI.Xaml.Media;assembly=Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
         xmlns:winText="clr-namespace:Windows.UI.Text;assembly=Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
@@ -151,7 +151,7 @@ _Собственные представления из iOS, Android и унив
                 </ios:UIFont>
             </ios:UILabel.Font>
         </ios:UILabel>
-        <androidWidget:TextView x:Arguments="{x:Static formsAndroid:Forms.Context}"
+        <androidWidget:TextView x:Arguments="{x:Static androidLocal:MainActivity.Instance}"
                     Text="Simple Native Color Picker"
                     TextSize="24"
                     View.HorizontalOptions="Center">
@@ -187,7 +187,7 @@ _Собственные представления из iOS, Android и унив
 [ `FontFamily` ](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.fontfamily) Конструктор используется для задания [ `TextBlock.FontFamily` ](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.fontfamily) для нового `FontFamily` на универсальной платформы Windows (UWP). `FontFamily` Имя задано аргумента метода, который является дочерним элементом `x:Arguments` атрибута.
 
 > [!NOTE]
-> **Примечание**: аргументы должны совпадать с типами, необходимый для метода, конструктора или фабрики.
+> Аргументы должны совпадать с типами, необходимый для метода, конструктора или фабрики.
 
 Следующих снимках экрана отобразится результат аргументы фабрики метод и конструктор для задания шрифта на различные собственного представления:
 
@@ -211,7 +211,7 @@ _Собственные представления из iOS, Android и унив
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
         xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
-        xmlns:formsAndroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
+        xmlns:androidLocal="clr-namespace:SimpleColorPicker.Droid;assembly=SimpleColorPicker.Droid;targetPlatform=Android"
         xmlns:winControls="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255,
             Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
         xmlns:local="clr-namespace:NativeViewInsideContentView"
@@ -219,20 +219,19 @@ _Собственные представления из iOS, Android и унив
     <StackLayout Margin="20">
         <ContentView x:Name="contentViewTextParent" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <ios:UILabel Text="Text in a UILabel" TextColor="{x:Static ios:UIColor.Red}" />
-            <androidWidget:TextView x:Arguments="{x:Static formsAndroid:Forms.Context}"
+            <androidWidget:TextView x:Arguments="{x:Static androidLocal:MainActivity.Instance}"
                 Text="Text in a TextView" />
             <winControls:TextBlock Text="Text in a TextBlock" />
         </ContentView>
         <ContentView x:Name="contentViewButtonParent" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
             <ios:UIButton TouchUpInside="OnButtonTap" View.HorizontalOptions="Center" View.VerticalOptions="Center" />
-            <androidWidget:Button x:Arguments="{x:Static formsAndroid:Forms.Context}"
+            <androidWidget:Button x:Arguments="{x:Static androidLocal:MainActivity.Instance}"
                 Text="Scale and Rotate Text"
                 Click="OnButtonTap" />
             <winControls:Button Content="Scale and Rotate Text" />
         </ContentView>
     </StackLayout>
 </ContentPage>
-
 ```
 
 В приведенном выше примере собственного представления для каждой платформы являются потомками [ `ContentView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentView/) элементов управления, с `x:Name` , используемого для получения значения атрибута `ContentView` в код программной части:
@@ -297,7 +296,7 @@ IOS и Android системные кнопки одного и того же `On
         xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
         xmlns:iosLocal="clr-namespace:SubclassedNativeControls.iOS;assembly=SubclassedNativeControls.iOS;targetPlatform=iOS"
         xmlns:android="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
-        xmlns:formsAndroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
+        xmlns:androidLocal="clr-namespace:SimpleColorPicker.Droid;assembly=SimpleColorPicker.Droid;targetPlatform=Android"
         xmlns:androidLocal="clr-namespace:SubclassedNativeControls.Droid;assembly=SubclassedNativeControls.Droid;targetPlatform=Android"
         xmlns:winControls="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows, Version=255.255.255.255,
             Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime;targetPlatform=Windows"
@@ -311,7 +310,7 @@ IOS и Android системные кнопки одного и того же `On
         </StackLayout>
         <iosLocal:MyUIPickerView ItemsSource="{Binding Fruits}"
             SelectedItem="{Binding SelectedFruit, Mode=TwoWay, UpdateSourceEventName=SelectedItemChanged}" />
-        <androidLocal:MySpinner x:Arguments="{x:Static formsAndroid:Forms.Context}"
+        <androidLocal:MySpinner x:Arguments="{x:Static androidLocal:MainActivity.Instance}"
             ItemsSource="{Binding Fruits}"
             SelectedObject="{Binding SelectedFruit, Mode=TwoWay, UpdateSourceEventName=ItemSelected}" />
         <winControls:ComboBox ItemsSource="{Binding Fruits}"

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 0d7b4c5a539470a3544d0117251f40fd6bd37f2b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 778e70f6817b71e5910aa85425d46261dfe9c803
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-property-lists"></a>Работа с использованием списков свойств
 
@@ -24,7 +24,7 @@ Visual Studio для Mac включает .plist графический реда
 
 Список свойств сведения ( `Info.plist`) — iOS требуется файл, который содержит сведения о конфигурации вашего приложения в системе. Visual Studio для Mac пользовательских `Info.plist` функций редактора, три панели управляются вкладок в нижней левой части окна редактора:
 
- [ ![](property-lists-images/tabs.png "Вкладки редактора Info.plist в нижней левой части окна редактора")](property-lists-images/tabs.png)
+ [![](property-lists-images/tabs.png "Вкладки редактора Info.plist в нижней левой части окна редактора")](property-lists-images/tabs.png#lightbox)
 
 Каждой панели на различных свойств элементов управления, как показано ниже:
 
@@ -57,11 +57,11 @@ Visual Studio для Mac включает .plist графический реда
 Этот раздел содержит важные сведения, описывающие ваше приложение.
 **Идентификатор** хранятся здесь должен совпадать с идентификатором пакета, который вводится в iTunes Connect (для приложения для магазина), а также в списке инициализации идентификаторы приложений портала iOS и разработку и распространения сертификатов.
 
- [ ![](property-lists-images/image24.png "iOS целевого приложения")](property-lists-images/image24.png)
+ [![](property-lists-images/image24.png "iOS целевого приложения")](property-lists-images/image24.png#lightbox)
 
 ### <a name="device-deployment"></a>Развертывание устройств
 
- [ ![](property-lists-images/deployment.png "Развертывание устройств")](property-lists-images/deployment.png)
+ [![](property-lists-images/deployment.png "Развертывание устройств")](property-lists-images/deployment.png#lightbox)
 
 Устройство **развертывания** сведения о разделах отображаются выборочно, в зависимости от выбора в **устройств** раскрывающийся список в **целевого приложения** выше. **Главного интерфейса** имеет значение раскрывающегося списка **MainStoryboard** в приложения на основе раскадровки. Если пользовательский интерфейс полностью записывается в коде, то это может быть пустым.
 
@@ -73,7 +73,7 @@ Visual Studio для Mac включает .plist графический реда
 
 **Стили полосы состояния** раздел — это графический интерфейс для редактирования приложения `UIStatusBarStyle`:
 
- [ ![](property-lists-images/status.png "Стили строки состояния")](property-lists-images/status.png)
+ [![](property-lists-images/status.png "Стили строки состояния")](property-lists-images/status.png#lightbox)
 
  <a name="Icons" />
 
@@ -89,11 +89,11 @@ Visual Studio для Mac включает .plist графический реда
 
 `Info.plist` Содержит специальные разделы для указания интеграции карты и backgrounding режимы. Выбор параметров, которые требуется поддерживать добавит необходимые свойства приложение за вас.
 
- [ ![](property-lists-images/maps.png "Интеграция карты")](property-lists-images/maps.png)
+ [![](property-lists-images/maps.png "Интеграция карты")](property-lists-images/maps.png#lightbox)
 
 Дополнительные сведения о работе с картами, см. на странице Xamarin [iOS Maps](~/ios/user-interface/controls/ios-maps/index.md) руководства.
 
- [ ![](property-lists-images/bging.png "Фоновые режимы")](property-lists-images/bging.png)
+ [![](property-lists-images/bging.png "Фоновые режимы")](property-lists-images/bging.png#lightbox)
 
 Дополнительные сведения о фоновых режимов см. на странице Xamarin [Backgrounding в iOS](~/ios/app-fundamentals/backgrounding/introduction-to-backgrounding-in-ios.md) руководства.
 
@@ -101,7 +101,7 @@ Visual Studio для Mac включает .plist графический реда
 
 «Дополнительно» для управления типов документов и URL-схем, которые поддерживает приложение.
 
- [ ![](property-lists-images/image34.png "«Дополнительно»")](property-lists-images/image34.png)
+ [![](property-lists-images/image34.png "«Дополнительно»")](property-lists-images/image34.png#lightbox)
 
  <a name="Document_Types" />
 
@@ -116,7 +116,7 @@ Visual Studio для Mac включает .plist графический реда
 
 Иногда приложения должен поддерживать Открытие пользовательского типа файлов. Например, нужно открыть файлы изображений с расширением пользовательских *.xam*. Для указания пользовательского типа файлов, мы создадим пользовательской UTI - универсальный идентификатор типа - с использованием `UIExportedTypeDeclarations` ключа. На снимке экрана ниже показано создание пользовательского UTI для расширения .xam:
 
- [ ![](property-lists-images/uti.png "Редактор UTIs")](property-lists-images/uti.png)
+ [![](property-lists-images/uti.png "Редактор UTIs")](property-lists-images/uti.png#lightbox)
 
 Как только что экспортированный тип UTIs указать пользовательские UTIs определенному приложению, *импортированный тип UTIs* ( `UIImportedTypeDeclarations` ключ) укажите пользовательские типы поддерживаются, но не принадлежат приложения.
 
@@ -126,7 +126,7 @@ Visual Studio для Mac включает .plist графический реда
 
 Имя схемы URL-адрес (также называемые протокол) — первая часть URL-адрес. Например `http://` и `https://` приведены распространенные схемы URL-адрес. У вас есть возможность создания пользовательской схемы URL-адрес для вашего приложения. Пользовательский URL-схем используются для взаимодействия и передачи данных и обратно с другими приложениями. Следующем снимке экрана показано создание новой пользовательской схемы URL-адрес вызывается `monkeys://`:
 
- [ ![](property-lists-images/url.png "Пользовательский URL-адреса")](property-lists-images/url.png)
+ [![](property-lists-images/url.png "Пользовательский URL-адреса")](property-lists-images/url.png#lightbox)
 
 
 
@@ -136,15 +136,15 @@ Visual Studio для Mac включает .plist графический реда
 
 **Источника** вкладке `Info.plist` файл позволяет пользовательские значения, которое необходимо добавить или изменить. Visual Studio для Mac приведен список наиболее общих свойств.
 
- [ ![](property-lists-images/image31.png "Добавление нового свойства из раскрывающегося списка")](property-lists-images/image31.png)
+ [![](property-lists-images/image31.png "Добавление нового свойства из раскрывающегося списка")](property-lists-images/image31.png#lightbox)
 
 Для известных свойств Visual Studio для Mac будет список допустимых значений, как показано на следующем снимке экрана:
 
- [ ![](property-lists-images/image32.png "Выберите значение из списка известных значений")](property-lists-images/image32.png)
+ [![](property-lists-images/image32.png "Выберите значение из списка известных значений")](property-lists-images/image32.png#lightbox)
 
 Visual Studio для Mac также определяет тип свойства, как показано:
 
- [ ![](property-lists-images/image33.png "Доступные типы свойств")](property-lists-images/image33.png)
+ [![](property-lists-images/image33.png "Доступные типы свойств")](property-lists-images/image33.png#lightbox)
 
 Просмотрите Apple [связанные ресурсы приложения](http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/App-RelatedResources/App-RelatedResources.html) содержатся ссылки на дополнительные сведения о дополнительных свойств.
 

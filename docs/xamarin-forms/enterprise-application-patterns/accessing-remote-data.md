@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/07/2017
-ms.openlocfilehash: a219a5ed4045bff639f29fd49ef5288139140135
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 0eec51a6c95894482a57bfe3bb1f95aec2045af4
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="accessing-remote-data"></a>Удаленного доступа к данным
 
@@ -52,7 +52,7 @@ RESTful веб-API предоставляет набор связанных ре
 
 Рис. 10-1 отображается взаимодействие классов, которые считывают данные каталога из микрослужбу каталога для отображения `CatalogView`.
 
-[![](accessing-remote-data-images/catalogdata.png "Получение данных из каталога микрослужбу")](accessing-remote-data-images/catalogdata-large.png "извлечения данных из каталога микрослужбу")
+[![](accessing-remote-data-images/catalogdata.png "Получение данных из каталога микрослужбу")](accessing-remote-data-images/catalogdata-large.png#lightbox "извлечения данных из каталога микрослужбу")
 
 **Рис. 10-1**: получение данных из каталога микрослужбу
 
@@ -157,7 +157,7 @@ public async Task<IActionResult> Items(
 
 На рис. 10-2 показано взаимодействие классов, отправляющих данные корзины, отображаются с `BasketView`, чтобы микрослужбу корзины.
 
-[![](accessing-remote-data-images/basketdata.png "Отправка данных в корзину микрослужбу")](accessing-remote-data-images/basketdata-large.png "отправки данных микрослужбу корзины")
+[![](accessing-remote-data-images/basketdata.png "Отправка данных в корзину микрослужбу")](accessing-remote-data-images/basketdata-large.png#lightbox "отправки данных микрослужбу корзины")
 
 **На рис. 10-2**: отправка данных микрослужбу корзины
 

@@ -3,14 +3,15 @@ title: "Сводка по 25 главы. Создание страницы"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: D1D348F2-6A44-4781-ADCE-A0B7BB9AEF89
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: bbe960357d9180df90a4423d6acfdf3f869d1b77
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 30642709519fc809d30da9a437728112f56a64d6
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-25-page-varieties"></a>Сводка по 25 главы. Создание страницы
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 02/27/2018
 
 Также устанавливает файл XAML [ `IsPresented` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.IsPresented/) свойство `MasterDetailPage` для `True`. В результате главной страницы для отображения при запуске; по умолчанию отображается страница сведений. [SchoolAndDetailPage.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter25/SchoolAndDetail/SchoolAndDetail/SchoolAndDetail/SchoolAndDetailPage.xaml.cs) файл задает `IsPresented` для `false` при выборе элемента из `ListView` на главной странице. Затем открывается страница сведений:
 
-[![Тройной экрана School детализации и](images/ch25fg09-small.png "страницу сведений из MasterDetailPage")](images/ch25fg09-large.png "страницу сведений из MasterDetailPage")
+[![Тройной экрана School детализации и](images/ch25fg09-small.png "страницу сведений из MasterDetailPage")](images/ch25fg09-large.png#lightbox "страницу сведений из MasterDetailPage")
 
 ### <a name="your-own-user-interface"></a>Собственный пользовательский интерфейс
 
@@ -98,7 +99,7 @@ ms.lasthandoff: 02/27/2018
 
 Для каждой страницы, который отображается в `TabbedPage`, `Title` свойство необходимо указать текст на вкладке и Apple Store требует также использования значка поэтому `Icon` задано для iOS:
 
-[![Тройной экрана отдельных цветов с вкладками](images/ch25fg13-small.png "TabbedPage")](images/ch25fg13-large.png "TabbedPage")
+[![Тройной экрана отдельных цветов с вкладками](images/ch25fg13-small.png "TabbedPage")](images/ch25fg13-large.png#lightbox "TabbedPage")
 
 [ **StudentNotes** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter25/StudentNotes) образец имеет домашней страницы, в которой перечислены все студентов. При касании студент, это приведет к открытию `TabbedPage` производный класс, [ `StudentNotesDataPage` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter25/StudentNotes/StudentNotes/StudentNotes/StudentNotesDataPage.xaml), который включает в себя три `ContentPage` объекты его визуального дерева, один из которых позволяет ввести несколько заметок для этого студента.
 

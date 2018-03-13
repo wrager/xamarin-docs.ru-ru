@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 91d5612991c2297418cf7003c499c1a1bbfc7558
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e71c6ea816b8b732d21148db32fd9395732dd4c0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="replacing-the-action-bar"></a>Замена панели действий
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -36,16 +35,14 @@ ms.lasthandoff: 02/27/2018
 Этот процесс подробно в следующих разделах. Создается простое приложение, и заменить ее действие строки с настраиваемый `Toolbar`. 
 
 
-<a name="start_project" />
 
 ## <a name="start-an-app-project"></a>Запуск проекта приложения
 
 Создайте новый проект Android с именем **ToolbarFun** (см. [Привет, Android](~/android/get-started/hello-android/hello-android-quickstart.md) Дополнительные сведения о создании нового проекта Android). После создания этого проекта значение целевой и менее уровни Android API **Android 5.0 (API уровня 21 - без описания операций)**. Дополнительные сведения о задании версии Android уровней см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md). При построении и запуска приложения отображает панели действий по умолчанию, как показано на этом снимке экрана: 
 
-[![Снимок экрана: панель действий по умолчанию](replacing-the-action-bar-images/01-before-sml.png)](replacing-the-action-bar-images/01-before.png)
+[![Снимок экрана: панель действий по умолчанию](replacing-the-action-bar-images/01-before-sml.png)](replacing-the-action-bar-images/01-before.png#lightbox)
 
 
-<a name="custom_theme" />
 
 ## <a name="create-a-custom-theme"></a>Создайте пользовательскую тему
 
@@ -89,7 +86,6 @@ Olive-green `colorPrimary` параметр используется для цв
 Дополнительные сведения о применении пользовательские темы для приложения см. в разделе [пользовательские темы, с помощью](~/android/user-interface/material-theme.md#customtheme). 
 
 
-<a name="toolbar_layout" />
 
 ## <a name="define-a-toolbar-layout"></a>Определить расположение панели инструментов
 
@@ -127,7 +123,6 @@ android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
 Этот параметр используется, чтобы элементы меню противоположен темный цвет фона.
 
 
-<a name="include_layout" />
 
 ## <a name="include-the-toolbar-layout"></a>Включить макет панели инструментов
 
@@ -153,7 +148,6 @@ android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
 Этот макет включает `Toolbar` определенные в **toolbar.xml** и использует `RelativeLayout` позволяет указать, что `Toolbar` следует поместить в верхнюю часть пользовательского интерфейса (над кнопкой). 
 
 
-<a name="activate_toolbar" />
 
 ## <a name="find-and-activate-the-toolbar"></a>Поиск и активировать панель инструментов
 
@@ -173,12 +167,11 @@ ActionBar.Title = "My Toolbar";
 
 Этот код находит `Toolbar` и вызывает метод `SetActionBar` , чтобы `Toolbar` будут присутствовать характеристики панели действий по умолчанию. Заголовок панели меняется на **Мои инструментов**. Как показано в этом примере кода `ToolBar` напрямую ссылаться как на панели действий. Скомпилируйте и запустите это приложение &ndash; пользовательское `Toolbar` отображения вместо панели действий по умолчанию: 
 
-[![Снимок экрана пользовательскую панель инструментов с зеленым цветом схемы](replacing-the-action-bar-images/02-after-sml.png)](replacing-the-action-bar-images/02-after.png)
+[![Снимок экрана пользовательскую панель инструментов с зеленым цветом схемы](replacing-the-action-bar-images/02-after-sml.png)](replacing-the-action-bar-images/02-after.png#lightbox)
 
 Обратите внимание, что `Toolbar` построен таким образом, независимо от `Theme.Material.Light.DarkActionBar` темы, применяемой к оставшейся части приложения. 
 
 
-<a name="main_menus" />
  
 ## <a name="add-menu-items"></a>Добавление элементов меню 
 
@@ -197,13 +190,11 @@ ActionBar.Title = "My Toolbar";
 В следующих разделах приводится подробное описание этого процесса путем добавления **изменить** и **Сохранить** элементы меню, пользовательское `Toolbar`. 
 
 
-<a name="menu_icons" />
 
 ### <a name="install-menu-icons"></a>Установка значков
 
 Продолжить `ToolbarFun` примера приложения, добавьте в проект приложения значков. Загрузить [icons.zip инструментов](https://github.com/xamarin/monodroid-samples/blob/master/Supportv7/AppCompat/Toolbar/Resources/toolbar-icons.zip?raw=true) и распакуйте его. Скопируйте содержимое извлеченный *MIP-карты -* папки в проект *MIP-карты -* папки в **ToolbarFun/ресурсы** и включить каждого файла значка добавлены в проект.
 
-<a name="menu_resource" />
 
 ### <a name="define-a-menu-resource"></a>Определить ресурс меню
 
@@ -239,7 +230,6 @@ ActionBar.Title = "My Toolbar";
 
 `showAsAction` Атрибуты **изменить** и **Сохранить** пунктов меню, присваивается `ifRoom` &ndash; этот параметр вызывает эти пункты меню отображаются в `Toolbar` при наличии Недостаточно места для отображения. **Предпочтения** наборов элементов меню `showAsAction` для `never` &ndash; в результате **предпочтения** меню будет отображаться в *переполнения* меню (три точки по вертикали). 
 
-<a name="on_create_options_menu" />
 
 ### <a name="implement-oncreateoptionsmenu"></a>Реализуйте OnCreateOptionsMenu
 
@@ -256,7 +246,6 @@ public override bool OnCreateOptionsMenu(IMenu menu)
 Android вызовы `OnCreateOptionsMenu` метод, чтобы приложение может указать ресурс меню для действия. В этом методе **top_menus.xml** завышенными ресурсов в передаваемый `menu`. Этот код вызывает новый **изменить**, **Сохранить**, и **предпочтения** пунктов меню в `Toolbar`. 
 
 
-<a name="on_options_item_selected" />
 
 ### <a name="implement-onoptionsitemselected"></a>Реализуйте OnOptionsItemSelected
 
@@ -275,15 +264,15 @@ public override bool OnOptionsItemSelected(IMenuItem item)
 
 Построение и запуск `ToolbarFun` новые элементы меню на панели инструментов. `Toolbar` Теперь отображает три значка меню, как показано на этом снимке экрана: 
 
-[![Диаграмма иллюстрирующая расположения редактирования, сохранения и элементов меню переполнения](replacing-the-action-bar-images/04-menu-items-sml.png)](replacing-the-action-bar-images/04-menu-items.png)
+[![Диаграмма иллюстрирующая расположения редактирования, сохранения и элементов меню переполнения](replacing-the-action-bar-images/04-menu-items-sml.png)](replacing-the-action-bar-images/04-menu-items.png#lightbox)
 
 После касания пользователь **изменить** отображения пункта меню, всплывающее уведомление указывает, что `OnOptionsItemSelected` был вызван метод: 
 
-[![Снимок экрана из всплывающих отображается при касании изменение элементов](replacing-the-action-bar-images/05-toast-displayed-sml.png)](replacing-the-action-bar-images/05-toast-displayed.png)
+[![Снимок экрана из всплывающих отображается при касании изменение элементов](replacing-the-action-bar-images/05-toast-displayed-sml.png)](replacing-the-action-bar-images/05-toast-displayed.png#lightbox)
 
 Когда пользователь нажимает в меню переполнения **предпочтения** отображения пункта меню. Как правило, менее типичных действий должны размещаться в меню переполнения &ndash; в этом примере используется меню переполнения для **предпочтения** , так как он используется не так часто, как **изменить** и  **Сохранить**: 
 
-[![Снимок экрана настройки пункт меню, который отображается в меню переполнения](replacing-the-action-bar-images/06-preferences-sml.png)](replacing-the-action-bar-images/06-preferences.png)
+[![Снимок экрана настройки пункт меню, который отображается в меню переполнения](replacing-the-action-bar-images/06-preferences-sml.png)](replacing-the-action-bar-images/06-preferences.png#lightbox)
 
 Дополнительные сведения о Android меню см. в разделе разработчика Android [меню](https://developer.android.com/guide/topics/ui/menus.html) раздела. 
  

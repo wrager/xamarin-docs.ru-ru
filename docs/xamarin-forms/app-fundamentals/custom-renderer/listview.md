@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 722bedd039a53d1244972ac9f0b98d87cc5d386a
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: eb4cf0285585351db5c45dc34a382236e6805c99
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="customizing-a-listview"></a>Настройка ListView
 
@@ -149,7 +149,7 @@ public class MainPageCS : ContentPage
 1. Добавить `ExportRenderer` атрибут класс пользовательского средства отрисовки, чтобы указать, что он будет использоваться для подготовки к просмотру пользовательский элемент управления с помощью Xamarin.Forms. Этот атрибут используется для регистрации пользовательского средства визуализации с помощью Xamarin.Forms.
 
 > [!NOTE]
-> **Примечание**: это необязательно для предоставления пользовательского средства отрисовки в каждом проекте платформы. Если пользовательское средство отрисовки не зарегистрирован, будет использоваться модуль подготовки отчетов по умолчанию для ячейки базового класса.
+> Это необязательно для предоставления пользовательского средства отрисовки в каждом проекте платформы. Если пользовательское средство отрисовки не зарегистрирован, будет использоваться модуль подготовки отчетов по умолчанию для ячейки базового класса.
 
 На следующей схеме показана обязанности каждого проекта в образце приложения, а также связи между ними:
 
@@ -461,7 +461,7 @@ protected override void OnElementPropertyChanged (object sender, System.Componen
   base.OnElementPropertyChanged (sender, e);
 
   if (e.PropertyName == NativeListView.ItemsProperty.PropertyName) {
-    Control.Adapter = new NativeAndroidListViewAdapter (Forms.Context as Android.App.Activity, Element as NativeListView);
+    Control.Adapter = new NativeAndroidListViewAdapter (_context as Android.App.Activity, Element as NativeListView);
   }
 }
 ```

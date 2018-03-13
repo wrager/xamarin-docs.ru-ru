@@ -3,16 +3,16 @@ title: "доступ к данным iOS"
 description: "Большинство приложений имеют некоторые требования, чтобы сохранить данные на устройстве локально. Если объем данных элементарно мал, это обычно требуется базы данных и уровнем данных в приложении для управления доступом к базе данных. iOS имеет ядро базы данных SQLite «встроенные» и доступа для хранения и извлечения данных стало проще благодаря платформе Xamarin. В этом документе показано, как получить доступ к базе данных SQLite."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 6B47E864-C6E7-4AA2-8DEF-2C8BF551D17C
+ms.assetid: 3AEDFD8D-FB10-4CEF-BE04-CCD14E95F02C
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/11/2016
-ms.openlocfilehash: 9ca929f584ec2b0d98300e7645707131df89969f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6dba862055cc266b2af1eaf87418fe7ebf5830c5
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="ios-data-access"></a>доступ к данным iOS
 

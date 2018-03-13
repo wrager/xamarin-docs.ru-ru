@@ -4,14 +4,15 @@ description: "Расширения разметки XAML является важ
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: F4A37564-B18B-42FF-B841-9A1949895AB6
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: 7aea7b1536efc952378c6a1df63640af191f1ebe
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1c5c4c30a7e506e19fc4dc0728fb55851ec4911f
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="part-3-xaml-markup-extensions"></a>Часть 3. Расширения разметки XAML
 
@@ -298,7 +299,7 @@ _Расширения разметки XAML является важной хар
 
 Снимки экрана проверьте согласованность задания стиля и стилей зависят от платформы.
 
-[ ![](xaml-markup-extensions-images/sharedresources.png "Оформленных элементов управления")](xaml-markup-extensions-images/sharedresources-large.png "оформленных элементов управления")
+[![](xaml-markup-extensions-images/sharedresources.png "Оформленных элементов управления")](xaml-markup-extensions-images/sharedresources-large.png#lightbox "оформленных элементов управления")
 
 Несмотря на то, что чаще всего используется для определения `Resources` коллекции в верхней части страницы, необходимо помнить, `Resources` определяется свойство `VisualElement`, и может иметь `Resources` коллекций для других элементов на странице. Например, попробуйте добавить папку к `StackLayout` в этом примере:
 
@@ -436,7 +437,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 Размер результирующего `BoxView` относительно экрана зависит от платформы:
 
- [ ![](xaml-markup-extensions-images/staticconstants.png "Элементы управления, используя расширение разметки x: Static")](xaml-markup-extensions-images/staticconstants-large.png "элементы управления, используя расширение разметки x: Static")
+ [![](xaml-markup-extensions-images/staticconstants.png "Элементы управления, используя расширение разметки x: Static")](xaml-markup-extensions-images/staticconstants-large.png#lightbox "элементы управления, используя расширение разметки x: Static")
 
 ## <a name="other-standard-markup-extensions"></a>Другие расширения стандартной разметки
 
@@ -552,7 +553,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 Вот выполнение программы.
 
-[ ![](xaml-markup-extensions-images/relativelayout.png "Относительный макета с помощью ограничений")](xaml-markup-extensions-images/relativelayout-large.png "относительного макета с помощью ограничений")
+[![](xaml-markup-extensions-images/relativelayout.png "Относительный макета с помощью ограничений")](xaml-markup-extensions-images/relativelayout-large.png#lightbox "относительного макета с помощью ограничений")
 
 ## <a name="summary"></a>Сводка
 

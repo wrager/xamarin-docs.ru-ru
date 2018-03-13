@@ -8,17 +8,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/22/2016
-ms.openlocfilehash: c305075d37a25bfe828f16d4e69955437a591f9a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 648125ca8bd2c7c8a015b4c29195dc75c0bbf0a0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="scrollview"></a>ScrollView
 
 [`ScrollView`](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) содержит макеты и позволяет им прокрутки вне экрана. `ScrollView` также используется для разрешения представления для автоматического перемещения видимой области экрана при отображении клавиатуры.
 
-[ ![](scroll-view-images/layouts-sml.png "Макеты Xamarin.Forms")](scroll-view-images/layouts.png "Xamarin.Forms макетов")
+[![](scroll-view-images/layouts-sml.png "Макеты Xamarin.Forms")](scroll-view-images/layouts.png#lightbox "Xamarin.Forms макетов")
 
 В этой статье рассматриваются:
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 02/27/2018
 ## <a name="usage"></a>Использование
 
 > [!NOTE]
-> **Примечание**: `ScrollView`s не должен быть вложенным. Кроме того `ScrollView`s не должен быть вложенным в других элементах управления, предоставляющих прокрутки, таких как `ListView` и `WebView`.
+> `ScrollView`s не должен быть вложенным. Кроме того `ScrollView`s не должен быть вложенным в других элементах управления, предоставляющих прокрутки, таких как `ListView` и `WebView`.
 
 `ScrollView` предоставляет `Content` свойство, которое может быть задано в одном представлении или макета. Рассмотрим следующий пример макета с очень большой boxView, за которым следует `Entry`:
 

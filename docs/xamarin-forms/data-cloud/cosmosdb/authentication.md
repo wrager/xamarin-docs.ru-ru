@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 06/16/2017
-ms.openlocfilehash: a16f72e6aaee93aa313aff0aba23887b51acf701
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 10c4a1e3355263722d170dff0a5e2707eb794818
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="authenticating-users-with-an-azure-cosmos-db-document-database"></a>Проверка подлинности пользователей с базой данных Azure Cosmos DB документа
 
@@ -81,7 +81,7 @@ _Базы данных Azure Cosmos DB документа поддерживае
 
     Следующий снимок экрана демонстрирует эту конфигурацию:
 
-    [![](authentication-images/azure-web-app-settings.png "Параметры веб-приложения служб приложений")](authentication-images/azure-web-app-settings-large.png "параметры веб-приложения служб приложений")
+    [![](authentication-images/azure-web-app-settings.png "Параметры веб-приложения служб приложений")](authentication-images/azure-web-app-settings-large.png#lightbox "параметры веб-приложения служб приложений")
 
 1. Публикация решения broker маркера ресурсов веб-приложения службы приложений Azure.
 
@@ -117,7 +117,7 @@ _Базы данных Azure Cosmos DB документа поддерживае
 
   Следующий снимок экрана демонстрирует эту конфигурацию:
 
-  [![](authentication-images/app-service-authentication-settings.png "Параметры проверки подлинности для веб-приложения служб приложений")](authentication-images/app-service-authentication-settings-large.png "параметры проверки подлинности для веб-приложения служб приложений")
+  [![](authentication-images/app-service-authentication-settings.png "Параметры проверки подлинности для веб-приложения служб приложений")](authentication-images/app-service-authentication-settings-large.png#lightbox "параметры проверки подлинности для веб-приложения служб приложений")
 
 Службы приложений веб-приложения также должны быть настроены для обмена данными с помощью приложения Facebook, чтобы включить поток проверки подлинности. Это можно сделать, выбрав поставщика удостоверений Facebook и введя **идентификатор приложения** и **секрет приложения** значения из настроек приложения Facebook в центре разработчика Facebook. Дополнительные сведения см. в разделе [Facebook, добавьте сведения в приложение](/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication#a-namesecrets-aadd-facebook-information-to-your-application).
 

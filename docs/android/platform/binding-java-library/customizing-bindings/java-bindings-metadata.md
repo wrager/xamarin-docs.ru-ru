@@ -7,18 +7,17 @@ ms.assetid: 27CB3C16-33F3-F580-E2C0-968005A7E02E
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/15/2018
-ms.openlocfilehash: 91e27fcaef0ef1b262eceecd4d3c71bac34e328d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/09/2018
+ms.openlocfilehash: edf25ebd089994c01b2fa45e77b35fad9a51e350
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="java-bindings-metadata"></a>Привязки метаданных Java
 
 _Кода C# в Xamarin.Android вызывается библиотеки Java с помощью привязки, которые представляют собой механизм, который абстрагирует сведения низкого уровня, которые указаны в Java собственного интерфейса (JNI). Xamarin.Android предоставляет средство, которое приводит к возникновению ошибки эти привязки. Этот инструментарий позволяет контроль разработчика, как привязка создается с помощью метаданных, что позволяет процедур, таких как изменение пространства имен и переименование членов. В этом документе рассматривается, как работает метаданных, перечислены атрибуты метаданных поддерживает и описываются способы решения проблем с привязкой, изменив эти метаданные._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -74,7 +73,6 @@ Xamarin.Android **библиотеки привязки Java** пытается 
 
 Позволяет перейти к обсудить **Metadata.xml** более подробно.
 
-<a name="Metadata.xml_Transform_File" />
 
 ## <a name="metadataxml-transform-file"></a>Файл Metadata.XML преобразования
 
@@ -114,7 +112,6 @@ Xamarin.Android **библиотеки привязки Java** пытается 
 -   `parameter` &ndash; Определение параметра для метода. Например `/parameter[@name='p0']`
 
 
-<a name="ADDING_TYPES" />
 
 ### <a name="adding-types"></a>Добавление типов
 
@@ -129,7 +126,6 @@ Xamarin.Android **библиотеки привязки Java** пытается 
 </add-node>
 ```
 
-<a name="REMOVING_TYPES" />
 
 ### <a name="removing-types"></a>Удаление типов
 
@@ -138,8 +134,6 @@ Xamarin.Android **библиотеки привязки Java** пытается 
 ```xml
 <remove-node path="/api/package[@name='{package_name}']/class[@name='{name}']" />
 ```
-
-<a name="Renaming_Members" />
 
 ### <a name="renaming-members"></a>Переименование членов
 
@@ -169,6 +163,8 @@ public class NewName : Java.Lang.Object { ... }
     name="managedName">NewName</attr>
 ```
 
+<a name="Renaming_EventArg_Wrapper_Classes" />
+
 #### <a name="renaming-eventarg-wrapper-classes"></a>Переименование `EventArg` классы-оболочки
 
 Когда определяет генератор привязки Xamarin.Android `onXXX` метод задания для _тип прослушивателя_, события C# и `EventArgs` создается подкласс для поддержки .NET flavoured API-Интерфейс для Java-прослушиватель шаблон. Например рассмотрим следующий класс Java и метод.
@@ -193,7 +189,6 @@ NavigationManager.2DSignNextManueverEventArgs
 ```
 
  
-<a name="Supported_Attributes" />
 
 ## <a name="supported-attributes"></a>Поддерживаемые атрибуты
 
@@ -341,7 +336,6 @@ NavigationManager.2DSignNextManueverEventArgs
 realReachSettings.MeasurementUnit = SKMeasurementUnit.Second;
 ```
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

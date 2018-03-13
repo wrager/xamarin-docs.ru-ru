@@ -3,16 +3,16 @@ title: RecyclerView
 description: "RecyclerView — это группа представление для отображения коллекций. она должна быть более гибкий замены старой представление групп, таких как ListView и GridView.  В этом руководстве объясняется, как использовать и настраивать RecyclerView Xamarin.Android приложений."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: CF12FE85-D03A-4E64-95D2-D7115061A500
+ms.assetid: 91EF0BD2-3306-47E1-9B39-627A1787762F
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/03/2018
-ms.openlocfilehash: ec8b3a4655c8e8d9e492c9f7a1807dd64ecc6ae7
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 028520742a84e717e28147f2fa1fafacfef34028
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="recyclerview"></a>RecyclerView
 
@@ -23,7 +23,7 @@ _RecyclerView — это группа представление для отоб
 Во многих приложениях необходимо показывать коллекции того же типа (например, сообщения, контакты, изображения или песни); часто эта коллекция является слишком большой для отображения на экране, поэтому коллекции представлены в небольшое окно, которое можно плавно прокручивать все элементы в коллекции.
 `RecyclerView` является мини-приложение Android, отображающий коллекцию элементов в списке или сетке, позволяя пользователям выполнять прокрутку по коллекции. Ниже приведен снимок экрана примера приложения, использующего `RecyclerView` для отображения содержимого папки "Входящие" для электронной почты в список с вертикальной прокруткой:
 
-[ ![Пример приложения с помощью RecyclerView список входящих сообщений](images/01-recyclerview-example-sml.png)](images/01-recyclerview-example.png)
+[![Пример приложения с помощью RecyclerView список входящих сообщений](images/01-recyclerview-example-sml.png)](images/01-recyclerview-example.png#lightbox)
 
 `RecyclerView` предлагает два замечательных функций:
 

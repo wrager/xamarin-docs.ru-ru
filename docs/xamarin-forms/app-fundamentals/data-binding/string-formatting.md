@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 3b54ed876857f0cd04d7a304ff05b9710fbd9e04
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 6735e9c03bee981f048231b53539c3b239f64484
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="string-formatting"></a>Строка форматирования
 
@@ -121,7 +121,7 @@ ms.lasthandoff: 02/28/2018
 
 Вот программу на всех трех платформ.
 
-[![Строка форматирования](string-formatting-images/stringformatting-small.png "строка форматирования")](string-formatting-images/stringformatting-large.png "строка форматирования")
+[![Строка форматирования](string-formatting-images/stringformatting-small.png "строка форматирования")](string-formatting-images/stringformatting-large.png#lightbox "строка форматирования")
 
 ## <a name="viewmodels-and-string-formatting"></a>ViewModels и форматирования строк
 
@@ -174,7 +174,7 @@ ms.lasthandoff: 02/28/2018
 
 Теперь имеется три пары `Slider` и `Label` элементы, которые привязаны к тому же исходное свойство в `HslColorViewModel` объекта. Единственным различием является `Label` имеет `StringFormat` свойство для отображения каждого `Slider` значение.
 
-[![Цвет выделения лучше](string-formatting-images/bettercolorselector-small.png "лучше цвет выделения")](string-formatting-images/bettercolorselector-large.png "лучше цвета выделения")
+[![Цвет выделения лучше](string-formatting-images/bettercolorselector-small.png "лучше цвет выделения")](string-formatting-images/bettercolorselector-large.png#lightbox "лучше цвета выделения")
 
 Возможно, вас интересует как можно отобразить значения RGB (красный, зеленый, синий) в традиционных двух цифр в шестнадцатеричном формате. Эти целочисленные значения непосредственно недоступны из `Color` структуры. Одним из решений будет вычислить целочисленных значений компонентов цвета в ViewModel и предоставить их как свойства. Затем можно форматировать их с помощью `X2` спецификацией форматирования.
 

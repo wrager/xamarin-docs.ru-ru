@@ -3,16 +3,16 @@ title: "Диалоговые окна"
 description: "В этой статье рассматривается работа с диалоговые окна и модальные окна в приложении Xamarin.Mac. Он описывает создание модальных окон в Xcode и интерфейс построителя, работа с стандартных диалоговых окон и работать с этими элементами управления в коде C#."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: F1DB93A1-7549-4540-AD5E-D7605CCD8435
+ms.assetid: 55451990-B77B-4D44-B8BB-F874EC503B0C
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 9b65e870fae0074726d0bdd46d9eecbe99240e98
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 661874ae8599fed35ce10213fece383eb81de94d
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="dialogs"></a>Диалоговые окна
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/28/2018
 
 Windows можно в состоянии без режима (например, текстовый редактор, который может иметь одновременно открыть несколько документов) либо модальное (например, в диалоговом окне экспорта, необходимо отменить перед продолжением приложения).
 
-[ ![](dialog-images/dialog03.png "Открытое окно")](dialog-images/dialog03.png)
+[![](dialog-images/dialog03.png "Открытое окно")](dialog-images/dialog03.png#lightbox)
 
 В этой статье мы обсудим основы работы с диалоговые окна и модальные окна в приложении Xamarin.Mac. Настоятельно рекомендуется работать через [Hello, Mac](~/mac/get-started/hello-mac.md) статью, во-первых, в частности [введение в Xcode и интерфейс построителя](~/mac/get-started/hello-mac.md#Introduction_to_Xcode_and_Interface_Builder) и [выходов и действия](~/mac/get-started/hello-mac.md#Outlets_and_Actions) разделы, как он охватывает основные принципы и методы, которые будут использоваться в этой статье.
 
@@ -44,25 +44,25 @@ Windows можно в состоянии без режима (например, 
 
 Любой стандарт `NSWindow` может использоваться как настраиваемого диалогового окна, отобразив его как модальная:
 
-[ ![](dialog-images/modal01.png "Пример модальное окно")](dialog-images/modal01.png)
+[![](dialog-images/modal01.png "Пример модальное окно")](dialog-images/modal01.png#lightbox)
 
 ### <a name="document-modal-dialog-sheets"></a>Листы модальное диалоговое окно документа
 
 Объект _лист_ является модальным диалоговым окном, прикрепленный к окну данного документа, предотвращая взаимодействия с окном, пока они закрыть диалоговое окно. Лист прикрепленный к окну, из которого он возникает и в любой момент времени только на одном листе может быть открыт для окна.
 
-[ ![](dialog-images/sheet08.png "Пример модального листа")](dialog-images/sheet08.png)
+[![](dialog-images/sheet08.png "Пример модального листа")](dialog-images/sheet08.png#lightbox)
 
 ### <a name="preferences-windows"></a>Параметры Windows
 
 Окно Параметры — немодального диалогового окна, который содержит параметры приложения, которые пользователь редко изменяются. Параметры Windows часто включают панель инструментов, которая позволяет пользователю переключаться между различные группы параметров:
 
-[ ![](dialog-images/dialog02.png "Пример настройки окна")](dialog-images/dialog02.png)
+[![](dialog-images/dialog02.png "Пример настройки окна")](dialog-images/dialog02.png#lightbox)
 
 ### <a name="open-dialog"></a>Откройте диалоговое окно
 
 Откройте диалоговое окно предоставляет пользователям согласованный способ найти и открыть элемент в приложении:
 
-[ ![](dialog-images/dialog03.png "Откройте диалоговое окно")](dialog-images/dialog03.png)
+[![](dialog-images/dialog03.png "Откройте диалоговое окно")](dialog-images/dialog03.png#lightbox)
 
 
 ### <a name="print-and-page-setup-dialogs"></a>Печать и диалоговых окнах параметры страницы
@@ -71,37 +71,37 @@ macOS предоставляет стандартный печати и стра
 
 Диалоговое окно печати могут отображаться как оба бесплатно с плавающей запятой диалоговое окно:
 
-[ ![](dialog-images/print01.png "Диалоговое окно печати")](dialog-images/print01.png)
+[![](dialog-images/print01.png "Диалоговое окно печати")](dialog-images/print01.png#lightbox)
 
 Или он может отображаться в виде листа:
 
-[ ![](dialog-images/print02.png "Печать листа")](dialog-images/print02.png)
+[![](dialog-images/print02.png "Печать листа")](dialog-images/print02.png#lightbox)
 
 Диалоговое окно настройки страницы может отображаться как оба бесплатно с плавающей запятой диалоговое окно:
 
-[ ![](dialog-images/print03.png "Диалоговое окно настройки страницы")](dialog-images/print03.png)
+[![](dialog-images/print03.png "Диалоговое окно настройки страницы")](dialog-images/print03.png#lightbox)
 
 Или он может отображаться в виде листа:
 
-[ ![](dialog-images/print04.png "Лист страница установки")](dialog-images/print04.png)
+[![](dialog-images/print04.png "Лист страница установки")](dialog-images/print04.png#lightbox)
 
 ### <a name="save-dialogs"></a>Сохранить диалоговые окна
 
 Диалоговое окно сохранения предоставляет пользователям согласованный способ сохранения элемента в приложении. Диалоговое окно сохранения имеет два состояния: **минимальные** (также известный как свернутой):
 
-[ ![](dialog-images/save01.png "Сохранение диалогового окна")](dialog-images/save01.png)
+[![](dialog-images/save01.png "Сохранение диалогового окна")](dialog-images/save01.png#lightbox)
 
 И **разреженный** состояния:
 
-[ ![](dialog-images/save02.png "Развернутое диалоговое окно сохранения")](dialog-images/save02.png)
+[![](dialog-images/save02.png "Развернутое диалоговое окно сохранения")](dialog-images/save02.png#lightbox)
 
 **Минимальные** сохранить диалоговое окно может отображаться в качестве листа:
 
-[ ![](dialog-images/save03.png "Минимальный сохраните лист")](dialog-images/save03.png)
+[![](dialog-images/save03.png "Минимальный сохраните лист")](dialog-images/save03.png#lightbox)
 
 Как можно **разреженный** сохранить диалоговое окно:
 
-[ ![](dialog-images/save04.png "Расширенная сохранить лист")](dialog-images/save04.png)
+[![](dialog-images/save04.png "Расширенная сохранить лист")](dialog-images/save04.png#lightbox)
 
 Дополнительные сведения см. в разделе [диалоговые окна](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/WindowDialogs.html#//apple_ref/doc/uid/20000957-CH43-SW1) раздел Apple [рекомендациям по интерфейсам OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
 
@@ -116,20 +116,20 @@ macOS предоставляет стандартный печати и стра
 1. В **обозревателе решений**откройте `Main.storyboard` файл для редактирования в построителе интерфейса в Xcode.
 2. Перетащите новую **View Controller** в рабочей области конструктора:
 
-    [ ![](dialog-images/new01.png "При выборе контроллера представления из библиотеки")](dialog-images/new01.png)
+    [![](dialog-images/new01.png "При выборе контроллера представления из библиотеки")](dialog-images/new01.png#lightbox)
 3. В **удостоверение инспектора**, введите `CustomDialogController` для **имя класса**: 
 
-    [ ![](dialog-images/new02.png "Задание имени класса")](dialog-images/new02.png)
+    [![](dialog-images/new02.png "Задание имени класса")](dialog-images/new02.png#lightbox)
 4. Переключитесь в Visual Studio для Mac, разрешить его для синхронизации с Xcode и создать `CustomDialogController.h` файла.
 5. Вернитесь в Xcode и спроектировать свой интерфейс: 
 
-    [ ![](dialog-images/new03.png "Проектирование пользовательского интерфейса в Xcode")](dialog-images/new03.png)
+    [![](dialog-images/new03.png "Проектирование пользовательского интерфейса в Xcode")](dialog-images/new03.png#lightbox)
 6. Создание **модальное Перейти** из главного окна приложения на новый контроллер представление, перетащив элемент управления из элемент пользовательского интерфейса, который можно будет открыть диалоговое окно на диалоговое окно. Назначьте **идентификатор** `ModalSegue`: 
 
-    [ ![](dialog-images/new06.png "Модальные segue")](dialog-images/new06.png)
+    [![](dialog-images/new06.png "Модальные segue")](dialog-images/new06.png#lightbox)
 6. Проводной доступ к любой **действия** и **торговцам**: 
 
-    [ ![](dialog-images/new04.png "Настройка действий")](dialog-images/new04.png)
+    [![](dialog-images/new04.png "Настройка действий")](dialog-images/new04.png#lightbox)
 6. Сохранить изменения и вернуться в Visual Studio для Mac для синхронизации с Xcode.
 
 Сделать `CustomDialogController.cs` внешний файл следующим образом:
@@ -249,7 +249,7 @@ public override void PrepareForSegue (NSStoryboardSegue segue, NSObject sender)
 
 Можно запустить приложение и отобразить настраиваемое диалоговое окно:
 
-[ ![](dialog-images/new05.png "Пример этого окна")](dialog-images/new05.png)
+[![](dialog-images/new05.png "Пример этого окна")](dialog-images/new05.png#lightbox)
 
 Дополнительные сведения об использовании windows в приложении Xamarin.Mac см. в разделе нашей [работа с окнами](~/mac/user-interface/window.md) документации.
 
@@ -264,19 +264,19 @@ public override void PrepareForSegue (NSStoryboardSegue segue, NSObject sender)
 1. В **обозревателе решений**откройте `Main.storyboard` файл для редактирования в построителе интерфейса в Xcode.
 2. Перетащите новую **View Controller** в рабочей области конструктора:
 
-    [ ![](dialog-images/new01.png "При выборе контроллера представления из библиотеки")](dialog-images/new01.png)
+    [![](dialog-images/new01.png "При выборе контроллера представления из библиотеки")](dialog-images/new01.png#lightbox)
 2. Разработка пользовательского интерфейса.
 
-    [ ![](dialog-images/sheet01.png "Разработки пользовательского интерфейса")](dialog-images/sheet01.png)
+    [![](dialog-images/sheet01.png "Разработки пользовательского интерфейса")](dialog-images/sheet01.png#lightbox)
 3. Создание **перейти лист** из главного окна на новый контроллер представление: 
 
-    [ ![](dialog-images/sheet02.png "Выбор типа segue лист")](dialog-images/sheet02.png)
+    [![](dialog-images/sheet02.png "Выбор типа segue лист")](dialog-images/sheet02.png#lightbox)
 4. В **удостоверение инспектора**, имя контроллера представления **класса** `SheetViewController`: 
 
-    [ ![](dialog-images/sheet03.png "Задание имени класса")](dialog-images/sheet03.png)
+    [![](dialog-images/sheet03.png "Задание имени класса")](dialog-images/sheet03.png#lightbox)
 5. Определять любые необходимые **торговцам** и **действия**: 
 
-    [ ![](dialog-images/sheet04.png "Определение необходимых выходов и действия")](dialog-images/sheet04.png)
+    [![](dialog-images/sheet04.png "Определение необходимых выходов и действия")](dialog-images/sheet04.png#lightbox)
 6. Сохранить изменения и вернуться в Visual Studio для Mac для синхронизации.
 
 Далее следует изменить `SheetViewController.cs` файла и сделать его выглядеть следующим образом:
@@ -407,7 +407,7 @@ public override void PrepareForSegue (NSStoryboardSegue segue, NSObject sender)
 
 Если запустить приложение и откройте страницу, она будет присоединена к окна:
 
-[ ![](dialog-images/sheet08.png "Пример листа")](dialog-images/sheet08.png)
+[![](dialog-images/sheet08.png "Пример листа")](dialog-images/sheet08.png#lightbox)
 
 <a name="Creating_a_Preferences_Dialog" />
 
@@ -481,36 +481,36 @@ namespace MacWindows
 1. В **обозревателе решений**откройте `Main.storyboard` файл для редактирования в построителе интерфейса в Xcode.
 2. Перетащите новую **окна контроллера** в рабочей области конструктора:
 
-    [ ![](dialog-images/pref01.png "Выберите окно контроллер из библиотеки")](dialog-images/pref01.png)
+    [![](dialog-images/pref01.png "Выберите окно контроллер из библиотеки")](dialog-images/pref01.png#lightbox)
 3. Расположите рядом окна **меню** конструктор:
 
-    [ ![](dialog-images/pref02.png "Добавление нового окна")](dialog-images/pref02.png)
+    [![](dialog-images/pref02.png "Добавление нового окна")](dialog-images/pref02.png#lightbox)
 4. Создайте копии вложенное представление-контроллер, как будет вкладок в представлении предпочтения:
 
-    [ ![](dialog-images/pref03.png "Добавление необходимых контроллеров представления")](dialog-images/pref03.png)
+    [![](dialog-images/pref03.png "Добавление необходимых контроллеров представления")](dialog-images/pref03.png#lightbox)
 5. Перетащите новую **инструментов контроллера** из **библиотеки**:
 
-    [ ![](dialog-images/pref04.png "Выберите контроллер инструментов из библиотеки")](dialog-images/pref04.png)
+    [![](dialog-images/pref04.png "Выберите контроллер инструментов из библиотеки")](dialog-images/pref04.png#lightbox)
 6. И поместите его в окне в области конструктора.
 
-    [ ![](dialog-images/pref05.png "Добавление нового контроллера панели инструментов")](dialog-images/pref05.png)
+    [![](dialog-images/pref05.png "Добавление нового контроллера панели инструментов")](dialog-images/pref05.png#lightbox)
 7. Макет конструктора на панели инструментов:
 
-    [ ![](dialog-images/pref06.png "Макет панели инструментов")](dialog-images/pref06.png)
+    [![](dialog-images/pref06.png "Макет панели инструментов")](dialog-images/pref06.png#lightbox)
 8. Удерживая нажатой, перетащите из каждого **кнопки панели инструментов** с представлениями, созданной ранее. Выберите **настраиваемый** перейти типа:
 
-    [ ![](dialog-images/pref07.png "Segue тип параметра")](dialog-images/pref07.png)
+    [![](dialog-images/pref07.png "Segue тип параметра")](dialog-images/pref07.png#lightbox)
 9. Выберите новый Segue и задайте **класса** для `ReplaceViewSegue`:
 
-    [ ![](dialog-images/pref08.png "Класс segue параметров")](dialog-images/pref08.png)
+    [![](dialog-images/pref08.png "Класс segue параметров")](dialog-images/pref08.png#lightbox)
 10. В **конструктор Menubar** в области конструктора в меню приложения выберите **установки...** управления щелкните и перетащите в окно "Параметры" для создания **Показать** перейти:
 
-    [ ![](dialog-images/pref09.png "Segue тип параметра")](dialog-images/pref09.png)
+    [![](dialog-images/pref09.png "Segue тип параметра")](dialog-images/pref09.png#lightbox)
 11. Сохранить изменения и вернуться в Visual Studio для Mac для синхронизации.
 
 Если выполнение кода и выберите **установки...**  из **меню приложения**, откроется окно:
 
-[ ![](dialog-images/pref10.png "Пример настройки окна")](dialog-images/pref10.png)
+[![](dialog-images/pref10.png "Пример настройки окна")](dialog-images/pref10.png#lightbox)
 
 Дополнительные сведения о работе с Windows и на панелях инструментов см. в разделе нашей [Windows](~/mac/user-interface/window.md) и [панели инструментов](~/mac/user-interface/toolbar.md) документации.
 
@@ -719,7 +719,7 @@ namespace SourceWriter
 
 Затем подключитесь предпочтений класс для элементов пользовательского интерфейса для окна предпочтений и представления, созданные выше. В построителе интерфейса выбрать контроллер представление предпочтений и переключитесь в **инспектора удостоверения**, создайте пользовательский класс для контроллера: 
 
-[ ![](dialog-images/prefs12.png "Инспектор удостоверений")](dialog-images/prefs12.png)
+[![](dialog-images/prefs12.png "Инспектор удостоверений")](dialog-images/prefs12.png#lightbox)
 
 Переключитесь в Visual Studio для Mac для синхронизации изменений и откройте только что созданный класс для редактирования. Сделайте класс выглядеть следующим образом:
 
@@ -758,7 +758,7 @@ namespace SourceWriter
 
 Затем дважды щелкните файл раскадровки, чтобы снова открыть его в интерфейс построителя (и увидеть изменения, выполненные над). Перетащите все элементы управления пользовательского интерфейса, необходимые для построения настройки интерфейса в представлении. Для каждого элемента управления, переключитесь в **привязки инспектора** и привязать к отдельных свойств **AppPreference** класса:
 
-[ ![](dialog-images/prefs13.png "Инспектор привязки")](dialog-images/prefs13.png)
+[![](dialog-images/prefs13.png "Инспектор привязки")](dialog-images/prefs13.png#lightbox)
 
 Повторите описанные выше шаги для всех панелей (Просмотр контроллеров) и необходимые свойства предпочтения.
 
@@ -903,7 +903,7 @@ namespace SourceWriter
 
 Все эти изменения в месте Если пользователь изменяет параметры приложения и закрывает окно предпочтения изменения повлияют на все открытые окна:
 
-[ ![](dialog-images/prefs14.png "Пример настройки окна")](dialog-images/prefs14.png)
+[![](dialog-images/prefs14.png "Пример настройки окна")](dialog-images/prefs14.png#lightbox)
 
 <a name="The_Open_Dialog" />
 
@@ -954,7 +954,7 @@ if (dlg.RunModal () == 1) {
 
 Если запустить программу и выберите **открыть...**  элемента из **файл** отображается меню, следующие: 
 
-[ ![](dialog-images/dialog03.png "Открытое окно")](dialog-images/dialog03.png)
+[![](dialog-images/dialog03.png "Открытое окно")](dialog-images/dialog03.png#lightbox)
 
 <a name="The_Print_and_Page_Setup_Dialogs" />
 
@@ -991,11 +991,11 @@ void ShowDocument (NSObject sender) {
 
 Если задается `ShowPrintAsSheet` свойства `false`, запустите приложение и отобразить диалоговое окно печати, отображается следующее:
 
-[ ![](dialog-images/print01.png "Диалоговое окно печати")](dialog-images/print01.png)
+[![](dialog-images/print01.png "Диалоговое окно печати")](dialog-images/print01.png#lightbox)
 
 Если задать `ShowPrintAsSheet` свойства `true`, запустите приложение и отобразить диалоговое окно печати, отображается следующее:
 
-[ ![](dialog-images/print02.png "Печать листа")](dialog-images/print02.png)
+[![](dialog-images/print02.png "Печать листа")](dialog-images/print02.png#lightbox)
 
 Следующий код отображает диалоговое окно Макет страницы:
 
@@ -1022,11 +1022,11 @@ void ShowLayout (NSObject sender) {
 
 Если задается `ShowPrintAsSheet` свойства `false`, запустите приложение и отобразить диалоговое окно печати макета, отображается следующее:
 
-[ ![](dialog-images/print03.png "Диалоговое окно настройки страницы")](dialog-images/print03.png)
+[![](dialog-images/print03.png "Диалоговое окно настройки страницы")](dialog-images/print03.png#lightbox)
 
 Если задать `ShowPrintAsSheet` свойства `true`, запустите приложение и отобразить диалоговое окно печати макета, отображается следующее:
 
-[ ![](dialog-images/print04.png "Лист страница установки")](dialog-images/print04.png)
+[![](dialog-images/print04.png "Лист страница установки")](dialog-images/print04.png#lightbox)
 
 Дополнительные сведения о работе с печати и страницы диалоговые окна программы установки см. в разделе Apple [NSPrintPanel](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSPrintPanel_Class/index.html#//apple_ref/doc/uid/TP40004092), [NSPageLayout](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSPageLayout_Class/index.html#//apple_ref/doc/uid/TP40004080) и [Общие сведения о печати](http://sdg.mesonet.org/people/brad/XCode3/Documentation/DocSets/com.apple.adc.documentation.AppleSnowLeopard.CoreReference.docset/Contents/Resources/Documents/#documentation/Cocoa/Conceptual/Printing/Printing.html#//apple_ref/doc/uid/10000083-SW1) документация.
 
@@ -1076,19 +1076,19 @@ void ShowSaveAs (NSObject sender)
 
 Если задается `ShowSaveAsSheet` свойства `false`, запустите приложение и выберите **Сохранить как...**  из **файл** меню будет отображаться следующее:
 
-[ ![](dialog-images/save01.png "Сохранение диалоговое окно")](dialog-images/save01.png)
+[![](dialog-images/save01.png "Сохранение диалоговое окно")](dialog-images/save01.png#lightbox)
 
 Пользователь может развернуть диалоговое окно:
 
-[ ![](dialog-images/save02.png "Развернутое диалоговое окно сохранения")](dialog-images/save02.png)
+[![](dialog-images/save02.png "Развернутое диалоговое окно сохранения")](dialog-images/save02.png#lightbox)
 
 Если задается `ShowSaveAsSheet` свойства `true`, запустите приложение и выберите **Сохранить как...**  из **файл** меню будет отображаться следующее:
 
-[ ![](dialog-images/save03.png "Сохранение таблицы")](dialog-images/save03.png)
+[![](dialog-images/save03.png "Сохранение таблицы")](dialog-images/save03.png#lightbox)
 
 Пользователь может развернуть диалоговое окно:
 
-[ ![](dialog-images/save04.png "Расширенная сохранить лист")](dialog-images/save04.png)
+[![](dialog-images/save04.png "Расширенная сохранить лист")](dialog-images/save04.png#lightbox)
 
 Для получения дополнительных сведения о работе с диалоговым окном сохранить см. в разделе Apple [NSSavePanel](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSSavePanel_Class/index.html#//apple_ref/doc/uid/TP40004098) документации.
 
@@ -1105,7 +1105,7 @@ void ShowSaveAs (NSObject sender)
 - [Меню](~/mac/user-interface/menu.md)
 - [Windows](~/mac/user-interface/window.md)
 - [Панели инструментов](~/mac/user-interface/toolbar.md)
-- [Рекомендации по интерфейсу отдела OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
+- [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
 - [Введение в Windows](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031-SW1)
 - [Введение в листы](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Sheets/Sheets.html#//apple_ref/doc/uid/10000002i)
 - [Общие сведения о печати](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Printing/osxp_aboutprinting/osxp_aboutprt.html)

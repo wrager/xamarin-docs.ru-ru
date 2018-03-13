@@ -6,12 +6,12 @@ ms.assetid: 405A1FA0-4EFA-4AEB-B672-F36307B9CF16
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: 83997018f4e08567a9150bf1e21374a98c8ddb4e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 1d9cf345aa971c40f4132cc7970ed1244640da14
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="touch-in-android"></a>Touch в Android
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/27/2018
 
 
 > [!NOTE]
-> **Примечание:** сенсорных экранов поддерживают не все устройства Android. 
+> Не все устройства Android поддерживают сенсорных экранов. 
 
 Добавив следующий тег в файл манифеста вызывает Google Play, отображаются только приложения для тех устройств, которые являются поддержка сенсорного ввода.
 
@@ -90,11 +90,11 @@ public override bool OnTouchEvent(MotionEvent e)
 
 С момента Android 1.6 Android SDK поставляется вместе с приложением, предустановленные на эмуляторе вызывается жесты построитель. Это приложение позволяет разработчику создавать предопределенные жесты, которые могут быть внедрены в приложении. На следующем снимке экрана показан пример построителя жесты.
 
-[![Снимок экрана жесты построитель с помощью жестов пример](touch-in-android-images/image11.png)](touch-in-android-images/image11.png)
+[![Снимок экрана жесты построитель с помощью жестов пример](touch-in-android-images/image11.png)](touch-in-android-images/image11.png#lightbox)
 
 Улучшенная версия этого приложения, программа жестов можно найти Google Play. Жест оно очень похоже жесты построитель за исключением того, что позволяет выполнить тестирование жесты после их создания. Это Далее снимке экрана показан построитель жесты.
 
-[![Снимок экрана жестов средство, с помощью жестов пример](touch-in-android-images/image12.png)](touch-in-android-images/image12.png)
+[![Снимок экрана жестов средство, с помощью жестов пример](touch-in-android-images/image12.png)](touch-in-android-images/image12.png#lightbox)
 
 Средство жестов более удобна для создания пользовательских жестов разрешается жесты, проверяемое при их создании и легко доступны через Google Play.
 

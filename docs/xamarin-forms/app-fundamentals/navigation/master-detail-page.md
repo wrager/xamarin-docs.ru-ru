@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: f7e949902e2f960a9aa68c600514b7fefc8ae30d
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 9d774870a541630d8c6519f9dfeaeb21cacb98e8
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="master-detail-page"></a>Главные и подчиненные страницы
 
@@ -22,7 +22,7 @@ _Xamarin.Forms MasterDetailPage — это страница, который уп
 
 Главная страница обычно отображает список элементов, как показано на следующем снимке экрана:
 
-[![](master-detail-page-images/masterpage-components.png "Компоненты основной страницы")](master-detail-page-images/masterpage-components-large.png "компоненты основной страницы")
+[![](master-detail-page-images/masterpage-components.png "Компоненты основной страницы")](master-detail-page-images/masterpage-components-large.png#lightbox "компоненты основной страницы")
 
 Расположение списка элементов идентична на каждой платформе, и выбрав один из элементов, можно перейти к соответствующей странице сведений. Кроме того Главная страница также включает панель навигации, который содержит кнопку, которую можно использовать для перехода к странице сведения об активном:
 

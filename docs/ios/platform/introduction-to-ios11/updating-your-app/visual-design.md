@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/13/2016
-ms.openlocfilehash: 2904a7da73f5bf6e8960f65239d1f8dc52ab1aba
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d66d8cd722aa9a7b6fe27db3f6128ee24309a1de
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-design-updates"></a>Обновления для визуального проектирования
 
@@ -51,7 +51,7 @@ iOS 11 внес проще добавить контроллер поиска н
 NavigationItem.SearchController = searchController;
 ```
 
-[![Заголовок больших навигации с панель поиска](visual-design-images/image8-sml.png)](visual-design-images/image8-sml.png)
+[![Заголовок больших навигации с панель поиска](visual-design-images/image8-sml.png)](visual-design-images/image8-sml.png#lightbox)
 
 В зависимости от функциональности приложения может или не может потребоваться скрыть, когда пользователь выполняет прокрутку списка панели поиска. Это можно изменить с помощью `HidesSearchBarWhenScrolling` свойство.
 
@@ -75,7 +75,7 @@ iOS 7 [появился](~/ios/platform/introduction-to-ios7/ios7-ui.md#fullscre
 
 Зарезервированная область является новый способ обдумывания видимого пространства и способ добавления ограничений между представлением и super представления приложения. Например рассмотрим следующие изображения:
 
-[![Зарезервированная область vs верхней и нижней направляющей макета](visual-design-images/image10-sml.png)](visual-design-images/image10.png)
+[![Зарезервированная область vs верхней и нижней направляющей макета](visual-design-images/image10-sml.png)](visual-design-images/image10.png#lightbox)
 
 Ранее, если добавлено представление и хотели, чтобы быть видимым в области зеленый выше, можно будет указать для него для _нижней_ из `TopLayoutGuide` и _верхней_ из `BottomLayoutGuide`. В iOS 11 бы вместо этого для ограничения _верхней_ и _нижней_ безопасном области. См. пример ниже:
 

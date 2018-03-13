@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/22/2017
-ms.openlocfilehash: 605374c0f2bfe656e564e48d14ffe18ce5b7dfe5
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: c6d10025ccc038ba160fe3c09f6ce92e97d916d2
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="files"></a>Файлы
 
@@ -40,18 +40,18 @@ _Обработка с помощью Xamarin.Forms файлов можно сд
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Настройка внедренных ресурсов действие построения](files-images/vs-embeddedresource-sml.png "EmbeddedResource BuildAction параметр")](files-images/vs-embeddedresource.png "EmbeddedResource BuildAction параметр")
+[![Настройка внедренных ресурсов действие построения](files-images/vs-embeddedresource-sml.png "EmbeddedResource BuildAction параметр")](files-images/vs-embeddedresource.png#lightbox "EmbeddedResource BuildAction параметр")
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Текстовый файл, внедренных в PCL, Настройка действие построения внедренного ресурса](files-images/xs-embeddedresource-sml.png "EmbeddedResource BuildAction параметр")](files-images/xs-embeddedresource.png "EmbeddedResource BuildAction параметр")
+[![Текстовый файл, внедренных в PCL, Настройка действие построения внедренного ресурса](files-images/xs-embeddedresource-sml.png "EmbeddedResource BuildAction параметр")](files-images/xs-embeddedresource.png#lightbox "EmbeddedResource BuildAction параметр")
 
 -----
 
 `GetManifestResourceStream` используется для доступа к внедренного файла с помощью его **идентификатор ресурса**. По умолчанию, идентификатор ресурса — имя файла, в качестве префикса пространства имен по умолчанию для проекта, который он внедрен - в этом случае сборка является **WorkingWithFiles** и имя файла — **PCLTextResource.txt**, Поэтому идентификатор ресурса `WorkingWithFiles.PCLTextResource.txt`.
 
 ```csharp
-var assembly = typeof(LoadResourceText).GetTypeInfo().Assembly;
+var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
 Stream stream = assembly.GetManifestResourceStream("WorkingWithFiles.PCLTextResource.txt");
 string text = "";
 using (var reader = new System.IO.StreamReader (stream)) {
@@ -61,12 +61,12 @@ using (var reader = new System.IO.StreamReader (stream)) {
 
 `text` Переменной может затем использоваться для отображения текста или в противном случае используйте его в коде. Этот снимок экрана [пример приложения](https://developer.xamarin.com/samples/xamarin-forms/WorkingWithFiles/) показывает текста, отображаемого в `Label` элемента управления.
 
- [ ![Текстовый файл, внедренных в PCL](files-images/pcltext-sml.png "внедренные текстовый файл в PCL, отображаемый в приложении")](files-images/pcltext.png "внедренные текстовый файл в PCL, отображаемый в приложении")
+ [![Текстовый файл, внедренных в PCL](files-images/pcltext-sml.png "внедренные текстовый файл в PCL, отображаемый в приложении")](files-images/pcltext.png#lightbox "внедренные текстовый файл в PCL, отображаемый в приложении")
 
 Загрузка и десериализации XML выполняется так же просто. В следующем коде показано файла XML, загрузки и десериализован из ресурса, а затем привязать к `ListView` для отображения. XML-файл содержит массив `Monkey` объектов (в примере кода определяется класс).
 
 ```csharp
-var assembly = typeof(LoadResourceText).GetTypeInfo().Assembly;
+var assembly = IntrospectionExtensions.GetTypeInfo(typeof(LoadResourceText)).Assembly;
 Stream stream = assembly.GetManifestResourceStream("WorkingWithFiles.PCLXmlResource.xml");
 List<Monkey> monkeys;
 using (var reader = new System.IO.StreamReader (stream)) {
@@ -77,7 +77,7 @@ var listView = new ListView ();
 listView.ItemsSource = monkeys;
 ```
 
- [ ![XML-файл, внедренных в PCL, отображаемых в ListView](files-images/pclxml-sml.png "внедренный XML-файл в PCL, отображаемых в ListView")](files-images/pclxml.png "внедренный XML-файл в PCL, отображаемых в ListView")
+ [![XML-файл, внедренных в PCL, отображаемых в ListView](files-images/pclxml-sml.png "внедренный XML-файл в PCL, отображаемых в ListView")](files-images/pclxml.png#lightbox "внедренный XML-файл в PCL, отображаемых в ListView")
 
 <a name="Embedding_in_Shared_Projects" />
 
@@ -106,7 +106,7 @@ var resourcePrefix = "WorkingWithFiles.WinPhone.";
 
 Debug.WriteLine("Using this resource prefix: " + resourcePrefix);
 // note that the prefix includes the trailing period '.' that is required
-var assembly = typeof(SharedPage).GetTypeInfo().Assembly;
+var assembly = IntrospectionExtensions.GetTypeInfo(typeof(SharedPage)).Assembly;
 Stream stream = assembly.GetManifestResourceStream
     (resourcePrefix + "SharedTextResource.txt");
 ```
@@ -129,7 +129,7 @@ Stream stream = assembly.GetManifestResourceStream
 using System.Reflection;
 // ...
 // use for debugging, not in released app code!
-var assembly = typeof(SharedPage).GetTypeInfo().Assembly;
+var assembly = IntrospectionExtensions.GetTypeInfo(typeof(SharedPage)).Assembly;
 foreach (var res in assembly.GetManifestResourceNames()) {
     System.Diagnostics.Debug.WriteLine("found resource: " + res);
 }
@@ -141,7 +141,7 @@ foreach (var res in assembly.GetManifestResourceNames()) {
 
 Поскольку Xamarin.Forms выполняется на нескольких платформах, каждый из которых свой собственный файловой системы не существует единого подхода для загрузки и сохранения файлов, созданных пользователем. Чтобы продемонстрировать, как сохранить и загрузить пример приложения включает экрана, который сохраняет и загружает пользовательский ввод - текстовые файлы по завершении экрана показан ниже:
 
- [ ![Сохранение и загрузка текст](files-images/saveandload-sml.png "сохранение и загрузка файлов в приложении")](files-images/saveandload.png "сохранение и загрузка файлов в приложении")
+ [![Сохранение и загрузка текст](files-images/saveandload-sml.png "сохранение и загрузка файлов в приложении")](files-images/saveandload.png#lightbox "сохранение и загрузка файлов в приложении")
 
 Каждая платформа имеет структуру каталогов немного отличается и другую файловую систему возможности — например Xamarin.iOS и Xamarin.Android поддерживают большинство `System.IO` функции, но Windows Phone поддерживает только `IsolatedStorage` и [ `Windows.Storage` ](http://msdn.microsoft.com/library/windowsphone/develop/jj681698(v=vs.105).aspx) API-интерфейсы.
 

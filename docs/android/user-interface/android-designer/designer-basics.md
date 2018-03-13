@@ -7,18 +7,17 @@ ms.assetid: 48B20C9A-B2A2-AE82-76B2-A3C1E5A4050D
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/06/2018
-ms.openlocfilehash: b2ed48ae9df7e950525fdc0cb97181ebe5a44dfb
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: d9342dc3a8d324f03cd31e1d03600449bfcf23f1
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="designer-basics"></a>Основы конструктора
 
 _В этом разделе рассматриваются возможности конструктора, объясняется, как запустить конструктор, описывает область конструктора и подробно описывается панель свойств используется для изменения свойств мини-приложения._
 
-<a name="Launching_the_Designer" />
 
 ## <a name="launching-the-designer"></a>Запуск конструктора
 
@@ -26,11 +25,11 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Конструктор экрана в Visual Studio](designer-basics-images/vs/01-open-designer-sml.png)](designer-basics-images/vs/01-open-designer.png)
+[![Конструктор экрана в Visual Studio](designer-basics-images/vs/01-open-designer-sml.png)](designer-basics-images/vs/01-open-designer.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Конструктор экрана в Visual Studio для Mac](designer-basics-images/xs/01-open-designer-sml.png)](designer-basics-images/xs/01-open-designer.png)
+[![Конструктор экрана в Visual Studio для Mac](designer-basics-images/xs/01-open-designer-sml.png)](designer-basics-images/xs/01-open-designer.png#lightbox)
 
 -----
 
@@ -39,20 +38,19 @@ _В этом разделе рассматриваются возможност�
 
 Аналогичным образом, можно добавить новый макет, щелкнув правой кнопкой мыши **макета** папки в **обозревателе решений** и выбрав **Добавить > новый элемент... > Android макета**:
 
-[![Диалоговое окно добавления нового элемента](designer-basics-images/vs/02-add-new-layout-sml.png)](designer-basics-images/vs/02-add-new-layout.png)
+[![Диалоговое окно добавления нового элемента](designer-basics-images/vs/02-add-new-layout-sml.png)](designer-basics-images/vs/02-add-new-layout.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Аналогичным образом, можно добавить новый макет, щелкнув правой кнопкой мыши **макета** папки в **Pad решения** и выбрав **Добавить > новый файл > Android > макета**:
 
-[![Добавьте новый файл диалогового окна](designer-basics-images/xs/02-add-new-layout-sml.png)](designer-basics-images/xs/02-add-new-layout.png)
+[![Добавьте новый файл диалогового окна](designer-basics-images/xs/02-add-new-layout-sml.png)](designer-basics-images/xs/02-add-new-layout.png#lightbox)
 
 -----
 
 Это создает новый файл .axml и загружает его на поверхность разработки.
 
 
-<a name="Designer_Features" />
 
 ## <a name="designer-features"></a>Функции конструктора
 
@@ -60,11 +58,11 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Схема панелей конструктора](designer-basics-images/vs/03-designer-features-sml.png)](designer-basics-images/vs/03-designer-features.png)
+[![Схема панелей конструктора](designer-basics-images/vs/03-designer-features-sml.png)](designer-basics-images/vs/03-designer-features.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Схема панелей конструктора](designer-basics-images/xs/03-designer-features-sml.png)](designer-basics-images/xs/03-designer-features.png)
+[![Схема панелей конструктора](designer-basics-images/xs/03-designer-features-sml.png)](designer-basics-images/xs/03-designer-features.png#lightbox)
 
 -----
 
@@ -97,7 +95,6 @@ _В этом разделе рассматриваются возможност�
 -----
 
 
-<a name="Toolbar" />
 
 ## <a name="toolbar"></a>Toolbar
 
@@ -105,11 +102,11 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![На панели инструментов конструктора схемы](designer-basics-images/vs/04-toolbar-sml.png)](designer-basics-images/vs/04-toolbar.png)
+[![На панели инструментов конструктора схемы](designer-basics-images/vs/04-toolbar-sml.png)](designer-basics-images/vs/04-toolbar.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![На панели инструментов конструктора схемы](designer-basics-images/xs/04-toolbar-sml.png)](designer-basics-images/xs/04-toolbar.png)
+[![На панели инструментов конструктора схемы](designer-basics-images/xs/04-toolbar-sml.png)](designer-basics-images/xs/04-toolbar.png#lightbox)
 
 -----
 
@@ -143,7 +140,6 @@ _В этом разделе рассматриваются возможност�
 [Существенные функциональные возможности проектирования](~/android/user-interface/android-designer/material-design-features.md) предоставляет комплексный обзор платформы **редактор** и **бланке материал**.
 
 
-<a name="Design_Surface" />
 
 ## <a name="design-surface"></a>Область конструктора
 
@@ -151,17 +147,16 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Пример вставки строк в область конструктора](designer-basics-images/vs/05-insertion-points-sml.png)](designer-basics-images/vs/05-insertion-points.png)
+[![Пример вставки строк в область конструктора](designer-basics-images/vs/05-insertion-points-sml.png)](designer-basics-images/vs/05-insertion-points.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Пример вставки строк в область конструктора](designer-basics-images/xs/05-insertion-points-sml.png)](designer-basics-images/xs/05-insertion-points.png)
+[![Пример вставки строк в область конструктора](designer-basics-images/xs/05-insertion-points-sml.png)](designer-basics-images/xs/05-insertion-points.png#lightbox)
 
 -----
 
 Кроме того, можно скопировать мини-приложения: можно использовать, копировать и вставить, чтобы добавить мини-приложение, или можно перетаскивать существующие мини-приложение при нажатии клавиши <kbd>Ctrl</kbd> ключа.
 
-<a name="Context_Menu_Commands" />
 
 ### <a name="context-menu-commands"></a>Команды контекстного меню
 
@@ -169,7 +164,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Пример контекстное меню, если щелкнуть правой кнопкой мыши область конструктора](designer-basics-images/vs/06-context-menu-sml.png)](designer-basics-images/vs/06-context-menu.png)
+[![Пример контекстное меню, если щелкнуть правой кнопкой мыши область конструктора](designer-basics-images/vs/06-context-menu-sml.png)](designer-basics-images/vs/06-context-menu.png#lightbox)
 
 В этом примере щелкните правой кнопкой мыши `TextView` открывает контекстное меню, которое предоставляет несколько вариантов:
 
@@ -179,7 +174,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Пример контекстное меню, если щелкнуть правой кнопкой мыши область конструктора](designer-basics-images/xs/06-context-menu-sml.png)](designer-basics-images/xs/06-context-menu.png)
+[![Пример контекстное меню, если щелкнуть правой кнопкой мыши область конструктора](designer-basics-images/xs/06-context-menu-sml.png)](designer-basics-images/xs/06-context-menu.png#lightbox)
 
 В этом примере щелкните правой кнопкой мыши `TextView` открывает контекстное меню, которое предоставляет несколько вариантов:
 
@@ -198,7 +193,6 @@ _В этом разделе рассматриваются возможност�
 -   **Удалить**, **копирования**, и **Вырезать** &ndash; операции, применяемые к правой кнопкой мыши, `TextView`.
 
 
-<a name="Zoom_Controls" />
 
 ### <a name="zoom-controls"></a>Элементы управления масштабом
 
@@ -206,11 +200,11 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Схема конструктора элементы управления масштабом](designer-basics-images/vs/07-zoom-controls-sml.png)](designer-basics-images/vs/07-zoom-controls.png)
+[![Схема конструктора элементы управления масштабом](designer-basics-images/vs/07-zoom-controls-sml.png)](designer-basics-images/vs/07-zoom-controls.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Схема конструктора элементы управления масштабом](designer-basics-images/xs/07-zoom-controls-sml.png)](designer-basics-images/xs/07-zoom-controls.png)
+[![Схема конструктора элементы управления масштабом](designer-basics-images/xs/07-zoom-controls-sml.png)](designer-basics-images/xs/07-zoom-controls.png#lightbox)
 
 -----
 
@@ -228,7 +222,6 @@ _В этом разделе рассматриваются возможност�
 
 Обратите внимание, что выбранный масштаб не влияет на пользовательском интерфейсе приложения во время выполнения.
 
-<a name="property_pad" />
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -238,11 +231,10 @@ _В этом разделе рассматриваются возможност�
 
 Конструктор поддерживает редактирование свойств мини-приложения с помощью **Pad свойство**. Свойства, перечисленные в Pad свойство изменяется в зависимости от того, что выбран мини-приложения в рабочей области конструктора. При `Button` выбранных в предыдущем примере, свойства `Button` отображаются мини-приложения:
 
-[![Снимок экрана: панель свойств](designer-basics-images/xs/08-property-pad-sml.png)](designer-basics-images/xs/08-property-pad.png)
+[![Снимок экрана: панель свойств](designer-basics-images/xs/08-property-pad-sml.png)](designer-basics-images/xs/08-property-pad.png#lightbox)
 
 -----
 
-<a name="Property_Pad_Sections" />
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -272,7 +264,6 @@ _В этом разделе рассматриваются возможност�
 -----
 
 
-<a name="Default_Values" />
 
 ### <a name="default-values"></a>Значения по умолчанию
 
@@ -287,7 +278,6 @@ _В этом разделе рассматриваются возможност�
 
 -----
 
-<a name="Referencing_resources" />
 
 ### <a name="referencing-resources"></a>Ссылки на ресурсы
 
@@ -299,13 +289,13 @@ _В этом разделе рассматриваются возможност�
 
 Например, на следующем рисунке показан ресурсы, доступные при нажатии кнопки с многоточием справа от текстового поля для `Button` мини-приложение в **свойства** окна:
 
-[![Снимок экрана примера ресурсы с двумя перечисленные ресурсы](designer-basics-images/vs/09-resources-sml.png)](designer-basics-images/vs/09-resources.png)
+[![Снимок экрана примера ресурсы с двумя перечисленные ресурсы](designer-basics-images/vs/09-resources-sml.png)](designer-basics-images/vs/09-resources.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Например, на следующем рисунке показан ресурсы, доступные при нажатии кнопки с многоточием справа от текстового поля для `Button` мини-приложение в **Pad свойство**:
 
-[![Снимок экрана примера ресурсы с двумя перечисленные ресурсы](designer-basics-images/xs/09-resources-sml.png)](designer-basics-images/xs/09-resources.png)
+[![Снимок экрана примера ресурсы с двумя перечисленные ресурсы](designer-basics-images/xs/09-resources-sml.png)](designer-basics-images/xs/09-resources.png#lightbox)
 
 -----
 
@@ -313,16 +303,15 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Листинг ресурс значка для ImageView выделения ресурсов](designer-basics-images/vs/10-src-resource-sml.png)](designer-basics-images/vs/10-src-resource.png)
+[![Листинг ресурс значка для ImageView выделения ресурсов](designer-basics-images/vs/10-src-resource-sml.png)](designer-basics-images/vs/10-src-resource.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Листинг ресурс значка для ImageView выделения ресурсов](designer-basics-images/xs/10-src-resource-sml.png)](designer-basics-images/xs/10-src-resource.png)
+[![Листинг ресурс значка для ImageView выделения ресурсов](designer-basics-images/xs/10-src-resource-sml.png)](designer-basics-images/xs/10-src-resource.png#lightbox)
 
 -----
 
 
-<a name="Boolean_Property_References" />
 
 ### <a name="boolean-property-references"></a>Логическое свойство ссылки
 
@@ -336,25 +325,21 @@ _В этом разделе рассматриваются возможност�
 
 *Логическое* обычно как флажок в панели свойств отображаются свойства. Когда `Boolean` свойство поддерживает ссылки на ресурсы, есть малого флажок рядом со свойством. Установленный флажок означает `true` и пустое поле означает `false`. Можно также непосредственно ввести значение например `true` или `false`. Наведении указателя мыши на входных данных появится значок небольшие текстовые поля. Можно щелкнуть на нем, если вы хотите ввести значения вручную.
 
-[![Пример настройки логических свойств](designer-basics-images/xs/12-boolean-sml.png)](designer-basics-images/xs/12-boolean.png)
+[![Пример настройки логических свойств](designer-basics-images/xs/12-boolean-sml.png)](designer-basics-images/xs/12-boolean.png#lightbox)
 
-<a name="Grouped_Properties" />
 
 ## <a name="grouped-properties"></a>Сгруппированные свойства
 
 Некоторые мини-приложения имеют несколько значений свойства, которые группируются (такие как `Padding`, например). Эти свойства указаны в **Pad свойство** в один, расширяемый строки. Некоторые из этих свойств можно изменить непосредственно в сгруппированных строк, таких как `Padding` свойство, показано ниже:
 
-[![Примеры настроек для заполнения свойства](designer-basics-images/xs/13-padding-property-sml.png)](designer-basics-images/xs/13-padding-property.png)
+[![Примеры настроек для заполнения свойства](designer-basics-images/xs/13-padding-property-sml.png)](designer-basics-images/xs/13-padding-property.png#lightbox)
 
 -----
 
-<a name="Editing_Properties_Inline" />
 
 ## <a name="editing-properties-inline"></a>Изменение встроенного свойства
 
 Конструктор Android поддерживает прямое редактирование некоторые свойства в области конструктора (то есть не нужно искать эти свойства в списке свойств). Свойства, которые можно непосредственно редактировать включают текст, поля и размер.
-
-<a name="Text" />
 
 ### <a name="text"></a>Text
 
@@ -366,7 +351,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Ресурс текст для строки hello](designer-basics-images/xs/14-text-resource-sml.png)](designer-basics-images/xs/14-text-resource.png)
+[![Ресурс текст для строки hello](designer-basics-images/xs/14-text-resource-sml.png)](designer-basics-images/xs/14-text-resource.png#lightbox)
 
 -----
 
@@ -378,7 +363,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![SHIFT + ВВОД, чтобы автоматически текст ссылки в новый ресурс](designer-basics-images/xs/15-shift-enter-resource-sml.png)](designer-basics-images/xs/15-shift-enter-resource.png)
+[![SHIFT + ВВОД, чтобы автоматически текст ссылки в новый ресурс](designer-basics-images/xs/15-shift-enter-resource-sml.png)](designer-basics-images/xs/15-shift-enter-resource.png#lightbox)
 
 -----
 
@@ -386,7 +371,6 @@ _В этом разделе рассматриваются возможност�
 Когда вы ключ в новую текстовую строку, можно нажать клавишу <kbd>Shift</kbd> +
 <kbd>ввод</kbd> автоматически связать введенного текста в новый ресурс.
 
-<a name="Margin" />
 
 ### <a name="margin"></a>Поля
 
@@ -400,7 +384,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Снимок экрана, показывающий поля дескрипторов в конструкторе](designer-basics-images/xs/16-margin-handles-sml.png)](designer-basics-images/xs/16-margin-handles.png)
+[![Снимок экрана, показывающий поля дескрипторов в конструкторе](designer-basics-images/xs/16-margin-handles-sml.png)](designer-basics-images/xs/16-margin-handles.png#lightbox)
 
 -----
 
@@ -412,12 +396,11 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Пример пунктирные линии, пометка пространство вокруг кнопки](designer-basics-images/xs/17-margins-set-sml.png)](designer-basics-images/xs/17-margins-set.png)
+[![Пример пунктирные линии, пометка пространство вокруг кнопки](designer-basics-images/xs/17-margins-set-sml.png)](designer-basics-images/xs/17-margins-set.png#lightbox)
 
 -----
 
 
-<a name="Size" />
 
 ### <a name="size"></a>Размер
 
@@ -429,7 +412,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Маркеры переноса содержимого и изменения размера](designer-basics-images/xs/18-wrap-content-sml.png)](designer-basics-images/xs/18-wrap-content.png)
+[![Маркеры переноса содержимого и изменения размера](designer-basics-images/xs/18-wrap-content-sml.png)](designer-basics-images/xs/18-wrap-content.png#lightbox)
 
 -----
 
@@ -443,7 +426,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Дескриптор родительского соответствия](designer-basics-images/xs/19-match-parent-sml.png)](designer-basics-images/xs/19-match-parent.png)
+[![Дескриптор родительского соответствия](designer-basics-images/xs/19-match-parent-sml.png)](designer-basics-images/xs/19-match-parent.png#lightbox)
 
 -----
 
@@ -457,7 +440,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Маркеры изменения размера циклическая](designer-basics-images/xs/20-resize-dp-sml.png)](designer-basics-images/xs/20-resize-dp.png)
+[![Маркеры изменения размера циклическая](designer-basics-images/xs/20-resize-dp-sml.png)](designer-basics-images/xs/20-resize-dp.png#lightbox)
 
 -----
 
@@ -469,12 +452,11 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Без маркеров изменения размера](designer-basics-images/xs/21-no-resize-handles-sml.png)](designer-basics-images/xs/20-no-resize-handles.png)
+[![Без маркеров изменения размера](designer-basics-images/xs/21-no-resize-handles-sml.png)](designer-basics-images/xs/20-no-resize-handles.png#lightbox)
 
 -----
 
 
-<a name="Outline_View" />
 
 ## <a name="document-outline"></a>Структура документа
 
@@ -487,7 +469,7 @@ _В этом разделе рассматриваются возможност�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Структура документа](designer-basics-images/xs/22-outline-view-sml.png)](designer-basics-images/xs/22-outline-view.png)
+[![Структура документа](designer-basics-images/xs/22-outline-view-sml.png)](designer-basics-images/xs/22-outline-view.png#lightbox)
 
 -----
 

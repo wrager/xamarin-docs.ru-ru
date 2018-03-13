@@ -3,14 +3,15 @@ title: "Сводка по 15 главы. Интерактивный интерф
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: F54E86F4-1CDA-474E-9B09-242060C2C13D
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: e6c61f9a6ba66db2b9a5c7b217c7da952607e709
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 37bbbf2b89048db175ddc1b3b1a24cea92b898a7
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-15-the-interactive-interface"></a>Сводка по 15 главы. Интерактивный интерфейс
 
@@ -105,7 +106,7 @@ Xamarin.Forms содержит 20 допускающих создание экз
 
 [ **RgbSliders** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter15/RgbSliders) программа содержит три `Slider` элементы, которые дают возможность интерактивно выберите цвет, указав его значения RGB:
 
-[![Тройной экрана ползунки R G B](images/ch15fg03-small.png "ползунки RGB")](images/ch15fg03-large.png "RGB ползунки")
+[![Тройной экрана ползунки R G B](images/ch15fg03-small.png "ползунки RGB")](images/ch15fg03-large.png#lightbox "RGB ползунки")
 
 [ **TextFade** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter15/TextFade) в образце используется две `Slider` элементов для перемещения двух `Label` по `AbsoluteLayout` и затухание один в другой.
 

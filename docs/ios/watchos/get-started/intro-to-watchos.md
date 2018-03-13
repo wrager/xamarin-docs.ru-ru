@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/13/2016
-ms.openlocfilehash: 55d692fa92dd08dd9c0887ed10013589afc98ec6
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2276b67fc29f2752e4b178168a12e6e980b788d0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-watchos"></a>Общие сведения о watchOS
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 02/27/2018
 
 В приложениях watchOS 1 код модуля выполняется на iPhone, Apple Watch эффективно стало внешнего дисплея. приложения watchOS 2 и 3 выполняются полностью на Apple Watch. На следующем рисунке показано это различие:
 
-[ ![](intro-to-watchos-images/arch-sml.png "На этой диаграмме показана разница между watchOS 1 и watchOS 2 (и более поздней версии)")](intro-to-watchos-images/arch.png)
+[ ![](intro-to-watchos-images/arch-sml.png "На этой диаграмме показана разница между watchOS 1 и watchOS 2 (и более поздней версии)")](intro-to-watchos-images/arch.png#lightbox)
 
 Независимо от того, какая версия watchOS целью в Visual Studio для Pad решения Mac в комплексное решение будет выглядеть примерно следующим образом:
 
-[ ![](intro-to-watchos-images/projectstructure-sml.png "Панель решения")](intro-to-watchos-images/projectstructure.png)
+[![](intro-to-watchos-images/projectstructure-sml.png "Панель решения")](intro-to-watchos-images/projectstructure.png#lightbox)
 
 *Родительского приложения* в watchOS решение представляет собой приложение регулярных операций ввода-вывода. Это единственный проект в решение, которое отображается **на телефоне**. Варианты использования для этого приложения включает учебники, экраны администрирования и средний уровень фильтрации, cacheing и т. д. Тем не менее, пользователь может устанавливать и запускать контрольных значений и расширения приложения без **когда-либо** с открытыми родительского приложения, поэтому при необходимости родительского приложения для выполнения единственной инициализации или администрирования, необходимо запрограммировать часы приложения и расширения сообщает пользователю, который.
 
@@ -139,4 +139,4 @@ Apple Watch имеет два размера начертания: 38 до 42 м
 - [Первый видео приложение Watch](http://blog.xamarin.com/your-first-watch-kit-app/)
 - [Apple разработке для руководство по пакету Контрольное значение](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html)
 - [Советы по WatchKit Apple](https://developer.apple.com/watchkit/tips/)
-- [Общие сведения о watchOS 3](~/ios/watchos/platform/introduction-to-watchos3/index.md)
+- [Введение в watchOS 3](~/ios/watchos/platform/introduction-to-watchos3/index.md)

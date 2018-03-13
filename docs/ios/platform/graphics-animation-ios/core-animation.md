@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 80fe298f3dd24aac7f84213aee96499dd369d16d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f0cb4e00abffead854c2590bde6df45c200ff0bb
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="core-animation"></a>Основной анимации
 
@@ -23,12 +23,16 @@ _В этой статье рассматриваются framework Core аним
 
 Платформы анимации основных компонентов и Core графики можно использовать вместе для создания привлекательных, анимированной двумерной графики. Фактически основной анимации даже преобразовывать двумерной графики в трехмерном пространстве Создание прекрасных возможности взаимодействия. Тем не менее для создания true трехмерной графики, потребовалось бы использование как OpenGL ES, или для игр включите этот интерфейс API, например MonoGame, несмотря на то, что 3D выходит за рамки данной статьи.
 
+<a name="Using_Core_Animation" />
+
 ## <a name="core-animation"></a>Основной анимации
 
 операций ввода-вывода использует framework Core анимации для создания эффекты анимации, такие как переход между представлениями, скользящий меню и прокрутка эффекты лишь некоторые из них. Для работы с анимации двумя способами.
 
--  [Через UIKit](#Using_UIKit_Animation), включает представление основано анимации как анимировать переходы между контроллерами.
--   [Через анимацию Core](#Using_Core_Animation), какие слои напрямую, что позволяет более точно управлять.
+- [Через UIKit](#Using_UIKit_Animation), включает представление основано анимации как анимировать переходы между контроллерами.
+- [Через анимацию Core](#Using_Core_Animation), какие слои напрямую, что позволяет более точно управлять.
+
+<a name="Using_UIKit_Animation" />
 
 ## <a name="using-uikit-animation"></a>С помощью UIKit анимации
 
@@ -237,6 +241,6 @@ public override void ViewDidAppear (bool animated)
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пример основных анимации](https://developer.xamarin.com/samples/monotouch/GraphicsAndAnimation/)
-- [Основные графики](~/ios/platform/graphics-animation-ios/core-graphics.md)
+- [Core Graphics](~/ios/platform/graphics-animation-ios/core-graphics.md)
 - [Графики и анимации Пошаговое руководство](~/ios/platform/graphics-animation-ios/graphics-animation-walkthrough.md)
-- [Основной анимации](https://developer.xamarin.com/recipes/ios/animation/coreanimation)
+- [Core Animation](https://developer.xamarin.com/recipes/ios/animation/coreanimation)

@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 7366a4ce5cbb6a3026a7445a03f03b45d89d9210
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3e5875249d7a84412b1c30580c3a8038cb53892f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="purchasing-consumable-products"></a>Приобретение к использованию продуктов
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 02/27/2018
 
 В образце кода, сопровождающие в этом документе демонстрируется встроенной продуктами — коды продуктов жестко запрограммированы в приложение, так как они тесно связаны в код, который разблокирует функцию после выплаты. Процесс приобретения можно представить следующим образом:   
    
-[ ![Визуализация процесса покупки](purchasing-consumable-products-images/image26.png)](purchasing-consumable-products-images/image26.png)     
+[![Визуализация процесса покупки](purchasing-consumable-products-images/image26.png)](purchasing-consumable-products-images/image26.png#lightbox)     
    
  Ниже приведен простой рабочий процесс.   
    
@@ -49,7 +49,7 @@ ms.lasthandoff: 02/27/2018
    
    
    
- [ ![Каждой покупкой добавляет дополнительные кредиты monkey баланс пользователей](purchasing-consumable-products-images/image27.png)](purchasing-consumable-products-images/image27.png)   
+ [![Каждой покупкой добавляет дополнительные кредиты monkey баланс пользователей](purchasing-consumable-products-images/image27.png)](purchasing-consumable-products-images/image27.png#lightbox)   
    
    
    
@@ -57,7 +57,7 @@ ms.lasthandoff: 02/27/2018
    
    
    
- [ ![Взаимодействие между пользовательских классов, StoreKit и магазин приложений](purchasing-consumable-products-images/image28.png)](purchasing-consumable-products-images/image28.png)
+ [![Взаимодействие между пользовательских классов, StoreKit и магазин приложений](purchasing-consumable-products-images/image28.png)](purchasing-consumable-products-images/image28.png#lightbox)
 
 &nbsp;
 
@@ -214,7 +214,7 @@ public void CompleteTransaction (SKPaymentTransaction transaction)
 
 Когда пользователь покупает несколько экземпляров, предупреждения подтверждение StoreKit будет отражать количество, цену за единицу и общая стоимость, они будет списана сумма, как показано на следующем снимке экрана:
 
-[ ![Подтверждение покупки](purchasing-consumable-products-images/image30.png)](purchasing-consumable-products-images/image30.png)
+[![Подтверждение покупки](purchasing-consumable-products-images/image30.png)](purchasing-consumable-products-images/image30.png#lightbox)
 
 ## <a name="handling-network-outages"></a>Обработка сбоев сети
 
@@ -328,7 +328,7 @@ public bool CanMakePayments()
    
    
    
- [ ![Использовать функцию ограничения операций ввода-вывода для отключения покупки из приложений](purchasing-consumable-products-images/image31.png)](purchasing-consumable-products-images/image31.png)   
+ [![Использовать функцию ограничения операций ввода-вывода для отключения покупки из приложений](purchasing-consumable-products-images/image31.png)](purchasing-consumable-products-images/image31.png#lightbox)   
    
    
    
@@ -352,7 +352,7 @@ if (iap.CanMakePayments()) {
    
    
    
- [ ![Приложение выглядит следующим образом, при покупки в приложение, компонент является ограниченной покупки кнопки отключены](purchasing-consumable-products-images/image32.png)](purchasing-consumable-products-images/image32.png)   
+ [![Приложение выглядит следующим образом, при покупки в приложение, компонент является ограниченной покупки кнопки отключены](purchasing-consumable-products-images/image32.png)](purchasing-consumable-products-images/image32.png#lightbox)   
    
    
    
@@ -361,7 +361,7 @@ if (iap.CanMakePayments()) {
    
    
    
- [ ![Покупки из приложений не допускаются.](purchasing-consumable-products-images/image33.png)](purchasing-consumable-products-images/image33.png)   
+ [![Покупки из приложений не допускаются.](purchasing-consumable-products-images/image33.png)](purchasing-consumable-products-images/image33.png#lightbox)   
    
    
    

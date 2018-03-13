@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/13/2016
-ms.openlocfilehash: d68d84671028ded14b4b885f2c134656fc639f9e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9b5e9a4c449bc99bd88fc415f5ebb969d2c2a08a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-platform-features"></a>Компоненты платформы Android
 
@@ -28,14 +28,14 @@ Xamarin.Forms также имеет дополнительный `FormsAppCompat
 
 Вот **Todo** образец со значением по умолчанию `FormsApplicationActivity`:
 
-[ ![](images/before-appcompat-sml.png "Пример TODO приложения без AppCompat")](images/before-appcompat.png "Todo образец приложения без совместимости приложений")
+[![](images/before-appcompat-sml.png "Пример TODO приложения без AppCompat")](images/before-appcompat.png#lightbox "Todo образец приложения без совместимости приложений")
 
 И это тот же код после обновления проектов для использования `FormsAppCompatActivity` (и добавление сведений о дополнительных темы):
 
-[ ![](images/post-appcompat-sml.png "TODO образец приложения с AppCompat и темы")](images/post-appcompat.png "Todo образец приложения с AppCompat и темы")
+[![](images/post-appcompat-sml.png "TODO образец приложения с AppCompat и темы")](images/post-appcompat.png#lightbox "Todo образец приложения с AppCompat и темы")
 
 > [!NOTE]
-> **Примечание**: при использовании `FormsAppCompatActivity`, [базовые классы для некоторых Android пользовательских модулей подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md) будут отличаться.
+> При использовании `FormsAppCompatActivity`, [базовые классы для некоторых Android пользовательских модулей подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md) будут отличаться.
 
 
 ## <a name="related-links"></a>Связанные ссылки

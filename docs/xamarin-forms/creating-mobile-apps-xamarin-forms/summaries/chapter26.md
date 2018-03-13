@@ -3,14 +3,15 @@ title: "Сводка Глава 26. Пользовательские макет�
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 2B7F4346-414E-49FF-97FB-B85E92D98A21
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: dbddaaf2f4a5ad9d7161013f2ae11466b953e20c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9447f9fb47a3de0f278a89d45d657158be9b70b9
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-26-custom-layouts"></a>Сводка Глава 26. Пользовательские макеты
 
@@ -98,9 +99,9 @@ Xamarin.Forms включает несколько классов, произво
 Каждый класс, производный от `Layout` или `Layout<T>` необходимо переопределить `OnSizeRequest` или `OnMeasure`. Это происходит, где макета класс определяет собственный размер, который обычно зависит от размера его дочерние элементы, которые он получает путем вызова `GetSizeRequest` или `Measure` в дочерних элементах. До и после вызова метода `OnSizeRequest` или `OnMeasure`, `GetSizeRequest` или `Measure` позволяет регулировать с учетом следующих свойств:
 
 - [`WidthRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.WidthRequest/)Тип `double`, влияет на `Request` свойство `SizeRequest`
-- [`HeightRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.HeightRequest/)Тип `double`, влияет на `Request` свойство `SizeRequest`
-- [`MinimumWidthRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.MinimumWidthRequest/)Тип `double`, влияет на `Minimum` свойство `SizeRequest`
-- [`MinimumHeightRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.MinimumHeightRequest/)Тип `double`, влияет на `Minimum` свойство `SizeRequest`
+- [`HeightRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.HeightRequest/) Тип `double`, влияет на `Request` свойство `SizeRequest`
+- [`MinimumWidthRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.MinimumWidthRequest/) Тип `double`, влияет на `Minimum` свойство `SizeRequest`
+- [`MinimumHeightRequest`](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.MinimumHeightRequest/) Тип `double`, влияет на `Minimum` свойство `SizeRequest`
 
 ### <a name="infinite-constraints"></a>Бесконечный ограничения
 
@@ -159,7 +160,7 @@ Xamarin.Forms включает несколько классов, произво
 
 [ **PhotoGrid** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/PhotoGrid) образец демонстрирует `UniformGridLayout`:
 
-[![Снимок экрана тройной фотографии в табличном](images/ch26fg08-small.png "универсальный макет сетки")](images/ch26fg08-large.png "универсальный макет сетки")
+[![Снимок экрана тройной фотографии в табличном](images/ch26fg08-small.png "универсальный макет сетки")](images/ch26fg08-large.png#lightbox "универсальный макет сетки")
 
 ### <a name="overlapping-children"></a>Перекрывающиеся дочерние элементы
 
@@ -174,7 +175,7 @@ Xamarin.Forms включает несколько классов, произво
 
 [ `OverlapLayout` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/OverlapLayout.cs) Класса в [ **Xamarin.FormsBook.Toolkit** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) библиотека определяет вложенное свойство для указания порядка отрисовки, что один из его дочерние элементы, отображаемый поверх остальных. [ **StudentCardFile** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter26/StudentCardFile) образец демонстрирует это:
 
-[![Тройной экрана сетки файла карты студента](images/ch26fg10-small.png "перекрывающиеся дочерние элементы макета")](images/ch26fg10-large.png "перекрывающиеся дочерние элементы макета")
+[![Тройной экрана сетки файла карты студента](images/ch26fg10-small.png "перекрывающиеся дочерние элементы макета")](images/ch26fg10-large.png#lightbox "перекрывающиеся дочерние элементы макета")
 
 ### <a name="more-attached-bindable-properties"></a>Несколько присоединенного свойства для привязки
 

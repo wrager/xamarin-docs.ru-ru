@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/16/2017
-ms.openlocfilehash: a95b49fa3f090339773233dada46a14e69c8bb43
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 798bb2b15534a620acbe76080e171af1a548ac25
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-platform-specifics"></a>Специфический для платформы iOS
 
@@ -180,10 +180,10 @@ On<iOS>().SetUseSafeArea(true);
 
 Результатом является то, что содержимое страницы может располагаться на область экрана, который является безопасным для всех iPhone:
 
-[![](ios-images/safe-area-layout.png "Руководство по зарезервированная область макета")](ios-images/safe-area-layout-large.png "руководство зарезервированная область макета")
+[![](ios-images/safe-area-layout.png "Руководство по зарезервированная область макета")](ios-images/safe-area-layout-large.png#lightbox "руководство зарезервированная область макета")
 
 > [!NOTE]
-> **Примечание**: безопасный области, определяемой Apple, используемый для задания в Xamarin.Forms [ `Page.Padding` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Page.Padding/) свойство и переопределяет все предыдущие значения этого свойства, заданные.
+> Безопасные области, определяемой Apple, используемый для задания в Xamarin.Forms [ `Page.Padding` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Page.Padding/) свойство и переопределяет все предыдущие значения этого свойства, заданные.
 
 Зарезервированная область может настраиваться путем извлечения его [ `Thickness` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Thickness/) значение с `Page.SafeAreaInsets` метод [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](https://developer.xamarin.com/api/namespace/Xamarin.Forms.PlatformConfiguration.iOSSpecific/) пространства имен. Затем могут редактироваться как необходимые и повторно назначены `Padding` свойства в конструкторе страницы или [ `OnAppearing` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Page.OnAppearing()/) переопределения:
 
@@ -385,7 +385,7 @@ switch (picker.On<iOS>().UpdateMode())
 
 Результатом является то, что указанный `UpdateMode` применяется к [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/), который управляет, когда происходит выбор элементов:
 
-[![](ios-images/picker-updatemode.png "Выбор UpdateMode специфический для платформы")](ios-images/picker-updatemode-large.png "Picker UpdateMode Plaform-Specific")
+[![](ios-images/picker-updatemode.png "Выбор UpdateMode специфический для платформы")](ios-images/picker-updatemode-large.png#lightbox "Picker UpdateMode Plaform-Specific")
 
 <a name="set_status_bar_visibility" />
 
@@ -468,7 +468,7 @@ scrollView.On<iOS>().SetShouldDelayContentTouches(!scrollView.On<iOS>().ShouldDe
 
 В результате [ `ScrollView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) можно отключить задержки, поэтому получение содержимого штрихи, в этом сценарии [ `Slider` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Slider/) получает жест вместо [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.Detail/) страница [ `MasterDetailPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/):
 
-[![](ios-images/scrollview-delay-content-touches.png "Задержка ScrollView содержимое касается определяемых платформой")](ios-images/scrollview-delay-content-touches-large.png "ScrollView Delay Content Touches Plaform-Specific")
+[![](ios-images/scrollview-delay-content-touches.png "Задержка ScrollView содержимое касается определяемых платформой")](ios-images/scrollview-delay-content-touches-large.png#lightbox "ScrollView Delay Content Touches Plaform-Specific")
 
 ## <a name="summary"></a>Сводка
 

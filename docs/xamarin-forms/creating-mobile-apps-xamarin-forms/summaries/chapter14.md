@@ -3,14 +3,15 @@ title: "Сводка Глава 14. Абсолютный макета"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 88882A48-3226-42D1-96ED-241250B64A84
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: ac4c41ebd70b58e95a3fa4fa7a391a473361b1db
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 394e1722c79bac5f034e9ad88eb1fed7e5090f8c
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-14-absolute-layout"></a>Сводка Глава 14. Абсолютный макета
 
@@ -91,7 +92,7 @@ layoutBounds.Y = (fractionalChildCoordinate.Y или (1 - layoutBounds.Height))
 
 [ **DotMatrixClock** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter14/DotMatrixClock) пример отображает текущее время с отображением имитацию 5 x 7 матричного. Каждая точка обозначает `BoxView` (отсутствуют 228 из них) изменять размеры и расположение на `AbsoluteLayout`.
 
-[![Тройной экрана часов матричного](images/ch14fg08-small.png "часов матричного")](images/ch14fg08-large.png "матричного часов")
+[![Тройной экрана часов матричного](images/ch14fg08-small.png "часов матричного")](images/ch14fg08-large.png#lightbox "матричного часов")
 
 [ **BouncingText** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter14/BouncingText) программы анимирует два `Label` объектов к экрану скачками по горизонтали и вертикали.
 

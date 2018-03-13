@@ -4,14 +4,15 @@ description: "Ознакомьтесь с различиями между SkiaSh
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 26C25BB8-FBE8-4B77-B01D-16A163A16890
 author: charlespetzold
 ms.author: chape
 ms.date: 02/09/2017
-ms.openlocfilehash: 2643e06474ffe0fd60830db3f315bf525c2f84eb
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5e07377584996694aa8597af79317957c51050ec
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="pixels-and-device-independent-units"></a>Пикселей и аппаратно независимых единицах
 
@@ -98,7 +99,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот программу на всех трех платформ.
 
-[![](pixels-images/surfacesize-small.png "Тройной снимок экрана со страницей размер поверхности")](pixels-images/surfacesize-large.png "тройной снимок экрана со страницей размер рабочей области")
+[![](pixels-images/surfacesize-small.png "Тройной снимок экрана со страницей размер поверхности")](pixels-images/surfacesize-large.png#lightbox "тройной снимок экрана со страницей размер рабочей области")
 
 Как видите, `CanvasSize` свойство `SKCanvasView` и `Size` свойство `SKImageInfo` значение согласованы в отчетности в пикселах. `Height` И `Width` свойства `SKCanvasView` являются свойства Xamarin.Forms и отчет, размер представления в аппаратно независимых единицах, определенные платформой.
 
@@ -141,7 +142,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Здесь выполняется на трех платформах:
 
-[![](pixels-images/ellipsefill-small.png "Тройной снимок экрана со страницей размер поверхности")](pixels-images/ellipsefill-large.png "тройной снимок экрана со страницей размер рабочей области")
+[![](pixels-images/ellipsefill-small.png "Тройной снимок экрана со страницей размер поверхности")](pixels-images/ellipsefill-large.png#lightbox "тройной снимок экрана со страницей размер рабочей области")
 
 [Других `DrawOval` метод](https://developer.xamarin.com/api/member/SkiaSharp.SKCanvas.DrawOval/p/SkiaSharp.SKRect/SkiaSharp.SKPaint/) имеет [ `SGRect` ](https://developer.xamarin.com/api/type/SkiaSharp.SKRect/) аргументом, который представляет собой прямоугольник, определенные в терминах координаты X и Y верхнего левого угла и нижнего правого угла. Овал заполняет этот прямоугольник, который предполагает, что могут быть доступны для использования в **заполнения эллипса** страницы следующим образом:
 

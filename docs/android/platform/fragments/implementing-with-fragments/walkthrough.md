@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: 7441fbe1fc686dc4fa5cb67cbfc5ae6353f32c93
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e5c058f173f64efe4a5c777872e9ea67120115f0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="walkthrough"></a>Пошаговое руководство
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 02/27/2018
 
 Создайте новый проект с именем Xamarin.Android **FragmentSample**. **Android минимум** версия должна быть задана, для Android 3.1 или более поздней версии, как показано на рисунке ниже:
 
-[![Установка Android Минимальная версия](walkthrough-images/00.png)](walkthrough-images/00.png)
+[![Установка Android Минимальная версия](walkthrough-images/00.png)](walkthrough-images/00.png#lightbox)
 
 
 ## <a name="2-create-the-mainactivity"></a>2. Создание MainActivity
@@ -47,7 +47,7 @@ public class MainActivity : Activity
 
 Два разных размеров требуется два файла другой макет. Поэтому давайте создадим новую папку **ресурсы или макет-большого**и создайте новый макет **activity_main.axml**. Мы также будем переименовать файл макета по умолчанию как **Resources/Layout/activity_main.axml**. После внесения этих изменений макета папки должен быть похож на следующем снимке экрана.
 
-[![Снимок экрана: макет папки в Интегрированной среде разработки](walkthrough-images/01.png)](walkthrough-images/01.png)
+[![Снимок экрана: макет папки в Интегрированной среде разработки](walkthrough-images/01.png)](walkthrough-images/01.png#lightbox)
 
 
 Все устройства будет загрузить и использовать файл макета в **ресурсы и макет**.
@@ -92,7 +92,7 @@ Android 3.2 появился новый способ указания макет
 
 `TitlesFragment` будет отображать названия различных играет, так что давайте Добавление новый фрагмент в проект с именем `TitlesFragment`:
 
-[![Добавление в проект TitlesFragment новый фрагмент](walkthrough-images/02.png)](walkthrough-images/02.png)
+[![Добавление в проект TitlesFragment новый фрагмент](walkthrough-images/02.png)](walkthrough-images/02.png#lightbox)
 
 После `TitlesFragment` была добавлена, нам нужно изменить класс, наследующий от `Android.App.ListFragment`. `ListFragment` — Это тип специализированные фрагмент, включающий список функциональные возможности.
 `TitlesFragment` также переопределяют `OnActivityCreated` (другой метод фрагмент жизненного цикла) и предоставить `Adapter` , `ListFragment` будет использоваться для заполнения списка:
@@ -162,7 +162,6 @@ private void ShowDetails(int playId)
 
 Код с устройства определяет способ форматирования и отображения выбранного play с кавычками. В случае планшетных ПК `_isDualPane` флагу будет присвоено `true`, и поэтому квоты будет отображаться рядом с `TitlesFragment`. Если выбранного play `id` еще не отображается, выберите новый `DetailsFragment` создается и затем загружается в `FrameLayout` в действии. Для других устройств, не имеющих большом мониторе &ndash; телефонов, например &ndash; `isDualPane` будет присвоено `false` , новый `DetailsActivity` будет запущена.
 
-<a name="5. Create_the_DetailsActivity" />
 
 ## <a name="5-create-the-detailsactivity"></a>5. Создание DetailsActivity
 
@@ -187,7 +186,6 @@ public class DetailsActivity : Activity
 
 Обратите внимание, что файл разметки не загружаются для `DetailsActivity`. Вместо этого `DetailsFragment` загружается в представлении корневого действия. В этом представлении корневой имеет специальный идентификатор `Android.Resource.Id.Content`. Новый `DetailFragment` , которая затем добавляется к этому представлению корневой внутри `FragmentTransaction` , создаваемый с помощью этого действия `FragmentManager`.
 
-<a name="6. Create_the_DetailsFragment" />
 
 ## <a name="6-create-the-detailsfragment"></a>6. Создание DetailsFragment
 

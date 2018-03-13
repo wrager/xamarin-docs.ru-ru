@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: 28c8ecc77aaeb00eff6f343ad41fed1c653362db
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 78832c396f8968769f3134728cd435555aecbc8f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="checking-battery-status"></a>Проверка состояния батареи
 
@@ -70,7 +70,7 @@ namespace DependencyServiceSample
 Процесс разработки для этого интерфейса в общий код позволит приложению доступ к API управления питанием на каждой платформе Xamarin.Forms.
 
 > [!NOTE]
-> **Примечание**: классы, реализующие интерфейс должен иметь конструктор для работы с `DependencyService`. Не удается определить конструкторы интерфейсами.
+> Классы, реализующие интерфейс должен иметь конструктор для работы с `DependencyService`. Не удается определить конструкторы интерфейсами.
 
 <a name="iOS_Implementation" />
 
@@ -547,4 +547,4 @@ public MainPage ()
 
 - [Помощью DependencyService (пример)](https://developer.xamarin.com/samples/DependencyService)
 - [С помощью с помощью DependencyService (пример)](https://developer.xamarin.com/samples/UsingDependencyService/)
-- [Образцы Xamarin.Forms](https://github.com/xamarin/xamarin-forms-samples)
+- [Примеры Xamarin.Forms](https://github.com/xamarin/xamarin-forms-samples)

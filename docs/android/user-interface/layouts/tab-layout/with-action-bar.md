@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 14abb7a4b85b493bb0ab96a982d989fad783fabd
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: afaa02168dcac54115e8fca53683725926e4baed
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="tabbed-layouts-with-the-actionbar"></a>Макеты с вкладками с панели действий
 
 _В этом руководстве представлены и объясняется, как использовать API панели действий для создания интерфейса пользователя с вкладками в приложении Xamarin.Android._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -27,7 +26,6 @@ _В этом руководстве представлены и объясняе
 Обратите внимание, что `Toolbar` более новой версии и более обобщенное действие панель компонент, который следует использовать вместо объекта `ActionBar` (`Toolbar` был предназначен для замены `ActionBar`). Дополнительные сведения см. в разделе [инструментов](~/android/user-interface/controls/tool-bar/index.md). 
 
 
-<a name="Requirements" />
 
 ## <a name="requirements"></a>Требования
 
@@ -36,7 +34,6 @@ Xamarin.Android любое приложение, предназначенное 
 Некоторые API, панели действий перенесенных обратно в API уровня 7 (Android 2.1) и доступны через [V7 AppCompat библиотеки](http://developer.android.com/tools/support-library/features.html#v7-appcompat), который становится доступным для приложений Xamarin.Android через [Xamarin Android библиотека поддержки - V7 ](https://www.nuget.org/packages/Xamarin.Android.Support.v7.AppCompat/) пакета.
 
 
-<a name="Introducing_tabs_in_the_ActionBar" />
 
 ## <a name="introducing-tabs-in-the-actionbar"></a>Общие сведения о вкладках в панели действий
 
@@ -63,7 +60,6 @@ Xamarin.Android любое приложение, предназначенное 
 -  TabUnselected
 
 
-<a name="Adding_Tabs_to_the_ActionBar" />
 
 ### <a name="adding-tabs-to-the-actionbar"></a>Добавление вкладок в панели действий
 
@@ -111,7 +107,6 @@ protected override void OnCreate(Bundle bundle)
 }
 ```
 
-<a name="Event_Handlers_vs_ActionBar.ITabListener" />
 
 #### <a name="event-handlers-vs-actionbaritablistener"></a>Обработчики событий vs ActionBar.ITabListener
 
@@ -120,7 +115,6 @@ protected override void OnCreate(Bundle bundle)
 При работе с слишком большого числа вкладок или совместного использования общей функциональности между вкладками на панели действий, это может быть эффективными в плане использования памяти и производительности, чтобы создать пользовательский класс, который реализует `ActionBar.ITabListener`и совместного использования одного экземпляра класса. Это уменьшит количество GREF которая используется приложением Xamarin.Android. 
 
 
-<a name="Backwards_Compatibility_for_Older_Devices" />
 
 ### <a name="backwards-compatibility-for-older-devices"></a>Обратная совместимость для старых устройств
 
@@ -177,7 +171,6 @@ public class MainActivity : ActionBarActivity, ActionBar.ITabListener
 }
 ```
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

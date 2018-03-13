@@ -7,21 +7,20 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 013db64add615e94ef3494f14bc82fc17ec2dca1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a8a9735845139da700959caf3639defa6594f307
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="gridlayout"></a>GridLayout
 
 `GridLayout` — Это новая `ViewGroup` подкласс, в котором поддерживает определение представления в 2D сетке аналогично HTML-таблицы, как показано ниже:
 
- [ ![Обрезку GridLayout отображение четыре ячейки](grid-layout-images/21-gridlayoutcropped.png)](grid-layout-images/21-gridlayoutcropped.png)
+ [![Обрезку GridLayout отображение четыре ячейки](grid-layout-images/21-gridlayoutcropped.png)](grid-layout-images/21-gridlayoutcropped.png#lightbox)
 
  `GridLayout` работает с иерархией плоский вид, где дочерние представления установите их расположение в сетке, указав строки и столбцы, они должны находиться в. В этом случае *GridLayout* может разместить представлений в сетке без необходимости, любые промежуточные представления предоставляют структуру таблицы, такие, как показано в таблице строк, используемых в TableLayout. Поддерживая Плоская иерархия *GridLayout* может более быстро макета его дочерние представления. Давайте рассмотрим пример для иллюстрации этой концепции фактически это значит, в коде.
 
-<a name="Creating_a_Grid_Layout" />
 
 ## <a name="creating-a-grid-layout"></a>Создание сетки макета
 
@@ -51,13 +50,12 @@ ms.lasthandoff: 02/27/2018
 
 Макет скорректирует размеры строк и столбцов, чтобы ячейки соответствии с содержимым, как показано на следующей схеме.
 
- [ ![Схема макета, показывающая две ячейки слева меньше, чем в правой части](grid-layout-images/gridlayout-cells.png)](grid-layout-images/gridlayout-cells.png)
+ [![Схема макета, показывающая две ячейки слева меньше, чем в правой части](grid-layout-images/gridlayout-cells.png)](grid-layout-images/gridlayout-cells.png#lightbox)
 
 Это приведет к следующей пользовательский интерфейс, если выполняются в приложении:
 
- [ ![Снимок экрана GridLayoutDemo приложения отображение четыре ячейки](grid-layout-images/01-gridlayout.png)](grid-layout-images/01-gridlayout.png)
+ [![Снимок экрана GridLayoutDemo приложения отображение четыре ячейки](grid-layout-images/01-gridlayout.png)](grid-layout-images/01-gridlayout.png#lightbox)
 
- <a name="Specifying_Orientation" />
 
 
 ## <a name="specifying-orientation"></a>Указание ориентации
@@ -76,13 +74,12 @@ ms.lasthandoff: 02/27/2018
 
 Теперь `GridLayout` расположит ячейки сверху вниз в каждом столбце, а не слева направо, как показано ниже:
 
- [ ![Диаграмма, иллюстрирующая расположение ячейки с вертикальной ориентацией.](grid-layout-images/gridlayoutorientation.png)](grid-layout-images/gridlayoutorientation.png)
+ [![Диаграмма, иллюстрирующая расположение ячейки с вертикальной ориентацией.](grid-layout-images/gridlayoutorientation.png)](grid-layout-images/gridlayoutorientation.png#lightbox)
 
 Это приведет к следующей пользовательский интерфейс во время выполнения:
 
- [ ![Снимок экрана GridLayoutDemo с ячейками, размещается в вертикальной ориентацией](grid-layout-images/02-gridlayout.png)](grid-layout-images/02-gridlayout.png)
+ [![Снимок экрана GridLayoutDemo с ячейками, размещается в вертикальной ориентацией](grid-layout-images/02-gridlayout.png)](grid-layout-images/02-gridlayout.png#lightbox)
 
- <a name="Specifying_Explicit_Position" />
 
 
 ### <a name="specifying-explicit-position"></a>Указать явные позиции
@@ -119,7 +116,6 @@ ms.lasthandoff: 02/27/2018
 </GridLayout>
 ```
 
- <a name="Specifying_spacing" />
 
 
 ### <a name="specifying-spacing"></a>Указание интервала
@@ -176,11 +172,10 @@ ms.lasthandoff: 02/27/2018
 
 Этот XML-код создает интервал в `GridLayout` как показано ниже:
 
- [ ![Снимок экрана из GridLayoutDemo наглядного более крупные ячейки с интервалом](grid-layout-images/03-gridlayout.png)](grid-layout-images/03-gridlayout.png)
+ [![Снимок экрана из GridLayoutDemo наглядного более крупные ячейки с интервалом](grid-layout-images/03-gridlayout.png)](grid-layout-images/03-gridlayout.png#lightbox)
 
 Преимущество использования нового `Space` представление, он позволяет интервала и не требует нам задать атрибуты для каждого дочернего представления.
 
- <a name="Spanning_Columns_and_Rows" />
 
 
 ### <a name="spanning-columns-and-rows"></a>Охват столбцов и строк
@@ -230,7 +225,7 @@ ms.lasthandoff: 02/27/2018
 
 Это приведет к первый столбец `GridLayout` растягивается до размеров кнопки, как показано ниже:
 
-[ ![Снимок экрана GridLayoutDemo с кнопкой охват только первый столбец](grid-layout-images/04-gridlayout.png)](grid-layout-images/04-gridlayout.png)
+[![Снимок экрана GridLayoutDemo с кнопкой охват только первый столбец](grid-layout-images/04-gridlayout.png)](grid-layout-images/04-gridlayout.png#lightbox)
 
 Чтобы предотвратить растяжение в первом столбце, мы устанавливаем кнопка занимал два столбца, установив его columnspan следующим образом:
 
@@ -245,7 +240,7 @@ ms.lasthandoff: 02/27/2018
 
 Это приводит к макет для `TextViews` аналогичен макета, в более ранних версиях необходимо было с кнопкой, добавляемый в конец `GridLayout` как показано ниже:
 
- [ ![Снимок экрана GridLayoutDemo с кнопкой, объединение обоих столбцов](grid-layout-images/05-gridlayout.png)](grid-layout-images/05-gridlayout.png)
+ [![Снимок экрана GridLayoutDemo с кнопкой, объединение обоих столбцов](grid-layout-images/05-gridlayout.png)](grid-layout-images/05-gridlayout.png#lightbox)
 
 
 ## <a name="related-links"></a>Связанные ссылки

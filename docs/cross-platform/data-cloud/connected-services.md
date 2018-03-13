@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: cc2deb11d544bc4e933e690d6089eb001a186c79
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5c9ae8d65a2bfdd035cccb6b911448ea047f8c40
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connected-services-walkthrough"></a>Пошаговое руководство для подключенных служб
 
@@ -24,22 +24,22 @@ ms.lasthandoff: 02/27/2018
 1.  Запустить, дважды щелкнув **подключенные службы** узел решения, чтобы открыть **коллекции служб**.
   Это список всех доступных служб для этого типа приложения. Выберите службу (например, **мобильных серверной службе приложений Azure**), щелкнув его.
 
-  [ ![](connected-services-images/image001-sml.png "Подключен узел службы в Visual Studio для Mac")](connected-services-images/image001.png)
+  [![](connected-services-images/image001-sml.png "Подключен узел службы в Visual Studio для Mac")](connected-services-images/image001.png#lightbox)
 
 2. Страница сведений службы содержит описание службы и зависимости должны быть установлены.
   Нажмите кнопку **добавить** кнопку, чтобы добавить зависимости приложения:
 
-  [ ![](connected-services-images/image002-sml.png "Мобильной серверной части с помощью Azure")](connected-services-images/image002.png)
+  [![](connected-services-images/image002-sml.png "Мобильной серверной части с помощью Azure")](connected-services-images/image002.png#lightbox)
 
 3. Зависимости должны быть добавлены к переносимой библиотеке Классов и проекты под конкретные платформы, для работы.
   Установите флажки, чтобы добавить эту службу в каждый проект, который будет ссылаться на него (прямо или косвенно):
 
-  [ ![](connected-services-images/image003-sml.png "Проверьте все проекты, должны ссылаться на службу")](connected-services-images/image003.png)
+  [![](connected-services-images/image003-sml.png "Проверьте все проекты, должны ссылаться на службу")](connected-services-images/image003.png#lightbox)
 
 4. Выберите **Accept** на **принятия условий лицензионного соглашения** диалоговых окон для пакетов NuGet.
   Возможны два диалоговых окна, чтобы принять, один для MobileClient и зависимостей, а другой для SQLiteStore, которая используется для синхронизации данных в автономном режиме:
 
-  [ ![](connected-services-images/image004-sml.png "Примите лицензионные соглашения")](connected-services-images/image004.png)
+  [![](connected-services-images/image004-sml.png "Примите лицензионные соглашения")](connected-services-images/image004.png#lightbox)
 
   ![](connected-services-images/image005.png "Окно принятия лицензии")
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 02/27/2018
 
 6. Выберите службу приложений из списка. Это заполнит код шаблона для `MobileServiceClient` объекта на соответствующий URL-адрес службы приложения в Azure:
 
-  [ ![](connected-services-images/image006-sml.png "Выберите из списка служб приложений")](connected-services-images/image006.png)
+  [![](connected-services-images/image006-sml.png "Выберите из списка служб приложений")](connected-services-images/image006.png#lightbox)
 
   Если указано ни одной службы, нажмите кнопку **New** кнопку (см. шаг 9.)
 
@@ -59,12 +59,12 @@ ms.lasthandoff: 02/27/2018
 
 8. Следуя инструкциям в документации в **следующие шаги** для добавления данных, Автономная синхронизация, проверки подлинности и push-уведомления в приложение:
 
-  [ ![](connected-services-images/image008-sml.png "Ознакомьтесь с инструкциями, далее действия")](connected-services-images/image008.png)
+  [![](connected-services-images/image008-sml.png "Ознакомьтесь с инструкциями, далее действия")](connected-services-images/image008.png#lightbox)
 
 10. Если у вас нет любой существующей службы приложений, можно создать новые службы в Visual Studio для Mac.
   Нажмите кнопку **New** кнопки в левом нижнем углу списка служб, чтобы открыть **нового приложения службы** диалогового окна:
 
-  [ ![](connected-services-images/image009-sml.png "Создание новой службы приложения в Visual Studio для Mac")](connected-services-images/image009.png)
+  [![](connected-services-images/image009-sml.png "Создание новой службы приложения в Visual Studio для Mac")](connected-services-images/image009.png#lightbox)
 
 Новые службы необходимо задать следующие параметры:
 

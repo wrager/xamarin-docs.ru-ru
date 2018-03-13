@@ -8,23 +8,21 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/29/2018
-ms.openlocfilehash: b199e4370e93712211db125e427fb61da39cb296
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c9ec0d3bc9c3278f097b925ccb755323df950c62
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-the-android-designer"></a>С помощью конструктора Android
 
 _В этом разделе приведен пример Xamarin.Android конструктора. Демонстрирует создание пользовательского интерфейса для приложения браузера небольшие цветные; Этот пользовательский интерфейс создается полностью в конструкторе._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
 Android пользовательские интерфейсы могут создаваться декларативно с помощью XML-файлов или программным путем написания кода. Конструктор Xamarin.Android позволяет разработчикам создавать и изменять декларативный макеты визуально, без необходимости работать с трудоемкость ручного редактирования XML-файлов. Конструктор также предоставляет в реальном времени обратной связи, который позволяет разработчикам оценить изменения пользовательского интерфейса без необходимости повторного развертывания приложения на устройстве или эмуляторе. Это может ускорить разработку пользовательского интерфейса Android невероятно. В этой статье представлено пошаговое руководство, которое показывает, как использовать конструктор Xamarin.Android для визуального создания пользовательского интерфейса.
 
-<a name="Walkthrough" />
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
@@ -32,7 +30,6 @@ Android пользовательские интерфейсы могут соз�
 
 Давайте начнем!
 
-<a name="Creating_a_New_Project" />
 
 ### <a name="creating-a-new-project"></a>Создание нового проекта
 
@@ -42,13 +39,13 @@ Android пользовательские интерфейсы могут соз�
 
 Запустите Visual Studio и нажмите кнопку **новый проект...**  выберите **Visual C\# > Android > пустое приложение (Android)** шаблона:
 
-[ ![Пустое приложение Android](designer-walkthrough-images/vs/01-android-app-sml.png)](designer-walkthrough-images/vs/01-android-app.png)
+[![Пустое приложение Android](designer-walkthrough-images/vs/01-android-app-sml.png)](designer-walkthrough-images/vs/01-android-app.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Запустите Visual Studio для Mac и нажмите кнопку **новое решение...** . Выберите **приложения Android** шаблона и нажмите кнопку **Далее**:
 
-[ ![Пустое приложение Android](designer-walkthrough-images/xs/01-android-app-sml.png)](designer-walkthrough-images/xs/01-android-app.png)
+[![Пустое приложение Android](designer-walkthrough-images/xs/01-android-app-sml.png)](designer-walkthrough-images/xs/01-android-app.png#lightbox)
 
 -----
 
@@ -56,20 +53,19 @@ Android пользовательские интерфейсы могут соз�
 
 Название нового приложения **DesignerWalkthrough** и нажмите кнопку **ОК**.
 
-[ ![Имя приложения](designer-walkthrough-images/vs/02-name-app-sml.png)](designer-walkthrough-images/vs/02-name-app.png)
+[![Имя приложения](designer-walkthrough-images/vs/02-name-app-sml.png)](designer-walkthrough-images/vs/02-name-app.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Название нового приложения **DesignerWalkthrough**. В разделе **целевых платформ**выберите **самые актуальные и наибольший** и нажмите кнопку **Далее**:
 
-[ ![Имя приложения](designer-walkthrough-images/xs/02-designer-walkthrough-sml.png)](designer-walkthrough-images/xs/02-designer-walkthrough.png)
+[![Имя приложения](designer-walkthrough-images/xs/02-designer-walkthrough-sml.png)](designer-walkthrough-images/xs/02-designer-walkthrough.png#lightbox)
 
 На следующем экране диалоговое окно, нажмите кнопку **создать**.
 
 -----
 
 
-<a name="Adding_a_Layout" />
 
 ### <a name="adding-a-layout"></a>Добавление макета
 
@@ -79,38 +75,37 @@ Android пользовательские интерфейсы могут соз�
 
 В Visual Studio щелкните правой кнопкой мыши **ресурсы и макет** в **обозревателе решений** и выберите **Добавить > новый элемент...** . В **Добавление нового элемента** диалогового окна выберите **Android макета**. Назовите файл **ListItem.axml** и нажмите кнопку **добавить**:
 
-[ ![Новый макет](designer-walkthrough-images/vs/03-new-layout-sml.png)](designer-walkthrough-images/vs/03-new-layout.png)
+[![Новый макет](designer-walkthrough-images/vs/03-new-layout-sml.png)](designer-walkthrough-images/vs/03-new-layout.png#lightbox)
 
 Новый **ListItem** макет отображается в конструкторе:
 
-[ ![Представление конструктора](designer-walkthrough-images/vs/04-designer-view-sml.png)](designer-walkthrough-images/vs/04-designer-view.png)
+[![Представление конструктора](designer-walkthrough-images/vs/04-designer-view-sml.png)](designer-walkthrough-images/vs/04-designer-view.png#lightbox)
 
 Нажмите кнопку **источника** вкладку в нижней части конструктора, чтобы просмотреть источник XML для этой структуры:
 
-[ ![Конструктор XML](designer-walkthrough-images/vs/05-designer-xml-sml.png)](designer-walkthrough-images/vs/05-designer-xml.png)
+[![Конструктор XML](designer-walkthrough-images/vs/05-designer-xml-sml.png)](designer-walkthrough-images/vs/05-designer-xml.png#lightbox)
 
 Из **представление** меню, нажмите кнопку **другие окна > Структура документа** Открытие **Структура документа**. **Структура документа** показывает, что макет в настоящее время содержит один **LinearLayout** мини-приложения:
 
-[ ![Структура документа](designer-walkthrough-images/vs/06-document-outline-sml.png)](designer-walkthrough-images/vs/06-document-outline.png)
+[![Структура документа](designer-walkthrough-images/vs/06-document-outline-sml.png)](designer-walkthrough-images/vs/06-document-outline.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Щелкните правой кнопкой мыши в Visual Studio для Mac **ресурсы и макет** в **решения** рукописного ввода и выберите **Добавить > новый файл...** . В **новый файл** диалогового окна выберите **Android > макета**. Назовите файл **ListItem** и нажмите кнопку **New**:
 
-[ ![Новый макет](designer-walkthrough-images/xs/03-new-layout-sml.png)](designer-walkthrough-images/xs/03-new-layout.png)
+[![Новый макет](designer-walkthrough-images/xs/03-new-layout-sml.png)](designer-walkthrough-images/xs/03-new-layout.png#lightbox)
 
 Новый **ListItem** макет отображается в конструкторе:
 
-[ ![Представление конструктора](designer-walkthrough-images/xs/04-designer-view-sml.png)](designer-walkthrough-images/xs/04-designer-view.png)
+[![Представление конструктора](designer-walkthrough-images/xs/04-designer-view-sml.png)](designer-walkthrough-images/xs/04-designer-view.png#lightbox)
 
 Нажмите кнопку **источника** вкладку в нижней части конструктора, чтобы просмотреть источник XML для этой структуры. При нажатии кнопки **Структура документа** вкладке в правой части показывает, что макет в настоящее время содержит один **LinearLayout** мини-приложения:
 
-[ ![Конструктор XML](designer-walkthrough-images/xs/05-designer-xml-sml.png)](designer-walkthrough-images/xs/05-designer-xml.png)
+[![Конструктор XML](designer-walkthrough-images/xs/05-designer-xml-sml.png)](designer-walkthrough-images/xs/05-designer-xml.png#lightbox)
 
 -----
 
 
-<a name="Creating_the_List_Item_User_Interface" />
 
 ### <a name="creating-the-list-item-user-interface"></a>Создание списка элементов пользовательского интерфейса
 
@@ -120,11 +115,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Найдите ImageView](designer-walkthrough-images/vs/07-locate-imageview-sml.png)](designer-walkthrough-images/vs/07-locate-imageview.png)
+[![Найдите ImageView](designer-walkthrough-images/vs/07-locate-imageview-sml.png)](designer-walkthrough-images/vs/07-locate-imageview.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Найдите ImageView](designer-walkthrough-images/xs/06-locate-imageview-sml.png)](designer-walkthrough-images/xs/06-locate-imageview.png)
+[![Найдите ImageView](designer-walkthrough-images/xs/06-locate-imageview-sml.png)](designer-walkthrough-images/xs/06-locate-imageview.png#lightbox)
 
 -----
 
@@ -132,11 +127,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Поиск ImageView](designer-walkthrough-images/vs/08-imageview-search-sml.png)](designer-walkthrough-images/vs/08-imageview-search.png)
+[![Поиск ImageView](designer-walkthrough-images/vs/08-imageview-search-sml.png)](designer-walkthrough-images/vs/08-imageview-search.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Поиск ImageView](designer-walkthrough-images/xs/07-imageview-search-sml.png)](designer-walkthrough-images/xs/07-imageview-search.png)
+[![Поиск ImageView](designer-walkthrough-images/xs/07-imageview-search-sml.png)](designer-walkthrough-images/xs/07-imageview-search.png#lightbox)
 
 -----
 
@@ -144,11 +139,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![ImageView на холсте](designer-walkthrough-images/vs/09-imageview-on-canvas-sml.png)](designer-walkthrough-images/vs/09-imageview-on-canvas.png)
+[![ImageView на холсте](designer-walkthrough-images/vs/09-imageview-on-canvas-sml.png)](designer-walkthrough-images/vs/09-imageview-on-canvas.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![ImageView на холсте](designer-walkthrough-images/xs/08-imageview-on-canvas-sml.png)](designer-walkthrough-images/xs/08-imageview-on-canvas.png)
+[![ImageView на холсте](designer-walkthrough-images/xs/08-imageview-on-canvas-sml.png)](designer-walkthrough-images/xs/08-imageview-on-canvas.png#lightbox)
 
 -----
 
@@ -158,11 +153,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Синий контур](designer-walkthrough-images/vs/10-blue-outline-sml.png)](designer-walkthrough-images/vs/10-blue-outline.png)
+[![Синий контур](designer-walkthrough-images/vs/10-blue-outline-sml.png)](designer-walkthrough-images/vs/10-blue-outline.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Синий контур](designer-walkthrough-images/xs/10-blue-outline-sml.png)](designer-walkthrough-images/xs/10-blue-outline.png)
+[![Синий контур](designer-walkthrough-images/xs/10-blue-outline-sml.png)](designer-walkthrough-images/xs/10-blue-outline.png#lightbox)
 
 -----
 
@@ -170,11 +165,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Выберите ImageView](designer-walkthrough-images/vs/11-select-imageview-sml.png)](designer-walkthrough-images/vs/11-select-imageview.png)
+[![Выберите ImageView](designer-walkthrough-images/vs/11-select-imageview-sml.png)](designer-walkthrough-images/vs/11-select-imageview.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Выберите ImageView](designer-walkthrough-images/xs/11-select-imageview-sml.png)](designer-walkthrough-images/xs/11-select-imageview.png)
+[![Выберите ImageView](designer-walkthrough-images/xs/11-select-imageview-sml.png)](designer-walkthrough-images/xs/11-select-imageview.png#lightbox)
 
 -----
 
@@ -182,11 +177,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Выделяет зеленый](designer-walkthrough-images/vs/12-green-highlight-sml.png)](designer-walkthrough-images/vs/12-green-highlight.png)
+[![Выделяет зеленый](designer-walkthrough-images/vs/12-green-highlight-sml.png)](designer-walkthrough-images/vs/12-green-highlight.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Выделяет зеленый](designer-walkthrough-images/xs/12-green-highlight-sml.png)](designer-walkthrough-images/xs/12-green-highlight.png)
+[![Выделяет зеленый](designer-walkthrough-images/xs/12-green-highlight-sml.png)](designer-walkthrough-images/xs/12-green-highlight.png#lightbox)
 
 -----
 
@@ -194,11 +189,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Добавление небольшого мини-приложения](designer-walkthrough-images/vs/13-add-small-text-sml.png)](designer-walkthrough-images/vs/13-add-small-text.png)
+[![Добавление небольшого мини-приложения](designer-walkthrough-images/vs/13-add-small-text-sml.png)](designer-walkthrough-images/vs/13-add-small-text.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Добавление небольшого мини-приложения](designer-walkthrough-images/xs/13-add-small-text-sml.png)](designer-walkthrough-images/xs/13-add-small-text.png)
+[![Добавление небольшого мини-приложения](designer-walkthrough-images/xs/13-add-small-text-sml.png)](designer-walkthrough-images/xs/13-add-small-text.png#lightbox)
 
 -----
 
@@ -206,18 +201,17 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Макет конструктора](designer-walkthrough-images/vs/14-raw-layout-sml.png)](designer-walkthrough-images/vs/14-raw-layout.png)
+[![Макет конструктора](designer-walkthrough-images/vs/14-raw-layout-sml.png)](designer-walkthrough-images/vs/14-raw-layout.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Макет конструктора](designer-walkthrough-images/xs/14-raw-layout-sml.png)](designer-walkthrough-images/xs/14-raw-layout.png)
+[![Макет конструктора](designer-walkthrough-images/xs/14-raw-layout-sml.png)](designer-walkthrough-images/xs/14-raw-layout.png#lightbox)
 
 -----
 
 Если два `textView` мини-приложения, не находящихся внутри `linearLayout1`, их можно перетаскивать `linearLayout1` в **Структура документа** и разместите их, поэтому они появляются, как показано на предыдущем снимке экрана (с отступом под `linearLayout1`).
 
 
-<a name="Arranging_The_User_Interface" />
 
 ### <a name="arranging-the-user-interface"></a>Размещение пользовательского интерфейса
 
@@ -241,13 +235,13 @@ Android пользовательские интерфейсы могут соз�
 
 3.  Прокрутите вниз до **группе ViewGroup** и измените `Width` параметру `wrap_content`:
 
-[ ![Набор переноса содержимого](designer-walkthrough-images/xs/15-wrap-content-sml.png)](designer-walkthrough-images/xs/15-wrap-content.png)
+[![Набор переноса содержимого](designer-walkthrough-images/xs/15-wrap-content-sml.png)](designer-walkthrough-images/xs/15-wrap-content.png#lightbox)
 
 -----
 
 Другой способ изменения `Width` параметр предназначен для щелкните треугольник с правой стороны мини-приложение, чтобы включить или отключить его значения ширины для `wrap_content`:
 
-[ ![Перетащите поле, чтобы задать ширину](designer-walkthrough-images/xs/16-width-arrow-sml.png)](designer-walkthrough-images/xs/16-width-arrow.png)
+[![Перетащите поле, чтобы задать ширину](designer-walkthrough-images/xs/16-width-arrow-sml.png)](designer-walkthrough-images/xs/16-width-arrow.png#lightbox)
 
 Повторное нажатие треугольника возвращает `Width` параметру `match_parent`.
 
@@ -255,11 +249,11 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Выберите корневой LinearLayout](designer-walkthrough-images/vs/16-root-linearlayout-sml.png)](designer-walkthrough-images/vs/16-root-linearlayout.png)
+[![Выберите корневой LinearLayout](designer-walkthrough-images/vs/16-root-linearlayout-sml.png)](designer-walkthrough-images/vs/16-root-linearlayout.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Выберите корневой LinearLayout](designer-walkthrough-images/xs/17-root-linearlayout-sml.png)](designer-walkthrough-images/xs/17-root-linearlayout.png)
+[![Выберите корневой LinearLayout](designer-walkthrough-images/xs/17-root-linearlayout-sml.png)](designer-walkthrough-images/xs/17-root-linearlayout.png#lightbox)
 
 -----
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -272,7 +266,7 @@ Android пользовательские интерфейсы могут соз�
 
 С корнем `LinearLayout` выбран, вернуться к **свойства** и нажмите кнопку **мини-приложение**. Изменение `Orientation` параметру `horizontal`:
 
-[ ![Горизонтальная ориентация:](designer-walkthrough-images/xs/18-horizontal-orientation-sml.png)](designer-walkthrough-images/xs/18-horizontal-orientation.png)
+[![Горизонтальная ориентация:](designer-walkthrough-images/xs/18-horizontal-orientation-sml.png)](designer-walkthrough-images/xs/18-horizontal-orientation.png#lightbox)
 
 -----
 
@@ -280,15 +274,14 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Макет конструктора](designer-walkthrough-images/vs/18-designer-layout-sml.png)](designer-walkthrough-images/vs/18-designer-layout.png)
+[![Макет конструктора](designer-walkthrough-images/vs/18-designer-layout-sml.png)](designer-walkthrough-images/vs/18-designer-layout.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Макет конструктора](designer-walkthrough-images/xs/19-designer-layout-sml.png)](designer-walkthrough-images/xs/19-designer-layout.png)
+[![Макет конструктора](designer-walkthrough-images/xs/19-designer-layout-sml.png)](designer-walkthrough-images/xs/19-designer-layout.png#lightbox)
 
 -----
 
-<a name="Modifying_the_Spacing" />
 
 ### <a name="modifying-the-spacing"></a>Изменение интервала
 
@@ -296,13 +289,13 @@ Android пользовательские интерфейсы могут соз�
 
 Затем мы изменим параметры внешних и внутренних полей в пользовательском Интерфейсе, чтобы предоставить дополнительное место между мини-приложений. Выберите `ImageView`, нажмите кнопку **по категориям** значок поиска в **свойства** окно и прокрутите вниз до **макета** раздела. Изменение `Min Height` для `70dp`, `Min Width` для `50dp`и `padding` для `10dp`. Это относится отступ вокруг всех сторон `ImageView` и elongates его по вертикали:
 
-[ ![Задать заполнения](designer-walkthrough-images/vs/19-padding-widths-sml.png)](designer-walkthrough-images/vs/19-padding-widths.png)
+[![Задать заполнения](designer-walkthrough-images/vs/19-padding-widths-sml.png)](designer-walkthrough-images/vs/19-padding-widths.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Затем мы изменим параметры внешних и внутренних полей в пользовательском Интерфейсе, чтобы предоставить дополнительное место между мини-приложений. Выберите `ImageView` и нажмите кнопку **макета** в разделе **свойства**. Изменение `Padding` для `10dp`, `Min Width` для `50dp`и `Min Height` для `70dp`. Это относится отступ вокруг всех сторон `ImageView` и elongates его по вертикали:
 
-[ ![Задать заполнения](designer-walkthrough-images/xs/20-padding-widths-sml.png)](designer-walkthrough-images/xs/20-padding-widths.png)
+[![Задать заполнения](designer-walkthrough-images/xs/20-padding-widths-sml.png)](designer-walkthrough-images/xs/20-padding-widths.png#lightbox)
 
 -----
 
@@ -311,13 +304,13 @@ Android пользовательские интерфейсы могут соз�
 Нижней, левой, правой, а верхнего отступа параметры можно задать независимо друг от друга, введя значения в `paddingBottom`, `paddingLeft`, `paddingRight`, и `paddingTop` соответственно.
 Например, задать `paddingLeft` на `5dp` и `paddingBottom`, `paddingRight`, и `paddingTop` поля `10dp`:
 
-[ ![Параметры пользовательского заполнения](designer-walkthrough-images/vs/20-custom-padding-sml.png)](designer-walkthrough-images/vs/20-custom-padding.png)
+[![Параметры пользовательского заполнения](designer-walkthrough-images/vs/20-custom-padding-sml.png)](designer-walkthrough-images/vs/20-custom-padding.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Верхней, правой, нижней и левое заполнение параметров могут быть заданы независимо, введя значения в `Top`, `Right`, `Bottom`, и `Left` заполнения поля, соответственно. Например, задать `Left` значение для заполнения `5dp` и `Top`, `Right`, и `Bottom` значений для заполнения `10dp`. Обратите внимание, что `Padding` теперь содержится список разделенных запятыми из следующих значений:
 
-[ ![Параметры пользовательского заполнения](designer-walkthrough-images/xs/21-custom-padding-sml.png)](designer-walkthrough-images/xs/21-custom-padding.png)
+[![Параметры пользовательского заполнения](designer-walkthrough-images/xs/21-custom-padding-sml.png)](designer-walkthrough-images/xs/21-custom-padding.png#lightbox)
 
 -----
 
@@ -325,18 +318,17 @@ Android пользовательские интерфейсы могут соз�
 
 После этого настроить положение `LinearLayout` мини-приложения, содержащего две `TextView` мини-приложения. В **Структура документа**выберите `linearLayout1`. В **свойства** прокрутите вниз до **макет - группе ViewGroup** раздела. Задать `layout_marginBottom`, `layout_marginLeft`, `layout_marginRight`, и `layout_marginTop` для `5dp`, `5dp`, `0dp`, и `5dp` соответственно:
 
-[ ![Установка полей](designer-walkthrough-images/vs/21-margins-sml.png)](designer-walkthrough-images/vs/21-margins.png)
+[![Установка полей](designer-walkthrough-images/vs/21-margins-sml.png)](designer-walkthrough-images/vs/21-margins.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 После этого настроить положение `LinearLayout` мини-приложения, содержащего две `TextView` мини-приложения. В **Структура документа**выберите `linearLayout1`. В **свойства** выберите **макета** вкладки. Прокрутите вниз до **группе ViewGroup** статьи и задайте `Left`, `Top`, `Right`, и `Bottom` границы для `5dp`, `5dp`, `0dp`, и `5dp` соответственно:
 
-[ ![Установка полей](designer-walkthrough-images/xs/22-margins-sml.png)](designer-walkthrough-images/xs/22-margins.png)
+[![Установка полей](designer-walkthrough-images/xs/22-margins-sml.png)](designer-walkthrough-images/xs/22-margins.png#lightbox)
 
 -----
 
 
-<a name="Removing_the_Default_Image" />
 
 ### <a name="removing-the-default-image"></a>Удаление образа по умолчанию
 
@@ -360,11 +352,10 @@ Android пользовательские интерфейсы могут соз�
 
 3.  Очистить `Src` параметр пуст:
 
-[ ![Удалить параметр src ImageView](designer-walkthrough-images/xs/23-clear-src-sml.png)](designer-walkthrough-images/xs/23-clear-src.png)
+[![Удалить параметр src ImageView](designer-walkthrough-images/xs/23-clear-src-sml.png)](designer-walkthrough-images/xs/23-clear-src.png#lightbox)
 
 -----
 
-<a name="Adding_a_ListView" />
 
 ### <a name="adding-a-listview-container"></a>Добавление контейнера ListView
 
@@ -377,7 +368,7 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Новый ListView](designer-walkthrough-images/xs/24-new-listview-sml.png)](designer-walkthrough-images/xs/24-new-listview.png)
+[![Новый ListView](designer-walkthrough-images/xs/24-new-listview-sml.png)](designer-walkthrough-images/xs/24-new-listview.png#lightbox)
 
 -----
 
@@ -390,14 +381,13 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Переименуйте идентификатор в myListView](designer-walkthrough-images/xs/25-change-id-sml.png)](designer-walkthrough-images/xs/25-change-id.png)
+[![Переименуйте идентификатор в myListView](designer-walkthrough-images/xs/25-change-id-sml.png)](designer-walkthrough-images/xs/25-change-id.png#lightbox)
 
 -----
 
 На этом этапе наш пользовательский интерфейс готова к использованию.
 
 
-<a name="Running_the_Application" />
 
 ### <a name="running-the-application"></a>Запуск приложения
 
@@ -490,10 +480,9 @@ namespace DesignerWalkthrough
 
 Выполните сборку и запуск приложения. Снимке экрана ниже приведен пример того, как приложение отображается при выполнении на устройстве.
 
-[ ![Окончательного снимка экрана](designer-walkthrough-images/xs/26-final-screenshot-sml.png)](designer-walkthrough-images/xs/26-final-screenshot.png)
+[![Окончательного снимка экрана](designer-walkthrough-images/xs/26-final-screenshot-sml.png)](designer-walkthrough-images/xs/26-final-screenshot.png#lightbox)
 
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

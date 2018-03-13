@@ -3,14 +3,15 @@ title: "Сводка Глава 6. Нажатие кнопки"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: D4F9C429-A6CF-40FA-AC68-3F149307A5F9
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 44dbb4d2cdc573e721bb772fdd05d392c90b746a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 972d0d76fd55981ebca70acce69533d98c3fc0b5
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-6-button-clicks"></a>Сводка Глава 6. Нажатие кнопки
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 02/27/2018
 
 [ **SimplestKeypad** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter06/SimplestKeypad) образец использует один и тот же обработчик событий для всех 10 число ключей на цифровой клавиатуре и различать их с `StyleId` свойство:
 
-[![Тройной экрана простой клавиатуре](images/ch06fg04-small.png "калькулятора")](images/ch06fg04-large.png "калькулятора")
+[![Тройной экрана простой клавиатуре](images/ch06fg04-small.png "калькулятора")](images/ch06fg04-large.png#lightbox "калькулятора")
 
 ## <a name="saving-transient-data"></a>Сохранение временных данных.
 

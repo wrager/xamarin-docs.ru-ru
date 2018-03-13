@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2016
-ms.openlocfilehash: 2c65bce7ae468ef07c6d898e3f532aa95580f2ba
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 9e980dd428ec0efab8578a25f9191dbc71bbaf6c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="customizing-a-viewcell"></a>Настройка ViewCell
 
@@ -160,7 +160,7 @@ Xamarin.Forms [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Form
 1. Добавить `ExportRenderer` атрибут класс пользовательского средства визуализации, чтобы указать, что он будет использоваться для отображения пользовательских ячеек Xamarin.Forms. Этот атрибут используется для регистрации пользовательского средства визуализации с помощью Xamarin.Forms.
 
 > [!NOTE]
-> **Примечание**: для большинства элементов Xamarin.Forms является необязательным для предоставления пользовательского средства отрисовки в каждом проекте платформы. Если пользовательское средство отрисовки не зарегистрирован, будет использоваться модуль подготовки отчетов по умолчанию для базового класса элемента управления. Однако пользовательские модули подготовки отчетов, необходимы в каждом проекте платформы при подготовке к просмотру [ViewCell](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) элемента.
+> Для большинства элементов Xamarin.Forms является необязательным для предоставления пользовательского средства отрисовки в каждом проекте платформы. Если пользовательское средство отрисовки не зарегистрирован, будет использоваться модуль подготовки отчетов по умолчанию для базового класса элемента управления. Однако пользовательские модули подготовки отчетов, необходимы в каждом проекте платформы при подготовке к просмотру [ViewCell](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) элемента.
 
 На следующей схеме показана обязанности каждого проекта в образце приложения, а также связи между ними:
 
@@ -574,5 +574,5 @@ namespace CustomRenderer.WinPhone81
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Производительность ListView](~/xamarin-forms/user-interface/listview/performance.md)
+- [Производительность элемента управления ListView](~/xamarin-forms/user-interface/listview/performance.md)
 - [CustomRendererViewCell (пример)](https://developer.xamarin.com/samples/xamarin-forms/customrenderers/viewcell/)

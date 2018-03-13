@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 08/21/2017
-ms.openlocfilehash: 74d8533d0a757a307d88125701a482dfefd5eec2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 12197d238ddc6ddc2bd8f48f77aa15f5eff22a0a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="populating-a-listview-with-data"></a>Заполнение ListView с данными
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -23,7 +22,6 @@ ms.lasthandoff: 02/27/2018
 
 Встроенные адаптеры идентификатора ресурса представление принимают в качестве параметра, используемый для каждой строки. Можно использовать встроенные ресурсы, такие как в `Android.Resource.Layout` вам требуется написать собственные.
 
-<a name="Using_ListActivity_and_ArrayAdapterString" />
 
 ## <a name="using-listactivity-and-arrayadapterltstringgt"></a>С помощью ListActivity и ArrayAdapter&lt;строки&gt;
 
@@ -43,13 +41,12 @@ public class HomeScreen : ListActivity {
 }
 ```
 
-<a name="Handling_Row_Clicks" />
 
 ### <a name="handling-row-clicks"></a>Обработка строк щелкает
 
 Обычно `ListView` также позволяют пользователю touch строки для выполнения некоторых операций (например, воспроизводить песню, или вызов контакт или отображение другой экран). Ответ на изменения пользователя должен быть один дополнительные метод реализован в `ListActivity` &ndash; `OnListItemClick` &ndash; следующим образом:
 
-[![Снимок экрана SimpleListItem](populating-images/simplelistitem1.png)](populating-images/simplelistitem1.png)
+[![Снимок экрана SimpleListItem](populating-images/simplelistitem1.png)](populating-images/simplelistitem1.png#lightbox)
 
 ```csharp
 protected override void OnListItemClick(ListView l, View v, int position, long id)
@@ -61,9 +58,8 @@ protected override void OnListItemClick(ListView l, View v, int position, long i
 
 Теперь пользователь могут соприкасаться строки и `Toast` , появляется предупреждение:
 
-[![Снимок экрана из всплывающих выводимое затронутых строк](populating-images/basictable2.png)](populating-images/basictable2.png)
+[![Снимок экрана из всплывающих выводимое затронутых строк](populating-images/basictable2.png)](populating-images/basictable2.png#lightbox)
 
-<a name="Implementing_a_ListAdapter" />
 
 ## <a name="implementing-a-listadapter"></a>Реализация ListAdapter
 
@@ -110,7 +106,6 @@ public class HomeScreenAdapter : BaseAdapter<string> {
 }
 ```
 
-<a name="Using_a_Custom_Adapter" />
 
 ### <a name="using-a-custom-adapter"></a>С помощью настраиваемого адаптера
 
@@ -122,7 +117,6 @@ ListAdapter = new HomeScreenAdapter(this, items);
 
 Так как в этом примере используется тот же макет строк (`SimpleListItem1`) конечного приложения будет выглядеть так же в предыдущем примере.
 
-<a name="Row_View_Re-Use" />
 
 ### <a name="row-view-re-use"></a>Представление строк повторного использования
 
@@ -147,13 +141,12 @@ public override View GetView(int position, View convertView, ViewGroup parent)
 
 Некоторые реализации адаптера (такие как `CursorAdapter`) нет `GetView` метод, вместо этого они требуют два метода `NewView` и `BindView` которого принудительно выполнить повторное использование строки, разделение обязанностей `GetView` на две методы. Отсутствует `CursorAdapter` примере позднее в этом документе.
 
-<a name="Enabling_Fast_Scrolling" />
 
 ## <a name="enabling-fast-scrolling"></a>Включение быстрого прокрутки
 
 Быстрый прокрутки помогают пользователю выполнять прокрутку в длинных списках, предоставляя дополнительные «дескриптор», используемый в качестве полосу прокрутки для прямого доступа к части списка. На этом снимке экрана показано дескриптор быстрого прокрутки:
 
-[![Снимок экрана fast прокрутки с дескриптором прокрутки](populating-images/fastscroll.png)](populating-images/fastscroll.png)
+[![Снимок экрана fast прокрутки с дескриптором прокрутки](populating-images/fastscroll.png)](populating-images/fastscroll.png#lightbox)
 
 Вызывает дескриптор быстрого прокрутки отображаться сложнее, чем параметр `FastScrollEnabled` свойства `true`:
 
@@ -161,13 +154,12 @@ public override View GetView(int position, View convertView, ViewGroup parent)
 ListView.FastScrollEnabled = true;
 ```
 
-<a name="Adding_a_Section_Index" />
 
 ### <a name="adding-a-section-index"></a>Добавление раздела индекса
 
 Индекс секции предоставляет дополнительные отзывы пользователей, когда они fast прокрутке длинный список &ndash; показано прокручены в «раздел». Для индекса раздел отображаться подкласс адаптера должен реализовать `ISectionIndexer` интерфейса для ввода текста в зависимости от отображаемых строк индекса:
 
-[![Снимок экрана из H отображаются над разделом, начинающегося с H](populating-images/sectionindex.png)](populating-images/sectionindex.png)
+[![Снимок экрана из H отображаются над разделом, начинающегося с H](populating-images/sectionindex.png)](populating-images/sectionindex.png#lightbox)
 
 Для реализации `ISectionIndexer` необходимо добавить к адаптеру три метода:
 

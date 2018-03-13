@@ -7,12 +7,12 @@ ms.assetid: 3DB9C7A3-D351-481D-90C5-BEC25D1B9910
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: 6b55e525849d57f2ad9e40ea64b75cfc65ef0727
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/09/2018
+ms.openlocfilehash: fd5b2f8c758d8e1e9bb9276da96a410c61478d4a
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="firebase-job-dispatcher"></a>Диспетчер заданий firebase
 
@@ -138,7 +138,7 @@ Job myJob = dispatcher.NewJobBuilder()
 * Объект `Job` _время существования_ (как долго он будет запланирована для выполнения) — только в том случае, пока устройство перезагрузится &ndash; после перезагрузки устройства `Job` теряется.
 * Объект `Job` не повторяется &ndash; он будет выполняться только один раз.
 * Объект `Job` будет запланировано выполнение как можно быстрее.
-* Стратегия повторов по умолчанию для `Job` заключается в использовании _экспоненциально растущим_ (описано на подробнее рассмотрены ниже в разделе [параметр RetryStrategy](#Setting_a_RestryStrategy))
+* Стратегия повторов по умолчанию для `Job` заключается в использовании _экспоненциально растущим_ (описано на подробнее рассмотрены ниже в разделе [параметр RetryStrategy](#Setting_a_RetryStrategy))
 
 ### <a name="scheduling-a-job"></a>Планирование `Job`
 
@@ -164,12 +164,14 @@ int scheduleResult = dispatcher.Schedule(myJob);
 
 Существует возможность настроить задание. Следующие примеры как можно настроить задание.
 
-* [Передать параметры задания](#Passing_Parameters_to_a_Job) &ndash; A `Job` может потребоваться дополнительные значения для выполнения работы, например загрузку файла.
+* [Передача параметров для задания](#Passing_Parameters_to_a_Job) &ndash; A `Job` может потребоваться дополнительные значения для выполнения работы, например загрузку файла.
 * [Задать ограничения](#Setting_Constraints) &ndash; может потребоваться запускать задание только при выполнении определенных условий. Например, запускать только `Job` при заряжается устройства. 
 * [Укажите, когда `Job` следует запускать](#Setting_Job_Triggers) &ndash; диспетчера заданий Firebase разрешает приложениям задавать время, когда должно выполняться задание.  
 * [Объявите стратегию повторных попыток для неудачно завершившихся заданий](#Setting_a_RetryStrategy) &ndash; A _стратегии повтора_ содержится руководство для `FirebaseJobDispatcher` о том, что делать с `Jobs` , не удастся выполнить. 
 
 В каждом разделе обсуждаются более в следующих разделах.
+
+<a name="Passing_Parameters_to_a_Job" />
 
 #### <a name="passing-parameters-to-a-job"></a>Передача параметров задания
 
@@ -197,6 +199,7 @@ public override bool OnStartJob(IJobParameters jobParameters)
 } 
 ```
 
+<a name="Setting_Constraints" />
 
 #### <a name="setting-constraints"></a>Установка ограничений
 
@@ -215,6 +218,8 @@ Job myJob = dispatcher.NewJobBuilder()
                       .Build();
 ```
 
+<a name="Setting_Job_Triggers" />
+
 #### <a name="setting-job-triggers"></a>Триггеры задания для параметра
 
 `JobTrigger` Содержится руководство для операционной системы о начала задания. Объект `JobTrigger` имеет _выполнения окно_ , определяющий запланированное время, когда `Job` следует запустить. Окно выполнения имеет _откройте окно_ значение и _окончания окна_ значение. Количество секунд ожидания перед выполнением задания устройства окно запуска, а конечное окно — максимальное количество секунд ожидания перед запуском `Job`. 
@@ -230,6 +235,8 @@ Job myJob = dispatcher.NewJobBuilder()
 ```
 
 Значение по умолчанию `JobTrigger` для задания, представленный значением `Trigger.Now`, которое указывает, что выполнение задания как можно быстрее после плановой...
+
+<a name="Setting_a_RetryStrategy" />
 
 #### <a name="setting-a-retrystrategy"></a>Параметр RetryStrategy
 

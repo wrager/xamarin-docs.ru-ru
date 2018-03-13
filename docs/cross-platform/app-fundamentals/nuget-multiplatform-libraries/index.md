@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 11/22/2017
-ms.openlocfilehash: 66bf9c215e3d30687fa8037220b8b35409ca285d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 49e7c00feb697d25d61a5e09b051c41945c260c6
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="nuget-projects-nugetizer-3000"></a>Проекты NuGet (Nugetizer 3000)
 
@@ -21,14 +21,18 @@ _Автоматически создайте пакеты NuGet, чтобы со
 Можно автоматически создавать пакеты NuGet для совместного использования кода на платформах с помощью _Nugetizer 3000_. Это делает имеется возможность создания пакетов NuGet с существующие проекты библиотеки или путем создания нового **проекта библиотеки многоплатформенных**.
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
 Nugetizer 3000 входит в состав Visual Studio для Mac 6.2.
+
+[![](images/mulitplatform-library-sml.png "Создать новое окно многоплатформенных библиотеки")](images/mulitplatform-library.png#lightbox)
+
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
-<a name="to-use-the-nugetizer-3000-in-visual-studio-please-download-and-run-the-vsix-installerhttpbitlynugetizer-2017"></a>Для использования Nugetizer 3000 в Visual Studio, см. [Загрузите и запустите установщик VSIX](http://bit.ly/nugetizer-2017).
+
+Для использования Nugetizer 3000 в Visual Studio, см. [Загрузите и запустите установщик VSIX](http://bit.ly/nugetizer-2017).
+
 -----
 
-
-
-[ ![](images/mulitplatform-library-sml.png "Создать новое окно многоплатформенных библиотеки")](images/mulitplatform-library.png)
+## <a name="building-nuget-packages"></a>Построение пакетов NuGet
 
 После настройки каждой сборки проекта выводит полный пакет NuGet, который используется для внутренних целей совместного использования кода с другими приложениями или отправлены [NuGet.org](https://www.nuget.org).
 

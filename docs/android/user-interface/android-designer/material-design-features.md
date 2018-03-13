@@ -8,17 +8,20 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: c0b5fa3e7eacb9f7fd8aa133a290d0e7654972ce
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9c1797398fba580ab7f34526b10e1da455eb2dc5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="material-design-features"></a>Возможности разработки материала
 
 _В этом разделе описаны возможности конструктор, которые облегчают разработчикам создавать макеты материала конструктора с. В этом разделе вводятся и описываются способы использования сетки материалы, материалы цветовую палитру, типографском шкалы и темы редактора._
 
-<a name="overview" />
+
+> [!Video https://youtube.com/embed/E3_ZjIOzVzY]
+
+**Развивать 2016: Все можно создать отличных приложений с материала разработки**
 
 ## <a name="overview"></a>Обзор
 
@@ -37,7 +40,6 @@ _В этом разделе описаны возможности констру
 Мы рассмотрим каждую из этих функций имеют и приводятся примеры их использования.
 
 
-<a name="material_grid" />
 
 ## <a name="material-design-grid"></a>Сетка конструктора материала
 
@@ -45,11 +47,11 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Существенные бланк](material-design-features-images/vs/01-material-design-grid-sml.png)](material-design-features-images/vs/01-material-design-grid.png)
+[![Существенные бланк](material-design-features-images/vs/01-material-design-grid-sml.png)](material-design-features-images/vs/01-material-design-grid.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Существенные бланк](material-design-features-images/xs/01-material-design-grid-sml.png)](material-design-features-images/xs/01-material-design-grid.png)
+[![Существенные бланк](material-design-features-images/xs/01-material-design-grid-sml.png)](material-design-features-images/xs/01-material-design-grid.png#lightbox)
 
 -----
 
@@ -65,11 +67,11 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Рисунок, пробелы и сетки](material-design-features-images/vs/02-grid-and-keylines-sml.png)](material-design-features-images/vs/02-grid-and-keylines.png)
+[![Рисунок, пробелы и сетки](material-design-features-images/vs/02-grid-and-keylines-sml.png)](material-design-features-images/vs/02-grid-and-keylines.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Рисунок, пробелы и сетки](material-design-features-images/xs/02-grid-and-keylines-sml.png)](material-design-features-images/xs/02-grid-and-keylines.png)
+[![Рисунок, пробелы и сетки](material-design-features-images/xs/02-grid-and-keylines-sml.png)](material-design-features-images/xs/02-grid-and-keylines.png#lightbox)
 
 -----
 
@@ -89,7 +91,7 @@ _В этом разделе описаны возможности констру
 
 Каждый из этих элементов наложения является настраиваемым. При нажатии кнопки вниз треугольник рядом с меню бланк материал, popover диалоговое окно открывается, можно включить или отключить сетку, настройте местоположение контуров и задать расстояние между. Обратите внимание, что все значения выражаются в `dp` (плотность независимых пикселях):
 
-[![Сетка, рисунок и интервалы конфигурации](material-design-features-images/xs/03-grid-configuration-sml.png)](material-design-features-images/xs/03-grid-configuration.png)
+[![Сетка, рисунок и интервалы конфигурации](material-design-features-images/xs/03-grid-configuration-sml.png)](material-design-features-images/xs/03-grid-configuration.png#lightbox)
 
 Чтобы добавить новый рисунок, введите новое значение смещения в **смещение** выберите расположение (**левой**, **верхней**, **правой**, или  **нижней**) и щелкните значок, чтобы добавить новый рисунок +.
 
@@ -102,20 +104,20 @@ _В этом разделе описаны возможности констру
 
 Каждый элемент панели свойств, который теперь принимает цвет имеет дополнительный значок, можно использовать для откройте цветовой палитре материал конструктора, как показано на этом снимке экрана:
 
-[![Значок цвета](material-design-features-images/xs/04-new-color-icon-sml.png)](material-design-features-images/xs/04-new-color-icon.png)
+[![Значок цвета](material-design-features-images/xs/04-new-color-icon-sml.png)](material-design-features-images/xs/04-new-color-icon.png#lightbox)
 
 Если щелкнуть этот значок, popover диалоговое окно открывается, позволяет настроить цвет этого свойства из цветовой палитры разработки материалы:
 
-[![Существенные разработки цветовой палитры](material-design-features-images/xs/05-material-palette-sml.png)](material-design-features-images/xs/05-material-palette.png)
+[![Существенные разработки цветовой палитры](material-design-features-images/xs/05-material-palette-sml.png)](material-design-features-images/xs/05-material-palette.png#lightbox)
 
 Вверху цветовую палитру отображаются первичного конструктора материал цветов, а в нижней части палитру диапазон оттенки для выбранного основного цвета. Например, при выборе **Indigo**, коллекцию **Indigo** оттенки отображается в нижней части диалогового окна.
 При выборе цветового тона цвета свойства меняется на выбранной цветовой тон. В следующем примере `Background Tint` кнопки меняется на *Indigo 500*:
 
-[![Выберите Indigo 500](material-design-features-images/xs/06-indigo-sml.png)](material-design-features-images/xs/06-indigo.png)
+[![Выберите Indigo 500](material-design-features-images/xs/06-indigo-sml.png)](material-design-features-images/xs/06-indigo.png#lightbox)
 
 `Background Tint` задан код цвета для *Indigo 500* (`#ff3f51b5`), и конструктор обновляет цвет фона кнопки, чтобы отразить это изменение:
 
-[![Изменения оттенок фона](material-design-features-images/xs/07-background-tint-sml.png)](material-design-features-images/xs/07-background-tint.png)
+[![Изменения оттенок фона](material-design-features-images/xs/07-background-tint-sml.png)](material-design-features-images/xs/07-background-tint.png#lightbox)
 
 Дополнительные сведения о цветовой палитры материал конструктора. в разделе разработки материал [каталог палитры цветов](http://www.google.com/design/spec/style/color.html#color-color-palette).
 
@@ -123,24 +125,23 @@ _В этом разделе описаны возможности констру
 
 **Внешний вид текста** раздел **свойство** pad **стиль** вкладка содержит значок, который позволяет выберите один из `TextAppearance` стиль, который соответствует дизайну материалы Спецификация:
 
-[![Вкладка стиля](material-design-features-images/xs/08-typo-scale-icon-sml.png)](material-design-features-images/xs/08-typo-scale-icon.png)
+[![Вкладка стиля](material-design-features-images/xs/08-typo-scale-icon-sml.png)](material-design-features-images/xs/08-typo-scale-icon.png#lightbox)
 
 Если щелкнуть этот значок, откроется **типографском шкалы** popover диалоговое окно, в которой представлен список предварительно настроенных текста стили, которые можно выбрать из:
 
-[![Выбор стиля текста](material-design-features-images/xs/09-text-appearance-sml.png)](material-design-features-images/xs/09-text-appearance.png)
+[![Выбор стиля текста](material-design-features-images/xs/09-text-appearance-sml.png)](material-design-features-images/xs/09-text-appearance.png#lightbox)
 
 В следующем примере, щелкнув **отображения 1** примет большего размера шрифта для текста на кнопке **отображения 1**:
 
-[![Стиль отображения 1](material-design-features-images/xs/10-display-1-sml.png)](material-design-features-images/xs/10-display-1.png)
+[![Стиль отображения 1](material-design-features-images/xs/10-display-1-sml.png)](material-design-features-images/xs/10-display-1.png#lightbox)
 
 Стиль текста в **типографском шкалы** диалог следует **темы** параметр. Например если **свет** темы выбирается в конструкторе список стилей зеркал имеющийся текст **свет** темы:
 
-[!["Светлой" теме](material-design-features-images/xs/11-light-theme-sml.png)](material-design-features-images/xs/11-light-theme.png)
+[!["Светлой" теме](material-design-features-images/xs/11-light-theme-sml.png)](material-design-features-images/xs/11-light-theme.png#lightbox)
 
 -----
 
 
-<a name="theme_editor" />
 
 ## <a name="theme-editor"></a>Редактор
 
@@ -152,7 +153,7 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Значок редактора темы](material-design-features-images/xs/12a-theme-editor-icon-sml.png)](material-design-features-images/xs/12a-theme-editor-icon.png)
+[![Значок редактора темы](material-design-features-images/xs/12a-theme-editor-icon-sml.png)](material-design-features-images/xs/12a-theme-editor-icon.png#lightbox)
 
 -----
 
@@ -162,11 +163,11 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Редактор](material-design-features-images/vs/05-theme-editor-sml.png)](material-design-features-images/vs/05-theme-editor.png)
+[![Редактор](material-design-features-images/vs/05-theme-editor-sml.png)](material-design-features-images/vs/05-theme-editor.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Редактор](material-design-features-images/xs/12b-theme-editor-sml.png)](material-design-features-images/xs/12b-theme-editor.png)
+[![Редактор](material-design-features-images/xs/12b-theme-editor-sml.png)](material-design-features-images/xs/12b-theme-editor.png#lightbox)
 
 -----
 
@@ -183,7 +184,6 @@ _В этом разделе описаны возможности констру
 Давайте рассмотрим из этих вкладок подробное описание каждого из них.
 
 
-<a name="theme_edit_inherit_tab" />
 
 ### <a name="inherit-tab"></a>Наследовать вкладки
 
@@ -191,11 +191,11 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Наследовать вкладки](material-design-features-images/vs/06-inherit-tab-sml.png)](material-design-features-images/vs/06-inherit-tab.png)
+[![Наследовать вкладки](material-design-features-images/vs/06-inherit-tab-sml.png)](material-design-features-images/vs/06-inherit-tab.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Наследовать вкладки](material-design-features-images/xs/13-inherit-sml.png)](material-design-features-images/xs/13-inherit.png)
+[![Наследовать вкладки](material-design-features-images/xs/13-inherit-sml.png)](material-design-features-images/xs/13-inherit.png#lightbox)
 
 -----
 
@@ -203,7 +203,6 @@ _В этом разделе описаны возможности констру
 Дополнительные сведения о наследовании стилей см. в разделе [стили и темы](http://developer.android.com/guide/topics/ui/themes.html#Inheritance).
 
 
-<a name="theme_edit_color_picker" />
 
 ### <a name="color-picker"></a>Палитра
 
@@ -211,11 +210,11 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Палитра цветов](material-design-features-images/vs/07-color-picker-sml.png)](material-design-features-images/vs/07-color-picker.png)
+[![Палитра цветов](material-design-features-images/vs/07-color-picker-sml.png)](material-design-features-images/vs/07-color-picker.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Палитра цветов](material-design-features-images/xs/14-color-picker-sml.png)](material-design-features-images/xs/14-color-picker.png)
+[![Палитра цветов](material-design-features-images/xs/14-color-picker-sml.png)](material-design-features-images/xs/14-color-picker.png#lightbox)
 
 -----
 
@@ -229,7 +228,6 @@ _В этом разделе описаны возможности констру
 
 Цвет, выберите в палитре цветов, *не* ограничен рекомендации по разработке материалы или набор доступных ресурсов.
 
-<a name="theme_edit_resources" />
 
 ### <a name="resources"></a>Ресурсы
 
@@ -237,18 +235,17 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Ресурсы](material-design-features-images/vs/08-resources-sml.png)](material-design-features-images/vs/08-resources.png)
+[![Ресурсы](material-design-features-images/vs/08-resources-sml.png)](material-design-features-images/vs/08-resources.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Ресурсы](material-design-features-images/xs/15-resources-sml.png)](material-design-features-images/xs/15-resources.png)
+[![Ресурсы](material-design-features-images/xs/15-resources-sml.png)](material-design-features-images/xs/15-resources.png#lightbox)
 
 -----
 
 С помощью **ресурсов** вкладку ограничивает выбранных параметров в этот список цветов. Помните, если ресурс цвета, который уже назначен другой части темы, двух соседних элементов пользовательского интерфейса может «выполнять вместе» (поскольку они имеют одинаковый цвет) и будет затруднено для пользователя различать.
 
 
-<a name="theme_edit_material_pallette" />
 
 ### <a name="material-palette"></a>Существенные палитры
 
@@ -256,7 +253,7 @@ _В этом разделе описаны возможности констру
 
 **Палитры материал** откроется вкладка **материал разработки цветовую палитру**. Выбрав значение цвета в этой палитре ограничивает выбранный цвет, чтобы он был совместим с рекомендации по проектированию материала.
 
-[![Существенные палитры](material-design-features-images/vs/09-material-palette-sml.png)](material-design-features-images/vs/09-material-palette.png)
+[![Существенные палитры](material-design-features-images/vs/09-material-palette-sml.png)](material-design-features-images/vs/09-material-palette.png#lightbox)
 
 Вверху цветовую палитру отображаются первичного конструктора материал цветов, а в нижней части палитру диапазон оттенки для выбранного основного цвета. Например, при выборе **Indigo**, коллекцию **Indigo** оттенки отображается в нижней части диалогового окна.
 При выборе цветового тона цвета свойства меняется на выбранной цветовой тон. В следующем примере `Background Tint` кнопки меняется на *Indigo 500*:
@@ -265,7 +262,7 @@ _В этом разделе описаны возможности констру
 
 `Background Tint` задан код цвета для *Indigo 500* (`#ff3f51b5`), и конструктор обновляет цвет фона, чтобы отразить это изменение:
 
-[![Изменить оттенок фона](material-design-features-images/vs/11-background-tint-sml.png)](material-design-features-images/vs/11-background-tint.png)
+[![Изменить оттенок фона](material-design-features-images/vs/11-background-tint-sml.png)](material-design-features-images/vs/11-background-tint.png#lightbox)
 
 Дополнительные сведения о цветовой палитры материал конструктора. в разделе разработки материал [каталог палитры цветов](http://www.google.com/design/spec/style/color.html#color-color-palette).
 
@@ -273,12 +270,11 @@ _В этом разделе описаны возможности констру
 
 **Палитры материал** откроется вкладка **материал разработки цветовую палитру** описано [предыдущих](#material_palette). Выбрав значение цвета в этой палитре ограничивает выбранный цвет, чтобы он был совместим с рекомендации по проектированию материала.
 
-[![Существенные палитры](material-design-features-images/xs/16-material-palette-sml.png)](material-design-features-images/xs/16-material-palette.png)
+[![Существенные палитры](material-design-features-images/xs/16-material-palette-sml.png)](material-design-features-images/xs/16-material-palette.png#lightbox)
 
 -----
 
 
-<a name="theme_create" />
 
 ### <a name="creating-a-new-theme"></a>Создание новой темы
 
@@ -290,7 +286,7 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Изменение фона до 900 синий](material-design-features-images/xs/17-change-background-to-blue-sml.png)](material-design-features-images/xs/17-change-background-to-blue.png)
+[![Изменение фона до 900 синий](material-design-features-images/xs/17-change-background-to-blue-sml.png)](material-design-features-images/xs/17-change-background-to-blue.png#lightbox)
 
 -----
 
@@ -299,11 +295,11 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Предупреждение несохраненные изменения](material-design-features-images/vs/13-unsaved-changes-sml.png)](material-design-features-images/vs/13-unsaved-changes.png)
+[![Предупреждение несохраненные изменения](material-design-features-images/vs/13-unsaved-changes-sml.png)](material-design-features-images/vs/13-unsaved-changes.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Предупреждение несохраненные изменения](material-design-features-images/xs/18-unsaved-changes-sml.png)](material-design-features-images/xs/18-unsaved-changes.png)
+[![Предупреждение несохраненные изменения](material-design-features-images/xs/18-unsaved-changes-sml.png)](material-design-features-images/xs/18-unsaved-changes.png#lightbox)
 
 -----
 
@@ -327,18 +323,17 @@ _В этом разделе описаны возможности констру
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Добавить пользовательские темы](material-design-features-images/vs/14-custom-theme-sml.png)](material-design-features-images/vs/14-custom-theme.png)
+[![Добавить пользовательские темы](material-design-features-images/vs/14-custom-theme-sml.png)](material-design-features-images/vs/14-custom-theme.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Добавить пользовательские темы](material-design-features-images/xs/19-custom-theme-sml.png)](material-design-features-images/xs/19-custom-theme.png)
+[![Добавить пользовательские темы](material-design-features-images/xs/19-custom-theme-sml.png)](material-design-features-images/xs/19-custom-theme.png#lightbox)
 
 -----
 
 
 Поскольку выбранной темы не темы проекта, нет ни одно диалоговое окно для обновления с выбранной темой или укажите новое расположение.
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

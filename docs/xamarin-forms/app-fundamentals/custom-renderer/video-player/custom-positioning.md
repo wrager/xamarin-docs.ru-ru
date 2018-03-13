@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: d4446d30491ee796ca93eadf2e107fc9d74748df
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: e7f2ad9e94d68007b1b7d0cca212cd51515a0108
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="custom-video-positioning"></a>Нестандартное расположение видео
 
@@ -472,7 +472,7 @@ if (newPosition.Seconds != Position.Seconds)
 
 Скрывает первый кнопку с многоточием (···) `ActivityIndicator`; это же, как и в предыдущем **пользовательский транспорт** страницы. Обратите внимание на два `Label` отображение элементов `Position` и `TimeToEnd` свойства. Многоточие между этими двумя `Label` элементы скрывает два `Button` элементы, отображаемые в **пользовательский транспорт** для воспроизведение, Пауза и остановка. Логику кода также является таким же, как **пользовательский транспорт** страницы.
 
-[![Нестандартное расположение](custom-positioning-images/custompositioning-small.png "нестандартное расположение")](custom-positioning-images/custompositioning-large.png "нестандартное расположение")
+[![Нестандартное расположение](custom-positioning-images/custompositioning-small.png "нестандартное расположение")](custom-positioning-images/custompositioning-large.png#lightbox "нестандартное расположение")
 
 Это заключительный шаг обсуждение `VideoPlayer`.
 

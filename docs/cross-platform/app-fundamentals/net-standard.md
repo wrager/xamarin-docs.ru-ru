@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/12/2017
-ms.openlocfilehash: 294d28c57978218986d62d1ee6579e8d283b8f72
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f448a3ee9c018aa475775a5ac2c614f3e7ddc324
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -29,12 +29,12 @@ ms.lasthandoff: 02/27/2018
 
 Проекты .NET стандартной библиотеки могут создаваться в Xamarin Studio 6.2, создав проект переносимой библиотеки:
 
-[ ![](net-standard-images/xs01-sml.png "Создание нового проекта переносимой библиотеки")](net-standard-images/xs01.png)
+[![](net-standard-images/xs01-sml.png "Создание нового проекта переносимой библиотеки")](net-standard-images/xs01.png#lightbox)
 
 После создания проекта щелкните правой кнопкой мыши и откройте **параметры проекта** окна.
 В **Общие** раздела проекта можно преобразовать в .NET Standard и настроена на использование определенной версии в **платформы** раскрывающегося списка:
 
-[ ![](net-standard-images/xs02-sml.png "Преобразовать в .NET Standard в целом параметры")](net-standard-images/xs02.png)
+[![](net-standard-images/xs02-sml.png "Преобразовать в .NET Standard в целом параметры")](net-standard-images/xs02.png#lightbox)
 
 После этого можно [создать пакет NuGet](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/existing-library.md) для совместного использования библиотеки с другими разработчиками.
 

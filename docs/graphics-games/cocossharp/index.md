@@ -6,11 +6,11 @@ ms.assetid: 5E72869D-3541-408B-AB64-D34C777AFB79
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
-ms.openlocfilehash: 2801fd74e9f5f8f2927b06dc7b68cdf004faa104
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5a1e28bc9a8a17b4b06ec45746a6ce60ddd129ad
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="cocossharp"></a>CocosSharp
 
@@ -22,9 +22,9 @@ CocosSharp — это простой в использовании библио�
 
 Это практические видео показано создание простой CocosSharp кросс платформенной игры.
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-Toolbox/Developing-Cross-platform-2D-Games-in-C-and-CocosSharp/player" width="800" height="450" allowFullScreen frameBorder="0"></iframe>
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Developing-Cross-platform-2D-Games-in-C-and-CocosSharp/player]
 
-###  <a name="introduction-to-game-development-with-cocossharpgraphics-gamescocossharpfirst-gameindexmd"></a>[Общие сведения о разработке игр с CocosSharp](~/graphics-games/cocossharp/first-game/index.md)
+###  <a name="introduction-to-game-development-with-cocossharpgraphics-gamescocossharpfirst-gameindexmd"></a>[Введение в разработку игр с помощью CocosSharp](~/graphics-games/cocossharp/first-game/index.md)
 
 ![](images/first-game.png "Простой двумерную игры с использованием CocosSharp")
 
@@ -32,7 +32,7 @@ CocosSharp — это простой в использовании библио�
 
 
 
-##  <a name="fruity-falls-game-detailsgraphics-gamescocossharpfruity-fallsmd"></a>[Fruity приходится игры подробные сведения](~/graphics-games/cocossharp/fruity-falls.md)
+##  <a name="fruity-falls-game-detailsgraphics-gamescocossharpfruity-fallsmd"></a>[Подробные сведения об игре Fruity Falls](~/graphics-games/cocossharp/fruity-falls.md)
 
 ![](images/fruity-falls.png "В этом руководстве рассматриваются приходится Fruity игры")
 
@@ -64,7 +64,7 @@ CCDrawNode предоставляет методы для рисования п�
 
 
 
-## <a name="using-tiled-with-cocossharpgraphics-gamescocossharptiledmd"></a>[С помощью мозаикой с CocosSharp](~/graphics-games/cocossharp/tiled.md)
+## <a name="using-tiled-with-cocossharpgraphics-gamescocossharptiledmd"></a>[Использование Tiled с CocosSharp](~/graphics-games/cocossharp/tiled.md)
 
 ![](images/tiled.png "Мозаичное заполнение мощный, гибкий и сопоставляет отлаженное приложение для создания плитки ортогональных и изометрическая игр для") мозаикой — мощный, гибкий и сопоставляет отлаженное приложение для создания плитки ортогональных и изометрическая игр для устройств. CocosSharp предоставляет встроенной интеграции для копиями в собственном формате.
 
@@ -86,7 +86,7 @@ CCDrawNode предоставляет методы для рисования п�
 
 
 
-##  <a name="cocossharp-content-pipelinegraphics-gamescocossharpcontent-pipelineindexmd"></a>[Содержимое CocosSharp конвейера](~/graphics-games/cocossharp/content-pipeline/index.md)
+##  <a name="cocossharp-content-pipelinegraphics-gamescocossharpcontent-pipelineindexmd"></a>[Конвейер содержимого CocosSharp](~/graphics-games/cocossharp/content-pipeline/index.md)
 
 ![](images/content-pipeline.png "Конвейеры содержимого часто используются в разработки игр для оптимизации содержимое и формат")
 
@@ -94,7 +94,7 @@ CCDrawNode предоставляет методы для рисования п�
 
 
 
-## <a name="improving-framerate-with-ccspritesheetgraphics-gamescocossharpccspritesheetmd"></a>[Повышение частоты кадров с CCSpriteSheet](~/graphics-games/cocossharp/ccspritesheet.md)
+## <a name="improving-framerate-with-ccspritesheetgraphics-gamescocossharpccspritesheetmd"></a>[Оптимизация частоты кадров с помощью CCSpriteSheet](~/graphics-games/cocossharp/ccspritesheet.md)
 
 ![](images/ccspritesheet.png "CCSpriteSheet предоставляет функциональные возможности для объединения и с помощью много файлов изображений в одну текстуру")
 
@@ -110,7 +110,7 @@ CCDrawNode предоставляет методы для рисования п�
 
 
 
-## <a name="2d-math-with-cocossharpgraphics-gamescocossharpmathmd"></a>[2D математические операции с CocosSharp](~/graphics-games/cocossharp/math.md)
+## <a name="2d-math-with-cocossharpgraphics-gamescocossharpmathmd"></a>[Двухмерные математические операции с CocosSharp](~/graphics-games/cocossharp/math.md)
 
 ![](images/math.png "В настоящем руководстве описывается 2D математических операций для разработки игр")
 

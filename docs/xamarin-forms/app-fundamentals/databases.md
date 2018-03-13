@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/23/2017
-ms.openlocfilehash: afbd2d8f25cdf51c7c7c33f72f10e3b5ce8762ef
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 29686b29a18fe409a1f778d54266cbeedea40eda
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="local-databases"></a>Локальные базы данных
 
@@ -24,7 +24,7 @@ Xamarin.Forms приложения могут использовать [SQLite.N
 
 Сопутствующий [образец приложения](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) это простое приложение Todo list. Следующих снимках экрана показано, как образец отображается на каждой платформе.
 
-[ ![Снимки экрана примера базы данных Xamarin.Forms](databases-images/todo-list-sml.png "TodoList первой страницы, снимки экрана")](databases-images/todo-list.png "TodoList первой страницы, снимки экрана") [ ![ Снимки экрана примера базы данных Xamarin.Forms](databases-images/todo-detail-sml.png "TodoList второй страницы, снимки экрана")](databases-images/todo-detail.png "TodoList второй страницы, снимки экрана")
+[![Снимки экрана примера базы данных Xamarin.Forms](databases-images/todo-list-sml.png "TodoList первой страницы, снимки экрана")](databases-images/todo-list.png#lightbox "TodoList первой страницы, снимки экрана") [ ![ Снимки экрана примера базы данных Xamarin.Forms](databases-images/todo-list-sml.png "TodoList первой страницы, снимки экрана")](databases-images/todo-list.png#lightbox "TodoList первой страницы, снимки экрана")
 
 <a name="Using_SQLite_with_PCL" />
 

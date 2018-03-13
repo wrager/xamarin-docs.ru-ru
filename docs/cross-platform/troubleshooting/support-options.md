@@ -6,17 +6,13 @@ ms.assetid: E4EF7E0F-ED86-44C9-9F98-38ECF881C7E2
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: 165313fb0150c2d9832566d5bc32842722b0a039
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6ca5b4d70669909b952752f7d600fcac37e9f557
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="what-support-options-are-available-for-xamarin"></a>Какие варианты поддержки доступны для Xamarin?
-
-## <a name="overview"></a>Обзор
-- [Сводка по поддержке](#Summary_of_Support_Options)
-- [Подробные рекомендации](#Detailed_Recommendations)
 
 ## <a name="summary-of-support-options"></a>Сводка по поддержке
 
@@ -46,6 +42,8 @@ ms.lasthandoff: 02/27/2018
 </table>
 
 Группа поддержки Xamarin помогает отслеживать каждый из этих параметров.  Корпорация Майкрософт рекомендует всем пользователям contribute тщательно вопросы и отчеты, чтобы воспользоваться преимуществами и увеличить знаниями сообщество разработчиков Xamarin.  Для возможных дефектов убедитесь, что отправлять отчеты об ошибках, когда это возможно формально отслеживаемых проблемы с командой разработчиков Xamarin.
+
+<a name="Visual_Studio_email_support_incidents_for_Xamarin_topics"/>
 
 ### <a name="visual-studio-email-support-incidents-for-xamarin-topics"></a>Обращения в службу поддержки по электронной почте Visual Studio разделов Xamarin
 
@@ -95,7 +93,7 @@ Xamarin — [теперь неотъемлемой частью подписок
 
 Обсуждение сообщества известные проблемы и возможные способы решения проблем можно разместить вопрос на соответствующий форум предварительного просмотра:
 
--   [Динамическая проигрыватель Xamarin](https://forums.xamarin.com/categories/live-player)
+-   [Xamarin Live Player](https://forums.xamarin.com/categories/live-player)
 -   Предварительных версий пакета SDK для привязки новых версий Android, iOS и macOS пакеты SDK, найти соответствующий извещения выпуска предварительной версии в [Xamarin.Android](http://forums.xamarin.com/categories/android), [Xamarin.iOS](http://forums.xamarin.com/categories/ios), или [Xamarin.Mac ](http://forums.xamarin.com/categories/mac) форум.
 -   Для других компонентов предварительной версии поиск соответствующего объявления выпуска в [предварительного выпуска и бета-версии](http://forums.xamarin.com/categories/xamarin-prerelease) форум.  Или, если нет соответствующего объявления, вы можете создавать свой вопрос в своем собственном потоке, форуме.
 

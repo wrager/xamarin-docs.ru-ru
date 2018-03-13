@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/01/2017
-ms.openlocfilehash: 89d3b56a15110d0c106c43ce227f11f86bbdf404
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 0fd037e62bcdb1b2be4c93dc0d32ca76f4e1ba8e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="invoking-events-from-effects"></a>Вызов события из эффектов
 
@@ -448,7 +448,7 @@ void OnTouchEffectAction(object sender, TouchActionEventArgs args)
 
 Можно переместить несколько `BoxView` элементов одновременно с помощью разных пальцев.
 
-[![](touch-tracking-images/boxviewdragging-small.png "Тройной снимок экрана со страницей перетаскивания BoxView")](touch-tracking-images/boxviewdragging-large.png "тройной снимок экрана со страницей BoxView перетаскивания")
+[![](touch-tracking-images/boxviewdragging-small.png "Тройной снимок экрана со страницей перетаскивания BoxView")](touch-tracking-images/boxviewdragging-large.png#lightbox "тройной снимок экрана со страницей BoxView перетаскивания")
 
 ### <a name="subclassing-the-view"></a>Создание подклассов представления
 
@@ -511,7 +511,7 @@ class DraggableBoxView : BoxView
 
 **Рисование эллипса** странице можно нарисовать эллипс, проведя пальца на экране. В зависимости от того, как переместить пальца, можно нарисовать эллипс из левого верхнего к нижнему правому или из другого угла в противоположный угол. Эллипс с случайных цвета и прозрачности.
 
-[![](touch-tracking-images/ellipsedrawing-small.png "Тройной снимок экрана со страницей Рисование эллипса")](touch-tracking-images/ellipsedrawing-large.png "тройной снимок экрана со страницей Рисование эллипса")
+[![](touch-tracking-images/ellipsedrawing-small.png "Тройной снимок экрана со страницей Рисование эллипса")](touch-tracking-images/ellipsedrawing-large.png#lightbox "тройной снимок экрана со страницей Рисование эллипса")
 
 Если вы затем коснуться одного из эллипсов, его можно перетащить в другое место. Для этого необходимо подход, называемый «попадания,» которая включает в себя поиск графического объекта в определенной точке. Многоточие SkiaSharp не являются элементами Xamarin.Forms, поэтому они не могут выполнять собственные `TouchEffect` обработки. `TouchEffect` Необходимо применить ко всему `SKCanvasView` объекта.
 
@@ -683,7 +683,7 @@ case TouchActionType.Pressed:
 
 Во втором примере SkiaSharp — **Paint пальцем** страницы. Можно выбрать цвет обводки и толщина из двух `Picker` представления и нарисуйте пальцами один или несколько:
 
-[![](touch-tracking-images/fingerpaint-small.png "Тройной снимок экрана со страницей Paint пальцем")](touch-tracking-images/fingerpaint-large.png "тройной снимок экрана со страницей пальцем рисования")
+[![](touch-tracking-images/fingerpaint-small.png "Тройной снимок экрана со страницей Paint пальцем")](touch-tracking-images/fingerpaint-large.png#lightbox "тройной снимок экрана со страницей пальцем рисования")
 
 В этом примере также требуется отдельный класс для представления каждой строки рисования на экране:
 
@@ -791,7 +791,7 @@ void OnTouchEffectAction(object sender, TouchActionEventArgs args)
 
 Различные `WhiteKey` и `BlackKey` элементы расположены на странице [XAML-файл](https://github.com/xamarin/xamarin-forms-samples/blob/master/Effects/TouchTrackingEffectDemos/TouchTrackingEffectDemos/TouchTrackingEffectDemos/SilentKeyboardPage.xaml), который выглядит наилучшим образом при телефона удерживается в альбомном режиме:
 
-[![](touch-tracking-images/silentkeyboard-small.png "Тройной снимок экрана со страницей автоматической клавиатуры")](touch-tracking-images/silentkeyboard-large.png "тройной снимок экрана со страницей автоматической клавиатуры")
+[![](touch-tracking-images/silentkeyboard-small.png "Тройной снимок экрана со страницей автоматической клавиатуры")](touch-tracking-images/silentkeyboard-large.png#lightbox "тройной снимок экрана со страницей автоматической клавиатуры")
 
 Если очистка палец для ключей, вы увидите с незначительными изменениями в цвет передачи событий из одного раздела в другой.
 

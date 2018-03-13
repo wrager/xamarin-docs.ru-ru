@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 742780ad87672bd8a3e2bb3cb66ca582a680d44f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 28218bcbf6527c818fdf2988375d1c353e9f1d27
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="application-icon"></a>Значок приложения
 
@@ -122,7 +122,7 @@ _В этой статье описано, как создавать изобра
     ![Редактирование AppIcons.appiconset](app-icon-images/intro01.png "Editing the AppIcons.appiconset")
 2. Для каждого необходимого размера значка щелкните значок и выберите соответствующий файл изображения, созданный выше: 
 
-    [![Выбор изображения значка](app-icon-images/intro02.png "Selecting an icon image")](app-icon-images/intro02-large.png)
+    [![Выбор изображения значка](app-icon-images/intro02.png "Selecting an icon image")](app-icon-images/intro02-large.png#lightbox)
 3. Сохраните изменения.
 
 
@@ -135,7 +135,7 @@ _В этой статье описано, как создавать изобра
 1. Дважды щелкните **Info.plist** на **Панели решения**, чтобы открыть окно **Параметры проекта**.
 2. В разделе **Целевая платформа приложения Mac OS X** щелкните **Значки приложений**, чтобы выбрать файл `AppIcons.appiconset`: 
 
-    [![Настройка набора значков](app-icon-images/icon01.png "Setting the icon set")](app-icon-images/icon01-large.png)
+    [![Настройка набора значков](app-icon-images/icon01.png "Setting the icon set")](app-icon-images/icon01-large.png#lightbox)
 3. Сохраните изменения.
 
 При запуске приложения на панели Dock появится новый значок:

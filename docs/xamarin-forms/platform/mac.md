@@ -5,14 +5,15 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: EEC549E0-F182-4F9C-B2BA-B31D19569AA5
 ms.technology: xamarin-forms
+ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/03/2017
-ms.openlocfilehash: bda207796d1019f8188176acce055d782cb9e32d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e8487dc06b3512a0ec0bb1b30393faeab506df60
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="mac-platform-setup"></a>Настройка платформ Mac
 
@@ -20,6 +21,10 @@ ms.lasthandoff: 02/27/2018
 
 Прежде чем начать, создайте (или использовать существующий) Xamarin.Forms проекта.
 Можно добавить только Mac приложений с помощью Visual Studio для Mac.
+
+> [!VIDEO https://youtube.com/embed/mvQ7jzaNseM]
+
+**Путем добавления проекта macOS Xamarin.Forms, [университета Xamarin](https://university.xamarin.com/)**
 
 ## <a name="adding-a-mac-app"></a>Добавление приложения Mac
 
@@ -92,7 +97,7 @@ ms.lasthandoff: 02/27/2018
 
 9. Дважды щелкните **Main.storyboard** для редактирования в Xcode. Выберите **окна** и _снимите_ **является начальной контроллера** флажок (это так, как приведенный выше код создает окно):
 
-  [ ![Снимите флажок является начальной контроллера в Xcode](mac-images/xcode-init-controller-sml.png)](mac-images/xcode-init-controller.png)
+  [![Снимите флажок является начальной контроллера в Xcode](mac-images/xcode-init-controller-sml.png)](mac-images/xcode-init-controller.png#lightbox)
 
   Вы можете изменить систему меню в раскадровку, чтобы удалить ненужные элементы.
 

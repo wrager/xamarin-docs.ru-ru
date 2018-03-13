@@ -6,11 +6,11 @@ ms.assetid: FAED4445-9F37-46D8-B408-E694060969B9
 ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
-ms.openlocfilehash: 57dec129a5f16b004e054a7a3fedd296bad92a3e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3978b046a8ab4d42cbf86bf524452a033b5dbb4d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="getting-started-with-the-xamarin-workbooks-sdk"></a>Приступая к работе с книгами Xamarin SDK
 
@@ -28,15 +28,15 @@ Xamarin книг интеграций являются небольшой биб
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Переносимая библиотека шаблонов Visual Studio для Mac](images/xamarin-studio-pcl.png)](images/xamarin-studio-pcl.png)
+[![Переносимая библиотека шаблонов Visual Studio для Mac](images/xamarin-studio-pcl.png)](images/xamarin-studio-pcl.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Visual Studio шаблона переносимой библиотеки](images/visual-studio-pcl.png)](images/visual-studio-pcl.png)
+[![Visual Studio шаблона переносимой библиотеки](images/visual-studio-pcl.png)](images/visual-studio-pcl.png#lightbox)
 
 В Visual Studio имеет смысл убедитесь в том, что выбраны следующие целевой платформы для переносимой библиотеки:
 
-[![Переносимая библиотека платформы Visual Studio](images/visual-studio-pcl-platforms.png)](images/visual-studio-pcl-platforms.png)
+[![Переносимая библиотека платформы Visual Studio](images/visual-studio-pcl-platforms.png)](images/visual-studio-pcl-platforms.png#lightbox)
 
 -----
 
@@ -44,11 +44,11 @@ Xamarin книг интеграций являются небольшой биб
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![NuGet Visual Studio для Mac](images/xamarin-studio-nuget.png)](images/xamarin-studio-nuget.png)
+[![NuGet Visual Studio для Mac](images/xamarin-studio-nuget.png)](images/xamarin-studio-nuget.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![NuGet Visual Studio](images/visual-studio-nuget.png)](images/visual-studio-nuget.png)
+[![NuGet Visual Studio](images/visual-studio-nuget.png)](images/visual-studio-nuget.png#lightbox)
 
 -----
 
@@ -146,11 +146,11 @@ nuget pack MyIntegration.nuspec
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Книги с интеграцией](images/mac-workbooks-integrated.png)](images/mac-workbooks-integrated.png)
+[![Книги с интеграцией](images/mac-workbooks-integrated.png)](images/mac-workbooks-integrated.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Книги с интеграцией](images/windows-workbooks-integrated.png)](images/windows-workbooks-integrated.png)
+[![Книги с интеграцией](images/windows-workbooks-integrated.png)](images/windows-workbooks-integrated.png#lightbox)
 
 -----
 

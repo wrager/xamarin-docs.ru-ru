@@ -1,5 +1,5 @@
 ---
-title: "Износ Android"
+title: Android Wear
 description: "Создание приложений для устройств Android переносном."
 ms.topic: article
 ms.prod: xamarin
@@ -8,15 +8,13 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 1dad5e859efdf69e7003b45724f718b16faffd62
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ac83b74f39497333de7aa80079784adf61bf2e65
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="android-wear"></a>Износ Android
-
-## <a name="android-wear"></a>Износ Android
+# <a name="android-wear"></a>Android Wear
 
 Android одежды — это версия Android, предназначенный для переносном устройств, таких как смарт-контрольных значений. Этот раздел содержит инструкции по установке и настройке средства, необходимые для разработки одежды, пошаговое руководство для создания вашего первого устройства Износ и список образцов, который можно использовать для создания собственного носили приложений.
 
@@ -28,20 +26,19 @@ Android одежды — это версия Android, предназначенн
 
 Описание Android износ зависящие от элементов управления и ссылки на примеры, демонстрирующие способы использования этих элементов управления.
 
-##  <a name="platform-featuresandroidwearplatformindexmd"></a>[Возможности платформы](~/android/wear/platform/index.md)
+##  <a name="platform-featuresandroidwearplatformindexmd"></a>[Функции платформы](~/android/wear/platform/index.md)
 
 Документы в этом разделе рассматриваются функции, связанные с Android с. Здесь вы найдете раздел описывает, как создать WatchFace.
 
-##  <a name="screen-sizesandroidwearscreen-sizesmd"></a>[Размер экрана](~/android/wear/screen-sizes.md)
+##  <a name="screen-sizesandroidwearscreen-sizesmd"></a>[Размеры экрана](~/android/wear/screen-sizes.md)
 
 Предварительный просмотр и оптимизировать пользовательского интерфейса для размеров экрана.
 
-##  <a name="deployment--testingandroidweardeploy-testindexmd"></a>[Развертывание и тестирование](~/android/wear/deploy-test/index.md)
+##  <a name="deployment--testingandroidweardeploy-testindexmd"></a>[Тестирование и развертывание](~/android/wear/deploy-test/index.md)
 
 Объясняется, как развернуть приложение Android носят на устройстве с Android или эмулятор Android, настроенных для одежды. Он также включает отладку советы и сведения о настройке подключения Bluetooth на компьютере разработчика устройства Android.
 
 
-<a name="Samples" />
 
 ## <a name="samples"></a>Примеры
 
@@ -137,21 +134,21 @@ GridViewPager реализует шаблон «2D навигации», где 
 <table align="center" border="0" cellpadding="1" cellspacing="1">
     <tr>
         <td>
-        <a href="http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/"><img src="Images/video-android-l.png" border="0"/ /></td>
+        <a href="http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/"><img src="Images/video-android-l.png" border="0" /></td>
         <td><a href="http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/">Android L и многое другое</a>
         <br />
 Android Developer L Preview появилось множество новых интерфейсов API для разработчиков, чтобы воспользоваться преимуществами, включая разработки материал, уведомления и новые анимации лишь некоторые из них.</td>
     </tr>
     <tr>
         <td>
-        <a href="https://www.youtube.com/watch?v=80H8tXByZQc"><img src="Images/video-eyes-ears.png" border="0" / /></td>
+        <a href="https://www.youtube.com/watch?v=80H8tXByZQc"><img src="Images/video-eyes-ears.png" border="0" /></td>
         <td><a href="https://www.youtube.com/watch?v=80H8tXByZQc">C# находится в моем уши и в глаза: стекла Google и с Android</a>
         <br />
 Переносном вычислений и выглядит как что-нибудь из будущего (или эпизода инспектора мини-приложения), но многие пользователи уже принятие будущих сегодня! Разработчикам C# знает об этом и уже есть средства и навыки использования возможностей переносном устройств (от Evolve 2014 г.).</td>
     </tr>
     <tr>
         <td>
-        <a href="https://www.youtube.com/watch?v=Gpqc2XZIQfU"><img src="Images/video-whats-new.png" border="0" / /></td>
+        <a href="https://www.youtube.com/watch?v=Gpqc2XZIQfU"><img src="Images/video-whats-new.png" border="0" /></td>
         <td><a href="https://www.youtube.com/watch?v=Gpqc2XZIQfU">Новые возможности Xamarin.Android</a>
         <br />
         <i>Android L, Android одежды, Android ТВ, автоматически Android, материалов и ГРАФИКОЙ; Каково для вас как разработчика Xamarin? </i> из развивать 2014 г.</td>

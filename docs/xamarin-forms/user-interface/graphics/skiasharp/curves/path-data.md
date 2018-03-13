@@ -4,14 +4,15 @@ description: "Определение путей, используя тексто
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 1D53067B-3502-4D74-B89D-7EC496901AE2
 author: charlespetzold
 ms.author: chape
 ms.date: 05/24/2017
-ms.openlocfilehash: feb4c5f4c7e7ad3fc5f762786001be9aa57ae718
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: cc21f789d96f9375655766916f80c6f3f524c29d
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="svg-path-data"></a>Путь данных SVG
 
@@ -216,7 +217,7 @@ public class PathDataHelloPage : ContentPage
 
 Путь заполняется холст, который выглядит более рационального при просмотре в альбомной ориентации.
 
-[![](path-data-images/pathdatahello-small.png "Тройной снимок экрана со страницей пути данных Hello")](path-data-images/pathdatahello-large.png "тройной снимок экрана со страницей пути данных Hello")
+[![](path-data-images/pathdatahello-small.png "Тройной снимок экрана со страницей пути данных Hello")](path-data-images/pathdatahello-large.png#lightbox "тройной снимок экрана со страницей пути данных Hello")
 
 **Путь данных Cat** аналогичен страницы. Путь и paint объекты определены как поля в [ `PathDataCatPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathDataCatPage.cs) класса:
 
@@ -287,7 +288,7 @@ public class PathDataCatPage : ContentPage
 
 Вот программу на всех трех платформ.
 
-[![](path-data-images/pathdatacat-small.png "Тройной снимок экрана со страницей данных Cat путь")](path-data-images/pathdatacat-large.png "тройной снимок экрана со страницей Cat пути данных")
+[![](path-data-images/pathdatacat-small.png "Тройной снимок экрана со страницей данных Cat путь")](path-data-images/pathdatacat-large.png#lightbox "тройной снимок экрана со страницей Cat пути данных")
 
 Как правило, когда `SKPath` объект определен как поле, контуров путь должен быть определен в конструктор или другой метод. При использовании данных SVG пути, однако вы познакомились с пути можно указать полностью в определении поля.
 
@@ -424,7 +425,7 @@ public class PrettyAnalogClockPage : ContentPage
 
 Что-нибудь специальные выполняются с секундной стрелки, однако. Поскольку часы обновляется каждые 16 миллисекунд `Millisecond` свойство `DateTime` значение потенциально может использоваться для второй стороны анимации Очистка вместо одного, которое перемещается в дискретные перемещается из второго, в секунду. Но этот код не допускает перемещения для сглаживания. Вместо этого он использует Xamarin.Forms [ `SpringIn` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.SpringIn/) и [ `SpringOut` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.SpringOut/) плавности для разных видов перемещение анимации. Эти функции плавности вызвать секундной стрелки для перемещения в jerkier способом & #x 2014; Извлечение обратно немного перед перемещается, а затем немного чрезмерно Устранение назначению эффект сожалению, невозможно воспроизвести в эти статические снимки экрана:
 
-[![](path-data-images/prettyanalogclock-small.png "Тройной снимок экрана со страницей довольно аналогом часы")](path-data-images/prettyanalogclock-large.png "тройной снимок экрана со страницей довольно аналогом часов")
+[![](path-data-images/prettyanalogclock-small.png "Тройной снимок экрана со страницей довольно аналогом часы")](path-data-images/prettyanalogclock-large.png#lightbox "тройной снимок экрана со страницей довольно аналогом часов")
 
 
 ## <a name="related-links"></a>Связанные ссылки

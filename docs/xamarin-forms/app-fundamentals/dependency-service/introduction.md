@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/06/2017
-ms.openlocfilehash: e599c56f732f918d2a9c82255bc01182651d506c
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 74b22f31fabf70885eca732ef021232124df71bb
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-dependencyservice"></a>Знакомство с помощью DependencyService
 
@@ -129,13 +129,13 @@ DependencyService.Get<ITextToSpeech>().Speak("Hello from Xamarin Forms");
 
 [Образец решения UsingDependencyService](https://developer.xamarin.com/samples/UsingDependencyService/) будет показано ниже для iOS и Android, и изменения кода, описанные выше выделена.
 
- [ ![iOS и Android решение](introduction-images/solution-sml.png "помощью DependencyService образец решения структуры")](introduction-images/solution.png "помощью DependencyService пример структуры решения")
+ [![iOS и Android решение](introduction-images/solution-sml.png "помощью DependencyService образец решения структуры")](introduction-images/solution.png#lightbox "помощью DependencyService пример структуры решения")
 
 > [!NOTE]
-> **Примечание:** вы **должен** обеспечить реализацию в каждом проекте платформы. При регистрации не реализацию интерфейса то `DependencyService` не сможет разрешить `Get<T>()` метод во время выполнения.
+> Вы **должен** обеспечить реализацию в каждом проекте платформы. При регистрации не реализацию интерфейса то `DependencyService` не сможет разрешить `Get<T>()` метод во время выполнения.
 
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [DependencyServiceSample](https://developer.xamarin.com/samples/xamarin-forms/UsingDependencyService/)
-- [Образцы Xamarin.Forms](https://developer.xamarin.com/samples/xamarin-forms/all/)
+- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/xamarin-forms/all/)

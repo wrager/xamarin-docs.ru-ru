@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: beb690fe495d142bb4b0424ad752101fc46da590
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 28cfb4cda27446b914c23a2ce4e8e9f845876107
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="location-services"></a>Службы определения местоположения
 
@@ -54,7 +54,7 @@ Android предоставляет доступ к различным распо
 
 Чтобы задать разрешения, разверните **свойства** папки в **Pad решения** и дважды щелкните **AndroidManifest.xml**. Разрешения будут перечислены на вкладке **требуемые разрешения**:
 
-[![Снимок экрана с параметрами Android манифеста необходимые разрешения](location-images/location-01-xs.png)](location-images/location-01-xs.png)
+[![Снимок экрана с параметрами Android манифеста необходимые разрешения](location-images/location-01-xs.png)](location-images/location-01-xs.png#lightbox)
 
 Если задать одно из этих разрешений сообщает Android вашему приложению разрешения пользователя для доступа к поставщикам расположение. Устройства, запустите уровень API 22 (Android 5.1) или ниже, будет запрашивать у пользователя для предоставления этих разрешений, каждый раз, когда приложение установлено. На устройствах под управлением API уровня 23 (Android 6.0) или более поздней версии, приложение должен выполнять проверку на разрешение во время выполнения перед запросом поставщика расположения. 
 
@@ -334,11 +334,11 @@ else
 > [!NOTE]
 >  Если пользователь отключает все поставщики расположение `GetBestProvider` вернет `null`. Чтобы увидеть, как работает этот код на физическом устройстве, не забудьте включить GPS, Wi-Fi и сотовые сети под **параметров Google > расположение > режим** как показано на этом снимке экрана:
 
-[![Параметры режима расположения экрана на телефоне с Android](location-images/location-02.png)](location-images/location-02.png)
+[![Параметры режима расположения экрана на телефоне с Android](location-images/location-02.png)](location-images/location-02.png#lightbox)
 
 На следующем снимке экрана показано расположение приложения запущенным с помощью `GetBestProvider`:
 
-[![Приложение GetBestProvider отображения широты, долготы и поставщик](location-images/location-03.png)](location-images/location-03.png)
+[![Приложение GetBestProvider отображения широты, долготы и поставщик](location-images/location-03.png)](location-images/location-03.png#lightbox)
 
 Имейте в виду, что `GetBestProvider` динамически не изменять службу. Однако он определяет, лучше всего поставщика один раз в течение жизненного цикла действия. При изменении состояния поставщик после его задания, требуется дополнительный код в приложение `ILocationListener` методы &ndash; `OnProviderEnabled`, `OnProviderDisabled`, и `OnStatusChanged` &ndash; обрабатывать все возможности, связанные с ключ поставщика.
 

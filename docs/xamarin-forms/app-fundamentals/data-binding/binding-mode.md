@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: e85bc98b5da4c6e529f150c6e7945a8556e2c60f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 887dc3cf710fb75d05d02af179bc218c15d31f97
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="binding-mode"></a>Режим привязки
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 02/27/2018
 
 Как и следует ожидать, `Slider` инициализируется со значением 1 из первоначального `Opacity` значение `Label`. Это показано на снимке экрана iOS слева:
 
-[![Отменить привязку](binding-mode-images/reversebinding-small.png "отменить привязку")](binding-mode-images/reversebinding-large.png "отменить привязку")
+[![Отменить привязку](binding-mode-images/reversebinding-small.png "отменить привязку")](binding-mode-images/reversebinding-large.png#lightbox "отменить привязку")
 
 Однако может быть удивлены, `Slider` продолжает работать, как показано на снимке экрана Android и UWP. Это первый взгляд, что привязка к данным работает лучше, когда `Slider` является целевой объект привязки, а не `Label` потому, что инициализация работает как ожидается, возможно.
 
@@ -250,7 +250,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 
 При запуске программы `BoxView`, `Label`и три `Slider` элементы имеют значение из ViewModel, в зависимости от первоначального `Color` значение свойства при создании экземпляра ViewModel. Это показано на снимке экрана iOS слева:
 
-[![Средство выбора цвета простой](binding-mode-images/simplecolorselector-small.png "средства выбора цвета простой")](binding-mode-images/simplecolorselector-large.png "средства выбора цвета простой")
+[![Средство выбора цвета простой](binding-mode-images/simplecolorselector-small.png "средства выбора цвета простой")](binding-mode-images/simplecolorselector-large.png#lightbox "средства выбора цвета простой")
 
 Во время работы ползунки, `BoxView` и `Label` изменяются соответствующим образом, как показано на снимке экрана Android и UWP.
 
@@ -661,7 +661,7 @@ public partial class SampleSettingsPage : ContentPage
 
 На снимке экрана iOS слева показано программой, при первом запуске. Конструктор в `SampleSettingsViewModel` инициализирует белый цвет фона и, что было выбрано `ListView`:
 
-[![Примеры параметров](binding-mode-images/samplesettings-small.png "примеры параметров")](binding-mode-images/samplesettings-large.png "примеры параметров")
+[![Примеры параметров](binding-mode-images/samplesettings-small.png "примеры параметров")](binding-mode-images/samplesettings-large.png#lightbox "примеры параметров")
 
 Две другие снимки экрана Показать измененных параметров. При проведении экспериментов с этой страницей, не забудьте поместить программу в спящий режим или завершить его на устройство или эмулятор, на котором он выполняется. Завершение программы с помощью отладчика Visual Studio не приведет к `OnSleep` переопределить в `App` вызов класса.
 

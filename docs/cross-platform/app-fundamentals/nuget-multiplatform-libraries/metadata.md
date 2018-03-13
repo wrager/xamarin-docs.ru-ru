@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 8afce6021c2816f354e26ccecd7d0c40ceb2a9bd
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: babbe0344130dc0ce38023eabe7479d2b464276b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="editing-nuget-metadata"></a>Редактирование метаданных NuGet
 
@@ -26,7 +26,7 @@ _Параметры проекта используются для измене�
 
 **Общие** вкладка содержит четыре поля, которые должны вводиться для создания пакета NuGet:
 
-[ ![](metadata-images/metadata-general-sml.png "Окна необходимые метаданные пакета NuGet.")](metadata-images/metadata-general.png)
+[![](metadata-images/metadata-general-sml.png "Окна необходимые метаданные пакета NuGet.")](metadata-images/metadata-general.png#lightbox)
 
 - **Идентификатор** — идентификатор пакета, который должен быть уникальным в пределах Nuget.org (или везде, где этот пакет будет распространяться). После этого использовать [руководство](https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package#choosing-a-unique-package-identifier-and-setting-the-version-number) и использовать только символы, допустимые в URL-АДРЕСЕ (без пробелов и избежать большинство специальных символов).
 - **Версия** — выберите номер версии, согласуется с [правилами управления версиями NuGet](https://docs.microsoft.com/en-us/nuget/create-packages/dependency-versions).
@@ -45,7 +45,7 @@ _Параметры проекта используются для измене�
 
 **Сведения** вкладка содержит дополнительные поля для включения в файле манифеста пакета NuGet.
 
-[ ![](metadata-images/metadata-detail-sml.png "Окна необязательные метаданные пакета NuGet.")](metadata-images/metadata-detail.png)
+[![](metadata-images/metadata-detail-sml.png "Окна необязательные метаданные пакета NuGet.")](metadata-images/metadata-detail.png#lightbox)
 
 Ссылаться на [Справочник по дополнительным элементам](https://docs.microsoft.com/en-us/nuget/schema/nuspec#optional-metadata-elements) Дополнительные сведения о обязательные и необязательные поля.
 

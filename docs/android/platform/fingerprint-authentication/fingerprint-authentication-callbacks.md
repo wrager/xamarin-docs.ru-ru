@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 06/06/2017
-ms.openlocfilehash: 371ffae8e14a630cb548f4a9ee2bf0bd06f7284c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: acecc53e8429ac3ca963053fe7a1786937d37ae3
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="responding-to-authentication-callbacks"></a>Ответ на обратные вызовы проверки подлинности
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/27/2018
 
 
 > [!NOTE]
-> **Примечание:** рекомендуется хранить сравнительно небольшая вес класс обратного вызова и освобождения от логики, специфичной для приложения. Обратные вызовы должен работать как «трафика копиями» между приложения Android и результаты из сканеров отпечатков пальцев.
+> Рекомендуется хранить сравнительно небольшая вес класс обратного вызова и освобождения от логики, специфичной для приложения. Обратные вызовы должен работать как «трафика копиями» между приложения Android и результаты из сканеров отпечатков пальцев.
 
 ## <a name="a-sample-authentication-callback-handler"></a>Пример проверки подлинности обратного вызова обработчика
 

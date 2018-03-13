@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/20/2017
-ms.openlocfilehash: 44a97114e7d325a1fa196d2c9828855ad1a30c94
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ef34b1be5f993a3be819cd4ae1a9dcd5dfc27715
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="creating-a-nuget-from-existing-library-projects"></a>Создание NuGet из существующих проектов библиотеки
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 02/27/2018
 
 2. Последовательно выберите пункты **пакет NuGet > метаданных** статьи и ввести все [необходимую информацию](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md) в **Общие** вкладки:
 
-  [ ![](existing-library-images/existing-metadata-sml.png "Введите необходимые метаданные")](existing-library-images/existing-metadata.png)
+  [![](existing-library-images/existing-metadata-sml.png "Введите необходимые метаданные")](existing-library-images/existing-metadata.png#lightbox)
 
 3. При необходимости [добавить дополнительные метаданные](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md) в **сведения** вкладки.
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/27/2018
 
 5. Для создания пакета NuGet на _каждого_ построение или развертывание, перейдите к **пакет NuGet > построения** раздел и делений **создать пакет NuGet при сборке проекта**:
 
-    [ ![](existing-library-images/existing-tickbox-sml.png "Чтобы создать пакет NuGet деления")](existing-library-images/existing-tickbox.png)
+    [![](existing-library-images/existing-tickbox-sml.png "Чтобы создать пакет NuGet деления")](existing-library-images/existing-tickbox.png#lightbox)
 
 > [!NOTE]
 > Построение NuGet пакета может замедлить процесс построения. Если этот флажок не установлен, вы можете по-прежнему создать пакет NuGet вручную в любое время, в контекстном меню проекта (показано в шаге 4).
@@ -47,4 +47,4 @@ ms.lasthandoff: 02/27/2018
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Структуры метаданных](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md)
+- [Руководство по метаданным](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md)

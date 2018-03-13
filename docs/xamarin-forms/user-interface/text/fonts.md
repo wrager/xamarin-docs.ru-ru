@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/22/2017
-ms.openlocfilehash: 22a0b0f5df5a44f2409a59b26eb841b97c920d8b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 771e1607bc4e6be8f0991e159b5d34f6d4ea9c02
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="fonts"></a>Шрифты
 
@@ -181,7 +181,7 @@ Xamarin.Forms элементы управления, отображаемого 
 
 С помощью отличных от встроенных гарнитуры шрифта требует определенную кодировку конкретную платформу. На этом снимке экрана показан пользовательский шрифт **Lobster** из [Google открытая шрифты](https://www.google.com/fonts) к просмотру на iOS, Android и Windows Phone с помощью Xamarin.Forms.
 
- [ ![Пользовательский шрифт в iOS и Android](fonts-images/custom-sml.png "пользовательские шрифты пример")](fonts-images/custom.png "примере пользовательские шрифты")
+ [![Пользовательский шрифт в iOS и Android](fonts-images/custom-sml.png "пользовательские шрифты пример")](fonts-images/custom.png#lightbox "примере пользовательские шрифты")
 
 Ниже описаны шаги, необходимые для каждой платформы. Если включают файлы пользовательского шрифта с помощью приложения, обязательно убедитесь, что шрифт лицензии разрешены для распространения.
 
@@ -229,7 +229,7 @@ new Label
 > [!NOTE]
 > Обратите внимание, что имя файла шрифта и имя шрифта может отличаться. Чтобы узнать имя шрифта в Windows, щелкните правой кнопкой мыши файл TTF и выберите **предварительной версии**. Имя шрифта можно определить, затем из окна предварительного просмотра.
 
-Общий код для приложения завершена. Теперь мы реализуем код набора номера для конкретной платформы в качестве [DependencyService](~/xamarin-forms/app-fundamentals/dependency-service/index.md).
+Итак, общий код для приложения полностью готов. Теперь мы реализуем код набора номера для конкретной платформы в качестве [DependencyService](~/xamarin-forms/app-fundamentals/dependency-service/index.md).
 
 ### <a name="xaml"></a>XAML
 

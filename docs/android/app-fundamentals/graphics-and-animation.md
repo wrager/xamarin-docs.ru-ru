@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 90a2eb219ae1189e7a48e60cde9761e3e9e93e0b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ce51511c58d7d0f5a14e487b57897bfa0e0b20b3
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="graphics-and-animation"></a>Графики и анимации
 
 _Android предоставляет очень широкие и разнообразные платформу для поддержки 2D-графики и анимации. В этом разделе представлены такие платформы и объясняет способы создания пользовательских графики и анимации в приложении Xamarin.Android._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -61,7 +60,6 @@ Android предоставляет два различных API-Интерфе�
 Ссылаться на [Google специальных возможностей руководство](http://developer.android.com/guide/topics/ui/accessibility/) Дополнительные сведения о том, как использовать специальные возможности Android API-интерфейсы.
 
 
-<a name="2D_Graphics" />
 
 ## <a name="2d-graphics"></a>2D-графики
 
@@ -71,7 +69,6 @@ Drawable ресурсы — это популярный способ в прил
 
 Давайте рассмотрим Drawable ресурсов. Их проще и покрытия наиболее распространенных случаях пользовательского рисования.
 
-<a name="Drawable Resources" />
 
 ### <a name="drawable-resources"></a>Drawable ресурсы
 
@@ -153,7 +150,6 @@ tv.SetBackgroundResource(Resource.Drawable.shape_rounded_blue_rect);
 
 Дополнительные сведения о XML-элементов и синтаксисе Drawable ресурсов, обратитесь к [документации Google](http://developer.android.com/guide/topics/resources/drawable-resource.html#Shape).
 
-<a name="Using the Canvas Drawing API" />
 
 ### <a name="using-the-canvas-drawing-api"></a>С помощью API рисования холста
 
@@ -183,7 +179,6 @@ Canvas canvas = new Canvas(b);
 -   [Canvas.DrawText](https://developer.xamarin.com/api/member/Android.Graphics.Canvas.DrawText/p/System.String/System.Single/System.Single/Android.Graphics.Paint/) &ndash; Рисует текст на холсте указанный цвет. Текст рисуется в расположении `x,y` .
 
 
-<a name="Drawing with the Canvas API" />
 
 #### <a name="drawing-with-the-canvas-api"></a>Рисование с Canvas API
 
@@ -218,7 +213,6 @@ public class MyView : View
 
 ![Экран с красным рисования и зеленый рисования объектов](graphics-and-animation-images/image3.png)
 
-<a name="Animation" />
 
 ## <a name="animation"></a>Анимация
 
@@ -232,7 +226,6 @@ public class MyView : View
 
 В общем случае анимации свойства является предпочтительным систему для использования как он является более гибким и предоставляет дополнительные возможности.
 
-<a name="View Animations" />
 
 ### <a name="view-animations"></a>Просмотр анимации
 
@@ -319,7 +312,6 @@ myImage.StartAnimation(myAnimation);
 
 Теперь, когда у нас есть фундаментальное понимание принципов работы представление анимации, позволяет переместить анимации свойства.
 
-<a name="Property Animations" />
 
 ### <a name="property-animations"></a>Свойства анимации
 
@@ -397,7 +389,6 @@ animator.Start();
 
 Как видно из предыдущего фрагмента кода, `ObjectAnimator` можно сократить и упростить код, который необходим для анимации объекта.
 
-<a name="Drawable Animations" />
 
 ### <a name="drawable-animations"></a>Drawable анимации
 
@@ -442,7 +433,6 @@ protected override void OnCreate(Bundle bundle)
 
 На этом этапе мы рассмотрели базовых принципов анимации API-интерфейса в приложение.
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

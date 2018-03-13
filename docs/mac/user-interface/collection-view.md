@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/24/2017
-ms.openlocfilehash: d8fa54f23dfea063fa25f6e26e2df2c2ed82101e
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 9aa66a531b723f176b940ba35ee4e86eae711f7d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="collection-views"></a>Представления коллекций
 
@@ -22,7 +22,7 @@ _В этой статье описывает работу с представл�
 
 Объект `NSCollectionView` отображает сетку организованы с помощью представлений `NSCollectionViewLayout`. Представленный каждого вложенное представление в сетке `NSCollectionViewItem` которой управляет загружать содержимое представления из `.xib` файла.
 
-[ ![Запустите пример приложения](collection-view-images/intro01.png)](collection-view-images/intro01.png)
+[![Запустите пример приложения](collection-view-images/intro01.png)](collection-view-images/intro01.png#lightbox)
 
 В этой статье рассматриваются основы работы с представлениями коллекции в приложении Xamarin.Mac. Настоятельно рекомендуется работать через [Hello, Mac](~/mac/get-started/hello-mac.md) статью, во-первых, в частности [введение в Xcode и интерфейс построителя](~/mac/get-started/hello-mac.md#Introduction_to_Xcode_and_Interface_Builder) и [выходов и действия](~/mac/get-started/hello-mac.md#Outlets_and_Actions) части, как он охватывает основные принципы и методы, которые используются в этой статье.
 
@@ -821,4 +821,4 @@ public override void ViewDidLoad()
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Привязка данных и кодирование типа "ключ — значение"](~/mac/app-fundamentals/databinding.md)
 - [NSCollectionView](https://developer.apple.com/reference/appkit/nscollectionview)
-- [Рекомендации по интерфейсу отдела OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
+- [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)

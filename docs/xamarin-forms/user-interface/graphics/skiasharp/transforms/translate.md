@@ -4,14 +4,15 @@ description: "Узнайте, как использовать преобразо
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: BD28ADA1-49F9-44E2-A548-46024A29882F
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 491c82406dafceb876ddbb4a0a7204447b95f57d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cac2479af2778af6043a85583f9d7b518748d7da
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="the-translate-transform"></a>Преобразования для преобразования
 
@@ -68,7 +69,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Последовательные прямоугольники тонкая вниз по странице:
 
-[![](translate-images/accumulatedtranslate-small.png "Тройной снимок экрана со страницей накапливаются преобразовать")](translate-images/accumulatedtranslate-large.png "тройной экрана накапливаются перевод страницы")
+[![](translate-images/accumulatedtranslate-small.png "Тройной снимок экрана со страницей накапливаются преобразовать")](translate-images/accumulatedtranslate-large.png#lightbox "тройной экрана накапливаются перевод страницы")
 
 Если коэффициенты накопленный преобразования `dx` и `dy`, и точка, укажите в функцию рисования (`x`, `y`), графический объект отображается в точке, а затем (`x'`, `y'`), где:
 
@@ -125,7 +126,7 @@ using (SKPaint textPaint = new SKPaint())
 
 В каждом из трех примерах `Translate` вызывается для отображения текста для его смещение от расположении, указанном `x` и `y` переменных. Затем сообщение об ошибке снова другим цветом, не влияя при трансляции.
 
-[![](translate-images/translatetexteffects-small.png "Тройной снимок экрана со страницей преобразования текстовых эффектов")](translate-images/translatetexteffects-large.png "тройной снимок экрана со страницей преобразования текстовых эффектов")
+[![](translate-images/translatetexteffects-small.png "Тройной снимок экрана со страницей преобразования текстовых эффектов")](translate-images/translatetexteffects-large.png#lightbox "тройной снимок экрана со страницей преобразования текстовых эффектов")
 
 Каждый из трех примерах показан другой способ Инверсия `Translate` вызова:
 
@@ -209,7 +210,7 @@ public class HendecagramArrayPage : ContentPage
 
 Ниже приведен результат:
 
-[![](translate-images/hendecagramarray-small.png "Тройной снимок экрана со страницей массива Hendecagram")](translate-images/hendecagramarray-large.png "тройной снимок экрана со страницей Hendecagram массива")
+[![](translate-images/hendecagramarray-small.png "Тройной снимок экрана со страницей массива Hendecagram")](translate-images/hendecagramarray-large.png#lightbox "тройной снимок экрана со страницей Hendecagram массива")
 
 Анимация часто требует преобразования. **Hendecagram анимации** страницы перемещаются звездочка указывает 11 в кружке. [ `HendecagramAnimationPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/HendecagramAnimationPage.cs) Класс начинается с некоторые поля и переопределений `OnAppearing` и `OnDisappearing` методы для запуска и остановки таймера Xamarin.Forms:
 
@@ -294,7 +295,7 @@ public class HendecagramAnimationPage : ContentPage
 
 `PaintSurface` Вызовов обработчика `Translate` метод дважды, чтобы сначала преобразуются в центре полотна, а затем преобразовывать длины окружности по центральным (0, 0). Радиус окружности задано быть как можно большего размера, при этом оставляя звезды в пределах страницы:
 
-[![](translate-images/hendecagramanimation-small.png "Тройной снимок экрана со страницей анимации Hendecagram")](translate-images/hendecagramanimation-large.png "тройной снимок экрана со страницей Hendecagram анимации")
+[![](translate-images/hendecagramanimation-small.png "Тройной снимок экрана со страницей анимации Hendecagram")](translate-images/hendecagramanimation-large.png#lightbox "тройной снимок экрана со страницей Hendecagram анимации")
 
 Обратите внимание, что звезды сохраняет ту же ориентацию, как она строится на центре страницы. Объект не поворачивается вообще. Это задание для преобразования вращения.
 

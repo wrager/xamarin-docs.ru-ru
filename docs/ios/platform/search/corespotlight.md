@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 20b18cd79eeaabab8019c367e241a4975dc37b0e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b7db9082f05ea4db41ddb84d34be2ec9113f2ad5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="search-with-core-spotlight"></a>Поиск с Core Spotlight
 
@@ -46,7 +46,7 @@ CSSearchableIndex.DefaultSearchableIndex.Index (new CSSearchableItem[]{ item }, 
 
 Эта информация будет выглядеть таким образом следующие действия в результате поиска:
 
-[ ![](corespotlight-images/corespotlight01.png "Обзор результатов поиска Spotlight Core")](corespotlight-images/corespotlight01.png)
+[![](corespotlight-images/corespotlight01.png "Обзор результатов поиска Spotlight Core")](corespotlight-images/corespotlight01.png#lightbox)
 
 ## <a name="restoring-an-item"></a>При восстановлении файла
 
@@ -80,7 +80,7 @@ public override bool ContinueUserActivity (UIApplication application,
 Возможны ситуации, при мы создали с Spotlight основной элемент индекса должны быть изменены, такие как изменение в заголовок или эскиз является обязательным. Чтобы внести это изменение, мы используем тот же метод, которое использовалось в первоначальном создании индекса.
 Мы создаем новый `CSSearchableItem` используя тот же идентификатор, которое использовалось для создания элемента и присоединить новый `CSSearchableItemAttributeSet` содержащий измененных атрибутов:
 
-[ ![](corespotlight-images/corespotlight02.png "Обновление элемента Обзор")](corespotlight-images/corespotlight02.png)
+[![](corespotlight-images/corespotlight02.png "Обновление элемента Обзор")](corespotlight-images/corespotlight02.png#lightbox)
 
 При записи этого элемента для поиска индекса, существующий элемент обновляется новыми данными.
 

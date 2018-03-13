@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: ee91f0ebdc07f03831ae95a4b8ae6f85c3eb549e
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: d23f29fbfb51473ff5f89f27c0bfd621cfffbce0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="checking-device-orientation"></a>Проверка ориентации устройства
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/28/2018
 ![](device-orientation-images/orientation-diagram.png "Структура приложений помощью DependencyService")
 
 > [!NOTE]
-> **Примечание:** можно определить, является ли устройство в книжной и альбомной ориентации в общий код, как показано в [Orientation]/guides/xamarin-forms/user-interface/layouts/device-orientation/#changes-in-orientation устройства) . Метод, описанный в этой статье использует собственные функции для получения дополнительных сведений о ориентации, является ли устройство сверху вниз.
+> Можно определить, является ли устройство в книжной и альбомной ориентации в общий код, как показано в [устройства Orientation]/guides/xamarin-forms/user-interface/layouts/device-orientation/#changes-in-orientation). Метод, описанный в этой статье использует собственные функции для получения дополнительных сведений о ориентации, является ли устройство сверху вниз.
 
 <a name="Creating_the_Interface" />
 
@@ -57,7 +57,7 @@ namespace DependencyServiceSample.Abstractions
 Процесс разработки для этого интерфейса в общий код позволит приложению доступ к API-интерфейсы ориентации устройства на каждой платформе Xamarin.Forms.
 
 > [!NOTE]
-> **Примечание**: классы, реализующие интерфейс должен иметь конструктор для работы с `DependencyService`.
+> Классы, реализующие интерфейс должен иметь конструктор для работы с `DependencyService`.
 
 <a name="iOS_Implementation" />
 
@@ -224,4 +224,4 @@ public MainPage ()
 
 - [С помощью с помощью DependencyService (пример)](https://developer.xamarin.com/samples/UsingDependencyService)
 - [Помощью DependencyService (пример)](https://developer.xamarin.com/samples/DependencyService/DependencyServiceSample/)
-- [Образцы Xamarin.Forms](https://github.com/xamarin/xamarin-forms-samples)
+- [Примеры Xamarin.Forms](https://github.com/xamarin/xamarin-forms-samples)

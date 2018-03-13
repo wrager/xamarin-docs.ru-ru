@@ -3,16 +3,16 @@ title: "Framework уведомления пользователя"
 description: "В этой статье описываются все способы, что пользователям уведомления были улучшены iOS 10 и способ их использования в приложении Xamarin.iOS."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4E1FF652-28F0-4566-B383-9D12664401A4
+ms.assetid: 223FCE25-A3E6-4255-BCFC-0E3136F4E987
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/01/2016
-ms.openlocfilehash: 473f9b4d4fa2a034c7f39ce309fb3f921d809a10
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1ab0a4add92db21c352dbaeadc71a3ff1e3d0cf9
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="user-notifications-framework"></a>Framework уведомления пользователя
 
@@ -25,11 +25,11 @@ _В этой статье описываются все способы, что �
 Новая инфраструктура пользовательского интерфейса для уведомления пользователя позволяет приложения или расширения приложения, чтобы настроить внешний вид уведомления локальных и удаленных, когда они отображаются для пользователя.
 
 
-## <a name="enhanced-user-notificationsiosplatformuser-notificationsenhanced-user-notificationsmd"></a>[Улучшенный пользовательский уведомления](~/ios/platform/user-notifications/enhanced-user-notifications.md)
+## <a name="enhanced-user-notificationsiosplatformuser-notificationsenhanced-user-notificationsmd"></a>[Оптимизированные уведомления пользователя](~/ios/platform/user-notifications/enhanced-user-notifications.md)
 
 В этой статье описаны все способы, что уведомления для пользователей были улучшены для iOS 10 и предоставляет Краткое введение в реализации их с помощью новой платформы уведомления пользователя.
 
-## <a name="advanced-user-notificationsiosplatformuser-notificationsadvanced-user-notificationsmd"></a>[Расширенные пользовательские уведомления](~/ios/platform/user-notifications/advanced-user-notifications.md)
+## <a name="advanced-user-notificationsiosplatformuser-notificationsadvanced-user-notificationsmd"></a>[Дополнительные уведомления пользователя](~/ios/platform/user-notifications/advanced-user-notifications.md)
 
 Эта статья представляет собой более подробное рассмотрение новую платформу уведомления для пользователей и как использовать преимущества всех его в приложении Xamarin.iOS.
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 951de7c134e6882d621b015456d5d40a7cf2b8d2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6512387738217259067e7b9ae8076f73b4fbeb07
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="creating-new-platform-specific-library-projects-for-nuget"></a>Создание новых проектов библиотекой для определенной платформы для NuGet
 
@@ -27,11 +27,11 @@ NuGet может содержать как код конкретного iOS и 
 
 2. Выберите **многоплатформенных библиотеки** из **многоплатформенных > Библиотека** раздела:
 
-  [ ![](platform-specific-images/mulitplatform-library-sml.png "Настройка параметров библиотеки несколькими платформами для единой базой кода")](platform-specific-images/multiplatform-library.png)
+  [![](platform-specific-images/mulitplatform-library-sml.png "Настройка параметров библиотеки несколькими платформами для единой базой кода")](platform-specific-images/multiplatform-library.png#lightbox)
 
 3. Введите **имя** и **описание**и выберите **конкретную платформу**:
 
-  [ ![](platform-specific-images/specific-configure-sml.png "Настройка параметров библиотеки специфический для платформы iOS и Android")](platform-specific-images/specific-configure.png)
+  [![](platform-specific-images/specific-configure-sml.png "Настройка параметров библиотеки специфический для платформы iOS и Android")](platform-specific-images/specific-configure.png#lightbox)
 
 4. Завершите работу мастера. Следующие проекты добавляются в решение:
 
@@ -42,7 +42,7 @@ NuGet может содержать как код конкретного iOS и 
 
 5. Правой кнопкой мыши проект NuGet и выберите **параметры**, затем откройте **пакет NuGet > метаданных** статьи и введите [необходимые метаданные](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md) (как, а также всем необязательные метаданные):
 
-  [ ![](platform-specific-images/specific-metadata-sml.png "Введите необходимые метаданные")](platform-specific-images/specific-metadata.png)
+  [![](platform-specific-images/specific-metadata-sml.png "Введите необходимые метаданные")](platform-specific-images/specific-metadata.png#lightbox)
 
 6. Кроме того, в **параметры проекта** откройте **ссылочные сборки** раздела и выбрать какие профили PCL общей библиотеки будет поддерживаться через «заманить и подменить»:
 
@@ -67,4 +67,4 @@ NuGet может содержать как код конкретного iOS и 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Структуры метаданных](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md)
+- [Руководство по метаданным](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/metadata.md)

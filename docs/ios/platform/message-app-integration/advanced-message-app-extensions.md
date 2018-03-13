@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 7e6621dc580e478873ce2db7139b04284bee355c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: fcfd1fd2ec9271bb5e8d9e09b43b7dc4cf3b3f12
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="advanced-message-app-extensions"></a>Расширенные сообщения приложения расширения
 
@@ -50,11 +50,11 @@ _В этой статье показано Дополнительно прием
 
 Интерактивные сообщения представить пузырек пользовательского сообщения и предоставляемые расширением сообщений приложения. Они позволяют пользователю создавать интерактивные сообщения содержимого, вставьте его в поле ввода сообщение и отправьте его.
 
-[ ![](advanced-message-app-extensions-images/interactive01.png "Создание содержимого интерактивной сообщения")](advanced-message-app-extensions-images/interactive01.png)
+[![](advanced-message-app-extensions-images/interactive01.png "Создание содержимого интерактивной сообщения")](advanced-message-app-extensions-images/interactive01.png#lightbox)
 
 Получателя может отвечать на сообщения об интерактивной, коснувшись его пузырьков сообщения в журнале сообщений для загрузки расширения сообщений приложения, которому она создана. Расширение будет запущенной весь экран и разрешить пользователю для составления ответа и отправить его исходного пользователя.
 
-[ ![](advanced-message-app-extensions-images/interactive02.png "Расширение запущен в полноэкранном режиме")](advanced-message-app-extensions-images/interactive02.png)
+[![](advanced-message-app-extensions-images/interactive02.png "Расширение запущен в полноэкранном режиме")](advanced-message-app-extensions-images/interactive02.png#lightbox)
 
 
 Ниже подробно рассматриваются следующие темы:
@@ -68,7 +68,7 @@ _В этой статье показано Дополнительно прием
 
 При вызове пользователем расширение приложения сообщение будет отображаться в нижней части сообщения из журнала в режиме компактное представление:
 
-[ ![](advanced-message-app-extensions-images/interactive03.png "Обзор интерфейса API сообщений")](advanced-message-app-extensions-images/interactive03.png)
+[![](advanced-message-app-extensions-images/interactive03.png "Обзор интерфейса API сообщений")](advanced-message-app-extensions-images/interactive03.png#lightbox)
 
 1. `MSMessageAppViewController` Объект в расширение сообщений приложения является основной класс, который вызывается при расширении представления отображается для пользователя.
 2. Диалог выводится пользователю как `MSConversation` экземпляр объекта.
@@ -80,7 +80,7 @@ _В этой статье показано Дополнительно прием
 
 Рассмотрим процесс расширения приложения сообщения, активацию:
 
-[ ![](advanced-message-app-extensions-images/interactive04.png "Процесс расширения приложения сообщения, активацию")](advanced-message-app-extensions-images/interactive04.png)
+[![](advanced-message-app-extensions-images/interactive04.png "Процесс расширения приложения сообщения, активацию")](advanced-message-app-extensions-images/interactive04.png#lightbox)
 
 1. При запуске расширения (например, из ящика приложения) сообщение приложения будет запущен процесс.
 2. `DidBecomeActive` Именем метода и передается `MSConversation` , представляющий диалога, в котором выполняется расширение приложения сообщения.
@@ -88,7 +88,7 @@ _В этой статье показано Дополнительно прием
 
 Далее рассмотрим процесс расширения приложения сообщение становится деактивации:
 
-[ ![](advanced-message-app-extensions-images/interactive05.png "Процесс расширения приложения сообщение становится деактивации")](advanced-message-app-extensions-images/interactive05.png)
+[![](advanced-message-app-extensions-images/interactive05.png "Процесс расширения приложения сообщение становится деактивации")](advanced-message-app-extensions-images/interactive05.png#lightbox)
 
 1. При отключении расширения сообщений приложения, `ViewWillDisappear` сначала будет вызван метод.
 2. Затем `ViewDidDisappear` вызываемого метода.
@@ -128,7 +128,7 @@ MSMessage ComposeMessage (IceCream iceCream, string caption, MSSession session =
 
 `AccessibilityLabel` Свойство используется с экрана, чтобы прочитать описание диалога для пользователя. `Layout` Свойство указывает, как сообщение будет отображаться, в настоящее время только `MSMessageTemplateLayout` поддерживается и имеет следующий вид:
 
-[ ![](advanced-message-app-extensions-images/interactive06.png "Шаблон MSMessageTemplateLayout")](advanced-message-app-extensions-images/interactive06.png)
+[![](advanced-message-app-extensions-images/interactive06.png "Шаблон MSMessageTemplateLayout")](advanced-message-app-extensions-images/interactive06.png#lightbox)
 
 `Image` Свойство `MSMessageTemplateLayout` предоставляет содержимое для основной части MessageBubble на экране. `MediaFileUrl` Свойств также предоставляет содержимое тела сообщения пузырька, но позволяет для содержимого, которое не поддерживается `UIImage` (например, файл видео, будет произведен цикл в фоновом режиме). Если оба `Image` и `MediaFileUrl` свойства предоставляются `Image` свойство будет иметь приоритет. `MediaFileUrl` Поддерживает PNG, JPEG, GIF и видео (в любом формате, который может воспроизводиться платформой проигрывателя) форматы мультимедиа.
 
@@ -140,7 +140,7 @@ MSMessage ComposeMessage (IceCream iceCream, string caption, MSSession session =
 
 `Caption`, `SubCaption`, `TrailingCaption` И `TrailingSubcaption` дополнительные свойства описания изображения и отображается в разделе под изображением. Все эти свойства для параметра `null` создаст пузырек сообщения без области заголовка:
 
-[ ![](advanced-message-app-extensions-images/interactive07.png "Пузырек сообщения без области заголовка")](advanced-message-app-extensions-images/interactive07.png)
+[![](advanced-message-app-extensions-images/interactive07.png "Пузырек сообщения без области заголовка")](advanced-message-app-extensions-images/interactive07.png#lightbox)
 
 Последний следует заметить, что приложения "сообщения" прорисовывает значок расширения сообщений приложения в верхний левый угол пузырька сообщения.
 
@@ -181,7 +181,7 @@ public void SendMessage (MSMessage message)
 
 Расширение приложения сообщения могут отображаться в одном из двух различных режимов просмотра:
 
-[ ![](advanced-message-app-extensions-images/interactive08.png "Расширение приложения сообщений, отображаемых в двух различных режимов просмотра: ко & разреженный")](advanced-message-app-extensions-images/interactive08.png)
+[![](advanced-message-app-extensions-images/interactive08.png "Расширение приложения сообщений, отображаемых в двух различных режимов просмотра: ко & разреженный")](advanced-message-app-extensions-images/interactive08.png#lightbox)
 
 - **Compact** -это является режимом по умолчанию, где расширение сообщение приложения может занимать до 25% нижней представления сообщений. В компактный режим приложения нет доступа с помощью клавиатуры, горизонтальной прокрутки или проведите распознавателей жестов. Приложение может получить доступ к полю ввода и вызовы `InsertMessage` мгновенно будет отображаться для пользователя существует.
 - **Развернуть** -расширение приложения сообщение заполняет все представление сообщения. Он не имеет доступа к полю ввода, но имеет доступа к клавиатуры, горизонтальной прокрутки и проведите распознавателей жестов.
@@ -384,7 +384,7 @@ public override void DidTransition (MSMessagesAppPresentationStyle presentationS
 
 Существует два варианта, расширение сообщения приложения должен обработать при ответе на сообщение.
 
-[ ![](advanced-message-app-extensions-images/interactive09.png "Расширение приложения сообщения в режимах неактивно и активные")](advanced-message-app-extensions-images/interactive09.png)
+[![](advanced-message-app-extensions-images/interactive09.png "Расширение приложения сообщения в режимах неактивно и активные")](advanced-message-app-extensions-images/interactive09.png#lightbox)
 
 - **Расширение — неактивный** -имеется один пузырьков сообщение расширения приложения сообщение в сообщение запись, предоставляющую пользователь для активации расширения и продолжить интерактивный диалог.
 - **Расширение активен** -пользователя можно коснуться пузырек сообщение расширения приложения сообщение запись сообщений в режим представления раскрываются и продолжить интерактивный процесс с места остановки.
@@ -393,7 +393,7 @@ public override void DidTransition (MSMessagesAppPresentationStyle presentationS
 
 Когда пузырек сообщения, которые используются пользователем в текст сообщения и расширения приложения сообщений неактивна, произойдет следующим образом:
 
-[ ![](advanced-message-app-extensions-images/interactive10.png "Обработка неактивные пузырьков сообщения")](advanced-message-app-extensions-images/interactive10.png)
+[![](advanced-message-app-extensions-images/interactive10.png "Обработка неактивные пузырьков сообщения")](advanced-message-app-extensions-images/interactive10.png#lightbox)
 
 1. Пользователь касается пузырьков расширения сообщения.
 2. При запуске расширения приложения сообщение будет запущен процесс.
@@ -406,7 +406,7 @@ public override void DidTransition (MSMessagesAppPresentationStyle presentationS
 
 При пузырек сообщения, которые используются пользователем в текст сообщения и расширения приложения сообщения активен, произойдет следующим образом:
 
-[ ![](advanced-message-app-extensions-images/interactive11.png "Обработка active пузырьков сообщения")](advanced-message-app-extensions-images/interactive11.png)
+[![](advanced-message-app-extensions-images/interactive11.png "Обработка active пузырьков сообщения")](advanced-message-app-extensions-images/interactive11.png#lightbox)
 
 1. Пользователь касается пузырьков расширения сообщения.
 2. Поскольку расширения приложения сообщение уже активно, `WillTransition` метод `MSMessagesAppViewController` вызывается для обработки, переключение с сжатия в режиме просмотра раскрываются.
@@ -457,11 +457,11 @@ namespace MessageExtension
 
 В процессе отправки различным этапам интерактивный диалог между двумя пользователя в диалоге, частично завершенной пузырьки сообщения можно запустить, чтобы не перегружать текст сообщения:
 
-[ ![](advanced-message-app-extensions-images/interactive12.png "Можно частично завершенной пузырьки сообщение загромождения текст сообщения")](advanced-message-app-extensions-images/interactive12.png)
+[![](advanced-message-app-extensions-images/interactive12.png "Можно частично завершенной пузырьки сообщение загромождения текст сообщения")](advanced-message-app-extensions-images/interactive12.png#lightbox)
 
 Вместо этого расширения сообщения приложения следует сворачивание предыдущего сообщения пузырьков в сжатой комментария в текст сообщения:
 
-[ ![](advanced-message-app-extensions-images/interactive13.png "Свертывание пузырьков предыдущего сообщения текст сообщения")](advanced-message-app-extensions-images/interactive13.png)
+[![](advanced-message-app-extensions-images/interactive13.png "Свертывание пузырьков предыдущего сообщения текст сообщения")](advanced-message-app-extensions-images/interactive13.png#lightbox)
 
 Эта операция обрабатывается с помощью `MSSession` сворачивание всех существующих действий. Поэтому `DidSelectMessage` метод `MSMessagesAppViewController` класса может быть изменено для выглядеть следующим образом:
 
@@ -516,7 +516,7 @@ public override void DidSelectMessage (MSMessage message, MSConversation convers
 
 Рассмотрим следующие взаимодействие группы диалога с тремя пользователями:
 
-[ ![](advanced-message-app-extensions-images/interactive14.png "Взаимодействие в группу диалога с трех пользователей")](advanced-message-app-extensions-images/interactive14.png)
+[![](advanced-message-app-extensions-images/interactive14.png "Взаимодействие в группу диалога с трех пользователей")](advanced-message-app-extensions-images/interactive14.png#lightbox)
 
 1. Пользователь 1 отправляет группу интерактивные сообщения попросить пользователя 2 и 3 пользователя для выбора начинки гамбургер.
 2. Пользователь 2 выбирает tomatoes.
@@ -531,7 +531,7 @@ public override void DidSelectMessage (MSMessage message, MSConversation convers
 
 Для обсуждения, доступ к идентификатор отправителя сообщения, рассмотрим в качестве примера группы диалога, приведенном выше:
 
-[ ![](advanced-message-app-extensions-images/interactive15.png "Группа диалога отправки идентификаторов")](advanced-message-app-extensions-images/interactive15.png)
+[![](advanced-message-app-extensions-images/interactive15.png "Группа диалога отправки идентификаторов")](advanced-message-app-extensions-images/interactive15.png#lightbox)
 
 1. Снова пользователя 1 отправляет группу интерактивные сообщения попросить пользователя 2 и 3 пользователя для выбора начинки гамбургер.
 2. Пользователь 3 выбирает Соленья.
@@ -584,7 +584,7 @@ public override void DidStartSendingMessage (MSMessage message, MSConversation c
 Интерактивные сообщения, созданные расширение приложения сообщения доставляются на следующих платформах Apple:
 
 - watchOS 3
-- macOS Сьерра
+- macOS Sierra
 - iOS 10
 
 Из трех платформ iOS только 10 позволит пользователям создавать интерактивные сообщение. На macOS Сьерра, если пользователь щелкает интерактивные пузырьков сообщение URL-адрес, присоединенных к `MSMessage` будут открыты в Safari и должны отображаться представление сообщения.

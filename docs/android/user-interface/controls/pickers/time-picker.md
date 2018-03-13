@@ -8,18 +8,18 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 4b3299ad138b5cd74ce77cac1da49d21a833fe1a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 93a2effd42432d13767dad05a47548aebc9a0b93
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="time-picker"></a>Выбор времени
 
 Предоставляет способ для пользователя, выберите время, можно использовать [TimePicker](https://developer.xamarin.com/api/type/Android.Widget.TimePicker/). Обычно используют приложения Android `TimePicker` с [TimePickerDialog](https://developer.xamarin.com/api/type/Android.App.TimePickerDialog/) для выбора значения времени &ndash; это помогает гарантировать согласованный интерфейс между устройствами и приложениями. `TimePicker` позволяет пользователям выбирать время суток в 24-часового или 12-часовом режиме AM/PM.
 `TimePickerDialog` — Это вспомогательный класс, который инкапсулирует `TimePicker` в диалоговом окне.
 
-[![Снимок экрана: пример диалогового окна выбора времени в действии](time-picker-images/01-example-screen-sml.png)](time-picker-images/01-example-screen.png)
+[![Снимок экрана: пример диалогового окна выбора времени в действии](time-picker-images/01-example-screen-sml.png)](time-picker-images/01-example-screen.png#lightbox)
 
 ## <a name="overview"></a>Обзор
 
@@ -36,11 +36,11 @@ ms.lasthandoff: 02/27/2018
 
 В этом примере расширяет `DialogFragment`; реализация подкласс `DialogFragment` (называется `TimePickerFragment` ниже) для хранения и отображения `TimePickerDialog`. При запуске примера приложения отображает **ВЫБОРА времени** кнопку выше `TextView` будет использоваться для отображения выбранного времени:
 
-[![Экран исходного образца приложения](time-picker-images/02-initial-app-screen-sml.png)](time-picker-images/02-initial-app-screen.png)
+[![Экран исходного образца приложения](time-picker-images/02-initial-app-screen-sml.png)](time-picker-images/02-initial-app-screen.png#lightbox)
 
 При нажатии кнопки **ВЫБОРА времени** кнопка запускает приложение пример `TimePickerDialog` как показано на этом снимке экрана:
 
-[![Снимок экрана: диалоговое окно Выбор времени по умолчанию отображается в приложении](time-picker-images/03-am-pm-time-dialog-sml.png)](time-picker-images/03-am-pm-time-dialog.png)
+[![Снимок экрана: диалоговое окно Выбор времени по умолчанию отображается в приложении](time-picker-images/03-am-pm-time-dialog-sml.png)](time-picker-images/03-am-pm-time-dialog.png#lightbox)
 
 В `TimePickerDialog`, выбрав время и щелкнув **ОК** кнопку причины `TimePickerDialog` для вызова метода [IOnTimeSetListener.OnTimeSet](https://developer.xamarin.com/api/member/Android.App.TimePickerDialog+IOnTimeSetListener.OnTimeSet/p/Android.Widget.TimePicker/System.Int32/System.Int32/System.Int32/).
 Этот интерфейс реализуется путем размещения `DialogFragment` (`TimePickerFragment`, описаны ниже). Щелкнув **отменить** кнопка вызывает фрагмент и диалоговое окно, чтобы быть закрыт.
@@ -56,7 +56,6 @@ ms.lasthandoff: 02/27/2018
 Этот образец будет использовать третий способ, который требует действия питания `Action<DateTime>` обработчик `DialogFragment`.
 
 
-<a name="start" />
 
 ## <a name="start-an-app-project"></a>Запуск проекта приложения
 
@@ -123,13 +122,12 @@ namespace TimePickerDemo
 
 При построении и запуска этого примера, вы увидите начальный экран, аналогично на следующем снимке экрана:
 
-[![Начальный экран приложения](time-picker-images/02-initial-app-screen-sml.png)](time-picker-images/02-initial-app-screen.png)
+[![Начальный экран приложения](time-picker-images/02-initial-app-screen-sml.png)](time-picker-images/02-initial-app-screen.png#lightbox)
 
 Щелкнув **ВЫБОРА времени** кнопка не выполняет никаких действий из-за `DialogFragment` еще не был реализован для отображения `TimePicker`.
 Следующим шагом является создание этого `DialogFragment`.
 
 
-<a name="extend_dialogfragment" />
 
 ## <a name="extending-dialogfragment"></a>Расширение DialogFragment
 
@@ -169,7 +167,6 @@ public class TimePickerFragment : DialogFragment, TimePickerDialog.IOnTimeSetLis
 
 Это `TimePickerFragment` класс разбить на более мелкие части и описано в следующем разделе.
 
-<a name="details" />
 
 ### <a name="dialogfragment-implementation"></a>Реализация DialogFragment
 
@@ -230,7 +227,6 @@ public class TimePickerFragment : DialogFragment, TimePickerDialog.IOnTimeSetLis
     ```
 
 
-<a name="time_picker_fragment" />
 
 ## <a name="displaying-the-timepickerfragment"></a>Отображение TimePickerFragment
 
@@ -262,17 +258,16 @@ timeSelectButton.Click += TimeSelectOnClick;
 Когда **ВЫБОРА времени** по нажатию кнопки `TimeSelectOnClick` будет вызываться для отображения `TimePicker` диалоговое окно фрагмента для пользователя.
 
 
-<a name="try-it" />
 
 ## <a name="try-it"></a>Попробуйте!
 
 Выполните сборку и запуск приложения. При нажатии кнопки **ВЫБОРА времени** кнопки `TimePickerDialog` отображается в формате времени по умолчанию для действия (в этом случае — 12-часовом AM/PM режиме):
 
-[![Отображается диалоговое окно времени, в режиме AM/PM](time-picker-images/03-am-pm-time-dialog-sml.png)](time-picker-images/03-am-pm-time-dialog.png)
+[![Отображается диалоговое окно времени, в режиме AM/PM](time-picker-images/03-am-pm-time-dialog-sml.png)](time-picker-images/03-am-pm-time-dialog.png#lightbox)
    
 При нажатии кнопки **ОК** в `TimePicker` диалоговое окно, обработчик обновляет действия `TextView` с выбранный момент времени, а затем завершает работу:
 
-[![A/M время отображается в TextView действия](time-picker-images/04-after-time-dialog-sml.png)](time-picker-images/04-after-time-dialog.png)
+[![A/M время отображается в TextView действия](time-picker-images/04-after-time-dialog-sml.png)](time-picker-images/04-after-time-dialog.png#lightbox)
 
 Добавьте следующую строку кода, чтобы `OnCreateDialog` сразу же после `is24HourFormat` объявлена и инициализирована:
 
@@ -282,12 +277,11 @@ is24HourFormat = true;
 
 Это изменение принудительно флаг, переданный `TimePickerDialog` конструктор, чтобы быть `true` , 24-часовом режим используется вместо формата времени размещения действия. При построении и запуске приложения, нажмите кнопку **ВЫБОРА времени** кнопки `TimePicker` диалоговое окно теперь отображается в 24-часовом формате:
 
-[![Диалоговое окно TimePicker в 24-часовом формате](time-picker-images/05-24hr-time-dialog-sml.png)](time-picker-images/05-24hr-time-dialog.png)
+[![Диалоговое окно TimePicker в 24-часовом формате](time-picker-images/05-24hr-time-dialog-sml.png)](time-picker-images/05-24hr-time-dialog.png#lightbox)
 
 Поскольку обработчик вызывает [DateTime.ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshortdatestring%28v=vs.110%29.aspx) печать времени к действию `TextView`, время по-прежнему выводится в формате по умолчанию 12-часовой AM/PM.
 
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: eddd723c07919db4749c63c5b4f1d05e9be81022
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 48e8827895001d2b1887816a9368fcc5bbc50bbf
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="maps-api"></a>Maps API
 
@@ -25,7 +25,6 @@ Maps API подходит для случаев, где вы хотите под
 В отличие от неподдерживаемые Google Maps Android API v1, v2 API, карты Google Android является частью [службы Google Play](http://developer.android.com/google/play-services/index.html).
 Таким образом необходимо, чтобы выполнить некоторые обязательные предварительные условия, раньше, чем это можно использовать в приложении Xamarin.Android API Google Android карты.
 
-<a name="Configuring_Maps_API_Prerequisites" />
 
 ## <a name="google-maps-api-prerequisites"></a>Google сопоставляет API предварительные требования
 
@@ -37,7 +36,6 @@ Maps API подходит для случаев, где вы хотите под
 -  Укажите необходимые разрешения
 
 
-<a name="Google_APIs_Add-On" />
 
 ### <a name="install-the-google-play-services-sdk"></a>Установка пакета SDK служб Google Play
 
@@ -53,9 +51,8 @@ Android Maps API предоставляется как часть службы G
 ![Службы Google Play отображается под Android SDK Manager дополнения](maps-api-images/image01.png)
 
 > [!NOTE]
-> **Примечание:** служб Google Play, apk-ФАЙЛ — это лицензированный продукт, которое не может быть присутствует на всех устройствах. Если он не установлен, карты Google не работать на устройстве.
+> Службы Google Play APK — лицензированный продукт, возможно, отсутствует на всех устройствах. Если он не установлен, карты Google не работать на устройстве.
 
-<a name="Binding_Google_Play_Services" />
 
 #### <a name="binding-google-play-services"></a>Google Play привязки служб
 
@@ -68,7 +65,6 @@ Android Maps API предоставляется как часть службы G
 -  **Вручную связать клиентской библиотеки службы Google Play** -это более сложный подход, единственным способом для Xamarin.Android 4.4 или Xamarin.Android 4.6 для привязки пакета SDK служб воспроизвести Google.
    Вручную привязки клиентской библиотеки службы Google Play выходит за рамки настоящего документа, но пример того, как сделать это, можно найти в [карты и расположение демонстрации образец v3](https://github.com/xamarin/monodroid-samples/tree/master/MapsAndLocationDemo_v3) на Github.
 
-<a name="Adding_the_Google_Play_Services_Component" />
 
 #### <a name="adding-the-google-play-services-map-package"></a>Добавление карты пакета служб Google Play
 
@@ -78,7 +74,7 @@ Android Maps API предоставляется как часть службы G
 
 При этом откроется **диспетчера пакетов NuGet**. Нажмите кнопку **Обзор** и введите **карты воспроизвести служб Xamarin Google** в поле поиска. Выберите **Xamarin.GooglePlayServices.Maps** и нажмите кнопку **установить**. (Если ранее были установлены этот пакет, нажмите кнопку **обновление**.):
 
-[![Диспетчер пакетов NuGet с выбранного пакета Xamarin.GooglePlayServices.Maps](maps-api-images/image03-sml.png)](maps-api-images/image03.png)
+[![Диспетчер пакетов NuGet с выбранного пакета Xamarin.GooglePlayServices.Maps](maps-api-images/image03-sml.png)](maps-api-images/image03.png#lightbox)
 
 Обратите внимание, что следующие пакеты зависимостей, также установлены:
 
@@ -87,7 +83,6 @@ Android Maps API предоставляется как часть службы G
 -   **Xamarin.GooglePlayServices.Tasks**
 
 
-<a name="Creating_an_Emulator_with_Google_APIs" />
 
 ### <a name="create-an-emulator-with-google-apis"></a>Создание эмулятор с интерфейсами API Google
 
@@ -96,14 +91,12 @@ Android Maps API предоставляется как часть службы G
 ![Диспетчер эмулятора Android с AVD, настроенных для API уровня 19](maps-api-images/image04.png)
 
 
-<a name="apikey" />
 
 ### <a name="obtain-a-google-maps-api-key"></a>Получить ключ API Google карты
 
 Последним шагом является получить ключ Google Maps API (Обратите внимание, что нельзя повторно использовать ключ API из предыдущих версий карты Google v1). Сведения о том, как получить и использовать ключ API с Xamarin.Android см. в разделе [получения ключа API Maps Google](~/android/platform/maps-and-location/maps/obtaining-a-google-maps-api-key.md).
  
 
-<a name="Specify_Permissions" />
 
 ### <a name="specify-the-required-permissions"></a>Укажите необходимые разрешения
 
@@ -167,7 +160,6 @@ Android Maps API предоставляется как часть службы G
 </manifest>
 ```
 
-<a name="The_GoogleMap" />
 
 ## <a name="the-googlemap-class"></a>Класс GoogleMap
 
@@ -190,13 +182,12 @@ Android Maps API предоставляется как часть службы G
 
 Каждый из этих контейнеров предоставляют `Map` свойство, которое возвращает экземпляр класса `GoogleMap`. Необходимо предоставить предпочтений [MapFragment](http://developer.android.com/reference/com/google/android/gms/maps/MapFragment.html) как простой API, который сокращает объем стандартный код, который разработчик вручную необходимо реализовать.
 
-<a name="Adding_GoogleMap_To_An_Activity" />
 
 ### <a name="adding-a-mapfragment-to-an-activity"></a>Добавление действия MapFragment
 
 Снимке экрана ниже приведен пример очень простой `MapFragment`:
 
-[![Снимок экрана устройства, отображение фрагмента карты](maps-api-images/image05-sml.png)](maps-api-images/image05.png)
+[![Снимок экрана устройства, отображение фрагмента карты](maps-api-images/image05-sml.png)](maps-api-images/image05.png#lightbox)
 
 Как и другие классы фрагмент, существует два способа добавить это `MapFragment` для действия:
 
@@ -255,7 +246,6 @@ public void OnMapReady (GoogleMap map)
 В качестве примера использования этого результата когда `OnResume` — он вызван, можно проверить на предмет `_map` отлично от null. Если `_map` равно `GoogleMap` объекта, `OnResume` может вызывать методы ее, чтобы добавить маркеры и переместить его камеры указанной широты и долготы. Полный пример кода см. в разделе [SimpleMapDemo](https://github.com/xamarin/monodroid-samples/tree/master/MapsAndLocationDemo_v3/SimpleMapDemo).
 
 
-<a name="Map_Types" />
 
 ### <a name="map-types"></a>Типы карт
 
@@ -274,7 +264,7 @@ public void OnMapReady (GoogleMap map)
 
 На следующем рисунке показаны три различных типов карт, из слева направо (обычный, гибридный вид рельефа):
 
-[![Три сопоставить примере снимки экрана: обычный, гибридных и рельефа](maps-api-images/map-types-sml.png)](maps-api-images/map-types.png)
+[![Три сопоставить примере снимки экрана: обычный, гибридных и рельефа](maps-api-images/map-types-sml.png)](maps-api-images/map-types.png#lightbox)
 
 `GoogleMap.MapType` Свойство используется для задания или изменения, какой тип карты отображается. В следующем фрагменте кода показано, как отображать вспомогательные карту.
 
@@ -287,7 +277,6 @@ if (_map != null) {
 }
 ```
 
-<a name="GoogleMap_Properties" />
 
 ### <a name="googlemap-properties"></a>Свойства GoogleMap
 
@@ -317,7 +306,6 @@ if (_map != null) {
 }
 ```
 
-<a name="Interacting_with_the_Map" />
 
 ## <a name="interacting-with-the-map"></a>Взаимодействие с карты
 
@@ -363,9 +351,8 @@ if (_map != null) {
 
 В приведенном выше фрагменте кода в определенное расположение на схеме представлен [LatLng](https://developers.google.com/maps/documentation/android/reference/com/google/android/gms/maps/model/LatLng) класса. Уровень масштаба равно 18. Влияет является компаса по часовой стрелке относительно Северная измерения. Наклон свойство управляет угол просмотра, оно указывает углом 25 градусов по вертикали. На следующем снимке экрана показано `GoogleMap` после выполнения предыдущего кода:
 
-[![Пример схемы Google, отображение в указанном месте с tilted угол обзора](maps-api-images/image06-sml.png)](maps-api-images/image06.png)
+[![Пример схемы Google, отображение в указанном месте с tilted угол обзора](maps-api-images/image06-sml.png)](maps-api-images/image06.png#lightbox)
 
-<a name="Adding_Overlays_to_a_Map" />
 
 ### <a name="drawing-on-the-map"></a>Рисование на карте
 
@@ -377,13 +364,11 @@ Android Maps API предоставляет API-Интерфейсы для ри
 
 -  **Линий, кругов и многоугольников** -это интерфейсов API, позволяющих действий для добавления карты фигур.
 
-<a name="markers" />
 
 #### <a name="markers"></a>Markers
 
 Предоставляет API карт [маркер](https://developers.google.com/maps/documentation/android/reference/com/google/android/gms/maps/model/Marker) класс, который инкапсулирует все данные об одном месте на карте. По умолчанию они используют стандартный значок, предоставляемые карты Google. Можно настроить внешний вид маркера и для ответа на щелчки мышью.
 
-<a name="AddingAMarker" />
 
 ##### <a name="adding-a-marker"></a>Добавление маркера
 
@@ -403,9 +388,8 @@ if (_map != null) {
 
 Название маркера будет отображаться в *информационное окно* при нажатии кнопки на маркер. На следующем снимке экрана показано, как выглядит этот маркер:
 
-[![Пример схемы Google с маркером и окно сведений для Vimy ребра](maps-api-images/image07-sml.png)](maps-api-images/image07.png)
+[![Пример схемы Google с маркером и окно сведений для Vimy ребра](maps-api-images/image07-sml.png)](maps-api-images/image07.png#lightbox)
 
-<a name="Customizing_A_Marker" />
 
 ##### <a name="customizing-a-marker"></a>Настройка маркера
 
@@ -437,7 +421,6 @@ if (_map != null)
 }
 ```
 
-<a name="Info_Windows" />
 
 #### <a name="info-windows"></a>Сведения о Windows
 
@@ -455,13 +438,11 @@ if (_map != null)
 
 ![Пример маркер windows для Мельбурн, включая значок и заполнение. Правом окне скругленные углы.](maps-api-images/marker-infowindows.png)
 
-<a name="Adding_an_overlay" />
 
 #### <a name="ground-overlays"></a>Перекрытия Наземный
 
 В отличие от маркеры, которые идентифицируют определенное место на карте, [GroundOverlay](http://developer.android.com/reference/com/google/android/gms/maps/model/GroundOverlay.html) — это изображение, используемое для идентификации коллекции для расположения или области на карте.
 
-<a name="AddingAGroundOverlay" />
 
 ##### <a name="adding-a-groundoverlay"></a>Добавление GroundOverlay
 
@@ -477,9 +458,8 @@ GroundOverlay myOverlay = _map.AddGroundOverlay(groundOverlayOptions);
 
 На следующем рисунке показан этот наложения на карте:
 
-[![Пример схемы рисунком накладывается содержат полярной](maps-api-images/image09-sml.png)](maps-api-images/image09.png)
+[![Пример схемы рисунком накладывается содержат полярной](maps-api-images/image09-sml.png)](maps-api-images/image09.png#lightbox)
 
-<a name="Lines_Circles_and_Polygons" />
 
 #### <a name="lines-circles-and-polygons"></a>Линий, кругов и многоугольников
 
@@ -492,7 +472,6 @@ GroundOverlay myOverlay = _map.AddGroundOverlay(groundOverlayOptions);
 -  **Круг** -это будет Рисование окружности на карте.
 
 
-<a name="Polylines" />
 
 ##### <a name="polylines"></a>Многоугольника
 
@@ -508,7 +487,6 @@ rectOptions.Add(new LatLng(37.35, -122.0)); // close the polyline - this makes a
 myMap.AddPolyline(rectOptions);
 ```
 
-<a name="Polygons" />
 
 ##### <a name="polygons"></a>Многоугольники
 
@@ -527,7 +505,6 @@ rectOptions.Add(new LatLng(37.35, -122.2));
 myMap.AddPolygon(rectOptions);
 ```
 
-<a name="Circles" />
 
 ##### <a name="circles"></a>Окружности
 
@@ -541,7 +518,6 @@ circleOptions.InvokeRadius (1000);
 _map.AddCircle (CircleOptions);
 ```
 
-<a name="RespondingToClicks" />
 
 ## <a name="responding-to-events"></a>Реагирование на события
 
@@ -555,7 +531,6 @@ _map.AddCircle (CircleOptions);
 
 Каждое из этих событий обсуждаются более подробно ниже.
 
-<a name="Marker_Click_Events" />
 
 ### <a name="marker-click-events"></a>Маркер события Click
 
@@ -584,7 +559,6 @@ private void MapOnMarkerClick(object sender, GoogleMap.MarkerClickEventArgs mark
 }
 ```
 
-<a name="Marker_Drag_Events" />
 
 ### <a name="marker-drag-events"></a>События перетаскивания маркеров
 
@@ -602,7 +576,6 @@ private void MapOnMarkerClick(object sender, GoogleMap.MarkerClickEventArgs mark
 
 Каждый из `EventArgs` содержит одиночное свойство `P0` , ссылку на `Marker` объект, перетаскиваемый.
 
-<a name="Info_Window_Click_Events" />
 
 ### <a name="info-window-click-events"></a>Информационное окно события Click
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 3ff8800f4e8690069f5394193d11552d917baffe
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3e699fdc2092d17834c348c07f2440e40441ad86
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-settings"></a>Работа с параметрами
 
@@ -27,7 +27,7 @@ Apple Watch приложений можно использовать те же �
 
 1. Щелкните правой кнопкой мыши **Добавить > новый файл...**  и выберите **Settings.bundle** (нельзя изменить имя в **новый файл** диалогового окна):
 
-   [ ![](settings-images/settings-add-sml.png "Добавить новый набор параметров")](settings-images/settings-add.png)
+   [![](settings-images/settings-add-sml.png "Добавить новый набор параметров")](settings-images/settings-add.png#lightbox)
 
 2. Измените имя на **параметры Watch.bundle** (выберите и введите **команда + R** переименование):
 
@@ -35,12 +35,12 @@ Apple Watch приложений можно использовать те же �
 
 3. Добавьте новый раздел `ApplicationGroupContainerIdentifier` для **Root.plist** со значением, заданным в группу приложений, настройки, (например) `group.com.xamarin.WatchSettings` в данном образце):
 
-   [ ![](settings-images/settings-appgroup-sml.png "Добавить ключ ApplicationGroupContainerIdentifier Root.plist")](settings-images/settings-appgroup.png)
+   [ ![](settings-images/settings-appgroup-sml.png "Добавить ключ ApplicationGroupContainerIdentifier Root.plist")](settings-images/settings-appgroup.png#lightbox)
 
 4. Изменить **Settings-Watch.bundle/Root.plist** содержит параметры, которые вы хотите использовать - файл шаблона содержит группы.
   TextField, переключатель и ползунок по умолчанию (который можно удалить и заменить со своими параметрами):
 
-  [ ![](settings-images/rootplist-sml.png "Изменить Settings-Watch.bundle/Root.plist")](settings-images/rootplist.png)
+  [![](settings-images/rootplist-sml.png "Изменить Settings-Watch.bundle/Root.plist")](settings-images/rootplist.png#lightbox)
 
 
 ## <a name="use-settings-in-the-watch-app"></a>Использование параметров в приложение Watch
@@ -58,7 +58,7 @@ var userName = shared.StringForKey ("name_preference");
 
 ## <a name="apple-watch-app"></a>Приложения для Apple Watch
 
-[ ![](settings-images/settings-app-sml.png "Новое приложение для iPhone Apple Watch")](settings-images/settings-app.png)
+[![](settings-images/settings-app-sml.png "Новое приложение для iPhone Apple Watch")](settings-images/settings-app.png#lightbox)
 
 Пользователи смогут с параметрами через новое **Apple Watch** приложения на их iPhone. Это приложение позволяет пользователю отображать приложений на контрольные значения, а также изменить параметры, предоставляемые с помощью **Watch.bundle параметры**.
 

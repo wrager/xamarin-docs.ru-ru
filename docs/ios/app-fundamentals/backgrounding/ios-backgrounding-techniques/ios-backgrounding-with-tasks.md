@@ -6,11 +6,11 @@ ms.assetid: 205D230E-C618-4D69-96EE-4B91D7819121
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 0be4e7f1d8719fdd174d51399178eb1bc000c4b3
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5e05cf0f13512478b3957070e7fa6329ea84337f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-backgrounding-with-tasks"></a>iOS Backgrounding с задачами
 
@@ -114,11 +114,11 @@ Task.Factory.StartNew( () => {
 
 Помните, что перед iOS 7, задаче, в фоновом режиме были 600 секунд для завершения. Один это ограничение обусловлено тем, задачи в фоновом режиме будет хранить устройство переходит в спящий режим на время выполнения задачи:
 
- [ ![](ios-backgrounding-with-tasks-images/ios6.png "График задачи поддержание приложения переходит в спящий режим предварительного iOS 7")](ios-backgrounding-with-tasks-images/ios6.png)
+ [![](ios-backgrounding-with-tasks-images/ios6.png "График задачи поддержание приложения переходит в спящий режим предварительного iOS 7")](ios-backgrounding-with-tasks-images/ios6.png#lightbox)
 
 Фоновая обработка iOS 7 оптимизирован аккумулятора. В iOS 7 backgrounding становится нежестких: вместо сохранения устройство переходит в спящий режим, задачи при уважать устройство переходит в спящий режим и вместо этого выполнять их обработки в виде фрагментов, когда устройство выходит из спящего режима для обработки телефонных вызовов, уведомления, входящих сообщений электронной почты и другие Общие перерывы в работе. Следующая схема содержит представление о том, как задача может быть нарушена копии:
 
- [ ![](ios-backgrounding-with-tasks-images/ios7.png "График задачи разбивается на отдельные фрагменты после iOS 7")](ios-backgrounding-with-tasks-images/ios7.png)
+ [![](ios-backgrounding-with-tasks-images/ios7.png "График задачи разбивается на отдельные фрагменты после iOS 7")](ios-backgrounding-with-tasks-images/ios7.png#lightbox)
 
 Так как время выполнения задачи не больше непрерывно, задач, выполняющих передачу по сети должны обрабатываться по-разному в iOS 7. Разработчики могут использовать `NSURlSession` API для обработки объема сетевого трафика. Следующий раздел содержит обзор фоновой передачи данных.
 

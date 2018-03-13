@@ -7,27 +7,24 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 8075473464472c5a830f62ebfc91c00ad54d1b98
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9b744f4c8582aa9295645b2bdc22e6fddf2bedc3
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="calendar"></a>Календарь
 
-<a name="Calendar_API" />
 
 ## <a name="calendar-api"></a>Календарь API
 
 Новый набор API-интерфейсы, представленные в Android 4 календаря поддерживает приложения, предназначенные для чтения или записи данных в поставщике календаря. Эти API-интерфейсы поддерживают широкий набор параметров взаимодействия с данными календаря, включая возможность считывать и записывать события, участники и напоминания. С помощью календаря поставщика приложения, данные, которые добавляются с помощью API-интерфейса будет отображаться в приложении встроенный календарь, входящий в состав Android 4.
 
-<a name="Adding_Permissions" />
 
 ## <a name="adding-permissions"></a>Добавление разрешений
 
 При работе с новым календарем API-интерфейсы в приложении, первое, что нужно сделать является добавить необходимые разрешения для манифеста Android. Требуются разрешения, необходимо добавить `android.permisson.READ_CALENDAR` и `android.permission.WRITE_CALENDAR`, в зависимости от того чтение и запись данных календаря.
 
-<a name="Using_the_Calendar_Contract" />
 
 ## <a name="using-the-calendar-contract"></a>С помощью контракта календаря
 
@@ -35,7 +32,6 @@ ms.lasthandoff: 02/27/2018
 
 Давайте рассмотрим пример, использующий API календаря. В этом примере мы рассмотрим, как перечислить календари и связанные события, а также способы добавления нового события календаря.
 
-<a name="Listing_Calendars" />
 
 ## <a name="listing-calendars"></a>Список календарей
 
@@ -122,10 +118,9 @@ ListAdapter = adapter;
 
 Ниже приведен снимок конечный результат с данными календаря, отображаемых в `ListView`:
 
-[![CalendarDemo, работающее в эмуляторе, отображении двух записей календаря](calendar-images/11-calendar.png)](calendar-images/11-calendar.png)
+[![CalendarDemo, работающее в эмуляторе, отображении двух записей календаря](calendar-images/11-calendar.png)](calendar-images/11-calendar.png#lightbox)
 
 
-<a name="Listing_Calendar_Events" />
 
 ## <a name="listing-calendar-events"></a>Список событий календаря
 
@@ -221,10 +216,9 @@ class ViewBinder : Java.Lang.Object, SimpleCursorAdapter.IViewBinder
 
 Отобразится список событий, как показано ниже:
 
-[![Снимок экрана примера приложения, отображение три события календаря](calendar-images/12-events.png)](calendar-images/12-events.png)
+[![Снимок экрана примера приложения, отображение три события календаря](calendar-images/12-events.png)](calendar-images/12-events.png#lightbox)
 
 
-<a name="Adding_a_Calendar_Event" />
 
 ## <a name="adding-a-calendar-event"></a>Добавление события календаря
 
@@ -280,11 +274,11 @@ long GetDateTimeMS (int yr, int month, int day, int hr, int min)
 
 Если добавить кнопку к списку событий пользовательского интерфейса и выполнить приведенный выше код обработчика события щелчка кнопки, событие добавляется к календарю и изменить в наш список, как показано ниже:
 
-[![Снимок экрана примера приложения с следуют кнопки Добавить событие выборки событий календаря](calendar-images/13.png)](calendar-images/13.png)
+[![Снимок экрана примера приложения с следуют кнопки Добавить событие выборки событий календаря](calendar-images/13.png)](calendar-images/13.png#lightbox)
 
 Если мы откройте приложение "Календарь", затем будет видно, что событие записывается существует также:
 
-[![Снимок экрана: Отображение выбранного события календаря приложения календаря](calendar-images/14.png)](calendar-images/14.png)
+[![Снимок экрана: Отображение выбранного события календаря приложения календаря](calendar-images/14.png)](calendar-images/14.png#lightbox)
 
 Как видите, Android доступ эффективна и проста для получения и сохранения данных календаря, позволяя приложениям легко интегрировать возможности календаря.
 

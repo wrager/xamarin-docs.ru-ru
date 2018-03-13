@@ -3,16 +3,16 @@ title: "Развертывание и тестирование"
 description: "Руководства по стабилизации и развертыванию"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 92B35AB1-7AB7-3D3B-DB31-CC971E0B43AE
+ms.assetid: 2DBF3BF9-79E7-4E24-AF26-E34C972B0169
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 0c152c389a6aa62512882863cd2830b436587475
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f051e855c9d32f5c9667dc70c7cb9cf9ba8105fb
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="deployment-and-testing"></a>Развертывание и тестирование
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/27/2018
 
 В этой статье последовательно описываются этапы использования средства Apple Instruments для диагностики проблем с памятью в приложении iOS, созданном с помощью Xamarin. В ней описывается запуск Instruments, создание мгновенного снимка кучи и анализ роста памяти. В статье также показано, как использовать Instruments для отображения и определения именно тех строк кода, которые приводят к возникновению проблем с памятью.
 
-##  <a name="linking-on-ioslinkermd"></a>[Linking on Android](linker.md) (Компоновка в iOS)
+##  <a name="linking-on-ioslinkermd"></a>[Компоновка в iOS](linker.md)
 
 В статье описано, как компоновщик обеспечивает минимальный пакет приложений, а также приведены рекомендации по его использованию и изменению параметров.
 

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 3d5b4b0d3e6e9388906efa3bff2db0ea38fa8605
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9c6bbf27d4c8227d96e372e91e1ccf2c9e841ff8
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-navigation-controllers"></a>Работа с контроллерами навигации
 
@@ -20,7 +20,7 @@ _В этой статье описывается проектирование и
 
 Можно добавить панели навигации в верхней части представления для отображения заголовка и необязательный кнопок панели навигации. Обычно они используются, когда пользователь переходит из главной странице в табличном представлении, коллекции или меню, чтобы вложенное представление, подробными сведениями выбранного элемента.
 
-[ ![](navigation-bars-images/navbar01.png "Пример панели навигации")](navigation-bars-images/navbar01.png)
+[![](navigation-bars-images/navbar01.png "Пример панели навигации")](navigation-bars-images/navbar01.png#lightbox)
 
 В дополнение к заголовку (которое отображается в центре) панелей навигации может содержать один или несколько кнопок панели навигации (`UIBarButtonItem`) в левой и правой стороны панели.
 
@@ -42,16 +42,16 @@ _В этой статье описывается проектирование и
 1. В **Pad решения**, дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
 1. Перетащите **панель навигации** из **элементов** и поместите его в представлении в верхней части экрана: 
 
-    [ ![](navigation-bars-images/navbar02.png "Панель навигации")](navigation-bars-images/navbar02.png)
+    [![](navigation-bars-images/navbar02.png "Панель навигации")](navigation-bars-images/navbar02.png#lightbox)
 1. Дважды щелкните **панель навигации** для **элемент навигации**. В **мини-приложение** вкладке **панель свойств**, можно задать **заголовок**: 
 
-    [ ![](navigation-bars-images/navbar03.png "Задание заголовка")](navigation-bars-images/navbar03.png)
+    [![](navigation-bars-images/navbar03.png "Задание заголовка")](navigation-bars-images/navbar03.png#lightbox)
 1. Затем можно добавить один или несколько **элементы кнопки панели** либо конца строке: 
 
-    [ ![](navigation-bars-images/navbar04.png "На линейчатой элемент кнопки")](navigation-bars-images/navbar04.png)
+    [![](navigation-bars-images/navbar04.png "На линейчатой элемент кнопки")](navigation-bars-images/navbar04.png#lightbox)
 1. Наконец, доступ к сети **элементы кнопки панели** на действия в **событий** вкладке **свойства обозревателя**: 
 
-    [ ![](navigation-bars-images/navbar05.png "На линейчатой действие элемента кнопки")](navigation-bars-images/navbar05.png)
+    [![](navigation-bars-images/navbar05.png "На линейчатой действие элемента кнопки")](navigation-bars-images/navbar05.png#lightbox)
 1. Сохраните изменения.
 
 
@@ -61,16 +61,16 @@ _В этой статье описывается проектирование и
 1. В **обозревателе решений**, дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
 1. Перетащите **панель навигации** из **элементов** и поместите его в представлении в верхней части экрана: 
 
-    [ ![](navigation-bars-images/navbar02-vs.png "Панель навигации")](navigation-bars-images/navbar02-vs.png)
+    [![](navigation-bars-images/navbar02-vs.png "Панель навигации")](navigation-bars-images/navbar02-vs.png#lightbox)
 1. Дважды щелкните **панель навигации** для **элемент навигации**. В **мини-приложение** вкладке **свойства обозревателя**, можно задать **заголовок**: 
 
-    [ ![](navigation-bars-images/navbar03-vs.png "Задание заголовка")](navigation-bars-images/navbar03-vs.png)
+    [![](navigation-bars-images/navbar03-vs.png "Задание заголовка")](navigation-bars-images/navbar03-vs.png#lightbox)
 1. Затем можно добавить один или несколько **элементы кнопки панели** либо конца строке: 
 
-    [ ![](navigation-bars-images/navbar04-vs.png "На линейчатой элементов кнопки")](navigation-bars-images/navbar04-vs.png)
+    [![](navigation-bars-images/navbar04-vs.png "На линейчатой элементов кнопки")](navigation-bars-images/navbar04-vs.png#lightbox)
 1. Наконец, доступ к сети **элементы кнопки панели** на действия в **событий** вкладке **свойства обозревателя**: 
 
-    [ ![](navigation-bars-images/navbar05-vs.png "На линейчатой действия кнопок элемента")](navigation-bars-images/navbar05-vs.png)
+    [![](navigation-bars-images/navbar05-vs.png "На линейчатой действия кнопок элемента")](navigation-bars-images/navbar05-vs.png#lightbox)
 1. Сохраните изменения.
 
 

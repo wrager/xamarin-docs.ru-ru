@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 12/05/2017
-ms.openlocfilehash: f7e511d7f0a933ab7f29369e5e5f0aa46607c8f8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c423c9bf49c735673793f8e61134f7e705816d54
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="installation"></a>Установка
 
@@ -55,19 +55,19 @@ watchOS 1 первоначально требуется OS X Yosemite (10.10) с
 
 1. Если у вас нет существующего проекта, сначала выберите **файл > новое решение** и создать приложение iOS (например, **одно представление приложение**):
 
-    [ ![](installation-images/cycle8-2-sml.png "Выберите Файл > новое решение и создания приложения iOS")](installation-images/cycle8-2.png)
+    [![](installation-images/cycle8-2-sml.png "Выберите Файл > новое решение и создания приложения iOS")](installation-images/cycle8-2.png#lightbox)
 
 2. После создания приложения iOS (или вы планируете использовать существующие приложения iOS), щелкните правой кнопкой мыши решение и выберите **Добавить > Добавить новый проект...** . В **новый проект** выберите **watchOS > приложения > приложения WatchKit**:
 
-    [ ![](installation-images/cycle8-6-sml.png "Выберите watchOS > приложения > WatchKit приложения")](installation-images/cycle8-6.png)
+    [![](installation-images/cycle8-6-sml.png "Выберите watchOS > приложения > WatchKit приложения")](installation-images/cycle8-6.png#lightbox)
 
 3. Следующий экран позволяет выбрать, какой проект приложения iOS должно включать Контрольное значение приложении:
 
-    [ ![](installation-images/cycle8-7-sml.png "Выбрать, какой проект приложения iOS следует включать приложение watch")](installation-images/cycle8-7.png)
+    [![](installation-images/cycle8-7-sml.png "Выбрать, какой проект приложения iOS следует включать приложение watch")](installation-images/cycle8-7.png#lightbox)
 
 4. Наконец, выберите расположение для сохранения проекта (и при необходимости включить систему управления версиями):
 
-    [ ![](installation-images/cycle8-8-sml.png "Выберите расположение для сохранения проекта")](installation-images/cycle8-8.png)
+    [![](installation-images/cycle8-8-sml.png "Выберите расположение для сохранения проекта")](installation-images/cycle8-8.png#lightbox)
 
 5. Visual Studio для Mac автоматически настраивает [ссылки на проект и **Info.plist** параметры](~/ios/watchos/get-started/project-references.md) для вас.
 
@@ -81,11 +81,11 @@ watchOS 1 первоначально требуется OS X Yosemite (10.10) с
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![](installation-images/iosdesigner-sml.png "Раскадровка в конструкторе")](installation-images/iosdesigner.png)
+[![](installation-images/iosdesigner-sml.png "Раскадровка в конструкторе")](installation-images/iosdesigner.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![](installation-images/iosdesigner-sml-vs.png "Раскадровка в конструкторе")](installation-images/iosdesigner-vs.png)
+[![](installation-images/iosdesigner-sml-vs.png "Раскадровка в конструкторе")](installation-images/iosdesigner-vs.png#lightbox)
 
 -----
 
@@ -152,7 +152,7 @@ watchOS 1 первоначально требуется OS X Yosemite (10.10) с
 После установки Xcode 8 (или более поздней версии), Apple Watch симуляторов отделены от операций ввода-вывода симуляторов (в отличие от [Xcode 6](#xcode6), где бы они были указаны как *внешний дисплей*).
 При выборе проекта приложения контрольных значений и сделайте его запускаемым проектом, в симуляторе списке будет отображаться *iOS симуляторов* для выбора (как показано ниже).
 
-[ ![](installation-images/xs-xcode8-watchos3-sml.png "Выбор типа симулятора")](installation-images/xs-xcode8-watchos3.png)
+[![](installation-images/xs-xcode8-watchos3-sml.png "Выбор типа симулятора")](installation-images/xs-xcode8-watchos3.png#lightbox)
 
 При запуске отладки, *два* симуляторов должна начинаться - симулятор iOS *и* имитатор Apple Watch. Используйте **команда + Shift + H** перейти к меню и часами циферблате; и использовать **оборудования** меню, чтобы задать **давление Touch Force**. Прокрутки на мыши или сенсорной панели имитировать с помощью цифровых Главная.
 
@@ -195,13 +195,13 @@ Visual Studio для Mac можно запустить приложение Ко
 Правой кнопкой мыши проект приложения контрольных значений и выберите команду **запуска с > настраиваемой конфигурации...** :
 
 
-[![](installation-images/runwith-customparams-sml.png "Выполнение настраиваемой конфигурации")](installation-images/runwith-customparams.png)
+[![](installation-images/runwith-customparams-sml.png "Выполнение настраиваемой конфигурации")](installation-images/runwith-customparams.png#lightbox)
 
 
 Откроется **пользовательские параметры** окно, в котором можно выбрать **уведомления** (и предоставляют полезные данные JSON), нажмите клавишу **запуска** для запуска наблюдения за приложения в симуляторе:
 
 
-[![](installation-images/runwith-execargs-sml.png "Настройка уведомлений и полезных данных")](installation-images/runwith-execargs.png)
+[![](installation-images/runwith-execargs-sml.png "Настройка уведомлений и полезных данных")](installation-images/runwith-execargs.png#lightbox)
 
 
 

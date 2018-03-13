@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 1cc74fb30e59ecd5f6be3cf3e1c84f60cd5ca0a6
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 1fba2219a10a83043097d1b5ca6fb293de4d6c70
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="source-lists"></a>Списки источника
 
@@ -22,7 +22,7 @@ _В этой статье рассматривается работа со сп�
 
 Список источников — это специальный тип представления структуры используются для отображения исходного действия, например на боковой панели поиска или iTunes.
 
-[ ![](source-list-images/source05.png "Пример исходного списка")](source-list-images/source05.png)
+[![](source-list-images/source05.png "Пример исходного списка")](source-list-images/source05.png#lightbox)
 
 В этой статье мы обсудим основы работы со списками источника в приложении Xamarin.Mac. Настоятельно рекомендуется работать через [Hello, Mac](~/mac/get-started/hello-mac.md) статью, во-первых, в частности [введение в Xcode и интерфейс построителя](~/mac/get-started/hello-mac.md#Introduction_to_Xcode_and_Interface_Builder) и [выходов и действия](~/mac/get-started/hello-mac.md#Outlets_and_Actions) разделы, как он охватывает основные принципы и методы, которые будут использоваться в этой статье.
 
@@ -50,7 +50,7 @@ _В этой статье рассматривается работа со сп�
 
 Во-первых давайте создадим новый `SourceListItem` класса для хранения данных исходного списка. В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите **добавить** > **новый файл...** Выберите **Общие** > **пустым классом**, введите `SourceListItem` для **имя** и нажмите кнопку **New** кнопки:
 
-[ ![](source-list-images/source01.png "Добавление пустой класс")](source-list-images/source01.png)
+[![](source-list-images/source01.png "Добавление пустой класс")](source-list-images/source01.png#lightbox)
 
 Сделать `SourceListItem.cs` внешний файл следующим образом: 
 
@@ -532,19 +532,19 @@ namespace MacOutlines
 
 Теперь давайте создадим наш список источников в построителе интерфейса. Дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования в построителе интерфейс и перетащите разделенное представление из **инспектора библиотеки**, добавьте его к контроллеру представления и задайте его для изменения размера с помощью представления в **Редактор ограничений** :
 
-[ ![](source-list-images/source00.png "Изменение ограничений")](source-list-images/source00.png)
+[![](source-list-images/source00.png "Изменение ограничений")](source-list-images/source00.png#lightbox)
 
 Затем перетащите поле из списка источник **инспектора библиотеки**, добавьте его в левой части разделенного представления и задайте его для изменения размера с помощью представления в **Редактор ограничений**:
 
-[ ![](source-list-images/source02.png "Изменение ограничений")](source-list-images/source02.png)
+[![](source-list-images/source02.png "Изменение ограничений")](source-list-images/source02.png#lightbox)
 
 Теперь, переключитесь в **представление удостоверений**, выберите список источников и измените его на **класса** для `SourceListView`:
 
-[ ![](source-list-images/source03.png "Задание имени класса")](source-list-images/source03.png)
+[![](source-list-images/source03.png "Задание имени класса")](source-list-images/source03.png#lightbox)
 
 Наконец, создайте **розетки** наш список источников, вызываемых `SourceList` в `ViewController.h` файла:
 
-[ ![](source-list-images/source04.png "Настройка выхода")](source-list-images/source04.png)
+[![](source-list-images/source04.png "Настройка выхода")](source-list-images/source04.png#lightbox)
 
 Сохранить изменения и вернуться в Visual Studio для Mac для синхронизации с Xcode.
 
@@ -614,7 +614,7 @@ public override void DidFinishLaunching (NSNotification notification)
 
 Если мы запустим приложение, ниже будет отображаться:
 
-[ ![](source-list-images/source05.png "Запустите пример приложения")](source-list-images/source05.png)
+[![](source-list-images/source05.png "Запустите пример приложения")](source-list-images/source05.png#lightbox)
 
 <a name="Summary" />
 
@@ -628,7 +628,7 @@ public override void DidFinishLaunching (NSNotification notification)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Представления таблиц](~/mac/user-interface/table-view.md)
 - [Представления структур](~/mac/user-interface/outline-view.md)
-- [Рекомендации по интерфейсу отдела OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
+- [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
 - [Введение в режиме структуры](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/OutlineView/OutlineView.html#//apple_ref/doc/uid/10000023i)
 - [NSOutlineView](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSOutlineView_Class/index.html#//apple_ref/doc/uid/TP40004079)
 - [NSOutlineViewDataSource](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Protocols/NSOutlineViewDataSource_Protocol/index.html#//apple_ref/doc/uid/TP40004175)

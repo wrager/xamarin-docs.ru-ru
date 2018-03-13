@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: d37c2c9dbb12668680b5813e9e083d2ebb184c66
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
-ms.translationtype: HT
+ms.openlocfilehash: b0d871068f42a03b2aba3c1482a9236b19fe0db9
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="custom-video-transport-controls"></a>Элементы управления пользовательского транспорта видео
 
@@ -646,11 +646,11 @@ namespace VideoPlayerDemos
 
 Поскольку `AutoPlay` задано значение `false` в **CustomTransport.xaml** файл, вам потребуется нажать **воспроизведение** когда он становится доступным для начала видео. Кнопки определены, чтобы их эквиваленты текст сопровождаются символов Юникода, описанных выше. Кнопки имеют согласованного внешнего вида для каждой платформы, при воспроизведении видео:
 
-[![Пользовательский транспорт воспроизведение](custom-transport-images/customtransportplaying-small.png "воспроизведение пользовательский транспорт")](custom-transport-images/customtransportplaying-large.png "воспроизведение пользовательского транспорта")
+[![Пользовательский транспорт воспроизведение](custom-transport-images/customtransportplaying-small.png "воспроизведение пользовательский транспорт")](custom-transport-images/customtransportplaying-large.png#lightbox "воспроизведение пользовательского транспорта")
 
 Но на Android и UWP **воспроизведение** кнопка выглядит очень по-разному при приостановке видео:
 
-[![Пользовательский транспорт приостановлена](custom-transport-images/customtransportpaused-small.png "приостановлена пользовательский транспорт")](custom-transport-images/customtransportpaused-large.png "пользовательский транспорт приостановлена")
+[![Пользовательский транспорт приостановлена](custom-transport-images/customtransportpaused-small.png "приостановлена пользовательский транспорт")](custom-transport-images/customtransportpaused-large.png#lightbox "пользовательский транспорт приостановлена")
 
 В реальном приложении вы вероятно, захотите использовать свои собственные образы растрового изображения для кнопок для достижения визуальное единообразие.
 

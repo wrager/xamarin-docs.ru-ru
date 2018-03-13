@@ -1,122 +1,78 @@
 ---
 title: "Xamarin.Forms страниц"
-description: "Xamarin.Forms страницы представляют экраны кросс платформенные мобильные приложения."
+description: "Xamarin.Forms страницы представляют экраны кросс платформенных мобильных приложений."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: F2A02DEE-7137-42F4-9C0A-4E1CF75EA08F
+ms.assetid: 9C8C710F-E312-420B-9324-A7A20CEDB7EC
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/12/2016
-ms.openlocfilehash: 35822dbbb7d5694e7f1f0a3f35f10df404206af9
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 5f979d2dbb894107d8d606ec1f41de44c294cdd3
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="xamarinforms-pages"></a>Xamarin.Forms страниц
 
-_Xamarin.Forms страницы представляют экраны кросс платформенные мобильные приложения._
+_Xamarin.Forms страницы представляют экраны кросс платформенных мобильных приложений._
 
-<style>.tableimg {Максимальная ширина: нет! важные;}</style>
+Все типы страниц, которые описаны ниже, являются производными от Xamarin.Forms [ `Page` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/) класса. Эти визуальные элементы занимают все или большинство экрана. Объект `Page` представляет `ViewController` в iOS и `Page` в универсальной платформы Windows. На Android, каждая страница занимает экран, подобный `Activity`, но страницы Xamarin.Forms *не* `Activity` объектов.
+
+[ ![](pages-images/pages-sml.png "Типы страниц Xamarin.Forms")](pages-images/pages.png#lightbox "типы Xamarin.Forms страницы")
 
 ## <a name="pages"></a>Число страниц
 
-[ `Page` ](http://iosapi.xamarin.com/?link=T%3aXamarin.Forms.Page) Класс является визуальный элемент, который занимает большинство или все части экрана и содержит один из дочерних элементов. Объект `Xamarin.Forms.Page` представляет представление-контроллер в iOS или на странице в Windows Phone. В Android требует каждой страницы на экран как действия, но страницы Xamarin.Forms *не* действий.
+Xamarin.Forms поддерживает следующие типы страниц:
 
- [ ![](pages-images/pages-sml.png "Типы страниц Xamarin.Forms")](pages-images/pages.png "типы Xamarin.Forms страницы")
+<a name="contentPage" />
 
-<br clear="all" />
+### <a name="contentpage"></a>ContentPage
 
-Поддерживает Xamarin.Forms:
+|     |     | 
+| --- | --- | 
+| [`ContentPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) является простейшим и наиболее распространенным типом страницы. Задать [ `Content` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ContentPage.Content/) свойства должен быть единственным [ `View` ](views.md) объекта, который является наиболее часто [ `Layout` ](layouts.md) например [ `StackLayout` ](layouts.md#stackLayout), [ `Grid` ](layouts.md#grid), или [ `ScrollView` ](layouts.md#scrollView).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) | [![Пример ContentPage](pages-images/ContentPage.png "пример ContentPage")](pages-images/ContentPage-Large.png#lightbox "ContentPage пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ContentPageDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ContentPageDemoPage.xaml) |
+|     |     |
 
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-  <tr>
-  <thead>
-    <th>
-      <strong>Тип</strong>
-    </th>
-    <th>
-      <strong>Описание</strong>
-    </th>
-    <th style="min-width:400px">
-      <strong>Screenshot</strong>
-    </th>
-  </thead></tr>
-  <tbody>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/">ContentPage</a>
-    </td>
-    <td align="center" valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/">ContentPage</a> отображается одна <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.View/">представление</a>, часто контейнере, такие как <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/">StackLayout</a> или <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/">ScrollView</a>.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/ContentPageDemoPage.cs"><img src="pages-images/ContentPage.png" title="Пример ContentPage" class="tableimg">
-    </a></td>
-  </tr><tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/">MasterDetailPage</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Page/">страницы</a> , управляющий двух областей данных.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/MasterDetailPageDemoPage.cs"><img src="pages-images/MasterDetailPage.png" title="Пример MasterDetailPage" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/">NavigationPage</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Page/">страницы</a> , управляющий навигацию и взаимодействие с пользователем стека из других страниц.  
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/NavigationPageDemoPage.cs"><img src="pages-images/NavigationPage.png" title="Пример NavigationPage" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.TabbedPage/">TabbedPage</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Page/">страницы</a> , позволяет осуществлять навигацию между дочерних страниц с использованием вкладок.
-    </td>
-    <td>
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/TabbedPageDemoPage.cs"><img src="pages-images/TabbedPage.png" title="Пример TabbedPage" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.TemplatedPage/">TemplatedPage</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Page/">страницы</a> отображения содержимого на весь экран с помощью шаблона элемента управления и базовый класс для <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/">ContentPage</a>.
-    </td>
-    <td valign="top">
-    <a href="https://github.com/xamarin/xamarin-forms-samples/tree/master/Templates/ControlTemplates/"><img src="pages-images/TemplatedPage.png" title="Пример TemplatedPage" class="tableimg">
-    </a></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/">CarouselPage</a>
-    </td>
-    <td valign="top">
-Объект <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Page/">страницы</a> позволяя жесты проведите между вложенные страницы, такие как коллекции.
-    </td>
-    <td valign="top">
-    <a href="https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CarouselPageDemoPage.cs"><img src="pages-images/CarouselPage.png" title="Пример CarouselPage" class="tableimg">
-    </a></td>
-  </tr>
-  </tbody>
-</table>
+### <a name="masterdetailpage"></a>MasterDetailPage
 
+|     |     | 
+| --- | --- | 
+| Объект [ `MasterDetailPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/) управляет двумя областей данных. Задать [ `Master` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.Master/) свойство страницу, обычно отображаются в списке или меню. Задать [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.Detail/) свойство на странице отображается выбранный элемент из главной страницы. [ `IsPresented` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.IsPresented/) Регулирует ли страница основной или подробности.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/) / [руководство](~/xamarin-forms/app-fundamentals/navigation/master-detail-page.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/Navigation/MasterDetailPage/) | [![Пример MasterDetailPage](pages-images/MasterDetailPage.png "пример MasterDetailPage")](pages-images/MasterDetailPage-Large.png#lightbox "MasterDetailPage пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/MasterDetailPageDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/MasterDetailPageDemoPage.xaml) с [кода](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/MasterDetailPageDemoPage.xaml.cs) |
+|     |     |
 
+### <a name="navigationpage"></a>NavigationPage
+
+|     |     | 
+| --- | --- | 
+| [ `NavigationPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) Управляет навигацию между другие страницы, использующие архитектуру на основе стека. При использовании навигацию по страницам в приложении, домашней страницы экземпляра должны быть переданы в конструктор `NavigationPage` объекта.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) / [руководство](~/xamarin-forms/app-fundamentals/navigation/hierarchical.md) / [пример 1](https://developer.xamarin.com/samples/xamarin-forms/Navigation/Hierarchical/), [2](https://developer.xamarin.com/samples/xamarin-forms/Navigation/PassingData/), и [3](https://developer.xamarin.com/samples/xamarin-forms/Navigation/LoginFlow/)  | [![Пример NavigationPage](pages-images/NavigationPage.png "пример NavigationPage")](pages-images/NavigationPage-Large.png#lightbox "NavigationPage пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/NavigationPageDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/NavigationPageDemoPage.xaml) с [код = за](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/NavigationPageDemoPage.xaml.cs) |
+|     |     |
+
+### <a name="tabbedpage"></a>TabbedPage
+
+|     |     | 
+| --- | --- | 
+| [`TabbedPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.TabbedPage/) является производным от абстрактного [ `MultiPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MultiPage%3CT%3E/) класса и позволяет навигацию между дочерней страницы с помощью вкладок. Задать [ `Children` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%3CT%3E.Children/) коллекция страниц или набора [ `ItemsSource` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%3CT%3E.ItemsSource/) коллекция объектов данных и [ `ItemTemplate` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%3CT%3E.ItemTemplate/) свойства [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/) описывающее как визуально представить каждого объекта.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.TabbedPage/) / [руководство](~/xamarin-forms/app-fundamentals/navigation/tabbed-page.md) / [пример 1](https://developer.xamarin.com/samples/xamarin-forms/Navigation/TabbedPage/) и [2](https://developer.xamarin.com/samples/xamarin-forms/Navigation/TabbedPageWithNavigationPage) | [![Пример TabbedPage](pages-images/TabbedPage.png "пример TabbedPage")](pages-images/TabbedPage-Large.png#lightbox "TabbedPage пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/TabbedPageDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/TabbedPageDemoPage.xaml) |
+|     |     |
+
+### <a name="carouselpage"></a>CarouselPage
+
+|     |     | 
+| --- | --- | 
+| [`CarouselPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) является производным от абстрактного [ `MultiPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MultiPage%3CT%3E/) класса и позволяет навигацию между дочерней страницы посредством считывания пальцем. Задать [ `Children` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%3CT%3E.Children/) свойство в коллекцию [ `ContentPage` ](#contentPage) объектов или набор [ `ItemsSource` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%3CT%3E.ItemsSource/) коллекция объектов данных и [ `ItemTemplate` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%3CT%3E.ItemTemplate/) свойства [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/) описывающее как визуально представить каждого объекта.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) / [руководство](~/xamarin-forms/app-fundamentals/navigation/carousel-page.md) / [пример 1](https://developer.xamarin.com/samples/xamarin-forms/Navigation/CarouselPage/) и [2](https://developer.xamarin.com/samples/xamarin-forms/Navigation/CarouselPageTemplate/) | [![Пример CarouselPage](pages-images/CarouselPage.png "пример CarouselPage")](pages-images/CarouselPage-Large.png#lightbox "CarouselPage пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/CarouselPageDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/CarouselPageDemoPage.xaml) |
+|     |     |
+
+### <a name="templatedpage"></a>TemplatedPage
+
+|     |     | 
+| --- | --- | 
+| [`TemplatedPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.TemplatedPage/) Отображает содержимое полноэкранном режиме с помощью шаблона элемента управления и является базовым классом для [ `ContentPage` ](#contentPage).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.TemplatedPage/) / [руководства](~/xamarin-forms/app-fundamentals/templates/control-templates/index.md) | [![Пример TemplatedPage](pages-images/TemplatedPage.png "пример TemplatedPage")](pages-images/TemplatedPage.png "TemplatedPage пример") |
+|     |     |
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Введение в Xamarin.Forms](~/xamarin-forms/get-started/introduction-to-xamarin-forms.md)
-- [Коллекция Xamarin.Forms (пример)](https://developer.xamarin.com/samples/FormsGallery/)
-- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/tag/Xamarin.Forms/)
-- [Документация по API-интерфейса Xamarin.Forms](http://iosapi.xamarin.com/?link=N%3aXamarin.Forms)
+- [Образец Xamarin.Forms FormsGallery](https://developer.xamarin.com/samples/FormsGallery/)
+- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/xamarin-forms/all/)
+- [Документация по API-интерфейса Xamarin.Forms](https://developer.xamarin.com/api/root/Xamarin.Forms/)

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: bf9d292acf43bbbe3e4ba76b5a264a11288b7225
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 732f60a413077bc15018679fe8f8bc0a18227246
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-architecture"></a>Архитектура iOS
 
@@ -20,7 +20,7 @@ Xamarin.iOS приложения выполняются в среде Mono и и
 
 На схеме ниже показан общий обзор этой архитектуры:
 
-[ ![](architecture-images/ios-arch-small.png "На этой диаграмме показаны общий обзор архитектуры компиляции вперед от времени (AOT)")](architecture-images/ios-arch.png)
+[ ![](architecture-images/ios-arch-small.png "На этой диаграмме показаны общий обзор архитектуры компиляции вперед от времени (AOT)")](architecture-images/ios-arch.png#lightbox)
 
 ## <a name="native-and-managed-code-an-explanation"></a>Машинного и управляемого кода: описание
 
@@ -36,7 +36,7 @@ Xamarin.iOS приложения выполняются в среде Mono и и
 Однако есть ограничения безопасности на iOS, заданные Apple, который запрещает выполнение динамически создаваемый код на устройстве.
 Чтобы убедиться, что придерживаться эти протоколы безопасности, Xamarin.iOS вместо использует вперед от времени АОТ компилятора для компиляции управляемого кода. В результате получается машинным кодом iOS двоичных данных, при необходимости оптимизирован с LLVM для устройств, которые могут быть развернуты на процессоре ARM под управлением Apple. Ниже показана грубой схемы как это сочетается друг с другом.
 
-[ ![](architecture-images/aot.png "Как это сочетается друг с другом грубой схемы")](architecture-images/aot-large.png)
+[![](architecture-images/aot.png "Как это сочетается друг с другом грубой схемы")](architecture-images/aot-large.png#lightbox)
 
 Использование AOT имеет ряд ограничений, которые подробно описаны в [ограничения](~/ios/internals/limitations.md) руководства. Он также предоставляет ряд улучшений за JIT через уменьшение времени запуска и различные оптимизации производительности
 
@@ -101,7 +101,7 @@ Xamarin.iOS приложения выполняются в среде Mono и и
 
 - **Статические регистраторов** — статический регистратора приводит к возникновению ошибки кода Objective-C во время построения, который затем компилируется в статическую библиотеку и связанных в исполняемый файл. Это позволяет для быстрого запуска, но занимает больше времени, во время построения. Используется по умолчанию для сборок устройств. Статические регистратора может использоваться с iOS simulator, передав `--registrar:static` как `mtouch` атрибута в параметры сборки проекта, как показано ниже:
 
-    [ ![](architecture-images/image1.png "Настройка дополнительных mtouch аргументов")](architecture-images/image1.png)
+    [![](architecture-images/image1.png "Настройка дополнительных mtouch аргументов")](architecture-images/image1.png#lightbox)
 
 Дополнительные сведения об особенностях iOS регистрация типа системы, используемой Xamarin.iOS посвящены [тип регистратора](~/ios/internals/registrar.md) руководства.
 
@@ -179,7 +179,7 @@ public interface UIToolbar : UIBarPositioning {
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Ограничения](~/ios/internals/limitations.md)
-- [Привязка Objective c.](~/cross-platform/macios/binding/overview.md)
+- [Привязка Objective-C](~/cross-platform/macios/binding/overview.md)
 - [Селекторы Objective c.](~/ios/internals/objective-c-selectors.md)
 - [Тип регистратора](~/ios/internals/registrar.md)
-- [Linker](~/ios/deploy-test/linker.md)
+- [Компоновщик](~/ios/deploy-test/linker.md)

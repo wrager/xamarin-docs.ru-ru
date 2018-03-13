@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: dddd1ad4ae70b97f17ba71a7e96b553759e35695
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5fcb41f4f60adc8ca5be761c2b9a7449387a89d0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="registering-applications-to-run-in-the-background"></a>Регистрация приложений для работы в фоновом режиме
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/27/2018
 
 Приложения могут быть зарегистрированы, задав **необходимые фоновые режимы** свойству в приложении *Info.plist*. Приложение может зарегистрировать в столько категорий, сколько требуется.
 
- [ ![](registering-applications-to-run-in-background-images/bgmodes.png "Задание фоновых режимов")](registering-applications-to-run-in-background-images/bgmodes.png)
+ [![](registering-applications-to-run-in-background-images/bgmodes.png "Задание фоновых режимов")](registering-applications-to-run-in-background-images/bgmodes.png#lightbox)
 
 Пошаговые инструкции по регистрации приложения для обновления расположения в фоновом режиме, в разделе [Пошаговое руководство расположение фонового](~/ios/app-fundamentals/backgrounding/ios-backgrounding-walkthroughs/location-walkthrough.md).
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 02/27/2018
 
 Другое свойство, которое может быть установлено в *Info.plist* — *приложение не выполняется в фоновом режиме*, или `UIApplicationExitsOnSuspend` свойства:
 
- [ ![](registering-applications-to-run-in-background-images/plist.png "Отключение фона под управлением")](registering-applications-to-run-in-background-images/plist.png)
+ [![](registering-applications-to-run-in-background-images/plist.png "Отключение фона под управлением")](registering-applications-to-run-in-background-images/plist.png#lightbox)
 
 Это действует точно так же, как и настройка параметра фоновое обновление приложения отключен в iOS 7 +, за исключением того, его можно изменить только со стороны разработчика и доступна для операций ввода-вывода 4 и более поздних версий. Приложение будет приостановлен немедленно после ее ввода в фоновом режиме и не смогут выполнять обработку.
 

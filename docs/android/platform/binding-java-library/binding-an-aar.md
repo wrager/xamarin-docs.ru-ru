@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 92cacd7ca5ff52a2bfe9060f47332b57d637609e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ae209f8099925cc160e16cb5365625e48e6c384d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="binding-an-aar"></a>Привязка. AAR
 
@@ -35,7 +35,6 @@ _Это пошаговое руководство содержит пошаго�
 > [!IMPORTANT]
 > Проект привязки могут содержать только один. AAR-файл. Если. AAR зависимостей от других. AAR, а затем эти зависимости необходимо содержащихся в отдельном проекте привязки и затем ссылаться на него. В разделе [ошибки 44573](https://bugzilla.xamarin.com/show_bug.cgi?id=44573).
 
-<a name="walkthrough" />
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
@@ -72,12 +71,11 @@ public class TextCounter
 
 Кроме того, приложение из этого примера будет извлекать и отображать ресурс изображения, содержащийся в **textanalyzer.aar**:
 
-[ ![Изображение monkey Xamarin](binding-an-aar-images/00-monkey-sml.png)](binding-an-aar-images/00-monkey.png)
+[![Изображение monkey Xamarin](binding-an-aar-images/00-monkey-sml.png)](binding-an-aar-images/00-monkey.png#lightbox)
 
 Этот ресурс изображения находится в **res/drawable/monkey.png** в **textanalyzer.aar**.
 
 
-<a name="creating" />
 
 ### <a name="creating-the-bindings-library"></a>Создание библиотеки привязок
 
@@ -85,36 +83,35 @@ public class TextCounter
 
 1.  Создайте новый проект библиотеки привязок, начиная с библиотеки Android привязок шаблонов. Можно использовать Visual Studio для Mac или Visual Studio (на снимке экрана ниже Показать Visual Studio, но очень похожа Visual Studio для Mac). Присвойте решению имя **AarBinding**:
 
-    [ ![Создание проекта AarBindings](binding-an-aar-images/01-new-bindings-library-vs-sml.png)](binding-an-aar-images/01-new-bindings-library-vs.png)
+    [![Создание проекта AarBindings](binding-an-aar-images/01-new-bindings-library-vs-sml.png)](binding-an-aar-images/01-new-bindings-library-vs.png#lightbox)
 
 2.  Шаблон включает **JAR-файлов** папки, которые добавляются к. AAR(s) на проект библиотеки привязок. Щелкните правой кнопкой мыши **JAR-файлов** папку и выберите **Добавить > существующий элемент**:
 
-    [ ![Добавление существующего элемента](binding-an-aar-images/02-add-existing-item-vs-sml.png)](binding-an-aar-images/02-add-existing-item-vs.png)
+    [![Добавление существующего элемента](binding-an-aar-images/02-add-existing-item-vs-sml.png)](binding-an-aar-images/02-add-existing-item-vs.png#lightbox)
 
 
 3.  Перейдите к **textanalyzer.aar** ранее загрузить файл, выберите его и нажмите кнопку **добавить**:
 
-    [ ![Добавить textanalayzer.aar](binding-an-aar-images/03-select-aar-file-vs-sml.png)](binding-an-aar-images/03-select-aar-file-vs.png)
+    [![Добавить textanalayzer.aar](binding-an-aar-images/03-select-aar-file-vs-sml.png)](binding-an-aar-images/03-select-aar-file-vs.png#lightbox)
 
 
 4.  Убедитесь, что **textanalyzer.aar** файл был успешно добавлен в проект:
 
-    [ ![Был добавлен файл textanalyzer.aar](binding-an-aar-images/04-aar-added-vs-sml.png)](binding-an-aar-images/04-aar-added-vs.png)
+    [![Был добавлен файл textanalyzer.aar](binding-an-aar-images/04-aar-added-vs-sml.png)](binding-an-aar-images/04-aar-added-vs.png#lightbox)
 
 5.  Задайте действие построения для **textanalyzer.aar** для `LibraryProjectZip`. Щелкните правой кнопкой мыши в Visual Studio для Mac **textanalyzer.aar** для настройки действия построения. Действие при построении в Visual Studio можно задать в **свойства** области):
 
-    [ ![Указав действия построения textanalyzer.aar LibraryProjectZip](binding-an-aar-images/05-embedded-aar-vs-sml.png)](binding-an-aar-images/05-embedded-aar-vs.png)
+    [![Указав действия построения textanalyzer.aar LibraryProjectZip](binding-an-aar-images/05-embedded-aar-vs-sml.png)](binding-an-aar-images/05-embedded-aar-vs.png#lightbox)
 
 6.  Откройте проект свойства для настройки *требуемой версии .NET Framework*. Если. AAR использует интерфейсы API Android, задать целевую платформу на уровне API. Ожидает AAR. (Дополнительные сведения о параметре целевой платформы и Android API уровней в целом см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md).)
 
     Необходимо задайте конечный уровень API для библиотеки привязок. В этом примере мы, можно использовать последнюю версию платформы уровень API (API уровня 23), поскольку наш **textanalyzer** не с зависимостями от Android API-интерфейсы:
 
-    [ ![Задание целевого уровня API 23](binding-an-aar-images/06-set-target-framework-vs-sml.png)](binding-an-aar-images/06-set-target-framework-vs.png)
+    [![Задание целевого уровня API 23](binding-an-aar-images/06-set-target-framework-vs-sml.png)](binding-an-aar-images/06-set-target-framework-vs.png#lightbox)
 
 7.  Построение библиотеки привязок. Проект библиотеки привязок следует построить успешно и результат. Библиотеки DLL в следующем расположении: **AarBinding/bin/Debug/AarBinding.dll**
 
 
-<a name="using" />
 
 ### <a name="using-the-bindings-library"></a>С помощью библиотеки привязок
 
@@ -122,29 +119,28 @@ public class TextCounter
 
 1.  В том же решении, как библиотека привязок для упрощения в данном пошаговом руководстве мы создаем этого приложения. (Приложения, использующего библиотеку привязки также может располагаться в другом решении.) Создайте новое приложение Xamarin.Android: щелкните правой кнопкой мыши решение и выберите **Добавление нового проекта**. Имя для нового проекта **BindingTest**:
 
-    [ ![Создание нового проекта BindingTest](binding-an-aar-images/07-add-new-project-vs-sml.png)](binding-an-aar-images/07-add-new-project-vs.png)
+    [![Создание нового проекта BindingTest](binding-an-aar-images/07-add-new-project-vs-sml.png)](binding-an-aar-images/07-add-new-project-vs.png#lightbox)
 
 2.  Щелкните правой кнопкой мыши **ссылки** узел **BindingTest** проект и выберите **добавить ссылку...** :
 
-    [ ![Нажмите кнопку Добавить ссылку](binding-an-aar-images/08-add-reference-vs-sml.png)](binding-an-aar-images/08-add-reference-vs.png)
+    [![Нажмите кнопку Добавить ссылку](binding-an-aar-images/08-add-reference-vs-sml.png)](binding-an-aar-images/08-add-reference-vs.png#lightbox)
 
 3.  Выберите **AarBinding** проект, созданный ранее и нажмите кнопку **ОК**:
 
-    [ ![Проверить проект привязки AAR](binding-an-aar-images/09-choose-aar-binding-vs-sml.png)](binding-an-aar-images/09-choose-aar-binding-vs.png)
+    [![Проверить проект привязки AAR](binding-an-aar-images/09-choose-aar-binding-vs-sml.png)](binding-an-aar-images/09-choose-aar-binding-vs.png#lightbox)
 
 4.  Откройте **ссылки** узел **BindingTest** проекта, чтобы убедиться, что **AarBinding** присутствует ссылка:
 
-    [ ![AarBinding находится в списке ссылок](binding-an-aar-images/10-references-shows-aarbinding-vs-sml.png)](binding-an-aar-images/10-references-shows-aarbinding-vs.png)
+    [![AarBinding находится в списке ссылок](binding-an-aar-images/10-references-shows-aarbinding-vs-sml.png)](binding-an-aar-images/10-references-shows-aarbinding-vs.png#lightbox)
 
 
 Если вы хотите просмотреть содержимое библиотеки привязки проекта, можно дважды щелкнуть ссылку, чтобы открыть его в **обозревателя объектов**. Вы увидите содержимое сопоставленной `Com.Xamarin.Textcounter` пространства имен (, полученного из Java `com.xamarin.textanalyzezr` пакета), а также просматривать члены `TextCounter` класса:
 
-[ ![Просмотр обозревателя объектов](binding-an-aar-images/11-object-browser-vs-sml.png)](binding-an-aar-images/11-object-browser-vs.png)
+[![Просмотр обозревателя объектов](binding-an-aar-images/11-object-browser-vs-sml.png)](binding-an-aar-images/11-object-browser-vs.png#lightbox)
 
 Приведенном выше снимке экрана выделяет два `TextAnalyzer` методы, которые будут вызывать примера приложения: `NumConsonants` (который создает оболочку для базовой Java `numConsonants` метод), и `NumVowels` (который создает оболочку для базовой Java `numVowels` метод).
 
 
-<a name="accessing_types" />
 
 ### <a name="accessing-aar-types"></a>Доступ к. Типы AAR
 
@@ -264,12 +260,11 @@ namespace BindingTest
 
 Компиляция и выполнение **BindingTest** проекта. Приложение запускается и представления в левой части экрана ( `EditText` инициализируется некоторый текст, но вы можете коснуться ее, чтобы изменить его). При нажатии элемента **число ГЛАСНЫЕ**, всплывающее уведомление показывает число гласные, как показано в правой части:
 
-[ ![Снимки экрана из работающих BindingTest](binding-an-aar-images/12-count-vowels.png)](binding-an-aar-images/12-count-vowels.png)
+[![Снимки экрана из работающих BindingTest](binding-an-aar-images/12-count-vowels.png)](binding-an-aar-images/12-count-vowels.png#lightbox)
 
 Коснитесь **число СОГЛАСНЫХ** кнопки. Кроме того можно изменить эту строку текста и коснитесь эти кнопки еще раз, чтобы проверить различные гласные и подсчитывает согласных.
 
 
-<a name="accessing_resources" />
 
 ### <a name="accessing-aar-resources"></a>Доступ к. AAR ресурсы
 
@@ -305,13 +300,12 @@ var a = new ArrayAdapter<string>(this, Resource.Layout.row_layout, ...);
 
 Компиляция и выполнение **BindingTest** проекта. Приложение запускается и представления в левой части экрана &ndash; при нажатии элемента **число СОГЛАСНЫХ**, результаты отображаются, как показано в правой части:
 
-[ ![Отображение числа согласный BindingTest](binding-an-aar-images/13-count-consonants.png)](binding-an-aar-images/13-count-consonants.png)
+[![Отображение числа согласный BindingTest](binding-an-aar-images/13-count-consonants.png)](binding-an-aar-images/13-count-consonants.png#lightbox)
 
 
 Поздравляем! Был успешно присоединен библиотеки Java. AAR!
 
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

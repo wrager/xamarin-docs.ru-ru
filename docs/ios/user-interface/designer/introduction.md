@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/31/2018
-ms.openlocfilehash: 3046d779239076098a8b2fb74fc87e2f211074e9
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a2445e49005175f62e4d7cd8aadccb5f596177bf
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-designer-basics"></a>Основные сведения о конструкторе iOS
 
@@ -38,15 +38,15 @@ IOS предоставляется доступ к конструктору в V
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Представление-контроллер в конструкторе iOS](introduction-images/1-storyboardwithviewcontroller-vsmac.png "представление-контроллер в конструкторе iOS")](introduction-images/1-storyboardwithviewcontroller-vsmac-large.png)
+[![Представление-контроллер в конструкторе iOS](introduction-images/1-storyboardwithviewcontroller-vsmac.png "представление-контроллер в конструкторе iOS")](introduction-images/1-storyboardwithviewcontroller-vsmac-large.png#lightbox)
 
-[![Код для контроллера представления](introduction-images/2-viewcontrollercode-vsmac.png "кода для контроллера представления")](introduction-images/2-viewcontrollercode-vsmac-large.png)
+[![Код для контроллера представления](introduction-images/2-viewcontrollercode-vsmac.png "кода для контроллера представления")](introduction-images/2-viewcontrollercode-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Представление-контроллер в конструкторе iOS](introduction-images/1-storyboardwithviewcontroller-vs.png "представление-контроллер в конструкторе iOS")](introduction-images/1-storyboardwithviewcontroller-vs-large.png)
+[![Представление-контроллер в конструкторе iOS](introduction-images/1-storyboardwithviewcontroller-vs.png "представление-контроллер в конструкторе iOS")](introduction-images/1-storyboardwithviewcontroller-vs-large.png#lightbox)
 
-[![Код для контроллера представления](introduction-images/2-viewcontrollercode-vs.png "кода для контроллера представления")](introduction-images/2-viewcontrollercode-vs-large.png)
+[![Код для контроллера представления](introduction-images/2-viewcontrollercode-vs.png "кода для контроллера представления")](introduction-images/2-viewcontrollercode-vs-large.png#lightbox)
 
 -----
 
@@ -54,11 +54,11 @@ IOS предоставляется доступ к конструктору в V
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Представление-контроллер, содержащую кнопку](introduction-images/3-viewcontrollerwithbutton-vsmac.png "представление-контроллер, содержащую кнопку")](introduction-images/3-viewcontrollerwithbutton-vsmac-large.png)
+[![Представление-контроллер, содержащую кнопку](introduction-images/3-viewcontrollerwithbutton-vsmac.png "представление-контроллер, содержащую кнопку")](introduction-images/3-viewcontrollerwithbutton-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Представление-контроллер, содержащую кнопку](introduction-images/3-viewcontrollerwithbutton-vs.png "представление-контроллер, содержащую кнопку")](introduction-images/3-viewcontrollerwithbutton-vs-large.png)
+[![Представление-контроллер, содержащую кнопку](introduction-images/3-viewcontrollerwithbutton-vs.png "представление-контроллер, содержащую кнопку")](introduction-images/3-viewcontrollerwithbutton-vs-large.png#lightbox)
 
 -----
 
@@ -68,13 +68,13 @@ IOS предоставляется доступ к конструктору в V
 
 Для получения доступа и управления кнопки в коде, он должен иметь уникальный идентификатор. Укажите уникальный идентификатор, нажав кнопку, открыв **панель свойств**и параметр его **имя** поле значение, например кнопка '' «Отправить»:
 
-[![Задание имени кнопки в панели свойств](introduction-images/4-settingbuttonname-vsmac.png "кнопки имя параметра в области свойств")](introduction-images/4-settingbuttonname-vsmac-large.png)
+[![Задание имени кнопки в панели свойств](introduction-images/4-settingbuttonname-vsmac.png "кнопки имя параметра в области свойств")](introduction-images/4-settingbuttonname-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Для получения доступа и управления кнопки в коде, он должен иметь уникальный идентификатор. Укажите уникальный идентификатор, нажав кнопку, открыв **окно свойств**и параметр его **имя** поле значение, например кнопка '' «Отправить»:
 
-[![Задание имени кнопки в окне «Свойства»](introduction-images/4-settingbuttonname-vs.png "кнопки имя параметра в окне «Свойства»")](introduction-images/4-settingbuttonname-vs-large.png)
+[![Задание имени кнопки в окне «Свойства»](introduction-images/4-settingbuttonname-vs.png "кнопки имя параметра в окне «Свойства»")](introduction-images/4-settingbuttonname-vs-large.png#lightbox)
 
 -----
 
@@ -84,13 +84,13 @@ IOS предоставляется доступ к конструктору в V
 
 В **Pad решения**, перехода по страницам **ViewController.cs** и щелчке индикатора раскрытие показывают, что представление контроллер `ViewController` диапазонов определение класса двух файлов, каждый из которых содержит [разделяемый класс](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) определение:
 
-[![Два файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs](introduction-images/5-twoviewcontrollerfiles-vsmac.png "двух файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs")](introduction-images/5-twoviewcontrollerfiles-vsmac-large.png)
+[![Два файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs](introduction-images/5-twoviewcontrollerfiles-vsmac.png "двух файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs")](introduction-images/5-twoviewcontrollerfiles-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 В **обозревателе решений**, перехода по страницам **ViewController.cs** и щелчке индикатора раскрытие показывают, что представление контроллер `ViewController` определение класса охватывает двух файлов, каждый из содержащее [разделяемый класс](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) определение:
 
-[![Два файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs](introduction-images/5-twoviewcontrollerfiles-vs.png "двух файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs")](introduction-images/5-twoviewcontrollerfiles-vs-large.png)
+[![Два файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs](introduction-images/5-twoviewcontrollerfiles-vs.png "двух файлов, составляющих класс ViewController: ViewController.cs и ViewController.designer.cs")](introduction-images/5-twoviewcontrollerfiles-vs-large.png#lightbox)
 
 -----
 
@@ -125,11 +125,11 @@ namespace Designer
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Технология IntelliSense, распознавая кнопка '' Отправить ссылку](introduction-images/6-submitbuttonintellisense-vsmac.png "IntelliSense, распознавая кнопка '' Отправить ссылку")](introduction-images/6-submitbuttonintellisense-vsmac-large.png)
+[![Технология IntelliSense, распознавая кнопка '' Отправить ссылку](introduction-images/6-submitbuttonintellisense-vsmac.png "IntelliSense, распознавая кнопка '' Отправить ссылку")](introduction-images/6-submitbuttonintellisense-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Технология IntelliSense, распознавая кнопка '' Отправить ссылку](introduction-images/6-submitbuttonintellisense-vs.png "IntelliSense, распознавая кнопка '' Отправить ссылку")](introduction-images/6-submitbuttonintellisense-vs-large.png)
+[![Технология IntelliSense, распознавая кнопка '' Отправить ссылку](introduction-images/6-submitbuttonintellisense-vs.png "IntelliSense, распознавая кнопка '' Отправить ссылку")](introduction-images/6-submitbuttonintellisense-vs-large.png#lightbox)
 
 -----
 
@@ -147,13 +147,13 @@ namespace Designer
 
 Xamarin.iOS проекты, созданные с помощью Visual Studio для Mac содержат раскадровки. Чтобы просмотреть содержимое раскадровки, дважды щелкните файл .storyboard в **Pad решение**:
 
-[![Раскадровка открыть в конструкторе iOS](introduction-images/7-storyboardopen-vsmac.png "раскадровки открыть в конструкторе iOS")](introduction-images/7-storyboardopen-vsmac-large.png)
+[![Раскадровка открыть в конструкторе iOS](introduction-images/7-storyboardopen-vsmac.png "раскадровки открыть в конструкторе iOS")](introduction-images/7-storyboardopen-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Большинство Xamarin.iOS проектов, созданных с помощью Visual Studio 2015 или 2017 г. включает раскадровки. Чтобы просмотреть содержимое раскадровки, дважды щелкните файл .storyboard в **обозревателе решений**:
 
-[![Раскадровка открыть в конструкторе iOS](introduction-images/7-storyboardopen-vs.png "раскадровки открыть в конструкторе iOS")](introduction-images/7-storyboardopen-vs-large.png)
+[![Раскадровка открыть в конструкторе iOS](introduction-images/7-storyboardopen-vs.png "раскадровки открыть в конструкторе iOS")](introduction-images/7-storyboardopen-vs-large.png#lightbox)
 
 -----
 
@@ -165,7 +165,7 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Разделы iOS конструктор](introduction-images/8-sixpartsofiosdesigner-vsmac.png "разделы iOS конструктора")](introduction-images/8-sixpartsofiosdesigner-vsmac-large.png)
+[![Разделы iOS конструктор](introduction-images/8-sixpartsofiosdesigner-vsmac.png "разделы iOS конструктора")](introduction-images/8-sixpartsofiosdesigner-vsmac-large.png#lightbox)
 
 1. **Область конструктора** — основной рабочей областью конструктора операций ввода-вывода. Показано, в область документа, она позволяет визуального создания пользовательских интерфейсов.
 2. **Ограничения инструментов** — позволяет для переключения между фрейма редактирования и ограничение режим редактирования, двумя различными способами для размещения элементов в пользовательском интерфейсе.
@@ -176,7 +176,7 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Разделы iOS конструктор](introduction-images/8-sixpartsofiosdesigner-vs.png "разделы iOS конструктора")](introduction-images/8-sixpartsofiosdesigner-vs-large.png)
+[![Разделы iOS конструктор](introduction-images/8-sixpartsofiosdesigner-vs.png "разделы iOS конструктора")](introduction-images/8-sixpartsofiosdesigner-vs-large.png#lightbox)
 
 1. **Область конструктора** — основной рабочей областью конструктора операций ввода-вывода. Показано, в область документа, она позволяет визуального создания пользовательских интерфейсов.
 2. **Ограничения инструментов** — позволяет для переключения между фрейма редактирования и ограничение режим редактирования, двумя различными способами для размещения элементов в пользовательском интерфейсе.
@@ -211,7 +211,7 @@ IOS конструктор имеет шесть основных раздела
 
 Контекстное меню доступен в рабочей области конструирования, а также в **Структура документа**. Это меню содержит команды для выделенного элемента управления и его родителем, это удобно при работе с представлениями во вложенной иерархии:
 
-[![В контекстном меню в области конструктора](introduction-images/10-contextmenudesignsurface-vsmac.png "контекстное меню в области конструктора")](introduction-images/10-contextmenudesignsurface-vsmac-large.png)
+[![В контекстном меню в области конструктора](introduction-images/10-contextmenudesignsurface-vsmac.png "контекстное меню в области конструктора")](introduction-images/10-contextmenudesignsurface-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -221,11 +221,11 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
  
-[![Ограничения инструментов](introduction-images/11-constraintstoolbar-vsmac.png "ограничения инструментов")](introduction-images/11-constraintstoolbar-vsmac-large.png)
+[![Ограничения инструментов](introduction-images/11-constraintstoolbar-vsmac.png "ограничения инструментов")](introduction-images/11-constraintstoolbar-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Ограничения инструментов](introduction-images/11-constraintstoolbar-vs.png "ограничения инструментов")](introduction-images/11-constraintstoolbar-vs-large.png)
+[![Ограничения инструментов](introduction-images/11-constraintstoolbar-vs.png "ограничения инструментов")](introduction-images/11-constraintstoolbar-vs-large.png#lightbox)
 
 -----
 
@@ -272,11 +272,11 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![В нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора](introduction-images/13-bottomtoolbar-vsmac.png "в нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора")](introduction-images/13-bottomtoolbar-vsmac-large.png)
+[![В нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора](introduction-images/13-bottomtoolbar-vsmac.png "в нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора")](introduction-images/13-bottomtoolbar-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![В нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора](introduction-images/13-bottomtoolbar-vs.png "в нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора")](introduction-images/13-bottomtoolbar-vs-large.png)
+[![В нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора](introduction-images/13-bottomtoolbar-vs.png "в нижней панели инструментов, используемый для выбора устройства и ориентации для рабочей области конструктора")](introduction-images/13-bottomtoolbar-vs-large.png#lightbox)
 
 -----
 
@@ -286,11 +286,11 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![В нижней панели инструментов разворачивать для просмотра устройств и ориентации](introduction-images/14-bottomtoolbarexpanded-vsmac.png "в нижней панели инструментов, разворачивать для просмотра устройств и ориентации")](introduction-images/14-bottomtoolbarexpanded-vsmac-large.png)
+[![В нижней панели инструментов разворачивать для просмотра устройств и ориентации](introduction-images/14-bottomtoolbarexpanded-vsmac.png "в нижней панели инструментов, разворачивать для просмотра устройств и ориентации")](introduction-images/14-bottomtoolbarexpanded-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![В нижней панели инструментов разворачивать для просмотра устройств и ориентации](introduction-images/14-bottomtoolbarexpanded-vs.png "в нижней панели инструментов, разворачивать для просмотра устройств и ориентации")](introduction-images/14-bottomtoolbarexpanded-vs-large.png)
+[![В нижней панели инструментов разворачивать для просмотра устройств и ориентации](introduction-images/14-bottomtoolbarexpanded-vs.png "в нижней панели инструментов, разворачивать для просмотра устройств и ориентации")](introduction-images/14-bottomtoolbarexpanded-vs-large.png#lightbox)
 
 -----
 
@@ -303,11 +303,11 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![В нижней панели инструментов используется для изменения интерфейса класса размер](introduction-images/15-edittraitsbutton-vsmac.png "используется для изменения интерфейса класса размер нижней панели инструментов")](introduction-images/15-edittraitsbutton-vsmac-large.png)
+[![В нижней панели инструментов используется для изменения интерфейса класса размер](introduction-images/15-edittraitsbutton-vsmac.png "используется для изменения интерфейса класса размер нижней панели инструментов")](introduction-images/15-edittraitsbutton-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![В нижней панели инструментов используется для изменения интерфейса класса размер](introduction-images/15-edittraitsbutton-vs.png "используется для изменения интерфейса класса размер нижней панели инструментов")](introduction-images/15-edittraitsbutton-vs-large.png)
+[![В нижней панели инструментов используется для изменения интерфейса класса размер](introduction-images/15-edittraitsbutton-vs.png "используется для изменения интерфейса класса размер нижней панели инструментов")](introduction-images/15-edittraitsbutton-vs-large.png#lightbox)
 
 -----
 
@@ -340,7 +340,7 @@ IOS конструктор имеет шесть основных раздела
 
 Используйте **Pad свойства** для изменения удостоверения, визуальные стили, специальные возможности и поведение элемента управления. Показано на следующем снимке экрана **свойства Разредить** параметры для кнопки:
 
-[![Панель свойств для кнопки](introduction-images/17-buttonpropertiespad-vsmac.png "панель свойств для кнопки")](introduction-images/17-buttonpropertiespad-vsmac-large.png)
+[![Панель свойств для кнопки](introduction-images/17-buttonpropertiespad-vsmac.png "панель свойств для кнопки")](introduction-images/17-buttonpropertiespad-vsmac-large.png#lightbox)
 #### <a name="properties-pad-sections"></a>Разделы панель свойств
 
 **Панель свойств** содержит три раздела:
@@ -351,7 +351,7 @@ IOS конструктор имеет шесть основных раздела
 
 Используйте **окно свойств** изменение удостоверения, визуальные стили, специальные возможности и поведение элемента управления. Показано на следующем снимке экрана **окно свойств** параметры для кнопки:
 
-[![Окно свойств для кнопки](introduction-images/17-buttonpropertieswindow-vs.png "окно свойств для кнопки")](introduction-images/17-buttonpropertieswindow-vs-large.png)
+[![Окно свойств для кнопки](introduction-images/17-buttonpropertieswindow-vs.png "окно свойств для кнопки")](introduction-images/17-buttonpropertieswindow-vs-large.png#lightbox)
 
 #### <a name="properties-window-sections"></a>Разделы окна свойств
 
@@ -369,9 +369,9 @@ IOS конструктор имеет шесть основных раздела
 
 В дополнение к визуального редактирования в области конструктора, конструктор iOS поддерживает редактирование свойств в **панель свойств**. Доступные свойства изменяется в зависимости от выбранного элемента управления, как показано на снимке экрана ниже:
 
-[![Свойства кнопок](introduction-images/18a-buttonpropertiespad-vsmac.png "кнопку Свойства")](introduction-images/18a-buttonpropertiespad-vsmac-large.png)
+[![Свойства кнопок](introduction-images/18a-buttonpropertiespad-vsmac.png "кнопку Свойства")](introduction-images/18a-buttonpropertiespad-vsmac-large.png#lightbox)
 
-[![Просмотр свойств контроллера](introduction-images/18b-viewcontrollerpropertiespad-vsmac.png "просмотреть свойства контроллера")](introduction-images/18b-viewcontrollerpropertiespad-vsmac-large.png)
+[![Просмотр свойств контроллера](introduction-images/18b-viewcontrollerpropertiespad-vsmac.png "просмотреть свойства контроллера")](introduction-images/18b-viewcontrollerpropertiespad-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -379,9 +379,9 @@ IOS конструктор имеет шесть основных раздела
 
 В дополнение к визуального редактирования в области конструктора, конструктор iOS поддерживает редактирование свойств в **окно свойств**. Доступные свойства изменяется в зависимости от выбранного элемента управления, как показано на снимке экрана ниже:
 
-[![Свойства кнопок](introduction-images/18a-buttonpropertieswindow-vs.png "кнопку Свойства")](introduction-images/18a-buttonpropertieswindow-vs-large.png)
+[![Свойства кнопок](introduction-images/18a-buttonpropertieswindow-vs.png "кнопку Свойства")](introduction-images/18a-buttonpropertieswindow-vs-large.png#lightbox)
 
-[![Просмотр свойств контроллера](introduction-images/18b-viewcontrollerpropertieswindow-vs.png "просмотреть свойства контроллера")](introduction-images/18b-viewcontrollerpropertieswindow-vs-large.png)
+[![Просмотр свойств контроллера](introduction-images/18b-viewcontrollerpropertieswindow-vs.png "просмотреть свойства контроллера")](introduction-images/18b-viewcontrollerpropertieswindow-vs-large.png#lightbox)
 
 -----
 
@@ -406,13 +406,13 @@ IOS конструктор имеет шесть основных раздела
 
 Чтобы указать пользовательские обработчики событий для различных событий, используйте **событий** вкладке **панель свойств**. Например, на снимке экрана ниже `HandleClick` метод обрабатывает кнопки **Touch вверх внутри** событий:
 
-[![Панель свойств с обработчиком событий для кнопки](introduction-images/19-buttonpropertiespadevents-vsmac.png "панель свойств, с обработчиком событий для кнопки")](introduction-images/19-buttonpropertiespadevents-vsmac-large.png)
+[![Панель свойств с обработчиком событий для кнопки](introduction-images/19-buttonpropertiespadevents-vsmac.png "панель свойств, с обработчиком событий для кнопки")](introduction-images/19-buttonpropertiespadevents-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Чтобы указать пользовательские обработчики событий для различных событий, используйте **событий** вкладке **окно свойств**. Например, на снимке экрана ниже `HandleClick` метод обрабатывает кнопки **Touch вверх внутри** событий:
 
-[![В окне «Свойства» с обработчиком событий для кнопки](introduction-images/19-buttonpropertieswindowevents-vs.png "окно свойств, с обработчиком событий для кнопки")](introduction-images/19-buttonpropertieswindowevents-vs-large.png)
+[![В окне «Свойства» с обработчиком событий для кнопки](introduction-images/19-buttonpropertieswindowevents-vs.png "окно свойств, с обработчиком событий для кнопки")](introduction-images/19-buttonpropertieswindowevents-vs-large.png#lightbox)
 
 -----
 
@@ -420,13 +420,13 @@ IOS конструктор имеет шесть основных раздела
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Исключение нераспознанный селектор](introduction-images/20-unrecognizedselector-vsmac.png "исключение нераспознанный селектора")](introduction-images/20-unrecognizedselector-vsmac-large.png)
+[![Исключение нераспознанный селектор](introduction-images/20-unrecognizedselector-vsmac.png "исключение нераспознанный селектора")](introduction-images/20-unrecognizedselector-vsmac-large.png#lightbox)
 
 Обратите внимание, что после обработчик события был указан в **панель свойств**, iOS, конструктор немедленно откроет соответствующий файл кода и обеспечивают для вставки объявления метода. 
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Исключение нераспознанный селектор](introduction-images/20-unrecognizedselector-vs.png "исключение нераспознанный селектора")](introduction-images/20-unrecognizedselector-vs-large.png)
+[![Исключение нераспознанный селектор](introduction-images/20-unrecognizedselector-vs.png "исключение нераспознанный селектора")](introduction-images/20-unrecognizedselector-vs-large.png#lightbox)
 
 -----
 
@@ -438,11 +438,11 @@ IOS конструктор также можно отобразить струк
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Структура документа](introduction-images/21-buttonoutlineview-vsmac.png "Структура документа")](introduction-images/21-buttonoutlineview-vsmac-large.png)
+[![Структура документа](introduction-images/21-buttonoutlineview-vsmac.png "Структура документа")](introduction-images/21-buttonoutlineview-vsmac-large.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Структура документа](introduction-images/21-buttonoutlineview-vs.png "Структура документа")](introduction-images/21-buttonoutlineview-vs-large.png)
+[![Структура документа](introduction-images/21-buttonoutlineview-vs.png "Структура документа")](introduction-images/21-buttonoutlineview-vs-large.png#lightbox)
 
 -----
 
@@ -454,7 +454,7 @@ IOS конструктор также можно отобразить струк
 
 Можно использовать на равных основаниях iOS конструктора и Xcode интерфейс построителя. Чтобы открыть раскадровку или файл .xib в построителе интерфейс Xcode, щелкните правой кнопкой мыши файл и выберите пункт **открыть с помощью > Xcode интерфейс построителя**, как показано на снимке экрана ниже:
 
-[![Открытие раскадровки в построителе интерфейс Xcode](introduction-images/22-openinxcodeinterfacebuilder-vsmac.png "Открытие раскадровки в построителе интерфейс Xcode")](introduction-images/22-openinxcodeinterfacebuilder-vsmac-large.png)
+[![Открытие раскадровки в построителе интерфейс Xcode](introduction-images/22-openinxcodeinterfacebuilder-vsmac.png "Открытие раскадровки в построителе интерфейс Xcode")](introduction-images/22-openinxcodeinterfacebuilder-vsmac-large.png#lightbox)
 
 После внесения изменений в построителе интерфейс Xcode, сохраните файл и вернуться в Visual Studio для Mac. Изменения будут синхронизироваться с проектом Xamarin.iOS.
 

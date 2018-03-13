@@ -6,12 +6,12 @@ ms.assetid: 54F999BE-2732-4BC7-A466-D17373961C48
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/06/2018
-ms.openlocfilehash: b1ddcca25fd83a806e8383a5717462b518b46d0b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 89679f7d825422ab34dd77b31a7a3fde60f36e99
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="recyclerview-parts-and-functionality"></a>Части RecyclerView и функциональные возможности
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 02/27/2018
 
 `RecyclerView` не выделяет для представления элемента для каждого элемента в источнике данных. Вместо этого он выделяет количество представления элемента, которые помещаются на экране и будет повторно использоваться макеты этих элементов прокрутке пользователем. При представлении сначала прокручивается за пределы видимости, он проходит через утилизации процесс, представленный на следующем рисунке:
 
-[ ![Диаграмма, иллюстрирующая шесть шагов перезапуска представления](parts-and-functionality-images/02-view-recycling-sml.png)](parts-and-functionality-images/02-view-recycling.png)
+[![Диаграмма, иллюстрирующая шесть шагов перезапуска представления](parts-and-functionality-images/02-view-recycling-sml.png)](parts-and-functionality-images/02-view-recycling.png#lightbox)
 
 1.  При представлении прокручивается за пределы видимости и больше не отображается, она становится *отходов представление*.
 
@@ -75,7 +75,6 @@ ms.lasthandoff: 02/27/2018
 Помимо представление элементов многократного использования `RecyclerView` также использует другой оптимизации эффективности: просмотр владельцев. Объект *владелец представления* — это простой класс, что кэши Просмотр ссылок. Каждый раз, адаптер увеличивает файл макета элемента также создает соответствующий владелец представления. Владелец представления использует `FindViewById` для получения ссылок на представления в файле увеличенную макета элемента. Эти ссылки используются для загрузки новых данных в представления, каждый раз при перезапуске макет для отображения новых данных.
  
 
-<a name="layoutmanager" />
 
 ### <a name="the-layout-manager"></a>Диспетчер макета
 
@@ -96,7 +95,6 @@ ms.lasthandoff: 02/27/2018
 
 Дополнительные сведения о диспетчере макет см. в разделе [ссылку на класс RecyclerView.LayoutManager](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.LayoutManager.html).
 
-<a name="viewholder" />
 
 ### <a name="the-view-holder"></a>Владелец представления
 
@@ -109,7 +107,6 @@ ms.lasthandoff: 02/27/2018
 Подробный пример `ViewHolder` реализация представлена на [простой пример RecyclerView](~/android/user-interface/layouts/recycler-view/recyclerview-example.md).
 Дополнительные сведения о `RecyclerView.ViewHolder`, в разделе [ссылку на класс RecyclerView.ViewHolder](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder.html).
 
-<a name="adapter" />
 
 ### <a name="the-adapter"></a>Адаптер
 
@@ -118,7 +115,7 @@ ms.lasthandoff: 02/27/2018
 
 На рисунке показано, как адаптер сопоставление содержимого в источнике данных через представление владельцев отдельных представлений в рамках каждого элемента строки в `RecyclerView`:
 
-[ ![Диаграмма, иллюстрирующая адаптер, подключенный источник данных для ViewHolders](parts-and-functionality-images/03-recyclerviewer-adapter-sml.png)](parts-and-functionality-images/03-recyclerviewer-adapter.png)
+[![Диаграмма, иллюстрирующая адаптер, подключенный источник данных для ViewHolders](parts-and-functionality-images/03-recyclerviewer-adapter-sml.png)](parts-and-functionality-images/03-recyclerviewer-adapter.png#lightbox)
 
 Адаптер загружает каждую `RecyclerView` строку с данными для конкретной строки элемента. Для позиции строки *P*, например, адаптер находит связанные данные в позиции *P* в пределах источника данных и копирует эти данные в строку элемента в позиции *P* в `RecyclerView` коллекции.
 В документе выше, например, адаптер использует владелец представления для уточняющего запроса ссылок для `ImageView` и `TextView` в этой позиции, поэтому не требуется многократно вызывать `FindViewById` для этих представлений, как пользователь выполняет прокрутку коллекции и повторно использует представления.
@@ -134,7 +131,6 @@ ms.lasthandoff: 02/27/2018
 Диспетчер макета вызывает эти методы, пока он размещение элементов в пределах `RecyclerView`. 
 
 
-<a name="datachanges" />
 
 ### <a name="notifying-recyclerview-of-data-changes"></a>Уведомление RecyclerView изменений данных
 

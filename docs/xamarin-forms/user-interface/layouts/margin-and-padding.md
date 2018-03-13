@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 7bab512ef11f8e0f553a00f0240d82f860fe2676
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 461430ba27b5d6008338019e5feaebed7b09d4cb
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="margin-and-padding"></a>Поля и заполнение
 
@@ -27,7 +27,7 @@ _Поля и свойства заполнения управляющие пов
 
 Следующая диаграмма иллюстрирует две основные понятия.
 
-[![](margin-and-padding-images/margins-and-padding-sml.png "Поля и заполнение понятия")](margin-and-padding-images/margins-and-padding.png "поля и заполнение основные понятия")
+[![](margin-and-padding-images/margins-and-padding-sml.png "Поля и заполнение понятия")](margin-and-padding-images/margins-and-padding.png#lightbox "поля и заполнение основные понятия")
 
 Обратите внимание, что [ `Margin` ](https://developer.xamarin.com/api/property/Xamarin.Forms.View.Margin/) значения являются аддитивными. Таким образом Если два соседних элемента указать на поле шириной в 20 точек, расстояние между элементами будет 40 пикселей. Кроме того, поля и заполнение являются друг к другу при обоих применяются, в том, что расстояние между элементом и любое содержимое будет полей, а также заполнения.
 
@@ -63,7 +63,7 @@ var stackLayout = new StackLayout {
 ```
 
 > [!NOTE]
-> **Примечание**: `Thickness` значения могут быть отрицательными, который обычно отсекает или обрезку элементов содержимого.
+> `Thickness` значения могут быть отрицательными, который обычно отсекает или обрезку элементов содержимого.
 
 ## <a name="summary"></a>Сводка
 

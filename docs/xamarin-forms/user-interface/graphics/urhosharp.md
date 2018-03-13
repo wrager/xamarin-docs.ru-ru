@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/11/2016
-ms.openlocfilehash: 7937e80b13ca7e3ecec1dc179adade666bd90635
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9cbc756c5ba61d764404ffabd347232a25dbdc58
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-urhosharp-in-xamarinforms"></a>С помощью UrhoSharp в Xamarin.Forms
 
@@ -33,7 +33,7 @@ UrhoSharp можно использовать для отображения гр
 Пакет UrhoSharp.Forms Nuget содержит все объекты, необходимые для создания объектов UrhoSharp. Пакет nuget UrhoSharp.Forms включает `UrhoSurface` класс, который используется для размещения UrhoSharp в Xamarin.Forms.
 Чтобы начать, щелкните правой кнопкой мыши на PCL **пакетов** папку и выберите **Добавление пакетов...** . Введите условие поиска **UrhoSharp.Forms**выберите **UrhoSharp для Xamarin.Forms**, нажмите кнопку **добавить пакет**.
 
-[ ![](urhosharp-images/add-package-sml.png "Пакеты диалоговое окно добавления")](urhosharp-images/add-package.png "пакетов диалоговое окно добавления")
+[![](urhosharp-images/add-package-sml.png "Пакеты диалоговое окно добавления")](urhosharp-images/add-package.png#lightbox "пакетов диалоговое окно добавления")
 
 Пакет UrhoSharp.Forms NuGet будут добавлены в проект:
 

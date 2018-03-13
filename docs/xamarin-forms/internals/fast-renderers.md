@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2017
-ms.openlocfilehash: 92a11ebe983840270d3679fd11f5faa0b8222cfe
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 956fa919ef9aa994fea92a9a64ca1325819f3ffc
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="fast-renderers"></a>Быстрые отрисовщики
 
@@ -40,11 +40,11 @@ Forms.SetFlags("FastRenderers_Experimental");
 ```
 
 > [!NOTE]
-> **Примечание**: быстрого модулей подготовки отчетов применяются только к Android внутренней совместимости приложения, поэтому этот параметр пропускается для действий совместимости pre приложения.
+> Быстрый модулей подготовки отчетов применяются только к Android внутренней совместимости приложения, в поэтому этот параметр пропускается для действий совместимости pre приложения.
 
 Улучшение производительности будет различным для каждого приложения, в зависимости от сложности структуры. Например, улучшения производительности x2 возможны при прокрутке [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) содержащий тысячи строк данных, где ячейки в каждой строке состоят из элементов управления, использующих быстрого модулей подготовки отчетов, что приводит к наглядно гладкий прокрутки.
 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пользовательские модули подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
+- [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)

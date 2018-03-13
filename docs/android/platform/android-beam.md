@@ -7,17 +7,17 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 06/06/2017
-ms.openlocfilehash: bea8480c66a2ecf499375636c98511ca55ce7693
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e9936bb523db8ba8777df94a03bf12f9fa718fca
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-beam"></a>Android луч.
 
 Android луч — это новая технология рядом с полем связи действия (NFC), в Android 4, который позволяет приложениям обмениваться информацией по NFC в непосредственной близости.
 
-[![Диаграмма, иллюстрирующая два устройства в непосредственной близости от общего доступа к данным](android-beam-images/androidbeam.png)](android-beam-images/androidbeam.png)
+[![Диаграмма, иллюстрирующая два устройства в непосредственной близости от общего доступа к данным](android-beam-images/androidbeam.png)](android-beam-images/androidbeam.png#lightbox)
 
 Android луч работает с помощью принудительной отправки сообщений через NFC, когда два устройства находятся в диапазоне. Устройства около 4cm друг от друга могут совместно использовать данные с помощью Android луч. Действия на одном устройстве, создает сообщение и указывает действие (или действия), можно обработать, опубликуйте его. Если указанное действие находится на переднем плане, устройства, в диапазоне Android луч будет отправлять сообщения на втором устройстве. На принимающем устройстве целью вызывается с данными сообщения.
 
@@ -30,7 +30,6 @@ Android поддерживает два способа настройки соо
 
 В любом случае для отправки данных с Android луч приложение передает `NdefMessage`, упаковка данных в нескольких `NdefRecords`. Давайте рассмотрим ключевые моменты, которые необходимо решать, прежде чем мы может активировать Android луч. Во-первых, мы будем работать с создания стиль обратного вызова `NdefMessage`.
 
-<a name="Creating_a_Message" />
 
 ## <a name="creating-a-message"></a>Создание сообщения
 
@@ -66,7 +65,6 @@ public NdefRecord CreateMimeRecord (String mimeType, byte [] payload)
 }
 ```
 
-<a name="Receiving_a_Message" />
 
 ## <a name="receiving-a-message"></a>Получение сообщения
 
@@ -79,7 +77,7 @@ NdefMessage msg = (NdefMessage) rawMsgs [0];
 
 Полный пример кода, использующего Android луч, показано выполнение на снимке экрана ниже, в разделе [Android луч Демонстрация](https://developer.xamarin.com/samples/monodroid/AndroidBeamDemo/) в коллекции примеров.
 
-[![Снимки экрана пример из образца луч Android](android-beam-images/24.png)](android-beam-images/24.png)
+[![Снимки экрана пример из образца луч Android](android-beam-images/24.png)](android-beam-images/24.png#lightbox)
 
 
 

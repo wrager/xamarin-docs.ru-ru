@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/01/2018
-ms.openlocfilehash: 2a6013d9bab26f90a6d8afa101298b494f2f90ae
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6546870d85f7b77e60dff0cb9e6075f982c9cb8e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-resources"></a>Android ресурсы
 
 _В этой статье рассматривается понятие Android ресурсы в Xamarin.Android и будет документов способ их использования. В этом примере рассматривается использование ресурсов в приложении Android для поддержки локализации приложения и несколько устройств, включая различными размерами экранов и плотности._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 

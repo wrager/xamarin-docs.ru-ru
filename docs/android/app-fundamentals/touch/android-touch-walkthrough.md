@@ -7,17 +7,17 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/02/2018
-ms.openlocfilehash: c02ad78cc15f2d71f19d605f7a4d6889bbe3ca01
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ec8d000f235a8e0da5198e425f9f1e630b2c662a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="walkthrough---using-touch-in-android"></a>Пошаговое руководство. использование сенсорного ввода в Android
 
 Сообщите нам статье использовать концепции из предыдущего раздела в реально работающем приложении. Мы создадим приложение с четыре действия. Первым действием будет меню или коммутатор, который запускает другие действия для демонстрации различных API-интерфейсов. На следующем снимке экрана показано основных действий:
 
-[![Снимок экрана примера с касания кнопки](android-touch-walkthrough-images/image14.png)](android-touch-walkthrough-images/image14.png)
+[![Снимок экрана примера с касания кнопки](android-touch-walkthrough-images/image14.png)](android-touch-walkthrough-images/image14.png#lightbox)
 
 Первое действие касания образца, будет показано, как использовать обработчики событий для касаясь представления. Распознаватель жестов действия продемонстрируют как подкласс `Android.View.Views` и обрабатывать события, а также показано, как обрабатывать жесты жестом сжатия. Действие третьей и последней **пользовательских жестов**, будет показано, как использовать пользовательских жестов. Чтобы упростить запоминаются и инструкциями, мы будем разбейте в этом пошаговом руководстве на разделы, содержащие каждого раздела, посвященных одно из действий.
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/27/2018
 
 -   Откройте проект **TouchWalkthrough\_запустить**. **MainActivity** установлена переход &ndash; мы для реализации поведения сенсорного ввода в действие. Если запустить приложение и нажмите кнопку **Touch образца**, необходимо запустить следующие действия:
 
-    [![Снимок экрана: действия с Touch начинает отображается](android-touch-walkthrough-images/image15.png)](android-touch-walkthrough-images/image15.png)
+    [![Снимок экрана: действия с Touch начинает отображается](android-touch-walkthrough-images/image15.png)](android-touch-walkthrough-images/image15.png#lightbox)
 
 -   Теперь, когда мы подтвердили, что действие запускается, откройте файл **TouchActivity.cs** и добавьте обработчик для `Touch` событие `ImageView`:
 
@@ -63,11 +63,11 @@ ms.lasthandoff: 02/27/2018
 
 При каждом запуске штрихи пользователя `ImageView`, `Touch` возникает событие и наши обработчик будет отображено сообщение **Touch начинает** на экране, как показано на следующем снимке экрана:
 
-[![Снимок экрана: действия с участием начинается](android-touch-walkthrough-images/image15.png)](android-touch-walkthrough-images/image15.png)
+[![Снимок экрана: действия с участием начинается](android-touch-walkthrough-images/image15.png)](android-touch-walkthrough-images/image15.png#lightbox)
 
 До тех пор, пока пользователь касается `ImageView`, **Touch начинает** будет отображаться в `TextView`. Если пользователь больше не касается `ImageView`, сообщение **Touch заканчивается** будет отображаться в `TextView`, как показано на следующем снимке экрана:
 
-[![Снимок экрана: действия с участием заканчивается](android-touch-walkthrough-images/image16.png)](android-touch-walkthrough-images/image16.png)
+[![Снимок экрана: действия с участием заканчивается](android-touch-walkthrough-images/image16.png)](android-touch-walkthrough-images/image16.png#lightbox)
 
 
 ## <a name="gesture-recognizer-activity"></a>Действие распознаватель жестов
@@ -234,11 +234,11 @@ ms.lasthandoff: 02/27/2018
 -   Теперь запустите приложение и запустить средство распознавания жестов действия.
     При открытии экрана должен выглядеть примерно как на снимке экрана ниже:
 
-    [![Экран запуска распознаватель жестов значком Android](android-touch-walkthrough-images/image17.png)](android-touch-walkthrough-images/image17.png)
+    [![Экран запуска распознаватель жестов значком Android](android-touch-walkthrough-images/image17.png)](android-touch-walkthrough-images/image17.png#lightbox)
 
 -   Теперь коснитесь значка и перетащите его на экране. Попробуйте жестов масштабирование сжатием. В некоторый момент экрана может выглядеть примерно как на следующем снимке экрана:
 
-    [![Значок перемещения жесты на экране](android-touch-walkthrough-images/image18.png)](android-touch-walkthrough-images/image18.png)
+    [![Значок перемещения жесты на экране](android-touch-walkthrough-images/image18.png)](android-touch-walkthrough-images/image18.png#lightbox)
 
 На этом этапе следует предоставить самостоятельно pat на задней: масштабирование сжатием просто реализованной в приложении Android! Сделайте перерыв быстрого и позволяет перейти к третьей и последней действия в этом пошаговом руководстве &ndash; с помощью пользовательских жестов.
 
@@ -341,17 +341,17 @@ ms.lasthandoff: 02/27/2018
 
 -   Запустите приложение и запустить средство распознавания жестов пользовательского действия. Он должен выглядеть примерно следующий снимок экрана:
 
-    [![Снимок экрана с проверьте изображения](android-touch-walkthrough-images/image19.png)](android-touch-walkthrough-images/image19.png)
+    [![Снимок экрана с проверьте изображения](android-touch-walkthrough-images/image19.png)](android-touch-walkthrough-images/image19.png#lightbox)
 
     Теперь нарисуйте флажком на экране и отображение точечного рисунка должна выглядеть примерно так, что показано на следующем снимке экрана:
 
-    [![Нарисовать флажок](android-touch-walkthrough-images/image20.png)](android-touch-walkthrough-images/image20.png)
-    [![распознаны флажок](android-touch-walkthrough-images/image21.png)](android-touch-walkthrough-images/image21.png)
+    [![Нарисовать флажок](android-touch-walkthrough-images/image20.png)](android-touch-walkthrough-images/image20.png#lightbox)
+    [![распознаны флажок](android-touch-walkthrough-images/image21.png)](android-touch-walkthrough-images/image21.png#lightbox)
 
     Наконец нарисуйте scribble на экране. Флажок следует изменить обратно до исходного образа, как показано в эти снимки экрана:
 
-    [![На экране Scribble](android-touch-walkthrough-images/image22.png)](android-touch-walkthrough-images/image22.png)
-    [![исходное изображение](android-touch-walkthrough-images/image23.png)](android-touch-walkthrough-images/image23.png)
+    [![На экране Scribble](android-touch-walkthrough-images/image22.png)](android-touch-walkthrough-images/image22.png#lightbox)
+    [![исходное изображение](android-touch-walkthrough-images/image23.png)](android-touch-walkthrough-images/image23.png#lightbox)
 
 Теперь у вас есть узнаете, как интегрировать сенсорный ввод и жестов в приложения с помощью Xamarin.Android.
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 0f1d968dcee0cb9b6cd0cee8fa60be4f4dbb2833
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 600d651eae1f470f17511afaf9bc86c80ffc1a75
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="notifications"></a>Уведомления
 
@@ -99,17 +99,17 @@ ms.lasthandoff: 02/27/2018
 Visual Studio для Mac будут отображаться дополнительные параметры, когда расширение Контрольные значения задается как **запускаемый проект**.
 Щелкните правой кнопкой мыши проект расширения контрольных значений и выберите команду **запуска с > пользовательских параметров...** :
     
-[![](notifications-images/runwith-customparams-sml.png "Работает с пользовательскими свойствами")](notifications-images/runwith-customparams.png)
+[![](notifications-images/runwith-customparams-sml.png "Работает с пользовательскими свойствами")](notifications-images/runwith-customparams.png#lightbox)
     
 При этом откроется **аргументы выполнения** окно, которое содержит **WatchKit** вкладки. Выберите **уведомления** и предоставляют полезные данные JSON, нажмите клавишу **Execute** для запуска наблюдения за приложения в симуляторе:
     
-[![](notifications-images/runwith-execargs-sml.png "Выбрать значение по умолчанию для полезных данных уведомления")](notifications-images/runwith-execargs.png)
+[![](notifications-images/runwith-execargs-sml.png "Выбрать значение по умолчанию для полезных данных уведомления")](notifications-images/runwith-execargs.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Установка полезные данные уведомления теста в Visual Studio щелкните правой кнопкой мыши на модуле контрольных значений для изменения **свойства проекта**. Последовательно выберите пункты **отладки** , выберите файл JSON уведомления из списка (он автоматически перечислит все включенные в проект файлы JSON).
     
-[![](notifications-images/runwith-execargs-sml-vs.png "Выберите файл JSON уведомления")](notifications-images/runwith-execargs-vs.png)
+[![](notifications-images/runwith-execargs-sml-vs.png "Выберите файл JSON уведомления")](notifications-images/runwith-execargs-vs.png#lightbox)
 
 При расширении **запускаемый проект**, Visual Studio будет отображать дополнительные параметры, как показано ниже. Выберите один из **уведомления** параметров для запуска приложения Контрольные значения **уведомления** режиме (с помощью JSON-файла, выбранного в окне «Свойства»):
     

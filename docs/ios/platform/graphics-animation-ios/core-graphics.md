@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: fe1796839524a271760a9beb82895fd6e93c7ad0
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d53494e61d702b83a28534c644f33fb5327b5958
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="core-graphics"></a>Основные графики
 
@@ -40,6 +40,7 @@ _В этой статье рассматриваются платформ iOS д
 -  Снижается необходимость статические изображения в пакете приложения можно уменьшить размер приложения.
 -  Графики становятся более устойчивым к изменения разрешения на устройствах.
 
+<a name="Drawing_in_a_UIView_Subclass"/>
 
 ## <a name="drawing-in-a-uiview-subclass"></a>Рисование в подкласс UIView
 
@@ -182,6 +183,8 @@ g.SetLineDash (0, new nfloat[] { 10, 4 * (nfloat)Math.PI });
  ![](core-graphics-images/02-dashed-stroke.png "Добавление следующий код перед результаты операции рисования в штриховой штрихов рукописного ввода")
  
 Обратите внимание, что при использовании API единой в Xamarin.iOS, тип массива должна быть `nfloat`, а также должен быть явно приведен к Math.PI.
+
+<a name="Drawing_Images_and_Text"/>
 
 ## <a name="drawing-images-and-text"></a>Рисование изображений и текста
 

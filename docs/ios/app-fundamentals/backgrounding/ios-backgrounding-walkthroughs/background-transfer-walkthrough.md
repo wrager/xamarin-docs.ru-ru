@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 015bce612f369797f0540a0cb55f71f420f007a2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d5a8baec164eb5c70f6dae5b2fa4fd5271afbd1c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="walkthrough---using-background-transfer-service-and-nsurlsession"></a>Пошаговое руководство. Использование фоновая служба передачи и NSURLSession
 
@@ -20,7 +20,7 @@ _В этом пошаговом руководстве мы используем
 
 Фоновая передача инициируется путем настройки фона `NSURLSession` и устанавливая передачи или загрузки задачи. Если во время backgrounded, приостановки или завершения приложения выполнения задач, операций ввода-вывода будет уведомлять приложение, вызывая обработчик завершения приложения *AppDelegate*. Следующая диаграмма демонстрирует это в действии:
 
- [ ![](background-transfer-walkthrough-images/transfer.png "Фоновая передача инициируется путем настройки фона NSURLSession и устанавливая отправка или загрузка задачи")](background-transfer-walkthrough-images/transfer.png)
+ [![](background-transfer-walkthrough-images/transfer.png "Фоновая передача инициируется путем настройки фона NSURLSession и устанавливая отправка или загрузка задачи")](background-transfer-walkthrough-images/transfer.png#lightbox)
 
 Давайте посмотрим, как это выглядит в коде.
 

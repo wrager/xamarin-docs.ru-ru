@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: eed12c84b9952ef5c3dd27847071f05392bc16c4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: dfbc976da109a3813b8d7abd85adafbc9bb94fa0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="deploying-to-the-app-store"></a>Развертывание в магазине приложений
 
@@ -62,6 +62,8 @@ ms.lasthandoff: 02/27/2018
 **Профиль подготовки** в списке будут показаны все профили сопоставления — вы увидите сопоставления профили, созданные в этом раскрывающемся списке.
 
 ![](appstore-images/options-selectprofile-sml.png "Диалоговое окно подписывание пакета iOS")
+
+<a name="iTunes_Connect"/>
 
 ## <a name="itunes-connect"></a>iTunes Connect
 
@@ -123,7 +125,7 @@ Xcode автоматически отобразится архивов, созд
 
 5. Посетите iTunes Connect еще раз, чтобы увидеть отправленного двоичный файл. Перейдите на страницу конфигурации приложения и выберите **предварительный выпуск** в верхнем меню, чтобы увидеть **строит** списка:
 
-  [ ![](appstore-images/itc-prerelease-sml.png "Странице конфигурации приложения в iTunes Connect")](appstore-images/itc-prerelease.png)
+  [![](appstore-images/itc-prerelease-sml.png "Странице конфигурации приложения в iTunes Connect")](appstore-images/itc-prerelease.png#lightbox)
 
 Вы можете отправить приложение на утверждение на **версии** страницы. Ссылаться на [Обзор распространения приложений iOS](~/ios/deploy-test/app-distribution/index.md) для получения дополнительной информации.
 

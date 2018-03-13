@@ -3,14 +3,15 @@ title: "Сводка Глава 28. Расположение и карты"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: F6E20077-687C-45C4-A375-31D4F49BBFA4
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 7361f65fecfed9d61b9df7088f9021ffa0192ad8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0968270f657d3195855a752da311b4855283e971
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-28-location-and-maps"></a>Сводка Глава 28. Расположение и карты
 
@@ -215,7 +216,7 @@ Android приложений, получающих расположения по
 
 Это используется в [LocalMuseumsPage.xaml](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/LocalMuseumsPage.xaml) файла и [LocalMuseumsPage.xaml.cs](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Chapter28/MapDemos/MapDemos/MapDemos/LocalMuseumsPage.xaml.cs) файл кода для отображения музей расстояние от расположения пользователя также:
 
-[![Тройной экрана странице локальной музеи](images/ch28fg28-small.png "расстояние до местоположения")](images/ch28fg28-large.png "расстояние до местоположения")
+[![Тройной экрана странице локальной музеи](images/ch28fg28-small.png "расстояние до местоположения")](images/ch28fg28-large.png#lightbox "расстояние до местоположения")
 
 Программа также показано, как динамически ограничить количество ПИН-кодов, исходя из расположения карты.
 

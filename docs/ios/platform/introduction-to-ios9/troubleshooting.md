@@ -3,16 +3,16 @@ title: "Устранение неполадок"
 description: "В этой статье предоставляет несколько советов по устранению неполадок для работы с iOS 9 в Xamarin.iOS приложений."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4D71BBD9-B948-4B59-9AF5-F199C51CBEB3
+ms.assetid: DCE83E36-CBD9-4D96-8E7F-384CB8A54563
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 6ea274ca198a4ca76a87198b02b6229e0e1c88b2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ca3697b355a45e06f941a6dfd610cd19f922ca75
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -32,7 +32,7 @@ iOS конструктор поддержку функций Xcode 7 предн�
 
 В Xcode, выберите **Xcode** меню затем **установки...**   >  **Загружает**:
 
-[ ![](troubleshooting-images/ios8.png "Загружает симуляторах iOS 8")](troubleshooting-images/ios8.png)
+[![](troubleshooting-images/ios8.png "Загружает симуляторах iOS 8")](troubleshooting-images/ios8.png#lightbox)
 
 Нажмите кнопку **проверка и установить сейчас** кнопку, чтобы переустановить симуляторах iOS 8.
 
@@ -139,26 +139,26 @@ Dyld Message: no cach image with name (/System/Library/PrivateFrameworks/JavaScr
 
 При попытке с версией iOS 9 приложения Xamarin.iOS на оборудовании реальных операций ввода-вывода, может появиться сообщение о том, что учетной записи разработчика не доверенным на устройстве. Пример:
 
-[ ![](troubleshooting-images/untrusted01.png "Недоверенные Enterprise Developer предупреждения")](troubleshooting-images/untrusted01.png)
+[![](troubleshooting-images/untrusted01.png "Недоверенные Enterprise Developer предупреждения")](troubleshooting-images/untrusted01.png#lightbox)
 
 Чтобы решить эту проблему, выполните следующие действия.
 
 1. Запустить Xcode (последняя версия бета-версия) на разработку Mac.
 2. Выберите **устройств** из **окна** меню, чтобы открыть окно устройств: 
 
-    [ ![](troubleshooting-images/untrusted02.png "Окно устройства")](troubleshooting-images/untrusted02.png)
+    [![](troubleshooting-images/untrusted02.png "Окно устройства")](troubleshooting-images/untrusted02.png#lightbox)
 3. В разделе **устройств** боковая панель, выберите устройства, щелкните правой кнопкой мыши и выберите **Показать профили подготовки...** : 
 
-    [ ![](troubleshooting-images/untrusted03.png "Профили подготовки SShow")](troubleshooting-images/untrusted03.png)
+    [![](troubleshooting-images/untrusted03.png "Профили подготовки SShow")](troubleshooting-images/untrusted03.png#lightbox)
 4. Выберите каждый профиль подготовки в настоящее время на устройстве и нажмите кнопку  **-**  кнопку, чтобы удалить его: 
 
-    [ ![](troubleshooting-images/untrusted04.png "Удаление профиля подготовки")](troubleshooting-images/untrusted04.png)
+    [![](troubleshooting-images/untrusted04.png "Удаление профиля подготовки")](troubleshooting-images/untrusted04.png#lightbox)
 5. Из **Xcode** последовательно выберите пункты **установки...**  и **учетные записи**: 
 
-    [ ![](troubleshooting-images/untrusted05.png "Настройки учетной записи для Xcode")](troubleshooting-images/untrusted05.png)
+    [![](troubleshooting-images/untrusted05.png "Настройки учетной записи для Xcode")](troubleshooting-images/untrusted05.png#lightbox)
 6. Щелкните **просмотра сведений...**  , а затем нажмите кнопку **загрузить все** кнопки: 
 
-    [ ![](troubleshooting-images/untrusted06.png "Загрузка всех профилей")](troubleshooting-images/untrusted06.png)
+    [![](troubleshooting-images/untrusted06.png "Загрузка всех профилей")](troubleshooting-images/untrusted06.png#lightbox)
 7. После завершения обновления списка щелкните **сделать** кнопку и закройте окно «Параметры».
 8. Удалите существующую версию приложения Xamarin.iOS, которое вы пытались тестирования с устройства iOS.
 9. Вернитесь в Visual Studio для Mac, выполните чистую сборку и попытайтесь повторно запустить приложение на устройстве.

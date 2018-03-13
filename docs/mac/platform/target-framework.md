@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 11/10/2017
-ms.openlocfilehash: ac4644f65486d70fcbb7da1a03574fb238348313
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f657fc3dd87d5c39d442a863e4acc00ac320b00d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="target-framework"></a>Требуемая версия .NET Framework
 
@@ -40,13 +40,13 @@ _В этой статье описываются целевые платформ
 
 Чтобы изменить тип требуемой версии .NET Framework для проекта Xamarin.Mac, выполните следующее:
 
-1. Откройте проект Xamarin.Mac в Visual Studio для Mac.
-2. В **обозревателе решений**, дважды щелкните файл проекта, чтобы открыть **параметры проекта** диалоговое окно.
+1. Откройте проект Xamarin.iOS в Visual Studio для Mac.
+2. В **обозревателе решений** дважды щелкните файл проекта, чтобы открыть диалоговое окно **Параметры проекта**.
 3. Из **Общие** выберите тип **требуемой версии .NET Framework** , соответствует потребностям приложения:
 
-  [![Использование окна Параметры проекта для выбора целевой платформы](target-framework-images/select-target-full.png "с помощью окна параметров проекта для выбора целевой платформы")](target-framework-images/select-target-full-large.png)
+  [![Использование окна Параметры проекта для выбора целевой платформы](target-framework-images/select-target-full.png "с помощью окна параметров проекта для выбора целевой платформы")](target-framework-images/select-target-full-large.png#lightbox)
 
-4. Нажмите кнопку **ОК** кнопку, чтобы сохранить изменения.
+4. Чтобы сохранить внесенные изменения, нажмите кнопку **OK**.
 
 Вы должны **Очистить** и затем **Перестроить** Xamarin.Mac проекта после переключения тип требуемой версии .NET Framework.
 

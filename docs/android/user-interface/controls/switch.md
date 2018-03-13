@@ -7,19 +7,18 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/05/2018
-ms.openlocfilehash: 8bfa599ce0a85897ecaf655c1d4da00fe898bc68
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0cf1c4d749eb85a7e0f4c035e10e2e7a40e0c711
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="switch"></a>Параметр
 
 `Switch` Мини-приложение (показано ниже) позволяет пользователю переключаться между двумя состояниями, как в или OFF. `Switch` Значение по умолчанию — OFF. Ниже приводится мини-приложения в его ON и OFF состояний.
 
-[ ![Снимки экрана для коммутатора мини-приложение в состояниях и ВЫКЛЮЧЕНИЕ](switch-images/16-switch-onoff.png)](switch-images/16-switch-onoff.png)
+[![Снимки экрана для коммутатора мини-приложение в состояниях и ВЫКЛЮЧЕНИЕ](switch-images/16-switch-onoff.png)](switch-images/16-switch-onoff.png#lightbox)
 
-<a name="Creating_a_Switch" />
 
 ## <a name="creating-a-switch"></a>Создание к коммутатору
 
@@ -32,9 +31,8 @@ ms.lasthandoff: 02/27/2018
 
 Это создает базовый коммутатор, как показано ниже:
 
-[ ![Снимок экрана: отображение переключателя в состояние OFF нашего примера приложения](switch-images/07-switch.png)](switch-images/07-switch.png)
+[![Снимок экрана: отображение переключателя в состояние OFF нашего примера приложения](switch-images/07-switch.png)](switch-images/07-switch.png#lightbox)
 
-<a name="Changing_Default_Values" />
 
 ## <a name="changing-default-values"></a>Изменение значений по умолчанию
 
@@ -48,7 +46,6 @@ ms.lasthandoff: 02/27/2018
         android:textOff="NO" />
 ```
 
- <a name="Providing_a_Title" />
 
 
 ## <a name="providing-a-title"></a>Предоставление заголовок
@@ -66,7 +63,7 @@ ms.lasthandoff: 02/27/2018
 
 Эта разметка создает следующий снимок экрана во время выполнения:
 
-[![Снимок экрана нашего примера приложения с текстом по горизонтали предшествующий коммутатора мини-приложения](switch-images/08-switch.png)](switch-images/08-switch.png)
+[![Снимок экрана нашего примера приложения с текстом по горизонтали предшествующий коммутатора мини-приложения](switch-images/08-switch.png)](switch-images/08-switch.png#lightbox)
 
 Когда `Switch`его значение изменяется, он выдает `CheckedChange` событий.
 Например, в следующем коде мы записи этого события и представлять `Toast` мини-приложения с сообщением, основываясь на `isChecked` значение `Switch`, который передается в обработчик событий как часть `CompoundButton.CheckedChangeEventArg` аргумент.

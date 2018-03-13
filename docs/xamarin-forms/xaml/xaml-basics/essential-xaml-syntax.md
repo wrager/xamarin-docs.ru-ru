@@ -3,16 +3,16 @@ title: "Часть 2. Синтаксис Essential XAML"
 description: "XAML главным образом предназначен для создания и инициализации объектов. Но часто, необходимо задать свойства для сложных объектов, которые невозможно легко представить в виде строки XML и иногда в дочернем классе, в котором необходимо задать свойства, определенные один класс. Эти два потребности требуют основные функции проверки синтаксиса XAML свойства элементов и вложенных свойств."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 1D6164F9-4ECE-43A6-B583-1F5D5EFC1DDF
+ms.assetid: 4022F1DC-3802-4635-A553-688ABD3F0D5A
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: f99d4b177f5957b2e5f8c22171fe92799af8505a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 77ed7c49a901a877d822c2274263bcb8dbe19ac6
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="part-2-essential-xaml-syntax"></a>Часть 2. Синтаксис Essential XAML
 
@@ -253,7 +253,7 @@ _XAML главным образом предназначен для создан
 
 Вот, как оно выглядит на всех трех платформах:
 
-[ ![](essential-xaml-syntax-images/griddemo.png "Макет сетки")](essential-xaml-syntax-images/griddemo-large.png "макет сетки")
+[![](essential-xaml-syntax-images/griddemo.png "Макет сетки")](essential-xaml-syntax-images/griddemo-large.png#lightbox "макет сетки")
 
 Судя исключительно с помощью синтаксиса, они `Grid.Row`, `Grid.Column`, `Grid.RowSpan`, и `Grid.ColumnSpan` атрибуты отображаются как статические поля или свойства `Grid`, но что интересно, `Grid` не определяет никаких действий с именем `Row`, `Column`, `RowSpan`, или `ColumnSpan`.
 
@@ -310,7 +310,7 @@ _XAML главным образом предназначен для создан
 
 И здесь:
 
-[ ![](essential-xaml-syntax-images/absolutedemo-large.png "Абсолютный макета")](essential-xaml-syntax-images/absolutedemo-large.png "абсолютного макета")
+[![](essential-xaml-syntax-images/absolutedemo-large.png "Абсолютный макета")](essential-xaml-syntax-images/absolutedemo-large.png#lightbox "абсолютного макета")
 
 Для примерно следующим образом могут возникнуть вопросы на подсказку с помощью XAML. Конечно повторение и непрерывную `LayoutBounds` прямоугольник предполагает, что он может лучше реализовать в коде.
 

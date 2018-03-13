@@ -4,14 +4,15 @@ description: "Использование пути к коллекции граф
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 8022FBF9-2208-43DB-94D8-0A4E9A5DA07F
 author: charlespetzold
 ms.author: chape
 ms.date: 06/16/2017
-ms.openlocfilehash: b1c5b64725a163e15f07d2aecaea4e56b7ecec2e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: bb99984f93f494cfb5ad3d37ccb25f0b91d0b489
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="clipping-with-paths-and-regions"></a>Обрезка с использованием пути и областей
 
@@ -98,7 +99,7 @@ canvas.ClipPath(keyholePath);
 
 `PaintSurface` Обработчик затем сбрасывает преобразований с помощью вызова `ResetMatrix` и рисуется растровое изображение, чтобы расширить до полного размера экрана. Данный код предполагает точечного рисунка квадратом, являющегося конкретной растрового изображения. Растровое изображение отображается только в пределах области, определяемой контура обрезки:
 
-[![](clipping-images/monkeythroughkeyhole-small.png "Снимок экрана тройной Monkey через страницу стенка с замочной")](clipping-images/monkeythroughkeyhole-large.png "тройной экрана Monkey через страницу стенка с замочной")
+[![](clipping-images/monkeythroughkeyhole-small.png "Снимок экрана тройной Monkey через страницу стенка с замочной")](clipping-images/monkeythroughkeyhole-large.png#lightbox "тройной экрана Monkey через страницу стенка с замочной")
 
 Контура обрезки действует подчиняется преобразования при `ClipPath` вызове метода, а не для преобразования в силе при графического объекта (например, битовая карта) отображается. Контур обрезки — часть состояния холст, сохраняется вместе с `Save` метод и восстанавливаться с `Restore` метод.
 
@@ -165,7 +166,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Остается пересечение этих четырех кругов:
 
-[![](clipping-images//fourcircleintersectclip-small.png "Тройной снимок экрана со страницей Intersect-Clip четыре круг")](clipping-images/fourcircleintersectclip-large.png "тройной снимок экрана со страницей Intersect-Clip четыре окружности")
+[![](clipping-images//fourcircleintersectclip-small.png "Тройной снимок экрана со страницей Intersect-Clip четыре круг")](clipping-images/fourcircleintersectclip-large.png#lightbox "тройной снимок экрана со страницей Intersect-Clip четыре окружности")
 
 [ `SKClipOperation` ](https://developer.xamarin.com/api/type/SkiaSharp.SKClipOperation/) Перечисление имеет только два члена:
 
@@ -175,13 +176,13 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Если заменить четыре `SKClipOperation.Intersect` аргументов в `FourCircleIntersectClipPage` класса `SKClipOperation.Difference`, вы увидите следующее:
 
-[![](clipping-images//fourcircledifferenceclip-small.png "Тройной снимок экрана со страницей Intersect-Clip четыре круг с операцией разницы")](clipping-images/fourcircledifferenceclip-large.png "тройной снимок экрана со страницей Intersect-Clip четыре круг с операцией разницы")
+[![](clipping-images//fourcircledifferenceclip-small.png "Тройной снимок экрана со страницей Intersect-Clip четыре круг с операцией разницы")](clipping-images/fourcircledifferenceclip-large.png#lightbox "тройной снимок экрана со страницей Intersect-Clip четыре круг с операцией разницы")
 
 Четыре круга были удалены из области отсечения.
 
 **Clip операций** страницы показано различие между эти две операции с парой кругов. Первый круг в левой части добавляется в область обрезки с операцией обрезки по умолчанию из `Intersect`, а второй круг справа добавляется области отсечения с операцией обрезки, обозначенном текстовую метку:
 
-[![](clipping-images//clipoperations-small.png "Тройной снимок экрана со страницей Clip операции")](clipping-images/clipoperations-large.png "тройной снимок экрана со страницей Clip операций")
+[![](clipping-images//clipoperations-small.png "Тройной снимок экрана со страницей Clip операции")](clipping-images/clipoperations-large.png#lightbox "тройной снимок экрана со страницей Clip операций")
 
 [ `ClipOperationsPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ClipOperationsPage.cs) Класс определяет два `SKPaint` объектов как поля, а затем разделяет экрана на две прямоугольной области. Эти области различаются в зависимости от того, является ли телефона в книжном или альбомном режиме. `DisplayClipOp` Класс затем отображает текст и вызовы `ClipPath` кружок с двумя путями для иллюстрации каждой операцией обрезки:
 
@@ -282,7 +283,7 @@ public void ClipRegion(SKRegion region, SKClipOperation operation = SKClipOperat
 
 На следующем рисунке показан области обрезки, в зависимости от операций шесть области. Левой круг — регион, `Op` метод будет вызван на, и правой круг области передаваемый `Op` метод:
 
-[![](clipping-images//regionoperations-small.png "Тройной снимок экрана со страницей операций области")](clipping-images/regionoperations-large.png "тройной снимок экрана со страницей операций области")
+[![](clipping-images//regionoperations-small.png "Тройной снимок экрана со страницей операций области")](clipping-images/regionoperations-large.png#lightbox "тройной снимок экрана со страницей операций области")
 
 Эти все возможные сочетания этих двух кругов такое Рассматривать как сочетание трех компонентов, что сами по себе, видны в итоговый образ `Difference`, `Intersect`, и `ReverseDifference` операций. Общее число сочетаний является в третьей степени, так и до восьми. Отсутствующие они первоначальном регионе (получаемое в результате вызова не `Op` вообще) и полностью пустая область.
 
@@ -423,7 +424,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 `DrawRegion` Вызов заполняет область оранжевым цветом, хотя `DrawPath` вызов обводки исходный путь синего цвета для сравнения:
 
-[![](clipping-images//regionpaint-small.png "Тройной снимок экрана со страницей области рисования")](clipping-images/regionpaint-large.png "тройной снимок экрана со страницей области рисования")
+[![](clipping-images//regionpaint-small.png "Тройной снимок экрана со страницей области рисования")](clipping-images/regionpaint-large.png#lightbox "тройной снимок экрана со страницей области рисования")
 
 Область — это именно ряд дискретных координаты.
 
@@ -509,7 +510,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Он не действительно выглядит клевера конечные – четырех, но это изображение, которое может быть трудно отрисовки без усечения:
 
-[![](clipping-images//fourleafclover-small.png "Тройной снимок экрана со страницей четырех – конечного клевера")](clipping-images/fourleafclover-large.png "тройной снимок экрана со страницей четырех – конечного клевера")
+[![](clipping-images//fourleafclover-small.png "Тройной снимок экрана со страницей четырех – конечного клевера")](clipping-images/fourleafclover-large.png#lightbox "тройной снимок экрана со страницей четырех – конечного клевера")
 
 
 ## <a name="related-links"></a>Связанные ссылки

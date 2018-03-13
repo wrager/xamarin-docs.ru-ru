@@ -3,16 +3,16 @@ title: "Упреждающее предложения"
 description: "В этой статье показано, как использовать упреждающее предложения в приложении watchOS 3 для диска обязательств, позволяя систему, чтобы заранее предоставить полезные сведения автоматически пользователю."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4E1FF652-28F0-4566-B383-9D12664401A4
+ms.assetid: 10CC9F16-963C-44F1-8B98-F09FB2310DFF
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: ca2476eef120c7d86b939934ec4b286e871d6a78
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f9711cc39662a7e77d926551a0d2b49363d8ec4d
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="proactive-suggestions"></a>Упреждающее предложения
 
@@ -61,7 +61,7 @@ _В этой статье показано, как использовать уп
 
 Как упоминалось выше, `NSUserActivity` помогает понять, какие сведения пользователь в настоящее время работает с на экране системы. `NSUserActivity` механизм для записи действий пользователей при переходе через приложение кэширует состояние недоступно. Например просмотрев ресторан приложения:
 
-[ ![](proactive-suggestions-images/activity02.png "Приложение ресторана")](proactive-suggestions-images/activity02.png)
+[![](proactive-suggestions-images/activity02.png "Приложение ресторана")](proactive-suggestions-images/activity02.png#lightbox)
 
 С помощью следующих действий:
 
@@ -71,7 +71,7 @@ _В этой статье показано, как использовать уп
 
 Внимательно ознакомьтесь последнего экрана:
 
-[ ![](proactive-suggestions-images/activity03.png "Полезные данные NSUserActivity")](proactive-suggestions-images/activity03.png)
+[![](proactive-suggestions-images/activity03.png "Полезные данные NSUserActivity")](proactive-suggestions-images/activity03.png#lightbox)
 
 Здесь Создание приложения `NSUserActivity` и заполнена сведениями для повторного создания состояние позже. Приложение также включены некоторые метаданные, такие как имя и адрес расположения. С этим действием создан приложение позволяет iOS знать, что он представляет текущее состояние пользователя.
 

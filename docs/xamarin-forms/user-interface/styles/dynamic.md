@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/17/2016
-ms.openlocfilehash: 2088ae055fb18b3b00712f063d2178f759021088
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9710e322460058902d89ec1a57c374b93beb82fb
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="dynamic-styles"></a>Динамические стили
 
@@ -81,8 +81,8 @@ public partial class DynamicStylesPage : ContentPage
 
 Когда `OnButtonClicked` выполняется обработчик событий, `searchBarStyle` будут переключаться между `blueSearchBarStyle` и `greenSearchBarStyle`. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](dynamic-images/dynamic-style-blue.png "Синий пример динамического стиля")](dynamic-images/dynamic-style-blue-large.png "синий пример динамического стиля")
-[![](dynamic-images/dynamic-style-green.png "зеленый пример динамического стиля") ] (dynamic-images/dynamic-style-green-large.png "Зеленый пример динамического стиля")
+[![](dynamic-images/dynamic-style-blue.png "Синий пример динамического стиля")](dynamic-images/dynamic-style-blue-large.png#lightbox "синий пример динамического стиля")
+[![](dynamic-images/dynamic-style-green.png "зеленый пример динамического стиля") ] (dynamic-images/dynamic-style-green-large.png#lightbox "Зеленый пример динамического стиля")
 
 В следующем примере кода показаны в эквивалентную страницу в C#:
 
@@ -162,8 +162,8 @@ public class DynamicStylesPageCS : ContentPage
 
 В файле кода, конструктор создает [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) запись с ключом `searchBarStyle`, как показано в предыдущем примере, где показаны динамические стили. Когда `OnButtonClicked` выполняется обработчик событий, `searchBarStyle` будут переключаться между `blueSearchBarStyle` и `greenSearchBarStyle`. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](dynamic-images/dynamic-style-inheritance-blue.png "Пример наследования стиля динамического синий")](dynamic-images/dynamic-style-inheritance-blue-large.png "синий пример наследования стиля динамического")
-[![](dynamic-images/dynamic-style-inheritance-green.png "зеленый динамического стиля Пример наследования")](dynamic-images/dynamic-style-inheritance-green-large.png "пример наследования стиля динамические зеленый")
+[![](dynamic-images/dynamic-style-inheritance-blue.png "Пример наследования стиля динамического синий")](dynamic-images/dynamic-style-inheritance-blue-large.png#lightbox "синий пример наследования стиля динамического")
+[![](dynamic-images/dynamic-style-inheritance-green.png "зеленый динамического стиля Пример наследования")](dynamic-images/dynamic-style-inheritance-green-large.png#lightbox "пример наследования стиля динамические зеленый")
 
 В следующем примере кода показаны в эквивалентную страницу в C#:
 

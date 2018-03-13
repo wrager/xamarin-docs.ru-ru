@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/22/2017
-ms.openlocfilehash: 6de57e9523ff336c2e06e39903280db9c9ab95fa
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: df9059b0e64b4a05b554f25b5f9d7f6031406633
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="application-icons"></a>Значков приложения
 
@@ -32,13 +32,13 @@ _Это статье рассматриваются включая и управ
 
 - **Значок приложения** -каждого приложения iOS необходимо определить значка приложения. Данный значок, предоставляющую пользователю из на начальный экран операций ввода-вывода, чтобы запустить приложение. Кроме того этот значок используется Game Center, если это применимо. Пример 
 
-    [ ![](app-icons-images/000.png "Значок приложения")](app-icons-images/000-full.png)
+    [![](app-icons-images/000.png "Значок приложения")](app-icons-images/000-full.png#lightbox)
 - **Значок Spotlight** — всякий раз, когда пользователь вводит имя приложения в поиске внимания, отображается этот значок. Пример 
 
-    [ ![](app-icons-images/000a.png "Значок Spotlight")](app-icons-images/000a-full.png)
+    [![](app-icons-images/000a.png "Значок Spotlight")](app-icons-images/000a-full.png#lightbox)
 - **Значок параметров** — Если пользователь вводит **параметры** приложение на устройстве iOS, данный значок будет отображаться в конце **параметры** список для приложения. Пример 
 
-    [ ![](app-icons-images/000b.png "Значок параметров")](app-icons-images/000b-full.png)
+    [![](app-icons-images/000b.png "Значок параметров")](app-icons-images/000b-full.png#lightbox)
 
 Для поддержки всех типов значок, необходимые для приложения Xamarin.iOS разрабатывать приложения для iOS 5 через iOS 9 (или более поздней) потребуется следующие размеры изображения средства и способы их устранения:
 
@@ -251,5 +251,5 @@ _Это статье рассматриваются включая и управ
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Работа с изображениями (пример)](https://developer.xamarin.com/samples/WorkingWithImages/)
-- [Привет, iPhone](~/ios/get-started/hello-ios/index.md)
+- [Hello, iPhone](~/ios/get-started/hello-ios/index.md)
 - [Пользовательский значок и правила создания образа](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html))

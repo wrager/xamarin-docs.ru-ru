@@ -2,20 +2,19 @@
 title: "Шрифты"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 3F543FC5-FDED-47F8-8D2C-481FCC98BFDA$
+ms.assetid: 3F543FC5-FDED-47F8-8D2C-481FCC98BFDA
 ms.technology: xamarin-android
-author: mgmclemore
-ms.author: mamcle
-ms.date: 01/30/2018
-ms.openlocfilehash: 3b7c45a50ffb0748b5f63edfd444cb02af3fdc67
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+author: topgenorth
+ms.author: toopge
+ms.date: 03/09/2018
+ms.openlocfilehash: 7cde19a153585a6f9739aa02f3ea69dc4f09be58
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="fonts"></a>Шрифты
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -60,7 +59,6 @@ V26 библиотеку поддержки Android будут backport подд
 
 В этом руководстве рассматривается использование шрифтов Android ресурс и затем перейти к описывают, как загрузить шрифты во время выполнения.
 
-<a name="fonts_as_a_resource" />
 
 ## <a name="fonts-as-a-resource"></a>Шрифты в виде ресурса
 
@@ -139,7 +137,6 @@ V26 библиотеку поддержки Android будут backport подд
     />
 ```
 
-<a name="programatically_assigning_fonts" />
 
 ### <a name="programmatically-assigning-fonts"></a>Назначение шрифты программным способом
 
@@ -158,7 +155,6 @@ var typeface = Typeface.Create("<FONT FAMILY NAME>", Android.Graphics.TypefaceSt
 textView1.Typeface = typeface;
 ```
 
-<a name="downloading_fonts" />
 
 ## <a name="downloading-fonts"></a>Загрузка шрифтов
 
@@ -202,7 +198,6 @@ Android 8.0 поддерживает загрузку шрифты двумя с
 
 После определения шрифты может оказаться необходимым предоставить сведения о _сертификаты шрифта_ на загрузку.
 
-<a name="font_certificates" />
 
 ### <a name="font-certificates"></a>Сертификаты шрифта
 
@@ -232,7 +227,6 @@ Android 8.0 поддерживает загрузку шрифты двумя с
 
 С этими файлами ресурсов в месте приложение может выполнять загрузку шрифты.
 
-<a name="downloadable_font_resource_declaration" />
 
 ### <a name="declaring-downloadable-fonts-as-resources"></a>Объявление загружаемые шрифты как ресурсы
 
@@ -253,7 +247,6 @@ Android 8.0 поддерживает загрузку шрифты двумя с
 <meta-data android:name="downloadable_fonts" android:resource="@array/downloadable_fonts" />
 ```
 
-<a name="programatically_downloading_fonts" />
 
 ### <a name="downloading-a-font-with-the-font-apis"></a>Загрузка шрифта с интерфейсами API шрифта
 
@@ -326,10 +319,6 @@ public class FontDownloadHelper : FontsContractCompat.FontRequestCallback
     }
 }
 
-
-/// <summary>
-/// EventArg when a font has been downloaded. 
-/// </summary>
 public class FontDownloadEventArg : EventArgs
 {
     public FontDownloadEventArg(Android.Graphics.Typeface typeface)
@@ -360,7 +349,6 @@ fontHelper.FontDownloaded += (object sender, FontDownloadEventArg e) =>
 fontHelper.DownloadFonts(this); // this is an Android Context instance.
 ```
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

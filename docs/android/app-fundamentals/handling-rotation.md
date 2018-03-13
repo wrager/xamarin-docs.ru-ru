@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: eb310b13a97e345bab68bf4e878f81a6187da691
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c31dbfeea3134de95f3275a7fa79c508a94d6a91
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="handling-rotation"></a>Обработка поворота
 
 _В этом разделе описывается изменение ориентации устройства в Xamarin.Android обработки. В этом примере рассматривается с системой Android ресурсов для автоматической загрузки ресурсы для использования конкретного устройства ориентации, как можно программным образом обрабатывать ориентации изменяется._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -30,7 +29,6 @@ _В этом разделе описывается изменение ориен
 
 -   **Программный поворота макета** &ndash; как программным образом добавлять элементы управления, а также способ обработки изменение ориентации вручную.
 
-<a name="Handling_Rotation_Declaratively_with_Layouts" />
 
 ## <a name="handling-rotation-declaratively-with-layouts"></a>Обработка поворота декларативно с макетами
 
@@ -41,13 +39,12 @@ _В этом разделе описывается изменение ориен
 
 -   *Ресурсы drawable* &ndash; указание какие drawables загружаются для каждого расположения.
 
-<a name="Layout_Resources" />
 
 ### <a name="layout-resources"></a>Ресурсы макета
 
 По умолчанию включены в файлы Android XML (AXML) **ресурсы и макет** папки, используемые для визуализации представления для действия. Эта папка ресурсы используются для книжной и альбомной ориентации, если отсутствуют дополнительные макета ресурсы предоставляются специально для альбомная. Рассмотрим структура проекта, созданная с помощью шаблона проекта по умолчанию.
 
-[ ![Структура шаблона проекта по умолчанию](handling-rotation-images/00.png)](handling-rotation-images/00.png)
+[![Структура шаблона проекта по умолчанию](handling-rotation-images/00.png)](handling-rotation-images/00.png#lightbox)
 
 Этот проект создает один **Main.axml** файла в **ресурсы и макет** папки. Если действия `OnCreate` вызывается метод, он увеличивает представление, определенное в **Main.axml,** объявляет кнопки, как показано в коде ниже XML:
 
@@ -67,9 +64,8 @@ _В этом разделе описывается изменение ориен
 
 При повороте устройства в альбомной ориентации, действия `OnCreate` повторно вызывается метод и тот же **Main.axml** файла увеличивается, как показано на снимке экрана ниже:
 
-[ ![Таким же экране, однако в альбомной ориентации](handling-rotation-images/01-sml.png)](handling-rotation-images/01.png)
+[![Таким же экране, однако в альбомной ориентации](handling-rotation-images/01-sml.png)](handling-rotation-images/01.png#lightbox)
 
-<a name="Orientation-Specific_Layouts" />
 
 #### <a name="orientation-specific-layouts"></a>Ориентация конкретных макетов
 
@@ -105,9 +101,8 @@ _В этом разделе описывается изменение ориен
 
 Выполнение этого кода и поворот устройства с книжной на альбомную показаны новые загрузки XML, как показано ниже:
 
-[ ![Снимки экрана книжной и альбомной печати книжной ориентации](handling-rotation-images/02.png)](handling-rotation-images/02.png)
+[![Снимки экрана книжной и альбомной печати книжной ориентации](handling-rotation-images/02.png)](handling-rotation-images/02.png#lightbox)
 
-<a name="Drawable_Resources" />
 
 ### <a name="drawable-resources"></a>Drawable ресурсы
 
@@ -126,15 +121,13 @@ _В этом разделе описывается изменение ориен
 
 Дополнительно Предположим, что другая версия **Monkey.png** включается в **ресурсы или drawable контактном**. Точно так же, как и с файлами макета, когда устройство будет поворачивать, drawable изменения для данного ориентацию, как показано ниже:
 
-[ ![Другая версия Monkey.png, показанный в режиме книжной и альбомной ориентации](handling-rotation-images/03.png)](handling-rotation-images/03.png)
+[![Другая версия Monkey.png, показанный в режиме книжной и альбомной ориентации](handling-rotation-images/03.png)](handling-rotation-images/03.png#lightbox)
 
-<a name="Handling_Rotation_Programmatically" />
 
 ## <a name="handling-rotation-programmatically"></a>Обработка поворота программным способом
 
 Иногда мы определяем макеты в коде. Это может произойти по ряду причин, включая технические ограничения, разработчик предпочтения, и т. д. Если программно добавить элементы управления, приложения должны учитывать вручную ориентацией устройства, которое обрабатывается автоматически при использовании XML-ресурсов.
 
-<a name="Adding_Controls_in_Code" />
 
 ### <a name="adding-controls-in-code"></a>Добавление элементов управления в коде
 
@@ -178,9 +171,8 @@ protected override void OnCreate (Bundle bundle)
 
 Этот код создает экземпляр `RelativeLayout` классу и устанавливается его `LayoutParameters` свойство. `LayoutParams` Класса является способом Android инкапсуляции расположение элементов управления в виде для повторного использования. После создания экземпляра макета элементов управления можно создать и добавить к нему. Элементы управления обладают также `LayoutParameters`, такие как `TextView` в этом примере. После `TextView` создается, добавляя его в `RelativeLayout` и параметр `RelativeLayout` отображения приложения в результате представление содержимого `TextView` следующим:
 
-[ ![Кнопки увеличить счетчик показано в режиме книжной и альбомной ориентации](handling-rotation-images/04.png)](handling-rotation-images/04.png)
+[![Кнопки увеличить счетчик показано в режиме книжной и альбомной ориентации](handling-rotation-images/04.png)](handling-rotation-images/04.png#lightbox)
 
-<a name="Detecting_Orientation_in_Code" />
 
 ### <a name="detecting-orientation-in-code"></a>Обнаружение ориентацию в коде
 
@@ -226,9 +218,8 @@ protected override void OnCreate (Bundle bundle)
 
 Этот код задает `TextView` быть позиционированные 100 пикселей ниже верхней левой части экрана, автоматически анимации в новый макет при повороте Альбомная, как показано ниже:
 
-[ ![Состояние просмотра будет сохранено в рамках книжной и альбомной режимы](handling-rotation-images/05.png)](handling-rotation-images/05.png)
+[![Состояние просмотра будет сохранено в рамках книжной и альбомной режимы](handling-rotation-images/05.png)](handling-rotation-images/05.png#lightbox)
 
-<a name="Preventing_Activity_Restart" />
 
 ### <a name="preventing-activity-restart"></a>Предотвращение действие перезапуска
 
@@ -292,7 +283,6 @@ public class CodeLayoutActivity : Activity
 
 При запуске приложения, Android загружает изменения интерфейса пользователя, как происходит смены устройств и не перезапускает действия.
 
-<a name="Preventing_Activity_Restart_for_Declarative_Layouts" />
 
 ## <a name="preventing-activity-restart-for-declarative-layouts"></a>Предотвращает перезагрузку действия для декларативного макетов
 
@@ -300,7 +290,6 @@ public class CodeLayoutActivity : Activity
 
 Чтобы сделать это, мы выполните процедуру, которая используется со структурой программный. Просто установите `ConfigurationChanges` в `ActivityAttribute`, как это делалось `CodeLayoutActivity` ранее. Любой код, который нужно запустить для изменение ориентации снова могут быть реализованы в `OnConfigurationChanged` метод.
 
-<a name="Maintaining_State_During_Orientation_Changes" />
 
 ## <a name="maintaining-state-during-orientation-changes"></a>Поддержание состояния при изменении ориентации
 
@@ -308,7 +297,6 @@ public class CodeLayoutActivity : Activity
 
 Дополнительные сведения о сохранения состояния в Android посвящены [жизненный цикл действия](~/android/app-fundamentals/activity-lifecycle/index.md) руководства.
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

@@ -3,14 +3,15 @@ title: "Сводка Глава 24. Переход по страницам"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: DDCDB49C-6008-4F72-B095-463EE21D7C23
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: b8eac45c52093dea23c08a19d219fa0bbd8d55ab
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3390a298cd8d9967f0aea2bd9fb5a90830714ba5
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-24-page-navigation"></a>Сводка Глава 24. Переход по страницам
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 02/27/2018
 
 [ **ViewGalleryType** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter24/ViewGalleryType) примере демонстрируется использование `TableView` для вывода списка элементов меню. Каждый элемент связан с `Type` объекта для отдельной страницы. При выборе этого пункта, программа создает страницы и переходит к нему.
 
-[![Снимок экрана тройной типа представления коллекции](images/ch24fg21-small.png "пункты меню со списком TableView")](images/ch24fg21-large.png "TableView вывод команды меню")
+[![Снимок экрана тройной типа представления коллекции](images/ch24fg21-small.png "пункты меню со списком TableView")](images/ch24fg21-large.png#lightbox "TableView вывод команды меню")
 
 [ **ViewGalleryInst** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter24/ViewGalleryInst) образец будет немного отличаться в том, что меню содержит экземпляры каждой страницы, а не типы. Это позволяет сохранить данные из каждой страницы, но все страницы, которые должны создаваться при запуске программы.
 
@@ -174,4 +175,4 @@ Xamarin.Forms [ `MessagingCenter` ](https://developer.xamarin.com/api/type/Xamar
 - [Полный текст Глава 24 (PDF)](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch24-Apr2016.pdf)
 - [Образцы Глава 24](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter24)
 - [Иерархическая навигация](~/xamarin-forms/app-fundamentals/navigation/hierarchical.md)
-- [Модальные страниц](~/xamarin-forms/app-fundamentals/navigation/modal.md)
+- [Модальные страницы](~/xamarin-forms/app-fundamentals/navigation/modal.md)

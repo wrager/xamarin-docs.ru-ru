@@ -7,18 +7,17 @@ ms.assetid: 646ED563-C34E-256D-4B56-29EE99881C27
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: ea3fd7d73f104f7b9650431a5531fe4399a2630c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 02/28/2018
+ms.openlocfilehash: 91bd5ae83cd0d59872e11a6b1bdc7b84c751e64f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-audio"></a>Android аудио
 
 _Для ОС Android предоставляет широкие возможности для мультимедиа, включающая аудио и видео. В этом руководстве основное внимание уделяется звука в Android и рассматриваются воспроизводить и записывать звук, используя встроенный проигрыватель и записи классов, а также низкоуровневые звуковой API. Она также охватывает работе с событиями аудио широковещательных другими приложениями, чтобы разработчики могут создавать приложения правильно._
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -44,7 +43,6 @@ Android предоставляет широкие возможности для 
 ![Необходимые разрешения раздел манифеста Android с ЗАПИСЬЮ\_АУДИО включена](android-audio-images/image01.png)
 
 
-<a name="Playing_Audio_with_the_MediaPlayer_Class" />
 
 ## <a name="playing-audio-with-the-mediaplayer-class"></a>Воспроизведение звука с классом MediaPlayer
 
@@ -52,7 +50,6 @@ Android предоставляет широкие возможности для 
 `MediaPlayer` можно воспроизводить локальных или удаленных файлов, передав ему путь к файлу. Тем не менее `MediaPlayer` очень учитывают состояние и вызова одного из его методов в неправильном состоянии приведет к созданию исключения. Очень важно для взаимодействия с `MediaPlayer` в порядке, описанные ниже, чтобы избежать ошибок.
 
 
-<a name="Initializing_and_Playing" />
 
 ### <a name="initializing-and-playing"></a>Инициализация и воспроизведения
 
@@ -84,7 +81,6 @@ public void StartPlayer(String  filePath)
 }
 ```
 
-<a name="Suspending_and_Resuming_Playback" />
 
 ### <a name="suspending-and-resuming-playback"></a>Приостановка и возобновление воспроизведения
 
@@ -113,14 +109,12 @@ player.Stop();
 player.Release();
 ```
 
-<a name="Using_the_MediaRecorder_Class_to_Record_Audio" />
 
 
 ## <a name="using-the-mediarecorder-class-to-record-audio"></a>С помощью класса MediaRecorder для записи звука
 
 Следствием `MediaPlayer` для записи звука в Android [MediaRecorder](https://developer.xamarin.com/api/type/Android.Media.MediaRecorder/) класса. Как `MediaPlayer`, его зависящих от состояния и переходы через несколько состояний, чтобы добраться до момента, где она может начать запись. Для записи звука, `RECORD_AUDIO` должно иметь значение. Инструкции по настройке приложения см. разрешения [работа с AndroidManifest.xml](~/android/platform/android-manifest.md).
 
-<a name="Initializing_and_Recording" />
 
 ### <a name="initializing-and-recording"></a>Инициализация и записи
 
@@ -170,7 +164,6 @@ void RecordAudio (String filePath)
 }
 ```
 
-<a name="Stopping_recording" />
 
 ### <a name="stopping-recording"></a>Остановка записи
 
@@ -180,7 +173,6 @@ void RecordAudio (String filePath)
 recorder.Stop();
 ```
 
-<a name="Cleaning_up" />
 
 
 ### <a name="cleaning-up"></a>Очистка
@@ -197,18 +189,15 @@ recorder.Reset();
 recorder.Release();
 ```
 
-<a name="Managing_Audio_Notifications" />
 
 ## <a name="managing-audio-notifications"></a>Управление звуковых уведомлений
 
-<a name="The_AudioManager_Class" />
 
 
 ### <a name="the-audiomanager-class"></a>Класс AudioManager
 
 [AudioManager](https://developer.xamarin.com/api/type/Android.Media.AudioManager/) класс предоставляет доступ к аудио уведомлений, которые позволяют приложениям знал, когда выполнена звуковых событиях. Эта служба также предоставляет доступ к другим аудио функции, такие как управление режимом тома и звонка. `AudioManager` Позволяет приложению обрабатывать аудио уведомления для управления воспроизведения звука.
 
-<a name="Managing_Audio_Focus" />
 
 
 ### <a name="managing-audio-focus"></a>Управление фокусом аудио
@@ -224,7 +213,6 @@ recorder.Release();
 Дополнительные сведения о звуковых фокус в разделе [Управление аудио фокус](http://developer.android.com/training/managing-audio/audio-focus.html).
 
 
-<a name="Registering_the_Callback_for_Audio_Focus" />
 
 #### <a name="registering-the-callback-for-audio-focus"></a>Регистрация обратного вызова для аудио фокус
 
@@ -235,7 +223,6 @@ recorder.Release();
 Когда приложение завершило с ресурсами, аудио, он вызывает `AbandonFocus` метод `AudioManager`и снова передается в обратный вызов. Это отменяет регистрацию обратного вызова и освобождает звуковые ресурсы, чтобы другие приложения могут получать фокус аудио.
 
 
-<a name="Requesting_Audio_Focus" />
 
 #### <a name="requesting-audio-focus"></a>Запрашивает аудио фокус
 
@@ -270,13 +257,11 @@ Boolean RequestAudioResources(INotificationReceiver parent)
 }
 ```
 
-<a name="Releasing_Audio_Focus" />
 
 #### <a name="releasing-audio-focus"></a>Освобождение аудио фокус
 
 После завершения воспроизведения записи `AbandonFocus` метод `AudioManager` вызывается. Это позволяет другим приложением для получения звуковые ресурсы устройства. Другие приложения будет отправлено уведомление этого изменения аудио фокус, если они зарегистрировали свои собственные прослушиватели.
 
-<a name="Low_Level_Audio_API" />
 
 ## <a name="low-level-audio-api"></a>Низкий уровень аудио API
 
@@ -289,14 +274,10 @@ Boolean RequestAudioResources(INotificationReceiver parent)
 3.  Потокового аудио.
 
 
- <a name="AudioTrack_Class" />
-
-
 ### <a name="audiotrack-class"></a>Класс AudioTrack
 
 [AudioTrack](https://developer.xamarin.com/api/type/Android.Media.AudioTrack/) класс использует низкоуровневые звуковой API для записи и низкоуровневые эквивалентно `MediaPlayer` класса.
 
-<a name="Initializing_and_Playing" />
 
 #### <a name="initializing-and-playing"></a>Инициализация и воспроизведения
 
@@ -339,7 +320,6 @@ void PlayAudioTrack(byte[] audioBuffer)
 }
 ```
 
-<a name="Pausing_and_Stopping_the_Playback" />
 
 #### <a name="pausing-and-stopping-the-playback"></a>Приостановка и остановка воспроизведения
 
@@ -355,7 +335,6 @@ audioTrack.Pause();
 audioTrack.Stop();
 ```
 
-<a name="Cleaning_up" />
 
 #### <a name="cleanup"></a>Очистка
 
@@ -365,13 +344,11 @@ audioTrack.Stop();
 audioTrack.Release();
 ```
 
-<a name="The_AudioRecord_Class" />
 
 ### <a name="the-audiorecord-class"></a>Класс AudioRecord
 
 [AudioRecord](https://developer.xamarin.com/api/type/Android.Media.AudioRecord/) класса является эквивалентом `AudioTrack` на стороне записи. Как и `AudioTrack`, он использует буферы памяти напрямую, вместо файлов и URI. Он требует `RECORD_AUDIO` задать разрешения в манифест.
 
-<a name="Initializing_and_Recording" />
 
 #### <a name="initializing-and-recording"></a>Инициализация и записи
 
@@ -423,7 +400,6 @@ void RecordAudio()
 }
 ```
 
-<a name="Stopping_the_Recording" />
 
 #### <a name="stopping-the-recording"></a>Остановка записи
 
@@ -433,7 +409,6 @@ void RecordAudio()
 audRecorder.Stop();
 ```
 
-<a name="Clean_Up" />
 
 #### <a name="cleanup"></a>Очистка
 
@@ -443,7 +418,6 @@ audRecorder.Stop();
 audRecorder.Release();
 ```
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

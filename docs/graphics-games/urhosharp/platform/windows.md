@@ -1,17 +1,17 @@
 ---
 title: "Поддержка UrhoSharp Windows"
-description: "Определенные настройки Windows и компоненты"
+description: "Определенные настройки Windows и компоненты для UrhoSharp."
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: A4F36014-AE4E-4F07-A1AC-F264AAA68ACF
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
-ms.openlocfilehash: ec4fec01aa27e522aeec6df09041f14b1c3db080
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0deefe0e00ec96a21317bfa2e8bf4894d5deae47
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="urhosharp-windows-support"></a>Поддержка UrhoSharp Windows
 
@@ -27,11 +27,11 @@ _Определенные настройки Windows и компоненты_
 
 # <a name="standalone-project"></a>Отдельный проект
 
-## <a name="creating-a-project"></a>Создание проекта
+### <a name="creating-a-project"></a>Создание проекта
 
 Создайте проект консольного, ссылаются на Urho NuGet и убедитесь, что может найти активы (каталогов, содержащих каталог данных).
 
-## <a name="configuring-and-launching-urho"></a>Настройка и запуск Urho
+### <a name="configuring-and-launching-urho"></a>Настройка и запуск Urho
 
 Чтобы запустить приложение, для этого:
 
@@ -39,17 +39,17 @@ _Определенные настройки Windows и компоненты_
 DesktopUrhoInitializer.AssetsDirectory = "../Assets";
 new MyGame().Run();
 ```
-## <a name="example"></a>Пример
+### <a name="example"></a>Пример
 
 [Полный пример](https://github.com/xamarin/urho-samples/tree/master/FeatureSamples/Desktop)
 
-# <a name="integrated-with-wpf"></a>Интегрируется с WPF
+## <a name="integrated-with-wpf"></a>Интегрируется с WPF
 
-## <a name="creating-a-project"></a>Создание проекта
+### <a name="creating-a-project"></a>Создание проекта
 
 Создание проекта WPF, ссылаются на Urho NuGet и убедитесь, что может найти активы (каталогов, содержащих каталог данных).
 
-## <a name="configuring-and-launching-urho-from-wpf"></a>Настройка и запуск Urho из WPF
+### <a name="configuring-and-launching-urho-from-wpf"></a>Настройка и запуск Urho из WPF
 
 Создать подкласс `Window` и настраивать ваши активы, следующим образом:
 
@@ -83,17 +83,17 @@ new MyGame().Run();
     }
 ```
 
-## <a name="example"></a>Пример
+### <a name="example"></a>Пример
 
 [Полный пример](https://github.com/xamarin/urho-samples/tree/master/FeatureSamples/WPF)
 
-# <a name="integrated-with-uwp"></a>Интегрируется с UWP
+## <a name="integrated-with-uwp"></a>Интегрируется с UWP
 
-## <a name="creating-a-project"></a>Создание проекта
+### <a name="creating-a-project"></a>Создание проекта
 
 Создайте проект UWP, ссылаются на Urho NuGet и убедитесь, что может найти активы (каталогов, содержащих каталог данных).
 
-## <a name="configuring-and-launching-urho-from-uwp"></a>Настройка и запуск Urho из UWP
+### <a name="configuring-and-launching-urho-from-uwp"></a>Настройка и запуск Urho из UWP
 
 Создать подкласс `Window` и настраивать ваши активы, следующим образом:
 
@@ -116,17 +116,17 @@ new MyGame().Run();
     }
 ```
 
-## <a name="example"></a>Пример
+### <a name="example"></a>Пример
 
 [Полный пример](https://github.com/xamarin/urho-samples/tree/master/FeatureSamples/UWP)
 
-# <a name="integrated-with-windowsforms"></a>Интегрируется с Windows.Forms
+## <a name="integrated-with-windowsforms"></a>Интегрируется с Windows.Forms
 
-## <a name="creating-a-project"></a>Создание проекта
+### <a name="creating-a-project"></a>Создание проекта
 
 Создайте проект Windows.Forms, ссылаются на Urho NuGet и убедитесь, что может найти активы (каталогов, содержащих каталог данных).
 
-## <a name="configuring-and-launching-urho-from-windowsforms"></a>Настройка и запуск Urho из Windows.Forms
+### <a name="configuring-and-launching-urho-from-windowsforms"></a>Настройка и запуск Urho из Windows.Forms
 
 Запустите Urho из формы см. в разделе [полный пример](https://github.com/xamarin/urho-samples/blob/master/FeatureSamples/WinForms/SamplesForm.cs)
 

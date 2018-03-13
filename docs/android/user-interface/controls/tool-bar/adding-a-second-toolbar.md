@@ -7,21 +7,19 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: b471742ae9fb365d75e8dd3ca0f93f5e55208f19
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 343694163c79ab4d7e8b78875282e7077db979e5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="adding-a-second-toolbar"></a>Добавление второй панели инструментов
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор 
 
 `Toolbar` Можно сделать более чем заменить панели действий &ndash; он может использоваться несколько раз в рамках действия, она может быть, настроенные для размещения в любом месте на экране, и его можно настроить для охвата частичного ширина экрана. В приведенных ниже примерах показано, как для создания второго `Toolbar` и поместите его в нижней части экрана. Это `Toolbar` реализует **копирования**, **Вырезать**, и **вставить** пунктов меню. 
 
-<a name="define_second" />
 
 ## <a name="define-the-second-toolbar"></a>Определите второй панели инструментов 
 
@@ -78,10 +76,9 @@ android:background="?android:attr/colorAccent
 
 Это дает темной оранжевый цвет нижней панели инструментов. Построение и запуск приложения отображается пустая панель инструментов, вторая в нижней части экрана: 
 
-[![Снимок экрана приложения с желтым второй панели инструментов в нижней части экрана](adding-a-second-toolbar-images/01-second-toolbar-sml.png)](adding-a-second-toolbar-images/01-second-toolbar.png)
+[![Снимок экрана приложения с желтым второй панели инструментов в нижней части экрана](adding-a-second-toolbar-images/01-second-toolbar-sml.png)](adding-a-second-toolbar-images/01-second-toolbar.png#lightbox)
 
 
-<a name="second_menus" />
  
 ## <a name="add-edit-menu-items"></a>Добавление элементов меню Правка 
 
@@ -100,7 +97,6 @@ android:background="?android:attr/colorAccent
 В следующих разделах приводится подробное описание этого процесса: **Вырезать**, **копирования**, и **вставить** вниз добавляются пункты меню `Toolbar`. 
 
 
-<a name="second_resource" />
 
 ### <a name="define-the-edit-menu-resource"></a>Определить ресурс меню Правка
 
@@ -130,7 +126,6 @@ android:background="?android:attr/colorAccent
 Создает этот XML-документ **Вырезать**, **копирования**, и **вставить** пунктов меню (с помощью значков, которые были добавлены `mipmap-` папки в [замена панели действий ](~/android/user-interface/controls/tool-bar/replacing-the-action-bar.md)).
 
 
-<a name="inflate_menus" />
 
 ### <a name="inflate-the-menus"></a>Увеличению меню
 
@@ -149,18 +144,17 @@ editToolbar.MenuItemClick += (sender, e) => {
 
 Выполните сборку и запуск приложения. При запуске приложения, текста и значков, добавленных выше отображаются так, как показано ниже: 
 
-[![Схема нижней панели инструментов с помощью вырезания, копирования и вставки значков](adding-a-second-toolbar-images/02-bottom-toolbar-sml.png)](adding-a-second-toolbar-images/02-bottom-toolbar.png)
+[![Схема нижней панели инструментов с помощью вырезания, копирования и вставки значков](adding-a-second-toolbar-images/02-bottom-toolbar-sml.png)](adding-a-second-toolbar-images/02-bottom-toolbar.png#lightbox)
 
 Коснувшись **Вырезать** меню значка вызывает следующие тост для отображения: 
 
-[![Снимок экрана из всплывающих означает, что был касании значок меню перехода](adding-a-second-toolbar-images/03-bottom-tapped-sml.png)](adding-a-second-toolbar-images/03-bottom-tapped.png)
+[![Снимок экрана из всплывающих означает, что был касании значок меню перехода](adding-a-second-toolbar-images/03-bottom-tapped-sml.png)](adding-a-second-toolbar-images/03-bottom-tapped.png#lightbox)
 
 Коснитесь пунктов меню или панели инструментов отображает результирующий всплывающие уведомления: 
 
-[![Снимки экрана из всплывающие уведомления для сохранения копии и вставьте пунктов меню касание](adding-a-second-toolbar-images/04-menu-action-sml.png)](adding-a-second-toolbar-images/04-menu-action.png)
+[![Снимки экрана из всплывающие уведомления для сохранения копии и вставьте пунктов меню касание](adding-a-second-toolbar-images/04-menu-action-sml.png)](adding-a-second-toolbar-images/04-menu-action.png#lightbox)
 
 
-<a name="up_button" />
 
 ## <a name="the-up-button"></a>Кнопки вверх 
 
@@ -187,7 +181,7 @@ SupportActionBar.SetHomeButtonEnabled (true);
 
 Когда пользователь переходит из `MainActivity` для `DetailActivity`, `DetailActivity` отображает **вверх** кнопки (указывающего стрелка влево), как показано на снимке экрана:
 
-[![Снимок экрана примера левой стрелки вверх кнопки на панели инструментов](adding-a-second-toolbar-images/05-up-button-sml.png)](adding-a-second-toolbar-images/05-up-button.png)
+[![Снимок экрана примера левой стрелки вверх кнопки на панели инструментов](adding-a-second-toolbar-images/05-up-button-sml.png)](adding-a-second-toolbar-images/05-up-button.png#lightbox)
 
 Коснувшись это **копирование** кнопка вызывает приложение, чтобы вернуться к `MainActivity`. В более сложных приложений с несколькими уровнями иерархии нажав эту кнопку, возвращает пользователя верхнего уровня в приложении, а не к предыдущему экрану. 
 

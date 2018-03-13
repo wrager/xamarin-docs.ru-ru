@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/17/2016
-ms.openlocfilehash: 482358b0ccbedf926cd9182065a1eb8f4c12683c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e57f19d1eb66e22badb418d4584f5654904c7ade
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="style-inheritance"></a>Наследование стилей
 
@@ -62,10 +62,10 @@ _Стили можно наследовать другие стили, чтоб�
 
 `baseStyle` Цели [ `View` ](https://developer.xamarin.com/api/type/Xamarin.Forms.View/) экземпляров и задает [ `HorizontalOptions` ](https://developer.xamarin.com/api/property/Xamarin.Forms.View.HorizontalOptions/) и [ `VerticalOptions` ](https://developer.xamarin.com/api/property/Xamarin.Forms.View.VerticalOptions/) свойства. `baseStyle` Не задано непосредственно в любом элементе управления. Вместо этого `labelStyle` и `buttonStyle` наследоваться от него, параметров дополнительные свойства привязки. `labelStyle` И `buttonStyle` затем применяются к [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) экземпляров и [ `Button` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) экземпляра, установив их [ `Style` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Style/) свойства. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](inheritance-images/style-inheritance.png)](inheritance-images/style-inheritance-large.png)
+[![](inheritance-images/style-inheritance.png)](inheritance-images/style-inheritance-large.png#lightbox)
 
 > [!NOTE]
-> **Примечание**: неявный стиль может быть производным от явный стиль, но явный стиль не может быть производным от неявный стиль.
+> Неявный стиль может быть производным от явный стиль, но явный стиль не может быть производным от неявный стиль.
 
 ### <a name="respecting-the-inheritance-chain"></a>Этом соблюдаются цепочку наследования
 
@@ -106,7 +106,7 @@ _Стили можно наследовать другие стили, чтоб�
 
 В этом примере `labelStyle` и `buttonStyle` являются ресурсах уровня элемента управления во время `baseStyle` является ресурсом уровня страницы. Однако если `labelStyle` и `buttonStyle` наследовать от `baseStyle`, невозможно для `baseStyle` наследование от `labelStyle` или `buttonStyle`из- за их соответствующих местах в иерархии представления.
 
-## <a name="style-inheritance-in-c35"></a>Наследование стиля в С &#35;
+## <a name="style-inheritance-in-c35"></a>Наследование стиля в C&#35;
 
 Эквивалентную C# страницу, где [ `Style` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) экземпляров назначенные непосредственно [ `Style` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Style/) показаны свойства обязательные элементы управления, в следующем примере кода:
 

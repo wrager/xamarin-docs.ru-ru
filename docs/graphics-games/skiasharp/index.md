@@ -8,17 +8,17 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 09/14/2017
-ms.openlocfilehash: 03089e4760ebf19849cd4d34cafb7047d8915a4d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ee0625f22062fef3c27a697ce33488274abc24d9
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="2d-drawing"></a>2D рисования
 
 SkiaSharp предоставляет возможности API C# это двумерной графики. Питание включено [библиотеки Skia Google](http://skia.org), той же библиотеке, лежащих в основе графических стеки Google Chrome, Firefox и Android.
 
-[ ![](images/ide-sml.png "SkiaSharp предоставляет возможности API C# это двумерной графики")](images/ide.png)
+[![](images/ide-sml.png "SkiaSharp предоставляет возможности API C# это двумерной графики")](images/ide.png#lightbox)
 
 SkiaSharp является переносимой библиотеки и удобно поставляется как [пакет NuGet кросс платформенных](https://www.nuget.org/packages/SkiaSharp)и поддерживает следующие платформы готового: macOS, Xamarin.Android и Xamarin.iOS, а также рабочий стол Windows.
 
@@ -32,7 +32,7 @@ SkiaSharp является переносимой библиотеки и удо
 
 - [Основы рисования](~/xamarin-forms/user-interface/graphics/skiasharp/basics/index.md)
   * [Рисование простых круга](~/xamarin-forms/user-interface/graphics/skiasharp/basics/circle.md)
-  * [Интеграция с помощью Xamarin.Forms](~/xamarin-forms/user-interface/graphics/skiasharp/basics/integration.md)
+  * [Интеграция с Xamarin.Forms](~/xamarin-forms/user-interface/graphics/skiasharp/basics/integration.md)
   * [Пикселей и аппаратно независимых единицах](~/xamarin-forms/user-interface/graphics/skiasharp/basics/pixels.md)
   * [Базовая анимация](~/xamarin-forms/user-interface/graphics/skiasharp/basics/animation.md)
   * [Интеграция текста и графики](~/xamarin-forms/user-interface/graphics/skiasharp/basics/text.md)
@@ -43,7 +43,7 @@ SkiaSharp является переносимой библиотеки и удо
   * [Типы заполнения путь](~/xamarin-forms/user-interface/graphics/skiasharp/paths/fill-types.md)
   * [Ломаных линий и параметрических уравнений](~/xamarin-forms/user-interface/graphics/skiasharp/paths/polylines.md)
   * [Точек и тире](~/xamarin-forms/user-interface/graphics/skiasharp/paths/dots.md)
-  * [Рисование пальцем](~/xamarin-forms/user-interface/graphics/skiasharp/paths/finger-paint.md)
+  * [Рисование пальцами](~/xamarin-forms/user-interface/graphics/skiasharp/paths/finger-paint.md)
 - [Преобразования](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/index.md)
   * [Преобразования для преобразования](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/translate.md)
   * [Преобразование изменения масштаба](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/scale.md)
@@ -54,15 +54,15 @@ SkiaSharp является переносимой библиотеки и удо
   * [Сходные без преобразования](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/non-affine.md)
   * [Трехмерного поворота](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/3d-rotation.md)
 - [Кривых и контуров](~/xamarin-forms/user-interface/graphics/skiasharp/curves/index.md)
-  * [Три способа, чтобы нарисовать дугу](~/xamarin-forms/user-interface/graphics/skiasharp/curves/arcs.md)
+  * [Три способа нарисовать дугу](~/xamarin-forms/user-interface/graphics/skiasharp/curves/arcs.md)
   * [Три типа кривых Безье](~/xamarin-forms/user-interface/graphics/skiasharp/curves/beziers.md)
-  * [Путь данных SVG](~/xamarin-forms/user-interface/graphics/skiasharp/curves/path-data.md)
-  * [Обрезка с использованием пути и областей](~/xamarin-forms/user-interface/graphics/skiasharp/curves/clipping.md)
-  * [Путь эффекты](~/xamarin-forms/user-interface/graphics/skiasharp/curves/effects.md)
-  * [Путей и текста](~/xamarin-forms/user-interface/graphics/skiasharp/curves/text-paths.md)
-  * [Сведения о пути и перечисления](~/xamarin-forms/user-interface/graphics/skiasharp/curves/information.md)
+  * [Данные пути SVG](~/xamarin-forms/user-interface/graphics/skiasharp/curves/path-data.md)
+  * [Обрезка изображения по границам области с помощью путей](~/xamarin-forms/user-interface/graphics/skiasharp/curves/clipping.md)
+  * [Эффекты пути](~/xamarin-forms/user-interface/graphics/skiasharp/curves/effects.md)
+  * [Пути и текст](~/xamarin-forms/user-interface/graphics/skiasharp/curves/text-paths.md)
+  * [Сведения о пути и перечисление](~/xamarin-forms/user-interface/graphics/skiasharp/curves/information.md)
 
-## <a name="platform-specific-notesgraphics-gamesskiasharpplatformmd"></a>[Определенные заметки о платформе](~/graphics-games/skiasharp/platform.md)
+## <a name="platform-specific-notesgraphics-gamesskiasharpplatformmd"></a>[Примечания для конкретных платформ](~/graphics-games/skiasharp/platform.md)
 
 На этой странице описаны инструкции по SkiaSharp установке на различных платформах, включая iOS, Android, macOS и Windows.
 

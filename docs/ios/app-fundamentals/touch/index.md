@@ -3,16 +3,16 @@ title: "Сенсорный ввод"
 description: "Сенсорных экранов на многих современных устройств позволяет пользователям быстро и эффективно взаимодействовать с устройствами естественным и интуитивно понятным способом. Такое взаимодействие не ограничивается только обнаружение простых touch — можно использовать жесты также. Например масштабирование сжатием жестов является очень распространенным примером этого — сжатия часть экрана с двумя пальцами, которые пользователь может увеличить или уменьшить. В этом руководстве рассматриваются сенсорный ввод и жестов в iOS."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4A17FD28-313F-4AAC-B82B-3847B4D64A88
+ms.assetid: E3904713-6018-4755-A315-EB045DFB3500
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/23/2017
-ms.openlocfilehash: 8f6c26048bc0ece0d64acf069151ff1d67403ccc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b0e1cf8b1cb18982fe319fef7c524aeb70be4a9b
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="touch"></a>Сенсорный ввод
 
@@ -31,14 +31,14 @@ iOS инкапсулирует сенсорного ввода данных в `
 
 ## <a name="sections"></a>Разделы
 
--  [Touch в iOS](touch-in-ios.md)
+-  [Сенсорные технологии в iOS](touch-in-ios.md)
 -  [Пошаговое руководство: Использование сенсорного ввода в iOS](ios-touch-walkthrough.md)
--  [Мультисенсорные отслеживания](touch-tracking.md)
+-  [Мультисенсорное отслеживание](touch-tracking.md)
 
 Данное руководство служит Знакомство с сенсорного ввода в iOS. Дополнительные сведения об использовании 3D Touch и Haptic отзывов в iOS которой впервые появились в iOS 9 и 10 соответственно см. в определенных направляющих ниже:
 
-* [3D Touch](~/ios/platform/3d-touch.md)
-* [Обратная связь Haptic](~/ios/user-interface/ios-ui/haptic-feedback.md)
+* [Трехмерные сенсорные технологии](~/ios/platform/3d-touch.md)
+* [Обеспечение обратной связи Haptic](~/ios/user-interface/ios-ui/haptic-feedback.md)
 
 
 

@@ -3,14 +3,15 @@ title: "Сводка Глава 27. Пользовательские модул�
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 49961953-9336-4FD4-A42F-6D9B05FF52E7
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 0c1dc9ba5cf382551a1142110c68d16421db07e4
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 6d7c2b17e9596b7d2dd26aaf77cf13f7f8086cd5
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-27-custom-renderers"></a>Сводка Глава 27. Пользовательские модули подготовки отчетов
 
@@ -66,7 +67,7 @@ Android [ `ViewRenderer<TView, TNativeView>` ](https://github.com/xamarin/Xamari
 
 Все `ViewRenderer` содержать производные `ExportRenderer` атрибутов на уровне сборки, которая связывает `HelloView` класса с определенной `HelloViewRenderer` класса. Это обнаружение модулей подготовки отчетов в проектах отдельных платформы Xamarin.Forms:
 
-[![Снимок экрана тройной Hello представления](images/ch27fg02-small.png "настраиваемых модулей подготовки")](images/ch27fg02-large.png "настраиваемых модулей подготовки")
+[![Снимок экрана тройной Hello представления](images/ch27fg02-small.png "настраиваемых модулей подготовки")](images/ch27fg02-large.png#lightbox "настраиваемых модулей подготовки")
 
 ## <a name="renderers-and-properties"></a>Модули подготовки отчетов и свойства
 
@@ -89,7 +90,7 @@ Android [ `ViewRenderer<TView, TNativeView>` ](https://github.com/xamarin/Xamari
 
 [ **EllipseDemo** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter27/EllipseDemo) класс выводит некоторые из них `EllipseView` объектов:
 
-[![Тройной экрана эллипс демонстрации](images/ch27fg03-small.png "EllipseView настраиваемых модулей подготовки")](images/ch27fg03-large.png "EllipseView настраиваемых модулей подготовки")
+[![Тройной экрана эллипс демонстрации](images/ch27fg03-small.png "EllipseView настраиваемых модулей подготовки")](images/ch27fg03-large.png#lightbox "EllipseView настраиваемых модулей подготовки")
 
 [ **BouncingBall** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter27/BouncingBall) клики `EllipseView` off стороны экрана.
 
@@ -113,4 +114,4 @@ Android [ `ViewRenderer<TView, TNativeView>` ](https://github.com/xamarin/Xamari
 
 - [Полный текст Глава 27 (PDF)](https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch27-Apr2016.pdf)
 - [Глава 27 образцы](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter27)
-- [Пользовательские модули подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
+- [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)

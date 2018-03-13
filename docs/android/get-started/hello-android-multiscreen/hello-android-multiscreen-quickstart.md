@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/08/2018
-ms.openlocfilehash: 4c61a588eafdf0a86f4124d264c41cabef3e7a14
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 159bd2435a1d2b5252e0fd1b9d525cdf6cfa7207
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="hello-android-multiscreen-quickstart"></a>Привет, Android (несколько экранов): краткое руководство
 
@@ -22,7 +22,7 @@ _В этом руководстве из двух частей описано, �
 
 В пошаговых инструкциях вы добавите второй экран в приложение [Phoneword](https://developer.xamarin.com/samples/monodroid/Phoneword/), чтобы отслеживать журнал номеров, преобразуемых этим приложением. [Итоговое приложение](https://developer.xamarin.com/samples/monodroid/PhonewordMultiscreen/) будет иметь второй экран, где отображаются преобразованные номера, как показано на снимке экрана справа:
 
-[![Снимки экрана примера приложения](hello-android-multiscreen-quickstart-images/screenshot-sml.png)](hello-android-multiscreen-quickstart-images/screenshot.png)
+[![Снимки экрана примера приложения](hello-android-multiscreen-quickstart-images/screenshot-sml.png)](hello-android-multiscreen-quickstart-images/screenshot.png#lightbox)
 
 Прилагаемый [подробный обзор](~/android/get-started/hello-android-multiscreen/hello-android-multiscreen-deepdive.md) описывает полученный результат, а также затрагивает архитектуру, навигацию и другие новые понятия Android, которые вам встретились.
 
@@ -44,15 +44,15 @@ _В этом руководстве из двух частей описано, �
 
 На **панели элементов** перетащите элемент **Button** в область конструктора и расположите его под элементом TextView **TranslatedPhoneWord**. В области **Свойства** замените **ИД** кнопки на `@+id/TranslationHistoryButton`. 
 
-[![Перетаскивание новой кнопки](hello-android-multiscreen-quickstart-images/vs/02-new-button-sml.png)](hello-android-multiscreen-quickstart-images/vs/02-new-button.png)
+[![Перетаскивание новой кнопки](hello-android-multiscreen-quickstart-images/vs/02-new-button-sml.png)](hello-android-multiscreen-quickstart-images/vs/02-new-button.png#lightbox)
 
 Задайте для свойства **Текст** кнопки значение `@string/translationHistory`. Android Designer интерпретирует это буквально, но вы внесете некоторые изменения, чтобы текст кнопки отображался правильно:
 
-[![Задание текста для кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/vs/03-translation-history-string-sml.png)](hello-android-multiscreen-quickstart-images/vs/03-translation-history-string.png)
+[![Задание текста для кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/vs/03-translation-history-string-sml.png)](hello-android-multiscreen-quickstart-images/vs/03-translation-history-string.png#lightbox)
 
 Разверните узел **Значения** в папке **Ресурсы** в **обозревателе решений** и дважды щелкните файл строковых ресурсов **Strings.xml**:
 
-[![Открытие файла Strings.xml](hello-android-multiscreen-quickstart-images/vs/04-strings-resources-file-sml.png)](hello-android-multiscreen-quickstart-images/vs/04-strings-resources-file.png)
+[![Открытие файла Strings.xml](hello-android-multiscreen-quickstart-images/vs/04-strings-resources-file-sml.png)](hello-android-multiscreen-quickstart-images/vs/04-strings-resources-file.png#lightbox)
 
 Добавьте значение и имя строки `translationHistory` в **Strings.xml**, а затем сохраните файл:
 
@@ -66,17 +66,17 @@ _В этом руководстве из двух частей описано, �
 
 Текст кнопки **Translation History** (Журнал преобразований) должен обновиться, отразив новое строковое значение:
 
-[![Отражение нового строкового значения для кнопки](hello-android-multiscreen-quickstart-images/vs/05-new-string-value.png)](hello-android-multiscreen-quickstart-images/vs/05-new-string-value.png)
+[![Отражение нового строкового значения для кнопки](hello-android-multiscreen-quickstart-images/vs/05-new-string-value.png)](hello-android-multiscreen-quickstart-images/vs/05-new-string-value.png#lightbox)
 
 Выбрав кнопку **Translation History** (Журнал преобразований) в области конструктора, найдите параметр `enabled` в области **Свойства** и присвойте ему значение `false`, чтобы отключить кнопку. При этом кнопка в области конструктора темнеет:
 
-[![Отключение кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/vs/06-enabled-false-sml.png)](hello-android-multiscreen-quickstart-images/vs/06-enabled-false.png)
+[![Отключение кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/vs/06-enabled-false-sml.png)](hello-android-multiscreen-quickstart-images/vs/06-enabled-false.png#lightbox)
 
 ### <a name="creating-the-second-activity"></a>Создание второго действия
 
 Создайте вторую операцию для обработки второго экрана. В **обозревателе решений** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый элемент...**:
 
-[![Добавление нового файла](hello-android-multiscreen-quickstart-images/vs/07-add-new-file-sml.png)](hello-android-multiscreen-quickstart-images/vs/07-add-new-file.png)
+[![Добавление нового файла](hello-android-multiscreen-quickstart-images/vs/07-add-new-file-sml.png)](hello-android-multiscreen-quickstart-images/vs/07-add-new-file.png#lightbox)
 
 В диалоговом окне **Добавление нового элемента** выберите **Visual C# > Действия** и назовите файл действий **TranslationHistoryActivity.cs**.
 
@@ -171,7 +171,7 @@ translateButton.Click += (sender, e) =>
 
 Разверните приложение в эмуляторе или на устройстве. На следующих снимках экрана показано запущенное приложение **Phoneword**:
 
-[![Снимки экрана с примерами](hello-android-multiscreen-quickstart-images/screenshot-sml.png)](hello-android-multiscreen-quickstart-images/screenshot.png)
+[![Снимки экрана с примерами](hello-android-multiscreen-quickstart-images/screenshot-sml.png)](hello-android-multiscreen-quickstart-images/screenshot.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -181,16 +181,16 @@ translateButton.Click += (sender, e) =>
 
 На **панели элементов** перетащите элемент **Button** в область конструктора и расположите его под элементом TextView **TranslatedPhoneWord**. На панели **Свойства** замените **ИД** кнопки на `@+id/TranslationHistoryButton`. 
 
-[![Перетаскивание новой кнопки](hello-android-multiscreen-quickstart-images/xs/02-new-button-sml.png)](hello-android-multiscreen-quickstart-images/xs/02-new-button.png)
+[![Перетаскивание новой кнопки](hello-android-multiscreen-quickstart-images/xs/02-new-button-sml.png)](hello-android-multiscreen-quickstart-images/xs/02-new-button.png#lightbox)
 
 Задайте для свойства **Текст** кнопки значение `@string/translationHistory`. Android Designer интерпретирует это буквально, но вы внесете некоторые изменения, чтобы текст кнопки отображался правильно:
 
-[![Задание текста для кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/xs/03-call-history-string-sml.png)](hello-android-multiscreen-quickstart-images/xs/03-call-history-string.png)
+[![Задание текста для кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/xs/03-call-history-string-sml.png)](hello-android-multiscreen-quickstart-images/xs/03-call-history-string.png#lightbox)
 
 
 Разверните узел **Значения** в папке **Ресурсы** на **Панели решения** и дважды щелкните файл строковых ресурсов **Strings.xml**:
 
-[![Открытие строк](hello-android-multiscreen-quickstart-images/xs/04-strings-resources-file-sml.png)](hello-android-multiscreen-quickstart-images/xs/04-strings-resources-file.png)
+[![Открытие строк](hello-android-multiscreen-quickstart-images/xs/04-strings-resources-file-sml.png)](hello-android-multiscreen-quickstart-images/xs/04-strings-resources-file.png#lightbox)
 
 
 Добавьте значение и имя строки `translationHistory` в **Strings.xml**, а затем сохраните файл:
@@ -205,12 +205,12 @@ translateButton.Click += (sender, e) =>
 
 Текст кнопки **Translation History** (Журнал преобразований) должен обновиться, отразив новое строковое значение:
 
-[![Отражение нового строкового значения для кнопки](hello-android-multiscreen-quickstart-images/xs/05-new-string-value-sml.png)](hello-android-multiscreen-quickstart-images/xs/05-new-string-value.png)
+[![Отражение нового строкового значения для кнопки](hello-android-multiscreen-quickstart-images/xs/05-new-string-value-sml.png)](hello-android-multiscreen-quickstart-images/xs/05-new-string-value.png#lightbox)
 
 
 Выбрав кнопку **Translation History** (Журнал преобразований) в области конструктора, откройте вкладку **Поведение** на **Панели решения** и дважды щелкните флажок **Включено**, чтобы отключить кнопку. При этом кнопка в области конструктора темнеет:
 
-[![Отключение кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/xs/06-enabled-false-sml.png)](hello-android-multiscreen-quickstart-images/xs/06-enabled-false.png)
+[![Отключение кнопки журнала преобразований](hello-android-multiscreen-quickstart-images/xs/06-enabled-false-sml.png)](hello-android-multiscreen-quickstart-images/xs/06-enabled-false.png#lightbox)
 
 ### <a name="creating-the-second-activity"></a>Создание второго действия
 
@@ -304,7 +304,7 @@ translateButton.Click += (sender, e) =>
 
 Разверните приложение в эмуляторе или на устройстве. На следующих снимках экрана показано запущенное приложение **Phoneword**:
 
-[![Снимки экрана с примерами](hello-android-multiscreen-quickstart-images/screenshot.png)](hello-android-multiscreen-quickstart-images/screenshot.png)
+[![Снимки экрана с примерами](hello-android-multiscreen-quickstart-images/screenshot.png)](hello-android-multiscreen-quickstart-images/screenshot.png#lightbox)
 
 -----
 

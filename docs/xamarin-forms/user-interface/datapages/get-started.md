@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 79ce4a1393b2affade3422f73e1c3d4680d199df
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 1e65207e987dbdab8bf2fe5f48f0b0a500dd27bc
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="getting-started-with-datapages"></a>Приступая к работе с DataPages
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 02/28/2018
 
 Чтобы приступить к созданию страницы простой-диск с данными, DataPages предварительную версию, выполните следующие действия. Этот демонстрационный используют жестко закодировано стиля («события») в области предварительного просмотра сборках, работает только с определенного формата JSON в коде.
 
-[ ![](get-started-images/demo-sml.png "Образец DataPages приложения")](get-started-images/demo.png "DataPages примера приложения")
+[![](get-started-images/demo-sml.png "Образец DataPages приложения")](get-started-images/demo.png#lightbox "DataPages примера приложения")
 
 ## <a name="1-add-nuget-packages"></a>1. Добавление пакетов NuGet
 
@@ -134,7 +134,7 @@ MainPage = new NavigationPage (new SessionDataPage ());
 
 Указанные выше шаги, приводить к работе страницы данных:
 
-[ ![](get-started-images/demo-sml.png "Образец DataPages приложения")](get-started-images/demo.png "DataPages примера приложения")
+[![](get-started-images/demo-sml.png "Образец DataPages приложения")](get-started-images/demo.png#lightbox "DataPages примера приложения")
 
 Это происходит потому, что готовые стиль **«События»** существует в пакет Nuget Light темы и стили, определенные, совпадает с источником данных (например) «title», «image», «докладчика»).
 
@@ -163,7 +163,7 @@ MainPage = new NavigationPage (new SessionDataPage ());
 
 Предоставляя `DataTemplate` этот код переопределяет `StyleClass` и использует вместо него макет по умолчанию для `ListItemControl`.
 
-[ ![](get-started-images/custom-sml.png "Образец DataPages приложения")](get-started-images/custom.png "DataPages примера приложения")
+[![](get-started-images/custom-sml.png "Образец DataPages приложения")](get-started-images/custom.png#lightbox "DataPages примера приложения")
 
 Разработчики, которые предпочитают C# в XAML можно создавать данные источника привязки слишком (не забудьте включить `using Xamarin.Forms.Pages;` инструкции):
 

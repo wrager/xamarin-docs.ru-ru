@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/06/2016
-ms.openlocfilehash: 2727d83e55e305af1372ece35bdf22abfc653fe7
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d82a1391feca9187cf2aca4394509447aeac6a18
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="reusable-eventtocommandbehavior"></a>Для повторного использования EventToCommandBehavior
 
@@ -182,7 +182,7 @@ selectedItemLabel.SetBinding (Label.TextProperty, "SelectedItemText");
 
 Во время выполнения поведение будет отвечать на действия с элементом управления. При выборе элемента в [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/), [ `ItemSelected` ](https://developer.xamarin.com/api/event/Xamarin.Forms.ListView.ItemSelected/) активизируется событие, в которой будет выполнен `OutputAgeCommand` в ViewModel. В свою очередь, при этом обновляются ViewModel `SelectedItemText` свойство, [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) привязывается к, как показано на следующем снимке экрана:
 
-[ ![](event-to-command-behavior-images/screenshots-sml.png "Образец приложения с EventToCommandBehavior")](event-to-command-behavior-images/screenshots.png "образец приложения с EventToCommandBehavior")
+[![](event-to-command-behavior-images/screenshots-sml.png "Образец приложения с EventToCommandBehavior")](event-to-command-behavior-images/screenshots.png#lightbox "образец приложения с EventToCommandBehavior")
 
 Преимущество использования этого поведения для выполнения команды при запуске события, является, команды могут быть связаны с элементами управления, которые не были предназначены для взаимодействия с командами. Кроме того код обработки события пластина шаблон удаляется из файлов кода.
 

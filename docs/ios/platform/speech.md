@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 00980c0038ac3ae51d0444e6f71dde9dfef25831
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 33e27043c3738c5213b17786e5a88fb30a7fc017
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="speech-recognition"></a>Распознавание речи
 
@@ -33,7 +33,7 @@ _В этой статье предоставляет новый API речи и 
 
 Распознавание речи реализуется в приложения iOS получении динамической либо предварительно записанного звука (в любой из языков, поддерживаемых API) и передает его на распознавателя речи, возвращающий подписка произносимых слов на обычный текст.
 
-[ ![](speech-images/speech01.png "Как работает распознавания речи")](speech-images/speech01.png)
+[![](speech-images/speech01.png "Как работает распознавания речи")](speech-images/speech01.png#lightbox)
 
 ### <a name="keyboard-dictation"></a>Диктовки клавиатуры
 
@@ -104,13 +104,13 @@ Apple включила доступности API, чтобы определит
 1. Дважды щелкните `Info.plist` файл, чтобы открыть его для редактирования.
 2. Переключитесь в **источника** представления: 
 
-    [ ![](speech-images/speech02.png "В представлении источника")](speech-images/speech02.png)
+    [![](speech-images/speech02.png "В представлении источника")](speech-images/speech02.png#lightbox)
 3. Щелкните **добавьте новую запись**, введите `NSSpeechRecognitionUsageDescription` для **свойство**, `String` для **тип** и **Описание использования** как **значение**. Пример: 
 
-    [ ![](speech-images/speech03.png "Добавление NSSpeechRecognitionUsageDescription")](speech-images/speech03.png)
+    [![](speech-images/speech03.png "Добавление NSSpeechRecognitionUsageDescription")](speech-images/speech03.png#lightbox)
 4. Если приложение будет обработки динамической аудио транскрипции, потребуется также описание использования микрофона. Щелкните **добавьте новую запись**, введите `NSMicrophoneUsageDescription` для **свойство**, `String` для **тип** и **Описание использования** как **значение**. Пример: 
 
-    [ ![](speech-images/speech04.png "Добавление NSMicrophoneUsageDescription")](speech-images/speech04.png)
+    [![](speech-images/speech04.png "Добавление NSMicrophoneUsageDescription")](speech-images/speech04.png#lightbox)
 4. Сохраните изменения в файле.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -118,10 +118,10 @@ Apple включила доступности API, чтобы определит
 1. Дважды щелкните `Info.plist` файл, чтобы открыть его для редактирования.
 3. Щелкните **добавьте новую запись**, введите `NSSpeechRecognitionUsageDescription` для **свойство**, `String` для **тип** и **Описание использования** как **значение**. Пример: 
 
-    [ ![](speech-images/speech03w.png "Добавление NSSpeechRecognitionUsageDescription")](speech-images/speech03w.png)
+    [![](speech-images/speech03w.png "Добавление NSSpeechRecognitionUsageDescription")](speech-images/speech03w.png#lightbox)
 4. Если приложение будет обработки динамической аудио транскрипции, потребуется также описание использования микрофона. Щелкните **добавьте новую запись**, введите `NSMicrophoneUsageDescription` для **свойство**, `String` для **тип** и **Описание использования** как **значение**. Пример: 
 
-    [ ![](speech-images/speech04w.png "Добавление NSMicrophoneUsageDescription")](speech-images/speech04w.png)
+    [![](speech-images/speech04w.png "Добавление NSMicrophoneUsageDescription")](speech-images/speech04w.png#lightbox)
 4. Сохраните изменения в файле.
 
 -----

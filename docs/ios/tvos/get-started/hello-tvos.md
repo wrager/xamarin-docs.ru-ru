@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 02/02/2018
-ms.openlocfilehash: fe58aa8ffb74a9b6e937be5a7f1dde0432794405
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5eccb36b3c6a437ddc1ec055e779d8f78460643e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="hello-tvos-quick-start-guide"></a>Привет, tvOS краткое руководство
 
@@ -34,7 +34,7 @@ Xamarin.tvOS позволяет разрабатывать полностью с
 
 В этой статье приведены основные понятия, необходимые для создания с помощью Visual Studio и Xamarin.tvOS посредством процесс создания базового приложения Apple TV **Hello, tvOS** на кнопке есть приложение, которое подсчитывает число попыток выполнен щелчок:
 
-[ ![](hello-tvos-images/run05.png "Запуска примера приложения")](hello-tvos-images/run05.png)
+[![](hello-tvos-images/run05.png "Запуска примера приложения")](hello-tvos-images/run05.png#lightbox)
 
 Мы расскажем следующие понятия:
 
@@ -51,21 +51,21 @@ Xamarin.tvOS позволяет разрабатывать полностью с
 
 1. Запустите Visual Studio для Mac:
 
-    [ ![](hello-tvos-images/setup01.png "Visual Studio для Mac")](hello-tvos-images/setup01.png)
+    [![](hello-tvos-images/setup01.png "Visual Studio для Mac")](hello-tvos-images/setup01.png#lightbox)
 2. Щелкните **новое решение...**  ссылку в верхний левый угол экрана, чтобы открыть **новый проект** диалоговое окно.
 3. Выберите **tvOS** > **приложения** > **одного представления приложения** и нажмите кнопку **Далее** кнопки:
 
-    [ ![](hello-tvos-images/setup02.png "Выберите приложение, одно представление")](hello-tvos-images/setup02.png)
+    [![](hello-tvos-images/setup02.png "Выберите приложение, одно представление")](hello-tvos-images/setup02.png#lightbox)
 4. Введите `Hello, tvOS` для **имя приложения**, введите ваш **идентификатор организации** и нажмите кнопку **Далее** кнопки:
 
-    [ ![](hello-tvos-images/setup04.png "Введите Hello, tvOS")](hello-tvos-images/setup04.png)
+    [![](hello-tvos-images/setup04.png "Введите Hello, tvOS")](hello-tvos-images/setup04.png#lightbox)
 5. Введите `Hello_tvOS` для **имя проекта** и нажмите кнопку **создать** кнопки:
 
-    [ ![](hello-tvos-images/setup03.png "Введите HellotvOS")](hello-tvos-images/setup03.png)
+    [![](hello-tvos-images/setup03.png "Введите HellotvOS")](hello-tvos-images/setup03.png#lightbox)
 
 Visual Studio для Mac создайте новое приложение Xamarin.tvOS и отображения по умолчанию-файлов, которые добавляются в решение приложения:
 
- [ ![](hello-tvos-images/project01.png "Просмотреть файлы по умолчанию")](hello-tvos-images/project01.png)
+ [![](hello-tvos-images/project01.png "Просмотреть файлы по умолчанию")](hello-tvos-images/project01.png#lightbox)
 
 Visual Studio для Mac использует **решения** и **проекты**, точно таким же образом, выполняющий Visual Studio. Решение представляет собой контейнер, который может содержать один или несколько проектов; проекты могут включать в себя приложения, вспомогательные библиотеки, тестовые приложения и т. д. В этом случае Visual Studio для Mac создал решение и проект приложения для вас.
 
@@ -253,11 +253,11 @@ namespace HellotvOS
 
 Чтобы начать создание пользовательского интерфейса, давайте дважды щелкните `Main.storyboard` файла в **обозревателе решений** чтобы открыть его для редактирования в конструкторе iOS:
 
-[ ![](hello-tvos-images/designer01.png "Файл Main.storyboard в обозревателе решений")](hello-tvos-images/designer01.png)
+[![](hello-tvos-images/designer01.png "В обозревателе решений файл Main.storyboard")](hello-tvos-images/designer01.png#lightbox)
 
 Это следует запустить конструктор и выглядеть следующим образом:
 
-[ ![](hello-tvos-images/designer02.png "Конструктор")](hello-tvos-images/designer02.png)
+[![](hello-tvos-images/designer02.png "Конструктор")](hello-tvos-images/designer02.png#lightbox)
 
 Дополнительные сведения о конструкторе iOS и как она работает, см. в разделе [введение в Xamarin конструктор для iOS](~/ios/user-interface/designer/introduction.md) руководства.
 
@@ -267,57 +267,57 @@ namespace HellotvOS
 
 1. Найдите **элементов**, которые должны быть справа от области конструктора:
 
-    [![](hello-tvos-images/designer03.png "Панели элементов")](hello-tvos-images/designer03.png)
+    [![](hello-tvos-images/designer03.png "Панели элементов")](hello-tvos-images/designer03.png#lightbox)
 
     Если его не удается найти здесь, перейдите к **представление > дополняет > элементов** на его просмотр.
 2. Перетащите **метка** из **элементов** в область конструктора:
 
-    [ ![](hello-tvos-images/designer04.png "Перетащите метку из панели элементов")](hello-tvos-images/designer04.png)
+    [![](hello-tvos-images/designer04.png "Перетащите метку из панели элементов")](hello-tvos-images/designer04.png#lightbox)
 3. Щелкните **заголовок** свойство в **pad свойство** и измените заголовок, кнопки `Hello, tvOS` и задайте **размер шрифта** 128:
 
-    [ ![](hello-tvos-images/designer05.png "Задание заголовка для Hello, tvOS и задайте размер шрифта в 128")](hello-tvos-images/designer05.png)
+    [![](hello-tvos-images/designer05.png "Задание заголовка для Hello, tvOS и задайте размер шрифта в 128")](hello-tvos-images/designer05.png#lightbox)
 4. Изменение размера метки, чтобы все слова являются видимыми и поместить его по центру в верхней части окна:
 
-    [ ![](hello-tvos-images/designer06.png "Изменение размеров и центрированию метки")](hello-tvos-images/designer06.png)
+    [![](hello-tvos-images/designer06.png "Изменение размеров и центрированию метки")](hello-tvos-images/designer06.png#lightbox)
 5. Метка потребуется ограниченных его позицию, чтобы он отображался как планировалось. независимо от размера экрана. Для этого щелкните метку до *T-образный дескриптор* отображается:
 
-    [ ![](hello-tvos-images/designer07.png "Дескриптор T-образный")](hello-tvos-images/designer07.png)
+    [![](hello-tvos-images/designer07.png "Дескриптор T-образный")](hello-tvos-images/designer07.png#lightbox)
 6. Чтобы ограничить метки по горизонтали, выберите центральный квадрат и перетащите его по вертикали пунктиром:
 
-    [ ![](hello-tvos-images/designer08.png "Выберите центр квадрат")](hello-tvos-images/designer08zoom.png)
+    [![](hello-tvos-images/designer08.png "Выберите центр квадрат")](hello-tvos-images/designer08zoom.png#lightbox)
 
      Метка должен стать оранжевым цветом.
 7. Выберите дескриптор T в верхней части метку и перетащите его в верхней части окна:
 
-    [ ![](hello-tvos-images/designer09.png "Перетащите маркер в верхней части окна")](hello-tvos-images/designer09.png)
+    [![](hello-tvos-images/designer09.png "Перетащите маркер в верхней части окна")](hello-tvos-images/designer09.png#lightbox)
 8. Выберите ширину и затем высоту *костей дескриптор* как показано ниже:
 
-    [ ![](hello-tvos-images/designer10.png "Ширина и высота костей дескрипторов")](hello-tvos-images/designer10.png)
+    [![](hello-tvos-images/designer10.png "Ширина и высота костей дескрипторов")](hello-tvos-images/designer10.png#lightbox)
 
      При каждой *костей дескриптор* — щелчке, выберите и ширины и высоты соответственно для задания основных измерений.
 9. После завершения, то ограничения должен выглядеть примерно те, на вкладке «Макет» панель свойств:
 
-    [ ![](hello-tvos-images/designer11.png "Пример ограничения")](hello-tvos-images/designer11.png)
+    [![](hello-tvos-images/designer11.png "Пример ограничения")](hello-tvos-images/designer11.png#lightbox)
 8. Перетащите **кнопку** из **элементов** и поместите его под меткой.
 9. Щелкните **заголовок** свойство в **pad свойство** и измените заголовок кнопки на `Click Me`:
 
-    [ ![](hello-tvos-images/designer12.png "Измените заголовок кнопки Click Me")](hello-tvos-images/designer12.png)
+    [![](hello-tvos-images/designer12.png "Измените заголовок кнопки Click Me")](hello-tvos-images/designer12.png#lightbox)
 10. Повторите шаги с 5 по 8 выше, чтобы ограничить кнопки в окне tvOS. Однако вместо перетаскивания дескриптор T в верхней части окна (как в шаге #7), перетащите его в нижнюю часть метку:
 
-    [ ![](hello-tvos-images/designer14.png "Ограничить кнопки")](hello-tvos-images/designer14.png)
+    [![](hello-tvos-images/designer14.png "Ограничить кнопки")](hello-tvos-images/designer14.png#lightbox)
 11. Перетащите другую метку рядом с кнопкой, размер его совпадает с шириной из первой метки и настройте его **выравнивание** для **Center**:
 
-    [ ![](hello-tvos-images/designer15.png "Перетащите другую метку рядом с кнопкой, размер его совпадает с шириной первую метку и задать выравнивания по центру")](hello-tvos-images/designer15.png)
+    [![](hello-tvos-images/designer15.png "Перетащите другую метку рядом с кнопкой, размер его совпадает с шириной первую метку и задать выравнивания по центру")](hello-tvos-images/designer15.png#lightbox)
 12. Первая метка и кнопка, как задайте эту метку для центрирования и закрепить его в расположение и размер:
 
-    [ ![](hello-tvos-images/designer16.png "ПИН-код метки в расположение и размер")](hello-tvos-images/designer16.png)
+    [![](hello-tvos-images/designer16.png "ПИН-код метки в расположение и размер")](hello-tvos-images/designer16.png#lightbox)
 13. Сохраните изменения в пользовательском интерфейсе.
 
 Изменение размеров и перемещение элементов управления, вы должны обратить внимание, что конструктор предоставляет подсказки полезны оснастки, основанных на [рекомендациям по интерфейсам Apple TV](https://developer.apple.com/tvos/human-interface-guidelines/). Эти рекомендации служит для создания высококачественных приложений, которые будут иметь знакомые внешний вид и поведение для Apple TV пользователей.
 
 Если заглянуть в **Структура документа** Обратите внимание, как макет и иерархии элементов, составляющих наш пользовательский интерфейс будут показаны:
 
-[ ![](hello-tvos-images/designer17.png "В разделе Структура документа")](hello-tvos-images/designer17.png)
+[![](hello-tvos-images/designer17.png "В разделе Структура документа")](hello-tvos-images/designer17.png#lightbox)
 
 Здесь можно выбрать элементы для редактирования и перетащите для изменения порядка элементов пользовательского интерфейса, при необходимости. Например если элемент пользовательского интерфейса изложено другим элементом, вы перетащите нижнюю часть списка, чтобы сделать его самый верхний элемент в окне.
 
@@ -339,16 +339,16 @@ namespace HellotvOS
 1. В конструкторе Xamarin iOS выберите кнопку на представление-контроллер.
 2. В панели свойств выберите **события** вкладки:
 
-    [![](hello-tvos-images/event1.png "Вкладка «событий»")](hello-tvos-images/event1.png)
+    [![](hello-tvos-images/event1.png "Вкладка «событий»")](hello-tvos-images/event1.png#lightbox)
 3. Найдите событие TouchUpInside и предоставьте ей обработчик событий с именем `Clicked`:
 
-    [![](hello-tvos-images/event2.png "Событие TouchUpInside")](hello-tvos-images/event2.png)
+    [![](hello-tvos-images/event2.png "Событие TouchUpInside")](hello-tvos-images/event2.png#lightbox)
 4. При нажатии клавиши **ввод**, **ViewController**CS-файл будет открыт, предложение расположения для обработчика событий в коде. Используйте клавиши со стрелками на клавиатуре, чтобы задать расположение:
 
-    [![](hello-tvos-images/event3.png "Настройка расположения")](hello-tvos-images/event3.png)
+    [![](hello-tvos-images/event3.png "Настройка расположения")](hello-tvos-images/event3.png#lightbox)
 5. Это создаст разделяемого метода, как показано ниже:
 
-    [![](hello-tvos-images/event4.png "Разделяемый метод")](hello-tvos-images/event4.png)
+    [![](hello-tvos-images/event4.png "Разделяемый метод")](hello-tvos-images/event4.png#lightbox)
 
 Теперь готовы добавить определенный код, чтобы разрешить кнопку функции.
 
@@ -359,10 +359,10 @@ namespace HellotvOS
 1. Открыть раскадровку и выберите метку в нижней части представления контроллера.
 2. В панели свойств выберите **мини-приложение** вкладки:
 
-    [![](hello-tvos-images/name1.png "Перейдите на вкладку мини-приложения")](hello-tvos-images/name1.png)
+    [![](hello-tvos-images/name1.png "Перейдите на вкладку мини-приложения")](hello-tvos-images/name1.png#lightbox)
 3. В разделе **удостоверение > имя**, добавьте `ClickedLabel`:
 
-    [![](hello-tvos-images/name2.png "Набор ClickedLabel")](hello-tvos-images/name2.png)
+    [![](hello-tvos-images/name2.png "Набор ClickedLabel")](hello-tvos-images/name2.png#lightbox)
 
 Теперь готовы начать обновление метки!
 
@@ -370,7 +370,7 @@ namespace HellotvOS
 
 При выборе `ViewController.designer.cs` в **обозревателе решений** будете иметь возможность просматривать как `ClickedLabel` метки и `Clicked` обработчик событий были сопоставлены с **розетки** и  **Действие** в C#:
 
-[ ![](hello-tvos-images/accesscontrol.png "Выходы и действия")](hello-tvos-images/accesscontrol.png)
+[![](hello-tvos-images/accesscontrol.png "Выходы и действия")](hello-tvos-images/accesscontrol.png#lightbox)
 
 Можно также заметить, что `ViewController.designer.cs` является частичным классом, чтобы Visual Studio для Mac не нужно было изменить `ViewController.cs` которого перезапишет любые изменения, которые мы внесли в класс.
 
@@ -386,7 +386,7 @@ namespace HellotvOS
 
 В нашем приложении каждый раз при нажатии кнопки первой мы собираемся обновить метку, чтобы показать, сколько раз была нажата кнопка. Для выполнения этой задачи необходимо открыть `ViewController.cs` для редактирования, дважды щелкнув его в файл **Pad решение**:
 
-[ ![](hello-tvos-images/code01.png "Панель решения")](hello-tvos-images/code01.png)
+[![](hello-tvos-images/code01.png "Панель решения")](hello-tvos-images/code01.png#lightbox)
 
 Во-первых, необходимо ли создавать переменной уровня класса в нашем `ViewController` классу отслеживать количество переходов, которые произошли. Измените определение класса и придайте ему следующий вид:
 
@@ -440,7 +440,7 @@ partial void Clicked (UIButton sender)
 
 Можно выбрать тип сборки из **селектор конфигурации** в верхний левый угол Visual Studio для Mac экрана:
 
-[ ![](hello-tvos-images/run01.png "Выберите тип сборки")](hello-tvos-images/run01.png)
+[![](hello-tvos-images/run01.png "Выберите тип сборки")](hello-tvos-images/run01.png#lightbox)
 
 ### <a name="building-the-application"></a>Построение приложения
 
@@ -458,15 +458,15 @@ partial void Clicked (UIButton sender)
 
 Приложение создаст (если он еще не был уже создан), запуск в режиме отладки, tvOS симулятор запустится и приложение запустится и отобразить окно основной интерфейс:
 
-[ ![На начальном экране образца приложения](hello-tvos-images/run03.png)](hello-tvos-images/run03.png)
+[![На начальном экране образца приложения](hello-tvos-images/run03.png)](hello-tvos-images/run03.png#lightbox)
 
 Из **оборудования** меню выберите **Показать Apple TV удаленного** благодаря чему можно контролировать симулятора.
 
-[ ![](hello-tvos-images/run04.png "Выберите отображение Apple TV удаленного")](hello-tvos-images/run04.png)
+[![](hello-tvos-images/run04.png "Выберите отображение Apple TV удаленного")](hello-tvos-images/run04.png#lightbox)
 
 С помощью удаленного симулятора, если нажать кнопку несколько раз метки должны обновляться с числом:
 
-[ ![](hello-tvos-images/run05.png "Метка с обновленного числа")](hello-tvos-images/run05.png)
+[![](hello-tvos-images/run05.png "Метка с обновленного числа")](hello-tvos-images/run05.png#lightbox)
 
 Поздравляем! Мы узнали много ниже нуля, но если этого учебника были выполнены от начала до конца, вы добавили основательные знания компоненты приложения Xamarin.tvOS, а также о средствах, используемых для их создания.
 

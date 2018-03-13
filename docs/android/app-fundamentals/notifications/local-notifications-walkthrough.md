@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/30/2018
-ms.openlocfilehash: 4728b50446033c02d33ccf8273f1dc2e50d66906
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b8642a1c96ee525fbd6950616fbc6da0ad0e2337
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="walkthrough---using-local-notifications-in-xamarinandroid"></a>Пошаговое руководство. Использование локальной уведомлений в Xamarin.Android
 
 _В этом пошаговом руководстве демонстрируется использование локального уведомления Xamarin.Android приложений. Он демонстрирует основные принципы создания и публикации локальное уведомление. Когда пользователь щелкает уведомления в области уведомлений, запуске второго действия._
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -26,16 +25,14 @@ _В этом пошаговом руководстве демонстрируе�
 
 Следующих снимках экрана показаны некоторые примеры этого приложения.
 
-[![Снимки экрана примера с уведомлением](local-notifications-walkthrough-images/1-overview-sml.png)](local-notifications-walkthrough-images/1-overview.png)
+[![Снимки экрана примера с уведомлением](local-notifications-walkthrough-images/1-overview-sml.png)](local-notifications-walkthrough-images/1-overview.png#lightbox)
 
 
-<a name="walkthrough" />
 
 ## <a name="walkthrough"></a>Пошаговое руководство
 
 Чтобы начать, давайте создадим новый проект Android с помощью **приложения Android** шаблона. Давайте назовем этот проект **LocalNotifications**. (Если вы не знакомы с созданием проектам Xamarin.Android, см. раздел [Привет, Android](~/android/get-started/hello-android/hello-android-quickstart.md).)
 
-<a name="add-v4-support" />
 
 ### <a name="add-the-androidsupportv4app-component"></a>Добавьте компонент Android.Support.V4.App
 
@@ -53,7 +50,6 @@ using Android.Support.V4.App;
 using TaskStackBuilder = Android.Support.V4.App.TaskStackBuilder;
 ```
 
-<a name="define-id" />
 
 ### <a name="define-the-notification-id"></a>Определите идентификатор уведомления
 
@@ -63,7 +59,6 @@ using TaskStackBuilder = Android.Support.V4.App.TaskStackBuilder;
 private static readonly int ButtonClickNotificationId = 1000;
 ```
 
-<a name="add-code" />
 
 ### <a name="add-code-to-generate-the-notification"></a>Добавьте код для создания уведомления
 
@@ -117,7 +112,6 @@ private void ButtonOnClick (object sender, EventArgs eventArgs)
 button.Click += ButtonOnClick;
 ```
 
-<a name="second-activity" />
 
 ### <a name="create-a-second-activity"></a>Создание второго действия
 
@@ -174,36 +168,33 @@ namespace LocalNotifications
 </LinearLayout>
 ```
 
-<a name="add-icon" />
 
 ### <a name="add-a-notification-icon"></a>Добавить значок уведомления
 
 Наконец добавим мелкого значка, который будет отображаться в области уведомлений при запуске наши уведомления. Можно скопировать [этот значок](local-notifications-walkthrough-images/ic-stat-button-click.png) в проект или создать собственный пользовательский значок. Мы назовем файл значка **ic\_stat\_кнопку\_click.png** и скопируйте его в **ресурсы или drawable** папки. Не забывайте использовать **Добавить > существующий элемент...**  для включения этого значка файла в проект.
 
-<a name="run-app" />
 
 ### <a name="run-the-application"></a>Запуск приложения
 
 Давайте Постройте и запустите приложение. Вы увидите первое действие похоже на следующий снимок экрана:
 
-[ ![Снимок экрана первого действия](local-notifications-walkthrough-images/2-start-screen-sml.png)](local-notifications-walkthrough-images/2-start-screen.png)
+[![Снимок экрана первого действия](local-notifications-walkthrough-images/2-start-screen-sml.png)](local-notifications-walkthrough-images/2-start-screen.png#lightbox)
 
 При нажатии кнопки, можно заметить мелкий значок для уведомления появляются в области уведомлений:
 
-[ ![Появится значок уведомления](local-notifications-walkthrough-images/3-notification-icon-sml.png)](local-notifications-walkthrough-images/3-notification-icon.png)
+[![Появится значок уведомления](local-notifications-walkthrough-images/3-notification-icon-sml.png)](local-notifications-walkthrough-images/3-notification-icon.png#lightbox)
 
 Если проведите вниз и предоставлять уведомления лоток, вы увидите уведомление:
 
-[ ![Сообщение уведомления](local-notifications-walkthrough-images/4-notifications-sml.png)](local-notifications-walkthrough-images/4-notifications.png)
+[![Сообщение уведомления](local-notifications-walkthrough-images/4-notifications-sml.png)](local-notifications-walkthrough-images/4-notifications.png#lightbox)
 
 Когда щелкните уведомление, она должна исчезнуть и наших других действий, должны запускаться &ndash; ищете нечто похожее на следующем снимке экрана:
 
-[ ![Снимок экрана второго действия](local-notifications-walkthrough-images/5-second-activity-sml.png)](local-notifications-walkthrough-images/5-second-activity.png)
+[![Снимок экрана второго действия](local-notifications-walkthrough-images/5-second-activity-sml.png)](local-notifications-walkthrough-images/5-second-activity.png#lightbox)
 
 Поздравляем! На этом этапе выполнения пошагового руководства Android локального уведомления и у вас есть рабочий образец, который можно ссылаться на. Намного больше на уведомления не было показано здесь, поэтому нужна дополнительная информация, взгляните на [документации Google уведомления о](http://developer.android.com/guide/topics/ui/notifiers/notifications.html) и Android [уведомления](http://developer.android.com/design/patterns/notifications.html) руководство по проектированию.
 
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

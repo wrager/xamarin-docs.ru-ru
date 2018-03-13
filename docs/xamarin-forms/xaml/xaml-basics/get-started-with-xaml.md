@@ -3,16 +3,16 @@ title: "Часть 1. Начало работы с XAML"
 description: "В приложении Xamarin.Forms XAML в основном используется для определения визуального содержимого страницы. Файл XAML всегда связан с помощью файла кода C#, обеспечивающий поддержку кода для разметки. Вместе эти два файла участвовать в определении класса, включающего дочерние представления и инициализации свойств. В файле XAML классы и свойства, на которые имеются ссылки с XML-элементы и атрибуты и связи между разметки и кода создаются."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 1D6164F9-4ECE-43A6-B583-1F5D5EFC1DDF
+ms.assetid: 9073FA0E-BD5A-4492-8A93-54C466F6EDB9
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: 8e02dbd8687fc10582874710db7ca6848f546751
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 55c4fa73044b1c37e879ed7731161269bdbf8ba8
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="part-1-getting-started-with-xaml"></a>Часть 1. Начало работы с XAML
 
@@ -195,7 +195,7 @@ namespace XamlSamples
 
 После компиляции и запуска этой программы, `Label` элемент отображается в центре страницы, как видно в XAML. Три платформы слева направо, iOS, Android и Windows 10 Mobile:
 
-[![](get-started-with-xaml-images/xamlsamples.png "По умолчанию отображения Xamarin.Forms")](get-started-with-xaml-images/xamlsamples-large.png "отображения по умолчанию Xamarin.Forms")
+[![](get-started-with-xaml-images/xamlsamples.png "По умолчанию отображения Xamarin.Forms")](get-started-with-xaml-images/xamlsamples-large.png#lightbox "отображения по умолчанию Xamarin.Forms")
 
 Для более интересные визуальные элементы и все необходимые дополнительные интересных XAML.
 
@@ -354,7 +354,7 @@ public MainPage()
 
 Установка `Content` свойства страницы заменяет параметр `Content` свойства в XAML-файле. После компиляции и развертывание новой версии этой программы на экране появляется кнопка. Нажав клавишу, он переходит к `HelloXamlPage`. Ниже приведен результирующий страницу на iPhone, Android и Windows 10 Mobile устройств:
 
-[ ![](get-started-with-xaml-images/helloxaml1.png "Поворот текста метки")](get-started-with-xaml-images/helloxaml1-large.png "поворачивать текст метки")
+[![](get-started-with-xaml-images/helloxaml1.png "Поворот текста метки")](get-started-with-xaml-images/helloxaml1-large.png#lightbox "поворачивать текст метки")
 
 Можно перейти к `MainPage` с помощью **< обратно** кнопку на iOS с помощью стрелку влево в верхней части страницы или в нижней части телефона на Android, или со стрелкой влево в нижней части страницы в Windows 10 Mobile.
 
@@ -364,7 +364,7 @@ public MainPage()
 
 Вот, как оно выглядит:
 
-[ ![](get-started-with-xaml-images/helloxaml2.png "Текст метки с символами Юникода, повернуто")](get-started-with-xaml-images/helloxaml2-large.png "поворачивать текст метки с символами Юникода")
+[![](get-started-with-xaml-images/helloxaml2.png "Текст метки с символами Юникода, повернуто")](get-started-with-xaml-images/helloxaml2-large.png#lightbox "поворачивать текст метки с символами Юникода")
 
 ## <a name="xaml-and-code-interactions"></a>XAML и код взаимодействия
 
@@ -392,7 +392,7 @@ public MainPage()
 
 Этот файл XAML синтаксически завершена, и вот как оно выглядит:
 
-[ ![](get-started-with-xaml-images/xamlpluscode1.png "Несколько элементов управления на странице")](get-started-with-xaml-images/xamlpluscode1-large.png "нескольких элементов управления на странице")
+[![](get-started-with-xaml-images/xamlpluscode1.png "Несколько элементов управления на странице")](get-started-with-xaml-images/xamlpluscode1-large.png#lightbox "нескольких элементов управления на странице")
 
 Тем не менее скорее всего, рассмотрим следующую программу, чтобы быть функционально объемов. Возможно `Slider` должен вызвать `Label` для отображения текущего значения и `Button` , вероятно, предназначен для сделать что-нибудь в программе.
 
@@ -483,7 +483,7 @@ void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
 
 При запуске программы, `Label` не отображает `Slider` поскольку `ValueChanged` событие еще не запущено. Любое изменение, но `Slider` приводит значение для отображения:
 
-[ ![](get-started-with-xaml-images/xamlpluscode2.png "Отображаемое значение ползунка")](get-started-with-xaml-images/xamlpluscode2-large.png "отображаемое значение "ползунок"")
+[![](get-started-with-xaml-images/xamlpluscode2.png "Отображаемое значение ползунка")](get-started-with-xaml-images/xamlpluscode2-large.png#lightbox "отображаемое значение "ползунок"")
 
 Теперь для `Button`. Давайте имитировать ответ `Clicked` событий, отображая оповещения с `Text` кнопки. Обработчик событий можно безопасно привести `sender` аргумент `Button` и затем получить доступ к его свойствам:
 

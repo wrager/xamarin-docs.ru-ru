@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 6df47bd54611feedd0d355a976a055d62f37afeb
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1ad37cb4a794ac47e0e2f184a730949f14e85572
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-7-user-interface-overview"></a>iOS 7 Обзор пользовательского интерфейса
 
@@ -146,7 +146,7 @@ iOS 7, предназначенное для приложений восполь
 
  `TopLayoutGuide` и `BottomLayoutGuide` использовать в качестве ссылки для которых представления следует начать или завершить, так, что содержимое не перекрывается полупрозрачные `UIKit` строки, как показано в следующем примере:
 
- [ ![](ios7-ui-images/clipped.png "Примеры содержимого, не накладываются полосой полупрозрачные UIKit")](ios7-ui-images/clipped.png)
+ [![](ios7-ui-images/clipped.png "Примеры содержимого, не накладываются полосой полупрозрачные UIKit")](ios7-ui-images/clipped.png#lightbox)
 
 Эти API-интерфейсы могут использоваться для вычисления представления смещения от верхней или нижней части экрана и соответствующим образом настроить размещения содержимого:
 
@@ -166,7 +166,7 @@ public override void ViewDidLayoutSubviews ()
 
 Мы используем вычисленном выше, чтобы задать значение нашей `ImageView`его смещение от верхней части экрана, поэтому отображается полный образ:
 
- [ ![](ios7-ui-images/good2.png "Пример ImageViews смещения от верхней части экрана.")](ios7-ui-images/good2.png)
+ [![](ios7-ui-images/good2.png "Пример ImageViews смещения от верхней части экрана.")](ios7-ui-images/good2.png#lightbox)
 
 Ссылаться на [ImageViewer](https://developer.xamarin.com/samples/mobile/iOS7-ui-updates) рабочий образец.
 
@@ -179,15 +179,15 @@ public override void ViewDidLayoutSubviews ()
 
 Этот API указывает, какие границы представления следует расширенных во весь экран, вне зависимости от панели Прозрачность. В iOS 7 панелей навигации и панели инструментов отображаются располагаются над контроллера представление — в отличие от в предыдущем iOS версий, где они не занимают то же пространство. Приложение iOS 7 фотографии показано значение по умолчанию `UIViewController.EdgesForExtendedLayout` значение `UIRectEdge.All`. Этот параметр заполняется всех четырех краев в представлении с содержимым, создание эффект перекрывающихся и полноэкранном режиме.
 
- [ ![](ios7-ui-images/photos.png "Образец EdgesForExtendedLayout")](ios7-ui-images/photos.png)
+ [![](ios7-ui-images/photos.png "Образец EdgesForExtendedLayout")](ios7-ui-images/photos.png#lightbox)
 
 Коснитесь изображения удаляет столбцы и приводятся в полноэкранном режиме изображения.
 
- [ ![](ios7-ui-images/photos2.png "EdgesForExtendedLayout по отношению к столбцам удален")](ios7-ui-images/photos2.png)
+ [![](ios7-ui-images/photos2.png "EdgesForExtendedLayout по отношению к столбцам удален")](ios7-ui-images/photos2.png#lightbox)
 
 Поскольку содержимое в полноэкранном режиме по умолчанию, приложений, настроенных для iOS 6 будет иметь части представления обрезается, как показано на снимке экрана ниже:
 
- [ ![](ios7-ui-images/clipped.png "Приложений, настроенных для iOS 6 будет иметь части представления обрезается, как показано на этом снимке экрана")](ios7-ui-images/clipped.png)
+ [![](ios7-ui-images/clipped.png "Приложений, настроенных для iOS 6 будет иметь части представления обрезается, как показано на этом снимке экрана")](ios7-ui-images/clipped.png#lightbox)
 
 Изменение `UIViewController.EdgesForExtendedLayout` настраивает свойство для данного поведения. Можно указать представления не заполнялся, краям, поэтому наши представление позволит избежать отображения содержимого в место, занимаемое навигации или панели инструментов (в каждом ориентация):
 
@@ -199,7 +199,7 @@ if (UIDevice.CurrentDevice.CheckSystemVersion (7, 0)) {
 
 В нашем приложении мы увидим представление снова перемещен, поэтому отображается полный образ:
 
- [ ![](ios7-ui-images/good.png "Пример с видимыми всего изображения")](ios7-ui-images/good.png)
+ [![](ios7-ui-images/good.png "Пример с видимыми всего изображения")](ios7-ui-images/good.png#lightbox)
 
 Обратите внимание, что при последствия `TopLayoutGuide/BottomLayoutGuide` и `EdgesForExtendedLayout` API-интерфейсы похожи, они предназначены для заполнения разных целей. Изменение `EdgesForExtendedLayout` параметр по умолчанию может решить усеченные представления в приложениях, предназначенных для iOS 6, но разработки хорошо iOS 7 должны соблюдать улучшения внешнего вида полноэкранном режиме, а также назначить полноэкранном режиме просмотра качества, полагаясь на `TopLayoutGuide` и `BottomLayoutGuide`правильно разместить содержимое, в которой должны обрабатываться в месте, удобном для пользователя.
 

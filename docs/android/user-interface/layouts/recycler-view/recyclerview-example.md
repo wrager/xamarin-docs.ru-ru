@@ -7,22 +7,21 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: a8de515563d9b9e38f049fd92c94b95e75239eb2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 44ebc8098250da26762538cddf5a89ffac709d8e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="a-basic-recyclerview-example"></a>Простой пример RecyclerView
 
 
 Чтобы понять, как `RecyclerView` работает в обычном приложении, в данном разделе рассматриваются [RecyclerViewer](https://developer.xamarin.com/samples/monodroid/android5.0/RecyclerViewer/) пример приложения, простой пример кода, использующего `RecyclerView` для отображения больших Коллекция фотографий: 
 
-[ ![Два снимка экрана RecyclerView приложение, которое использует CardViews для отображения фотографий](recyclerview-example-images/01-recyclerviewer-sml.png)](recyclerview-example-images/01-recyclerviewer.png)
+[![Два снимка экрана RecyclerView приложение, которое использует CardViews для отображения фотографий](recyclerview-example-images/01-recyclerviewer-sml.png)](recyclerview-example-images/01-recyclerviewer.png#lightbox)
 
 **RecyclerViewer** использует [CardView](~/android/user-interface/controls/card-view.md) для реализации каждого элемента фотографии в `RecyclerView` макета. Из-за `RecyclerView`его преимущество в производительности, этот образец приложения быстро прокручивать большая коллекция фотографий и без заметной задержки.
 
-<a name="datasource" />
 
 ### <a name="an-example-data-source"></a>Пример источника данных
 
@@ -48,7 +47,6 @@ mPhotoAlbum.RandomSwap ();
 
 Так как сведения о реализации `PhotoAlbum` не являются значимыми для понимания `RecyclerView`, `PhotoAlbum` исходный код не представленных здесь. Исходный код для `PhotoAlbum` доступен на [PhotoAlbum.cs](https://github.com/xamarin/monodroid-samples/blob/master/android5.0/RecyclerViewer/RecyclerViewer/PhotoAlbum.cs) в [RecyclerViewer](https://developer.xamarin.com/samples/monodroid/android5.0/RecyclerViewer/) пример приложения.
 
-<a name="preliminaries" />
 
 ### <a name="layout-and-initialization"></a>Макет и инициализации
 
@@ -128,7 +126,7 @@ mRecyclerView.SetLayoutManager (mLayoutManager);
 
 Класс владельца представления, называется `PhotoViewHolder`. Каждый `PhotoViewHolder` ссылается экземпляр `ImageView` и `TextView` элемента соответствующих строк, который располагается в `CardView` как здесь разработки:
 
-[ ![Схема CardView, содержащий ImageView и TextView](recyclerview-example-images/02-cardview-layout-sml.png)](recyclerview-example-images/02-cardview-layout.png)
+[![Схема CardView, содержащий ImageView и TextView](recyclerview-example-images/02-cardview-layout-sml.png)](recyclerview-example-images/02-cardview-layout.png#lightbox)
 
 `PhotoViewHolder` является производным от `RecyclerView.ViewHolder` и содержит свойства для хранения ссылки на `ImageView` и `TextView` показано в приведенном выше макета.
 `PhotoViewHolder` состоит из двух свойств и один конструктор.
@@ -181,7 +179,6 @@ public class PhotoAlbumAdapter : RecyclerView.Adapter
 
 Диспетчер макета вызывает эти методы, пока он размещение элементов в пределах `RecyclerView`. Реализация этих методов рассматриваются в следующих разделах.
 
-<a name="oncreateviewholder" />
 
 #### <a name="oncreateviewholder"></a>OnCreateViewHolder
 
@@ -245,7 +242,6 @@ public override RecyclerView.ViewHolder
 
 Полученный экземпляр держателя представление `vh`, возвращается обратно в вызывающий объект (диспетчера структуры).
 
-<a name="onbindviewholder" />
 
 #### <a name="onbindviewholder"></a>OnBindViewHolder
 
@@ -270,7 +266,6 @@ public override void
 
 Обратите внимание, что `OnBindViewHolder` приводится код, который работает непосредственно со структурой данных. В этом случае `OnBindViewHolder` понимает сопоставление `RecyclerView` элемент позиции его элементу связанные данные в источнике данных. Сопоставление проста в этом случае так, как позицию можно использовать в качестве индекса массива в фотоальбом; Однако более сложных источников данных может потребоваться дополнительный код, чтобы установить такое сопоставление.
 
-<a name="itemcount" />
 
 #### <a name="itemcount"></a>ItemCount
 
@@ -285,7 +280,6 @@ public override int ItemCount
 
 Дополнительные сведения о `RecyclerView.Adapter`, в разделе [ссылку на класс RecyclerView.Adapter](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.Adapter.html).
 
-<a name="together" />
 
 ### <a name="putting-it-all-together"></a>Объединение
 
@@ -372,11 +366,10 @@ public class PhotoAlbumAdapter : RecyclerView.Adapter
 
 При компиляции и запуска этого кода, он создает базовый фотографий, просмотре приложения, как показано на следующем снимке экрана:
 
-[ ![Два снимка экрана приложения с вертикальной прокрутки фото карты просмотра фотографий](recyclerview-example-images/03-recyclerviewer-basic-sml.png)](recyclerview-example-images/03-recyclerviewer-basic.png)
+[![Два снимка экрана приложения с вертикальной прокрутки фото карты просмотра фотографий](recyclerview-example-images/03-recyclerviewer-basic-sml.png)](recyclerview-example-images/03-recyclerviewer-basic.png#lightbox)
 
 Это простое приложение поддерживает только просмотр фотоальбома. Он не отвечает на элемент нажатием события, а также обрабатывать изменения в базовых данных. Эта функция добавляется в [расширение в примере RecyclerView](~/android/user-interface/layouts/recycler-view/extending-the-example.md).
 
-<a name="layoutmanagerchange" />
 
 ### <a name="changing-the-layoutmanager"></a>Изменение LayoutManager
 
@@ -388,7 +381,7 @@ mLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.Horizontal, fa
 
 Это изменение кода заменяет вертикальную `LinearLayoutManager` с `GridLayoutManager` представляет сетку, состоящую из двух строк, которые прокрутки по горизонтали. При компиляции и запуске приложения, вы увидите, что фотографии отображаются в сетке и что прокрутка является горизонтальной, а не вертикальной:
 
-[ ![Снимок экрана примера приложения с горизонтальной прокрутки фотографии в сетке](recyclerview-example-images/04-gridlayoutmanager-sml.png)](recyclerview-example-images/04-gridlayoutmanager.png)
+[![Снимок экрана примера приложения с горизонтальной прокрутки фотографии в сетке](recyclerview-example-images/04-gridlayoutmanager-sml.png)](recyclerview-example-images/04-gridlayoutmanager.png#lightbox)
 
 Изменяя только одной строки кода, можно изменить просмотра фотографий приложению использовать структуру с другим поведением.
 Обратите внимание, что код адаптера ни разметки XML бы модифицировать, чтобы изменить стиль макета. 

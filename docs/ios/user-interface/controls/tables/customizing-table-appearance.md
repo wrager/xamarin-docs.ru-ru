@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 12314e6ec5951a5a094ed8b0a5536b450853c5fb
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4a3f8ca8f4502b9585536815aef81f66cacd214f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="customizing-a-tables-appearance"></a>Настройка внешнего вида таблицы
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 Эти снимки экрана показывают, как выглядит каждого стиля:
 
- [ ![](customizing-table-appearance-images/image7.png "Эти снимки экрана Показать, как выглядит каждого стиля")](customizing-table-appearance-images/image7.png)
+ [![](customizing-table-appearance-images/image7.png "Эти снимки экрана Показать, как выглядит каждого стиля")](customizing-table-appearance-images/image7.png#lightbox)
 
 Образец **CellDefaultTable** содержит код для создания этих экранов. Стиль ячейки задается в `UITableViewCell` конструктор следующим образом:
 
@@ -60,7 +60,7 @@ cell.ImageView.Image = UIImage.FromFile("Images/" + tableItems[indexPath.Row].Im
 
 Вот, как они выглядят.
 
- [ ![](customizing-table-appearance-images/image8.png "Стандартные образца")](customizing-table-appearance-images/image8.png)
+ [![](customizing-table-appearance-images/image8.png "Стандартные образца")](customizing-table-appearance-images/image8.png#lightbox)
 
 Для отображения одного из этих компонентов, можно задать `Accessory` свойства `GetCell` метод:
 
@@ -119,7 +119,7 @@ TableView.SeparatorInset.InsetRect(new CGRect(4, 4, 150, 2));
 
 В примере CellCustomTable реализуется `UITableViewCell` подкласс, в котором определяется пользовательский макет `UILabel`s и `UIImage` различные шрифты и цвета. Полученный ячеек будет выглядеть следующим образом:
 
- [ ![](customizing-table-appearance-images/image9.png "Макеты пользовательских ячеек")](customizing-table-appearance-images/image9.png)
+ [![](customizing-table-appearance-images/image9.png "Макеты пользовательских ячеек")](customizing-table-appearance-images/image9.png#lightbox)
 
 Пользовательский класс ячейки с состоит только из трех методов:
 

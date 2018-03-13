@@ -7,12 +7,12 @@ ms.assetid: 2AE68ACE-8496-445D-BF17-5E4097D4AE35
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: 2df101615ed512d362fc065a1bb7080f3fd3bb33
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 5589d512f9a4ee9c1148810f36fee12d561f725c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="resolving-library-installation-errors"></a>Устранение ошибок установки библиотеки
 
@@ -23,7 +23,6 @@ _В некоторых случаях могут возникнуть ошибк
 При построении проекта Xamarin.Android приложения, возможно возникновение ошибок построения, при Visual Studio или Visual Studio для Mac попытаться загрузить и установить зависимости библиотеки. Многие из этих ошибок являются причиной проблем с сетевым подключением, повреждение файла или проблемы управления версиями. В этом руководстве описаны наиболее распространенные ошибки установки библиотеки поддержки и пошаговые инструкции для устранения этих проблем и получения проекта приложения сборку еще раз. 
 
  
-<a name="m2repository" />
  
 ## <a name="errors-while-downloading-m2repository"></a>Ошибки при загрузке m2Repository
 
@@ -36,7 +35,6 @@ Download failed. Please download https://dl-ssl.google.com/android/repository/an
 Этот пример предназначен для **android\_m2repository\_r16**, однако вы можете обнаружить это же сообщение об ошибке для другой версии, такие как **android\_m2repository\_r18**  или **android\_m2repository\_r25**. 
 
 
-<a name="automatic" /> 
 
 ### <a name="automatic-recovery-from-m2repository-errors"></a>Автоматическое восстановление после ошибок m2repository 
 
@@ -50,11 +48,11 @@ Download failed. Please download https://dl-ssl.google.com/android/repository/an
 
 2. Найдите папку библиотеки и версии, соответствующее сообщение об ошибке. Например, расположен в папке библиотеки и версии выше сообщение об ошибке **Android.Support.v4\\22.2.1**:
 
-    [![Пример расположение папки для 22.2.1 поддержки библиотеки](resolving-library-installation-errors-images/01-example-location.png)](resolving-library-installation-errors-images/01-example-location.png)
+    [![Пример расположение папки для 22.2.1 поддержки библиотеки](resolving-library-installation-errors-images/01-example-location.png)](resolving-library-installation-errors-images/01-example-location.png#lightbox)
 
 3. Удалите содержимое папки версии. Не забывайте удалять **.zip** файл а также **содержимого** и **внедренные** вложенных папок в этой папке. Пример сообщения об ошибке, показанном выше, файлы и подкаталоги, на этом снимке экрана показано (**содержимого**, **внедренные**, и **android_m2repository_r16.zip**), чтобы удалить:
 
-    [![Пример содержимого 22.2.1 поддерживает папку библиотеки](resolving-library-installation-errors-images/02-example-folder-vs.png)](resolving-library-installation-errors-images/02-example-folder-vs.png)
+    [![Пример содержимого 22.2.1 поддерживает папку библиотеки](resolving-library-installation-errors-images/02-example-folder-vs.png)](resolving-library-installation-errors-images/02-example-folder-vs.png#lightbox)
 
    Обратите внимание, что важно удалить *всей* содержимое этой папки. Несмотря на то, что эта папка может содержать «отсутствует» **android\_m2repository\_r16.zip** файл, этот файл был частично загруженный или поврежден.
 
@@ -63,7 +61,6 @@ Download failed. Please download https://dl-ssl.google.com/android/repository/an
 В большинстве случаев эти шаги устранения ошибки построения и вы сможете продолжить. При удалении библиотеки не приводит к устранению ошибки сборки, необходимо вручную загрузить и установить **android\_m2repository\_r_nn_.zip** файла, как описано в следующем разделе. 
 
 
-<a name="download" /> 
 
 ### <a name="manually-downloading-m2repository"></a>Загрузка m2repository вручную
 
@@ -119,13 +116,11 @@ Download failed. Please download https://dl-ssl.google.com/android/repository/an
 
     Например, в следующем снимке экрана показан результат при **android\_m2repository\_r16.zip** загружается и переименован в MD5-хэш в URL-адрес его загрузки в Windows:
 
-    [![Пример r16.zip репозитория переименовываемого для 0595E577D19D31708195A83087881EE6.zip](resolving-library-installation-errors-images/03-md5-rename-vs.png)](resolving-library-installation-errors-images/03-md5-rename-vs.png)
+    [![Пример r16.zip репозитория переименовываемого для 0595E577D19D31708195A83087881EE6.zip](resolving-library-installation-errors-images/03-md5-rename-vs.png)](resolving-library-installation-errors-images/03-md5-rename-vs.png#lightbox)
 
 
 Если эта процедура не позволяет устранить ошибки построения, необходимо вручную загрузить **android\_m2repository\_r_nn_.zip** файла, распакуйте его и установить ее содержимое, как описано в следующем разделе. 
 
-
-<a name="install" /> 
 
 ### <a name="manually-downloading-and-installing-m2repository-files"></a>Вручную загрузить и установить файлы m2repository
 
@@ -140,36 +135,35 @@ Unzipping failed. Please download https://dl-ssl.google.com/android/repository/a
 1.  Удалите содержимое папки библиотеки, соответствующее сообщение об ошибке. Например, в сообщении об ошибке выше следует удалить содержимое **C:\\пользователей\\***username***\\AppData\\локального\\Xamarin\\ Android.Support.v4\\23.1.1.0**. 
     Как упоминалось ранее, необходимо удалить все содержимое этого каталога.
 
-    [![Удаление содержимого, внедрены и android_m2repository папки с 23.1.1.0 папки](resolving-library-installation-errors-images/04-delete-contents-vs.png)](resolving-library-installation-errors-images/04-delete-contents-vs.png)
+    [![Удаление содержимого, внедрены и android_m2repository папки с 23.1.1.0 папки](resolving-library-installation-errors-images/04-delete-contents-vs.png)](resolving-library-installation-errors-images/04-delete-contents-vs.png#lightbox)
 
 2.  Загрузить **android\_m2repository\_r_nn_.zip** файл из Google, который соответствует ошибке сообщений (см. таблицу в предыдущем разделе для ссылок).
 
 3.  Этот извлечь **.zip** архива в любом месте (например, на рабочем столе). Это следует создать каталог, соответствующий имени **.zip** архива. В этом каталоге, вы должны найти подкаталог с именем **m2repository**: 
 
-    [![найти в папке m2repository извлечь ZIP-архив](resolving-library-installation-errors-images/05-m2repository-vs.png)](resolving-library-installation-errors-images/05-m2repository-vs.png)
+    [![найти в папке m2repository извлечь ZIP-архив](resolving-library-installation-errors-images/05-m2repository-vs.png)](resolving-library-installation-errors-images/05-m2repository-vs.png#lightbox)
 
 4.  В каталоге с версией библиотеки удаляются на этапе 1, повторного создания **содержимого** и **внедренные** подкаталоги. Например, в следующем снимке экрана показана **содержимого** и **внедренные** подкаталогов в **23.1.1.0** папку для **android \_m2repository\_r25.zip**: 
 
-    [![Создание содержимого и папок, внедренные в 23.1.1.0 папки](resolving-library-installation-errors-images/06-recreate-folders-vs.png)](resolving-library-installation-errors-images/06-recreate-folders-vs.png)
+    [![Создание содержимого и папок, внедренные в 23.1.1.0 папки](resolving-library-installation-errors-images/06-recreate-folders-vs.png)](resolving-library-installation-errors-images/06-recreate-folders-vs.png#lightbox)
 
 5.  Копировать **m2repository** из извлеченный **.zip** в **содержимого** каталог, созданный на предыдущем шаге: 
 
-    [![Снимок экрана m2repository копируются в папку 23.1.1.0/content](resolving-library-installation-errors-images/07-copied-m2repository-vs.png)](resolving-library-installation-errors-images/07-copied-m2repository-vs.png)
+    [![Снимок экрана m2repository копируются в папку 23.1.1.0/content](resolving-library-installation-errors-images/07-copied-m2repository-vs.png)](resolving-library-installation-errors-images/07-copied-m2repository-vs.png#lightbox)
 
 6.  В извлеченный **.zip** каталога, перейдите к **m2repository\\com\\android\\поддерживает\\поддержки v4** и откройте папку соответствующего Созданная выше, номер версии (в этом примере **23.1.1**):
 
-    [![Пример списка файлов, находящихся в папке support-v4/23.1.1](resolving-library-installation-errors-images/08-zip-contents-vs.png)](resolving-library-installation-errors-images/08-zip-contents-vs.png)
+    [![Пример списка файлов, находящихся в папке support-v4/23.1.1](resolving-library-installation-errors-images/08-zip-contents-vs.png)](resolving-library-installation-errors-images/08-zip-contents-vs.png#lightbox)
 
 7.  Скопируйте все файлы в этой папке для **внедренные** каталогом, созданным на шаге 4:
 
-    [![Пример файлов копируется в папку 23.1.1.0/embedded](resolving-library-installation-errors-images/09-copied-vs.png)](resolving-library-installation-errors-images/09-copied-vs.png)
+    [![Пример файлов копируется в папку 23.1.1.0/embedded](resolving-library-installation-errors-images/09-copied-vs.png)](resolving-library-installation-errors-images/09-copied-vs.png#lightbox)
 
 8.  Убедитесь, что все файлы копируются. **Внедренные** directory теперь должен содержать файлы например **.jar**, **.aar**, и **.pom**.
 
 На этом этапе отсутствующие компоненты установлены вручную, и ваш проект должен быть построен без ошибок. Если это не так, убедитесь, что вы загрузили **m2repository** **.zip** архив версию, которая точно соответствует версии в сообщении об ошибке, а также убедитесь, что вы установили свое содержимое в Исправьте расположения, как описано выше. 
 
 
-<a name="summary" /> 
 
 ## <a name="summary"></a>Сводка 
 

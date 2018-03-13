@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 2a10c161c49e7cd0d45d29522a98c0dc78f7adb7
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 702a5986c9249eec38868895f55ef6f63b534b9b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="tab-bars-and-tab-bar-controllers"></a>Полосы вкладки и панели вкладки контроллеров
 
@@ -42,7 +42,7 @@ _операций ввода-вывода с помощью интерфейса
 
 В данном пошаговом руководстве мы собираемся создавать следующие приложения:
 
-[ ![](creating-tabbed-applications-images/00-app.png "Пример приложения с вкладками")](creating-tabbed-applications-images/00-app.png)
+[![](creating-tabbed-applications-images/00-app.png "Пример приложения с вкладками")](creating-tabbed-applications-images/00-app.png#lightbox)
 
 Несмотря на то, что уже существует шаблон со вкладками приложения доступны в Visual Studio для Mac, в этом примере, мы будем работать с пустой проект, чтобы получить лучшее представление о том, как создается приложение.
 
@@ -55,9 +55,9 @@ _операций ввода-вывода с помощью интерфейса
 
 Выберите **файл > Создать > решения** пункта меню в Visual Studio для Mac и выберите **iOS > приложения > пустой проект** шаблона, имя проекта `TabbedApplication`, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/newsolution1.png "Выберите шаблон пустого проекта")](creating-tabbed-applications-images/newsolution1.png)
+[![](creating-tabbed-applications-images/newsolution1.png "Выберите шаблон пустого проекта")](creating-tabbed-applications-images/newsolution1.png#lightbox)
 
-[ ![](creating-tabbed-applications-images/newsolution2.png "Назовите проект TabbedApplication")](creating-tabbed-applications-images/newsolution2.png)
+[![](creating-tabbed-applications-images/newsolution2.png "Назовите проект TabbedApplication")](creating-tabbed-applications-images/newsolution2.png#lightbox)
 
 
 
@@ -65,7 +65,7 @@ _операций ввода-вывода с помощью интерфейса
 
 Добавьте пустым классом, выбрав **файл > новый файл** и выбрав **общие: пустым классом** шаблона. Назовите файл `TabController` как показано ниже:
 
-[ ![](creating-tabbed-applications-images/02-newclass.png "Добавьте класс TabController")](creating-tabbed-applications-images/02-newclass.png)
+[![](creating-tabbed-applications-images/02-newclass.png "Добавьте класс TabController")](creating-tabbed-applications-images/02-newclass.png#lightbox)
 
 `TabController` Класс будет содержать реализацию `UITabBarController` , будет управлять массив `UIViewControllers`. При выборе вкладки, `UITabBarController` берет на себя представляющим представление для контроллера соответствующее представление.
 
@@ -113,7 +113,7 @@ namespace TabbedApplication {
 
 Обратите внимание, что для каждого `UIViewController` набор экземпляров, мы `Title` свойство `UIViewController`. При добавлении контроллера `UITabBarController`, `UITabBarController` будет считывать `Title` для каждого контроллера и их отображения на вкладке связанные метки, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/00-app.png "Образец приложения будут работать")](creating-tabbed-applications-images/00-app.png)
+[![](creating-tabbed-applications-images/00-app.png "Образец приложения будут работать")](creating-tabbed-applications-images/00-app.png#lightbox)
 
 #### <a name="setting-the-tabcontroller-as-the-rootviewcontroller"></a>Установка TabController RootViewController
 
@@ -144,7 +144,7 @@ namespace TabbedApplication {
 
 Если мы запустим приложение теперь `UITabBarController` будет загружать с выбранной вкладкой «первый» по умолчанию. Выбор любого из других вкладок в связанному контроллеру представление результатов представленных `UITabBarController,` как показано ниже, где пользователь выбрал второй вкладки:
 
-[ ![](creating-tabbed-applications-images/03-secondtab.png "Вторая вкладка показано")](creating-tabbed-applications-images/03-secondtab.png)
+[![](creating-tabbed-applications-images/03-secondtab.png "Вторая вкладка показано")](creating-tabbed-applications-images/03-secondtab.png#lightbox)
 
  <a name="Modifying_TabBarItems" />
 
@@ -185,7 +185,7 @@ tab2.View.BackgroundColor = UIColor.Orange;
 
 Приведенный выше код предполагает образ с именем `second.png` будет добавлен в корневую папку проекта в Visual Studio для Mac. Фактически мы добавили три изображения для проектов, чтобы охватить разрешениях для всех устройств, как показано ниже:
 
- [ ![](creating-tabbed-applications-images/tabbedimages7new.png "Изображения, добавляемые в проект")](creating-tabbed-applications-images/tabbedimages7new.png)
+ [![](creating-tabbed-applications-images/tabbedimages7new.png "Изображения, добавляемые в проект")](creating-tabbed-applications-images/tabbedimages7new.png#lightbox)
 
 Вкладку образ должен быть png 30 x 30 с прозрачностью для обычного разрешения 60 x 60 для высоким разрешением и 90 x 90 для iPhone 6 Plus разрешения. В приведенном коде нам требуется только для загрузки файла с именем `second.png` и iOS будет автоматически загружать высоким разрешением, один на устройствах с дисплеем retina. Можно прочитать подробнее об этом [работа с образами](~/ios/app-fundamentals/images-icons/index.md) руководства. По умолчанию панель элементов вкладки, серый значок с синей оттенок, при выборе.
 
@@ -193,13 +193,13 @@ tab2.View.BackgroundColor = UIColor.Orange;
 
 На рисунках выше также могут быть добавлены к **ресурсов** каталог, который является специальный каталог, содержимое которого будет автоматически копироваться в корневой каталог пакета приложения:
 
-[ ![](creating-tabbed-applications-images/tabbedapplication8.png "Изображения как ресурсы")](creating-tabbed-applications-images/tabbedapplication8.png)
+[![](creating-tabbed-applications-images/tabbedapplication8.png "Изображения как ресурсы")](creating-tabbed-applications-images/tabbedapplication8.png#lightbox)
 
 Кроме того, когда мы устанавливаем `Title` свойство напрямую на `TabBarItem`, оно переопределит значение, заданное для `Title` на сам контроллер.
 
 При запуске приложение, второй вкладке отображается наши пользовательский заголовок и изображения, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/05-customtab.png "Вторая вкладка с квадратный значок")](creating-tabbed-applications-images/05-customtab.png)
+[![](creating-tabbed-applications-images/05-customtab.png "Вторая вкладка с квадратный значок")](creating-tabbed-applications-images/05-customtab.png#lightbox)
 
  <a name="Setting_the_Badge_Value" />
 
@@ -214,7 +214,7 @@ tab3.TabBarItem.BadgeValue = "Hi";
 
 При выполнении этого приводит красный метку со строки «Hi» в левом верхнем углу вкладки, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/06-badge.png "Вторая вкладка с эмблемой Hi")](creating-tabbed-applications-images/06-badge.png)
+[![](creating-tabbed-applications-images/06-badge.png "Вторая вкладка с эмблемой Hi")](creating-tabbed-applications-images/06-badge.png#lightbox)
 
 Эмблема на значке часто используется для отображения числа непрочитанных, указание новых элементов. Чтобы удалить эмблему, установите `BadgeValue` NULL, как показано ниже:
 
@@ -236,7 +236,7 @@ tab3.TabBarItem.BadgeValue = null;
 
 В этом сценарии начальный экран загружает из контроллера, который не `UITabBarController`. Когда пользователь взаимодействует с экрана нажатием кнопки, один и тот же контроллер представления будут загружены в `UITabBarController`, который затем представляются пользователю. На следующем рисунке показан поток приложения:
 
-[ ![](creating-tabbed-applications-images/inital-screen-application.png "На этом снимке экрана показан поток приложения")](creating-tabbed-applications-images/inital-screen-application.png)
+[![](creating-tabbed-applications-images/inital-screen-application.png "На этом снимке экрана показан поток приложения")](creating-tabbed-applications-images/inital-screen-application.png#lightbox)
 
 Давайте начнем нового приложения для этого примера. Опять же, мы будем использовать **iPhone > приложения > пустой проект (C#)** шаблона, назвав проекта `InitialScreenDemo`.
 
@@ -249,14 +249,14 @@ tab3.TabBarItem.BadgeValue = null;
 
 Давайте назовем эту раскадровку новый **MainStoryboard** , как показано ниже: 
 
-[ ![](creating-tabbed-applications-images/new-file-dialog.png "Добавьте в проект файл MainStoryboard")](creating-tabbed-applications-images/new-file-dialog.png)
+[![](creating-tabbed-applications-images/new-file-dialog.png "Добавьте в проект файл MainStoryboard")](creating-tabbed-applications-images/new-file-dialog.png#lightbox)
 
 Существует несколько важные действия, обратите внимание, при добавлении раскадровки в файле ранее раскадровки рассматривается в [введение в раскадровки](~/ios/user-interface/storyboards/index.md) руководства. Эти особые значения приведены ниже.
 
  
 1. Добавьте имя раскадровки для **главного интерфейса** раздел `Info.plist`:
 
-    [![](creating-tabbed-applications-images/project-options.png "Это основной интерфейс присвоено MainStoryboard")](creating-tabbed-applications-images/project-options.png)
+    [![](creating-tabbed-applications-images/project-options.png "Это основной интерфейс присвоено MainStoryboard")](creating-tabbed-applications-images/project-options.png#lightbox)
 1. В вашей `App Delegate`, переопределите метод окно со следующим кодом:
 
     ```csharp
@@ -270,11 +270,11 @@ tab3.TabBarItem.BadgeValue = null;
 
 Откройте конструктор, дважды щелкнув файл MainStoryboard.storyboard и перетащите три контроллера представления на поверхность разработки. Мы хотим каждого из этих контроллеров представления иметь свои собственные класс, соответствующий указанным выше, в этом случае в списке **удостоверение > класс**, введите его имя, как показано на снимке экрана ниже:
 
-[ ![](creating-tabbed-applications-images/class-name.png "Задайте класс ViewController1")](creating-tabbed-applications-images/class-name.png)
+[![](creating-tabbed-applications-images/class-name.png "Задайте класс ViewController1")](creating-tabbed-applications-images/class-name.png#lightbox)
 
 Visual Studio для Mac автоматически создаст классы и конструктора необходимые файлы, это можно увидеть в области решения, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/solution-pad2.png "Автоматически сгенерированные файлы в проекте")](creating-tabbed-applications-images/solution-pad2.png)
+[![](creating-tabbed-applications-images/solution-pad2.png "Автоматически сгенерированные файлы в проекте")](creating-tabbed-applications-images/solution-pad2.png#lightbox)
 
  <a name="Creating_the_UI" />
 
@@ -291,11 +291,11 @@ Visual Studio для Mac автоматически создаст классы 
 
 Мы управления видимостью кнопку в `TouchUpInside` событий и мы должны ссылаться на него в коде. Давайте идентифицировать его с **имя** `aButton` в панели свойств, как показано на следующем снимке экрана:
 
-[ ![](creating-tabbed-applications-images/abutton-properties.png "Задайте имя aButton в панели свойств")](creating-tabbed-applications-images/abutton-properties.png)
+[![](creating-tabbed-applications-images/abutton-properties.png "Задайте имя aButton в панели свойств")](creating-tabbed-applications-images/abutton-properties.png#lightbox)
 
 В область конструктора теперь должен выглядеть примерно на снимке экрана ниже:
 
-[ ![](creating-tabbed-applications-images/design-surface1.png "В область конструктора теперь должен выглядеть примерно на следующий снимок экрана")](creating-tabbed-applications-images/design-surface1.png)
+[![](creating-tabbed-applications-images/design-surface1.png "В область конструктора теперь должен выглядеть примерно на следующий снимок экрана")](creating-tabbed-applications-images/design-surface1.png#lightbox)
 
 Давайте добавим немного более подробно в `ViewController2` и `ViewController3`, путем добавления метки к каждому и изменения текста «Два» и «Три», соответственно. Это подчеркивает пользователя мы ищем какие вкладки или представления.
 
@@ -305,7 +305,7 @@ Visual Studio для Mac автоматически создаст классы 
 
 Если пользователь отпускает `aButton`, мы хотим TouchUpInside события. Позволяет выбрать и в **вкладку события** прокладки свойства объявить обработчик событий — `InitialActionCompleted` , поэтому его можно ссылаться в коде. Это показано на снимке экрана ниже:
 
-[ ![](creating-tabbed-applications-images/event-handler.png "Когда пользователь отпускает aButton, активация события TouchUpInside")](creating-tabbed-applications-images/event-handler.png)
+[![](creating-tabbed-applications-images/event-handler.png "Когда пользователь отпускает aButton, активация события TouchUpInside")](creating-tabbed-applications-images/event-handler.png#lightbox)
 
 После этого необходимо определить представление-контроллер для скрытия кнопки при возникновении события `InitialActionCompleted`. В `ViewController1`, добавьте следующий разделяемый метод:
 
@@ -324,7 +324,7 @@ partial void InitialActionCompleted (UIButton sender)
 
 В **элементов**, поиск **вкладка панели контроллера** в списке контроллеров & объекты и переместите ее в область конструктора. Как видно на снимке экрана ниже контроллера панели вкладки — без интерфейса пользователя и поэтому переводит двух контроллеров представления с ней по умолчанию:
 
-[ ![](creating-tabbed-applications-images/tabbarcontroller.png "Добавление контроллера вкладки панели макета")](creating-tabbed-applications-images/tabbarcontroller.png)
+[![](creating-tabbed-applications-images/tabbarcontroller.png "Добавление контроллера вкладки панели макета")](creating-tabbed-applications-images/tabbarcontroller.png#lightbox)
 
 Удалите эти новые контроллеры представление, выбрав черная полоса внизу и нажав клавишу delete.
 
@@ -334,15 +334,15 @@ partial void InitialActionCompleted (UIButton sender)
  
 Для настройки каждой из наших вкладок **нажатой клавише CTRL** из TabBarController для каждой из наших Просмотр контроллеров в порядке от одного до трех, а затем выберите связь **вкладке** в контекстном меню, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/context-menu.png "Выберите вкладку связь")](creating-tabbed-applications-images/context-menu.png)
+[![](creating-tabbed-applications-images/context-menu.png "Выберите вкладку связь")](creating-tabbed-applications-images/context-menu.png#lightbox)
 
 Раскадровки должен быть похож на снимке экрана ниже.
 
-[ ![](creating-tabbed-applications-images/segue-layout.png "Раскадровка должен быть похож на следующий снимок экрана")](creating-tabbed-applications-images/segue-layout.png)
+[![](creating-tabbed-applications-images/segue-layout.png "Раскадровка должен быть похож на следующий снимок экрана")](creating-tabbed-applications-images/segue-layout.png#lightbox)
 
 Если щелкнуть один из элементов панели вкладки и просмотр панели «свойства», видно ряд различных параметров, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/properties-panel.png "Настройка параметров вкладки в обозревателе свойств")](creating-tabbed-applications-images/properties-panel.png)
+[![](creating-tabbed-applications-images/properties-panel.png "Настройка параметров вкладки в обозревателе свойств")](creating-tabbed-applications-images/properties-panel.png#lightbox)
 
 Это можно использовать для редактирования определенные атрибуты, такие как эмблема, заголовок и iOS [идентификатор](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/UIKitUICatalog/TabBarItem.html), среди прочего
 
@@ -360,11 +360,11 @@ public override void ViewDidLoad ()
 
 Загружается после запуска приложения и пользователь нажимает кнопку на первом экране UITabBarController, с помощью представления на первом экране помещаются в первую вкладку, как показано ниже:
 
-[ ![](creating-tabbed-applications-images/first-view.png "Образец выходных данных приложения")](creating-tabbed-applications-images/first-view.png)
+[![](creating-tabbed-applications-images/first-view.png "Образец выходных данных приложения")](creating-tabbed-applications-images/first-view.png#lightbox)
 
 <!--Save the files and run the application:
 
-[ ![](creating-tabbed-applications-images/inital-screen-application.png "Save the files and run the application")](creating-tabbed-applications-images/inital-screen-application.png)-->
+[![](creating-tabbed-applications-images/inital-screen-application.png "Save the files and run the application")](creating-tabbed-applications-images/inital-screen-application.png#lightbox)-->
 
 ## <a name="summary"></a>Сводка
 

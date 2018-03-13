@@ -7,18 +7,17 @@ ms.assetid: CF12FE85-D03A-4E64-95D2-D7115061A500
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/05/2018
-ms.openlocfilehash: b8f643c8158c5a3a849a3d8ee3dd8d0e7e30addf
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 46eec10bbabec74719affabce1e8033a083680be
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="cardview"></a>CardView
 
 _Мини-приложение Cardview является компонентом пользовательского интерфейса, который представляет содержимое text и image в представления, которые похожи на картах. Это руководство содержит описание использования и настройки CardView в приложениях Xamarin.Android, поддерживая обратную совместимость с более ранних версиях Android._
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -59,7 +58,6 @@ _Мини-приложение Cardview является компонентом 
 Дополнительные сведения о настройке проекта приложения Android 5.0 см. в разделе [параметр вверх Android 5.0 проекта](~/android/platform/lollipop.md).
 Дополнительные сведения об установке пакетов NuGet см. в разделе [Пошаговое руководство: включая NuGet в проекте](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough).
 
-<a name="basic" />
 
 ## <a name="introducing-cardview"></a>Знакомство с приложением CardView
 
@@ -94,11 +92,10 @@ _Мини-приложение Cardview является компонентом 
 
 В этом примере макет создается значение по умолчанию `CardView` одной строкой текста, как показано на следующем снимке экрана:
 
-[![Снимок экрана CardView с белым фоном и текстовой строки](card-view-images/02-basic-cardview-sml.png)](card-view-images/02-basic-cardview.png)
+[![Снимок экрана CardView с белым фоном и текстовой строки](card-view-images/02-basic-cardview-sml.png)](card-view-images/02-basic-cardview.png#lightbox)
 
 В этом примере стиль приложения имеет значение Светлая тема материал (`Theme.Material.Light`), чтобы `CardView` тени и ребра, легче увидеть. Дополнительные сведения о приложениях темы Android 5.0 см. в разделе [темы материал](~/android/user-interface/material-theme.md). В следующем разделе будет рассказано, как настроить `CardView` для приложения.
 
-<a name="customizing" />
 
 ## <a name="customizing-cardview"></a>Настройка CardView
 
@@ -159,30 +156,28 @@ _Мини-приложение Cardview является компонентом 
 
 При использовании в этом примере макет для отображения изображения в приложении просмотра фотографий `CardView` имеет вид фото моментальных снимков, как показано на следующем снимке экрана:
 
-[![CardView заголовка под изображением и изображений](card-view-images/03-photo-cardview-sml.png)](card-view-images/03-photo-cardview.png)
+[![CardView заголовка под изображением и изображений](card-view-images/03-photo-cardview-sml.png)](card-view-images/03-photo-cardview.png#lightbox)
 
 На этом снимке экрана берется из [RecyclerViewer](https://developer.xamarin.com/samples/monodroid/android5.0/RecyclerViewer) пример приложения, использующего `RecyclerView` мини-приложение для представления прокрутки списка `CardView` изображения для просмотра фотографий. Дополнительные сведения о `RecyclerView`, в разделе [RecyclerView](~/android/user-interface/layouts/recycler-view/index.md) руководства.
 
 Обратите внимание, что `CardView` можно отобразить несколько дочерних представлений в его области содержимого. Например, в просмотра пример приложения выше фотографий, область содержимого состоит из `ListView` , содержащий `ImageView` и `TextView`. Несмотря на то что `CardView` экземпляры часто располагаются вертикально, можно упорядочить их по горизонтали (в разделе [создания пользовательского стиля представления](~/android/user-interface/material-theme.md#customview) для снимок экрана примера).
 
-<a name="layout" />
 
 ### <a name="cardview-layout-options"></a>Параметры макета CardView
 
 `CardView` макеты можно настроить, задав один или несколько атрибутов, которые влияют на его заполнения, повышение прав, скругленных углов и цвет фона:
 
-[![Схема CardView атрибутов](card-view-images/04-attributes-sml.png)](card-view-images/04-attributes.png)
+[![Схема CardView атрибутов](card-view-images/04-attributes-sml.png)](card-view-images/04-attributes.png#lightbox)
 
 Каждый атрибут также может динамически изменить вызовом аналога `CardView` метод (Дополнительные сведения о `CardView` методов, см. [ссылку на класс CardView](https://developer.android.com/reference/android/support/v7/widget/CardView.html)).
 Обратите внимание, что эти атрибуты (за исключением цвет фона) принимать значение измерения, — это десятичное число, следуют единицы. Например `11.5dp` указывает 11.5 плотность независимых пикселях.
 
-<a name="padding" />
 
 #### <a name="padding"></a>Заполнение
 `
 CardView` Существует пять атрибутов заполнения для размещения содержимого в карточке. Можно задать их в макете XML или аналогичные методы можно вызывать в коде:
 
-[![Схема CardView атрибуты внутренних полей](card-view-images/05-padding-sml.png)](card-view-images/05-padding.png)
+[![Схема CardView атрибуты внутренних полей](card-view-images/05-padding-sml.png)](card-view-images/05-padding.png#lightbox)
 
 Атрибуты заполнения описать следующим образом:
 
@@ -200,13 +195,12 @@ CardView` Существует пять атрибутов заполнения 
 Например если `contentPadding` достаточно увеличении в приложении просмотра фотографий, `CardView` бы обрезать изображение и текст, отображаемый на карте.
 
 
-<a name="elevation" />
 
 #### <a name="elevation"></a>Повышение прав
 
 `CardView` предлагает два атрибута повышение прав для управления его повышение прав и, таким образом, размер тени его:
 
-[![Схема CardView повышение атрибутов](card-view-images/06-elevation-sml.png)](card-view-images/06-elevation.png)
+[![Схема CardView повышение атрибутов](card-view-images/06-elevation-sml.png)](card-view-images/06-elevation.png#lightbox)
 
 Повышение атрибутов описать следующим образом:
 
@@ -217,13 +211,12 @@ CardView` Существует пять атрибутов заполнения 
 Большие значения из `cardElevation` увеличить размер тени `CardView` отображаться как число с плавающей запятой, чем выше фона. `cardElevation` Атрибут также определяет порядок отображения перекрывающихся представления, то есть, `CardView` будет отображаться в другое представление перекрывающихся с максимальным повышение прав и более поздних версий все перекрывающиеся представления с более низкий уровень повышения прав.
 `cardMaxElevation` Параметр полезен для приложения изменения повышение динамически &ndash; тени предотвращает расширение за границу, определяющие этот параметр.
 
-<a name="radius" />
 
 #### <a name="corner-radius-and-background-color"></a>Радиус скругления углов и цвет фона
 
 `CardView` Предоставляет атрибуты, которые можно использовать для управления его скругленных углов и цвет фона. Эти свойства позволяют изменить общий стиль `CardView`:
 
-[![Схема углу CardView radious и атрибуты цвета фона](card-view-images/07-radius-bgcolor-sml.png)](card-view-images/07-radius-bgcolor.png)
+[![Схема углу CardView radious и атрибуты цвета фона](card-view-images/07-radius-bgcolor-sml.png)](card-view-images/07-radius-bgcolor.png#lightbox)
 
 Эти атрибуты описаны следующим образом:
 
@@ -233,8 +226,6 @@ CardView` Существует пять атрибутов заполнения 
 
 На этой диаграмме `cardCornerRadius` задано значение более скругленными 10dp и `cardBackgroundColor` задано значение `"#FFFFCC"` (Светло-желтый).
 
-
-<a name="compatibility" />
 
 ## <a name="compatibility"></a>Совместимость
 
@@ -255,7 +246,6 @@ CardView` Существует пять атрибутов заполнения 
 
 Дополнительные сведения о поддержке совместимости с предыдущими версиями Android см. в разделе [обслуживание совместимости](https://developer.android.com/training/material/compatibility.html).
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

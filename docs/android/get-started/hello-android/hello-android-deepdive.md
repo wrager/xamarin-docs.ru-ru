@@ -3,16 +3,16 @@ title: "Привет, Android: теперь подробнее"
 description: "Из этого состоящего из двух частей руководства вы узнаете, как создать первое приложение Xamarin.Android. Вы также получите представление об основах разработки приложений Android с помощью Xamarin. Кроме того, в этом руководстве будут описаны инструменты, понятия и действия, необходимые для сборки и развертывания приложения Xamarin.Android."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: AD3BAE9A-963C-4CF7-9733-111033034289
+ms.assetid: EF0E110B-20EA-43F6-9476-1A0F41AFD298
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/07/2018
-ms.openlocfilehash: de6037b9cfeb66ee1c26c12c2e81913a4a2f1e79
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e9e554da80218d2e89ff79c6e89886d707b1ed95
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="hello-android-deep-dive"></a>Привет, Android: теперь подробнее
 
@@ -83,13 +83,13 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 На приведенном ниже снимке экрана представлено содержимое решения. Это обозреватель решений, который содержит структуру каталогов и все файлы, связанные с решением:
 
-[![Обозреватель решений](hello-android-deepdive-images/vs/02-solution-structure-sml.png )](hello-android-deepdive-images/vs/02-solution-structure.png)
+[![Обозреватель решений](hello-android-deepdive-images/vs/02-solution-structure-sml.png)](hello-android-deepdive-images/vs/02-solution-structure.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 На приведенном ниже снимке экрана представлено содержимое решения. Это Панель решения, которая содержит структуру каталогов и все файлы, связанные с решением:
 
-[![Панель решения](hello-android-deepdive-images/xs/02-solution-structure-sml.png)](hello-android-deepdive-images/xs/02-solution-structure.png)
+[![Панель решения](hello-android-deepdive-images/xs/02-solution-structure-sml.png)](hello-android-deepdive-images/xs/02-solution-structure.png#lightbox)
 
 -----
 
@@ -135,11 +135,11 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 Когда приложение **Phoneword** впервые открывается в эмуляторе или на устройстве, операционная система создает первое *действие*. Действие — это особый класс Android, который соответствует одному экрану приложения и отвечает за отрисовку и работу пользовательского интерфейса. Когда система Android создает первое действие приложения, она загружает все приложение:
 
-[![Загрузка действия](hello-android-deepdive-images/01-activity-load-sml.png)](hello-android-deepdive-images/01-activity-load.png)
+[![Загрузка действия](hello-android-deepdive-images/01-activity-load-sml.png)](hello-android-deepdive-images/01-activity-load.png#lightbox)
 
 Так как в приложении Android нет линейной очередности выполнения (приложение можно запускать из нескольких мест), в Android имеется уникальная возможность отслеживания классов и файлов, из которых состоит приложение. В примере **Phoneword** все части приложения регистрируются в специальном XML-файле, который называется **манифестом Android**. Назначение **манифеста Android** — отслеживать содержимое, свойства и разрешения приложения и сообщать о них операционной системе Android. Приложение **Phoneword** можно представить как одно действие (экран) и коллекцию файлов ресурсов и вспомогательных пакетов, связанных воедино файлом манифеста Android, как показано на схеме ниже:
 
-[![Ресурсы и вспомогательные пакеты](hello-android-deepdive-images/02-resources-helpers-sml.png)](hello-android-deepdive-images/02-resources-helpers.png)
+[![Ресурсы и вспомогательные пакеты](hello-android-deepdive-images/02-resources-helpers-sml.png)](hello-android-deepdive-images/02-resources-helpers.png#lightbox)
 
 В следующих нескольких разделах рассматриваются связи между различными частями приложения **Phoneword**. Благодаря этому вы сможете лучше понять представленную выше схему. Рассмотрение начинается с пользовательского интерфейса, а именно с файлов конструктора и макета Android.
 
@@ -150,11 +150,11 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Android Designer](hello-android-deepdive-images/vs/03-android-designer-sml.png "Android Designer")](hello-android-deepdive-images/vs/03-android-designer.png)
+[![Android Designer](hello-android-deepdive-images/vs/03-android-designer-sml.png "Android Designer")](hello-android-deepdive-images/vs/03-android-designer.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Android Designer](hello-android-deepdive-images/xs/03-android-designer-sml.png)](hello-android-deepdive-images/xs/03-android-designer.png)
+[![Android Designer](hello-android-deepdive-images/xs/03-android-designer-sml.png)](hello-android-deepdive-images/xs/03-android-designer.png#lightbox)
 
 -----
 
@@ -162,11 +162,11 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Значение идентификатора TranslateButton](hello-android-deepdive-images/vs/04-translatebutton-sml.png "Значение идентификатора TranslateButton")](hello-android-deepdive-images/vs/04-translatebutton.png)
+[![Значение идентификатора TranslateButton](hello-android-deepdive-images/vs/04-translatebutton-sml.png "Значение идентификатора TranslateButton")](hello-android-deepdive-images/vs/04-translatebutton.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Значение идентификатора TranslateButton](hello-android-deepdive-images/xs/04-translatebutton-sml.png)](hello-android-deepdive-images/xs/04-translatebutton.png)
+[![Значение идентификатора TranslateButton](hello-android-deepdive-images/xs/04-translatebutton-sml.png)](hello-android-deepdive-images/xs/04-translatebutton.png#lightbox)
 
 -----
 
@@ -179,11 +179,11 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Представление исходного кода в конструкторе](hello-android-deepdive-images/vs/05-source-view-sml.png "Представление исходного кода в конструкторе")](hello-android-deepdive-images/vs/05-source-view.png)
+[![Представление исходного кода в конструкторе](hello-android-deepdive-images/vs/05-source-view-sml.png "Представление исходного кода в конструкторе")](hello-android-deepdive-images/vs/05-source-view.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Представление исходного кода в конструкторе](hello-android-deepdive-images/xs/05-source-view-sml.png)](hello-android-deepdive-images/xs/05-source-view.png)
+[![Представление исходного кода в конструкторе](hello-android-deepdive-images/xs/05-source-view-sml.png)](hello-android-deepdive-images/xs/05-source-view.png#lightbox)
 
 -----
 
@@ -223,7 +223,7 @@ public class MainActivity : Activity
 
 В Android действия проходят различные этапы жизненного цикла в зависимости от взаимодействия с пользователем. Действия могут создаваться, запускаться, останавливаться, возобновляться, уничтожаться и т. д. Класс `Activity` содержит методы, которые система вызывает на различных этапах жизненного цикла экрана. На представленной ниже схеме показан типичный жизненный цикл действия, а также ряд соответствующих методов:
 
-[![Жизненный цикл действия](hello-android-deepdive-images/04-lifecycle-sml.png)](hello-android-deepdive-images/04-lifecycle.png)
+[![Жизненный цикл действия](hello-android-deepdive-images/04-lifecycle-sml.png)](hello-android-deepdive-images/04-lifecycle.png#lightbox)
 
 Переопределяя методы жизненного цикла класса `Activity`, вы можете управлять тем, как загружается действие, как оно реагирует на действия пользователей, и даже тем, что происходит, когда оно перестает отображаться на экране устройства. Например,вы можете переопределить методы жизненного цикла, представленные на схеме выше, для выполнения некоторых важных задач:
 
@@ -320,21 +320,20 @@ translateButton.Click += (sender, e) =>
 
 Настроив устройство, вы можете развернуть на нем приложение. Для этого подключите устройство, нажмите **Запуск (воспроизведение)**, выберите устройство в диалоговом окне **Выбор устройства** и нажмите кнопку **ОК**:
 
-[![Выбор устройства отладки](hello-android-deepdive-images/xs/06-select-device-sml.png)](hello-android-deepdive-images/xs/06-select-device.png)
+[![Выбор устройства отладки](hello-android-deepdive-images/xs/06-select-device-sml.png)](hello-android-deepdive-images/xs/06-select-device.png#lightbox)
 
 -----
 
 Приложение запустится на устройстве:
 
-[![Ввод красивого телефонного номера](hello-android-deepdive-images/05-enter-phoneword-sml.png)](hello-android-deepdive-images/05-enter-phoneword.png)
+[![Ввод красивого телефонного номера](hello-android-deepdive-images/05-enter-phoneword-sml.png)](hello-android-deepdive-images/05-enter-phoneword.png#lightbox)
 
-<a name="densities" />
 
 ### <a name="set-icons-for-different-screen-densities"></a>Определение значков для экранов различной плотности
 
 Устройства Android имеют экраны разного размера и разрешения, и не все изображения выглядят хорошо на всех экранах. Например, на приведенном ниже снимке экрана показан значок низкой плотности на экране высокой плотности устройства Nexus 5. Обратите внимание на то, что он выглядит нечетким по сравнению со значками вокруг:
 
-[![Нечеткий значок](hello-android-deepdive-images/06-blurry-icon-sml.png)](hello-android-deepdive-images/06-blurry-icon.png)
+[![Нечеткий значок](hello-android-deepdive-images/06-blurry-icon-sml.png)](hello-android-deepdive-images/06-blurry-icon.png#lightbox)
 
 Чтобы такого не происходило, рекомендуется добавлять значки с разным разрешением в папку **Resources**. В Android имеются различные версии папки **mipmap** для значков средства запуска с различной плотностью: *mdpi* для средней плотности, *hdpi* для высокой и *xhdpi*, *xxhdpi*, *xxxhdpi* для экранов с очень высокой плотностью. Значки разного размера хранятся в соответствующих папках **mipmap-**:
 
@@ -344,13 +343,13 @@ translateButton.Click += (sender, e) =>
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Папки mipmap](hello-android-deepdive-images/xs/07-mipmap-folders-sml.png)](hello-android-deepdive-images/xs/07-mipmap-folders.png)
+[![Папки mipmap](hello-android-deepdive-images/xs/07-mipmap-folders-sml.png)](hello-android-deepdive-images/xs/07-mipmap-folders.png#lightbox)
 
 -----
 
 Система Android выбирает значок с подходящей плотностью:
 
-[![Значки с подходящей плотностью](hello-android-deepdive-images/07-appropriate-density-sml.png)](hello-android-deepdive-images/07-appropriate-density.png)
+[![Значки с подходящей плотностью](hello-android-deepdive-images/07-appropriate-density-sml.png)](hello-android-deepdive-images/07-appropriate-density.png#lightbox)
 
 ### <a name="generate-custom-icons"></a>Создание пользовательских значков
 
@@ -393,15 +392,15 @@ _Сервисы Google Play_ — это набор дополнительных
 
 Чтобы добавить одну или несколько библиотек Сервисов Google Play, в дереве проекта щелкните правой кнопкой мыши узел **Пакеты** и выберите команду **Добавить службу Google Play...**:
 
-[![Добавить службу Google Play](hello-android-deepdive-images/xs/08-add-google-play-services-sml.png)](hello-android-deepdive-images/xs/08-add-google-play-services.png)
+[![Добавить службу Google Play](hello-android-deepdive-images/xs/08-add-google-play-services-sml.png)](hello-android-deepdive-images/xs/08-add-google-play-services.png#lightbox)
 
 Когда появится диалоговое окно **Добавить службы Google Play**, выберите пакеты (NuGet), которые нужно добавить в проект:
 
-[![Выбор пакетов](hello-android-deepdive-images/xs/09-add-dialog-sml.png)](hello-android-deepdive-images/xs/09-add-dialog.png)
+[![Выбор пакетов](hello-android-deepdive-images/xs/09-add-dialog-sml.png)](hello-android-deepdive-images/xs/09-add-dialog.png#lightbox)
 
 Когда вы выбираете службу и нажимаете **Добавить пакет**, Visual Studio для Mac скачивает и устанавливает выбранный пакет, а также все необходимые зависимые пакеты Сервисов Google Play. В некоторых случаях может появиться диалоговое окно **Принятие условий лицензионного соглашения**, в котором нужно нажать кнопку **Принимаю**, прежде чем пакеты будут установлены:
 
-[![Принятие условий лицензионного соглашения](hello-android-deepdive-images/xs/10-license-acceptance-sml.png)](hello-android-deepdive-images/xs/10-license-acceptance.png)
+[![Принятие условий лицензионного соглашения](hello-android-deepdive-images/xs/10-license-acceptance-sml.png)](hello-android-deepdive-images/xs/10-license-acceptance.png#lightbox)
 
 -----
 

@@ -2,16 +2,16 @@
 title: "Реализация видеопроигрывателя"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: CE9E955D-A9AC-4019-A5D7-6390D80DECA1
+ms.assetid: 0CE9BEE7-4F81-4A00-B9B3-5E2535CD3050
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: e818bc3fa9793f093c10ac2617c5a822d08213d4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a889be5ee31f667117d2c36859e667980f0e6610
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="implementing-a-video-player"></a>Реализация видеопроигрывателя
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/27/2018
 
 Требовать видеопроигрывателей *элементы управления транспортом*, которой находятся кнопки для воспроизведения и приостановки видео и позиционирования панели, показывает ход процесса при помощи видео и дает пользователю возможность быстро перейти в другое место. `VideoPlayer` можно использовать параметры транспорта и позиционирования панель, предоставляемый платформой (как показано ниже), или можно указать пользовательский транспорт элементов управления и позиционирования полосы. Вот программы, запущенные iOS, Android и универсальной платформы Windows.
 
-[![Воспроизведение видео в Интернете](web-videos-images/playwebvideo-small.png "воспроизведения видео в Интернете")](web-videos-images/playwebvideo-large.png "воспроизведения видео в Интернете")
+[![Воспроизведение видео в Интернете](web-videos-images/playwebvideo-small.png "воспроизведения видео в Интернете")](web-videos-images/playwebvideo-large.png#lightbox "воспроизведения видео в Интернете")
 
 Конечно вы можете включить телефон набок для его увеличения.
 

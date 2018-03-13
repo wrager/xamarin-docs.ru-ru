@@ -3,14 +3,15 @@ title: "Сводка Глава 16. привязка данных,"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: ED997DB0-C229-4868-A5FB-928703B377D6
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 954d5d9e270db156f5ef2577706c667e05ab544c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cf08874f66c9ab21cd0ede642c8c94821b6c5a2a
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-16-data-binding"></a>Сводка Глава 16. привязка данных,
 
@@ -95,7 +96,7 @@ ms.lasthandoff: 02/27/2018
 
 [ **ReverseBinding** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter16/ReverseBinding) пример задает привязки на `Value` свойство `Slider` ссылки на `FontSize` каждого экземпляра `Label`. Это кажется вперед, но лучше работает в инициализации `Slider` элементы из-за `Value` свойство `Slider` имеет `DefaultBindingMode` из `TwoWay`.
 
-[![Тройной экрана обратного привязки](images/ch16fg06-small.png "отменить привязку")](images/ch16fg06-large.png "отменить привязку")
+[![Тройной экрана обратного привязки](images/ch16fg06-small.png "отменить привязку")](images/ch16fg06-large.png#lightbox "отменить привязку")
 
 Это аналогично определение привязки в MVVM и используйте этот тип привязки, часто.
 

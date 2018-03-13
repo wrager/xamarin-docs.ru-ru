@@ -3,14 +3,15 @@ title: "Сводка главе 11. Инфраструктура связыва�
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 34671C48-0ED4-4B76-A33D-D6505390DC5B
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 3e3cfb55f7b96751979d14b489e892bc07817780
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6e0f1abf04695dfb5348b631a9fbdbd2c81bc431
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-11-the-bindable-infrastructure"></a>Сводка главе 11. Инфраструктура связывания
 
@@ -22,7 +23,7 @@ Xamarin.Forms определяет определение расширенные
 
 [ **ClassHierarchy** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/ClassHierarchy) образец использует отражение для отображения иерархии класса Xamarin.Forms и продемонстрируйте, ключевую роль, которую играют `BindableObject` в этой иерархии. `BindableObject` является производным от `Object` и является родительским классом для [ `Element` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Element/) откуда [ `VisualElement` ](https://developer.xamarin.com/api/type/Xamarin.Forms.VisualElement/) является производным. Это является родительским классом для [ `Page` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/) и [ `View` ](https://developer.xamarin.com/api/type/Xamarin.Forms.View/), который является родительским классом для [ `Layout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout/):
 
-[![Тройной экрана иерархию классов для управления доступом](images/ch11fg01-small.png "Иерархия класса для управления доступом")](images/ch11fg01-large.png "Иерархия класса для управления доступом")
+[![Тройной экрана иерархию классов для управления доступом](images/ch11fg01-small.png "Иерархия класса для управления доступом")](images/ch11fg01-large.png#lightbox "Иерархия класса для управления доступом")
 
 ## <a name="a-peek-into-bindableobject-and-bindableproperty"></a>Считывания в BindableObject и BindableProperty
 

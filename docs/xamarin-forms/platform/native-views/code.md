@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 55864073aecb48176d650da6edefad24c3248767
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0c4014ecda0501e9309a17901c439444e4b48e86
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="native-views-in-c"></a>Собственные представления в C#
 
@@ -24,7 +24,7 @@ _Собственные представления из iOS, Android и UWP мо
 
 Следующих снимках экрана показано платформой представления были добавлены в Xamarin.Forms [ `StackLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/):
 
-[![](code-images/screenshots-sml.png "StackLayout, содержащий представления платформой")](code-images/screenshots.png "StackLayout, содержащий представления платформой")
+[![](code-images/screenshots-sml.png "StackLayout, содержащий представления платформой")](code-images/screenshots.png#lightbox "StackLayout, содержащий представления платформой")
 
 Возможность добавления представления платформой в макете Xamarin.Forms включено по два метода расширения на каждой платформе:
 
@@ -64,7 +64,7 @@ contentView.Content = uiLabel.ToView();
 В следующем примере кода показано, как добавить `TextView` для [ `StackLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) и [ `ContentView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentView/):
 
 ```csharp
-var textView = new TextView (Forms.Context) { Text = originalText, TextSize = 14 };
+var textView = new TextView (MainActivity.Instance) { Text = originalText, TextSize = 14 };
 stackLayout.Children.Add (textView);
 contentView.Content = textView.ToView();
 ```
@@ -188,7 +188,7 @@ public class CustomControl : TextView
 Добавляемый экземпляр этого представления [ `StackLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/), как показано в следующем примере кода:
 
 ```csharp
-var customControl = new CustomControl (Forms.Context) {
+var customControl = new CustomControl (MainActivity.Instance) {
   Text = "This control has incorrect sizing - it doesn't occupy the available width of the device.",
   TextSize = 14
 };

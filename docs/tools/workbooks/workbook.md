@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 03/30/2017
-ms.openlocfilehash: bd53074fcde25736d37544efc719ecef1110c364
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c111d2f873270eab78eee92edc3d884d1e92fdd8
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="interactive-workbooks"></a>Интерактивные книги
 
@@ -30,7 +30,7 @@ _Используйте книги, для создания динамическ
 
 Окно предоставляет дополнение кода, Цветовая подсветка синтаксиса, встроенные быстрой диагностики и поддержка многострочного оператора.
 
-[ ![](workbook-images/inspector-0.6.0-repl-small.png "Предоставляет окно дополнение кода, Цветовая подсветка синтаксиса, встроенные быстрой диагностики и поддержка многострочного оператора")](workbook-images/inspector-0.6.0-repl.png)
+[ ![](workbook-images/inspector-0.6.0-repl-small.png "Предоставляет окно дополнение кода, Цветовая подсветка синтаксиса, встроенные быстрой диагностики и поддержка многострочного оператора")](workbook-images/inspector-0.6.0-repl.png#lightbox)
 
 Xamarin книги будут сохраняться в `.workbook` файл, который представляет собой файл CommonMark с определенными метаданными в верхней (см. [типы файлов книг](#Workbooks_Files_Types) для получения дополнительных сведений о Сохранение книг).
 

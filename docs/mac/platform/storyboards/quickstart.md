@@ -3,74 +3,74 @@ title: "Быстрый запуск раскадровки"
 description: "Получение macOS запущен построение пользовательских интерфейсов с помощью раскадровки."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: F37BA503-0B25-489F-80A8-58C493291A55
+ms.assetid: 20719B5D-8147-4E8A-A23C-8D575C7ACCEE
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/02/2017
-ms.openlocfilehash: 559179d2618ea41bf50362f2e5eb2aa735464b33
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: fe3a93557509aba4b33b1470879cd2504ed0f2a2
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="starting-a-new-storyboard-based-project"></a>Начало новую раскадровку зависимости проекта
 
 Как краткое введение в использование раскадровки для определения пользовательского интерфейса приложения Xamarin.Mac давайте начнем Xamarin.Mac новый проект. Выберите **Mac** > **Приложения** > **Приложение Cocoa** и нажмите кнопку **Далее**:
 
-[ ![](quickstart-images/qs01.png "Добавление нового приложения Cocoa")](quickstart-images/qs01.png)
+[![](quickstart-images/qs01.png "Добавление нового приложения Cocoa")](quickstart-images/qs01.png#lightbox)
 
 Используйте **имя приложения** из `MacStoryboard` и нажмите кнопку **Далее** кнопки:
 
-[ ![](quickstart-images/qs02.png "Параметр имени приложения")](quickstart-images/qs02.png)
+[![](quickstart-images/qs02.png "Параметр имени приложения")](quickstart-images/qs02.png#lightbox)
 
 Используйте значение по умолчанию **имя проекта** и **имя решения** и нажмите кнопку **создать** кнопки:
 
-[ ![](quickstart-images/qs03.png "Имена проектов и решений")](quickstart-images/qs03.png)
+[![](quickstart-images/qs03.png "Имена проектов и решений")](quickstart-images/qs03.png#lightbox)
 
 В **обозревателе решений**, дважды щелкните `Main.storyboard` файл, чтобы открыть его для редактирования в Xcode интерфейс построителя:
 
-[ ![](quickstart-images/qs04.png "Редактирование раскадровки в Xcode")](quickstart-images/qs04.png)
+[![](quickstart-images/qs04.png "Редактирование раскадровки в Xcode")](quickstart-images/qs04.png#lightbox)
 
 Как видно выше, по умолчанию раскадровки определяет строку меню приложения и закрытии главному окну с ним представление контроллер и представление. Для нашего примера приложения мы собираемся создавать пользовательский Интерфейс, который был создан основной _представление содержимого_ с одной стороны и _представление инспектора_ за секунду.
 
 Чтобы сделать это, необходимо сначала удалить контроллер представление по умолчанию и представления, входящий в состав раскадровки, выберите его в интерфейс построителя и нажав клавишу **удалить** ключ:
 
-[ ![](quickstart-images/qs05.png "Удаление контроллера представления по умолчанию")](quickstart-images/qs05.png)
+[![](quickstart-images/qs05.png "Удаление контроллера представления по умолчанию")](quickstart-images/qs05.png#lightbox)
 
 Затем введите `split` в **фильтра** вертикальной View Controller разбиение выберите и перетащите его на _конструктора_:
 
-[ ![](quickstart-images/qs06.png "Поиск представление контроллер разбиение")](quickstart-images/qs06.png)
+[![](quickstart-images/qs06.png "Поиск представление контроллер разбиение")](quickstart-images/qs06.png#lightbox)
 
 Обратите внимание, что контроллер автоматически включается два дочерних Просмотр контроллеров (и их связанные представления), проводной доступ с левой и правой частях представление с разделением. Чтобы связать разделенное представление к своему родительскому окну, нажмите клавишу **управления** key, щелкните окно контроллера (голубой круг в кадре контроллера окна) и перетащите линию для разбиения View Controller. Выберите **содержимого окна** из всплывающего окна:
 
-[ ![](quickstart-images/qs07.png "Установка windows представление содержимого")](quickstart-images/qs07.png)
+[![](quickstart-images/qs07.png "Установка windows представление содержимого")](quickstart-images/qs07.png#lightbox)
 
 Это будет связывать друг с другом с помощью Segue элемент два интерфейса:
 
-[ ![](quickstart-images/qs08.png "Segue между окном и содержимое")](quickstart-images/qs08.png)
+[![](quickstart-images/qs08.png "Segue между окном и содержимое")](quickstart-images/qs08.png#lightbox)
 
 Мы хотим поместить представлении текста в левой части разделенного представления и его автоматического заполнения области доступны при изменении размера окна или представление с разделением. Перетащите представление текста в верхней присоединенного представление контроллера в представление с разделением и нажмите кнопку **ПИН-код** автоматический макет ограничение (второй значок справа внизу рабочей области конструктора).
 
-[ ![](quickstart-images/qs09.png "Настройка ограничений")](quickstart-images/qs09.png)
+[![](quickstart-images/qs09.png "Настройка ограничений")](quickstart-images/qs09.png#lightbox)
 
 Здесь мы щелкните все четыре **i-образный курсор** значков ограничивающий прямоугольник в верхней части Popover ограничения и нажмите кнопку **добавьте ограничения 4** кнопку внизу, чтобы добавить необходимые ограничения.
 
 Если вернуться в Visual Studio для Mac и запустить проект, обратите внимание, что текстовое представление автоматически меняется для заполнения в левой части окна в представлении с разделением или изменяются разбиения:
 
-[ ![](quickstart-images/qs10.png "Пример выполнения приложения")](quickstart-images/qs10.png)
+[![](quickstart-images/qs10.png "Пример выполнения приложения")](quickstart-images/qs10.png#lightbox)
 
 Так как мы будем использовать правую часть представления с разделением как область инспектора, нужным имеют меньший размер и разрешить его будут свернуты. Вернуться к Xcode и изменять представление для справа от оператора, выбрав его в область конструктора и выбрав **инспектора размер**. Здесь введите **ширина** из `250`:
 
-[ ![](quickstart-images/qs11.png "Задание ширины")](quickstart-images/qs11.png)
+[![](quickstart-images/qs11.png "Задание ширины")](quickstart-images/qs11.png#lightbox)
 
 Далее выберите разбиение элемент, представляющий справа от оператора, установить более высокий **удерживая приоритет** и нажмите кнопку **пользователя можно свернуть** флажок:
 
-[ ![](quickstart-images/qs12.png "Изменение приоритета Холдинг")](quickstart-images/qs12.png)
+[![](quickstart-images/qs12.png "Изменение приоритета Холдинг")](quickstart-images/qs12.png#lightbox)
 
 Если мы вернитесь в Visual Studio для Mac и запустить проект сейчас, обратите внимание, что с правой стороны сохранится, является наименьшей изменяется размер и окно:
 
-[ ![](quickstart-images/qs13.png "Пример выполнения приложения")](quickstart-images/qs13.png)
+[![](quickstart-images/qs13.png "Пример выполнения приложения")](quickstart-images/qs13.png#lightbox)
 
 <a name="Defining-a-Presentation-Segue" />
 
@@ -80,19 +80,19 @@ ms.lasthandoff: 02/28/2018
 
 Мы добавим кнопки для инспектора и View-Controller в область конструктора. Мы изменим размер View Controller, равную размеру, мы хотим наших Popover, добавьте к нему четыре кнопки. Далее мы будем **управления** ключ, нажмите кнопку в представлении инспектора и перетащите представление контроллер, который будет представлять наших popover:
 
-[ ![](quickstart-images/qs14.png "Чтобы создать новый segue перетаскивания")](quickstart-images/qs14.png)
+[![](quickstart-images/qs14.png "Чтобы создать новый segue перетаскивания")](quickstart-images/qs14.png#lightbox)
 
 Из раскрывающегося меню, мы выберем **Popover**: 
 
-[ ![](quickstart-images/qs15.png "Выбор типа segue")](quickstart-images/qs15.png)
+[![](quickstart-images/qs15.png "Выбор типа segue")](quickstart-images/qs15.png#lightbox)
 
 Наконец, мы выберите Segue в рабочей области конструирования и задать **предпочитаемый Edge** для **слева**. Мы будем перетащите строку из **привязки представление** для кнопки, мы хотим popover подключен к:
 
-[ ![](quickstart-images/qs16.png "Чтобы создать новый segue перетаскивания")](quickstart-images/qs16.png)
+[![](quickstart-images/qs16.png "Чтобы создать новый segue перетаскивания")](quickstart-images/qs16.png#lightbox)
 
 Если мы вернитесь в Visual Studio для Mac, запустите приложение и щелкнуть **нет** будет отображаться кнопка в инспекторе popover:
 
-[ ![](quickstart-images/qs17.png "Пример segue под управлением")](quickstart-images/qs17.png)
+[![](quickstart-images/qs17.png "Пример segue под управлением")](quickstart-images/qs17.png#lightbox)
 
 <a name="Creating-App-Preferences" />
 
@@ -102,37 +102,37 @@ ms.lasthandoff: 02/28/2018
 
 Для определения standard диалоговое окно настройки, перетащите контроллер вкладку представления на поверхность разработки:
 
-[ ![](quickstart-images/qs18.png "Редактирование раскадровки в Xcode")](quickstart-images/qs18.png)
+[![](quickstart-images/qs18.png "Редактирование раскадровки в Xcode")](quickstart-images/qs18.png#lightbox)
 
 Опять же это автоматически включается с двумя дочерними подключенный Просмотр контроллеров. Например понимание, мы добавим метку для каждого представления будет центра внутри объекта:
 
-[ ![](quickstart-images/qs19.png "Установка ограничения")](quickstart-images/qs19.png)
+[![](quickstart-images/qs19.png "Установка ограничения")](quickstart-images/qs19.png#lightbox)
 
 Далее, необходимо открыть окно настройки, когда пользователь выбирает **установки...**  элемента меню. В строке меню выберите пункт меню настроек, **управления** ключа щелкните и перетащите линию нашей контроллер вкладку представления:
 
-[ ![](quickstart-images/qs20.png "Для создания segue перетаскивания")](quickstart-images/qs20.png)
+[![](quickstart-images/qs20.png "Для создания segue перетаскивания")](quickstart-images/qs20.png#lightbox)
 
 Из контекстного меню, мы выберем **модального** для отображения этого окна как модальное диалоговое окно:
 
-[ ![](quickstart-images/qs21.png "Выбор типа segue")](quickstart-images/qs21.png)
+[![](quickstart-images/qs21.png "Выбор типа segue")](quickstart-images/qs21.png#lightbox)
 
 Если сохранить изменения, вернитесь в Visual Studio для Mac, запустите приложение и выберите **установки...**  пункт меню, наш новый предпочтения, откроется диалоговое окно:
 
-[ ![](quickstart-images/qs22.png "Пример segue под управлением")](quickstart-images/qs22.png)
+[![](quickstart-images/qs22.png "Пример segue под управлением")](quickstart-images/qs22.png#lightbox)
 
 Можно заметить, что это не похоже приложении стандартные macOS предпочтений диалоговое окно. Чтобы устранить эту проблему, включают два файла изображения в приложении Xamarin.Mac `Resources` папки в **обозревателе решений** и вернуться в Xcode интерфейс построителя.
 
 Выберите вкладку View-Controller и коммутатор его **стиль** для **инструментов**: 
 
-[ ![](quickstart-images/qs23.png "Параметр стиль панели вкладки")](quickstart-images/qs23.png)
+[![](quickstart-images/qs23.png "Параметр стиль панели вкладки")](quickstart-images/qs23.png#lightbox)
 
 Выберите каждой из вкладок и присвойте ему **метка** и выберите одно из изображений, для его отображения:
 
-[ ![](quickstart-images/qs24.png "Настройка каждой из вкладок в Xcode")](quickstart-images/qs24.png)
+[![](quickstart-images/qs24.png "Настройка каждой из вкладок в Xcode")](quickstart-images/qs24.png#lightbox)
 
 Если сохранить изменения, вернитесь в Visual Studio для Mac, запустите приложение и выберите **установки...**  пункт меню, откроется диалоговое окно теперь macOS стандартные приложения:
 
-[ ![](quickstart-images/qs25.png "Пример окна выполнения установки")](quickstart-images/qs25.png)
+[![](quickstart-images/qs25.png "Пример окна выполнения установки")](quickstart-images/qs25.png#lightbox)
 
 Дополнительные сведения см. в разделе нашей [работа с образами](~/mac/app-fundamentals/image.md), [меню](~/mac/user-interface/menu.md), [Windows](~/mac/user-interface/window.md) и [диалоговые окна](~/mac/user-interface/dialog.md) документации.
 
@@ -141,5 +141,5 @@ ms.lasthandoff: 02/28/2018
 - [MacStoryboard (пример)](https://developer.xamarin.com/samples/mac/MacStoryboard/)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Работа с окнами](~/mac/user-interface/window.md)
-- [Рекомендации по интерфейсу отдела OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
+- [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
 - [Введение в Windows](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031-SW1)

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: fdd4311072efd5571724fbe00d12a96921054fa2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4c5b9fcbfaabbfc78da1064396dc3fec2d3fde8d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="deployment-and-testing"></a>Развертывание и тестирование
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 02/27/2018
 - В **центра разработки iOS**:
   - [Идентификаторы приложений](#App_IDs) были созданы.
   - [Группы приложений](#App_Groups) настроен (при необходимости).
-  - [*Распределение* профили подготовки](#Provisioning_Profiles) создан.
+  - Создать профили подготовки распространения
 
 - В решении:
 
@@ -36,6 +36,7 @@ ms.lasthandoff: 02/27/2018
   - [Развертывание в целях тестирования для Apple Watch](~/ios/watchos/deploy-test/device.md), или
   - [Отправка в магазин приложений](~/ios/watchos/deploy-test/appstore.md).
 
+<a name="App_IDs"/>
 
 ## <a name="app-ids"></a>Идентификаторы приложений
 
@@ -65,7 +66,7 @@ ms.lasthandoff: 02/27/2018
 
 Для распространения только необходимо создать один распространения профиль подготовки для подстановочных знаков идентификатор приложения.
 
-<a name="app-groups" />
+<a name="App_Groups" />
 
 ## <a name="app-groups"></a>Группы приложений
 
@@ -102,8 +103,6 @@ ms.lasthandoff: 02/27/2018
 .![Редактор Entitlements.plist](images/entitlements-plist-sml.png)
 
 Сделать **не** включите права в проекте приложения контрольных значений. Не требуется включать в часах.
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

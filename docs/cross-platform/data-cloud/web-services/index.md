@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 76934b56503c381b40081d2ac82a785a7bb86fa2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 48489ca7dc28dcc14a7810b15dc1ffa1fd4f7cf4
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-web-services"></a>Общие сведения о веб-служб
 
@@ -305,7 +305,7 @@ URL веб-службы может быть размещенного удале�
 file:///Users/myUserName/projects/MyProjectName/service.wsdl
 ```
 
-[ ![](images/add-webreference-dialog.png "URL веб-службы может быть размещенного удаленного источника или через префикс пути файла ресурса локальной файловой системы")](images/add-webreference-dialog.png)
+[![](images/add-webreference-dialog.png "URL веб-службы может быть размещенного удаленного источника или через префикс пути файла ресурса локальной файловой системы")](images/add-webreference-dialog.png#lightbox)
 
 Это приводит к возникновению ошибки прокси-сервера в папке проекта веб- или ссылки на службу. С момента создания учетной записи-посредника кода, не должны быть изменены.
 

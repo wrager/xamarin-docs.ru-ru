@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/15/2017
-ms.openlocfilehash: 88db45135104f14ca3a4b18e466e95288853a6df
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cc2c12ce2826f0b66cdf49a9a4df84d7f67f7713
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="apple-pay-capabilities"></a>Возможности Apple Pay
 
@@ -79,8 +79,8 @@ _Добавление возможностей в приложения част�
 7.  Прокрутите вниз до конца этого расширенного раздела и нажмите **Изменить**.
 8.  Прокрутите список вниз до Apple Pay и нажмите кнопку **Изменить**:  
     
-    
     ![Изменение сведений об Apple Pay в ИД приложения](apple-pay-capabilities-images/image39.png)
+
 9.  Выберите ИД продавца для использования с этим ИД приложения и нажмите **Продолжить**:  
     
     ![Выбор ИД продавца для использования с ИД приложения](apple-pay-capabilities-images/image40.png)

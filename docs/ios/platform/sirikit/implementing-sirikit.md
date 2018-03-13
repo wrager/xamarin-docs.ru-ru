@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: a891e5bf797742ceb1bb45bb8144fa77dec99b2c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0e271fb78cfd225f9ccdae9a515685e89bfd7ac2
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="implementing-sirikit"></a>Реализация SiriKit
 
@@ -35,7 +35,7 @@ Siri работает с понятием **домены**, групп знат�
 
 В этом руководстве будет представлять краткий пример, в том числе поддержка SiriKit в существующее приложение. Для данного примера мы будем использовать фиктивное MonkeyChat приложения:
 
-[ ![](implementing-sirikit-images/monkeychat01.png "Значок MonkeyChat")](implementing-sirikit-images/monkeychat01.png)
+[![](implementing-sirikit-images/monkeychat01.png "Значок MonkeyChat")](implementing-sirikit-images/monkeychat01.png#lightbox)
 
 MonkeyChat сохраняет свой собственный контактов книга друзей пользователя, каждый связанный с именем экрана (например, Bobo, например) и пользователь может отправить текст разговоры каждый друг по его отображаемому имени.
 
@@ -43,7 +43,7 @@ MonkeyChat сохраняет свой собственный контактов
 
 Как показано в [SiriKit основные понятия](~/ios/platform/sirikit/understanding-sirikit.md) руководство, в расширении возможностей приложения с SiriKit участвуют три основные части:
 
-[ ![](implementing-sirikit-images/elements01.png "Расширение приложения со схемой SiriKit")](implementing-sirikit-images/elements01.png)
+[![](implementing-sirikit-images/elements01.png "Расширение приложения со схемой SiriKit")](implementing-sirikit-images/elements01.png#lightbox)
 
 Сюда входит следующее.
 
@@ -75,20 +75,20 @@ SiriKit построена на расширения, тем не менее, п
 1. Запустите Visual Studio для Mac и откройте приложение MonkeyChat.
 2. Щелкните правой кнопкой мыши имя решения в **Pad решения** и выберите **добавить** > **новый проект...** : 
 
-    [ ![](implementing-sirikit-images/prep01.png "Добавление нового проекта")](implementing-sirikit-images/prep01.png)
+    [![](implementing-sirikit-images/prep01.png "Добавление нового проекта")](implementing-sirikit-images/prep01.png#lightbox)
 3. Выберите **iOS** > **библиотеки** > **библиотеки классов** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/prep02.png "Выбор библиотеки классов")](implementing-sirikit-images/prep02.png)
+    [![](implementing-sirikit-images/prep02.png "Выбор библиотеки классов")](implementing-sirikit-images/prep02.png#lightbox)
 4. Введите `MonkeyChatCommon` для **имя** и нажмите кнопку **создать** кнопки: 
 
-    [ ![](implementing-sirikit-images/prep03.png "Введите MonkeyChatCommon имени")](implementing-sirikit-images/prep03.png)
+    [![](implementing-sirikit-images/prep03.png "Введите MonkeyChatCommon имени")](implementing-sirikit-images/prep03.png#lightbox)
 5. Щелкните правой кнопкой мыши **ссылки** папку основного приложения в **обозревателе решений** и выберите **изменить ссылки...** . Проверьте **MonkeyChatCommon** проекта и нажмите кнопку **ОК** кнопки: 
 
-    [ ![](implementing-sirikit-images/prep05.png "Проверка проекта MonkeyChatCommon")](implementing-sirikit-images/prep05.png)
+    [![](implementing-sirikit-images/prep05.png "Проверка проекта MonkeyChatCommon")](implementing-sirikit-images/prep05.png#lightbox)
 6. В **обозревателе решений**, перетащите общий код из основного приложения в собственной библиотеки.
 7. В случае MonkeyChat, перетащите **DataModels** и **процессоров** папки из основного приложения в собственной библиотеки: 
 
-    [ ![](implementing-sirikit-images/prep06.png "Процессоры и DataModels папки в обозревателе решений")](implementing-sirikit-images/prep06.png)
+    [![](implementing-sirikit-images/prep06.png "Процессоры и DataModels папки в обозревателе решений")](implementing-sirikit-images/prep06.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -96,11 +96,11 @@ SiriKit построена на расширения, тем не менее, п
 2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **добавить** > **новый проект...** .
 3. Выберите **Visual C#** > **общий проект** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/prep02w.png "Выбор библиотеки классов")](implementing-sirikit-images/prep02w.png)
+    [![](implementing-sirikit-images/prep02w.png "Выбор библиотеки классов")](implementing-sirikit-images/prep02w.png#lightbox)
 4. Введите `MonkeyChatCommon` для **имя** и нажмите кнопку **создать** кнопки.
 5. Щелкните правой кнопкой мыши **ссылки** папку основного приложения в **обозревателе решений** и выберите **изменить ссылки...** . Проверьте **MonkeyChatCommon** проекта и нажмите кнопку **ОК** кнопки: 
 
-    [ ![](implementing-sirikit-images/prep05w.png "Проверка проекта MonkeyChatCommon")](implementing-sirikit-images/prep05w.png)
+    [![](implementing-sirikit-images/prep05w.png "Проверка проекта MonkeyChatCommon")](implementing-sirikit-images/prep05w.png#lightbox)
 6. В **обозревателе решений**, перетащите общий код из основного приложения в общий проект.
 7. В случае MonkeyChat, перетащите **DataModels** и **процессоров** папки из основного приложения в собственной библиотеки.
 
@@ -172,12 +172,12 @@ namespace MonkeyChat
 2. Переключитесь в **источника** вкладки.
 3. Добавить `com.apple.developer.siri` **свойство**, задайте **тип** для `Boolean` и **значение** для `Yes`: 
 
-    [ ![](implementing-sirikit-images/setup01.png "Добавить свойство com.apple.developer.siri")](implementing-sirikit-images/setup01.png)
+    [![](implementing-sirikit-images/setup01.png "Добавить свойство com.apple.developer.siri")](implementing-sirikit-images/setup01.png#lightbox)
 4. Сохраните изменения в файле.
 5. Дважды щелкните **файл проекта** в **обозревателе решений** чтобы открыть его для редактирования.
 6. Выберите **подписывание пакета iOS** и убедитесь, что `Entitlements.plist` в выбран файл **пользовательские права** поля: 
 
-    [ ![](implementing-sirikit-images/setup02.png "Выберите файл Entitlements.plist в поле пользовательские права")](implementing-sirikit-images/setup02.png)
+    [![](implementing-sirikit-images/setup02.png "Выберите файл Entitlements.plist в поле пользовательские права")](implementing-sirikit-images/setup02.png#lightbox)
 7. Нажмите кнопку **ОК**, чтобы сохранить изменения.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -185,7 +185,7 @@ namespace MonkeyChat
 1. Дважды щелкните `Entitlements.plist` файла в **обозревателе решений** чтобы открыть его для редактирования.
 3. Добавить `com.apple.developer.siri` **свойство**, задайте **тип** для `Boolean` и **значение** для `Yes`: 
 
-    [ ![](implementing-sirikit-images/setup01w.png "Добавить свойство com.apple.developer.siri")](implementing-sirikit-images/setup01w.png)
+    [![](implementing-sirikit-images/setup01w.png "Добавить свойство com.apple.developer.siri")](implementing-sirikit-images/setup01w.png#lightbox)
 4. Сохраните изменения в файле.
 5. Дважды щелкните **файл проекта** в **обозревателе решений** чтобы открыть его для редактирования.
 6. Выберите **подписывание пакета iOS** и убедитесь, что `Entitlements.plist` в выбран файл **пользовательские права** поля.
@@ -218,7 +218,7 @@ namespace MonkeyChat
 5. Введите **идентификатор пакета** следующие Apple именования элемента рекомендации.
 6. Прокрутите вниз до **службы приложений** выберите **SiriKit** и нажмите кнопку **Продолжить** кнопки: 
 
-    [ ![](implementing-sirikit-images/setup03.png "Выберите SiriKit")](implementing-sirikit-images/setup03.png)
+    [![](implementing-sirikit-images/setup03.png "Выберите SiriKit")](implementing-sirikit-images/setup03.png#lightbox)
 7. Проверьте все параметры, затем **отправить** идентификатор приложения.
 8. Выберите **профили подготовки** > **разработки**, нажмите кнопку  **+**  кнопку, выберите **Apple ID**, Нажмите кнопку **Продолжить**.
 9. Выберите **все**, нажмите кнопку **Продолжить**.
@@ -228,21 +228,21 @@ namespace MonkeyChat
 13. В меню Xcode **предпочтения...**
 14. Выберите **учетные записи**, нажмите кнопку **подробности...** кнопки: 
 
-    [ ![](implementing-sirikit-images/setup04.png "Выберите учетные записи")](implementing-sirikit-images/setup04.png)
+    [![](implementing-sirikit-images/setup04.png "Выберите учетные записи")](implementing-sirikit-images/setup04.png#lightbox)
 15. Нажмите кнопку **загрузить все профили** кнопки в левом нижнем углу: 
 
-    [ ![](implementing-sirikit-images/setup05.png "Загрузка всех профилей")](implementing-sirikit-images/setup05.png)
+    [![](implementing-sirikit-images/setup05.png "Загрузка всех профилей")](implementing-sirikit-images/setup05.png#lightbox)
 16. Убедитесь, что **профиль подготовки** создана более поздней версии установлена в Xcode.
 17. Откройте проект для добавления поддержки SiriKit, чтобы в Visual Studio для Mac.
 18. Дважды щелкните `Info.plist` файла в **обозревателе решений**.
 18. Убедитесь, что **идентификатор пакета** совпадает со структурой, созданные на портале разработчиков Apple выше: 
 
-    [ ![](implementing-sirikit-images/setup06.png "Идентификатор пакета")](implementing-sirikit-images/setup06.png)
+    [![](implementing-sirikit-images/setup06.png "Идентификатор пакета")](implementing-sirikit-images/setup06.png#lightbox)
 18. В **обозревателе решений**выберите **проекта**.
 19. Щелкните правой кнопкой мыши проект и выберите **параметры**.
 21. Выберите **подписывание пакета iOS**выберите **удостоверение подписи** и **профиль подготовки** созданной выше: 
 
-    [ ![](implementing-sirikit-images/setup07.png "Выберите удостоверение подписи и подготовительный профиль")](implementing-sirikit-images/setup07.png)
+    [![](implementing-sirikit-images/setup07.png "Выберите удостоверение подписи и подготовительный профиль")](implementing-sirikit-images/setup07.png#lightbox)
 22. Нажмите кнопку **ОК**, чтобы сохранить изменения.
 
 > [!IMPORTANT]
@@ -256,13 +256,13 @@ namespace MonkeyChat
 
 Изменение приложения `Info.plist` файл, перейдите в **источника** просмотра и добавления `NSSiriUsageDescription` ключа со строковым значением, описывающий, как приложение будет использовать Siri и что типы данных будут отправляться. MonkeyChat приложение может например, «контакты MonkeyChat будет отправляться Siri»:
 
-[ ![](implementing-sirikit-images/request01.png "NSSiriUsageDescription в редакторе Info.plist")](implementing-sirikit-images/request01.png)
+[![](implementing-sirikit-images/request01.png "NSSiriUsageDescription в редакторе Info.plist")](implementing-sirikit-images/request01.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Изменение приложения `Info.plist` и добавьте `NSSiriUsageDescription` ключа со строковым значением, описывающий, как приложение будет использовать Siri и что типы данных будут отправляться. MonkeyChat приложение может например, «контакты MonkeyChat будет отправляться Siri»:
 
-[ ![](implementing-sirikit-images/request01w.png "NSSiriUsageDescription в редакторе Info.plist")](implementing-sirikit-images/request01w.png)
+[![](implementing-sirikit-images/request01w.png "NSSiriUsageDescription в редакторе Info.plist")](implementing-sirikit-images/request01w.png#lightbox)
 
 -----
 
@@ -460,128 +460,128 @@ namespace MonkeyChat
 
 1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **добавить** > **новый файл...**   >  **iOS**:
 
-    [ ![](implementing-sirikit-images/plist01.png "Добавьте список свойств")](implementing-sirikit-images/plist01.png) 
+    [![](implementing-sirikit-images/plist01.png "Добавьте список свойств")](implementing-sirikit-images/plist01.png#lightbox) 
 2. Дважды щелкните `AppIntentVocabulary.plist` файла в **обозревателе решений** чтобы открыть его для редактирования.
 3. Нажмите кнопку  **+**  для добавления раздела, установите **имя** для `ParameterVocabularies` и **тип** для `Array`:
 
-    [ ![](implementing-sirikit-images/plist02.png "Задайте имя ParameterVocabularies и тип массива")](implementing-sirikit-images/plist02.png)
+    [![](implementing-sirikit-images/plist02.png "Задайте имя ParameterVocabularies и тип массива")](implementing-sirikit-images/plist02.png#lightbox)
 4. Разверните `ParameterVocabularies` и нажмите кнопку  **+**  кнопку и задайте **тип** для `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist03.png "Задайте тип словаря")](implementing-sirikit-images/plist03.png)
+    [![](implementing-sirikit-images/plist03.png "Задайте тип словаря")](implementing-sirikit-images/plist03.png#lightbox)
 5. Нажмите кнопку  **+**  Чтобы добавить новый раздел, задайте **имя** для `ParameterNames` и **тип** для `Array`:
 
-    [ ![](implementing-sirikit-images/plist04.png "Задайте имя ParameterNames и тип массива")](implementing-sirikit-images/plist04.png)
+    [![](implementing-sirikit-images/plist04.png "Задайте имя ParameterNames и тип массива")](implementing-sirikit-images/plist04.png#lightbox)
 6. Нажмите кнопку  **+**  Чтобы добавить новый раздел со **тип** из `String` и значение как один из доступных имен параметров. Например `INStartWorkoutIntent.workoutName`:
 
-    [ ![](implementing-sirikit-images/plist05.png "Ключ INStartWorkoutIntent.workoutName")](implementing-sirikit-images/plist05.png)
+    [![](implementing-sirikit-images/plist05.png "Ключ INStartWorkoutIntent.workoutName")](implementing-sirikit-images/plist05.png#lightbox)
 7. Добавить `ParameterVocabulary` ключа для `ParameterVocabularies` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist06.png "Добавьте раздел ParameterVocabulary ParameterVocabularies ключ с типом массива")](implementing-sirikit-images/plist06.png)
+    [![](implementing-sirikit-images/plist06.png "Добавьте раздел ParameterVocabulary ParameterVocabularies ключ с типом массива")](implementing-sirikit-images/plist06.png#lightbox)
 8. Добавьте новый раздел с **тип** из `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist07.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist07.png)
+    [![](implementing-sirikit-images/plist07.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist07.png#lightbox)
 9. Добавить `VocabularyItemIdentifier` ключа с **тип** из `String` и укажите уникальный ИД для термина:
 
-    [ ![](implementing-sirikit-images/plist08.png "Добавить ключ VocabularyItemIdentifier с типа String и укажите уникальный ИД")](implementing-sirikit-images/plist08.png)
+    [![](implementing-sirikit-images/plist08.png "Добавить ключ VocabularyItemIdentifier с типа String и укажите уникальный ИД")](implementing-sirikit-images/plist08.png#lightbox)
 10. Добавить `VocabularyItemSynonyms` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist09.png "Добавить ключ VocabularyItemSynonyms с типом массива")](implementing-sirikit-images/plist09.png)
+    [![](implementing-sirikit-images/plist09.png "Добавить ключ VocabularyItemSynonyms с типом массива")](implementing-sirikit-images/plist09.png#lightbox)
 11. Добавьте новый раздел с **тип** из `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist10.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist10.png)
+    [![](implementing-sirikit-images/plist10.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist10.png#lightbox)
 12. Добавить `VocabularyItemPhrase` ключа с **тип** из `String` и термин определении приложения:
 
-    [ ![](implementing-sirikit-images/plist11.png "Добавить ключ VocabularyItemPhrase с типа String с термином определении приложения")](implementing-sirikit-images/plist11.png)
+    [![](implementing-sirikit-images/plist11.png "Добавить ключ VocabularyItemPhrase с типа String с термином определении приложения")](implementing-sirikit-images/plist11.png#lightbox)
 13. Добавить `VocabularyItemPronunciation` ключа с **тип** из `String` и фонетическое произношение термина:
 
-    [ ![](implementing-sirikit-images/plist12.png "Добавить раздел VocabularyItemPronunciation типа String и фонетическое произношение термина")](implementing-sirikit-images/plist12.png)
+    [![](implementing-sirikit-images/plist12.png "Добавить раздел VocabularyItemPronunciation типа String и фонетическое произношение термина")](implementing-sirikit-images/plist12.png#lightbox)
 14. Добавить `VocabularyItemExamples` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist13.png "Добавить ключ VocabularyItemExamples с типом массива")](implementing-sirikit-images/plist13.png)
+    [![](implementing-sirikit-images/plist13.png "Добавить ключ VocabularyItemExamples с типом массива")](implementing-sirikit-images/plist13.png#lightbox)
 15. Добавить несколько `String` ключей с примерами использования термина:
 
-    [ ![](implementing-sirikit-images/plist14.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist14.png)
+    [![](implementing-sirikit-images/plist14.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist14.png#lightbox)
 16. Повторите описанные выше шаги для других пользовательских выражений необходимо определить приложения.
 17. Свернуть `ParameterVocabularies` ключа.
 18. Добавить `IntentPhrases` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist15.png "Добавить ключ IntentPhrases с типом массива")](implementing-sirikit-images/plist15.png)
+    [![](implementing-sirikit-images/plist15.png "Добавить ключ IntentPhrases с типом массива")](implementing-sirikit-images/plist15.png#lightbox)
 19. Добавьте новый раздел с **тип** из `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist16.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist16.png)
+    [![](implementing-sirikit-images/plist16.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist16.png#lightbox)
 20. Добавить `IntentName` ключа с **тип** из `String` и намерением для примера:
 
-    [ ![](implementing-sirikit-images/plist17.png "Добавьте раздел IntentName со строкового типа и цели для примера")](implementing-sirikit-images/plist17.png)
+    [![](implementing-sirikit-images/plist17.png "Добавьте раздел IntentName со строкового типа и цели для примера")](implementing-sirikit-images/plist17.png#lightbox)
 21. Добавить `IntentExamples` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist18.png "Добавить ключ IntentExamples с типом массива")](implementing-sirikit-images/plist18.png)
+    [![](implementing-sirikit-images/plist18.png "Добавить ключ IntentExamples с типом массива")](implementing-sirikit-images/plist18.png#lightbox)
 22. Добавить несколько `String` ключей с примерами использования термина:
 
-    [ ![](implementing-sirikit-images/plist19.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist19.png)
+    [![](implementing-sirikit-images/plist19.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist19.png#lightbox)
 23. Повторите описанные выше действия для любого намерения приложения нужно предоставлять примера использования.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **добавить** > **новый файл...**   >  **iOS**:
 
-    [ ![](implementing-sirikit-images/plist01w.png "Добавить новый Info.plist")](implementing-sirikit-images/plist01w.png) 
+    [![](implementing-sirikit-images/plist01w.png "Добавить новый Info.plist")](implementing-sirikit-images/plist01w.png#lightbox) 
 2. Дважды щелкните `AppIntentVocabulary.plist` файла в **обозревателе решений** чтобы открыть его для редактирования.
 3. Нажмите кнопку  **+**  для добавления раздела, установите **имя** для `ParameterVocabularies` и **тип** для `Array`:
 
-    [ ![](implementing-sirikit-images/plist02w.png "Задайте имя ParameterVocabularies и тип массива")](implementing-sirikit-images/plist02w.png)
+    [![](implementing-sirikit-images/plist02w.png "Задайте имя ParameterVocabularies и тип массива")](implementing-sirikit-images/plist02w.png#lightbox)
 4. Разверните `ParameterVocabularies` и нажмите кнопку  **+**  кнопку и задайте **тип** для `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist03w.png "Задайте тип словаря")](implementing-sirikit-images/plist03w.png)
+    [![](implementing-sirikit-images/plist03w.png "Задайте тип словаря")](implementing-sirikit-images/plist03w.png#lightbox)
 5. Нажмите кнопку  **+**  Чтобы добавить новый раздел, задайте **имя** для `ParameterNames` и **тип** для `Array`:
 
-    [ ![](implementing-sirikit-images/plist04w.png "Задайте имя ParameterNames и тип массива")](implementing-sirikit-images/plist04w.png)
+    [![](implementing-sirikit-images/plist04w.png "Задайте имя ParameterNames и тип массива")](implementing-sirikit-images/plist04w.png#lightbox)
 6. Нажмите кнопку  **+**  Чтобы добавить новый раздел со **тип** из `String` и значение как один из доступных имен параметров. Например `INStartWorkoutIntent.workoutName`:
 
-    [ ![](implementing-sirikit-images/plist05w.png "Ключ INStartWorkoutIntent.workoutName")](implementing-sirikit-images/plist05w.png)
+    [![](implementing-sirikit-images/plist05w.png "Ключ INStartWorkoutIntent.workoutName")](implementing-sirikit-images/plist05w.png#lightbox)
 7. Добавить `ParameterVocabulary` ключа для `ParameterVocabularies` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist06w.png "Добавьте раздел ParameterVocabulary ParameterVocabularies ключ с типом массива")](implementing-sirikit-images/plist06w.png)
+    [![](implementing-sirikit-images/plist06w.png "Добавьте раздел ParameterVocabulary ParameterVocabularies ключ с типом массива")](implementing-sirikit-images/plist06w.png#lightbox)
 8. Добавьте новый раздел с **тип** из `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist07w.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist07w.png)
+    [![](implementing-sirikit-images/plist07w.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist07w.png#lightbox)
 9. Добавить `VocabularyItemIdentifier` ключа с **тип** из `String` и укажите уникальный ИД для термина:
 
-    [ ![](implementing-sirikit-images/plist08w.png "Добавить ключ VocabularyItemIdentifier с типа String и укажите уникальный ИД для термина")](implementing-sirikit-images/plist08w.png)
+    [![](implementing-sirikit-images/plist08w.png "Добавить ключ VocabularyItemIdentifier с типа String и укажите уникальный ИД для термина")](implementing-sirikit-images/plist08w.png#lightbox)
 10. Добавить `VocabularyItemSynonyms` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist09w.png "Добавить ключ VocabularyItemSynonyms с типом массива")](implementing-sirikit-images/plist09w.png)
+    [![](implementing-sirikit-images/plist09w.png "Добавить ключ VocabularyItemSynonyms с типом массива")](implementing-sirikit-images/plist09w.png#lightbox)
 11. Добавьте новый раздел с **тип** из `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist10w.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist10w.png)
+    [![](implementing-sirikit-images/plist10w.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist10w.png#lightbox)
 12. Добавить `VocabularyItemPhrase` ключа с **тип** из `String` и термин определении приложения:
 
-    [ ![](implementing-sirikit-images/plist11w.png "Добавить ключ VocabularyItemPhrase с типа String с термином определении приложения")](implementing-sirikit-images/plist11w.png)
+    [![](implementing-sirikit-images/plist11w.png "Добавить ключ VocabularyItemPhrase с типа String с термином определении приложения")](implementing-sirikit-images/plist11w.png#lightbox)
 13. Добавить `VocabularyItemPronunciation` ключа с **тип** из `String` и фонетическое произношение термина:
 
-    [ ![](implementing-sirikit-images/plist12w.png "Добавить раздел VocabularyItemPronunciation типа String и фонетическое произношение термина")](implementing-sirikit-images/plist12w.png)
+    [![](implementing-sirikit-images/plist12w.png "Добавить раздел VocabularyItemPronunciation типа String и фонетическое произношение термина")](implementing-sirikit-images/plist12w.png#lightbox)
 14. Добавить `VocabularyItemExamples` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist13w.png "Добавить ключ VocabularyItemExamples с типом массива")](implementing-sirikit-images/plist13w.png)
+    [![](implementing-sirikit-images/plist13w.png "Добавить ключ VocabularyItemExamples с типом массива")](implementing-sirikit-images/plist13w.png#lightbox)
 15. Добавить несколько `String` ключей с примерами использования термина:
 
-    [ ![](implementing-sirikit-images/plist14w.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist14w.png)
+    [![](implementing-sirikit-images/plist14w.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist14w.png#lightbox)
 16. Повторите описанные выше шаги для других пользовательских выражений необходимо определить приложения.
 17. Свернуть `ParameterVocabularies` ключа.
 18. Добавить `IntentPhrases` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist15w.png "Добавить ключ IntentPhrases с типом массива")](implementing-sirikit-images/plist15w.png)
+    [![](implementing-sirikit-images/plist15w.png "Добавить ключ IntentPhrases с типом массива")](implementing-sirikit-images/plist15w.png#lightbox)
 19. Добавьте новый раздел с **тип** из `Dictionary`:
 
-    [ ![](implementing-sirikit-images/plist16w.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist16w.png)
+    [![](implementing-sirikit-images/plist16w.png "Добавьте новый раздел с словаря типа")](implementing-sirikit-images/plist16w.png#lightbox)
 20. Добавить `IntentName` ключа с **тип** из `String` и намерением для примера:
 
-    [ ![](implementing-sirikit-images/plist17w.png "Добавьте раздел IntentName со строкового типа и цели для примера")](implementing-sirikit-images/plist17w.png)
+    [![](implementing-sirikit-images/plist17w.png "Добавьте раздел IntentName со строкового типа и цели для примера")](implementing-sirikit-images/plist17w.png#lightbox)
 21. Добавить `IntentExamples` ключа с **тип** из `Array`:
 
-    [ ![](implementing-sirikit-images/plist18w.png "Добавить ключ IntentExamples с типом массива")](implementing-sirikit-images/plist18w.png)
+    [![](implementing-sirikit-images/plist18w.png "Добавить ключ IntentExamples с типом массива")](implementing-sirikit-images/plist18w.png#lightbox)
 22. Добавить несколько `String` ключей с примерами использования термина:
 
-    [ ![](implementing-sirikit-images/plist19w.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist19w.png)
+    [![](implementing-sirikit-images/plist19w.png "Добавить несколько ключей String с примерами использования термин")](implementing-sirikit-images/plist19w.png#lightbox)
 23. Повторите описанные выше действия для любого намерения приложения нужно предоставлять примера использования.
 
 -----
@@ -612,27 +612,27 @@ namespace MonkeyChat
 1. Щелкните правой кнопкой мыши **имя решения** в **Pad решения** и выберите **добавить** > **добавить новый проект...** .
 2. В диалоговом окне выберите **iOS** > **расширения** > **цель расширения** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents05.png "Выберите расширение намерений")](implementing-sirikit-images/intents05.png)
+    [![](implementing-sirikit-images/intents05.png "Выберите расширение намерений")](implementing-sirikit-images/intents05.png#lightbox)
 3. Далее введите **имя** намерение расширение и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents06.png "Введите имя для модуля намерений")](implementing-sirikit-images/intents06.png)
+    [![](implementing-sirikit-images/intents06.png "Введите имя для модуля намерений")](implementing-sirikit-images/intents06.png#lightbox)
 4. Наконец, нажмите кнопку **создать** кнопку, чтобы добавить расширение намерением в решение приложения: 
 
-    [ ![](implementing-sirikit-images/intents07.png "Добавьте в решение приложения расширение цели")](implementing-sirikit-images/intents07.png)
+    [![](implementing-sirikit-images/intents07.png "Добавьте в решение приложения расширение цели")](implementing-sirikit-images/intents07.png#lightbox)
 5. В **обозревателе решений**, щелкните правой кнопкой мыши **ссылки** папки только что созданный намерение расширения. Проверьте имя Общие библиотеки проекта общего кода (создания приложения выше) и нажмите кнопку **ОК** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents08.png "Выберите имя проекта библиотеки общих общего кода")](implementing-sirikit-images/intents08.png)
+    [![](implementing-sirikit-images/intents08.png "Выберите имя проекта библиотеки общих общего кода")](implementing-sirikit-images/intents08.png#lightbox)
     
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 1. Щелкните правой кнопкой мыши **имя решения** в **обозревателе решений** и выберите **добавить** > **добавить новый проект...** .
 2. В диалоговом окне выберите **iOS** > **расширения** > **цель расширения** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents05w.png "Выберите расширение намерений")](implementing-sirikit-images/intents05w.png)
+    [![](implementing-sirikit-images/intents05w.png "Выберите расширение намерений")](implementing-sirikit-images/intents05w.png#lightbox)
 3. Далее введите **имя** намерение расширение и нажмите кнопку **ОК** кнопки.
 5. В **обозревателе решений**, щелкните правой кнопкой мыши **ссылки** папки только что созданный намерение расширения. Проверьте имя Общие библиотеки проекта общего кода (создания приложения выше) и нажмите кнопку **ОК** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents08w.png "Выберите имя проекта библиотеки общих общего кода")](implementing-sirikit-images/intents08w.png)
+    [![](implementing-sirikit-images/intents08w.png "Выберите имя проекта библиотеки общих общего кода")](implementing-sirikit-images/intents08w.png#lightbox)
     
 -----
 
@@ -644,7 +644,7 @@ namespace MonkeyChat
 
 Так же, как и любое расширение типичные приложения, приложение будет иметь существующие ключи `NSExtension` и `NSExtensionAttributes`. Для целей расширения существует два новых атрибута, которые должны быть настроены.
 
-[ ![](implementing-sirikit-images/intents01.png "Два новых атрибута, которые должны быть настроены")](implementing-sirikit-images/intents01.png)
+[![](implementing-sirikit-images/intents01.png "Два новых атрибута, которые должны быть настроены")](implementing-sirikit-images/intents01.png#lightbox)
 
 - **IntentsSupported** — не требуется и состоит из массива имен классов намерение приложения хочет поддержки с целью расширения.
 - **IntentsRestrictedWhileLocked** -необязательный ключ для приложения указать поведение экрана блокировки расширения. Он состоит из массива имен классов намерение приложения хочет пользователю необходимо выполнить вход для использования с намерением расширения.
@@ -653,11 +653,11 @@ namespace MonkeyChat
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](implementing-sirikit-images/intents02.png "Ключи NSExtension и NSExtensionAttributes в редакторе")](implementing-sirikit-images/intents02.png)
+[![](implementing-sirikit-images/intents02.png "Ключи NSExtension и NSExtensionAttributes в редакторе")](implementing-sirikit-images/intents02.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](implementing-sirikit-images/intents02w.png "Ключи NSExtension и NSExtensionAttributes в редакторе")](implementing-sirikit-images/intents02w.png)
+[![](implementing-sirikit-images/intents02w.png "Ключи NSExtension и NSExtensionAttributes в редакторе")](implementing-sirikit-images/intents02w.png#lightbox)
 
 -----
 
@@ -665,11 +665,11 @@ namespace MonkeyChat
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](implementing-sirikit-images/intents09.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents09.png)
+[![](implementing-sirikit-images/intents09.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents09.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](implementing-sirikit-images/intents09w.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents09w.png)
+[![](implementing-sirikit-images/intents09w.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents09w.png#lightbox)
 
 -----
 
@@ -677,11 +677,11 @@ namespace MonkeyChat
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](implementing-sirikit-images/intents10.png "Добавлен ключ INSendMessageIntent")](implementing-sirikit-images/intents10.png)
+[![](implementing-sirikit-images/intents10.png "Добавлен ключ INSendMessageIntent")](implementing-sirikit-images/intents10.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](implementing-sirikit-images/intents10w.png "Добавлен ключ INSendMessageIntent")](implementing-sirikit-images/intents10w.png)
+[![](implementing-sirikit-images/intents10w.png "Добавлен ключ INSendMessageIntent")](implementing-sirikit-images/intents10w.png#lightbox)
 
 -----
 
@@ -857,7 +857,7 @@ public void HandleSetMessageAttribute (INSetMessageAttributeIntent intent, Actio
 
 Дополнительное расширение пользовательского интерфейса для целей предоставляет возможность выпуска пользовательского интерфейса приложения и фирменной символики в среду Siri и пользователей, которые вы подключены к приложению. Данное расширение приложение может обеспечить фирменной символики, а также visual и других сведений на запись.
 
-[ ![](implementing-sirikit-images/intentsui01.png "Пример вывода целей расширения пользовательского интерфейса")](implementing-sirikit-images/intentsui01.png)
+[![](implementing-sirikit-images/intentsui01.png "Пример вывода целей расширения пользовательского интерфейса")](implementing-sirikit-images/intentsui01.png#lightbox)
 
 Так же, как модуль намерения разработчика будет выполнять следующий шаг для расширения пользовательского интерфейса для целей:
 
@@ -876,16 +876,16 @@ public void HandleSetMessageAttribute (INSetMessageAttributeIntent intent, Actio
 1. Щелкните правой кнопкой мыши **имя решения** в **Pad решения** и выберите **добавить** > **добавить новый проект...** .
 2. В диалоговом окне выберите **iOS** > **расширения** > **расширения пользовательского интерфейса намерение** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents11.png "Выберите расширение намерения пользовательского интерфейса")](implementing-sirikit-images/intents11.png)
+    [![](implementing-sirikit-images/intents11.png "Выберите расширение намерения пользовательского интерфейса")](implementing-sirikit-images/intents11.png#lightbox)
 3. Далее введите **имя** намерение расширение и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents12.png "Введите имя для модуля намерений")](implementing-sirikit-images/intents12.png)
+    [![](implementing-sirikit-images/intents12.png "Введите имя для модуля намерений")](implementing-sirikit-images/intents12.png#lightbox)
 4. Наконец, нажмите кнопку **создать** кнопку, чтобы добавить расширение намерением в решение приложения: 
 
-    [ ![](implementing-sirikit-images/intents13.png "Добавьте в решение приложения расширение цели")](implementing-sirikit-images/intents13.png)
+    [![](implementing-sirikit-images/intents13.png "Добавьте в решение приложения расширение цели")](implementing-sirikit-images/intents13.png#lightbox)
 5. В **обозревателе решений**, щелкните правой кнопкой мыши **ссылки** папки только что созданный намерение расширения. Проверьте имя Общие библиотеки проекта общего кода (создания приложения выше) и нажмите кнопку **ОК** кнопки: 
 
-    [ ![](implementing-sirikit-images/intents14.png "Выберите имя проекта библиотеки общих общего кода")](implementing-sirikit-images/intents14.png)
+    [![](implementing-sirikit-images/intents14.png "Выберите имя проекта библиотеки общих общего кода")](implementing-sirikit-images/intents14.png#lightbox)
     
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -902,7 +902,7 @@ public void HandleSetMessageAttribute (INSetMessageAttributeIntent intent, Actio
 
 Так же, как и любое расширение типичные приложения, приложение будет иметь существующие ключи `NSExtension` и `NSExtensionAttributes`. Для целей расширения имеется один новый атрибут, который должен быть настроен:
 
-[ ![](implementing-sirikit-images/intents03.png "Один новый атрибут, который должен быть настроен")](implementing-sirikit-images/intents03.png)
+[![](implementing-sirikit-images/intents03.png "Один новый атрибут, который должен быть настроен")](implementing-sirikit-images/intents03.png#lightbox)
 
 **IntentsSupported** является обязательным и состоит из массива имен классов намерение приложения требуется поддержки с целью расширения.
 
@@ -910,13 +910,13 @@ public void HandleSetMessageAttribute (INSetMessageAttributeIntent intent, Actio
 
 Настройка расширения пользовательского интерфейса намерение `Info.plist` файла, дважды щелкните его в **обозревателе решений** чтобы открыть его для редактирования. Теперь, переключитесь в **источника** просмотра, а затем разверните `NSExtension` и `NSExtensionAttributes` ключей в редактор:
 
-[ ![](implementing-sirikit-images/intents04.png "Ключи NSExtension и NSExtensionAttributes в редакторе")](implementing-sirikit-images/intents04.png)
+[![](implementing-sirikit-images/intents04.png "Ключи NSExtension и NSExtensionAttributes в редакторе")](implementing-sirikit-images/intents04.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Настройка расширения пользовательского интерфейса намерение `Info.plist` файла, дважды щелкните его в **обозревателе решений** чтобы открыть его для редактирования. Разверните `NSExtension` и `NSExtensionAttributes` ключей в редактор:
 
-[ ![](implementing-sirikit-images/intents04w.png "Указанное NSExtension и NSExtensionAttributes ключи в редакторе")](implementing-sirikit-images/intents04w.png)
+[![](implementing-sirikit-images/intents04w.png "Указанное NSExtension и NSExtensionAttributes ключи в редакторе")](implementing-sirikit-images/intents04w.png#lightbox)
 
 -----
 
@@ -924,11 +924,11 @@ public void HandleSetMessageAttribute (INSetMessageAttributeIntent intent, Actio
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](implementing-sirikit-images/intents15.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents15.png)
+[![](implementing-sirikit-images/intents15.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents15.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](implementing-sirikit-images/intents15w.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents15w.png)
+[![](implementing-sirikit-images/intents15w.png "Ключ INSendMessageIntent")](implementing-sirikit-images/intents15w.png#lightbox)
 
 -----
 

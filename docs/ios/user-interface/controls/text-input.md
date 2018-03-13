@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: ce1014616d0cf5f6cd5228d69976dfeca546b382
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c45ea8cb7c0e3d12e94666d61c6fdf7e5828264e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="text-input"></a>Текстовый ввод
 
@@ -19,9 +19,9 @@ ms.lasthandoff: 02/27/2018
 
 На снимке экрана ниже показаны значки для этих элементов управления, расположенный в области элементов в Visual Studio для Mac:
 
- [ ![](text-input-images/image11a.png "UITextField")](text-input-images/image11a.png)
+ [![](text-input-images/image11a.png "UITextField")](text-input-images/image11a.png#lightbox)
 
- [ ![](text-input-images/image13a.png "UITextView")](text-input-images/image13a.png)
+ [![](text-input-images/image13a.png "UITextView")](text-input-images/image13a.png#lightbox)
 
 После иметь именованные розетки и сохранен файл раскадровки, Visual Studio для Mac обновит `.designer.cs` разделяемого класса можно добавлять код C#, который ссылается на элемент управления в файл класса. Каждый элемент управления имеет свои собственные уникальные свойства и события, доступные в коде C#.
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/27/2018
 
 `UITextField` Управления чаще всего используется для принятия одну строку ввода текста, такие как имя пользователя или пароль. Ниже приведены некоторые параметры, доступные для настройки этого элемента управления:
 
- [ ![](text-input-images/image15a.png "Свойства UITextField")](text-input-images/image15a.png)
+ [![](text-input-images/image15a.png "Свойства UITextField")](text-input-images/image15a.png#lightbox)
 
 Далее описаны эти элементы управления.
 
@@ -76,7 +76,7 @@ View.Add(textfield1);
 
 `UITextView` Элемент управления может использоваться для отображения текста только для чтения или для получения входных данных многострочного текста. Он содержит многие из тех же параметров, как `UITextField` (такие как регистр букв, исправления, и т. д).
 
- [ ![](text-input-images/image16a.png "Свойства UITextView")](text-input-images/image16a.png)
+ [![](text-input-images/image16a.png "Свойства UITextView")](text-input-images/image16a.png#lightbox)
 
 Определенные свойства включают:
 

@@ -3,14 +3,15 @@ title: "Сводка Глава 12. Стили"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 3EAE6BDC-8EFB-464B-A87B-1C35B8387BB3
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 168ad0bc2f59f0afd5b457dba38ae39cfa148c89
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9563bc811250038e8932067280a8e5292a379077
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-12-styles"></a>Сводка Глава 12. Стили
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/27/2018
 
 [ **BasicStyle** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter12/BasicStyle) программы показан основной синтаксис и показано, как ссылаться на `Style` с `StaticResource` расширения разметки:
 
-[![Снимок экрана тройной основной стиль](images/ch12fg01-small.png "основные стили")](images/ch12fg01-large.png "основные стили")
+[![Снимок экрана тройной основной стиль](images/ch12fg01-small.png "основные стили")](images/ch12fg01-large.png#lightbox "основные стили")
 
 `Style` Объект и все объекты, созданные в `Style` объекта в виде `Value` параметр являются общими для всех представлений, ссылаясь на него `Style`. `Style` Не может содержать никаких действий, который нельзя использовать совместно, такие как `View` производный класс.
 

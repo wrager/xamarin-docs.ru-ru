@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: 011b6d184e55c9054a845d4922687b4565221859
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: bbbf3fb09edb802f1315977fb14ecfe154b2572f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="binding-a-jar"></a>Привязка. JAR-ФАЙЛ
 
@@ -75,7 +75,6 @@ Picasso.With (this)
 
 ```
 
-<a name="creating" />
 
 ### <a name="creating-the-bindings-library"></a>Создание библиотеки привязок
 
@@ -83,19 +82,19 @@ Picasso.With (this)
 
 Во-первых создайте новый проект библиотеки привязок. В Visual Studio для Mac или Visual Studio создайте новое решение и выберите *библиотеки Android привязки* шаблона. (В этом пошаговом руководстве снимки экрана с помощью Visual Studio, но Visual Studio для Mac очень похожа.) Присвойте решению имя **JarBinding**: 
 
-[ ![Создание проекта библиотеки JarBinding](binding-a-jar-images/01-new-bindings-library-sml.png)](binding-a-jar-images/01-new-bindings-library.png)
+[![Создание проекта библиотеки JarBinding](binding-a-jar-images/01-new-bindings-library-sml.png)](binding-a-jar-images/01-new-bindings-library.png#lightbox)
 
 Шаблон включает **JAR-файлов** папки, которые добавляются к. JAR(s) на проект библиотеки привязок. Щелкните правой кнопкой мыши **JAR-файлов** папку и выберите **Добавить > существующий элемент**: 
 
-[ ![Добавление существующего элемента](binding-a-jar-images/02-add-existing-item-sml.png)](binding-a-jar-images/02-add-existing-item.png)
+[![Добавление существующего элемента](binding-a-jar-images/02-add-existing-item-sml.png)](binding-a-jar-images/02-add-existing-item.png#lightbox)
 
 Перейдите к **picasso 2.x.x.jar** ранее загрузить файл, выберите его и нажмите кнопку **добавить**: 
 
-[ ![Выберите jar-файл и нажмите кнопку Добавить](binding-a-jar-images/03-select-jar-file-sml.png)](binding-a-jar-images/03-select-jar-file.png)
+[![Выберите jar-файл и нажмите кнопку Добавить](binding-a-jar-images/03-select-jar-file-sml.png)](binding-a-jar-images/03-select-jar-file.png#lightbox)
 
 Убедитесь, что **picasso 2.x.x.jar** файл был успешно добавлен в проект: 
 
-[ ![Добавить проект JAR](binding-a-jar-images/04-jar-added-sml.png)](binding-a-jar-images/04-jar-added.png)
+[![Добавить проект JAR](binding-a-jar-images/04-jar-added-sml.png)](binding-a-jar-images/04-jar-added.png#lightbox)
 
 При создании проекта библиотеки Java привязок, необходимо указать ли. JAR должен быть внедрены в библиотеке привязки или в отдельные пакеты. Чтобы сделать это, необходимо указать одно из следующих *построения действий*: 
 
@@ -107,19 +106,18 @@ Picasso.With (this)
 
 Задайте действие построения **EmbeddedJar**: 
 
-[ ![Выберите действие построения EmbeddedJar](binding-a-jar-images/05-embeddedjar-sml.png)](binding-a-jar-images/05-embeddedjar.png)
+[![Выберите действие построения EmbeddedJar](binding-a-jar-images/05-embeddedjar-sml.png)](binding-a-jar-images/05-embeddedjar.png#lightbox)
 
 Затем откройте свойства для настройки проекта *требуемой версии .NET Framework*. Если. JAR-ФАЙЛ использует интерфейсы API Android, задать целевую платформу на уровне API. Ожидает JAR-ФАЙЛ. Как правило, разработчик. JAR-файл будет указывать, какие API уровня (или уровней),. JAR совместим с. (Дополнительные сведения о параметре целевой платформы и Android API уровней в целом см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md).)
 
 Задание целевого объекта API уровня для привязки библиотеки (в этом примере мы используем уровень API 19): 
 
-[ ![Целевой API уровень API 19](binding-a-jar-images/06-set-target-framework-sml.png)](binding-a-jar-images/06-set-target-framework.png)
+[![Целевой API уровень API 19](binding-a-jar-images/06-set-target-framework-sml.png)](binding-a-jar-images/06-set-target-framework.png#lightbox)
 
 
 Наконец создайте библиотеку привязок. Несмотря на то, что некоторые предупреждения могут отображаться, в проект библиотеки привязок следует построить успешно и результат. Библиотеки DLL в следующем расположении: **JarBinding/bin/Debug/JarBinding.dll**
     
 
-<a name="using" />
 
 ### <a name="using-the-bindings-library"></a>С помощью библиотеки привязок
 
@@ -133,19 +131,19 @@ Picasso.With (this)
 
 Во-первых создайте новое Xamarin.Android приложение, использующее библиотеку привязок. Щелкните правой кнопкой мыши решение и выберите **Добавление нового проекта**; для нового проекта имя **BindingTest**. Мы создаем это приложение в том же решении, что библиотека привязок для упрощения этого пошагового руководства; Однако приложение, использующее библиотеку привязок вместо этого находятся в другом решении: 
 
-[ ![Добавление нового проекта BindingTest](binding-a-jar-images/07-add-new-project-sml.png)](binding-a-jar-images/07-add-new-project.png)
+[![Добавление нового проекта BindingTest](binding-a-jar-images/07-add-new-project-sml.png)](binding-a-jar-images/07-add-new-project.png#lightbox)
 
 Щелкните правой кнопкой мыши **ссылки** узел **BindingTest** проект и выберите **добавить ссылку...** :
 
-[ ![Добавить ссылку справа](binding-a-jar-images/08-add-reference.png)](binding-a-jar-images/08-add-reference.png)
+[![Добавить ссылку справа](binding-a-jar-images/08-add-reference.png)](binding-a-jar-images/08-add-reference.png#lightbox)
 
 Проверьте **JarBinding** проект, созданный ранее и нажмите кнопку **ОК**:
 
-[ ![Выберите проект JarBinding](binding-a-jar-images/09-choose-jar-binding-sml.png)](binding-a-jar-images/09-choose-jar-binding.png)
+[![Выберите проект JarBinding](binding-a-jar-images/09-choose-jar-binding-sml.png)](binding-a-jar-images/09-choose-jar-binding.png#lightbox)
 
 Откройте **ссылки** узел **BindingTest** проекта и убедитесь, что **JarBinding** присутствует ссылка: 
 
-[ ![JarBinding появится в списке ссылок](binding-a-jar-images/10-references-shows-jarbinding-sml.png)](binding-a-jar-images/10-references-shows-jarbinding.png)
+[![JarBinding появится в списке ссылок](binding-a-jar-images/10-references-shows-jarbinding-sml.png)](binding-a-jar-images/10-references-shows-jarbinding.png#lightbox)
 
 Изменить **BindingTest** макета (**Main.axml**), чтобы он имел один `ImageView`:
 
@@ -191,11 +189,10 @@ public class MainActivity : Activity
 
 Компиляция и выполнение **BindingTest** проекта. Приложение будет запущено и после небольшой задержки (в зависимости от состояния сети), его необходимо загрузить и выводит изображение, аналогичные следующим образом:
 
-[ ![Снимок экрана BindingTest запущена](binding-a-jar-images/11-result-sml.png)](binding-a-jar-images/11-result.png)
+[![Снимок экрана BindingTest запущена](binding-a-jar-images/11-result-sml.png)](binding-a-jar-images/11-result.png#lightbox)
 
 Поздравляем! Был успешно присоединен библиотеки Java. JAR и использовать его в приложении Xamarin.Android.
  
-<a name="summary" />
  
 ## <a name="summary"></a>Сводка
 

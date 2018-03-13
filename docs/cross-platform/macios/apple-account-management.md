@@ -2,16 +2,16 @@
 title: "Управление учетной записью Apple"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 67246203-D78E-4DCC-9E55-7D3D93968E54
+ms.assetid: 71388B83-699B-4E42-8CBF-8557A4A3CABF
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/05/2017
-ms.openlocfilehash: 0cf7456cec2e934516e15ac6cbc57109e6b57a79
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 465ba4822a1004100160703f1607d99199f28a16
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="apple-account-management"></a>Управление учетной записью Apple
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/27/2018
 - Убедитесь, имеются новейшие средства fastlane из [https://download.fastlane.tools](https://download.fastlane.tools).
 - Прежде чем начать, убедитесь в том принять все лицензионные соглашения в [портал разработчиков](https://developer.apple.com/account/).
 
-# <a name="adding-an-apple-developer-account"></a>Добавление учетной записи разработчика Apple
+## <a name="adding-an-apple-developer-account"></a>Добавление учетной записи разработчика Apple
 
 1. Чтобы открыть диалоговое окно управления учетной записи перейдите на **Visual Studio > Параметры > учетную запись разработчика Apple**:
 
@@ -68,8 +68,11 @@ ms.lasthandoff: 02/27/2018
 
     ![](apple-account-management-images/image6.png)
 
-<a name="managing">
+
+<a name="managing"/>
     
+
+
 ## <a name="managing-signing-identities-and-provisioning-profiles"></a>Управление удостоверениями подписи и профили подготовки
 
 Сведения о диалоговом окне team список удостоверений подписи, упорядоченных по типам. **Состояние** столбец будет указано, является ли сертификат: 
@@ -84,7 +87,7 @@ ms.lasthandoff: 02/27/2018
 
   ![](apple-account-management-images/image7.png)
 
-### <a name="create-a-signing-identities"></a>Создание удостоверений подписи
+## <a name="create-a-signing-identities"></a>Создание удостоверений подписи
 
 Чтобы создать новое удостоверение подписи, выберите **создать новый сертификат** кнопку раскрывающегося списка и выберите нужный тип, который потребуется. При наличии необходимых разрешений новой подписи удостоверений появится через несколько секунд.
 
@@ -92,7 +95,7 @@ ms.lasthandoff: 02/27/2018
 
 ![](apple-account-management-images/image8.png)
 
-### <a name="download-provisioning-profiles"></a>Загрузить профили подготовки
+## <a name="download-provisioning-profiles"></a>Загрузить профили подготовки
 
 Сведения о диалоговом окне team также отображает список всех профилей подготовки, связанных с учетной записью разработчика. Все профили подготовки можно загрузить на локальный компьютер, нажав клавишу **загрузить все профили** кнопки
 
@@ -102,29 +105,28 @@ ms.lasthandoff: 02/27/2018
 
 Сведения о развертывании приложения на устройство [подготовки устройства](~/ios/get-started/installation/device-provisioning/index.md) руководства.
 
-
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-#### <a name="view-details-dialog-is-empty"></a>Открыть диалоговое окно сведений пуст
+### <a name="view-details-dialog-is-empty"></a>Открыть диалоговое окно сведений пуст
 
 В настоящее время это известная проблема, связанная с ошибкой [#53906](https://bugzilla.xamarin.com/show_bug.cgi?id=53906). Убедитесь, что используется последняя стабильная версия Visual Studio для Mac
 
-#### <a name="if-you-are-experiencing-issues-logging-in-your-account-please-try-the-following"></a>Если вы испытываете проблемы ведения журналов в учетной записи, попробуйте выполнить следующие:
+### <a name="if-you-are-experiencing-issues-logging-in-your-account-please-try-the-following"></a>Если вы испытываете проблемы ведения журналов в учетной записи, попробуйте выполнить следующие:
 
 * Откройте приложение цепочки ключей и в списке категории выберите *пароли*. Поиск `deliver.`и удалите все записи.
 
-#### <a name="error-adding-account-please-sign-in-with-an-app-specific-password"></a>«Ошибка при добавлении учетной записи. Выполните вход в систему с паролем конкретного приложения»
+### <a name="error-adding-account-please-sign-in-with-an-app-specific-password"></a>«Ошибка при добавлении учетной записи. Выполните вход в систему с паролем конкретного приложения»
 
 Это происходит потому 2 многофакторной проверки подлинности включена в вашей учетной записи. Убедитесь, что используется последняя стабильная версия Visual Studio для Mac
 
-#### <a name="failed-to-create-new-certificate"></a>Не удалось создать новый сертификат
+### <a name="failed-to-create-new-certificate"></a>Не удалось создать новый сертификат
 «Достигнут предел для сертификатов этого типа»
 
 ![](apple-account-management-images/image10.png)
 
 Максимальное допустимое число сертификатов созданы. Чтобы устранить эту проблему, перейдите к [Центр разработчиков Apple](https://developer.apple.com/account/ios/certificate/distribution) и отзовите один из рабочих сертификатов.
 
-#### <a name="known-issues"></a>Известные проблемы:
+## <a name="known-issues"></a>Известные проблемы
 
 * Иногда сведения о представлении диалогового окна может занять слишком много времени для получения удостоверения подписи и профили.
 * Часто фокус может не вернуться в Visual Studio для Mac после ввода сведений о своей, вызывая вашей учетной записи не для добавления. Если это так, повторите процесс.

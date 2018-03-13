@@ -7,18 +7,17 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: de4683ca660224aa3cf17398ac649086b7e4ad88
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6c0f2b92b34ce4d446e51b0aafa56f6283701dd1
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="extending-the-recyclerview-example"></a>В примере RecyclerView расширение
 
 
 Простое приложение описано в [простой пример RecyclerView](~/android/user-interface/layouts/recycler-view/recyclerview-example.md) фактически ничего не делает &ndash; просто прокручивается и отображает список основных элементов фотографии для упрощения обзора. В реальных приложениях пользователи ожидают, что возможность взаимодействовать с приложением, коснувшись элементов на экране. Кроме того базового источника данных можно изменить (или изменить приложением) и отображение содержимого необходимо поддерживать целостность эти изменения. В следующих разделах вы узнаете, как обрабатывать событие щелчка элемента и обновить `RecyclerView` при изменении источника базовых данных.
 
-<a name="itemclick" />
 
 ### <a name="handling-item-click-events"></a>Обработка события щелчка элемента
 
@@ -91,7 +90,7 @@ PhotoViewHolder vh = new PhotoViewHolder (itemView, OnClick);
 
 Теперь при создании и запуске примера приложения просмотра фотографий, коснувшись фотографию в отображении вызовет тост отображаются в них, сообщает, какие фотографии был затронутых:
 
-[ ![Касание примере извещения, отображаемый при фотографию карты](extending-the-example-images/01-photo-selected-sml.png)](extending-the-example-images/01-photo-selected.png)
+[![Касание примере извещения, отображаемый при фотографию карты](extending-the-example-images/01-photo-selected-sml.png)](extending-the-example-images/01-photo-selected.png#lightbox)
 
 В этом примере показано только один из способов реализации обработчиков событий с `RecyclerView`. Другой подход, который может быть использован здесь — для помещения владелец представления событий и установлен адаптер подписываться на эти события. Если пример приложения фото фотографию возможности редактирования, отдельные события будет обязательным для `ImageView` и `TextView` внутри каждого `CardView`: затрагивает `TextView` запускает `EditView` диалоговое окно, которое позволяет пользователю изменить Заголовок и штрихи на `ImageView` запускает инструмента редактирования фотографий, позволяющий пользователю обрезать или поворота рисунка. В зависимости от потребностей вашего приложения необходимо разработать рекомендуемый подход к обработке и реагирование на события касания.
 
@@ -159,7 +158,7 @@ randomPickBtn.Click += delegate
 
 Теперь, когда **случайного выбора** касании кнопки, `RecyclerView` обновляет отображение, чтобы показать, что фотографию дальнейшей работы в коллекции поменяли местами с первой фотографии в коллекции:
 
-[ ![Первый снимок экрана перед заменой второй снимок экрана после переключения](extending-the-example-images/02-random-pick-sml.png)](extending-the-example-images/02-random-pick.png)
+[![Первый снимок экрана перед заменой второй снимок экрана после переключения](extending-the-example-images/02-random-pick-sml.png)](extending-the-example-images/02-random-pick.png#lightbox)
 
 Конечно `NotifyDataSetChanged` мог быть вызван вместо двух вызовах методов `NotifyItemChanged`, но делать так будет принудительно `RecyclerView` для обновления всей коллекции, несмотря на то, что были изменены только двух элементов в коллекции. Вызов `NotifyItemChanged` значительно более эффективно, чем вызов `NotifyDataSetChanged`.
 

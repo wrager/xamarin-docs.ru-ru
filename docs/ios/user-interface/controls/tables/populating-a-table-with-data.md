@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: fb0e4341d8d8ad0719f35c691add9bad1d3f85a8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: fe62b917946dda4cf669f5b15c91a5e3b596a0fc
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="populating-a-table-with-data"></a>Заполнение таблицы данных
 
@@ -88,7 +88,7 @@ public override void ViewDidLoad ()
 
 Результирующая таблица выглядит следующим образом:
 
- [ ![](populating-a-table-with-data-images/image3.png "Образец таблицы под управлением")](populating-a-table-with-data-images/image3.png)
+ [![](populating-a-table-with-data-images/image3.png "Образец таблицы под управлением")](populating-a-table-with-data-images/image3.png#lightbox)
 
 Большинство таблиц позволяют пользователю touch строки, чтобы выбрать ее и выполнить другие действия (например, воспроизводить песню, или вызов контакт или отображение другой экран). Чтобы добиться этого, существуют некоторые моменты, которые нужно выполнить. Во-первых давайте создадим AlertController для отображения сообщения, когда пользователь щелкните строку, добавив следующую команду, чтобы `RowSelected` метод:
 
@@ -140,7 +140,7 @@ public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 
 
 
- [ ![](populating-a-table-with-data-images/image4.png "Строки выбранного оповещения")](populating-a-table-with-data-images/image4.png)
+ [![](populating-a-table-with-data-images/image4.png "Строки выбранного оповещения")](populating-a-table-with-data-images/image4.png#lightbox)
 
 
 ## <a name="cell-reuse"></a>Повторное использование ячейки
@@ -220,7 +220,7 @@ public class MyCell : UITableViewCell
 
 Индекс помогает пользователю прокручивать длинных списках, обычно в алфавитном порядке несмотря на то, что можно индексировать условием независимо от необходимости. **BasicTableIndex** образец загружает гораздо более длинный список элементов из файла для демонстрации индекс. Каждый элемент в индексе соответствует «раздел» таблицы.
 
- [ ![](populating-a-table-with-data-images/image5.png "Отображение")](populating-a-table-with-data-images/image5.png)
+ [![](populating-a-table-with-data-images/image5.png "Отображение")](populating-a-table-with-data-images/image5.png#lightbox)
 
 Для поддержки разделы данных таблицы необходимо группировать, поэтому создает образец BasicTableIndex `Dictionary<>` из массива строк, используя первую букву каждого элемента в качестве ключа словаря:
 
@@ -270,7 +270,7 @@ public override string[] SectionIndexTitles (UITableView tableView)
 Верхние и нижние колонтитулы могут использоваться для визуальной группировки строк в таблице. Необходимые структуры данных очень сходно с добавлением индекса — `Dictionary<>` работает очень хорошо. Вместо алфавита для группировки ячейки, в этом примере будет группировать овощей botanical типом.
 Вывод выглядит следующим образом.
 
- [ ![](populating-a-table-with-data-images/image6.png "Образец верхние и нижние колонтитулы")](populating-a-table-with-data-images/image6.png)
+ [![](populating-a-table-with-data-images/image6.png "Образец верхние и нижние колонтитулы")](populating-a-table-with-data-images/image6.png#lightbox)
 
 Чтобы отобразить верхние и нижние колонтитулы `UITableViewSource` подкласс требует эти дополнительные методы:
 

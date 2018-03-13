@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/05/2018
-ms.openlocfilehash: 0f270111ad4e10f035a3cb695564d789f40097fd
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: aa2d2ce6cabe9c394b9807ca3d6328da5b4ba311
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-the-android-manifest"></a>Работа с манифеста Android
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -24,7 +23,6 @@ ms.lasthandoff: 02/27/2018
 **AndroidManifest.xml** созданы как часть процесса построения и XML, найденных в **Properties/AndroidManifest.xml** объединяется с XML, который создается на основе пользовательских атрибутов. Итоговый слияние **AndroidManifest.xml** находится в **obj** подкаталог; например, он находится в **obj/Debug/android/AndroidManifest.xml** для отладочных построений . Процесс слияния является тривиальным: она использует настраиваемые атрибуты в код для создания XML-элементов и *вставляет* этих элементов в **AndroidManifest.xml**. 
 
 
-<a name="The_Basics" />
 
 ## <a name="the-basics"></a>Основы
 
@@ -60,7 +58,6 @@ namespace Demo
 `[Activity]` Атрибут не оказывает влияния `abstract` типы; `abstract` типы учитываются.
 
 
-<a name="Activity_Name" />
 
 ### <a name="activity-name"></a>Имя действия
 
@@ -83,7 +80,6 @@ public class MyActivity : Activity
 
 *Примечание*: следует использовать `Name` свойства только из соображений обратной совместимости, таких как переименование может замедлить выполнение типа поиска во время выполнения. При наличии устаревший код, который ожидает, что имя типа по умолчанию действия должна быть основана на строчных пространство имен и имя класса. в разделе [Android вызываемую оболочку именования](https://developer.xamarin.com/releases/android/xamarin.android_5/xamarin.android_5.1/#Android_Callable_Wrapper_Naming) советы об обеспечении совместимости. 
 
-<a name="Activity_Title_Bar" />
 
 ### <a name="activity-title-bar"></a>Заголовок действия
 
@@ -104,7 +100,6 @@ public class MyActivity : Activity
           android:name="md5a7a3c803e481ad8926683588c7e9031b.MainActivity" />
 ```
 
-<a name="Launchable_from_Application_Chooser" />
 
 ### <a name="launchable-from-application-chooser"></a>Можно будет запустить из окна Выбор приложения
 
@@ -130,7 +125,6 @@ public class MyActivity : Activity
 ```
 
 
-<a name="Activity_Icon" />
 
 ### <a name="activity-icon"></a>Значок действия
 
@@ -155,7 +149,6 @@ public class MyActivity : Activity
 </activity>
 ```
 
-<a name="Permissions" />
 
 ### <a name="permissions"></a>Разрешения
 
@@ -178,11 +171,9 @@ public class MyActivity : Activity
 
 
 
-<a name="Advanced_Features" />
 
 ## <a name="advanced-features"></a>Дополнительные возможности
 
-<a name="Intent_Actions_and_Features" />
 
 ### <a name="intent-actions-and-features"></a>Блокировка с намерением действия и функции
 
@@ -214,7 +205,6 @@ public class MyActivity : Activity
 </activity>
 ```
 
-<a name="Application_Element" />
 
 ### <a name="application-element"></a>Элемент Application
 
@@ -243,7 +233,6 @@ public class MyActivity : Activity
 Существует множество атрибутов уровня приложения, которые можно настроить в `<application>` элемента; Дополнительные сведения об этих параметрах см. в разделе [открытые свойства](https://developer.xamarin.com/api/type/Android.App.ApplicationAttribute/#Public_Properties) раздел [ApplicationAttribute](https://developer.xamarin.com/api/type/Android.App.ApplicationAttribute/). 
 
 
-<a name="List_of_Custom_Attributes" />
 
 ## <a name="list-of-custom-attributes"></a>Список настраиваемых атрибутов
 

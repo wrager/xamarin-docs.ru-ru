@@ -3,14 +3,15 @@ title: "Сводка Глава 19. Представления коллекци�
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 0AEC3A5C-586E-4D0F-9895-67E99A053A79
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 37afa3a54fd20745a65312fb5a24d958c8ec405f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
-ms.translationtype: HT
+ms.openlocfilehash: 73b3ec3e60a8fca5c48f515eab2cbb8359618dbb
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-19-collection-views"></a>Сводка Глава 19. Представления коллекций
 
@@ -97,7 +98,7 @@ Xamarin.Forms определяет три представления, котор
 
 В языке XAML можно задать [ `ViewCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) для `DataTemplate` , а затем определите пользовательского визуального дерева как [ `View` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ViewCell.View/) свойство `ViewCell`. (`View` является свойством содержимого из `ViewCell` поэтому `ViewCell.View` теги не являются обязательными.) [ **CustomNamedColorList** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/CustomNamedColorList) этот метод продемонстрирован в примере:
 
-[![Тройной экрана списка цветов с именем пользовательского](images/ch19fg11-small.png "списка цветов с именем пользовательского")](images/ch19fg11-large.png "списка цветов с именем пользовательского")
+[![Тройной экрана списка цветов с именем пользовательского](images/ch19fg11-small.png "списка цветов с именем пользовательского")](images/ch19fg11-large.png#lightbox "списка цветов с именем пользовательского")
 
 Получение размера для всех платформ может быть непростой задачей. [ `RowHeight` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ListView.RowHeight/) Свойство полезно, но в некоторых случаях может потребоваться прибегать к [ `HasUnevenRows` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ListView.HasUnevenRows/) свойство, которое является менее эффективным, но принудительно `ListView` для определения размера строки. Для iOS и Android необходимо использовать один из этих свойств для получения правильного изменение размеров.
 
@@ -127,7 +128,7 @@ Xamarin.Forms определяет три представления, котор
 
 [ **StudentList** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/StudentList) программа использует `ImageCell` для отображения студентов и изображений в `ListView`:
 
-[![Снимок экрана тройной список учащихся](images/ch19fg18-small.png "список учащихся")](images/ch19fg18-large.png "список учащихся")
+[![Снимок экрана тройной список учащихся](images/ch19fg18-small.png "список учащихся")](images/ch19fg18-large.png#lightbox "список учащихся")
 
 [ **ListViewHeader** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/ListViewHeader) пример добавляет [ `Header` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ListView.Header/) свойство, но проявится только на Android.
 

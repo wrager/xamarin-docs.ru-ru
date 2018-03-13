@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/09/2015
-ms.openlocfilehash: d18cf055bb206099eecea0d9f417af571f3819e0
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 8b266640bb0e1aa2bc584197e5fd7cbf4ab48e88
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="device-orientation"></a>Ориентации устройства
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/28/2018
 Используя Xamarin.Forms, поддерживаемый метод управления ориентацией устройства — использовать параметры для каждого отдельного проекта.
 
 > [!NOTE]
-> **Примечание**: As of Xamarin.Forms 1.5.0 есть ошибка, запрещающая пользовательского модуля подготовки отчетов попыток управления ориентации к сбою. В разделе [данного обсуждения](https://forums.xamarin.com/discussion/46653/forcing-landscape-for-a-single-page-in-ios#latest)данного обсуждения в форумах Xamarin для получения дополнительной информации.
+> Начиная с Xamarin.Forms 1.5.0 есть ошибки, который не позволяет пытается управлять ориентацией сбой пользовательского модуля подготовки отчетов под управлением. В разделе [данного обсуждения](https://forums.xamarin.com/discussion/46653/forcing-landscape-for-a-single-page-in-ios#latest)данного обсуждения в форумах Xamarin для получения дополнительной информации.
 
 ### <a name="ios"></a>iOS
 
@@ -123,7 +123,7 @@ SupportedOrientations = SupportedPageOrientation.Landscape; // landscape only
 Xamarin.Forms не предоставляет все собственные события для уведомления приложения изменение ориентации в общем коде. Тем не менее `SizeChanged` событие `Page` применяется при ширины или высоты `Page` изменения. Если ширина `Page` больше, чем высота устройство находится в режиме альбомной ориентации. Дополнительные сведения см. в разделе [выводит изображение, в зависимости от ориентации экрана](https://developer.xamarin.com/recipes/cross-platform/xamarin-forms/controls/screen-orientation/).
 
 > [!NOTE]
-> **Примечание**: существующий, свободного пакет NuGet для получения уведомлений об изменениях ориентацию в общем коде. В разделе [в репозитории GitHub](https://github.com/aliozgur/Xamarin.Plugins/tree/master/DeviceOrientation) для получения дополнительной информации.
+> Нет существующих, свободного пакет NuGet для получения уведомлений об изменениях ориентацию в общем коде. В разделе [в репозитории GitHub](https://github.com/aliozgur/Xamarin.Plugins/tree/master/DeviceOrientation) для получения дополнительной информации.
 
 Кроме того, можно переопределить [ `OnSizeAllocated` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Page.OnSizeAllocated(System.Double,System.Double)/) метод `Page`, вставка любого макета изменить логику. `OnSizeAllocated` Метод вызывается всякий раз, когда `Page` выделяется новый размер, который происходит whenver при повороте устройства. Обратите внимание, что базовая реализация `OnSizeAllocated` выполняет функции важные макета, поэтому необходимо вызвать базовую реализацию в переопределении:
 
@@ -176,7 +176,7 @@ protected override void OnSizeAllocated(double width, double height)
 Приведенные выше правила также применяются при реализации интерфейсов нескольких размеров и являются обычно считаются рекомендации. Остальная часть в этом руководстве объясняется, конкретные примеры макетов отвечать на запросы, используя каждый из первичного макетов в Xamarin.Forms.
 
 > [!NOTE]
-> **Примечание**: для ясности в следующих разделах демонстрируются способы реализации макетов отвечать на запросы, с помощью только одного типа `Layout` одновременно. На практике часто бывает проще использовать разные `Layout`s для достижения нужного макета с помощью простых и интуитивно `Layout` для каждого компонента.
+> Для ясности в следующих разделах демонстрируются способы реализации макетов отвечать на запросы, с помощью только одного типа `Layout` одновременно. На практике часто бывает проще использовать разные `Layout`s для достижения нужного макета с помощью простых и интуитивно `Layout` для каждого компонента.
 
 ### <a name="stacklayout"></a>StackLayout
 

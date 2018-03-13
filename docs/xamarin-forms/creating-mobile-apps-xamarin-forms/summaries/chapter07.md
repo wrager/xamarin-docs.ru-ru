@@ -3,14 +3,15 @@ title: "Сводка Глава 7. XAML и код"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: E91F387B-CE90-481C-8D90-CB25519BFD2B
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 1263328a748ac0bacd368da361aeaff57c4cfa20
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1104f7576cabfed9988154f3b6a8beb429136fb3
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-7-xaml-vs-code"></a>Сводка Глава 7. XAML и код
 
@@ -68,7 +69,7 @@ Xamarin.Forms имеет компилятора XAML, но это необяза
 
  Если значение многострочной строке `Text` свойства, символы конца строки преобразуются в пробелы, но символы конца строки сохраняются в том случае, когда многострочной строке отображается как содержимое `Label` или `Label.Text` теги:
 
- [![Тройной снимок экрана: текст варианты совместного использования](images/ch07fg03-small.png "варианты текст в формате")](images/ch07fg03-large.png "вариации в формате текста")
+ [![Тройной снимок экрана: текст варианты совместного использования](images/ch07fg03-small.png "варианты текст в формате")](images/ch07fg03-large.png#lightbox "вариации в формате текста")
 
 
 

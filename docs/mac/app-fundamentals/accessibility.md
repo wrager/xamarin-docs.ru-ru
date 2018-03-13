@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 0117364f02302add1f8788de1a79e4c4210fd07b
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 4363258a9047ee4e2de4f53595a6eedc5dfe5861
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="accessibility-on-macos"></a>Специальные возможности на macOS
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/28/2018
 Xamarin.Mac используется построитель интерфейс Xcode для редактирования файлов раскадровки.
 Можно изменить сведения о специальных возможностях в **удостоверение инспектора** при выборе элемента управления в области конструктора (как показано на снимке экрана ниже):
 
-[![Добавление специальных возможностей в построителе интерфейса в Xcode](accessibility-images/xcode.png "Добавление специальных возможностей в построителе интерфейса в Xcode")](accessibility-images/xcode-large.png)
+[![Добавление специальных возможностей в построителе интерфейса в Xcode](accessibility-images/xcode.png "Добавление специальных возможностей в построителе интерфейса в Xcode")](accessibility-images/xcode-large.png#lightbox)
 
 ### <a name="code"></a>Код
 
@@ -80,7 +80,7 @@ AccessibilityHelper.SetAccessibilityLabel (someButton, "New Accessible Descripti
 
 После включения инспектора отображается как плавающее окно, которое могут перемещаться по экрану. На следующем снимке экрана показано инспектор под управлением рядом с Mac пример приложения. Как курсор перемещается над окном, Инспектор отображает все свойства, доступного для каждого элемента управления:
 
-[![Пример использования специальных возможностей инспектора](accessibility-images/accessibility-example.png "выполняется пример инспектора специальных возможностей")](accessibility-images/accessibility-example-large.png)
+[![Пример использования специальных возможностей инспектора](accessibility-images/accessibility-example.png "выполняется пример инспектора специальных возможностей")](accessibility-images/accessibility-example-large.png#lightbox)
 
 Дополнительные сведения см. в статье [тестирование специальных возможностей для OS X руководства](https://developer.apple.com/library/mac/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html).
 

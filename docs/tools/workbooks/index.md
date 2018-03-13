@@ -3,16 +3,16 @@ title: Xamarin Workbooks
 description: "Xamarin в книгах blend документации и код, который идеально подходит для экспериментов, обучение и Создание руководств и обучение вспомогательные средства."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: A5CCD63C-18E5-4D19-AFEA-301FE4F8538A
+ms.assetid: 04275482-0488-4F1C-8808-D03A8E21BE62
 ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 03/30/2017
-ms.openlocfilehash: 3d01d157fde1e69c7180c07adfd52e259cdddf14
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 04d6110ea9d0f2c10cf0c3d17182cd06b88e7708
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="xamarin-workbooks"></a>Xamarin Workbooks
 
@@ -26,13 +26,13 @@ Xamarin книги — программное обеспечение с откр
 
 Попробуйте и сообщите нам свое мнение, или, если вы [возникли ошибки](~/tools/workbooks/install.md#reporting-bugs). У нас есть [форум](https://forums.xamarin.com/categories/inspector) слишком!
 
-[ ![](images/interactive-1.0.0-urho-planet-earth-small.png "Образец UrhoSharp на основе книги")](images/interactive-1.0.0-urho-planet-earth.png)
+[![](images/interactive-1.0.0-urho-planet-earth-small.png "Образец UrhoSharp на основе книги")](images/interactive-1.0.0-urho-planet-earth.png#lightbox)
 
-## <a name="installation-and-requirementsinstallmd"></a>[Требования к установке и](install.md)
+## <a name="installation-and-requirementsinstallmd"></a>[Установка и требования](install.md)
 
 Сведения о получении книг, установленной на компьютере Mac и Windows.
 
-## <a name="interactive-workbooksworkbookmd"></a>[Интерактивные книги](workbook.md)
+## <a name="interactive-workbooksworkbookmd"></a>[Интерактивные Workbooks](workbook.md)
 
 Общие сведения о том, как использовать Xamarin книги.
 

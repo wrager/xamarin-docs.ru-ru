@@ -3,26 +3,26 @@ title: "Принципы работы приложения"
 description: "Основные понятия приложения"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: DBBAA086-BB0F-8161-DF44-632F4F5DFE5D
+ms.assetid: 7D179ACF-09A6-46EE-B49D-E27AB5F09CD4
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 02/18/2018
-ms.openlocfilehash: 9e4e7705e1ca29b6abf716a48ae3fa0e7c1a19ec
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c5b823370e5b65fbcf9ba366cb89c05e003b1a89
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="application-fundamentals"></a>Принципы работы приложения
 
 В этом разделе содержится руководство для некоторых наиболее распространенных задач действия или концепции, разработчики должны иметь в виду при разработке приложений для мобильных устройств.
 
-##  <a name="building-cross-platform-applicationscross-platformapp-fundamentalsbuilding-cross-platform-applicationsindexmd"></a>[Создание кросс-платформы приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/index.md)
+##  <a name="building-cross-platform-applicationscross-platformapp-fundamentalsbuilding-cross-platform-applicationsindexmd"></a>[Создание кроссплатформенных приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/index.md)
 
 Выбор Xamarin и регулярно несколько вещей помнить при проектировании и разработке приложений для мобильных устройств, можно реализовать огромный объем кода, совместное использование на мобильных платформах, Сократите время выхода на рынок, использовать существующий talent, требований пользователей для мобильного доступа и уменьшить сложность между различными платформами. &nbsp;В этом документе перечислены ключевые рекомендации для понимания этих преимуществ для служебной программы и повышения производительности приложений.
 
-## <a name="code-sharing-optionscode-sharingmd"></a>[Параметры совместного использования кода](code-sharing.md)
+## <a name="code-sharing-optionscode-sharingmd"></a>[Варианты общего доступа к коду](code-sharing.md)
 
 Дополнительные сведения о различных кода, параметры, доступные для проектов Xamarin, включая переносимой библиотеки классов (PCLs), общих проектов и стандартные библиотеки .NET для управления доступом.
 

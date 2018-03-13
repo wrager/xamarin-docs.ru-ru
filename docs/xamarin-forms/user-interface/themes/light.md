@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/01/2017
-ms.openlocfilehash: 21d5478c7e8317510a6f46b72a261582c9432301
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 9918c7e54f443477006ad40931c24d814f7171ea
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="light-theme"></a>"Светлой" теме
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/28/2018
 
 Ниже приведен пример кнопок и метки "светлой" темой, вместе с разметку, которая создает их.
 
-[ ![](light-images/light-theme-sml.png "Кнопки и метки в "светлой" теме")](light-images/light-theme.png "кнопки и метки в "светлой" теме")
+[![](light-images/light-theme-sml.png "Кнопки и метки в "светлой" теме")](light-images/light-theme.png#lightbox "кнопки и метки в "светлой" теме")
 
 ```xaml
 <StackLayout Padding="20">

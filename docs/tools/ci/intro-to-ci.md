@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 07/19/2017
-ms.openlocfilehash: 94d88246090208913c4b340eaed221ab64b78f19
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2a8849a75f3c26a83a030700878a3195fde7515f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-continuous-integration-with-xamarin"></a>Введение в непрерывной интеграции с Xamarin
 
@@ -33,13 +33,13 @@ _Непрерывная интеграция рекомендуется прим
 
 Этот процесс показан на следующей схеме:
 
-[![](intro-to-ci-images/intro01-small.png "Диаграмма иллюстрирует этот процесс")](intro-to-ci-images/intro01.png)
+[![](intro-to-ci-images/intro01-small.png "Диаграмма иллюстрирует этот процесс")](intro-to-ci-images/intro01.png#lightbox)
 
 Мобильные приложения представлены уникальные задачи для непрерывной интеграции. Приложения может потребоваться датчики, такие как координаты GPS или камеры, доступны только для физических устройств. Кроме того симуляторов или эмуляторах Visual Studio являются только приближением оборудования и может скрыть или скрывать проблемы. В конечном счете необходимо протестировать мобильное приложение на реальном оборудовании, чтобы быть уверенным, что это действительно заказчику.
 
 [Центр тестирования приложения](https://docs.microsoft.com/en-us/appcenter/test-cloud) решает эту проблему, определенной, тестирование приложений непосредственно на сотнях физических устройств. Разработчикам писать принятия автоматических тестов, что позволит для мощных тестирования пользовательского интерфейса. Когда эти тесты отправляются центр приложений, CI server можно выполнить их автоматически в рамках процесса CI как показано на следующей схеме:
 
-[![](intro-to-ci-images/intro02-small.png "Когда эти тесты отправляются центр приложений, CI server можно запускать их автоматически в рамках процесса CI как показано на этой диаграмме")](intro-to-ci-images/intro02.png)
+[![](intro-to-ci-images/intro02-small.png "Когда эти тесты отправляются центр приложений, CI server можно запускать их автоматически в рамках процесса CI как показано на этой диаграмме")](intro-to-ci-images/intro02.png#lightbox)
 
 # <a name="components-of-continuous-integration"></a>Компоненты непрерывной интеграции
 
@@ -72,7 +72,7 @@ TFS и VSTS тесно интегрирован с Visual Studio и разраб
 
 Git может работать только через веб-браузеры или с помощью [графического пользовательского интерфейса клиенты](http://git-scm.com/downloads/guis) , работающих на Mac OSX, Windows и Linux. Он распространяется бесплатно для открытых репозиториев; Требовать частных репозиториев [платного плана](https://github.com/pricing).
 
-Visual Studio 2015 и Visual Studio для Mac поддерживают собственную реализацию для Git; для Visual Studio 2013 и более ранних версий, корпорация Майкрософт предоставляет [загружаемое расширение для Git](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c). Как указано выше, Visual Studio Team Services и TFS можно использовать Git для управления версиями, а не TFVC.
+Visual Studio 2015 и Visual Studio для Mac поддерживают собственную реализацию для Git; для более старых версий, корпорация Майкрософт предоставляет [загружаемое расширение для Git](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c). Как указано выше, Visual Studio Team Services и TFS можно использовать Git для управления версиями, а не TFVC.
 
 
 ### <a name="subversion"></a>Subversion
@@ -102,7 +102,7 @@ TFS и VSTS можно использовать отдельно или Jenkins 
 
 На следующей схеме показана этот топографии:
 
-[![](intro-to-ci-images/intro03-small.png "Диаграмма иллюстрирует этот топографии")](intro-to-ci-images/intro03.png)
+[![](intro-to-ci-images/intro03-small.png "Диаграмма иллюстрирует этот топографии")](intro-to-ci-images/intro03.png#lightbox)
 
 Можно также связать локальный сервер TFS с проектом Visual Studio Team Services, чтобы сборки VSTS делегируются на локальном сервере. Дополнительные сведения см. в разделе [развертывание и настройка сервера сборки](http://msdn.microsoft.com/en-us/library/ms181712.aspx) на сайте MSDN.
 
@@ -110,13 +110,13 @@ TFS и VSTS можно использовать отдельно или Jenkins 
 
 При использовании Jenkins создавать приложения, можно хранить код в Visual Studio Team Services или Team Foundation Server и продолжать использовать для сборок непрерывной Интеграции Jenkins. Вы можете активировать сборки Jenkins, при выполнении отправки кода репозитории командного проекта или при возврате кода в TFVC. Дополнительные сведения см. в разделе [Jenkins с Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/marketplace/integrate/service-hooks/services/jenkins).
 
-[![](intro-to-ci-images/intro04-small.png "При использовании Jenkins создавать приложения, можно хранить код в Visual Studio Team Services или Team Foundation Server и продолжать использовать для сборок непрерывной Интеграции Jenkins")](intro-to-ci-images/intro04.png)
+[![](intro-to-ci-images/intro04-small.png "При использовании Jenkins создавать приложения, можно хранить код в Visual Studio Team Services или Team Foundation Server и продолжать использовать для сборок непрерывной Интеграции Jenkins")](intro-to-ci-images/intro04.png#lightbox)
 
 ### <a name="git-and-jenkins"></a>Git и Jenkins
 
 Другой общей средой CI может быть полностью OS X на основе. Этот сценарий включает в себя с помощью Git для управления исходным кодом и Дженкинса сервер сборки. Оба варианта работают на одном компьютере Mac OS X с помощью Visual Studio для Mac установлен. Это очень похоже на Visual Studio Team Services + Jenkins среды, описанные в предыдущем разделе:
 
-[![](intro-to-ci-images/intro05-small.png "Это очень похоже на Visual Studio Team Services + среды Jenkins, рассмотренных в предыдущем подразделе")](intro-to-ci-images/intro05.png)
+[![](intro-to-ci-images/intro05-small.png "Это очень похоже на Visual Studio Team Services + среды Jenkins, рассмотренных в предыдущем подразделе")](intro-to-ci-images/intro05.png#lightbox)
 
 > [!IMPORTANT]
 > **Примечание: Jenkins — [не поддерживается в Xamarin](~/cross-platform/troubleshooting/questions/xamarin-jenkins.md).**

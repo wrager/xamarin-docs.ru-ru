@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: ba5249a275d3aa695ccc6527805c56907bbda0ae
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a5dbd65cc32ed63c0fa6f8abe3a13ffee4e9df63
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="enhanced-user-notifications"></a>Улучшенный пользовательский уведомления
 
@@ -168,11 +168,11 @@ UNUserNotificationCenter.Current.GetNotificationSettings ((settings) => {
 1. Дважды щелкните `Entitlements.plist` файла в **Pad решения** чтобы открыть его для редактирования.
 2. Переключитесь в **источника** представления: 
 
-    [ ![](enhanced-user-notifications-images/setup01.png "В представлении источника")](enhanced-user-notifications-images/setup01.png)
+    [![](enhanced-user-notifications-images/setup01.png "В представлении источника")](enhanced-user-notifications-images/setup01.png#lightbox)
 3. Нажмите кнопку  **+**  кнопку, чтобы добавить новый раздел.
 4. Введите `aps-environment` для **свойство**, оставьте **тип** как `String` и введите либо `development` или `production` для **значение**: 
 
-    [ ![](enhanced-user-notifications-images/setup02.png "Свойства среды aps")](enhanced-user-notifications-images/setup02.png)
+    [![](enhanced-user-notifications-images/setup02.png "Свойства среды aps")](enhanced-user-notifications-images/setup02.png#lightbox)
 5. Сохраните изменения в файле.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -181,7 +181,7 @@ UNUserNotificationCenter.Current.GetNotificationSettings ((settings) => {
 3. Нажмите кнопку  **+**  кнопку, чтобы добавить новый раздел.
 4. Введите `aps-environment` для **свойство**, оставьте **тип** как `String` и введите либо `development` или `production` для **значение**: 
 
-    [ ![](enhanced-user-notifications-images/setup02w.png "Свойства среды aps")](enhanced-user-notifications-images/setup02.png)
+    [![](enhanced-user-notifications-images/setup02w.png "Свойства среды aps")](enhanced-user-notifications-images/setup02.png#lightbox)
 5. Сохраните изменения в файле.
 
 -----
@@ -190,7 +190,7 @@ UNUserNotificationCenter.Current.GetNotificationSettings ((settings) => {
 
 Если приложение будет отправлять и получать удаленный уведомления, его нужно будет сделать _токена регистрации_ с помощью существующего `UIApplication` API. Регистрация требуется устройства имеют доступ к соединению динамической сети APN, создающие необходимые маркера, которое будет отправляться в приложение. Приложению необходимо переадресовывать этот маркер для разработчика приложения на стороне сервера для регистрации для удаленного получения уведомлений:
 
-[ ![](enhanced-user-notifications-images/token01.png "Обзор токена регистрации")](enhanced-user-notifications-images/token01.png)
+[![](enhanced-user-notifications-images/token01.png "Обзор токена регистрации")](enhanced-user-notifications-images/token01.png#lightbox)
 
 Используйте следующий код для инициализации требуется регистрации:
 
@@ -200,7 +200,7 @@ UIApplication.SharedApplication.RegisterForRemoteNotifications ();
 
 Маркер, который отправляется для разработчика приложения на стороне сервера необходимо быть включены как часть полезные данные уведомления, get отправленных сервером для APNs при отправке удаленного уведомления:
 
-[ ![](enhanced-user-notifications-images/token02.png "Токен, включенным в состав полезные данные уведомления")](enhanced-user-notifications-images/token02.png)
+[![](enhanced-user-notifications-images/token02.png "Токен, включенным в состав полезные данные уведомления")](enhanced-user-notifications-images/token02.png#lightbox)
 
 Токен выступает в качестве ключа, который объединяет уведомления и приложение, используемое для открытия или ответ на уведомление.
 
@@ -519,7 +519,7 @@ namespace MonkeyNotification
 
 При работе с удаленной уведомления _расширения службы_ позволяют включить шифрование конца в конец внутри полезные данные уведомления. Расширения службы являются пользовательский интерфейс расширением (доступный в iOS 10), выполняются в фоновом режиме, с основным назначением расширения или замены видимого содержимого уведомления, прежде чем он будет предоставлен пользователю. 
 
-[ ![](enhanced-user-notifications-images/extension01.png "Обзор расширения службы")](enhanced-user-notifications-images/extension01.png)
+[![](enhanced-user-notifications-images/extension01.png "Обзор расширения службы")](enhanced-user-notifications-images/extension01.png#lightbox)
 
 Расширения службы предназначены для быстрого запуска и получают только небольшое время выполнения в системе. В случае, если расширение службы не удается завершить задачу, в течение указанного периода времени, будет вызван метод резервной стратегии. В случае этот резервный механизм содержимого исходного уведомление будет отображаться для пользователя.
 
@@ -538,13 +538,13 @@ namespace MonkeyNotification
 2. Щелкните правой кнопкой мыши имя решения в **Pad решения** и выберите **добавить** > **Добавление нового проекта**.
 3. Выберите **iOS** > **расширения** > **расширения службы уведомлений** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](enhanced-user-notifications-images/extension02.png "Выберите расширения службы уведомлений")](enhanced-user-notifications-images/extension02.png)
+    [![](enhanced-user-notifications-images/extension02.png "Выберите расширения службы уведомлений")](enhanced-user-notifications-images/extension02.png#lightbox)
 4. Введите **имя** расширение и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](enhanced-user-notifications-images/extension03.png "Введите имя для модуля")](enhanced-user-notifications-images/extension03.png)
+    [![](enhanced-user-notifications-images/extension03.png "Введите имя для модуля")](enhanced-user-notifications-images/extension03.png#lightbox)
 5. Настройка **имя проекта** и/или **имя решения** , если требуется и нажмите кнопку **создать** кнопки: 
 
-    [ ![](enhanced-user-notifications-images/extension04.png "Измените имя проекта и/или имя решения")](enhanced-user-notifications-images/extension04.png) 
+    [![](enhanced-user-notifications-images/extension04.png "Измените имя проекта и/или имя решения")](enhanced-user-notifications-images/extension04.png#lightbox) 
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -552,7 +552,7 @@ namespace MonkeyNotification
 2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **добавить** > **Добавление нового проекта**.
 3. Выберите **iOS** > **расширения** > **расширения службы уведомлений**: 
 
-    [ ![](enhanced-user-notifications-images/extension01w.png "Выберите расширения службы уведомлений")](enhanced-user-notifications-images/extension01w.png)
+    [![](enhanced-user-notifications-images/extension01w.png "Выберите расширения службы уведомлений")](enhanced-user-notifications-images/extension01w.png#lightbox)
 4. Введите **имя** расширение и нажмите кнопку **ОК** кнопки.
 
 -----

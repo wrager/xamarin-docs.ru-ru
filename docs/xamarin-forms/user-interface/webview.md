@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: 67caa11b23f5651a6b851c1e9baf16c2adca422a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7a077a3dcc47de8416abb0c51b23dc07fc1f1f12
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="webview"></a>Веб-представление
 
@@ -38,7 +38,8 @@ ms.lasthandoff: 02/27/2018
 - Строк HTML &ndash; WebView можно показать строки HTML из памяти.
 - Локальные файлы &ndash; WebView может представлять любой из типов содержимого выше внедренных в приложение.
 
-**Примечание**: `WebView` в Windows и Windows Phone не поддерживает Silverlight, Flash или элементы управления ActiveX, даже если они поддерживаются в Internet Explorer на этой платформе.
+> [!NOTE]
+> `WebView` в Windows и Windows Phone не поддерживает Silverlight, Flash или элементы управления ActiveX, даже если они поддерживаются в Internet Explorer на этой платформе.
 
 ### <a name="websites"></a>Веб-сайты
 
@@ -50,14 +51,15 @@ var browser = new WebView {
 };
 ```
 
-**Примечание**: URL-адреса должен быть полностью сформирован с протоколом заданным (т. е. он должен быть «http://» или «https://», добавляемый).
+> [!NOTE]
+> URL-адреса должен быть полностью сформирован с протоколом заданным (т. е. он должен быть «http://» или «https://», добавляемый).
 
 #### <a name="ios-and-ats"></a>iOS и ATS
 
 Начиная с версии 9 операций ввода-вывода допускает только приложения для взаимодействия с серверами, реализующие рекомендации безопасности по умолчанию. Значения должны быть заданы в `Info.plist` для обеспечения взаимодействия с незащищенных серверов.
 
 > [!NOTE]
-> **Примечание:** Если приложению требуется подключение небезопасных веб-сайта, следует всегда введите домен как исключения, используя `NSExceptionDomains` вместо отключения ATS полностью с помощью `NSAllowsArbitraryLoads`. `NSAllowsArbitraryLoads` следует использовать только в чрезвычайных ситуациях аварийного.
+> Если приложению требуется подключение небезопасных веб-сайта, следует всегда введите домен как исключения, используя `NSExceptionDomains` вместо отключения ATS полностью с помощью `NSAllowsArbitraryLoads`. `NSAllowsArbitraryLoads` следует использовать только в чрезвычайных ситуациях аварийного.
 
 Следующий пример демонстрирует для включения конкретного домена (в этом вариантов xamarin.com) для обхода ATS требования:
 
@@ -221,10 +223,10 @@ namespace WorkingWithWebview.Android {
 }
 ```
 
-В Android файлы в **активы** папка может также осуществляться через `Forms.Context.Assets` свойства, как показано в следующем примере кода:
+В Android файлы в **активы** папки можно получить через контекст текущего Android, который предоставляется `MainActivity.Instance` свойство:
 
 ```csharp
-var assetManager = Xamarin.Forms.Forms.Context.Assets;
+var assetManager = MainActivity.Instance.Assets;
 using (var streamReader = new StreamReader (assetManager.Open ("local.html"))) {
   var html = streamReader.ReadToEnd ();
 }

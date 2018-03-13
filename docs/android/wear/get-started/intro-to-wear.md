@@ -7,18 +7,17 @@ ms.assetid: EAEF99F0-8FBE-47E4-8644-E7244CFAF464
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: c334e78793f90b4f349f87e12e6b0093fe5cacf8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 4f6cfe61b5f91fb6703fdcdd20513ce6bc2dc161
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-android-wear"></a>Введение в Android износ
 
 _С появлением Google Android носят вы больше не ограничиваются лишь телефоны и планшеты когда речь заходит о разработке отличных приложений Android. Поддержка Android носят Xamarin.Android делает возможным для выполнения кода на языке C# на ваш манжеты! Это введение предоставляет Android носят общий обзор, описывает ее основные компоненты и предлагает обзор функции, доступные в версии 2.0 с Android. Его перечислены некоторые популярные устройства с Android, а также ссылки на основные Google Android носят документацию для дальнейшего изучения._
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -29,47 +28,40 @@ Android износ работает на различных устройства
 Поддерживает Xamarin.Android 5.0 и более поздних версий поддерживает Android носят через наших Android 4.4W (API-20) и пакет NuGet, который добавляет дополнительные элементы управления конкретного износ пользовательского интерфейса. Xamarin.Android 5.0 и более поздние версии также включает функции для упаковки приложения одежды. Для Android 2.0, носят, как описано далее в этом руководстве также доступны пакеты NuGet.
 
 
-<a name="basics" />
-
 ## <a name="android-wear-basics"></a>Основы износ Android
 
 Android износ имеет парадигма интерфейса пользователя, отличающимся от портативные приложений Android. Первой волны износ приложений были разработаны для расширения дополнения портативные приложения, в некоторых способом, но, начиная с Android износ 2.0, износ приложений можно использовать автономно. При развертывании приложения износ поставляется с приложением портативные помощник по поиску. Так как большинство носят приложения зависят от приложения портативные дополнительное, они должны каким-либо способом взаимодействия с приложениями, портативные. В следующих разделах описаны эти сценарии использования и перечисляются основные функции с Android. 
 
 
-<a name="scenarios" />
 
 ### <a name="usage-scenarios"></a>Сценарии использования
 
 Первая версия Android носят уделялось в основном расширение текущего мобильных устройств с усиленной уведомления и синхронизацию данных между переносном приложения и портативные приложения. Следовательно эти сценарии являются относительно просты в использовании.
 
-<a name="notifications" />
 
 #### <a name="wearable-notifications"></a>Переносном уведомления
 
 Для поддержки Android носят проще всего воспользоваться преимуществами общего характера уведомлениями между монитора и переносном устройстве. С помощью API-Интерфейс уведомлений поддержки v4 и `WearableExtender` класс (в [Xamarin Android библиотеки поддержки](https://www.nuget.org/packages/Xamarin.Android.Support.v4/)), можно воспользоваться встроенным функциям платформы, как входящие стиль карты или голоса. [RecipeAssistant](https://developer.xamarin.com/samples/monodroid/wear/RecipeAssistant/) пример приводится пример кода, показано, как отправить список уведомлений на устройстве с Android. 
 
 
-<a name="companion" />
 
 #### <a name="companion-applications"></a>Помощник по поиску приложений
 
 Другая стратегия является создание полное приложение, работающее на переносном устройстве и пар дополнительное портативные приложения. Хорошим примером такого подхода является [головоломки](https://developer.xamarin.com/samples/monodroid/wear/Quiz/) пример приложения, где показано, как создать тест, который выполняется в карманном и запрашивает вопросы теста на переносном устройстве. 
 
 
-<a name="ui" />
 
 ### <a name="user-interface"></a>Пользовательский интерфейс
 
 Шаблон переходов для одежды представляет собой ряд карточек, располагаются вертикально. Каждый из этих карт могут иметь связанные действия, которые, располагаются в той же строке. `GridViewPager` Класс предоставляет следующие функциональные возможности; следует адаптера совпадает с концепцией `ListView`. Обычно выполняется связывание `GridViewPager` с `FragmentGridPagerAdaptor` (или `GridPagerAdaptor`), позволяет представлять каждой строки и столбца ячейки, как `Fragment`: 
 
-[ ![Носят навигации](intro-to-wear-images/2d-picker-sml.png "носят навигации")](intro-to-wear-images/2d-picker.png)
+[![Носят навигации](intro-to-wear-images/2d-picker-sml.png "носят навигации")](intro-to-wear-images/2d-picker.png#lightbox)
 
 Носят делает использование кнопки действий, которые состоят из большой цвет круг с небольшой описание входящие в него (как показано выше).  [GridViewPager](https://developer.xamarin.com/samples/monodroid/wear/GridViewPager/) образце демонстрируется использование `GridViewPager` и `GridPagerAdapter` в приложении одежды.
 
 Android носят 2.0 добавляет ящике навигации, лоток действия и кнопки встроенных действий износ пользовательского интерфейса. Дополнительные сведения об элементах пользовательского интерфейса для Android 2.0 носят см Android [составляющие](https://www.google.com/design/spec-wear/system-overview/anatomy.html) раздела. 
 
 
-<a name="comm" />
 
 ### <a name="communications"></a>Взаимодействие
 
@@ -86,7 +78,6 @@ Android износ обеспечивает два различных взаим
 [FindMyPhone](https://developer.xamarin.com/samples/monodroid/wear/FindMyPhoneSample/) образце показано, как реализовать `WearableListenerService`.
 
 
-<a name="deploy" />
 
 ### <a name="deployment"></a>Развертывание
 
@@ -94,7 +85,6 @@ Android износ обеспечивает два различных взаим
 [Работа с упаковкой](~/android/wear/deploy-test/packaging.md) Описание развертывания более подробно. 
 
 
-<a name="further" />
 
 ## <a name="going-further"></a>Если продолжить 
 
@@ -114,34 +104,30 @@ Android износ обеспечивает два различных взаим
 [Создание Циферблат часов](~/android/wear/platform/creating-a-watchface.md) предоставляет пошаговые инструкции и примеры кода для разработки очищенный работу службы начертания цифровой контрольных значений, следуют дополнительные код, который дополняет его стиль аналогом Циферблат часов с дополнительными возможностями. 
 
 
-<a name="wear2" />
 
 ## <a name="android-wear-20"></a>Android износ 2.0
 
 Android 2.0 носят дает ряд новых функций и возможностей, таких как *сложностей*, изгиб макеты, навигации и действий лотков и развернутом уведомлении. Кроме того носят 2.0 позволяет создавать автономные приложения, которые работают независимо от портативные приложения. Новый *манжеты жесты* дает нарушенной взаимодействия с приложением. В следующих разделах, выделите эти возможности и предоставляют ссылки, которые помогут вам приступить к работе с использованием их в приложении.
 
 
-<a name="install2" />
 
 ### <a name="install-wear-20-packages"></a>Установка носят 2.0 пакетов
 
 Чтобы создать приложение с 2.0 с Xamarin.Android, необходимо добавить **Xamarin.Android.Wear v2.0** пакета в проект (щелкните **вкладка обзора**):
 
-[![Версия 2.0 Xamarin.Android.Wear](intro-to-wear-images/wear-nuget-2.0-sml.png "установить Xamarin.Android.Wear v2.0 NuGet")](intro-to-wear-images/wear-nuget-2.0.png)
+[![Версия 2.0 Xamarin.Android.Wear](intro-to-wear-images/wear-nuget-2.0-sml.png "установить Xamarin.Android.Wear v2.0 NuGet")](intro-to-wear-images/wear-nuget-2.0.png#lightbox)
 
 Этот пакет NuGet содержит привязок для библиотеки Android переносном поддержки и совместимости с.
 
 В дополнение к **Xamarin.Android.Wear**, мы рекомендуем установить **Xamarin.GooglePlayServices.Wearable** NuGet: 
 
-[![Xamarin.GooglePlayServices.Wearable](intro-to-wear-images/gpsw-nuget-sml.png "установить Xamarin.GooglePlayServices.Wearable NuGet")](intro-to-wear-images/gpsw-nuget.png)
+[![Xamarin.GooglePlayServices.Wearable](intro-to-wear-images/gpsw-nuget-sml.png "установить Xamarin.GooglePlayServices.Wearable NuGet")](intro-to-wear-images/gpsw-nuget.png#lightbox)
 
-<a name="wear2feat" />
 
 ### <a name="key-features-of-wear-20"></a>Основные возможности износ 2.0
 
 Android носят 2.0 является главное обновление Android носили после начального запуска в 2014 г. В следующих разделах описываются основные возможности Android носят 2.0 и приводятся ссылки, помогающие приступить к работе с помощью этих новых функций в вашем приложении. 
 
-<a name="compl" />
 
 #### <a name="complications"></a>Сложности
 
@@ -152,7 +138,6 @@ Android носят 2.0 является главное обновление Andr
 Дополнительные сведения о сложности. в разделе Android [сложностей начертания Контрольное значение](https://developer.android.com/wear/preview/features/complications.html) раздела. 
 
 
-<a name="drawers" />
 
 #### <a name="navigation-and-action-drawers"></a>Навигация и ящики действия 
 
@@ -163,7 +148,6 @@ Android носят 2.0 является главное обновление Andr
 Дополнительные сведения об этих двух новых интерактивных лотков. в разделе Android [носят навигации и действий](https://developer.android.com/wear/preview/features/ui-nav-actions.html) раздела. 
 
 
-<a name="curved" />
 
 #### <a name="curved-layouts"></a>Макеты кривой 
 
@@ -174,14 +158,12 @@ Android носят 2.0 является главное обновление Andr
 `WearableRecyclerView` расширяет `RecyclerView` класс для поддержки кривой макеты и циклические жесты прокрутки. Дополнительные сведения см. в разделе Android [WearableRecyclerView](https://developer.android.com/reference/android/support/wearable/view/WearableRecyclerView.html) документации по API. 
 
 
-<a name="standalone" />
 
 #### <a name="standalone-apps"></a>Автономные приложения 
 
 Приложения Android с 2.0 можно работать независимо от портативные приложения. Это означает, что, например, смарт-контрольного значения можно продолжить для обеспечения полной функциональности, даже если устройство-компаньон портативные выключен или далеко от переносном устройстве. Дополнительные сведения об этой функции см. в разделе Android [автономного приложения](https://developer.android.com/wear/preview/features/standalone-apps.html) раздела.
 
 
-<a name="wrist" />
 
 #### <a name="wrist-gestures"></a>Манжеты жесты 
 
@@ -196,7 +178,6 @@ Android носят 2.0 является главное обновление Andr
 Существует множество возможностей дополнительные носят 2.0 как встроенные действия, смарт-ответа, удаленного входных данных, развернутых уведомлениях и новый промежуточный режим уведомлений. Дополнительные сведения о новых возможностях носят 2.0 см. в разделе Android [Обзор интерфейса API](https://developer.android.com/wear/preview/api-overview.html). 
 
 
-<a name="devices" />
 
 ## <a name="devices"></a>Устройства
 
@@ -210,7 +191,6 @@ Android носят 2.0 является главное обновление Andr
 * [ASUS ZenWatch](http://www.asus.com/us/Phones/ASUS_ZenWatch_WI500Q/)
 
 
-<a name="reading" />
 
 ## <a name="further-reading"></a>Дополнительные сведения
 
@@ -222,7 +202,6 @@ Android носят 2.0 является главное обновление Andr
 * [Android износ 2.0](https://developer.android.com/wear/preview/index.html)
 
 
-<a name="summary" />
 
 ## <a name="summary"></a>Сводка
 

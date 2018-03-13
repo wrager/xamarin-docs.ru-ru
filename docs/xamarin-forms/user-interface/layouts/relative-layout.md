@@ -8,17 +8,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/25/2015
-ms.openlocfilehash: ad621fa093379d5ad2dd81c81ce42dcaaa9bd923
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3d915191e24b5238d5165237f6ede74635b31e08
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="relativelayout"></a>RelativeLayout
 
 `RelativeLayout` используется положение и размер представления относительно свойств макета или дочерних представлений. В отличие от `AbsoluteLayout`, `RelativeLayout` не поддерживает концепцию скользящего привязки и не имеет возможности для размещения элементов относительно нижнего или правого края макета. `RelativeLayout` поддерживает размещение элементов за пределами свои собственные границы.
 
-[ ![](relative-layout-images/layouts-sml.png "Макеты Xamarin.Forms")](relative-layout-images/layouts.png "Xamarin.Forms макетов")
+[![](relative-layout-images/layouts-sml.png "Макеты Xamarin.Forms")](relative-layout-images/layouts.png#lightbox "Xamarin.Forms макетов")
 
 ## <a name="purpose"></a>Цель
 
@@ -76,7 +76,7 @@ layout.Children.Add(box, Constraint.RelativeToParent((parent) =>
 - Поле `y` координат определяется как половинной высоты родительского объекта -100.
 
 > [!NOTE]
-> **Примечание**: из-за способа, определенные ограничения, можно обеспечить более сложные макеты в C# не может указываться с XAML.
+> Таким образом определенные ограничения можно обеспечить более сложные макеты в C# не может указываться с XAML.
 
 Оба приведенных выше примерах определения ограничений, как `RelativeToParent` &ndash; иными словами, их значения имеют относительно родительского элемента. Можно также определить ограничения относительно другого представления. Это обеспечивает более наглядной (для разработчиков) макеты и можно сделать более неочевидным назначение кода макета.
 

@@ -7,11 +7,11 @@ ms.assetid: 6205E430-1036-4CC3-8E97-AA5554E3D468
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
-ms.openlocfilehash: 1e5fcf80790abdc4b613d1c2f7cdf64081a1e0fd
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 8e9ffe85a544ef688a2551e5875c391b7bcb1e5c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="urhosharp-platform-support"></a>Поддержка платформы UrhoSharp
 
@@ -27,9 +27,9 @@ _Кросс-трехмерного платформы игры и механиз
 
 iOS и tvOS установки инструкции и функции.
 
-## <a name="macos-xgraphics-gamesurhosharpplatformmacmd"></a>[MacOS X](~/graphics-games/urhosharp/platform/mac.md)
+## <a name="macosgraphics-gamesurhosharpplatformmacmd"></a>[macOS](~/graphics-games/urhosharp/platform/mac.md)
 
-Инструкции по установке Mac OS X и компоненты.
+инструкции и функции, macOS программы установки.
 
 ## <a name="windowsgraphics-gamesurhosharpplatformwindowsmd"></a>[Windows](~/graphics-games/urhosharp/platform/windows.md)
 

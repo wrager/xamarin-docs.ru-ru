@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: f02c5cfd75fd9d9cd97d28ca276b32808f7a45ae
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f1ce6b62ef13d24148048253700d7b3bff805fad
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="path-basics"></a>Основные сведения о пути
 
@@ -99,7 +99,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Первый профиль состоит из вызова [ `MoveTo` ](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.MoveTo/p/System.Single/System.Single/) с помощью координат X и Y, а не `SKPoint` значения с три вызова [ `LineTo` ](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.LineTo/p/System.Single/System.Single/) для рисования три стороны треугольник. Второй профиль содержит только два вызова `LineTo` , но ее завершения профиль с помощью вызова [ `Close` ](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.Close()/), который закрывает контур. Различие важно:
 
-[![](paths-images/twotrianglecontours-small.png "Тройной снимок экрана со страницей двух контуров треугольник")](paths-images/twotrianglecontours-large.png "тройной снимок экрана со страницей двух контуров треугольник")
+[![](paths-images/twotrianglecontours-small.png "Тройной снимок экрана со страницей двух контуров треугольник")](paths-images/twotrianglecontours-large.png#lightbox "тройной снимок экрана со страницей двух контуров треугольник")
 
 Как видите, первый профиль очевидно, что представляет собой ряд три соединенных линий, но конца не соединяет с самого начала. В верхней перекрываться две строки. Второй профиль очевидно закрывается и выполнялось с одним меньше `LineTo` вызывает, поскольку `Close` метод автоматически добавляет завершающую строку, чтобы закрыть контур.
 
@@ -189,7 +189,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот программу на трех платформ.
 
-[![](paths-images/strokejoins-small.png "Тройной снимок экрана со страницей соединяет штриха")](paths-images/strokejoins-large.png "тройной снимок экрана со страницей соединяет штриха")
+[![](paths-images/strokejoins-small.png "Тройной снимок экрана со страницей соединяет штриха")](paths-images/strokejoins-large.png#lightbox "тройной снимок экрана со страницей соединяет штриха")
 
 Соединения среза состоит из острым точки, где строки подключения. Если две строки соединения небольших углом, среза соединения могут быть довольно длинными. Во избежание слишком длинные среза соединения длину среза соединения ограничивается значение [ `StrokeMiter` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPaint.StrokeMiter/) свойство `SKPaint`. Свойства соединения, в которых превышает длину обрезана в качестве соединения багетной рамки.
 

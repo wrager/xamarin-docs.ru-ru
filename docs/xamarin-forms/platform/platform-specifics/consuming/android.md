@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/17/2017
-ms.openlocfilehash: e26fcb81bb99e5a49d16731777171b4efa4163c6
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 739ee4ebeb3176d23ab1eb911baaab31a26252c4
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-platform-specifics"></a>Android платформы подробные сведения
 
@@ -54,7 +54,7 @@ App.Current.On<Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust
 
 Результатом является то, что Экранная клавиатура входом область, которую можно задать режим работы, когда элемент управления вводом в фокусе:
 
-[![](android-images/pan-resize.png "Экранная клавиатура, специфический для платформы режим работы")](android-images/pan-resize-large.png "Soft Keyboard Operating Mode Plaform-Specific")
+[![](android-images/pan-resize.png "Экранная клавиатура, специфический для платформы режим работы")](android-images/pan-resize-large.png#lightbox "Soft Keyboard Operating Mode Plaform-Specific")
 
 <a name="fastscroll" />
 
@@ -98,7 +98,7 @@ listView.On<Android>().SetIsFastScrollEnabled(!listView.On<Android>().IsFastScro
 
 Результатом является это быстрое прокручивание через данные [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) можно включить, который изменяет размер бегунка прокрутки:
 
-[![](android-images/fastscroll.png "ListView FastScroll платформы")](android-images/fastscroll-large.png "ListView FastScroll Plaform-Specific")
+[![](android-images/fastscroll.png "ListView FastScroll платформы")](android-images/fastscroll-large.png#lightbox "ListView FastScroll Plaform-Specific")
 
 <a name="enable_swipe_paging" />
 
@@ -244,7 +244,7 @@ Xamarin.Forms.Application.Current.On<Android>()
 
 В результате [ `Disappearing` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Page.Appearing/) и [ `Appearing` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Page.Appearing/) события страницы в приостановить приложение не будет инициировать и возобновить соответственно, а также было Экранная клавиатура, если отображается, когда приложение был приостановлен, он также отображается при возобновлении приложения:
 
-[![](android-images/keyboard-on-resume.png "Жизненный цикл события платформы")](android-images/keyboard-on-resume-large.png "жизненного цикла события платформы")
+[![](android-images/keyboard-on-resume.png "Жизненный цикл события платформы")](android-images/keyboard-on-resume-large.png#lightbox "жизненного цикла события платформы")
 
 ## <a name="summary"></a>Сводка
 

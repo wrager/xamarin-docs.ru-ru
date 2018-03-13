@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: dda7597456421aa4ae401f56ed6cfc7983df29c5
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 64961e9c45c28ede4cc84f7b978da565be4426d9
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="remote-notifications-with-google-cloud-messaging"></a>Удаленный уведомления с Google Cloud Messaging
 
@@ -53,7 +53,7 @@ _Это пошаговое руководство содержит пошаго�
 
 В Visual Studio щелкните правой кнопкой мыши **References > Управление пакетами NuGet...** ; в Visual Studio для Mac, щелкните правой кнопкой мыши **пакеты > Добавление пакетов...** . Поиск **Xamarin службы Google Play - GCM** и установить этот пакет в **ClientApp** проекта: 
 
-[ ![Установка служб Google Play](remote-notifications-with-gcm-images/1-google-play-services-sml.png)](remote-notifications-with-gcm-images/1-google-play-services.png)
+[![Установка служб Google Play](remote-notifications-with-gcm-images/1-google-play-services-sml.png)](remote-notifications-with-gcm-images/1-google-play-services.png#lightbox)
 
 При установке **Xamarin службы Google Play - GCM**, **Xamarin службы Google Play - Base** устанавливается автоматически. Если возникает ошибка, преобразовать в проект *Android минимум целевой* задавать значение, отличное от **компиляция с помощью пакета SDK версии** и повторите попытку установки NuGet. 
 
@@ -76,7 +76,7 @@ using Android.Util;
 
 В [Google Cloud Messaging](~/android/data-cloud/google-messaging/google-cloud-messaging.md), мы указали имя пакета для нашего приложения с поддержкой GCM (это имя пакета также служит в качестве *идентификатор приложения* связанное с нашими ключ API и идентификатор отправителя). Откроем свойства **ClientApp** проект и задайте имя пакета для данной строки. В этом примере задается имя пакета `com.xamarin.gcmexample`:
 
-[ ![Задание имени пакета](remote-notifications-with-gcm-images/2-package-name-sml.png)](remote-notifications-with-gcm-images/2-package-name.png)
+[![Задание имени пакета](remote-notifications-with-gcm-images/2-package-name-sml.png)](remote-notifications-with-gcm-images/2-package-name.png#lightbox)
 
 Обратите внимание, что клиентское приложение не сможет получать маркер регистрации из GCM, если это имя пакета не *точно* совпадает с именем пакета, мы ввели в консоли разработчика Google. 
 
@@ -192,7 +192,7 @@ protected override void OnCreate (Bundle bundle)
 
 Давайте полностью повторное построение и запуск приложения. Появится экран, который выглядит как следующий снимок экрана: 
 
-[ ![Доступные службы Google Play](remote-notifications-with-gcm-images/3-first-screen-sml.png)](remote-notifications-with-gcm-images/3-first-screen.png)
+[![Доступные службы Google Play](remote-notifications-with-gcm-images/3-first-screen-sml.png)](remote-notifications-with-gcm-images/3-first-screen.png#lightbox)
 
 Если этот результат не получен, APK воспроизведение служб Google проверить, установлен ли на устройстве и, **Xamarin службы Google Play - GCM** пакет будет добавлен к вашей **ClientApp** проекта см. раздел ранее. Если возникли ошибки сборки, попробуйте очистки решения и сборка проекта еще раз. 
 
@@ -271,11 +271,11 @@ namespace ClientApp
 
 1.  Войдите на [облачной консоли Google](https://console.cloud.google.com/) и выберите имя проекта в раскрывающемся меню. В **проекта сведения** область, которая отображается для проекта, нажмите кнопку **перейти к параметрам проекта**:
 
-    [![При выборе проекта XamarinGCM](remote-notifications-with-gcm-images/7-choose-project-sml.png)](remote-notifications-with-gcm-images/7-choose-project.png)
+    [![При выборе проекта XamarinGCM](remote-notifications-with-gcm-images/7-choose-project-sml.png)](remote-notifications-with-gcm-images/7-choose-project.png#lightbox)
 
 2.  На **параметры** найдите **номер проекта** &ndash; — идентификатор отправителя для проекта:
 
-    [![Отображается номер проекта](remote-notifications-with-gcm-images/9-project-number-sml.png)](remote-notifications-with-gcm-images/9-project-number.png)
+    [![Отображается номер проекта](remote-notifications-with-gcm-images/9-project-number-sml.png)](remote-notifications-with-gcm-images/9-project-number.png#lightbox)
 
 Мы хотим начать нашей `RegistrationIntentService` при запуске нашего приложения. Изменить **MainActivity.cs** и изменения `OnCreate` метод, чтобы наши `RegistrationIntentService` запускается после того, проверяется на наличие службы Google Play: 
 
@@ -548,7 +548,7 @@ SendNotification (message);
 
 Давайте поиск **Json.NET** пакет и установите его в проект: 
 
-[ ![Установка Json.NET пакета](remote-notifications-with-gcm-images/4-add-json.net-sml.png)](remote-notifications-with-gcm-images/4-add-json.net.png)
+[![Установка Json.NET пакета](remote-notifications-with-gcm-images/4-add-json.net-sml.png)](remote-notifications-with-gcm-images/4-add-json.net.png#lightbox)
 
 
 #### <a name="add-a-reference-to-systemnethttp"></a>Добавьте ссылку на System.Net.Http
@@ -630,7 +630,6 @@ namespace MessageSender
 GCM, в свою очередь, передает это сообщение, чтобы клиентское приложение. Создадим **MessageSender** и откройте окно консоли, где его можно было запустить из командной строки.
 
 
-<a name="tryit" />
 
 ### <a name="try-it"></a>Попробуйте!
 
@@ -666,11 +665,11 @@ D/MyGcmListenerService(16103): Message: Hello, Xamarin!
 
 Кроме того вы заметите, что новый значок уведомления отображается в области уведомлений: 
 
-[ ![На устройстве появляется значок Notiication](remote-notifications-with-gcm-images/5-icon-appears-sml.png)](remote-notifications-with-gcm-images/5-icon-appears.png)
+[![На устройстве появляется значок Notiication](remote-notifications-with-gcm-images/5-icon-appears-sml.png)](remote-notifications-with-gcm-images/5-icon-appears.png#lightbox)
 
 При открытии панели уведомлений для просмотра уведомлений о вы увидите, что наши удаленного уведомления:
 
-[ ![Сообщение уведомления](remote-notifications-with-gcm-images/6-notification-in-tray-sml.png)](remote-notifications-with-gcm-images/6-notification-in-tray.png)
+[![Сообщение уведомления](remote-notifications-with-gcm-images/6-notification-in-tray-sml.png)](remote-notifications-with-gcm-images/6-notification-in-tray.png#lightbox)
 
 Итак, приложение получил его первого удаленного уведомления.
 

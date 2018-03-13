@@ -7,11 +7,11 @@ ms.assetid: E353DF14-51D7-98E3-59EA-16683C770C23
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 63faa0c46abfb509a6834efa647f23ad0ed7f454
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1a5e4ab73c9090cbb743dc8cb339d6f50c5ff527
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="walkthrough-using-a-json-element-to-create-a-user-interface"></a>Пошаговое руководство: Использование элемента JSON для создания пользовательского интерфейса
 
@@ -22,7 +22,7 @@ _MonoTouch.Dialog (машинного перевода. D) включает по
 
 МАШИННОГО ПЕРЕВОДА. D поддерживает полный спектр функций, доступных в API элементов при использовании JSON. Например на следующем снимке экрана приложение полностью объявляется с помощью JSON:
 
-[ ![](json-element-walkthrough-images/01-load-from-file.png "Например, приложения на этом снимке экрана полностью объявляется с помощью JSON") ](json-element-walkthrough-images/01-load-from-file.png) [ ![ ] (json-element-walkthrough-images/02-load-from-file-details.png ", например приложения на этом снимке экрана полностью объявляется с помощью JSON")](json-element-walkthrough-images/02-load-from-file-details.png)
+[![](json-element-walkthrough-images/01-load-from-file.png "Например, приложения на этом снимке экрана полностью объявляется с помощью JSON") ](json-element-walkthrough-images/01-load-from-file.png#lightbox) [ ![ ] (json-element-walkthrough-images/01-load-from-file.png ", например приложения на этом снимке экрана полностью объявляется с помощью JSON")](json-element-walkthrough-images/01-load-from-file.png#lightbox)
 
 Давайте повторное использование примера в [пошагового руководства по API элементы](~/ios/user-interface/monotouch.dialog/elements-api-walkthrough.md) руководство добавить экран сведений задач с помощью JSON.
 
@@ -30,7 +30,7 @@ _MonoTouch.Dialog (машинного перевода. D) включает по
 
 Пример в этом пошаговом руководстве позволяет задачи должен быть создан. При выборе задачи на первом экране экран сведений представляются как показано.
 
- [ ![](json-element-walkthrough-images/03-task-list.png "При выборе задачи на первом экране экран сведений будет выглядеть, как показано")](json-element-walkthrough-images/03-task-list.png)
+ [![](json-element-walkthrough-images/03-task-list.png "При выборе задачи на первом экране экран сведений будет выглядеть, как показано")](json-element-walkthrough-images/03-task-list.png#lightbox)
 
 ## <a name="creating-the-json"></a>Создание JSON
 
@@ -166,7 +166,7 @@ _rootElement = new RootElement ("Json Example"){
 
 Во время выполнения файл будет получаться и анализировать машинного перевода. D, когда пользователь переходит на второй вид, как показано на снимке экрана ниже:
 
- [ ![](json-element-walkthrough-images/04-json-web-example.png "Файл будет получаться и анализировать машинного перевода. D, когда пользователь переходит на второй вид")](json-element-walkthrough-images/04-json-web-example.png)
+ [![](json-element-walkthrough-images/04-json-web-example.png "Файл будет получаться и анализировать машинного перевода. D, когда пользователь переходит на второй вид")](json-element-walkthrough-images/04-json-web-example.png#lightbox)
 
  <a name="Summary" />
 

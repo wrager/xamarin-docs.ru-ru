@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 03/29/2017
-ms.openlocfilehash: bd6d47f98435cc68ecf4156423526c31dbac09da
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c923208b7ca4d41914504b4b0aa0687db1d49f01
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="inspecting-live-applications"></a>Проверка работающих приложениях.
 
@@ -27,11 +27,11 @@ ms.lasthandoff: 02/27/2018
 
 
 
-[ ![](inspect-images/mac-heres-the-button.png "Нажмите кнопку "Проверить" на панели инструментов интегрированной среды разработки")](inspect-images/mac-heres-the-button.png)
+[![](inspect-images/mac-heres-the-button.png "Нажмите кнопку "Проверить" на панели инструментов интегрированной среды разработки")](inspect-images/mac-heres-the-button.png#lightbox)
 
 Будет открыто новое окно инспектора Xamarin клиента, в новой строке REPL.
 
-[ ![](inspect-images/inspector-0.7.0-map-inspect-small.png "Откроется новое окно инспектора Xamarin клиента с новой строки REPL")](inspect-images/inspector-0.7.0-map-inspect.png)
+[![](inspect-images/inspector-0.7.0-map-inspect-small.png "Откроется новое окно инспектора Xamarin клиента с новой строки REPL")](inspect-images/inspector-0.7.0-map-inspect.png#lightbox)
 
 Как только это окно появляется, имеется интерактивное C# приглашение, можно использовать для выполнения и вычисляет операторы C# и выражения. Уникальность это заключается том, что код вычисляется в контексте целевого процесса. В этом случае мы продемонстрируем код, используемый для отображения приложения iOS.
 

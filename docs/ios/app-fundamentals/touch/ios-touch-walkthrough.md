@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 848db0af436ad43e07e68de4d278f641ab83136d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c806eb51be5f585f2c94b438f6ca31a70aaa7551
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="walkthrough--using-touch-in-ios"></a>Пошаговое руководство — с помощью сенсорного ввода в iOS
 
@@ -24,9 +24,11 @@ ms.lasthandoff: 02/27/2018
 Каждый раздел содержит инструкции по созданию кода с нуля.
 [Запуск образца кода](https://developer.xamarin.com/samples/monotouch/ApplicationFundamentals/Touch_start) уже включает в себя полный экран раскадровки и меню:
 
- [ ![](ios-touch-walkthrough-images/image3.png "Образец включает экрана меню")](ios-touch-walkthrough-images/image3.png)
+ [![](ios-touch-walkthrough-images/image3.png "Образец включает экрана меню")](ios-touch-walkthrough-images/image3.png#lightbox)
 
 Следуйте инструкциям ниже, чтобы добавить код в раскадровку и Дополнительные сведения о различных типах событий сенсорного ввода, доступных в iOS. Кроме того, можно открыть [законченном примере](https://developer.xamarin.com/samples/monotouch/ApplicationFundamentals/Touch_final) для просмотра все заработает.
+
+<a name="Touch_Samples"/>
 
 ## <a name="touch-samples"></a>Образцы сенсорного ввода
 
@@ -35,7 +37,7 @@ ms.lasthandoff: 02/27/2018
 
 1. Откройте проект **Touch_Start**. Первый, запустите проект, убедитесь, что все работает правильно и жестов **Touch образцы** кнопки. (Несмотря на то, что ни одна из кнопок будет работать), вы увидите экран, аналогично приведенным ниже:
     
-    [![](ios-touch-walkthrough-images/image4.png "Образец приложения будут работать с кнопками нерабочего")](ios-touch-walkthrough-images/image4.png)
+    [![](ios-touch-walkthrough-images/image4.png "Образец приложения будут работать с кнопками нерабочего")](ios-touch-walkthrough-images/image4.png#lightbox)
 
 
 1. Измените файл **TouchViewController.cs** и добавьте следующие переменные два экземпляра класса `TouchViewController`:
@@ -166,9 +168,9 @@ ms.lasthandoff: 02/27/2018
 
 1. На этом этапе завершения экрана Touch образцов. Обратите внимание на то, как экрана изменяется взаимодействовать с каждым из изображения, как показано на следующем снимке экрана:
         
-    [![](ios-touch-walkthrough-images/image4.png "Начальный экран приложения")](ios-touch-walkthrough-images/image4.png)
+    [![](ios-touch-walkthrough-images/image4.png "Начальный экран приложения")](ios-touch-walkthrough-images/image4.png#lightbox)
     
-    [![](ios-touch-walkthrough-images/image5.png "После перетаскивания пользователем кнопки экрана")](ios-touch-walkthrough-images/image5.png)
+    [![](ios-touch-walkthrough-images/image5.png "После перетаскивания пользователем кнопки экрана")](ios-touch-walkthrough-images/image5.png#lightbox)
  
 
 <a name="Gesture_Recognizer_Samples" />
@@ -183,7 +185,7 @@ ms.lasthandoff: 02/27/2018
 
 При запуске [запуск образца кода](https://developer.xamarin.com/samples/monotouch/ApplicationFundamentals/Touch_start) и выберите команду **образцы распознаватель жестов** кнопку, появится следующий экран:
 
- [ ![](ios-touch-walkthrough-images/image6.png "Этот экран показывает, нажав кнопку образцы распознаватель жестов")](ios-touch-walkthrough-images/image6.png)
+ [![](ios-touch-walkthrough-images/image6.png "Этот экран показывает, нажав кнопку образцы распознаватель жестов")](ios-touch-walkthrough-images/image6.png#lightbox)
 
 Выполните следующие действия для реализации распознавателей жестов.
 
@@ -305,15 +307,17 @@ ms.lasthandoff: 02/27/2018
 1. Запустите приложение и работать с двумя образами.
 Снимке экрана ниже приведен один пример таких взаимодействий.
     
-    [![](ios-touch-walkthrough-images/image7.png "На этом снимке экрана показано взаимодействие перетаскивания")](ios-touch-walkthrough-images/image7.png)
+    [![](ios-touch-walkthrough-images/image7.png "На этом снимке экрана показано взаимодействие перетаскивания")](ios-touch-walkthrough-images/image7.png#lightbox)
 
 
+
+<a name="Custom_Gesture_Recognizer"/>
 
 ## <a name="custom-gesture-recognizer"></a>Пользовательский распознаватель
 
 В этом разделе будет применена основные понятия в предыдущих разделах, для построения пользовательского распознавателя. Пользовательский распознаватель будет подклассов `UIGestureRecognizer`и распознает когда пользователь рисует «V» на экране затем переключать растрового изображения. Снимке экрана ниже приведен пример этого экрана.
 
- [ ![](ios-touch-walkthrough-images/image8.png "Приложение определяет, когда пользователь рисует «V» на экране")](ios-touch-walkthrough-images/image8.png)
+ [![](ios-touch-walkthrough-images/image8.png "Приложение определяет, когда пользователь рисует «V» на экране")](ios-touch-walkthrough-images/image8.png#lightbox)
 
 Выполните следующие действия для создания пользовательского распознавателя.
 
@@ -490,9 +494,9 @@ ms.lasthandoff: 02/27/2018
 
 1. Запустите приложение и повторите изображения на экране «V». Вы увидите изображение отображаемых изменений, как показано на следующем снимке экрана:
     
-    [![](ios-touch-walkthrough-images/image9.png "Проверка кнопки")](ios-touch-walkthrough-images/image9.png)
+    [![](ios-touch-walkthrough-images/image9.png "Проверка кнопки")](ios-touch-walkthrough-images/image9.png#lightbox)
     
-    [![](ios-touch-walkthrough-images/image10.png "Unchecked кнопки")](ios-touch-walkthrough-images/image10.png)
+    [![](ios-touch-walkthrough-images/image10.png "Unchecked кнопки")](ios-touch-walkthrough-images/image10.png#lightbox)
 
 
 

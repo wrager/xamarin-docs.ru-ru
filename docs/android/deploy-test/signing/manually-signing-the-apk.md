@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 1625fe15d76ffe2bd3712d9126d9bd217bf60085
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f47fded9c09849f6d5f1329a4efd652df80816d5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="manually-signing-the-apk"></a>Подписывание пакета APK вручную
 
-<a name="signing_legacy" />
 
 После сборки приложения для выпуска и до распространения необходимо подписать пакет APK, чтобы его можно было запускать на устройстве Android. Как правило, этот процесс обрабатывается в интегрированной среде разработки, однако существуют ситуации, когда пакет APK нужно подписать вручную с использованием командной строки. В ходе процесса подписывания пакета APK выполняются следующие действия:
 
@@ -29,7 +28,6 @@ ms.lasthandoff: 02/27/2018
 Важно соблюдать порядок действий, который зависит от средства, применяемого для подписывания пакета APK. При использовании **apksigner** важно сначала оптимизировать приложение с помощью **zipalign**, а затем подписать его с помощью **apksigner**.  Если для подписывания пакета APK необходимо использовать **jarsigner**, то важно сначала подписать пакет APK, а затем запустить **zipalign**. 
 
 
-<a name="Prerequisites" />
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -38,7 +36,6 @@ ms.lasthandoff: 02/27/2018
 Для приложений, созданных с помощью более ранней версии средств сборки пакета SDK для Android, следует использовать средство **jarsigner**, как описано в разделе [Подписывание пакета APK с помощью jarsigner](#Sign_the_APK_with_jarsigner).
 
 
-<a name="Creating_a_Private_Keystore" />
 
 ## <a name="create-a-private-keystore"></a>Создание закрытого хранилища ключей (keystore)
 
@@ -53,7 +50,6 @@ ms.lasthandoff: 02/27/2018
 Единственное решение проблемы, связанной с потерянным хранилищем ключей, заключается в создании нового хранилища ключей, повторном подписывании пакета APK новым ключом и отправке нового приложения. Старое приложение потребуется удалить из Google Play. Аналогично, в случае нарушения безопасности нового хранилища ключей или его публичного распространения в широкую доступность могут выйти неофициальные или вредоносные версии приложения.
 
 
-<a name="Create_a_New_Keystore" />
 
 ### <a name="create-a-new-keystore"></a>Создание нового хранилища ключей
 
@@ -99,7 +95,6 @@ Re-enter new password:
 $ keytool -list -keystore xample.keystore
 ```
 
-<a name="Zipalign_the_APK" />
 
 ## <a name="zipalign-the-apk"></a>Оптимизация пакета APK
 
@@ -111,7 +106,6 @@ $ keytool -list -keystore xample.keystore
 $ zipalign -f -v 4 mono.samples.helloworld-unsigned.apk helloworld.apk
 ```
 
-<a name="Manually_Signing_the_APK" />
 
 ## <a name="sign-the-apk"></a>Подписывание пакета APK
 

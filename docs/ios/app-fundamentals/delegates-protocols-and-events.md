@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 5df7c2bbc7be1089795c94b6f639bd4556b49366
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 69296992c503d536a4160f172022c7ce5578812f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="events-protocols-and-delegates"></a>События, протоколы и делегаты
 
@@ -32,7 +32,7 @@ Xamarin.iOS использует элементы управления для п
 
 Чтобы проиллюстрировать протоколы и делегаты, мы выполним сборку простой схемы приложения, которое добавляет заметки к схеме, как показано ниже:
 
- [ ![](delegates-protocols-and-events-images/01-map.png "Пример приложения простой схемы, который добавляет заметки к схеме") ](delegates-protocols-and-events-images/01-map.png) [ ![ ] (delegates-protocols-and-events-images/04-annotation-with-callout.png "пример заметки, добавление на карту")](delegates-protocols-and-events-images/04-annotation-with-callout.png)
+ [![](delegates-protocols-and-events-images/01-map.png "Пример приложения простой схемы, который добавляет заметки к схеме") ](delegates-protocols-and-events-images/01-map.png#lightbox) [ ![ ] (delegates-protocols-and-events-images/04-annotation-with-callout.png "пример заметки, добавление на карту")](delegates-protocols-and-events-images/04-annotation-with-callout.png#lightbox)
 
 Перед выполняемой этого приложения, давайте начнем, просмотрев события .NET с UIKit.
 
@@ -59,15 +59,15 @@ aButton.TouchUpInside += delegate {
 
 Приведенный выше код, построенная в методе ViewDidLoad UIViewContoller. Переменная aButton ссылается кнопки, можно добавить в конструктор iOS или с кодом. На следующем рисунке показана эта кнопка, добавляемой в iOS конструктора, взяты из образца к этой статье:
 
- [ ![](delegates-protocols-and-events-images/02-interface-builder-outlet.png "Кнопка, добавленная в конструкторе iOS")](delegates-protocols-and-events-images/02-interface-builder-outlet.png)
+ [![](delegates-protocols-and-events-images/02-interface-builder-outlet.png "Кнопка, добавленная в конструкторе iOS")](delegates-protocols-and-events-images/02-interface-builder-outlet.png#lightbox)
 
 Xamarin.iOS также поддерживает стиль целевое действие подключения кода для взаимодействия, которая происходит при использовании элемента управления. Чтобы создать целевое действие кнопки "Hello", дважды щелкните его в конструкторе iOS. Откроется файл кода UIViewController и разработчик будет предложено выбрать расположение для вставки метод подключения:
 
- [ ![](delegates-protocols-and-events-images/03-interface-builder-action.png "Файл кода программной UIViewControllers")](delegates-protocols-and-events-images/03-interface-builder-action.png)
+ [![](delegates-protocols-and-events-images/03-interface-builder-action.png "Файл кода программной UIViewControllers")](delegates-protocols-and-events-images/03-interface-builder-action.png#lightbox)
 
 После выбора расположения новый метод создается и проводной доступ к элементу управления. В следующем примере сообщение записывается в консоль при нажатии кнопки:
 
- [ ![](delegates-protocols-and-events-images/05-interface-builder-action.png "Будет записано сообщение на консоль, при нажатии кнопки")](delegates-protocols-and-events-images/05-interface-builder-action.png)
+ [![](delegates-protocols-and-events-images/05-interface-builder-action.png "Будет записано сообщение на консоль, при нажатии кнопки")](delegates-protocols-and-events-images/05-interface-builder-action.png#lightbox)
 
 Дополнительные сведения о шаблоне целевое действие iOS см. разделе целевое действие « [компетенции основных компонентов приложения для iOS](http://developer.apple.com/library/ios/#DOCUMENTATION/General/Conceptual/Devpedia-CocoaApp/TargetAction.html)» в библиотеке разработчика iOS Apple.
 
@@ -170,7 +170,7 @@ Apple использует протоколы на протяжении iOS оп
 
 Таким образом `MKAnnotation` протокол используется для предоставления данных, сопровождающее заметки. Фактическое представление для заметки сам строится на основе данных в объект, который принимает `MKAnnotation` протокола. Например, текст выноски, которое появляется при нажатии кнопки на заметки (как показано на снимке экрана ниже) поставляется из `Title` свойства в классе, который реализует протокол:
 
- [ ![](delegates-protocols-and-events-images/04-annotation-with-callout.png "Пример текста для выноски, когда пользователь нажимает на заметку")](delegates-protocols-and-events-images/04-annotation-with-callout.png)
+ [![](delegates-protocols-and-events-images/04-annotation-with-callout.png "Пример текста для выноски, когда пользователь нажимает на заметку")](delegates-protocols-and-events-images/04-annotation-with-callout.png#lightbox)
 
 Как описано в следующем разделе протоколы глубокое погружение, Xamarin.iOS привязывает протоколы абстрактные классы. Для `MKAnnotation` протокола, связанного класса C# называется `MKAnnotation` для имитации имя протокола, который является подклассом `NSObject`, корневой базовый класс для CocoaTouch. Протокол требует Get и set должны быть реализованы для координаты; Тем не менее заголовок и подзаголовок являются необязательными. Таким образом, в `MKAnnotation` класса, `Coordinate` свойство *абстрактный*, запрашивать ее для реализации и `Title` и `Subtitle` свойства, отмеченные *виртуальный* , что делает их необязательно, как показано ниже:
 

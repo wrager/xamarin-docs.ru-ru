@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 523d79adbc5d4f88d4a2670b6422a58fb9256ab2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e40fd215d23e7da6f1356bba17fac84ce91007ae
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="polylines-and-parametric-equations"></a>Ломаных линий и параметрических уравнений
 
@@ -109,7 +109,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Результат также называется *арифметические спирали* поскольку смещение между каждого цикла является константой:
 
-[![](polylines-images/archimedeanspiral-small.png "Тройной снимок экрана со страницей спирали Archimedean")](polylines-images/archimedeanspiral-large.png "тройной снимок экрана со страницей Archimedean спирали")
+[![](polylines-images/archimedeanspiral-small.png "Тройной снимок экрана со страницей спирали Archimedean")](polylines-images/archimedeanspiral-large.png#lightbox "тройной снимок экрана со страницей Archimedean спирали")
 
 Обратите внимание, что `SKPath` создается в `using` блока. Это `SKPath` использует больше памяти, чем `SKPath` объектов в предыдущей программы, которые предлагает, `using` блок подходит лучше освободить все неуправляемые ресурсы.
 

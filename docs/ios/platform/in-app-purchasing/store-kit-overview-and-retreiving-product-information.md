@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 2a636a5ee2b027a2b2889c375f1fef5be67c379b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: bafada037f912007201fd5e81b17302b21de3092
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="store-kit-overview-and-retrieving-product-information"></a>Хранить Обзор пакета и извлечение сведений о продукции
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 02/27/2018
 Перед любой транзакции производится, приложение должно получить цену и описание для отображения продукта. Когда пользователь нажимает **купить**, приложение запрашивает StoreKit управляющему диалоговое окно подтверждения и идентификатор Apple ID входа. При условии, что затем транзакция завершается успешно, StoreKit уведомляет код приложения, который необходимо сохранить результат транзакции и предоставить пользователю доступ к покупке.   
 
    
- [ ![](store-kit-overview-and-retreiving-product-information-images/image14.png "В коде приложения, который необходимо сохранить результат транзакции и предоставить пользователю доступ к покупке уведомляет StoreKit")](store-kit-overview-and-retreiving-product-information-images/image14.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image14.png "В коде приложения, который необходимо сохранить результат транзакции и предоставить пользователю доступ к покупке уведомляет StoreKit")](store-kit-overview-and-retreiving-product-information-images/image14.png#lightbox)
 
 ## <a name="classes"></a>Классы
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/27/2018
    
    
    
- [ ![](store-kit-overview-and-retreiving-product-information-images/image15.png "Связи между различными классами абстрактные классы StoreKit должен быть реализован в приложении")](store-kit-overview-and-retreiving-product-information-images/image15.png)   
+ [![](store-kit-overview-and-retreiving-product-information-images/image15.png "Связи между различными классами абстрактные классы StoreKit должен быть реализован в приложении")](store-kit-overview-and-retreiving-product-information-images/image15.png#lightbox)   
    
    
    
@@ -64,7 +64,7 @@ ms.lasthandoff: 02/27/2018
 
 Для тестирования кода StoreKit необходимо выхода регулярного iTunes тестовой учетной записи и имя входа с помощью специальных тестовую учетную запись (созданных в iTunes Connect), связанного с хранилище теста. Чтобы выйти из текущей учетной записи посещение **параметры > iTunes и магазин приложений** как показано ниже:
 
- [ ![](store-kit-overview-and-retreiving-product-information-images/image16.png "Чтобы выйти из посещение текущей учетной записи iTunes параметры и хранилище приложений")](store-kit-overview-and-retreiving-product-information-images/image16.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image16.png "Чтобы выйти из посещение текущей учетной записи iTunes параметры и хранилище приложений")](store-kit-overview-and-retreiving-product-information-images/image16.png#lightbox)
  
 затем войдите с помощью тестовой учетной записи *при запросе StoreKit в приложении*:
 
@@ -72,19 +72,19 @@ ms.lasthandoff: 02/27/2018
 
 Создание тестовых пользователей в iTunes Connect щелкните **пользователей и ролей** на главной странице.
 
- [ ![](store-kit-overview-and-retreiving-product-information-images/image17.png "Чтобы создать тестовых пользователей в iTunes Connect щелкните пользователям и ролям на главной странице")](store-kit-overview-and-retreiving-product-information-images/image17.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image17.png "Чтобы создать тестовых пользователей в iTunes Connect щелкните пользователям и ролям на главной странице")](store-kit-overview-and-retreiving-product-information-images/image17.png#lightbox)
 
 Выберите **тест-инженеры "песочницы"**
 
- [ ![](store-kit-overview-and-retreiving-product-information-images/image18.png "Выбор тест-инженеры "песочницы"")](store-kit-overview-and-retreiving-product-information-images/image18.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image18.png "Выбор тест-инженеры "песочницы"")](store-kit-overview-and-retreiving-product-information-images/image18.png#lightbox)
 
 Отображается список существующих пользователей. Можно добавить нового пользователя или удалить существующую запись. Не поддерживает портала (в данный момент) позволяют просмотреть или изменить имеющиеся проверки пользователей, поэтому рекомендуется оставить хорошо запись каждого тестового пользователя, создается (особенно пароль назначения). После удаления тестового пользователя адрес электронной почты нельзя использовать повторно для другой учетной записи теста.  
    
- [ ![](store-kit-overview-and-retreiving-product-information-images/image19.png "Отображается список существующих пользователей")](store-kit-overview-and-retreiving-product-information-images/image19.png)   
+ [![](store-kit-overview-and-retreiving-product-information-images/image19.png "Отображается список существующих пользователей")](store-kit-overview-and-retreiving-product-information-images/image19.png#lightbox)   
    
  Новый тестовых пользователей имеют одинаковые атрибуты для реальных Apple ID (например, имя, пароль, секретный вопрос и ответ). Записывайте все сведения, введенные здесь. **Магазине iTunes выберите** поле определит, какие валюты и покупки из приложений язык будет использоваться при вошедшего в систему как пользователь.
 
- [ ![](store-kit-overview-and-retreiving-product-information-images/image20.png "Определяет поле магазина iTunes выберите валюты и язык для покупок в приложении пользователя")](store-kit-overview-and-retreiving-product-information-images/image20.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image20.png "Определяет поле магазина iTunes выберите валюты и язык для покупок в приложении пользователя")](store-kit-overview-and-retreiving-product-information-images/image20.png#lightbox)
 
 ## <a name="retrieving-product-information"></a>Получение сведений о продукта
 
@@ -102,7 +102,7 @@ ms.lasthandoff: 02/27/2018
 
 Общее взаимодействие выглядит следующим образом ( **StoreKit** встроена в iOS и **App Store** представляет серверы Apple):
 
- [ ![](store-kit-overview-and-retreiving-product-information-images/image21.png "Получение информации о продукте графа")](store-kit-overview-and-retreiving-product-information-images/image21.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image21.png "Получение информации о продукте графа")](store-kit-overview-and-retreiving-product-information-images/image21.png#lightbox)
 
 ### <a name="displaying-product-information-example"></a>Отображение данных продукта, пример
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 02/27/2018
    
    
    
- [ ![](store-kit-overview-and-retreiving-product-information-images/image23.png "В основном окне отображаются продукты сведения, полученные из магазина приложений")](store-kit-overview-and-retreiving-product-information-images/image23.png)   
+ [![](store-kit-overview-and-retreiving-product-information-images/image23.png "В основном окне отображаются продукты сведения, полученные из магазина приложений")](store-kit-overview-and-retreiving-product-information-images/image23.png#lightbox)   
    
    
    
@@ -235,7 +235,7 @@ public override void RequestFailed (SKRequest request, NSError error)
 
 На этом снимке экрана показан пример приложения, сразу после загрузки (если доступен не сведения о продукте):
 
- [ ![](store-kit-overview-and-retreiving-product-information-images/image24.png "Пример приложения, сразу после загрузки, когда отсутствует информация о продукции")](store-kit-overview-and-retreiving-product-information-images/image24.png)
+ [![](store-kit-overview-and-retreiving-product-information-images/image24.png "Пример приложения, сразу после загрузки, когда отсутствует информация о продукции")](store-kit-overview-and-retreiving-product-information-images/image24.png#lightbox)
 
 ## <a name="invalid-products"></a>Недопустимый продуктов
 
@@ -296,7 +296,7 @@ buy5Button.SetTitle(String.Format(Buy, product.LocalizedPrice()), UIControlState
    
    
    
- [ ![](store-kit-overview-and-retreiving-product-information-images/image25.png "Два разных iTunes тестовые учетные записи, показывающая конкретные результаты языка")](store-kit-overview-and-retreiving-product-information-images/image25.png)   
+ [![](store-kit-overview-and-retreiving-product-information-images/image25.png "Два разных iTunes тестовые учетные записи, показывающая конкретные результаты языка")](store-kit-overview-and-retreiving-product-information-images/image25.png#lightbox)   
    
    
    

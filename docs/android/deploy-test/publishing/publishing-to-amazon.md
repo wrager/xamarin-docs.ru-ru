@@ -7,21 +7,20 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/21/2017
-ms.openlocfilehash: 6b4958c6a82b824f19cc041b124e79034eba4c86
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9bae3c56c5f6c445618f41d877c3188a86167be1
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="publishing-to-the-amazon-app-store"></a>Публикация в Магазин Amazon App Store
 
 В рамках программы распространения мобильных приложений Amazon разработчики могут публиковать свои приложения на площадке Amazon. В этом разделе дается краткое описание Магазина Amazon App Store для Android. 
 
-[ ![Снимок экрана Магазина Amazon App Store](publishing-to-amazon-images/amazon-app-store.png)](publishing-to-amazon-images/amazon-app-store.png)
+[ ![Снимок экрана Магазина Amazon App Store](publishing-to-amazon-images/amazon-app-store.png)](publishing-to-amazon-images/amazon-app-store.png#lightbox)
 
 Amazon не ограничивает размер пакетов APK. Однако если размер пакета APK превышает 30 МБ, для распространения будет использоваться FTP, а не портал распространения мобильных приложений Amazon.
 
-<a name="Submitting_Apps:_Binary_Info" />
 
 ## <a name="submitting-apps-binary-info"></a>Отправка приложений: сведения о двоичных файлах
 
@@ -34,7 +33,6 @@ Amazon не ограничивает размер пакетов APK. Однак
 -  Можно предоставить обновления для пяти видеороликов.
 
 
-<a name="Approval_Process" />
 
 ## <a name="approval-process"></a>Процесс утверждения
 

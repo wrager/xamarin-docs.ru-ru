@@ -3,14 +3,15 @@ title: "Сводка Глава 10. Расширения разметки XAML"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 575EAE55-BD4D-470F-A583-3D065FA102E2
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 8ded1dba0e1d4d1a9062d0f75935b3d748a83370
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3e9f630fbfc9f7a1d6346b6dd8308504a6806e1a
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-10-xaml-markup-extensions"></a>Сводка Глава 10. Расширения разметки XAML
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 02/27/2018
 
 В большинстве случаев вы будете использовать [ `StaticResource` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.StaticResourceExtension/) расширения разметки для ссылки на элемент из словаря ресурсов, как показано в предыдущем [ **ResourceSharing** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10/ResourceSharing) образца . Можно использовать `StaticResourceExtension` элемент или `StaticResource` заключены в фигурные скобки:
 
-[![Снимок экрана: три общий доступ к ресурсам](images/ch10fg03-small.png "общий доступ к ресурсам")](images/ch10fg03-large.png "общий доступ к ресурсам")
+[![Снимок экрана: три общий доступ к ресурсам](images/ch10fg03-small.png "общий доступ к ресурсам")](images/ch10fg03-large.png#lightbox "общий доступ к ресурсам")
 
 Не следует путать `x:Static` расширения разметки и `StaticResource` расширения разметки.
 

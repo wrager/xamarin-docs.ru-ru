@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 2d9c2b27de7addc0ed1faeed038db81e2470087f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: da9b9230a466c70cd584a00af848ffe87dacbc5b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="coreimage"></a>CoreImage
 
@@ -214,7 +214,7 @@ foreach (var filter in filters){
 
 Список категорий вывод выглядит следующим образом в симуляторе — можно прокручивать список, чтобы увидеть все фильтры и их параметры.
 
- [ ![](introduction-to-coreimage-images/coreimage05.png "Список категорий вывод выглядит следующим образом в симуляторе")](introduction-to-coreimage-images/coreimage05.png)
+ [![](introduction-to-coreimage-images/coreimage05.png "Список категорий вывод выглядит следующим образом в симуляторе")](introduction-to-coreimage-images/coreimage05.png#lightbox)
 
 Каждый фильтр в списке предоставленный как класс в Xamarin.iOS, поэтому можно также изучить API Xamarin.iOS.CoreImage в браузере сборку или с помощью автозаполнения в Visual Studio или Visual Studio для Mac. 
 

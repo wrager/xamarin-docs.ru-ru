@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 9c9032b3206fa35d264bd69c94b7882e877b334f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
-ms.translationtype: HT
+ms.openlocfilehash: ce850b7890265b82774534ca0daaf25bed7e0c2d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="watchos-troubleshooting"></a>watchOS Устранение неполадок
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/27/2018
 - Не удается добавить два `WKNotificationControllers` раскадровки.
     Обходной путь: `notificationCategory` всегда вставляется элемент в раскадровке XML с тем же `id`. Чтобы обойти эту проблему, можно добавить контроллеры уведомления два (или более), откройте файл раскадровки в текстовом редакторе и вручную изменить `id` элемент быть уникальным.
 
-    [ ![](troubleshooting-images/duplicate-id-sml.png "Открытие раскадровки файл в текстовом редакторе и вручную изменить как уникальный идентификатор элемента")](troubleshooting-images/duplicate-id.png)
+    [![](troubleshooting-images/duplicate-id-sml.png "Открытие раскадровки файл в текстовом редакторе и вручную изменить как уникальный идентификатор элемента")](troubleshooting-images/duplicate-id.png#lightbox)
 
 - Может появится сообщение об ошибке «приложение не была построена» при попытке запустить приложение. Это происходит после **Очистить** Если имеет значение запускаемого проекта в проект расширения контрольных значений.
     Исправление заключается в выборе **сборки > перестроить все** и повторном запуске приложения.
@@ -125,7 +125,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 3. Теперь можно перетаскивать элементы управления на контроллер интерфейса (например) подписи и кнопки), но нельзя создать розетки или действия еще, так как не **.h** файл заголовка. Следующие шаги вызовет необходимая **.h** создания файла заголовка.
 
-    ![](troubleshooting-images/add-2.png "")
+    ![](troubleshooting-images/add-2.png "Кнопки макета")
 
 4. Закройте раскадровку и вернуться в Visual Studio для Mac. Создайте новый файл C# **MyInterfaceController.cs** (или любое имя по своему усмотрению) в **смотреть расширения приложения** проекта (не Контрольное значение само приложение где раскадровки). Добавьте следующий код (обновление пространства имен, classname и имени конструктора):
 

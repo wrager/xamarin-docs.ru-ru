@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/06/2016
-ms.openlocfilehash: ad9129e06f43eea69518c4d876edc7cfd462f4e0
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: ffde89558495c4b9ccb9ec41761b5fc7ca53db38
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="localization"></a>Локализация
 
@@ -71,7 +71,7 @@ _Xamarin.Forms приложений можно локализовать с по�
 
 Выберите понятное имя, например **AppResources** и нажмите клавишу **ОК**.
 
-[ ![Добавьте файл ресурсов](localization-images/resx-new-file-sml.png "новое диалоговое окно файла")](localization-images/resx-new-file.png "диалоговое окно создания файла")
+[![Добавьте файл ресурсов](localization-images/resx-new-file-sml.png "новое диалоговое окно файла")](localization-images/resx-new-file.png#lightbox "диалоговое окно создания файла")
 
 В проект будут добавлены два файла:
 
@@ -88,32 +88,32 @@ _Xamarin.Forms приложений можно локализовать с по�
 
 Выберите **AppResources.resx** файла и отобразить **свойства** прокладки, чтобы узнать, где этот инструмент сборки настройки. На снимке экрана ниже показано **пользовательский инструмент: ResXFileCodeGenerator**.
 
-[[ide name="xs]]
 
-[ ![](localization-images/xs-resx-internal-sml.png "Панель свойств для AppResources.Resx")](localization-images/xs-resx-internal.png)
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[[/ide]]
+[![](localization-images/vs-resx-internal-sml.png "Окно свойств для AppResources.Resx")](localization-images/vs-resx-internal.png#lightbox)
 
-[[ide name="vs]]
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](localization-images/vs-resx-internal-sml.png "Окно свойств для AppResources.Resx")](localization-images/vs-resx-internal.png)
+[![](localization-images/xs-resx-internal-sml.png "Панель свойств для AppResources.Resx")](localization-images/xs-resx-internal.png#lightbox)
 
-[[/ide]]
+-----
 
 Чтобы сделать свойства строго типизированных строки `public`, необходимо вручную изменить конфигурацию **пользовательский инструмент: PublicResXFileCodeGenerator**, как показано на снимке экрана ниже:
 
 
-[[ide name="xs]]
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](localization-images/xs-resx-public-sml.png "Панель свойств для AppResources.Resx")](localization-images/xs-resx-public.png)
+[![](localization-images/vs-resx-public-sml.png "Окно свойств для AppResources.Resx")](localization-images/vs-resx-public.png#lightbox)
 
-[[/ide]]
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[[ide name="vs]]
+[![](localization-images/xs-resx-internal-sml.png "Панель свойств для AppResources.Resx")](localization-images/xs-resx-internal.png#lightbox)
 
-[ ![](localization-images/vs-resx-public-sml.png "Окно свойств для AppResources.Resx")](localization-images/vs-resx-public.png)
 
-[[/ide]]
+[![](localization-images/xs-resx-public-sml.png "Панель свойств для AppResources.Resx")](localization-images/xs-resx-public.png#lightbox)
+
+-----
 
 Это изменение является необязательным и используется только требуется, если требуется ссылаться локализованные строки в разных сборках (например, если поместить RESX-файлы в другой сборке в код). В примере для этого раздела оставляет строки `internal` так, как они определены в той же сборке Xamarin.Forms PCL, где они используются.
 
@@ -605,13 +605,13 @@ namespace UsingResxLocalization.WinPhone
 
 Правой кнопкой мыши проект Windows Phone и выберите **свойства**. В **приложения** вкладке деления **поддерживаемых языков и региональных параметров** , поддерживаемых приложением:
 
-[ ![](localization-images/winphone-projectproperties-sml.png "Свойства - поддерживаемых языков и региональных параметров проекта")](localization-images/winphone-projectproperties.png "свойства - поддерживаемых языков и региональных параметров проекта")
+[![](localization-images/winphone-projectproperties-sml.png "Свойства - поддерживаемых языков и региональных параметров проекта")](localization-images/winphone-projectproperties.png#lightbox "свойства - поддерживаемых языков и региональных параметров проекта")
 
 ##### <a name="wmappmanifestxml"></a>WMAppManifest.xml
 
 Разверните узел свойств в проекте Windows Phone и дважды щелкните на **WMAppManifest.xml** файла. Щелкните **упаковки** вкладку и деления всех языков, поддерживаемых приложением.
 
-[ ![](localization-images/winphone-wmappmanifest-sml.png "Файл WMAppManifest.xml - поддерживаемые языки")](localization-images/winphone-wmappmanifest.png "WMAppManifest.xml - поддерживаемые языки")
+[![](localization-images/winphone-wmappmanifest-sml.png "Файл WMAppManifest.xml - поддерживаемые языки")](localization-images/winphone-wmappmanifest.png#lightbox "WMAppManifest.xml - поддерживаемые языки")
 
 ##### <a name="assemblyinfocs"></a>AssemblyInfo.cs
 

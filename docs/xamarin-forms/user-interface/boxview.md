@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2017
-ms.openlocfilehash: 78ccb117e621b89d85e701b2ea027115f8681dc9
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4d50ea5c3db0f5a141f1b48cf0a948c10b63f7f0
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="boxview"></a>BoxView
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 02/27/2018
 
 Ниже приведен результат:
 
-[![Основные BoxView](boxview-images/basicboxview-small.png "основные BoxView")](boxview-images/basicboxview-large.png "BasicBoxView")
+[![Основные BoxView](boxview-images/basicboxview-small.png "основные BoxView")](boxview-images/basicboxview-large.png#lightbox "BasicBoxView")
 
 Если `VerticalOptions` и `HorizontalOptions` свойства будут удалены из `BoxView` тег или получают `Fill`, то `BoxView` становится ограничен по размеру страницы и дополняет для заполнения страницы.
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 02/27/2018
 
 Все разметка, являющиеся дочерними для `StackLayout`. Эта разметка состоит из нескольких типов декоративного `BoxView` элементы, используемые с `Label` элемента:
 
-[![Оформление текста](boxview-images/textdecoration-small.png "оформления текста")](boxview-images/textdecoration-large.png "оформление текста")
+[![Оформление текста](boxview-images/textdecoration-small.png "оформления текста")](boxview-images/textdecoration-large.png#lightbox "оформление текста")
 
 Стильная заголовок в верхней части страницы достигается с `AbsoluteLayout` , дочерние элементы которого являются четыре `BoxView` элементы и `Label`, все из которых назначены определенные расположения и размеры:
 
@@ -168,7 +168,7 @@ ms.lasthandoff: 02/27/2018
 
 `BoxView` Удобен для отображения цветов. Эта программа использует `ListView` Чтобы перечислить все открытые статические только для чтения поля Xamarin.Forms `Color` структуры:
 
-[![Цвета ListView](boxview-images/listviewcolors-small.png "цвета ListView")](boxview-images/listviewcolors-large.png "цвета ListView")
+[![Цвета ListView](boxview-images/listviewcolors-small.png "цвета ListView")](boxview-images/listviewcolors-large.png#lightbox "цвета ListView")
 
 [ **ListViewColors** ](https://developer.xamarin.com/samples/xamarin-forms/BoxView/ListViewColors/) программа включает класс с именем `NamedColor`. Статический конструктор использует отражение для доступа к все поля `Color` структуры и создать `NamedColor` объекта для каждого из них. Эти значения хранятся в статический `All` свойство:
 
@@ -350,7 +350,7 @@ class LifeCell : BoxView
 
 **GameOfLife** также `LifeGrid` класс, который включает большую часть логики игры и `MainPage` класс, который обрабатывает визуальные элементы программы. К ним относятся наложение, который описывает правила игры. Здесь — это программа, в действии, показывающая несколько сотен `LifeCell` объектов на странице:
 
-[![Игра жизненного цикла](boxview-images/gameoflife-small.png "игры жизни")](boxview-images/gameoflife-large.png "игры жизненного цикла")
+[![Игра жизненного цикла](boxview-images/gameoflife-small.png "игры жизни")](boxview-images/gameoflife-large.png#lightbox "игры жизненного цикла")
 
 <a name="digitalclock" />
 
@@ -358,7 +358,7 @@ class LifeCell : BoxView
 
 [ **DotMatrixClock** ](https://developer.xamarin.com/samples/xamarin-forms/BoxView/DotMatrixClock/) программа создает 210 `BoxView` элементы для имитации точек проверенное отображения матричный 5 по 7. Время в книжном или альбомном режиме можно считывать, но больше, в альбомной ориентации:
 
-[![Матричный часы](boxview-images/dotmatrixclock-small.png "часов матричный")](boxview-images/dotmatrixclock-large.png "матричный часов")
+[![Матричный часы](boxview-images/dotmatrixclock-small.png "часов матричный")](boxview-images/dotmatrixclock-large.png#lightbox "матричный часов")
 
 В файле XAML немногим больше, чем создать экземпляр `AbsoluteLayout` для часов:
 
@@ -594,7 +594,7 @@ public partial class MainPage : ContentPage
 
 Часы матричный может показаться очевидным приложения `BoxView`, но `BoxView` элементы также поддерживают реализации аналогично часам со стрелками:
 
-[![Часы BoxView](boxview-images/boxviewclock-small.png "часы BoxView")](boxview-images/boxviewclock-large.png "BoxView часов")
+[![Часы BoxView](boxview-images/boxviewclock-small.png "часы BoxView")](boxview-images/boxviewclock-large.png#lightbox "BoxView часов")
 
 Все визуальные элементы в [ **BoxViewClock** ](https://developer.xamarin.com/samples/xamarin-forms/BoxView/BoxViewClock/) программы являются потомками `AbsoluteLayout`. Эти элементы имеют размер с помощью `LayoutBounds` присоединенного свойства и повернутый с использованием `Rotation` свойство. 
 

@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 6b4d63637eae7c1719f3f6e525327d416ddff59d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ce5a7976f5bac68ca01b30a8d437aa83b8360580
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-styles"></a>Введение в стили
 
@@ -84,7 +84,7 @@ public class NoStylesPageCS : ContentPage
 
 Каждый [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) экземпляр имеет идентичные значения свойств внешнего вида текста, отображаемого элементом управления `Label`. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](introduction-images/no-styles.png "Метка внешний вид без стили")](introduction-images/no-styles-large.png "метки внешний вид без стили")
+[![](introduction-images/no-styles.png "Метка внешний вид без стили")](introduction-images/no-styles-large.png#lightbox "метки внешний вид без стили")
 
 Настройка внешнего вида каждого отдельного элемента управления может быть повторяющихся и подвержены ошибкам. Вместо этого стиля могут создаваться, определяет внешний вид, а затем применяются к обязательные элементы управления.
 

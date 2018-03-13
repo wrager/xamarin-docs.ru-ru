@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/07/2017
-ms.openlocfilehash: 05a162dab3b427ec345f22818b6c6d9df82c498b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4b2a470d7fe2a1f9d4b8df40836c934547adf614
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-buttons"></a>Работа с кнопками
 
@@ -21,7 +21,7 @@ _В этой статье описывается проектирование и
 
 Использовать экземпляр `UIButton` класс для создания может иметь фокус, доступный для выбора кнопки в окне tvOS. Когда пользователь выбирает кнопку, он отправляет сообщение действия целевого объекта разрешить входных ваш ответ приложения Xamarin.tvOS для пользователя.
 
-[ ![](buttons-images/buttons01.png "Пример кнопки")](buttons-images/buttons01.png)
+[![](buttons-images/buttons01.png "Пример кнопки")](buttons-images/buttons01.png#lightbox)
 
 Дополнительные сведения о работе с фокусом и переход с удаленной Siri см. в разделе нашей [работа с навигации и фокус](~/ios/tvos/app-fundamentals/navigation-focus.md) и [Siri удаленного и контроллеров Bluetooth](~/ios/tvos/platform/remote-bluetooth.md) документации.
 
@@ -31,7 +31,7 @@ _В этой статье описывается проектирование и
 
 В tvOS кнопки используются для действий конкретного приложения и может содержать заголовок, значок или оба. Когда пользователь переходит с помощью пользовательского интерфейса приложения [Siri удаленного](~/ios/tvos/platform/remote-bluetooth.md#The-Siri-Remote), фокус перемещается к указанной кнопки, сделав его изменение цвета текста и фона. Тень также применяется к кнопке Добавление объемные эффекты, чтобы он отображался расти выше остальная часть пользовательского интерфейса.
 
-[ ![](buttons-images/buttons01.png "Пример кнопки")](buttons-images/buttons01.png)
+[![](buttons-images/buttons01.png "Пример кнопки")](buttons-images/buttons01.png#lightbox)
 
 Apple имеет следующие рекомендации по работе с кнопками.
 
@@ -70,19 +70,19 @@ Apple рекомендует использовать простой, высок
 1. В **обозревателе решений**, дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
 1. Перетащите **кнопку** из **библиотеки** и поместите его в представлении: 
 
-    [ ![](buttons-images/storyboard01.png "Кнопки")](buttons-images/storyboard01.png)
+    [![](buttons-images/storyboard01.png "Кнопки")](buttons-images/storyboard01.png#lightbox)
 1. В **свойства обозревателя**, можно настроить несколько свойств кнопки, такие как его **заголовок** и **цвет текста**: 
 
-    [ ![](buttons-images/storyboard02.png "Свойства кнопок")](buttons-images/storyboard02.png)
+    [![](buttons-images/storyboard02.png "Свойства кнопок")](buttons-images/storyboard02.png#lightbox)
 1. Теперь, переключитесь в **вкладку события** и обработке **событий** из **кнопку** и назовите его `ButtonPressed`: 
 
-    [ ![](buttons-images/storyboard03.png "Вкладка «событий»")](buttons-images/storyboard03.png)
+    [![](buttons-images/storyboard03.png "Вкладка «событий»")](buttons-images/storyboard03.png#lightbox)
 1. Можно автоматически переключаться на `ViewController.cs` представление, где можно размещать в коде с помощью нового действия **копирование** и **работу** клавиши со стрелками: 
 
-    [ ![](buttons-images/storyboard04.png "Размещение нового действия в коде")](buttons-images/storyboard04.png)
+    [![](buttons-images/storyboard04.png "Размещение нового действия в коде")](buttons-images/storyboard04.png#lightbox)
 1. Нажмите клавишу **ввод** для выбора расположения: 
 
-    [ ![](buttons-images/storyboard05.png "Редактор кода")](buttons-images/storyboard05.png)
+    [![](buttons-images/storyboard05.png "Редактор кода")](buttons-images/storyboard05.png#lightbox)
 1. Сохраните изменения ко всем файлам.
 
 
@@ -91,13 +91,13 @@ Apple рекомендует использовать простой, высок
 1. В **обозревателе решений**, дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
 1. Перетащите **кнопку** из **библиотеки** и поместите его в представлении: 
 
-    [ ![](buttons-images/storyboard01vs.png "Кнопки")](buttons-images/storyboard01vs.png)
+    [![](buttons-images/storyboard01vs.png "Кнопки")](buttons-images/storyboard01vs.png#lightbox)
 1. В **свойства обозревателя**, можно настроить несколько свойств кнопки, такие как его **заголовок** и **цвет текста**: 
 
-    [ ![](buttons-images/storyboard02vs.png "Обозреватель свойств")](buttons-images/storyboard02vs.png)
+    [![](buttons-images/storyboard02vs.png "Обозреватель свойств")](buttons-images/storyboard02vs.png#lightbox)
 1. Теперь, переключитесь в **вкладку события** и обработке **событий** из **кнопку** и назовите его `ButtonPressed`: 
 
-    [ ![](buttons-images/storyboard03vs.png "Вкладка «событий»")](buttons-images/storyboard03vs.png)
+    [![](buttons-images/storyboard03vs.png "Вкладка «событий»")](buttons-images/storyboard03vs.png#lightbox)
 1. Сохраните изменения ко всем файлам.
 
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 67bd1caf26c441e2a89def41ce3189b0dd67d7b1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: dc41c70495e40235d7acffa56c1255bfd074ca0a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="advanced-manual-real-world-example"></a>Расширенный пример (вручную)
 
@@ -130,7 +130,7 @@ Done.
 
 Кроме того, мы указали `-c -Ibuild/headers`. Во-первых `-c` аргумент сообщает Sharpie цель остановить интерпретации аргументов командной строки и передать все последующие аргументы _компилятору clang_. Таким образом `-Ibuild/Headers` включает аргумент компилятора clang, который указывает, что clang для поиска в списке `build/Headers`, являющееся проживания POP заголовки. Без этого аргумента clang не будет знать, где находятся файлы, `POP.h` — `#import`ing. _Почти все «проблемы» с помощью Sharpie цель сводится для выяснения дальнейших для передачи clang_.
 
-###<a name="completing-the-binding"></a>Завершение работы привязки
+### <a name="completing-the-binding"></a>Завершение работы привязки
 
 Теперь создана цели Sharpie `Binding/ApiDefinitions.cs` и `Binding/StructsAndEnums.cs` файлов.
 

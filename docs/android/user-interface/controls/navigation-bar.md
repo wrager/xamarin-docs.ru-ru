@@ -7,18 +7,18 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 05/01/2017
-ms.openlocfilehash: 396ed31cba336976342a8dfb26f31eeda20cf494
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: fe76c93afc149553e44b5e8fa29a21767becf5c5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="navigation-bar"></a>Панель переходов
 
 Android 4 появился новый компонент интерфейса пользователя системы, называемый *панель навигации*, который предоставляет элементы управления навигацией на устройствах, которые не содержат кнопок для **Главная**, **назад** , и **меню**.
 На следующем рисунке показан на панели навигации, от простых хранилища устройства:
 
- [ ![Пример панели навигации Android](navigation-bar-images/19-navbar.png)](navigation-bar-images/19-navbar.png)
+ [![Пример панели навигации Android](navigation-bar-images/19-navbar.png)](navigation-bar-images/19-navbar.png#lightbox)
 
 Доступны несколько новых флагов, управления видимостью панели навигации и ее элементов управления, а также видимость панель системы, которая была введена в Android 3. Флаги определяются в `Android.View.View` класса и перечислены ниже:
 
@@ -31,7 +31,7 @@ Android 4 появился новый компонент интерфейса п
 
 В следующем примере показано простое приложение, щелкнув любую из кнопок изменения где `SystemUiVisibility`:
 
- [ ![Демонстрация Visible половинной и скрытые SystemUiVisibility снимки экрана](navigation-bar-images/18-systemuivisibility.png)](navigation-bar-images/18-systemuivisibility.png)
+ [![Демонстрация Visible половинной и скрытые SystemUiVisibility снимки экрана](navigation-bar-images/18-systemuivisibility.png)](navigation-bar-images/18-systemuivisibility.png#lightbox)
 
 Код для изменения `SystemUiVisibility` присваивает свойству `TextView` из каждой кнопки нажмите кнопку обработчика событий, как показано ниже:
 

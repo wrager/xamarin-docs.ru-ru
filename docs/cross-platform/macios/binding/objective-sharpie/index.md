@@ -3,22 +3,20 @@ title: "Цели Sharpie"
 description: "В этом разделе содержатся вводные сведения о цели Sharpie, Xamarin средство командной строки, используемые для автоматизации процесса создания привязки в библиотеку Objective-C"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 8A832A76-A770-1A7C-24BA-B3E6F57617A0
+ms.assetid: 9C0A932C-7601-4357-B3F7-62ABAC835019
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 10/11/2017
-ms.openlocfilehash: 02eebb7d8f579a207b6777771dbea223d30211cc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: bcb7be862537a002e5a80462702ed1f2f8497cda
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="objective-sharpie"></a>Цели Sharpie
 
 _В этом разделе содержатся вводные сведения о цели Sharpie, Xamarin средство командной строки, используемые для автоматизации процесса создания привязки в библиотеку Objective-C_
-
-<style type="text/css"> синий .terminal {цвет: rgb(10,96,254);} .terminal зеленый {цвет: rgb(12,156,26);} .terminal magenta {цвет: rgb(152,12,103);} </style>
 
 - [Общие сведения о](#overview) & [журнала](#history)
 - [Начало работы](get-started.md)
@@ -28,7 +26,7 @@ _В этом разделе содержатся вводные сведения
 - [Полное Пошаговое руководство](~/ios/platform/binding-objective-c/walkthrough.md)
 - [История выпусков](releases.md)
 
-#<a name="overview"></a>Обзор
+## <a name="overview"></a>Обзор
 
 Цели Sharpie — это средство командной строки для начальной загрузки на первом этапе привязки.
 Он работает путем синтаксического анализа заголовочные файлы для сопоставления открытого API-интерфейса в собственной библиотеки [определения привязки](~/cross-platform/macios/binding/objective-c-libraries.md#The_API_definition_file) (этот процесс, ранее вручную выполненной).
@@ -40,7 +38,7 @@ _В этом разделе содержатся вводные сведения
 
 
 
-#<a name="history"></a>Журнал
+## <a name="history"></a>Журнал
 
 Мы были развивается и с помощью Sharpie цель внутренним образом в Xamarin за последние три года. Благодаря возможности Sharpie цель API-интерфейсы появившиеся в Xamarin.iOS и Xamarin.Mac начиная с iOS 8, Mac OS X 10.10 и watchOS 2.0 был загружен, полностью с целью Sharpie. Xamarin во многом зависит от цели Sharpie внутренним образом для создания собственных продуктов.
 

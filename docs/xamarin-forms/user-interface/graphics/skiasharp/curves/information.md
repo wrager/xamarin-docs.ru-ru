@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 09/12/2017
-ms.openlocfilehash: 992e6583d64f078c0cd693765a1512c3e41a620a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c7edf0c8e563dad25693d184d3a44a3e66466126
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисления
 
@@ -110,7 +110,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 `Length` Свойств только что созданного `SKPathMeasure` объект получает длину пути. Это получается делением `baseTextWidth` значение (то есть ширину текст, основанный на размер шрифта 10), а затем умножается на размер 10 основной текст. Результатом является новый размер текста для отображения текста по этому пути:
 
-[![](information-images/pathlength-small.png "Тройной снимок экрана со страницей длина пути")](information-images/pathlength-large.png "тройной снимок экрана со страницей длина пути")
+[![](information-images/pathlength-small.png "Тройной снимок экрана со страницей длина пути")](information-images/pathlength-large.png#lightbox "тройной снимок экрана со страницей длина пути")
 
 Кривая Безье увеличиваются длинный или короткий, вы увидите изменение размера текста.
 
@@ -136,7 +136,7 @@ Boolean GetMatrix (Single distance, out SKMatrix matrix, SKPathMeasureMatrixFlag
 
 **Половина канала видел** перемещает фигуру на видел, которая кажется на велосипеде вперед и назад по кривую Безье третьего анимирует страницы:
 
-[![](information-images/unicyclehalfpipe-small.png "Тройной снимок экрана со страницей половина канала видел")](information-images/unicyclehalfpipe-large.png "тройной снимок экрана со страницей видел половина-канала")
+[![](information-images/unicyclehalfpipe-small.png "Тройной снимок экрана со страницей половина канала видел")](information-images/unicyclehalfpipe-large.png#lightbox "тройной снимок экрана со страницей видел половина-канала")
 
 `SKPaint` Объект, используемый для срезом половина канала и видел определяется как поле в [ `UnicycleHalfPipePage` ]() класса. Также определяется `SKPath` объект для видел:
 
@@ -425,7 +425,7 @@ static class PathExtensions
 
 **GlobularText** образец использует этот метод расширения, на первый взгляд обтекание полушария в объемные эффекты:
 
-[![](information-images/globulartext-small.png "Тройной снимок экрана со страницей Globular текст")](information-images/globulartext-large.png "тройной снимок экрана со страницей Globular текста")
+[![](information-images/globulartext-small.png "Тройной снимок экрана со страницей Globular текст")](information-images/globulartext-large.png#lightbox "тройной снимок экрана со страницей Globular текста")
 
 [ `GlobularTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/GlobularTextPage.cs) Конструктор класса выполняет это преобразование. Он создает `SKPaint` объекта для текста, а затем происходит получение `SKPath` объекта из `GetTextPath` метод. — Это путь, переданный `CloneWithTransform` метод расширения, а также функцию преобразования: 
 

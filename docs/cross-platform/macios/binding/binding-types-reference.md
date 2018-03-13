@@ -4,26 +4,22 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: C6618E9D-07FA-4C84-D014-10DAC989E48D
 ms.technology: xamarin-cross-platform
-author: asb3993
-ms.author: amburns
-ms.date: 06/26/2017
-ms.openlocfilehash: c79b2277073996a580b455bde519ea959795d7ef
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+author: bradumbaugh
+ms.author: brumbaug
+ms.date: 03/06/2018
+ms.openlocfilehash: 6042ab9aa861a08da421140857459b02a78f7c70
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="binding-types-reference-guide"></a>Привязки типов Справочник
-
-[//]: # (Исходный файл находится под https://github.com/xamarin/xamarin-macios/tree/master/docs/website/)
-[//]: # (Это позволяет всем участникам (включая внешние) для отправки, с помощью PR обновления в соответствии с изменениями средства документации) [ // ]: # (изменения за пределами xamarin macios master и будут потеряны на будущее обновления))
 
 В этом документе описывается список атрибутов, которые можно использовать для создания заметок к API файлов контракт для привязки и создать код
 
 Контракты Xamarin.iOS и Xamarin.Mac API на языке C# главным образом для определений интерфейса, которые определяют способ, код Objective-C будет отображена в C#. Процесс включает в себя сочетание объявления интерфейсов, а также некоторые основные определения которых может потребоваться контракта API-интерфейса. Введение типов привязки см. в разделе нашей дополнительное руководство по [библиотеки C цели привязки](~/cross-platform/macios/binding/objective-c-libraries.md).
 
-
-# <a name="type-definitions"></a>Определения типов
+## <a name="type-definitions"></a>Определения типов
 
 Синтаксис:
 
@@ -41,7 +37,7 @@ interface MyType [: Protocol1, Protocol2] {
 
 Показано как объявление Objective-C `UITextField` должны быть определены в Xamarin.iOS контракт:
 
-```csharp
+```objc
 @interface UITextField : UIControl <UITextInput> {
 
 }
@@ -57,10 +53,8 @@ interface UITextField : UITextInput {
 
 Применение других атрибутов к интерфейсу, а также для настройки атрибута BaseType можно управлять многие другие аспекты создания кода.
 
- <a name="Generating_Events" />
 
-
-## <a name="generating-events"></a>Создание событий
+### <a name="generating-events"></a>Создание событий
 
 Одной из особенностей разработки Xamarin.iOS и Xamarin.Mac API — что мы сопоставление классы делегатов Objective-C, как C# события и обратные вызовы. Пользователи могут выбирать в каждого экземпляра следует ли применять шаблон программирования Objective-C, назначив свойствами, например **делегат** экземпляр класса, который реализует различные методы, Objective-c. Среда выполнения будет вызывать метод, или выбрав C#-стиля, событиях и свойствах.
 
@@ -162,10 +156,8 @@ public interface UIScrollViewDelegate {
 
 В дополнение к `DefaultValue` атрибут, можно также использовать `DefaultValueFromArgument` , направляет генератора возвращаемое значение указанного параметра в вызове или `NoDefaultValue` параметр, который указывает, что генератор, нет значения по умолчанию.
 
- <a name="BaseTypeAttribute" />
 
-
-## <a name="basetypeattribute"></a>Атрибут BaseTypeAttribute
+### <a name="basetypeattribute"></a>Атрибут BaseTypeAttribute
 
 Синтаксис:
 
@@ -182,7 +174,7 @@ public class BaseTypeAttribute : Attribute {
 }
 ```
 
-### <a name="basetypename"></a>BaseType.Name
+#### <a name="basetypename"></a>BaseType.Name
 
 Использовать `Name` свойства, имя, которое будет привязан этот тип в мире Objective-C. Обычно используется для задания имени, которые соответствуют рекомендации по разработке .NET Framework, однако которой сопоставляется с именем в Objective-C, соглашению, не тип C#.
 
@@ -196,8 +188,7 @@ interface NSUrlConnection {
 
 Указанное имя указывается, использовать в качестве значения для создаваемого `[Register]` атрибут в привязке. Если `Name` не указан, используется короткое имя типа в качестве значения для `Register` атрибута в созданные выходные данные.
 
-
-### <a name="basetypeevents-and-basetypedelegates"></a>BaseType.Events и BaseType.Delegates
+#### <a name="basetypeevents-and-basetypedelegates"></a>BaseType.Events и BaseType.Delegates
 
 Эти свойства используются для формирования C#-стиля в созданных классов событий. Они используются для связи с классом делегата Objective-C данного класса. Возникает часто, где класс использует класс делегата для отправки уведомлений и событий. Например `BarcodeScanner` бы дополнения `BardodeScannerDelegate` класса. `BarcodeScanner` Класс обычно есть свойство «делегат», можно назначить экземпляр `BarcodeScannerDelegate` в то время как это работает, может потребоваться предоставить для пользователей C#-как интерфейс в стиле событий, а также в таких случаях следует использовать `Events` и `Delegates` свойства `BaseType` атрибута.
 
@@ -216,10 +207,8 @@ public interface UIAccelerometerDelegate {
 }
 ```
 
- <a name="BaseType.KeepRefUntil" />
 
-
-### <a name="basetypekeeprefuntil"></a>BaseType.KeepRefUntil
+#### <a name="basetypekeeprefuntil"></a>BaseType.KeepRefUntil
 
 Если этот атрибут применяется, когда создаются новые экземпляры этого класса, экземпляр этого объекта будут храниться вокруг до метод, заданный параметром `KeepRefUntil` был вызван. Это полезно для повышения удобства использования API-функций, если не хотите, чтобы ваши пользователи, чтобы сохранить ссылку на объект вокруг для использования в коде. Значение этого свойства является имя метода в `Delegate` класса, поэтому его же следует использовать в сочетании с событиями и `Delegates` также свойства.
 
@@ -242,25 +231,20 @@ public interface UIActionSheetDelegate {
 }
 ```
 
- <a name="DisableDefaultCtorAttribute" />
 
-
-## <a name="disabledefaultctorattribute"></a>DisableDefaultCtorAttribute
+### <a name="disabledefaultctorattribute"></a>DisableDefaultCtorAttribute
 
 Если этот атрибут применяется к определению интерфейса он сделает невозможным генератор формирующего конструктор по умолчанию.
 
 Этот атрибут используется в том случае, когда требуется инициализировать с помощью одного из других конструкторов в классе объекта.
 
- <a name="PrivateDefaultCtorAttribute" />
 
-
-## <a name="privatedefaultctorattribute"></a>PrivateDefaultCtorAttribute
+### <a name="privatedefaultctorattribute"></a>PrivateDefaultCtorAttribute
 
 Если этот атрибут применяется к определению интерфейса отметит конструктор по умолчанию как закрытый. Это означает, что можно по-прежнему создать экземпляр объекта этого класса внутренним образом из файла расширения, но он просто не будут доступны для пользователей вашего класса.
 
-<a name="CategoryAttribute" />
 
-## <a name="categoryattribute"></a>CategoryAttribute
+### <a name="categoryattribute"></a>CategoryAttribute
 
 Этот атрибут используется в определении типа для привязки категории Objective-C и предоставлять их как методы расширения C# для отражения способов Objective-C предоставляет функциональные возможности.
 
@@ -268,7 +252,7 @@ public interface UIActionSheetDelegate {
 
 Это, как будет выглядеть категорию в цель C:
 
-```csharp
+```objc
 @interface UIView (MyUIViewExtension)
 -(void) makeBackgroundRed;
 @end
@@ -335,9 +319,8 @@ interface FooObject {
 
 Мы будет выдано предупреждение (BI1117), каждый раз, когда мы находим `[Static]` члена внутри `[Category]` определения. Если Вы действительно хотите иметь `[Static]` элементы внутри вашей `[Category]` предупреждение можно отключить с помощью определения `[Category (allowStaticMembers: true)]` или с помощью либо оформления элементов или `[Category]` определение с помощью интерфейса `[Internal]`.
 
-<a name="StaticAttribute" />
 
-## <a name="staticattribute"></a>StaticAttribute
+### <a name="staticattribute"></a>StaticAttribute
 
 При применении к классу этого атрибута будет просто создавать статического класса, который является производным от `NSObject` поэтому `[BaseType]` атрибут игнорируется. Статические классы используются для размещения C открытые переменные, которые требуется предоставить.
 
@@ -358,11 +341,8 @@ public partial class CBAdvertisement  {
 }
 ```
 
-<a name="Model_Definitions" />
 
-# <a name="model-definitions"></a>Определения модели
-
-###<a name="protocol-definitionsmodel"></a>Модель и определения протокола
+## <a name="protocol-definitionsmodel"></a>Модель и определения протокола
 
 Модели обычно используются реализацией протокола.
 Они отличаются тем, что среда выполнения будет регистрировать только с целью C методы, которые действительно были перезаписаны.
@@ -370,9 +350,8 @@ public partial class CBAdvertisement  {
 
 Обычно это означает, что при подкласс класса, помеченный с `ModelAttribute`, не следует вызывать базовый метод.   Вызов этого метода возникает исключение, должны реализовать поведение всего на подкласс для любых методов, которые можно переопределить.
 
-<a name="AbstractAttribute" />
 
-## <a name="abstractattribute"></a>AbstractAttribute
+### <a name="abstractattribute"></a>AbstractAttribute
 
 По умолчанию члены, которые являются частью протокола не являются обязательными. Это позволяет пользователям создавать подкласс `Model` объект просто производный от класса в C#, и переопределив только методы, их. Иногда требуется Objective-C контракту, что пользователь предоставляет реализацию этого метода (с флагами те @required директив в Objective-C). В таких случаях следует пометить эти методы с `Abstract` атрибута.
 
@@ -390,10 +369,9 @@ public interface UITableViewDataSource {
 }
 ```
 
- <a name="DefaultValueAttribute" />
+<a name="DefaultValueAttribute" />
 
-
-## <a name="defaultvalueattribute"></a>DefaultValueAttribute
+### <a name="defaultvalueattribute"></a>DefaultValueAttribute
 
 Указывает значение по умолчанию, возвращаемое методом, модели, если пользователь не предоставляет метод для данный конкретный метод в объект модели
 
@@ -424,12 +402,11 @@ var camera = new Camera ();
 camera.ShouldUploadToServer = (camera, action) => return SomeDecision ();
 ```
 
-
-
 См. также: [NoDefaultValueAttribute](#NoDefaultValueAttribute), [DefaultValueFromArgumentAttribute](#DefaultValueFromArgumentAttribute).
 
+<a name="DefaultValueFromArgumentAttribute" />
 
-## <a name="defaultvaluefromargumentattribute"></a>DefaultValueFromArgumentAttribute
+### <a name="defaultvaluefromargumentattribute"></a>DefaultValueFromArgumentAttribute
 
 Синтаксис:
 
@@ -455,11 +432,9 @@ public interface NSAnimationDelegate {
 
 В приведенном выше случае, если пользователь `NSAnimation` выбрано использование любого из свойств C# события или класса и не задал `NSAnimation.ComputeAnimationCurve` метода или лямбда-выражение, возвращаемое значение будет иметь значение, переданное в параметре хода выполнения.
 
-
-
 См. также: [NoDefaultValueAttribute](#NoDefaultValueAttribute), [DefaultValueAttribute](#DefaultValueAttribute)
 
-## <a name="ignoredindelegateattribute"></a>IgnoredInDelegateAttribute
+### <a name="ignoredindelegateattribute"></a>IgnoredInDelegateAttribute
 
 Иногда целесообразно не предоставляется доступ к событию или делегатом свойство класс модели в хост-класса, при добавлении этого атрибута даст генератора, чтобы избежать создания любого метода, назначив его.
 
@@ -475,8 +450,7 @@ public interface UIImagePickerControllerDelegate {
 }
 ```
 
-
-## <a name="delegatenameattribute"></a>DelegateNameAttribute
+### <a name="delegatenameattribute"></a>DelegateNameAttribute
 
 Этот атрибут используется в модели методов, возвращающих значения, задаваемые имя сигнатуре делегата для использования.
 
@@ -497,7 +471,7 @@ public interface NSAnimationDelegate {
 public delegate float NSAnimationProgress (MonoMac.AppKit.NSAnimation animation, float progress);
 ```
 
-## <a name="delegateapinameattribute"></a>DelegateApiNameAttribute
+### <a name="delegateapinameattribute"></a>DelegateApiNameAttribute
 
 Этот атрибут используется позволяет генератор для изменения имени свойства в классе узла. Иногда полезно при имя метода класса FooDelegate имеет смысл для класса делегата, но будет выглядеть странно в классе ведущего как свойство.
 
@@ -520,8 +494,7 @@ public interface NSAnimationDelegate {
 public Func<NSAnimation, float, float> ComputeAnimationCurve { get; set; }
 ```
 
-
-## <a name="eventargsattribute"></a>EventArgsAttribute
+### <a name="eventargsattribute"></a>EventArgsAttribute
 
 Для событий, которые принимают несколько параметров (в Objective-C соглашением является первый параметр в класс делегата экземпляр объекта-отправителя) необходимо указать имя для создаваемого класса EventArgs может иметь. Это делается с `EventArgs` атрибут в объявлении метода в вашей `Model` класса.
 
@@ -552,9 +525,8 @@ public partial class UIImagePickerImagePickedEventArgs : EventArgs {
 public event EventHandler<UIImagePickerImagePickedEventArgs> FinishedPickingImage { add; remove; }
 ```
 
-<a name="EventNameAttribute" />
 
-## <a name="eventnameattribute"></a>EventNameAttribute
+### <a name="eventnameattribute"></a>EventNameAttribute
 
 Этот атрибут используется позволяет генератора, чтобы изменить имя события или свойства в классе. Иногда он полезен, если имя `Model` метод класса имеет смысл в класс модели, но будет выглядеть странно в исходного класса как событие или свойство.
 
@@ -572,19 +544,14 @@ var webView = new UIWebView (...);
 webView.LoadFinished += delegate { Console.WriteLine ("done!"); }
 ```
 
- <a name="ModelAttribute" />
 
-
-## <a name="modelattribute"></a>ModelAttribute
+### <a name="modelattribute"></a>ModelAttribute
 
 При применении `Model` атрибут в определение типа в контракте API, среда выполнения вызывает специальный код, который только обнаружатся вызовы методов в классе, если пользователь перезаписывает метод в классе. Этот атрибут обычно применяется ко всем интерфейсам API, которые являются оболочкой для Objective-C класс делегата.
 
- <a name="NoDefaultValueAttribute" />
+<a name="NoDefaultValueAttribute" />
 
-
-## <a name="nodefaultvalueattribute"></a>NoDefaultValueAttribute
-
-
+### <a name="nodefaultvalueattribute"></a>NoDefaultValueAttribute
 
 Указывает, что метод модели не предоставляет возвращаемое значение по умолчанию.
 
@@ -601,8 +568,7 @@ interface CameraDelegate {
 
 См. также: [DefaultValueAttribute](#DefaultValueAttribute) и [DefaultValueAttribute](#DefaultValueAttribute).
 
-
-# <a name="protocols"></a>Протоколы
+## <a name="protocols"></a>Протоколы
 
 Концепция протокола Objective-C не существует действительно в C#. Протоколы похожи на интерфейсы C#, но они отличаются тем, что не все методы и свойства, объявленные в протокол должен быть реализован классом, принимает его. Вместо этого некоторые методы и свойства являются необязательными.
 
@@ -680,7 +646,7 @@ interface MyTool {
 
 Это необходимо, поскольку во время привязки `IMyProtocol` не будет существовать, т. е. Почему вы должны указать пустой интерфейс.
 
-## <a name="adopting-protocol-generated-interfaces"></a>Внедрение протокола созданные интерфейсы
+### <a name="adopting-protocol-generated-interfaces"></a>Внедрение протокола созданные интерфейсы
 
 Каждый раз, когда реализовывать один из интерфейсов, созданных для протоколов, следующим образом:
 
@@ -705,7 +671,7 @@ class MyDelegate : NSObject, IUITableViewDelegate {
 
 Не важно, если интерфейс реализован, явно или неявно.
 
-## <a name="protocol-inlining"></a>Встраивание протокола
+### <a name="protocol-inlining"></a>Встраивание протокола
 
 При связывании существующих типов Objective-C, объявленные как внедрение протокола требуется встроенный протокол напрямую. Чтобы сделать это, просто объявите протокол как интерфейс без каких-либо `[BaseType]` список протокол в списке базовых интерфейсов для интерфейса и атрибута.
 
@@ -724,17 +690,13 @@ interface Robot : SpeakProtocol {
 }
 ```
 
- <a name="Member_Definitions" />
 
-
-# <a name="member-definitions"></a>Определения элементов
+## <a name="member-definitions"></a>Определения элементов
 
 Атрибуты в этом разделе применяются к отдельным членам типа: свойства и объявления метода.
 
- <a name="AlignAttribute" />
 
-
-## <a name="alignattribute"></a>AlignAttribute
+### <a name="alignattribute"></a>AlignAttribute
 
 Можно задать значение выравнивания для возврата типов свойств. Некоторые свойства принимают указатели на адреса, которые должны быть выровнены в определенные границы (в Xamarin.iOS, это происходит, например, с некоторыми `GLKBaseEffect` свойства, которые должны быть 16-байтовое выравнивание). Это свойство используется для оформления метод считывания и использовать значение выравнивания. Обычно используется с `OpenTK.Vector4` и `OpenTK.Matrix4` типов при интеграции с Objective-C API-интерфейсы.
 
@@ -747,10 +709,8 @@ public interface GLKBaseEffect {
 }
 ```
 
- <a name="AppearanceAttribute" />
 
-
-## <a name="appearanceattribute"></a>AppearanceAttribute
+### <a name="appearanceattribute"></a>AppearanceAttribute
 
 `Appearance` Атрибут ограничена iOS5 где появился внешний вид диспетчера.
 
@@ -785,8 +745,7 @@ public partial class UIToolbar {
 }
 ```
 
-
-## <a name="autoreleaseattribute-xamarinios-54"></a>AutoReleaseAttribute (Xamarin.iOS 5.4)
+### <a name="autoreleaseattribute-xamarinios-54"></a>AutoReleaseAttribute (Xamarin.iOS 5.4)
 
 Используйте `AutoReleaseAttribute` на методы и свойства, чтобы заключить в нее вызов метода в метод `NSAutoReleasePool`.
 
@@ -794,8 +753,7 @@ public partial class UIToolbar {
 
 Этот атрибут применяется, например на большой свойства (например `UIImage.FromFile`), возвращает объекты, которые были добавлены в значение по умолчанию `NSAutoReleasePool`. Без этого атрибута изображений будет сохранено при условии, что поток не обнаружил управления основного цикла. Uf потока был каким-то загрузчик фона, всегда активен и ожидании, образы никогда не снимается.
 
-
-## <a name="forcedtypeattribute"></a>ForcedTypeAttribute
+### <a name="forcedtypeattribute"></a>ForcedTypeAttribute
 
 `ForcedTypeAttribute` Используется для принудительного создания управляемого типа, даже если неуправляемый возвращаемый объект не соответствует типу, описанные в определение привязки.
 
@@ -821,9 +779,7 @@ interface NSUrlSession {
 
 `ForcedTypeAttribute` Допустим только для `parameters`, `properties` и `return value`.
 
-
-
-## <a name="bindasattribute"></a>BindAsAttribute
+### <a name="bindasattribute"></a>BindAsAttribute
 
 `BindAsAttribute` Разрешает привязку `NSNumber`, `NSValue` и `NSString`(перечисления) в более точные типов C#. Атрибут может быть использован для создания лучшую, более точным, .NET API через API-Интерфейсы собственного.
 
@@ -852,7 +808,7 @@ bool? ShouldDraw (CGRect rect) { ... }
 * `NSNumber`
 * `NSString`
 
-### <a name="nsvalue"></a>NSValue
+#### <a name="nsvalue"></a>NSValue
 
 Поддерживает следующие типы данных C# для инкапсуляции из/в `NSValue`:
 
@@ -874,7 +830,7 @@ bool? ShouldDraw (CGRect rect) { ... }
 * CMTimeMapping
 * CATransform3D
 
-### <a name="nsnumber"></a>NSNumber
+#### <a name="nsnumber"></a>NSNumber
 
 Поддерживает следующие типы данных C# для инкапсуляции из/в `NSNumber`:
 
@@ -894,7 +850,7 @@ bool? ShouldDraw (CGRect rect) { ... }
 * nuint
 * перечислениям;
 
-### <a name="nsstring"></a>NSString
+#### <a name="nsstring"></a>NSString
 
 `[BindAs]` работает в conjuntion с [перечислений, поддерживаемый константа NSString](#enum-attributes) чтобы вы могли создавать улучшенный интерфейс API .NET, например:
 
@@ -913,7 +869,7 @@ CAScroll SupportedScrollMode { get; set; }
 
 Мы будет обрабатывать `enum`  <->  `NSString` преобразование только в том случае, если тип указанного перечисления `[BindAs]` — [поддерживаемый константа NSString](#enum-attributes).
 
-### <a name="arrays"></a>Массивы
+#### <a name="arrays"></a>Массивы
 
 `[BindAs]` также поддерживает массивы любого из поддерживаемых типов, может иметь следующее определение API в качестве примера:
 
@@ -932,8 +888,7 @@ CAScroll? [] GetScrollModes (CGRect [] rects) { ... }
 
 `rects` Параметр будет включен в `NSArray` , содержащий `NSValue` для каждого `CGRect` взамен вы получите массив `CAScroll?` которого был создан с помощью значения, возвращаемого `NSArray` содержащий `NSStrings`.
 
-
-## <a name="bindattribute"></a>BindAttribute
+### <a name="bindattribute"></a>BindAttribute
 
 `Bind` Атрибут имеет два варианта использования одного при применении к методу или объявление свойства и еще один при применении к отдельным доступа get или SET в свойстве.
 
@@ -963,10 +918,8 @@ bool Active { get; set; }
 bool Visible { [Bind ("isVisible")] get; set; }
 ```
 
- <a name="AsyncAttribute" />
 
-
-## <a name="asyncattribute"></a>AsyncAttribute
+### <a name="asyncattribute"></a>AsyncAttribute
 
 Только на Xamarin.iOS 6.3 и более поздних.
 
@@ -1018,26 +971,19 @@ Task<string> UploadAsync (string file);
 
 И в случае ошибки, результирующая задача будет иметь значение исключение `NSErrorException` -оболочки итоговый `NSError`.
 
-### <a name="asyncattributeresulttype"></a>AsyncAttribute.ResultType
-
-
+#### <a name="asyncattributeresulttype"></a>AsyncAttribute.ResultType
 
 Это свойство используется для указания значения для возвращения `Task` объекта.   Этот параметр принимает существующий тип и поэтому должна определяться в одном из определений api core.
 
-
-### <a name="asyncattributeresulttypename"></a>AsyncAttribute.ResultTypeName
+#### <a name="asyncattributeresulttypename"></a>AsyncAttribute.ResultTypeName
 
 Это свойство используется для указания значения для возвращения `Task` объекта.   Этот параметр имеет имя нужного типа, генератор возникает ряд свойств, один для каждого параметра, принимающий обратного вызова.
 
-
-### <a name="asyncattributemethodname"></a>AsyncAttribute.MethodName
-
-
+#### <a name="asyncattributemethodname"></a>AsyncAttribute.MethodName
 
 Это свойство можно используйте для настройки имя созданного асинхронных методов.   Значение по умолчанию — имя метода и добавьте текст «Async», это можно использовать, чтобы изменить это значение по умолчанию.
 
-
-## <a name="disablezerocopyattribute"></a>DisableZeroCopyAttribute
+### <a name="disablezerocopyattribute"></a>DisableZeroCopyAttribute
 
 Этот атрибут применяется к строковые параметры или свойства строк и генератора кода, не используйте строку нулевой копирования маршалинга для этого параметра указывает, что вместо создания нового экземпляра NSString из строки C#.
 Этот атрибут требуется для строк, только если вы указываете использовать маршалинг строки нулевой копирования с помощью генератора `--zero-copy` параметр командной строки или атрибут уровня сборки `ZeroCopyStringsAttribute`.
@@ -1051,10 +997,8 @@ Task<string> UploadAsync (string file);
 @property(nonatomic,assign) NSString *name2;
 ```
 
- <a name="DisposeAttribute" />
 
-
-## <a name="disposeattribute"></a>DisposeAttribute
+### <a name="disposeattribute"></a>DisposeAttribute
 
 При применении `DisposeAttribute` к классу, предоставляют фрагмента кода, который будет добавлен в `Dispose()` реализации метода класса.
 
@@ -1069,10 +1013,8 @@ interface DatabaseConnection {
 }
 ```
 
- <a name="ExportAttribute" />
 
-
-## <a name="exportattribute"></a>ExportAttribute
+### <a name="exportattribute"></a>ExportAttribute
 
 `Export` Атрибута можно пометить метод или свойство, должен быть предоставлен для среды выполнения C цель. Этот атрибут совместно используется средство привязки и фактического Xamarin.iOS и Xamarin.Mac среды выполнения. Для методов, этот параметр передается verbatim в сформированный код для свойства, метод считывания и метод задания экспорта создаются на основе в базовом объявлении (см. в разделе `BindAttribute` сведения о том, как изменить поведение средство привязки).
 
@@ -1095,15 +1037,11 @@ public class ExportAttribute : Attribute {
 
 [Селектор](http://developer.apple.com/library/ios/#documentation/cocoa/conceptual/objectivec/Chapters/ocSelectors.html) и он представляет имя Objective-C базового метода или свойства, к которому осуществляется привязка.
 
- <a name="ExportAttribute.ArgumentSemantic" />
+
+#### <a name="exportattributeargumentsemantic"></a>ExportAttribute.ArgumentSemantic
 
 
-### <a name="exportattributeargumentsemantic"></a>ExportAttribute.ArgumentSemantic
-
- <a name="FieldAttribute" />
-
-
-## <a name="fieldattribute"></a>FieldAttribute
+### <a name="fieldattribute"></a>FieldAttribute
 
 Этот атрибут используется для предоставления глобальной переменной C как поле, которое загружается по запросу и открыт для кода C#. Обычно это необходимо для получения значения констант, определенных в C или Objective-C, может быть либо маркеры, используемые в некоторых API-интерфейсов и, значения которых не видны и должен использоваться в качестве-— с помощью пользовательского кода.
 
@@ -1122,7 +1060,19 @@ public class FieldAttribute : Attribute {
 
 Создаваемые свойства всегда являются статическими.
 
-Свойства, отмеченные атрибутом поле может иметь тип `NSString`, `NSArray`, `nint`, `double`, `nfloat` или `System.IntPtr`.
+Свойства, отмеченные атрибутом поля могут быть следующих типов:
+
+* `NSString`
+* `NSArray`
+* `nint` / `int` / `long`
+* `nuint` / `uint` / `ulong`
+* `nfloat` / `float`
+* `double`
+* `CGSize`
+* `System.IntPtr`
+* перечислениям;
+
+Задания не поддерживаются для [перечислений, поддерживаемый константы NSString](#enum-attributes), но их можно вручную привязать его при необходимости.
 
 Пример
 
@@ -1134,14 +1084,11 @@ interface CameraEffects {
 }
 ```
 
-
-
-
-## <a name="internalattribute"></a>InternalAttribute
+### <a name="internalattribute"></a>InternalAttribute
 
 `Internal` Атрибут может применяться к методам и свойствам и действует отметка созданный код словом «внутренние» C# доступности код только для кода в созданную сборку. Обычно используется для скрытия API, которые являются слишком низкого уровня или предоставить неоптимальных открытые API, который нужно повысить по или по API, которые не поддерживаются в генератор и требуются некоторые кодировки вручную.
 
-При создании привязки, обычно следует скрыть метод или свойство, с помощью этого атрибута и укажите другое имя для метода или свойства и затем в файле дополнительную поддержки C# необходимо добавить строго типизированной оболочки, предоставляющий базовый функциональные возможности.
+При создании привязки, обычно следует скрыть метод или свойство, с помощью этого атрибута и укажите другое имя для метода или свойства и затем в файле дополнительную поддержки C# необходимо добавить строго типизированную оболочку, которая предоставляет Базовая функциональность.
 
 Пример:
 
@@ -1168,34 +1115,26 @@ public NSObject this [NSObject idx] {
 }
 ```
 
-
-## <a name="isthreadstaticattribute"></a>IsThreadStaticAttribute
+### <a name="isthreadstaticattribute"></a>IsThreadStaticAttribute
 
 Этот атрибут flags резервное поле для свойства, для которого создается заметка с .NET `[ThreadStatic]` атрибута. Это полезно, если поле является статической переменной потока.
 
- <a name="MarshalNativeExceptions_(Xamarin.iOS_6.0.6)" />
-
-
-## <a name="marshalnativeexceptions-xamarinios-606"></a>MarshalNativeExceptions (Xamarin.iOS 6.0.6)
+### <a name="marshalnativeexceptions-xamarinios-606"></a>MarshalNativeExceptions (Xamarin.iOS 6.0.6)
 
 Этот атрибут будет делать исключения метод поддержки native (ObjectiveC).
 Вместо вызова метода `objc_msgSend` напрямую, вызов будет проходить через пользовательские trampoline, который перехватывает исключения ObjectiveC и маршалирует их в управляемые исключения.
 
 В настоящее время только несколько `objc_msgSend` подписи поддерживаются (можно будет определить, если подпись не поддерживается при связывания собственного приложения, которая использует привязку завершается отсутствует monotouch_*_objc_msgSend* символа), но более может быть добавить в запрос.
 
- <a name="NewAttribute" />
 
-
-## <a name="newattribute"></a>NewAttribute
+### <a name="newattribute"></a>NewAttribute
 
 Этот атрибут применяется к методам и свойствам, нужно создать ключевое слово «new» перед объявление генератора.
 
 Он используется для устранения предупреждений компилятора, если один метод или свойство имя введено в подкласс, в котором уже существует в базовом классе.
 
- <a name="NotificationAttribute" />
 
-
-## <a name="notificationattribute"></a>NotificationAttribute
+### <a name="notificationattribute"></a>NotificationAttribute
 
 Этот атрибут можно применять к полям, чтобы иметь создают Генератор строго типизированных вспомогательный класс уведомления.
 
@@ -1244,7 +1183,6 @@ var token = MyClass.Notifications.ObserverDidStart (objectToObserve, (notificati
 ```csharp
 token.Dispose ();
 ```
-
 
 Или можно вызвать [NSNotification.DefaultCenter.RemoveObserver](https://developer.xamarin.com/api/member/Foundation.NSNotificationCenter.RemoveObserver/p/Foundation.NSObject//) и передать маркер. Если уведомления содержит параметры, необходимо указать вспомогательный `EventArgs` интерфейс следующим образом:
 
@@ -1306,8 +1244,7 @@ interface MyClass {
 }
 ```
 
-
-## <a name="nullallowedattribute"></a>NullAllowedAttribute
+### <a name="nullallowedattribute"></a>NullAllowedAttribute
 
 Это применяется к свойству отмечает свойство как допускающий значение null, чтобы назначить ее. Это допустимо только для ссылочных типов.
 
@@ -1327,14 +1264,14 @@ UIImage IconFile { get; set; }
 void SetImage ([NullAllowed] UIImage image, State forState);
 ```
 
-## <a name="overrideattribute"></a>OverrideAttribute
+<a name="OverrideAttribute"/>
+
+### <a name="overrideattribute"></a>OverrideAttribute
 
 Этот атрибут используется для указания привязки генератора, привязки для этого конкретного метода должны быть отмечены с ключевым словом «override».
 
- <a name="PreSnippetAttribute" />
 
-
-## <a name="presnippetattribute"></a>PreSnippetAttribute
+### <a name="presnippetattribute"></a>PreSnippetAttribute
 
 Этот атрибут можно использовать для вставки некоторый код, вставляемый после проверки входных параметров, но перед код вызывает метод в Objective-c.
 
@@ -1346,10 +1283,8 @@ void SetImage ([NullAllowed] UIImage image, State forState);
 void Demo ();
 ```
 
- <a name="PrologueSnippetAttribute" />
 
-
-## <a name="prologuesnippetattribute"></a>PrologueSnippetAttribute
+### <a name="prologuesnippetattribute"></a>PrologueSnippetAttribute
 
 Этот атрибут можно использовать для вставки некоторый код, вставляемый перед любой из параметров, проверяются в созданный метод.
 
@@ -1361,10 +1296,8 @@ void Demo ();
 void Demo ();
 ```
 
- <a name="PostGetAttribute" />
 
-
-## <a name="postgetattribute"></a>PostGetAttribute
+### <a name="postgetattribute"></a>PostGetAttribute
 
 Указывает, что генератор привязки для вызова указанного свойства из этого класса для выборки значения из него.
 
@@ -1389,10 +1322,8 @@ public interface NSOperation {
 
 В этом случае `Dependencies` свойство будет вызываться после добавления или удаления зависимостей из `NSOperation` объекта, чтобы получился граф, который представляет фактический загружены объекты, предотвращение утечек памяти как, так и повреждение памяти.
 
- <a name="PostSnippetAttribute" />
 
-
-## <a name="postsnippetattribute"></a>PostSnippetAttribute
+### <a name="postsnippetattribute"></a>PostSnippetAttribute
 
 Этот атрибут можно использовать для вставки некоторых исходный код C# для вставки после как код вызывает базовый метод Objective-C
 
@@ -1404,17 +1335,13 @@ public interface NSOperation {
 void Demo ();
 ```
 
- <a name="ProxyAttribute" />
 
-
-## <a name="proxyattribute"></a>ProxyAttribute
+### <a name="proxyattribute"></a>ProxyAttribute
 
 Этот атрибут применяется к возвращаемым значениям, чтобы пометить их как прокси-объекты. Некоторые объекты возвращаемого прокси Objective-C API-интерфейсы, которые не могут отличаться от пользователя привязки. Чтобы пометить объект как действует этот атрибут `DirectBinding` объекта. Для сценария в Xamarin.Mac, вы увидите [обсуждения на эту ошибку](https://bugzilla.novell.com/show_bug.cgi?id=670844).
 
- <a name="RetainListAttribute" />
 
-
-## <a name="retainlistattribute"></a>RetainListAttribute
+### <a name="retainlistattribute"></a>RetainListAttribute
 
 Указывает, что генератор управляемого ссылку на параметр Сохранить или удалить внутреннюю ссылку на параметр. Это позволяет хранить ссылки на объекты.
 
@@ -1430,10 +1357,7 @@ public class RetainListAttribute: Attribute {
 
 Пример [foundation.cs](https://github.com/mono/maccore/blob/master/src/foundation.cs) и [NSNotificationCenter.cs](https://github.com/mono/maccore/blob/master/src/Foundation/NSNotificationCenter.cs)
 
- <a name="ReleaseAttribute_(Xamarin.iOS_6.0)" />
-
-
-## <a name="releaseattribute-xamarinios-60"></a>ReleaseAttribute (Xamarin.iOS 6.0)
+### <a name="releaseattribute-xamarinios-60"></a>ReleaseAttribute (Xamarin.iOS 6.0)
 
 Это может применяться для возврата типов, чтобы показать, что генератор должен вызывать `Release` для объекта перед его возвратом. Это требуется, только если метод не является объектом сохранено (в отличие от объекта autoreleased является наиболее распространенным сценарием)
 
@@ -1447,35 +1371,27 @@ NSObject GetAndRetainObject ();
 
 Кроме того, чтобы среда выполнения Xamarin.iOS известно, что его необходимо сохранить объект при возвращении для Objective-C с такой функции этот атрибут отражается в созданный код.
 
- <a name="SealedAttribute" />
 
-
-## <a name="sealedattribute"></a>SealedAttribute
+### <a name="sealedattribute"></a>SealedAttribute
 
 Указывает, что генератор для флага созданный метод как запечатанный. Если этот атрибут не указан, по умолчанию используется для создания виртуального метода (виртуальный метод, абстрактного метода или переопределения в зависимости от того, как используются другие атрибуты).
 
- <a name="StaticAttribute" />
 
-
-## <a name="staticattribute"></a>StaticAttribute
+### <a name="staticattribute"></a>StaticAttribute
 
 Когда `Static` атрибут применяется к методу или свойству это приводит к возникновению ошибки статический метод или свойство. Если этот атрибут не указан, генератор создает экземпляр метода или свойства.
 
- <a name="TransientAttribute" />
 
-
-## <a name="transientattribute"></a>TransientAttribute
+### <a name="transientattribute"></a>TransientAttribute
 
 Используйте этот атрибут для свойства флагов, значения которого являются временными, то есть объекты, которые создаются временно с iOS, но не долго. Когда этот атрибут применяется к свойству, генератор не создает резервное поле для этого свойства, это означает, что управляемый класс не сохраняет ссылку на объект.
 
- <a name="WrapAttribute" />
 
+### <a name="wrapattribute"></a>WrapAttribute
 
-## <a name="wrapattribute"></a>WrapAttribute
+В конструкторе привязки Xamarin.iOS/Xamarin.Mac `Wrap` атрибут используется для создания оболочек объект слабо типизированной с строго типизированный объект. Это вступает в действие преимущественно с «делегирование» объекты Objective-C, которые обычно объявляются как оно принадлежит к типу `id` или `NSObject`. Является правилом, используемым Xamarin.iOS и Xamarin.Mac для предоставления этих делегатов или источников данных, как оно принадлежит к типу `NSObject` и именуются соглашение «Weak» плюс имя раскрытия. Свойство «идентификатор делегата» из Objective-C будет представляться как `NSObject WeakDelegate { get; set; }` свойства в файле контракта API.
 
-В конструкторе привязки Xamarin.iOS/Xamarin.Mac `Wrap` атрибут используется для создания оболочек слабо типизированный объект со строго типизированный объект. Это вступает в действие преимущественно с «делегирование» объекты Objective-C, которые обычно объявляются как оно принадлежит к типу `id` или `NSObject`. Является правилом, используемым Xamarin.iOS и Xamarin.Mac для предоставления этих делегатов или источников данных, как оно принадлежит к типу `NSObject` и именуются соглашение «Weak» плюс имя раскрытия. Свойство «идентификатор делегата» из Objective-C будет представляться как `NSObject WeakDelegate { get; set; }` свойства в файле контракта API.
-
-Но обычно значение, присвоенное этот делегат имеет строгий тип, поэтому мы контактной строгий тип, а затем применить `Wrap` атрибут, это означает, что пользователи могут пожелать использования слабых типов, если требуются некоторые fine управления или при необходимости прибегать к tric низкого уровня KS, или же их можно использовать строго типизированные свойства для большинства свою работу.
+Но обычно значение, присвоенное этот делегат имеет строгий тип, поэтому мы контактной строгий тип, а затем применить `Wrap` атрибут, это означает, что пользователи могут пожелать использования слабых типов, если требуются некоторые fine управления или при необходимости прибегать к tric низкого уровня KS, или же их можно использовать строго типизированным свойством большую часть своей работы.
 
 Пример
 
@@ -1511,7 +1427,7 @@ var demo = new Demo ();
 demo.WeakDelegate = new SomeObject ();
 ```
 
-И это является как пользователь будет использовать версию со строгой типизацией, обратите внимание, что пользователь использует преимущества системы типов C# и использует ключевое слово override объявить его назначение и что он не требуется вручную оформлять метод с `Export`, так как мы сделали, w сеть используется в привязке для пользователя:
+И это является как пользователь будет использовать строго типизированную версию, обратите внимание, что пользователь использует преимущества системы типов C# и использует ключевое слово override объявить его назначение и что он не требуется вручную оформлять метод с `Export`, так как мы сделали, работают в привязке для пользователя.
 
 ```csharp
 // This is the strong case,
@@ -1519,14 +1435,12 @@ class MyDelegate : DemoDelegate {
    override void Demo DoDemo () {}
 }
 
-
 var strongDemo = new Demo ();
 demo.Delegate = new MyDelegate ();
 ```
 
- <a name="Parameter_Attributes" />
 
-Другое использование оператора `Wrap` атрибут предназначен для поддержки строго типизированную версию методы.   Пример:
+Другое использование оператора `Wrap` атрибут предназначен для поддержки версии строго типизированных методов.   Пример:
 
 ```csharp
 [BaseType (typeof (NSObject))]
@@ -1552,14 +1466,13 @@ interface FooExplorer {
 }
 ```
 
-# <a name="parameter-attributes"></a>Атрибуты параметра
+## <a name="parameter-attributes"></a>Атрибуты параметра
 
 В этом разделе описаны атрибуты, которые можно применить к параметров в определении метода и `NullAttribute` , относящееся к свойству в целом.
 
+<a name="BlockCallback" />
 
-## <a name="blockcallback"></a>BlockCallback
-
-
+### <a name="blockcallback"></a>BlockCallback
 
 Этот атрибут применяется к типам параметров в объявлениях делегатов в C# для уведомления связыватель, что рассматриваемый параметр соответствует блока Objective-C, соглашение о вызовах и должны быть таким образом.
 
@@ -1571,10 +1484,9 @@ typedef returnType (^SomeTypeDefinition) (int parameter1, NSString *parameter2);
 
 См. также: [CCallback](#CCallback).
 
+<a name="CCallback" />
 
-## <a name="ccallback"></a>CCallback
-
-
+### <a name="ccallback"></a>CCallback
 
 Этот атрибут применяется к типам параметров в объявлениях делегатов в C# для уведомления связыватель, что рассматриваемый параметр соответствует C ABI функция указатель соглашение о вызовах и должны быть таким образом.
 
@@ -1584,10 +1496,7 @@ typedef returnType (^SomeTypeDefinition) (int parameter1, NSString *parameter2);
 
 См. также: [BlockCallback](#BlockCallback).
 
-
-## <a name="params"></a>Params
-
-
+### <a name="params"></a>Params
 
 Можно использовать `[Params]` атрибута для определения метода, чтобы внедрить «params» в определении генератор последнего параметра массива.   Это позволяет легко разрешить для необязательных параметров привязку.
 
@@ -1605,7 +1514,7 @@ typedef returnType (^SomeTypeDefinition) (int parameter1, NSString *parameter2);
 
 <a name="plainstring" />
 
-## <a name="plainstring"></a>PlainString
+### <a name="plainstring"></a>PlainString
 
 Можно использовать `[PlainString]` атрибута перед строковых параметров, чтобы дать указание генератора привязки передать строку как строка C, вместо того чтобы передавать параметр как `NSString`.
 
@@ -1629,10 +1538,8 @@ void SetText (string theText);
 void LogMessage ([PlainString] string theText);
 ```
 
- <a name="RetainAttribute" />
 
-
-## <a name="retainattribute"></a>RetainAttribute
+### <a name="retainattribute"></a>RetainAttribute
 
 Указывает, что генератора, чтобы сохранить ссылку на указанный параметр. Генератор предоставит резервного хранилища для этого поля, или можно указать имя ( `WrapName`) для хранения в значения. Это полезно для хранения ссылки на управляемый объект, который передается как параметр Objective-C, и если известно, что Objective-C будет хранить только эта копия объекта. Например, API-Интерфейс, как `SetDisplay (SomeObject)` будет использовать этот атрибут, вполне вероятно, что SetDisplay только удалось отобразить один объект за раз. Если необходимо для отслеживания нескольких объектов (например, для API стека по принципу) будет использовать `RetainList` атрибута.
 
@@ -1646,10 +1553,8 @@ public class RetainAttribute {
 }
 ```
 
- <a name="RetainListAttribute" />
 
-
-## <a name="retainlistattribute"></a>RetainListAttribute
+### <a name="retainlistattribute"></a>RetainListAttribute
 
 Указывает, что генератор управляемого ссылку на параметр Сохранить или удалить внутреннюю ссылку на параметр. Это позволяет хранить ссылки на объекты.
 
@@ -1665,12 +1570,8 @@ public class RetainListAttribute: Attribute {
 
 Пример [foundation.cs](https://github.com/mono/maccore/blob/master/src/foundation.cs) и [NSNotificationCenter.cs](https://github.com/mono/maccore/blob/master/src/Foundation/NSNotificationCenter.cs)
 
- <a name="TransientAttribute" />
 
-
-## <a name="transientattribute"></a>TransientAttribute
-
-
+### <a name="transientattribute"></a>TransientAttribute
 
 Этот атрибут применяется к параметрам и используется только во время перехода с Objective-C на C#.  Во время этих переходов различных NSObjects Objective-C параметры помещаются в представление управляемого объекта.
 
@@ -1682,11 +1583,12 @@ public class RetainListAttribute: Attribute {
 
 Простое правило: Если среда выполнения была возможность создания нового управляемого представления из собственного объекта, то в конце функции будут удалены данные о количестве сохранить собственный объект и свойство дескриптор управляемого объекта будет очищено.   Это означает, что если ссылку на управляемый объект, такая ссылка будет бесполезен (вызов методов в нем будет вызвано исключение).
 
-Если переданный объект не был создан, или если уже был представление необработанных управляемого объекта, принудительного удаления не производится. <a name="Global_Attributes" />
+Если переданный объект не был создан, или если уже был представление необработанных управляемого объекта, принудительного удаления не производится. 
 
-# <a name="property-attributes"></a>Атрибуты свойства
 
-## <a name="notimplementedattribute"></a>NotImplementedAttribute
+## <a name="property-attributes"></a>Атрибуты свойства
+
+### <a name="notimplementedattribute"></a>NotImplementedAttribute
 
 Этот атрибут используется для поддержки идиоматикой Objective-C, где свойство с получения впервые появился в базовом классе и изменяемый подкласс вводит setter.
 
@@ -1719,7 +1621,9 @@ interface MyMutableString {
 }
 ```
 
-# <a name="enum-attributes"></a>Атрибуты перечислений
+<a name="enum-attributes"/>
+
+## <a name="enum-attributes"></a>Атрибуты перечислений
 
 Сопоставление `NSString` константы, значения перечисления является простой способ создания улучшенный интерфейс API .NET. Он:
 
@@ -1760,7 +1664,7 @@ var constant = CallApiReturningAnNSString ();
 CallApiWithEnum (NSRunLoopModeExtensions.GetValue (constant));
 ```
 
-## <a name="defaultenumvalueattribute"></a>DefaultEnumValueAttribute
+### <a name="defaultenumvalueattribute"></a>DefaultEnumValueAttribute
 
 Вы можете декорировать **один** значение перечисления с помощью этого атрибута. Это может быть константой, возвращается, если значение перечисления не известен.
 
@@ -1773,7 +1677,7 @@ Call (x.GetConstant ()); // NSDefaultRunLoopMode will be used
 
 Если значение enum не помечено то `NotSupportedException` будет создано.
 
-## <a name="errordomainattribute"></a>ErrorDomainAttribute
+### <a name="errordomainattribute"></a>ErrorDomainAttribute
 
 Коды ошибок привязаны как значения перечисления. Ошибка домена для них обычно есть и не всегда просто найти, какая из них применяется (или если он еще существует).
 
@@ -1793,8 +1697,7 @@ Call (x.GetConstant ()); // NSDefaultRunLoopMode will be used
 
 Затем можно вызвать метод расширения `GetDomain` для получения константы любая ошибка домена.
 
-
-## <a name="fieldattribute"></a>FieldAttribute
+### <a name="fieldattribute"></a>FieldAttribute
 
 Это то же самое `[Field]` атрибут, используемый для константы внутри типа. Он также может использоваться внутри перечисления для сопоставления значения с определенной константой.
 
@@ -1809,14 +1712,12 @@ Call (NSRunLoopModeExtensions.GetValue (constant)); // will return 1000
 
 Если не `null` будет присутствовать то `ArgumentNullException` будет создано.
 
-# <a name="global-attributes"></a>Глобальные атрибуты
+## <a name="global-attributes"></a>Глобальные атрибуты
 
 Глобальные атрибуты либо применяются с использованием `[assembly:]` модификатор атрибута как `LinkWithAttribute` или может быть использована везде, где, таких как `Lion` и `Since` атрибуты.
 
- <a name="LinkWithAttribute" />
 
-
-## <a name="linkwithattribute"></a>LinkWithAttribute
+### <a name="linkwithattribute"></a>LinkWithAttribute
 
 Это атрибут уровня сборки, который позволяет разработчикам задать флаги связывания, требуется повторно использовать связанные библиотеки не требует, чтобы потребитель библиотеки, чтобы вручную настроить gcc_flags и mtouch дополнительные аргументы, переданные в библиотеку.
 
@@ -1864,10 +1765,8 @@ public class LinkWithAttribute : Attribute {
 [assembly: LinkWith (LinkerFlags = "-lsqlite3")]
  ```
 
- <a name="LinkWithAttribute_Constructors" />
 
-
-### <a name="linkwithattribute-constructors"></a>Конструкторы LinkWithAttribute
+#### <a name="linkwithattribute-constructors"></a>Конструкторы LinkWithAttribute
 
 Эти конструкторы позволяют укажите библиотеку для связи с и внедрять в результирующей сборке, поддерживаемые целевые объекты, которые поддерживает библиотеку и любые дополнительные библиотеки флаги, которые необходимы для связывания с библиотекой.
 
@@ -1889,69 +1788,51 @@ public class LinkWithAttribute : Attribute {
 [assembly: LinkWith ("libDemo.a", LinkTarget.Thumb | LinkTarget.Simulator, SmartLink = true, ForceLoad = true, IsCxx = true);
 ```
 
- <a name="LinkWithAttribute.ForceLoad" />
 
-
-### <a name="linkwithattributeforceload"></a>LinkWithAttribute.ForceLoad
+#### <a name="linkwithattributeforceload"></a>LinkWithAttribute.ForceLoad
 
 `ForceLoad` Чтобы определить, используется свойство ли `-force_load` ссылку флаг используется для связывания собственной библиотеки. Сейчас это всегда будет значение true.
 
- <a name="LinkWithAttribute.Frameworks" />
 
-
-### <a name="linkwithattributeframeworks"></a>LinkWithAttribute.Frameworks
+#### <a name="linkwithattributeframeworks"></a>LinkWithAttribute.Frameworks
 
 Если выполняется привязка библиотеки имеет жестких требований ни одной из платформ (отличного от `Foundation` и `UIKit`), необходимо задать `Frameworks` свойство строку, содержащую перечень платформ платформы, необходимые. Например, если выполняется привязка библиотеки, требует `CoreGraphics` и `CoreText`, необходимо установить `Frameworks` свойства `"CoreGraphics CoreText"`.
 
- <a name="LinkWithAttribute.IsCxx" />
 
-
-### <a name="linkwithattributeiscxx"></a>LinkWithAttribute.IsCxx
+#### <a name="linkwithattributeiscxx"></a>LinkWithAttribute.IsCxx
 
 Если установлено значение true, если необходимо скомпилировать с помощью компилятора C++ вместо значения по умолчанию, который компилятор C полученный исполняемый файл. Используйте только для библиотеки, в которой выполняется привязка была на языке C++.
 
- <a name="LinkWithAttribute.LibraryName" />
 
-
-### <a name="linkwithattributelibraryname"></a>LinkWithAttribute.LibraryName
+#### <a name="linkwithattributelibraryname"></a>LinkWithAttribute.LibraryName
 
 Имя неуправляемую библиотеку для формирования пакета. Это файл с расширением «.a» и может содержать объектный код для нескольких платформ (для, например, ARM и x86 для имитатора).
 
 Проверка более ранних версиях Xamarin.iOS `LinkTarget` свойства, чтобы определить платформу библиотеки поддерживается, но это определяется теперь автоматически и `LinkTarget` свойство игнорируется.
 
- <a name="LinkWithAttribute.LinkerFlags" />
 
-
-### <a name="linkwithattributelinkerflags"></a>LinkWithAttribute.LinkerFlags
+#### <a name="linkwithattributelinkerflags"></a>LinkWithAttribute.LinkerFlags
 
 `LinkerFlags` Строка предоставляет способ авторы привязок для указания необходимости компоновщика дополнительные флаги при связывании собственной библиотеки в приложение.
 
 Например, если собственной библиотеки требует libxml2 и zlib, можно задать `LinkerFlags` строка `"-lxml2 -lz"`.
 
- <a name="LinkWithAttribute.LinkTarget" />
 
-
-### <a name="linkwithattributelinktarget"></a>LinkWithAttribute.LinkTarget
+#### <a name="linkwithattributelinktarget"></a>LinkWithAttribute.LinkTarget
 
 Проверка более ранних версиях Xamarin.iOS `LinkTarget` свойства, чтобы определить платформу библиотеки поддерживается, но это определяется теперь автоматически и `LinkTarget` свойство игнорируется.
 
-
-
-### <a name="linkwithattributeneedsgccexceptionhandling"></a>LinkWithAttribute.NeedsGccExceptionHandling
+#### <a name="linkwithattributeneedsgccexceptionhandling"></a>LinkWithAttribute.NeedsGccExceptionHandling
 
 Если установлено значение true, если библиотеки, в которой выполняется связывание требуется библиотека GCC обработка исключений (gcc_eh)
 
- <a name="LinkWithAttribute.SmartLink" />
 
-
-### <a name="linkwithattributesmartlink"></a>LinkWithAttribute.SmartLink
+#### <a name="linkwithattributesmartlink"></a>LinkWithAttribute.SmartLink
 
 `SmartLink` Свойство должно быть присвоено значение true, чтобы определить, Xamarin.iOS ли `ForceLoad` либо не требуется.
 
- <a name="LinkWithAttribute.WeakFrameworks" />
 
-
-### <a name="linkwithattributeweakframeworks"></a>LinkWithAttribute.WeakFrameworks
+#### <a name="linkwithattributeweakframeworks"></a>LinkWithAttribute.WeakFrameworks
 
 `WeakFrameworks` Работает так же, как свойство `Frameworks` свойства, за исключением того, что во время компоновки `-weak_framework` описатель передается gcc для каждого из перечисленных платформ.
 
@@ -1959,10 +1840,7 @@ public class LinkWithAttribute : Attribute {
 
 Хорошими кандидатами для слабого связывания будет `Frameworks` учетные записи, такие как `CoreBluetooth`, `CoreImage`, `GLKit`, `NewsstandKit` и `Twitter` так, как они доступны только в iOS 5.
 
- <a name="SinceAttribute_(iOS)_and_LionAttribute_(MacOS_X)" />
-
-
-## <a name="sinceattribute-ios-and-lionattribute-macos-x"></a>SinceAttribute (iOS) и LionAttribute (MacOS X)
+### <a name="sinceattribute-ios-and-lionattribute-macos"></a>SinceAttribute (iOS) и LionAttribute (macOS)
 
 Вы используете `Since` атрибут флаг API-интерфейсы как имеющий проникновения в определенный момент времени. Атрибут должен использоваться только для флага типы и методы, которые могли стать причиной проблемы среды выполнения, если базовый класс, метод или свойство не будет доступна.
 
@@ -2004,19 +1882,14 @@ public interface UITableViewController {
 
 `Lion` Таким же образом, но для типов, представленных в Lion применяется атрибут. Причина использования `Lion` и более конкретные номер версии, который используется в iOS — iOS, пересматривается очень часто, хотя основные выпуски OS X происходит редко, легче запомнить, их с кодовым названием чем их номера версии операционной системы
 
- <a name="AdviceAttribute" />
 
+### <a name="adviceattribute"></a>AdviceAttribute
 
-## <a name="adviceattribute"></a>AdviceAttribute
+Этот атрибут используется для предоставления разработчикам подсказкой другие интерфейсы API, который может быть более удобным для него.   Например при указании строго типизированную версию API-интерфейса можно позволяет этого атрибута для атрибута слабо типизированной указать разработчику улучшенный интерфейс API.
 
+Сведения из этого атрибута отображается в документации и средств, которые могут разрабатываться для предоставления пользователю предложения по улучшению
 
-
-Этот атрибут используется для предоставления разработчикам подсказкой другие интерфейсы API, который может быть более удобным для него.   Например при указании строго типизированную версию API можно выполнить этот атрибут в атрибуте слабо типизированным направить разработчику улучшенный интерфейс API.
-
-Сведения из этого атрибута отображается в документации и средств, которые могут разрабатываться для предоставления пользователю предложения по улучшению своего кода. <a name="ZeroCopyStringsAttribute" />
-
-
-## <a name="zerocopystringsattribute"></a>ZeroCopyStringsAttribute
+### <a name="zerocopystringsattribute"></a>ZeroCopyStringsAttribute
 
 Только в Xamarin.iOS 5.4 и более поздних.
 
@@ -2047,17 +1920,16 @@ interface MyBinding {
 
     [assembly:ZeroCopyStrings]
 
-# <a name="strongly-typed-dictionaries"></a>Строго типизированные словарей
+## <a name="strongly-typed-dictionaries"></a>Строго типизированные словарей
 
 С помощью Xamarin.iOS 8.0 мы представили поддержки для упрощения создания строго типизированных классов, которые упаковывают `NSDictionaries`.
 
 Хотя всегда можно было использовать [DictionaryContainer](https://developer.xamarin.com/api/type/Foundation.DictionaryContainer/) вручную интерфейс API, тип данных стало гораздо проще сделать это.  Дополнительные сведения см. в разделе [распределение результатов строгих типов](~/cross-platform/macios/binding/objective-c-libraries.md#Surfacing_Strong_Types).
 
-<a name="StrongDictionar"/>
 
-## <a name="strongdictionary"></a>StrongDictionary
+### <a name="strongdictionary"></a>StrongDictionary
 
-Когда этот атрибут применяется к интерфейсу, генератор создает класс с тем же именем, как интерфейс, который является производным от [DictionaryContainer](https://developer.xamarin.com/api/type/Foundation.DictionaryContainer/) и включает каждого свойства, определенные в интерфейсе в строго типизированный метод получения и метод задания для словаря.
+Когда этот атрибут применяется к интерфейсу, генератор создает класс с тем же именем, как интерфейс, который является производным от [DictionaryContainer](https://developer.xamarin.com/api/type/Foundation.DictionaryContainer/) и включает каждого свойства, определенные в интерфейсе в строго типизированный Get и set для словаря.
 
 Это автоматически создает класс, который может быть создан из существующего `NSDictionary` или который был создан новый.
 
@@ -2111,7 +1983,7 @@ interface MyColoringKeys {
 }
 ```
 
-### <a name="strong-dictionary-types"></a>Надежный словарей.
+#### <a name="strong-dictionary-types"></a>Надежный словарей.
 
 Следующие типы данных поддерживаются в `StrongDictionary` определение:
 

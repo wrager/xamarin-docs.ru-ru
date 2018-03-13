@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: f618f7257ab082a2a5b0aa587b135ad169d15133
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5b74b1486d72176207d3ccd669c85e249d0706b6
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="android-callable-wrappers"></a>Android с помощью вызываемых оболочек
 
@@ -22,7 +22,6 @@ Android с помощью вызываемых оболочек (ACWs) треб�
 Android с помощью вызываемых оболочек, созданные **monodroid.exe** при включенном [процесс построения](~/android/deploy-test/building-apps/build-process.md): они формируются для всех типов, которые наследуют (прямо или косвенно) [ Java.Lang.Object](https://developer.xamarin.com/api/type/Java.Lang.Object/). 
 
 
-<a name="ACW_Naming" />
 
 ## <a name="android-callable-wrapper-naming"></a>Именование Android вызываемой оболочки
 
@@ -74,7 +73,6 @@ namespace My {
 На основе команду MD5SUM именования ACW впервые появился в Xamarin.Android 5.0. Дополнительные сведения о именование атрибутов см. в разделе [RegisterAttribute](https://developer.xamarin.com/api/type/Android.Runtime.RegisterAttribute/). 
 
 
-<a name="Implementing_Interfaces" />
 
 ## <a name="implementing-interfaces"></a>Реализация интерфейсов
 
@@ -97,7 +95,6 @@ class MyComponentCallbacks : Java.Lang.Object, Android.Content.IComponentCallbac
 }
 ```
 
-<a name="Implementation_Details" />
 
 ## <a name="implementation-details"></a>Сведения о реализации
 

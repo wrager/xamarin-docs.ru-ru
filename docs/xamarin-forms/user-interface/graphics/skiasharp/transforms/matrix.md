@@ -4,14 +4,15 @@ description: "Подробные сведения SkiaSharp преобразов
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 9EDED6A0-F0BF-4471-A9EF-E0D6C5954AE4
 author: charlespetzold
 ms.author: chape
 ms.date: 04/12/2017
-ms.openlocfilehash: 85402768990869a2121cdea5ab7d232d80d64ed2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9d5e65abe675ded48e9239f2cd10ceed4a7c3a52
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="matrix-transforms"></a>Матрица преобразования
 
@@ -401,7 +402,7 @@ public class PathTransformPage : ContentPage
 
 Он отображается в левом верхнем углу холста:
 
-[![](matrix-images/pathtransform-small.png "Тройной снимок экрана со страницей преобразовать путь")](matrix-images/pathtransform-large.png "тройной снимок экрана со страницей путь преобразования")
+[![](matrix-images/pathtransform-small.png "Тройной снимок экрана со страницей преобразовать путь")](matrix-images/pathtransform-large.png#lightbox "тройной снимок экрана со страницей путь преобразования")
 
 Конструктор этой программы применяется матрицы по пути с следующий вызов:
 
@@ -588,7 +589,7 @@ public partial class ShowAffineMatrixPage : ContentPage
 
 IOS экрана ниже показано растрового изображения при первой загрузке страницы, а два других экранах показывает его после обработки некоторые:
 
-[![](matrix-images/showaffinematrix-small.png "Тройной снимок экрана со страницей Показать аффинное")](matrix-images/showaffinematrix-large.png "тройной снимок экрана со страницей Показать аффинное")
+[![](matrix-images/showaffinematrix-small.png "Тройной снимок экрана со страницей Показать аффинное")](matrix-images/showaffinematrix-large.png#lightbox "тройной снимок экрана со страницей Показать аффинное")
 
 Хотя кажется, как если бы точки касания перетащите углы растрового изображения, которые являются только иллюзии. Матрица, вычисленный на основе точки касания преобразует растровое изображение так, чтобы углов совпадало с точки касания.
 

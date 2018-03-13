@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 4e640979305a568649c59f6c75033296153b99de
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 838a11f078d735759eda1d45a082ccbad51e2779
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="touch-in-ios"></a>Touch в iOS
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 02/27/2018
 
 Тем не менее многие из представления в `UIKit` имеют сенсорный ввод включен по умолчанию. Существует два способа включить касания элемента управления. Первый способ — флажок Включить взаимодействие пользователя в панели свойств iOS конструктора, как показано на следующем снимке экрана:
 
- [ ![](touch-in-ios-images/image1.png "Установите флажок Включить взаимодействие пользователя в панели свойств конструктора iOS")](touch-in-ios-images/image1.png)
+ [![](touch-in-ios-images/image1.png "Установите флажок Включить взаимодействие пользователя в панели свойств конструктора iOS")](touch-in-ios-images/image1.png#lightbox)
 
 Контроллер также можно использовать для задания `UserInteractionEnabled` свойство значение true в `UIView` класса. Это необходимо, если в коде создается пользовательский Интерфейс.
 
@@ -81,7 +81,7 @@ public override void TouchesBegan (NSSet touches, UIEvent evt)
 
 Мультисенсорные не включен по умолчанию для элементов управления. Мультисенсорные можно включить в конструкторе, iOS, как показано на следующем снимке экрана:
 
- [ ![](touch-in-ios-images/image2.png "Мультисенсорные включена в конструкторе iOS")](touch-in-ios-images/image2.png)
+ [![](touch-in-ios-images/image2.png "Мультисенсорные включена в конструкторе iOS")](touch-in-ios-images/image2.png#lightbox)
 
 Также возможна установка мультисенсорные программным способом, задав `MultipleTouchEnabled` свойства, как показано в следующей строке кода:
 

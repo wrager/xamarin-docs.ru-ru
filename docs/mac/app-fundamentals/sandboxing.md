@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 9e64f1962e35372a6058f4b515efa5a61c1c9e45
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 9cf9cb2e4773b90ecdd9321c6627003be3fa1b8b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="sandboxing-a-xamarinmac-app"></a>«Песочница» для приложения Xamarin.Mac
 
@@ -22,7 +22,7 @@ _В этой статье рассматриваются песочницы пр
 
 При работе с C# и .NET в приложении Xamarin.Mac, как и при работе с Objective-C или Swift имеют такие же возможности изолированного приложения.
 
-[![Пример выполняемого приложения](sandboxing-images/intro01.png "пример выполняемого приложения")](sandboxing-images/intro01-large.png)
+[![Пример выполняемого приложения](sandboxing-images/intro01.png "пример выполняемого приложения")](sandboxing-images/intro01-large.png#lightbox)
 
 В этой статье рассматриваются основы работы с "песочницы" в приложении Xamarin.Mac и все элементы, входящие в "песочницы": каталоги контейнера, прав, определенного пользователем разрешения, разделение прав доступа и принудительного применения ядра. Настоятельно рекомендуется работать через [Hello, Mac](~/mac/get-started/hello-mac.md) статью, во-первых, в частности [введение в Xcode и интерфейс построителя](~/mac/get-started/hello-mac.md#Introduction_to_Xcode_and_Interface_Builder) и [выходов и действия](~/mac/get-started/hello-mac.md#Outlets_and_Actions) разделы, как он охватывает основные принципы и методы, которые будут использоваться в этой статье.
 
@@ -70,19 +70,19 @@ _В этой статье рассматриваются песочницы пр
 1. Запустите Visual Studio для Mac и нажмите кнопку **новое решение...** .
 2. Из **новый проект** выберите **Mac** > **приложения** > **Cocoa приложения**: 
 
-    [![Создание нового приложения Cocoa](sandboxing-images/sample01.png "Создание нового приложения Cocoa")](sandboxing-images/sample01-large.png)
+    [![Создание нового приложения Cocoa](sandboxing-images/sample01.png "Создание нового приложения Cocoa")](sandboxing-images/sample01-large.png#lightbox)
 3. Нажмите кнопку **Далее** кнопку, введите `MacSandbox` имя проекта и нажмите кнопку **создать** кнопки: 
 
-    [![Введите имя приложения](sandboxing-images/sample02.png "после ввода имени приложения")](sandboxing-images/sample02-large.png)
+    [![Введите имя приложения](sandboxing-images/sample02.png "после ввода имени приложения")](sandboxing-images/sample02-large.png#lightbox)
 4. В **Pad решения**, дважды щелкните **Main.storyboard** файл, чтобы открыть его для редактирования в Xcode: 
 
-    [![Изменение основного раскадровки](sandboxing-images/sample03.png "редактирования основного раскадровки")](sandboxing-images/sample03-large.png)
+    [![Изменение основного раскадровки](sandboxing-images/sample03.png "редактирования основного раскадровки")](sandboxing-images/sample03-large.png#lightbox)
 5. Перетащите **веб-представление** на окно, размер его для заполнения содержимого области и задайте его увеличиваться и уменьшаться с окном: 
 
-    [![Добавление веб-представление](sandboxing-images/sample04.png "Добавление веб-представление")](sandboxing-images/sample04-large.png)
+    [![Добавление веб-представление](sandboxing-images/sample04.png "Добавление веб-представление")](sandboxing-images/sample04-large.png#lightbox)
 6. Создание выхода для веб-страницы вызывается `webView`: 
 
-    [![Создание нового выхода](sandboxing-images/sample05.png "Создание нового выхода")](sandboxing-images/sample05-large.png)
+    [![Создание нового выхода](sandboxing-images/sample05.png "Создание нового выхода")](sandboxing-images/sample05-large.png#lightbox)
 7. Вернитесь в Visual Studio для Mac и дважды щелкните **ViewController.cs** файла в **Pad решения** чтобы открыть его для редактирования.
 8. Добавьте следующий код с помощью инструкции: `using WebKit;`
 9. Сделать `ViewDidLoad` внешний метод следующим образом: 
@@ -99,7 +99,7 @@ public override void AwakeFromNib ()
 
 Запуск приложения и убедиться, что на веб-сайте Apple в окне следующим образом:
 
-[![Отображение выполнения примера приложения](sandboxing-images/sample06.png "отображение выполнения примера приложения")](sandboxing-images/sample06-large.png)
+[![Отображение выполнения примера приложения](sandboxing-images/sample06.png "отображение выполнения примера приложения")](sandboxing-images/sample06-large.png#lightbox)
 
 <a name="Signing_and_Provisioning_the_App" />
 
@@ -111,34 +111,34 @@ public override void AwakeFromNib ()
 
 1. Войдите на портал разработчиков Apple: 
 
-    [![Вход на портал разработчиков Apple](sandboxing-images/sign01.png "входа на портал разработчиков Apple")](sandboxing-images/sign01-large.png)
+    [![Вход на портал разработчиков Apple](sandboxing-images/sign01.png "входа на портал разработчиков Apple")](sandboxing-images/sign01-large.png#lightbox)
 2. Выберите **сертификатов, профили & идентификаторы**: 
 
-    [![При выборе сертификатов, профили & идентификаторы](sandboxing-images/sign02.png "выбора сертификатов, идентификаторы и профили")](sandboxing-images/sign02-large.png)
+    [![Выбор сертификатов, идентификаторов и профилей](sandboxing-images/sign02.png "Выбор сертификатов, идентификаторов и профилей")](sandboxing-images/sign02-large.png#lightbox)
 3. В разделе **приложений Mac**выберите **идентификаторы**: 
 
-    [![При выборе идентификаторов](sandboxing-images/sign03.png "выбора идентификаторов")](sandboxing-images/sign03-large.png)
+    [![При выборе идентификаторов](sandboxing-images/sign03.png "выбора идентификаторов")](sandboxing-images/sign03-large.png#lightbox)
 4. Создайте новый идентификатор для приложения: 
 
-    [![Создание нового идентификатора приложения](sandboxing-images/sign04.png "создания нового идентификатора приложения")](sandboxing-images/sign04-large.png)
+    [![Создание нового идентификатора приложения](sandboxing-images/sign04.png "создания нового идентификатора приложения")](sandboxing-images/sign04-large.png#lightbox)
 5. В разделе **профили подготовки**выберите **разработки**: 
 
-    [![При выборе разработки](sandboxing-images/sign05.png "при выборе разработки")](sandboxing-images/sign05-large.png)
+    [![При выборе разработки](sandboxing-images/sign05.png "при выборе разработки")](sandboxing-images/sign05-large.png#lightbox)
 6. Создание профиля и выберите **разработка приложений для Mac**: 
 
-    [![Создание профиля](sandboxing-images/sign06.png "Создание профиля")](sandboxing-images/sign06-large.png)
+    [![Создание профиля](sandboxing-images/sign06.png "Создание профиля")](sandboxing-images/sign06-large.png#lightbox)
 7. Выберите идентификатор приложения, созданной ранее. 
 
-    [![При выборе идентификатор приложения](sandboxing-images/sign07.png "при выборе идентификатор приложения")](sandboxing-images/sign07-large.png)
+    [![При выборе идентификатор приложения](sandboxing-images/sign07.png "при выборе идентификатор приложения")](sandboxing-images/sign07-large.png#lightbox)
 8. Выберите разработчиков для этого профиля. 
 
-    [![Добавление разработчики](sandboxing-images/sign08.png "Добавление разработчиков")](sandboxing-images/sign08-large.png)
+    [![Добавление разработчики](sandboxing-images/sign08.png "Добавление разработчиков")](sandboxing-images/sign08-large.png#lightbox)
 9. Выберите компьютеры, для этого профиля: 
 
-    [![Выбор разрешенных компьютеров](sandboxing-images/sign09.png "выбора разрешенных компьютеров")](sandboxing-images/sign09-large.png)
+    [![Выбор разрешенных компьютеров](sandboxing-images/sign09.png "выбора разрешенных компьютеров")](sandboxing-images/sign09-large.png#lightbox)
 10. Присвойте имя профиля: 
 
-    [![Присвоение имени профиля](sandboxing-images/sign10.png "указания имени профиля")](sandboxing-images/sign10-large.png)
+    [![Присвоение имени профиля](sandboxing-images/sign10.png "указания имени профиля")](sandboxing-images/sign10-large.png#lightbox)
 11. Нажмите кнопку **сделать** кнопки.
 
 > [!IMPORTANT]
@@ -160,10 +160,10 @@ public override void AwakeFromNib ()
 1. В **Pad решения**, дважды щелкните **Info.plist** файл, чтобы открыть его для редактирования.
 2. Убедитесь, что **идентификатор пакета** соответствует нашей идентификатор приложения, созданной ранее (пример: `com.appracatappra.MacSandbox`): 
 
-    [![Редактирование идентификатор пакета](sandboxing-images/sign13.png "редактирование идентификатор пакета")](sandboxing-images/sign13-large.png)
+    [![Редактирование идентификатор пакета](sandboxing-images/sign13.png "редактирование идентификатор пакета")](sandboxing-images/sign13-large.png#lightbox)
 3. Далее дважды щелкните **Entitlements.plist** файл и убедитесь, наши **iCloud хранилищу ключей и значений** и **iCloud контейнеры** соответствовать всем нашей идентификатор приложения, созданной ранее (пример: `com.appracatappra.MacSandbox`): 
 
-    [![Изменение файла Entitlements.plist](sandboxing-images/sign17.png "редактирования файла Entitlements.plist")](sandboxing-images/sign17-large.png)
+    [![Изменение файла Entitlements.plist](sandboxing-images/sign17.png "редактирования файла Entitlements.plist")](sandboxing-images/sign17-large.png#lightbox)
 3. Сохраните изменения.
 4. В **Pad решения**, дважды щелкните файл проекта, чтобы открыть его параметры для изменения:  
 
@@ -180,7 +180,7 @@ public override void AwakeFromNib ()
 
 На этом этапе можно попытаться запустить приложение и убедитесь, что все подписана и неправильно подготовлена. Если приложение по-прежнему запускается как и ранее, все, что является хорошим. В случае сбоя может появиться диалоговое окно, как показано ниже:
 
-[![Пример проблемы диалоговое окно подготовки](sandboxing-images/sign16.png "пример проблемы диалоговое окно подготовки")](sandboxing-images/sign16-large.png)
+[![Пример проблемы диалоговое окно подготовки](sandboxing-images/sign16.png "пример проблемы диалоговое окно подготовки")](sandboxing-images/sign16-large.png#lightbox)
 
 Ниже приведены наиболее распространенные причины подготовки и подписи проблемы.
 
@@ -197,12 +197,12 @@ public override void AwakeFromNib ()
 1. В **Pad решения**, дважды щелкните **Entitlements.plist** файл, чтобы открыть его для редактирования.
 2. Установите флажки **включите права** и **приложения «песочницы» для включения**: 
 
-    [![Изменение прав и включение «песочницы» для](sandboxing-images/sign17.png "редактирование прав и включение "песочницы"")](sandboxing-images/sign17-large.png)
+    [![Изменение прав и включение «песочницы» для](sandboxing-images/sign17.png "редактирование прав и включение "песочницы"")](sandboxing-images/sign17-large.png#lightbox)
 3. Сохраните изменения.
 
 На этом этапе вы включили приложение "песочницы", но вы не предоставили требуется сетевой доступ для веб-представление. Если запустить приложение, вы должны получить пустое окно:
 
-[![Отображение в веб-доступа блокируются](sandboxing-images/sample08.png "отображение блокирования доступа в Интернет")](sandboxing-images/sample08-large.png)
+[![Отображение в веб-доступа блокируются](sandboxing-images/sample08.png "отображение блокирования доступа в Интернет")](sandboxing-images/sample08-large.png#lightbox)
 
 ### <a name="verifying-that-the-app-is-sandboxed"></a>Проверка изолированного приложения
 
@@ -210,25 +210,25 @@ public override void AwakeFromNib ()
 
 1. В средстве поиска, проверьте содержимое `~/Library/Containers/` папку - Если изолированное, это приложение будет папку с именем, например идентификатор пакета приложения (пример: `com.appracatappra.MacSandbox`): 
 
-    [![Открытие набора приложений](sandboxing-images/sample09.png "Открытие набора приложений")](sandboxing-images/sample09-large.png)
+    [![Открытие набора приложений](sandboxing-images/sample09.png "Открытие набора приложений")](sandboxing-images/sample09-large.png#lightbox)
 2. Система видит приложение как изолированное в мониторе активности:
     - Запустите монитор активности (под `/Applications/Utilities`). 
     - Выберите **представление** > **столбцы** и убедитесь, что **"песочницы"** отмечен пункт меню.
     - Убедитесь, что читает столбец "песочницы" `Yes` для приложения: 
 
-    [![Проверка приложения в мониторе активности](sandboxing-images/sample10.png "Проверка приложения в мониторе активности")](sandboxing-images/sample10-large.png)
+    [![Проверка приложения в мониторе активности](sandboxing-images/sample10.png "Проверка приложения в мониторе активности")](sandboxing-images/sample10-large.png#lightbox)
 3. Убедитесь, что изолированное приложение двоичные:
     - Запустите приложение "Терминал".
     - Перейдите к приложениям `bin` каталога.
     - Выполните эту команду: `codesign -dvvv --entitlements :- executable_path` (где `executable_path` — это путь к приложению): 
 
-    [![Проверка приложения в командной строке](sandboxing-images/sample11.png "Проверка приложения в командной строке")](sandboxing-images/sample11-large.png)
+    [![Проверка приложения в командной строке](sandboxing-images/sample11.png "Проверка приложения в командной строке")](sandboxing-images/sample11-large.png#lightbox)
 
 ### <a name="debugging-a-sandboxed-app"></a>Отладка изолированного приложения
 
 Отладчик подключается к приложениям Xamarin.Mac через TCP, это означает, что по умолчанию при включении песочницы, не удается подключиться к приложению, поэтому при попытке запустить приложение без соответствующих разрешений, который включен, возникает сообщение об ошибке *«не удалось подключиться к отладчик»*. 
 
-[![Задайте необходимые параметры](sandboxing-images/debug01.png "задайте необходимые параметры")](sandboxing-images/debug01-large.png)
+[![Задайте необходимые параметры](sandboxing-images/debug01.png "задайте необходимые параметры")](sandboxing-images/debug01-large.png#lightbox)
 
 **Разрешить исходящих сетевых соединений (клиент)** разрешение является требуемую для отладчика, включение этого класса, позволит отладку в обычном режиме. Поскольку нельзя выполнять отладку без него, мы обновили `CompileEntitlements` целевого объекта для `msbuild` для автоматического добавления этого разрешения прав для любого приложения, изолированным для отладки только сборок. Построения выпуска следует использовать права, указанные в файле прав, без изменений.
 
@@ -248,7 +248,7 @@ public override void AwakeFromNib ()
 2. Откройте **консоли** приложения (из `/Applications/Utilties/`).
 3. Выберите **все сообщения** на боковой панели и введите `sandbox` поиска: 
 
-    [![Пример проблемы в консоли «песочницы» для](sandboxing-images/resolve01.png "пример проблем "песочницы" в консоли")](sandboxing-images/resolve01-large.png)
+    [![Пример проблемы в консоли «песочницы» для](sandboxing-images/resolve01.png "пример проблем "песочницы" в консоли")](sandboxing-images/resolve01-large.png#lightbox)
 
 Для нашего выше примере приложения вы увидите, что Kernal блокирует `network-outbound` трафика из-за приложения "песочницы", так как не был запрошен эти права.
 
@@ -261,7 +261,7 @@ public override void AwakeFromNib ()
 1. В **Pad решения**, дважды щелкните **Entitlements.plist** файл, чтобы открыть его для редактирования.
 2. В разделе **прав** установите флажок **разрешить исходящих сетевых соединений (клиент)** флажок: 
 
-    [![Изменение прав](sandboxing-images/sign17.png "редактирование прав")](sandboxing-images/sign17-large.png)
+    [![Изменение прав](sandboxing-images/sign17.png "редактирование прав")](sandboxing-images/sign17-large.png#lightbox)
 3. Сохраните изменения в приложение.
 
 Если мы делать все вышеперечисленное для нашего примера приложения, затем постройте и запустите его, веб-содержимое теперь отображается должным образом.
@@ -284,7 +284,7 @@ public override void AwakeFromNib ()
 
 Изменение ресурсов "песочницы" приложение приложения путем редактирования его **Entitlements.plist** файла и проверка или выбор прав, необходимых в раскрывающихся списках редакторы:
 
-[![Изменение прав](sandboxing-images/sign17.png "редактирование прав")](sandboxing-images/sign17-large.png)
+[![Изменение прав](sandboxing-images/sign17.png "редактирование прав")](sandboxing-images/sign17-large.png#lightbox)
 
 ### <a name="container-directories-and-file-system-access"></a>Каталоги контейнера и доступ к файловой системе
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/08/2018
-ms.openlocfilehash: e7b4349ee2664a94ef6dff3c6a58d5f8f97682a1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f962f4619352dbaaed8c8ffcf5d8c8305cb6ad62
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="specialized-fragment-classes"></a>Фрагмент специализированные классы
 
@@ -24,15 +24,13 @@ ms.lasthandoff: 02/27/2018
 -   **PreferenceFragment** &ndash; этот фрагмент используется для отображения объектов предпочтений в виде списков.
 
 
-<a name="The_ListFragment" />
 
 ## <a name="the-listfragment"></a>ListFragment
 
 `ListFragment` Очень похожа на концепции и функциональные возможности для `ListActivity`; это программа-оболочка, на котором размещена `ListView` в фрагменте. На рисунке ниже показана `ListFragment` на планшете и телефон:
 
-[![Снимки экрана ListFragment на планшете и на телефон](specialized-fragment-classes-images/intro-screenshot-sml.png)](specialized-fragment-classes-images/intro-screenshot.png)
+[![Снимки экрана ListFragment на планшете и на телефон](specialized-fragment-classes-images/intro-screenshot-sml.png)](specialized-fragment-classes-images/intro-screenshot.png#lightbox)
 
-<a name="Binding_Data_With_The_ListAdapter" />
 
 ### <a name="binding-data-with-the-listadapter"></a>Привязка данных с ListAdapter
 
@@ -51,7 +49,6 @@ public override void OnActivityCreated(Bundle savedInstanceState)
 
 При задании `ListAdapter`, очень важно использовать `ListFragment.ListAdapter` свойства, а не `ListView.ListAdapter` свойство. С помощью `ListView.ListAdapter` вызовет важный код инициализации должен пропускать.
 
-<a name="Responding_to_User_Selection" />
 
 
 ### <a name="responding-to-user-selection"></a>Отклик на выбор пользователя
@@ -84,14 +81,13 @@ public override void OnListItemClick(ListView l, View v, int index, long id)
 
 В коде выше, когда пользователь выбирает элемент в `ListFragment`, новый фрагмент отображается в действии размещения отображение подробной информации о выбранного элемента.
 
-<a name="DialogFragment" />
 
 
 ## <a name="dialogfragment"></a>DialogFragment
 
 *DialogFragment* является фрагментом, который используется для отображения диалогового окна объекта внутри фрагмента, который перемещается над окном действия. Он предназначен для замены управляемого API-интерфейсы (начиная с Android 3.0) диалогового окна. На следующем рисунке показан пример `DialogFragment`:
 
-[![Снимок экрана из DialogFragment отображение добавить новый элемент управления EditBox Vehicle](specialized-fragment-classes-images/dialog-fragment-example.png)](specialized-fragment-classes-images/dialog-fragment-example.png)
+[![Снимок экрана из DialogFragment отображение добавить новый элемент управления EditBox Vehicle](specialized-fragment-classes-images/dialog-fragment-example.png)](specialized-fragment-classes-images/dialog-fragment-example.png#lightbox)
 
 Объект `DialogFragment` гарантирует, что состояние между фрагмента и диалогового окна остаются согласованными. Все взаимодействия и управления диалогового окна объекта должны быть выполнены через `DialogFragment` API и не выполнять с прямыми вызовами в объекте диалогового окна. `DialogFragment` API предоставляет каждый экземпляр с `Show()` метод, используемый для отображения фрагмента. Чтобы избавиться от фрагмента двумя способами.
 
@@ -106,13 +102,12 @@ public override void OnListItemClick(ListView l, View v, int index, long id)
 - **OnCreateDialog** &ndash; при этом создается настраиваемое диалоговое окно. Обычно он используется для отображения *AlertDialog*. При переопределении этого метода, не требуется переопределять `OnCreateView` .
 
 
-<a name="A_Simple_DialogFragment" />
 
 ### <a name="a-simple-dialogfragment"></a>Простой DialogFragment
 
 На следующем рисунке показан простой `DialogFragment` с `TextView` и два `Button`s:
 
-[![Пример DialogFragment с текстового представления и две кнопки](specialized-fragment-classes-images/dialog-fragment-example-2.png)](specialized-fragment-classes-images/dialog-fragment-example-2.png)
+[![Пример DialogFragment с текстового представления и две кнопки](specialized-fragment-classes-images/dialog-fragment-example-2.png)](specialized-fragment-classes-images/dialog-fragment-example-2.png#lightbox)
 
 `TextView` Отображается, сколько раз пользователь нажал кнопку один в `DialogFragment`, в то время, нажав кнопку «Другие» закроется фрагмента. Код для `DialogFragment` является:
 
@@ -145,7 +140,6 @@ public class MyDialogFragment : DialogFragment
 }
 ```
 
-<a name="Displaying_a_Fragment" />
 
 ### <a name="displaying-a-fragment"></a>Отображение фрагмента
 
@@ -164,14 +158,12 @@ public void ShowDialog()
 }
 ```
 
-<a name="Dismissing_a_Fragment" />
 
 ### <a name="dismissing-a-fragment"></a>Отклонения фрагмент
 
 Вызов `Dismiss()` экземпляра `DialogFragment` вызывает фрагмент, удаляемый из действия и фиксации этой транзакции.
 Стандартные методы жизненного цикла фрагмент, участвующих в уничтожения фрагмента будет вызываться.
 
-<a name="Alert_Dialog" />
 
 ### <a name="alert-dialog"></a>Диалоговое окно предупреждения
 
@@ -195,7 +187,6 @@ public class AlertDialogFragment : DialogFragment
 }
 ```
 
- <a name="PreferenceFragment" />
 
 
 ## <a name="preferencefragment"></a>PreferenceFragment
@@ -204,9 +195,8 @@ public class AlertDialogFragment : DialogFragment
 ) &ndash; иерархию персональные настройки для пользователя, она будет отображаться в фрагменте. Как пользователь взаимодействует с настройками, они будут автоматически сохранены для [SharedPreferences](http://developer.android.com/reference/android/content/SharedPreferences.html).
 В Android 3.0 или более поздней версии приложения, используйте `PreferenceFragment` с предпочтения в приложении. На следующем рисунке показаны пример `PreferenceFragment`:
 
-[![Пример PreferencesFragment с встроенного диалогового окна и параметры запуска](specialized-fragment-classes-images/preferences-dialog.png)](specialized-fragment-classes-images/preferences-dialog.png)
+[![Пример PreferencesFragment с встроенного диалогового окна и параметры запуска](specialized-fragment-classes-images/preferences-dialog.png)](specialized-fragment-classes-images/preferences-dialog.png#lightbox)
 
-<a name="Create_A_Preference_Fragment_from_a_Resource" />
 
 ### <a name="create-a-preference-fragment-from-a-resource"></a>Создать фрагмент предпочтений из ресурса
 
@@ -278,7 +268,6 @@ public class PrefFragment : PreferenceFragment
 }
 ```
 
- <a name="Querying_Activities_to_Create_a_Preference_Fragment" />
 
 
 ### <a name="querying-activities-to-create-a-preference-fragment"></a>Запрос действия для создания фрагмента предпочтения
@@ -316,4 +305,4 @@ public class MyActivityWithPreferences : Activity
 
 `MetaDataAttribute` Объявляет файл ресурсов XML, `PreferenceFragment` будет использовать для увеличению иерархии предпочтения. Если `MetatDataAttribute` значение не указано, будет создано исключение во время выполнения. Этот код, запускаемый `PreferenceFragment` отображается как в следующем снимке экрана:
 
-[![Снимок экрана: пример приложения с PreferenceFragment отображается](specialized-fragment-classes-images/preference-fragment-getpreferencesfromintent.png)](specialized-fragment-classes-images/preference-fragment-getpreferencesfromintent.png)
+[![Снимок экрана: пример приложения с PreferenceFragment отображается](specialized-fragment-classes-images/preference-fragment-getpreferencesfromintent.png)](specialized-fragment-classes-images/preference-fragment-getpreferencesfromintent.png#lightbox)

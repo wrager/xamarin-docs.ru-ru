@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 7da0f52816d4efc102e830411589e0ac38a73574
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d9b6b5a778e0e4d5092d1036109f82896acf639b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="message-app-extension-basics"></a>Основы сообщений расширения приложения
 
@@ -121,13 +121,13 @@ Apple предлагает тестирование активы изображ�
 2. Откройте решение для добавления расширения приложения для сообщения. 
 3. Выберите **iOS** > **расширения** > **iMessage расширения** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](intro-to-message-app-extensions-images/message01.png "Выберите iMessage расширения")](intro-to-message-app-extensions-images/message01.png)
+    [![](intro-to-message-app-extensions-images/message01.png "Выберите iMessage расширения")](intro-to-message-app-extensions-images/message01.png#lightbox)
 4. Введите **имя расширения** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](intro-to-message-app-extensions-images/message02.png "Введите имя расширения")](intro-to-message-app-extensions-images/message02.png)
+    [![](intro-to-message-app-extensions-images/message02.png "Введите имя расширения")](intro-to-message-app-extensions-images/message02.png#lightbox)
 5. Нажмите кнопку **создать** кнопки для построения расширения: 
 
-    [ ![](intro-to-message-app-extensions-images/message03.png "Нажмите кнопку "Создать"")](intro-to-message-app-extensions-images/message03.png)
+    [![](intro-to-message-app-extensions-images/message03.png "Нажмите кнопку "Создать"")](intro-to-message-app-extensions-images/message03.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -135,7 +135,7 @@ Apple предлагает тестирование активы изображ�
 2. Откройте решение для добавления расширения приложения для сообщения. 
 3. Выберите **iOS** > **расширения** > **iMessage расширения** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](intro-to-message-app-extensions-images/message01w.png "Выберите iMessage расширения")](intro-to-message-app-extensions-images/message01.png)
+    [![](intro-to-message-app-extensions-images/message01w.png "Выберите iMessage расширения")](intro-to-message-app-extensions-images/message01.png#lightbox)
 4. Введите **имя расширения** и нажмите кнопку **ОК** кнопки
 
 -----
@@ -159,7 +159,7 @@ Apple предлагает тестирование активы изображ�
 1. В **Pad решения**, щелкните правой кнопкой мыши имя проекта расширения и выберите **добавить** > **новый файл...**   >  **iOS | Apple Watch** > **интерфейс контроллера**.
 2. Введите `StickerBrowserViewController` для **имя** и нажмите кнопку **New** кнопки: 
 
-    [ ![](intro-to-message-app-extensions-images/browser01.png "Введите StickerBrowserViewController имени")](intro-to-message-app-extensions-images/browser01.png)
+    [![](intro-to-message-app-extensions-images/browser01.png "Введите StickerBrowserViewController имени")](intro-to-message-app-extensions-images/browser01.png#lightbox)
 3. Откройте `StickerBrowserViewController.cs` файл для редактирования.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -167,7 +167,7 @@ Apple предлагает тестирование активы изображ�
 1. В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта расширения и выберите **добавить** > **новый файл...**   >  **iOS | Apple Watch** > **интерфейс контроллера**.
 2. Введите `StickerBrowserViewController` для **имя** и нажмите кнопку **New** кнопки: 
 
-    [ ![](intro-to-message-app-extensions-images/browser01w.png "Введите StickerBrowserViewController имени")](intro-to-message-app-extensions-images/browser01.png)
+    [![](intro-to-message-app-extensions-images/browser01w.png "Введите StickerBrowserViewController имени")](intro-to-message-app-extensions-images/browser01.png#lightbox)
 3. Откройте `StickerBrowserViewController.cs` файл для редактирования.
 
 -----

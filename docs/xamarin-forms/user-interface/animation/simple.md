@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/27/2017
-ms.openlocfilehash: d1d91804c11d2e944bb618fadb3d659b512c5905
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: fb7ca216978e4c890349a44b07d5a383e9ca2384
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="simple-animations"></a>Простой анимации
 
@@ -130,7 +130,7 @@ await image.TranslateTo (-100, -100, 1000);
 ![](simple-images/translateto.png "Перевод анимации")
 
 > [!NOTE]
-> **Примечание**: Если элемент изначально располагаются вне экрана и затем преобразованы к экрану, после перевода элемент ввода данных остается макета вне экрана, и пользователь не может взаимодействовать с ним. Таким образом рекомендуется представлении должен быть размещен в последней позиции, которое затем требуемые переводы выполнена.
+> Если элемент изначально располагаются вне экрана и затем преобразованы к экрану, после перевода входной макет элемента остается вне экрана, и пользователь не может взаимодействовать с ним. Таким образом рекомендуется представлении должен быть размещен в последней позиции, которое затем требуемые переводы выполнена.
 
 ### <a name="fading"></a>Исчезание
 
@@ -228,6 +228,6 @@ ViewExtensions.CancelAnimations (image);
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Обзор поддержки асинхронного выполнения](~/cross-platform/platform/async.md)
+- [Общие сведения о поддержке асинхронного выполнения](~/cross-platform/platform/async.md)
 - [Базовая анимация (пример)](https://developer.xamarin.com/samples/xamarin-forms/userinterface/animation/basic/)
 - [ViewExtensions](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewExtensions/)

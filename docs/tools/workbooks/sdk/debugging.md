@@ -6,11 +6,11 @@ ms.assetid: 90143544-084D-49BF-B44D-7AF943668F6C
 ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
-ms.openlocfilehash: 4a83afca753d1131e3486004443f9c4a895f6fbc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a0873c6b902e29174da5e27a09e8f580d6d69eb7
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="debugging-integrations"></a>Отладка интеграции
 
@@ -43,11 +43,11 @@ defaults write com.xamarin.Inspector WebKitDeveloperExtras -bool true
 
 а затем перезапустите Xamarin книги. После этого вы увидите **проверить элемент** отображаются в вашей контекстного меню и новый **разработчика** области будут доступны в установках книг. Этот параметр позволяет выбрать, должны ли открываться при запуске средств разработчика:
 
-[![Панель разработчика](debugging-images/developer-pane-small.png)](debugging-images/developer-pane.png)
+[![Панель разработчика](debugging-images/developer-pane-small.png)](debugging-images/developer-pane.png#lightbox)
 
 Этот параметр также только для перезапуска, необходимо будет перезапустить клиент книги для ее вступили в силу на новых книг. Активация через контекстное меню или настройки средств разработчика отобразится знакомый пользовательский Интерфейс обозревателя Safari:
 
-[![Средства разработки Safari](debugging-images/mac-dev-tools.png)](debugging-images/mac-dev-tools.png)
+[![Средства разработки Safari](debugging-images/mac-dev-tools.png)](debugging-images/mac-dev-tools.png#lightbox)
 
 Сведения об использовании средств разработчика Safari см. в разделе [документации инспектора WebKit][webkit-docs].
 
@@ -61,6 +61,6 @@ C:\Windows\System32\F12\F12Chooser.exe
 
 Выбор выполнения F12 и увидеть внедренного экземпляра, лежащих в основе области клиента книги в списке. Выберите и знакомые F12, будет отображаться средства отладки из Internet Explorer, присоединен к клиенту.
 
-[![Инструменты F12](debugging-images/windows-dev-tools.png)](debugging-images/windows-dev-tools.png)
+[![Инструменты F12](debugging-images/windows-dev-tools.png)](debugging-images/windows-dev-tools.png#lightbox)
 
 [webkit-docs]: https://trac.webkit.org/wiki/WebInspector

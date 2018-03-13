@@ -7,21 +7,19 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 18c53ed6428eff911420c696d45b341d8e0fa5c1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1bf481e4999365f4afc52cb9dda83c6e627950e1
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="customizing-a-listviews-appearance"></a>Настройка внешнего вида ListView
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
 Макет отображаемых строк зависит от вида ListView. Чтобы изменить внешний вид `ListView`, макет другую строку.
 
-<a name="Built-in_Row_Views" />
 
 ## <a name="built-in-row-views"></a>Встроенные строки представления
 
@@ -53,11 +51,11 @@ ms.lasthandoff: 02/27/2018
 
 Каждое представление встроенные строки имеет встроенный стиль, связанные с ним. Эти снимки экрана показывают, как выглядит каждого представления:
 
-[![Снимки экрана TestListItem, SimpleSelectableListItem, SimpleListitem1 и SimpleListItem2](customizing-appearance-images/builtinviews.png)](customizing-appearance-images/builtinviews.png)
+[![Снимки экрана TestListItem, SimpleSelectableListItem, SimpleListitem1 и SimpleListItem2](customizing-appearance-images/builtinviews.png)](customizing-appearance-images/builtinviews.png#lightbox)
 
-[![Снимки экрана SimpleListItemActivated1, SimpleListItemActivated2, SimpleListItemChecked и SimpleListItemMultipleChecked](customizing-appearance-images/builtinviews-2.png)](customizing-appearance-images/builtinviews-2.png)
+[![Снимки экрана SimpleListItemActivated1, SimpleListItemActivated2, SimpleListItemChecked и SimpleListItemMultipleChecked](customizing-appearance-images/builtinviews-2.png)](customizing-appearance-images/builtinviews-2.png#lightbox)
 
-[![Снимки экрана SimpleListItemSingleChoice, TwoLineListItem, ActivityListItem и SimpleExpandableListItem](customizing-appearance-images/builtinviews-3.png)](customizing-appearance-images/builtinviews-3.png)
+[![Снимки экрана SimpleListItemSingleChoice, TwoLineListItem, ActivityListItem и SimpleExpandableListItem](customizing-appearance-images/builtinviews-3.png)](customizing-appearance-images/builtinviews-3.png#lightbox)
 
 **BuiltInViews/HomeScreenAdapter.cs** образец файла (в **BuiltInViews** решения) содержит код для создания экранов элемента-раскрывающийся список. Представление установлено `GetView` метод следующим образом:
 
@@ -88,7 +86,6 @@ view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleExpandableLi
 Свойства в представлении группы и дочернего представления затем устанавливаются с помощью ссылки на стандартные `Text1` и `Text2` управления идентификаторами, как показано выше. Снимок экрана SimpleExpandableListItem (как показано выше) пример группы одной строки представления (SimpleExpandableListItem1) и две строки дочернее представление (SimpleExpandableListItem2). Кроме того представление "Группа" можно настроить для двух строк (SimpleExpandableListItem2) и дочернего представления можно настроить для одной строки (SimpleExpandableListItem1) или обе группы представление и дочернее представление могут иметь одинаковое число строк. 
 
 
-<a name="Accessories" />
 
 ## <a name="accessories"></a>Стандартные
 
@@ -102,7 +99,7 @@ view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleExpandableLi
 
 Стандартные упомянутой выше представлены в следующих диалоговых окнах в порядке их соответствующие:
 
-[![Снимки экрана SimpleListItemChecked, SimpleListItemSingleChoice и SimpleListItemMultipleChoice с стандартные](customizing-appearance-images/accessories.png)](customizing-appearance-images/accessories.png)
+[![Снимки экрана SimpleListItemChecked, SimpleListItemSingleChoice и SimpleListItemMultipleChoice с стандартные](customizing-appearance-images/accessories.png)](customizing-appearance-images/accessories.png#lightbox)
 
 Для отображения одного этапа эти стандартные макета требуется идентификатор ресурса к адаптеру вручную установите состояние выбора для нужные строки. Эта строка кода показано, как создать и назначить `Adapter` с помощью одного из этих макетов:
 
@@ -112,7 +109,6 @@ ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListI
 
 `ListView` Сам поддерживает режимы другой вариант, независимо от того, будет отображаться метод. Чтобы избежать путаницы, используйте `Single` режим выбора с `Checked` и `SingleChoice` стандартные и `Multiple` режим с `MultipleChoice` стиля. Режим выбора управляется `ChoiceMode` свойство `ListView`.
 
-<a name="Handling_API_Level" />
 
 ### <a name="handling-api-level"></a>Уровень обработки API
 
@@ -137,7 +133,6 @@ lv.ChoiceMode = Android.Widget.ChoiceMode.Single; // Single
 */
 ```
 
-<a name="Selecting_Items_Programmatically" />
 
 ### <a name="selecting-items-programmatically"></a>Выбор элементов программным способом
 
@@ -165,7 +160,6 @@ for (var i = 0; i < sparseArray.Size(); i++ )
 Console.WriteLine();
 ```
 
-<a name="Creating_Custom_Row_Layouts" />
 
 ## <a name="creating-custom-row-layouts"></a>Создание настраиваемой строки макетов
 
@@ -188,7 +182,6 @@ Console.WriteLine();
 
 Эти изменения описаны ниже, начиная с созданием действия представление и представление пользовательских строк и затем охватывающие изменений адаптер и действия для их отображения.
 
-<a name="Adding_a_ListView_to_an_Activity_Layout" />
 
 ### <a name="adding-a-listview-to-an-activity-layout"></a>Добавление действия макета ListView
 
@@ -220,7 +213,6 @@ Console.WriteLine();
 
 Преимущество использования `Activity` с пользовательский макет (вместо `ListActivity`) заключается в возможность добавлять дополнительные элементы управления на экран, например заголовок `TextView` в этом примере.
 
-<a name="Creating_a_Custom_Row_Layout" />
 
 ### <a name="creating-a-custom-row-layout"></a>Создание настраиваемой строки разметки
 
@@ -267,7 +259,6 @@ Console.WriteLine();
 
 Но макета пользовательских строк может содержать множество различных элементов управления, прокрутка производительности могут быть затронуты сложных конструкций и с помощью изображения (в особенности, если они имеют для загрузки по сети). В статье Google Дополнительные сведения об адресации прокрутки проблем с производительностью.
 
-<a name="Referencing_a_Custom_Row_View" />
 
 ### <a name="referencing-a-custom-row-view"></a>Ссылающаяся на представление настраиваемой строки
 
@@ -309,7 +300,6 @@ public class HomeScreenAdapter : BaseAdapter<TableItem> {
 }
 ```
 
-<a name="Referencing_the_Custom_ListView_in_the_Activity" />
 
 ### <a name="referencing-the-custom-listview-in-the-activity"></a>Создание ссылок на пользовательские ListView в действии
 
@@ -343,10 +333,9 @@ void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e)
 
 Полученный экран выглядит следующим образом:
 
-[![Снимок экрана: результирующий CustomRowView](customizing-appearance-images/customrowview.png)](customizing-appearance-images/customrowview.png)
+[![Снимок экрана: результирующий CustomRowView](customizing-appearance-images/customrowview.png)](customizing-appearance-images/customrowview.png#lightbox)
 
 
-<a name="Customizing_the_Row_Selector_Color" />
 
 ### <a name="customizing-the-row-selector-color"></a>Настройка цвета селектор строк
 
@@ -386,10 +375,9 @@ android:background="@drawable/CustomSelector"
 
 Выбранные строки и соответствующий `Toast` сообщение сейчас выглядит следующим образом:
 
-[![Выбранной строки в оранжевый с всплывающее сообщение, отображающее имя выбранной строки](customizing-appearance-images/customselectcolor.png)](customizing-appearance-images/customselectcolor.png)
+[![Выбранной строки в оранжевый с всплывающее сообщение, отображающее имя выбранной строки](customizing-appearance-images/customselectcolor.png)](customizing-appearance-images/customselectcolor.png#lightbox)
 
 
-<a name="Preventing_Flickering_on_Custom_Layouts" />
 
 ### <a name="preventing-flickering-on-custom-layouts"></a>Предотвращение мерцание пользовательские макеты
 

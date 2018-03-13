@@ -3,16 +3,16 @@ title: "Связывание приложения в Android"
 description: "В этом руководстве будут рассматриваться как Android 6.0 поддерживает приложения связь, это способ, который позволяет мобильных приложений для ответа на URL-адреса на веб-сайтах. Рассмотрим, какие связывание приложения является, как реализовать приложение связывания в приложении Android 6.0 и настройка веб-сайта, чтобы предоставить разрешения на мобильное приложение для домена."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: DDE54082-6E2B-9ED9-05FB-D9C1D1B1258E
+ms.assetid: 48174E39-19FD-43BC-B54C-9AF11D4B1F91
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 726890e48407dd26f52c5aeaecf4eab51dcc5182
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 78fef780728ba1c2a3b9978504058f7a386b0e7d
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="app-linking-in-android"></a>Связывание приложения в Android
 
@@ -84,7 +84,7 @@ Android проверит каждого узла, заданного с наме
 Связывание приложения Android 6.0 требует, что Android проверьте связь между приложением и веб-сайт, прежде чем устанавливать приложение как обработчик по умолчанию для URI. Эта проверка будет выполняться после установки приложения. *Цифровых активов ссылки* файл является файлом JSON, размещенная в соответствующей webdomain(s).
 
 > [!NOTE]
-> **Примечание:** `android:autoVerify` атрибут должен быть задан с намерением фильтра &ndash; в противном случае Android не будет выполнять проверку.
+> `android:autoVerify` Атрибут должен быть задан с намерением фильтра &ndash; в противном случае Android не будет выполнять проверку.
 
 Файл расположен по мастеру домена в расположении **https://domain/.well-known/assetlinks.json**.
 

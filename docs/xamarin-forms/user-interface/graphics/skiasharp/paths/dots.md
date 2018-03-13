@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 30b7e322d618492164fac5e439c5187616d61717
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 32326eb472b1bb8b4fbaf4066edc36255f5948ca
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="dots-and-dashes"></a>Точек и тире
 
@@ -155,7 +155,7 @@ float[] GetPickerArray(Picker picker)
 
 На следующих снимках экрана экрана операций ввода-вывода в крайней левой показано пунктирной линией.
 
-[![](dots-images/dotsanddashes-small.png "Тройной снимок экрана со страницей точек и тире")](dots-images/dotsanddashes-large.png "тройной снимок экрана со страницей точек и тире")
+[![](dots-images/dotsanddashes-small.png "Тройной снимок экрана со страницей точек и тире")](dots-images/dotsanddashes-large.png#lightbox "тройной снимок экрана со страницей точек и тире")
 
 Однако Android экрана также должен показать пунктирной линией, с помощью массива {10, 10}, но вместо сплошной линии. Что произошло? Проблема заключается в Android экрана, также, имеет значение caps штриха `Square`. При этом расширяется все дефисы на половине толщины обводки, доступ к ним для заполнения пропусков.
 
@@ -213,7 +213,7 @@ protected override void OnAppearing()
 
 Конечно вы получите фактически работающих с программой, чтобы увидеть анимацию.
 
-[![](dots-images/animatedspiral-small.png "Тройной снимок экрана со страницей анимированы спирали")](dots-images/animatedspiral-large.png "тройной снимок экрана со страницей спирали анимации")
+[![](dots-images/animatedspiral-small.png "Тройной снимок экрана со страницей анимированы спирали")](dots-images/animatedspiral-large.png#lightbox "тройной снимок экрана со страницей спирали анимации")
 
 Теперь вы знаете, как для рисования линий и кривых с помощью параметрических уравнений определения. Раздел должен быть опубликован в более поздней версии будут рассмотрены различные типы кривых, `SKPath` поддерживает.
 

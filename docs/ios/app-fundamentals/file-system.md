@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: a2c3ce9e19340067d77a8bc131b5a247806ecfa1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 36c793e7a9b7b30bcb0cdf2c7959fd2df36c8775
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-the-file-system"></a>Работа с файловой системой
 
@@ -26,7 +26,7 @@ iOS накладывает некоторые ограничения на при
 
 В этой статье обсуждаются возможности и ограничения iOS файловая система подробные и приводится пример приложения, демонстрирующий использование Xamarin.iOS для выполнения некоторых операций простой файловой системы:
 
- [ ![](file-system-images/05-sampleapp.png "Образец операций ввода-вывода при выполнении некоторых операций простой файловой системы")](file-system-images/05-sampleapp.png)
+ [![](file-system-images/05-sampleapp.png "Образец операций ввода-вывода при выполнении некоторых операций простой файловой системы")](file-system-images/05-sampleapp.png#lightbox)
 
  <a name="General_File_Access" />
 
@@ -110,7 +110,7 @@ Directory.CreateDirectory(directoryname);
 
 Работа с Json данных в приложении Xamarin.iOS очень просто с помощью [Json.NET](http://www.newtonsoft.com/json) framework JSON высокой производительности для пакета NuGet .NET. Просто добавьте пакет NuGet для проекта приложения: 
 
-[ ![](file-system-images/json01.png "Добавление пакета NuGet в проект приложения")](file-system-images/json01.png)
+[![](file-system-images/json01.png "Добавление пакета NuGet в проект приложения")](file-system-images/json01.png#lightbox)
 
 Добавьте класс в качестве модели для сериализации и десериализации данных (в данном случае `Account.cs`):
 
@@ -217,11 +217,11 @@ File.WriteAllText(filename, json);
 
 Для просмотра набора приложений, в образце кода, щелкните правой кнопкой мыши проект в Visual Studio для Mac и выберите **открыть папку, содержащую**. Перейдите к **bin/Debug/** где необходимо найти значка приложения (как на снимке экрана ниже).
 
- [ ![](file-system-images/40-bundle.png "Перейдите к bin/Debug, чтобы найти аналогичные на следующий снимок экрана значка приложения")](file-system-images/40-bundle.png)
+ [![](file-system-images/40-bundle.png "Перейдите к bin/Debug, чтобы найти аналогичные на следующий снимок экрана значка приложения")](file-system-images/40-bundle.png#lightbox)
 
 Щелкните правой кнопкой мыши на этот значок и кнопку **Просмотр содержимого пакета** для просмотра содержимого каталога пакета приложения. Содержимое отображается так же, как содержимое регулярного каталога, как показано ниже:
 
- [ ![](file-system-images/45-bundle.png "Содержимое пакета приложения")](file-system-images/45-bundle.png)
+ [![](file-system-images/45-bundle.png "Содержимое пакета приложения")](file-system-images/45-bundle.png#lightbox)
 
 Пакет приложения установленных в симуляторе или на устройстве во время тестирования, который в конечном итоге его отправке в Apple для включения в магазине приложений.
 
@@ -313,7 +313,7 @@ File.WriteAllText(filename, json);
 
 На этом снимке экрана показана структура каталогов в окне поиска.
 
- [ ![](file-system-images/08-library-directory.png "На этом снимке экрана показана структура каталогов в окне поиска")](file-system-images/08-library-directory.png)
+ [![](file-system-images/08-library-directory.png "На этом снимке экрана показана структура каталогов в окне поиска")](file-system-images/08-library-directory.png#lightbox)
 
  <a name="Accessing_Other_Directories_Programmatically" />
 
@@ -352,11 +352,11 @@ var tmp = Path.Combine (documents, "..", "tmp");
 
 Пользователям доступны файлы в каталоге приложения документы, изменив `Info.plist` и создание **поддерживает приложение управления доступом iTunes** (`UIFileSharingEnabled`) запись в **источника** представления, как показан ниже:
 
- [ ![](file-system-images/09-uifilesharingenabled-plist.png "Добавление приложения поддерживает общий доступ к свойству iTunes")](file-system-images/09-uifilesharingenabled-plist.png)
+ [![](file-system-images/09-uifilesharingenabled-plist.png "Добавление приложения поддерживает общий доступ к свойству iTunes")](file-system-images/09-uifilesharingenabled-plist.png#lightbox)
 
 Эти файлы можно получить в iTunes, когда устройство подключено, а пользователь выбирает `Apps` вкладки. Например на следующем рисунке показан файлы в общих через iTunes выбранного приложения:
 
- [ ![](file-system-images/10-itunes-file-sharing.png "На этом снимке экрана показаны файлы в общих через iTunes выбранного приложения")](file-system-images/10-itunes-file-sharing.png)
+ [![](file-system-images/10-itunes-file-sharing.png "На этом снимке экрана показаны файлы в общих через iTunes выбранного приложения")](file-system-images/10-itunes-file-sharing.png#lightbox)
 
 Пользователям доступны только элементы верхнего уровня в этом каталоге через iTunes. Они не могут видеть содержимое всех его подкаталогах (хотя их можно скопировать их на свой компьютер и удалить их). Например с GoodReader, PDF и EPUB файлы можно использовать совместно с приложение, чтобы пользователи могут читать их на устройствах iOS.
 
@@ -364,7 +364,7 @@ var tmp = Path.Combine (documents, "..", "tmp");
 
 В образце кода для данной статьи создает файл и папку в папке "документы" (в **SampleCode.cs**) и обеспечивает общий доступ к файлам в **Info.plist** файла. На этом снимке экрана показано, как они отображаются в iTunes:
 
- [ ![](file-system-images/15-itunes-file-sharing-example.png "На этом снимке экрана показано, как отображаются файлы в iTunes")](file-system-images/15-itunes-file-sharing-example.png)
+ [![](file-system-images/15-itunes-file-sharing-example.png "На этом снимке экрана показано, как отображаются файлы в iTunes")](file-system-images/15-itunes-file-sharing-example.png#lightbox)
 
 Ссылаться на [работа с образами](~/ios/app-fundamentals/images-icons/index.md) статьи для получения сведений о том, как определение значков для приложения и для любых типов настраиваемого документа создается.
 

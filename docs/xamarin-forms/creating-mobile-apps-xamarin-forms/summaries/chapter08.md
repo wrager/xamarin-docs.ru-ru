@@ -3,14 +3,15 @@ title: "Сводка Глава 8. Код и код XAML в согласован
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 5970DEEB-1FC9-4F78-B4F6-D403E16D22ED
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: e95d6a20e828c92deb0e03fe1bcbcf18aac9e508
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 452a7835bcb54501edffe7a2467544c6677616ba
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-8-code-and-xaml-in-harmony"></a>Сводка Глава 8. Код и код XAML в согласованную
 
@@ -69,7 +70,7 @@ ms.lasthandoff: 02/27/2018
 
 [ `TapGestureRecognizer` ](https://developer.xamarin.com/api/type/Xamarin.Forms.TapGestureRecognizer/) Приводит к возникновению ошибки [ `Tapped` ](https://developer.xamarin.com/api/event/Xamarin.Forms.TapGestureRecognizer.Tapped/) события. [ **MonkeyTap** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter08/MonkeyTap) программы показано, как присоединить `TapGestureRecognizer` объектов до четырех `BoxView` элементы должны быть созданы имитация игры:
 
-[![Снимок экрана тройной monkey отвода](images/ch08fg07-small.png "игры имитации")](images/ch08fg07-large.png "имитации игры")
+[![Снимок экрана тройной monkey отвода](images/ch08fg07-small.png "игры имитации")](images/ch08fg07-large.png#lightbox "имитации игры")
 
 Но **MonkeyTap** звук действительно необходимы программе. (См. [следующей главе](chapter09.md).)
 

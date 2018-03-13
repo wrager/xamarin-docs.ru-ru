@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 9a3090873569db2466db9ab25cc105ea59401df3
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: abcda680f6cfbde802f7b666cf2aade2c6e11093
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="lines-and-stroke-caps"></a>Строки и пунктирные завершения отрезков
 
@@ -92,7 +92,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Для каждого члена `SKStrokeCap` перечисления, обработчик событий прорисовывает двух строках с толщину обводки 50 пикселей и еще одну строку, размещенная в верхней части с толщину обводки 2 точки. Это вторая строка предназначен для демонстрации геометрические начало и конец строки, независимо от ее толщины и окончаний обводки:
 
-[![](lines-images/strokecaps-small.png "Тройной снимок экрана со страницей Caps штриха")](lines-images/strokecaps-large.png "тройной снимок экрана со страницей пунктирные завершения отрезков")
+[![](lines-images/strokecaps-small.png "Тройной снимок экрана со страницей Caps штриха")](lines-images/strokecaps-large.png#lightbox "тройной снимок экрана со страницей пунктирные завершения отрезков")
 
 Как видите, `Square` и `Round` штриха caps эффективно расширить длины строки с размером в половину ширины stroke в начале строки и снова в конце. Это расширение важно в том случае, если необходимо определить размеры объекта отображаемого изображения.
 
@@ -230,7 +230,7 @@ T GetPickerItem<T>(Picker picker)
 
 На снимке экрана показаны различные `Picker` выбранных элементов на трех платформ:
 
-[![](lines-images/multiplelines-small.png "Тройной снимок экрана со страницей многострочный")](lines-images/multiplelines-large.png "тройной снимок экрана со страницей несколько строк")
+[![](lines-images/multiplelines-small.png "Тройной снимок экрана со страницей многострочный")](lines-images/multiplelines-large.png#lightbox "тройной снимок экрана со страницей несколько строк")
 
 IPhone на слева показано как `SKPointMode.Points` вызывает член перечисления `DrawPoints` для каждой точки в визуализации `SKPoint` массив как квадрат, если конец линии — `Butt` или `Square`. Круги подготавливаются к просмотру, если конец линии `Round`.
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/08/2018
-ms.openlocfilehash: ea9046c0c546a2f331aefd2332008e10ec6db3c4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e3c986b03408dae98a5a79f257029c10909aeabd
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="getting-started-with-fingerprint-authentication"></a>Начало работы с проверкой подлинности отпечатков пальцев
 
@@ -27,13 +27,13 @@ ms.lasthandoff: 02/27/2018
 
 Приложение должно запросить `USE_FINGERPRINT` разрешение в манифесте. Следующем снимке экрана показано, как добавить это разрешение для приложения в Visual Studio 2015:
 
-[![Разрешение использования\_отпечатков ПАЛЬЦЕВ на экране манифеста Android](get-started-images/fingerprint-01-vs.png)](get-started-images/fingerprint-01-vs.png) 
+[![Разрешение использования\_отпечатков ПАЛЬЦЕВ на экране манифеста Android](get-started-images/fingerprint-01-vs.png)](get-started-images/fingerprint-01-vs.png#lightbox) 
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Приложение должно запросить `USE_FINGERPRINT` разрешение в манифесте. Следующем снимке экрана показано, как добавить это разрешение для приложения в Visual Studio для Mac:
 
-[![Включение UseFingerprint на экране приложения Android](get-started-images/fingerprint-01-xs.png)](get-started-images/fingerprint-01-xs.png) 
+[![Включение UseFingerprint на экране приложения Android](get-started-images/fingerprint-01-xs.png)](get-started-images/fingerprint-01-xs.png#lightbox) 
 
 -----
 

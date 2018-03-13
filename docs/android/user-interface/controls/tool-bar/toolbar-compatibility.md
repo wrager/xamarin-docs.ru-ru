@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: d4d6e93bf3a755d9b48c9e096de87b4c89f2831f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a17ad79d3f3b537332494fc368c878f2733d5db2
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="toolbar-compatibility"></a>Совместимость инструментов
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -36,7 +35,6 @@ ms.lasthandoff: 02/27/2018
 Каждое из этих действий подробно рассматривается в следующих разделах.
 
 
-<a name="android_version" />
 
 ## <a name="set-the-minimum-and-target-android-version"></a>Установка минимума и целевая версия Android
 
@@ -44,23 +42,20 @@ ms.lasthandoff: 02/27/2018
 
 Значение целевой версии .NET Framework, уровень API 21 уровне или выше, а значение параметров Android API уровня проекта Минимальная версия Android, приложение для поддержки. Дополнительные сведения об установке Android API уровней см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md). В `ToolbarFun` примере Минимальная версия Android задано значение KitKat (4.4 уровень API). 
 
-<a name="install_nuget" />
 
 ## <a name="install-the-appcompat-nuget-package"></a>Установка пакета NuGet совместимости приложений
 
 Добавьте [библиотеку поддержки Android версии 7 AppCompat](https://www.nuget.org/packages/Xamarin.Android.Support.v7.AppCompat/) пакета в проект. В Visual Studio щелкните правой кнопкой мыши **ссылки** и выберите **управление пакетами NuGet...** . Нажмите кнопку **Обзор** и выполните поиск **библиотеку поддержки Android версии 7 AppCompat**. Выберите **Xamarin.Android.Support.v7.AppCompat** и нажмите кнопку **установить**: 
 
-[![Снимок экрана V7 Appcompat пакета, выбранного в управление пакетами NuGet](toolbar-compatibility-images/01-appcompat-nuget-sml.png)](toolbar-compatibility-images/01-appcompat-nuget.png)
+[![Снимок экрана V7 Appcompat пакета, выбранного в управление пакетами NuGet](toolbar-compatibility-images/01-appcompat-nuget-sml.png)](toolbar-compatibility-images/01-appcompat-nuget.png#lightbox)
 
 При установке этого NuGet нескольких других пакетах NuGet также устанавливаются в случае отсутствия (такие как **Xamarin.Android.Support.Animated.Vector.Drawable**, **Xamarin.Android.Support.v4**, и **Xamarin.Android.Support.Vector.Drawable**). Дополнительные сведения об установке пакетов NuGet см. в разделе [Пошаговое руководство: включая NuGet в проекте](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough). 
 
-<a name="appcompat_theme" />
 
 ## <a name="use-an-appcompat-theme-and-toolbar"></a>Используйте панель инструментов и AppCompat темы
 
 Библиотека AppCompat поставляется с несколькими `Theme.AppCompat` темы, которые могут использоваться в любой версии Android, поддерживаемые библиотекой совместимости приложений. `ToolbarFun` Тему приложения примере является производным от `Theme.Material.Light.DarkActionBar`, который не является доступной для более ранних версий Android без описания операций. Таким образом `ToolbarFun` должны быть адаптированы для использования аналог AppCompat для этой темы `Theme.AppCompat.Light.DarkActionBar`. Кроме того поскольку `Toolbar` будет недоступно в версиях Android, более ранних, чем без описания операций, необходимо использовать версию AppCompat `Toolbar`. Таким образом, необходимо использовать макеты `android.support.v7.widget.Toolbar` вместо `Toolbar`. 
 
-<a name="update_layouts" />
 
 ### <a name="update-layouts"></a>Макеты обновления
 
@@ -91,7 +86,6 @@ ms.lasthandoff: 02/27/2018
 
 Обратите внимание, что `?attr` значения больше не начинаются с префикса `android:` (Помните, что `?` нотации ссылается на ресурс в текущей темы). Если `?android:attr` по-прежнему были использованы здесь Android ссылка значение атрибута из текущих платформы, а не из библиотеки совместимости приложений. Так как в этом примере используется `actionBarSize` определяется в библиотеке AppCompat `android:` префикс удаляется. Аналогичным образом `@android:style` изменяется на `@style` , чтобы `android:theme` атрибута задано значение темы в библиотеке AppCompat &ndash; `ThemeOverlay.AppCompat.Dark.ActionBar` темы здесь используется вместо `ThemeOverlay.Material.Dark.ActionBar`. 
 
-<a name="update_style" />
 
 ### <a name="update-the-style"></a>Измените стиль
 
@@ -113,7 +107,6 @@ ms.lasthandoff: 02/27/2018
 Имена элементов и родительской темы в этом примере больше не начинаются с префикса `android:` так как мы используем AppCompat библиотеки. Кроме того, изменения темы родительского версии AppCompat `Light.DarkActionBar`. 
 
 
-<a name="update_menus" />
 
 ### <a name="update-menus"></a>Обновление меню
 
@@ -180,7 +173,6 @@ local:showAsAction="ifRoom"
 
 Как предоставляет поддержку для этого параметра пространство имен `showAsAction` атрибут версии Android до 11 уровень API? Настраиваемый атрибут `showAsAction` и все его возможные значения включаются в приложении, при установке AppCompat NuGet. 
 
-<a name="subclass" />
 
 ## <a name="subclass-appcompatactivity"></a>Подкласс AppCompatActivity
 
@@ -208,7 +200,7 @@ SupportActionBar.Title = "My AppCompat Toolbar";
 
 Выполните сборку приложения и запустите его на устройстве перед без описания операций или эмулятор Android. На следующем рисунке показан версии AppCompat **ToolbarFun** на 4 хранилища, выполняемое KitKat (API 19): 
 
-[![Сделать снимок полного экрана приложения, запущенного на устройстве KitKat, отображаются обе панели инструментов](toolbar-compatibility-images/02-running-on-kitkat-sml.png)](toolbar-compatibility-images/02-running-on-kitkat.png)
+[![Сделать снимок полного экрана приложения, запущенного на устройстве KitKat, отображаются обе панели инструментов](toolbar-compatibility-images/02-running-on-kitkat-sml.png)](toolbar-compatibility-images/02-running-on-kitkat.png#lightbox)
 
 При использовании библиотеки AppCompat темы не нужно переключаться на основе версии Android &ndash; библиотеки AppCompat дает возможность предоставить целостное взаимодействие с пользователем во всех поддерживаемых версиях Android. 
 

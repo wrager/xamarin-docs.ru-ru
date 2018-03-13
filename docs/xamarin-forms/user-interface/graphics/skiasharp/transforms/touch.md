@@ -4,14 +4,15 @@ description: "Преобразует матрица используется д�
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: A0B8DD2D-7392-4EC5-BFB0-6209407AD650
 author: charlespetzold
 ms.author: chape
 ms.date: 04/12/2017
-ms.openlocfilehash: b418e0179c95a424c88d5f5063a09f984bb13ec0
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 16e9423c84e591e15a703b4d5bb204a8b642bb40
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="touch-manipulations"></a>Манипуляции сенсорного ввода
 
@@ -545,7 +546,7 @@ public partial class TouchManipulationPage : ContentPage
 
 `PaintSurface` Завершении работы обработчика, отображая `MatrixDisplay` объекта отображаются в матрице накопленный сенсорный ввод:
 
-[![](touch-images/touchmanipulation-small.png "Тройной снимок экрана со страницей Touch манипуляции")](touch-images/touchmanipulation-large.png "тройной снимок экрана со страницей Touch манипуляции")
+[![](touch-images/touchmanipulation-small.png "Тройной снимок экрана со страницей Touch манипуляции")](touch-images/touchmanipulation-large.png#lightbox "тройной снимок экрана со страницей Touch манипуляции")
 
 ## <a name="manipulating-multiple-bitmaps"></a>Обработка нескольких растровые изображения
 
@@ -684,7 +685,7 @@ public partial class BitmapScatterViewPage : ContentPage
 
 Код выполняет цикл по коллекции и отображает накопление точечных рисунков с начала коллекции в конец:
 
-[![](touch-images/bitmapscatterview-small.png "Тройной снимок экрана со страницей представление Точечная диаграмма растрового изображения")](touch-images/bitmapscatterview-large.png "тройной снимок экрана со страницей представление Точечная диаграмма растрового изображения")
+[![](touch-images/bitmapscatterview-small.png "Тройной снимок экрана со страницей представление Точечная диаграмма растрового изображения")](touch-images/bitmapscatterview-large.png#lightbox "тройной снимок экрана со страницей представление Точечная диаграмма растрового изображения")
 
 
 ## <a name="related-links"></a>Связанные ссылки

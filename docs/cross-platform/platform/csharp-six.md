@@ -5,14 +5,15 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: 4B4E41A8-68BA-4E2B-9539-881AC19971B
 ms.technology: xamarin-cross-platform
+ms.custom: xamu-video
 author: asb3993
 ms.author: amburns
 ms.date: 03/22/2017
-ms.openlocfilehash: 22b03c43509f3e3a55cd36ead5adef79c9086ba4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 80456287c92913b048b73f40d2db6dcb16cc270d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="c-6-new-features-overview"></a>Возможности C# 6 новые общие сведения
 
@@ -23,7 +24,11 @@ _Последнюю версию языка C# — версия 6 – посто
 Эта статья содержит краткие фрагментов кода C# 6, иллюстрирующие использование.
 Образец приложения является командной строки программа, которая выполняется на всех целевых платформах Xamarin и выполняет различные функции.
 
-# <a name="requirements"></a>Требования
+
+> [!VIDEO https://youtube.com/embed/7UdV7zGPfMU]
+
+**Новые возможности в C# 6 по [университета Xamarin](https://university.xamarin.com/)**
+
 
 ## <a name="development-environment"></a>Среда разработки
 
@@ -34,7 +39,7 @@ _Последнюю версию языка C# — версия 6 – посто
 
 ### <a name="windows"></a>Windows
 
-* **Visual Studio 2015 и 2017 г** и полную поддержку C# 6 выше. Более ранних версиях Visual Studio (например) 2013, 2012) не будет поддерживать C# 6.
+* **Visual Studio 2015 и 2017 г** и полную поддержку C# 6 выше. Более ранних версиях Visual Studio не будет поддерживать C# 6.
 
 * **Xamarin Studio для Windows** не поддерживает функции C# 6 в редакторе.
 
@@ -49,92 +54,107 @@ Visual Studio для Mac автоматически обновляет моно 
 
 ^ или  *[2015 средства построения Microsoft](http://www.microsoft.com/en-us/download/details.aspx?id=48159)*  для командной строки компиляции или серверы сборки, например.
 
-# <a name="using-c-6"></a>С помощью C# 6
+## <a name="using-c-6"></a>С помощью C# 6
 
 Компилятор C# 6 используется во всех последних версиях Visual Studio для Mac.
 Их с помощью компиляторов командной строки убедитесь, что `mcs --version` возвращает 4.0 или более поздней версии.
 Visual Studio для пользователей Mac можно проверьте, установлены ли у них есть моно 4 (или более поздней версии), обратившись к **о Visual Studio для Mac > Visual Studio для Mac > Показать подробности**.
 
-# <a name="less-boilerplate"></a>Меньше стандартных действий
-## <a name="using-static"></a>using static
+## <a name="less-boilerplate"></a>Меньше стандартных действий
+### <a name="using-static"></a>using static
 Перечисления и определенных классов, таких как `System.Math`, будут в основном носителями статические значения и функций. В C# 6, можно импортировать все статические члены типа с одним `using static` инструкции. Сравните типичные тригонометрической функции в C# 5 и 6 C#:
 
-    // Classic C#
-    class MyClass
+```csharp
+// Classic C#
+class MyClass
+{
+    public static Tuple<double,double> SolarAngleOld(double latitude, double declination, double hourAngle)
     {
-        public static Tuple<double,double> SolarAngleOld(double latitude, double declination, double hourAngle)
-        {
-            var tmp = Math.Sin (latitude) * Math.Sin (declination) + Math.Cos (latitude) * Math.Cos (declination) * Math.Cos (hourAngle);
-            return Tuple.Create (Math.Asin (tmp), Math.Acos (tmp));
-        }
+        var tmp = Math.Sin (latitude) * Math.Sin (declination) + Math.Cos (latitude) * Math.Cos (declination) * Math.Cos (hourAngle);
+        return Tuple.Create (Math.Asin (tmp), Math.Acos (tmp));
     }
+}
 
-    // C# 6
-    using static System.Math;
+// C# 6
+using static System.Math;
 
-    class MyClass
+class MyClass
+{
+    public static Tuple<double, double> SolarAngleNew(double latitude, double declination, double hourAngle)
     {
-        public static Tuple<double, double> SolarAngleNew(double latitude, double declination, double hourAngle)
-        {
-            var tmp = Asin (latitude) * Sin (declination) + Cos (latitude) * Cos (declination) * Cos (hourAngle);
-            return Tuple.Create (Asin (tmp), Acos (tmp));
-        }
+        var tmp = Asin (latitude) * Sin (declination) + Cos (latitude) * Cos (declination) * Cos (hourAngle);
+        return Tuple.Create (Asin (tmp), Acos (tmp));
     }
+}
+```
 
 `using static` не делает открытые `const` полей, таких как `Math.PI` и `Math.E`, доступны непосредственно:
 
-    for (var angle = 0.0; angle <= Math.PI * 2.0; angle += Math.PI / 8) ... //PI is const, not static, so requires Math.PI
+```csharp
+for (var angle = 0.0; angle <= Math.PI * 2.0; angle += Math.PI / 8) ... 
+//PI is const, not static, so requires Math.PI
+```
 
-## <a name="using-static-with-extension-methods"></a>При помощи статических методов расширения
+### <a name="using-static-with-extension-methods"></a>При помощи статических методов расширения
 
 `using static` Территории работает немного по-разному с помощью методов расширения. Несмотря на то, что методы расширения, написанных с помощью `static`, они не имеет смысла без экземпляра, на которой выполняются операции. Поэтому если `using static` используется с типом, который определяет методы расширения, методы расширения, становятся доступными по типу целевого (метод `this` типа). Например `using static System.Linq.Enumerable` можно использовать для расширения API-Интерфейс `IEnumerable<T>` объекты без перерыва во всех типах LINQ:
 
-    using static System.Linq.Enumerable;
-    using static System.String;
+```csharp
+using static System.Linq.Enumerable;
+using static System.String;
 
-    class Program
+class Program
+{
+    static void Main()
     {
-        static void Main()
-        {
-            var values = new int[] { 1, 2, 3, 4 };
-            var evenValues = values.Where (i => i % 2 == 0);
-            System.Console.WriteLine (Join(",", evenValues));
-        }
+        var values = new int[] { 1, 2, 3, 4 };
+        var evenValues = values.Where (i => i % 2 == 0);
+        System.Console.WriteLine (Join(",", evenValues));
     }
+}
+```
 
 В предыдущем примере демонстрируется различие в поведении: метод расширения `Enumerable.Where` связан с массивом при статический метод `String.Join` может вызываться без обращения к `String` типа.
 
-## <a name="nameof-expressions"></a>nameof выражения
+### <a name="nameof-expressions"></a>nameof выражения
 В некоторых случаях требуется сослаться на имя вы предоставили переменная или поле. В C# 6 `nameof(someVariableOrFieldOrType)` возвратит строку `"someVariableOrFieldOrType"`. Например при порождении `ArgumentException` вы скорее всего, имя которой аргумент является недопустимым для:
 
-    throw new ArgumentException ("Problem with " + nameof(myInvalidArgument))
+```csharp
+throw new ArgumentException ("Problem with " + nameof(myInvalidArgument))
+```
 
 Главным преимуществом `nameof` выражения является их проверяется тип и совместимы с энергопотреблением средство оптимизации кода. Проверка типов из `nameof` выражения особенно Добро пожаловать в ситуациях, где `string` используется для динамического сопоставления типов. Например, в iOS `string` позволяет указать тип, используемый для прототипа `UITableViewCell` объекты в `UITableView`. `nameof` можно убедиться, что эта связь не завершается ошибкой из-за орфографическая или сыром рефакторинг:
 
-    public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
-    {
-        var cell = tableView.DequeueReusableCell (nameof(CellTypeA), indexPath);
-        cell.TextLabel.Text = objects [indexPath.Row].ToString ();
-        return cell;
-    }
+```csharp
+public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
+{
+    var cell = tableView.DequeueReusableCell (nameof(CellTypeA), indexPath);
+    cell.TextLabel.Text = objects [indexPath.Row].ToString ();
+    return cell;
+}
+```
 
 Несмотря на то, что можно передать полного имени, которое `nameof`, только последний элемент (после последнего `.`) возвращается. Например можно добавить привязку данных в Xamarin.Forms:
 
-    var myReactiveInstance = new ReactiveType ();
-    var myLabelOld.BindingContext = myReactiveInstance;
-    var myLabelNew.BindingContext = myReactiveInstance;
-    var myLabelOld.SetBinding (Label.TextProperty, "StringField");
-    var myLabelNew.SetBinding (Label.TextProperty, nameof(ReactiveType.StringField));
+```csharp
+var myReactiveInstance = new ReactiveType ();
+var myLabelOld.BindingContext = myReactiveInstance;
+var myLabelNew.BindingContext = myReactiveInstance;
+var myLabelOld.SetBinding (Label.TextProperty, "StringField");
+var myLabelNew.SetBinding (Label.TextProperty, nameof(ReactiveType.StringField));
+```
 
 Оба вызова `SetBinding` проходят одинаковые значения: `nameof(ReactiveType.StringField)` — `"StringField"`, а не `"ReactiveType.StringField"` как изначально может ожидать.
 
-# <a name="null-conditional-operator"></a>Оператор условием NULL
+## <a name="null-conditional-operator"></a>Оператор условием NULL
 Ранее обновления для C# появились концепции типы, допускающие значения NULL и оператор объединения с null `??` для сокращения объема стандартный код, при обработке значений, допускающие значение NULL. C# 6 продолжает эту тему «оператором условием null» `?.`. При использовании в объект, находящийся в правой части выражения, оператор условием null возвращает значение элемента, если объект не является `null` и `null` в противном случае:
 
-    var ss = new string[] { "Foo", null };
-    var length0 = ss [0]?.Length; // 3
-    var length1 = ss [1]?.Length; // null
-    var lengths = ss.Select (s => s?.Length ?? 0); //[3, 0]
+```csharp
+var ss = new string[] { "Foo", null };
+var length0 = ss [0]?.Length; // 3
+var length1 = ss [1]?.Length; // null
+var lengths = ss.Select (s => s?.Length ?? 0); //[3, 0]
+```
 
 (Оба `length0` и `length1` вывести тип `int?`)
 
@@ -144,48 +164,56 @@ Visual Studio для пользователей Mac можно проверьт�
 
 Существуют некоторые ограничения на оператор условием null из-за неоднозначности. Не может следовать за немедленно `?` со списком аргументов скобки, как вы может надеемся, что делать с помощью делегата:
 
-    SomeDelegate?("Some Argument") // Not allowed
+```csharp
+SomeDelegate?("Some Argument") // Not allowed
+```
 
 Тем не менее `Invoke` может использоваться для разделения `?` из списка аргументов и по-прежнему помеченной улучшения по `null`-Проверка блока шаблона:
 
-    public event EventHandler HandoffOccurred;
-    public override bool ContinueUserActivity (UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
-    {
-        HandoffOccurred?.Invoke (this, userActivity.UserInfo);
-        return true;
-    }
+```csharp
+public event EventHandler HandoffOccurred;
+public override bool ContinueUserActivity (UIApplication application, NSUserActivity userActivity, UIApplicationRestorationHandler completionHandler)
+{
+    HandoffOccurred?.Invoke (this, userActivity.UserInfo);
+    return true;
+}
+```
 
-
-# <a name="string-interpolation"></a>Интерполяция строк
+## <a name="string-interpolation"></a>Интерполяция строк
 `String.Format` Функция традиционно использовал индексов в качестве заполнителей в строке формата, например, `String.Format("Expected: {0} Received: {1}.", expected, received`). Конечно Добавление нового значения всегда участвует досадных задача инвентаризации копирование аргументы, перенумерация заполнители и вставка нового аргумента в правильном порядке в списке аргументов.
 
 C# 6 Новая строка интерполяции функция значительно улучшает работу `String.Format`. Теперь можно непосредственно имя переменные в строке с префиксом `$`. Например:
 
-    $"Expected: {expected} Received: {received}."
+```csharp
+$"Expected: {expected} Received: {received}."
+```
 
 Переменные Конечно, проверяются и переменную с ошибками или не доступен приведет к ошибке компилятора.
 
 Заполнители не обязательно должны быть простыми переменными, они могут быть любым выражением. Эти заполнители, вы можете использовать кавычки *без* экранирование этих предложений. Обратите внимание, например, `"s"` в следующем:
 
-    var s = $"Timestamp: {DateTime.Now.ToString ("s", System.Globalization.CultureInfo.InvariantCulture )}"
+```csharp
+var s = $"Timestamp: {DateTime.Now.ToString ("s", System.Globalization.CultureInfo.InvariantCulture )}"
+```
 
 Интерполяции строк поддерживает выравнивания и форматирования синтаксис `String.Format`. Подобно тому, как писали ранее `{index, alignment:format}`, в C# 6 написании `{placeholder, alignment:format}`:
 
-    using static System.Linq.Enumerable;
-    using System;
+```csharp
+using static System.Linq.Enumerable;
+using System;
 
-    class Program
+class Program
+{
+    static void Main ()
     {
-        static void Main ()
-        {
-            var values = new int[] { 1, 2, 3, 4, 12, 123456 };
-            foreach (var s in values.Select (i => $"The value is { i,10:N2}.")) {
-                Console.WriteLine (s);
-            }
-      Console.WriteLine ($"Minimum is { values.Min(i => i):N2}.");
+        var values = new int[] { 1, 2, 3, 4, 12, 123456 };
+        foreach (var s in values.Select (i => $"The value is { i,10:N2}.")) {
+            Console.WriteLine (s);
         }
+    Console.WriteLine ($"Minimum is { values.Min(i => i):N2}.");
     }
-
+}
+```
 результаты в:
 
     The value is       1.00.
@@ -198,110 +226,135 @@ C# 6 Новая строка интерполяции функция значи�
 
 Интерполяции строк является синтаксическим сахаром для `String.Format`: не может использоваться с `@""` строковые литералы и не совместим с `const`, даже если не заполнители используются:
 
-    const string s = $"Foo"; //Error : const requires value
+```csharp
+const string s = $"Foo"; //Error : const requires value
+```
 
 В общем случае построения аргументов функции с интерполяции строк по использования необходимо по-прежнему следует с осторожностью экранирование, кодировки и проблем с языком и региональными параметрами. Запросы SQL и URL-адрес, конечно, критически важны для очистки. Как и в `String.Format`, строка использует интерполяцию `CultureInfo.CurrentCulture`. С помощью `CultureInfo.InvariantCulture` является несколько более много слов:
 
-    Thread.CurrentThread.CurrentCulture  = new CultureInfo ("de");
-    Console.WriteLine ($"Today is: {DateTime.Now}"); //"21.05.2015 13:52:51"
-    Console.WriteLine ($"Today is: {DateTime.Now.ToString(CultureInfo.InvariantCulture)}"); //"05/21/2015 13:52:51"
+```csharp
+Thread.CurrentThread.CurrentCulture  = new CultureInfo ("de");
+Console.WriteLine ($"Today is: {DateTime.Now}"); //"21.05.2015 13:52:51"
+Console.WriteLine ($"Today is: {DateTime.Now.ToString(CultureInfo.InvariantCulture)}"); //"05/21/2015 13:52:51"
+```
 
-# <a name="initialization"></a>Инициализация
+## <a name="initialization"></a>Инициализация
+
 C# 6 предоставляет ряд четкими способов для указания свойств, полей и членов.
 
-## <a name="auto-property-initialization"></a>Инициализация Auto свойство
+### <a name="auto-property-initialization"></a>Инициализация Auto свойство
+
 Теперь автосвойства можно инициализировать таким же образом четкими как поля. Неизменяемые auto свойства могут быть написаны только метод получения:
 
-    class ToDo
-    {
-        public DateTime Due { get; set; } = DateTime.Now.AddDays(1);
-        public DateTime Created { get; } = DateTime.Now;
+```csharp
+class ToDo
+{
+    public DateTime Due { get; set; } = DateTime.Now.AddDays(1);
+    public DateTime Created { get; } = DateTime.Now;
+```
 
 В конструкторе можно задать значение только для считывания auto свойства:
 
-    class ToDo
-    {
-        public DateTime Due { get; set; } = DateTime.Now.AddDays(1);
-        public DateTime Created { get; } = DateTime.Now;
-        public string Description { get; }
+```csharp
+class ToDo
+{
+    public DateTime Due { get; set; } = DateTime.Now.AddDays(1);
+    public DateTime Created { get; } = DateTime.Now;
+    public string Description { get; }
 
-        public ToDo (string description)
-        {
-           this.Description = description; //Can assign (only in constructor!)
-        }
+    public ToDo (string description)
+    {
+        this.Description = description; //Can assign (only in constructor!)
+    }
+```
 
 Инициализация свойств автоматически является общей возможностью компактный и весьма полезным для разработчиков подчеркнуть постоянство в их объекты.
 
-## <a name="index-initializers"></a>См. раздел Инициализаторы индекса.
+### <a name="index-initializers"></a>См. раздел Инициализаторы индекса.
+
 C# 6 представлены инициализаторы индекса, которые позволяют задать ключ и значение в типах, которые имеют индексатора. Как правило, это для `Dictionary`-стиля структуры данных:
 
-    partial void ActivateHandoffClicked (WatchKit.WKInterfaceButton sender)
-    {
-        var userInfo = new NSMutableDictionary {
-            ["Created"] = NSDate.Now,
-            ["Due"] = NSDate.Now.AddSeconds(60 * 60 * 24),
-            ["Task"] = Description
-        };
-        UpdateUserActivity ("com.xamarin.ToDo.edit", userInfo, null);
-        statusLabel.SetText ("Check phone");
-    }
+```csharp
+partial void ActivateHandoffClicked (WatchKit.WKInterfaceButton sender)
+{
+    var userInfo = new NSMutableDictionary {
+        ["Created"] = NSDate.Now,
+        ["Due"] = NSDate.Now.AddSeconds(60 * 60 * 24),
+        ["Task"] = Description
+    };
+    UpdateUserActivity ("com.xamarin.ToDo.edit", userInfo, null);
+    statusLabel.SetText ("Check phone");
+}
+```
 
-## <a name="expression-bodied-function-members"></a>Выражение телом функции-члены
+### <a name="expression-bodied-function-members"></a>Выражение телом функции-члены
+
 Лямбда-функции имеют несколько преимуществ, один из которых просто сохраняется место на диске. Аналогичным образом члены класса телом выражения позволяют небольших функций выражать немного более четко, чем было возможно в предыдущих версиях C# 6.
 
 Выражение телом функции-члены используйте синтаксис стрелок лямбда-выражения, а не блока традиционный синтаксис:
 
-      public override string ToString () => $"{FirstName} {LastName}";
+```csharp
+public override string ToString () => $"{FirstName} {LastName}";
+```
 
 Синтаксис лямбда-выражения со стрелкой не использовать явное уведомление `return`. Для функции, которые возвращают `void`, выражение также должна быть инструкция:
 
-    public void Log(string message) => System.Console.WriteLine($"{DateTime.Now.ToString ("s", System.Globalization.CultureInfo.InvariantCulture )}: {message}");
+```csharp
+public void Log(string message) => System.Console.WriteLine($"{DateTime.Now.ToString ("s", System.Globalization.CultureInfo.InvariantCulture )}: {message}");
+```
 
 Выражение телом члены, по-прежнему подвержены правило, `async` поддерживается для методов, но не свойства:
 
-    //A method, so async is valid
-    public async Task DelayInSeconds(int seconds) => await Task.Delay(seconds * 1000);
-    //The following property will not compile
-    public async Task<int> LeisureHours => await Task.FromResult<char> (DateTime.Now.DayOfWeek.ToString().First()) == 'S' ? 16 : 5;
+```csharp
+//A method, so async is valid
+public async Task DelayInSeconds(int seconds) => await Task.Delay(seconds * 1000);
+//The following property will not compile
+public async Task<int> LeisureHours => await Task.FromResult<char> (DateTime.Now.DayOfWeek.ToString().First()) == 'S' ? 16 : 5;
+```
 
+## <a name="exceptions"></a>Исключения
 
-# <a name="exceptions"></a>Исключения
 Имеется не два способа о нем: трудным обработки исключений. Новые функции в C# 6 убедитесь обработки исключений в более гибкими и согласованность.
 
-## <a name="exception-filters"></a>Фильтры исключений
+### <a name="exception-filters"></a>Фильтры исключений
+
 По определению исключения возникают в необычных ситуациях и может быть очень сложно причину и код о *все* одним из способов, может возникнуть исключение определенного типа. C# 6 появилась возможность защиты обработчик выполнения с помощью фильтра вычисляется среды выполнения. Это делается путем добавления `when (bool)` шаблон после обычной `catch(ExceptionType)` объявления. В следующих фильтр отличает Ошибка синтаксического анализа, связанная с `date` параметр, в отличие от других ошибки синтаксического анализа.
 
-    public void ExceptionFilters(string aFloat, string date, string anInt)
+```csharp
+public void ExceptionFilters(string aFloat, string date, string anInt)
+{
+    try
     {
-        try
-        {
-            var f = Double.Parse(aFloat);
-            var d = DateTime.Parse(date);
-            var n = Int32.Parse(anInt);
-        } catch (FormatException e) when (e.Message.IndexOf("DateTime") > -1) {
-            Console.WriteLine ($"Problem parsing \"{nameof(date)}\" argument");
-        } catch (FormatException x) {
-            Console.WriteLine ("Problem parsing some other argument");
-        }
+        var f = Double.Parse(aFloat);
+        var d = DateTime.Parse(date);
+        var n = Int32.Parse(anInt);
+    } catch (FormatException e) when (e.Message.IndexOf("DateTime") > -1) {
+        Console.WriteLine ($"Problem parsing \"{nameof(date)}\" argument");
+    } catch (FormatException x) {
+        Console.WriteLine ("Problem parsing some other argument");
     }
+}
+```
 
-## <a name="await-in-catchfinally"></a>Ожидание в catch... finally...
+### <a name="await-in-catchfinally"></a>Ожидание в catch... finally...
+
 `async` Возможности, представленные в C# 5 были переломным для языка. В C# 5 `await` не была разрешена в `catch` и `finally` блокировку, получает номер отвлекающие действия `async/await` возможностей. C# 6 удаляет это ограничение, позволяя асинхронных результатов ожидать постоянно по программе как показано в следующем фрагменте:
 
-    async void SomeMethod()
-    {
-        try {
-            //...etc...
-        } catch (Exception x) {
-            var diagnosticData = await GenerateDiagnosticsAsync (x);
-            Logger.log (diagnosticData);
-        } finally {
-            await someObject.FinalizeAsync ();
-        }
+```csharp
+async void SomeMethod()
+{
+    try {
+        //...etc...
+    } catch (Exception x) {
+        var diagnosticData = await GenerateDiagnosticsAsync (x);
+        Logger.log (diagnosticData);
+    } finally {
+        await someObject.FinalizeAsync ();
     }
+}
+```
 
-
-# <a name="summary"></a>Сводка
+## <a name="summary"></a>Сводка
 
 В языке C# постоянно развивается для повышения производительности разработчиков при также повышение уровня рекомендуемые методы и средства поддержки. В этом документе, давших обзор новых возможностей языка C# 6 и кратко показано, как они используются.
 

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: c59ddde44b0e47122865c55a7964707f106d2691
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e46038b21327fe8847d2c04ee1ba16960f6a059b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-tables-in-the-ios-designer"></a>Работа с таблицами в конструкторе iOS
 
@@ -40,7 +40,7 @@ A `UITableView` с прототипом содержимого обычно пр
 
 В примере StoryboardTable содержит простое приложение основной подробности, использует оба типа UITableView в раскадровку. В оставшейся части этого раздела описывается создание небольшого задача пример списка, в котором будет выглядеть следующим образом, после завершения:
 
- [ ![Пример экранов](creating-tables-in-a-storyboard-images/image13a.png)](creating-tables-in-a-storyboard-images/image13a.png)
+ [![Пример экранов](creating-tables-in-a-storyboard-images/image13a.png)](creating-tables-in-a-storyboard-images/image13a.png#lightbox)
 
 Пользовательский интерфейс будет создано с помощью раскадровки, и оба экраны будет использовать UITableView. Главный экран использует *прототип содержимого* макета строки и подробности использует экрана *статическое содержимое* для создания формы ввода данных с помощью пользовательских ячеек разметки.
 
@@ -48,7 +48,7 @@ A `UITableView` с прототипом содержимого обычно пр
 
 Создайте новое решение в Visual Studio с помощью **(Create) создать проект... > единого представления App(C#)**и назовите его _StoryboardTables_.
 
- [ ![Создать диалоговое окно нового проекта](creating-tables-in-a-storyboard-images/npd.png)](creating-tables-in-a-storyboard-images/npd.png)
+ [![Создать диалоговое окно нового проекта](creating-tables-in-a-storyboard-images/npd.png)](creating-tables-in-a-storyboard-images/npd.png#lightbox)
 
 Будет открыто решение с некоторыми файлами C# и `Main.storyboard` файл уже создан. Дважды щелкните `Main.storyboard` файл, чтобы открыть его в конструкторе iOS.
 
@@ -75,24 +75,24 @@ A `UITableView` с прототипом содержимого обычно пр
 2.  Перетащите **навигации контроллера** и **таблицы View Controller** на раскадровку из области элементов. 
 3.  Создайте segue из представления корневого второй контроллер представление таблицы, который был только что добавлен. Для создания segue управления + перетащите *из ячеек с подробными* для вновь добавленного UITableViewController. Выберите параметр **Показать*** под **перейти выбора**. 
 4.  Выберите новый перейти был создан и назначение ему идентификатора для ссылки, это перейти в коде. Нажмите segue и введите `TaskSegue` для **идентификатор** в **панель свойств**, следующим образом:    
-  [ ![Именование перейти в панель свойств](creating-tables-in-a-storyboard-images/image16a-sml.png)](creating-tables-in-a-storyboard-images/image16a.png) 
+  [![Именование перейти в панель свойств](creating-tables-in-a-storyboard-images/image16a-sml.png)](creating-tables-in-a-storyboard-images/image16a.png#lightbox) 
 
 5. Настройте два представления таблицы, выбрав их и использование панели свойств. Убедитесь в том выбрать представления и не представление-контроллер — структуру документа можно использовать для выбора.
 
 6.  Изменение контроллера представления корневого быть **содержимого: динамические прототипы** (будут помечаться как представление в области конструктора **прототип содержимого** ):
 
-    [ ![Свойство содержимого динамических прототипов](creating-tables-in-a-storyboard-images/image17a.png)](creating-tables-in-a-storyboard-images/image17a.png)
+    [![Свойство содержимого динамических прототипов](creating-tables-in-a-storyboard-images/image17a.png)](creating-tables-in-a-storyboard-images/image17a.png#lightbox)
 
 7.  Измените новый **UITableViewController** быть **содержимого: статические ячейки**. 
 
 
 8. Новый UITableViewController должен иметь класс имени и идентификатора. Выберите представление контроллер и тип _TaskDetailViewController_ для **класса** в **панель свойств** — это создаст новый `TaskDetailViewController.cs` файл в решении Панель. Введите **StoryboardID** как _сведений_, как показано в следующем примере. Это будет использоваться позже для загрузки этого представления в коде C#:  
 
-    [ ![Задание идентификатора раскадровки](creating-tables-in-a-storyboard-images/image18a.png)](creating-tables-in-a-storyboard-images/image18a.png)
+    [![Задание идентификатора раскадровки](creating-tables-in-a-storyboard-images/image18a.png)](creating-tables-in-a-storyboard-images/image18a.png#lightbox)
 
 9. Область конструктора раскадровки теперь должна выглядеть следующим образом (заголовок элемента контроллера представления корневого навигации был изменен на «При работе доски»):
 
-    [ ![Область конструктора](creating-tables-in-a-storyboard-images/image20a-sml.png)](creating-tables-in-a-storyboard-images/image20a.png)  
+    [![Область конструктора](creating-tables-in-a-storyboard-images/image20a-sml.png)](creating-tables-in-a-storyboard-images/image20a.png#lightbox)  
 
 
 
@@ -106,11 +106,11 @@ A `UITableView` с прототипом содержимого обычно пр
 
 Во-первых, выделите ячейку прототип в контроллере главного представления и задать **идентификатор** как _taskcell_, как показано ниже. Это будет использоваться далее в коде для извлечения экземпляра этого UITableViewCell:
 
- [ ![Задание идентификатора ячейки](creating-tables-in-a-storyboard-images/image22a-sml.png)](creating-tables-in-a-storyboard-images/image22a.png)
+ [![Задание идентификатора ячейки](creating-tables-in-a-storyboard-images/image22a-sml.png)](creating-tables-in-a-storyboard-images/image22a.png#lightbox)
 
 Далее необходимо создать кнопку, которая будет добавлять новые задачи, как показано ниже:
 
-[ ![панель элемент кнопки на панели навигации](creating-tables-in-a-storyboard-images/image23-sml.png)](creating-tables-in-a-storyboard-images/image23.png)
+[![панель элемент кнопки на панели навигации](creating-tables-in-a-storyboard-images/image23-sml.png)](creating-tables-in-a-storyboard-images/image23.png#lightbox)
 
 Выполните следующие действия: 
 
@@ -123,7 +123,7 @@ A `UITableView` с прототипом содержимого обычно пр
 
 Подробное представление требует намного больше усилий. Вид ячеек таблицы должны перетаскивать представление и затем заполняется метки, текст представления и кнопки. На следующем снимке экрана показано завершения пользовательского интерфейса с двумя разделами. Один раздел имеет три ячейки, три подписи, два текстовых поля и одно переключения, а во втором разделе имеет одну ячейку с две кнопки:
 
- [ ![Подробное представление макета](creating-tables-in-a-storyboard-images/image24a-sml.png)](creating-tables-in-a-storyboard-images/image24a.png)
+ [![Подробное представление макета](creating-tables-in-a-storyboard-images/image24a-sml.png)](creating-tables-in-a-storyboard-images/image24a.png#lightbox)
 
 Для построения макета завершения, необходимо:
 
@@ -137,7 +137,7 @@ A `UITableView` с прототипом содержимого обычно пр
 Выберите верхний раздел и в разделе **свойства > раздел представление таблицы** изменить **строк** для _3_, как показано ниже:
 
 
- [ ![Установите значение в верхнем разделе три строки](creating-tables-in-a-storyboard-images/image29-sml.png)](creating-tables-in-a-storyboard-images/image29.png)
+ [![Установите значение в верхнем разделе три строки](creating-tables-in-a-storyboard-images/image29-sml.png)](creating-tables-in-a-storyboard-images/image29.png#lightbox)
 
 Для каждой ячейки откройте **панель свойств** и задать:
 
@@ -152,7 +152,7 @@ A `UITableView` с прототипом содержимого обычно пр
 -  **Задать фон**: _Очистка цветов_ .
 -  Перетащите две кнопки в ячейку и правильно настроить названиях (т. е. _Сохранить_ и _удалить_), как показано ниже:
 
-   [ ![Установка двух кнопок в нижнем разделе](creating-tables-in-a-storyboard-images/image30-sml.png)](creating-tables-in-a-storyboard-images/image30.png)
+   [![Установка двух кнопок в нижнем разделе](creating-tables-in-a-storyboard-images/image30-sml.png)](creating-tables-in-a-storyboard-images/image30.png#lightbox)
 
 На этом этапе также можно задать ограничения для ячеек и элементов управления для обеспечения адаптивной макета.
 
@@ -342,7 +342,7 @@ AddButton.Clicked += (sender, e) => CreateTask ();
 
 На этом процесс пример раскадровки — готовое приложение выглядит так:
 
-[ ![Готовое приложение](creating-tables-in-a-storyboard-images/image28a.png)](creating-tables-in-a-storyboard-images/image28a.png)
+[![Готовое приложение](creating-tables-in-a-storyboard-images/image28a.png)](creating-tables-in-a-storyboard-images/image28a.png#lightbox)
 
 В примере показано:
 
@@ -356,4 +356,4 @@ AddButton.Clicked += (sender, e) => CreateTask ();
 ## <a name="related-links"></a>Связанные ссылки
 
 - [StoryboardTable (пример)](https://developer.xamarin.com/samples/monotouch/StoryboardTable/)
-- [Общие сведения о раскадровки](~/ios/user-interface/storyboards/index.md)
+- [Введение в раскадровку](~/ios/user-interface/storyboards/index.md)

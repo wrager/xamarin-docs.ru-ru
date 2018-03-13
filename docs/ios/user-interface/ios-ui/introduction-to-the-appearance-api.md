@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 6d2a454665691c028fe8307940a5662a98ab9c98
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f35256529d6d72a3f5e563dc88b9d5883a9724d4
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="appearance-api"></a>Внешний интерфейс API
 
@@ -32,7 +32,7 @@ iOS позволяет настроить внешний вид многие э�
 
 Образец приложения внешний вид показаны все три метода, как показано на эти снимки экрана:
 
- [ ![](introduction-to-the-appearance-api-images/appearance01.png "Пример приложения внешний вид демонстрирует все три метода")](introduction-to-the-appearance-api-images/appearance01.png)
+ [![](introduction-to-the-appearance-api-images/appearance01.png "Пример приложения внешний вид демонстрирует все три метода")](introduction-to-the-appearance-api-images/appearance01.png#lightbox)
 
 Начиная с версии iOS 8 внешний прокси-сервера была расширена для TraitCollections.
  `AppearanceForTraitCollection` можно задать внешний вид по умолчанию для конкретной характеристике коллекцию. Можно прочитать подробнее об этом [введение в раскадровки](~/ios/user-interface/storyboards/unified-storyboards.md) руководства.
@@ -87,11 +87,11 @@ sg1.TintColor = UIColor.Magenta;
 
 Можно также задайте значение в области свойств конструктора: 
 
-[ ![](introduction-to-the-appearance-api-images/propertiespadtint.png "Оттенок панель свойств")](introduction-to-the-appearance-api-images/propertiespadtint.png)
+[![](introduction-to-the-appearance-api-images/propertiespadtint.png "Оттенок панель свойств")](introduction-to-the-appearance-api-images/propertiespadtint.png#lightbox)
 
 На рисунке ниже показано, что это задает оттенок только с именем «sg1» элемента управления.
 
- [ ![](introduction-to-the-appearance-api-images/image53.png "Установка оттенок отдельного элемента управления")](introduction-to-the-appearance-api-images/image53.png)
+ [![](introduction-to-the-appearance-api-images/image53.png "Установка оттенок отдельного элемента управления")](introduction-to-the-appearance-api-images/image53.png#lightbox)
 
 Чтобы задать множество параметров таким образом будет полностью неэффективным, поэтому вместо статического `Appearance` свойство в самом классе. Это показано в следующем коде:
 
@@ -101,7 +101,7 @@ UISegmentedControl.Appearance.TintColor = UIColor.Magenta;
 
 Теперь на рисунке ниже показано оба сегментированных элемента управления с внешним видом, равным Magenta:
 
- [ ![](introduction-to-the-appearance-api-images/image54.png "Настройка внешнего вида элемента управления оттенок")](introduction-to-the-appearance-api-images/image54.png)
+ [![](introduction-to-the-appearance-api-images/image54.png "Настройка внешнего вида элемента управления оттенок")](introduction-to-the-appearance-api-images/image54.png#lightbox)
 
 `Appearance` свойства должны задаваться ранних этапах жизненного цикла приложения, такие как AppDelegate `FinishedLaunching` событий, или в ViewController, прежде чем будут отображаться соответствующие элементы управления.
 

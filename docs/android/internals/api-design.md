@@ -7,15 +7,14 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 1b0b1db6bf73b03eed99c5ede038d07bb3ccf284
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 23aa944b88fe3e743b6b29810c29d1843f2efc29
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="api-design"></a>Структура API
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -23,7 +22,6 @@ ms.lasthandoff: 02/27/2018
 
 В основной части Xamarin.Android существует представляет механизм взаимодействия, мир мосты C# с кодом Java и предоставляет разработчикам доступ к интерфейсам API Java от C# и других языков .NET.
 
-<a name="Design_Principles" />
 
 ## <a name="design-principles"></a>Принципы разработки
 
@@ -64,7 +62,6 @@ ms.lasthandoff: 02/27/2018
     - Предоставляет механизм для вызова произвольных библиотеки Java ( [Android.Runtime.JNIEnv](https://developer.xamarin.com/api/type/Android.Runtime.JNIEnv/)).
 
 
-<a name="Assemblies" />
 
 ## <a name="assemblies"></a>Сборки
 
@@ -72,11 +69,9 @@ Xamarin.Android включает несколько сборок, составл
 
 Привязки для платформы Android содержатся в `Mono.Android.dll` сборки. Эта сборка содержит всей привязки для значительного Android API-интерфейсов и обмена данными с Android среды выполнения виртуальной Машины.
 
-<a name="Binding_Design" />
 
 ## <a name="binding-design"></a>Привязка разработки
 
-<a name="Collections" />
 
 ### <a name="collections"></a>Коллекции
 
@@ -112,7 +107,6 @@ if (goodSource.Count != 4) // false
     throw new InvalidOperationException ("should not be reached.");
 ```
 
-<a name="Properties" />
 
 ### <a name="properties"></a>Свойства
 
@@ -127,7 +121,6 @@ if (goodSource.Count != 4) // false
 -  Свойства являются *не* возникает, если тип свойства должен быть массивом.
 
 
-<a name="Events_and_Listeners" />
 
 ### <a name="events-and-listeners"></a>События и прослушиватели
 
@@ -177,7 +170,6 @@ button.Click += (sender, e) => {
 
 Все интерфейсы прослушиватели реализуют [ `Android.Runtime.IJavaObject` ](https://developer.xamarin.com/api/type/Android.Runtime.IJavaObject/) интерфейс, из-за особенностей реализации привязки, поэтому классы прослушиватель должен реализовывать этот интерфейс. Это можно сделать путем реализации интерфейса прослушивателя на подкласс [Java.Lang.Object](https://developer.xamarin.com/api/type/Java.Lang.Object/) или любой другой объект Java, например, Android действия в оболочку.
 
-<a name="Runnables" />
 
 ### <a name="runnables"></a>Runnables
 
@@ -188,7 +180,6 @@ button.Click += (sender, e) => {
 
 Мы оставили [интерфейс IRunnable](https://developer.xamarin.com/api/type/Java.Lang.IRunnable/) перегрузки в месте, а не их замены, поскольку несколько типов реализуйте интерфейс и поэтому может передаваться как runnables напрямую.
 
-<a name="Inner_Classes" />
 
 ### <a name="inner-classes"></a>Внутренние классы
 
@@ -227,7 +218,6 @@ class CubeWallpaper : WallpaperService {
 
 Обратите внимание как `CubeWallpaper.CubeEngine` вкладывается в `CubeWallpaper`, `CubeWallpaper` наследует от класса, содержащего `WallpaperService.Engine`, и `CubeWallpaper.CubeEngine` имеет конструктор, который принимает объявляющий тип-- `CubeWallpaper` в этом случае--все как указано выше.
 
-<a name="Interfaces" />
 
 ### <a name="interfaces"></a>интерфейсов,
 
@@ -254,7 +244,7 @@ Java-интерфейсов преобразуются в двух типов:
 
 
 > [!NOTE]
-> **Примечание:** , начиная с Xamarin.Android 1.9 константы интерфейса Java <em>дублируется</em> с целью упростить перенос Java кода. Это поможет улучшить перенос кода Java, которое зависит от [android поставщика](http://developer.android.com/reference/android/provider/package-summary.html) интерфейс константы.
+> Начиная с Xamarin.Android 1.9, являются константами интерфейса Java <em>дублируется</em> с целью упростить перенос Java кода. Это поможет улучшить перенос кода Java, которое зависит от [android поставщика](http://developer.android.com/reference/android/provider/package-summary.html) интерфейс константы.
 
 Помимо перечисленных выше типов существует четыре дальнейших изменений.
 
@@ -277,7 +267,6 @@ Java-интерфейсов преобразуются в двух типов:
 
 Наконец, типы с *констант* например *Android.OS.ParcelableConsts* теперь устарело, отличный от новых InterfaceConsts вложенные типы. Они будут удалены в Xamarin.Android 3.0.
 
-<a name="Resources" />
 
 ## <a name="resources"></a>Ресурсы
 
@@ -323,7 +312,6 @@ public class Resource {
 
 Затем используется `Resource.Drawable.icon` ссылка `drawable/icon.png` файл, или `Resource.Layout.main` ссылку на `layout/main.xml` файл, или `Resource.String.first_string` для ссылки на первой строки в файле словаря `values/strings.xml`.
 
-<a name="Constants_and_Enumerations" />
 
 ## <a name="constants-and-enumerations"></a>Константы и перечисления
 

@@ -7,28 +7,26 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: cdbdf7195daf9add01052df8fc0f0cf4c7a0cb0e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 64a5ac7e0c448205da66f9790a506ca34a944140
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="actionbar"></a>Панели действий
 
-<a name="overview" />
 
 ## <a name="overview"></a>Обзор
 
 При использовании `TabActivity`, код для создания вкладки значки игнорируется при запуске на платформе Android 4.0 framework. Несмотря на то, что функционально он работает, как и в версиях Android перед 2.3, `TabActivity` сам класс рекомендуется к использованию в версии 4.0. Введен новый способ создания интерфейс с вкладками, использующий панели действий будут обсуждаться далее.
 
-<a name="Action_Bar_Tabs" />
 
 ## <a name="action-bar-tabs"></a>Вкладки панели действий
 
 Панели действий поддерживает добавление интерфейсы с вкладками в Android 4.0.
 На следующей картинке показан пример такого интерфейса.
 
-[![Снимок экрана приложения в эмуляторе; отображаются две вкладки](action-bar-images/25-actionbartabs.png)](action-bar-images/25-actionbartabs.png)
+[![Снимок экрана приложения в эмуляторе; отображаются две вкладки](action-bar-images/25-actionbartabs.png)](action-bar-images/25-actionbartabs.png#lightbox)
 
 Чтобы создать вкладки в области действия, необходимо сначала установить его `NavigationMode` свойства для поддержки вкладок. В Android 4 `ActionBar` свойство доступно на класс действия, которые можно использовать для задания `NavigationMode` следующим образом:
 
@@ -84,26 +82,23 @@ this.ActionBar.AddTab (tab);
 
 Полный пример см. в разделе *HelloTabsICS* проекта в образце кода для этого документа.
 
-<a name="ShareActionProvider" />
 
 ## <a name="shareactionprovider"></a>ShareActionProvider
 
 `ShareActionProvider` Класс позволяет доступом действие должно выполняться с панели действий. Он отвечает за создание представления действие со списком приложений, которые могут обрабатывать доступом назначение и ведет журнал ранее использовавшихся приложений для упрощения доступа к ним позже с панели действий. Это позволяет приложениям обмениваться данными через пользовательский интерфейс, используется на протяжении всего Android.
 
-<a name="Image_Sharing_Example" />
 
 ### <a name="image-sharing-example"></a>Пример совместного использования изображения
 
 Например, ниже приведен снимок экрана на панели действий с элементом меню для совместного использования изображения (взяты из [ShareActionProvider](https://developer.xamarin.com/samples/monodroid/ShareActionProviderDemo/) пример). Когда пользователь нажимает элемент меню на панели действий, ShareActionProvider загружает в приложении для обработки, связанный с целью `ShareActionProvider`. В этом примере приложения обмена сообщениями ранее использовалась, поэтому оно выводится на панели действий.
 
-[![Снимок экрана значок приложения в области действия обмена сообщениями](action-bar-images/09-shareactionprovider.png)](action-bar-images/09-shareactionprovider.png)
+[![Снимок экрана значок приложения в области действия обмена сообщениями](action-bar-images/09-shareactionprovider.png)](action-bar-images/09-shareactionprovider.png#lightbox)
 
 
 Когда пользователь щелкает элемент в панели действий, обмена сообщениями, содержащий общий образ запускается приложение, как показано ниже:
 
-[![Снимок экрана приложения обмена сообщениями, отображении monkey изображения](action-bar-images/10-messagewithimage.png)](action-bar-images/10-messagewithimage.png)
+[![Снимок экрана приложения обмена сообщениями, отображении monkey изображения](action-bar-images/10-messagewithimage.png)](action-bar-images/10-messagewithimage.png#lightbox)
 
-<a name="Specifying_the_action_Provider_Class" />
 
 ### <a name="specifying-the-action-provider-class"></a>Указывает действие, класс поставщика
 
@@ -119,7 +114,6 @@ this.ActionBar.AddTab (tab);
 </menu>
 ```
 
-<a name="Inflating_the_Menu" />
 
 ### <a name="inflating-the-menu"></a>Дало бы ошибку в меню
 
@@ -137,7 +131,6 @@ public override bool OnCreateOptionsMenu (IMenu menu)
 }
 ```
 
-<a name="Creating_the_Intent" />
 
 ### <a name="creating-the-intent"></a>Создание, назначение
 

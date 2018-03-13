@@ -8,21 +8,21 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: effa527b330fb6ca75800392e557289a326f17aa
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 388744d48799e84587a4f554a4eb67cd677d8c9a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="storyboards"></a>Элементы Storyboard
 
 Раскадровка определяет все пользовательского интерфейса для данного приложения, разбитый на режим работы Общие сведения о его просмотр контроллеров. В построителе интерфейса в Xcode каждый из этих контроллеров живет в свой собственный сцены.
 
-[ ![](indepth-images/intro01.png "Раскадровка в построителе интерфейса в Xcode")](indepth-images/intro01.png)
+[![](indepth-images/intro01.png "Раскадровка в построителе интерфейса в Xcode")](indepth-images/intro01.png#lightbox)
 
 Раскадровка представляет собой файл ресурсов (с расширениями `.storyboard`), которые возвращает включены в набор приложений Xamarin.Mac при компиляции и поставляется. Определить начальный раскадровки для вашего приложения, можно изменить его `Info.plist` файла и выберите **главного интерфейса** из раскрывающегося списка: 
 
-[ ![](indepth-images/sb01.png "Редактор Info.plist")](indepth-images/sb01.png)
+[![](indepth-images/sb01.png "Редактор Info.plist")](indepth-images/sb01.png#lightbox)
 
 <a name="Loading-from-Code" />
 
@@ -41,11 +41,11 @@ controller.ShowWindow(this);
 
 `FromName` Загружает файл раскадровки с заданным именем, которая была включена в пакет приложения. `InstantiateControllerWithIdentifier` Создает экземпляр контроллера представления с заданным идентификатором. При разработке пользовательского интерфейса в построителе интерфейс Xcode по установке удостоверения:
 
-[ ![](indepth-images/sb02.png "Задание идентификатора раскадровки")](indepth-images/sb02.png)
+[![](indepth-images/sb02.png "Задание идентификатора раскадровки")](indepth-images/sb02.png#lightbox)
 
 При необходимости можно использовать `InstantiateInitialController` метод для загрузки, имеющей начальной контроллера в интерфейс построителя контроллера представления:
 
-[ ![](indepth-images/sb03.png "Задание начальной контроллера")](indepth-images/sb03.png)
+[![](indepth-images/sb03.png "Задание начальной контроллера")](indepth-images/sb03.png#lightbox)
 
 Он обозначен **точки входа раскадровки** и выше стрелку open завершен.
 
@@ -76,7 +76,7 @@ controller.ShowWindow(this);
 
 Кроме того `NSViewControllers` теперь являются частью окна _цепочки респондент_:
 
-[ ![](indepth-images/vc01.png "Цепочка сетевого ответчика")](indepth-images/vc01.png)
+[![](indepth-images/vc01.png "Цепочка сетевого ответчика")](indepth-images/vc01.png#lightbox)
 
 И по существу являются проводной доступ для получения и реагировать на события, например, Вырезать, копировать и вставить выбранные элементы меню. Это автоматическое View Controller проводной доступ возникает только для приложений, выполняющихся на macOS Сьерра (10.12) и более поздней версии.
 
@@ -86,13 +86,13 @@ controller.ShowWindow(this);
 
 В раскадровки, контроллеров представления (например, разбиение View Controller и вкладка View Controller) теперь можно реализовать _вложения_, таким образом, что они могут» содержать «другие sub контроллеров представления:
 
-[ ![](indepth-images/vc02.png "Пример включения контроллера представления")](indepth-images/vc02.png)
+[![](indepth-images/vc02.png "Пример включения контроллера представления")](indepth-images/vc02.png#lightbox)
 
 Контроллеры дочерние представления содержат методы и свойства, чтобы связать их обратно их контроллер представление родительского и работы с отображение и удаление представления на экране.
 
 Все контроллеры представление контейнера, встроенные в macOS имеют определенного макета которой Apple предложит выполнить при создании собственных пользовательских контроллеров представления контейнера:
 
-[ ![](indepth-images/vc03.png "Макет View Controller")](indepth-images/vc03.png)
+[![](indepth-images/vc03.png "Макет View Controller")](indepth-images/vc03.png#lightbox)
 
 Контроллер представление коллекции содержит массив Просмотр элементов коллекции, каждый из которых содержит один или несколько контроллеров представления, содержащих свои собственные представления.
 
@@ -131,7 +131,7 @@ PerformSegue("MyNamedSegue", this);
 
 Идентификатор перейти определяется внутри Xcode интерфейс построителя при размещении пользовательского интерфейса приложения:
 
-[ ![](indepth-images/sg02.png "Введите имя перейти")](indepth-images/sg02.png)
+[![](indepth-images/sg02.png "Введите имя перейти")](indepth-images/sg02.png#lightbox)
 
 Представление-контроллер, выступающего в качестве источника Segue, должны переопределять `PrepareForSegue` метода и выполните инициализацию, необходимые перед выполнением Segue и указанный контроллер представление отображается:
 
@@ -215,7 +215,7 @@ namespace OnCardMac
 
 Чтобы использовать этот новый тип Segue в построителе интерфейса в Xcode, необходимо скомпилировать приложение во-первых, а затем перейдите к Xcode и добавьте новый Segue между двумя сцены. Задать **стиль** для **пользовательские** и **перейти класс** для `ReplaceViewSegue` (имя нашем пользовательском классе Segue):
 
-[ ![](indepth-images/sg01.png "Класс Segue параметров")](indepth-images/sg01.png)
+[![](indepth-images/sg01.png "Класс Segue параметров")](indepth-images/sg01.png#lightbox)
 
 <a name="Triggered-Segues" />
 
@@ -271,21 +271,21 @@ namespace OnCardMac
 
 1. В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта и выберите **добавить** > **новый файл...**   >  **Mac** > **раскадровки**. Введите **имя** новую раскадровку и нажмите кнопку **New** кнопки: 
 
-    [ ![](indepth-images/ref01.png "Добавление нового раскадровки")](indepth-images/ref01.png)
+    [![](indepth-images/ref01.png "Добавление нового раскадровки")](indepth-images/ref01.png#lightbox)
 2. В **обозревателе решений**, дважды щелкните имя нового раскадровки, чтобы открыть его для редактирования в Xcode интерфейс построителя.
 2. Разработка макета новая раскадровка сцен, как обычно и сохранить изменения: 
 
-    [ ![](indepth-images/ref02.png "Проектирование интерфейса")](indepth-images/ref02.png)
+    [![](indepth-images/ref02.png "Проектирование интерфейса")](indepth-images/ref02.png#lightbox)
 3. Переключитесь на раскадровку, нужно добавления ссылки на интерфейс построителя.
 4. Перетащите **раскадровки ссылка** из **объекта библиотеки** на поверхность разработки: 
 
-    [ ![](indepth-images/ref03.png "При выборе ссылки раскадровки в библиотеке")](indepth-images/ref03.png)
+    [![](indepth-images/ref03.png "При выборе ссылки раскадровки в библиотеке")](indepth-images/ref03.png#lightbox)
 5. В **инспектора атрибут**, выберите имя **раскадровки** созданной выше: 
 
-    [ ![](indepth-images/ref04.png "Настройка ссылки")](indepth-images/ref04.png)
+    [![](indepth-images/ref04.png "Настройка ссылки")](indepth-images/ref04.png#lightbox)
 6. Элемент управления, щелкните элемент пользовательского интерфейса (например, кнопка) на существующий сцены и создать новый Segue для **ссылки раскадровки** только что созданный.  В контекстном меню выберите **Показать** для завершения Segue: 
 
-    [ ![](indepth-images/ref06.png "Segue тип параметра")](indepth-images/ref06.png) 
+    [![](indepth-images/ref06.png "Segue тип параметра")](indepth-images/ref06.png#lightbox) 
 8. Сохраните изменения в раскадровку.
 9. Вернитесь в Visual Studio для Mac для синхронизации изменений.
 
@@ -300,20 +300,20 @@ namespace OnCardMac
 1. В **обозревателе решений**, дважды щелкните внешних раскадровку, чтобы открыть его для редактирования в построителе интерфейса в Xcode.
 2. Добавьте новую сцену и его макет обычным образом: 
 
-    [ ![](indepth-images/ref07.png "Разработка макета в Xcode")](indepth-images/ref07.png)
+    [![](indepth-images/ref07.png "Разработка макета в Xcode")](indepth-images/ref07.png#lightbox)
 3. В **удостоверение инспектора**, введите **раскадровки идентификатор** для нового сцены окна контроллера: 
 
-    [ ![](indepth-images/ref08.png "Задание идентификатора раскадровки")](indepth-images/ref08.png)
+    [![](indepth-images/ref08.png "Задание идентификатора раскадровки")](indepth-images/ref08.png#lightbox)
 3. Откройте раскадровку, нужно добавления ссылки в построителе интерфейса.
 4. Перетащите **раскадровки ссылка** из **объекта библиотеки** на поверхность разработки: 
 
-    [ ![](indepth-images/ref03.png "При выборе ссылки раскадровки из библиотеки")](indepth-images/ref03.png)
+    [![](indepth-images/ref03.png "При выборе ссылки раскадровки из библиотеки")](indepth-images/ref03.png#lightbox)
 5. В **удостоверение инспектора**, выберите имя **раскадровки** и **ссылка на идентификатор** (раскадровки ID) сцены, созданный выше: 
 
-    [ ![](indepth-images/ref09.png "Задание идентификатора ссылки")](indepth-images/ref09.png)
+    [![](indepth-images/ref09.png "Задание идентификатора ссылки")](indepth-images/ref09.png#lightbox)
 6. Элемент управления, щелкните элемент пользовательского интерфейса (например, кнопка) на существующий сцены и создать новый Segue для **ссылки раскадровки** только что созданный. В контекстном меню выберите **Показать** для завершения Segue: 
 
-    [ ![](indepth-images/ref06.png "Segue тип параметра")](indepth-images/ref06.png) 
+    [![](indepth-images/ref06.png "Segue тип параметра")](indepth-images/ref06.png#lightbox) 
 8. Сохраните изменения в раскадровку.
 9. Вернитесь в Visual Studio для Mac для синхронизации изменений.
 
@@ -328,19 +328,19 @@ namespace OnCardMac
 1. В **обозревателе решений**, дважды щелкните раскадровку, чтобы открыть его для редактирования.
 2. Добавьте новую сцену и его макет обычным образом: 
 
-    [ ![](indepth-images/ref11.png "Редактирование раскадровки в Xcode")](indepth-images/ref11.png)
+    [![](indepth-images/ref11.png "Редактирование раскадровки в Xcode")](indepth-images/ref11.png#lightbox)
 3. В **удостоверение инспектора**, введите **раскадровки идентификатор** для нового сцены окна контроллера: 
 
-    [ ![](indepth-images/ref12.png "Задание идентификатора раскадровки")](indepth-images/ref12.png)
+    [![](indepth-images/ref12.png "Задание идентификатора раскадровки")](indepth-images/ref12.png#lightbox)
 3. Перетащите **раскадровки ссылка** из **элементов** на поверхность разработки: 
 
-    [ ![](indepth-images/ref03.png "При выборе ссылки раскадровки из библиотеки")](indepth-images/ref03.png)
+    [![](indepth-images/ref03.png "При выборе ссылки раскадровки из библиотеки")](indepth-images/ref03.png#lightbox)
 5. В **инспектора атрибут**выберите **ссылка на идентификатор** (раскадровки ID) сцены, созданный выше: 
 
-    [ ![](indepth-images/ref13.png "Задание идентификатора ссылки")](indepth-images/ref13.png)
+    [![](indepth-images/ref13.png "Задание идентификатора ссылки")](indepth-images/ref13.png#lightbox)
 6. Элемент управления, щелкните элемент пользовательского интерфейса (например, кнопка) на существующий сцены и создать новый Segue для **ссылки раскадровки** только что созданный. В контекстном меню выберите **Показать** для завершения Segue: 
 
-    [ ![](indepth-images/ref06.png "Выбор типа Segue")](indepth-images/ref06.png) 
+    [![](indepth-images/ref06.png "Выбор типа Segue")](indepth-images/ref06.png#lightbox) 
 8. Сохраните изменения в раскадровку.
 9. Вернитесь в Visual Studio для Mac для синхронизации изменений.
 
@@ -359,5 +359,5 @@ namespace OnCardMac
 - [MacStoryboard (пример)](https://developer.xamarin.com/samples/mac/MacStoryboard/)
 - [Привет, Mac](~/mac/get-started/hello-mac.md)
 - [Работа с окнами](~/mac/user-interface/window.md)
-- [Рекомендации по интерфейсу отдела OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
+- [Рекомендации по работе с человеческим интерфейсом OS X](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/)
 - [Введение в Windows](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031-SW1)

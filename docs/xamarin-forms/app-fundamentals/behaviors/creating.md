@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/06/2016
-ms.openlocfilehash: c70e4c9ec49b48c3bf6ecc6a4944d992f8ae930a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 160dd4b2326529abbb456e77391f0f73ee374f50
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="xamarinforms-behaviors"></a>Xamarin.Forms поведения
 
@@ -85,7 +85,7 @@ public class NumericValidationBehavior : Behavior<Entry>
 `NumericValidationBehavior` Является производным от [ `Behavior<T>` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Behavior%3CT%3E/) класса, где `T` — [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/). [ `OnAttachedTo` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Behavior%3CT%3E.OnAttachedTo/p/Xamarin.Forms.BindableObject/) Метод регистрирует обработчик событий для [ `TextChanged` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Entry.TextChanged/) события, с [ `OnDetachingFrom` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Behavior%3CT%3E.OnDetachingFrom/p/Xamarin.Forms.BindableObject/) метод отмены регистрации `TextChanged`события памяти во избежание утечки. Основные функциональные возможности поведения обеспечивается `OnEntryTextChanged` метод, который выполняет синтаксический анализ значения, введенного пользователем в `Entry`и задает [ `TextColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Entry.TextColor/) свойство на красный, если значение не `double`.
 
 > [!NOTE]
-> **Примечание**: Xamarin.Forms не устанавливает `BindingContext` поведения, так как поведения можно совместно и применить к нескольким элементам управления через стили.
+> Xamarin.Forms не устанавливает `BindingContext` поведения, так как поведения можно совместно и применить к нескольким элементам управления через стили.
 
 ## <a name="consuming-a-xamarinforms-behavior"></a>Использование поведения Xamarin.Forms
 
@@ -108,10 +108,10 @@ entry.Behaviors.Add (new NumericValidationBehavior ());
 
 Во время выполнения поведение будет реагировать на взаимодействие с элементом управления, в соответствии с реализация поведения. Следующих снимках экрана демонстрации поведения на недопустимые входные данные:
 
-[ ![](creating-images/screenshots-sml.png "Образец приложения с поведением Xamarin.Forms")](creating-images/screenshots.png "образец приложения с поведением Xamarin.Forms")
+[![](creating-images/screenshots-sml.png "Образец приложения с поведением Xamarin.Forms")](creating-images/screenshots.png#lightbox "образец приложения с поведением Xamarin.Forms")
 
 > [!NOTE]
-> **Примечание**: поведения записываются для типа элемента управления (или суперкласса, можно применить к многие элементы управления), и должны быть добавлены только к элементу управления совместимы. Предпринимается попытка назначить поведение элемента управления несовместимые приведет к созданию исключения.
+> Поведение записываются для типа элемента управления (или суперкласса, можно применить к многие элементы управления) и должны быть добавлены только к элементу управления совместимы. Предпринимается попытка назначить поведение элемента управления несовместимые приведет к созданию исключения.
 
 ### <a name="consuming-a-xamarinforms-behavior-with-a-style"></a>Использование Xamarin.Forms поведения со стилем
 
@@ -181,7 +181,7 @@ public class NumericValidationBehavior : Behavior<Entry>
 Дополнительные сведения о стилях см. в разделе [стили](~/xamarin-forms/user-interface/styles/index.md).
 
 > [!NOTE]
-> **Примечание**: при добавлении свойства связывания на поведение, которое задается или запросы на языке XAML, при создании поведения, имеют состояние они не могут совместно использоваться между элементами управления в `Style` в `ResourceDictionary`.
+> При добавлении свойства связывания на поведение, которое задается или запросы на языке XAML, при создании поведения, имеют состояние они не могут совместно использоваться между элементами управления в `Style` в `ResourceDictionary`.
 
 ### <a name="removing-a-behavior-from-a-control"></a>Снятие поведение элемента управления
 

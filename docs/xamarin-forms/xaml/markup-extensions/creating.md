@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 01/05/2018
-ms.openlocfilehash: eb7189226e4f5d7eb2b55bf61728e65db44ba57b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 737c55aea087094ceb5e6070261d0a3d724e8a01
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="creating-xaml-markup-extensions"></a>Создание расширений разметки XAML
 
@@ -117,7 +117,7 @@ public class HslColorExtension : IMarkupExtension<Color>
 
 Обратите внимание, что при `HslColorExtension` является XML-тег, четыре свойства заданы как атрибуты, но когда он появится между фигурными скобками, четыре свойства разделяются запятыми, без кавычек. Для значений по умолчанию `H`, `S`, и `L` 0 и значение по умолчанию `A` -1, поэтому эти свойства можно опустить, если их значения по умолчанию. Последний пример показывает пример, где яркость равно 0, что обычно приводит к черным цветом, но альфа-канала — 0,5, поэтому половина прозрачно и отображается серым белом фоне страницы:
 
-[![Демонстрация цвет HSL](creating-images/hslcolordemo-small.png "Демонстрация цвет HSL")](creating-images/hslcolordemo-large.png "Демонстрация цвет HSL")
+[![Демонстрация цвет HSL](creating-images/hslcolordemo-small.png "Демонстрация цвет HSL")](creating-images/hslcolordemo-large.png#lightbox "Демонстрация цвет HSL")
 
 ## <a name="a-markup-extension-for-accessing-bitmaps"></a>Расширения разметки для доступа к растровые изображения
 
@@ -180,7 +180,7 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
 
 Вот программу на всех трех платформ.
 
-[![Демонстрация ресурса изображения](creating-images/imageresourcedemo-small.png "изображения Демонстрация ресурсов")](creating-images/imageresourcedemo-large.png "изображения Демонстрация ресурсов")
+[![Демонстрация ресурса изображения](creating-images/imageresourcedemo-small.png "изображения Демонстрация ресурсов")](creating-images/imageresourcedemo-large.png#lightbox "изображения Демонстрация ресурсов")
 
 ## <a name="service-providers"></a>Поставщики услуг
 

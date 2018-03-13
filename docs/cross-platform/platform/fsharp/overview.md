@@ -8,13 +8,13 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/24/2017
-ms.openlocfilehash: 676bd443d2f45c6ed502c2f94feec3599b068341
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 74911f583a2e28a99ceb7c087a8542d0a8cab71d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="getting-started-with-ff35"></a>Приступая к работе с FF &#35;
+# <a name="getting-started-with-f35"></a>Приступая к работе с F&#35;
 
 ## <a name="requirements"></a>Требования
 
@@ -22,30 +22,30 @@ F # включается по умолчанию в Visual Studio для Mac.
 
 В Windows, необходимо установить средства компилятора автономный F #, согласно инструкциям на [сайта FSharp.org](http://fsharp.org/use/windows/).
 
-## <a name="creating-an-f35-project"></a>Создание Ф &#35; Проект
+## <a name="creating-an-f35-project"></a>Создание F&#35; проекта
 
 Создание нового приложения F # выполняется в том же **новый проект** окно, используемое для языка C#.
 
 В Visual Studio для Mac выберите **файл > новое решение**. В **новый проект** диалоговое окно, выберите шаблон проекта. Используйте раскрывающийся список справа от шаблона, чтобы выбрать язык, который вы хотите использовать:
 
- [ ![](overview-images/choosefsharp.png "Используйте раскрывающийся список справа от шаблона, чтобы выбрать язык, который вы хотите использовать")](overview-images/choosefsharp.png)
+ [![](overview-images/choosefsharp.png "Используйте раскрывающийся список справа от шаблона, чтобы выбрать язык, который вы хотите использовать")](overview-images/choosefsharp.png#lightbox)
 
 Выберите тип проекта и нажмите кнопку **Далее** позволяет дать имя и создать его.
 
 
 Теперь вы готовы приступить к созданию некоторых эффективной приложений F #!
 
-## <a name="learning-to-use-f35"></a>Обучение работе с Ф &#35;
+## <a name="learning-to-use-f35"></a>Обучение работе с F&#35;
 
 Учебник по F # можно также создать с помощью **новое решение** диалоговое окно в Visual Studio для Mac. Перейдите к **других > .NET > Учебник по F #**, как описано в приведенном ниже рисунке:
 
- [ ![](overview-images/fsharptutorial.png "Перейдите к другой или .NET и учебник по F #")](overview-images/fsharptutorial.png)
+ [![](overview-images/fsharptutorial.png "Перейдите к другой или .NET и учебник по F #")](overview-images/fsharptutorial.png#lightbox)
 
 Откроется новое решение интерактивный. Изучение это — отличный способ быстро освоить работу с основами языка.
 
- [ ![](overview-images/newtutorial-sml.png "Изучение это — отличный способ быстро освоить работу с основами языка")](overview-images/newtutorial.png)
+ [![](overview-images/newtutorial-sml.png "Изучение это — отличный способ быстро освоить работу с основами языка")](overview-images/newtutorial.png#lightbox)
 
-Извлечение [список образцов](/guides/cross-platform/fsharp/samples/) чтобы увидеть F # в действии.
+Извлечение [список образцов](~/cross-platform/platform/fsharp/samples.md) чтобы увидеть F # в действии.
 
 ## <a name="references"></a>Ссылки
 

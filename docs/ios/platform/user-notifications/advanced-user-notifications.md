@@ -3,16 +3,16 @@ title: "Расширенные пользовательские уведомле
 description: "Эта статья представляет собой более подробное рассмотрение новую платформу уведомления для пользователей и как использовать преимущества всех его в приложении Xamarin.iOS."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4e1ff652-28f0-4566-b383-9d12664401a4
+ms.assetid: 4E0C60AE-6F54-4098-8FA0-AADF9AC86805
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 6408f3b45f93413fa814e410f07e7b71179b7338
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: e20c9f068fe92e0dd711e0c20d31d713a0d03f0d
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="advanced-user-notifications"></a>Расширенные пользовательские уведомления
 
@@ -81,7 +81,7 @@ _Эта статья представляет собой более подроб
 
 Рассмотрим следующие общие сведения о процессе:
 
-[ ![](advanced-user-notifications-images/extension02.png "Добавление вложения носителя процесса")](advanced-user-notifications-images/extension02.png)
+[![](advanced-user-notifications-images/extension02.png "Добавление вложения носителя процесса")](advanced-user-notifications-images/extension02.png#lightbox)
 
 После удаленного уведомление доставляется на устройство (с помощью APN), расширение службы затем можно загрузить необходимые изображения через любыми способами требуемого (такие как `NSURLSession`) и после получения образ, он может изменить содержимое уведомлений и отображения его пользователю.
 
@@ -157,7 +157,7 @@ namespace MonkeyNotification
 
 При появлении уведомления пользователя с помощью пользовательского интерфейса для пользователя, он будет иметь следующие элементы:
 
-[ ![](advanced-user-notifications-images/customui01.png "Уведомление пользователя с элементами пользовательского интерфейса")](advanced-user-notifications-images/customui01.png)
+[![](advanced-user-notifications-images/customui01.png "Уведомление пользователя с элементами пользовательского интерфейса")](advanced-user-notifications-images/customui01.png#lightbox)
 
 Если пользователь взаимодействует с настраиваемые действия (представленные ниже уведомления), пользовательский интерфейс можно обновить для предоставления отзывов пользователей как события при их вызове указанного действия.
 
@@ -171,13 +171,13 @@ namespace MonkeyNotification
 2. Щелкните правой кнопкой мыши имя решения в **Pad решения** и выберите **добавить** > **Добавление нового проекта**.
 3. Выберите **iOS** > **расширения** > **содержимого расширения уведомления** и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](advanced-user-notifications-images/notify01.png "Выбор расширений содержимого уведомлений")](advanced-user-notifications-images/notify01.png)
+    [![](advanced-user-notifications-images/notify01.png "Выбор расширений содержимого уведомлений")](advanced-user-notifications-images/notify01.png#lightbox)
 4. Введите **имя** расширение и нажмите кнопку **Далее** кнопки: 
 
-    [ ![](advanced-user-notifications-images/notify02.png "Введите имя для модуля")](advanced-user-notifications-images/notify02.png)
+    [![](advanced-user-notifications-images/notify02.png "Введите имя для модуля")](advanced-user-notifications-images/notify02.png#lightbox)
 5. Настройка **имя проекта** и/или **имя решения** , если требуется и нажмите кнопку **создать** кнопки: 
 
-    [ ![](advanced-user-notifications-images/notify03.png "Измените имя проекта и/или имя решения")](advanced-user-notifications-images/notify03.png)
+    [![](advanced-user-notifications-images/notify03.png "Измените имя проекта и/или имя решения")](advanced-user-notifications-images/notify03.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -185,7 +185,7 @@ namespace MonkeyNotification
 2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **добавить** > **Добавление нового проекта**.
 3. Выберите **iOS** > **расширения** > **уведомления содержимого расширения**: 
 
-    [ ![](advanced-user-notifications-images/notify01w.png "Выбор расширений содержимого уведомлений")](advanced-user-notifications-images/notify01w.png)
+    [![](advanced-user-notifications-images/notify01w.png "Выбор расширений содержимого уведомлений")](advanced-user-notifications-images/notify01w.png#lightbox)
 4. Введите **имя** расширение и нажмите кнопку **ОК** кнопки.
 
 -----
@@ -254,7 +254,7 @@ namespace MonkeyChatNotifyExtension
 3. Разверните `NSExtension` ключа.
 4. Добавить `UNNotificationExtensionCategory` ключа как тип **строка** со значением расширение принадлежит к категории (в этом примере "пригласить событий): 
 
-    [ ![](advanced-user-notifications-images/customui02.png "Добавить раздел UNNotificationExtensionCategory")](advanced-user-notifications-images/customui02.png)
+    [![](advanced-user-notifications-images/customui02.png "Добавить раздел UNNotificationExtensionCategory")](advanced-user-notifications-images/customui02.png#lightbox)
 5. Сохраните изменения.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -263,7 +263,7 @@ namespace MonkeyChatNotifyExtension
 3. Разверните `NSExtension` ключа.
 4. Добавить `UNNotificationExtensionCategory` ключа как тип **строка** со значением расширение принадлежит к категории (в этом примере "пригласить событий): 
 
-    [ ![](advanced-user-notifications-images/customui02w.png "Добавить раздел UNNotificationExtensionCategory")](advanced-user-notifications-images/customui02w.png)
+    [![](advanced-user-notifications-images/customui02w.png "Добавить раздел UNNotificationExtensionCategory")](advanced-user-notifications-images/customui02w.png#lightbox)
 5. Сохраните изменения.
 
 -----
@@ -272,11 +272,11 @@ namespace MonkeyChatNotifyExtension
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](advanced-user-notifications-images/customui03.png "Категории расширения содержимого уведомлений")](advanced-user-notifications-images/customui03.png)
+[![](advanced-user-notifications-images/customui03.png "Категории расширения содержимого уведомлений")](advanced-user-notifications-images/customui03.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](advanced-user-notifications-images/customui03w.png "Категории расширения содержимого уведомлений")](advanced-user-notifications-images/customui03w.png)
+[![](advanced-user-notifications-images/customui03w.png "Категории расширения содержимого уведомлений")](advanced-user-notifications-images/customui03w.png#lightbox)
 
 -----
 
@@ -286,11 +286,11 @@ namespace MonkeyChatNotifyExtension
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](advanced-user-notifications-images/customui04.png "Поиск сведений по умолчанию")](advanced-user-notifications-images/customui04.png)
+[![](advanced-user-notifications-images/customui04.png "Поиск сведений по умолчанию")](advanced-user-notifications-images/customui04.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](advanced-user-notifications-images/customui04w.png "Поиск сведений по умолчанию")](advanced-user-notifications-images/customui04w.png)
+[![](advanced-user-notifications-images/customui04w.png "Поиск сведений по умолчанию")](advanced-user-notifications-images/customui04w.png#lightbox)
 
 -----
 
@@ -367,11 +367,11 @@ namespace MonkeyChatNotifyExtension
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](advanced-user-notifications-images/customui05.png "Ключ UNNotificationExtensionInitialContentSizeRatio")](advanced-user-notifications-images/customui05.png)
+[![](advanced-user-notifications-images/customui05.png "Ключ UNNotificationExtensionInitialContentSizeRatio")](advanced-user-notifications-images/customui05.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](advanced-user-notifications-images/customui05w.png "Ключ UNNotificationExtensionInitialContentSizeRatio")](advanced-user-notifications-images/customui05w.png)
+[![](advanced-user-notifications-images/customui05w.png "Ключ UNNotificationExtensionInitialContentSizeRatio")](advanced-user-notifications-images/customui05w.png#lightbox)
 
 -----
 

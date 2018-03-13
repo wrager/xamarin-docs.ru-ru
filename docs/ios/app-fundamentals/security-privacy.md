@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: acdcdc2b76a995ca324532c6a034b2fdf8e21db5
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4747fb73358a60d10832a1e650acd90a5a4274d1
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-security-and-privacy-features"></a>iOS средства безопасности и конфиденциальности
 
@@ -76,7 +76,7 @@ _В этой статье рассматривается работа с без�
 
 Рассмотрим следующий пример доступа к HomeKit на iOS 10 (и более поздней версии), разработчику придется добавить `NSHomeKitUsageDescription` ключа в приложение `Info.plist` файл и предоставить объявление строки, почему приложение хочет получить доступ к базе данных HomeKit пользователя. Эта строка будет выводиться при первом запуске приложения:
 
-[ ![](security-privacy-images/info01.png "Пример оповещения NSHomeKitUsageDescription")](security-privacy-images/info01.png)
+[![](security-privacy-images/info01.png "Пример оповещения NSHomeKitUsageDescription")](security-privacy-images/info01.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -87,7 +87,7 @@ Xamarin.iOS для текущей Visual Studio не поддерживает р
 3. Добавьте следующий узел для описания необходимых: `<string>Allows the app to control HomeKit enabled devices.</string>`
 4. `Info.plist` Файл должен выглядеть следующим образом: 
 
-    [ ![](security-privacy-images/info02vs.png "Файл Info.plist должен выглядеть следующим образом")](security-privacy-images/info02vs.png)
+    [![](security-privacy-images/info02vs.png "Файл Info.plist должен выглядеть следующим образом")](security-privacy-images/info02vs.png#lightbox)
 4. Сохраните изменения в файле.
 5. Вернитесь в Visual Studio и перекомпиляции в приложение.
 
@@ -100,10 +100,10 @@ Xamarin.iOS для текущей Visual Studio не поддерживает р
 3. Добавьте новый **входа** в список.
 4. Из раскрывающегося списка выберите ключ конфиденциальности (например, **конфиденциальность - Описание использования HomeKit**): 
 
-    [ ![](security-privacy-images/info02.png "Выберите ключ конфиденциальности")](security-privacy-images/info02.png)
+    [![](security-privacy-images/info02.png "Выберите ключ конфиденциальности")](security-privacy-images/info02.png#lightbox)
 5. Введите описание для почему приложение хочет получить указанные данные компонента или пользователя: 
 
-    [ ![](security-privacy-images/info03.png "Введите описание")](security-privacy-images/info03.png)
+    [![](security-privacy-images/info03.png "Введите описание")](security-privacy-images/info03.png#lightbox)
 6. Сохраните изменения в файле.
 
 -----

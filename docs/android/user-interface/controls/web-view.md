@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 234bd79754ae7f328d3207757156089441fc588c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0d418786a7364946e4e20100157fa0907b66deeb
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="web-view"></a>Веб-представление
 
@@ -96,7 +96,7 @@ protected override void OnCreate (Bundle bundle)
 
 Выполните сборку и запуск приложения. Вы увидите приложении просмотра простой веб-страницы, как показано на следующем снимке экрана:
 
-[![Пример приложения, отображение веб-представление](web-view-images/02-simple-webview-app-sml.png)](web-view-images/02-simple-webview-app.png)
+[![Пример приложения, отображение веб-представление](web-view-images/02-simple-webview-app-sml.png)](web-view-images/02-simple-webview-app.png#lightbox)
 
 Для обработки **ОБРАТНО** нажатие клавиши, добавьте следующие инструкции с помощью:
 
@@ -122,7 +122,7 @@ public override bool OnKeyDown (Android.Views.Keycode keyCode, Android.Views.Key
 
 Снова запустите приложение. Теперь можно переходить по ссылкам и переход назад по журналу страницы:
 
-[![Снимки экрана примера кнопки «Назад» в действии](web-view-images/03-back-button-sml.png)](web-view-images/03-back-button.png)
+[![Снимки экрана примера кнопки «Назад» в действии](web-view-images/03-back-button-sml.png)](web-view-images/03-back-button.png#lightbox)
 
 
 *Некоторые части этой страницы, изменения на основе работы создан и совместно используются Android открыть исходный проект и используются в соответствии с условиями, описанной в*

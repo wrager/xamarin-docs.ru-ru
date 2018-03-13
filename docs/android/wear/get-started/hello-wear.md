@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: bac9402df544a57cceb98e816e268eb2dcb99c72
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 8eed2d6b825a6e6dd7e956bf901246b9a630081a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="hello-wear"></a>Привет, износ
 
@@ -30,11 +30,11 @@ _Создание первого приложения Android носят и за
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Создание нового Android носят приложения в диалоговом окне нового проекта](hello-wear-images/vs/new-solution-sml.png)](hello-wear-images/vs/new-solution.png)
+[![Создание нового Android носят приложения в диалоговом окне нового проекта](hello-wear-images/vs/new-solution-sml.png)](hello-wear-images/vs/new-solution.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[![Создание нового Android носят приложения в диалоговом окне нового решения](hello-wear-images/xs/new-solution-sml.png)](hello-wear-images/xs/new-solution.png)
+[![Создание нового Android носят приложения в диалоговом окне нового решения](hello-wear-images/xs/new-solution-sml.png)](hello-wear-images/xs/new-solution.png#lightbox)
 
 -----
 
@@ -47,13 +47,13 @@ _Создание первого приложения Android носят и за
 
 Убедитесь, что **Android минимум целевой** равно **Android 5.0 (без описания операций)** или более поздней версии: 
 
-[![Задание целевой платформы для Android 5.0 в Visual Studio](hello-wear-images/vs/target-framework-sml.png)](hello-wear-images/vs/target-framework.png)
+[![Задание целевой платформы для Android 5.0 в Visual Studio](hello-wear-images/vs/target-framework-sml.png)](hello-wear-images/vs/target-framework.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Убедитесь, требуемая версия .NET framework задано **Android 5.0 (без описания операций)** или более поздней версии:
 
-[ ![Задание целевой платформы для Android 5.0 в Visual Studio для Mac](hello-wear-images/xs/target-framework-sml.png)](hello-wear-images/xs/target-framework.png)
+[![Задание целевой платформы для Android 5.0 в Visual Studio для Mac](hello-wear-images/xs/target-framework-sml.png)](hello-wear-images/xs/target-framework.png#lightbox)
 
 -----
 
@@ -144,11 +144,11 @@ public class MainActivity : Activity
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![Выбор AVD, носят в меню Visual Studio](hello-wear-images/vs/choose-wear-sim.png)](hello-wear-images/vs/choose-wear-sim.png)
+[![Выбор AVD, носят в меню Visual Studio](hello-wear-images/vs/choose-wear-sim.png)](hello-wear-images/vs/choose-wear-sim.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![Выбор AVD, носят в Visual Studio для Mac меню](hello-wear-images/xs/choose-wear-sim.png)](hello-wear-images/xs/choose-wear-sim.png)
+[![Выбор AVD, носят в Visual Studio для Mac меню](hello-wear-images/xs/choose-wear-sim.png)](hello-wear-images/xs/choose-wear-sim.png#lightbox)
 
 -----
 
@@ -160,11 +160,11 @@ public class MainActivity : Activity
 
 После успешного развертывает приложение, экран устройства износ отображать экран следующим образом:
 
-[![Начальный экран приложения износ](hello-wear-images/mainactivity-screen.png)](hello-wear-images/mainactivity-screen.png)
+[![Начальный экран приложения износ](hello-wear-images/mainactivity-screen.png)](hello-wear-images/mainactivity-screen.png#lightbox)
 
 Коснитесь **CLICK ME!** кнопка на лицевой стороне устройства Износ и инкремент счетчика каждого касанием см.:
 
-[![Снимок экрана носят приложения после 3 щелчков мыши](hello-wear-images/mainactivity-counts.png)](hello-wear-images/mainactivity-counts.png)
+[![Снимок экрана носят приложения после 3 щелчков мыши](hello-wear-images/mainactivity-counts.png)](hello-wear-images/mainactivity-counts.png#lightbox)
 
 
 ## <a name="next-steps"></a>Следующие шаги

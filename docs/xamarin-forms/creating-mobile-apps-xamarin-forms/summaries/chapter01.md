@@ -3,14 +3,15 @@ title: "Сводка раздел 1. Как Xamarin.Forms помещается �
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: F3F864FF-EE70-49D0-90D1-388889037625
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: c0f3313fa3c4d1075be7deeb871e303006c533e8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 9b60a45cc998743d34d5cadb7750f35e7b965579
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-1-how-does-xamarinforms-fit-in"></a>Сводка раздел 1. Как Xamarin.Forms помещается в
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 02/27/2018
 
 Основная программа Xamarin.Forms существует в PCL или SAP. Каждой из платформ состоит заглушки небольшое приложение, который вызывает PCL. API-интерфейсы Xamarin.Forms сопоставьте собственных элементов управления для каждой платформы, чтобы каждая платформа поддерживает характеристик внешнего вида:
 
-[![Снимок экрана тройной визуальных элементов платформы управления доступом](images/ch01fg03-small.png "Xamarin.Forms элементов управления на каждой платформе")](images/ch01fg03-large.png "Xamarin.Forms элементов управления на каждой платформе")
+[![Снимок экрана тройной визуальных элементов платформы управления доступом](images/ch01fg03-small.png "Xamarin.Forms элементов управления на каждой платформе")](images/ch01fg03-large.png#lightbox "Xamarin.Forms элементов управления на каждой платформе")
 
 Снимки экрана слева направо Показать iPhone, телефоне с Android и Windows 10 Mobile phone. На каждом экране страница содержит Xamarin.Forms [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) для отображения текста, [ `Button` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) для инициации действий, [ `Switch` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Switch/) для Выбор значения или выключает и [ `Slider` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Slider/) для задания значения в диапазоне. Все четыре представления являются потомками [ `StackLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) на [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/).
 

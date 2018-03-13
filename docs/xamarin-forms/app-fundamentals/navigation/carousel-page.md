@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: adb1042b8f44d3f414e2161e20b7eb3dc0e940a2
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: c4f8d70625fd8ee0e07832f8bdb3b7e502b5b38f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="carousel-page"></a>Страница «карусель»
 
@@ -36,7 +36,7 @@ _Xamarin.Forms CarouselPage — это страница, пользовател�
 
 <!--
 > [!NOTE]
-> **Note**: The [`CarouselPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) has been deprecated, and will be removed from Xamarin.Forms in a future release. Instead, the [`CarouselView`](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselView/) should be used to provide a gallery-like view, where users can swipe from side to side to move through a collection of items.
+> The [`CarouselPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) has been deprecated, and will be removed from Xamarin.Forms in a future release. Instead, the [`CarouselView`](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselView/) should be used to provide a gallery-like view, where users can swipe from side to side to move through a collection of items.
 -->
 
 ## <a name="creating-a-carouselpage"></a>Создание CarouselPage
@@ -49,7 +49,7 @@ _Xamarin.Forms CarouselPage — это страница, пользовател�
 Используя оба способа `CarouselPage` будет затем отображения каждой страницы в свою очередь, проведите участия, перемещение на следующую страницу для отображения. Эти возможности навигации будут испытывать естественным и знакомые пользователям Windows Phone.
 
 > [!NOTE]
-> **Примечание**: A [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) можно заполнять атрибутами [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров, или `ContentPage` производных продуктов.
+> Объект [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) можно заполнять атрибутами [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров, или `ContentPage` производных продуктов.
 
 <a name="Populating_a_CarouselPage_with_a_Page_Collection" />
 
@@ -142,7 +142,7 @@ public class MainPageCS : CarouselPage
 Каждый [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) просто отображает [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) конкретного цвета и [ `BoxView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BoxView/) этого цвета.
 
 > [!NOTE]
-> **Примечание**: [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) не поддерживает виртуализацию пользовательского интерфейса. Таким образом, если может снизиться производительность `CarouselPage` содержит слишком много дочерних элементов.
+> [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) Не поддерживает виртуализацию пользовательского интерфейса. Таким образом, если может снизиться производительность `CarouselPage` содержит слишком много дочерних элементов.
 
 Если [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) внедряется в [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.Detail/) страница [ `MasterDetailPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/), [ `MasterDetailPage.IsGestureEnabled` ](https://developer.xamarin.com/api/field/Xamarin.Forms.MasterDetailPage.IsGestureEnabledProperty/) должно быть равно `false` для предотвращения конфликтов жестов между `CarouselPage` и `MasterDetailPage`.
 
@@ -239,7 +239,7 @@ public class MainPageCS : CarouselPage
 Каждый [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) просто отображает [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) конкретного цвета и [ `BoxView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BoxView/) этого цвета.
 
 > [!NOTE]
-> **Примечание**: [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) не поддерживает виртуализацию пользовательского интерфейса. Таким образом, если может снизиться производительность `CarouselPage` содержит слишком много дочерних элементов.
+> [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) Не поддерживает виртуализацию пользовательского интерфейса. Таким образом, если может снизиться производительность `CarouselPage` содержит слишком много дочерних элементов.
 
 Если [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) внедряется в [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.Detail/) страница [ `MasterDetailPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/), [ `MasterDetailPage.IsGestureEnabled` ](https://developer.xamarin.com/api/field/Xamarin.Forms.MasterDetailPage.IsGestureEnabledProperty/) должно быть равно `false` для предотвращения конфликтов жестов между `CarouselPage` и `MasterDetailPage`.
 

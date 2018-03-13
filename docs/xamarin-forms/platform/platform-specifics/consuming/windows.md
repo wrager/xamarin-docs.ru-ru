@@ -3,16 +3,16 @@ title: "Особенности веб-платформы Windows"
 description: "Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффекты. В этой статье показано, как использовать платформу особенности Windows, которые встроены в Xamarin.Forms."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4729DB9C-8800-4E29-9D66-3BE13C5F8C94
+ms.assetid: 22B403C0-FE6D-498A-AE53-095E6C4B527C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/11/2017
-ms.openlocfilehash: da9279939af8dc4033cd89769a7add60a745ac85
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 01b32d1ca5356ed69480dff0d31c210a8c460417
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="windows-platform-specifics"></a>Особенности веб-платформы Windows
 
@@ -52,7 +52,7 @@ page.On<Windows>().SetToolbarPlacement(ToolbarPlacement.Bottom);
 
 Результатом является применения размещения указанной панели инструментов для [ `Page` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/) экземпляр:
 
-[![](windows-images/toolbar-placement.png "Панель инструментов размещения платформой")](windows-images/toolbar-placement-large.png "инструментов размещения платформы")
+[![](windows-images/toolbar-placement.png "Панель инструментов размещения платформой")](windows-images/toolbar-placement-large.png#lightbox "инструментов размещения платформы")
 
 <a name="collapsable_navigation_bar" />
 
@@ -84,7 +84,7 @@ page.On<Windows>().SetCollapseStyle(CollapseStyle.Partial).CollapsedPaneWidth(14
 
 Результатом является то, что указанный [ `CollapseStyle` ](https://developer.xamarin.com/api/type/Xamarin.Forms.PlatformConfiguration.WindowsSpecific.CollapseStyle/) применяется к [ `MasterDetailPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/) экземпляра с шириной также указаны:
 
-[![](windows-images/collapsed-navigation-bar.png "Свернуть панель навигации платформой")](windows-images/collapsed-navigation-bar-large.png "свернуты платформой панель навигации")
+[![](windows-images/collapsed-navigation-bar.png "Свернуть панель навигации платформой")](windows-images/collapsed-navigation-bar-large.png#lightbox "свернуты платформой панель навигации")
 
 ## <a name="summary"></a>Сводка
 

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 07/03/2017
-ms.openlocfilehash: a13de7fbb4b6e1f9fa2853ce599f3a038a5e4040
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: affe58d9276bd0b687089fb42a14ca964c570c9c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="complications"></a>Сложности
 
@@ -24,7 +24,7 @@ _watchOS позволяет разработчикам создавать пол
 
 Прочитайте [документации компании Apple](https://developer.apple.com/library/watchos/documentation/General/Conceptual/WatchKitProgrammingGuide/ManagingComplications.html) определить, подходит ли приложение для сложностью. Существует 5 `CLKComplicationFamily` типа отображения для выбора:
 
-[ ![](complications-images/all-complications-sml.png "5 доступных типов CLKComplicationFamily: циклическая небольшой, модульную небольшой, модульную больших, практической небольшой, практической больших")](complications-images/all-complications.png)
+[![](complications-images/all-complications-sml.png "5 доступных типов CLKComplicationFamily: циклическая небольшой, модульную небольшой, модульную больших, практической небольшой, практической больших")](complications-images/all-complications.png#lightbox)
 
 Приложения могут реализовывать только один стиль или все пять, в зависимости от отображаемых данных.
 Можно также поддерживают переход во времени, указав значения для прошлых или будущих времени, как пользователь включает цифровой Главная.
@@ -83,7 +83,7 @@ public class ComplicationController : CLKComplicationDataSource
 
 Модуль наблюдения за **Info.plist** файла следует указать имя `CLKComplicationDataSource` и какие семейства усложнения, вы хотите поддерживать:
 
-[ ![](complications-images/complications-config-sml.png "Типы семейства усложнения")](complications-images/complications-config.png)
+[![](complications-images/complications-config-sml.png "Типы семейства усложнения")](complications-images/complications-config.png#lightbox)
 
 **Класс источника данных** запись в списке будут показаны имена классов, подкласс `CLKComplicationDataSource` подкласс, в котором включает логику усложнения.
 

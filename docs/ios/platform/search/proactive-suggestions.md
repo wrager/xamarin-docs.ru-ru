@@ -3,16 +3,16 @@ title: "Общие сведения о упреждающего предложе
 description: "В этой статье показано, как использовать упреждающее предложения в Xamarin.iOS приложению engagement дисков, позволяя систему, чтобы заранее предоставить полезные сведения автоматически пользователю."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 4E1FF652-28F0-4566-B383-9D12664401A4
+ms.assetid: 8DDD084A-0D1E-4DF7-B686-6309DCEFF5D3
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 2762487d25befd15d8b57a002c5da4e9dcb15bb8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 15f649440b2a855189acff33afcef5e8272a0769
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="introduction-to-proactive-suggestions"></a>Общие сведения о упреждающего предложения
 
@@ -63,7 +63,7 @@ UIKit была расширена в iOS 10, чтобы включить [TextCo
 
 ## <a name="ride-sharing-based-suggestions"></a>Воспользуйтесь преимуществами управления доступом на основе предложения
 
-Если используется приложение для управления доступом игнорировать [MKDirectionsRequest](https://developer.xamarin.com/api/type/MapKit.MKDirectionsRequest/) API, iOS 10 будет представлять их как значение в переключателе приложения во время, когда пользователь, вероятно, будет игнорировать. Приложение также должен быть зарегистрирован как приложение управления доступом расстояния, указав `MKDirectionsModeRideShare` для [MKDirectionsApplicationSupportedModes](https://developer.apple.com/library/prerelease/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW33) ключа в его `Info.plist` файла.
+Если используется приложение для управления доступом игнорировать [MKDirectionsRequest](https://developer.xamarin.com/api/type/MapKit.MKDirectionsRequest/) API, iOS 10 будет представлять их как значение в переключателе приложения во время, когда пользователь, вероятно, будет игнорировать. Приложение также должен быть зарегистрирован как приложение управления доступом расстояния, указав `MKDirectionsModeRideShare` для [MKDirectionsApplicationSupportedModes](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html) ключа в его `Info.plist` файла.
 
 Если приложение поддерживает только расстояния для управления доступом, с подсказкой системы сразу начинаете работать с *«Get расстояния для...»*, если поддерживаются другие типы маршрутизации направление (например, Walking или велосипед), система будет использовать *«Получить инструкциям по...»*
 
@@ -95,7 +95,7 @@ UIKit была расширена в iOS 10, чтобы включить [TextCo
 
 Как упоминалось выше, `NSUserActivity` помогает понять, какие сведения пользователь в настоящее время работает с на экране системы. `NSUserActivity` механизм для записи действий пользователей при переходе через приложение кэширует состояние недоступно. Например просмотрев приложения ресторан:
 
-[ ![](proactive-suggestions-images/activity02.png "Состояние недоступно: NSUserActivity механизм кэширования")](proactive-suggestions-images/activity02.png)
+[![](proactive-suggestions-images/activity02.png "Состояние недоступно: NSUserActivity механизм кэширования")](proactive-suggestions-images/activity02.png#lightbox)
 
 С помощью следующих действий:
 
@@ -105,7 +105,7 @@ UIKit была расширена в iOS 10, чтобы включить [TextCo
 
 Внимательно ознакомьтесь последнего экрана:
 
-[ ![](proactive-suggestions-images/activity03.png "NSUserActivity подробные сведения")](proactive-suggestions-images/activity03.png)
+[![](proactive-suggestions-images/activity03.png "NSUserActivity подробные сведения")](proactive-suggestions-images/activity03.png#lightbox)
 
 Здесь Создание приложения `NSUserActivity` и заполнена сведениями для повторного создания состояние позже. Приложение также включены некоторые метаданные, такие как имя и адрес расположения. С этим действием создан приложение позволяет iOS знать, что он представляет текущее состояние пользователя.
 
@@ -324,7 +324,7 @@ attributes.SupportsNavigation = true;
 
 Рассмотрим, как предоставить поток взаимодействия для приложения:
 
-[ ![](proactive-suggestions-images/activity04.png "Обзор благотворительность взаимодействия")](proactive-suggestions-images/activity04.png)
+[![](proactive-suggestions-images/activity04.png "Обзор благотворительность взаимодействия")](proactive-suggestions-images/activity04.png#lightbox)
 
 Приложение создает `INInteraction` , содержащий **намерение** (`INIntent`), **участников** и **метаданные**. **Намерение** представляет действие пользователя, такие как видео вызова или отправка текстового сообщения. **Участников** включить пользователи, получение связи. **Метаданные** определяет дополнительную информацию, например успешно отправлять сообщения, и т. д.
 
@@ -334,7 +334,7 @@ attributes.SupportsNavigation = true;
 
 Когда пользователь взаимодействует с приложением, из карты контакта, взаимодействие возвращает вместе с `NSUserActivity`, который затем используется для запуска приложения:
 
-[ ![](proactive-suggestions-images/activity05.png "Взаимодействие возвращает вместе с NSUserActivity, который используется для запуска приложения")](proactive-suggestions-images/activity05.png)
+[![](proactive-suggestions-images/activity05.png "Взаимодействие возвращает вместе с NSUserActivity, который используется для запуска приложения")](proactive-suggestions-images/activity05.png#lightbox)
 
 Рассмотрим приведенный ниже способа отправки сообщения:
 
@@ -449,7 +449,7 @@ Schema.org можно предоставить те же типы взаимод
 - Существуют более 500 схемы, представляющее основные понятия доступны.
 - Благодаря использованию его на веб-сайт, разработчик может получить некоторые преимущества использования `NSUserActivity` в собственном приложении.
 
-Схемы будут представлены в виде дерева, как и структура, где определенного типы, такие как *ресторан*, наследовать из более универсальных типов, таких как *деловую*. Дополнительные сведения см. в разделе [Schema.org](#http://schema.org).
+Схемы будут представлены в виде дерева, как и структура, где определенного типы, такие как *ресторан*, наследовать из более универсальных типов, таких как *деловую*. Дополнительные сведения см. в разделе [Schema.org](http://schema.org).
 
 Например, если веб-странице входят следующие данные:
 

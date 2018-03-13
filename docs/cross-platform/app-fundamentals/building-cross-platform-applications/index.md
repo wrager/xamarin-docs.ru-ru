@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 01/28/2016
-ms.openlocfilehash: 8db4a816becca54428b3524f79b6ebc5ff4ec084
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7934738a546a266036573b81e15ef9b2fa28d7b4
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="sharing-code-options"></a>Параметры совместного использования кода
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/27/2018
 
  [Часть 5 – совместное использование стратегии практические кода](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-5-practical-code-sharing-strategies.md)
 
- [Часть 6. тестирование и утверждение магазина](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-6-testing-and-app-store-approvals.md)
+ [Часть 6. Тестирование и утверждение магазина приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-6-testing-and-app-store-approvals.md)
 
  <a name="Cross-Platform_Mobile_Application_Case_Studies" />
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 02/27/2018
 Tasky — это приложение список дел простой для iOS, Android и Windows Phone.
 Он демонстрирует основные принципы создания кросс платформенные приложения с помощью Xamarin и использует локальную базу данных SQLite.
 
- [ ![Список tasky](images/iphone-list-sml.png)](images/iphone-list.png) [ ![tasky детализации](images/iphone-detail-sml.png)](images/iphone-detail.png)
+ [![Список tasky](images/iphone-list-sml.png)](images/iphone-list.png#lightbox) [ ![tasky списка](images/iphone-list-sml.png)](images/iphone-list.png#lightbox)
 
 Чтение [Tasky практический пример](~/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky.md).
 

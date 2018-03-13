@@ -3,14 +3,15 @@ title: "Сводка Глава 3. Глубина текста"
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 2E5581A6-4D3E-4BD5-9FDB-ACBA0F0FC734
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 9d283a4136a7cdfe39ea0b2da65273332fd47b00
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7dbcc093bc467e633f9333bb129adc25372832f3
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="summary-of-chapter-3-deeper-into-text"></a>Сводка Глава 3. Глубина текста
 
@@ -129,7 +130,7 @@ ms.lasthandoff: 02/27/2018
 
 [ **VariableFormattedText** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter03/VarFormText) образце показано использование `FormattedText` свойство для отдельной строки текста, и [ **VariableFormattedParagraph** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter03/VarFormPara) демонстрируется методика абзаца, как показано ниже:
 
-[![Снимок экрана тройной переменной форматирования абзаца](images/ch03fg06-small.png "переменной форматированный текст метки")](images/ch03fg06-large.png "переменной форматированный текст метки")
+[![Снимок экрана тройной переменной форматирования абзаца](images/ch03fg06-small.png "переменной форматированный текст метки")](images/ch03fg06-large.png#lightbox "переменной форматированный текст метки")
 
 [ **NamedFontSizes** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter03/NamedFontSizes) программа использует один `Label` и `FormattedString` объекта, чтобы отобразить все размеры именованных шрифтов для каждой платформы.
 

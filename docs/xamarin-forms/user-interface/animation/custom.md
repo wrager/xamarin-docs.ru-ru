@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 07/14/2016
-ms.openlocfilehash: 42ef3e6c82763831b5114f3de7603bba8f59eac6
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c582e0306bdc69570e3f8e8d35c7fa15b30523da
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="custom-animations"></a>Пользовательской анимации
 
@@ -54,7 +54,7 @@ animation.Commit (this, "SimpleAnimation", 16, 2000, Easing.Linear, (v, c) => im
 Общий эффект является создание анимации, которая увеличивает [ `Scale` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Scale/) свойство [ `Image` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Image/) от 1 до 2, более 2 секунд (2000 мс), с помощью [ `Linear` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.Linear/) функции реалистичной анимации входа. Каждый раз при завершении анимации, его `Scale` свойства начинается с 1 и повторе анимации.
 
 > [!NOTE]
-> **Примечание**: одновременных анимации, выполняются независимо друг от друга могут создаваться путем создания `Animation` объекта для каждого анимации и последующего вызова `Commit` метод для каждой анимации.
+> Можно создать путем создания одновременных анимации, выполняются независимо друг от друга `Animation` объекта для каждого анимации и последующего вызова `Commit` метод для каждой анимации.
 
 <a name="child" />
 

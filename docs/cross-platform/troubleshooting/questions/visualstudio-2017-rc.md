@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 745e532a9543029f13e5fdffcc15153d780278ec
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6144a422b9c01279ce345eccf9830bcd335597a7
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="can-i-use-visual-studio-2017-release-candidate-with-xamarin"></a>Можно использовать Visual Studio, версия-кандидат 2017 г. с помощью Xamarin
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/27/2018
 
 * Выберите **Xamarin** компонента в рамках нового **установщик Visual Studio**
 
-  [ ![](visualstudio-2017-rc-images/install1-sml.png "Экран версии-Кандидата установщика Visual Studio 2017 г.")](visualstudio-2017-rc-images/install1-orig.png)
+  [![](visualstudio-2017-rc-images/install1-sml.png "Экран версии-Кандидата установщика Visual Studio 2017 г.")](visualstudio-2017-rc-images/install1-orig.png#lightbox)
 
 Расширение Visual Studio для разработки Xamarin.iOS и Xamarin.Android будут установлены.
 
@@ -40,26 +40,26 @@ ms.lasthandoff: 02/27/2018
 
 1. Поиск приложений установщик Visual Studio
 
-  [ ![](visualstudio-2017-rc-images/reinstall1-sml.png "Результаты поиска для приложения установщика Visual Studio")](visualstudio-2017-rc-images/reinstall1-orig.png)
+  [![](visualstudio-2017-rc-images/reinstall1-sml.png "Результаты поиска для приложения установщика Visual Studio")](visualstudio-2017-rc-images/reinstall1-orig.png#lightbox)
 
 2. Выберите:. **Разработка мобильных приложений в .NET Framework (Предварительная версия)** на вкладке рабочих нагрузок или
 
-  [ ![](visualstudio-2017-rc-images/reinstall2-sml.png "Вкладка рабочих нагрузок установщика VS") ](visualstudio-2017-rc-images/reinstall2-orig.png) b. **Xamarin** в **отдельные компоненты** вкладка
+  [![](visualstudio-2017-rc-images/reinstall2-sml.png "Вкладка рабочих нагрузок установщика VS") ](visualstudio-2017-rc-images/reinstall2-orig.png#lightbox) b. **Xamarin** в **отдельные компоненты** вкладка
 
-  [ ![](visualstudio-2017-rc-images/reinstall3-sml.png "Откройте вкладку компоненты установщика VS")](visualstudio-2017-rc-images/reinstall3-orig.png)
+  [![](visualstudio-2017-rc-images/reinstall3-sml.png "Откройте вкладку компоненты установщика VS")](visualstudio-2017-rc-images/reinstall3-orig.png#lightbox)
 
 #### <a name="using-the-visual-studio-installer-within-visual-studio"></a>С помощью установщика Visual Studio в Visual Studio:
 1. Перейдите к начальной страницы Visual Studio 2017 г.
 2. Щелкните **более шаблоны проектов** под **новый проект** раздела
 
-    [ ![](visualstudio-2017-rc-images/reinstall4-sml.png "Начальной страницы Visual Studio")](visualstudio-2017-rc-images/reinstall4-orig.png)
+    [![](visualstudio-2017-rc-images/reinstall4-sml.png "Начальной страницы Visual Studio")](visualstudio-2017-rc-images/reinstall4-orig.png#lightbox)
 3. Щелкните `Open Visual Studio Installer` на левой панели
 
-    [ ![](visualstudio-2017-rc-images/reinstall5-sml.png "Экран нового проекта")](visualstudio-2017-rc-images/reinstall5-orig.png)
+    [![](visualstudio-2017-rc-images/reinstall5-sml.png "Экран нового проекта")](visualstudio-2017-rc-images/reinstall5-orig.png#lightbox)
 4. Выберите:
     
     1. **Разработка мобильных приложений в .NET Framework (Предварительная версия)** на вкладке рабочих нагрузок или
 
-    [ ![](visualstudio-2017-rc-images/reinstall2-sml.png "Вкладка рабочих нагрузок установщика VS") ](visualstudio-2017-rc-images/reinstall2-orig.png) b. **Xamarin** в **отдельные компоненты** вкладка
+    [![](visualstudio-2017-rc-images/reinstall2-sml.png "Вкладка рабочих нагрузок установщика VS") ](visualstudio-2017-rc-images/reinstall2-orig.png#lightbox) b. **Xamarin** в **отдельные компоненты** вкладка
 
-    [ ![](visualstudio-2017-rc-images/reinstall3-sml.png "Откройте вкладку компоненты установщика VS")](visualstudio-2017-rc-images/reinstall3-orig.png)
+    [![](visualstudio-2017-rc-images/reinstall3-sml.png "Откройте вкладку компоненты установщика VS")](visualstudio-2017-rc-images/reinstall3-orig.png#lightbox)

@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/19/2016
-ms.openlocfilehash: d7965c5d4d65dd6bf7aa4128f467acd3e2d39e60
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: c383808d443685c1561113e418aed62467f1d5bd
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="app-class"></a>Класс App
 
@@ -98,7 +98,7 @@ if (Application.Current.Properties.ContainsKey("id"))
 Всегда проверяйте наличие ключа перед доступом к нему, чтобы предотвратить непредвиденные ошибки.
 
 > [!NOTE]
-> **Примечание:** `Properties` словарь может сериализовать только типы-примитивы для хранения данных. Для хранения других типов (такие как `List<string>`) может завершиться ошибкой без вмешательства пользователя.
+> `Properties` Словарь может сериализовать только типы-примитивы для хранения данных. Для хранения других типов (такие как `List<string>`) может завершиться ошибкой без вмешательства пользователя.
 
 <!-- bugzilla 28657 -->
 
@@ -196,7 +196,7 @@ public class MainActivity :
 ```
 
 > [!NOTE]
-> **Примечание:** имеется более новом [ `FormsAppCompatActivity` ](~/xamarin-forms/platform/android/appcompat.md) базовый класс, который может использоваться для лучшей поддержки Android материал конструктора.
+> Имеется более новом [ `FormsAppCompatActivity` ](~/xamarin-forms/platform/android/appcompat.md) базовый класс, который может использоваться для лучшей поддержки Android материал конструктора.
 > Это значение станет Android шаблон по умолчанию в будущем, но можно сделать [эти инструкции](~/xamarin-forms/platform/android/appcompat.md) для обновления существующих приложений Android.
 
 

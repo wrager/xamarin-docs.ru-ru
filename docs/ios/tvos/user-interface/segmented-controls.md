@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: fd31413b777e1179e7f4faf6f91f91bc6c41e82b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6561ff70997af05ed4df6b7bfe0ba6345fb44d9d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-segmented-controls"></a>Работа с элементами управления сегментированных
 
@@ -21,7 +21,7 @@ _В этой статье описывается проектирование и
 
 Сегментированный управления предоставляет набор линейной элементов, каждый из которых может содержать значок или текст и используется, чтобы предоставить набор вариантов, связанные с пользователем.
 
-[ ![](segmented-controls-images/segment01.png "Примерами элементов управления сегмента")](segmented-controls-images/segment01.png)
+[![](segmented-controls-images/segment01.png "Примерами элементов управления сегмента")](segmented-controls-images/segment01.png#lightbox)
 
 Apple имеет следующие рекомендации по работе с элементами управления сегментированных:
 
@@ -57,36 +57,36 @@ Apple вносит следующие рекомендации для работ
 
 Для работы с элементами управления сегмента в приложении Xamarin.tvOS проще всего добавить их с помощью iOS конструктор пользовательского интерфейса приложения.
 
-[[ide name="xs"]]
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. В **Pad решения**, дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
 1. Перетащите **управления сегмента** из **элементов** и поместите его в представлении: 
 
-    [ ![](segmented-controls-images/segment02.png "Элемент управления сегмента")](segmented-controls-images/segment02.png)
+    [![](segmented-controls-images/segment02.png "Элемент управления сегмента")](segmented-controls-images/segment02.png#lightbox)
 1. В **вкладку графического** из **Pad свойство**, можно настроить несколько свойств элемента управления сегмента, такие как его **стиль** и **состояние**: 
 
-    [ ![](segmented-controls-images/segment03.png "Вкладка мини-приложения")](segmented-controls-images/segment03.png)
+    [![](segmented-controls-images/segment03.png "Вкладка мини-приложения")](segmented-controls-images/segment03.png#lightbox)
 1. Используйте **сегменты** поле, чтобы управлять количество сегментов в контроллере.
 1. Выберите из конкретного сегмента **раскрывающегося списка сегмент** для настройки его отдельные свойства, такие как **заголовок** или **изображения** и для элемента управления, если данный сегмент  **Включить** или **выбранные** при отображении элемента управления.
 1. Наконец, назначьте **имена** к элементам управления, чтобы могли отвечать на них в коде C#. Пример: 
 
-    [ ![](segmented-controls-images/segment04.png "Присвойте имя")](segmented-controls-images/segment04.png)
+    [![](segmented-controls-images/segment04.png "Присвойте имя")](segmented-controls-images/segment04.png#lightbox)
 1. Сохраните изменения.
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
     
 1. В **обозревателе решений**, дважды щелкните файл `Main.storyboard` и откройте его для редактирования.
 1. Перетащите **управления сегмента** из **элементов** и поместите его в представлении: 
 
-    [ ![](segmented-controls-images/segment02-vs.png "Элемент управления сегмента")](segmented-controls-images/segment02-vs.png)
+    [![](segmented-controls-images/segment02-vs.png "Элемент управления сегмента")](segmented-controls-images/segment02-vs.png#lightbox)
 1. В **вкладку графического** из **обозреватель свойств**, можно настроить несколько свойств элемента управления сегмента, такие как его **стиль** и **состояние**: 
 
-    [ ![](segmented-controls-images/segment03-vs.png "Вкладка мини-приложения")](segmented-controls-images/segment03-vs.png)
+    [![](segmented-controls-images/segment03-vs.png "Вкладка мини-приложения")](segmented-controls-images/segment03-vs.png#lightbox)
 1. Используйте **сегменты** поле, чтобы управлять количество сегментов в контроллере.
 1. Выберите из конкретного сегмента **раскрывающегося списка сегмент** для настройки его отдельные свойства, такие как **заголовок** или **изображения** и для элемента управления, если данный сегмент  **Включить** или **выбранные** при отображении элемента управления.
 1. Наконец, назначьте **имена** к элементам управления, чтобы могли отвечать на них в коде C#. Пример: 
 
-    [ ![](segmented-controls-images/segment04-vs.png "Присвойте имя")](segmented-controls-images/segment04-vs.png)
+    [![](segmented-controls-images/segment04-vs.png "Присвойте имя")](segmented-controls-images/segment04-vs.png#lightbox)
 1. Сохраните изменения.
     
 -----
@@ -217,7 +217,7 @@ SegmentedControl.SetBackgroundImage (UIImage.FromFile("background.png"), UIContr
 
 И `UIBarMetrics` указывает метрики для использования в качестве:
 
-- По умолчанию
+- Значение по умолчанию
 - Compact
 - DefaultPrompt
 - CompactPrompt

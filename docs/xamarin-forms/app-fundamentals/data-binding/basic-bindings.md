@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 500ad02d79cea79f59b1aca91b0312c9a9d6bac3
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b82c0471985306962133c3bf7b084b49d5588bb6
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="basic-bindings"></a>Основные привязок
 
@@ -94,7 +94,7 @@ label.SetBinding(RotationProperty, "Value");
 
 Во время работы `Slider`, `Label` поворачивает соответствующим образом:
 
-[![Привязка кода Basice](basic-bindings-images/basiccodebinding-small.png "привязки базовый код")](basic-bindings-images/basiccodebinding-large.png "привязки базовый код")
+[![Привязка кода Basice](basic-bindings-images/basiccodebinding-small.png "привязки базовый код")](basic-bindings-images/basiccodebinding-large.png#lightbox "привязки базовый код")
 
 **Простые привязки Xaml** страница идентична **простые привязки кода** за исключением того, он определяет привязки данных в XAML:
 
@@ -190,7 +190,7 @@ public partial class AlternativeCodeBindingPage : ContentPage
 
 Выполнение программы может быть немного неожиданным:
 
-[![Альтернативный образец программного кода привязки](basic-bindings-images/alternativecodebinding-small.png "альтернативный образец программного кода привязки")](basic-bindings-images/alternativecodebinding-large.png "привязки альтернативный образец программного кода")
+[![Альтернативный образец программного кода привязки](basic-bindings-images/alternativecodebinding-small.png "альтернативный образец программного кода привязки")](basic-bindings-images/alternativecodebinding-large.png#lightbox "привязки альтернативный образец программного кода")
 
 В левой части экрана iOS показано экрана при первой загрузке страницы. Где является `Label`? 
 
@@ -319,7 +319,7 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
 
 `BindingContext` Свойство `StackLayout` равно `slider` объекта. Этот контекст привязки наследуются оба `Label` и `BoxView`, оба о том, что их `Rotation` значение свойства `Value` свойства `Slider`: 
 
-[![Привязки наследования контекста](basic-bindings-images/bindingcontextinheritance-small.png "привязки наследования контекста")](basic-bindings-images/bindingcontextinheritance-large.png "привязки наследования контекста")
+[![Привязки наследования контекста](basic-bindings-images/bindingcontextinheritance-small.png "привязки наследования контекста")](basic-bindings-images/bindingcontextinheritance-large.png#lightbox "привязки наследования контекста")
 
 В [следующей статье](binding-mode.md), будет отображен как *режим привязки* можно изменить поток данных между исходной и целевой объекты.
 

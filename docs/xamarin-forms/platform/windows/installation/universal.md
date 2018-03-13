@@ -3,16 +3,16 @@ title: "Добавление универсального платформы (UW
 description: "В этой статье объясняется, как добавить проекта приложения UWP решение Xamarin.Forms, который был создан в Visual Studio для Mac."
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: ADF99B78-F1BC-48DF-9128-01B93C4411C1
+ms.assetid: 34AAA045-64B8-4FDE-BB49-3FF0B4FFA17C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/16/2016
-ms.openlocfilehash: a3746165db83b5b8adba9adb862f9ea09f7069b9
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 36865dac6bd2ad13b9d3e286ab18a035c1edb3d8
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="adding-a-universal-windows-platform-uwp-app"></a>Добавление универсального платформы (UWP) приложения Windows
 
@@ -38,7 +38,7 @@ UWP в Xamarin.Forms 2.1 и более поздней версии и Xamarin.Fo
 
  4 . Убедитесь, что будет строиться проект UWP **сборки > Configuration Manager** окна (это возможно, не произойти по умолчанию). Деления **построения** и **развернуть** поля для универсальных проектов:
 
-  [ ![](universal-images/configuration-sml.png "Окно диспетчера конфигурации")](universal-images/configuration.png "окно диспетчера конфигурации")
+  [![](universal-images/configuration-sml.png "Окно диспетчера конфигурации")](universal-images/configuration.png#lightbox "окно диспетчера конфигурации")
 
  5 . Щелкните правой кнопкой мыши проект и выберите пункт **Добавить > справочник** и создать ссылку на проект приложения Xamarin.Forms (PCL, .NET Standard или общий проект).
 

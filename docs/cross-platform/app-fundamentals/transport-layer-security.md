@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 10/10/2017
-ms.openlocfilehash: 5237ed35116e5f8983df579d0ab68363996fb06f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b0f205c5ab2c65f0e2a99f912f3961f12a4f2b7a
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="transport-layer-security-tls"></a>Безопасности транспортного уровня (TLS)
 
@@ -41,12 +41,12 @@ _Включение TLS 1.2 для проектов Xamarin на Android, iOS и
 
 Эти параметры можно найти в **параметры проекта > Параметры Android** и щелкнув **Дополнительно** кнопки: 
 
-[![Настройка HttpClient и TLS в Visual Studio](transport-layer-security-images/properties-vs-sml.png)](transport-layer-security-images/properties-vs.png)
+[![Настройка HttpClient и TLS в Visual Studio](transport-layer-security-images/properties-vs-sml.png)](transport-layer-security-images/properties-vs.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 Эти параметры можно найти в **свойства проекта > Параметры сборки > Дополнительно** вкладки:
 
-[![Настройка HttpClient и TLS в Visual Studio и Xamarin Studio для Mac](transport-layer-security-images/properties-xs-sml.png)](transport-layer-security-images/properties-xs.png)
+[![Настройка HttpClient и TLS в Visual Studio и Xamarin Studio для Mac](transport-layer-security-images/properties-xs-sml.png)](transport-layer-security-images/properties-xs.png#lightbox)
 
 -----
 
@@ -79,7 +79,7 @@ _Включение TLS 1.2 для проектов Xamarin на Android, iOS и
 >
 > Собственный режим рекомендуется.
 
-# <a name="platform-specific-details"></a>Сведения о конкретной платформы
+## <a name="platform-specific-details"></a>Сведения о конкретной платформы
 
 Сводка выше описание параметрами уровня проекта для класса HttpClient и SSL/TLS реализации проектов Xamarin. Реализация HttpClient также может быть задана динамически в коде и IOS, существует два варианта собственного для выбора.
 
@@ -87,7 +87,7 @@ _Включение TLS 1.2 для проектов Xamarin на Android, iOS и
 - [**iOS и Mac**](~/cross-platform/macios/http-stack.md)
 
 
-# <a name="summary"></a>Сводка
+## <a name="summary"></a>Сводка
 
 По возможности следует использовать Transport Layer Security (TLS) 1.2.
 Новые приложения теперь по умолчанию для этой конфигурации, однако может потребоваться обновить параметры в существующие приложения в соответствии с инструкциями в этой статье.

@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: e09ac502298296277d9264bcd18f1ce1cbbf0c55
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 53309be2712f14c79b84c2eabb519b86dd73a404
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="creating-a-controltemplate"></a>Создание шаблона ControlTemplate
 
@@ -100,7 +100,7 @@ void OnButtonClicked (object sender, EventArgs e)
 ![](creating-images/aqua-theme.png "Шаблон элемента управления синей")
 
 > [!NOTE]
-> **Примечание**: на `ContentPage`, `Content` свойству может быть присвоено и `ControlTemplate` можно также задать свойство. Когда это происходит, если `ControlTemplate` содержит `ContentPresenter` экземпляр содержимого, назначенного `Content` презентация свойство `ContentPresenter` в `ControlTemplate`.
+> На `ContentPage`, `Content` свойству может быть присвоено и `ControlTemplate` можно также задать свойство. Когда это происходит, если `ControlTemplate` содержит `ContentPresenter` экземпляр содержимого, назначенного `Content` презентация свойство `ContentPresenter` в `ControlTemplate`.
 
 ### <a name="setting-a-controltemplate-with-a-style"></a>Установка шаблона элемента управления, с помощью стиля
 
@@ -148,7 +148,7 @@ void OnButtonClicked (object sender, EventArgs e)
 
 При добавлении [ `ControlTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ControlTemplate/) на уровне страницы, [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) добавляется [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/), а затем `ControlTemplate` экземпляры включены в `ResourceDictionary`.
 
-## <a name="creating-a-controltemplate-in-c35"></a>Создание шаблона элемента управления в С &#35;
+## <a name="creating-a-controltemplate-in-c35"></a>Создание шаблона элемента управления в C&#35;
 
 Для определения [ `ControlTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ControlTemplate/) на уровне приложения, `class` должны создаваться, представляющий `ControlTemplate`. Класс должен наследоваться от [макета](~/xamarin-forms/user-interface/layouts/index.md) используется в шаблоне, как показано в следующем примере кода:
 

@@ -4,14 +4,15 @@ description: "Показано, как использовать SkiaSharp для
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
+ms.assetid: 8FE0F6DC-16BC-435F-9626-DD1790C0145A
 author: charlespetzold
 ms.author: chape
 ms.date: 05/25/2017
-ms.openlocfilehash: 8fdebd00b0b33c184337eacd0836dd81a19f161b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2b48667d90bf994deca5c41080e002974b0ded91
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="three-types-of-bzier-curves"></a>Три типа кривых Безье
 
@@ -88,7 +89,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Здесь выполняется на всех трех платформах:
 
-[![](beziers-images/beziercurve-small.png "Тройной снимок экрана со страницей кривой Безье")](beziers-images/beziercurve-large.png "тройной снимок экрана со страницей кривой Безье")
+[![](beziers-images/beziercurve-small.png "Тройной снимок экрана со страницей кривой Безье")](beziers-images/beziercurve-large.png#lightbox "тройной снимок экрана со страницей кривой Безье")
 
 Математически кривая является кубический полинома. Кривая максимум пересекает прямой линии в трех местах. Начальной точки кривой всегда является касательной, а в направлении прямую линию от начала пункты первой контрольной точки. В конечной точке кривой всегда является точки касательной, а в направлении прямую линию от второго элемента управления в конечную точку.
 
@@ -206,7 +207,7 @@ float Magnitude(SKPoint v)
 
 Вот программу на трех платформ с тремя различными углами зрения.
 
-[![](beziers-images/beziercirculararc-small.png "Тройной снимок экрана со страницей Безье дуги")](beziers-images/beziercirculararc-large.png "тройной снимок экрана со страницей дуги Безье")
+[![](beziers-images/beziercirculararc-small.png "Тройной снимок экрана со страницей Безье дуги")](beziers-images/beziercirculararc-large.png#lightbox "тройной снимок экрана со страницей дуги Безье")
 
 Внимательно посмотрите на экране Windows Mobile, и вы увидите, что кривая Безье особенно отличается от полукруга угол равен 180 градусов, когда экран операций ввода-вывода показывает, что видимому помещаются корректно квартал окружность, если угол равен 90 градусов.
 
@@ -288,7 +289,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Интерполяции точек на основе sinusoidally oscillating значения `t`. Интерполированные точки затем используются для создания ряда из четырех соединенных кривых Безье. Вот анимацию на трех платформах, показывающее ход выполнения из круг в квадрат.
 
-[![](beziers-images/squaringthecircle-small.png "Тройной экрана Squaring странице круг")](beziers-images/squaringthecircle-large.png "тройной экрана Squaring круг страницы")
+[![](beziers-images/squaringthecircle-small.png "Тройной экрана Squaring странице круг")](beziers-images/squaringthecircle-large.png#lightbox "тройной экрана Squaring круг страницы")
 
 Такие анимации бы невозможно без кривых, типовой гибки, отображаются как дуги и прямых линий.
 
@@ -337,7 +338,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Вот знак бесконечности на всех трех платформах:
 
-[![](beziers-images/bezierinfinity-small.png "Тройной снимок экрана со страницей бесконечность Безье")](beziers-images/bezierinfinity-large.png "тройной снимок экрана со страницей бесконечность Безье")
+[![](beziers-images/bezierinfinity-small.png "Тройной снимок экрана со страницей бесконечность Безье")](beziers-images/bezierinfinity-large.png#lightbox "тройной снимок экрана со страницей бесконечность Безье")
 
 Это довольно гладкую к центру знак бесконечности, подготовки к просмотру в **дуги бесконечность** страницу [ **три способа, чтобы нарисовать дугу** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/arcs.md) статьи.
 
@@ -400,7 +401,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 И здесь он выполняется на всех трех платформах:
 
-[![](beziers-images/quadraticcurve-small.png "Тройной снимок экрана со страницей квадратичной кривой")](beziers-images/quadraticcurve-large.png "тройной снимок экрана со страницей квадратичной кривой")
+[![](beziers-images/quadraticcurve-small.png "Тройной снимок экрана со страницей квадратичной кривой")](beziers-images/quadraticcurve-large.png#lightbox "тройной снимок экрана со страницей квадратичной кривой")
 
 Пунктирные линии, касательной к кривой в начальной и конечной точки и в точке управления.
 
@@ -478,7 +479,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Здесь выполняется на всех трех платформах:
 
-[![](beziers-images/coniccurve-small.png "Тройной снимок экрана со страницей Conic кривой")](beziers-images/coniccurve-large.png "тройной снимок экрана со страницей Conic кривой")
+[![](beziers-images/coniccurve-small.png "Тройной снимок экрана со страницей Conic кривой")](beziers-images/coniccurve-large.png#lightbox "тройной снимок экрана со страницей Conic кривой")
 
 Как видите, контрольная точка кажется, что если вес выше по запросу кривой в сторону более. Если вес равен нулю, кривой становится прямую линию от начальной точки к конечной точке.
 
@@ -542,7 +543,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Как видите, нет визуального различия между `ConicTo` путь показаны красным цветом и базовой круг, отображаемый для ссылки:
 
-[![](beziers-images/coniccirculararc-small.png "Тройной снимок экрана со страницей Conic дуги")](beziers-images/coniccirculararc-large.png "тройной снимок экрана со страницей Conic дуги")
+[![](beziers-images/coniccirculararc-small.png "Тройной снимок экрана со страницей Conic дуги")](beziers-images/coniccirculararc-large.png#lightbox "тройной снимок экрана со страницей Conic дуги")
 
 Но угол 180 градусов и сбоя математических операций.
 

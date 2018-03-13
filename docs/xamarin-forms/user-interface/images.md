@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/15/2017
-ms.openlocfilehash: cddf3c58020b534abdc1541d967a9a7f5a4d891a
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 440ee997b075b5c89504dcf20171fa3c8713e1ce
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="images"></a>Изображения
 
@@ -79,7 +79,7 @@ var image = new Image { Source = "waterfront.jpg" };
 
 Следующих снимках экрана отобразится результат отображение локального изображения на каждой платформе:
 
-[ ![Локальный ImageSource](images-images/local-sml.png "образец приложения, отображение локального изображения")](images-images/local.png "образец приложения, отображение локального изображения")
+[![Локальный ImageSource](images-images/local-sml.png "образец приложения, отображение локального изображения")](images-images/local.png#lightbox "образец приложения, отображение локального изображения")
 
 Для большей гибкости `Device.RuntimePlatform` свойство может использоваться для выбора другого файла изображения или путь для некоторых или всех платформ, как показано в следующем примере кода:
 
@@ -102,7 +102,7 @@ IOS и Android платформы включают поддержку разре
 
 Android альтернативный разрешение изображения должен быть помещен в [специально с именем каталоги](http://developer.android.com/guide/practices/screens_support.html) в проект Android, как показано на следующем снимке экрана:
 
-[![Расположение образа Android различных разрешениях](images-images/xs-highdpisolution-sml.png "расположение Android несколько разрешение изображения")](images-images/xs-highdpisolution.png "Android разрешения нескольких изображений")
+[![Расположение образа Android различных разрешениях](images-images/xs-highdpisolution-sml.png "расположение Android несколько разрешение изображения")](images-images/xs-highdpisolution.png#lightbox "Android разрешения нескольких изображений")
 
 ### <a name="additional-controls-that-display-images"></a>Дополнительные элементы управления, отображение изображений
 
@@ -159,7 +159,7 @@ var embeddedImage = new Image { Source = ImageSource.FromResource("WorkingWithIm
 
 Следующих снимках экрана отобразится результат отображения внедренного изображения на каждой платформе:
 
-[ ![ResourceImageSource](images-images/resource-sml.png "образец приложения, отображение внедренного изображения")](images-images/resource.png "образец приложения, отображение внедренного изображения")
+[![ResourceImageSource](images-images/resource-sml.png "образец приложения, отображение внедренного изображения")](images-images/resource.png#lightbox "образец приложения, отображение внедренного изображения")
 
 <a name="Embedded_Images_in_Xaml" />
 
@@ -261,7 +261,7 @@ webImage.Source = "https://xamarin.com/content/images/pages/forms/example-app.pn
 
 Следующих снимках экрана отобразится результат отображение удаленного изображения на каждой платформе:
 
-[![Загрузить ImageSource](images-images/download-sml.png "образец приложения, отображение загруженный образ")](images-images/download.png "образец приложения, отображение загруженный образ")
+[![Загрузить ImageSource](images-images/download-sml.png "образец приложения, отображение загруженный образ")](images-images/download.png#lightbox "образец приложения, отображение загруженный образ")
 
 <a name="Image_Caching" />
 

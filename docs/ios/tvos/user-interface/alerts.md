@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 593e17096d92d9a9764545149991817fa616e2fc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 6dabba30c5242d6e7e9ef42a4025f87826a5b89e
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-alerts"></a>Работа с оповещениями
 
@@ -21,7 +21,7 @@ _В этой статье рассматривается работа с UIAlert
 
 Если необходимо привлечь внимание пользователей tvOS или задать разрешения на выполнение разрушительных действия (например, при удалении файла), могут быть представлены предупреждающее сообщение с помощью `UIAlertViewController`:
 
-[ ![](alerts-images/alert01.png "Пример UIAlertViewController")](alerts-images/alert01.png)
+[![](alerts-images/alert01.png "Пример UIAlertViewController")](alerts-images/alert01.png#lightbox)
 
 Если добавление для отображения сообщения можно добавить кнопки и текстовые поля на предупреждение, чтобы разрешить пользователю реагировать на действия и предоставлять отзывы.
 
@@ -31,7 +31,7 @@ _В этой статье рассматривается работа с UIAlert
 
 Как уже говорилось выше, предупреждения используются для получения внимания пользователей и сообщите ему состояние приложения или запросить отзыв. Оповещения должен представить заголовок, при необходимости иметь сообщения и один или несколько кнопок и текстовых полей.
 
-[ ![](alerts-images/alert04.png "Пример оповещения")](alerts-images/alert04.png)
+[![](alerts-images/alert04.png "Пример оповещения")](alerts-images/alert04.png#lightbox)
 
 Apple имеет следующие рекомендации по работе с оповещениями.
 
@@ -118,11 +118,11 @@ UIAlertAction.Create ("Button Title", UIAlertActionStyle.Default, _ =>
 
 Кроме действий (кнопки) на предупреждение, можно добавлять текстовые поля с оповещением, чтобы разрешить пользователю заполните сведения, такие как идентификаторы пользователей и пароли:
 
-[ ![](alerts-images/alert02.png "Текстовое поле в предупреждении")](alerts-images/alert02.png)
+[![](alerts-images/alert02.png "Текстовое поле в предупреждении")](alerts-images/alert02.png#lightbox)
 
 Если пользователь выбирает текстовое поле, стандартная tvOS клавиатуры будет отображаться пользователям вводить значение для поля:
 
-[ ![](alerts-images/alert03.png "Ввод текста")](alerts-images/alert03.png)
+[![](alerts-images/alert03.png "Ввод текста")](alerts-images/alert03.png#lightbox)
 
 Следующий код отображает ОК/Отмена предупреждений одно текстовое поле для ввода значения:
 

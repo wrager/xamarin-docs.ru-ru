@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: b606773b44d32b724fe7f4dfa2ef18fe34b85cae
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 170131a2449b37acfa411eeca54f7aa921b0d9e4
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="working-with-text-input"></a>Работа с ввода текста
 
@@ -62,7 +62,7 @@ PresentTextInputController (suggest, WatchKit.WKTextInputMode.AllowEmoji, (resul
 - Scribble, или
 - из предварительно определенного списка, передаваемые приложением.
 
-[ ![](text-input-images/plain-scribble-sml.png "Диктовки Scribble, или из предварительно определенного списка, предоставляющий приложения")](text-input-images/plain-scribble.png)
+[![](text-input-images/plain-scribble-sml.png "Диктовки Scribble, или из предварительно определенного списка, предоставляющий приложения")](text-input-images/plain-scribble.png#lightbox)
 
 Результат всегда возвращается в виде `NSObject` , может быть приведен к `string`.
 
@@ -106,4 +106,4 @@ PresentTextInputController (new string[0], WatchKit.WKTextInputMode.Plain, (resu
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Apple doc текста и меток](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/TextandLabels.html)
-- [Общие сведения о watchOS 3](~/ios/watchos/platform/introduction-to-watchos3/index.md)
+- [Введение в watchOS 3](~/ios/watchos/platform/introduction-to-watchos3/index.md)

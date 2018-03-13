@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 142ef16606bbf47de073122791fa2509ed6b6353
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7802988833563469fcc25e03ee1bda2046591681
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="how-content-providers-work"></a>Поставщики работают, как содержимого
 
@@ -23,14 +23,12 @@ ms.lasthandoff: 02/27/2018
 
 Поставщик содержимого обычно реализуется базу данных SQLite, но API-интерфейса означает, что код не требуются сведения о базовых SQL. Запросы выполняются через Uri с помощью констант для ссылок на имена столбцов (для уменьшения зависимостей от структуры данных) и `ICursor` возвращается для кода-потребителя для перебора.
 
-<a name="Consuming_a_ContentProvider" />
 
 ## <a name="consuming-a-contentprovider"></a>Использует поставщик содержимого
 
 `ContentProviders` предоставлять свою функциональность через Uri, который зарегистрирован в **AndroidManifest.xml** приложения, который публикует данные. Имеется соглашение, где Uri и столбцы данных, которые предоставляются должны быть доступны как константы, чтобы облегчить привязку к данным. Встроенные Android `ContentProviders` удобства классы обеспечивают константы, которые ссылаются на структуры данных в [ `Android.Providers` ](https://developer.xamarin.com/api/namespace/Android.Provider/) пространства имен.
 
 
-<a name="Built-In_Providers" />
 
 ### <a name="built-in-providers"></a>Встроенные поставщики
 
@@ -51,13 +49,12 @@ Android предоставляет доступ к широкому систем
 - *Голосовая почта* &ndash; журнал голосовых сообщений.
 
 
-<a name="Classes_Overview" />
 
 ## <a name="classes-overview"></a>Общие сведения о классах
 
 Основной классы, используемые при работе с `ContentProvider` показано ниже:
 
-[![Схема классов поставщика содержимого приложения и Consuming приложения взаимодействия](how-it-works-images/classdiagram1.png)](how-it-works-images/classdiagram1.png)
+[![Схема классов поставщика содержимого приложения и Consuming приложения взаимодействия](how-it-works-images/classdiagram1.png)](how-it-works-images/classdiagram1.png#lightbox)
 
 На этой диаграмме `ContentProvider` реализует запросы и регистрирует для URI, используемый другими приложениями для поиска данных. `ContentResolver` Действует как прокси для `ContentProvider` (запроса, вставки, обновления и удаления методов). `SQLiteOpenHelper` Содержит данные, используемые `ContentProvider`, но она не предоставляется непосредственно используют приложения.
 `CursorAdapter` Передает курсоре, возвращаемом процедурой `ContentResolver` для отображения в `ListView`. `UriMatcher` — Это вспомогательный класс, который анализирует идентификаторы URI, при обработке запросов.

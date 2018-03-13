@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: aaa4c93eda9edb0eb5d568b3470c02352bdb7467
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: df6a0afe18b6929f8e03ce4d9bf35198034508bf
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="binding-value-converters"></a>Преобразователи значений привязки
 
@@ -95,7 +95,7 @@ public class IntToBoolConverter : IValueConverter
 
 **Включения кнопки** страницы показано обычное требуется, когда `Button` выполняет операции, основанной на текст, который пользователь вводит в `Entry` представления. Если ничего не было введено в `Entry`, `Button` должны быть отключены. Каждый `Button` содержит привязку данных на его `IsEnabled` свойство. Источник привязки данных — `Length` свойство `Text` свойства соответствующего элемента `Entry`. Если данный `Length` свойство не возвращает 0, преобразователь значений `true` и `Button` включен:
 
-[![Включение кнопки](converters-images/enablebuttons-small.png "включения кнопки")](converters-images/enablebuttons-large.png "включения кнопки")
+[![Включение кнопки](converters-images/enablebuttons-small.png "включения кнопки")](converters-images/enablebuttons-large.png#lightbox "включения кнопки")
 
 Обратите внимание, что `Text` свойство в каждом `Entry` инициализируется в пустую строку. `Text` Свойство `null` по умолчанию, а данные привязки не будет работать в этом случае.
 
@@ -236,7 +236,7 @@ public class BoolToObjectConverter<T> : IValueConverter
 
 За последние три `Switch` и `Label` пары, универсального аргумента равно `Style`и весь `Style` объекты предназначены для значений `TrueObject` и `FalseObject`. Они переопределяют неявный стиль для `Label` задано в словаре ресурсов, поэтому свойства в стиле, явно назначенные `Label`. Включение и выключение `Switch` вызывает соответствующий `Label` в соответствии с изменениями:
 
-[![Переключение индикаторы](converters-images/switchindicators-small.png "переключения индикаторы")](converters-images/switchindicators-large.png "переключения индикаторы")
+[![Переключение индикаторы](converters-images/switchindicators-small.png "переключения индикаторы")](converters-images/switchindicators-large.png#lightbox "переключения индикаторы")
 
 Можно также использовать [ `Triggers` ](~/xamarin-forms/app-fundamentals/triggers.md) реализовать аналогичные изменения в пользовательский интерфейс на основе других представлений.
 
@@ -460,7 +460,7 @@ binding.ConverterParameter = 255;
 
 Ниже приведен результат:
 
-[![Средство выбора цвета RGB](converters-images/rgbcolorselector-small.png "средства выбора цвета RGB")](converters-images/rgbcolorselector-large.png "средства выбора цвета RGB")
+[![Средство выбора цвета RGB](converters-images/rgbcolorselector-small.png "средства выбора цвета RGB")](converters-images/rgbcolorselector-large.png#lightbox "средства выбора цвета RGB")
 
 
 ## <a name="related-links"></a>Связанные ссылки

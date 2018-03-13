@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 6e8a37816e28120392f550376807e91fb3b5d458
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cee93f082386e78a643b8c07dd48d0196e8ecd6c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="the-path-fill-types"></a>Типы заполнения путь
 
@@ -164,7 +164,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Как правило, должна влиять на тип заливки путь только заливки не штрихов рукописного ввода, но для двух `Inverse` режимы влияют на заливки и обводки. Для заливки, два `Inverse` типы противоположно заполнения областей, чтобы заполнить область за пределами звезды. Для штрихов, два `Inverse` типы цвета все, кроме штриха. С помощью этих типов обратные заполнения может привести некоторые нечетное эффекты, как показано на снимке экрана iOS:
 
-[![](fill-types-images/fivepointedstar-small.png "Тройной снимок экрана со страницей звезда Five-Pointed")](fill-types-images/fivepointedstar-large.png "тройной снимок экрана со страницей Five-Pointed звезда")
+[![](fill-types-images/fivepointedstar-small.png "Тройной снимок экрана со страницей звезда Five-Pointed")](fill-types-images/fivepointedstar-large.png#lightbox "тройной снимок экрана со страницей Five-Pointed звезда")
 
 Снимки мобильных устройств Android и Windows показаны типичные эффекты четный и поворота, но порядок обводки и заливки также влияет на результаты.
 
@@ -217,7 +217,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Очень интересный образе, созданном с минимумом кода:
 
-[![](fill-types-images/overlappingcircles-small.png "Тройной снимок экрана со страницей перекрывающихся круги")](fill-types-images/overlappingcircles-large.png "тройной снимок экрана со страницей перекрывающихся кругов")
+[![](fill-types-images/overlappingcircles-small.png "Тройной снимок экрана со страницей перекрывающихся круги")](fill-types-images/overlappingcircles-large.png#lightbox "тройной снимок экрана со страницей перекрывающихся кругов")
 
 
 ## <a name="related-links"></a>Связанные ссылки

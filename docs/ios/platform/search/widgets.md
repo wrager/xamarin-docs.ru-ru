@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: a6749ca9d8a793372ec088433780d622f2f05b41
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7ca863b92d8d7af46f4ce18f5d088347b9ca04ee
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="search-and-home-screen-widget-enhancements"></a>Поиска и улучшения мини-приложение на начальный экран
 
@@ -25,7 +25,7 @@ Apple был представлен ряд дополнительных возм
 
 Широкие возможности настройки мини-приложения и может содержать элементы пользовательского интерфейса, такие как текст, изображения, кнопки, и т. д. Кроме того разработчик может настроить макета их мини-приложения.
 
-[ ![](widgets-images/widgets01.png "Пример мини-приложения")](widgets-images/widgets01.png)
+[![](widgets-images/widgets01.png "Пример мини-приложения")](widgets-images/widgets01.png#lightbox)
 
 Существует два основных областей, которые пользователь может просматривать и взаимодействовать с мини-приложения, приложения:
 

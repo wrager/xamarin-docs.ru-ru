@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/07/2018
-ms.openlocfilehash: c1dd3495b0d7f76197126094cfd10e50d0ca760d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 415c3a5e9446c5db545b62272f3b90a9ac73e401
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="creating-a-fragment"></a>Создание фрагмент
 
@@ -28,7 +28,7 @@ public override View OnCreateView(LayoutInflater inflater, ViewGroup container, 
 
 
 > [!NOTE]
-> **Примечание:** фрагмент вложенные классы должны иметь открытый стандартный конструктор без аргументов.
+> Вложенные классы фрагмент должен иметь открытый стандартный конструктор без аргументов.
 
 ## <a name="adding-a-fragment-to-an-activity"></a>Добавление фрагмента в действие
 
@@ -108,7 +108,7 @@ OR
 Фрагменты имеют свои собственные жизненного цикла, отчасти зависит от, но по-прежнему затрагиваемого, [жизненного цикла действия размещения](~/android/app-fundamentals/activity-lifecycle/index.md).
 Например при приостановке действия, все его связанные фрагменты будут приостановлены. На следующей диаграмме показан жизненный цикл фрагмента.
 
-[![Блок-схема, иллюстрирующая фрагмент жизненный цикл](creating-a-fragment-images/fragment-lifecycle.png)](creating-a-fragment-images/fragment-lifecycle.png)
+[![Блок-схема, иллюстрирующая фрагмент жизненный цикл](creating-a-fragment-images/fragment-lifecycle.png)](creating-a-fragment-images/fragment-lifecycle.png#lightbox)
 
 
 ### <a name="fragment-creation-lifecycle-methods"></a>Методы жизненного цикла создания фрагмента
@@ -238,4 +238,4 @@ public override void OnCreate(Bundle savedState)
 
 На следующем рисунке показано, как будет выглядеть это меню:
 
-[![Снимок экрана примера приложения My приема-передачи, отображение пунктов меню](creating-a-fragment-images/fragment-menu-example.png)](creating-a-fragment-images/fragment-menu-example.png)
+[![Снимок экрана примера приложения My приема-передачи, отображение пунктов меню](creating-a-fragment-images/fragment-menu-example.png)](creating-a-fragment-images/fragment-menu-example.png#lightbox)

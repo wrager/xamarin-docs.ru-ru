@@ -8,17 +8,17 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 04/07/2017
-ms.openlocfilehash: 707ba5874c939fbd25f4e25a7cefd3dc5fc75131
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0ea6528ce3523ab5d829342e99ccf35ca3d69aa2
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="remoted-ios-simulator-for-windows"></a>Удаленное взаимодействие iOS Simulator (для Windows)
 
 _Проверять и запускать отладку приложений iOS в Visual Studio в Windows_
 
-[ ![](ios-simulator-images/hero-sml.png "Симулятор iOS под управлением Windows")](ios-simulator-images/hero.png)
+[![](ios-simulator-images/hero-sml.png "Симулятор iOS под управлением Windows")](ios-simulator-images/hero.png#lightbox)
 
 ## <a name="download-and-install"></a>Загрузка и установка
 
@@ -36,7 +36,7 @@ _Проверять и запускать отладку приложений iO
 
 Можно отключить симулятор iOS, удаленный из **Сервис > Параметры > Xamarin > Параметры iOS** , снимите флажок для **удаленного симулятор для Windows** показано ниже:
 
-[ ![](ios-simulator-images/options-sml.png "флажок, чтобы использовать симулятор")](ios-simulator-images/options.png)
+[![](ios-simulator-images/options-sml.png "флажок, чтобы использовать симулятор")](ios-simulator-images/options.png#lightbox)
 
 Затем открывает симуляторе iOS на подключенном компьютере Mac. Установите этот флажок для включения удаленного iOS simulator.
 
@@ -54,14 +54,14 @@ _Проверять и запускать отладку приложений iO
 - [**Параметры** ](#settings) — настроить расположение и клавиатуры.
  - Другие [ **параметры** ](#options) — разнообразные варианты симуляторе доступны такие как поворот, встряхивания или вызова других состояний, в симуляторе. При некоторых параметров, скрываются, они могли быть доступны из значок с многоточием, который отображается на панели инструментов или щелкнуть правой кнопкой мыши в окне.
 
-    [ ![](ios-simulator-images/maps-app-sml.png "пример сопоставляет симулятор iOS")](ios-simulator-images/maps-app.png)
+    [![](ios-simulator-images/maps-app-sml.png "пример сопоставляет симулятор iOS")](ios-simulator-images/maps-app.png#lightbox)
 
 
 ### <a name="settings"></a>Параметры
 
 Значок «производительность» открывает **параметры** окна:
 
-[ ![](ios-simulator-images/settings-sml.png "Параметры симулятора iOS")](ios-simulator-images/settings.png)
+[![](ios-simulator-images/settings-sml.png "Параметры симулятора iOS")](ios-simulator-images/settings.png#lightbox)
 
 Это дает возможность включения аппаратной клавиатуры на симуляторе и выберите расположение указывается на устройстве (включая статического расположения и других скользящего параметры расположения).
 
@@ -71,7 +71,7 @@ _Проверять и запускать отладку приложений iO
 
 Щелкните правой кнопкой мыши окно симулятора, чтобы просмотреть все параметры, доступные в имитаторе, такие как поворот, активируя жест встряхивания и перезагрузки имитатор:
 
-[ ![](ios-simulator-images/more-sml.png "Дополнительные параметры для симулятора iOS")](ios-simulator-images/more.png)
+[![](ios-simulator-images/more-sml.png "Дополнительные параметры для симулятора iOS")](ios-simulator-images/more.png#lightbox)
 
 ### <a name="touchscreen-support"></a>Поддержка сенсорного экрана
 

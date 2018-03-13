@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/17/2016
-ms.openlocfilehash: 0600a4ca1f26fd034679619c1427821e9c7a12b8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b96b306c882eb30aaf8c81604afb9b6a547d715b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="implicit-styles"></a>Неявные стили
 
@@ -51,7 +51,7 @@ _Неявный стиль то, которое используется для 
 
 [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) Определяет одно *неявное* стиль, применяемый к странице [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) экземпляров. `Style` Используется для отображения синий текст на желтом фоне, а для параметра другие параметры внешнего вида. `Style` Добавляется к странице [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) без указания `x:Key` атрибута. Таким образом `Style` применяется ко всем `Entry` экземпляров неявным образом, как они соответствуют [ `TargetType` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Style.TargetType/) свойство `Style` точно. Тем не менее `Style` не применяется к `CustomEntry` экземпляра, то есть подклассов `Entry`. Это приводит к появлению показано на следующем снимке экрана:
 
-[![](implicit-images/implicit-styles.png "Пример неявных стилей")](implicit-images/implicit-styles-large.png "примере неявных стилей")
+[![](implicit-images/implicit-styles.png "Пример неявных стилей")](implicit-images/implicit-styles-large.png#lightbox "примере неявных стилей")
 
 Кроме того, четвертый [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) переопределяет [ `BackgroundColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.BackgroundColor/) и [ `TextColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Entry.TextColor/) свойства неявный стиль для разных `Color`значения.
 
@@ -82,7 +82,7 @@ _Неявный стиль то, которое используется для 
 
 Дополнительные сведения о создании стилей в приложении [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/), в разделе [глобальные стили](~/xamarin-forms/user-interface/styles/application.md).
 
-## <a name="creating-an-implicit-style-in-c35"></a>Создание неявный стиль нов &#35;
+## <a name="creating-an-implicit-style-in-c35"></a>Создание неявный стиль в C&#35;
 
 [`Style`](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) экземпляры можно добавить на страницу [ `Resources` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Resources/) коллекции для C#, создав новую [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/)и затем добавив `Style` экземпляров `ResourceDictionary`, как показано в Следующий пример кода:
 

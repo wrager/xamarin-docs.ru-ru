@@ -6,12 +6,12 @@ ms.assetid: 157F0899-4E3E-4538-90AF-B59B8A871204
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 01/31/2018
-ms.openlocfilehash: 0cf1557cea8d5adb3678ba5e424f9f23375e32bc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 02/28/2018
+ms.openlocfilehash: 2dea77b4c52db0c032aba9bde471e76eb36ba3ad
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="accessibility-on-android"></a>Специальные возможности на Android
 
@@ -171,14 +171,12 @@ saveButton.ContentDescription = Resources.GetText (Resource.String.save_info);
 
 Преимущество сохранения текста в отдельном файле заключается в том несколько языковых переводах файла могут быть предоставлены в вашем приложении. . В разделе [руководство по локализации для Android](~/android/app-fundamentals/localization.md) чтобы узнать, как добавить локализованные строки файлы проекта приложения.
 
-<a name="testing" />
 
 ## <a name="testing-accessibility"></a>Тестирование специальных возможностей
 
 Выполните [эти действия](http://developer.android.com/training/accessibility/testing.html#how-to) для включения TalkBack и проводник по сенсорного ввода для проверки специальных возможностей на устройствах Android.
 
 Может потребоваться установить [TalkBack](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) из Google Play, если он не отображается в **параметры > специальных возможностей**.
-
 
 
 ## <a name="related-links"></a>Связанные ссылки

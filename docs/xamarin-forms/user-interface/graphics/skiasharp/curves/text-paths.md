@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 08/01/2017
-ms.openlocfilehash: bf382f380876e85db46226fb3586382f20d630f2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b22cebf8ca5804884c559da687fe90236c7af44d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="paths-and-text"></a>Путей и текста
 
@@ -44,7 +44,7 @@ public SKPath GetTextPath (String text, Single x, Single y)
 
 Одной из этих задач обрезки. **Обрезки текста** страница создает контура обрезки, основанных на структуре символ слова «CODE». Этот путь растягивается на размер страницы для обрезки точечного рисунка, который содержит изображение **обрезки текста** исходный код:
 
-[![](text-paths-images/clippingtext-small.png "Тройной снимок экрана со страницей обрезки текста")](text-paths-images/clippingtext-large.png "тройной снимок экрана со страницей обрезки текста")
+[![](text-paths-images/clippingtext-small.png "Тройной снимок экрана со страницей обрезки текста")](text-paths-images/clippingtext-large.png#lightbox "тройной снимок экрана со страницей обрезки текста")
 
 [ `ClippingTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ClippingTextPage.cs) Конструктор класса загружает точечного рисунка, который хранится в виде внедренного ресурса в **Media** папки решения:
 
@@ -125,7 +125,7 @@ public class ClippingTextPage : ContentPage
 
 **Эффект текста пути** страницы преобразует символ амперсанда в путь для создания эффекта пути 1 D. Объект paint с этого пути используется для вычерчивания контура увеличенную версию того же символа:
 
-[![](text-paths-images/textpatheffect-small.png "Тройной снимок экрана со страницей эффект текста пути")](text-paths-images/textpatheffect-large.png "тройной снимок экрана со страницей эффект пути текста")
+[![](text-paths-images/textpatheffect-small.png "Тройной снимок экрана со страницей эффект текста пути")](text-paths-images/textpatheffect-large.png#lightbox "тройной снимок экрана со страницей эффект пути текста")
 
 Большую часть работы в [ `TextPathEffectPath` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/TextPathEffectPage.cs) класс происходит в полях и на конструктор. Два `SKPaint` объекты, определенные как поля используются для двух разных целей: первый (с именем `textPathPaint`) используется для преобразования амперсанда с `TextSize` 50 пути для эффект пути 1 D. Второй (`textPaint`) используется для отображения больших версий амперсанд эффект этого пути. По этой причине `Style` этот второй краски, присваивается значение `Stroke`, но `StrokeWidth` свойство не задано, так как это свойство не является обязательным при использовании эффект пути 1 D:
 
@@ -270,7 +270,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 `PaintSurface` Обработчик затем создается новый путь с именем `outlinePath`. Это становится целевой путь в вызове `GetFillPath`. `StrokeWidth` Свойство 25 причины `outlinePath` для описания структуры пути 25 пикселей всей срезом символов текста. Затем этот путь отображается красным цветом толщину обводки 5:
 
-[![](text-paths-images/characteroutlineoutlines-small.png "Тройной снимок экрана со страницей контуров символов структуры")](text-paths-images/characteroutlineoutlines-large.png "тройной снимок экрана со страницей контуров символов структуры")
+[![](text-paths-images/characteroutlineoutlines-small.png "Тройной снимок экрана со страницей контуров символов структуры")](text-paths-images/characteroutlineoutlines-large.png#lightbox "тройной снимок экрана со страницей контуров символов структуры")
 
 Внимательно посмотрите и вы увидите перекрытия, когда структура пути делает острого угла. Это обычный артефакты этого процесса.
 
@@ -323,7 +323,7 @@ public class CircularTextPage : ContentPage
 
 `TextSize` Свойство `textPaint` затем корректируются таким образом, чтобы ширина текста соответствует окружности круга:
 
-[![](text-paths-images/circulartext-small.png "Тройной снимок экрана со страницей циклические текст")](text-paths-images/circulartext-large.png "тройной снимок экрана со страницей циклические текста")
+[![](text-paths-images/circulartext-small.png "Тройной снимок экрана со страницей циклические текст")](text-paths-images/circulartext-large.png#lightbox "тройной снимок экрана со страницей циклические текста")
 
 Сам текст был выбран для так же оказаться довольно циклические: слова «circle», как субъект предложения и объект предложная фраза. 
 

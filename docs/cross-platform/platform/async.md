@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/22/2017
-ms.openlocfilehash: 3de0e09b15b704db5e67fbbee6ba9bac86f58557
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4762612075a866581339b198552b8e26c9a1f6fa
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="async-support-overview"></a>Обзор поддержки асинхронного выполнения
 
@@ -28,7 +28,7 @@ _Последнюю версию языка C# — версия 5 — появи
 
 Образец приложения создает простой асинхронного веб-запроса (не блокируя основной поток), а затем обновляет пользовательский Интерфейс с загруженный html и количество символов.
 
- [ ![](async-images/AsyncAwait_427x368.png "Образец приложения создает простой асинхронного веб-запроса не блокируя основной поток, а затем обновляет пользовательский Интерфейс с загруженный html и количество символов")](async-images/AsyncAwait.png)
+ [![](async-images/AsyncAwait_427x368.png "Образец приложения создает простой асинхронного веб-запроса не блокируя основной поток, а затем обновляет пользовательский Интерфейс с загруженный html и количество символов")](async-images/AsyncAwait.png#lightbox)
 
 Поддержка асинхронного выполнения Xamarin основанная на моно 3.0 и обновляет профиль API из процесса мобильной версии Silverlight на мобильной версии .NET 4.5.
 

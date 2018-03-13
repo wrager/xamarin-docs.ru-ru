@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 040a5979339ed12f212f932f3b7e51cf48a9d382
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d9e38f055414ff0eca70df4a4e38aa959b7d7237
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="auto-layout-with-the-xamarin-designer-for-ios"></a>Автоматический макет с помощью конструктора Xamarin для iOS
 
@@ -54,7 +54,7 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 ## <a name="constraints-toolbar"></a>Ограничения инструментов
 
- [ ![](designer-auto-layout-images/toolbarnew.png "Команды контекстного меню")](designer-auto-layout-images/toolbarnew.png)
+ [![](designer-auto-layout-images/toolbarnew.png "Команды контекстного меню")](designer-auto-layout-images/toolbarnew.png#lightbox)
 
 Ограничения инструментов уже был обновлен и теперь состоит из двух основных частей:
 
@@ -83,7 +83,7 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 Для создания ограничения, выбрать дескриптор и перетащите его где-либо в области конструктора. Когда пользователь начинает перетаскивание, ряд зеленые линии или прямоугольники будут отображаться в рабочей области, о том, что можно ограничить. Например на снимке экрана ниже, мы ограничиваемого в верхней части средней кнопки:
 
- [ ![](designer-auto-layout-images/image07.png "Ограничение в верхней части средней кнопки")](designer-auto-layout-images/image07.png)
+ [![](designer-auto-layout-images/image07.png "Ограничение в верхней части средней кнопки")](designer-auto-layout-images/image07.png#lightbox)
 
 Обратите внимание, три пунктирных линий зеленый через две другие кнопки. Зеленые линии указывают *области размещения*, или другие элементы, к которым можно ограничить атрибуты. На снимке экрана выше, две другие кнопки предлагают 3 вертикальной областей ( *нижней*, *centerY*, *верхней*) для ограничения кнопку. Пунктирной зеленой линией в верхней части представления означает контроллер представление имеет ограничение в верхней части представления, а сплошной зеленой рамке означает, что контроллер представление имеет ограничение ниже верхнего разметку.
 
@@ -98,13 +98,13 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 С ограничениями по размеру - *высота* и *ширина* -имеются две возможности. Первый вариант — перетащите маркер, чтобы ограничить размер элемента соседнего узла, как показано в приведенном выше примере. Другим вариантом является дважды щелкните маркер, чтобы создать ограничение self. Это позволяет указать размер постоянное значение, как показано на снимке экрана ниже:
 
- [ ![](designer-auto-layout-images/sizec.png "Перетащите маркер, чтобы ограничить размер элемента соседнего узла, как показано здесь")](designer-auto-layout-images/sizec.png)
+ [![](designer-auto-layout-images/sizec.png "Перетащите маркер, чтобы ограничить размер элемента соседнего узла, как показано здесь")](designer-auto-layout-images/sizec.png#lightbox)
 
 ### <a name="center-constraints"></a>Ограничения Center
 
 Квадратный маркер создаст *centerX* или *centerY* ограничение, в зависимости от контекста. Квадратный маркер перетаскивания появится другие элементы предлагать обоих вертикальные и горизонтальные областей, как показано на снимке экрана ниже:
 
- [ ![](designer-auto-layout-images/centerc.png "Ограничения Center")](designer-auto-layout-images/centerc.png)
+ [![](designer-auto-layout-images/centerc.png "Ограничения Center")](designer-auto-layout-images/centerc.png#lightbox)
 
 При выборе вертикальная область, *centerY* создается ограничение. При выборе горизонтальная область ограничение будет основываться на *centerX*.
 
@@ -112,17 +112,17 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 Для создания выравнивания и ограничения размеров равенство между двумя элементами, можно выбрать элементы из верхней части панели инструментов для указания - в порядке: выравнивание по горизонтали, выравнивание по вертикали и размер равенства, как показано на снимке экрана ниже:
 
- [ ![](designer-auto-layout-images/image06.png "Combinational ограничения")](designer-auto-layout-images/image06.png)
+ [![](designer-auto-layout-images/image06.png "Combinational ограничения")](designer-auto-layout-images/image06.png#lightbox)
 
 ### <a name="visualizing-and-editing-constraints"></a>Визуализации и редактирования ограничения
 
 При добавлении ограничения, он отображается в рабочей области конструирования как синей линией при выборе элемента:
 
- [ ![](designer-auto-layout-images/image09.png "Визуализация ограничения")](designer-auto-layout-images/image09.png)
+ [![](designer-auto-layout-images/image09.png "Визуализация ограничения")](designer-auto-layout-images/image09.png#lightbox)
 
 Ограничение можно выбрать, щелкнув на синюю линию и редактирования значений ограничений непосредственно на панели «Свойства». Кроме того дважды щелкнув на синюю линию появится popover, который позволяет изменять значения непосредственно в области конструктора:
 
- [ ![](designer-auto-layout-images/image08.png "Изменение ограничений")](designer-auto-layout-images/image08.png)
+ [![](designer-auto-layout-images/image08.png "Изменение ограничений")](designer-auto-layout-images/image08.png#lightbox)
 
 ## <a name="constraint-issues"></a>Проблемы ограничения
 
@@ -139,27 +139,27 @@ View.AddConstraint (NSLayoutConstraint.Create (Button1, NSLayoutAttribute.Left, 
 
 Конфликтующие ограничения помечаются красным цветом и иметь символ предупреждения. Вызывает popover с сведения о конфликте наведении указателя мыши на предупреждение символы:
 
- [ ![](designer-auto-layout-images/image11.png "Конфликтующие ограничения предупреждение")](designer-auto-layout-images/image11.png)
+ [![](designer-auto-layout-images/image11.png "Конфликтующие ограничения предупреждение")](designer-auto-layout-images/image11.png#lightbox)
 
 ### <a name="underconstrained-items"></a>Underconstrained элементов
 
 Underconstrained элементы выделены оранжевым цветом и запустить внешний вид маркера оранжевый значка панели объекта контроллера представления:
 
- [ ![](designer-auto-layout-images/image02.png "Underconstrained элементы выделены оранжевым цветом")](designer-auto-layout-images/image02.png)
+ [![](designer-auto-layout-images/image02.png "Underconstrained элементы выделены оранжевым цветом")](designer-auto-layout-images/image02.png#lightbox)
 
 При нажатии на значок этого маркера можно получить сведения о underconstrained элементы в сцене и разрешения проблем, либо полностью ограничение их или, удалив их ограничений, как показано на снимке экрана ниже:
 
- [ ![](designer-auto-layout-images/image10.png "Исправление Underconstrained элементов")](designer-auto-layout-images/image10.png)
+ [![](designer-auto-layout-images/image10.png "Исправление Underconstrained элементов")](designer-auto-layout-images/image10.png#lightbox)
 
 ### <a name="frame-misplacement"></a>Кадр потери портативного компьютера
 
 Кадр потери портативного компьютера используется один и тот же код цвет как underconstrained элементы. Элемент всегда отображается на поверхность, используя его фрейм машинного кода, но в случае потери портативного компьютера кадра красный прямоугольник отметит которой элемент будет заканчиваться при запуске приложения, как показано на снимке экрана ниже:
 
- [ ![](designer-auto-layout-images/image05.png "Пример представления кадра потери портативного компьютера")](designer-auto-layout-images/image05.png)
+ [![](designer-auto-layout-images/image05.png "Пример представления кадра потери портативного компьютера")](designer-auto-layout-images/image05.png#lightbox)
 
 Для устранения ошибок кадров потери портативного компьютера выберите **обновления кадров на основе ограничений** кнопки на панели инструментов ограничения (правого кнопка):
 
- [ ![](designer-auto-layout-images/image03.png "Обновляются кадры, в зависимости от ограничений кнопки панели инструментов")](designer-auto-layout-images/image03.png)
+ [![](designer-auto-layout-images/image03.png "Обновляются кадры, в зависимости от ограничений кнопки панели инструментов")](designer-auto-layout-images/image03.png#lightbox)
 
 Это автоматически настроит фрейма элемента для соответствия позициях, определенных элементов управления.
 
@@ -174,10 +174,10 @@ Underconstrained элементы выделены оранжевым цвето
 1. Создание ограничения в обычном режиме (с помощью любого из перечисленных выше методов).
 2. В **обозреватель документов структура**, найти нужное ограничение и выберите его:
 
-    [ ![](designer-auto-layout-images/modify01.png "В обозревателе структуры документа")](designer-auto-layout-images/modify01.png)
+    [![](designer-auto-layout-images/modify01.png "В обозревателе структуры документа")](designer-auto-layout-images/modify01.png#lightbox)
 3. Затем назначить **имя** с ограничением в **мини-приложение** вкладке **свойства обозревателя**:
 
-    [ ![](designer-auto-layout-images/modify02.png "Вкладка мини-приложения")](designer-auto-layout-images/modify02.png)
+    [![](designer-auto-layout-images/modify02.png "Вкладка мини-приложения")](designer-auto-layout-images/modify02.png#lightbox)
 4. Сохраните изменения.
 
 Изменения выше, в месте можно получить доступ к ограничению в коде и изменение его свойств. Например можно использовать следующие для задания высоты представления, присоединенные к нулю:
@@ -188,7 +188,7 @@ ViewInfoHeight.Constant = 0;
 
 Рассмотрим следующий параметр для ограничения в конструкторе iOS:
 
-[ ![](designer-auto-layout-images/modify03.png "Изменение ограничения на обозреватель свойств")](designer-auto-layout-images/modify03.png)
+[![](designer-auto-layout-images/modify03.png "Изменение ограничения на обозреватель свойств")](designer-auto-layout-images/modify03.png#lightbox)
 
 ### <a name="the-deferred-layout-pass"></a>Отложенное передачи макета
 

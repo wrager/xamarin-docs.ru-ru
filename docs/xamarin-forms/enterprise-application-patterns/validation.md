@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/07/2017
-ms.openlocfilehash: 5a5072d7f07fa7e426a14d3ac841e775d872acff
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: cb87593b63e28c01beacdea479cc9d6ec4aceb9b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="validation"></a>Проверка
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 02/28/2018
 
 В контексте объекта модели ViewModel (MVVM) шаблон модели представления или модели часто должны будут выполнять проверку данных и указывают ошибок проверки в представление, чтобы пользователь мог устранить их. Мобильное приложение eShopOnContainers выполняет синхронный клиентской проверки свойства модели представления и уведомляет пользователя ошибки проверки, выделив элемент управления, который содержит недопустимые данные, а также путем отображения сообщения об ошибках, информирующие пользователя из почему данные являются недопустимыми. Рис. 6-1 показывает классы, участвующие в проверке в мобильном приложении eShopOnContainers.
 
-[![](validation-images/validation.png "Классы проверки в мобильном приложении eShopOnContainers")](validation-images/validation-large.png "классы проверки в мобильном приложении eShopOnContainers")
+[![](validation-images/validation.png "Классы проверки в мобильном приложении eShopOnContainers")](validation-images/validation-large.png#lightbox "классы проверки в мобильном приложении eShopOnContainers")
 
 **Рис. 6-1**: классы проверки в мобильном приложении eShopOnContainers
 

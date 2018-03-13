@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: a5711b5ac8332ac518ba5b639f05de557229af6e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 1491e6ec36a9ced9460e083769b2148386d1d518
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="ios-and-mac"></a>iOS и Mac
 
@@ -56,7 +56,7 @@ Xamarin позволяет привести собственных библио�
 
 Для поддержки 32 и 64-разрядная версия кода прозрачно из C# и F #, мы ввели новые типы данных.   Здесь можно Узнайте о них.
 
-##  <a name="building-32-and-64-bit-apps32-and-64md"></a>[Построение 32- и 64-разрядных приложений](32-and-64.md)
+##  <a name="building-32-and-64-bit-apps32-and-64indexmd"></a>[Построение 32- и 64-разрядных приложений](32-and-64/index.md)
 
 Что необходимо знать для поддержки 32- и 64-разрядных приложений.
 

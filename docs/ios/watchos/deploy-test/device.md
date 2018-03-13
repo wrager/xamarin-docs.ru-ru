@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: fab2092837f9b9ca8ada53274c9644f131fb5659
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 211f8c7066e86dac3a8351b913da0185093dcb70
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="testing-on-watch-devices"></a>Тестирование на устройствах Контрольное значение
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/27/2018
 
 Отслеживает ничем не отличаются — теперь необходимо добавить устройства Apple Watch перед развертыванием приложения на него. Найти в часы с помощью UDID **Xcode** (**Windows > устройства** списка). При подключении парной phone сведения Контрольное значение также отображается:
 
-[ ![](device-images/xcode-devices-sml.png "Сведения о парной Контрольное значение")](device-images/xcode-devices.png)
+[![](device-images/xcode-devices-sml.png "Сведения о парной Контрольное значение")](device-images/xcode-devices.png#lightbox)
 
 Если известен Контрольное значение UDID, добавьте его в список устройств в центре разработки:
 
@@ -99,12 +99,12 @@ ms.lasthandoff: 02/27/2018
 
 Для *временно* обойти эту проблему, отключите **Инкрементные построения** расширении **параметры проекта > сборки > watchOS построения** окна:
 
-[ ![](device-images/disable-incremental-sml.png "Флажок Инкрементные построения")](device-images/disable-incremental.png)
+[![](device-images/disable-incremental-sml.png "Флажок Инкрементные построения")](device-images/disable-incremental.png#lightbox)
 
 Эта проблема будет устранена в будущем, после чего добавочные построения можно снова включить, чтобы воспользоваться преимуществами сократить время построения.
 
 
-#<a name="3-watch-app-fails-to-start-while-debugging-on-device"></a>3# Контрольное значение приложении не запускается во время отладки на устройстве
+### <a name="watch-app-fails-to-start-while-debugging-on-device"></a>Посмотрите, как приложение не запускается во время отладки на устройстве
 
 При попытке отладить приложение на физическое устройство только значок & Загрузка "Счетчик" Контрольные значения отображаются (и в итоге тайм-аут). Она будет устранена в будущих версиях; решение заключается в запуске построения выпуска (что не позволит отладки).
 

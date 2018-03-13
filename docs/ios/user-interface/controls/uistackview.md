@@ -5,14 +5,15 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: 20246E87-2A49-438A-9BD7-756A1B50A617
 ms.technology: xamarin-ios
+ms.custom: xamu-video
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 4555906512ecc36e3387f1b2483753e7f50a51ae
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 82bcd29a201be01bc8123e313e5a76b82668cb85
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="stack-view"></a>Представление стека
 
@@ -25,11 +26,15 @@ _В этой статье рассказывается, упорядоченны
 
 В зависимости от разработчика определенные свойства, такие как оси, распространение, выравнивание и интервал управляются макет всех представлений прикреплено к представлению стека:
 
-[ ![](uistackview-images/stacked01.png "Диаграмма макета представление стека")](uistackview-images/stacked01.png)
+[![](uistackview-images/stacked01.png "Диаграмма макета представление стека")](uistackview-images/stacked01.png#lightbox)
 
 При использовании `UIStackView` в приложении Xamarin.iOS, разработчик может определить либо представлений, либо внутри раскадровки в iOS конструктора или путем добавления и удаления представлений в коде C#.
 
 Этот документ состоит из двух частей: Краткое руководство для помощи в реализации, просматривать ваш первый стека и затем некоторые дополнительные технические сведения о том, как он работает.
+
+> [!VIDEO https://youtube.com/embed/p3po6507Ip8]
+
+**UIStackView, по [университета Xamarin](https://university.xamarin.com/)**
 
 ## <a name="uistackview-quickstart"></a>Краткое руководство UIStackView
 
@@ -39,11 +44,11 @@ _В этой статье рассказывается, упорядоченны
 
 Создание нового проекта Xamarin.iOS и изменить **Main.storyboard** файл в Xcode интерфейс построителя. Во-первых, перетащите один **представления по вертикали стека** на **View Controller**:
 
-[ ![](uistackview-images/quick01.png "Перетащите отдельное представление вертикальный стек представление-контроллер")](uistackview-images/quick01.png)
+[![](uistackview-images/quick01.png "Перетащите отдельное представление вертикальный стек представление-контроллер")](uistackview-images/quick01.png#lightbox)
 
 В **инспектора атрибут**, задайте следующие параметры:
 
-[ ![](uistackview-images/quick02.png "Задание параметров представление стека")](uistackview-images/quick02.png)
+[![](uistackview-images/quick02.png "Задание параметров представление стека")](uistackview-images/quick02.png#lightbox)
 
 Где:
 
@@ -61,17 +66,17 @@ _В этой статье рассказывается, упорядоченны
 
 Продолжать макет интерфейса приложения путем добавления метки, ImageView, две кнопки и горизонтальное представление стека, как показано ниже:
 
-[ ![](uistackview-images/quick03.png "Размещение пользовательского интерфейса представление стека")](uistackview-images/quick03.png)
+[![](uistackview-images/quick03.png "Размещение пользовательского интерфейса представление стека")](uistackview-images/quick03.png#lightbox)
 
 Настройка представления по горизонтали стека со следующими параметрами:
 
-[ ![](uistackview-images/quick04.png "Настройка параметров представления по горизонтали стека")](uistackview-images/quick04.png)
+[![](uistackview-images/quick04.png "Настройка параметров представления по горизонтали стека")](uistackview-images/quick04.png#lightbox)
 
 Так как мы не хотим значок, представляющий каждый «точка» к оценке растяжение при его добавлении горизонтальное представление стека, мы сделали **выравнивание** для **Center** и  **Распределение** для **заполнения одинаково**.
 
 Наконец, подключите следующие **торговцам** и **действия**:
 
-[ ![](uistackview-images/quick05.png "Выходы представление стека и действия")](uistackview-images/quick05.png)
+[![](uistackview-images/quick05.png "Выходы представление стека и действия")](uistackview-images/quick05.png#lightbox)
 
 ### <a name="populate-a-uistackview-from-code"></a>Заполнение UIStackView из кода
 
@@ -168,7 +173,7 @@ icon.RemoveFromSuperview();
 
 При нажатии кнопки **повысить рейтинг** кнопки на экран (не более 5) добавляется другой «звезда»:
 
-[ ![](uistackview-images/intro01.png "Образец приложения будут работать")](uistackview-images/intro01.png)
+[![](uistackview-images/intro01.png "Образец приложения будут работать")](uistackview-images/intro01.png#lightbox)
 
 «Звезды» будет автоматически по центру и равномерное распределение в горизонтальное представление стека. Когда пользователь нажимает кнопку **Понизить рейтинг** кнопки «звезда» удаляется (пока не осталось none).
 

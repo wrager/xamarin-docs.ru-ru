@@ -7,21 +7,20 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 04/05/2017
-ms.openlocfilehash: a6bfebb5272da3fd50f4f165fc25bb75574a0b63
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4bcbd14b88f19dc48dc9d0694fb30aed31708153
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="maps-application"></a>Приложение карты
 
 Самый простой способ работы с картами Xamarin.Android заключается в возможности использования приложения встроенные карты, показано ниже:
 
-[![Снимок экрана: пример встроенные карты Google приложения](maps-application-images/01-mapsapplication.png)](maps-application-images/01-mapsapplication.png)
+[![Снимок экрана: пример встроенные карты Google приложения](maps-application-images/01-mapsapplication.png)](maps-application-images/01-mapsapplication.png#lightbox)
 
 При использовании приложения maps карты не будет частью приложения. Вместо этого запустите приложение карты и загрузить сопоставление извне приложения. Ниже рассматривается Xamarin.Android можно использовать для запуска maps, аналогичный приведенному выше.
 
-<a name="Creating_the_Intent" />
 
 ## <a name="creating-the-intent"></a>Создание, назначение
 
@@ -35,7 +34,6 @@ StartActivity (mapIntent);
 
 Данный пример кода является все, что требуется для запуска карты, показанный на предыдущем снимке экрана. Помимо указания широты и долготы, схему URI для карт поддерживает несколько параметров.
 
-<a name="Geo_Uri_Scheme" />
 
 ## <a name="geo-uri-scheme"></a>Схема Geo URI
 
@@ -52,10 +50,9 @@ StartActivity (mapIntent);
 
 Версии URI, принимающие запросов (а именно почтовый адрес или поиска условиями) использовать Google geocoder службы для извлечения в расположение, которое отображается на карте. Например, URI `geo:0,0?q=coop+Cambridge` приводит к схеме, показано ниже:
 
-[![Снимок экрана примера Отображение карты Google с условия поиска](maps-application-images/02-mapsearch.png)](maps-application-images/02-mapsearch.png)
+[![Снимок экрана примера Отображение карты Google с условия поиска](maps-application-images/02-mapsearch.png)](maps-application-images/02-mapsearch.png#lightbox)
 
 
-<a name="Street_View" />
 
 Дополнительные сведения о geo схем URI. в разделе [Показать на карте расположение](http://developer.android.com/guide/components/intents-common.html#Maps).
 
@@ -64,7 +61,7 @@ StartActivity (mapIntent);
 
 В дополнение к схеме geo Android поддерживает загрузки улицы представления с целью. Ниже приведен пример улицы представления приложения, запускаемого из Xamarin.Android:
 
-[![Снимок экрана примера улицы представления](maps-application-images/03-streetview.png)](maps-application-images/03-streetview.png)
+[![Снимок экрана примера улицы представления](maps-application-images/03-streetview.png)](maps-application-images/03-streetview.png#lightbox)
 
 Чтобы открыть представление данных улицы, используйте `google.streetview` схема URI, как показано в следующем коде:
 

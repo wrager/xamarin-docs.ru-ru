@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 0bc039385a6b2077c3b5fa5114b35b586a14a150
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b75bc7e4ccf53e82ff107c867c5ba01813960ea5
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="the-command-interface"></a>Интерфейс командной
 
@@ -279,7 +279,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
 
 На экране операций ввода-вывода в левом показан макет до входа допустимый возраст. Android и UWP экраны show **отправить** кнопка включена после задания age:
 
-[![Person Entry](commanding-images/personentry-small.png "Person Entry")](commanding-images/personentry-large.png "Person Entry")
+[![Person Entry](commanding-images/personentry-small.png "Person Entry")](commanding-images/personentry-large.png#lightbox "Person Entry")
 
 Программа не поддерживает все средства для изменения существующих записей и не сохраняет записи, если покинуть страницу.
 
@@ -531,7 +531,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
 
 Вот программы в действии:
 
-[![Десятичное число клавиатуры](commanding-images/decimalkeyboard-small.png "десятичное клавиатуры")](commanding-images/decimalkeyboard-large.png "десятичное клавиатуры")
+[![Десятичное число клавиатуры](commanding-images/decimalkeyboard-small.png "десятичное клавиатуры")](commanding-images/decimalkeyboard-large.png#lightbox "десятичное клавиатуры")
 
 Обратите внимание, что кнопки для десятичной запятой в все три снимки экрана отключен, так как введенное число уже содержит десятичную точку. 
 
