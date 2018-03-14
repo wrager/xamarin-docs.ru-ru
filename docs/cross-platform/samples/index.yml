@@ -5,13 +5,13 @@ metadata:
   description: "Примеры кроссплатформенных приложений Xamarin для разработчиков мобильных приложений."
   author: conceptdev
   ms.author: crdun
-  ms.date: 02/17/2018
+  ms.date: 02/26/2018
   ms.topic: article
-  ms.openlocfilehash: c5e8c04dcc5a9bf18af0dd9ce2dcd85b6b760836
-  ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+  ms.openlocfilehash: 24f32938930d7cf13374536f9513640ab8e834dc
+  ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/27/2018
+  ms.lasthandoff: 03/12/2018
 abstract:
   description: "Примеры кроссплатформенных приложений Xamarin и образцы кода, которые помогут вам начать создавать мобильные приложения с помощью C# и Xamarin."
   menu:
@@ -19,50 +19,68 @@ abstract:
     - href: https://developer.xamarin.com/samples/
       text: "Все образцы Xamarin"
 sections:
-- title: 
+- title: "Приступая к работе"
   items:
   - type: list
     style: cards
     className: cardsW
     items:
     - href: https://developer.xamarin.com/samples/xamarin-forms/Todo/
-      html: "В этом примере представлен список приложений списка задач. Их данные сохраняются в локальной базе данных SQLite."
+      html: "В этом примере представлено приложение списка задач, где данные сохраняются в локальной базе данных SQLite, созданной в Xamarin.Forms."
       image:
         src: images/todo.png
         href: https://developer.xamarin.com/samples/xamarin-forms/Todo/
       title: "Список задач"
-    - href: https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/
-      html: "Это знакомая всем игра с некоторыми изменениями. Десять ошибок, скрытые в сетке плиток (9 x 9). Чтобы выиграть, необходимо найти и пометить все ошибки."
+    - href: https://github.com/xamarinhq/app-myshoppe
+      html: "Демонстрационное приложение, которое позволяет специалистам по продажам отслеживать свои показатели продаж, управлять потенциальными клиентами, просматривать контакты, управлять заказами и просматривать каталог товаров."
       image:
-        src: images/bugsweeper.png
-        href: https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/
-      title: BugSweeper
-    - href: https://developer.xamarin.com/samples/xamarin-forms/RpnCalculator/
-      html: "Калькулятор RPN (обратная польская нотация) позволяет вводить числа и выполнять операции без использования клавиши скобок или знака равенства."
+        src: images/myshoppe.png
+        href: https://github.com/xamarinhq/app-myshoppe
+      title: "My Shoppe"
+    - href: https://github.com/xamarin/app-crm
+      html: "Демонстрационное приложение, которое позволяет специалистам по продажам отслеживать свои показатели продаж, управлять потенциальными клиентами, просматривать контакты, управлять заказами и просматривать каталог товаров."
       image:
-        src: images/rpncalc.png
-        href: https://developer.xamarin.com/samples/xamarin-forms/RpnCalculator/
-      title: "Калькулятор RPN"
-    - href: https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SpinPaint/
-      html: "Программа имитирует циклический диск, чтобы вы могли рисовать касанием пальца. Программа SpinPaint реагирует на касание, рисуя линию, но она также дублирует эту линию в трех зеркальных отображениях в других трех квадрантах диска."
+        src: images/crm.png
+        href: https://github.com/xamarin/app-crm
+      title: "Xamarin CRM"
+- title: "Azure и корпоративные решения"
+  items:
+  - type: list
+    style: cards
+    className: cardsW
+    items:
+    - href: https://github.com/xamarinhq/app-acquaint/
+      html: "Приложение списка контактов с экраном сведений и редактирования. Исходный код доступен в собственных реализациях Xamarin и Xamarin.Forms."
       image:
-        src: images/spinpaint.png
-        href: https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SpinPaint/
-      title: SpinPaint
-    - href: https://developer.xamarin.com/samples/xamarin-forms/XamlSamples/
-      html: "XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода."
+        src: images/acquaint.jpg
+        href: https://github.com/xamarinhq/app-acquaint
+      title: Acquaint
+    - href: https://github.com/Microsoft/SmartHotel360-mobile-desktop-apps
+      html: "Демонстрация создания набора приложений с Xamarin и Azure для Connect 2017."
       image:
-        src: images/xaml.png
-        href: https://developer.xamarin.com/samples/xamarin-forms/XamlSamples/
-      title: "Образцы XAML"
-    - href: https://developer.xamarin.com/samples/mobile/LivePlayer/XamagonXuzzleLP/
-      html: "XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода."
+        src: images/smarthotel360.png
+        href: https://github.com/Microsoft/SmartHotel360-mobile-desktop-apps
+      title: SmartHotel360
+    - href: https://github.com/Microsoft/BikeSharing360_MobileApps
+      html: "Демонстрация создания набора приложений с Xamarin и Azure для Connect 2016."
       image:
-        src: images/xuzzle.png
-        href: https://developer.xamarin.com/samples/mobile/LivePlayer/XamagonXuzzleLP/
-      title: Xuzzle
+        src: images/bikesharing360.png
+        href: https://github.com/Microsoft/BikeSharing360_MobileApps
+      title: BikeSharing360
+    - href: https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Mobile
+      html: "Руководство по архитектуре корпоративных приложений с использованием контейнеров в Azure."
+      image:
+        src: images/eshop.png
+        href: https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/src/Mobile
+      title: eShop
+- title: "Все примеры"
+  items:
+  - type: list
+    style: cards
+    className: cardsW
+    items:
     - href: https://developer.xamarin.com/samples/
-      html: "Доступ к полному набору примеров кроссплатформенных приложений Xamarin и образцов кода."
+      html: "Полный набор образцов кроссплатформенных приложений Xamarin и демонстраций кода."
       image:
         src: ~/media/shared/sample-download.svg
         href: https://developer.xamarin.com/samples/
