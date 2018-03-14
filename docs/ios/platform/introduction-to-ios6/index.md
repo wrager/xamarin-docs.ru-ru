@@ -8,17 +8,17 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 0d08b2ff5131996984dbe41862ad1d6aac33b3d0
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e1232c96f5ea978c8adc640160a1e9b7e42663d8
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-ios-6"></a>Введение в iOS 6
 
 _iOS 6 включает множество новых технологий для разработки приложений, которые Xamarin.iOS 6 предоставляет разработчикам C#._
 
-[ ![](images/ios6-large.jpg "Эмблема iOS 6")](images/ios6-large.jpg)
+[ ![](images/ios6-large.jpg "Эмблема iOS 6")](images/ios6-large.jpg#lightbox)
 
 IOS 6 и Xamarin.iOS 6 разработчики теперь имеют широкий набор возможностей в их распоряжении, для создания приложений iOS, включая те, что целевой iPhone 5.
 В этом документе приведены более новые функции, доступные и ссылки на статьи, для каждого раздела. Кроме того она затрагивает некоторые изменения, которые будут важны при их перемещении iOS 6 и новое разрешение iPhone 5.
@@ -92,11 +92,11 @@ if (myImageView != null){
 
 устройства iPhone 5 имеют разрешение 640 x 1136. Приложений, нацеленных на предыдущие версии iOS будет отображаться letterboxed при запуске на iPhone 5, как показано ниже:
 
- [ ![](images/01-letterboxed.png "Приложений, нацеленных на предыдущие версии iOS будет отображаться letterboxed при запуске на iPhone 5")](images/01-letterboxed.png)
+ [![](images/01-letterboxed.png "Приложений, нацеленных на предыдущие версии iOS будет отображаться letterboxed при запуске на iPhone 5")](images/01-letterboxed.png#lightbox)
 
 В приложение для отображения в полноэкранном режиме на iPhone 5, просто добавьте образ с именем `Default-568h@2x.png` с разрешением 640 x 1136. На следующем рисунке показан на приложение, после этого образ был включен:
 
- [ ![](images/02-fullscreen.png "На этом снимке экрана показано приложение, после этого образ был включен")](images/02-fullscreen.png)
+ [![](images/02-fullscreen.png "На этом снимке экрана показано приложение, после этого образ был включен")](images/02-fullscreen.png#lightbox)
 
 ### <a name="subclassing-uinavigationbar"></a>Создание подклассов UINavigationBar
 
@@ -130,7 +130,7 @@ navController = new UINavigationController (typeof(CustomNavBar), typeof(UIToolb
 
 С помощью этого `UINavigationBar` подкласс приводит представление изображения, отображаемого, как показано на следующем снимке экрана:
 
- [ ![](images/03-navbar.png "С помощью этого UINavigationBar подкласс результаты в представлении изображения, отображаемого, как показано на этом снимке экрана")](images/03-navbar.png)
+ [![](images/03-navbar.png "С помощью этого UINavigationBar подкласс результаты в представлении изображения, отображаемого, как показано на этом снимке экрана")](images/03-navbar.png#lightbox)
 
 ### <a name="interface-orientation"></a>Интерфейс ориентации
 
