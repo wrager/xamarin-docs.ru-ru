@@ -8,10 +8,10 @@ author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
 ms.openlocfilehash: 21cd08ad2eb9c78ba1bcd6b31400a38266c65e51
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/13/2018
 ---
 # <a name="part-4---dealing-with-multiple-platforms"></a>Часть 4. Работа с несколькими платформами
 
@@ -145,8 +145,8 @@ ms.lasthandoff: 03/09/2018
 Существует ряд библиотеки сторонних производителей доступны, обеспечивающие возможности кросс платформенных:
 
 -   **MvvmCross** -  [https://github.com/slodge/MvvmCross/](https://github.com/slodge/MvvmCross/)
--   **Vernacular** (в целях локализации) - [https://github.com/rdio/vernacular/](https://github.com/rdio/vernacular/)
--   **MonoGame** (для игр XNA) - [http://monogame.codeplex.com/](http://monogame.codeplex.com/)
+-   **Vernacular** (в целях локализации) -  [https://github.com/rdio/vernacular/](https://github.com/rdio/vernacular/)
+-   **MonoGame** (для игр XNA -)  [http://monogame.codeplex.com/](http://monogame.codeplex.com/)
 -   **NGraphics** - [NGraphics](https://github.com/praeclarum/NGraphics) и его перед обменом [https://github.com/praeclarum/CrossGraphics](https://github.com/praeclarum/CrossGraphics)
 
 
