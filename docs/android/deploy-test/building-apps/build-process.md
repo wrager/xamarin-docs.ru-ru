@@ -6,23 +6,20 @@ ms.assetid: 3BE5EE1E-3FF6-4E95-7C9F-7B443EE3E94C
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/15/2018
-ms.openlocfilehash: 68ddb9baa008ec8222b4399a5ab25330fda2afd1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/09/2018
+ms.openlocfilehash: 51caebb86cb72b11ced70522fc253e608f5ccab0
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="build-process"></a>Процесс сборки
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
 Процесс сборки Xamarin.Android отвечает за объединение процессов: [создание `Resource.designer.cs`](~/android/internals/api-design.md), поддержку действий сборки `AndroidAsset`, `AndroidResource` и [других](#Build_Actions), создание [вызываемых в Android оболочек](~/android/platform/java-integration/android-callable-wrappers.md) и файла `.apk` для выполнения на устройствах Android.
 
-<a name="App_Packaging" />
-<a name="Application_Packages" />
 
 ## <a name="application-packages"></a>Пакеты приложений
 
@@ -34,7 +31,6 @@ ms.lasthandoff: 02/27/2018
 
 Неслучайно они соответствуют свойству `Configuration` MSBuild, которое создает пакет.
 
-<a name="Shared_Runtime" />
 
 ### <a name="shared-runtime"></a>Общая среда выполнения
 
@@ -53,7 +49,6 @@ ms.lasthandoff: 02/27/2018
 Быстрое развертывание включено по умолчанию. Чтобы отключить его в отладочных сборках, нужно установить для свойства `$(EmbedAssembliesIntoApk)` значение `True`.
 
 
-<a name="MSBuild_Projects" />
 
 ## <a name="msbuild-projects"></a>Проекты MSBuild
 
@@ -81,7 +76,6 @@ ms.lasthandoff: 02/27/2018
 
 -   **UpdateAndroidResources** — обновляет файл `Resource.designer.cs`. Этот целевой объект обычно вызывается средой IDE при добавлении новых ресурсов в проект.
 
-<a name="Build_Properties" />
 
 ## <a name="build-properties"></a>Свойства сборки
 
@@ -116,7 +110,6 @@ ms.lasthandoff: 02/27/2018
     MSBuild /t:Install ProjectName.csproj /p:AdbTarget=-e
     ```
 
-<a name="App_Packaging" />
 
 ### <a name="packaging-properties"></a>Свойства упаковки
 
@@ -146,7 +139,7 @@ ms.lasthandoff: 02/27/2018
 
     По умолчанию это свойство имеет значение `False`.
 
--   **AndroidFastDeploymentType** — список разделенных двоеточиями (`:`) значений для управления типами, которые можно развернуть в [каталоге быстрого развертывания](#Fast_Deployment) на целевом устройстве, если свойство MSBuild [`$(EmbedAssembliesIntoApk)`](#EmbedAssembliesIntoApk) имеет значение `False`. Если ресурс быстро развернут, он *не* встраивается в создаваемый файл `.apk`, что может ускорить развертывание. (Чем быстрее выполняется развертывание, тем реже файл `.apk` необходимо перестраивать, что ускоряет процесс установки.) Допустимы следующие значения:
+-   **AndroidFastDeploymentType** &ndash; — список разделенных двоеточиями (`:`) значений для управления типами, которые можно развернуть в [каталоге быстрого развертывания](#Fast_Deployment) на целевом устройстве, если свойство MSBuild `$(EmbedAssembliesIntoApk)` имеет значение `False`. Если ресурс быстро развернут, он *не* встраивается в создаваемый файл `.apk`, что может ускорить развертывание. (Чем быстрее выполняется развертывание, тем реже файл `.apk` необходимо перестраивать, что ускоряет процесс установки.) Допустимы следующие значения:
 
     - `Assemblies`: развертывание сборок приложения.
 
@@ -158,7 +151,7 @@ ms.lasthandoff: 02/27/2018
 
 -   **AndroidApplicationJavaClass** — полное имя класса Java для использования вместо `android.app.Application`, когда класс наследуется от [Android.App.Application](https://developer.xamarin.com/api/type/Android.App.Application/).
 
-    Это свойство обычно задается *другими* свойствами, такими как свойство [`$(AndroidEnableMultiDex)`](#AndroidEnableMultiDex) MSBuild.
+    Это свойство обычно задается *другими* свойствами, такими как свойство `$(AndroidEnableMultiDex)` MSBuild.
 
     Свойство добавлено в Xamarin.Android версии 6.1.
 
@@ -285,7 +278,7 @@ ms.lasthandoff: 02/27/2018
 
 -   **MonoSymbolArchive** — логическое свойство, которое определяет, следует ли создавать артефакты `.mSYM` для последующего использования в `mono-symbolicate`, чтобы извлечь "реальные" имя файла и номер строки из трассировки стека выпуска.
 
-    Для приложений "выпуска" значением по умолчанию является True с включенными отладочными символами: [`$(EmbedAssembliesIntoApk)`](#EmbedAssembliesIntoApk) — True, `$(DebugSymbols)` — True и `$(Optimize)` — True.
+    Для приложений &ldquo;выпуска&rdquo; значением по умолчанию является True с включенными отладочными символами: `$(EmbedAssembliesIntoApk)` — True, `$(DebugSymbols)` — True и `$(Optimize)` — True.
 
     Свойство добавлено в Xamarin.Android версии 7.1.
 
@@ -312,13 +305,11 @@ ms.lasthandoff: 02/27/2018
 
     -   **versionCode** —использует код версии непосредственно из `Properties\AndroidManifest.xml`.
 
-    Можно определить пользовательские элементы с помощью свойства [AndroidVersionCodeProperties](#AndroidVersionCodeProperties).
+    Можно определить настраиваемые элементы с помощью свойства `AndroidVersionCodeProperties` (определение приводится ниже).
 
     Добавлено в Xamarin.Android версии 7.2.
 
--   **AndroidVersionCodeProperties** — строковое свойство, которое позволяет разработчику определить пользовательские элементы для использования с [AndroidVersionCodePattern](#AndroidVersionCodePattern).
-    Они находятся в форме пары `key=value`. Все элементы в `value` должны быть целыми числами. Например, `screen=23;target=$(_SupportedApiLevel)`.
-    Как видно, вы можете использовать существующие или пользовательские свойства MSBuild в строке.
+-   **AndroidVersionCodeProperties** &ndash; — cтроковое свойство, которое позволяет разработчику определить настраиваемые элементы для использования с `AndroidVersionCodePattern`. Они находятся в форме пары `key=value`. Все элементы в `value` должны быть целыми числами. Например, `screen=23;target=$(_SupportedApiLevel)`. Как видно, вы можете использовать существующие или пользовательские свойства MSBuild в строке.
 
     Добавлено в Xamarin.Android версии 7.2.
 
@@ -365,8 +356,6 @@ ms.lasthandoff: 02/27/2018
     Значение по умолчанию будет изменено в будущих выпусках.
 
 
-<a name="Resgen" />
-<a name="Resource_Properties" />
 
 ### <a name="resource-properties"></a>Свойства ресурса
 
@@ -385,7 +374,6 @@ ms.lasthandoff: 02/27/2018
     **Экспериментальное**. Добавлено в Xamarin.Android версии 7.0.
 
 
-<a name="Signing" />
 <a name="Signing_Properties" />
 
 ### <a name="signing-properties"></a>Свойства подписи
@@ -446,21 +434,16 @@ Enter key password for keystore.alias
 Файлы с действием сборки `AndroidEnvironment` используются для [инициализации переменных среды и свойств системы во время запуска процесса](~/android/deploy-test/environment.md).
 Действие сборки `AndroidEnvironment` может быть применено к нескольким файлам, и они будут оцениваться без какого либо порядка (поэтому не указывайте одну и ту же переменную среды или системное свойство в нескольких файлах).
 
-<a name="Java_Interop_Support" />
-<a name="AndroidJavaSource" />
 
 ### <a name="androidjavasource"></a>AndroidJavaSource
 
 Файлы с действием сборки `AndroidJavaSource` — это исходный код Java, который будет включен в окончательный пакет Android.
 
-<a name="AndroidJavaLibrary" />
 
 ### <a name="androidjavalibrary"></a>AndroidJavaLibrary
 
 Файлы с действием сборки `AndroidJavaLibrary` — это архивы Java (файлы `.jar`), которые будут включены в окончательный пакет Android.
 
-<a name="Resources" />
-<a name="AndroidResource" />
 
 ### <a name="androidresource"></a>AndroidResource
 
@@ -499,8 +482,6 @@ Enter key password for keystore.alias
 </ItemGroup>
 ```
 
-<a name="Native_Library_Support" />
-<a name="AndroidNativeLibrary" />
 
 ### <a name="androidnativelibrary"></a>AndroidNativeLibrary
 
@@ -546,7 +527,6 @@ Enter key password for keystore.alias
 Эти файлы игнорируются, только если свойство MSBuild `$(EnableProguard)` не имеет значение `True`.
 
 
-<a name="Target_Definitions" />
 
 ## <a name="target-definitions"></a>Определения целевых объектов
 
