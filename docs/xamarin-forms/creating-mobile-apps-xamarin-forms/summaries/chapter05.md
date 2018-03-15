@@ -7,11 +7,11 @@ ms.assetid: 486800E9-C09F-4B95-9AC2-C0F8FE563BCF
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 1df1751c55c6a031bf9f26d774b739f4ca83fa91
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 0c61727e90a03d618a7423e5b865a7fcc9e0b399
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-5-dealing-with-sizes"></a>Сводка Глава 5. Работа с размерами
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/12/2018
 - 160 единиц дюйм эквивалентно
 - 64 единиц сантиметр
 
-Только для чтения [ `Width` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Width/) и [ `Height` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Height/) свойства, определенные `VisualElement` имеют значение по умолчанию «макета» значения & #x 2013; 1. Только в том случае, если элемент размера и размещено в макет будет эти свойства отражают фактический размер элемента в аппаратно независимых единицах. Этот размер включает какой-либо `Padding` задать в элементе, но не `Margin`.
+Только для чтения [ `Width` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Width/) и [ `Height` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Height/) свойства, определенные `VisualElement` «макета» значения по умолчанию &ndash;1. Только в том случае, если элемент размера и размещено в макет будет эти свойства отражают фактический размер элемента в аппаратно независимых единицах. Этот размер включает какой-либо `Padding` задать в элементе, но не `Margin`.
 
 Визуальный элемент срабатывает [ `SizeChanged` ](https://developer.xamarin.com/api/event/Xamarin.Forms.VisualElement.SizeChanged/) событий при его `Width` или `Height` был изменен. [ **WhatSize** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter05/WhatSize) образец использует это событие для отображения размера экрана программы.
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="empirically-fitting-text"></a>Эмпирически размещением текста
 
-Другой способ размещения текста в прямоугольник — эмпирически вычислить размер отображаемого текста и настраивать его вверх или вниз. Программа в вызовах книги [ `GetSizeRequest` ](https://developer.xamarin.com/api/member/Xamarin.Forms.VisualElement.GetSizeRequest/p/System.Double/System.Double/) на визуальный элемент, чтобы получить нужный размер элемента. Метод является устаревшим, что вместо этого необходимо вызвать программ [`Measure`] (/ api/member/Xamarin.Forms.VisualElement.Measure/p/System.Double/System.Double/Xamarin.Forms.MeasureFlags/).
+Другой способ размещения текста в прямоугольник — эмпирически вычислить размер отображаемого текста и настраивать его вверх или вниз. Программа в вызовах книги [ `GetSizeRequest` ](https://developer.xamarin.com/api/member/Xamarin.Forms.VisualElement.GetSizeRequest/p/System.Double/System.Double/) на визуальный элемент, чтобы получить нужный размер элемента. Метод является устаревшим, что вместо этого необходимо вызвать программы [ `Measure` ](https://developer.xamarin.com/api/member/Xamarin.Forms.VisualElement.Measure/p/System.Double/System.Double/Xamarin.Forms.MeasureFlags/).
 
 Для `Label`, первый аргумент должен быть Ширина контейнера (Чтобы обтекание), а второй аргумент должен иметь значение для `Double.PositiveInfinity` чтобы высота неограниченное. [ **EmpiricalFontSize** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter05/EmpiricalFontSize) этот метод продемонстрирован в примере.
 

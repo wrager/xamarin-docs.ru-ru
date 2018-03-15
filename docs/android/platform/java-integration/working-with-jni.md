@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/09/2018
-ms.openlocfilehash: e9a6f44637b77bf53c3cab00ac5051e6a2f27386
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: f14d456cba66142c51e0755cdfd3c6795bd1cf73
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="working-with-jni"></a>Работа с JNI
 
@@ -154,7 +154,7 @@ public class HelloAndroid extends android.app.Activity {
 
 Как правило Xamarin.Android автоматически создает код Java, который состоит из ACW; Это поколение основан на имена классов и методов, если класс является производным от класса Java и переопределяет существующие методы Java. Однако в некоторых случаях создание кода недостаточна, как показано ниже:
 
--   Поддержка Android действие имена в XML-атрибуты макета, например [android: onClick](https://developer.xamarin.com/api/member/Android.Views.View+IOnClickListener.OnClick/p/Android.Views.View/) атрибута XML. Если указано, увеличенную представление экземпляра попробуйте для поиска метода Java.
+-   Android поддерживает имена действий в атрибуты XML, макет, например [android: onClick](https://developer.xamarin.com/api/member/Android.Views.View+IOnClickListener.OnClick/p/Android.Views.View/) атрибута XML. Если указано, увеличенную представление экземпляра пытается найти метод Java.
 
 -   [Java.io.Serializable](http://developer.android.com/reference/java/io/Serializable.html) интерфейс требует `readObject` и `writeObject` методы. Так как они не являются членами этого интерфейса, наши соответствующие управляемой реализации не предоставляет эти методы в код Java.
 

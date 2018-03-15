@@ -7,11 +7,11 @@ ms.assetid: F54E86F4-1CDA-474E-9B09-242060C2C13D
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 37bbbf2b89048db175ddc1b3b1a24cea92b898a7
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 09b999771ec500409e40dc2aef671045bf9f5565
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-15-the-interactive-interface"></a>Сводка по 15 главы. Интерактивный интерфейс
 
@@ -30,37 +30,12 @@ Xamarin.Forms содержит 20 допускающих создание экз
 
 Пользователи восемь представлений в этой главе эффективно взаимодействовать с базовых типов данных .NET:
 
-<table>
-  <tr>
-    <th>Тип данных</th>
-    <th>Представления</th>
-  </tr>
-  <tr>
-    <td>`Double`</td>
-    <td
-      <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Slider/">Slider</a></code>,
-      <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Stepper/">Stepper</a></code>
-    </td>
-  </tr>
-  <tr>
-    <td>`Boolean`</td>
-    <td>
-      <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Switch/">Switch</a></code>
-    </td>
-  </tr>
-  <tr>
-    <td>`String`</td>
-    <td>
-      <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/">Entry</a></code>, <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Editor/">Editor</a></code>, <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.SearchBar/">SearchBar</a></code>
-    </td>
-  </tr>
-  <tr>
-    <td>`DateTime`</td>
-    <td>
-      <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/">DatePicker</a></code>, <code><a href="https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/">TimePicker</a></code>
-    </td>
-  </tr>
-</table>
+|Тип данных|Представления|
+|--- |--- |
+|`Double`|[`Slider`](https://developer.xamarin.com/api/type/Xamarin.Forms.Slider/), [`Stepper`](https://developer.xamarin.com/api/type/Xamarin.Forms.Stepper/)|
+|`Boolean`|[`Switch`](https://developer.xamarin.com/api/type/Xamarin.Forms.Switch/)|
+|`String`|[`Entry`](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/), [`Editor`](https://developer.xamarin.com/api/type/Xamarin.Forms.Editor/), [`SearchBar`](https://developer.xamarin.com/api/type/Xamarin.Forms.SearchBar/)|
+|`DateTime`|[`DatePicker`](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/), [`TimePicker`](https://developer.xamarin.com/api/type/Xamarin.Forms.TimePicker/)|
 
 Эти представления можно считать интерактивные визуальные представления базовые типы данных. Эта концепция является более рассмотренных в следующей главе, [ **Глава 16. Привязка данных**](chapter16.md).
 
@@ -116,7 +91,7 @@ Xamarin.Forms содержит 20 допускающих создание экз
 
 - [`Increment`](https://developer.xamarin.com/api/property/Xamarin.Forms.Stepper.Increment/) Тип `double`, инициализируемое 1
 
-Визуально `Stepper` состоит из двух кнопок с меткой **& #x 2013;** и  **+** . Нажав клавишу **& #x 2013;** уменьшает `Value` по `Increment` для менее `Minimum`. Нажав клавишу  **+**  увеличивает `Value` по `Increment` максимум `Maximum`.
+Визуально `Stepper` состоит из двух кнопок с меткой  **&ndash;**  и  **+** . Нажав клавишу  **&ndash;**  уменьшает `Value` по `Increment` для менее `Minimum`. Нажав клавишу  **+**  увеличивает `Value` по `Increment` максимум `Maximum`.
 
 Это продемонстрировано на [ **StepperDemo** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter15/StepperDemo) образца.
 

@@ -7,11 +7,11 @@ ms.assetid: 34671C48-0ED4-4B76-A33D-D6505390DC5B
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 6e0f1abf04695dfb5348b631a9fbdbd2c81bc431
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: ccae97021e86eb1375f948c5ad126253c6088037
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-11-the-bindable-infrastructure"></a>Сводка главе 11. Инфраструктура связывания
 
@@ -47,9 +47,9 @@ Xamarin.Forms определяет определение расширенные
 
 При изменении свойства, поддерживаемый изменении привязываемые свойства `BindableObject` активируется [ `PropertyChanged` ](https://developer.xamarin.com/api/event/Xamarin.Forms.BindableObject.PropertyChanged/) событий, определяющий свойство, которая была изменена. Это событие не возникает, когда задано то же значение.
 
-Некоторые свойства не поддерживаются свойства для привязки и некоторые классы Xamarin.Forms & #x 2014; Например, `Span` & #x 2014; не являются производными от `BindableObject`. Только класс, производный от `BindableObject` может поддерживать привязываемыми свойствами, так как `BindableObject` определяет `SetValue` и `GetValue` методы.
+Некоторые свойства не поддерживаются некоторые Xamarin.Forms классы и свойства для привязки &mdash; например `Span` &mdash; не являются производными от `BindableObject`. Только класс, производный от `BindableObject` может поддерживать привязываемыми свойствами, так как `BindableObject` определяет `SetValue` и `GetValue` методы.
 
-Поскольку `Span` не является производным от `BindableObject`, ни один из его свойств & #x 2014, таких как `Text` & #x 2014; обеспечиваются привязываемые свойства. Именно поэтому `DynamicResource` на `Text` свойство `Span` вызывает исключение в [ **DynamicVsStatic** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10/DynamicVsStatic) примера в предыдущем разделе. [ **DynamicVsStaticCode** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/DynamicVsStaticCode) образце показано, как задать динамические ресурсы в коде с помощью [ `SetDynamicResource` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Element.SetDynamicResource/p/Xamarin.Forms.BindableProperty/System.String/) метода, определенного `Element`. Первым аргументом является объектом типа `BindableProperty`.
+Поскольку `Span` не является производным от `BindableObject`, ни один из его свойств &mdash; например `Text` &mdash; , поддерживаемых привязываемые свойства. Именно поэтому `DynamicResource` на `Text` свойство `Span` вызывает исключение в [ **DynamicVsStatic** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter10/DynamicVsStatic) примера в предыдущем разделе. [ **DynamicVsStaticCode** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter11/DynamicVsStaticCode) образце показано, как задать динамические ресурсы в коде с помощью [ `SetDynamicResource` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Element.SetDynamicResource/p/Xamarin.Forms.BindableProperty/System.String/) метода, определенного `Element`. Первым аргументом является объектом типа `BindableProperty`.
 
 Аналогичным образом [ `SetBinding` ](https://developer.xamarin.com/api/member/Xamarin.Forms.BindableObject.SetBinding/p/Xamarin.Forms.BindableProperty/Xamarin.Forms.BindingBase/) метода, определенного `BindableObject` первый аргумент типа `BindableProperty`.
 

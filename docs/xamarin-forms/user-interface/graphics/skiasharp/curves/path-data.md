@@ -8,11 +8,11 @@ ms.assetid: 1D53067B-3502-4D74-B89D-7EC496901AE2
 author: charlespetzold
 ms.author: chape
 ms.date: 05/24/2017
-ms.openlocfilehash: cc21f789d96f9375655766916f80c6f3f524c29d
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 7d50e5a33020de822f96a8bf2f713a8c5b9d3020
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="svg-path-data"></a>Путь данных SVG
 
@@ -423,7 +423,7 @@ public class PrettyAnalogClockPage : ContentPage
 }
 ```
 
-Что-нибудь специальные выполняются с секундной стрелки, однако. Поскольку часы обновляется каждые 16 миллисекунд `Millisecond` свойство `DateTime` значение потенциально может использоваться для второй стороны анимации Очистка вместо одного, которое перемещается в дискретные перемещается из второго, в секунду. Но этот код не допускает перемещения для сглаживания. Вместо этого он использует Xamarin.Forms [ `SpringIn` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.SpringIn/) и [ `SpringOut` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.SpringOut/) плавности для разных видов перемещение анимации. Эти функции плавности вызвать секундной стрелки для перемещения в jerkier способом & #x 2014; Извлечение обратно немного перед перемещается, а затем немного чрезмерно Устранение назначению эффект сожалению, невозможно воспроизвести в эти статические снимки экрана:
+Что-нибудь специальные выполняются с секундной стрелки, однако. Поскольку часы обновляется каждые 16 миллисекунд `Millisecond` свойство `DateTime` значение потенциально может использоваться для второй стороны анимации Очистка вместо одного, которое перемещается в дискретные перемещается из второго, в секунду. Но этот код не допускает перемещения для сглаживания. Вместо этого он использует Xamarin.Forms [ `SpringIn` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.SpringIn/) и [ `SpringOut` ](https://developer.xamarin.com/api/field/Xamarin.Forms.Easing.SpringOut/) плавности для разных видов перемещение анимации. Эти функции плавности вызвать секундной стрелки для перемещения по принципу jerkier &mdash; отзыва немного перед перемещается, а затем немного чрезмерно Устранение назначению эффект сожалению, невозможно воспроизвести в эти статические снимки экрана:
 
 [![](path-data-images/prettyanalogclock-small.png "Тройной снимок экрана со страницей довольно аналогом часы")](path-data-images/prettyanalogclock-large.png#lightbox "тройной снимок экрана со страницей довольно аналогом часов")
 

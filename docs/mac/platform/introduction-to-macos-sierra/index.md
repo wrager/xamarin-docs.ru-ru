@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 036e1ddc95f8eabec3e87c13c25cad972c29a5d1
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 161a5be643ccf5f96b04413cec5956264af6ce60
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="introduction-to-macos-sierra"></a>Общие сведения о macOS Сьерра
 
@@ -63,8 +63,6 @@ MacOS современных приложений, таких как Apple ве�
 Платформа CloudKit была расширена в macOS Сьерра, чтобы разрешить пользователю быстро и легко совместное использование записей или наборов записей из базы данных — закрытый iCloud.
 
 CloudKit предоставляет полный пользовательский Интерфейс для отправки и принимать общих записей приглашения и у пользователя есть полный чтение и запись контроль над людей, имеющих доступ к записи.
-
-<!--To find out more, please see our [CloudKit Data Sharing](~/mac/platform-features/introduction-to-macos-sierra/cloudkit-data-sharing/) guide.-->
 
 Дополнительные сведения см. в разделе Apple [ссылке платформы CloudKit](https://developer.apple.com/reference/clockkit) и [CloudKit JS Framework ссылка](https://developer.apple.com/reference/cloudkitjs).
 

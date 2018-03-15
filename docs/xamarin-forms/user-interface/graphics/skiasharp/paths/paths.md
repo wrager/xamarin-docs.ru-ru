@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: f1ce6b62ef13d24148048253700d7b3bff805fad
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 6d2e600ccc85f6e72e7f913e7ffb501bf62ff69a
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="path-basics"></a>Основные сведения о пути
 
@@ -115,7 +115,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 - `AddPath` Чтобы добавить другой путь к текущему пути
 - [`AddPathReverse`](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.AddPathReverse/p/SkiaSharp.SKPath/) Чтобы добавить другой путь в обратном порядке
 
-Имейте в виду, что `SKPath` определяет объект типа geometry & #x 2014; последовательность точек и подключений. Только если `SKPath` используется в сочетании с `SKPaint` объект — это путь к просмотру с определенным цветом, толщина и т. д. Кроме того, имейте в виду, что `SKPaint` объект, переданный в `DrawPath` метод определяет характеристики весь путь. Если вы хотите нарисовать что-нибудь требует нескольких цветов, необходимо использовать отдельный путь для каждого цвета.
+Имейте в виду, что `SKPath` объект определяет только geometry &mdash; последовательность точек и подключений. Только если `SKPath` используется в сочетании с `SKPaint` объект — это путь к просмотру с определенным цветом, толщина и т. д. Кроме того, имейте в виду, что `SKPaint` объект, переданный в `DrawPath` метод определяет характеристики весь путь. Если вы хотите нарисовать что-нибудь требует нескольких цветов, необходимо использовать отдельный путь для каждого цвета.
 
 Определяется так же, как внешний вид начало и конец строки определяется окончаний обводки, внешний вид соединения между двумя строками *штриха соединения*. Укажите это, задав [ `StrokeJoin` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPaint.StrokeJoin/) свойство `SKPaint` на член [ `SKStrokeJoin` ](https://developer.xamarin.com/api/type/SkiaSharp.SKStrokeJoin/) перечисления:
 

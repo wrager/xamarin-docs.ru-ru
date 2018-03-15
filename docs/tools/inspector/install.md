@@ -1,5 +1,6 @@
 ---
-title: "Требования к установке и"
+title: "Требования к установке инспектора и"
+description: "Как загружать, устанавливать и использовать инспектор Xamarin."
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 81174493-02D3-4FF5-AD57-04F3288A7F94
@@ -7,35 +8,28 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 03/29/2017
-ms.openlocfilehash: a587935e35882ed1dc68817fbbe1ae3e91200f29
-ms.sourcegitcommit: 0bdcd00b64d581d4c5179bc39ded4018c9374229
+ms.openlocfilehash: a2e6f254c77ac099b5700543db5763b8bbb44fef
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="installation-and-requirements"></a>Требования к установке и
-
-<script> var inspectorOnLoad функции () = {var primaryTextBase = «Книг Xamarin & инспектора для»; var secondaryTextBase = «или загрузки для»; var inspectorDownloadUrlMac = «https://dl.xamarin.com/interactive/XamarinInteractive.pkg»; var inspectorDownloadUrlWin = «https://dl.xamarin.com/interactive/XamarinInteractive.msi»;
-
-  var aPrimary = document.getElementById("inspector-download-primary"); var aSecondary = document.getElementById("inspector-download-secondary");
-
-  var aMac = aPrimary; var aWin = aSecondary; var macTextBase = primaryTextBase; var winTextBase = secondaryTextBase;
-
-  Если (/win/i.test(navigator.platform.toLowerCase())) {aMac = aSecondary; aWin = aPrimary; macTextBase = secondaryTextBase; winTextBase = primaryTextBase;}
-
-  aMac.href = inspectorDownloadUrlMac; aMac.text = macTextBase + «Mac»; aWin.href = inspectorDownloadUrlWin; aWin.text = winTextBase + «Windows»; };
-
-document.addEventListener («DOMContentLoaded», inspectorOnLoad);
-</script>
+# <a name="inspector-installation-and-requirements"></a>Требования к установке инспектора и
 
 ## <a name="download-and-installation"></a>Загрузка и установка
 
-<ol>
-  <li>Загрузите и установите <a href="https://dl.xamarin.com/interactive/XamarinInteractive.pkg" id="inspector-download-primary">Xamarin книг & инспектора для Mac</a> (<a href="https://dl.xamarin.com/interactive/XamarinInteractive.msi" id="inspector-download-secondary">загрузки для Windows или</a>).
-  </li>
-  <li><a href="~/tools/inspector/inspect.md"> Проверки вашего собственного приложения!</a>
-    </li>
-</ol>
+
+# <a name="windowstabvswin"></a>[Windows](#tab/vswin)
+
+1. Загрузите и установите [Xamarin книг & окон инспектора для](https://dl.xamarin.com/interactive/XamarinInteractive.msi).
+2. [Проверки вашего собственного приложения!](~/tools/inspector/inspect.md)
+
+# <a name="macostabvsmac"></a>[macOS](#tab/vsmac)
+
+1. Загрузите и установите [Xamarin книг & инспектора для Mac](https://dl.xamarin.com/interactive/XamarinInteractive.pkg).
+2. [Проверки вашего собственного приложения!](~/tools/inspector/inspect.md)
+
+-----
 
 ## <a name="requirements"></a>Требования
 
@@ -57,43 +51,13 @@ document.addEventListener («DOMContentLoaded», inspectorOnLoad);
 
 ### <a name="supported-app-platforms"></a>Поддерживаемые приложения платформы
 
-<table>
-<thead>
-  <tr>
-    <th>Платформа приложений</th>
-    <th>Поддержка интегрированной среды разработки</th>
-    <th>Примечания</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Mac (единой)</td>
-    <td>Поддерживаются только для Mac</td>
-    <td/>
-  </tr>
-  <tr>
-    <td>операций ввода-вывода (единый)</td>
-    <td>Поддерживается в Visual Studio и XS</td>
-    <td>Проверка приложений iOS из Windows требуется одна и та же версия инспектор также будет установлен на узле Mac сборки.</td>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>Поддерживается в Visual Studio и XS</td>
-    <td>
-      <ul>
-        <li>Должны быть предназначены Android > = 4.0.3</li>
-        <li>Должен быть fastdev включен</li>
-        <li>Необходимо использовать эмуляторы Google, Visual Studio и Xamarin Android. Эмуляторы Android 7 не может разрешить проверки в данный момент.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>WPF</td>
-    <td>Поддерживается только в Visual Studio в Windows</td>
-    <td/>
-  </tr>
-</tbody>
-</table>
+|Платформа приложений|Поддержка интегрированной среды разработки|Примечания|
+|--- |--- |--- |
+|Mac (единой)|Поддерживаются только для Mac|
+|операций ввода-вывода (единый)|Поддерживается в Visual Studio и XS|Проверка приложений iOS из Windows требуется одна и та же версия инспектор также будет установлен на узле Mac сборки.|
+|Android|Поддерживается в Visual Studio и XS|Должны быть предназначены Android > = 4.0.3, с **fastdev** включена.<br />Необходимо использовать эмуляторы Google, Visual Studio и Xamarin Android. Эмуляторы Android 7 не может разрешить проверки в данный момент.|
+|WPF|Поддерживается только в Visual Studio в Windows|
+
 
 <a name="reporting-bugs" />
 
@@ -101,7 +65,7 @@ document.addEventListener («DOMContentLoaded», inspectorOnLoad);
 
 Должна быть представлена ошибок непосредственно через Visual Studio:
 
-- **Справка → отправить отзыв → сообщить о проблеме**
+- **Справка > Отправить отзыв > сообщить о проблеме**
 
 Включите все следующие сведения:
 
@@ -111,12 +75,12 @@ document.addEventListener («DOMContentLoaded», inspectorOnLoad);
 
 Visual Studio для Mac
 
-- **Visual Studio о Visual Studio → отображаются сведения → Копировать сведения →**
+- **Visual Studio > о Visual Studio > Показать подробности > скопировать сведения**
 - Вставить в отчет об ошибках
 
 Xamarin Studio
 
-- **Xamarin Studio → о Xamarin Studio → Показать подробные сведения копии →**
+- **Xamarin Studio > о Xamarin Studio > Показать подробности > скопировать сведения**
 - Вставить в отчет об ошибках
 
 Visual Studio
@@ -135,7 +99,7 @@ Visual Studio
 
 1.4.x также включает возможность выбора файла журнала в Finder (macOS) или в проводнике (Windows) непосредственно из главного меню:
 
-- **Файл журнала для показа → справки**
+- **Справка > отобразить файл журнала**
 
 Visual Studio для Mac
 
@@ -148,11 +112,11 @@ Xamarin Studio
 Visual Studio
 
 - `%LOCALAPPDATA%\Xamarin\Logs\{VS version}\Inspector {date}.log`
-- Содержимое Visual Studio `Output` область может быть информативной.
+- Содержимое Visual Studio **вывода** область может быть информативной.
 
 ### <a name="project-settings"></a>Параметры проекта
 
-Если можно присоединить `.csproj` для проекта, который вы пытаетесь проверить, было бы очень полезны. Это проще, чем охватив отдельных параметров.
+Если можно присоединить **.csproj** для проекта, который вы пытаетесь проверить, было бы очень полезны. Это проще, чем охватив отдельных параметров.
 
 Также убедитесь, что вы находитесь в конфигурации отладки.
 
@@ -177,13 +141,13 @@ Visual Studio
 
 #### <a name="visual-studio-installer"></a>Visual Studio Installer
 
-При наличии Visual Studio 2017 г., откройте «Установщик Visual Studio» и «Отдельных компонентов» искать «Xamarin книг». Если он установлен, снимите этот флажок и нажмите кнопку «Изменить» для удаления.
+При наличии 2017 г. для Visual Studio, откройте **установщик Visual Studio**и найдите в **отдельные компоненты** для **книги Xamarin**. Если он установлен, снимите этот флажок и нажмите кнопку «Изменить» для удаления.
 
 #### <a name="system-uninstall"></a>Удаление системы
 
 Если вы установили книг & Инспектор самостоятельно Скачанный установщик, его необходимо установить через **приложений и возможности** страница параметров настройки системы в Windows 10 или с помощью **Установка и удаление программ**на панели управления в предыдущих версиях Windows.
 
-> **Запуск → Настройка → системы → приложений и компонентов**
+> **Пуск > Параметры > Система > приложений и компонентов**
 
 ![](install-images/windows-remove.png "Xamarin книг и инспектора, перечисленные в разделе «Приложения и компоненты»")
 

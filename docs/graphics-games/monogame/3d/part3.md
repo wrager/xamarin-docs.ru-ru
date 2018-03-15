@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 861d47d001c10c14a0294536c6122cafb33a93ac
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e930004a91133f391f68221473f212b7caaf1b07
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="3d-coordinates-in-monogame"></a>Объемные координаты в MonoGame
 
@@ -47,7 +47,7 @@ _Основные сведения о системе координат трех
 
 Прежде чем начать перемещение нашей робот вокруг, мы создадим `Robot` класс, содержащий логику рисования и перемещения. Разработчиков игр ссылаться на это инкапсуляция логику и данные в виде *сущности*.
 
-Добавьте новый файл пустым классом для **MonoGame3D** переносимой библиотеки классов (не ModelAndVerts.Android специфический для платформы). Имя ИТ ** робот ** и нажмите кнопку **New**:
+Добавьте новый файл пустым классом для **MonoGame3D** переносимой библиотеки классов (не ModelAndVerts.Android специфический для платформы). Назовите его **робота** и нажмите кнопку **New**:
 
 ![](part3-images/image3.png "Назовите его робот и нажмите кнопку Создать")
 

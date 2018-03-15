@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/02/2017
-ms.openlocfilehash: 3418d0b7946e1da68380512d64bdfc8b13d1d784
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: b92bdc365cae524cee1f586b293c4638225c6178
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="picker"></a>Средство выбора
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/09/2018
 
 В статье описаны реализации и использовании [выбора](#picker) и [выбора даты](#datepicker) элементов управления.
 
-<a name="picker"/>
+<a name="picker" />
 
 ## <a name="picker"></a>Средство выбора
 
@@ -143,7 +143,7 @@ public override nint GetComponentCount(UIPickerView pickerView)
 Внешний вид `UIPickerView` можно настроить с помощью `UIPickerView.UIPickerViewAppearance` класса или путем переопределения `UIPickerViewModel.GetView` и `UIPickerViewModel.GetRowHeight` методы в `UIPickerViewModel`.
 
 
-<a name="datepicker"/>
+<a name="datepicker" />
 
 ## <a name="date-picker"></a>Управляющий элемент выбора даты
 

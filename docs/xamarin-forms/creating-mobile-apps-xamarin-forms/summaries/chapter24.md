@@ -7,11 +7,11 @@ ms.assetid: DDCDB49C-6008-4F72-B095-463EE21D7C23
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 3390a298cd8d9967f0aea2bd9fb5a90830714ba5
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: db950915decd2bba216c7dcd6031797037a7c8e0
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-24-page-navigation"></a>Сводка Глава 24. Переход по страницам
 
@@ -118,7 +118,7 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="patterns-of-data-transfer"></a>Шаблоны передачи данных
 
-Часто бывает необходим для передачи данных между страницами & #x 2014; для передачи данных, навигацию страницы, а для страницы, чтобы вернуться на страницу, которая его вызвала данных. Существует несколько методов для выполнения этого.
+Часто бывает необходим для передачи данных между страницами &mdash; для передачи данных, навигацию страницы, а для страницы, чтобы вернуться на страницу, которая его вызвала данных. Существует несколько методов для выполнения этого.
 
 ### <a name="constructor-arguments"></a>Аргументы конструктора
 

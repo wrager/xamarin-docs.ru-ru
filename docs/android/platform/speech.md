@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/09/2018
-ms.openlocfilehash: 7c38ebb6b482f4097a4977accecc4a230d3f3ed3
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: e8e56afbdf0b68ecc49a89b08b2e67a9715f2aef
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="android-speech"></a>Android речи
 
@@ -128,11 +128,11 @@ protected override void OnActivityResult(int requestCode, Result resultVal, Inte
 
 ### <a name="step-1---instantiating-texttospeech"></a>Шаг 1 - при создании TextToSpeech
 
-`TextToSpeech` может принимать до трех параметров, первые два являются обязательными, а третий дополнительными (`AppContext`, `IOnInitListener`, `engine`). Прослушиватель используется для привязки к службе и проверка на ошибки с помощью подсистемы выполняется любое количество ядер, доступных Android текста в речь, как минимум, устройство будет Google собственный модуль.
+`TextToSpeech` может принимать до трех параметров, первые два являются обязательными, а третий дополнительными (`AppContext`, `IOnInitListener`, `engine`). Прослушиватель используется для привязки к службе и проверка на ошибки с помощью подсистемы любое количество ядер, доступных Android текста в речь идет. Как минимум устройство будет иметь Google собственный модуль.
 
 ### <a name="step-2---finding-the-languages-available"></a>Шаг 2 - поиск доступных языков
 
-`Java.Util.Locale` Пространство имен содержит полезные метод с именем `GetAvailableLocales()`. Этот список языков, поддерживаемых речи впоследствии можно будет проверить от установленных языков.
+`Java.Util.Locale` Класс содержит полезные метод с именем `GetAvailableLocales()`. Этот список языков, поддерживаемых речи впоследствии можно будет проверить от установленных языков.
 
 Его несложно создать список языков «понятны». Всегда будет язык по умолчанию (язык пользователя задать при их сначала настроить свое устройство), поэтому в этом примере `List<string>` имеет в качестве первого параметра «Default», в зависимости от того, результат будет заполнено оставшейся части списка `textToSpeech.IsLanguageAvailable(locale)`.
 
@@ -186,7 +186,7 @@ protected override void OnActivityResult(int req, Result res, Intent data)
 
 ### <a name="step-5---the-ioninitlistener"></a>Шаг 5 - IOnInitListener
 
-Для действия иметь возможность преобразования текста в речь, метод интерфейса `OnInit` должна создаваться (это второй параметр, указанный для создания экземпляра `TextToSpeech` класса). Инициализирует прослушиватель оно проверяет результат.
+Для действия иметь возможность преобразования текста в речь, метод интерфейса `OnInit` должен быть реализован (это второй параметр, указанный для создания экземпляра `TextToSpeech` класса). Инициализирует прослушиватель оно проверяет результат.
 
 Прослушивателю необходимо протестировать для обеих `OperationResult.Success` и `OperationResult.Failure` как минимум.
 В следующем примере показано, именно это:

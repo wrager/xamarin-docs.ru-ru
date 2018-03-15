@@ -7,11 +7,11 @@ ms.assetid: F3F864FF-EE70-49D0-90D1-388889037625
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 9b60a45cc998743d34d5cadb7750f35e7b965579
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: e1d246ea65e88bde07c3d527c18b7850aa09e08b
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-1-how-does-xamarinforms-fit-in"></a>Сводка раздел 1. Как Xamarin.Forms помещается в
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 03/12/2018
 
 Эта проблема проявляется при разработке для мобильных платформ. В настоящее время существует два основных мобильных платформ, семейство Apple iPhone и iPad под управлением операционной системы iOS и Android операционной системы, запущенной на различные телефоны и планшетные ПК. Другой платформу — корпорации Майкрософт универсальной платформы Windows (UWP), который позволяет одной программы для Windows 10 и Windows 10 Mobile.
 
-Поставщики программного обеспечения, который хочет этих трех платформ приходится иметь дело с парадигм различных пользовательского интерфейса, три сред разработки, три разных интерфейсов программирования и & #x 2014; возможно большинство awkwardly & #x 2014; три разные языки программирования: Objective-C для iPhone и iPad Java для Android и C# для Windows.
+Поставщики программного обеспечения, который хочет этих трех платформ приходится иметь дело с парадигм различных пользовательского интерфейса, три сред разработки, три разных интерфейсов программирования и&mdash;возможно наиболее awkwardly&mdash; три различных языков программирования: Objective-C для iPhone и iPad Java для Android и C# для Windows.
 
 ## <a name="the-c-and-net-solution"></a>Решения C# и .NET
 

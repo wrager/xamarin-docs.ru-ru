@@ -7,12 +7,12 @@ ms.assetid: 4FC3C774-EF93-41B2-A81E-C6A08F32C09B
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: 64961e9c45c28ede4cc84f7b978da565be4426d9
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/13/2018
+ms.openlocfilehash: 823fad163e837adab5490446c23ab2f492679114
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="remote-notifications-with-google-cloud-messaging"></a>Удаленный уведомления с Google Cloud Messaging
 
@@ -507,32 +507,12 @@ SendNotification (message);
 
 Давайте рассмотрим, что делает каждый параметр в этот XML-код:
 
-<table>
-    <thead>
-        <tr>
-            <th>Параметр</th>
-            <th>Описание:</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>com.google.android.gms.gcm.GcmReceiver</code></td>
-            <td>Объявляет, что нашего приложения реализует приемник GCM, который перехватывает и обрабатывает входящие сообщения push-уведомлений.</td>
-        </tr>
-        <tr>
-            <td><code>com.google.android.c2dm.permission.SEND</code></td>
-            <td>Объявляет, что только серверы GCM может посылать сообщения этому приложению.</td>
-        </tr>
-        <tr>
-            <td><code>com.google.android.c2dm.intent.RECEIVE</code></td> 
-            <td>Блокировка с намерением фильтр рекламу обработки широковещательных сообщений из GCM нашего приложения.</td>
-        </tr>
-        <tr>
-            <td><code>com.google.android.c2dm.intent.REGISTRATION</code></td>
-            <td>Блокировка с намерением фильтра рекламу обработки новые способы регистрации в нашем приложении (то есть, были реализованы служба прослушивания идентификатор экземпляра).</td>
-        </tr>
-    </tbody>
-</table>
+|Параметр|Описание:|
+|---|---|
+|`com.google.android.gms.gcm.GcmReceiver`|Объявляет, что нашего приложения реализует приемник GCM, который перехватывает и обрабатывает входящие сообщения push-уведомлений.|
+|`com.google.android.c2dm.permission.SEND`|Объявляет, что только серверы GCM может посылать сообщения этому приложению.|
+|`com.google.android.c2dm.intent.RECEIVE`|Блокировка с намерением фильтр рекламу обработки широковещательных сообщений из GCM нашего приложения.|
+|`com.google.android.c2dm.intent.REGISTRATION`|Блокировка с намерением фильтра рекламу обработки новые способы регистрации в нашем приложении (то есть, были реализованы служба прослушивания идентификатор экземпляра).|
 
 Кроме того, вы можете декорировать `GcmListenerService` с этими атрибутами, а не их указания в формате XML; здесь мы указывать их в **AndroidManifest.xml** таким образом, проще выполнить примеры кода. 
 

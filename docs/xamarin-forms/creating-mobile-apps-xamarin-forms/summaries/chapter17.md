@@ -7,11 +7,11 @@ ms.assetid: 71EDEF9C-4220-4D2E-A235-43F1EC8746C1
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 09f63dd418ea1fb523c028edb02c28c22bfdccd1
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 4f76b1060ee8a672319683525470aee00e3db001
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-17-mastering-the-grid"></a>Сводка Глава 17. Захвата сетки
 
@@ -29,16 +29,16 @@ ms.lasthandoff: 03/12/2018
 
 В языке XAML [ `GridLengthTypeConverter` ](https://developer.xamarin.com/api/type/Xamarin.Forms.GridLengthTypeConverter/) преобразует простые текстовые строки в `GridLength` значения. В фоновом [ `GridLength` конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.GridLength.GridLength/p/System.Double/Xamarin.Forms.GridUnitType/) создает `GridLength` значение на основе номера и значения типа [ `GridUnitType` ](https://developer.xamarin.com/api/type/Xamarin.Forms.GridUnitType/), перечисление с три члена:
 
-- [`Absolute`](https://developer.xamarin.com/api/field/Xamarin.Forms.GridUnitType.Absolute/) & #x 2014; Ширина или высота задается в аппаратно независимых единицах (число в языке XAML)
-- [`Auto`](https://developer.xamarin.com/api/field/Xamarin.Forms.GridUnitType.Auto/) & #x 2014; Высота или ширина будет определяться автоматически на основе содержимого ячейки («Авто» в языке XAML)
-- [`Star`](https://developer.xamarin.com/api/field/Xamarin.Forms.GridUnitType.Star/) & #x 2014; остался высота или ширина распределяется пропорционально (число с «\*», который называется *звезда*, в языке XAML)
+- [`Absolute`](https://developer.xamarin.com/api/field/Xamarin.Forms.GridUnitType.Absolute/) &mdash; Ширина или высота задается в аппаратно независимых единицах (число в языке XAML)
+- [`Auto`](https://developer.xamarin.com/api/field/Xamarin.Forms.GridUnitType.Auto/) &mdash; Высота или ширина будет определяться автоматически на основе содержимого ячейки («Авто» в языке XAML)
+- [`Star`](https://developer.xamarin.com/api/field/Xamarin.Forms.GridUnitType.Star/) &mdash; остался высота или ширина распределяется пропорционально (число с «\*», который называется *звезда*, в языке XAML)
 
-Каждый дочерний `Grid` также должен быть назначен строк и столбцов (явно или неявно). Охватывает строки и столбца диапазоны являются необязательными. Они все указываются с помощью присоединенного свойства для привязки & #x 2014; свойства, которые определены в `Grid` но устанавливаться для дочерних элементов `Grid`. `Grid` Определяет четыре статические вложенные свойства привязки:
+Каждый дочерний `Grid` также должен быть назначен строк и столбцов (явно или неявно). Охватывает строки и столбца диапазоны являются необязательными. Они все задаются с помощью вложенного свойства связывания &mdash; свойства, которые определены в `Grid` но устанавливаться для дочерних элементов `Grid`. `Grid` Определяет четыре статические вложенные свойства привязки:
 
-- [`RowProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.RowProperty/) & #x 2014; Отсчитываемый от нуля строку; по умолчанию равно 0
-- [`ColumnProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.ColumnProperty/) & #x 2014; Отсчитываемый от нуля столбца; по умолчанию равно 0
-- [`RowSpanProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.RowSpanProperty/) & #x 2014; число строк, охватывающий дочерний; по умолчанию — 1
-- [`ColumnSpanProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.ColumnSpanProperty/) & #x 2014; число столбцов, охватывающий дочерний; по умолчанию — 1
+- [`RowProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.RowProperty/) &mdash; Отсчитываемый от нуля строку; по умолчанию равно 0
+- [`ColumnProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.ColumnProperty/) &mdash; Отсчитываемый от нуля столбца; по умолчанию равно 0
+- [`RowSpanProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.RowSpanProperty/) &mdash; число строк, охватывающий дочерний; по умолчанию — 1
+- [`ColumnSpanProperty`](https://developer.xamarin.com/api/field/Xamarin.Forms.Grid.ColumnSpanProperty/) &mdash; число столбцов, охватывающий дочерний; по умолчанию — 1
 
 В коде программы можно использовать восемь статические методы для задания и получения этих значений:
 

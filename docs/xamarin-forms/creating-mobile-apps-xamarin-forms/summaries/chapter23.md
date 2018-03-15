@@ -7,11 +7,11 @@ ms.assetid: 19E84B5D-46B4-4B6D-A255-87BEFB011261
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 9a53cddcf216efd2bb86c838e280d599ff26c191
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: ddb76e00cfe1c19a9d31dc3e53b80a2be0697dbc
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-23-triggers-and-behaviors"></a>Сводка по 23 главы. Триггеры и поведения
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 03/12/2018
 
 Аргумент является элементом, применяется поведение. Как правило `OnAttachedTo` метод присоединяет обработчики событий, и `OnDetachingFrom` отсоединяет их. Так как такой класс обычно сохраняет какое-либо состояние, он обычно не может передаваться в `Style`.
 
-[**BehaviorEntryValidation** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/BehaviorEntryValidation) пример аналогичен **TriggerEntryValidation** за исключением того, что он использует поведение & #x 2014; [ `NumericValidationBehavior` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NumericValidationBehavior.cs) класса в [ **Xamarin.FormsBook.Toolkit** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) библиотеки.
+[**BehaviorEntryValidation** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter23/BehaviorEntryValidation) пример аналогичен **TriggerEntryValidation** за исключением того, что он использует поведение &mdash; [ `NumericValidationBehavior` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Toolkit/Xamarin.FormsBook.Toolkit/NumericValidationBehavior.cs) в класс [ **Xamarin.FormsBook.Toolkit** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Libraries/Xamarin.FormsBook.Toolkit) библиотеки.
 
 ### <a name="behaviors-with-properties"></a>Поведение с помощью свойства
 

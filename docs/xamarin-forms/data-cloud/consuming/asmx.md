@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/20/2016
-ms.openlocfilehash: 3ddf481a2356d49f11b96f5a8a6b7f7a492fefc9
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: a095dbbb78ad1517791356ae0b7cbeaa94d1336f
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="consuming-an-aspnet-web-service-asmx"></a>Использование веб-службы ASP.NET (ASMX)
 
@@ -39,37 +39,12 @@ SOAP может работать через несколько транспор�
 
 Служба ASMX предоставляет следующие операции:
 
-<table>
-  <thead>
-    <tr>
-      <th>Операция</th>
-      <th>Описание:</th>
-      <th>Параметры</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>GetTodoItems</td>
-      <td>Получить список заданий для выполнения</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>CreateTodoItem</td>
-      <td>Создать новый элемент задачи</td>
-      <td>Сериализованное XML <code>TodoItem</code></td>
-    </tr>
-    <tr>
-      <td>EditTodoItem</td>
-      <td>Задание обновления</td>
-      <td>Сериализованное XML <code>TodoItem</code></td>
-    </tr>
-    <tr>
-      <td>DeleteTodoItem</td>
-      <td>Удалить задание</td>
-      <td>Сериализованное XML <code>TodoItem</code></td>
-    </tr>
-  </tbody>
-</table>
+|Операция|Описание:|Параметры|
+|--- |--- |--- |
+|GetTodoItems|Получить список заданий для выполнения|
+|CreateTodoItem|Создать новый элемент задачи|Сериализованное XML TodoItem|
+|EditTodoItem|Задание обновления|Сериализованное XML TodoItem|
+|DeleteTodoItem|Удалить задание|Сериализованное XML TodoItem|
 
 Дополнительные сведения о модели данных, используемые в приложении см. в разделе [моделирования данных](~/xamarin-forms/data-cloud/walkthrough.md).
 

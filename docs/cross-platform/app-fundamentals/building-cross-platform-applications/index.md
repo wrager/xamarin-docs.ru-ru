@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 01/28/2016
-ms.openlocfilehash: 7934738a546a266036573b81e15ef9b2fa28d7b4
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 53c32003cd1a77a3aa5feb0ab26cedeab27789dc
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="sharing-code-options"></a>Параметры совместного использования кода
 
@@ -22,19 +22,19 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="building-cross-platform-mobile-apps"></a>Создание кросс-платформенные мобильные приложения
 
- [Обзор набора средств Visual Studio для Unity](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-0-overview.md)
+ [Обзор набора средств Visual Studio для Unity](~/cross-platform/app-fundamentals/building-cross-platform-applications/overview.md)
 
- [Часть 1 – основные сведения о платформе Xamarin Mobile](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-1-understanding-the-xamarin-mobile-platform.md)
+ [Часть 1 – основные сведения о платформе Xamarin Mobile](~/cross-platform/app-fundamentals/building-cross-platform-applications/understanding-the-xamarin-mobile-platform.md)
 
- [Часть 2 — архитектура](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-2-architecture.md)
+ [Часть 2 — архитектура](~/cross-platform/app-fundamentals/building-cross-platform-applications/architecture.md)
 
- [Часть 3 – Настройка перекрестной Xamarin платформы решения](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-3-setting-up-a-xamarin-cross-platform-solution.md)
+ [Часть 3 – Настройка перекрестной Xamarin платформы решения](~/cross-platform/app-fundamentals/building-cross-platform-applications/setting-up-a-xamarin-cross-platform-solution.md)
 
- [Часть 4 – Работа с несколькими платформами](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-4-platform-divergence-abstraction-divergent-implementation.md)
+ [Часть 4 – Работа с несколькими платформами](~/cross-platform/app-fundamentals/building-cross-platform-applications/platform-divergence-abstraction-divergent-implementation.md)
 
- [Часть 5 – совместное использование стратегии практические кода](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-5-practical-code-sharing-strategies.md)
+ [Часть 5 – совместное использование стратегии практические кода](~/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies.md)
 
- [Часть 6. Тестирование и утверждение магазина приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/part-6-testing-and-app-store-approvals.md)
+ [Часть 6. Тестирование и утверждение магазина приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/testing-and-app-store-approvals.md)
 
  <a name="Cross-Platform_Mobile_Application_Case_Studies" />
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/07/2017
-ms.openlocfilehash: 5334465905817336df91f5816596dc5723071811
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: d5d5de21c4f397f203b4da5ea86e1f9a0e4714e9
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="introduction"></a>Вступление
 
@@ -118,48 +118,16 @@ ms.lasthandoff: 03/09/2018
 
 Решения eShopOnContainers мобильного приложения организует исходного кода и другие ресурсы в проекты. Все проекты использовать папки для организации исходного кода и других ресурсов в категории. В следующей таблице приведены проекты, которые составляют eShopOnContainers мобильное приложение:
 
-<table>
-<thead>
-<tr class="header">
-<th>Проект</th>
-<th>Описание:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>eShopOnContainers.Core</td>
-<td>Этот проект является проекта переносимой библиотеки классов (PCL), содержащий общего кода и общий пользовательский Интерфейс.</td>
-</tr>
-<tr class="even">
-<td>eShopOnContainers.Droid</td>
-<td>Этот проект содержит Android определенный код и точка входа для приложения Android.</td>
-</tr>
-<tr class="odd">
-<td>eShopOnContainers.iOS</td>
-<td>Этот проект содержит iOS конкретного кода и является точкой входа для приложения iOS.</td>
-</tr>
-<tr class="even">
-<td>eShopOnContainers.UWP</td>
-<td>Этот проект содержит определенный код универсальной платформы Windows (UWP) и является точкой входа для приложения Windows.</td>
-</tr>
-<tr class="odd">
-<td>eShopOnContainers.TestRunner.Droid</td>
-<td>Этот проект является Android тестов для проекта eShopOnContainers.UnitTests.</td>
-</tr>
-<tr class="even">
-<td>eShopOnContainers.TestRunner.iOS</td>
-<td>Этот проект является тестов операций ввода-вывода для проекта eShopOnContainers.UnitTests.</td>
-</tr>
-<tr class="odd">
-<td>eShopOnContainers.TestRunner.Windows</td>
-<td>Этот проект является тестов для проекта eShopOnContainers.UnitTests универсальной платформы Windows.</td>
-</tr>
-<tr class="even">
-<td>eShopOnContainers.UnitTests</td>
-<td>Этот проект содержит модульные тесты для проекта eShopOnContainers.Core.</td>
-</tr>
-</tbody>
-</table>
+|Проект|Описание:|
+|--- |--- |
+|eShopOnContainers.Core|Этот проект является проекта переносимой библиотеки классов (PCL), содержащий общего кода и общий пользовательский Интерфейс.|
+|eShopOnContainers.Droid|Этот проект содержит Android определенный код и точка входа для приложения Android.|
+|eShopOnContainers.iOS|Этот проект содержит iOS конкретного кода и является точкой входа для приложения iOS.|
+|eShopOnContainers.UWP|Этот проект содержит определенный код универсальной платформы Windows (UWP) и является точкой входа для приложения Windows.|
+|eShopOnContainers.TestRunner.Droid|Этот проект является Android тестов для проекта eShopOnContainers.UnitTests.|
+|eShopOnContainers.TestRunner.iOS|Этот проект является тестов операций ввода-вывода для проекта eShopOnContainers.UnitTests.|
+|eShopOnContainers.TestRunner.Windows|Этот проект является тестов для проекта eShopOnContainers.UnitTests универсальной платформы Windows.|
+|eShopOnContainers.UnitTests|Этот проект содержит модульные тесты для проекта eShopOnContainers.Core.|
 
 Классы из eShopOnContainers мобильного приложения можно использовать повторно в любое приложение Xamarin.Forms с практически без изменений.
 
@@ -167,76 +135,23 @@ ms.lasthandoff: 03/09/2018
 
 Проект PCL eShopOnContainers.Core содержит следующие папки:
 
-<table>
-<thead>
-<tr class="header">
-<th>Папка</th>
-<th>Описание:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Анимации</td>
-<td>Содержит классы, позволяющие анимации для использования в языке XAML.</td>
-</tr>
-<tr class="even">
-<td>поведения</td>
-<td>Содержит поведения, которые доступны для просмотра классов.</td>
-</tr>
-<tr class="odd">
-<td>Элементы управления</td>
-<td>Содержит пользовательские элементы управления, используемых в приложении.</td>
-</tr>
-<tr class="even">
-<td>Преобразователи типов</td>
-<td>Содержит преобразователи значений, которые применять пользовательскую логику к привязке.</td>
-</tr>
-<tr class="odd">
-<td>Произведенный эффект</td>
-<td>Содержит <code>EntryLineColorEffect</code> класс, который используется для изменения цвета границы конкретных <code>Entry</code> элементов управления.</td>
-</tr>
-<tr class="even">
-<td>Исключения</td>
-<td>Содержит custom <code>ServiceAuthenticationException</code>.</td>
-</tr>
-<tr class="odd">
-<td>Расширения</td>
-<td>Содержит методы расширения для <code>VisualElement</code> и <code>IEnumerable<T> </code> классы.</td>
-</tr>
-<tr class="even">
-<td>Вспомогательные функции</td>
-<td>Содержит вспомогательные классы для приложения.</td>
-</tr>
-<tr class="odd">
-<td>Модели</td>
-<td>Классы модели для приложения.</td>
-</tr>
-<tr class="even">
-<td>Свойства</td>
-<td>Содержит <code>AssemblyInfo.cs</code>, файл метаданных сборки .NET.</td>
-</tr>
-<tr class="odd">
-<td>Службы</td>
-<td>Содержит интерфейсы и классы, реализующие службы, предоставляемые в приложение.</td>
-</tr>
-<tr class="even">
-<td>Триггеры</td>
-<td>Содержит <code>BeginAnimation</code> срабатывание триггера, который используется для вызова анимации в XAML.</td>
-</tr>
-<tr class="odd">
-<td>Проверки</td>
-<td>Содержит классы, используемые при проверке входных данных.</td>
-</tr>
-<tr class="even">
-<td>ViewModels</td>
-<td>Содержит логику приложения, который предоставляется на страницы.</td>
-</tr>
-<tr class="odd">
-<td>Представления</td>
-<td>Содержит страницы для приложения.</td>
-</tr>
-</tbody>
-</table>
+|Папка|Описание:|
+|--- |--- |
+|Анимации|Содержит классы, позволяющие анимации для использования в языке XAML.|
+|поведения|Содержит поведения, которые доступны для просмотра классов.|
+|Элементы управления|Содержит пользовательские элементы управления, используемых в приложении.|
+|Преобразователи типов|Содержит преобразователи значений, которые применять пользовательскую логику к привязке.|
+|Произведенный эффект|Содержит `EntryLineColorEffect` класс, который используется для изменения цвета границы конкретных `Entry` элементов управления.|
+|Исключения|Содержит custom `ServiceAuthenticationException`.|
+|Расширения|Содержит методы расширения для `VisualElement` и `IEnumerable` классы.|
+|Вспомогательные функции|Содержит вспомогательные классы для приложения.|
+|Модели|Классы модели для приложения.|
+|Свойства|Содержит `AssemblyInfo.cs`, файл метаданных сборки .NET.|
+|Службы|Содержит интерфейсы и классы, реализующие службы, предоставляемые в приложение.|
+|Триггеры|Содержит `BeginAnimation` срабатывание триггера, который используется для вызова анимации в XAML.|
+|Проверки|Содержит классы, используемые при проверке входных данных.|
+|ViewModels|Содержит логику приложения, который предоставляется на страницы.|
+|Представления|Содержит страницы для приложения.|
 
 ##### <a name="platform-projects"></a>Проекты платформы
 

@@ -7,12 +7,12 @@ ms.assetid: 2AE68ACE-8496-445D-BF17-5E4097D4AE35
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/01/2018
-ms.openlocfilehash: 5589d512f9a4ee9c1148810f36fee12d561f725c
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/14/2018
+ms.openlocfilehash: 66555139cfaab2074e7461be737f997a9bb9c7a7
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="resolving-library-installation-errors"></a>Устранение ошибок установки библиотеки
 
@@ -104,7 +104,7 @@ Download failed. Please download https://dl-ssl.google.com/android/repository/an
 
     -   [Android\_m2repository\_r16.zip](https://dl-ssl.google.com/android/repository/android_m2repository_r16.zip) &ndash; 0595E577D19D31708195A83087881EE6
 
-    Если **m2repository** архива не показано в следующей таблице, можно создать URL-адрес загрузки, добавляя в начало **https://dl-ssl.google.com/android/repository/** имя **m2repository**  для загрузки. Например, использовать **https://dl-ssl.google.com/android/repository/android\_m2repository\_r10.zip** для загрузки **android\_m2repository\_r10.zip** .
+    Если **m2repository** архива не показано в следующей таблице, можно создать URL-адрес загрузки, добавляя в начало  **https://dl-ssl.google.com/android/repository/**  имя **m2repository** для загрузки. Например, использовать  **https://dl-ssl.google.com/android/repository/android \_m2repository\_r10.zip** для загрузки **android\_m2repository\_r10.zip**.
 
 2.  Переименуйте файл в соответствующий MD5-хэш в URL-адреса загрузки как показано в приведенной выше таблице. Например, если вы загрузили **android\_m2repository\_r25.zip**, переименуйте его в **0B3F1796C97C707339FB13AE8507AF50.zip**. Если хэш MD5 для URL-адрес загрузки загруженного файла не содержится в таблице, можно использовать [генератор документации MD5](http://www.webconfs.com/online-md5-generator.php) для преобразования URL-адрес в строку хэш MD5. 
 
@@ -160,6 +160,8 @@ Unzipping failed. Please download https://dl-ssl.google.com/android/repository/a
     [![Пример файлов копируется в папку 23.1.1.0/embedded](resolving-library-installation-errors-images/09-copied-vs.png)](resolving-library-installation-errors-images/09-copied-vs.png#lightbox)
 
 8.  Убедитесь, что все файлы копируются. **Внедренные** directory теперь должен содержать файлы например **.jar**, **.aar**, и **.pom**.
+
+9.  Распакуйте все извлеченные **.aar** файлов. В Windows, добавьте **.zip** расширение **.aar** файл, щелкните его правой кнопкой мыши и выберите **извлечь все...** , затем удалите **.zip** расширения. На macOS, распакуйте **.aar** файла с помощью **Распакуйте** команду в окне терминала (например, **Распакуйте file.aar**).
 
 На этом этапе отсутствующие компоненты установлены вручную, и ваш проект должен быть построен без ошибок. Если это не так, убедитесь, что вы загрузили **m2repository** **.zip** архив версию, которая точно соответствует версии в сообщении об ошибке, а также убедитесь, что вы установили свое содержимое в Исправьте расположения, как описано выше. 
 

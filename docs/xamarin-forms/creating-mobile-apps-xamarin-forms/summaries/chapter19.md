@@ -7,11 +7,11 @@ ms.assetid: 0AEC3A5C-586E-4D0F-9895-67E99A053A79
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 73b3ec3e60a8fca5c48f515eab2cbb8359618dbb
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: a085eb306ad81b3c9214df269f69558bc8fbfaa7
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-19-collection-views"></a>Сводка Глава 19. Представления коллекций
 
@@ -31,7 +31,7 @@ Xamarin.Forms определяет три представления, котор
 
 [ **PickerDemo** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/PickerDemo) образце показано, как использовать XAML для установки `Picker` [ `Title` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.Title/) свойство и добавьте `string` элементы [ `Items` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.Items/) коллекции. Когда пользователь выбирает `Picker`, она отображает элементы в `Items` коллекции в виде зависят от платформы.
 
-[ `SelectedIndexChanged` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Picker.SelectedIndexChanged/) Событие указывает, когда пользователь выбрал элемент. Отсчитываемый от нуля [ `SelectedIndex` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.SelectedIndex/) затем указывает выбранный элемент. Если элемент не выбран, `SelectedIndex` равно &#x2013;1.
+[ `SelectedIndexChanged` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Picker.SelectedIndexChanged/) Событие указывает, когда пользователь выбрал элемент. Отсчитываемый от нуля [ `SelectedIndex` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.SelectedIndex/) затем указывает выбранный элемент. Если элемент не выбран, `SelectedIndex` равняется &ndash;1.
 
 Можно также использовать `SelectedIndex` для инициализации выбранного элемента, но он должен быть установлен после `Items` заполнения коллекции. В языке XAML, это означает, что вы воспользуетесь элемент свойства для задания `SelectedIndex`.
 
@@ -82,11 +82,11 @@ Xamarin.Forms определяет три представления, котор
 
 `ListView` требуется шаблон для отображения этих элементов. В коде, можно задать [ `ItemTemplate` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ItemsView%3CTVisual%3E.ItemTemplate/) свойством, которое определяется `ItemsView<TVisual>` для [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/) с помощью [ `DataTemplate` конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.DataTemplate.DataTemplate/p/System.Type/) , ссылается на класс, наследуемый от [ `Cell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Cell/) класса. `Cell` состоит из пяти производных продуктов.
 
-- [`TextCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell/) &#x2014; содержит два `Label` представлений (с концептуальной точки зрения)
-- [`ImageCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.ImageCell/) &#x2014; Добавляет `Image` для просмотра `TextCell`
-- [`EntryCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.EntryCell/) &#x2014; содержит `Entry` просмотра с `Label`
-- [`SwitchCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.SwitchCell/) &#x2014; содержит `Switch` с `Label`
-- [`ViewCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) &#x2014; может быть любым `View` (скорее всего, с помощью дочерних элементов)
+- [`TextCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell/) &mdash; содержит два `Label` представлений (с концептуальной точки зрения)
+- [`ImageCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.ImageCell/) &mdash; Добавляет `Image` для просмотра `TextCell`
+- [`EntryCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.EntryCell/) &mdash; содержит `Entry` просмотра с `Label`
+- [`SwitchCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.SwitchCell/) &mdash; содержит `Switch` с `Label`
+- [`ViewCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) &mdash; может быть любым `View` (скорее всего, с помощью дочерних элементов)
 
 Затем вызовите [ `SetValue` ](https://developer.xamarin.com/api/member/Xamarin.Forms.DataTemplate.SetValue/p/Xamarin.Forms.BindableProperty/System.Object/) и [ `SetBinding` ](https://developer.xamarin.com/api/member/Xamarin.Forms.DataTemplate.SetBinding/p/Xamarin.Forms.BindableProperty/Xamarin.Forms.BindingBase/) на `DataTemplate` для привязки значений с `Cell` свойства, или для задания привязки данных на `Cell` Свойства ссылки на свойства элементов в `ItemsSource` коллекции. Это показано в [ **TextCellListCode** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter19/TextCellListCode) образца.
 

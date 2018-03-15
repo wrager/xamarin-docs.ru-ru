@@ -8,11 +8,11 @@ ms.assetid: 8022FBF9-2208-43DB-94D8-0A4E9A5DA07F
 author: charlespetzold
 ms.author: chape
 ms.date: 06/16/2017
-ms.openlocfilehash: bb99984f93f494cfb5ad3d37ccb25f0b91d0b489
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: e84bce5d4280ded801ed58999a2570d3c6bd327e
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="clipping-with-paths-and-regions"></a>Обрезка с использованием пути и областей
 
@@ -267,7 +267,7 @@ void DisplayClipOp(SKCanvas canvas, SKRect rect, SKClipOperation clipOp)
 
 Вы можете продолжать использовать `SKRegionOperation` перечисления, но он требует определения область обрезки в виде [ `SKRegion` ](https://developer.xamarin.com/api/type/SkiaSharp.SKRegion/) объекта.
 
-Только что созданный объект `SKRegion` объект, который описывает пустую область. Обычно является первый вызов в объекте [ `SetRect` ](https://developer.xamarin.com/api/member/SkiaSharp.SKRegion.SetRect/p/SkiaSharp.SKRectI/) , чтобы прямоугольную область описания области. Параметр, чтобы `SetRect` — `SKRectI` значение & #x 2014; значение прямоугольника со свойствами целое число со знаком. Затем можно вызвать [ `SetPath` ](https://developer.xamarin.com/api/member/SkiaSharp.SKRegion.SetPath/p/SkiaSharp.SKPath/SkiaSharp.SKRegion/) с `SKPath` объекта. При этом создается область, совпадает со значением внутреннюю часть пути, но ограничивается начальной прямоугольной области.
+Только что созданный объект `SKRegion` объект, который описывает пустую область. Обычно является первый вызов в объекте [ `SetRect` ](https://developer.xamarin.com/api/member/SkiaSharp.SKRegion.SetRect/p/SkiaSharp.SKRectI/) , чтобы прямоугольную область описания области. Параметр, чтобы `SetRect` — `SKRectI` значение &mdash; значение прямоугольника со свойствами целое число со знаком. Затем можно вызвать [ `SetPath` ](https://developer.xamarin.com/api/member/SkiaSharp.SKRegion.SetPath/p/SkiaSharp.SKPath/SkiaSharp.SKRegion/) с `SKPath` объекта. При этом создается область, совпадает со значением внутреннюю часть пути, но ограничивается начальной прямоугольной области.
 
 `SKRegionOperation` Перечисления только вступает в действие при вызове одного из [ `Op` ](https://developer.xamarin.com/api/member/SkiaSharp.SKRegion.Op/p/SkiaSharp.SKRegion/SkiaSharp.SKRegionOperation/) перегрузки метода, подобные следующему:
 

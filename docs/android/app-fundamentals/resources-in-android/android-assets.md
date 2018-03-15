@@ -6,12 +6,12 @@ ms.assetid: 70ECDDC9-FA40-03B4-BF04-E7CFFFE4260D
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/30/2017
-ms.openlocfilehash: 83e58625438a0b50d89ca8dac3e940c8742e5aec
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/13/2018
+ms.openlocfilehash: e1890575f5c3a5bd2e0c0de0712ba459607e6139
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-android-assets"></a>С помощью средств Android
 
@@ -44,7 +44,7 @@ Visual Studio для Mac должен иметь набор **действие �
 
 ## <a name="reading-assets"></a>Средства чтения
 
-Активы считываются с использованием [AssetManager](https://developer.xamarin.com/api/type/Android.Content.Res.AssetManager/). Экземпляр `AssetManager` доступен по доступу к [активы](https://developer.xamarin.com/api/property/Android.Content.Context.Assets/) свойство `Android.Contet.Context`, например, действия.
+Активы считываются с использованием [AssetManager](https://developer.xamarin.com/api/type/Android.Content.Res.AssetManager/). Экземпляр `AssetManager` доступен, обратившись к [активы](https://developer.xamarin.com/api/property/Android.Content.Context.Assets/) свойство `Android.Content.Context`, например, действия.
 В следующем коде откройте нашей **read_asset.txt** активов, чтение содержимого и отобразить его с помощью текстового представления.
 
 ```csharp

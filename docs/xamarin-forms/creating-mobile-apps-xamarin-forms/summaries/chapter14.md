@@ -7,11 +7,11 @@ ms.assetid: 88882A48-3226-42D1-96ED-241250B64A84
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 394e1722c79bac5f034e9ad88eb1fed7e5090f8c
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: a3980c63c31f4fdf0297fdc9b05da3590f0cac54
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-14-absolute-layout"></a>Сводка Глава 14. Абсолютный макета
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/12/2018
 
 Можно добавить дочерний элемент `Children` коллекцию `AbsoluteLayout` с использованием стандарта [ `Add` ](https://developer.xamarin.com/api/member/System.Collections.Generic.ICollection%3CT%3E.Add/p/T/) метода, но `AbsoluteLayout` также предоставляет расширенную [ `Add` ](https://developer.xamarin.com/api/member/Xamarin.Forms.AbsoluteLayout+IAbsoluteList%3CT%3E.Add/p/Xamarin.Forms.View/Xamarin.Forms.Rectangle/Xamarin.Forms.AbsoluteLayoutFlags/) метод, который позволяет указать [ `Rectangle` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Rectangle/). Другой [ `Add` ](https://developer.xamarin.com/api/member/Xamarin.Forms.AbsoluteLayout+IAbsoluteList%3CT%3E.Add/p/Xamarin.Forms.View/Xamarin.Forms.Point/) метод требует только [ `Point` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Point/), в этом случае дочерний произвольные и изменяет свой размер.
 
-Можно создать `Rectangle` значение с [конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.Rectangle.Rectangle/p/System.Double/System.Double/System.Double/System.Double/) , требуется четыре значения & #x 2014; первые два, указывающее положение верхнего левого угла дочернего элемента относительно его родительского элемента, а вторые два, указывающее, размер дочернего элемента. Или можно использовать [конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.Rectangle.Rectangle/p/Xamarin.Forms.Point/Xamarin.Forms.Size/) , требующего `Point` и [ `Size` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Size/) значение.
+Можно создать `Rectangle` значение с [конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.Rectangle.Rectangle/p/System.Double/System.Double/System.Double/System.Double/) , требуется четыре значения &mdash; первых двух, указывающее положение верхнего левого угла дочернего элемента относительно его родительского элемента, а вторые два, указывающее, размер дочернего элемента. Или можно использовать [конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.Rectangle.Rectangle/p/Xamarin.Forms.Point/Xamarin.Forms.Size/) , требующего `Point` и [ `Size` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Size/) значение.
 
 Эти `Add` демонстрируются методы в [ **AbsoluteDemo**](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter14/AbsoluteDemo), какие позиции `BoxView` элементов с помощью `Rectangle` значения и `Label` элемента с помощью только что `Point` значение.
 

@@ -7,11 +7,11 @@ ms.assetid: 7A39FD4F-15AD-4F94-960E-9FEEB63FFD44
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 5ad53d7bc8c4ee54a47c4b327fb6f07bc1906ab9
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 5559f9e6a4baf9d3f82701b5e3f341900ba83bae
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-4-scrolling-the-stack"></a>Сводка Доп. Прокрутка стека
 
@@ -67,9 +67,9 @@ ms.lasthandoff: 03/12/2018
 
 Для вертикального ползунка `StackLayout`, каждый дочерний элемент по вертикали произвольные и возвращает вертикальная область памяти в зависимости от высоты дочернего элемента, в этом случае `VerticalOptions` параметр не имеет значения.
 
-Если вертикальную `StackLayout` сам произвольные & #x 2014; если его `VerticalOptions` параметр `Start`, `Center`, или `End`, затем высоту `StackLayout` — Общая высота из его дочерних элементов.
+Если вертикальную `StackLayout` сам произвольные&mdash;, если его `VerticalOptions` параметр `Start`, `Center`, или `End`, затем высоту `StackLayout` — Общая высота из его дочерних элементов.
 
-Однако если вертикальную `StackLayout` ограничен по вертикали & #x 2014; если его `VerticalOptions` параметр `Fill`& #x 2014; затем высоту `StackLayout` будет высоты своего контейнера, который может быть больше, чем общая высота его дочерних элементов. Если это так, и имеет хотя бы один дочерний `VerticalOptions` с `Expands` флаг `true`, затем дополнительное пространство в `StackLayout` равномерно распределены среди этих дочерних элементов с `Expands` флаг `true`. Общая высота дочерних элементов будет равен высоту `StackLayout`и `Alignment` частью `VerticalOptions` параметр определяет, как дочерний по вертикали расположено в ее гнездо.
+Однако если вертикальную `StackLayout` ограничен по вертикали&mdash;при его `VerticalOptions` параметр `Fill` &mdash;затем высоту `StackLayout` будет высоты своего контейнера, который может быть больше, чем сумма Высота его дочерних элементов. Если это так, и имеет хотя бы один дочерний `VerticalOptions` с `Expands` флаг `true`, затем дополнительное пространство в `StackLayout` равномерно распределены среди этих дочерних элементов с `Expands` флаг `true`. Общая высота дочерних элементов будет равен высоту `StackLayout`и `Alignment` частью `VerticalOptions` параметр определяет, как дочерний по вертикали расположено в ее гнездо.
 
 Это показано в [ **VerticalOptionsDemo** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter04/VerticalOptionsDemo) образца.
 

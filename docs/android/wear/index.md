@@ -7,12 +7,12 @@ ms.assetid: 3BE4A128-2D88-4500-9E48-20375EA99A49
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: ac83b74f39497333de7aa80079784adf61bf2e65
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.date: 03/13/2018
+ms.openlocfilehash: 5db4c735205753810466c26535ba9e2f525709a8
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="android-wear"></a>Android Wear
 
@@ -44,116 +44,25 @@ Android одежды — это версия Android, предназначенн
 
 Можно найти несколько [образцы](https://developer.xamarin.com/samples/android/Android%20Wear/) с помощью Android носят (или перейти сразу к [github](https://github.com/xamarin/monodroid-samples/tree/master/wear)). 
 
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-  <thead>
-      <th>
-          <strong>Пример</strong>
-      </th>
-      <th>
-          <strong>Описание</strong>
-      </th>
-      <th>
-          <strong>Screenshot</strong>
-      </th>
-  </thead>
-  <tbody>
-  <tr>
-      <td valign="top">
-          <a href="https://developer.xamarin.com/samples/SkeletonWear/">SkeletonWear</a>
-      </td>
-      <td valign="top">
-Простой пример основы переносном проектов, включая GridViewPager и интерактивные уведомления.
-      </td>
-      <td>
-          <img src="Images/skeleton.png" class="tableimg">
-      </td>
-  </tr>
-  <tr>
-      <td valign="top">
-          <a href="https://developer.xamarin.com/samples/WatchViewStub/">WatchViewStub</a>
-      </td>
-      <td valign="top">
-Простой демонстрационный WatchViewStub элемента управления, который определяет форму экрана и автоматически загружает правильный макет.
-Увидеть, как работает WatchViewStub <b>Resources/layout/main_actvity.xml</b> макета.
-      </td>
-      <td>
-          <img src="Images/watchview.png" class="tableimg">
-      </td>
-  </tr>
-  <tr>
-      <td valign="top">
-          <a href="https://developer.xamarin.com/samples/RecipeAssistant/">RecipeAssistant</a>
-      </td>
-      <td valign="top">
-Демонстрация страниц износ уведомления, в виде действия инструкций. Уведомления создаются в <b>RecipeService.cs</b>.
-      </td>
-      <td>
-          <img src="Images/recipeassist.png" class="tableimg">
-      </td>
-  </tr>
-  <tr>
-      <td valign="top">
-          <a href="https://developer.xamarin.com/samples/ElizaChat/">ElizaChat</a>
-      </td>
-      <td valign="top">
-Образец интересна взаимодействия с «личный помощник» вызывается Eliza, с помощью интерактивного уведомления износ Создание диалога, используя стандартные ответы.
-      </td>
-      <td>
-          <img src="Images/eliza.png" class="tableimg">
-      </td>
-  </tr>
-  <tr>
-      <td valign="top">
-          <a href="https://developer.xamarin.com/samples/GridViewPager/">GridViewPager</a>
-      </td>
-      <td valign="top">
-GridViewPager реализует шаблон «2D навигации», где пользователь предъявляет по вертикали и по горизонтали, для просмотра параметров и содержимое.
-      </td>
-      <td>
-          <img src="Images/gridviewpager.png" class="tableimg">
-      </td>
-  </tr>
-  <tr>
-      <td valign="top">
-          <a href="https://developer.xamarin.com/samples/monodroid/wear/WatchFace">WatchFace</a>
-      </td>
-      <td valign="top">
-          <b>WatchFace</b> является пользовательской циферблате с стиле аналогом час, минуту и второй руки. В этом примере демонстрируется создание службы начертания контрольных значений, который отображает текущее время и окружения режиме дескрипторов и видимость событий изменения. Он включает широковещательных приемник, который прослушивает изменения часового пояса и автоматически обновляет время соответствующим образом.
-      </td>
-      <td>
-          <img src="Images/watchface.png" class="tableimg">
-      </td>
-  </tr>
-  </tbody>
-</table>
+|Пример|Описание:|Снимок экрана|
+|--- |--- |--- |
+|[SkeletonWear](https://developer.xamarin.com/samples/SkeletonWear/)|Простой пример основы переносном проектов, включая GridViewPager и интерактивные уведомления.|![Снимок экрана Skeletonwear](images/skeleton.png)|
+|[WatchViewStub](https://developer.xamarin.com/samples/WatchViewStub/)|Простой демонстрационный WatchViewStub элемента управления, который определяет форму экрана и автоматически загружает правильный макет.  Увидеть, как работает WatchViewStub **Resources/layout/main_actvity.xml** макета.|![Снимок экрана WatchViewStub](images/watchview.png)|
+|[RecipeAssistant](https://developer.xamarin.com/samples/RecipeAssistant/)|Демонстрация страниц износ уведомления, в виде действия инструкций. Уведомления создаются в RecipeService.cs.|![Снимок экрана RecipeAssistant](images/recipeassist.png)|
+|[ElizaChat](https://developer.xamarin.com/samples/ElizaChat/)|Образец интересна взаимодействия с «личный помощник» вызывается Eliza, с помощью интерактивного уведомления износ Создание диалога, используя стандартные ответы.|![Снимок экрана ElizaChat](images/eliza.png)|
+|[GridViewPager](https://developer.xamarin.com/samples/GridViewPager/)|GridViewPager реализует шаблон «2D навигации», где пользователь предъявляет по вертикали и по горизонтали, для просмотра параметров и содержимое.|![Снимок экрана GridViewPager](images/gridviewpager.png)|
+|[WatchFace](https://developer.xamarin.com/samples/monodroid/wear/WatchFace)|WatchFace является пользовательской циферблате с стиле аналогом час, минуту и второй руки. В этом примере демонстрируется создание службы начертания контрольных значений, который отображает текущее время и окружения режиме дескрипторов и видимость событий изменения. Он включает широковещательных приемник, который прослушивает изменения часового пояса и автоматически обновляет время соответствующим образом.|![Снимок экрана WatchFace](images/gridviewpager.png)|
+
 
 ##  <a name="videos"></a>Видеоролики
 
-Рекомендуем ознакомиться с видео, что ссылки, посвященные Xamarin.Android с износ поддерживают.
+Рекомендуем ознакомиться с видео, что ссылки, посвященные Xamarin.Android с износ поддерживают:
 
-<table align="center" border="0" cellpadding="1" cellspacing="1">
-    <tr>
-        <td>
-        <a href="http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/"><img src="Images/video-android-l.png" border="0" /></td>
-        <td><a href="http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/">Android L и многое другое</a>
-        <br />
-Android Developer L Preview появилось множество новых интерфейсов API для разработчиков, чтобы воспользоваться преимуществами, включая разработки материал, уведомления и новые анимации лишь некоторые из них.</td>
-    </tr>
-    <tr>
-        <td>
-        <a href="https://www.youtube.com/watch?v=80H8tXByZQc"><img src="Images/video-eyes-ears.png" border="0" /></td>
-        <td><a href="https://www.youtube.com/watch?v=80H8tXByZQc">C# находится в моем уши и в глаза: стекла Google и с Android</a>
-        <br />
-Переносном вычислений и выглядит как что-нибудь из будущего (или эпизода инспектора мини-приложения), но многие пользователи уже принятие будущих сегодня! Разработчикам C# знает об этом и уже есть средства и навыки использования возможностей переносном устройств (от Evolve 2014 г.).</td>
-    </tr>
-    <tr>
-        <td>
-        <a href="https://www.youtube.com/watch?v=Gpqc2XZIQfU"><img src="Images/video-whats-new.png" border="0" /></td>
-        <td><a href="https://www.youtube.com/watch?v=Gpqc2XZIQfU">Новые возможности Xamarin.Android</a>
-        <br />
-        <i>Android L, Android одежды, Android ТВ, автоматически Android, материалов и ГРАФИКОЙ; Каково для вас как разработчика Xamarin? </i> из развивать 2014 г.</td>
-    </tr>
-</table>
+|Описание:|Снимок экрана|
+|--- |--- |
+|[Android L и гораздо больше](http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/) &ndash; Android Developer Preview L появился множество новых интерфейсов API для разработчиков, чтобы воспользоваться преимуществами, включая разработки материал, уведомления и новые анимации лишь некоторые из них.|![Снимок экрана видео презентации](images/video-android-l.png)|
+|[C# находится в моем уши и в глаза: стекла Google и Android с](https://www.youtube.com/watch?v=80H8tXByZQc) &ndash; переносном вычислений и выглядит как что-нибудь из будущего (или эпизода инспектора мини-приложения), однако многие пользователи уже принятие будущих сегодня! Разработчикам C# знает об этом и уже есть средства и навыки использования возможностей переносном устройств (от Evolve 2014 г.).|![Снимок экрана видео презентации](images/video-eyes-ears.png)|
+|[Новые возможности Xamarin.Android](https://www.youtube.com/watch?v=Gpqc2XZIQfU) &ndash; Android L, носят Android, Android ТВ, автоматически Android, материалы и ГРАФИКОЙ; что делает это среднее вам, как разработчику Xamarin? Evolve 2014.|![Снимок экрана видео презентации](Images/video-whats-new.png)|
 
 
 <!--

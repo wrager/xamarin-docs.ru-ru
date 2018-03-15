@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: abcda680f6cfbde802f7b666cf2aade2c6e11093
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 341d850709ff27f4dc397cee3bb2fc5f73c0ec3c
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="lines-and-stroke-caps"></a>Строки и пунктирные завершения отрезков
 
@@ -30,7 +30,7 @@ canvas.DrawLine (x0, y0, x1, y1, paint);
 
 По умолчанию `StrokeWidth` свойство вновь созданный экземпляр `SKPaint` объекта равно 0, что действует так же, как значение 1 в визуализации строку на один пиксель в толщину. Отображается слишком тонких на высокое разрешение устройств, таких как телефоны, поэтому возможно, потребуется задать `StrokeWidth` на большее значение. Но после начала Рисование линий изменяемые толщины, вызывает еще одна проблема: как начала и окончания этих строк толстой визуализироваться?
 
-Внешний вид начала и окончания строк называется *отрезка* или в Skia, *окончаний обводки*. Слово «конец» в этом контексте ссылается на тип hat & #x 2014; то, что находится в конце строки. Задать [ `StrokeCap` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPaint.StrokeCap/) свойство `SKPaint` объект для одного из следующих членов [ `SKStrokeCap` ](https://developer.xamarin.com/api/type/SkiaSharp.SKStrokeCap/) перечисления:
+Внешний вид начала и окончания строк называется *отрезка* или в Skia, *окончаний обводки*. Слово «конец» в этом контексте ссылается на тип hat &mdash; то, что находится в конце строки. Задать [ `StrokeCap` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPaint.StrokeCap/) свойство `SKPaint` объект для одного из следующих членов [ `SKStrokeCap` ](https://developer.xamarin.com/api/type/SkiaSharp.SKStrokeCap/) перечисления:
 
 - [`Butt`](https://developer.xamarin.com/api/field/SkiaSharp.SKStrokeCap.Butt/) (по умолчанию)
 - [`Square`](https://developer.xamarin.com/api/field/SkiaSharp.SKStrokeCap.Round/)

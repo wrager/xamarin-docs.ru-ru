@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/12/2017
-ms.openlocfilehash: f448a3ee9c018aa475775a5ac2c614f3e7ddc324
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: ab22881f383e00a67fda8d3e8ffc5d9a4f7f993e
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -25,20 +25,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-## <a name="xamarin-studio"></a>Xamarin Studio
-
-Проекты .NET стандартной библиотеки могут создаваться в Xamarin Studio 6.2, создав проект переносимой библиотеки:
-
-[![](net-standard-images/xs01-sml.png "Создание нового проекта переносимой библиотеки")](net-standard-images/xs01.png#lightbox)
-
-После создания проекта щелкните правой кнопкой мыши и откройте **параметры проекта** окна.
-В **Общие** раздела проекта можно преобразовать в .NET Standard и настроена на использование определенной версии в **платформы** раскрывающегося списка:
-
-[![](net-standard-images/xs02-sml.png "Преобразовать в .NET Standard в целом параметры")](net-standard-images/xs02.png#lightbox)
-
-После этого можно [создать пакет NuGet](~/cross-platform/app-fundamentals/nuget-multiplatform-libraries/existing-library.md) для совместного использования библиотеки с другими разработчиками.
-
-## <a name="visual-studio-for-mac-walkthrough"></a>Пошаговое руководство по Visual Studio для Mac
+## <a name="visual-studio-for-mac"></a>Visual Studio для Mac
 
 В этом разделе рассматриваются способы создания и использования стандартной библиотеки .NET с помощью Visual Studio для Mac. Обратитесь к разделу стандартный пример библиотеки .NET для полной реализации.
 
@@ -68,7 +55,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-## <a name="visual-studio-windows-walkthrough"></a>Пошаговое руководство для Visual Studio (Windows)
+## <a name="visual-studio-2017-windows"></a>Visual Studio 2017 г. (Windows)
 
 В этом разделе рассматриваются способы создания и использования стандартной библиотеки .NET с помощью Visual Studio. Обратитесь к разделу стандартный пример библиотеки .NET для полной реализации.
 
@@ -104,7 +91,3 @@ ms.lasthandoff: 03/09/2018
 
 -----
 
-
-## <a name="related-links"></a>Связанные ссылки
-
-- [Заметки о выпуске](https://developer.xamarin.com/releases/studio/xamarin.studio_6.2/xamarin.studio_6.2/#.NET_Standard_Support)

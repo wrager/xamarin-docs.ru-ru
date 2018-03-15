@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/05/2017
-ms.openlocfilehash: 465ba4822a1004100160703f1607d99199f28a16
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: c0d328e784b0a12b0df1a6b2bf5b990ffa461da5
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="apple-account-management"></a>Управление учетной записью Apple
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/12/2018
 
 - Убедитесь, что вы подключены к Интернету. Это происходит потому fastlane взаимодействует непосредственно с портала разработчиков Apple.
 - Убедитесь в наличии [установлены инструменты fastlane](~/ios/deploy-test/provisioning/fastlane/index.md#Installation).
-- Убедитесь, имеются новейшие средства fastlane из [https://download.fastlane.tools](https://download.fastlane.tools).
+- Убедитесь, имеются новейшие средства fastlane из [ https://download.fastlane.tools ](https://download.fastlane.tools).
 - Прежде чем начать, убедитесь в том принять все лицензионные соглашения в [портал разработчиков](https://developer.apple.com/account/).
 
 ## <a name="adding-an-apple-developer-account"></a>Добавление учетной записи разработчика Apple
@@ -69,8 +69,7 @@ ms.lasthandoff: 03/12/2018
     ![](apple-account-management-images/image6.png)
 
 
-<a name="managing"/>
-    
+<a name="managing" />
 
 
 ## <a name="managing-signing-identities-and-provisioning-profiles"></a>Управление удостоверениями подписи и профили подготовки

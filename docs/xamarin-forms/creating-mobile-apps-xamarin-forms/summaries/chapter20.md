@@ -7,11 +7,11 @@ ms.assetid: D595862D-64FD-4C0D-B0AD-C1F440564247
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 86ae56fc2baac3eab0fbf375c5f67f7b2327721a
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 0ac316bc2cef04a80958c047427845dbdcc4137f
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="summary-of-chapter-20-async-and-file-io"></a>Сводка Глава 20. Async и файл ввода-вывода
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="good-news-and-bad-news"></a>Хорошие новости и плохие новости
 
-Всех платформах, поддерживаемых в локальное хранилище Xamarin.Forms поддержки приложения & #x 2014; хранилище, закрытых для приложения.
+Всех платформах, поддерживаемых в локальное хранилище Xamarin.Forms поддержки приложения &mdash; хранилища, закрытых для приложения.
 
 Библиотеки Xamarin.iOS и Xamarin.Android включают в себя версию .NET, Xamarin, явно не настроенных для этих двух платформ. К ним относятся классы из `System.IO` , можно использовать для выполнения файлового ввода-вывода с локальным хранилищем приложений в этих двух платформ.
 
@@ -117,7 +117,7 @@ ms.lasthandoff: 03/12/2018
 
 ### <a name="keeping-it-in-the-background"></a>Сохранение его в фоновом режиме
 
-Методы в библиотеках, которые выполняют вызовы несколько асинхронных методов & #x 2014; например `WriteFileAsync` и `ReadFileASync` методы в среде выполнения Windows [ `FileHelper` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.WinRT/FileHelper.cs) класс & #x 2014; можно сделать несколько более эффективно, используя [ `ConfigureAwait` ](https://developer.xamarin.com/api/member/System.Threading.Tasks.Task%3CTResult%3E.ConfigureAwait/p/System.Boolean/) метода Избегайте переключение обратно в поток пользовательского интерфейса.
+Методы в библиотеках, которые выполняют вызовы асинхронных методов несколько &mdash; например `WriteFileAsync` и `ReadFileASync` методы в среде выполнения Windows [ `FileHelper` ](https://github.com/xamarin/xamarin-forms-book-samples/blob/master/Libraries/Xamarin.FormsBook.Platform/Xamarin.FormsBook.Platform.WinRT/FileHelper.cs) класса &mdash; можно сделать несколько более эффективно, используя [ `ConfigureAwait` ](https://developer.xamarin.com/api/member/System.Threading.Tasks.Task%3CTResult%3E.ConfigureAwait/p/System.Boolean/) метод, чтобы избежать переключение обратно в поток пользовательского интерфейса.
 
 ### <a name="dont-block-the-ui-thread"></a>Не блокировали поток пользовательского интерфейса.
 

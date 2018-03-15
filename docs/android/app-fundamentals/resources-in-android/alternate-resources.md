@@ -6,12 +6,12 @@ ms.assetid: AE5A864E-192D-475E-C731-99249C2E7D9E
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/01/2018
-ms.openlocfilehash: 7ebbf2a9215c8472ae2f286728cb2f819e8331cb
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/13/2018
+ms.openlocfilehash: 230c26c2537987f7ca09e28e05ec96186e5f7882
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="alternate-resources"></a>Альтернативный ресурсы
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/09/2018
 Ниже перечислены возможные квалификаторов для ссылки.
 
 - **MCC и кодом МНЧ** &ndash; [код страны мобильных](http://en.wikipedia.org/wiki/List_of_mobile_country_codes) (MCC) и при необходимости [кода мобильной сети](http://en.wikipedia.org/wiki/Mobile_Network_Code) (кодом МНЧ). Сеть, к которой устройство подключено к предоставит кодом МНЧ будет предоставляют MCC SIM-карта. Несмотря на то, что существует возможность целевых языков, использующих код страны для мобильных устройств, рекомендуется подход является использование квалификатора языка, указанными ниже. Например, чтобы целевые ресурсы в Германии, будет квалификатор `mcc262`. Чтобы целевые ресурсы для T-Mobile в США квалификатор не `mcc310-mnc026`.
-  Полный список кодов мобильной сети и коды стран мобильных устройств в разделе <http://mcclist.com/>.
+  Полный список кодов мобильной сети и коды стран мобильных устройств в разделе <http://mcc-mnc.com/>.
 
 - **Язык** &ndash; двухбуквенный [код ISO 639-1 языка](http://en.wikipedia.org/wiki/ISO_639-1) и при необходимости сопровождаемый двухбуквенный [код региона ISO 3166-альфа 2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). 
   Если оба квалификаторы предоставляются, то они разделяются `-r`. Например, чтобы целевой французский язык язык и региональные стандарты, а затем квалификатор `fr` используется. Целевой язык и региональные стандарты французский — канадский, `fr-rCA` будет использоваться. Полный список кодов языка и региона см. в разделе [коды для представления из названий языков](http://www.loc.gov/standards/iso639-2/php/English_list.php) и [названия стран и элементы кода](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm).

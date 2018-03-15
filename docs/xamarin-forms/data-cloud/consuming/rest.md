@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/22/2017
-ms.openlocfilehash: f8b748ad1b57218d1e8aab11bdc1037cf3cfa14c
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 98c38001ea7751c419d4be5b0f68339b06ec656f
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="consuming-a-restful-web-service"></a>Использование веб-службы RESTful
 
@@ -49,42 +49,12 @@ API-интерфейсы, которые соответствуют ОСТАЛЬ
 
 Службы REST записывается с помощью ASP.NET Core и предоставляет следующие операции:
 
-<table>
-  <thead>
-    <tr>
-      <th>Операция</th>
-      <th>Метод HTTP</th>
-      <th>Относительный URI</th>
-      <th>Параметры</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Получить список заданий для выполнения</td>
-      <td>GET</td>
-      <td>/API/todoitems /</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Создать новый элемент задачи</td>
-      <td>ПОМЕСТИТЬ</td>
-      <td>/API/todoitems /</td>
-      <td>В формате JSON <code>TodoItem</code></td>
-    </tr>
-    <tr>
-      <td>Задание обновления</td>
-      <td>PUT</td>
-      <td>/API/todoitems /</td>
-      <td>В формате JSON <code>TodoItem</code></td>
-    </tr>
-    <tr>
-      <td>Удалить задание</td>
-      <td>DELETE</td>
-      <td>/API/todoitems / {id}</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+|Операция|Метод HTTP|Относительный URI|Параметры|
+|--- |--- |--- |--- |
+|Получить список заданий для выполнения|GET|/API/todoitems /|
+|Создать новый элемент задачи|ПОМЕСТИТЬ|/API/todoitems /|TodoItem в формате JSON|
+|Задание обновления|PUT|/API/todoitems /|TodoItem в формате JSON|
+|Удалить задание|DELETE|/API/todoitems / {id}|
 
 Большая часть URL-адреса включают `TodoItem` идентификатор в пути. Например, чтобы удалить `TodoItem` которого является идентификатор `6bb8a868-dba1-4f1a-93b7-24ebce87e243`, клиент отправляет запрос DELETE для `http://hostname/api/todoitems/6bb8a868-dba1-4f1a-93b7-24ebce87e243`. Дополнительные сведения о модели данных, используемые в образце приложения, см. в разделе [моделирования данных](~/xamarin-forms/data-cloud/walkthrough.md).
 
