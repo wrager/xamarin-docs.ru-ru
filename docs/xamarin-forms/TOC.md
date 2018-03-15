@@ -266,7 +266,7 @@
 #### [Почему конструктор XAML в Visual Studio работает с XAML-файлами Xamarin.Forms?](troubleshooting/questions/forms-xaml-designer.md)
 #### [Ошибка сборки Android: непредвиденный сбой задачи LinkAssemblies](troubleshooting/questions/android-linkassemblies-error.md)
 #### [Почему проект Android Xamarin.Forms.Maps завершается ошибкой "COMPILETODALVIK: непредвиденная ошибка верхнего уровня"](troubleshooting/questions/maps-compiletodalvik-error.md)
-## [Заметки о выпуске](https://developer.xamarin.com/releases/mac/)
+## [Заметки о выпуске](https://developer.xamarin.com/releases/xamarin-forms/)
 ## [Примеры](samples/index.yml)
 ## [Создание мобильных приложений с помощью Xamarin.Forms (книга)](creating-mobile-apps-xamarin-forms/index.md)
 ## [Электронная книга. Шаблоны корпоративного приложения](enterprise-application-patterns/index.md)
