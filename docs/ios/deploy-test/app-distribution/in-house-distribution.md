@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 6bb712da5becbe9c19dddf3deb393f0d50cd726b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4da96f3119fb46fbeb22ad3d6c68b3099f6d0698
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="in-house-distribution"></a>Внутреннее распространение
 
@@ -56,15 +56,15 @@ _Этот документ содержит краткий обзор распр
 3. Нажмите кнопку **+**, чтобы создать новый сертификат.
 4. В разделе *Production* (Производство) установите флажок **In-House and Ad Hoc** (Собственный и прямой):
 
-   [ ![](in-house-distribution-images/createcertmanually01.png "Выбор элемента "In-House and Ad Hoc" (Собственный и прямой)")](in-house-distribution-images/createcertmanually01.png)
+   [![](in-house-distribution-images/createcertmanually01.png "Выбор элемента "Собственный и прямой"")](in-house-distribution-images/createcertmanually01.png#lightbox)
 
 5. Нажмите кнопку "Continue" (Продолжить) и следуйте инструкциям, чтобы создать запрос подписи сертификата через доступ к цепочке ключей:
 
-   [ ![](in-house-distribution-images/createcertmanually02.png "Создание запроса подписи сертификата через доступ к цепочке ключей")](in-house-distribution-images/createcertmanually02.png)
+   [![](in-house-distribution-images/createcertmanually02.png "Создание запроса подписи сертификата через доступ к цепочке ключей")](in-house-distribution-images/createcertmanually02.png#lightbox)
 
 6. После создания запроса согласно инструкции нажмите кнопку "Continue" (Продолжить) и отправьте его в центр участников:
 
-   [ ![](in-house-distribution-images/createcertmanually03.png "Отправка запроса подписи сертификата в центр участников")](in-house-distribution-images/createcertmanually03.png)
+   [![](in-house-distribution-images/createcertmanually03.png "Отправка запроса подписи сертификата в центр участников")](in-house-distribution-images/createcertmanually03.png#lightbox)
 
 7. Нажмите "Generate" (Создать), чтобы создать сертификат.
 8. Скачайте готовый сертификат и дважды щелкните файл, чтобы установить его.
@@ -74,15 +74,15 @@ _Этот документ содержит краткий обзор распр
 
 1. Выберите свою команду и щелкните *View Details* (Показать подробности):
 
-    [ ![](in-house-distribution-images/selectteam.png "Выбор своей команды")](in-house-distribution-images/selectteam.png)
+    [![](in-house-distribution-images/selectteam.png "Выбор своей команды")](in-house-distribution-images/selectteam.png#lightbox)
 
 2. Затем нажмите кнопку **Create** (Создать) рядом с полем **iOS Distribution Certificate** (Сертификат распространения iOS):
 
-   [ ![](in-house-distribution-images/selectcert.png "Создание сертификата распространения iOS")](in-house-distribution-images/selectcert.png)
+   [![](in-house-distribution-images/selectcert.png "Создание сертификата распространения iOS")](in-house-distribution-images/selectcert.png#lightbox)
 
 2.   Далее щелкните **знак "плюс" (+)** и выберите пункт **iOS App Store**:
 
-   [ ![](in-house-distribution-images/selectcert.png "Выбор пункта "iOS App Store"")](in-house-distribution-images/selectcert.png)
+   [![](in-house-distribution-images/selectcert.png "Выбор пункта "iOS App Store"")](in-house-distribution-images/selectcert.png#lightbox)
 
 <a name="profile" />
 
@@ -105,23 +105,23 @@ _Этот документ содержит краткий обзор распр
 
 1. Вернитесь на портал подготовки Apple и выберите **Provisioning** > **Distribution** (Подготовка > Распространение):
 
-   [![](in-house-distribution-images/distribute01.png "Выбор элемента "Provisioning" (Подготовка) > "Distribution" (Распространение)")](in-house-distribution-images/distribute01.png)
+   [![](in-house-distribution-images/distribute01.png "Выбор элемента "Provisioning" (Подготовка) > "Distribution" (Распространение)")](in-house-distribution-images/distribute01.png#lightbox)
 
 2. Нажмите кнопку **+** и выберите тип профиля распространения, который нужно создать для **внутреннего распространения**:
 
-   [![](in-house-distribution-images/distribute02.png "Создание профиля внутреннего распространения")](in-house-distribution-images/distribute02.png)
+   [![](in-house-distribution-images/distribute02.png "Создание профиля внутреннего распространения")](in-house-distribution-images/distribute02.png#lightbox)
 
 3. Нажмите кнопку **Continue** (Продолжить) и выберите из раскрывающегося списка ИД приложения, для которого необходимо создать профиль распространения:
 
-   [![](in-house-distribution-images/distribute03.png "Выбор идентификатора приложения в раскрывающемся списке")](in-house-distribution-images/distribute03.png)
+   [![](in-house-distribution-images/distribute03.png "Выбор идентификатора приложения в раскрывающемся списке")](in-house-distribution-images/distribute03.png#lightbox)
 
 4. Нажмите кнопку **Continue** (Продолжить) и выберите сертификат распространения, необходимый для подписи приложения:
 
-   [![](in-house-distribution-images/distribute04.png "Выбор сертификата распространения, необходимого для подписи приложения")](in-house-distribution-images/distribute04.png)
+   [![](in-house-distribution-images/distribute04.png "Выбор сертификата распространения, необходимого для подписи приложения")](in-house-distribution-images/distribute04.png#lightbox)
 
 6. Нажмите кнопку **Continue** (Продолжить) и введите **имя** нового профиля распространения:
 
-   [![](in-house-distribution-images/distribute06.png "Ввод имени нового профиля распространения")](in-house-distribution-images/distribute06.png)
+   [![](in-house-distribution-images/distribute06.png "Ввод имени нового профиля распространения")](in-house-distribution-images/distribute06.png#lightbox)
 
 7. Нажмите кнопку **Generate** (Создать), чтобы создать профиль и завершить процесс.
 

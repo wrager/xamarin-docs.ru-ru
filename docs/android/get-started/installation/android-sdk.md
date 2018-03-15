@@ -7,12 +7,12 @@ ms.assetid: 9A857F52-2EC1-414F-8010-CEE67B60A4B4
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 01/24/2018
-ms.openlocfilehash: 66ed0965f1ed01be129f22996e50bdea89a95287
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.date: 03/01/2018
+ms.openlocfilehash: 585bcac193d6824bc7c96092c14e40fd7971b0e2
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="android-sdk-setup"></a>Установка пакета SDK для Android
 
@@ -30,7 +30,7 @@ _Visual Studio включает диспетчер пакетов SDK для And
 Это руководство описывает, как установить и использовать диспетчер пакетов SDK Xamarin Android для Visual Studio для Mac (или [для Windows](?tabs=vswin)).
 
 > [!NOTE]
-> **Примечание.** Это руководство распространяется только на Visual Studio 2017 и Visual Studio для Mac.  
+> Это руководство распространяется только на Visual Studio 2017 и Visual Studio для Mac.  
 
 -----
 
@@ -38,8 +38,6 @@ _Visual Studio включает диспетчер пакетов SDK для And
 Он заменяет автономный диспетчер пакетов SDK от Google, который был признан нерекомендуемым.
 
 Почему следует использовать диспетчер пакетов SDK Xamarin Android вместо диспетчера пакетов SDK, входящего в состав пакета SDK для Android? В версии 25.2.3 пакета Android SDK Tools компания Google ввела новый инструмент для обслуживания пакета SDK для Android. Этот новый инструмент — **[sdkmanager](https://developer.android.com/studio/command-line/sdkmanager.html)** — является программой командной строки, которая заменяет автономный диспетчер на базе пользовательского интерфейса для пакета SDK для Android. Таким образом, если вы выполняете обновление до SDK Tools версии 26.0.1 (требуется для Android 8.0) или более поздней версии и хотите и дальше управлять пакетом SDK для Android через пользовательский интерфейс, нужно использовать диспетчер пакетов SDK Xamarin Android.
-
-<a name="requirements" />
 
 ## <a name="requirements"></a>Требования
 
@@ -64,10 +62,8 @@ _Visual Studio включает диспетчер пакетов SDK для And
 Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), который необходим при разработке для API уровня 24 или выше (пакет JDK 8 также поддерживает уровни API ниже 24). При разработке специально для уровня API 23 или ниже можно продолжать использовать пакет [JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html).
 
 > [!IMPORTANT]
-> **Примечание.** Xamarin.Android не поддерживает пакет JDK 9.
+> Xamarin.Android не поддерживает пакет JDK 9.
 
-
-<a name="installation" />
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -86,7 +82,6 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
  
 -----
 
-<a name="sdk-manager" /> 
  
 ## <a name="sdk-manager"></a>Диспетчер пакетов SDK 
 
@@ -94,11 +89,11 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 
 Чтобы запустить диспетчер пакетов SDK в Visual Studio, щелкните **Сервис > Android > Диспетчер пакетов SDK Android**:
 
-[![Элемент меню с расположением диспетчера пакетов SDK Android](android-sdk-images/win/02-sdk-manager-menu-item-sml.png)](android-sdk-images/win/02-sdk-manager-menu-item.png)
+[![Элемент меню с расположением диспетчера пакетов SDK Android](android-sdk-images/win/02-sdk-manager-menu-item-sml.png)](android-sdk-images/win/02-sdk-manager-menu-item.png#lightbox)
 
 **Диспетчер пакетов SDK Xamarin Android** открывается на экране **Пакеты SDK и инструменты для Android**. Этот экран содержит две вкладки &ndash; **Платформы** и **Сервис**:
 
-[![Снимок экрана с диспетчером пакетов SDK Android, открытым на вкладке "Платформы"](android-sdk-images/win/03-sdk-manager-platforms-sml.png)](android-sdk-images/win/03-sdk-manager-platforms.png)
+[![Снимок экрана с диспетчером пакетов SDK Android, открытым на вкладке "Платформы"](android-sdk-images/win/03-sdk-manager-platforms-sml.png)](android-sdk-images/win/03-sdk-manager-platforms.png#lightbox)
 
 Экран **Пакеты SDK и инструменты для Android** более подробно описан в следующих разделах.
 
@@ -117,7 +112,6 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 -----
 
 
-<a name="sdkmanager-locations" /> 
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -151,7 +145,6 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 
 -----
 
-<a name="sdkmanager-tools" /> 
 
 ### <a name="tools-tab"></a>Вкладка "Сервис"
 
@@ -162,7 +155,7 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 
 Например, чтобы скачать пакет эмулятора Android от Google, установите флажок рядом с элементом **Эмулятор Android** и нажмите кнопку **Применить изменения**:
 
-[![Установка эмулятора Android со вкладки "Сервис"](android-sdk-images/win/06-install-emulator-sml.png)](android-sdk-images/win/06-install-emulator.png)
+[![Установка эмулятора Android со вкладки "Сервис"](android-sdk-images/win/06-install-emulator-sml.png)](android-sdk-images/win/06-install-emulator.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -188,7 +181,6 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 Щелкните **Принять**, чтобы принять условия лицензионного соглашения. В нижней части окна индикатор выполнения указывает ход скачивания и установки. После завершения установки вкладка **Сервис** указывает, что выбранные инструменты и дополнения установлены.
 
 
-<a name="xvs-platforms" /> 
 
 ### <a name="platforms-tab"></a>Вкладка "Платформы"
 
@@ -196,7 +188,7 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Снимок экрана области "Платформы"](android-sdk-images/win/08-platforms-pane-sml.png)](android-sdk-images/win/08-platforms-pane.png)
+[![Снимок экрана области "Платформы"](android-sdk-images/win/08-platforms-pane-sml.png)](android-sdk-images/win/08-platforms-pane.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -224,7 +216,7 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Пример добавления компонентов Android 7.1 Nougat в пакет SDK для Android](android-sdk-images/win/09-adding-a-platform-sml.png)](android-sdk-images/win/09-adding-a-platform.png)
+[![Пример добавления компонентов Android 7.1 Nougat в пакет SDK для Android](android-sdk-images/win/09-adding-a-platform-sml.png)](android-sdk-images/win/09-adding-a-platform.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -236,7 +228,7 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![Пример добавления компонентов Android 7.1](android-sdk-images/win/10-adding-some-components-sml.png)](android-sdk-images/win/10-adding-some-components.png)
+[![Пример добавления компонентов Android 7.1](android-sdk-images/win/10-adding-some-components-sml.png)](android-sdk-images/win/10-adding-some-components.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -270,7 +262,6 @@ Xamarin.Android использует пакет [JDK 8](http://www.oracle.com/te
 Теперь все готово к разработке приложения для последнего уровня API Android.
 
 
-<a name="summary" />
  
 ## <a name="summary"></a>Сводка
 

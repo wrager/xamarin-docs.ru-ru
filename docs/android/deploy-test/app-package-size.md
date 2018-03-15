@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/05/2018
-ms.openlocfilehash: 0fff4de7420bceda8c15ae33b03886eb6b332aeb
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 430b07918b13878e3561b55ff841a64855183fa7
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="application-package-size"></a>Размеры пакета приложения
 
@@ -28,13 +28,13 @@ Xamarin.Android использует разные механизмы, чтобы
 
 Чтобы предоставить пользователям полностью автономные приложения, пакет должен содержать само приложение, все связанные с ним библиотеки, контент, среду выполнения Mono и необходимые сборки библиотеки базовых классов (BCL). Например, для стандартного шаблона "Hello World" содержимое полного пакета сборки будет выглядеть так:
 
-[ ![Размер пакета до применения компоновщика](app-package-size-images/hello-world-package-size-before-linker.png)](app-package-size-images/hello-world-package-size-before-linker.png)
+[![Размер пакета до применения компоновщика](app-package-size-images/hello-world-package-size-before-linker.png)](app-package-size-images/hello-world-package-size-before-linker.png#lightbox)
 
 15,8 МБ — это слишком большой размер. Основной проблемой здесь стали библиотеки BCL, так как они включают mscorlib, System и Mono.Android с большим количеством важных для работы приложения компонентов. Но значительная часть их функциональности, скорее всего, не нужна в вашем приложении. Было бы неплохо исключить эти ненужные компоненты.
 
 При сборке приложения для распространения следует применить дополнительный процесс "компоновки", который проверяет приложение и удаляет любой неиспользуемый код. Примерно такой же процесс [сборщик мусора](~/android/internals/garbage-collection.md) выполняет для динамической памяти. Разница лишь в том, что он работает с объектами, а компоновщик — с кодом приложения. Например, в System.dll существует целое пространство имен для отправки и получения электронной почты. Если приложение не использует эти возможности, код для них просто зря занимает место в приложении. Запустив компоновщик для приложения Hello World, мы получим новую версию пакета:
 
-[ ![Размер пакета после компоновщика](app-package-size-images/hello-world-package-size-after-linker.png)](app-package-size-images/hello-world-package-size-after-linker.png)
+[![Размер пакета после применения компоновщика](app-package-size-images/hello-world-package-size-after-linker.png)](app-package-size-images/hello-world-package-size-after-linker.png#lightbox)
 
 Как видите, этот процесс значительно сокращает объем BCL, удаляя все ненужное. Обратите внимание, что конечный размер BCL всегда зависит от того, что используется в приложении. Давайте рассмотрим приложение ApiDemo с более серьезной функциональностью. Здесь хорошо видно, что компонент BCL занимает больше места, чем в примере Hello World, поскольку ApiDemo нужно больше функций из него:
 
@@ -51,7 +51,7 @@ Xamarin.Android использует разные механизмы, чтобы
 
 При первой отладке на устройстве мы скопируем два больших пакета: *Общая среда выполнения* и *Общая платформа*. Общая среда выполнения содержит среду выполнения Mono и BCL, а общая платформа — конкретные сборки для уровня API Android:
 
-[ ![Размер пакета общей среды выполнения](app-package-size-images/shared-runtime-package-size.png)](app-package-size-images/shared-runtime-package-size.png)
+[![Размер пакета общей среды выполнения](app-package-size-images/shared-runtime-package-size.png)](app-package-size-images/shared-runtime-package-size.png#lightbox)
 
 Этот процесс занимает немало времени, но зато эти компоненты копируются только один раз и мы сможем использовать их снова при последующей отладке приложения. И в самом конце мы быстро копируем основное приложение, размер которого невелик:
 

@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 66992aabdb98c83e52ab555dafa65ae8ac7fb47b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e958b4e48767e0c2246b9f237c681fbc362f6b00
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="introduction-to-xamarinios-for-visual-studio"></a>Введение в Xamarin.iOS для Visual Studio
 
@@ -53,15 +53,15 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 Подключиться к узлу сборки Mac можно с помощью значка на панели инструментов Visual Studio (при условии, что приложение iOS открыто):
 
-[ ![](introduction-to-xamarin-ios-for-visual-studio-images/xma1a.png "Значок подключения к Mac")](introduction-to-xamarin-ios-for-visual-studio-images/xma1a.png)
+[![](introduction-to-xamarin-ios-for-visual-studio-images/xma1a.png "Значок подключения к Mac")](introduction-to-xamarin-ios-for-visual-studio-images/xma1a.png#lightbox)
 
 Вы также можете выбрать в Visual Studio пункт меню **Сервис > Параметры**, а затем выбрать элемент **Xamarin > Параметры iOS**:
 
- [ ![](introduction-to-xamarin-ios-for-visual-studio-images/xma-ios-options.png "Параметры iOS")](introduction-to-xamarin-ios-for-visual-studio-images/xma-ios-options.png)
+ [![](introduction-to-xamarin-ios-for-visual-studio-images/xma-ios-options.png "Параметр iOS")](introduction-to-xamarin-ios-for-visual-studio-images/xma-ios-options.png#lightbox)
 
 Вы можете изменить узел сборки Mac, нажав кнопку **Найти Xamarin Mac Agent**. Появится следующий экран, на котором можно изменить узел сборки Mac:
 
-  [ ![](introduction-to-xamarin-ios-for-visual-studio-images/xma-dialog.png "Диалоговое окно "Xamarin Mac Agent"")](introduction-to-xamarin-ios-for-visual-studio-images/xma-dialog.png)
+  [![](introduction-to-xamarin-ios-for-visual-studio-images/xma-dialog.png "Диалоговое окно Xamarin Mac Agent")](introduction-to-xamarin-ios-for-visual-studio-images/xma-dialog.png#lightbox)
 
 
 ## <a name="visual-studio-toolbar-overview"></a>Обзор панели инструментов Visual Studio
@@ -75,7 +75,7 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 Элементы управления, имеющие отношение к разработке приложений iOS с помощью Xamarin, обведены красным:
 
- [ ![](introduction-to-xamarin-ios-for-visual-studio-images/03.png "Элементы управления, имеющие отношение к разработке приложений iOS с помощью Xamarin, обведены красным")](introduction-to-xamarin-ios-for-visual-studio-images/03.png "Элементы управления, имеющие отношение к разработке приложений iOS с помощью Xamarin, обведены красным")
+ [![](introduction-to-xamarin-ios-for-visual-studio-images/03.png "Элементы управления, имеющие отношение к разработке приложений с помощью Xamarin iOS, обведены красным")](introduction-to-xamarin-ios-for-visual-studio-images/03.png#lightbox "Элементы управления, имеющие отношение к разработке приложений с помощью Xamarin iOS, обведены красным")
 
 -  **Запуск** — запускает отладку или выполнение приложения на выбранной платформе. Должен быть подключен компьютер Mac (см. индикатор состояния на панели инструментов iOS).
 -  **Конфигурации решения** — позволяет выбрать нужную конфигурацию (например, отладка или выпуск).
@@ -86,7 +86,7 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 Панель инструментов iOS выглядит антологичным образом во всех версиях Visual Studio. Она показана ниже:
 
-[ ![](introduction-to-xamarin-ios-for-visual-studio-images/iostoolbar.png "Панель инструментов iOS")](introduction-to-xamarin-ios-for-visual-studio-images/iostoolbar.png)
+[![](introduction-to-xamarin-ios-for-visual-studio-images/iostoolbar.png "Панель инструментов iOS")](introduction-to-xamarin-ios-for-visual-studio-images/iostoolbar.png#lightbox)
 
 Далее описывается каждый ее элемент:
 
@@ -105,25 +105,25 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 На снимке экрана ниже показаны доступные окна вывода, которые могут отличаться в зависимости от типа проекта:
 
-[ ![](introduction-to-xamarin-ios-for-visual-studio-images/output-sml.png "Доступные окна вывода")](introduction-to-xamarin-ios-for-visual-studio-images/output-large.png)
+[![](introduction-to-xamarin-ios-for-visual-studio-images/output-sml.png "Доступные окна вывода")](introduction-to-xamarin-ios-for-visual-studio-images/output-large.png#lightbox)
 
 - **Xamarin** — содержит сведения, относящиеся исключительно к Xamarin, например о подключении к компьютеру Mac и состоянии активации.
 
-    [ ![](introduction-to-xamarin-ios-for-visual-studio-images/output3-sml.png "Сведения, относящиеся исключительно к Xamarin, например о подключении к компьютеру Mac и состоянии активации")](introduction-to-xamarin-ios-for-visual-studio-images/output3-large.png)
+    [![](introduction-to-xamarin-ios-for-visual-studio-images/output3-sml.png "Сведения, относящиеся исключительно к Xamarin, например о подключении к компьютеру Mac и состоянии активации")](introduction-to-xamarin-ios-for-visual-studio-images/output3-large.png#lightbox)
 
 - **Диагностика Xamarin** — содержит более подробные сведения о проекте Xamarin, например о взаимодействии с Android.
 
-    [ ![](introduction-to-xamarin-ios-for-visual-studio-images/output4-sml.png "Подробные сведения о проекте Xamarin")](introduction-to-xamarin-ios-for-visual-studio-images/output3-large.png)
+    [![](introduction-to-xamarin-ios-for-visual-studio-images/output4-sml.png "Подробные сведения о проекте Xamarin")](introduction-to-xamarin-ios-for-visual-studio-images/output3-large.png#lightbox)
 
 Другие области вывода Visual Studio, такие как "Отладка" и "Сборка", также доступны в представлении "Вывод" и служат для отображения выходных данных отладки и MSBuild:
 
 -  **Отладка**
 
-    [ ![](introduction-to-xamarin-ios-for-visual-studio-images/output2-sml.png "Выходные данные отладки")](introduction-to-xamarin-ios-for-visual-studio-images/output2-large.png)
+    [![](introduction-to-xamarin-ios-for-visual-studio-images/output2-sml.png "Выходные данные отладки")](introduction-to-xamarin-ios-for-visual-studio-images/output2-large.png#lightbox)
 
 - **Сборка** & **Порядок сборки**
 
-    [ ![](introduction-to-xamarin-ios-for-visual-studio-images/output1-sml.png "Выходные данные MSBuild")](introduction-to-xamarin-ios-for-visual-studio-images/output1-large.png)
+    [![](introduction-to-xamarin-ios-for-visual-studio-images/output1-sml.png "Выходные данные MSBuild")](introduction-to-xamarin-ios-for-visual-studio-images/output1-large.png#lightbox)
 
 
 ## <a name="ios-project-properties"></a>Свойства проекта iOS

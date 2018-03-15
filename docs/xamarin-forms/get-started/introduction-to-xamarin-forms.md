@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/02/2016
-ms.openlocfilehash: 593e720e4a6125e2ef4a1c9488186cb2c04dcd66
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: be4b0c907774c33dfcd1818da167acb2dc3b04dd
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="an-introduction-to-xamarinforms"></a>Введение в Xamarin.Forms
 
@@ -45,7 +45,7 @@ Xamarin.Forms позволяет быстро разрабатывать про�
 
 В Visual Studio для Mac и Visual Studio на основе шаблона приложения Xamarin.Forms по умолчанию создается простейшее возможное решение Xamarin.Forms, которое отображает текст для пользователя. При запуске этого приложения оно должно выглядеть примерно так, как показано на снимках экрана ниже:
 
-[ ![](introduction-to-xamarin-forms-images/image05-sml.png "Приложение Xamarin.Forms по умолчанию")](introduction-to-xamarin-forms-images/image05.png "Приложение Xamarin.Forms по умолчанию")
+[![](introduction-to-xamarin-forms-images/image05-sml.png "Приложение Xamarin.Forms по умолчанию")](introduction-to-xamarin-forms-images/image05.png#lightbox "Приложение Xamarin.Forms по умолчанию")
 
 Каждый экран на снимках экрана соответствует объекту *Page* в Xamarin.Forms. Класс [`Page`](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/) представляет *действие* в Android, *контроллер представления* в iOS или *страницу* в универсальной платформе Windows (UWP). В представленном примере на снимках экрана выше создается объект [`ContentPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/), который служит для отображения элемента [`Label`](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/).
 
@@ -249,7 +249,7 @@ public class StackLayoutExample : ContentPage
 
 По умолчанию макет [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) предполагает вертикальную ориентацию, как показано на следующих снимках экрана:
 
-[ ![](introduction-to-xamarin-forms-images/image09-sml.png "Вертикальный макет StackLayout")](introduction-to-xamarin-forms-images/image09.png "Вертикальный макет StackLayout")
+[![](introduction-to-xamarin-forms-images/image09-sml.png "Вертикальный макет StackLayout")](introduction-to-xamarin-forms-images/image09.png#lightbox "Вертикальный макет StackLayout")
 
 Ориентацию макета [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) можно изменить на горизонтальную, как показано в следующем примере кода XAML:
 
@@ -286,7 +286,7 @@ public class StackLayoutExample: ContentPage
 
 На следующих снимках экрана показан получившийся макет:
 
-[ ![](introduction-to-xamarin-forms-images/image10-sml.png "Горизонтальный макет StackLayout")](introduction-to-xamarin-forms-images/image10.png "Горизонтальный макет StackLayout")
+[![](introduction-to-xamarin-forms-images/image10-sml.png "Горизонтальный макет StackLayout")](introduction-to-xamarin-forms-images/image10.png#lightbox "Горизонтальный макет StackLayout")
 
 Размеры элементов управления можно задать с помощью свойств `HeightRequest` и `WidthRequest`, как показано в следующем примере кода XAML:
 
@@ -329,7 +329,7 @@ Content = new StackLayout
 
 На следующих снимках экрана показан получившийся макет:
 
-[ ![](introduction-to-xamarin-forms-images/image11-sml.png "Горизонтальный макет StackLayout с LayoutOptions")](introduction-to-xamarin-forms-images/image11.png "Горизонтальный макет StackLayout с LayoutOptions")
+[![](introduction-to-xamarin-forms-images/image11-sml.png "Горизонтальный макет StackLayout с LayoutOptions")](introduction-to-xamarin-forms-images/image11.png#lightbox "Горизонтальный макет StackLayout с LayoutOptions")
 
 Дополнительные сведения о классе [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) см. в статье [StackLayout](~/xamarin-forms/user-interface/layouts/stack-layout.md).
 

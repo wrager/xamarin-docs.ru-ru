@@ -3,16 +3,17 @@ title: "Начало работы с iOS"
 description: "От Hello World к Hello App Store"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 13FCAE14-E73D-C1A4-1D22-A433AD827C07
+ms.assetid: FA802CCF-3BA4-4F26-A7BF-FBB7D0AA889B
 ms.technology: xamarin-ios
+ms.custom: xamu-video
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 11/23/2016
-ms.openlocfilehash: 1c59a67a87087a821339e98bcdcc004a342e311a
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 01e4d2e42f61145f220545c832bcbaf1d8a994f1
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="getting-started-with-ios"></a>Начало работы с iOS
 
@@ -45,3 +46,9 @@ Xamarin.iOS позволяет разработчикам создавать с�
 ##  <a name="xamarin-for-objective-c-developersobjective-c-developersindexmd"></a>[Xamarin для разработчиков Objective-C](objective-c-developers/index.md)
 
 В этой статье описано, как разработчикам Objective-C перейти на платформу Xamarin.
+
+## <a name="xamarin-university-video"></a>Видео от Xamarin University
+
+> [!VIDEO https://youtube.com/embed/1ilsDnYC-B8]
+
+**Создание первого приложения iOS с помощью Xamarin для Visual Studio, от [Xamarin University](https://university.xamarin.com)**

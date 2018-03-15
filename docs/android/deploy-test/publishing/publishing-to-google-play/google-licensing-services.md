@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 12/20/2017
-ms.openlocfilehash: f1e7e36dfa1bfe122084f0525d83f06760ca1fe0
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d4ed2df994ace7f6de5ade78577e759bb811565c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="google-licensing-services"></a>Службы лицензирования Google
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/27/2018
 
 Приложение, поддерживающее лицензирование Google, отправляет запрос службе, размещенной приложением Google Play на устройстве. Затем Google Play отправляет этот запрос на сервер лицензирования Google, который отвечает с указанием состояния лицензирования: 
 
-[ ![Схема рабочего процесса сервера лицензирования](google-licensing-services-images/gp-licensing-service-overview.png)](google-licensing-services-images/gp-licensing-service-overview.png)
+[![Схема рабочего процесса сервера лицензирования](google-licensing-services-images/gp-licensing-service-overview.png)](google-licensing-services-images/gp-licensing-service-overview.png#lightbox)
 
 Этот процесс показан на схеме выше: 
 
@@ -36,7 +36,6 @@ ms.lasthandoff: 02/27/2018
 
 Служба лицензирования Google также является ключевым компонентом файлов расширения APK (они рассматриваются далее в этом документе). Файлы расширения APK используют службы лицензирования Google для получения URL-адресов файлов расширения, которые будут скачиваться.
 
-<a name="Requirements" />
 
 ## <a name="requirements"></a>Требования
 

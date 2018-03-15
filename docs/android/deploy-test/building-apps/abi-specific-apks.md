@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: 3bc53a8230b66b88319f729d7effe8ed75f0176b
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cf2f62929df63d08add76b7fb6de404d2780b2b3
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="building-abi-specific-apks"></a>Создание пакетов APK для конкретного ABI
 
@@ -42,7 +42,6 @@ _В этом документе объясняется, как с помощью
 В конце этой статьи представлено пошаговое руководство по выполнению всех этих шагов в сценарии [Rake](http://martinfowler.com/articles/rake.html).
 
 
-<a name="Setting_android_versionCode" />
 
 ### <a name="creating-the-version-code-for-the-apk"></a>Создание кода версии для APK
 
@@ -67,7 +66,7 @@ Google рекомендует соблюдать определенные пра
 
 На следующей схеме показано положение каждого элемента кода из списка выше.
 
-[![Схема формата для кода версии из восьми цифр с цветовым кодированием](abi-specific-apks-images/image00.png)](abi-specific-apks-images/image00.png)
+[![Схема формата для кода версии из восьми цифр с цветовым кодированием](abi-specific-apks-images/image00.png)](abi-specific-apks-images/image00.png#lightbox)
 
 
 Google Play будет доставлять на устройства правильные пакеты APK, используя конфигурацию `versionCode` и APK. На устройство всегда доставляется APK с самым большим кодом версии. Для примера предположим, что у приложения есть три пакета APK с указанными здесь кодами версий.
@@ -81,14 +80,13 @@ Google Play будет доставлять на устройства прави
 Теперь разработчик создает новые функции и (или) исправляет ошибки в версии для x86, переходя при этом на более новый API (API уровня 19), и назначает этой версии номер 500. Теперь `versionCode` будет иметь новое значение 61923500, а версии для armeabi и armeabi-v7a остаются без изменений. К этому моменту сформировались следующие коды версий.
 
 -  11413456: номер ABI — `armeabi`; уровень API — 14; экраны от малого до большого размеров; имя версии — 456.
--  21423457 : номер ABI — `armeabi-v7a`; уровень API — 14; экраны нормального или большого размеров; имя версии — 457.61923500 : номер ABI — `x86`; уровень API — 19; экраны обычного или большого размеров; имя версии — 500.
--  61923500 - The ABI is  <ph id="ph1">`x86`</ph> ; targetting API level 19; normal <ph id="ph2">&amp;amp;</ph> large screens; with a version name of 500.
+-  21423457 : номер ABI — `armeabi-v7a`; уровень API — 14; экраны нормального или большого размеров; имя версии — 457.
+-  61923500 : номер ABI — `x86`; уровень API — 19; экраны обычного или большого размеров; имя версии — 500.
 
 
 Разработчику может потребоваться немало усилий, чтобы вручную отслеживать все эти версии. Процесс вычисления правильных значений `android:versionCode` и сборки APK следует автоматизировать.
 Пример такой автоматизации будет рассмотрен в пошаговом руководстве в конце этой статьи.
 
-<a name="CreatingAndroidManifest" />
 
 ### <a name="create-a-temporary-androidmanifestxml"></a>Создание временного файла AndroidManifest.XML
 
@@ -123,7 +121,6 @@ Google Play будет доставлять на устройства прави
 -   `<CS_PROJ FILE>` &ndash; — обозначает путь к файлу `.csproj` для проекта Xamarin.Android.
 
 
-<a name="SignAndZipAlign" />
 
 ### <a name="sign-and-zipalign-the-apk"></a>Подписывание пакета APK и оптимизация для архива
 
@@ -139,7 +136,6 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore <PATH/TO/KEYSTO
 zipalign -f -v 4 <SIGNED_APK_TO_ZIPALIGN> <PATH/TO/ZIP_ALIGNED.APK>
 ```
 
-<a name="Automating_APK_Creation_With_Rake" />
 
 ## <a name="automating-apk-creation-with-rake"></a>Автоматизация создания APK с помощью Rake
 
@@ -174,11 +170,11 @@ $ rake build
 
 Когда выполнение задачи Rake завершится, у вас будет три папки `bin` с файлом `xamarin.helloworld.apk`. На следующем снимке экрана показаны все эти папки и их содержимое:
 
-[![Расположение папок для каждой платформы с файлами xamarin.helloworld.apk](abi-specific-apks-images/image01.png)](abi-specific-apks-images/image01.png)
+[![Расположение папок для каждой платформы с файлами xamarin.helloworld.apk](abi-specific-apks-images/image01.png)](abi-specific-apks-images/image01.png#lightbox)
 
 
 > [!NOTE]
-> **Примечание.** Процесс сборки, описанный в этом руководстве, можно реализовать в большинстве разных систем сборки. Например, такой режим точно поддерживают [PowerShell](http://technet.microsoft.com/en-ca/scriptcenter/powershell.aspx) / [psake](https://github.com/psake/psake) и [Fake](http://fsharp.github.io/FAKE/), но мы пока не можем предложить для них готовых примеров.
+> Процесс сборки, описанный в этом руководстве, можно реализовать во многих системах сборки. Например, такой режим точно поддерживают [PowerShell](http://technet.microsoft.com/en-ca/scriptcenter/powershell.aspx) / [psake](https://github.com/psake/psake) и [Fake](http://fsharp.github.io/FAKE/), но мы пока не можем предложить для них готовых примеров.
 
 
 ## <a name="summary"></a>Сводка

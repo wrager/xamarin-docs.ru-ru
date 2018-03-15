@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: a113a386f1312253fda8913cea3cb608a65e1061
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f7c743bab2a6acb3dcd57ebca207957f983e0c0f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="unit-testing"></a>Модульное тестирование
 
@@ -119,15 +119,15 @@ namespace Fixtures {
 
 Средство выполнения тестов позволяет просмотреть, какие тесты регистрируются, и по отдельности выбрать, какие тесты могут выполняться.
 
-[ ![](touch.unit-images/02.png "Список зарегистрированных тестов")](touch.unit-images/02.png) 
+[![](touch.unit-images/02.png "Список зарегистрированных тестов")](touch.unit-images/02.png#lightbox) 
 
-[ ![](touch.unit-images/03.png "Отдельный тест")](touch.unit-images/03.png) 
+[![](touch.unit-images/03.png "Отдельный тест")](touch.unit-images/03.png#lightbox) 
 
-[ ![](touch.unit-images/04.png "Результаты выполнения")](touch.unit-images/04.png)
+[![](touch.unit-images/04.png "Результаты выполнения")](touch.unit-images/04.png#lightbox)
 
 Можно выполнить отдельное средство тестирования, выбрав его из вложенных представлений, или выполнить все тесты, выбрав "Выполнить все". При выполнении теста по умолчанию он должен содержать один пройденный тест, один непройденный тест и один пропущенный тест. Отчет будет выглядеть следующим образом. Можно перейти непосредственно к непройденному тесту и изучить дополнительные сведения о сбое:
 
-[ ![](touch.unit-images/05.png "Пример отчета")](touch.unit-images/05.png) [ ![](touch.unit-images/06.png "Пример отчета")](touch.unit-images/06.png) [ ![](touch.unit-images/07.png "Пример отчета")](touch.unit-images/07.png)
+[![](touch.unit-images/05.png "Пример отчета")](touch.unit-images/05.png#lightbox) [![](touch.unit-images/05.png "Пример отчета")](touch.unit-images/05.png#lightbox) [![](touch.unit-images/05.png "Пример отчета")](touch.unit-images/05.png#lightbox)
 
 Можно также обратиться к окну выходных данных приложения в интегрированной среде разработки, чтобы увидеть, какие тесты выполняются, и их текущее состояние.
 

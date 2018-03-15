@@ -7,17 +7,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 99f66fd0d23f14224bcd915ef7d1c6d81367f173
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 412e65e074a171666a0ed9b61e347c4a16ec366b
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="publishing-an-application"></a>Публикация приложения
 
 Вполне очевидно, что пользователи захотят использовать понравившееся им приложение. В этом разделе описано, как использовать открытое распространение приложения, созданного с помощью Xamarin.Android, по таким каналам, как электронная почта, частный веб-сервер, Google Play или Amazon App Store для Android.
 
-<a name="Overview" />
 
 ## <a name="overview"></a>Обзор
 
@@ -29,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 На следующей схеме демонстрируются действия, связанные с публикацией приложения Xamarin.Android:
 
-[ ![Блок схема сборки и развертывания](images/build-and-deploy-steps.png)](images/build-and-deploy-steps.png)
+[![Блок-схема сборки и развертывания](images/build-and-deploy-steps.png)](images/build-and-deploy-steps.png#lightbox)
 
 Как видно на схеме выше, подготовка выполняется одинаково независимо от используемого метода распространения. Существует несколько способов выпуска приложения Android для пользователей:
 
@@ -49,7 +48,7 @@ ms.lasthandoff: 02/27/2018
 
 Google Play является, пожалуй, самым всеобъемлющим и популярным магазином для приложений Android. В Google Play пользователи могут находить, скачивать, оценивать и оплачивать приложения, щелкнув один значок на устройстве или на компьютере. Google Play предоставляет средства для анализа объемов продаж и тенденций рынка, а также для отслеживания устройств и пользователей, которые могут скачивать приложения. Ниже показан снимок экрана Google Play, запущенного на устройстве Android:
 
-[ ![Снимок экрана Google Play](images/google-play-app.png)](images/google-play-app.png)
+[![Снимок экрана Google Play](images/google-play-app.png)](images/google-play-app.png#lightbox)
 
 В этом разделе приводятся сведения об отправке приложения в магазин, например в Google Play, вместе с соответствующими рекламными материалами. Здесь дается объяснение файлам расширения APK, рассматриваются их назначение и принципы работы. В разделе также описаны службы лицензирования Google. И, наконец, представлены альтернативные способы распространения, включая использование веб-сервера HTTP, простое распространение по электронной почте и через Amazon App Store для Android.
 

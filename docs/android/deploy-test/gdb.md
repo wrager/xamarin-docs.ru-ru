@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/05/2018
-ms.openlocfilehash: ee98e19ce59b8a61040941d9851b8fbf965c3b17
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 55d72a49f90095a33577279d018e1696dda8fc42
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="gdb"></a>GDB
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 02/27/2018
 В Xamarin.Android версии 4.10 добавлена частичная поддержка применения `gdb` через целевое устройство MSBuild `_Gdb`. 
 
 > [!NOTE]
-> **Примечание.** Для поддержки `gdb` необходимо установить Android NDK.
+> Для поддержки `gdb` необходимо установить Android NDK.
 
 `gdb` можно использовать тремя способами.
 
@@ -59,7 +59,7 @@ $ /Library/Frameworks/Mono.framework/Commands/xbuild /t:_Gdb *.csproj
 
 
 > [!NOTE]
-> **Примечание.** Содержимое каталога `gdb-symbols` связано с целевым устройством Android, в который вы выполняете развертывание, и не будет автоматически заменяться при изменении целевого устройства. (Можно считать это поведение ошибкой.) Изменив целевое устройство Android, этот каталог необходимо удалить вручную.
+> Содержимое каталога `gdb-symbols` связано с целевым устройством Android, в котором вы выполняете развертывание, и не будет автоматически заменяться при изменении целевого устройства. (Можно считать это поведение ошибкой.) Изменив целевое устройство Android, этот каталог необходимо удалить вручную.
 
 И наконец, скопируйте созданную команду `gdb` и выполните ее в вашей оболочке:
 

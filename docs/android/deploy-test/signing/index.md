@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/26/2018
-ms.openlocfilehash: 20a28d475e58a58a98abe21203e9841b7824fe48
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 56d6eea891de3aef8efbe1a971ce3af96ffd8fab
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="signing-the-android-application-package"></a>Подписывание пакета приложения для Android
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/27/2018
 
 В разделе [Архивирование для публикации](~/android/deploy-test/release-prep/index.md#archive) в диалоговом окне **Канал распространения** предлагается два варианта распространения. Выберите **Прямое**:
 
-[ ![Диалоговое окно "Канал распространения"](images/vs/01-distribution-channel-sml.png)](images/vs/01-distribution-channel.png)
+[![Диалоговое окно "Канал распространения"](images/vs/01-distribution-channel-sml.png)](images/vs/01-distribution-channel.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/27/2018
 
 В разделе [Архивирование для публикации](~/android/deploy-test/release-prep/index.md#archive) в диалоговом окне **Подписать и распространить...** предлагается два варианта распространения. Выберите **Прямое** и нажмите **Далее**:
 
-[ ![Диалоговое окно "Подписать и распространить"](images/xs/01-select-ad-hoc-sml.png)](images/xs/01-select-ad-hoc.png)
+[![Диалоговое окно "Подписать и распространить"](images/xs/01-select-ad-hoc-sml.png)](images/xs/01-select-ad-hoc.png#lightbox)
 
 -----
 
@@ -46,15 +46,15 @@ ms.lasthandoff: 02/27/2018
 
 Можно использовать существующий сертификат, нажав кнопку **Импорт**, и затем продолжив с пункта [Подписывание пакета APK](#signapkvs). Если у вас еще нет сертификата, нажмите кнопку **+** для создания нового сертификата:
 
-[ ![Удостоверение подписывания при прямой публикации](images/vs/02-ad-hoc-signing-identity-vs-sml.png)](images/vs/02-ad-hoc-signing-identity-vs.png)
+[![Удостоверение подписывания при прямой публикации](images/vs/02-ad-hoc-signing-identity-vs-sml.png)](images/vs/02-ad-hoc-signing-identity-vs.png#lightbox)
 
 Появится диалоговое окно **Создание хранилища ключей Android**, создайте при помощи этого окна новый сертификат подписи, который затем можно будет использовать для подписывания приложения Android. Введите необходимые сведения в этом диалоговом окне (выделено красным), как это показано на рисунке:
 
-[ ![Диалоговое окно "Создание хранилища ключей Android"](images/vs/03-create-android-key-store-vs-sml.png)](images/vs/03-create-android-key-store-vs.png)
+[![Диалоговое окно "Создание хранилища ключей Android"](images/vs/03-create-android-key-store-vs-sml.png)](images/vs/03-create-android-key-store-vs.png#lightbox)
 
 На следующем рисунке приведен пример сведений, которые необходимо ввести в этом окне. Нажмите **Создать** для создания нового сертификата:
 
-[ ![Создание нового сертификата](images/vs/04-key-store-example-vs-sml.png)](images/vs/04-key-store-example-vs.png)
+[![Создание сертификата](images/vs/04-key-store-example-vs-sml.png)](images/vs/04-key-store-example-vs.png#lightbox)
 
 Полученное хранилище ключей находится в следующем расположении:
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/27/2018
 **C:\\Users\\*ИМЯ_ПОЛЬЗОВАТЕЛЯ*\\AppData\\Local\\Xamarin\\Mono for Android\\chimp\\chimp.keystore**
 
 > [!NOTE]
-> **Примечание.** Обязательно сохраните файл полученного хранилища ключей в безопасном расположении (оно не указано в этом руководстве). Если вы потеряете ваш файл хранилища ключей (например, если вы сменили компьютер или переустановили Windows), то вы не сможете подписать приложение тем же сертификатом, что и предыдущие версии.
+> Обязательно сохраните резервную копию файла полученного хранилища ключей в безопасном месте &ndash; оно не указано в этом руководстве. Если вы потеряете ваш файл хранилища ключей (например, если вы сменили компьютер или переустановили Windows), то вы не сможете подписать приложение тем же сертификатом, что и предыдущие версии.
 
 Подробные сведения о хранилище сертификата см. в разделе [Отображение MD5 и SHA1 сигнатур хранилища ключей](~/android/deploy-test/signing/keystore-signature.md).
 
@@ -73,11 +73,11 @@ ms.lasthandoff: 02/27/2018
 
 После нажатия кнопки **Прямое** Visual Studio для Mac откроет диалоговое окно **Удостоверение подписывания Android**. Для публикации .APK-файла его обязательно нужно подписать ключом подписи (также называемым сертификатом). Если сертификат уже существует, то для его импорта нажмите кнопку **Импорт существующего ключа** и перейдите к разделу [Подписывание пакета APK](#signapkxs) В ином случае нажмите кнопку **Создать новый ключ** для создания нового сертификата: 
 
-[ ![Диалоговое окно "Удостоверение подписывания Android"](images/xs/02-android-signing-identity-sml.png)](images/xs/02-android-signing-identity.png)
+[![Диалоговое окно "Удостоверение подписывания Android"](images/xs/02-android-signing-identity-sml.png)](images/xs/02-android-signing-identity.png#lightbox)
 
 Диалоговое окно **Создание нового сертификата** используется для создания нового сертификата подписи, который можно использовать для подписания приложений Android. После ввода всех необходимых сведений нажмите кнопку **OK**:
 
-[ ![Диалоговое окно "Создание нового сертификата"](images/xs/03-create-new-certificate-sml.png)](images/xs/03-create-new-certificate.png)
+[![Диалоговое окно "Создание нового сертификата"](images/xs/03-create-new-certificate-sml.png)](images/xs/03-create-new-certificate.png#lightbox)
 
 Полученное хранилище ключей находится в следующем расположении:
 
@@ -89,14 +89,13 @@ ms.lasthandoff: 02/27/2018
 
 
 > [!NOTE]
-> **Примечание.** Обязательно сохраните файл полученного хранилища ключей в безопасном расположении (оно не указано в этом руководстве). Если вы потеряете ваш файл хранилища ключей (например, если вы сменили компьютер или переустановили Mac), то вы не сможете подписать приложение тем же сертификатом, что и предыдущие версии.
+> Обязательно сохраните резервную копию файла полученного хранилища ключей в безопасном месте &ndash; оно не указано в этом руководстве. Если вы потеряете ваш файл хранилища ключей (например, если вы сменили компьютер или переустановили Mac), то вы не сможете подписать приложение тем же сертификатом, что и предыдущие версии.
 
 Подробные сведения о хранилище сертификата см. в разделе [Отображение MD5 и SHA1 сигнатур хранилища ключей](~/android/deploy-test/signing/keystore-signature.md).
 
 -----
 
 <a name="signapkvs" />
-<a name="signingxs" />
 
 ## <a name="sign-the-apk"></a>Подписывание пакета APK
 
@@ -105,24 +104,24 @@ ms.lasthandoff: 02/27/2018
 При нажатии кнопки **Создать** новое хранилище ключей (содержащее новый сертификат) будет сохранено и отобразится в списке **Удостоверение подписывания**, как это показано на следующем рисунке. Для публикации приложения в Google Play нажмите **Отмена** и перейдите к разделу [Публикация в Google Play](~/android/deploy-test/publishing/publishing-to-google-play/index.md).
 Для публикации *напрямую* выберите удостоверение подписывания и нажмите **Сохранить как**, чтобы опубликовать приложение для независимого распространения. Например, на приведенном ниже рисунке выбрано созданное ранее удостоверение подписывания **chimp**:
 
-[ ![Пример удостоверения подписывания](images/vs/05-save-as-vs-sml.png)](images/vs/05-save-as-vs.png)
+[![Пример удостоверения подписывания](images/vs/05-save-as-vs-sml.png)](images/vs/05-save-as-vs.png#lightbox)
 
 Затем **Диспетчер архивов** отобразит ход выполнения операции. После завершения процесса публикации для выбора места сохранения сформированного .APK-файла откроется диалоговое окно **Сохранить как**:
 
-[ ![Диалоговое окно "Сохранить как"](images/vs/06-save-as-dialog-vs-sml.png)](images/vs/06-save-as-dialog-vs.png)
+[![Диалоговое окно "Сохранить как"](images/vs/06-save-as-dialog-vs-sml.png)](images/vs/06-save-as-dialog-vs.png#lightbox)
 
 Перейдите в желаемое расположение для сохранения и нажмите **Сохранить**. Если неизвестен пароль ключа, откроется диалоговое окно **Пароль для подписывания** для ввода пароля выбранного сертификата:
 
-[ ![Диалоговое окно "Пароль для подписывания"](images/vs/07-signing-password-vs-sml.png)](images/vs/07-signing-password-vs.png)
+[![Диалоговое окно "Пароль для подписывания"](images/vs/07-signing-password-vs-sml.png)](images/vs/07-signing-password-vs.png#lightbox)
 
 После подписывания файла нажмите **Открыть папку**:
 
-[ ![Кнопка "Открыть папку"](images/vs/08-open-folder-vs-sml.png)](images/vs/08-open-folder-vs.png)
+[![Кнопка "Открыть папку"](images/vs/08-open-folder-vs-sml.png)](images/vs/08-open-folder-vs.png#lightbox)
 
 В результате проводник Windows откроет папку, содержащую сформированный APK-файл. На этом этапе Visual Studio завершает компиляцию приложения Xamarin.Android в APK-файл, готовый к распространению.
 На рисунке ниже изображен пример готового к публикации приложения **MyApp.MyApp.apk**:
 
-[ ![APK-файл в проводнике Windows](images/vs/09-generated-app-vs-sml.png)](images/vs/09-generated-app-vs.png)
+[![APK-файл в проводнике Windows](images/vs/09-generated-app-vs-sml.png)](images/vs/09-generated-app-vs.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -130,11 +129,11 @@ ms.lasthandoff: 02/27/2018
 Как мы видим, новый сертификат был добавлен в хранилище ключей. Для публикации приложения в Google Play нажмите **Отмена** и перейдите к разделу [Публикация в Google Play](~/android/deploy-test/publishing/publishing-to-google-play/index.md).
 В противоположном случае нажмите **Далее** для публикации приложения *напрямую* (для независимого распространения), как это показано в следующем примере:
 
-[ ![Диалоговое окно "Подписать и распространить"](images/xs/04-select-identity-sml.png)](images/xs/04-select-identity.png)
+[![Диалоговое окно "Подписать и распространить"](images/xs/04-select-identity-sml.png)](images/xs/04-select-identity.png#lightbox)
 
 Диалоговое окно **Опубликовать напрямую** перед публикацией отображает сводку по подписанному приложению. Проверьте правильность следующих сведений и нажмите **Опубликовать**.
 
-[ ![Диалоговое окно "Опубликовать напрямую"](images/xs/05-publish-ad-hoc-sml.png)](images/xs/05-publish-ad-hoc.png)
+[![Диалоговое окно "Опубликовать напрямую"](images/xs/05-publish-ad-hoc-sml.png)](images/xs/05-publish-ad-hoc.png#lightbox)
 
 С помощью диалогового окна **Выходной APK-файл** укажите путь для сохранения файла. Нажмите кнопку **Сохранить**.
 
@@ -146,18 +145,17 @@ ms.lasthandoff: 02/27/2018
 
 APK-файл подписан сертификатом и сохранен по указанному пути. Нажмите **Показать в Finder**:
 
-[ ![Диалоговое окно "Публикация выполнена"](images/xs/08-app-is-ready-sml.png)](images/xs/08-app-is-ready.png)
+[![Диалоговое окно "Публикация выполнена"](images/xs/08-app-is-ready-sml.png)](images/xs/08-app-is-ready.png#lightbox)
 
 В результате откроется Finder с расположением подписанного APK-файла:
 
-[ ![APK-файл в Finder](images/xs/09-show-in-finder-sml.png)](images/xs/09-show-in-finder.png)
+[![APK-файл в Finder](images/xs/09-show-in-finder-sml.png)](images/xs/09-show-in-finder.png#lightbox)
 
 APK-файл готов к копированию из Finder в место назначения. Перед распространением рекомендуется установить APK-файл на устройство с Android и проверить работоспособность приложения. Дополнительные сведения о *прямой публикации* APK-файлов см. в разделе [Независимая публикация](~/android/deploy-test/publishing/publishing-independently.md).
 
 -----
 
 
-<a name="nextsteps" />
 
 ## <a name="next-steps"></a>Следующие шаги
 

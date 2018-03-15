@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/23/2017
-ms.openlocfilehash: e19949c3a2efa4a5ddb17393d58c4430662254eb
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2ee98b48feb8bc1e3431d796a7ca07a6c2e74790
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="app-store-distribution"></a>Распространение через App Store
 
@@ -48,13 +48,13 @@ _Этот документ описывает требования для рас
 3. Нажмите кнопку **+**, чтобы создать новый сертификат.
 4. В разделе *Production* (Производство) установите флажок **App Store and Ad Hoc** (Магазин приложений и специальный):
 
-    [ ![](images/createcertmanually01.png "Выбор "App Store and Ad Hoc" (Магазин приложений и специальный)")](images/createcertmanually01.png)
+    [![](images/createcertmanually01.png "Выбор "App Store или напрямую"")](images/createcertmanually01.png#lightbox)
 5. Нажмите кнопку **Continue** (Продолжить) и следуйте инструкциям, чтобы создать запрос подписи сертификата через доступ к цепочке ключей:
 
-    [ ![](images/createcertmanually02.png "Создание запроса подписи сертификата через доступ к цепочке ключей")](images/createcertmanually02.png)
+    [![](images/createcertmanually02.png "Создание запроса подписи сертификата через доступ к цепочке ключей")](images/createcertmanually02.png#lightbox)
 6. После создания запроса согласно инструкции нажмите кнопку **Continue** (Продолжить) и отправьте его в центр участников:
 
-    [ ![](images/createcertmanually03.png "Отправка запроса подписи сертификата в центр участников")](images/createcertmanually03.png)
+    [![](images/createcertmanually03.png "Отправка запроса подписи сертификата в центр участников")](images/createcertmanually03.png#lightbox)
 
 7. Нажмите **Generate** (Создать), чтобы создать сертификат.
 8. Наконец, **скачайте** готовый сертификат и дважды щелкните файл, чтобы установить его.
@@ -62,11 +62,11 @@ _Этот документ описывает требования для рас
 
 Можно также запросить сертификат в Xcode через диалоговое окно "Preferences" (Параметры). Выполните указанные ниже действия:
 
-1.   Выберите свою команду и нажмите **Manage Certificates** (Управление сертификатами): [ ![](images/selectteam.png "Выбор команды и просмотр сведений")](images/selectteam.png)
+1.   Выберите свою команду и нажмите **Управление сертификатами…**: [![](images/selectteam.png "Выбор команды и просмотр сведений")](images/selectteam.png#lightbox)
 
-2.   Затем нажмите кнопку **Create** (Создать) рядом с полем **iOS Distribution Certificate** (Сертификат распространения iOS): [ ![](images/selectcert.png "Создание сертификата соответствия iOS")](images/selectcert.png)
+2.   Затем нажмите кнопку **Создать** рядом с полем **Сертификат распространения iOS**: [![](images/selectcert.png "Создание сертификата распространения iOS")](images/selectcert.png#lightbox)
 
-3.   В зависимости от привилегий вашей команды будет создано удостоверение подписывания, как показано ниже, или вам придется ждать, пока администратор или агент команды утвердит его: [ ![](images/generated.png "Создание удостоверения подписывания и отображение диалогового окна")](images/generated.png)
+3.   В зависимости от привилегий вашей команды будет создано удостоверение подписывания, как показано ниже, или вам придется ждать, пока администратор или агент команды утвердит его: [![](images/generated.png "Создание удостоверения подписывания и отображение диалогового окна")](images/generated.png#lightbox)
 
 
 <a name="creatingprofile" />
@@ -95,27 +95,27 @@ _Этот документ описывает требования для рас
 
 1. Вернитесь на портал подготовки Apple и выберите **Provisioning** > **Distribution** (Подготовка > Распространение):
 
-    [ ![](images/distribute01.png "Выбор элемента "Provisioning" (Подготовка) > "Distribution" (Распространение)")](images/distribute01.png)
+    [![](images/distribute01.png "Выбор элемента "Подготовка > Распространение"")](images/distribute01.png#lightbox)
 
 2. Нажмите кнопку **+** и выберите тип профиля распространения, который нужно создать для **App Store**:
 
-    [ ![](images/distribute02.png "Создание профиля распространения через App Store")](images/distribute02.png)
+    [![](images/distribute02.png "Создание профиля распространения через App Store")](images/distribute02.png#lightbox)
 
 3. Нажмите кнопку **Continue** (Продолжить) и выберите из раскрывающегося списка ИД приложения, для которого необходимо создать профиль распространения:
 
-    [ ![](images/distribute03.png "Выбор идентификатора приложения в раскрывающемся списке")](images/distribute03.png)
+    [![](images/distribute03.png "Выбор идентификатора приложения в раскрывающемся списке")](images/distribute03.png#lightbox)
 
 4. Нажмите кнопку **Continue** (Продолжить) и выберите сертификат, необходимый для подписи приложения:
 
-    [ ![](images/distribute04.png "Выбор сертификата, необходимого для подписи приложения")](images/distribute04.png)
+    [![](images/distribute04.png "Выбор сертификата, необходимого для подписи приложения")](images/distribute04.png#lightbox)
 
 5. Нажмите кнопку **Continue** (Продолжить) и выберите устройства iOS, на которых можно будет запускать приложение Xamarin.iOS:
 
-    [ ![](images/distribute05.png "Выбор устройств iOS, на которых можно будет запускать это приложение")](images/distribute05.png)
+    [![](images/distribute05.png "Выбор устройств iOS, на которых можно будет запускать это приложение")](images/distribute05.png#lightbox)
 
 6. Нажмите кнопку **Continue** (Продолжить) и введите **имя** нового профиля распространения:
 
-    [![](images/distribute06.png "Ввод имени нового профиля распространения")](images/distribute06.png)
+    [![](images/distribute06.png "Ввод имени нового профиля распространения")](images/distribute06.png#lightbox)
 
 7. Нажмите кнопку **Generate** (Создать), чтобы создать профиль и завершить процесс.
 

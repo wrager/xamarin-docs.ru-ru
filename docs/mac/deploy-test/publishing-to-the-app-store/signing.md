@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: d9e0bb41360185ffbe476ec5eed3a5c8c2ebf8f9
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 46d5527a33b82a795029f62900e782d644671f0d
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="sign-with-developer-id"></a>Подписывание с использованием идентификатора разработчика
 
@@ -24,24 +24,24 @@ ms.lasthandoff: 02/28/2018
 
 Чтобы создать приложение, напрямую развертываемое для пользователей (а не через Mac App Store), в **параметрах подписывания** используйте значение **Идентификатор разработчика**. Параметр "Конфигурация" должен иметь значение **Выпуск**.
 
- [ ![](signing-images/config02.png "Параметры подписывания Mac")](signing-images/config02.png)
+ [![](signing-images/config02.png "Параметры подписывания Mac")](signing-images/config02.png#lightbox)
 
 
 ## <a name="build"></a>Построить
 
 Перед выполнением сборки убедитесь, что выбрана правильная конфигурация, и в окне **Сборка Mac** выберите параметр создания пакета установки.
 
-[ ![](signing-images/config03.png "Параметры сборки")](signing-images/config03.png)
+[![](signing-images/config03.png "Параметры сборки")](signing-images/config03.png#lightbox)
 
 При сборке приложения выводится предложение об использовании обоих сертификатов:
 
- [ ![](signing-images/image57.png "Разрешить доступ к цепочке ключей")](signing-images/image57.png)
+ [![](signing-images/image57.png "Разрешить доступ к цепочке ключей")](signing-images/image57.png#lightbox)
 
- [ ![](signing-images/image58.png "Разрешить доступ к цепочке ключей")](signing-images/image58.png)
+ [![](signing-images/image58.png "Разрешить доступ к цепочке ключей")](signing-images/image58.png#lightbox)
 
 После сборки приложения щелкните проект правой кнопкой мыши и выберите команду **Открыть содержащую папку**, чтобы найти файл пакета (в каталоге `bin/Release`). В этом файле содержится установщик для приложения, поэтому его можно распространять любому пользователю macOS для установки.
 
- [ ![](signing-images/image59.png "Выбор пакета приложения в Finder")](signing-images/image59.png)
+ [![](signing-images/image59.png "Выбор пакета приложения в Finder")](signing-images/image59.png#lightbox)
 
 ## <a name="related-links"></a>Связанные ссылки
 

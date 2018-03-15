@@ -7,17 +7,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/21/2017
-ms.openlocfilehash: fec57fbeb201d55e887969c5a50baf6a76c10e17
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5e09bb1150c3cc53104b41b75a2c3d4d2db4e5ff
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="publishing-independently"></a>Независимая публикация
 
 Приложение можно опубликовать, не обращаясь в существующие Магазины Android. В этом разделе рассматриваются альтернативные методы публикации и уровни лицензирования Xamarin.Android.
 
-<a name="Xamarin_Licensing" />
 
 ## <a name="xamarin-licensing"></a>Лицензирование Xamarin
 
@@ -31,36 +30,32 @@ ms.lasthandoff: 02/27/2018
 
 Посетите веб-сайт [visualstudio.com](https://www.visualstudio.com/xamarin/), чтобы скачать Community Edition или получить дополнительные сведения о приобретении выпусков Professional и Enterprise.
 
-<a name="Allow_Installation_from_Unknown_Sources" />
 
 ## <a name="allow-installation-from-unknown-sources"></a>Разрешение установки из неизвестных источников
 
 По умолчанию Android запрещает пользователям скачивать и устанавливать приложения из расположений, отличных от Google Play. Чтобы разрешить установку не из Marketplace, перед установкой приложения пользователь должен выбрать на устройстве параметр *Неизвестные источники*. Он находится в разделе **Параметры > Безопасность**, как показано на следующем изображении:
 
-[ ![Экран параметров безопасности](publishing-independently-images/settings.png)](publishing-independently-images/settings.png)
+[![Экран параметров безопасности](publishing-independently-images/settings.png)](publishing-independently-images/settings.png#lightbox)
 
 
 > [!IMPORTANT]
-> **Примечание.** Некоторые поставщики сети могут запрещать установку приложений из неизвестных источников независимо от этого параметра.
+> Некоторые поставщики сети могут запрещать установку приложений из неизвестных источников независимо от этого параметра.
 
 
-<a name="Publishing_by_E-Mail" />
 
 ## <a name="publishing-by-e-mail"></a>Публикация по электронной почте
 
 Вложение пакета APK для выпуска в сообщение электронной почты является быстрым и простым способом распространения приложения пользователям. Когда пользователь открывает сообщение на устройстве на платформе Android, Android распознает вложение APK и отображает кнопку **Установить**, как показано на следующем изображении:
 
-[![Кнопка "Установить" для вложения](publishing-independently-images/publishing-via-email.png)](publishing-independently-images/publishing-via-email.png)
+[![Кнопка "Установить" для вложения](publishing-independently-images/publishing-via-email.png)](publishing-independently-images/publishing-via-email.png#lightbox)
 
 Несмотря на простоту, распространение по электронной почте располагает незначительным количеством механизмов защиты от пиратства или несанкционированного распространения. Этот вариант лучше всего подходит для небольших групп получателей приложения, которые не будут распространять приложение самостоятельно.
 
-<a name="Publishing_by_Web" />
 
 ## <a name="publishing-by-web"></a>Публикация через Интернет
 
 Приложения можно распространять через веб-сервер. Для этого нужно отправить приложение на веб-сервер, а затем предоставить пользователям ссылку для скачивания. Когда пользователь устройства на платформе Android переходит по ссылке, а затем скачивает приложение, оно устанавливается автоматически.
 
-<a name="Manually_Installing_an_APK" />
 
 ## <a name="manually-installing-an-apk"></a>Установка пакета APK вручную
 

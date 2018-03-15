@@ -7,100 +7,93 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: c09dcefb97a5edafcd03394e5ae3146b69a40745
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 37e38ddd84b50709bec147c54cdfa9f79404a39f
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="manually-uploading-the-apk"></a>Отправка пакета APK вручную
 
-<a name="Uploading_the_APK" />
 
 В первый раз при отправке в Google Play (или если используется более ранняя версия Xamarin.Android) пакет APK необходимо вручную отправить через [Google Play Developer Console](https://play.google.com/apps/publish). В этом руководстве описываются действия по выполнению этого процесса. 
 
-<a name="devconsole" />
 
 ## <a name="google-play-developer-console"></a>Google Play Developer Console
 
 После компиляции пакета APK и подготовки рекламных материалов приложение необходимо отправить в Google Play. Для этого войдите в [Google Play Developer Console](https://play.google.com/apps/publish), изображенную ниже. Нажмите кнопку **Опубликовать приложение Android в Google Play**, чтобы начать процесс распространения приложения.
 
-[ ![Google Play Developer Console](manually-uploading-the-apk-images/00-google-play-developer-console-sml.png)](manually-uploading-the-apk-images/00-google-play-developer-console.png)
+[![Консоль разработчика Google Play](manually-uploading-the-apk-images/00-google-play-developer-console-sml.png)](manually-uploading-the-apk-images/00-google-play-developer-console.png#lightbox)
 
 Если существующее приложение уже зарегистрировано в Google Play, нажмите кнопку **Добавить новое приложение**:
 
-[ ![Кнопка "Добавить новое приложение"](manually-uploading-the-apk-images/01-existing-app-sml.png)](manually-uploading-the-apk-images/01-existing-app.png)
+[![Кнопка "Добавить новое приложение"](manually-uploading-the-apk-images/01-existing-app-sml.png)](manually-uploading-the-apk-images/01-existing-app.png#lightbox)
 
 В открывшемся диалоговом окне **Добавление нового приложения** введите имя приложения и нажмите кнопку **Отправить пакет APK**:
 
-[ ![Кнопка "Отправить пакет APK"](manually-uploading-the-apk-images/02-add-new-application-sml.png)](manually-uploading-the-apk-images/02-add-new-application.png)
+[![Кнопка "Отправить пакет APK"](manually-uploading-the-apk-images/02-add-new-application-sml.png)](manually-uploading-the-apk-images/02-add-new-application.png#lightbox)
 
 На следующем экране можно опубликовать приложение для альфа-тестирования, бета-тестирования или выпуска в рабочую среду. В следующем примере выбрана вкладка **АЛЬФА-ТЕСТИРОВАНИЕ**. Поскольку приложение **MyApp** не использует службы лицензирования, в этом примере не нужно нажимать кнопку **Получить лицензионный ключ**. Здесь нажата кнопка **Отправить первый пакет APK в альфа-канал** для публикации в альфа-канал.
 
-[ ![Кнопка "Отправить первый пакет APK в альфа-канал"](manually-uploading-the-apk-images/03-upload-to-alpha-sml.png)](manually-uploading-the-apk-images/03-upload-to-alpha.png)
+[![Кнопка "Отправить первый пакет APK в альфа-канал"](manually-uploading-the-apk-images/03-upload-to-alpha-sml.png)](manually-uploading-the-apk-images/03-upload-to-alpha.png#lightbox)
 
 Откроется диалоговое окно **ОТПРАВКА НОВОГО ПАКЕТА APK В АЛЬФА-КАНАЛ**. Пакет APK можно отправить либо нажав кнопку **Обзор файлов**, либо перетащив сам пакет APK: 
 
-[ ![Диалоговое окно "Отправка нового пакета APK в альфа-канал"](manually-uploading-the-apk-images/04-upload-dialog-sml.png)](manually-uploading-the-apk-images/04-upload-dialog.png)
+[![Диалоговое окно "Отправка нового пакета APK в альфа-канал"](manually-uploading-the-apk-images/04-upload-dialog-sml.png)](manually-uploading-the-apk-images/04-upload-dialog.png#lightbox)
 
 Отправьте готовый к выпуску пакет APK, который нужно распространить.
 В следующем диалоговом окне отображается ход выполнения отправки пакета APK:
 
-[ ![Индикатор хода выполнения отправки](manually-uploading-the-apk-images/05-upload-progress-sml.png)](manually-uploading-the-apk-images/05-upload-progress.png)
+[![Индикатор хода выполнения отправки](manually-uploading-the-apk-images/05-upload-progress-sml.png)](manually-uploading-the-apk-images/05-upload-progress.png#lightbox)
 
 После отправки пакета APK можно выбрать метод тестирования:
 
-[ ![Диалоговое окно выбора метода тестирования](manually-uploading-the-apk-images/06-select-testing-method-sml.png)](manually-uploading-the-apk-images/06-select-testing-method.png)
+[![Диалоговое окно выбора метода тестирования](manually-uploading-the-apk-images/06-select-testing-method-sml.png)](manually-uploading-the-apk-images/06-select-testing-method.png#lightbox)
 
 Дополнительные сведения о тестировании приложения см. в руководстве Google по [настройке альфа- или бета-тестов](https://support.google.com/googleplay/android-developer/answer/3131213?hl=en).
 
 Отправленный пакет APK сохраняется в виде черновика. Его можно опубликовать только после предоставления дополнительных сведений в Google Play, как описано далее.
 
-<a name="Listing_Details" />
 
 ## <a name="store-listing"></a>Описание в Магазине
 
 Щелкните элемент **Описание в Магазине** в **Google Play Developer Console**, чтобы ввести сведения, которые потенциальные пользователи приложения увидят в Google Play: 
 
-[ ![Диалоговое окно "Описание в Магазине"](manually-uploading-the-apk-images/07-store-listing-sml.png)](manually-uploading-the-apk-images/07-store-listing.png)
+[![Диалоговое окно "Описание в Магазине"](manually-uploading-the-apk-images/07-store-listing-sml.png)](manually-uploading-the-apk-images/07-store-listing.png#lightbox)
 
-<a name="Upload_Assets" />
 
 ### <a name="graphics-assets"></a>Графические ресурсы
 
 Прокрутите страницу **Описание в Магазине** до раздела **ГРАФИЧЕСКИЕ РЕСУРСЫ**:
 
-[ ![Раздел "Графические ресурсы"](manually-uploading-the-apk-images/08-graphic-assets-sml.png)](manually-uploading-the-apk-images/08-graphic-assets.png)
+[![Раздел "Графические ресурсы"](manually-uploading-the-apk-images/08-graphic-assets-sml.png)](manually-uploading-the-apk-images/08-graphic-assets.png#lightbox)
 
 Здесь отправляются все подготовленные ранее рекламные материалы. В разделе содержится руководство о том, какие рекламные ресурсы и в каком формате следует предоставить.
 
-<a name="categorization" />
 
 ### <a name="categorization"></a>Классификация
 
 За разделом **ГРАФИЧЕСКИЕ РЕСУРСЫ** следует раздел **КЛАССИФИКАЦИЯ** для выбора типа и категории приложения:
 
-[ ![Раздел "Классификация"](manually-uploading-the-apk-images/09-categorization-sml.png)](manually-uploading-the-apk-images/09-categorization.png)
+[![Раздел "Классификация"](manually-uploading-the-apk-images/09-categorization-sml.png)](manually-uploading-the-apk-images/09-categorization.png#lightbox)
 
 Оценка содержимого рассматривается после следующего раздела.
 
-<a name="contact_details" />
 
 ### <a name="contact-details"></a>Контактные сведения
 
 В конце страницы находится раздел **КОНТАКТНЫЕ СВЕДЕНИЯ**. Он используется для сбора контактных данных о разработчике приложения:
 
-[ ![Раздел "Контактные сведения"](manually-uploading-the-apk-images/10-contact-details-sml.png)](manually-uploading-the-apk-images/10-contact-details.png)
+[![Раздел "Контактные сведения"](manually-uploading-the-apk-images/10-contact-details-sml.png)](manually-uploading-the-apk-images/10-contact-details.png#lightbox)
 
 В разделе **ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ** можно указать URL-адрес политики конфиденциальности для приложения, как показано выше.
 
-<a name="content_rating" />
 
 ## <a name="content-rating"></a>Оценка содержимого
 
 Щелкните **Оценка содержимого** в **Google Play Developer Console**. На этой странице указывается оценка содержимого для приложения. Google Play требует, чтобы оценка содержимого указывалась для всех приложений. Чтобы завершить опросник по оценке содержимого, нажмите кнопку **Продолжить**:
 
-[ ![Раздел "Оценка содержимого"](manually-uploading-the-apk-images/11-content-rating-sml.png)](manually-uploading-the-apk-images/11-content-rating.png)
+[![Раздел "Оценка содержимого"](manually-uploading-the-apk-images/11-content-rating-sml.png)](manually-uploading-the-apk-images/11-content-rating.png#lightbox)
 
 Все приложения в Google Play должны пройти оценку согласно системе оценок Google Play. Помимо оценки содержимого все приложения должны соответствовать требованиям [политики содержимого для разработчиков](http://www.android.com/us/developer-content-policy.html) Google.
 
@@ -118,7 +111,6 @@ ms.lasthandoff: 02/27/2018
 
 Элементы в списке "Средний уровень зрелости" являются субъективными, поэтому возможно, что рекомендации для этого уровня могут показаться достаточно строгими и для оценки списка "Высокий уровень зрелости". 
 
-<a name="pricing_and_distribution" />
 
 ## <a name="pricing-amp-distribution"></a>Цены и распространение
 
@@ -128,40 +120,36 @@ Google Play не разрешит изменить бесплатное прил
 
 Перед публикацией платного приложения потребуется открыть расчетный счет. Для этого щелкните ссылку **настроить расчетный счет** и следуйте инструкциям.
 
-[ ![Диалоговое окно "Цены и распространение"](manually-uploading-the-apk-images/12-pricing-sml.png)](manually-uploading-the-apk-images/12-pricing.png)
+[![Диалоговое окно "Цены и распространение"](manually-uploading-the-apk-images/12-pricing-sml.png)](manually-uploading-the-apk-images/12-pricing.png#lightbox)
 
-<a name="manage_countries" />
 
 ### <a name="manage-countries"></a>Управление странами
 
 В следующем разделе **Управление странами** осуществляется управление странами, в которые можно распространять приложения:
 
-[ ![Диалоговое окно "Управление странами"](manually-uploading-the-apk-images/13-manage-countries-sml.png)](manually-uploading-the-apk-images/13-manage-countries.png)
+[![Диалоговое окно "Управление странами"](manually-uploading-the-apk-images/13-manage-countries-sml.png)](manually-uploading-the-apk-images/13-manage-countries.png#lightbox)
 
-<a name="other_information" />
 
 ### <a name="other-information"></a>Другие сведения
 
 Прокрутите дальше, чтобы указать, содержит ли приложение рекламу. В разделе **КАТЕГОРИИ УСТРОЙСТВ** представлены возможности дополнительного распространения приложений для платформы для носимых гаджетов Android Wear, расширения для телевизоров Android TV или автомобильной системы Android Auto:
 
-[ ![Раздел "Содержит рекламу"](manually-uploading-the-apk-images/14-contains-ads-sml.png)](manually-uploading-the-apk-images/14-contains-ads.png)
+[![Раздел "Содержит рекламу"](manually-uploading-the-apk-images/14-contains-ads-sml.png)](manually-uploading-the-apk-images/14-contains-ads.png#lightbox)
 
 После этого раздела приводятся дополнительные доступные для выбора параметры, например участие в программе **Приложения для всей семьи** и распространение приложений через Google Play for Education (магазин приложений, ориентированный на образовательные учреждения).
 
-<a name="consent" />
 
 ### <a name="consent"></a>Согласие
 
 В нижней части страницы **Цены и распространение** находится раздел **Согласие**.
 Это обязательный раздел, который используется для объявления того, что приложение соответствует [требованиям, предъявляемым к содержимому Android](http://www.android.com/market/terms/developer-content-policy.html#hl=us), а также для подтверждения, что экспорт приложения регулируется законами США:
 
-[ ![Раздел "Согласие"](manually-uploading-the-apk-images/15-consent-sml.png)](manually-uploading-the-apk-images/15-consent.png)
+[![Раздел "Согласие"](manually-uploading-the-apk-images/15-consent-sml.png)](manually-uploading-the-apk-images/15-consent.png#lightbox)
 
 В этом руководстве приведены далеко не все сведения, имеющие отношение к публикации приложения Xamarin.Android.
 Дополнительную информацию о публикации приложения в Google Play см. на странице [Справочный центр — Google Play Console](https://support.google.com/googleplay/android-developer#topic=3450769).
 
 
-<a name="Google_Play_Filters" />
 
 ## <a name="google-play-filters"></a>Фильтры Google Play
 

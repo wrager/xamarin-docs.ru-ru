@@ -53,7 +53,7 @@
 #### [Пошаговое руководство. Работа с WCF](data-cloud/web-services/walkthrough-working-with-wcf.md)
 
 ## [Развертывание и тестирование](deploy-test/index.md)
-### [Конфигурация пользовательского компоновщика](deploy-test/linker.md)
+### [Пользовательская конфигурация компоновщика](deploy-test/linker.md)
 ### [Производительность](deploy-test/memory-perf-best-practices.md)
 ### [Установка NUnit 2.6.4 с помощью NuGet](deploy-test/installing-nunit-using-nuget.md)
 ### [Отладка нескольких процессов](deploy-test/multi-process-debugging.md)
@@ -86,7 +86,8 @@
 #### [Устранение неполадок](macios/binding/troubleshooting.md)
 ### [Собственные ссылки](macios/native-references.md)
 ### [Собственные типы](macios/nativetypes.md)
-### [Особенности 32- и 64-разрядных платформ](macios/32-and-64.md)
+### [Особенности 32- и 64-разрядных платформ](macios/32-and-64/index.md)
+#### [Обновление единых приложений Xamarin.Mac для 64-разрядных платформ](macios/32-and-64/mac-64-bit.md)
 ### [Работа с собственными типами в кроссплатформенных приложениях](macios/native-types-cross-platform.md)
 ### [HttpClient Stack и селектор реализации SSL и TLS](macios/http-stack.md)
 ## [Внутренние компоненты](internals/index.md)

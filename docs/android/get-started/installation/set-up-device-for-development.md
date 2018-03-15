@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/21/2017
-ms.openlocfilehash: 6327c00253036f5ede8bf1934f56e6d4bb8f0ecd
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 64036af82ea49ad4d758a89767ff0da02eef094f
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-device-for-development"></a>Настройка устройства для разработки
 
@@ -28,13 +28,11 @@ _В этой статье описано, как настроить устрой
 
 Каждое из этих действий будет рассматриваться более подробно в следующих разделах.
 
-<a name="EnableDebugging" />
 
 ## <a name="enable-debugging-on-the-device"></a>Включение отладки на устройстве
 
 Для тестирования приложения Android можно использовать любое устройство Android. Однако сначала необходимо надлежащим образом настроить устройство. В зависимости от версии Android, запущенной на устройстве, выполняемые действия будут слегка различаться.
 
-<a name="EnableDebuggingAndroid4" />
 
 ### <a name="android-40-to-android-41"></a>Android 4.0–Android 4.1
 
@@ -46,23 +44,21 @@ _В этой статье описано, как настроить устрой
 
 На этом снимке показан экран **Параметры разработчика** на устройстве под управлением Android 4.0.3:
 
-[![Параметры разработчика](set-up-device-for-development-images/developer-options-sml.png)](set-up-device-for-development-images/developer-options.png)
+[![Параметры разработчика](set-up-device-for-development-images/developer-options-sml.png)](set-up-device-for-development-images/developer-options.png#lightbox)
 
-<a name="EnableDebuggingAndroid42" />
 
 ### <a name="android-42-and-higher"></a>Android 4.2 и более поздние версии
 
 Начиная с Android 4.2 и в более поздних версиях экран **Параметры разработчика** по умолчанию скрыт. Чтобы сделать его доступным, выберите **Параметры > О телефоне** и семь раз коснитесь элемента **Номер сборки**, чтобы появилась вкладка **Параметры разработчика**:
 
-[![Элемент "Номер сборки"](set-up-device-for-development-images/about-phone-sml.png)](set-up-device-for-development-images/about-phone.png)
+[![Элемент "Номер сборки"](set-up-device-for-development-images/about-phone-sml.png)](set-up-device-for-development-images/about-phone.png#lightbox)
 
 После того как вкладка **Параметры разработчика** появится в разделе **Параметры > Система**, откройте ее, чтобы увидеть параметры разработчика:
 
-[![Экран "Параметры разработчика"](set-up-device-for-development-images/developer3.png)](set-up-device-for-development-images/developer3.png)
+[![Экран "Параметры разработчика"](set-up-device-for-development-images/developer3.png)](set-up-device-for-development-images/developer3.png#lightbox)
 
 Здесь можно включить такие параметры разработчика, как отладка по USB и режим бодрствования.
 
-<a name="USB_Debugging" />
 
 ## <a name="install-usb-drivers"></a>Установка USB-драйверов
 
@@ -71,13 +67,12 @@ _В этой статье описано, как настроить устрой
 Прежде чем компьютер Windows распознает устройства Android, подключенные по USB, может потребоваться установить некоторые дополнительные драйверы.
 
 > [!NOTE]
-> **Примечание.** Это действия по настройке устройства Google Nexus, которые приводятся в справочных целях. Действия для вашего конкретного устройства могут быть иными, однако они следуют одной схеме. Если у вас возникли проблемы, найдите их описание для вашего устройства в Интернете.
+> Это действия по настройке устройства Google Nexus, которые приводятся в справочных целях. Действия для вашего конкретного устройства могут быть иными, однако они следуют одной схеме. Если у вас возникли проблемы, найдите их описание для вашего устройства в Интернете.
 
 Запустите приложение **android.bat** из каталога **[путь установки пакета SDK для Android]\tools**. По умолчанию установщик Xamarin.Android поместит пакет SDK для Android в следующую папку на компьютере Windows:
 
     C:\Users\[username]\AppData\Local\Android\android-sdk
 
-<a name="Download_the_USB_Drivers" />
 
 ### <a name="download-the-usb-drivers"></a>Скачивание USB-драйверов
 
@@ -86,7 +81,7 @@ _В этой статье описано, как настроить устрой
 
 Установите пакет **USB-драйвера Google**, запустив диспетчер пакетов SDK для Android и открыв папку **Дополнения**, как показано на следующем снимке экрана:
 
-[![Выбранный пакет USB-драйвера Google](set-up-device-for-development-images/usbdriverpackage.png)](set-up-device-for-development-images/usbdriverpackage.png)
+[![Выбранный пакет USB-драйвера Google](set-up-device-for-development-images/usbdriverpackage.png)](set-up-device-for-development-images/usbdriverpackage.png#lightbox)
 
 Установите флажок **USB-драйвер Google** и нажмите кнопку **Установить**.
 Файлы драйверов будут скачаны в следующую папку:
@@ -98,7 +93,6 @@ _В этой статье описано, как настроить устрой
     C:\Users\[username]\AppData\Local\Android\android-sdk\extras\google\usb_driver
 
 
-<a name="Installing_the_USB_Driver" />
 
 ### <a name="installing-the-usb-driver"></a>Установка USB-драйвера
 
@@ -122,7 +116,6 @@ _В этой статье описано, как настроить устрой
 
 8.  Нажмите кнопку **Далее**, чтобы установить драйвер.
 
-<a name="Windows_8" />
 
 ### <a name="installing-unverified-drivers-in-windows-8"></a>Установка непроверенных драйверов в Windows 8
 
@@ -140,7 +133,6 @@ _В этой статье описано, как настроить устрой
 4.  **Установите драйверы устройства**. Установите драйверы устройства, как описано выше.
 
 
-<a name="ConnectDevice" />
 
 ## <a name="connect-the-device-to-the-computer"></a>Подключение устройства к компьютеру
 
@@ -150,7 +142,6 @@ _В этой статье описано, как настроить устрой
 
 -   **Wi-Fi.** Можно подключить устройство Android к компьютеру без USB-кабеля — через Wi-Fi. Этот способ требует больше усилий, но может быть полезен, если USB-кабель отсутствует или устройство находится слишком далеко от USB-кабеля. Подключение через Wi-Fi будет рассматриваться в следующем разделе.
 
-<a name="Debug_over_WiFi" />
 
 ### <a name="connecting-over-wifi"></a>Подключение через Wi-Fi
 
@@ -186,7 +177,6 @@ _В этой статье описано, как настроить устрой
 
     adb devices
 
-<a name="Summary" />
 
 ## <a name="summary"></a>Сводка
 

@@ -2,16 +2,16 @@
 title: "fastlane для iOS — sigh"
 ms.topic: article
 ms.prod: xamarin
-ms.assetid: 92B35AB1-7AB7-3D3B-DB31-CC971E0B43AE
+ms.assetid: CD17276F-2C8C-4A46-A54C-DD532EBD5720
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 3d80a0ab5583231f95241fb8d4f6e339e44a84ca
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2c6ac298ca2040bb2d3619be080fb1387fbfd3a0
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="fastlane-for-ios--sigh"></a>fastlane для iOS — sigh
 
@@ -61,7 +61,7 @@ sigh реализует интерфейс терминала, позволяю�
 
 Здесь `com.company.appname` — это идентификатор пакета приложения, который находится в файле Info.plist вашего приложения Xamarin.iOS, как показано ниже:
 
-[ ![](sigh-images/fastlane-image5.png "Файл Info.plist приложения Xamarin.iOS")](sigh-images/fastlane-image5.png)
+[![](sigh-images/fastlane-image5.png "Файл Info.plist приложения Xamarin.iOS")](sigh-images/fastlane-image5.png#lightbox)
 
 Уникальный идентификатор приложения должен представлять собой строку в стиле обратного запроса DNS. Сохраните созданный идентификатор в удобной форме, чтобы использовать его в дальнейшем при работе с sigh в рамках этого руководства.
 
@@ -108,7 +108,7 @@ fastlane sigh --development
 
 Если ваш Apple ID подключен к нескольким группам, они будут отображаться здесь. Выберите номер команды, которую вы хотите использовать:
 
-[ ![](sigh-images/fastlane-image2.png "Выбор используемой команды")](sigh-images/fastlane-image2.png)
+[![](sigh-images/fastlane-image2.png "Выбор используемой команды")](sigh-images/fastlane-image2.png#lightbox)
 
 Идентификатор команды также можно передать в интерфейс командной строки следующим образом:
 
@@ -124,7 +124,7 @@ fastlane sigh -l 2TU993NY9J
 
 Новый профиль подготовки будет виден при просмотре центра разработчиков, как показано на рисунке ниже:
 
-[ ![](sigh-images/fastlane-image10.png "Просмотр нового профиля подготовки")](sigh-images/fastlane-image10.png)
+[![](sigh-images/fastlane-image10.png "Просмотр нового профиля подготовки")](sigh-images/fastlane-image10.png#lightbox)
 
 По умолчанию sigh сохраняет профили подготовки в текущей папке. Чтобы изменить каталог вывода, задайте новое значение `output_path` или выполните следующие действия:
 
@@ -140,19 +140,19 @@ fastlane sigh -o "~/Library/MobileDevice/Provisioning Profiles"
 
 - Скачивание всех профилей подготовки:
 
-    ````bash
+    ```bash
     fastlane sigh download_all
     ```
 
-- To use a specific signing identity for your provisioning profile use:
+- Чтобы применить определенное удостоверение подписывания для профиля подготовки, используйте следующее.
 
     ```bash
     fastlane sigh -c "Amy cert"
     ```
     
-    Where `Amy cert` is the Code Signing Identity name.
+    Где `Amy cert` — это имя удостоверения подписывания кода.
 
 
-## Related Links
+## <a name="related-links"></a>Связанные ссылки
 
 - [fastlane - sigh](https://github.com/fastlane/fastlane/tree/master/sigh#readme)

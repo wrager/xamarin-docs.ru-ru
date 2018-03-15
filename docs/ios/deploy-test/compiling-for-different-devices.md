@@ -7,27 +7,26 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 13838215b32abe49a5fe07b04088bc4216250844
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 12b8f51156c2ed750c59ef79522121c6c5d2c03c
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="compiling-for-different-devices"></a>Компиляция для разных устройств
 
 Вы можете настроить свойства сборки для исполняемого файла на странице свойств проекта **Сборка iOS**. Чтобы открыть эту страницу, щелкните имя проекта правой кнопкой мыши и выберите **Параметры > Сборка iOS** (в Visual Studio для Mac) или **Свойства** (в Visual Studio).
 
-[[ide name="xs"]]
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-[ ![](compiling-for-different-devices-images/image1.png "Страница свойств проекта "Сборка iOS"")](compiling-for-different-devices-images/image1.png) 
 
-[[/ide]] 
+[![](compiling-for-different-devices-images/image1.png "Страница свойств проекта "Сборка iOS"")](compiling-for-different-devices-images/image1.png#lightbox) 
 
-[[ide name="vs"]]
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[ ![](compiling-for-different-devices-images/image1a.png "Страница свойств проекта "Сборка iOS"")](compiling-for-different-devices-images/image1a.png)
+[![](compiling-for-different-devices-images/image1a.png "Страница свойств проекта "Сборка iOS"")](compiling-for-different-devices-images/image1a.png#lightbox)
 
-[[/ide]]
+-----
 
 Помимо параметров конфигурации, доступных в пользовательском интерфейсе, вы можете создать собственный набор параметров командной строки и передать его в [средство сборки Xamarin.iOS (mtouch)](~/ios/deploy-test/mtouch.md).
 
@@ -66,9 +65,9 @@ Visual Studio для Mac позволяет настроить для пакет
 
 Вы можете выбрать используемый вариант в параметрах сборки iOS в Visual Studio или Visual Studio для Mac.
 
-[ ![](compiling-for-different-devices-images/image2.png "Включение LLVM")](compiling-for-different-devices-images/image2.png)
+[![](compiling-for-different-devices-images/image2.png "Включение LLVM")](compiling-for-different-devices-images/image2.png#lightbox)
 
-[ ![](compiling-for-different-devices-images/image2a.png "Включение LLVM")](compiling-for-different-devices-images/image2a.png)
+[![](compiling-for-different-devices-images/image2a.png "Включение LLVM")](compiling-for-different-devices-images/image2a.png#lightbox)
 
  <a name="ARMV7_and_ARMV7s_support" />
 
@@ -132,7 +131,7 @@ Thumb — это более компактный набор инструкций
 -  Добавьте `'-gcc_flags "-weak_framework iAd"'` в раздел **Дополнительные параметры** для каждой конфигурации, к которой должна действовать слабая привязка:
 
 
-[![](compiling-for-different-devices-images/image3.png "Дополнительные параметры")](compiling-for-different-devices-images/image3.png)
+[![](compiling-for-different-devices-images/image3.png "Дополнительные параметры")](compiling-for-different-devices-images/image3.png#lightbox)
 
 
 Помимо этого, нужно запретить использование в коде тех типов, которые не существуют в более старых версиях iOS при работе на устройствах с этими версиями. Эту задачу можно решить несколькими способами, например с помощью синтаксического анализа `UIDevice.CurrentDevice.SystemVersion`.

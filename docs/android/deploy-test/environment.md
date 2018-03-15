@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: 9ba8fc1a82e932c01b8a07b49d9ae11ad1ceb81c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ee612d4a8982a6ae505b4d329b9abbc84624a1e0
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="xamarinandroid-environment"></a>Среда Xamarin.Android
 
@@ -42,7 +42,6 @@ adb shell setprop debug.mono.env "'MONO_LOG_LEVEL=info|MONO_LOG_MASK=asm'"
 
 Xamarin.Android поддерживает переменную `XA_HTTP_CLIENT_HANDLER_TYPE`, значение которой можно задать с помощью `adb shell setprop debug.mono.env` или действия сборки `$(AndroidEnvironment)`.
 
-<a name="XA_HTTP_CLIENT_HANDLER_TYPE" />
 
 ### `XA_HTTP_CLIENT_HANDLER_TYPE`
 
@@ -148,7 +147,7 @@ XA_HTTP_CLIENT_HANDLER_TYPE=Xamarin.Android.Net.AndroidClientHandler
 ```
 
 > [!NOTE]
-> **Примечание.** Базовое устройство Android должно поддерживать протокол TLS 1.2.
+> Базовое устройство Android должно поддерживать протокол TLS 1.2.
 TLS 1.2 поддерживается во всех версиях Android начиная с 5.0.
 
 

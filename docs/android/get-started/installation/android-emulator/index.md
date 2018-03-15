@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/25/2018
-ms.openlocfilehash: 854ca06abc8be2f55f3e95a8ac3bd87c78af19cf
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 55f5cf22718713fdcf11c49e0993f47c2f5a6f1d
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="android-emulator-setup"></a>Настройка эмулятора Android
 
@@ -25,7 +25,7 @@ _В этом документе описано, как подготовить э
 
 
 > [!NOTE]
-> **Примечание.** В средствах пакета SDK для Android **26.0.1** и более поздних версиях компания Google исключила поддержку существующих диспетчеров AVD и SDK, заменив их новыми средствами интерфейса командной строки (CLI). В связи с этим изменением теперь вместо диспетчеров эмуляторов или пакетов SDK для средств Android 26.0.1 и более поздних версий используются диспетчеры устройств или пакетов SDK для Xamarin. (Дополнительные сведения о диспетчере пакетов SDK для Xamarin SDK см. в статье [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md).)
+> В Android SDK Tools **26.0.1** и более поздних версий компания Google исключила поддержку существующих диспетчеров AVD и SDK, заменив их новыми средствами интерфейса командной строки (CLI). В связи с этим изменением теперь вместо диспетчеров эмуляторов или пакетов SDK для средств Android 26.0.1 и более поздних версий используются диспетчеры устройств или пакетов SDK для Xamarin. (Дополнительные сведения о диспетчере пакетов SDK для Xamarin SDK см. в статье [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md).)
 
 
 ## <a name="sections"></a>Разделы

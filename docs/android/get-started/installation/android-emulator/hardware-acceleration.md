@@ -8,17 +8,16 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 12/22/2017
-ms.openlocfilehash: 53dc85cab94bdf692e088d7c6eea6916d283ba84
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7560900ace62a737ac765bcfe93f759f8985aca2
+ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="android-emulator-hardware-acceleration"></a>Аппаратное ускорение эмулятора Android
 
 Поскольку эмулятор SDK для Android демонстрирует крайне низкую производительность без аппаратного ускорения, для существенной оптимизации его работы рекомендуется использовать решение HAXM (Hardware Accelerated Execution Manager) от компании Intel.
 
-<a name="haxm-overview" />
 
 ## <a name="haxm-overview"></a>Обзор решения HAXM
 
@@ -27,9 +26,8 @@ HAXM представляет собой аппаратную подсистем
 Эмулятор SDK для Android автоматически использует решение HAXM, если оно доступно. Если выбрать виртуальное устройство с архитектурой **x86** (см. описание в разделе [Конфигурация и использование](~/android/deploy-test/debugging/android-sdk-emulator/index.md)), оно также будет использовать решение HAXM для аппаратного ускорения. Прежде чем использовать эмулятор SDK для Android в первый раз, рекомендуется проверить наличие установленного решения HAXM и его доступность для эмулятора SDK для Android.
 
 > [!NOTE]
-> **Примечание.** HAXM нельзя запустить на виртуальной машине.
+> HAXM нельзя запустить на виртуальной машине.
 
-<a name="verify-haxm" />
 
 ## <a name="verifying-haxm-installation"></a>Проверка установки HAXM
 
@@ -39,7 +37,7 @@ HAXM представляет собой аппаратную подсистем
 
 1. Запустите диспетчер эмуляторов Android, выбрав **Сервис > Android > Диспетчер эмуляторов Android**:
 
-    [![Расположение элементов меню диспетчера эмуляторов Android](hardware-acceleration-images/win/01-avd-manager-menu-item-sml.png)](hardware-acceleration-images/win/01-avd-manager-menu-item.png)
+    [![Расположение элементов меню диспетчера эмуляторов Android](hardware-acceleration-images/win/01-avd-manager-menu-item-sml.png)](hardware-acceleration-images/win/01-avd-manager-menu-item.png#lightbox)
 
 2. Если отображается аналогичное приведенному ниже диалоговое окно **Предупреждение о производительности**, значит, на вашем компьютере решение HAXM еще не установлено или настроено неправильно:
 
@@ -65,7 +63,7 @@ HAXM представляет собой аппаратную подсистем
 
 1. Запустите диспетчер эмуляторов Android, выбрав **Сервис > Google > Диспетчер эмуляторов**:
 
-    [![Расположение элементов меню диспетчера эмуляторов Android](hardware-acceleration-images/mac/01-avd-manager-menu-item-sml.png)](hardware-acceleration-images/mac/01-avd-manager-menu-item.png)
+    [![Расположение элементов меню диспетчера эмуляторов Android](hardware-acceleration-images/mac/01-avd-manager-menu-item-sml.png)](hardware-acceleration-images/mac/01-avd-manager-menu-item.png#lightbox)
 
 2. Если отображается аналогичное приведенному ниже диалоговое окно **Предупреждение о производительности**, значит, на вашем компьютере решение HAXM еще не установлено или настроено неправильно:
 
@@ -75,7 +73,7 @@ HAXM представляет собой аппаратную подсистем
 
 3. Выберите образы **x86** (например, **Android\_Accelerated\_x86**), нажмите кнопку **Пуск** и щелкните **Запустить**:
 
-    [![Запуск эмулятора SDK для Android с использованием образа виртуального устройства по умолчанию](hardware-acceleration-images/mac/02-start-default-avd-sml.png)](hardware-acceleration-images/mac/02-start-default-avd.png)
+    [![Запуск эмулятора SDK для Android с использованием образа виртуального устройства по умолчанию](hardware-acceleration-images/mac/02-start-default-avd-sml.png)](hardware-acceleration-images/mac/02-start-default-avd.png#lightbox)
 
 3. Во время запуска эмулятора следите за содержимым диалогового окна **Запуск эмулятора Android**. Если решение HAXM установлено, появится сообщение **Решение HAXM установлено, и эмулятор работает в быстром режиме виртуализации**, как показано на следующем снимке экрана:
 
@@ -147,7 +145,7 @@ Intel HAXM и Microsoft Hyper-V не могут быть активны одно
 
 2. В разделе **Сведения о системе** проверьте наличие службы **Безопасность на основе виртуализации Device Guard** и убедитесь, что она имеет состояние **Выполняется**:
 
-   [![Функция Device Guard установлена и выполняется](hardware-acceleration-images/win/09-device-guard-sml.png)](hardware-acceleration-images/win/09-device-guard.png)
+   [![Функция Device Guard установлена и выполняется](hardware-acceleration-images/win/09-device-guard-sml.png)](hardware-acceleration-images/win/09-device-guard.png#lightbox)
 
 Если функция Device Guard включена, выполните следующие действия для ее отключения:
 
@@ -157,7 +155,7 @@ Intel HAXM и Microsoft Hyper-V не могут быть активны одно
 
 3. В **редакторе локальных групповых политик** выберите **Конфигурация компьютера > Административные шаблоны > Система > Device Guard**:
 
-   [![Функция Device Guard в редакторе локальных групповых политик](hardware-acceleration-images/win/10-group-policy-editor-sml.png)](hardware-acceleration-images/win/10-group-policy-editor.png)
+   [![Функция Device Guard в редакторе локальных групповых политик](hardware-acceleration-images/win/10-group-policy-editor-sml.png)](hardware-acceleration-images/win/10-group-policy-editor.png#lightbox)
 
 4. Измените значение параметра **Включить средство обеспечения безопасности на основе виртуализации** на **Отключено** (как показано выше) и закройте **редактор локальных групповых политик**.
 
@@ -190,6 +188,6 @@ Intel HAXM и Microsoft Hyper-V не могут быть активны одно
 
 2. Запустите установщик HAXM. Примите значения по умолчанию, предлагаемые в диалоговых окнах установщика:
 
-   [![Окно программы установки Intel Hardware Accelerated Execution Manager](hardware-acceleration-images/mac/05-haxm-installer-sml.png)](hardware-acceleration-images/win/05-haxm-installer.png)
+   [![Окно программы установки Intel Hardware Accelerated Execution Manager](hardware-acceleration-images/mac/05-haxm-installer-sml.png)](hardware-acceleration-images/win/05-haxm-installer.png#lightbox)
 
 -----

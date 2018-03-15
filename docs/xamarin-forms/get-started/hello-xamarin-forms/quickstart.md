@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/06/2018
-ms.openlocfilehash: 7ce674ea38bc847bc9064a5a61113900a45b991d
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 434a12c26a5823b082751c95c2090b22c39cf081
+ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="xamarinforms-quickstart"></a>Краткое руководство по Xamarin.Forms
 
 Это пошаговое руководство демонстрирует создание приложения, которое преобразует введенный пользователем буквенно-цифровой телефонный номер в числовой телефонный номер и затем набирает его. Ниже показано итоговое приложение:
 
-[![](quickstart-images/intro-app-examples-sml.png "Приложение Phoneword")](quickstart-images/intro-app-examples.png "Приложение Phoneword")
+[![](quickstart-images/intro-app-examples-sml.png "Приложение Phoneword")](quickstart-images/intro-app-examples.png#lightbox "Приложение Phoneword")
 
 Вы можете создать приложение Phoneword следующим образом:
 
@@ -113,7 +113,7 @@ ms.lasthandoff: 02/27/2018
         }
 
   > [!NOTE]
-> **Примечание**. Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+  > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
 
   Сохраните изменения в файле **MainPage.xaml.cs**, нажав клавиши **CTRL+S**, и закройте файл.
 
@@ -565,7 +565,7 @@ ms.lasthandoff: 02/27/2018
         }
 
   > [!NOTE]
-> **Примечание**. Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
+  > Попытка выполнить сборку приложения на этом этапе приведет к ошибкам, которые будут исправлены позже.
 
   Сохраните изменения в **MainPage.xaml.cs**, выбрав **Файл > Сохранить** (или нажав клавиши **&#8984; + S**), а затем закройте файл.
 
