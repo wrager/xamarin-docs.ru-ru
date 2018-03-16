@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 08/28/2017
-ms.openlocfilehash: 024e73ddfe517f6fe9766607fa17efbd5703234c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2a2b5a1135a4d08c2a89caf0fbf4b2cdb1ac624c
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="system-requirements"></a>Требования к системе
 
@@ -32,7 +32,7 @@ _Предварительные требования к использовани
 
 В этой таблице показано, какие платформы можно создать, используя различные комбинации ОС и инструментов разработки:
 
-[!include[](~/cross-platform/includes/development-environment.html)]
+[!include[](~/cross-platform/includes/development-environment.md)]
 
 
 > [!NOTE]
@@ -44,7 +44,7 @@ _Предварительные требования к использовани
 
 Чтобы использовать компьютер Mac для разработки в Xamarin, требуются следующие версии программного обеспечения и пакетов SDK. Проверьте версию операционной системы и следуйте инструкциям для [установщика Xamarin](#install).
 
-[!include[](~/cross-platform/includes/macos-requirements.html)]
+[!include[](~/cross-platform/includes/macos-requirements.md)]
 
 > [!NOTE]
 > ПРИМЕЧАНИЕ. Xcode можно установить (и обновить) с веб-сайта [developer.apple.com](https://developer.apple.com/xcode/download/) или с помощью Mac App Store.
@@ -53,7 +53,7 @@ _Предварительные требования к использовани
 
 В целях тестирования и отладки мобильные приложения Xamarin можно развертывать на физических устройствах через USB (приложения Xamarin.Mac можно тестировать непосредственно на компьютере разработки, а приложения Apple Watch сначала развертываются на парном iPhone).
 
-[!include[](~/cross-platform/includes/macos-testing.html)]
+[!include[](~/cross-platform/includes/macos-testing.md)]
 
 
 <a name="windows" />
@@ -64,7 +64,7 @@ _Предварительные требования к использовани
 Проверьте версию операционной системы (и убедитесь, что вы не используете *Express*-выпуск Visual Studio, в противном случае рекомендуется выполнить обновление до выпуска *Community*).
 В установщиках Visual Studio 2015 и 2017 доступна автоматическая установка Xamarin.
 
-[!include[](~/cross-platform/includes/windows-requirements.html)]
+[!include[](~/cross-platform/includes/windows-requirements.md)]
 
 
 > [!NOTE]
@@ -78,7 +78,7 @@ _Предварительные требования к использовани
 
 В целях тестирования и отладки мобильные приложения Xamarin можно развертывать на физических устройствах через USB (устройства iOS должны быть подключены к компьютеру Mac, а не к компьютеру с Visual Studio).
 
-[!include[](~/cross-platform/includes/windows-testing.html)]
+[!include[](~/cross-platform/includes/windows-testing.md)]
 
 
 > [!NOTE]
