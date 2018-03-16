@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 06/12/2017
-ms.openlocfilehash: 670ec465843bbe819b41a53fff71b01ab78b0059
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: f09aae1445cfcf9f4225af3de37b65ebb5a1b6b2
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="providing-backwards-compatibility-with-the-android-support-package"></a>Предоставление обратной совместимости с пакетом поддержки Android
 
@@ -25,13 +25,13 @@ ms.lasthandoff: 03/12/2018
 
 Пакет поддержки Android не добавляется автоматически в Xamarin.Android приложение. Xamarin предоставляет [пакет NuGet библиотеку поддержки Android версии 4](https://www.nuget.org/packages/Xamarin.Android.Support.v4/) для упрощения процедуры добавления библиотеки поддержки Xamarin.Android приложению. Для включения поддержки пакетов в вашей Xamarin.Android приложения включают [библиотеку поддержки Android версии 4](https://www.nuget.org/packages/Xamarin.Android.Support.v4/) компонента в проект Xamarin.Android, как показано на следующем снимке экрана: 
 
-[![Снимок экрана для поддержки библиотеки Android версии 4 пакет добавляется в проект](providing-backwards-compatibility-images/02.png)](providing-backwards-compatibility-images/02.png#lightbox)
+[![Снимок экрана для поддержки библиотеки Android версии 4 пакет добавляется в проект](providing-backwards-compatibility-images/02-sml.png)](providing-backwards-compatibility-images/02.png#lightbox)
 
 После выполнения этих шагов становится можно использовать фрагменты в более ранних версиях Android. API-интерфейсы фрагмент будет работать сейчас же в более ранних версиях, за исключением следующих случаев: 
 
 -   **Изменить Минимальная версия Android** &ndash; приложение больше не нужна для Android 3.0 или более поздней версии, как показано ниже: 
 
-    [![Целевой объект экрана Android по минимальное значение в группе свойств приложения](providing-backwards-compatibility-images/03.png)](providing-backwards-compatibility-images/03.png#lightbox)
+    [![Целевой объект экрана Android по минимум, задаваемое в разделе манифеста Android](providing-backwards-compatibility-images/03-sml.png)](providing-backwards-compatibility-images/03.png#lightbox)
 
 -   **Расширить FragmentActivity** &ndash; действия, размещающими фрагментов теперь должен наследовать от `Android.Support.V4.App.FragmentActivity` , а не из `Android.App.Activity` . 
 

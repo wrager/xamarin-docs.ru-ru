@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/22/2017
-ms.openlocfilehash: 9b801af77eceaf94b0ede98b6af51d55d6029fe6
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: ddc16dc1faaf623098aad5bca340c15f943223ba
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="xamarin-live-player-setup"></a>Настройка динамической проигрыватель Xamarin
 
@@ -68,7 +68,7 @@ Xamarin Live Player требуются:
 
   Если устройство не связаны, QR-код будет отображаться с инструкциями о том, как связать устройство:
 
-    ![Пара окно устройства](install-images/manage-empty-windows.png)
+  ![Пара окно устройства](install-images/manage-empty-windows.png)
 
   Если не удается связаться с устройства для связывания, может появиться ошибка.
 
@@ -111,11 +111,11 @@ Xamarin Live Player требуются:
 
   Если устройство не объединяется, QR-код будет отображен с инструкциями о том, как связать устройство.
 
-    ![Пара окно устройства](install-images/manage-empty.png)
+  ![Пара окно устройства](install-images/manage-empty.png)
 
   Если не удается связаться с устройства для связывания, отображается сообщение об ошибке:
 
-    ![Не удается подключиться к сообщение об ошибке устройства](install-images/error-cannot-connect.png)
+  ![Не удается подключиться к сообщение об ошибке устройства](install-images/error-cannot-connect.png)
 
 
 -----

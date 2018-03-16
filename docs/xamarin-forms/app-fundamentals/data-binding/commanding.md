@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: b75bc7e4ccf53e82ff107c867c5ba01813960ea5
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 0456742ca30257670375e3ae781dcdc49707e2ce
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="the-command-interface"></a>Интерфейс командной
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/09/2018
 
 Чтобы разрешить привязку данных между `Button` и ViewModel, `Button` определяет два свойства:
 
-- [`Command`](https://developer.xamarin.com/api/property/Xamarin.Forms.Button.Command/) типа [`ICommand`](https://developer.xamarin.com/api/type/System.Windows.Input.ICommand/)
+- [`Command`](https://developer.xamarin.com/api/property/Xamarin.Forms.Button.Command/) типа <xref:System.Windows.Input.ICommand>
 - [`CommandParameter`](https://developer.xamarin.com/api/property/Xamarin.Forms.Button.CommandParameter/) типа `Object`
 
 Чтобы использовать интерфейс команды, определения привязки данных, предназначенный `Command` свойство `Button` где источник — это свойство в ViewModel типа `ICommand`. ViewModel содержит код, связанный с этим `ICommand` свойство, которое выполняется при нажатии кнопки. Можно задать `CommandParameter` к произвольные данные, чтобы различать несколько кнопок, если все они привязаны к тому же `ICommand` свойства ViewModel.
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="the-icommand-interface"></a>Интерфейс ICommand
 
-[ `ICommand` ](https://developer.xamarin.com/api/type/System.Windows.Input.ICommand/) Интерфейс не является частью Xamarin.Forms. Вместо этого оно определено в [ `System.Windows.Input` ](https://developer.xamarin.com/api/namespace/System.Windows.Input/) пространства имен и состоит из двух методов и одно событие:
+<xref:System.Windows.Input.ICommand> Интерфейс не является частью Xamarin.Forms. Вместо этого оно определено в [System.Windows.Input](xref:System.Windows.Input) пространства имен и состоит из двух методов и одно событие:
 
 ```csharp
 public interface ICommand

@@ -7,11 +7,11 @@ ms.assetid: 9D4E10E8-A288-4C6C-9475-02969198C119
 ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
-ms.openlocfilehash: abd6ac7d4bce5a180db087488b32c878ed0a416b
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: bf3d675224a1e1696d4ce526fa42260d2102aa7d
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="workbooks-installation-and-requirements"></a>Требования к установке книг и
 
@@ -19,13 +19,13 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="download-and-install"></a>Загрузка и установка
 
-# <a name="windowstabvswin"></a>[Windows](#tab/vswin)
+# <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
 1. Проверьте [требования](#requirements) ниже.
 2. Загрузите и установите [Xamarin книг для Windows](https://dl.xamarin.com/interactive/XamarinInteractive.msi).
 3. Запуск [воспроизведение](~/tools/workbooks/workbook.md) с книгами или испытать [образцы](https://developer.xamarin.com/workbooks)
 
-# <a name="macostabvsmac"></a>[macOS](#tab/vsmac)
+# <a name="macostabmacos"></a>[macOS](#tab/macos)
 
 1. Проверьте [требования](#Requirements) ниже.
 2. Загрузите и установите [Xamarin книги для Mac](https://dl.xamarin.com/interactive/XamarinInteractive.pkg).

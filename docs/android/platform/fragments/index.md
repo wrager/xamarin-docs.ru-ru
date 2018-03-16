@@ -7,12 +7,12 @@ ms.assetid: 1AFB4242-A337-F8E0-83D9-B8D850D7F384
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: 8595ecb63e49a4768120e98f41826b74c2dd43e4
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/15/2018
+ms.openlocfilehash: 0a9a1f41810fe113ac3d88d2533411ac537840ab
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="fragments"></a>Фрагменты
 
@@ -53,9 +53,9 @@ _Android 3.0 появились фрагментов, показывающий, 
 
 [![При выборе уровень API Android SDK Manager](images/02.png)](images/02.png#lightbox)
 
-Фрагменты являются Xamarin.Android 4.0 и более поздних версий. Xamarin.Android приложение должно использовать по крайней мере уровень API 11 (Android 3.0) или более поздней версии, чтобы использовать фрагменты. Требуемая версия .NET Framework может задаваться в параметрах проекта, как показано ниже:
+Фрагменты являются Xamarin.Android 4.0 и более поздних версий. Xamarin.Android приложение должно использовать по крайней мере уровень API 11 (Android 3.0) или более поздней версии, чтобы использовать фрагменты. Требуемая версия .NET Framework можно задать в проекте свойства, как показано ниже:
 
-[![Установка уровня API целевой платформы в параметрах проекта](images/03.png)](images/03.png#lightbox)
+[![Установка уровня API целевой платформы в параметрах проекта](images/03-sml.png)](images/03.png#lightbox)
 
 Можно использовать фрагменты в более старых версиях Android с помощью пакета Android поддержки и Xamarin.Android 4.2 или более поздней версии. В документах в этом разделе более подробно рассматривается как это сделать.
 

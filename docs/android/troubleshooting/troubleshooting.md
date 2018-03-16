@@ -6,12 +6,12 @@ ms.assetid: 56137ACA-4811-B312-6860-E16D0FA123F7
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/01/2018
-ms.openlocfilehash: 145c8507ca5ebea6197fa8827b93f58fbc9bb078
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/15/2018
+ms.openlocfilehash: 015fff63c612c3acf29681b90c1e945c5e460034
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="troubleshooting-tips"></a>Советы по устранению неполадок
 
@@ -333,7 +333,7 @@ Xamarin.Android поддерживает несколько устройств A
 2 загрузки доступны из Google для Android SDK для Windows.
 Если установщик .exe, он будет записывать разделы реестра, которые сообщают Xamarin.Android, где она установлена. Если выбрать этот ZIP-файл и распакуйте его, Xamarin.Android не знает, где искать пакета SDK. Можно определить Xamarin.Android, где пакета SDK в Visual Studio последовательно выбрав пункты **Сервис > Параметры > Xamarin > Параметры Android**:
 
-[![Расположение пакета SDK для Android в Xamarin Android параметры](troubleshooting-images/01a.png)](troubleshooting-images/01a.png#lightbox)
+[![Расположение пакета SDK для Android в Xamarin Android параметры](troubleshooting-images/01.png)](troubleshooting-images/01.png#lightbox)
 
 
 
@@ -728,7 +728,7 @@ E/dalvikvm( 123): VM aborting
 
     -   Имейте в виду, динамического кода всегда затраты. Если требуется эффективный код, рекомендуется не использовать динамический код.
 
--   В первой версии preview эти сборки были исключены, если кодом приложения явно используются типы в каждой сборке. См. в следующих для решения этой проблемы: [http://lists.ximian.com/pipermail/mo...il/009798.html](http://lists.ximian.com/pipermail/monodroid/2012-April/009798.html)
+-   В первой версии preview эти сборки были исключены, если кодом приложения явно используются типы в каждой сборке. Для решения этой проблемы см. [http://lists.ximian.com/pipermail/mo...il/009798.html](http://lists.ximian.com/pipermail/monodroid/2012-April/009798.html)
 
 
 ## <a name="projects-built-with-aotllvm-crash-on-x86-devices"></a>Проекты, построенные с AOT + LLVM аварийного завершения на x86 устройств
