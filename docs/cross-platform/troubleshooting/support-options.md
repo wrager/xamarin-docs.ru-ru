@@ -6,11 +6,11 @@ ms.assetid: E4EF7E0F-ED86-44C9-9F98-38ECF881C7E2
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: 6ca5b4d70669909b952752f7d600fcac37e9f557
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 68b420f98461ee42862726a658d721b36326c203
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="what-support-options-are-available-for-xamarin"></a>Какие варианты поддержки доступны для Xamarin?
 
@@ -18,28 +18,13 @@ ms.lasthandoff: 03/09/2018
 
 Как показано на [страницы поддержки Xamarin](https://www.xamarin.com/support), предусмотрено несколько вариантов.  Ниже приведены некоторые быстрого рекомендации по начальной настройке [обусловлены, переполнение стека](http://stackoverflow.com/help/product-support) о том, как выбрать наиболее подходящий вариант:
 
-<table>
-    <tr>
-        <td>«Что эта ошибка означает?» или «Как?...»</td>
-        <td><a href="http://stackoverflow.com/questions/ask?tags=xamarin">Переполнение стека</a> под <em>xamarin</em> тег</td>
-    </tr>
-    <tr>
-        <td>Я считаю, что эта проблема вызвана дефектах в исходном коде Xamarin.</td>
-        <td><a href="https://bugzilla.xamarin.com/page.cgi?id=bug-writing.html">Xamarin Bugzilla</a></td>
-    </tr>
-    <tr>
-        <td>У меня есть идеи, запрос функции или новый запрос документации.</td>
-        <td><a href="https://xamarin.uservoice.com">Страница Xamarin UserVoice</a></td>
-    </tr>
-    <tr>
-        <td>Какие ресурсы, платформы или средства делать другим пользователям рекомендуется для...? (и другие открытые обсуждения)</td>
-        <td><a href="https://forums.xamarin.com/">Форумы Xamarin</a></td>
-    </tr>
-    <tr>
-        <td>У меня вопрос о подписках, лицензирование и цены.</td>
-        <td>Отправить по электронной почте или вызвать с помощью контактные сведения на <a href="https://www.xamarin.com/faq">вопросы и ответы</a></td>
-    </tr>
-</table>
+|   |   |
+|---|---|
+|«Что эта ошибка означает?» или «Как?...»|[Переполнение стека](http://stackoverflow.com/questions/ask?tags=xamarin) под *xamarin* тег|
+|Я считаю, что эта проблема вызвана дефектах в исходном коде Xamarin.|[Xamarin Bugzilla](https://bugzilla.xamarin.com/page.cgi?id=bug-writing.html)|
+|У меня есть идеи, запрос функции или новый запрос документации.|[Страница Xamarin UserVoice](https://xamarin.uservoice.com)|
+|Какие ресурсы, платформы или средства делать другим пользователям рекомендуется для...? (и другие открытые обсуждения)|[Форумы Xamarin](https://forums.xamarin.com)|
+|У меня вопрос о подписках, лицензирование и цены.|Отправить по электронной почте или вызвать с помощью контактные сведения на [вопросы и ответы](https://www.xamarin.com/faq)|
 
 Группа поддержки Xamarin помогает отслеживать каждый из этих параметров.  Корпорация Майкрософт рекомендует всем пользователям contribute тщательно вопросы и отчеты, чтобы воспользоваться преимуществами и увеличить знаниями сообщество разработчиков Xamarin.  Для возможных дефектов убедитесь, что отправлять отчеты об ошибках, когда это возможно формально отслеживаемых проблемы с командой разработчиков Xamarin.
 

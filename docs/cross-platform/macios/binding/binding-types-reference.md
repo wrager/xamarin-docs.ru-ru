@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/06/2018
-ms.openlocfilehash: 6042ab9aa861a08da421140857459b02a78f7c70
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 568650a850b9db1fa22deef55eebb6a437e7e0b7
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="binding-types-reference-guide"></a>Привязки типов Справочник
 
@@ -1987,70 +1987,20 @@ interface MyColoringKeys {
 
 Следующие типы данных поддерживаются в `StrongDictionary` определение:
 
-<table border="1" cellpadding="1" cellspacing="1" width="80%">
-<tbody>
-  <tr>
-    <td>Тип интерфейса в C#</td>
-    <td>Тип хранилища NSDictionary</td>
-  </tr>
-  <tr>
-    <td>bool</td>
-    <td>Логическое значение, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>Значения перечисления</td>
-    <td>целое число со знаком, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>int</td>
-    <td>32-разрядное целое число со знаком, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>uint</td>
-    <td>32-разрядное целое число без знака, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>nint</td>
-    <td>NSInteger, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>nuint</td>
-    <td>NSUInteger, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>long</td>
-    <td>64-разрядное целое число, хранящиеся в NSNumber</td>
-  </tr>
-  <tr>
-    <td>float</td>
-    <td>32-разрядное целое число со знаком, хранятся в виде NSNumber</td>
-  </tr>
-  <tr>
-    <td>double</td>
-    <td>64-разрядное целое число, хранятся в виде NSNumber</td>
-  </tr>
-  <tr>
-    <td>NSObject и подклассов</td>
-    <td>NSObject</td>
-  </tr>
-  <tr>
-    <td>NSDictionary</td>
-    <td>NSDictionary</td>
-  </tr>
-  <tr>
-    <td>string</td>
-    <td>NSString</td>
-  </tr>
-  <tr>
-    <td>NSString</td>
-    <td>NSString</td>
-  </tr>
-  <tr>
-    <td>C# массив NSObject</td>
-    <td>NSArray</td>
-  </tr>
-  <tr>
-    <td>C# массив перечислений</td>
-    <td>NSArray, содержащий NSNumbers со значением</td>
-  </tr>
-</tbody>
+|Тип интерфейса в C#|`NSDictionary` Тип хранилища|
+|---|---|
+|`bool`|`Boolean` хранимые в `NSNumber`|
+|Значения перечисления|целое число хранимых в `NSNumber`|
+|`int`|32-разрядное целое число со знаком, хранимых в `NSNumber`|
+|`uint`|32-разрядное целое число без знака, хранящиеся в `NSNumber`|
+|`nint`|`NSInteger` хранимые в `NSNumber`|
+|`nuint`|`NSUInteger` хранимые в `NSNumber`|
+|`long`|64-разрядное целое число, хранимых в `NSNumber`|
+|`float`|32-разрядное целое число со знаком, хранятся в виде `NSNumber`|
+|`double`|64-разрядное целое число, хранятся в виде `NSNumber`|
+|`NSObject` и подклассов|`NSObject`|
+|`NSDictionary`|`NSDictionary`|
+|`string`|`NSString`|
+|`NSString`|`NSString`|
+|C# `Array` из `NSObject`|`NSArray`|
+|C# `Array` перечислений|`NSArray` содержащий `NSNumber` значения|

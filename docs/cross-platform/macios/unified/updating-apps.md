@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: b1b6338494b9be98e677cf9d338410eae759feb8
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a09ba93fe7c3f5ade6b5cafe44fd7ee2b0c33487
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="updating-existing-apps-to-the-unified-api"></a>Обновление существующих приложений в единое API
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 02/27/2018
 
 Выполните следующие действия для обновления существующего решения Xamarin.Forms использовать API-Интерфейс единого проект iOS. Унифицированный поддержка API-интерфейса только в Xamarin.Forms 1.3 и более поздней версии, поэтому [инструкции](~/cross-platform/macios/unified/updating-xamarin-forms-apps.md) также объясняется, как обновить приложение Xamarin.Forms до версии 1.3. Эти [советы](~/cross-platform/macios/unified/updating-tips.md) может помочь обновление любой машинный код для iOS в пользовательские модули подготовки отчетов или служб зависимостей.
 
-## <a name="working-with-native-types-in-cross-platform-appscross-platformmaciosnativetypesmd"></a>[Работа с собственные типы в кросс платформенных приложений](~/cross-platform/macios/nativetypes.md)
+## <a name="working-with-native-types-in-cross-platform-appscross-platformmaciosnativetypesmd"></a>[Работа с собственными типами в кроссплатформенных приложениях](~/cross-platform/macios/nativetypes.md)
 
 В этой статье описывается использование новых iOS единой API, собственные типы (nint, nuint, nfloat) в приложении кросс платформенных, где код используется совместно с устройства без iOS, таким как Android или ОС Windows Phone. Он позволяет контролировать, когда должен использоваться собственных типов и обеспечивает несколько возможных решений для случаев, где новый тип должен использоваться с кросс платформенного кода.
 
@@ -68,4 +68,4 @@ ms.lasthandoff: 02/27/2018
 - [Обновление приложений Xamarin.Forms](~/cross-platform/macios/unified/updating-xamarin-forms-apps.md)
 - [Обновление привязки](~/cross-platform/macios/unified/update-binding.md)
 - [Обновление советы](~/cross-platform/macios/unified/updating-tips.md)
-- [Классический vs отличия единой API](http://developer.xamarin.comhttps://developer.xamarin.com/releases/ios/api_changes/classic-vs-unified-8.6.0/)
+- [Классический vs отличия единой API](https://developer.xamarin.com/releases/ios/api_changes/classic-vs-unified-8.6.0/)

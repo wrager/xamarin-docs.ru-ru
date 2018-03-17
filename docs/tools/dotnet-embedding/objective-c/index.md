@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/14/2017
-ms.openlocfilehash: f6d19f0f6573b17dfb3feb6bf131686413d4e68f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 047f7d7497a114bf4b7c94e50bdf09862b882794
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="objective-c-support"></a>Поддержка Objective c.
 
@@ -201,13 +201,11 @@ ObjC не поддерживает оператор перегрузка как 
 
 При преобразовании из `DateTime` для `NSDate` DateTime `Kind` учитывается свойство.
 
-<table>
-<tr><th> Тип         </th><th> Результаты                                                                                            </th></tr>
-<!--tr><td> ------------ </td><td> -------------------------------------------------------------------------------------------------- </td></tr-->
-<tr><td> UTC          </td><td> Преобразование выполняется с помощью предоставленного объекта DateTime как есть.                                  </td></tr>
-<tr><td> Локальная        </td><td> Результат вызова `ToUniversalTime ()` в предоставленный DateTime объект используется для преобразования. </td></tr>
-<tr><td> Не указан  </td><td> Предоставленный объект DateTime предполагается формат UTC, поэтому такое же поведение, как тип == Utc.                </td></tr>
-</table>
+|Тип|Результаты                                                                                            |
+|---|---|
+|UTC|Преобразование выполняется с помощью указанных `DateTime` как.|
+|Локальная|Результат вызова `ToUniversalTime()` в предоставленном `DateTime` объект используется для преобразования.|
+|Не указан|Предоставленный `DateTime` предполагается, что объект является UTC, поэтому такое же поведение, как тип == Utc.|
 
 Преобразование осуществляется с помощью следующей формулы:
 

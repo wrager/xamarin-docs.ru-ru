@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 7819201e76e268ea84bf2cc5d49a5a07b20a04e3
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 4a3450026eff06555723b16093c7a0daf3d12ae7
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="programmatic-layout-constraints"></a>Макет программные ограничения
 
@@ -79,32 +79,15 @@ PurpleView.LeadingAnchor.ConstraintEqualTo (OrangeView.TrailingAnchor, 10).Activ
 
 Где части кода C# соответствуют данной части формулы следующим образом:
 
-<table width="100%" border="1">
-<tr>
-<td width="50%"><b>Уравнение</b></td><td><b>Код</b></td>
-</tr>
-<tr>
-<td width="50%">Элемент 1</td><td>PurpleView</td>
-</tr>
-<tr>
-<td width="50%">Атрибут 1</td><td>LeadingAnchor</td>
-</tr>
-<tr>
-<td width="50%">Relationship</td><td>ConstraintEqualTo</td>
-</tr>
-<tr>
-<td width="50%">Множитель</td><td>По умолчанию используется значение 1.0 таким образом не указан</td>
-</tr>
-<tr>
-<td width="50%">Элемент 2</td><td>OrangeView</td>
-</tr>
-<tr>
-<td width="50%">Атрибут 2</td><td>TrailingAnchor</td>
-</tr>
-<tr>
-<td width="50%">Константа</td><td>10.0</td>
-</tr>
-</table>
+|Уравнение|Код|
+|---|---|
+|Элемент 1|PurpleView|
+|Атрибут 1|LeadingAnchor|
+|Relationship|ConstraintEqualTo|
+|Множитель|По умолчанию используется значение 1.0 таким образом не указан|
+|Элемент 2|OrangeView|
+|Атрибут 2|TrailingAnchor|
+|Константа|10.0|
 
 Помимо только параметры, необходимые для решения уравнении ограничение указанным макетом, каждый из методов привязки макета обеспечивать безопасность типов параметров, передаваемых в них. Поэтому горизонтальной ограничение связывает таких как `LeadingAnchor` или `TrailingAnchor` может использоваться только с другими горизонтальной привязки типов и множители предоставляются только для ограничений по размеру.
 

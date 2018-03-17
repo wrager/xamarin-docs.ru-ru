@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/22/2017
-ms.openlocfilehash: df9059b0e64b4a05b554f25b5f9d7f6031406633
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 68372d90b0567c662f0ae43e315663832f1f769b
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="application-icons"></a>Значков приложения
 
@@ -42,104 +42,66 @@ _Это статье рассматриваются включая и управ
 
 Для поддержки всех типов значок, необходимые для приложения Xamarin.iOS разрабатывать приложения для iOS 5 через iOS 9 (или более поздней) потребуется следующие размеры изображения средства и способы их устранения:
 
-<table cellpadding="7" cellspacing="0" width="100%">
-    <tr valign="top">
-        <td width="200" style="border-width: 0px;"></td>
-        <td colspan="5" align="center" bgcolor="#F0F0F0"><b>iPhone</b></td>
-    </tr>
-    <tr valign="center">
-        <td width="200" style="border-width: 0px;"></td>
-        <td colspan="2" align="center" bgcolor="#F9F9F9"><b>iOS 5 и 6</b></td>
-        <td colspan="2" align="center" bgcolor="#F9F9F9"><b>iOS 7 и 8</b></td>
-        <td align="center" bgcolor="#F9F9F9"><b>iOS 9 и 10<b><br/><i>(iPhone 6 и 7, а также)</i></td>
-    </tr>
-    <tr valign="top" bgcolor="#F0F0F0">
-        <td width="200" align="center"><b>Тип значка</b></td>
-        <td align="center"><b>1x</b></td>
-        <td align="center"><b>2x</b></td>
-        <td align="center"><b>1x</b></td>
-        <td align="center"><b>2x</b></td>
-        <td align="center"><b>3x</b></td>
-    </tr>
-    <tr valign="top">
-        <td width="200" bgcolor="#F9F9F9" align="right">Значок приложения</td>
-        <td align="center">57x57</td>
-        <td align="center">114x114</td>
-        <td align="center" style="color:#BBBBBB;">60x60<sup>(1)</sup></td>
-        <td align="center">120x120</td>
-        <td align="center">180x180</td>
-    </tr>
-    <tr valign="top">
-        <td width="200" bgcolor="#F9F9F9" align="right">Spotlight</td>
-        <td align="center">29x29</td>
-        <td align="center">58x58</td>
-        <td align="center" style="color:#BBBBBB;">40x40<sup>(2)</sup></td>
-        <td align="center">80x80</td>
-        <td align="center">120x120</td>
-    </tr>
-    <tr valign="top">
-        <td width="200" bgcolor="#F9F9F9" align="right">Параметры</td>
-        <td align="center" style="color:#BBBBBB;">29x29<sup>(3)(4)</sup></td>
-        <td align="center" style="color:#BBBBBB;">58x58<sup>(3)(4)</sup></td>
-        <td align="center">-</td>
-        <td align="center">-</td>
-        <td align="center">87x87</td>
-    </tr>
-</table>
+### <a name="iphone-icon-sizes"></a>iPhone размера значков
 
-<table cellpadding="7" cellspacing="0" width="100%">
-    <tr valign="top">
-        <td width="200" style="border-width: 0px;"></td>
-        <td colspan="5" align="center" bgcolor="#F0F0F0"><b>iPad</b></td>
-    </tr>
-    <tr valign="center">
-        <td width="200" style="border-width: 0px;"></td>
-        <td colspan="2" align="center" bgcolor="#F9F9F9"><b>iOS 5 и 6</b></td>
-        <td colspan="2" align="center" bgcolor="#F9F9F9"><b>iOS 7 и 8</b></td>
-        <td colspan="1" align="center" bgcolor="#F9F9F9"><b>iOS&nbsp;9 и 10</b></td>
-    </tr>
-    <tr valign="top" bgcolor="#F0F0F0">
-        <td width="200" align="center"><b>Тип значка</b></td>
-        <td align="center"><b>1x</b></td>
-        <td align="center"><b>2x</b></td>
-        <td align="center"><b>1x</b></td>
-        <td align="center"><b>2x</b></td>
-        <td align="center"><b>2x<br/>iPad&nbsp;Pro</b></td>
-    </tr>
-    <tr valign="top">
-        <td width="200" bgcolor="#F9F9F9" align="right">Значок приложения</td>
-        <td align="center">72x72</td>
-        <td align="center">144x144</td>
-        <td align="center">76x76</td>
-        <td align="center">152x152</td>
-        <td align="center">167x167<sup>(6)</sup></td>
-    </tr>
-    <tr valign="top">
-        <td width="200" bgcolor="#F9F9F9" align="right">Spotlight</td>
-        <td align="center">50x50</td>
-        <td align="center">100x100</td>
-        <td align="center">40x40</td>
-        <td align="center">80x80</td>
-        <td align="center" style="color:#BBBBBB;">120x120<sup>(5)</sup></td>
-    </tr>
-    <tr valign="top">
-        <td width="200" bgcolor="#F9F9F9" align="right">Параметры</td>
-        <td align="center" style="color:#BBBBBB;">29x29<sup>(3)(5)</sup></td>
-        <td align="center" style="color:#BBBBBB;">58x58<sup>(3)(5)</sup></td>
-        <td align="center">-</td>
-        <td align="center">-</td>
-        <td align="center" style="color:#BBBBBB;">58x58<sup>(5)</sup></td>
-    </tr>
-</table>
+- **iPhone: iOS 9 и 10 (iPhone 6 и 7, а также)**
 
-1. _Оба Visual Studio для Mac и Xcode больше не поддерживает задание 1 x изображение для iOS 7._
-2. _Изображение iOS 7 1 x не поддерживается при использовании средств каталоги._
-3. _iOS 7 и 8 использовать одинаковый объем изображения в качестве iOS 5 и 6._
-4. _Использует в качестве значка Spotlight размеры и изображения._
-5. _Использует в качестве iPhone того же размера значков._
-6. _Поддерживается только с наборами образ ОС каталога._
+    ||3x|
+    |---|---|
+    |Значок приложения|180x180|
+    |Spotlight|120x120|
+    |Параметры|87x87|
 
-Дополнительные сведения о значках см. в разделе Apple [размеры изображения и значок](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html#//apple_ref/doc/uid/TP40006556-CH27-SW1) документации.
+- **iPhone: iOS 7 и 8**
+
+    ||1x|2x|
+    |---|---|---|
+    |Значок приложения|60x60<sup>1</sup>|120x120|
+    |Spotlight|40x40<sup>2</sup>|80x80|
+    |Параметры|-|-|
+
+- **iPhone: iOS 5 и 6**
+
+    ||1x|2x|
+    |---|---|---|
+    |Значок приложения|57x57|114x114|
+    |Spotlight|29x29|58x58|
+    |Параметры|29x29<sup>3, 4</sup>|58x58<sup>3, 4</sup>|
+
+### <a name="ipad-icon-sizes"></a>iPad размера значков
+
+- **iPad: iOS 9 и 10**
+
+    ||2 x (iPad Pro)|
+    |---|---|
+    |Значок приложения|167x167<sup>6</sup>|
+    |Spotlight|120x120<sup>6</sup>|
+    |Параметры|58x58<sup>5</sup>|
+
+- **iPad: iOS 7 и 8**
+
+    ||1x|2x|
+    |---|---|---|
+    |Значок приложения|76x76|152x152|
+    |Spotlight|40x40|80x80|
+    |Параметры|-|-|
+
+- **iPad: iOS 5 и 6**
+
+    ||1x|2x|
+    |---|---|---|
+    |Значок приложения|72x72|144x144|
+    |Spotlight|50x50|100x100|
+    |Параметры|29x29<sup>3, 5</sup>|58x58<sup>3, 5</sup>|
+
+ 1. Оба Visual Studio для Mac и Xcode больше не поддерживает задание 1 x изображение для iOS 7.
+ 2. Изображение iOS 7 1 x не поддерживается при использовании средств каталоги.
+ 3. iOS 7 и 8 использовать одинаковый объем изображения в качестве iOS 5 и 6.
+ 4. Использует в качестве значка Spotlight размеры и изображения.
+ 5. Использует в качестве iPhone того же размера значков.
+ 6. Поддерживается только с наборами образ ОС каталога.
+ 
+ Дополнительные сведения о значках см. в разделе Apple [размеры изображения и значок](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html#//apple_ref/doc/uid/TP40006556-CH27-SW1) документации.
 
 <a name="managing" />
 

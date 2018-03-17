@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 02/17/2018
-ms.openlocfilehash: b076c7a71d81a474ca80ac32771d5512c21c167c
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: b4705bc9c8fdb1a671c7de2453ea088bf2afe424
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="walkthrough---working-with-wcf"></a>Пошаговое руководство. Работа с WCF
 
@@ -394,37 +394,12 @@ _В этом пошаговом руководстве описывается, �
 1. В `HelloWorld.iOS` проекта, добавьте ссылку на `HelloWorldServiceProxy` проекта, а также ссылку на `System.ServiceModel` пространства имен.
 1. В **обозревателе решений**, дважды щелкните `Main.storyboard` открыть его в конструкторе операций ввода-вывода. Затем добавьте следующие `UIButton` и `UITextView` элементов управления:
 
-    <table>
-        <thead>
-            <tr>
-                <td></td>
-                <td>name</td>
-                <td>Заголовок</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><code>UIButton</code></td>
-                <td><code>sayHelloWorldButton</code></td>
-                <td>Предположим, «Hello, World»</td>
-            </tr>
-            <tr>
-                <td><code>UITextView</code></td>
-                <td><code>sayHelloWorldText</code></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><code>UIButton</code></td>
-                <td><code>getHelloWorldDataButton</code></td>
-                <td>«Hello, World» получение данных</td>
-            </tr>
-            <tr>
-                <td><code>UITextView</code></td>
-                <td><code>getHelloWorldDataText</code></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    ||name|Заголовок|
+    |--- |--- |--- |
+    |`UIButton`|`sayHelloWorldButton`|Предположим, «Hello, World»|
+    |`UITextView`|`sayHelloWorldText`||
+    |`UIButton`|`getHelloWorldDataButton`|«Hello, World» получение данных|
+    |`UITextView`|`getHelloWorldDataText`||
 
     После добавления элементов управления, пользовательский Интерфейс должен выглядеть следующий снимок экрана:
 

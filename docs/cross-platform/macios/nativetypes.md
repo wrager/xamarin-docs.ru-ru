@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 01/25/2016
-ms.openlocfilehash: b78ade19efed92ab3b2d8ba790f2d7334472bab4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 09858bd7902b44bbedd96f1be9c9c827131ee16f
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="native-types"></a>Собственные типы
 
@@ -27,28 +27,11 @@ ms.lasthandoff: 02/27/2018
 
 В следующей таблице показаны изменения в нашей типов данных, чтобы он соответствовал этой новой 32 или 64-разрядные системы:
 
-<table>
-        <tr>
-            <th>Собственный тип</th>
-            <th>32-разрядное резервного типа</th> 
-            <th>64-разрядных резервного типа</th>
-        </tr>
-        <tr>
-            <td><code>System.nint</code></td>
-        <td><code>System.Int32</code> (<code>int</code>)</td>
-        <td><code>System.Int64</code> (<code>long</code>)</td>
-        </tr>
-        <tr>
-            <td><code>System.nuint</code></td>
-        <td><code>System.UInt32</code> (<code>uint</code>)</td>
-        <td><code>System.UInt64</code> (<code>ulong</code>)</td>
-        </tr>
-        <tr>
-            <td><code>System.nfloat</code></td>
-        <td><code>System.Single</code> (<code>float</code>)</td>
-        <td><code>System.Double</code> (<code>double</code>)</td>
-        </tr>
-    </table>
+|Собственный тип|32-разрядное резервного типа|64-разрядных резервного типа|
+|--- |--- |--- |
+|`System.nint`|`System.Int32` (`int`)|`System.Int64` (`long`)|
+|`System.nuint`|`System.UInt32` (`uint`)|`System.UInt64` (`ulong`)|
+|`System.nfloat`|`System.Single` (`float`)|`System.Double` (`double`)|
 
 Мы выбрали эти имена, чтобы код C# для поиска более или менее точно так же, он будет выглядеть сегодня.
 
@@ -76,32 +59,15 @@ ms.lasthandoff: 02/27/2018
 
 При перемещении **единой**, вам потребуется заменить вхождения `System.Drawing` с их `CoreGraphics` аналоги, как показано в следующей таблице:
 
-<table>
-        <tr>
-            <th>Старый тип в System.Drawing</th>
-            <th>Новый CoreGraphics тип данных</th> 
-            <th>Описание:</th>
-        </tr>
-        <tr>
-        <td><code>RectangleF</code></td>
-        <td><code>CGRect</code></td>
-        <td>Содержит число с плавающей точки сведения прямоугольника.  </td>
-        </tr>
-        <tr>
-        <td><code>SizeF</code></td>
-        <td><code>CGSize</code></td>
-        <td>Содержит число с плавающей точки сведения о размере (ширину, высоту)</td>
-        </tr>
-        <tr>
-        <td><code>PointF</code></td>
-        <td><code>CGPoint</code></td>
-        <td>Содержит тип с плавающей запятой, точки сведения (X, Y)</td>
-        </tr>
-    </table>
+|Старый тип в System.Drawing|Новый CoreGraphics тип данных|Описание|
+|--- |--- |--- |
+|`RectangleF`|`CGRect`|Содержит число с плавающей точки сведения прямоугольника.|
+|`SizeF`|`CGSize`|Содержит число с плавающей точки сведения о размере (ширину, высоту)|
+|`PointF`|`CGPoint`|Содержит тип с плавающей запятой, точки сведения (X, Y)|
 
 Старые данные типов, используемых значений с плавающей запятой для сохранения элементов структуры данных, а новый одна использует `System.nfloat`.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Работа с собственные типы в кросс платформенных приложений](~/cross-platform/macios/native-types-cross-platform.md)
-- [Классический vs отличия единой API](http://developer.xamarin.comhttps://developer.xamarin.com/releases/ios/api_changes/classic-vs-unified-8.6.0/)
+- [Работа с собственными типами в кроссплатформенных приложениях](~/cross-platform/macios/native-types-cross-platform.md)
+- [Классический vs отличия единой API](https://developer.xamarin.com/releases/ios/api_changes/classic-vs-unified-8.6.0/)

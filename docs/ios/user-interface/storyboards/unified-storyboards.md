@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 30a952bf0df4db34c749de3d6198877b7a9766b9
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 77808ae03f5801dd3628b8966e05a574b8501f37
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="unified-storyboards"></a>Унифицированный раскадровки
 
@@ -116,63 +116,23 @@ UIImage icon = UIImage.FromFile("MonkeyImage.png");
 
 Ниже приведен типичный коллекция признака, разработчик может появиться на iPhone.
 
-<table width="100%" border="1px">
-<thead>
-<tr>
-    <td>Свойство.</td>
-    <td>Значение</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td><code>HorizontalSizeClass</code></td>
-    <td>Compact</td>
-</tr>
-<tr>
-    <td><code>VerticalSizeClass</code></td>
-    <td>Регулярное</td>
-</tr>
-<tr>
-    <td><code>UserInterfaceIdom</code></td>
-    <td>Номер телефона</td>
-</tr>
-<tr>
-    <td><code>DisplayScale</code></td>
-    <td>2.0</td>
-</tr>
-</tbody>
-</table>
+|Свойство.|Значение|
+|--- |--- |
+|`HorizontalSizeClass`|Compact|
+|`VerticalSizeClass`|Регулярное|
+|`UserInterfaceIdom`|Номер телефона|
+|`DisplayScale`|2.0|
 
 Выше набор представляют собой полностью уточненное признака коллекции, как он содержит значения для всех свойств признака.
 
 Также возможна признака коллекция, в которой отсутствуют некоторые его значения (который Apple называется *не указан*):
 
-<table width="100%" border="1px">
-<thead>
-<tr>
-    <td>Свойство.</td>
-    <td>Значение</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td><code>HorizontalSizeClass</code></td>
-    <td>Compact</td>
-</tr>
-<tr>
-    <td><code>VerticalSizeClass</code></td>
-    <td>{не задано}</td>
-</tr>
-<tr>
-    <td><code>UserInterfaceIdom</code></td>
-    <td>{не задано}</td>
-</tr>
-<tr>
-    <td><code>DisplayScale</code></td>
-    <td>{не задано}</td>
-</tr>
-</tbody>
-</table>
+|Свойство.|Значение|
+|--- |--- |
+|`HorizontalSizeClass`|Compact|
+|`VerticalSizeClass`|Не указан|
+|`UserInterfaceIdom`|Не указан|
+|`DisplayScale`|Не указан|
 
 Как правило тем не менее, при разработчик среды признака запрашивает его признака коллекции, он будет возвращать полное коллекции как показано в приведенном выше примере.
 
@@ -216,7 +176,6 @@ Apple добавлен новый класс для iOS 8 `UIImageAsset` для 
 
 Как упоминалось выше, если любой из признаки не указывается в одной из коллекций Признак и указан в другом, будет иметь значение в указанную версию. Тем не менее, если имеется несколько версий заданное значение указано, значение за последние признака коллекция будет значение, которое будет использоваться.
 
-
 ## <a name="adaptive-view-controllers"></a>Просмотр адаптивной контроллеров
 
 В этом разделе мы рассмотрим процесс как iOS представление и просмотр контроллеров применяют понятия признаки и размер классов автоматически быть более адаптивной разработчика приложений.
@@ -259,58 +218,11 @@ Apple добавлен новый класс для iOS 8 `UIImageAsset` для 
 
 iOS 8 предоставляет несколько обратных вызовов, которые разработчик может использовать для участия в изменении признака, как показано в следующей таблице:
 
-<table width="100%" border="1px">
-<thead>
-<tr>
-    <td>Phase</td>
-    <td>Callback</td>
-    <td>Описание:</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Установка</td>
-    <td>
-        <ul>
-        <li><code>WillTransitionToTraitCollection</code></li>
-        <li><code>TraitCollectionDidChange</code></li>
-        </ul>
-    </td>
-    <td>
-        <ul>
-        <li>Этот метод вызывается в начале изменения признака перед коллекции признака возвращает значение его новым значением.</li>
-        <li>Метод вызывается при изменении значения признака коллекции, но перед любой анимации.</li>
-        </ul>
-    </td>
-</tr>
-<tr>
-    <td>Анимация</td>
-    <td>
-        <ul>
-        <li><code>WillTransitionToTraitCollection</code></li>
-        </ul>
-    </td>
-    <td>
-        <ul>
-        <li>Координатор перехода, переданного этому методу <code>AnimateAlongside</code> свойство, которое позволяет разработчику добавлять анимации, которые будут выполняться вместе с анимации по умолчанию.</li>
-        </ul>
-    </td>
-</tr>
-<tr>
-    <td>Очистка</td>
-    <td>
-        <ul>
-        <li><code>WillTransitionToTraitCollection</code></li>
-        </ul>
-    </td>
-    <td>
-        <ul>
-        <li>Предоставляет метод для разработчиков для включения свой собственный код очистки после перехода.</li>
-        </ul>
-    </td>
-</tr>
-</tbody>
-</table>
+|Phase|Callback|Описание|
+|--- |--- |--- |
+|Установка|<ul><li>`WillTransitionToTraitCollection`</li><li>`TraitCollectionDidChange`</li></ul>|<ul><li>Этот метод вызывается в начале изменения признака перед коллекции признака возвращает значение его новым значением.</li><li>Метод вызывается при изменении значения признака коллекции, но перед любой анимации.</li></ul>|
+|Анимация|`WillTransitionToTraitCollection`|Координатор перехода, переданного этому методу `AnimateAlongside` свойство, которое позволяет разработчику добавлять анимации, которые будут выполняться вместе с анимации по умолчанию.|
+|Очистка|`WillTransitionToTraitCollection`|Предоставляет метод для разработчиков для включения свой собственный код очистки после перехода.|
 
 `WillTransitionToTraitCollection` Метод отлично подходит для анимации Просмотр контроллеров вместе с изменения признака коллекции. `WillTransitionToTraitCollection` Метод доступен только на просмотр контроллеров ( `UIViewController`), а не на других признаков средах, таких как `UIViews`.
 

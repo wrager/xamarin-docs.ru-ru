@@ -7,12 +7,12 @@ ms.assetid: 3BE4A128-2D88-4500-9E48-20375EA99A49
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/13/2018
-ms.openlocfilehash: 5db4c735205753810466c26535ba9e2f525709a8
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.date: 03/16/2018
+ms.openlocfilehash: 31114df0b631aea909e82f3a8b836d5ef922d2c1
+ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="android-wear"></a>Android Wear
 
@@ -38,13 +38,17 @@ Android одежды — это версия Android, предназначенн
 
 Объясняется, как развернуть приложение Android носят на устройстве с Android или эмулятор Android, настроенных для одежды. Он также включает отладку советы и сведения о настройке подключения Bluetooth на компьютере разработчика устройства Android.
 
+##  <a name="wear-apishttpsdeveloperandroidcomreferenceandroidsupportwearable"></a>[Носят API-интерфейсы](https://developer.android.com/reference/android/support/wearable)
+
+Сайте разработчика Android предоставляет подробные сведения о ключе с API-интерфейсы, например [переносном действия](https://developer.android.com/reference/android/support/wearable/activity/package-summary.html), [целей](https://developer.android.com/reference/com/google/android/wearable/intent/package-summary.html), [проверки подлинности](https://developer.android.com/reference/android/support/wearable/authentication/package-summary.html), [ Сложностей](https://developer.android.com/reference/android/support/wearable/complications/package-summary.html), [сложностей при подготовке к просмотру](https://developer.android.com/reference/android/support/wearable/complications/rendering/package-summary.html), [уведомления](https://developer.android.com/reference/android/support/wearable/notifications/package-summary.html), [представления](https://developer.android.com/reference/android/support/wearable/view/package-summary.html), и [WatchFace](https://developer.android.com/reference/android/support/wearable/watchface/package-summary.html).
+
 
 
 ## <a name="samples"></a>Примеры
 
 Можно найти несколько [образцы](https://developer.xamarin.com/samples/android/Android%20Wear/) с помощью Android носят (или перейти сразу к [github](https://github.com/xamarin/monodroid-samples/tree/master/wear)). 
 
-|Пример|Описание:|Снимок экрана|
+|Пример|Описание|Снимок экрана|
 |--- |--- |--- |
 |[SkeletonWear](https://developer.xamarin.com/samples/SkeletonWear/)|Простой пример основы переносном проектов, включая GridViewPager и интерактивные уведомления.|![Снимок экрана Skeletonwear](images/skeleton.png)|
 |[WatchViewStub](https://developer.xamarin.com/samples/WatchViewStub/)|Простой демонстрационный WatchViewStub элемента управления, который определяет форму экрана и автоматически загружает правильный макет.  Увидеть, как работает WatchViewStub **Resources/layout/main_actvity.xml** макета.|![Снимок экрана WatchViewStub](images/watchview.png)|
@@ -58,7 +62,7 @@ Android одежды — это версия Android, предназначенн
 
 Рекомендуем ознакомиться с видео, что ссылки, посвященные Xamarin.Android с износ поддерживают:
 
-|Описание:|Снимок экрана|
+|Описание|Снимок экрана|
 |--- |--- |
 |[Android L и гораздо больше](http://blog.xamarin.com/webinar-recording-android-l-and-so-much-more/) &ndash; Android Developer Preview L появился множество новых интерфейсов API для разработчиков, чтобы воспользоваться преимуществами, включая разработки материал, уведомления и новые анимации лишь некоторые из них.|![Снимок экрана видео презентации](images/video-android-l.png)|
 |[C# находится в моем уши и в глаза: стекла Google и Android с](https://www.youtube.com/watch?v=80H8tXByZQc) &ndash; переносном вычислений и выглядит как что-нибудь из будущего (или эпизода инспектора мини-приложения), однако многие пользователи уже принятие будущих сегодня! Разработчикам C# знает об этом и уже есть средства и навыки использования возможностей переносном устройств (от Evolve 2014 г.).|![Снимок экрана видео презентации](images/video-eyes-ears.png)|
