@@ -6,12 +6,12 @@ ms.assetid: 3528E195-AA74-90AF-B5F3-3B65FB4F0BB8
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/09/2018
-ms.openlocfilehash: bfbd95d33e442d31e94bd8c6ed888741f88d1188
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.date: 03/13/2018
+ms.openlocfilehash: 971c663a93a837e40e82aa63e24ce4935c44c85a
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="linking-on-android"></a>Компоновка в Android
 
@@ -19,37 +19,10 @@ ms.lasthandoff: 03/12/2018
 
 Давайте рассмотрим этот механизм на примере приложения [Привет, Android](https://developer.xamarin.com/samples/HelloM4A/).
 
-<table border="0" cellpadding="1" cellspacing="1">
-  <tbody>
-    <tr>
-      <td>
-        <strong>Конфигурация</strong>
-      </td>
-      <td>
-        <strong>Размер 1.2.0</strong>
-      </td>
-      <td>
-        <strong>Размер 4.0.1</strong>
-      </td>
-    </tr>
-    <tr>
-      <td>
-Сборка выпуска без компоновщика </td>
-      <td>
-14.0 МБ </td>
-      <td>
-16.0 МБ </td>
-    </tr>
-    <tr>
-      <td>
-Сборка выпуска с компоновщиком </td>
-      <td>
-4.2 МБ </td>
-      <td>
-2.9 МБ </td>
-    </tr>
-  </tbody>
-</table>
+|Конфигурация|Размер 1.2.0|Размер 4.0.1|
+|---|---|---|
+|Сборка выпуска без компоновщика|14.0 МБ|16.0 МБ|
+|Сборка выпуска с компоновщиком|4.2 МБ|2.9 МБ|
 
 Компоновка позволяет получить пакет, размер которого составляет около 30% от исходного размера пакета (без компоновщика) для версии 1.2.0 и всего 18% для версии 4.0.1.
 

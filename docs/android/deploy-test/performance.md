@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 3871955f723d1b3aec6245bba0502ca4f955d64c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 825b566ed45e8c337a1a452ec2c76a23e6a16462
+ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="xamarinandroid-performance"></a>Производительность Xamarin.Android
 
@@ -156,7 +156,7 @@ public override View GetView(int position, View convertView, ViewGroup parent)
 
 По мере прокрутки списка [`ListView`](https://developer.xamarin.com/api/type/Android.Widget.ListView/) вызывает переопределение метода `GetView`, запрашивая отображение новых представлений. Если это возможно, неиспользуемое представление передается в параметре `convertView`. Если это значение равно `null`, код создает новый экземпляр [`View`](https://developer.xamarin.com/api/type/Android.Views.View/), иначе свойства `convertView` можно сбросить и использовать повторно.
 
-Дополнительные сведения см. в разделе [Повторное использование представления строк](~/android/user-interface/layouts/list-view/populating.md) в статье [Заполнение объекта ListView данными](~/android/user-interface/layouts/list-view/populating.md).
+Дополнительные сведения см. в разделе [Повторное использование представления строк](~/android/user-interface/layouts/list-view/populating.md#row-view-re-use) в статье [Заполнение объекта ListView данными](~/android/user-interface/layouts/list-view/populating.md).
 
 <a name="removeeventhandlers" />
 

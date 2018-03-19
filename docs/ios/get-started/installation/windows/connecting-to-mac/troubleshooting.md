@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 5263d32ace14eb803bfd65b6a9b2ea5992ee1413
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: ffa61004bdaaaaf400f5e0d5ed90b4e6b1dcb7e7
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connection-troubleshooting"></a>Устранение неполадок при подключении
 
@@ -240,7 +240,6 @@ _В этом руководстве приводятся инструкции п
 
 4. Когда вы откроете файл ZIP, вы увидите список файлов, как в примере ниже. Для ошибок подключения наиболее важными файлами являются **\*Ide.log** и **\*Ide.svclog**. Эти файлы содержат одни и те же сообщения в двух немного разных форматах. Файл **SVCLOG** содержит данные в формате XML и полезен для просмотра сообщений. Файл **LOG** содержит обычный текст и полезен для фильтрации сообщений с помощью программ командной строки.
 
-
     Для просмотра всех сообщений выберите и откройте файл **SVCLOG**:
 
     [![](troubleshooting-images/troubleshooting-image13.png "Выбор файла SVCLOG")](troubleshooting-images/troubleshooting-image13.png#lightbox)
@@ -319,7 +318,7 @@ error : Building from a network share path is not supported at the moment. Pleas
 
 Связанная ошибка: [№ 40781](https://bugzilla.xamarin.com/show_bug.cgi?id=40781).
 
-Эта проблема может происходить, когда среде Visual Studio не удается обновить кэш компонентов MEF. В этом случае может помочь установка следующего расширения Visual Studio: [https://visualstudiogallery.msdn.microsoft.com/22b94661-70c7-4a93-9ca3-8b6dd45f47cd](https://visualstudiogallery.msdn.microsoft.com/22b94661-70c7-4a93-9ca3-8b6dd45f47cd)
+Эта проблема может происходить, когда среде Visual Studio не удается обновить кэш компонентов MEF. В этом случае может помочь установка этого расширения Visual Studio: [https://visualstudiogallery.msdn.microsoft.com/22b94661-70c7-4a93-9ca3-8b6dd45f47cd](https://visualstudiogallery.msdn.microsoft.com/22b94661-70c7-4a93-9ca3-8b6dd45f47cd)
 
 Оно очищает кэш компонентов MEF Visual Studio для устранения проблем, связанных с его повреждением.
 

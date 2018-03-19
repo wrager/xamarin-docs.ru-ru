@@ -7,12 +7,12 @@ ms.assetid: A3B6C041-4052-4E7D-999C-C4FA10BE3D67
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/09/2018
-ms.openlocfilehash: 240fc917a154085a459c6612f68c8b71e3ef01bb
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.date: 03/13/2018
+ms.openlocfilehash: 7abcaa218c6755a58e6f35e982a1144060df0b3b
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="xamarin-for-java-developers"></a>Xamarin для разработчиков Java
 
@@ -433,342 +433,48 @@ async void downloadAsync(object sender, System.EventArgs e)
 
 Многие ключевые слова, используемые в Java, также используются в C#. Имеется также ряд ключевых слов Java, которые имеют аналоги в C#, но с другими именами:
 
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-  <thead>
-    <th>
-        <strong>Java</strong>
-    </th>
-    <th>
-        <strong>C#</strong>
-    </th>
-    <th>
-        <strong>Описание</strong>
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        <code>boolean</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/c8f5xwh7.aspx">bool</a>
-      </td>
-      <td valign="top">
-Используется для объявления логических значений <code>true</code> и <code>false</code>.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>extends</code>
-      </td>
-      <td valign="top">
-        <code>:</code>
-      </td>
-      <td valign="top">
-Предшествует классу и интерфейсам наследования.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>implements</code>
-      </td>
-      <td valign="top">
-        <code>:</code>
-      </td>
-      <td valign="top">
-Предшествует классу и интерфейсам наследования.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>import</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/zhdeatwt.aspx">using</a>
-      </td>
-      <td valign="top">
-Импортирует типы из пространства имен, также используется для создания псевдонима пространства имен.
-      </td>
-    </tr>
-    <tr>
-      <td valign="final">
-        <code>final</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/88c54tsw.aspx">sealed</a>
-      </td>
-      <td valign="top">
-Предотвращает наследование классов. Предотвращает переопределение методов и свойств в производных классах.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>instanceof</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/scekt9xw.aspx">is</a>
-      </td>
-      <td valign="top">
-Определяет, совместим ли объект с указанным типом.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>native</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/e59b22c5.aspx">extern</a>
-      </td>
-      <td valign="top">
-Объявляет метод, который реализуется извне.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>package</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/z2kcy19k.aspx">namespace</a>
-      </td>
-      <td valign="top">
-Объявляет область для связанного набора объектов.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>T...</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/w5zay9db.aspx">params T[]</a>
-      </td>
-      <td valign="top">
-Задает параметр метода, который принимает переменное количество аргументов.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <code>super</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/hfw7t1ce.aspx">base</a>
-      </td>
-      <td valign="top">
-Используется для доступа к элементам родительского класса из производного класса.
-      </td>
-    </tr>
-    <tr>
-      <td valign="synchronized">
-        <code>synchronized</code>
-      </td>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/c5kehkcz.aspx">lock</a>
-      </td>
-      <td valign="top">
-Заключает в оболочку критический раздел кода с применением и снятием блокировки.
-      </td>
-    </tr>
-  </tbody>
-</table>
+|Java|C#|Описание:|
+|---|---|---|
+|`boolean`|[bool](https://msdn.microsoft.com/en-us/library/c8f5xwh7.aspx)|Используется для объявления логических значений true и false.|
+|`extends`|`:`|Предшествует классу и интерфейсам наследования.|
+|`implements`|`:`|Предшествует классу и интерфейсам наследования.|
+|`import`|[using](https://msdn.microsoft.com/en-us/library/zhdeatwt.aspx)|Импортирует типы из пространства имен, также используется для создания псевдонима пространства имен.|
+|`final`|[sealed](https://msdn.microsoft.com/en-us/library/88c54tsw.aspx)|Предотвращает наследование классов. Предотвращает переопределение методов и свойств в производных классах.|
+|`instanceof`|[is](https://msdn.microsoft.com/en-us/library/scekt9xw.aspx)|Определяет, совместим ли объект с указанным типом.|
+|`native`|[extern](https://msdn.microsoft.com/en-us/library/e59b22c5.aspx)|Объявляет метод, который реализуется извне.|
+|`package`|[namespace](https://msdn.microsoft.com/en-us/library/z2kcy19k.aspx)|Объявляет область для связанного набора объектов.|
+|`T...`|[params T](https://msdn.microsoft.com/en-us/library/w5zay9db.aspx)|Задает параметр метода, который принимает переменное количество аргументов.|
+|`super`|[base](https://msdn.microsoft.com/en-us/library/hfw7t1ce.aspx)|Используется для доступа к элементам родительского класса из производного класса.|
+|`synchronized`|[lock](https://msdn.microsoft.com/en-us/library/c5kehkcz.aspx)|Заключает в оболочку критический раздел кода с применением и снятием блокировки.|
 
 
 Кроме того, есть много ключевых слов, уникальных для C# и не имеющих аналогов в Java. В коде Xamarin.Android часто используются следующие ключевые слова C# (эту таблицу можно использовать при чтении [примера кода](https://developer.xamarin.com/samples/android/all/) Xamarin.Android):
 
-
-<table align="center" border="1" cellpadding="1" cellspacing="1">
-  <thead>
-    <th>
-        <strong>C#</strong>
-    </th>
-    <th>
-        <strong>Описание</strong>
-    </th>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/cscsdfbt.aspx">as</a>
-      </td>
-      <td valign="top">
-Выполняет преобразования между совместимыми ссылочными типами или типами, допускающими значение null.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/hh156513.aspx">async</a>
-      </td>
-      <td valign="top">
-Указывает, что метод или лямбда-выражение являются асинхронными.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/hh156528.aspx">await</a>
-      </td>
-      <td valign="top">
-Приостанавливает выполнение метода до завершения задачи.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/5bdb6693.aspx">byte</a>
-      </td>
-      <td valign="top">
-Тип 8-разрядного целого числа без знака.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/900fyy8e.aspx">delegate</a>
-      </td>
-      <td valign="top">
-Используется для инкапсуляции метода или анонимного метода.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/sbbt4032.aspx">enum</a>
-      </td>
-      <td valign="top">
-Объявляет перечисление, набор именованных констант.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/8627sbea.aspx">event</a>
-      </td>
-      <td valign="top">
-Объявляет событие в классе издателя.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/f58wzh21.aspx">fixed</a>
-      </td>
-      <td valign="top">
-Предотвращает перемещение переменной.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-get </td>
-      <td valign="top">
-Определяет метод доступа, который извлекает значение свойства.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/dd469484.aspx">in</a>
-      </td>
-      <td valign="top">
-Позволяет параметру принимать в универсальном интерфейсе тип с меньшей глубиной наследования.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/9kkx3h3c.aspx">object</a>
-      </td>
-      <td valign="top">
-Псевдоним для типа <code>Object</code> в .NET Framework.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/t3c3bfhx.aspx">out</a>
-      </td>
-      <td valign="top">
-Модификатор параметра или объявление параметра универсального типа.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/ebca9ah3.aspx">override</a>
-      </td>
-      <td valign="top">
-Расширяет или изменяет реализацию наследованного элемента.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/6b0scde8.aspx">partial</a>
-      </td>
-      <td valign="top">
-Объявляет определение, которое нужно разбить на несколько файлов, или отделяет определение метода от его реализации.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/acdd6hb7.aspx">readonly</a>
-      </td>
-      <td valign="top">
-Объявляет, что элемент класса можно назначить только во время объявления или с помощью конструктора класса.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/14akc2c7.aspx">ref</a>
-      </td>
-      <td valign="top">
-Используется для передачи аргумента по ссылке, а не по значению.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/ms228368.aspx">set</a>
-      </td>
-      <td valign="top">
-Определяет метод доступа, который устанавливает значение свойства.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/362314fe.aspx">string</a>
-      </td>
-      <td valign="top">
-Псевдоним для типа <code>String</code> в .NET Framework.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/ah19swz4.aspx">struct</a>
-      </td>
-      <td valign="top">
-Тип значения, который инкапсулирует группу связанных переменных.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/58918ffs.aspx">typeof</a>
-      </td>
-      <td valign="top">
-Получает тип объекта.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/bb383973.aspx">var</a>
-      </td>
-      <td valign="top">
-Объявляет неявно типизированную локальную переменную.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/a1khb4f8.aspx">value</a>
-      </td>
-      <td valign="top">
-Ссылается на значение, которое код клиента должен присвоить свойству.
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <a href="https://msdn.microsoft.com/en-us/library/9fkccyh4.aspx">virtual</a>
-      </td>
-      <td valign="top">
-Позволяет переопределить метод в производном классе.
-      </td>
-    </tr>
-  </tbody>
-</table>
+|C#|Описание:|
+|---|---|
+|[as](https://msdn.microsoft.com/en-us/library/cscsdfbt.aspx)|Выполняет преобразования между совместимыми ссылочными типами или типами, допускающими значение null.|
+|[async](https://msdn.microsoft.com/en-us/library/hh156513.aspx)|Указывает, что метод или лямбда-выражение являются асинхронными.|
+|[await](https://msdn.microsoft.com/en-us/library/hh156528.aspx)|Приостанавливает выполнение метода до завершения задачи.|
+|[byte](https://msdn.microsoft.com/en-us/library/5bdb6693.aspx)|Тип 8-разрядного целого числа без знака.|
+|[delegate](https://msdn.microsoft.com/en-us/library/900fyy8e.aspx)|Используется для инкапсуляции метода или анонимного метода.|
+|[enum](https://msdn.microsoft.com/en-us/library/sbbt4032.aspx)|Объявляет перечисление, набор именованных констант.|
+|[event](https://msdn.microsoft.com/en-us/library/8627sbea.aspx)|Объявляет событие в классе издателя.|
+|[fixed](https://msdn.microsoft.com/en-us/library/f58wzh21.aspx)|Предотвращает перемещение переменной.|
+|`get`|Определяет метод доступа, который извлекает значение свойства.|
+|[in](https://msdn.microsoft.com/en-us/library/dd469484.aspx)|Позволяет параметру принимать в универсальном интерфейсе тип с меньшей глубиной наследования.|
+|[object](https://msdn.microsoft.com/en-us/library/9kkx3h3c.aspx)|Псевдоним для типа Object в .NET Framework.|
+|[out](https://msdn.microsoft.com/en-us/library/t3c3bfhx.aspx)|Модификатор параметра или объявление параметра универсального типа.|
+|[override](https://msdn.microsoft.com/en-us/library/ebca9ah3.aspx)|Расширяет или изменяет реализацию наследованного элемента.|
+|[partial](https://msdn.microsoft.com/en-us/library/6b0scde8.aspx)|Объявляет определение, которое нужно разбить на несколько файлов, или отделяет определение метода от его реализации.|
+|[readonly](https://msdn.microsoft.com/en-us/library/acdd6hb7.aspx)|Объявляет, что элемент класса можно назначить только во время объявления или с помощью конструктора класса.|
+|[ref](https://msdn.microsoft.com/en-us/library/14akc2c7.aspx)|Используется для передачи аргумента по ссылке, а не по значению.|
+|[set](https://msdn.microsoft.com/en-us/library/ms228368.aspx)|Определяет метод доступа, который устанавливает значение свойства.|
+|[string](https://msdn.microsoft.com/en-us/library/362314fe.aspx)|Псевдоним для типа String в .NET Framework.|
+|[struct](https://msdn.microsoft.com/en-us/library/ah19swz4.aspx)|Тип значения, который инкапсулирует группу связанных переменных.|
+|[typeof](https://msdn.microsoft.com/en-us/library/58918ffs.aspx)|Получает тип объекта.|
+|[var](https://msdn.microsoft.com/en-us/library/bb383973.aspx)|Объявляет неявно типизированную локальную переменную.|
+|[value](https://msdn.microsoft.com/en-us/library/a1khb4f8.aspx)|Ссылается на значение, которое код клиента должен присвоить свойству.|
+|[virtual](https://msdn.microsoft.com/en-us/library/9fkccyh4.aspx)|Позволяет переопределить метод в производном классе.|
 
 
 <a name="interop" />

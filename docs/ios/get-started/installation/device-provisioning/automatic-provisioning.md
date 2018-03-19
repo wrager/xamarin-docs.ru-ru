@@ -5,14 +5,14 @@ ms.topic: article
 ms.prod: xamarin
 ms.assetid: 81FCB2ED-687C-40BC-ABF1-FB4303034D01
 ms.technology: xamarin-ios
-author: bradumbaugh
-ms.author: brumbaug
+author: asb3993
+ms.author: amburns
 ms.date: 11/17/2017
-ms.openlocfilehash: d7532d052c57ad46caca0cd6d6ce26d0e77dc05f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a411c214e35f78ff9d3dd8d4e9122702d66a2156
+ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="automatic-provisioning"></a>Автоматическая подготовка
 
@@ -34,23 +34,15 @@ _Установив Xamarin.iOS для разработки приложений
 
 1. Откройте проект iOS в Visual Studio для Mac.
 
-2. Откройте файл **Info.plist**:
+2. Откройте файл **Info.plist**.
 
-    ![Файл Info.plist](automatic-provisioning-images/image1.png)
-
-3. В разделе **Подписывание** выберите свою команду в раскрывающемся списке **Команда**:
+3. В разделе **Signing** (Подписывание) выберите **Automatic Provisioning** (Автоматическая подготовка):
 
     ![Раскрывающийся список для выбора команды](automatic-provisioning-images/image2.png)
 
-4. Установите флажок **Автоматическое управление подписыванием**, как показано ниже. В результате запустится процесс автоматического подписывания, и Visual Studio для Mac попытается создать идентификатор приложения, профиль подготовки и удостоверение подписывания, а также задать эти артефакты в качестве используемых для подписывания. При установке этого флажка элементы управления для выбора удостоверений подписывания вручную становятся недоступны.
+4. Выберите свою команду в раскрывающемся списке **Team** (Команда).
 
-    ![Параметр автоматического управления командами](automatic-provisioning-images/image3.png)
-
-5. Появится следующее диалоговое окно с сообщением о том, что файл проекта будет изменен для использования новых сертификата и профиля подготовки:
-
-    ![диалоговое окно с сообщением об изменении файла проекта](automatic-provisioning-images/image4.png)
-
-6. Через несколько секунд сертификат для подписи и профиль подготовки будут созданы и отобразятся:
+6. Через несколько секунд будут созданы сертификат для подписи и профиль подготовки:
 
     ![успешное создание сертификата и профиля](automatic-provisioning-images/image5.png)
 
