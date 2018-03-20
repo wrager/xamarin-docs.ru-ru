@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
 ms.date: 02/16/2018
-ms.openlocfilehash: 0f018aa666f08792a1693a79e22da150f82712f6
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: ebbb4b527b27b87bb6357723978e730304658720
+ms.sourcegitcommit: cc38757f56aab53bce200e40f873eb8d0e5393c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="running-android-services-in-remote-processes"></a>Выполнение Android служб в удаленных процессов
 
@@ -415,7 +415,7 @@ if (clientMessenger!= null)
 
 Чтобы использовать пользовательское разрешение, он объявлен службой, пока клиент явно запрашивает такое разрешение.
 
-Создание разрешения в службе APK, `permission` элемент будет добавлен к `manifest` элемент в**AndroidManifest.xml**. Должен иметь это разрешение `name`, `protectionLevel`, и `label` заданные атрибуты. `name` Атрибута должно быть присвоено строку, которая однозначно идентифицирует разрешение. Имя будет отображаться в **информация приложения** представление **параметры Android** (как показано в следующем разделе).
+Создание разрешения в службе APK, `permission` элемент будет добавлен к `manifest` элемент в **AndroidManifest.xml**. Должен иметь это разрешение `name`, `protectionLevel`, и `label` заданные атрибуты. `name` Атрибута должно быть присвоено строку, которая однозначно идентифицирует разрешение. Имя будет отображаться в **информация приложения** представление **параметры Android** (как показано в следующем разделе).
 
 `protectionLevel` Атрибута должно быть присвоено одно из четырех строковые значения, которые были описаны выше.  `label` И `description` должен ссылаться на строковые ресурсы и используются для предоставления понятное имя и описание для пользователя.
 

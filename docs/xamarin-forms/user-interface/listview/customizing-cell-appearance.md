@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2016
-ms.openlocfilehash: 62ac3ab4b3114447f0c67d86c601a688bb8ff1a7
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 551a0de8cd4965815c67a795fb5723d4261a173c
+ms.sourcegitcommit: cc38757f56aab53bce200e40f873eb8d0e5393c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="cell-appearance"></a>Внешнего вида ячеек
 
@@ -73,11 +73,9 @@ TextCells подготавливаются к просмотру как собс
 <a name="customcells" />
 
 ## <a name="custom-cells"></a>Пользовательские ячейки
-Если встроенные ячеек не обеспечивают требуемый макет, пользовательские ячейки реализован требуемый макет. Например можно представить ячейки с двух меток, которые имеют равный вес. Объект `LabelCell` будет недостаточно поскольку `LabelCell` имеет одной метки, меньший по размеру.
+Если встроенные ячеек не обеспечивают требуемый макет, пользовательские ячейки реализован требуемый макет. Например можно представить ячейки с двух меток, которые имеют равный вес. Объект `LabelCell` будет недостаточно поскольку `LabelCell` имеет одной метки, меньший по размеру. Большая часть настроек ячейку добавьте дополнительные данные только для чтения (например, дополнительные ярлыки, изображения или другие сведения об отображении).
 
 Все пользовательские ячейки должны быть производными от [ `ViewCell` ](http://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/), тот же базовый класс, что все ячейки встроенные типы использования.
-
-Большая часть настроек ячейку добавьте дополнительные данные только для чтения (например, дополнительные ярлыки, изображения или другие сведения об отображении). При добавлении кнопок и других элементов управления, которые может иметь фокус ячейки сам может оказаться щелчка на Android. Ниже приведена способ обойти это ограничение.
 
 Xamarin.Forms 2 введен новый [поведение кэширования](~/xamarin-forms/user-interface/listview/performance.md#cachingstrategy) на `ListView` элемента управления, который может быть задан для повышения быстродействия для некоторых типов пользовательских ячеек.
 
@@ -261,30 +259,6 @@ var listView = new ListView {
 ```
 
 В iOS и Android Если [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) перезапускается элементы и ячейки пользовательского использует пользовательское средство отрисовки, пользовательское средство отрисовки необходимо правильно реализовать уведомления об изменении свойства. Если ячейки повторно их значения свойства будут меняться при обновлении контекста привязки, доступные ячейки с `PropertyChanged` вызванных событий. Дополнительные сведения см. в разделе [Настройка ViewCell](~/xamarin-forms/app-fundamentals/custom-renderer/viewcell.md). Дополнительные сведения о перезапуске ячейки см. в разделе [стратегии кэширования](~/xamarin-forms/user-interface/listview/performance.md#cachingstrategy).
-
-### <a name="enabling-row-selection-on-android"></a>Включение выбора строки на Android
-
-Чтобы разрешить выбор строк для ячейки, включающие входных элементов, таких как кнопки, простой [ `custom renderer` ](~/xamarin-forms/app-fundamentals/custom-renderer/index.md) является обязательным. В коде, создать подкласс `Button` , чтобы пользовательское средство отрисовки, которые могут быть добавлены в проекты платформы:
-
-```csharp
-public class ListButton : Button { }
-```
-
-Реализация модуля подготовки отчетов для Android просто задает `Focusable` свойство, которое позволяет строки могут быть выделены, а также узел для щелчка кнопки. Этот код добавляется в проект приложения Android:
-
-```csharp
-[assembly: ExportRenderer (typeof (ListButton), typeof (ListButtonRenderer))]
-// ...
-public class ListButtonRenderer : ButtonRenderer {
-    protected override void OnElementChanged (ElementChangedEventArgs<ListButton> e) {
-        base.OnElementChanged (e);
-        Control.Focusable = false;
-    }
-}
-```
-
-Как уже говорилось выше, только для Android требуется `ButtonRenderer` должны быть реализованы. операций ввода-вывода, так и с помощью платформы Windows Phone позволяют кнопку, чтобы щелкать без реализации пользовательского средства отрисовки.
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

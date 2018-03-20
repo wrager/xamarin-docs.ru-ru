@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 09/14/2017
-ms.openlocfilehash: 50f99c48d0f53bd6a2dfaf42284137ce1e424b30
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 747c158460b23b91e4c2986d212802528cdd3979
+ms.sourcegitcommit: cc38757f56aab53bce200e40f873eb8d0e5393c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="an-introduction-to-skiasharp"></a>Общие сведения о SkiaSharp
 
@@ -20,7 +20,7 @@ _Это представлено краткое введение в принци
 
 SkiaSharp предоставляет мощные двумерной графики API, который может использоваться для подготовки к просмотру в 2D буферы.  Их можно использовать для реализации настраиваемых элементов пользовательского интерфейса и двумерной графики, могут быть включены в приложение.  SkiaSharp выполняется привязка .NET [Skia](https://skia.org) библиотеки и наследует функций и возможностей этой библиотеки.
 
-Библиотека в настоящее время доступен в виде кросс платформенных [пакет NuGet](https://www.nuget.org/packages/SkiaSharp), его можно добавить в проект при добавлении ссылки NuGet.
+Библиотека в настоящее время доступен в виде кросс платформенных [пакет NuGet](https://www.nuget.org/packages/SkiaSharp), добавьте в проект при добавлении ссылки NuGet.
 
 Чтобы нарисовать, код создаст `SkCanvas` которого описывает рабочую область, где будет выполняться операции рисования.
 
