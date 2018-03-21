@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/06/2018
-ms.openlocfilehash: c7dc63cbed0dbdc13dfd2d32a0859c0fe7a29196
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: a63cc916d3c182baccb4ddd3c9003bdb8e5f30c7
+ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="xamarinios-analysis-rules"></a>Правила анализа Xamarin.iOS
 
@@ -24,33 +24,45 @@ ms.lasthandoff: 03/09/2018
 > [!NOTE]
 > Анализ Xamarin.iOS выполняется только в вашей текущей конфигурации. Настоятельно рекомендуется запускать средство для отладки **и** конфигурации выпуска.
 
-## <a name="a-namexia0001xia0001-disabledlinkerrule"></a><a name="XIA0001"/>XIA0001: DisabledLinkerRule
+<a name="XIA0001" />
+
+## <a name="xia0001-disabledlinkerrule"></a>XIA0001: DisabledLinkerRule
 
 - **Проблема:** компоновщик отключен на устройстве в режиме отладки.
 - **Исправление:** можно попытаться запустить код с компоновщика избежать сюрпризов.
 Настройка, перейдите к проекту > сборка iOS > Поведение компоновщика.
 
-## <a name="a-namexia0002xia0002-testcloudagentreleaserule"></a><a name="XIA0002"/>XIA0002: TestCloudAgentReleaseRule
+<a name="XIA0002" />
+
+## <a name="xia0002-testcloudagentreleaserule"></a>XIA0002: TestCloudAgentReleaseRule
 
 - **Проблема:** построения приложения, которые инициализации агента тестирования облака, будут отклонены Apple при отправке, как они используют закрытый API.
 - **Исправление:** Add или устранения необходимости #if и определяет в коде.
 
-## <a name="a-namexia0003xia0003-ipadebugbuildsrule"></a><a name="XIA0003"/>XIA0003: IPADebugBuildsRule
+<a name="XIA0003" />
+
+## <a name="xia0003-ipadebugbuildsrule"></a>XIA0003: IPADebugBuildsRule
 
 - **Проблема:** отладочной конфигурации, использующей ключей подписывания разработчика не должна создавать IPA, сколько требуется только для распространения, которая теперь использует мастер публикации.
 - **Исправление:** отключить IPA сборки в параметры проекта для конфигурации отладки.
 
-## <a name="a-namexia0004xia0004-missing64bitsupportrule"></a><a name="XIA0004"/>XIA0004: Missing64BitSupportRule
+<a name="XIA0004" />
+
+## <a name="xia0004-missing64bitsupportrule"></a>XIA0004: Missing64BitSupportRule
 
 - **Проблема:** поддерживаемой архитектуры для «освободить | устройство» не является 64-разрядная версия совместимы, отсутствует ARM64. Это проблема, поскольку Apple не принимает только приложения iOS 32 бита в AppStore.
 - **Исправление:** Double щелкните свой проект iOS, перейдите к сборке > iOS построения и изменить поддерживаемых архитектур, поэтому имеет ARM64.
 
-## <a name="a-namexia0005xia0005-float32rule"></a><a name="XIA0005"/>XIA0005: Float32Rule
+<a name="XIA0005" />
+
+## <a name="xia0005-float32rule"></a>XIA0005: Float32Rule
 
 - **Проблема:** не с помощью параметра float32 (--aot параметры =-O = float32) приводит к увеличивает производительность, особенно на мобильном устройстве, где двойной точности математические значительно снижается. Обратите внимание, что .NET использует двойной точности на внутреннем уровне даже для типа float, поэтому Включение этого параметра влияет на точность и, возможно, совместимости.
 - **Исправление:** Double щелкните свой проект iOS, перейдите к сборке > iOS построения и снимите флажок «Выполнять все операции 32-разрядное число с плавающей запятой как 64-разрядное число с плавающей запятой».
 
-## <a name="a-namexia0006xia0006-httpclientavoidmanaged"></a><a name="XIA0006"/>XIA0006: HttpClientAvoidManaged
+<a name="XIA0006" />
+
+## <a name="xia0006-httpclientavoidmanaged"></a>XIA0006: HttpClientAvoidManaged
 
 - **Проблема:** мы рекомендуем использовать собственный обработчик HttpClient вместо управляемых того, для повышения производительности, меньший размер исполняемого файла и для поддержки новых стандартов.
 - **Исправление:** Double щелкните свой проект iOS, перейдите к сборке > iOS построения и измените реализацию HttpClient NSUrlSession (iOS 7 +) или CFNetwork для поддержки версии предшествующих iOS 7.

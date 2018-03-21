@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/06/2016
-ms.openlocfilehash: ffde89558495c4b9ccb9ec41761b5fc7ca53db38
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: e04ea24883bdf1e29a538aaff92c555df8e1755f
+ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="localization"></a>Локализация
 
@@ -21,22 +21,6 @@ _Xamarin.Forms приложений можно локализовать с по�
 ## <a name="overview"></a>Обзор
 
 Встроенный механизм для локализации приложения использует .NET [RESX-файлы](http://msdn.microsoft.com/library/ekyft91f(v=vs.90).aspx) и классы в `System.Resources` и `System.Globalization` пространства имен. RESX-файлы, содержащие переведенных строк внедряются в сборку Xamarin.Forms, а также класс, созданный компилятором, который предоставляет строго типизированный доступ к переводы. Перевод текста может быть извлечен в коде.
-
-Этот документ содержит следующие разделы.
-
-**Глобализация Xamarin.Forms кода**
-
-* Добавление и использование строковых ресурсов в приложении Xamarin.Forms PCL.
-* Включение обнаружения языка в каждом из собственных приложений.
-
-**Локализация XAML**
-
-* Локализация XAML с помощью `IMarkupExtension`.
-* Включение расширения разметки в собственных приложений.
-
-**Локализация элементов платформой**
-
-* Локализация, изображения и имени приложения в собственных приложений.
 
 ### <a name="sample-code"></a>Пример кода
 
@@ -651,15 +635,17 @@ using Xamarin.Forms.Xaml;
 
 namespace UsingResxLocalization
 {
-    // You exclude the 'Extension' suffix when using in Xaml markup
-    [ContentProperty ("Text")]
+    // You exclude the 'Extension' suffix when using in XAML
+    [ContentProperty("Text")]
     public class TranslateExtension : IMarkupExtension
     {
-        readonly CultureInfo ci;
+        readonly CultureInfo ci = null;
         const string ResourceId = "UsingResxLocalization.Resx.AppResources";
 
-        private static readonly Lazy<ResourceManager> ResMgr = new Lazy<ResourceManager>(()=> new ResourceManager(ResourceId
-                                                                                                                  , typeof(TranslateExtension).GetTypeInfo().Assembly));
+        static readonly Lazy<ResourceManager> ResMgr = new Lazy<ResourceManager>(
+            () => new ResourceManager(ResourceId, IntrospectionExtensions.GetTypeInfo(typeof(TranslateExtension)).Assembly));
+
+        public string Text { get; set; }
 
         public TranslateExtension()
         {
@@ -669,24 +655,21 @@ namespace UsingResxLocalization
             }
         }
 
-        public string Text { get; set; }
-
-        public object ProvideValue (IServiceProvider serviceProvider)
+        public object ProvideValue(IServiceProvider serviceProvider)
         {
             if (Text == null)
-                return "";
+                return string.Empty;
 
             var translation = ResMgr.Value.GetString(Text, ci);
-
             if (translation == null)
             {
-                #if DEBUG
+#if DEBUG
                 throw new ArgumentException(
-                    String.Format("Key '{0}' was not found in resources '{1}' for culture '{2}'.", Text, ResourceId, ci.Name),
+                    string.Format("Key '{0}' was not found in resources '{1}' for culture '{2}'.", Text, ResourceId, ci.Name),
                     "Text");
-                #else
-                translation = Text; // returns the key, which GETS DISPLAYED TO THE USER
-                #endif
+#else
+                translation = Text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
+#endif
             }
             return translation;
         }
@@ -699,7 +682,7 @@ namespace UsingResxLocalization
 * Класс называется `TranslateExtension`, но мы называем соглашением является **перевод** в разметку.
 * Этот класс реализует `IMarkupExtension`, необходимые для Xamarin.Forms для его работы.
 * `"UsingResxLocalization.Resx.AppResources"` Представляет идентификатор ресурса для ресурсов RESX. Он состоит из наших пространство имен по умолчанию, папку, где находятся файлы ресурсов и имя файла по умолчанию RESX.
-* `ResourceManager` Класс создается с помощью `typeof(TranslateExtension)` для определения текущей сборки нужно загрузить ресурсы.
+* `ResourceManager` Класс создается с помощью `IntrospectionExtensions.GetTypeInfo(typeof(TranslateExtension)).Assembly)` для определения текущей сборки для загрузки ресурсов и кэшированные в статическом `ResMgr` поля. Оно создается как `Lazy` тип, так что его создание откладывается до первого использования в `ProvideValue` метод.
 * `ci` использует службы зависимостей для получения выбранного языка пользователя от исходной операционной системой.
 * `GetString` Представляет метод, который получает фактическое переведенные строки из файлов ресурсов. В Windows Phone 8.1 и универсальная платформа Windows `ci` будет иметь значение null из-за `ILocalize` не реализован интерфейс на этих платформах. Это эквивалентно вызову `GetString` метод только с первым параметром. Вместо этого платформа ресурсы автоматически определяют языковой стандарт и получит переведенных строк из соответствующего файла RESX.
 * Обработка ошибок был включен для отладки, создавая исключение отсутствующие ресурсы (в `DEBUG` только в режиме).

@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/09/2018
-ms.openlocfilehash: edf25ebd089994c01b2fa45e77b35fad9a51e350
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 70f17b6bc8dc991534cdf4dd065c813aa0e27e96
+ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="java-bindings-metadata"></a>Привязки метаданных Java
 
@@ -313,7 +313,7 @@ NavigationManager.2DSignNextManueverEventArgs
 </mapping>
 ```
 
-Здесь мы предприняли класс Java `SKRealReachSettings` и определенные перечисления C# называется `SKRealReachSettings` в пространстве имен `Skobbler.Ngx.Map.RealReach`. `field` Записей определяет имя константы Java (пример `UNIT\_SECOND`), имя элемента перечисления (пример `Second`) и целое значение, представленное обе сущности (пример `0`). 
+Здесь мы предприняли класс Java `SKRealReachSettings` и определенные перечисления C# называется `SKMeasurementUnit` в пространстве имен `Skobbler.Ngx.Map.RealReach`. `field` Записей определяет имя константы Java (пример `UNIT_SECOND`), имя элемента перечисления (пример `Second`) и целое значение, представленное обе сущности (пример `0`). 
 
 ### <a name="defining-gettersetter-methods-using-enummethodsxml"></a>Определение методов Getter/Setter, с помощью EnumMethods.xml
 
@@ -328,7 +328,7 @@ NavigationManager.2DSignNextManueverEventArgs
 </mapping>
 ```
 
-Первый `method` строки карты возвращаемое значение Java `getMeasurementUnit` метод `SKRealReachSettings` перечисления. Второй `method` строки карты первый параметр `setMeasurementUnit` же перечислением.
+Первый `method` строки карты возвращаемое значение Java `getMeasurementUnit` метод `SKMeasurementUnit` перечисления. Второй `method` строки карты первый параметр `setMeasurementUnit` же перечислением.
 
 Со всеми изменениями, можно использовать следующий код в Xamarin.Android для задания `MeasurementUnit`: 
 

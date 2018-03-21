@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 47f90af1ed68e6c3aea5710b7181b4787fc0895c
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 9834da444032622cc3547e7c99ca3de0e41bb603
+ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="architecture"></a>Архитектура
 
@@ -33,7 +33,7 @@ Xamarin.Android разработчики получают доступ к фун
 
 Пакеты Android приложений являются контейнерами ZIP с *.apk* расширение имени файла. Пакеты приложения Xamarin.Android имеют ту же структуру и макет, что обычный Android пакетов с учетом следующих отличий:
 
--   Сборок приложения (содержащий IL) *хранимых* несжатые внутри *сборки* папки. Во время процесса построения при запуске в версии *.apk* — *mmap()* ed в процесс и сборки загружаются из памяти. Это обеспечивает более быстрый запуск приложений, как сборки, для которых не требуется извлечь перед выполнением. - *Примечание:* сведения о расположении сборки, такие как [Assembly.Location](https://developer.xamarin.com/api/property/System.Reflection.Assembly.Location/) и [Assembly.CodeBase](https://developer.xamarin.com/api/property/System.Reflection.Assembly.CodeBase/)
+-   Сборок приложения (содержащий IL) *хранимых* несжатые внутри *сборки* папки. Во время процесса построения при запуске в версии *.apk* — *mmap()* ed в процесс и сборки загружаются из памяти. Это обеспечивает более быстрый запуск приложений, как сборки не обязательно должно быть извлечено перед выполнением. - *Примечание:* сведения о расположении сборки, такие как [Assembly.Location](https://developer.xamarin.com/api/property/System.Reflection.Assembly.Location/) и [Assembly.CodeBase](https://developer.xamarin.com/api/property/System.Reflection.Assembly.CodeBase/)
     *нельзя полагаться* в выпуске выполняет построение. Они не существуют как операции distinct файловой системы и имеют местоположение не может использоваться.
 
 
