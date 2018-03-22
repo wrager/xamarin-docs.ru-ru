@@ -180,6 +180,7 @@
 ### [Средство выбора](user-interface/picker/index.md)
 #### [Задание свойства ItemsSource средства выбора](user-interface/picker/populating-itemssource.md)
 #### [Добавление данных в коллекцию элементов средства выбора](user-interface/picker/populating-items.md)
+### [Slider](user-interface/slider.md)
 ### [Стили](user-interface/styles/index.md)
 #### [Введение](user-interface/styles/introduction.md)
 #### [Явные стили](user-interface/styles/explicit.md)
