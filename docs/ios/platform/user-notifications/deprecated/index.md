@@ -7,18 +7,18 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/07/2016
-ms.openlocfilehash: be005f62c914fe5f59696c5ef9b608a73a45d269
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 348f84533974d1434dd0c7e5045c20e16b57057b
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deprecated-notification-technologies"></a>Технологии устаревшие уведомления
 
 В этом разделе показано, как реализовать локальный и push-уведомления в Xamarin.iOS. Он будет приведено описание различных элементов пользовательского интерфейса iOS уведомления о и рассматриваются API-Интерфейс связанные с созданием и отображает соответствующее уведомление.
 
 > [!IMPORTANT]
-> **Примечание:** сведения в этом разделе, относятся к iOS 9 и предыдущий, она была оставлена здесь для поддержки более старых версий iOS. Для iOS, 10 и более поздней версии, см. в разделе [руководство по Framework уведомления пользователя](~/ios/platform/user-notifications/index.md) за поддержку локальных и удаленных уведомлений на устройства iOS.
+> Сведения в этом разделе, относятся к iOS 9 и предыдущий, она была оставлена здесь для поддержки более старых версий iOS. Для iOS, 10 и более поздней версии, см. в разделе [руководство по Framework уведомления пользователя](~/ios/platform/user-notifications/index.md) за поддержку локальных и удаленных уведомлений на устройства iOS.
 
 
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/27/2018
 
 <a name="Local Notifications Walkthrough" />
 
-##  <a name="walkthrough---using-local-notifications-in-xamarinioslocal-notifications-in-ios-walkthroughmd"></a>[Пошаговое руководство. Использование локальной уведомлений в Xamarin.iOS](local-notifications-in-ios-walkthrough.md)
+##  <a name="walkthrough---using-local-notifications-in-xamarinioslocal-notifications-in-ios-walkthroughmd"></a>[Пошаговое руководство. Использование локальных уведомлений в Xamarin.iOS](local-notifications-in-ios-walkthrough.md)
 
 В этом разделе мы рассмотрим способы использования локального уведомлений в приложения Xamarin.iOS. Он описывается основные принципы создания и публикации на уведомление, которое появится оповещение при получении приложением.
 

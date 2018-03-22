@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 7b6d0901f8b01668626fc3b6a70a091e99e2287e
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c72d0dd89593002dbb6ea8ac9369666b811f3a73
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -173,7 +173,7 @@ _Недопустимый пакет — Apple TV приложений с пом
 ```
 
 > [!IMPORTANT]
-> **Примечание:** игровые устройства Bluetooth — это необязательный покупки, конечные пользователи могут выполнить, приложение не может заставить пользователя приобрести. Если приложение поддерживает игровые устройства оно должно также поддерживать удаленного Siri таким образом, готовый к применению всеми пользователями Apple TV игры.
+> Игровые устройства Bluetooth — это необязательный покупки, конечные пользователи могут выполнить, приложение не может заставить пользователя приобрести. Если приложение поддерживает игровые устройства оно должно также поддерживать удаленного Siri таким образом, готовый к применению всеми пользователями Apple TV игры.
 
 Дополнительные сведения см. в разделе нашей [работа с игровые устройства](~/ios/tvos/platform/remote-bluetooth.md#Working-with-Game-Controllers) часть наших [контроллеров Bluetooth и Siri удаленного](~/ios/tvos/platform/remote-bluetooth.md) документации.
 

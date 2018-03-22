@@ -7,12 +7,12 @@ ms.assetid: C2BA2705-9B20-01C2-468D-860BDFEDC157
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/06/2018
-ms.openlocfilehash: 2d5a83b9f6278406e9b643277357df253f5fd524
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.date: 03/21/2018
+ms.openlocfilehash: 4225e45ecfe4a4a2cdb7e75b94823fc8fcd29fc4
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="listview"></a>ListView
 
@@ -56,10 +56,10 @@ _ListView является важным компонентом пользова�
 
 Этот файл определяет макет для каждого элемента, который будет помещен в [ `ListView` ](https://developer.xamarin.com/api/type/Android.Widget.ListView/).
 
-Откройте `HelloListView.cs` и сделайте класс расширить [ `ListActivity` ](https://developer.xamarin.com/api/type/Android.App.ListActivity/) (вместо [ `Activity` ](https://developer.xamarin.com/api/type/Android.App.Activity/)):
+Откройте `MainActivity.cs` и измените класс для расширения [ `ListActivity` ](https://developer.xamarin.com/api/type/Android.App.ListActivity/) (вместо [ `Activity` ](https://developer.xamarin.com/api/type/Android.App.Activity/)):
 
 ```csharp
-public class HelloListView : ListActivity
+public class MainActivity : ListActivity
 {
 ```
 
@@ -74,9 +74,9 @@ protected override void OnCreate (Bundle bundle)
 
     ListView.TextFilterEnabled = true;
 
-    ListView.ItemClick += delegate (object sender, ItemEventArgs args) {
-        // When clicked, show a toast with the TextView text
-        Toast.MakeText (Application, ((TextView)args.View).Text, ToastLength.Short).Show ();
+    ListView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
+    {
+        Toast.MakeText(Application, ((TextView)args.View).Text, ToastLength.Short).Show();
     };
 }
 ```
@@ -93,7 +93,12 @@ protected override void OnCreate (Bundle bundle)
 Можно использовать схемы элемента списка, вместо того чтобы определять свой собственный файл макета для платформы [ `ListAdapter` ](https://developer.xamarin.com/api/property/Android.App.ListActivity.ListAdapter/).
 Например, попробуйте использовать `Android.Resource.Layout.SimpleListItem1` вместо `Resource.Layout.list_item`.
 
-После [ `OnCreate()` ](https://developer.xamarin.com/api/member/Android.App.Activity.OnCreate/(Android.OS.Bundle)) метод, добавьте массив строк:
+Добавьте следующие `using` инструкции:
+
+```csharp
+using System;
+```
+Добавьте следующий массив строк, который является членом `MainActivity`:
 
 ```csharp
 static readonly string[] countries = new String[] {
@@ -145,22 +150,23 @@ static readonly string[] countries = new String[] {
 
 Запустите приложение. В списке или введите для фильтрации, затем щелкните элемент, чтобы просмотреть сообщение. Результат должен быть примерно таким:
 
-[![Снимок экрана: пример элемента управления ListView с названия стран](images/helloviews6.png)](images/helloviews6.png#lightbox)
+[![Снимок экрана: пример элемента управления ListView с названия стран](images/01-listview-example-sml.png)](images/01-listview-example.png#lightbox)
 
 Обратите внимание, что использование массива жестко заданная строка не является рекомендуемым способом разработки. Один для демонстрации используется в этом учебнике для простоты [ `ListView` ](https://developer.xamarin.com/api/type/Android.Widget.ListView/) мини-приложения. Наилучшим решением будет ссылаться на массив строк, определяемых к внешним ресурсам, например с `string-array` ресурсов в проекте **Resources/Values/Strings.xml** файла. Пример:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="countries_array">
-        <item>Bahrain</item>
-        <item>Bangladesh</item>
-        <item>Barbados</item>
-        <item>Belarus</item>
-        <item>Belgium</item>
-        <item>Belize</item>
-        <item>Benin</item>
-    </string-array>
+  <string name="app_name">HelloListView</string>
+  <string-array name="countries_array">
+    <item>Bahrain</item>
+    <item>Bangladesh</item>
+    <item>Barbados</item>
+    <item>Belarus</item>
+    <item>Belgium</item>
+    <item>Belize</item>
+    <item>Benin</item>
+  </string-array>
 </resources>
 ```
 
@@ -170,6 +176,9 @@ static readonly string[] countries = new String[] {
 string[] countries = Resources.GetStringArray (Resource.Array.countries_array);
 ListAdapter = new ArrayAdapter<string> (this, Resource.Layout.list_item, countries);
 ```
+Запустите приложение. Результат должен быть примерно таким:
+
+[![Снимок экрана: пример элемента управления ListView с меньшего размера список имен](images/02-smaller-example-sml.png)](images/02-smaller-example.png#lightbox)
 
 
 ## <a name="going-further-with-listview"></a>Если продолжить с ListView

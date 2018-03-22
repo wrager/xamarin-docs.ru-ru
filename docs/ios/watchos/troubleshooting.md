@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: ce850b7890265b82774534ca0daaf25bed7e0c2d
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 4a6b916f991b337d8a28764f1482ddd837bad460
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="watchos-troubleshooting"></a>watchOS Устранение неполадок
 
@@ -33,13 +33,6 @@ ms.lasthandoff: 03/09/2018
 ### <a name="general"></a>Общие
 
 <a name="deploy" />
-<!--
-* You cannot deploy to the App Store *from within Visual Studio for Mac or Visual Studio*
-    in the current release. You should create an **Archive** in Visual Studio for Mac
-    and then switch to Xcode to upload the archive to iTunes Connect. Visual Studio
-    is not currently supported (but will be a future release). Refer to the
-    [deployment guide](~/ios/watchos/deploy-test/appstore.md) for more information.
--->
 
 - Более ранних версиях Visual Studio для Mac неправильно отображается одно из **AppleCompanionSettings** значки, как если бы 88 x 88 точек; что приводит к **отсутствует значок ошибки** при попытке отправить в приложение Хранилище.
     Этот значок должны иметь размер 87 x 87 (29 единицы измерения для  **@3x**  Сетчатка экраны). Не удается устранить эту проблему в Visual Studio для Mac - либо изменение ресурса изображения в Xcode или вручную изменить **Contents.json** файла (для соответствия [в этом примере](https://github.com/xamarin/monotouch-samples/blob/master/WatchKit/WatchKitCatalog/WatchApp/Resources/Images.xcassets/AppIcons.appiconset/Contents.json#L126-L132)).
@@ -47,14 +40,6 @@ ms.lasthandoff: 03/09/2018
 - Если проект расширения Контрольные значения **Info.plist > идентификатор пакета WKApp** не [правильно установить](~/ios/watchos/get-started/project-references.md) для сопоставления приложения Контрольные значения **идентификатор пакета**, отладчик не удастся подключиться и Visual Будет ожидать Studio для Mac с сообщением *«Ожидание подключения отладчика»*.
 
 - Отладка поддерживается в **уведомления** режиме, но может быть ненадежной. Повторная попытка иногда будет работать. Убедитесь, что приложение Watch **Info.plist** `WKCompanionAppBundleIdentifier` соответствует идентификатор пакета, родительского или контейнер приложения iOS (т. е., выполняется на iPhone).
-
-<!--
-- **Can't launch application on Watch simulator.** This seems to
-    be an issue with the iOS Simulator hanging when trying to
-    install an app that has changed. Xcode release notes (beta 4)
-    includes a similar known issue:
-    If the issue persists, reset the Simulator (**iOS Simulator > Reset Content and Settings...**).
--->
 
 - Конструктор iOS не содержит entrypoint стрелок для обзора или уведомления интерфейса контроллеров.
 
@@ -69,15 +54,6 @@ ms.lasthandoff: 03/09/2018
 ### <a name="visual-studio"></a>Visual Studio
 
 Поддержка iOS конструктор для комплекта средств для наблюдения за *требует* решения настроены правильно. Если ссылки проекта не заданы (в разделе [как задать ссылки](~/ios/watchos/get-started/project-references.md)) рабочей области конструирования не будет работать правильно.
-
-<!--
-* New Watch Kit apps created in Visual Studio might not allow
-    starting in Notifications mode.
-
-* You cannot deploy to the App Store from Visual Studio (see [notes above](#deploy)
-    and the [deployment guide](~/ios/watchos/deploy-test/appstore.md)). Use
-    Visual Studio for Mac and Xcode on your Mac Build Host.
-    -->
 
 <a name="noalpha" />
 
@@ -109,11 +85,10 @@ with an alpha channel. Icons should not have an alpha channel.
 ## <a name="manually-adding-interface-controller-files"></a>Вручную добавлять файлы контроллер интерфейса
 
 > [!IMPORTANT]
-> Поддержка комплекта средств для наблюдения за Xamarin включает в себя проектирование раскадровки Контрольные значения в конструкторе операций ввода-вывода (в Visual Studio для Mac и Visual Studio), не требующий следующие действия. Просто присвойте контроллеру интерфейса имя класса в Visual Studio для свойства Mac планшета и файлы кода C# создается автоматически.
+> Поддержка Xamarin WatchKit включает в себя проектирование раскадровки Контрольные значения в конструкторе операций ввода-вывода (в Visual Studio для Mac и Visual Studio), не требующий следующие действия. Просто присвойте контроллеру интерфейса имя класса в Visual Studio для свойства Mac планшета и файлы кода C# создается автоматически.
 
 
 *Если* использовании построителя интерфейс Xcode, выполните следующие действия для создания новых контроллеров интерфейс для наблюдения за приложения и включите синхронизацию с Xcode, выходов и действия, доступные в C#:
-
 
 1. Откройте приложение watch **Interface.storyboard** в **Xcode интерфейс построителя**.
     
@@ -256,7 +231,7 @@ with an alpha channel. Icons should not have an alpha channel.
 Полный путь к пакету основным приложением *для приложения iOS, которое содержит приложение watch и расширение*.
 
 > [!NOTE]
-> *Примечание:* необходимо ввести путь является по *App-файл приложения iPhone*, т. е. один, будут развернуты на симуляторе iOS, которая содержит приложение watch и расширения контрольных значений.
+> Необходимо ввести путь является по *App-файл приложения iPhone*, т. е. один, будут развернуты на симуляторе iOS, которая содержит приложение watch и расширения контрольных значений.
 
 Пример
 

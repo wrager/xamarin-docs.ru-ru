@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/19/2018
-ms.openlocfilehash: 54ec41636f491708ea72585d3889fbbca85c8eb1
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: e07a6b72f2821e8cc65e0b0d690dbadf1a6713b6
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="launch-screens"></a>Запуска экранов
 
@@ -179,7 +179,7 @@ _В этой статье описывается создание приложе
 -----
 
 > [!NOTE]
-> **Примечание**: раскадровки, использовать как экран запуска _должен_ включать только простые встроенные элементы пользовательского интерфейса и **нельзя** выполнять вычисления или производные от пользовательского класса.
+> Использовать в качестве экрана запуска раскадровки _необходимо_ включать только простые встроенные элементы пользовательского интерфейса и **нельзя** выполнять вычисления или производные от пользовательского класса.
 
 Дополнительные сведения о создании экрана запуска с помощью единой раскадровки см. в разделе [динамического экраны запуска](~/ios/user-interface/storyboards/unified-storyboards.md#dynamic-launch-screens) раздел [единой раскадровки](~/ios/user-interface/storyboards/unified-storyboards.md) руководства.
 

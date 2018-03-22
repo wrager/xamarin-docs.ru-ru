@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 0b8d8d08db15959a47093f255a891605a089ea00
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c55ba4fb90181aaa1aa8ec52e2fcb3e2b2cc76d0
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="table-control"></a>Элемент управления Table
 
@@ -51,7 +51,8 @@ myTable.SetNumberOfRows ((nint)rows.Count, "default");
 ```
 
 > [!IMPORTANT]
-> **Примечание**: не виртуализованных строк таблицы, как они находятся в iOS. Попробуйте ограничить число строк (Apple рекомендует меньше 20).
+> Строки таблицы не виртуализованных как в iOS. Попробуйте ограничить число строк (Apple рекомендует меньше 20).
+
 После создания строк необходимо для заполнения каждой ячейки (например `GetCell` в iOS). Этот фрагмент кода из [WatchTables пример](https://developer.xamarin.com/samples/monotouch/watchOS/WatchTables/) обновления метки в каждой строке
 
 ```csharp
@@ -62,7 +63,7 @@ for (var i = 0; i < rows.Count; i++) {
 ```
 
 > [!IMPORTANT]
-> **Примечание:** использование `SetNumberOfRows` и затем циклически с помощью `GetRowController` вызывает всю таблицу для отправки в часы. На последующих представления таблицы, если вам нужно добавить или удалить отдельные строки используйте `InsertRowsAt` и `RemoveRowsAt` для повышения производительности.
+> С помощью `SetNumberOfRows` и затем циклически с помощью `GetRowController` вызывает всю таблицу для отправки в часы. На последующих представления таблицы, если вам нужно добавить или удалить отдельные строки используйте `InsertRowsAt` и `RemoveRowsAt` для повышения производительности.
 
 
 ## <a name="respond-to-taps"></a>Ответ на касания
@@ -148,7 +149,7 @@ watchOS 3 появилась новая возможность для табли
 ![](table-images/table-scroll-sml.png "Пример вертикальной подробное разбиение по страницам") ![](table-images/table-detail-sml.png)
 
 > [!IMPORTANT]
-> **Предупреждение:** эта функция доступна в настоящее время только путем редактирования раскадровки в построителе интерфейс Xcode.
+> Эта функция доступна в настоящее время только путем редактирования раскадровки в построителе интерфейс Xcode.
 
 Чтобы включить эту функцию, установите `WKInterfaceTable` на рабочую область конструирования и деления **вертикальной подробное разбиение по страницам** параметр:
 

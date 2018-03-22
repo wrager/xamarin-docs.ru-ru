@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: c806eb51be5f585f2c94b438f6ca31a70aaa7551
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 04c7a7235665e14fd128a3a70951168c1914c112
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough--using-touch-in-ios"></a>Пошаговое руководство — с помощью сенсорного ввода в iOS
 
@@ -92,12 +92,12 @@ ms.lasthandoff: 03/09/2018
         }
     }
     ```
+    
     Этот метод работает, проверив `UITouch` объекта, а если он существует выполнения некоторых операций, в зависимости от того, где произошло сенсорный:
 
     * _Внутри TouchImage_ — отображать текст `Touches Began` в метку и изменение изображения.
     * _Внутри DoubleTouchImage_ — изменить изображение, отображаемое, если жест двойного касания.
     * _Внутри DragImage_ — задать флаг, указывающий, что началось сенсорный. Метод `TouchesMoved` будет использовать этот флаг для определения, если `DragImage` должны перемещаться по экрану или нет, как будет показано на следующем шаге.
-
 
     Этот код обрабатывает только отдельные штрихи, по-прежнему не поведение, если пользователь перемещает пальцев на экране. Для ответа на перемещение, реализовать `TouchesMoved` как показано в следующем коде:
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Измените файл **GestureViewController.cs** и добавьте следующую переменную экземпляр:
 
-    ```chsarp
+    ```csharp
     #region Private Variables
     private bool imageHighlighted = false;
     private RectangleF originalImageFrame = RectangleF.Empty;
@@ -204,7 +204,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Добавьте следующий метод в контроллер:
 
-    ```chsarp
+    ```csharp
     private void WireUpDragGestureRecognizer()
     {
         // Create a new tap gesture
@@ -223,7 +223,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Чтобы реализовать HandleDrag, добавьте следующий код на контроллер:
 
-    ```chsarp
+    ```csharp
     private void HandleDrag(UIPanGestureRecognizer recognizer)
     {
         // If it's just began, cache the location of the image
@@ -250,7 +250,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Добавить `UITapGestureRecognizer` это приведет к изменению на изображение в DoubleTouchImage. Добавьте следующий метод `GestureViewController` контроллера:
 
-    ```chsarp
+    ```csharp
     private void WireUpTapGestureRecognizer()
     {
         // Create a new tap gesture
@@ -286,7 +286,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Заключительную, нам нужно будет изменить `ViewDidLoad` , чтобы он вызывает методы, которые мы только что добавили. Изменить ViewDidLoad, таким образом, чтобы она похожа на следующий код:
 
-    ```chsarp
+    ```csharp
     public override void ViewDidLoad()
     {
         base.ViewDidLoad();
@@ -324,7 +324,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Добавьте новый класс в проект с именем `CheckmarkGestureRecognizer`и оформить ее как следующий код:
 
-    ```chsarp
+    ```csharp
     using System;
     using CoreGraphics;
     using Foundation;
@@ -444,7 +444,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Теперь, когда мы определили пользовательского распознавателя (`CheckmarkGestureRecognizer`) изменить **CustomGestureViewController.cs** и добавьте следующие переменные экземпляра два файла:
 
-    ```chsarp
+    ```csharp
     #region Private Variables
     private bool isChecked = false;
     private CheckmarkGestureRecognizer checkmarkGesture;
@@ -453,7 +453,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Чтобы создать и настроить нашей распознаватель жестов, добавьте следующий метод в контроллер:
 
-    ```chsarp
+    ```csharp
     private void WireUpCheckmarkGestureRecognizer()
     {
         // Create the recognizer
@@ -482,7 +482,7 @@ ms.lasthandoff: 03/09/2018
 
 1. Изменить `ViewDidLoad` , чтобы он вызывал `WireUpCheckmarkGestureRecognizer`, как показано в следующем фрагменте кода:
 
-    ```chsarp
+    ```csharp
     public override void ViewDidLoad()
     {
         base.ViewDidLoad();

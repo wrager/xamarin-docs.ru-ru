@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2017
-ms.openlocfilehash: c5cca8e6fceb9aef82fc6543adc6dc5e7399d839
-ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
+ms.openlocfilehash: b2a5402b8d2ac127f6a5f75decbee8567decb905
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="user-interface"></a>Пользовательский интерфейс
 
@@ -65,6 +65,10 @@ Xamarin.Forms предоставляет элемент управления п�
 ## <a name="pickerpickerindexmd"></a>[Средство выбора](picker/index.md)
 
 [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) Представление — это элемент управления для выбора элемента из списка данных.
+
+## <a name="sliderslidermd"></a>[Slider](slider.md)
+
+`Slider` Позволяет пользователю выбрать числовое значение из непрерывного диапазона.
 
 ## <a name="stylesstylesindexmd"></a>[Стили](styles/index.md)
 

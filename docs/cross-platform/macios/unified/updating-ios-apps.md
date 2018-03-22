@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 3114b2abdc96bc7d122ca0b86e1c53977f6df1be
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 4eaa486fddc23ad18670bef4043a5adf30a1e9ac
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="updating-existing-ios-apps"></a>Обновление существующего приложений iOS
 
@@ -101,7 +101,7 @@ Xamarin предоставляет средства для Visual Studio для 
 До этого времени, так же, как компоненты необходимо для переключения любой пакет NuGet, включенных в версию, которая поддерживает API-интерфейсы единого проект и затем выполните чистую сборку.
 
 > [!IMPORTANT]
-> **Примечание:** при наличии ошибки в виде _«ошибка 3 не может включать в том же проекте Xamarin.iOS «monotouch.dll» и «Xamarin.iOS.dll» — «Xamarin.iOS.dll» упоминается явно, пока ссылается «monotouch.dll» "xxx Версия = 0.0.000, язык и региональные параметры = neutral, PublicKeyToken = null'»_ после преобразования приложения единой API-интерфейсам, это обычно из-за наличия компонента или пакета NuGet в проект, который не был обновлен для API единой. Необходимо удалить существующий компонент/NuGet, обновите версию, которая поддерживает API-интерфейсы единой и выполните чистую сборку.
+> При наличии ошибки в виде _«ошибка 3 не может включать в том же проекте Xamarin.iOS «monotouch.dll» и «Xamarin.iOS.dll» — «Xamarin.iOS.dll» упоминается явно, пока ссылается «monotouch.dll» "xxx, версия = 0.0.000, Язык и региональные параметры = neutral, PublicKeyToken = null'»_ после преобразования приложения единой API-интерфейсам, это обычно из-за наличия компонента или пакета NuGet в проект, который не был обновлен для API единой. Необходимо удалить существующий компонент/NuGet, обновите версию, которая поддерживает API-интерфейсы единой и выполните чистую сборку.
 
 ## <a name="enabling-64-bit-builds-of-xamarinios-apps"></a>Включение 64-разрядных сборок приложения Xamarin.iOS
 

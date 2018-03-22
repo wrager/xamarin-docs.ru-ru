@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 33e27043c3738c5213b17786e5a88fb30a7fc017
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: e868c0ee71688e208c5217d9f5a89ea3acec988c
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="speech-recognition"></a>Распознавание речи
 
@@ -127,7 +127,7 @@ Apple включила доступности API, чтобы определит
 -----
 
 > [!IMPORTANT]
-> **Примечание:** сбоя можно задать только одно из перечисленных выше `Info.plist` ключей (`NSSpeechRecognitionUsageDescription` или `NSMicrophoneUsageDescription`) может привести к приложения, при попытке доступа к распознавания речи или микрофон для динамической аудио завершается ошибкой без предупреждения.
+> Невозможность можно задать только одно из перечисленных выше `Info.plist` ключей (`NSSpeechRecognitionUsageDescription` или `NSMicrophoneUsageDescription`) может привести к приложения, при попытке доступа к распознавания речи или микрофон для динамической аудио завершается ошибкой без предупреждения.
 
 
 
@@ -186,7 +186,7 @@ namespace MonkeyTalk
 Объект `SFSpeechRecognizerAuthorizationStatus` результат возвращается `RequestAuthorization` процедура обратного вызова метода, который может использоваться для действий в зависимости от разрешений пользователя. 
 
 > [!IMPORTANT]
-> **Примечание:** Apple предлагает ждать, пока пользователь начинает действия в приложении, которое требуется распознавания речи, прежде чем запросить это разрешение.
+> Apple предлагает ждать, пока пользователь начинает действия в приложении, которое требуется распознавания речи, прежде чем запросить это разрешение.
 
 ### <a name="recognizing-pre-recorded-speech"></a>Распознавание речи предварительно записанные
 
@@ -373,7 +373,7 @@ RecognitionTask.Cancel ();
 Очень важно вызвать `RecognitionTask.Cancel` перевод для освобождения памяти и процессора устройства был отменен пользователем.
 
 > [!IMPORTANT]
-> **Примечание:** Если клиент не получит `NSSpeechRecognitionUsageDescription` или `NSMicrophoneUsageDescription` `Info.plist` ключей может привести в приложении произошел сбой без предупреждения при попытке доступа к распознавания речи или микрофон для звук в реальном времени (`var node = AudioEngine.InputNode;`). См. в разделе **предоставляет описание использования** Дополнительные сведения в разделе выше.
+> Если клиент не получит `NSSpeechRecognitionUsageDescription` или `NSMicrophoneUsageDescription` `Info.plist` ключей может привести в приложении произошел сбой без предупреждения при попытке доступа к распознавания речи или микрофон для звук в реальном времени (`var node = AudioEngine.InputNode;`). См. в разделе **предоставляет описание использования** Дополнительные сведения в разделе выше.
 
 ## <a name="speech-recognition-limits"></a>Ограничения распознавания речи
 

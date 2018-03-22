@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 03/30/2017
-ms.openlocfilehash: c111d2f873270eab78eee92edc3d884d1e92fdd8
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 69c4b25e17c31d57701f99e84f6f686c65dc7028
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="interactive-workbooks"></a>Интерактивные книги
 
@@ -32,7 +32,7 @@ _Используйте книги, для создания динамическ
 
 [ ![](workbook-images/inspector-0.6.0-repl-small.png "Предоставляет окно дополнение кода, Цветовая подсветка синтаксиса, встроенные быстрой диагностики и поддержка многострочного оператора")](workbook-images/inspector-0.6.0-repl.png#lightbox)
 
-Xamarin книги будут сохраняться в `.workbook` файл, который представляет собой файл CommonMark с определенными метаданными в верхней (см. [типы файлов книг](#Workbooks_Files_Types) для получения дополнительных сведений о Сохранение книг).
+Xamarin книги будут сохраняться в `.workbook` файл, который представляет собой файл CommonMark с определенными метаданными в верхней (см. [типы файлов книг](#workbooks-files-types) для получения дополнительных сведений о Сохранение книг).
 
 ### <a name="nuget-package-support"></a>Поддержка пакета NuGet
 
@@ -132,7 +132,7 @@ Xamarin книги будут сохраняться в `.workbook` файл, к
 Если обычный текст `.workbook` открывается файл, который ссылается на ресурсы из одного каталога в книгах 0.99.3 или более поздней версии, при ее сохранении, он будет преобразован в `.workbook` пакета. Это справедливо на Mac и Windows.
 
 > [!NOTE]
-> **Примечание:** Windows пользователи будут открывать `package.workbook\index.workbook` непосредственно, но в противном случае пакет будет функционировать так же, как и на компьютере Mac.
+> Пользователи Windows будет открывать `package.workbook\index.workbook` непосредственно, но в противном случае пакет будет функционировать так же, как и на компьютере Mac.
 
 ### <a name="archives"></a>Архивы
 

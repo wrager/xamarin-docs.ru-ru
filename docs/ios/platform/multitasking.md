@@ -9,11 +9,11 @@ ms.custom: xamu-video
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 34b51f784b549caa0dda2eeda066bb39dfc13020
-ms.sourcegitcommit: 5fc1c4d17cd9c755604092cf7ff038a6358f8646
+ms.openlocfilehash: 0783372cd36d5a4984d09ee055257d525e7becb1
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="multitasking-for-ipad"></a>Многозадачность для iPad
 
@@ -223,19 +223,16 @@ public void NewEntry() {
 
 <a name="Opting-Out-of-Multitasking" />
 
-## <a name="opting-out-of-multitasking"></a>Выбор горизонтального многозадачность
+## <a name="opting-out-of-multitasking"></a>Отказ от многозадачной
 
 Хотя Apple видно, что все приложения iOS 9 поддерживает многозадачной, могут существовать особых причин для приложения не слишком как игры или приложения камеры, требующих во весь экран для правильной работы.
 
-Для приложения Xamarin.iOS отказаться от выполняется либо на слайд Out панели или в режиме разделенного представления, изменить проект **Info.plist** файл и проверьте **требует полного экрана**:
+Для приложения Xamarin.iOS отказаться от выполняется либо на слайд Out панели или в режиме разделенного представления изменения проекта **Info.plist** файл и проверьте **требует полного экрана**:
 
-[![](multitasking-images/fullscreen01.png "Выбор горизонтального многозадачность")](multitasking-images/fullscreen01.png#lightbox)
+[![](multitasking-images/fullscreen01.png "Отказ от многозадачной")](multitasking-images/fullscreen01.png#lightbox)
 
 > [!IMPORTANT]
-> **Примечание:** хотя Opting масштабированием многозадачной предотвращает приложение выполняется в слайд Out или представление с разделением, он допускает **не** предотвращает другое приложение в слайд Out или изображение в видео рисунок выводил вместе с вашей приложение.
-
-
-
+> Хотя отказ от многозадачной предотвращает приложение выполняется в слайд Out или представление с разделением, он запрещен другое приложение выполняется в слайд Out или рисунка на изображении видео выводил вместе с приложением.
 
 <a name="Disabling-PIP-Video-Playback" />
 

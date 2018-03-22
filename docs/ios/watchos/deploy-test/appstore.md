@@ -8,16 +8,16 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: dfbc976da109a3813b8d7abd85adafbc9bb94fa0
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c5b89570fdd3df80d39c6621fcd12a23babed9ee
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploying-to-the-app-store"></a>Развертывание в магазине приложений
 
 > [!IMPORTANT]
->  Обязательно ознакомьтесь с [отправки Apple Watch руководства](https://developer.apple.com/app-store/watch/)и в разделе [Устранение](#Troubleshooting) проблемы, вам, возможно.
+> Обязательно ознакомьтесь с [отправки Apple Watch руководства](https://developer.apple.com/app-store/watch/)и в разделе [Устранение](#Troubleshooting) проблемы, вам, возможно.
 
 - Убедитесь, что у вас есть.
   - [**Профили подготовки распространителя** ](#provisioning) созданы для проектов.
@@ -177,7 +177,7 @@ is missing icon with name pattern '*44x44@2x.png' (Home Screen 42mm).
 Обязательно последнюю версию Visual Studio для Mac и что ваш **AppIcons.appiconset** содержит полный набор образов. Если вы по-прежнему видите эту ошибку, просмотреть источник **Contents.json** для подтверждения того, он содержит запись для всех требуемых изображения. Кроме того, как только вы убедились, вы используете последнюю версию Xamarin, удалении и повторном создании **AppIcons.appiconset**.
 
 > [!IMPORTANT]
-> Примечание: Имеется известная ошибка в Visual Studio для Mac Контрольные значения значок поддержки: ожидается, что изображение 88 x 88 пикселей для  **29x29@3x**  образ (который должен иметь 87 x 87 точек).
+> Значок поддержка Mac Контрольные значения в Visual Studio имеется известная ошибка: ожидается, что изображение 88 x 88 пикселей для  **29x29@3x**  образ (который должен быть 87 x 87 пикселей).
 
 
 Не удается устранить эту проблему в Visual Studio для Mac - либо изменение ресурса изображения в Xcode или вручную изменить **Contents.json** файла (для соответствия [в этом примере](https://github.com/xamarin/monotouch-samples/blob/master/WatchKit/WatchKitCatalog/WatchApp/Resources/Images.xcassets/AppIcons.appiconset/Contents.json#L126-L132)).
@@ -196,7 +196,7 @@ The app may have been built or signed with non-compliant or pre-release tools.
 Ensure you are using the latest version of Xcode and Xamarin's tools.
 -->
 > [!IMPORTANT]
-> Примечание: Необходимо **архив** приложения в Visual Studio для Mac и затем переключитесь в Xcode 6.2 + для проверки и отправки в iTunes Connect.
+> Вы должны **архив** приложения в Visual Studio для Mac и затем переключитесь в Xcode 6.2 + для проверки и отправки в iTunes Connect.
 
 
 Используйте канал стабильный Xamarin и Xcode 6.2 +.

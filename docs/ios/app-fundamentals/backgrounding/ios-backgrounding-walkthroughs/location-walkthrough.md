@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: b10894d6b18d78d682825000726c5ef2cbe5ba6b
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: dfae07d36c67c12d254cd70c22acb01b2fc1c9b0
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough---using-background-location"></a>Пошаговое руководство. Использование фона местоположения
 
@@ -79,7 +79,7 @@ ms.lasthandoff: 03/12/2018
     - `AllowsBackgroundLocationUpdates` — Это логическое свойство, представленные в iOS 9, можно задать, чтобы разрешить приложению получать обновления место при приостановке.
 
     > [!IMPORTANT]
-    > **Предупреждение**: iOS 8 (и выше), также необходимо вносить изменения в **Info.plist** из файла пользователя в запросе авторизации.
+    > iOS 8 (и выше), также необходимо вносить изменения в **Info.plist** из файла пользователя в запросе авторизации.
 
 1. Добавьте раздел `NSLocationAlwaysUsageDescription` или `NSLocationWhenInUseUsageDescription` строкой, которая будет отображаться для пользователя в оповещение, которое запрашивает доступ к папке данных.
 

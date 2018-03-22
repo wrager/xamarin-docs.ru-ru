@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 1ad37cb4a794ac47e0e2f184a730949f14e85572
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 3d70aff4df91120402e2987598b8973172b46245
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-7-user-interface-overview"></a>iOS 7 Обзор пользовательского интерфейса
 
@@ -173,7 +173,7 @@ public override void ViewDidLayoutSubviews ()
 Значение смещения формируется динамически после добавления представления к иерархии, поэтому при попытке чтения `TopLayoutGuide` и `BottomLayoutGuide` значения в `ViewDidLoad` вернет 0. Вычислить значение представление загрузки — например, в `ViewDidLayoutSubviews`.
 
 > [!IMPORTANT]
-> **Примечание**: `TopLayoutGuide` и `BottomLayoutGuide` являются устаревшими в iOS 11 им следует предпочесть новые зарезервированная область макета. Apple указано, что зарезервированная область с помощью совместим с iOS версии более ранней, чем iOS версии 11. Дополнительные сведения см. в разделе [обновление приложения для iOS 11](~/ios/platform/introduction-to-ios11/updating-your-app/visual-design.md#fullscreen) руководства.
+> `TopLayoutGuide` и `BottomLayoutGuide` являются устаревшими в iOS 11 им следует предпочесть новые зарезервированная область макета. Apple указано, что зарезервированная область с помощью совместим с iOS версии более ранней, чем iOS версии 11. Дополнительные сведения см. в разделе [обновление приложения для iOS 11](~/ios/platform/introduction-to-ios11/updating-your-app/visual-design.md#fullscreen) руководства.
 
 #### <a name="edgesforextendedlayout"></a>EdgesForExtendedLayout
 
@@ -252,7 +252,7 @@ public override bool PrefersStatusBarHidden ()
 Цвет оттенка может применяться для изображений, а также при `RenderingMode` равно `UIImageRenderingMode.AlwaysTemplate`.
 
 > [!IMPORTANT]
-> Примечание: Цвета оттенка нельзя задать с помощью `UIAppearance`.
+> Цвет оттенка нельзя задать с помощью `UIAppearance`.
 
 
 ### <a name="dynamic-type"></a>Динамический тип

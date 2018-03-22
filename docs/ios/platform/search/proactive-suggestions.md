@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 15f649440b2a855189acff33afcef5e8272a0769
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: e7252aa89e2514653fc730c7221d22cc053d2e24
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="introduction-to-proactive-suggestions"></a>Общие сведения о упреждающего предложения
 
@@ -68,7 +68,7 @@ UIKit была расширена в iOS 10, чтобы включить [TextCo
 Если приложение поддерживает только расстояния для управления доступом, с подсказкой системы сразу начинаете работать с *«Get расстояния для...»*, если поддерживаются другие типы маршрутизации направление (например, Walking или велосипед), система будет использовать *«Получить инструкциям по...»*
 
 > [!IMPORTANT]
-> **Примечание:** [MKMapItem](https://developer.xamarin.com/api/type/MapKit.MKMapItem/) объект, получающий приложения не содержит сведений, широты и долготы и потребует геокодирования.
+> [MKMapItem](https://developer.xamarin.com/api/type/MapKit.MKMapItem/) объект, получающий приложения не содержит сведений, широты и долготы и потребует геокодирования.
 
 ## <a name="implementing-proactive-suggestions"></a>Реализация упреждающего предложения
 

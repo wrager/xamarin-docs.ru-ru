@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 06/12/2017
-ms.openlocfilehash: eff096b1dca15b9b11038a599987f632bca2352f
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 01b316e296f78ea2739e2f3ed1bd8d8ec112fca8
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="httpclient-stack-and-ssltls-implementation-selector-for-iosmacos"></a>Стек HttpClient и селектор реализации SSL/TLS для операций ввода-вывода и macOS
 
@@ -110,6 +110,7 @@ HttpClient client = new HttpClient(new NSUrlSessionHandler());
 Протокол SSL (Secure Socket Layer) и его последователь TLS (протокол TLS), обеспечивают поддержку для протокола HTTP и другими сетевыми подключениями через `System.Net.Security.SslStream`. Xamarin.iOS, Xamarin.tvOS или Xamarin.Mac в `System.Net.Security.SslStream` реализация будет вызывать Apple стандартной реализации SSL/TLS, вместо использования управляемого реализацию, предоставляемую моно. Реализация собственного Apple поддерживает TLS 1.2.
 
 <a name="Mono" />
+
 > [!WARNING]
 > **Моно/управляемый код** поставщика TLS ограничена SSL v3 и TLS v1. Этот поставщик TLS рекомендуется к использованию и больше не доступен для Xamarin.iOS приложений. 
 

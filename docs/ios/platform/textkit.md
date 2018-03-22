@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 7ae41e99d20f0e8f3cad6b933e415002903a3294
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: d3a370c3a8d930c817d38422b249b496532fa33f
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="text-kit"></a>Текст пакета
 
@@ -143,7 +143,7 @@ public class ExclusionPathView : UITextView
 Этот код добавляет поддержку для рисования для текстового представления с помощью двухмерной графики. Поскольку `UITextView` класс теперь встроена в пакет текст используется для отрисовки текста и разметки, он может использовать все возможности текст пакета, например установку исключения пути.
 
 > [!IMPORTANT]
->   Примечание: Этот пример-подклассов `UITextView` Добавление сенсорного ввода, поддержка рисования. Создание подклассов `UITextView` не является обязательным для доступа к возможностям текст пакета.
+> Этот пример подклассов `UITextView` Добавление сенсорного ввода, поддержка рисования. Создание подклассов `UITextView` не является обязательным для доступа к возможностям текст пакета.
 
 
 

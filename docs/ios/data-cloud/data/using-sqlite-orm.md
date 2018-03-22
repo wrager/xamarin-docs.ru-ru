@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/18/2018
-ms.openlocfilehash: 2b29826f1a7acc6bb8dcd0594c69a5cb7ff6db42
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: b161519bb6fecd31d54690af7c44772c0752f1f6
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-sqlitenet"></a>С помощью SQLite.NET
 
@@ -167,7 +167,7 @@ foreach (var s in stocksStartingWithA) {
 ```
 
 > [!IMPORTANT]
-> **Примечание**: при написании инструкций SQL непосредственно создать зависимость на именах таблиц и столбцов в базе данных, которые были созданы из классов и их атрибуты. Изменить эти имена в коде необходимо обновить все написанному вручную инструкции SQL.
+> При написании инструкций SQL непосредственно зависимость создается на именах таблиц и столбцов в базе данных, которые были созданы из классов и их атрибуты. Изменить эти имена в коде необходимо обновить все написанному вручную инструкции SQL.
 
 ### <a name="deleting-an-object"></a>Удаление объекта
 
