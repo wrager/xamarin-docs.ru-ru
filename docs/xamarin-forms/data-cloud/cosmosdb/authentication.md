@@ -1,6 +1,6 @@
 ---
-title: "Проверка подлинности пользователей с базой данных Azure Cosmos DB документа"
-description: "Базы данных Azure Cosmos DB документа поддерживает секционированные коллекции, которые может охватывать несколько серверов и секции, одновременно поддерживая неограниченное хранение и пропускную способность. В этой статье объясняется, как для объединения с секционированных коллекций контроля доступа, чтобы пользователь имеет доступ только к своих собственных документов в приложении Xamarin.Forms."
+title: Проверка подлинности пользователей с базой данных Azure Cosmos DB документа
+description: Базы данных Azure Cosmos DB документа поддерживает секционированные коллекции, которые может охватывать несколько серверов и секции, одновременно поддерживая неограниченное хранение и пропускную способность. В этой статье объясняется, как для объединения с секционированных коллекций контроля доступа, чтобы пользователь имеет доступ только к своих собственных документов в приложении Xamarin.Forms.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 11ED4A4C-0F05-40B2-AB06-5A0F2188EF3D
@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 06/16/2017
-ms.openlocfilehash: 10c4a1e3355263722d170dff0a5e2707eb794818
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 8de64d6489b4022e43bcf694f3b13d6f7eaaecbd
+ms.sourcegitcommit: 7b76c3d761b3ffb49541e2e2bcf292de6587c4e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="authenticating-users-with-an-azure-cosmos-db-document-database"></a>Проверка подлинности пользователей с базой данных Azure Cosmos DB документа
 
@@ -22,12 +22,12 @@ _Базы данных Azure Cosmos DB документа поддерживае
 
 Ключ секции должен быть указан при создании секционированной коллекции и документы с одинаковым ключом секции, которые будут храниться в одной секции. Таким образом указав удостоверение пользователя в качестве ключа секции приведет к секционированную коллекцию, которой будут храниться только документы для этого пользователя. Это также гарантирует, что будет выполнено масштабирование базы данных Azure Cosmos DB документа как количество пользователей и увеличить элементов.
 
-Необходимо разрешить доступ к любой коллекции и модель управления доступом DocumentDB API определяет два типа доступа конструкций:
+Необходимо разрешить доступ к любой коллекции и модель управления доступом SQL API определяет два типа доступа конструкций:
 
 - **Главные ключи** включить полный административный доступ ко всем ресурсам внутри Cosmos DB учетной записи и создается при создании учетной записи Cosmos DB.
 - **Маркеры ресурсов** моделируют связь между пользователем базы данных и разрешения, пользователь имеет для определенного ресурса Cosmos DB, например коллекции или документа.
 
-Предоставление доступа к главного ключа открывает учетную запись Cosmos DB вероятность вредоносной или намеренное использование. Тем не менее маркеры ресурсов Cosmos DB предоставляют безопасный механизм позволяя пользователям чтение, запись и удаление конкретных ресурсов в зависимости от разрешений, предоставленных учетной записи Cosmos DB.
+Предоставление доступа к главного ключа открывает учетную запись Cosmos DB вероятность вредоносной или намеренное использование. Тем не менее маркеры ресурсов Azure Cosmos DB предоставляют безопасный механизм позволяя пользователям чтение, запись и удаление конкретных ресурсов в зависимости от разрешений, предоставленных учетной записи Azure Cosmos DB.
 
 Типичный подход к запроса, создания и доставки маркеры ресурсов для мобильного приложения является использование брокера маркера ресурсов. На следующей диаграмме показан общий обзор как в примере приложения используется брокеру маркера ресурсов для управления доступом к данным документа, базы данных:
 
@@ -44,7 +44,7 @@ _Базы данных Azure Cosmos DB документа поддерживае
 > [!NOTE]
 > По истечении срока действия маркера ресурсов документа последующих запросов к базе данных получат 401 создается исключение. На этом этапе Xamarin.Forms приложения следует повторно установить удостоверение и запросите новый маркер ресурса.
 
-Дополнительные сведения о секционировании Cosmos DB см. в разделе [как секции и масштабирования в Azure Cosmos DB](/azure/cosmos-db/partition-data/). Дополнительные сведения об управлении доступом Cosmos DB см. в разделе [защита доступа к данным Cosmos DB](/azure/cosmos-db/secure-access-to-data/) и [управление доступом в DocumentDB API](/rest/api/documentdb/access-control-on-documentdb-resources/).
+Дополнительные сведения о секционировании Cosmos DB см. в разделе [как секции и масштабирования в Azure Cosmos DB](/azure/cosmos-db/partition-data/). Дополнительные сведения об управлении доступом Cosmos DB см. в разделе [защита доступа к данным Cosmos DB](/azure/cosmos-db/secure-access-to-data/) и [управление доступом в API-Интерфейсы SQL](/rest/api/documentdb/access-control-on-documentdb-resources/).
 
 ## <a name="setup"></a>Установка
 
@@ -58,11 +58,11 @@ _Базы данных Azure Cosmos DB документа поддерживае
 
 <a name="cosmosdb_configuration" />
 
-### <a name="cosmos-db-configuration"></a>Cosmos базы данных конфигурации
+### <a name="azure-cosmos-db-configuration"></a>Конфигурация Azure Cosmos DB
 
 Процесс создания Cosmos DB учетной записи, которую будет использовать контроль доступа выглядит следующим образом:
 
-1. Создайте учетную запись Cosmos DB. Дополнительные сведения см. в разделе [создать учетную запись Cosmos DB](/azure/cosmos-db/documentdb-dotnetcore-get-started#step-1-create-a-documentdb-account).
+1. Создайте учетную запись Cosmos DB. Дополнительные сведения см. в разделе [создать учетную запись Azure Cosmos DB](/azure/cosmos-db/sql-api-dotnetcore-get-started#step-1-create-an-azure-cosmos-db-account).
 1. В учетной записи Cosmos DB, создайте новую коллекцию с именем `UserItems`, указав ключ раздела `/userid`.
 
 <a name="app_service_configuration" />
@@ -269,10 +269,10 @@ await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(Constants.Database
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [TodoDocumentDBAuth (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoDocumentDBAuth/)
+- [TODO Azure Cosmos DB Auth (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoDocumentDBAuth/)
 - [Использование базы данных документов Azure Cosmos DB](~/xamarin-forms/data-cloud/cosmosdb/consuming.md)
 - [Защита доступа к данным Azure Cosmos DB](/azure/cosmos-db/secure-access-to-data/)
-- [Управление доступом в DocumentDB API](/rest/api/documentdb/access-control-on-documentdb-resources/).
+- [Управление доступом в API-Интерфейсы SQL](/rest/api/documentdb/access-control-on-documentdb-resources/).
 - [Создание разделов и шкалы в базе данных Azure Cosmos](/azure/cosmos-db/partition-data/)
-- [DocumentDB клиентской библиотеки](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)
+- [Клиентская библиотека Azure Cosmos DB](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)
 - [API Azure Cosmos DB](https://msdn.microsoft.com/library/azure/dn948556.aspx)

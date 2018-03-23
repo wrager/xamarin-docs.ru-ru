@@ -1,5 +1,5 @@
 ---
-title: "Пошаговое руководство. Использование фона местоположения"
+title: Пошаговое руководство. Использование фона местоположения
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: F8EEA0FD-5614-47FE-ADAC-80A5BCA6EB5F
@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: dfae07d36c67c12d254cd70c22acb01b2fc1c9b0
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: efdabc5450b186c89785ee3cb19a3decdd6c2064
+ms.sourcegitcommit: 7b76c3d761b3ffb49541e2e2bcf292de6587c4e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="walkthrough---using-background-location"></a>Пошаговое руководство. Использование фона местоположения
 
@@ -28,7 +28,6 @@ ms.lasthandoff: 03/22/2018
 
     В обозревателе решений дважды щелкните **Info.plist** файл, чтобы открыть его и перейдите к нижней части списка. Установите флажок как **Включение фоновых режимов** и **обновления расположения** флажки.
 
-
     В Visual Studio для Mac она будет выглядеть примерно следующим образом:
 
     [![](location-walkthrough-images/image7.png "Установите флажок, Включение фоновых режимов и флажки обновления расположения")](location-walkthrough-images/image7.png#lightbox)
@@ -38,7 +37,7 @@ ms.lasthandoff: 03/22/2018
     ```xml
     <key>UIBackgroundModes</key>
     <array>
-        <string>location</string>
+      <string>location</string>
     </array>
     ```
 
