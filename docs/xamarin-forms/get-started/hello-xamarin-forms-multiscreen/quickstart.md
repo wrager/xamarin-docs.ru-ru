@@ -1,5 +1,5 @@
 ---
-title: "Краткое руководство по работе с приложением Xamarin.Forms с несколькими экранами"
+title: Краткое руководство по работе с приложением Xamarin.Forms с несколькими экранами
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 255d93b9-518c-4e5d-a9cd-4dd8a7945a7f
@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/06/2018
-ms.openlocfilehash: 5457cb3a80208311bac66a0232afd9cb4dc02c87
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 96a0ce0c2c53c1ede01afd743514c16d16f5b54e
+ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="xamarinforms-multiscreen-quickstart"></a>Краткое руководство по работе с приложением Xamarin.Forms с несколькими экранами
 
@@ -25,279 +25,295 @@ ms.lasthandoff: 03/09/2018
 
 1. Запустите Visual Studio. На начальной странице щелкните **Открыть проект**, а затем в диалоговом окне **Открытие проекта** выберите файл решения проекта Phoneword:
 
-  ![](quickstart-images/vs/open-solution.png "Открытие проекта")
+    ![](quickstart-images/vs/open-solution.png "Открытие проекта")
 
-1. В **обозревателе решений** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый элемент...**:
+2. В **обозревателе решений** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый элемент...**:
 
-  ![](quickstart-images/vs/add-new-item.png "Добавление нового элемента")
+    ![](quickstart-images/vs/add-new-item.png "Добавление нового элемента")
 
-1. В диалоговом окне **Добавление нового элемента** выберите **Элементы Visual C# > Xamarin.Forms > Страница содержимого**, присвойте новому файлу имя **CallHistoryPage** и нажмите кнопку **Добавить**. При этом в проект добавляется страница **CallHistoryPage**:
+3. В диалоговом окне **Добавление нового элемента** выберите **Элементы Visual C# > Xamarin.Forms > Страница содержимого**, присвойте новому файлу имя **CallHistoryPage** и нажмите кнопку **Добавить**. При этом в проект добавляется страница **CallHistoryPage**:
 
-  ![](quickstart-images/vs/add-callhistorypage-class.png "Шаблоны проекта Xamarin.Forms")
+    ![](quickstart-images/vs/add-callhistorypage-class.png "Шаблоны проекта Xamarin.Forms")
 
-1. Удалите в файле **CallHistoryPage.xaml** весь код шаблона и замените его приведенным ниже. Этот код декларативно определяет пользовательский интерфейс для страницы:
+4. Удалите в файле **CallHistoryPage.xaml** весь код шаблона и замените его приведенным ниже. Этот код декларативно определяет пользовательский интерфейс для страницы:
 
-        <?xml version="1.0" encoding="UTF-8"?>
-        <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-                           xmlns:local="clr-namespace:Phoneword;assembly=Phoneword"
-                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           x:Class="Phoneword.CallHistoryPage"
-                           Title="Call History">
-            <ContentPage.Padding>
-                <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS" Value="20, 40, 20, 20" />
-                    <On Platform="Android, WinPhone, Windows" Value="20" />
-                </OnPlatform>
-            </ContentPage.Padding>
-            <StackLayout>
-              <ListView ItemsSource="{x:Static local:App.PhoneNumbers}" />
-            </StackLayout>
-        </ContentPage>
-
-  Сохраните изменения в файле **CallHistoryPage.xaml**, нажав клавиши **CTRL+S**, и закройте файл.
-
-1. В **обозревателе решений** дважды щелкните файл **App.xaml.cs**, чтобы его открыть:
-
-  ![](quickstart-images/vs/open-app-class.png "Открытие файла App.xaml.cs")
-
-1. В файле **App.xaml.cs** импортируйте пространство имен `System.Collections.Generic`, добавьте объявление свойства `PhoneNumbers`, инициализируйте это свойство в конструкторе `App` и инициализируйте свойство [`MainPage`](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.MainPage/) значением [`NavigationPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/). Коллекция `PhoneNumbers` будет использоваться для хранения списка всех преобразованных номеров телефона, вызываемых из приложения:
-
-        using System.Collections.Generic;
-        using Xamarin.Forms;
-        using Xamarin.Forms.Xaml;
-
-        [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-        namespace Phoneword
-        {
-            public partial class App : Application
-            {
-                public static IList<string> PhoneNumbers { get; set; }
-
-                public App()
-                {
-                    InitializeComponent();
-                    PhoneNumbers = new List<string>();
-                    MainPage = new NavigationPage(new MainPage());
-                }
-                ...
-            }
-        }
-
-  Сохраните изменения в файле **App.xaml.cs**, нажав клавиши **CTRL+S**, и закройте файл.
-
-1. В **обозревателе решений** дважды щелкните файл **MainPage.xaml**, чтобы его открыть:
-
-  ![](quickstart-images/vs/open-mainpage-xaml.png "Открытие файла MainPage.xaml")
-
-1. В файле **MainPage.xaml** добавьте элемент управления [`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) в конце элемента управления [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/). Эта кнопка будет использоваться для перехода по странице журнала вызовов:
-
-        <StackLayout VerticalOptions="FillAndExpand"
-                     HorizontalOptions="FillAndExpand"
-                     Orientation="Vertical"
-                     Spacing="15">
-          ...
-          <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
-          <Button x:Name="callHistoryButton" Text="Call History" IsEnabled="false"
-                  Clicked="OnCallHistory" />
+    ```xaml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:local="clr-namespace:Phoneword;assembly=Phoneword"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       x:Class="Phoneword.CallHistoryPage"
+                       Title="Call History">
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS" Value="20, 40, 20, 20" />
+                <On Platform="Android, WinPhone, Windows" Value="20" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout>
+          <ListView ItemsSource="{x:Static local:App.PhoneNumbers}" />
         </StackLayout>
+    </ContentPage>
+    ```
 
-  Сохраните изменения в файле **MainPage.xaml**, нажав клавиши **CTRL+S**, и закройте файл.
+    Сохраните изменения в файле **CallHistoryPage.xaml**, нажав клавиши **CTRL+S**, и закройте файл.
 
-1. В **обозревателе решений** дважды щелкните файл **MainPage.xaml**, чтобы его открыть:
+5. В **обозревателе решений** дважды щелкните файл **App.xaml.cs**, чтобы его открыть:
 
-  ![](quickstart-images/vs/open-mainpage-codebehind.png "Открытие файла MainPage.xaml.cs")
+    ![](quickstart-images/vs/open-app-class.png "Открытие файла App.xaml.cs")
 
-1. В файле **MainPage.xaml.cs** добавьте метод обработчика событий `OnCallHistory`, а затем измените метод обработчика событий `OnCall` для добавления преобразованного номера телефона в коллекцию `App.PhoneNumbers` и включения `callHistoryButton` при условии, что переменная `dialer` имеет значение, отличное от `null`.
+6. В файле **App.xaml.cs** импортируйте пространство имен `System.Collections.Generic`, добавьте объявление свойства `PhoneNumbers`, инициализируйте это свойство в конструкторе `App` и инициализируйте свойство [`MainPage`](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.MainPage/) значением [`NavigationPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/). Коллекция `PhoneNumbers` будет использоваться для хранения списка всех преобразованных номеров телефона, вызываемых из приложения:
 
-        using System;
-        using Xamarin.Forms;
+    ```csharp
+    using System.Collections.Generic;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
 
-        namespace Phoneword
+    [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+    namespace Phoneword
+    {
+        public partial class App : Application
         {
-            public partial class MainPage : ContentPage
+            public static IList<string> PhoneNumbers { get; set; }
+
+            public App()
+            {
+                InitializeComponent();
+                PhoneNumbers = new List<string>();
+                MainPage = new NavigationPage(new MainPage());
+            }
+            ...
+        }
+    }
+    ```
+
+    Сохраните изменения в файле **App.xaml.cs**, нажав клавиши **CTRL+S**, и закройте файл.
+
+7. В **обозревателе решений** дважды щелкните файл **MainPage.xaml**, чтобы его открыть:
+
+    ![](quickstart-images/vs/open-mainpage-xaml.png "Открытие файла MainPage.xaml")
+
+8. В файле **MainPage.xaml** добавьте элемент управления [`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) в конце элемента управления [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/). Эта кнопка будет использоваться для перехода по странице журнала вызовов:
+
+    ```xaml
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+      ...
+      <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
+      <Button x:Name="callHistoryButton" Text="Call History" IsEnabled="false"
+              Clicked="OnCallHistory" />
+    </StackLayout>
+    ```
+
+    Сохраните изменения в файле **MainPage.xaml**, нажав клавиши **CTRL+S**, и закройте файл.
+
+9. В **обозревателе решений** дважды щелкните файл **MainPage.xaml**, чтобы его открыть:
+
+    ![](quickstart-images/vs/open-mainpage-codebehind.png "Открытие файла MainPage.xaml.cs")
+
+10. В файле **MainPage.xaml.cs** добавьте метод обработчика событий `OnCallHistory`, а затем измените метод обработчика событий `OnCall` для добавления преобразованного номера телефона в коллекцию `App.PhoneNumbers` и включения `callHistoryButton` при условии, что переменная `dialer` имеет значение, отличное от `null`.
+
+    ```csharp
+    using System;
+    using Xamarin.Forms;
+
+    namespace Phoneword
+    {
+        public partial class MainPage : ContentPage
+        {
+            ...
+
+            async void OnCall(object sender, EventArgs e)
             {
                 ...
-
-                async void OnCall(object sender, EventArgs e)
-                {
-                    ...
-                    if (dialer != null) {
-                        App.PhoneNumbers.Add (translatedNumber);
-                        callHistoryButton.IsEnabled = true;
-                        dialer.Dial (translatedNumber);
-                    }
-                    ...
+                if (dialer != null) {
+                    App.PhoneNumbers.Add (translatedNumber);
+                    callHistoryButton.IsEnabled = true;
+                    dialer.Dial (translatedNumber);
                 }
+                ...
+            }
 
-                async void OnCallHistory(object sender, EventArgs e)
-                {
-                    await Navigation.PushAsync (new CallHistoryPage ());
-                }
+            async void OnCallHistory(object sender, EventArgs e)
+            {
+                await Navigation.PushAsync (new CallHistoryPage ());
             }
         }
+    }
+    ```
 
-  Сохраните изменения в файле **MainPage.xaml.cs**, нажав клавиши **CTRL+S**, и закройте файл.
+    Сохраните изменения в файле **MainPage.xaml.cs**, нажав клавиши **CTRL+S**, и закройте файл.
 
-1. В Visual Studio выберите элемент меню **Сборка > Построить решение** (или нажмите клавиши **CTRL+SHIFT+B**). Выполняется сборка приложения, а в строке состояния Visual Studio отображается сообщение об успешном выполнении:
+11. В Visual Studio выберите элемент меню **Сборка > Построить решение** (или нажмите клавиши **CTRL+SHIFT+B**). Выполняется сборка приложения, а в строке состояния Visual Studio отображается сообщение об успешном выполнении:
 
-  ![](quickstart-images/vs/build-successful.png "Успешное выполнение сборки")
+    ![](quickstart-images/vs/build-successful.png "Успешное выполнение сборки")
 
-  При наличии ошибок повторите предыдущие шаги и исправьте все ошибки, пока сборка приложения не будет проходить успешно.
+    При наличии ошибок повторите предыдущие шаги и исправьте все ошибки, пока сборка приложения не будет проходить успешно.
 
-1. На панели инструментов Visual Studio нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку "Воспроизвести") для запуска приложения:
+12. На панели инструментов Visual Studio нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку "Воспроизвести") для запуска приложения:
 
-  ![](quickstart-images/vs/start.png "Панель инструментов Visual Studio")
-  ![](quickstart-images/vs/phone-result-uwp.png "Приложение UWP Phoneword")
+    ![](quickstart-images/vs/start.png "Панель инструментов Visual Studio")
+    ![](quickstart-images/vs/phone-result-uwp.png "Приложение UWP Phoneword")
 
-1. В **обозревателе решений** щелкните правой кнопкой мыши проект **Phoneword.Droid** и выберите **Назначить запускаемым проектом**.
-1. На панели инструментов Visual Studio нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в эмуляторе Android.
-1. Если у вас есть устройство iOS, которое удовлетворяет системным требованиям к Mac для разработки Xamarin.Forms, используйте аналогичную методику для развертывания приложения на устройстве iOS. Также вы можете развернуть приложение в [удаленном симуляторе iOS](~/tools/ios-simulator.md).
+13. В **обозревателе решений** щелкните правой кнопкой мыши проект **Phoneword.Droid** и выберите **Назначить запускаемым проектом**.
+14. На панели инструментов Visual Studio нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку воспроизведения), чтобы запустить приложение в эмуляторе Android.
+15. Если у вас есть устройство iOS, которое удовлетворяет системным требованиям к Mac для разработки Xamarin.Forms, используйте аналогичную методику для развертывания приложения на устройстве iOS. Также вы можете развернуть приложение в [удаленном симуляторе iOS](~/tools/ios-simulator.md).
 
-  Примечание. Телефонные звонки поддерживаются не во всех симуляторах.
+    Примечание. Телефонные звонки поддерживаются не во всех симуляторах.
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. Запуск Visual Studio для Mac На начальной странице щелкните **Открыть**, а затем в диалоговом окне выберите файл решения проекта Phoneword:
 
-  ![](quickstart-images/xs/open-solution.png "Открытие решения")
+    ![](quickstart-images/xs/open-solution.png "Открытие решения")
 
-1. На **Панели решения** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый файл...**:
+2. На **Панели решения** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый файл...**:
 
-  ![](quickstart-images/xs/add-new-file.png "Добавление нового файла")
+    ![](quickstart-images/xs/add-new-file.png "Добавление нового файла")
 
-1. В диалоговом окне **Новый файл** выберите **Forms > XAML ContentPage Forms**, назовите новый файл **CallHistoryPage** и нажмите кнопку **Создать**. При этом в проект добавляется страница **CallHistoryPage**:
+3. В диалоговом окне **Новый файл** выберите **Forms > XAML ContentPage Forms**, назовите новый файл **CallHistoryPage** и нажмите кнопку **Создать**. При этом в проект добавляется страница **CallHistoryPage**:
 
-  ![](quickstart-images/xs/add-callhistorypage-class.png "Добавление ContentPage Forms")
+    ![](quickstart-images/xs/add-callhistorypage-class.png "Добавление ContentPage Forms")
 
-1. На **Панели решения** дважды щелкните файл **CallHistoryPage.xaml**, чтобы открыть его:
+4. На **Панели решения** дважды щелкните файл **CallHistoryPage.xaml**, чтобы открыть его:
 
-  ![](quickstart-images/xs/open-callhistorypage-xaml.png "Открытие файла CallHistoryPage.xaml")
+    ![](quickstart-images/xs/open-callhistorypage-xaml.png "Открытие файла CallHistoryPage.xaml")
 
-1. Удалите в файле **CallHistoryPage.xaml** весь код шаблона и замените его приведенным ниже. Этот код декларативно определяет пользовательский интерфейс для страницы:
+5. Удалите в файле **CallHistoryPage.xaml** весь код шаблона и замените его приведенным ниже. Этот код декларативно определяет пользовательский интерфейс для страницы:
 
-        <?xml version="1.0" encoding="UTF-8"?>
-        <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-                           xmlns:local="clr-namespace:Phoneword;assembly=Phoneword"
-                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                           x:Class="Phoneword.CallHistoryPage"
-                           Title="Call History">
-            <ContentPage.Padding>
-                <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS" Value="20, 40, 20, 20" />
-                    <On Platform="Android, WinPhone, Windows" Value="20" />
-                </OnPlatform>
-            </ContentPage.Padding>
-            <StackLayout>
-              <ListView ItemsSource="{x:Static local:App.PhoneNumbers}" />
-            </StackLayout>
-        </ContentPage>      
-
-  Сохраните изменения в файле **CallHistoryPage.xaml**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
-
-1. На **Панели решения** дважды щелкните файл **App.xaml.cs**, чтобы открыть его:
-
-  ![](quickstart-images/xs/open-app-class.png "Открытие файла App.xaml.cs")
-
-1. В файле **App.xaml.cs** импортируйте пространство имен `System.Collections.Generic`, добавьте объявление свойства `PhoneNumbers`, инициализируйте это свойство в конструкторе `App` и инициализируйте свойство [`MainPage`](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.MainPage/) значением [`NavigationPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/). Коллекция `PhoneNumbers` будет использоваться для хранения списка всех преобразованных номеров телефона, вызываемых из приложения:
-
-        using System.Collections.Generic;
-        using Xamarin.Forms;
-        using Xamarin.Forms.Xaml;
-
-        [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-        namespace Phoneword
-        {
-            public partial class App : Application
-            {
-                public static IList<string> PhoneNumbers { get; set; }
-
-                public App()
-                {
-                    InitializeComponent();
-                    PhoneNumbers = new List<string>();
-                    MainPage = new NavigationPage(new MainPage());
-                }
-                ...
-            }
-        }
-
-  Сохраните изменения в файле **App.xaml.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
-
-1. На **Панели решения** дважды щелкните файл **MainPage.xaml**, чтобы открыть его:
-
-  ![](quickstart-images/xs/open-mainpage-xaml.png "Открытие файла MainPage.xaml")
-
-1. В файле **MainPage.xaml** добавьте элемент управления [`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) в конце элемента управления [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/). Эта кнопка будет использоваться для перехода по странице журнала вызовов:
-
-        <StackLayout VerticalOptions="FillAndExpand"
-                     HorizontalOptions="FillAndExpand"
-                     Orientation="Vertical"
-                     Spacing="15">
-          ...
-          <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
-          <Button x:Name="callHistoryButton" Text="Call History" IsEnabled="false"
-                  Clicked="OnCallHistory" />
+    ```xaml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:local="clr-namespace:Phoneword;assembly=Phoneword"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       x:Class="Phoneword.CallHistoryPage"
+                       Title="Call History">
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS" Value="20, 40, 20, 20" />
+                <On Platform="Android, WinPhone, Windows" Value="20" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout>
+          <ListView ItemsSource="{x:Static local:App.PhoneNumbers}" />
         </StackLayout>
+    </ContentPage>      
+    ```
 
-  Сохраните изменения в **MainPage.xaml**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
+    Сохраните изменения в файле **CallHistoryPage.xaml**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
 
-1. На **Панели решения** дважды щелкните файл **MainPage.xaml.cs**, чтобы открыть его:
+6. На **Панели решения** дважды щелкните файл **App.xaml.cs**, чтобы открыть его:
 
-  ![](quickstart-images/xs/open-mainpage-codebehind.png "Открытие файла MainPage.xaml.cs")
+    ![](quickstart-images/xs/open-app-class.png "Открытие файла App.xaml.cs")
 
-1. В файле **MainPage.xaml.cs** добавьте метод обработчика событий `OnCallHistory`, а затем измените метод обработчика событий `OnCall` для добавления преобразованного номера телефона в коллекцию `App.PhoneNumbers` и включения `callHistoryButton` при условии, что переменная `dialer` имеет значение, отличное от `null`.
+7. В файле **App.xaml.cs** импортируйте пространство имен `System.Collections.Generic`, добавьте объявление свойства `PhoneNumbers`, инициализируйте это свойство в конструкторе `App` и инициализируйте свойство [`MainPage`](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.MainPage/) значением [`NavigationPage`](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/). Коллекция `PhoneNumbers` будет использоваться для хранения списка всех преобразованных номеров телефона, вызываемых из приложения:
 
-        using System;
-        using Xamarin.Forms;
+    ```csharp
+    using System.Collections.Generic;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
 
-        namespace Phoneword
+    [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+    namespace Phoneword
+    {
+        public partial class App : Application
         {
-            public partial class MainPage : ContentPage
+            public static IList<string> PhoneNumbers { get; set; }
+
+            public App()
+            {
+                InitializeComponent();
+                PhoneNumbers = new List<string>();
+                MainPage = new NavigationPage(new MainPage());
+            }
+            ...
+        }
+    }
+    ```
+
+    Сохраните изменения в файле **App.xaml.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
+
+8. На **Панели решения** дважды щелкните файл **MainPage.xaml**, чтобы открыть его:
+
+    ![](quickstart-images/xs/open-mainpage-xaml.png "Открытие файла MainPage.xaml")
+
+9. В файле **MainPage.xaml** добавьте элемент управления [`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) в конце элемента управления [`StackLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/). Эта кнопка будет использоваться для перехода по странице журнала вызовов:
+
+    ```xaml
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+      ...
+      <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
+      <Button x:Name="callHistoryButton" Text="Call History" IsEnabled="false"
+              Clicked="OnCallHistory" />
+    </StackLayout>
+    ```
+
+    Сохраните изменения в **MainPage.xaml**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
+
+10. На **Панели решения** дважды щелкните файл **MainPage.xaml.cs**, чтобы открыть его:
+
+    ![](quickstart-images/xs/open-mainpage-codebehind.png "Открытие файла MainPage.xaml.cs")
+
+11. В файле **MainPage.xaml.cs** добавьте метод обработчика событий `OnCallHistory`, а затем измените метод обработчика событий `OnCall` для добавления преобразованного номера телефона в коллекцию `App.PhoneNumbers` и включения `callHistoryButton` при условии, что переменная `dialer` имеет значение, отличное от `null`.
+
+    ```csharp
+    using System;
+    using Xamarin.Forms;
+
+    namespace Phoneword
+    {
+        public partial class MainPage : ContentPage
+        {
+            ...
+
+            async void OnCall(object sender, EventArgs e)
             {
                 ...
-
-                async void OnCall(object sender, EventArgs e)
-                {
-                    ...
-                    if (dialer != null) {
-                        App.PhoneNumbers.Add (translatedNumber);
-                        callHistoryButton.IsEnabled = true;
-                        dialer.Dial (translatedNumber);
-                    }
-                    ...
+                if (dialer != null) {
+                    App.PhoneNumbers.Add (translatedNumber);
+                    callHistoryButton.IsEnabled = true;
+                    dialer.Dial (translatedNumber);
                 }
+                ...
+            }
 
-                async void OnCallHistory(object sender, EventArgs e)
-                {
-                    await Navigation.PushAsync (new CallHistoryPage ());
-                }
+            async void OnCallHistory(object sender, EventArgs e)
+            {
+                await Navigation.PushAsync (new CallHistoryPage ());
             }
         }
+    }
+    ```
 
-  Сохраните изменения в **MainPage.xaml.cs**, выбрав **Файл > Сохранить** (или нажав клавиши **&#8984; + S**), а затем закройте файл.
+    Сохраните изменения в **MainPage.xaml.cs**, выбрав **Файл > Сохранить** (или нажав клавиши **&#8984; + S**), а затем закройте файл.
 
-1. В Visual Studio для Mac выберите элемент меню **Сборка > Собрать все** (или нажмите клавиши **&#8984;+B**). Выполняется сборка приложения, а на панели инструментов Visual Studio для Mac отображается сообщение об успешном выполнении:
+12. В Visual Studio для Mac выберите элемент меню **Сборка > Собрать все** (или нажмите клавиши **&#8984;+B**). Выполняется сборка приложения, а на панели инструментов Visual Studio для Mac отображается сообщение об успешном выполнении:
 
-  ![](quickstart-images/xs/build-successful.png "Успешное выполнение сборки")
+    ![](quickstart-images/xs/build-successful.png "Успешное выполнение сборки")
 
-  При наличии ошибок повторите предыдущие шаги и исправьте все ошибки, пока сборка приложения не будет проходить успешно.
+    При наличии ошибок повторите предыдущие шаги и исправьте все ошибки, пока сборка приложения не будет проходить успешно.
 
-1. На панели инструментов Visual Studio для Mac нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку "Воспроизвести") для запуска приложения в симуляторе iOS:
+13. На панели инструментов Visual Studio для Mac нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку "Воспроизвести") для запуска приложения в симуляторе iOS:
 
-  ![](quickstart-images/xs/start.png "Панель инструментов Visual Studio для Mac")
-  ![](quickstart-images/xs/phone-result-ios.png "Симулятор iOS")
+    ![](quickstart-images/xs/start.png "Панель инструментов Visual Studio для Mac")
+    ![](quickstart-images/xs/phone-result-ios.png "Симулятор iOS")
 
-  Примечание. Телефонные звонки в симуляторе iOS не поддерживаются.
+    Примечание. Телефонные звонки в симуляторе iOS не поддерживаются.
 
-1. На **Панели решения** щелкните правой кнопкой мыши проект **Phoneword.Droid** и выберите **Назначить запускаемым проектом**:
+14. На **Панели решения** щелкните правой кнопкой мыши проект **Phoneword.Droid** и выберите **Назначить запускаемым проектом**:
 
-  ![](quickstart-images/xs/set-startup-project.png "Назначение запускаемым проектом")
+    ![](quickstart-images/xs/set-startup-project.png "Назначение запускаемым проектом")
 
-1. На панели инструментов Visual Studio для Mac нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку "Воспроизвести") для запуска приложения в эмуляторе Android:
+15. На панели инструментов Visual Studio для Mac нажмите клавишу **Запустить** (треугольная кнопка, похожая на кнопку "Воспроизвести") для запуска приложения в эмуляторе Android:
 
-  ![](quickstart-images/xs/phone-result-android.png "Эмулятор Android")
+    ![](quickstart-images/xs/phone-result-android.png "Эмулятор Android")
 
-  Примечание. Телефонные звонки в эмуляторах Android не поддерживаются.
+    Примечание. Телефонные звонки в эмуляторах Android не поддерживаются.
 
 -----
 

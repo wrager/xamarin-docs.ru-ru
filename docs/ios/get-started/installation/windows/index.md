@@ -1,6 +1,6 @@
 ---
-title: "Установка Xamarin.iOS в Windows"
-description: "В этой статье показано, как установить Xamarin.iOS для Visual Studio. В ней рассматривается процесс установки расширения Xamarin для Visual Studio и подключения к пакету SDK Apple, установленному на компьютере Mac."
+title: Установка Xamarin.iOS в Windows
+description: В этой статье показано, как установить Xamarin.iOS для Visual Studio. В ней рассматривается процесс установки расширения Xamarin для Visual Studio и подключения к пакету SDK Apple, установленному на компьютере Mac.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: abf85d3e-a365-44a2-b1a4-6c572c7f76dd
@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/29/2017
-ms.openlocfilehash: cfbe2df23317ee3ad11c9970ab892ddcc251b9d6
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 08bf8b2b7c56983c43cf1ae080ab112e81851fbb
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="installing-xamarinios-on-windows"></a>Установка Xamarin.iOS в Windows
 
@@ -37,7 +37,7 @@ Xamarin.iOS для Visual Studio поддерживает конфигураци
 [![Рабочий процесс разработки с помощью Xamarin.iOS](images/xma2.png)](images/xma2.png#lightbox)
 
 > [!IMPORTANT]
->  Для сборки проектов Visual Studio запускает отдельный процесс MSBuild. Этот процесс создает новое подключение к компьютеру Mac, то есть во время выполнения сборки в среде Visual Studio между компьютерами Windows и Mac имеются два подключения SSH. При сборке из [командной строки](~/ios/get-started/installation/windows/connecting-to-mac/index.md) создается только один процесс MSBuild. Для простоты все подключения на схеме представлены одной стрелкой.
+> Для сборки проектов Visual Studio запускает отдельный процесс MSBuild. Этот процесс создает новое подключение к компьютеру Mac, то есть во время выполнения сборки в среде Visual Studio между компьютерами Windows и Mac имеются два подключения SSH. При сборке из [командной строки](~/ios/get-started/installation/windows/connecting-to-mac/index.md) создается только один процесс MSBuild. Для простоты все подключения на схеме представлены одной стрелкой.
 
 ## <a name="requirements"></a>Требования
 
@@ -105,7 +105,7 @@ Xamarin.iOS для Visual Studio позволяет создавать, реда
 После установки программного обеспечения следуйте инструкциям в следующем разделе, чтобы настроить расширение Xamarin.iOS в системе macOS так, чтобы к нему могла подключаться среда Xamarin для Visual Studio.
 
 > [!IMPORTANT]
->  На компьютере Windows должна использоваться та же версия Xamarin.iOS, что и на компьютере Mac, к которому он подключается. Для этого должно выполняться указанное ниже требование:
+> На компьютере Windows должна использоваться та же версия Xamarin.iOS, что и на компьютере Mac, к которому он подключается. Для этого должно выполняться указанное ниже требование:
 >
 > - **Visual Studio 2015 и более ранние версии**: необходимо использовать тот же [канал обновлений](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/), что и для Visual Studio для Mac.
 >

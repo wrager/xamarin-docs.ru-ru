@@ -1,6 +1,6 @@
 ---
-title: "Автоматическая подготовка"
-description: "После успешной установки Xamarin.iOS следующим шагом в разработке приложений для iOS является подготовка устройства iOS. В этом руководстве описывается использование автоматического подписывания в Visual Studio для Mac с целью запроса сертификатов и профилей разработки."
+title: Автоматическая подготовка
+description: После успешной установки Xamarin.iOS следующим шагом в разработке приложений для iOS является подготовка устройства iOS. В этом руководстве описывается использование автоматического подписывания в Visual Studio для Mac с целью запроса сертификатов и профилей разработки.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 81FCB2ED-687C-40BC-ABF1-FB4303034D01
@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: asb3993
 ms.author: amburns
 ms.date: 11/17/2017
-ms.openlocfilehash: a411c214e35f78ff9d3dd8d4e9122702d66a2156
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 271d9e3f7ae04f03a132ae2fd0ebf531fe52578c
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatic-provisioning"></a>Автоматическая подготовка
 
@@ -24,7 +24,7 @@ _Установив Xamarin.iOS для разработки приложений
 - Xcode 9 или более поздней версии
 
 > [!IMPORTANT]
->  В этом руководстве показано, как с помощью Visual Studio для Mac настроить устройство Apple для развертывания приложение. Для выполнения этих действий вручную или с помощью Visual Studio в Windows рекомендуется выполнить подробные инструкции из руководства [Подготовка вручную](~/ios/get-started/installation/device-provisioning/manual-provisioning.md).
+> В этом руководстве показано, как с помощью Visual Studio для Mac настроить устройство Apple для развертывания приложение. Для выполнения этих действий вручную или с помощью Visual Studio в Windows рекомендуется выполнить подробные инструкции из руководства [Подготовка вручную](~/ios/get-started/installation/device-provisioning/manual-provisioning.md).
 
 ## <a name="enabling-automatic-signing"></a>Включение автоматического подписывания
 
