@@ -1,6 +1,6 @@
 ---
-title: "Объединение для магазина Mac App Store"
-description: "В этом руководстве описывается создание пакета приложения Xamarin.Mac для публикации в Mac App Store."
+title: Объединение для магазина Mac App Store
+description: В этом руководстве описывается создание пакета приложения Xamarin.Mac для публикации в Mac App Store.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 00a36d7c-937d-4657-bf6a-0de9684b8f94
@@ -8,18 +8,18 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 77365d5ed62b2ef2e81407ab1fa5aef55c592d0b
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c3f94b448539b2e4073c7d8a1092df066e484dfc
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="bundle-for-mac-app-store"></a>Создание пакета для Mac App Store
 
 В этом разделе рассматриваются основы создания приложения для выпуска в Mac App Store с помощью Visual Studio для Mac. При наличии дополнительных функций (например, доступа к iCloud и push-уведомлений) могут потребоваться дальнейшее установки, которые выходят за рамки этой статьи.
 
 > [!NOTE]
->  **Примечание**. Прежде чем выполнять действия в этом разделе, необходимо создать рабочий профиль подготовки, который будет использоваться для создания приложений для Mac App Store. Инструкции по созданию необходимых профилей подготовки см. ранее в этом документе.
+> Прежде чем выполнять действия в этом разделе, необходимо создать рабочий профиль подготовки, который будет использоваться для создания приложений для Mac App Store. Инструкции по созданию необходимых профилей подготовки см. ранее в этом документе.
 
 ## <a name="code-signing-options"></a>Параметры подписывания кода
 

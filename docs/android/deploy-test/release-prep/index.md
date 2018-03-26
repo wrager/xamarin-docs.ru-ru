@@ -1,17 +1,17 @@
 ---
-title: "Подготовка приложения к выпуску"
+title: Подготовка приложения к выпуску
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 9C8145B3-FCF1-4649-8C6A-49672DDA4159
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: e440d5ab9f822277a8c0948a9795b9a030fa268c
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/21/2018
+ms.openlocfilehash: baaa40bc89a1ca6728189563c8350f9c9f011762
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="preparing-an-application-for-release"></a>Подготовка приложения к выпуску
 
@@ -40,13 +40,7 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="specify-the-application-icon"></a>Указание значка приложения
 
-Настоятельно рекомендуется указывать значок приложения для каждого проекта Xamarin.Android. Некоторые магазины приложений не допускают публикацию приложений Android без значков.
-
-Указать значок приложения для проекта Xamarin.Android можно с помощью свойства `Icon` атрибута `Application`. Этот атрибут объявляется в файле **Properties\AssemblyInfo.cs**, как показано в следующем примере:
-
-```csharp
-[assembly: Application(Icon = "@drawable/icon")]
-```
+Настоятельно рекомендуется указывать значок приложения для каждого проекта Xamarin.Android. Некоторые магазины приложений не допускают публикацию приложений Android без значков. Указать значок приложения для проекта Xamarin.Android можно с помощью свойства `Icon` атрибута `Application`.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -61,6 +55,15 @@ ms.lasthandoff: 03/09/2018
 [![Указание значка приложения](images/xs/01-application-icon-sml.png)](images/xs/01-application-icon.png#lightbox)
 
 -----
+
+В этих примерах в `@drawable/icon` добавлена ссылка на файл значка по пути **Resources/drawable/icon.png** (обратите внимание, что расширение **.png** не включено в имя ресурса). Этот атрибут также объявляется в файле **Properties\AssemblyInfo.cs**, как показано в следующем примере:
+
+```csharp
+[assembly: Application(Icon = "@drawable/icon")]
+```
+
+Как правило, `using Android.App` объявляется в верхней части **AssemblyInfo.cs** (для пространства имен атрибута `Android.App` задается значение `Application`). Но, возможно, потребуется добавить инструкцию `using`, если ее еще нет.
+
 
 <a name="Versioning" />
 

@@ -1,5 +1,5 @@
 ---
-title: "Среда Xamarin.Android"
+title: Среда Xamarin.Android
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 67BFD4E1-276C-4B9F-9BD8-A5218D2BD529
@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/15/2018
-ms.openlocfilehash: ee612d4a8982a6ae505b4d329b9abbc84624a1e0
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 66f4dcf14cd179795e9a23bccabe4289d74c7c5b
+ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="xamarinandroid-environment"></a>Среда Xamarin.Android
 
@@ -36,7 +36,7 @@ adb shell setprop debug.mono.env "'MONO_LOG_LEVEL=info|MONO_LOG_MASK=asm'"
 
 Если *ключ* начинается с заглавной буквы, то этот *ключ* рассматривается как переменная среды. То есть при запуске процесса выполняется команда **setenv**(3) для создания переменной среды с указанным *значением*.
 
-Если *ключ* начинается с прописной буквы, то этот *ключ* рассматривается как системное свойство Android, а указанное *значение* используется как *значение по умолчанию*. Системные свойства Android, которые управляют поведением Xamarin.Android, сначала проверяются на сервере системных свойств Android. Значение из файла среды используется только в том случае, если такое свойство не существует на сервере. Такой механизм позволяет в диагностических целях переопределить значения, указанные в файле среды, с помощью `adb shell setprop`.
+Если *ключ* начинается с прописной буквы, то этот *ключ* рассматривается как системное свойство Android, а указанное *значение* используется как *значение по умолчанию*. Системные свойства Android, которые управляют поведением Xamarin.Android, сначала проверяются в хранилище системных свойств Android. Значение из файла среды используется, только если такое свойство не существует на сервере. Такой механизм позволяет в диагностических целях переопределить значения, указанные в файле среды, с помощью `adb shell setprop`.
 
 ## <a name="xamarinandroid-environment-variables"></a>Переменные среды Xamarin.Android
 
@@ -45,9 +45,9 @@ Xamarin.Android поддерживает переменную `XA_HTTP_CLIENT_HA
 
 ### `XA_HTTP_CLIENT_HANDLER_TYPE`
 
-Тип с указанием сборки, который должен наследовать значение от [HttpMessageHandler](https://msdn.microsoft.com/en-us/library/system.net.http.httpmessagehandler(v=vs.118).aspx) и использовать [конструктор по умолчанию `HttpClient()`](https://msdn.microsoft.com/en-us/library/hh138077(v=vs.118).aspx).
+Тип с указанием сборки, который должен наследовать значение от [HttpMessageHandler](https://docs.microsoft.com/dotnet/api/system.net.http.httpmessagehandler?view=xamarinandroid-7.1) и использовать [конструктор по умолчанию `HttpClient()`](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.-ctor?view=xamarinandroid-7.1#System_Net_Http_HttpClient__ctor).
 
-В версии Xamarin.Android 6.1 эта переменная среды не устанавливается по умолчанию. Вместо нее используется [HttpClientHandler](https://msdn.microsoft.com/en-us/library/system.net.http.httpclienthandler(v=vs.118).aspx).
+В версии Xamarin.Android 6.1 эта переменная среды не устанавливается по умолчанию. Вместо нее используется [HttpClientHandler](https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler?view=xamarinandroid-7.1).
 
 Также можно указать значение `Xamarin.Android.Net.AndroidClientHandler`, чтобы использовать [`java.net.URLConnection`](https://developer.xamarin.com/api/type/Java.Net.URLConnection/) для доступа к сети, которая *может* допускать использование TLS 1.2, если Android это поддерживает.
 

@@ -1,6 +1,6 @@
 ---
-title: "Общие сведения о Fastlane для iOS"
-description: "Это руководство описывает разнообразные инструменты Fastlane, которые можно использовать для подписывания кода приложений iOS"
+title: Общие сведения о Fastlane для iOS
+description: Это руководство описывает разнообразные инструменты Fastlane, которые можно использовать для подписывания кода приложений iOS
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 8202C57D-22FF-4224-A5B1-AAEF12B7C106
@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 15ee039fbfa339a9246b2a4234f37caf685c80c6
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 4bba92180e77accaa42b70843fb5dbf12c94d632
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="introduction-to-fastlane-for-ios"></a>Общие сведения о Fastlane для iOS
 
@@ -32,7 +32,7 @@ Fastlane — это проект с открытым кодом, призван
 
 Это руководство рассматривает настройку устройства для разработки приложений iOS. Основное внимание уделяется служебным программам **cert**, **sigh** и **match**. 
 
-Руководство позволяет быстро освоить распространение приложений и рассказывает, как полностью автоматизировать этот процесс на сервере непрерывной интеграции. При этом следует отметить, что Fastlane — это сторонний разработчик, создающий инструменты для работы с проектами Xcode, а значит, некоторые средства или команды, такие как `fastlane init`, могут не работать должным образом с файлами CSPROJ. Дополнительные сведения об использовании Fastlane, вспомогательных инструментах и выпуске приложений для Android с помощью Fastlane: [https://fastlane.tools/](https://fastlane.tools/)
+Руководство позволяет быстро освоить распространение приложений и рассказывает, как полностью автоматизировать этот процесс на сервере непрерывной интеграции. При этом следует отметить, что Fastlane — это сторонний разработчик, создающий инструменты для работы с проектами Xcode, а значит, некоторые средства или команды, такие как `fastlane init`, могут не работать должным образом с файлами CSPROJ. Дополнительные сведения об использовании Fastlane, вспомогательных инструментах и выпуске приложений для Android с помощью Fastlane: [https://fastlane.tools/](https://fastlane.tools/).
 
 <a name="Installation" />
 
@@ -44,10 +44,10 @@ Fastlane — это проект с открытым кодом, призван
     error: command line tools are already installed, use "Software Update" to install updates
     ```
 
-2. Загрузите инструменты Fastlane с веб-сайта [https://download.fastlane.tools](https://download.fastlane.tools). 
+2. Скачайте средства Fastlane из [https://download.fastlane.tools](https://download.fastlane.tools). 
 
     > [!NOTE]
-> Инструменты Fastlane можно установить с помощью Homebrew, используя `brew cask install fastlane`, или с помощью Rubygems (2.0 и более поздние версии), используя `sudo gem install fastlane –NV`. Однако именно установщик обеспечивает создание всех необходимых зависимостей. 
+    > Инструменты Fastlane можно установить с помощью Homebrew, используя `brew cask install fastlane`, или с помощью Rubygems (2.0 и более поздние версии), используя `sudo gem install fastlane –NV`. Однако именно установщик обеспечивает создание всех необходимых зависимостей. 
 
 3. Установите Fastlane, распаковав файл и дважды щелкнув исполняемый файл `install`. Если возникнет ошибка с указанием, что файл невозможно открыть, так как он получен от неизвестного разработчика, нажмите кнопку "OK" и выполните следующие действия:
     - Щелкните исполняемый файл `install`, удерживая клавишу CTRL. Откроется следующее диалоговое окно:

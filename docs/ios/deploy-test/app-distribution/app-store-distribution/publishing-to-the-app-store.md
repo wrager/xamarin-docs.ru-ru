@@ -1,6 +1,6 @@
 ---
-title: "Публикация в Магазине приложений"
-description: "В этой статье демонстрируется настройка, сборка и публикация приложения Xamarin.iOS для распространения через App Store. Здесь приводятся пошаговые инструкции по тому, как подготовить приложение к распространению, отправить его на проверку с помощью средств Apple, а также опубликовать в App Store."
+title: Публикация в Магазине приложений
+description: В этой статье демонстрируется настройка, сборка и публикация приложения Xamarin.iOS для распространения через App Store. Здесь приводятся пошаговые инструкции по тому, как подготовить приложение к распространению, отправить его на проверку с помощью средств Apple, а также опубликовать в App Store.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: DFBCC0BA-D233-4DC4-8545-AFBD3768C3B9
@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/23/2017
-ms.openlocfilehash: dfa3d1f89d813f2e57863e615c701cd78c655ac0
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: ef8fafb923dcad936ce0a049e715cdd163ea7222
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="publishing-to-the-app-store"></a>Публикация в Магазине приложений
 
@@ -185,7 +185,7 @@ Apple предоставляет ряд специальных служб при
 
 
 > [!NOTE]
-> Примечание. Хотя старые конфигурации _App Store_ и _Специальный_ удаляются из всех проектов шаблонов Visual Studio для Mac, они по-прежнему могут присутствовать в некоторых предшествующих проектах. В таких случаях вы можете продолжать использовать конфигурацию **App Store | Устройство** на шаге 1 приведенного выше списка.
+> Хотя старые конфигурации _App Store_ и _Специальный_ удаляются из всех проектов шаблонов Visual Studio для Mac, они по-прежнему могут присутствовать в некоторых предшествующих проектах. В таких случаях вы можете продолжать использовать конфигурацию **App Store | Устройство** на шаге 1 приведенного выше списка.
 
 ### <a name="sign-and-distribute-your-app"></a>Подписывание и распространение приложения
 
@@ -309,7 +309,7 @@ xbuild /p:Configuration="Release" /p:Platform="iPhone" /p:IpaPackageDir="$HOME/B
 ## <a name="submitting-your-app-to-apple"></a>Отправка приложения в Apple
 
 > [!NOTE]
-> Примечание. Недавно компания Apple изменила процесс проверки приложений для iOS. Теперь приложения, в IPA-файл которых входит `iTunesMetadata.plist`, могут отклоняться. Если вы столкнулись с ошибкой `ERROR: ERROR ITMS-90047: "Disallowed paths ( "iTunesMetadata.plist" ) found at: Payload/iPhoneApp1.app"`, для ее устранения можно попробовать обходной способ, описанный [здесь](https://forums.xamarin.com/discussion/40388/disallowed-paths-itunesmetadata-plist-found-at-when-submitting-to-app-store/p1).
+> Недавно компания Apple изменила процесс проверки приложений для iOS. Теперь приложения, в IPA-файл которых входит `iTunesMetadata.plist`, могут отклоняться. Если вы столкнулись с ошибкой `ERROR: ERROR ITMS-90047: "Disallowed paths ( "iTunesMetadata.plist" ) found at: Payload/iPhoneApp1.app"`, для ее устранения можно попробовать обходной способ, описанный [здесь](https://forums.xamarin.com/discussion/40388/disallowed-paths-itunesmetadata-plist-found-at-when-submitting-to-app-store/p1).
 
 После создания сборки для распространения все готово к тому, чтобы отправить ваше приложение для iOS на проверку в Apple и выпустить его в App Store.
 

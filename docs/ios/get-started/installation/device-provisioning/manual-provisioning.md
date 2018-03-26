@@ -1,6 +1,6 @@
 ---
-title: "Подготовка вручную"
-description: "После успешной установки Xamarin.iOS следующим шагом в разработке приложений для iOS является подготовка устройства iOS. В этом руководстве рассматривается запрос сертификатов и профилей разработки, работа со службами приложений и развертывание приложения на устройстве."
+title: Подготовка вручную
+description: После успешной установки Xamarin.iOS следующим шагом в разработке приложений для iOS является подготовка устройства iOS. В этом руководстве рассматривается запрос сертификатов и профилей разработки, работа со службами приложений и развертывание приложения на устройстве.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: E26ACC94-F4A5-4FF5-B7D4-BE596745A665
@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: asb3993
 ms.author: amburns
 ms.date: 07/15/2017
-ms.openlocfilehash: e42b9d0b5eb64c17c96b66c9dbae7582551a06a0
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: ecda5823636a1b2d7e31a39e29f1d46cdf7118b6
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manual-provisioning"></a>Подготовка вручную
 
@@ -85,7 +85,7 @@ _Установив Xamarin.iOS для разработки приложений
 -----
 
 > [!WARNING]
-> **Примечание**. Утеря сертификата и связанных с ним ключей может надолго прервать работу, так как потребуется отозвать существующие сертификаты и повторно подготовить все связанные устройства, включая устройства, зарегистрированные для специального развертывания. Успешно настроив сертификаты разработки, экспортируйте резервную копию и сохраните ее в надежном месте. Дополнительные сведения о выполнении этой задачи см. в разделе "Exporting and Importing Certificates and Profiles" (Экспорт и импорт сертификатов и профилей) руководства [Maintaining Certificates](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) (Обслуживание сертификатов) в документации Apple.
+> Потеря сертификата и связанных с ним ключей может надолго остановить работу, так как потребуется отозвать существующие сертификаты и повторно подготовить все связанные устройства, включая зарегистрированные для специального развертывания. Успешно настроив сертификаты разработки, экспортируйте резервную копию и сохраните ее в надежном месте. Дополнительные сведения о выполнении этой задачи см. в разделе "Exporting and Importing Certificates and Profiles" (Экспорт и импорт сертификатов и профилей) руководства [Maintaining Certificates](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) (Обслуживание сертификатов) в документации Apple.
 
 <a name="provisioning" />
 
@@ -209,12 +209,12 @@ _Установив Xamarin.iOS для разработки приложений
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 > [!IMPORTANT]
-> **Примечание**. Чтобы сертификаты или профили, созданные или измененные в Xcode, стали доступны в среде Visual Studio для Mac, ее нужно закрыть и перезапустить.
+> Чтобы сертификаты или профили, созданные или измененные в Xcode, стали доступны в среде Visual Studio для Mac, ее нужно закрыть и перезапустить.
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 > [!IMPORTANT]
-> **Примечание**. Чтобы сертификаты или профили, созданные или измененные в Xcode, стали доступны в среде Visual Studio, ее нужно закрыть и перезапустить.
+> Чтобы сертификаты или профили, созданные или измененные в Xcode, стали доступны в среде Visual Studio, ее нужно закрыть и перезапустить.
 
 -----
 

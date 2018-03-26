@@ -1,6 +1,6 @@
 ---
-title: "Распространение через App Store"
-description: "Этот документ описывает требования для распространения через Apple App Store."
+title: Распространение через App Store
+description: Этот документ описывает требования для распространения через Apple App Store.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: B07E2C1F-A6DF-43CB-BFB0-0252A5558467
@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/23/2017
-ms.openlocfilehash: 2ee98b48feb8bc1e3431d796a7ca07a6c2e74790
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 25c4cb980f77880ae690916ec45be3cd12a3cf10
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="app-store-distribution"></a>Распространение через App Store
 
@@ -37,7 +37,7 @@ _Этот документ описывает требования для рас
 Вы можете выбрать те же значения для параметров **Идентификатор приложения** и **Устройства**, которые использовали для профиля подготовки к разработке, но если у вас его еще нет, нужно создать сертификат распространения для идентификации вашей организации при отправке приложения в магазин приложений. В следующем разделе описаны шаги для создания сертификата распространения.
 
 > [!NOTE]
->  Примечание. Создавать сертификаты распространения и профили подготовки могут только агенты команды и администраторы.
+> Создавать сертификаты распространения и профили подготовки могут только агенты команды и администраторы.
 
 <a name="creatingcertificate" />
 

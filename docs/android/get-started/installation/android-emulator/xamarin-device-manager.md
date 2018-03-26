@@ -1,18 +1,18 @@
 ---
-title: "Диспетчер устройств Xamarin Android"
-description: "Диспетчер устройств Xamarin Android, который сейчас находится на этапе предварительной версии, предназначен для замены устаревшего диспетчера устройств Google. Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запустить и протестировать приложение без использования физического устройства."
+title: Диспетчер устройств Xamarin Android
+description: Диспетчер устройств Xamarin Android, который сейчас находится на этапе предварительной версии, предназначен для замены устаревшего диспетчера устройств Google. Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запустить и протестировать приложение без использования физического устройства.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: ECB327F3-FF1C-45CC-9FA6-9C11032BD5EF
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/13/2018
-ms.openlocfilehash: c38a0a7f6897cd90f81c92348280539b33524b9c
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.date: 03/20/2018
+ms.openlocfilehash: 01fb21729e919872935fd63af28a13642a11fa4b
+ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="xamarin-android-device-manager"></a>Диспетчер устройств Xamarin Android
 
@@ -308,7 +308,8 @@ Xamarin Studio не совместим с диспетчером устройс
 
 
 <a name="device-edit" />
- 
+
+
 ### <a name="edit-device"></a>Изменение устройства
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -415,6 +416,7 @@ Xamarin Studio не совместим с диспетчером устройс
 
 <a name="properties" />
  
+
 ## <a name="profile-properties"></a>Свойства профиля
 
 На экранах **Создание устройства** и **Изменение устройства** в первом столбце перечислены свойства виртуального устройства, а во втором — соответствующие значения для них. При выборе свойства справа отображается его подробное описание. Вы можете изменить *свойства профиля оборудования* и *свойства AVD*.
@@ -467,9 +469,9 @@ Xamarin Studio не совместим с диспетчером устройс
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
-
 Ниже описаны распространенные проблемы диспетчера устройств Xamarin Android и способы их устранения:
+
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 ### <a name="android-sdk-in-non-standard-location"></a>Пакет SDK для Android в нестандартном расположении
 
@@ -501,19 +503,64 @@ Xamarin Studio не совместим с диспетчером устройс
 
 Внеся это изменение в **user.config**, можно станет запустить диспетчер устройств Android Xamarin.
 
+### <a name="snapshot-disables-wifi-on-android-oreo"></a>При создании моментального снимка в Android Oreo отключается Wi-Fi
+
+Если для Android Oreo настроено виртуальное устройство AVD с имитацией доступа по Wi-Fi, перезапуск AVD после создания моментального снимка может привести к отключению доступа по Wi-Fi.
+
+Действия по решению этой проблемы:
+
+1. В диспетчере устройств Xamarin выберите AVD.
+
+2. В меню дополнительных параметров выберите пункт **Отобразить в проводнике**.
+
+3. Последовательно выберите **snapshots (моментальные снимки) > default_boot**.
+
+4. Удалите файл **snapshot.pb**:
+
+    [![Расположение файла snapshot.pb](xamarin-device-manager-images/win/36-delete-snapshot-sml.png)](xamarin-device-manager-images/win/36-delete-snapshot.png#lightbox)
+
+5. Перезапустите AVD. 
+
+После внесения этих изменений AVD перезапустится в состоянии, которое позволяет возобновить работу Wi-Fi.
+
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
+### <a name="snapshot-disables-wifi-on-android-oreo"></a>При создании моментального снимка в Android Oreo отключается Wi-Fi
+
+Если для Android Oreo настроено виртуальное устройство AVD с имитацией доступа по Wi-Fi, перезапуск AVD после создания моментального снимка может привести к отключению доступа по Wi-Fi.
+
+Действия по решению этой проблемы:
+
+1. В диспетчере устройств Xamarin выберите AVD.
+
+2. В меню дополнительных параметров выберите пункт **Отобразить в средстве поиска**.
+
+3. Последовательно выберите **snapshots (моментальные снимки) > default_boot**.
+
+4. Удалите файл **snapshot.pb**:
+
+    [![Расположение файла snapshot.pb](xamarin-device-manager-images/mac/36-delete-snapshot-sml.png)](xamarin-device-manager-images/mac/36-delete-snapshot.png#lightbox)
+
+5. Перезапустите AVD. 
+
+После внесения этих изменений AVD перезапустится в состоянии, которое позволяет возобновить работу Wi-Fi.
+
+-----
+
+
 ### <a name="generating-a-bug-report"></a>Создание отчета об ошибках
+
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 Если вы обнаружили проблему с диспетчером устройств Xamarin Android, которую не удается разрешить с помощью приведенных выше советов, отправьте отчет об ошибках, щелкнув правой кнопкой мыши строку заголовка и выбрав пункт **Generate Bug Report** (Создать отчет об ошибках):
 
 ![Расположение пункта меню для заполнения отчета об ошибках](xamarin-device-manager-images/win/35-bug-report.png)
 
+
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-Сейчас известные проблемы и обходные пути для диспетчера устройств Xamarin Android в Visual Studio для Mac отсутствуют. 
-
-### <a name="generating-a-bug-report"></a>Создание отчета об ошибках
-
-Если вы обнаружили проблему, отправьте отчет об ошибках, щелкнув **Справка > Generate Bug Report** (Создать отчет об ошибках):
+Если вы обнаружили проблему с диспетчером устройств Xamarin Android, которую не удается решить с помощью приведенных выше советов, отправьте отчет об ошибках. Для этого последовательно выберите **Help > Generate Bug Report (Справка > Создать отчет об ошибках)**:
 
 ![Расположение пункта меню для заполнения отчета об ошибках](xamarin-device-manager-images/mac/35-bug-report.png)
 
