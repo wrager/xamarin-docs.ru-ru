@@ -1,5 +1,5 @@
 ---
-title: "Как автоматизировать Android NUnit тестового проекта?"
+title: Как автоматизировать Android NUnit тестового проекта?
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: EA3CFCC4-2D2E-49D6-A26C-8C0706ACA045
@@ -7,19 +7,19 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 11b693193b36a80b55a61308d98b76f4f6984e8a
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: acb213e8c73013bc9b2482afb45296c4e1f61ab5
+ms.sourcegitcommit: 20ca85ff638dbe3a85e601b5eb09b2f95bda2807
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-do-i-automate-an-android-nunit-test-project"></a>Как автоматизировать Android NUnit тестового проекта?
 
 > [!NOTE]
 > В настоящем руководстве приводятся инструкции по настройке проекта тестирования Android NUnit не Xamarin.UITest проекта. Можно найти руководства Xamarin.UITest [здесь](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/uitest).
 
-При создании Android проект модульного теста [Visual Studio для Mac] или приложение модульного тестирования (Android) [Visual Studio], по умолчанию она не запустится автоматически тестов.
-Для автоматизации модульного теста android: для выполнения тестов NUnit на целевом устройстве, мы используем `Android.App.Instrumentation` подкласс, в котором можно создавать и выполнять с помощью `adb shell am instrument` команды.
+При создании проекта Android модульного тестирования в Visual Studio для Mac или приложения модульного тестирования (Android) в Visual Studio по умолчанию она не запустится автоматически тестов.
+Для выполнения тестов NUnit на целевом устройстве, мы используем `Android.App.Instrumentation` подкласс, в котором можно создавать и выполнять с помощью `adb shell am instrument` команды.
 
 Во-первых, мы создаем **TestInstrumentation.cs** файл, который создает подкласс `Xamarin.Android.NUnitLite.TestSuiteInstrumentation` (объявлено в `Xamarin.Android.NUnitLite.dll`). `TestInstrumentation(IntPtr, JniHandleOwnership)` Конструктор _должен_ предоставляться и виртуальный `AddTests()` метод должен быть переопределен.
 `AddTests()` элементы управления, фактически выполняются тесты. Этот файл является главным образом шаблона.
@@ -40,7 +40,9 @@ adb shell am instrument -w @PACKAGE_NAME@/app.tests.TestInstrumentation
 
 Замените `@PACKAGE\_NAME@` в соответствии с потребностями; это значение присутствует в **AndroidManifest.xml** `/manifest/@package` атрибута.
 
-*Важное примечание*: С [Xamarin.Android 5.0](https://developer.xamarin.com/releases/android/xamarin.android_5/xamarin.android_5.1/#Android_Callable_Wrapper_Naming) выпуска пакета имена по умолчанию для Android с помощью вызываемых оболочек будет основываться на команду MD5SUM экспортируемого типа имени сборки. Это позволяет полностью уточненное имя, совпадающее должен предоставляться из двух разных сборках и не возникает ошибка упаковки. Поэтому убедитесь, что используется \`имя\` свойство \`инструментария\` значений для создания имени для чтения ACW или класс.
+
+> [!NOTE]
+> *Важные*: С [Xamarin.Android 5.0](https://developer.xamarin.com/releases/android/xamarin.android_5/xamarin.android_5.1/#Android_Callable_Wrapper_Naming) выпуска пакета имена по умолчанию для Android с помощью вызываемых оболочек будет основываться на команду MD5SUM экспортируемого типа имени сборки. Это позволяет полностью уточненное имя, совпадающее должен предоставляться из двух разных сборках и не возникает ошибка упаковки. Поэтому убедитесь, что используется \`имя\` свойство \`инструментария\` значений для создания имени для чтения ACW или класс.
 
 _Необходимо использовать имя ACW в `adb` команда_. Переименование и рефакторинг классов C# таким образом потребуется изменение `RunTests` команду, чтобы использовать правильное имя ACW.
 

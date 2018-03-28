@@ -1,20 +1,19 @@
 ---
-title: "Замена панели действий"
+title: Замена панели действий
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 5341D28E-B203-478D-8464-6FAFDC3A4110
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/06/2018
-ms.openlocfilehash: e71c6ea816b8b732d21148db32fd9395732dd4c0
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.date: 03/27/2018
+ms.openlocfilehash: f02f77eb45086d1d568b367b28163a4773dcd80d
+ms.sourcegitcommit: 20ca85ff638dbe3a85e601b5eb09b2f95bda2807
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="replacing-the-action-bar"></a>Замена панели действий
-
 
 ## <a name="overview"></a>Обзор
 
@@ -38,7 +37,7 @@ ms.lasthandoff: 03/09/2018
 
 ## <a name="start-an-app-project"></a>Запуск проекта приложения
 
-Создайте новый проект Android с именем **ToolbarFun** (см. [Привет, Android](~/android/get-started/hello-android/hello-android-quickstart.md) Дополнительные сведения о создании нового проекта Android). После создания этого проекта значение целевой и менее уровни Android API **Android 5.0 (API уровня 21 - без описания операций)**. Дополнительные сведения о задании версии Android уровней см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md). При построении и запуска приложения отображает панели действий по умолчанию, как показано на этом снимке экрана: 
+Создайте новый проект Android с именем **ToolbarFun** (см. [Привет, Android](~/android/get-started/hello-android/hello-android-quickstart.md) Дополнительные сведения о создании нового проекта Android). После создания этого проекта значение целевой и менее уровни Android API **Android 5.0 (API уровня 21 - без описания операций)** или более поздней версии. Дополнительные сведения о задании версии Android уровней см. в разделе [основные сведения об уровнях Android API](~/android/app-fundamentals/android-api-levels.md). При построении и запуска приложения отображает панели действий по умолчанию, как показано на этом снимке экрана:
 
 [![Снимок экрана: панель действий по умолчанию](replacing-the-action-bar-images/01-before-sml.png)](replacing-the-action-bar-images/01-before.png#lightbox)
 
@@ -76,6 +75,8 @@ Olive-green `colorPrimary` параметр используется для цв
 ```xml
 <item name="android:colorPrimary">#5A8622</item>
 ```
+
+## <a name="apply-the-custom-theme"></a>Применить пользовательские темы
 
 Изменить **Properties/AndroidManifest.xml** и добавьте следующее `android:theme` атрибут `<application>` элемент, чтобы приложение использовало `MyTheme` пользовательские темы: 
 
@@ -136,12 +137,6 @@ android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
-    <Button
-        android:id="@+id/MyButton"
-        android:layout_below="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello World, Click Me!" />
 </RelativeLayout>
 ```
 
@@ -171,6 +166,7 @@ ActionBar.Title = "My Toolbar";
 
 Обратите внимание, что `Toolbar` построен таким образом, независимо от `Theme.Material.Light.DarkActionBar` темы, применяемой к оставшейся части приложения. 
 
+При возникновении исключения во время выполнения приложения, в разделе [Устранение неполадок](#troubleshooting) разделе ниже.
 
  
 ## <a name="add-menu-items"></a>Добавление элементов меню 
@@ -193,7 +189,7 @@ ActionBar.Title = "My Toolbar";
 
 ### <a name="install-menu-icons"></a>Установка значков
 
-Продолжить `ToolbarFun` примера приложения, добавьте в проект приложения значков. Загрузить [icons.zip инструментов](https://github.com/xamarin/monodroid-samples/blob/master/Supportv7/AppCompat/Toolbar/Resources/toolbar-icons.zip?raw=true) и распакуйте его. Скопируйте содержимое извлеченный *MIP-карты -* папки в проект *MIP-карты -* папки в **ToolbarFun/ресурсы** и включить каждого файла значка добавлены в проект.
+Продолжить `ToolbarFun` примера приложения, добавьте в проект приложения значков. Загрузить [значков на панели инструментов](https://github.com/xamarin/monodroid-samples/blob/master/Supportv7/AppCompat/Toolbar/Resources/toolbar-icons-plus.zip?raw=true), распаковать и скопируйте содержимое извлеченный *MIP-карты -* папки в проект *MIP-карты -* папках **ToolbarFun / Ресурсы** и включить каждого файла значка добавлены в проект.
 
 
 ### <a name="define-a-menu-resource"></a>Определить ресурс меню
@@ -277,6 +273,19 @@ public override bool OnOptionsItemSelected(IMenuItem item)
 Дополнительные сведения о Android меню см. в разделе разработчика Android [меню](https://developer.android.com/guide/topics/ui/menus.html) раздела. 
  
 
+## <a name="troubleshooting"></a>Устранение неполадок
+
+Следующие советы могут помочь для отладки проблем, возникающих при замене панели действий с панели инструментов.
+
+### <a name="activity-already-has-an-action-bar"></a>Действие уже имеет в панели действий
+
+Если приложение не настроено для использования пользовательские темы, как описано в статье [применять пользовательские темы](#apply-the-custom-theme), при запуске приложения могут возникать следующее исключение:
+
+![Ошибка, которая может возникать, когда пользовательские темы не используется](replacing-the-action-bar-images/03-theme-not-defined.png)
+
+Кроме того, сообщения об ошибке, например, ниже могут быть созданы: _Java.Lang.IllegalStateException: это действие уже есть на панели действий, предоставляемые декоративных окна._ 
+
+Чтобы исправить эту ошибку, убедитесь, что `android:theme` атрибут добавляется пользовательскую тему `<application>` (в **Properties/AndroidManifest.xml**) как описано выше в [применять пользовательские темы](#apply-the-custom-theme). Кроме того, эта ошибка может возникать при `Toolbar` макета или пользовательскую тему настроена неправильно.
 
 
 ## <a name="related-links"></a>Связанные ссылки

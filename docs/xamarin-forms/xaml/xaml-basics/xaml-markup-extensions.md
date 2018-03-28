@@ -1,18 +1,18 @@
 ---
-title: "Часть 3. Расширения разметки XAML"
-description: "Расширения разметки XAML является важной характеристикой в XAML, который допускает свойства, чтобы указать на объекты или значения, которые косвенно ссылаться из других источников. Расширения разметки XAML особенно важны для совместное использование объектов, а также привязку константы, используемые во всем приложении, но их наибольшую программы можно найти привязки данных."
+title: Часть 3. Расширения разметки XAML
+description: Расширения разметки XAML является важной характеристикой в XAML, который допускает свойства, чтобы указать на объекты или значения, которые косвенно ссылаться из других источников. Расширения разметки XAML особенно важны для совместное использование объектов, а также привязку константы, используемые во всем приложении, но их наибольшую программы можно найти привязки данных.
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: F4A37564-B18B-42FF-B841-9A1949895AB6
 author: charlespetzold
 ms.author: chape
-ms.date: 10/25/2017
-ms.openlocfilehash: 1c5c4c30a7e506e19fc4dc0728fb55851ec4911f
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.date: 3/27/2018
+ms.openlocfilehash: cd881b79945c2b9c10e9bb1bc85fce98acb71026
+ms.sourcegitcommit: 20ca85ff638dbe3a85e601b5eb09b2f95bda2807
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="part-3-xaml-markup-extensions"></a>Часть 3. Расширения разметки XAML
 
@@ -45,7 +45,7 @@ _Расширения разметки XAML является важной хар
                 BorderWidth="3"
                 Rotation="-15"
                 TextColor="Red"
-                FontSize="Large" />
+                FontSize="24" />
 
         <Button Text="Do that!"
                 HorizontalOptions="Center"
@@ -53,7 +53,7 @@ _Расширения разметки XAML является важной хар
                 BorderWidth="3"
                 Rotation="-15"
                 TextColor="Red"
-                FontSize="Large" />
+                FontSize="24" />
 
         <Button Text="Do the other thing!"
                 HorizontalOptions="Center"
@@ -61,7 +61,7 @@ _Расширения разметки XAML является важной хар
                 BorderWidth="3"
                 Rotation="-15"
                 TextColor="Red"
-                FontSize="Large" />
+                FontSize="24" />
 
     </StackLayout>
 </ContentPage>
@@ -136,7 +136,7 @@ _Расширения разметки XAML является важной хар
         BorderWidth="3"
         Rotation="-15"
         TextColor="Red"
-        FontSize="Large" />
+        FontSize="24" />
 ```
 
 `StaticResource` Расширение разметки всегда с разделителями с фигурными скобками и включает ключ словаря.
@@ -192,7 +192,7 @@ _Расширения разметки XAML является важной хар
         BorderWidth="{StaticResource borderWidth}"
         Rotation="{StaticResource rotationAngle}"
         TextColor="Red"
-        FontSize="Large" />
+        FontSize="24" />
 ```
 
 Для ресурсов типа `Color`, можно использовать же строковые представления, которые используются при непосредственно назначать атрибуты из этих типов. Преобразователи типов вызываются при создании ресурса. Вот ресурс типа `Color`:
@@ -201,14 +201,10 @@ _Расширения разметки XAML является важной хар
 <Color x:Key="textColor">Red</Color>
 ```
 
-`FontSize` Свойство представляет собой небольшую проблему. Определено свойство с типом `double`. Если задано свойство с членом `NamedSize` перечисления, таких как `Large`, `FontSizeConverter` работает в фоновом преобразовать его в значение, зависящее от платформы с помощью класса `Device.GetNamedSized` метод.
-
-Тем не менее, не может определить ресурс для размера шрифта, что `double` со значением «Большой». Во время обработки ресурсов средство синтаксического анализа XAML он не знает, что значение будет использовано в качестве размера шрифта. 
-
-Решение состоит в определении ресурса в виде `string` с помощью `x:String` типа:
+Часто программы набор `FontSize` свойства члена `NamedSize` перечисления, таких как `Large`. `FontSizeConverter` Работает в фоновом преобразовать его в значение, зависящее от платформы с помощью класса `Device.GetNamedSized` метод. Тем не менее, при определении ресурсов размер шрифта, но более рационально использовать числовые значения, показанные здесь как `x:Double` типа:
 
 ```xaml
-<x:String x:Key="fontSize">Large</x:String>
+<x:Double x:Key="fontSize">24</x:Double>
 ```
 
 Теперь все свойства, кроме `Text` определяются параметры ресурсов:
@@ -275,7 +271,7 @@ _Расширения разметки XAML является важной хар
                 BorderWidth="{StaticResource borderWidth}"
                 Rotation="{StaticResource rotationAngle}"
                 TextColor="{StaticResource textColor}"
-                FontSize"{StaticResource fontSize}" />
+                FontSize="{StaticResource fontSize}" />
 
         <Button Text="Do that!"
                 HorizontalOptions="{StaticResource horzOptions}"

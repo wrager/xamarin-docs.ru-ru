@@ -1,16 +1,16 @@
 ---
-title: "Ограничения"
+title: Ограничения
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 5AC28F21-4567-278C-7F63-9C2142C6E06A
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 43b099e8ddd6acc3e8cc4ce94580313a39a0c686
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: c099797f0687f198ed220c1bd366bd93ab6c6e99
+ms.sourcegitcommit: 20ca85ff638dbe3a85e601b5eb09b2f95bda2807
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="limitations"></a>Ограничения
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/27/2018
 
 В отличие от традиционных моно и .NET код на iPhone статически компилируется заранее вместо компиляции по требованию с помощью JIT-компилятора.
 
-Моно [полный AOT](http://www.mono-project.com/AOT#Full_AOT) технологии имеет несколько ограничений, применительно к универсальным типам, они связаны, так как не все возможные универсального экземпляра может заранее определить во время компиляции. Это не проблему для регулярных .NET или Mono среды выполнения, поскольку во время выполнения с помощью непосредственно в компиляторе время всегда компиляции кода. Однако это создает проблему для статических компилятора как Xamarin.iOS.
+Моно [полный AOT](http://www.mono-project.com/docs/advanced/aot/#full-aot) технологии имеет несколько ограничений, применительно к универсальным типам, они связаны, так как не все возможные универсального экземпляра может заранее определить во время компиляции. Это не проблему для регулярных .NET или Mono среды выполнения, поскольку во время выполнения с помощью непосредственно в компиляторе время всегда компиляции кода. Однако это создает проблему для статических компилятора как Xamarin.iOS.
 
 Ниже перечислены некоторые общие проблемы, которые сталкиваются разработчики.
 
@@ -117,13 +117,10 @@ class GenericType<T> {
 
 В моно этих мостах реализуются только время компилятора. Если с помощью компилятора упреждающего времени, необходимый для iPhone имеется два важных ограничения на этом этапе:
 
--  Необходимо пометить все методы обратного вызова с [MonoPInvokeCallbackAttribute](https://developer.xamarin.com/api/type/MonoPInvokeCallbackAttribute/) 
+-  Необходимо пометить все методы обратного вызова с [MonoPInvokeCallbackAttribute](https://developer.xamarin.com/api/type/ObjCRuntime.MonoPInvokeCallbackAttribute) 
 -  Методы должны быть статическими методами, не поддерживается для экземпляра метода. 
-
-
  
- <a name="No_Remoting" />
-
+<a name="No_Remoting" />
 
 ## <a name="no-remoting"></a>Нет удаленного взаимодействия
 

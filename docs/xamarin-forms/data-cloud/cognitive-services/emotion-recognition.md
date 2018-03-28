@@ -1,6 +1,6 @@
 ---
-title: "С помощью API эмоций — распознавания эмоций"
-description: "API эмоций — принимает выражения лица изображение в качестве входных данных и возвращает степени достоверности во множестве эмоций для каждой грани в образе. В этой статье описывается использование API эмоций — для распознавания эмоций — оценка приложения Xamarin.Forms."
+title: Распознавание эмоций — с помощью API начертание шрифта
+description: API начертания принимает выражения лица изображение в качестве входных данных и возвращает данные, включая степени достоверности во множестве эмоций для каждой грани в образе. В этой статье объясняется, как использовать API-Интерфейс лицевой стороны для распознавания эмоций — оценка приложения Xamarin.Forms.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 19D36A7C-E8D8-43D1-BE80-48DE6C02879A
@@ -8,74 +8,72 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/08/2017
-ms.openlocfilehash: 159bd1b23eb7505c5d5629570a34d54e0525567e
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 0fc69fb1283ea2afd95900348cdecec5d6514ae0
+ms.sourcegitcommit: 20ca85ff638dbe3a85e601b5eb09b2f95bda2807
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="emotion-recognition-using-the-emotion-api"></a>С помощью API эмоций — распознавания эмоций
+# <a name="emotion-recognition-using-the-face-api"></a>Распознавание эмоций — с помощью API начертание шрифта
 
-_API эмоций — принимает выражения лица изображение в качестве входных данных и возвращает степени достоверности во множестве эмоций для каждой грани в образе. В этой статье описывается использование API эмоций — для распознавания эмоций — оценка приложения Xamarin.Forms._
-
-![](~/media/shared/preview.png "Этот API является в настоящее время в предварительной версии")
-
-> [!NOTE]
-> API эмоций — находится на стадии предварительной версии. Может критически важных изменений в API до выпуска окончательной версии.
+_API начертания принимает выражения лица изображение в качестве входных данных и возвращает данные, включая степени достоверности во множестве эмоций для каждой грани в образе. В этой статье объясняется, как использовать API-Интерфейс лицевой стороны для распознавания эмоций — оценка приложения Xamarin.Forms._
 
 ## <a name="overview"></a>Обзор
 
-API эмоций — позволяет выявить anger, contempt, disgust, опасаясь, счастье, нейтральная, sadness и категории "неожиданное", выражения лица. Эти эмоций, глобально и что взаимодействуют через те же основные выражения лица. А также возвратить результат эмоций — для выражения лица, API эмоций — также Возвращает ограничивающий прямоугольник для обнаруженных лица, с помощью API начертания. Если пользователь уже вызван API лицевой стороны, пользователь может отправить лицевой стороны прямоугольника как необязательные входные данные. Обратите внимание, что для использования API эмоций — необходимо получить ключ API. Это можно сделать в [Приступая к работе бесплатно](https://www.microsoft.com/cognitive-services/sign-up) на сайте microsoft.com.
+Начертания API можно выполнять обнаружение эмоций — обнаружение anger, contempt, disgust, опасаясь, счастье, нейтральный, sadness и категории "неожиданное", в выражения лица. Эти эмоций, глобально и что взаимодействуют через те же основные выражения лица. А также возвратить результат эмоций — для выражения лица, API лицевой стороны можно также Возвращает ограничивающий прямоугольник для обнаруженных гарнитуры. Обратите внимание, что ключ API, которые должны быть получены для использования API начертания. Это можно сделать в [повторите служб Когнитивных](https://azure.microsoft.com/try/cognitive-services/?api=face-api).
 
-Распознавание эмоций — могут выполняться через клиентскую библиотеку, а также через REST API. Эта статья посвящена выполнения распознавания эмоций — через [Microsoft.ProjectOxford.Emotion](https://www.nuget.org/packages/Microsoft.ProjectOxford.Emotion/) клиентскую библиотеку, которую можно загрузить из NuGet.
+Распознавание эмоций — могут выполняться через клиентскую библиотеку, а также через REST API. Эта статья посвящена выполнения распознавания эмоций — через [Microsoft.ProjectOxford.Face](https://www.nuget.org/packages/Microsoft.ProjectOxford.Face/) клиентскую библиотеку, которую можно загрузить из NuGet.
 
-API эмоций — также можно использовать для распознавания выражения лица людей в видео и возвращает сводку по их эмоций. Дополнительные сведения см. в разделе [эмоций — в видео](https://www.microsoft.com/cognitive-services/emotion-api/documentation#emotion-in-video) на сайте microsoft.com.
+API лицевой стороны можно также использовать для распознавания выражения лица людей в видео и может возвращать Сводка их эмоций. Дополнительные сведения см. в разделе [как анализировать видео в режиме реального времени](/azure/cognitive-services/face/face-api-how-to-topics/howtoanalyzevideo_face/).
 
-Дополнительные сведения об API эмоций — см. в разделе [документации по API эмоций —](https://www.microsoft.com/cognitive-services/emotion-api/documentation) на сайте microsoft.com.
+Дополнительные сведения об API-Интерфейсе начертания. в разделе [API лицевой](/azure/cognitive-services/face/overview/).
 
 ## <a name="performing-emotion-recognition"></a>Выполнение эмоций распознавания
 
-Распознавание эмоций — достигается за счет передачи API эмоций — поток изображений. Размер файла изображения не должен превышать 4 МБ и поддерживаемые форматы файлов, JPEG, GIF, PNG и BMP. В образе выявляемых начертания размер диапазона — 36 x 36 в 4096 x 4096 пикселей. Все фрагменты за пределами этого диапазона не может быть найден.
+Распознавание эмоций достигается за счет передачи поток изображений в API начертания. Размер файла изображения не должен превышать 4 МБ и поддерживаемые форматы файлов, JPEG, GIF, PNG и BMP.
 
 В следующем примере кода показан процесс распознавания эмоций:
 
 ```csharp
-using Microsoft.ProjectOxford.Emotion;
-using Microsoft.ProjectOxford.Emotion.Contract;
+using Microsoft.ProjectOxford.Face;
+using Microsoft.ProjectOxford.Face.Contract;
 
-var emotionClient = new EmotionServiceClient(Constants.EmotionApiKey);
+var faceServiceClient = new FaceServiceClient(Constants.FaceApiKey, Constants.FaceEndpoint);
+// e.g. var faceServiceClient = new FaceServiceClient("a3dbe2ed6a5a9231bb66f9a964d64a12", "https://westus.api.cognitive.microsoft.com/face/v1.0/detect");
 
+var faceAttributes = new FaceAttributeType[] { FaceAttributeType.Emotion };
 using (var photoStream = photo.GetStream())
 {
-  Emotion[] emotionResult = await emotionClient.RecognizeAsync(photoStream);
-  if (emotionResult.Any())
-  {
-    // Emotions detected are happiness, sadness, surprise, anger, fear, contempt, disgust, or neutral.
-    emotionResultLabel.Text = emotionResult.FirstOrDefault().Scores.ToRankedList().FirstOrDefault().Key;
-  }
-  // Store emotion as app rating
-  ...
+    Face[] faces = await faceServiceClient.DetectAsync(photoStream, true, false, faceAttributes);
+    if (faces.Any())
+    {
+        // Emotions detected are happiness, sadness, surprise, anger, fear, contempt, disgust, or neutral.
+        emotionResultLabel.Text = faces.FirstOrDefault().FaceAttributes.Emotion.ToRankedList().FirstOrDefault().Key;
+    }
+    // Store emotion as app rating
+    ...
 }
 ```
 
-`EmotionServiceClient` Для выполнения распознавания эмоций — с помощью ключа API эмоций —, переданного в качестве аргумента необходимо создать экземпляр `EmotionServiceClient` конструктор.
+`FaceServiceClient` Необходимо создать экземпляр, чтобы выполнять распознавание эмоций, с ключом API лицевой и конечной точки, передаваемые в качестве аргументов `FaceServiceClient` конструктор.
 
-`RecognizeAsync` Метод, который вызывается в `EmotionServiceClient` экземпляра, загружает изображение в API эмоций — в виде `Stream`. API эмоций — будут отправлены ключ API при вызове этой операции. Ошибки при отправке допустимый ключ API приведет к `Microsoft.ProjectOxford.Common.ClientException` вызываемом с сообщение исключение, указывающее на то, что был отправлен недопустимый ключ API.
+> [!NOTE]
+> Необходимо использовать один регион при вызовах API лицевой стороны как можно использовать для получения ключей подписки. Например, если вы приобрели подписку ключи из `westus` , конечную точку обнаружения начертания, будет ли области `https://westus.api.cognitive.microsoft.com/face/v1.0/detect`.
 
-`RecognizeAsync` Метод будет возвращать `Emotion` массива, при условии, что фрагмент был распознан. Для каждого изображения максимальное число лиц, которые могут быть обнаружены 64 и лиц ранжируются по размеру лицевой стороны прямоугольника в порядке убывания. При обнаружении не начертания пустой `Emotion` возвращается массив.
+`DetectAsync` Метод, который вызывается в `FaceServiceClient` экземпляра, загружает изображение в API лицевой стороны в виде `Stream`. Ключ API будут отправлены в API лицевой стороны, при вызове этой операции. Ошибки при отправке допустимый ключ API приведет к `Microsoft.ProjectOxford.Face.FaceAPIException` вызываемом с сообщение исключение, указывающее на то, что был отправлен недопустимый ключ API.
 
-При интерпретации результатов из API эмоций —, обнаруженных эмоций должен интерпретироваться как эмоций с самая высокая оценка как оценки нормализуются на сумму в один. Таким образом в примере приложения отображались распознаваемым эмоций с высший показатель для наибольшего грани обнаруженных в образе, как показано на следующем снимке экрана:
+`DetectAsync` Метод будет возвращать `Face` массива, при условии, что фрагмент был распознан. Каждая возвращенная начертания содержит прямоугольник, указывая его расположение, в сочетании с ряда необязательно начертания атрибутов, которые задаются `faceAttributes` аргумент `DetectAsync` метод. При обнаружении не начертания пустой `Face` возвращается массив.
+
+При интерпретации результатов из API начертания, обнаруженных эмоций должен интерпретироваться как эмоций с самая высокая оценка как оценки нормализуются на сумму в один. Таким образом в примере приложения отображались распознаваемым эмоций с высший показатель для наибольшего грани обнаруженных в образе, как показано на следующем снимке экрана:
 
 ![](emotion-recognition-images/emotion-recognition.png "Распознавание эмоций")
 
 ## <a name="summary"></a>Сводка
 
-В этой статье описано, как использовать API эмоций — для распознавания эмоций — оценка приложения Xamarin.Forms. API эмоций — принимает выражения лица изображение в качестве входных данных и возвращает уверенность в том в наборе эмоций для каждой грани в образе.
-
+В этой статье описано, как использовать API лицевой стороны для распознавания эмоций — оценка приложения Xamarin.Forms. API начертания принимает выражения лица изображение в качестве входных данных и возвращает данные, включая уверенность в наборе эмоций для каждой грани в образе.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [API эмоций — документации](https://www.microsoft.com/cognitive-services/emotion-api/documentation)
+- [Сталкиваются API](/azure/cognitive-services/face/overview/).
 - [TODO Когнитивных службы (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoCognitiveServices/)
-- [Microsoft.ProjectOxford.Emotion](https://www.nuget.org/packages/Microsoft.ProjectOxford.Emotion/)
-- [API эмоций —](https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89/operations/563b31ea778daf121cc3a5fa)
+- [Microsoft.ProjectOxford.Face](https://www.nuget.org/packages/Microsoft.ProjectOxford.Face/)
