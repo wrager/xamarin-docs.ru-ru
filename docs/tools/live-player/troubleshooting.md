@@ -1,6 +1,6 @@
 ---
-title: "Устранение неполадок"
-description: "Известные проблемы с Xamarin Live Player и способы их устранения."
+title: Устранение неполадок
+description: Известные проблемы с Xamarin Live Player и способы их устранения.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 29A97ADA-80E0-40A1-8B26-C68FFABE7D26
@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 05/17/2017
-ms.openlocfilehash: d7c5bedb03d7c869be65e3c704bac58a9cdfcbbd
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ab075cad0c3f3456ed23f3eb175dcdb3aa493510
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -35,12 +35,92 @@ ms.lasthandoff: 02/27/2018
 
 **«IOException: не удалось прочитать данные из транспортного соединения: операция на неблокирующих сокетах будет заблокирована»**
 
-Эта ошибка часто возникают, когда мобильное устройство под управлением Xamarin Live Player не в той же сети, что компьютер под управлением интегрированной среды разработки; Это часто происходит при подключении к устройству, которое ранее было успешно пару.
+Эта ошибка часто возникают, когда мобильное устройство под управлением Xamarin Live Player не в той же сети, что и компьютер под управлением Visual Studio. Это часто происходит при подключении к устройству, которое ранее было успешно пару.
 
 * Убедитесь, что компьютер и устройства в той же сети Wi-Fi.
 * Сети может быть тесно защищены (например, в некоторых сетях предприятия), блокирует порты, необходимые Live проигрывателем Xamarin. Для Xamarin Live Player требуются следующие порты:
   * 37847 — доступ к внутренней сети 
   * 8090 — внешнего сетевого доступа
+
+## <a name="manually-configure-device"></a>Настройка устройства вручную
+
+Если вы не можете подключиться к устройству по Wi-Fi можно попытаться вручную настроить на устройство с помощью файла конфигурации, с помощью следующих действий:
+
+**Шаг 1: Откройте файл конфигурации**
+
+Перейдите к папке данных приложения:
+
+* Windows: **%userprofile%\AppData\Roaming**
+* macOS: **~/Users/$USER/.config**
+
+В этой папке можно найти **PlayerDeviceList.xml** Если существует необходимо создать его.
+
+**Шаг 2: Получение IP-адреса**
+
+В приложении Xamarin Live Player, перейдите к **о > Проверка подключения > Начать тест подключения**.
+
+Запишите IP-адреса, вам потребуется IP-адрес при настройке устройства.
+
+**Шаг 3: Получение кодом связывания**
+
+Внутри tap Xamarin Live Player **пары** или **пары снова**, нажмите клавишу **вручную введите**. Числовой код отображается, который необходимо обновить файл конфигурации.
+
+**Шаг 4: Создать код GUID**
+
+Последовательно выберите пункты: https://www.guidgenerator.com/online-guid-generator.aspx и сформировать новый идентификатор guid и убедитесь, что включен верхний регистр.
+
+
+**Шаг 5: Настройка устройства**
+
+Откройте **PlayerDeviceList.xml** вверх в редакторе, например Visual Studio или Visual Studio Code. Необходимо вручную настроить устройства в этом файле. По умолчанию, файл должен содержать следующий пустой `Devices` XML-элемента:
+
+```xml
+<DeviceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Devices>
+
+</Devices>
+</DeviceList>
+```
+
+**Добавьте устройства iOS:**
+
+```xml
+<PlayerDevice>
+<SecretCode>ENTER-PAIR-CODE-HERE</SecretCode>
+<UniqueIdentifier>ENTER-GUID-HERE</UniqueIdentifier>
+<Name>iPhone Player</Name>
+<Platform>iOS</Platform>
+<AndroidApiLevel>0</AndroidApiLevel>
+<DebuggerEndPoint>ENTER-IP-HERE:37847</DebuggerEndPoint>
+<HostEndPoint />
+<NeedsAppInstall>false</NeedsAppInstall>
+<IsSimulator>false</IsSimulator>
+<SimulatorIdentifier />
+<LastConnectTimeUtc>2018-01-08T20:36:03.9492291Z</LastConnectTimeUtc>
+</PlayerDevice>
+```
+
+
+**Добавьте устройства Android:**
+
+```xml
+<PlayerDevice>
+<SecretCode>ENTER-PAIR-CODE-HERE</SecretCode>
+<UniqueIdentifier>ENTER-GUID-HERE</UniqueIdentifier>
+<Name>Android Player</Name>
+<Platform>Android</Platform>
+<AndroidApiLevel>24</AndroidApiLevel>
+<DebuggerEndPoint>ENTER-IP-HERE:37847</DebuggerEndPoint>
+<HostEndPoint />
+<NeedsAppInstall>false</NeedsAppInstall>
+<IsSimulator>false</IsSimulator>
+<SimulatorIdentifier />
+<LastConnectTimeUtc>2018-01-08T20:34:42.2332328Z</LastConnectTimeUtc>
+</PlayerDevice>
+```
+
+**Закройте и снова откройте Visual Studio.** Устройство должно отображаться в списке.
+
 
 ## <a name="type-or-namespace-cannot-be-found-message-in-ide"></a>Сообщение «тип или пространство имен не найден» в интегрированной среде разработки
 

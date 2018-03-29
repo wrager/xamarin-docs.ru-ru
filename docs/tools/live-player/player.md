@@ -1,6 +1,6 @@
 ---
-title: "Приложение динамической проигрыватель Xamarin"
-description: "Изменение и тестирование приложений в режиме реального времени на устройства iOS или Android"
+title: Приложение динамической проигрыватель Xamarin
+description: Изменение и тестирование приложений в режиме реального времени на устройства iOS или Android
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: A7EB73C1-38D7-46C5-9AF6-4C571C168BE7
@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 05/10/2017
-ms.openlocfilehash: 6b0d62a9026c1248a66166e75ed41bb0148547a6
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: d666bb9a7749845265d50b86e46ef78e2036cb69
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="xamarin-live-player-app"></a>Приложение динамической проигрыватель Xamarin
 
@@ -20,17 +20,19 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="get-the-app"></a>Получение приложения
 
-### <a name="xamarin-live-player-for-android"></a>Xamarin динамической Player для Android
+# <a name="androidtabandroid"></a>[Android](#tab/android)
+
 Xamarin Live Player доступен для Android в Google Play:
 
 [ ![Доступно на Google Play](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.xamarin.live)
 
 Для устройств Android без Google Play Xamarin Live Player доступна через [HockeyApp](https://aka.ms/xlp-hockeyapp) распространения. Кроме того, предварительной версии сборки для Android можно установить непосредственно из Google Play с включением защиты для [открыть бета-версии программы](https://play.google.com/apps/testing/com.xamarin.live)
 
-### <a name="xamarin-live-player-for-ios"></a>Live Xamarin Player для iOS
+# <a name="iostabios"></a>[iOS](#tab/ios)
+
 Мы рекомендуем пользователям присоединяться к [приложения Xamarin Live Player _iOS предварительного просмотра_ ](https://aka.ms/liveplayeralpha) более быстрый доступ к последним усовершенствованиям через TestFlight.
 
-
+-----
 
 ## <a name="using-the-app"></a>С помощью приложения
 
@@ -44,7 +46,7 @@ Xamarin Live Player доступен для Android в Google Play:
 
 ![Снимок экрана сканер штрих-кодов iOS](player-images/scan-iphone-sml.png) ![Снимок экрана сканер штрихкодов Android](player-images/scan-android-sml.png)
 
-Если соединение установлено успешно, код должен выполняться на устройстве практически сразу (например, образец калькулятора):
+Если соединение установлено успешно, код должен выполняться на устройстве практически сразу (такие как [образец калькулятора](https://developer.xamarin.com/samples/mobile/LivePlayer/BasicCalculator)):
 
 ![Пример приложения калькулятора, запущенного на устройстве](player-images/basic-calculator-iphone-sml.png)
 
@@ -52,7 +54,7 @@ Xamarin Live Player доступен для Android в Google Play:
 
 Нажмите кнопку "Сведения" **(i)** в нижней части приложения, чтобы раскрыть **параметры** меню:
 
-![Снимок экрана: меню «Параметры»](player-images/options.png)
+[ ![Снимок экрана: меню «Параметры»](player-images/options-sml.png)](player-images/options.png#lightbox)
 
 ### <a name="logs"></a>Журналы
 
@@ -64,13 +66,13 @@ Xamarin Live Player доступен для Android в Google Play:
 * Сведения о версии.
 * Отправьте отзыв.
 
-![Снимок экрана: параметры](player-images/settings.png)
+[ ![Снимок экрана: параметры](player-images/settings-sml.png)](player-images/settings.png#lightbox)
 
 ## <a name="managing-devices"></a>Управление устройствами
 
 Для подключения к устройству в первый раз, следуйте инструкциям в [требования и настройка](~/tools/live-player/install.md). Можно связать несколько устройств (например, iOS и Android) и управлять ими в среде IDE.
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
 В Visual Studio выберите **Сервис > Xamarin Live Player > Управление устройствами...**
 
@@ -84,7 +86,7 @@ Xamarin Live Player доступен для Android в Google Play:
 
 Это окно можно также открыть из списка устройств.
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
 В Visual Studio для Mac, выберите **Инструменты > Управление устройствами (Live проигрыватель Xamarin)...**
 

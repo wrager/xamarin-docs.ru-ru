@@ -1,6 +1,6 @@
 ---
-title: "Настройка динамической проигрыватель Xamarin"
-description: "Изменение и тестирование приложений в режиме реального времени на устройства iOS или Android"
+title: Настройка динамической проигрыватель Xamarin
+description: Изменение и тестирование приложений в режиме реального времени на устройства iOS или Android
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 5DDF9203-8826-4B04-93F5-B8D07EDE3873
@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/22/2017
-ms.openlocfilehash: ddc16dc1faaf623098aad5bca340c15f943223ba
-ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
+ms.openlocfilehash: 05d6a679f318406d1ee5c6893ae4d01452a79723
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="xamarin-live-player-setup"></a>Настройка динамической проигрыватель Xamarin
 
@@ -22,25 +22,28 @@ Xamarin Live Player позволяет вносить изменения в ре
 
 ## <a name="1-get-the-app"></a>1. Получение приложения
 
-### <a name="xamarin-live-player-for-android"></a>Xamarin динамической Player для Android
+# <a name="androidtabandroid"></a>[Android](#tab/android)
+
 Xamarin Live Player доступен для Android в Google Play:
 
 [ ![Доступно на Google Play](install-images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.xamarin.live)
 
 Для устройств Android без Google Play Xamarin Live Player доступна через [HockeyApp](https://aka.ms/xlp-hockeyapp) распространения. Кроме того, предварительной версии сборки для Android можно установить непосредственно из Google Play с включением защиты для [открыть бета-версии программы](https://play.google.com/apps/testing/com.xamarin.live)
 
-### <a name="xamarin-live-player-for-ios"></a>Live Xamarin Player для iOS
+# <a name="iostabios"></a>[iOS](#tab/ios)
+
 Мы рекомендуем пользователям присоединяться к [приложения Xamarin Live Player _iOS предварительного просмотра_ ](https://aka.ms/liveplayeralpha) более быстрый доступ к последним усовершенствованиям через TestFlight.
 
+-----
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
-## <a name="2-get-visual-studio-2017-preview-on-windows-or-for-mactabsvsmac"></a>2. Получить 2017 г предварительной версии Visual Studio в Windows (или [для Mac](?tabs=vsmac))
+## <a name="2-get-visual-studio-2017"></a>2. Получить Visual Studio 2017 г.
 
 Xamarin Live Player требуются:
 
-- Visual Studio 2017 г [15.4](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/#visualstudio2017) или более поздней версии.
-- Компьютер Visual Studio и устройства в той же сети Wi-Fi
+- 15.4 2017 г. Visual Studio или более поздней версии.
+- Компьютер Visual Studio и устройства в той же сети Wi-Fi.
 
 ## <a name="3-using-xamarin-live-player-for-the-first-time"></a>3. С помощью Xamarin Live Player в первый раз
 
@@ -72,9 +75,9 @@ Xamarin Live Player требуются:
 
   Если не удается связаться с устройства для связывания, может появиться ошибка.
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
-## <a name="2-get-visual-studio-for-mac-or-for-windowstabsvswin"></a>2. Получить Visual Studio для Mac (или [для Windows](?tabs=vswin))
+## <a name="2-get-visual-studio-for-mac"></a>2. Получить Visual Studio для Mac
 
 Xamarin Live Player требуются:
 
@@ -120,7 +123,7 @@ Xamarin Live Player требуются:
 
 -----
 
-Если возникают проблемы, см. раздел [ограничения и устранение неполадок](~/tools/live-player/troubleshooting.md).
+Если возникают проблемы, или не удается подключиться, см. раздел [ограничения и устранение неполадок](~/tools/live-player/troubleshooting.md).
 
 
 ## <a name="related-links"></a>Связанные ссылки

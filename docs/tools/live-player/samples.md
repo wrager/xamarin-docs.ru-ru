@@ -1,6 +1,6 @@
 ---
-title: "Образцы динамической проигрыватель Xamarin"
-description: "Ниже приведены некоторые примеры на ознакомление с Xamarin Live Player"
+title: Образцы динамической проигрыватель Xamarin
+description: Ниже приведены некоторые примеры на ознакомление с Xamarin Live Player.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: C71D34AD-747B-4826-838D-5138F5DCD7EF
@@ -8,32 +8,34 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 06/20/2017
-ms.openlocfilehash: 6f4ccfb70e3e8e4db0bfb692e63208b5fc89ffac
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0e624568a86b08522d68b923b2d60a86144870da
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="xamarin-live-player-samples"></a>Образцы динамической проигрыватель Xamarin
 
-_Ниже приведены некоторые примеры на ознакомление с Xamarin Live Player_
-
-## <a name="xamarinforms"></a>Xamarin.Forms
+## <a name="get-started-with-xamarinforms"></a>Начало работы с Xamarin.Forms
 
 Посетите [коллекции примеров](https://developer.xamarin.com/samples/xamarin-live-player/all/) для Xamarin.Forms образцы, которые работают с Xamarin Live Player.
 
-<a name="colorcontrol"/>
+## <a name="featured-samples"></a>Главы в популярных образцы
 
-## <a name="color-control-ios"></a>Цвет элемента управления (iOS)
+### <a name="basic-calculatorhttpsdeveloperxamarincomsamplesmobileliveplayerbasiccalculator"></a>[Калькулятору](https://developer.xamarin.com/samples/mobile/LivePlayer/BasicCalculator/)
 
-Исходя из этого [рецепт](https://developer.xamarin.com/recipes/ios/media/coreimage/adjust_contrast_and_brightness_of_an_image/), образец цвет элемента управления, которая позволяет взять фотографию на iPhone и скорректировать уровни цвет:
+Это приложение Xamarin.Forms предоставляет простого калькулятора, которые можно использовать на устройстве Android или iOS.
 
-![Цвет элемента управления Снимок экрана приложения](samples-images/color-control-sml.png)
+![Снимок экрана основные калькулятора](samples-images/basic-calculator-sml.png)
 
-[Скачать образец](https://developer.xamarin.com/samples/mobile/LivePlayer/ColorControl/)
+### <a name="bugsweeperhttpsdeveloperxamarincomsamplesmobileliveplayerbugsweeperlp"></a>[BugSweeper](https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/)
+
+Это знакомая всем игра с некоторыми изменениями. Десять ошибок, скрытые в сетке плиток (9 x 9). Чтобы выиграть, необходимо найти и пометить все ошибки.
+
+![BugSweeper приложения на Android](samples-images/bugsweeper-sml.png)
+
 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Цвет элемента управления (iOS) (пример)](https://developer.xamarin.com/samples/mobile/LivePlayer/ColorControl/)
-- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/xamarin-live-player/all/)
+- [Образцы динамической проигрыватель Xamarin.Forms](https://developer.xamarin.com/samples/xamarin-live-player/all/)

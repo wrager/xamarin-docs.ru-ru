@@ -1,6 +1,6 @@
 ---
-title: "Средство предварительного просмотра XAML для Xamarin.Forms"
-description: "В разделе отображаются при вводе макеты Xamarin.Forms!"
+title: Средство предварительного просмотра XAML для Xamarin.Forms
+description: В разделе отображаются при вводе макеты Xamarin.Forms!
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 84769ff1-72fd-4c44-8251-dd6d5bf8c7b2
@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 02/24/2017
-ms.openlocfilehash: 8f4d8253d56708f77ede7b5173f3dd771e1da0ea
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: a7a9c4fed92cb4ed8c8c12e97129bc8379037acb
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="xaml-previewer-for-xamarinforms"></a>Средство предварительного просмотра XAML для Xamarin.Forms
 
@@ -26,17 +26,19 @@ _В разделе отображаются при вводе макеты Xamar
 
 ## <a name="getting-started"></a>Начало работы
 
-### <a name="visual-studio-for-mac-on-mac"></a>Visual Studio для Mac на Mac
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+
+Используйте **представление > Другие окна > средство предварительного просмотра Xamarin.Forms** меню в Visual Studio, чтобы открыть окно предварительного просмотра. Используйте **окна > создать группу вертикальных вкладок** меню, чтобы разместить его рядом друг с другом.
+
+[![Предварительная версия элемента управления ListView в Visual Studio](xaml-previewer-images/xamlp-list-vs-sml.png "средство предварительного просмотра форм в Visual Studio")](xaml-previewer-images/xamlp-list-vs.png#lightbox "средство предварительного просмотра форм в Visual Studio")
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 **Предварительного просмотра** кнопку можно отобразить в редакторе, щелкнув правой кнопкой мыши XAML-файл, а затем выбрав **открыть с помощью > средства просмотра XAML**. Затем в области предварительного просмотра можно отображать и скрывать, нажав клавишу **предварительного просмотра** кнопку в правом верхнем углу любого окна документа XAML:
 
 [![Предварительная версия элемента управления ListView в Visual Studio для Mac](xaml-previewer-images/xamlp-list-sml.png "средство предварительного просмотра форм в Visual Studio для Mac")](xaml-previewer-images/xamlp-list.png#lightbox "средство предварительного просмотра форм в Visual Studio для Mac")
 
-### <a name="visual-studio-on-windows"></a>Visual Studio в Windows
-
-Используйте **представление > Другие окна > средство предварительного просмотра Xamarin.Forms** меню в Visual Studio, чтобы открыть окно предварительного просмотра. Используйте **окна > создать группу вертикальных вкладок** меню, чтобы разместить его рядом друг с другом.
-
-[![Предварительная версия элемента управления ListView в Visual Studio](xaml-previewer-images/xamlp-list-vs-sml.png "средство предварительного просмотра форм в Visual Studio")](xaml-previewer-images/xamlp-list-vs.png#lightbox "средство предварительного просмотра форм в Visual Studio")
+-----
 
 ## <a name="xaml-preview-options"></a>Параметры предварительного просмотра XAML
 

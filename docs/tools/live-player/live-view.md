@@ -1,6 +1,7 @@
 ---
-title: "XAML Live предварительного просмотра"
-description: "Протестируйте изменения кода приложения в реальном времени на устройства iOS или Android"
+redirect_url: /xamarin/tools/live-player/
+title: XAML Live предварительного просмотра
+description: Протестируйте изменения кода приложения в реальном времени на устройства iOS или Android
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 86E9A179-21F8-4F3A-A9CE-36F0FC5DB4A8
@@ -8,11 +9,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 12/21/2017
-ms.openlocfilehash: f5c1649d625f2094fb710066f79a4ae89a696266
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 96ce096a57e46b36ebe6516ba0aff2733883e400
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="xaml-live-previewing"></a>XAML Live предварительного просмотра
 
@@ -20,12 +21,12 @@ ms.lasthandoff: 03/12/2018
 
 ## <a name="requirements"></a>Требования
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
 1. Компьютер под управлением Windows 7 или более поздней версии.
 2. Visual Studio 2017 г. версия 15.4 или выше, **Разработка мобильных приложений в .NET Framework** установлен рабочей нагрузки.
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
 1. Mac с OS X 10.11 macOS 10.12 или более поздней версии.
 2. Visual Studio для Mac 7.2 или более поздней версии. Мы рекомендуем последнюю версию.
@@ -40,7 +41,7 @@ ms.lasthandoff: 03/12/2018
 
 Прежде чем использовать проигрыватель Xamarin Live с устройства iOS или Android, вам потребуется скачать приложение Xamarin Live Player и свяжите его в Visual Studio, как описано в [установить](~/tools/live-player/install.md) руководства. После успешного иметь пару устройства для Visual Studio, можно начать интерактивный просмотр XAML-страницы. 
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
 1. Откройте страницу XAML для интерактивного просмотра в редакторе Visual Studio 2017 г.:
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 03/12/2018
 
     ![](live-view-images/vs-image3.png)
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
 1. Откройте страницу XAML, требуется интерактивный просмотр в Visual Studio для Mac редактора:
 

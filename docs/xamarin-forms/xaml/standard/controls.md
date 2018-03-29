@@ -1,6 +1,6 @@
 ---
-title: "Элементы управления XAML Standard (Предварительная версия)"
-description: "Как начать изучение Предварительная версия Standard XAML в Xamarin.Forms"
+title: Элементы управления XAML Standard (Предварительная версия)
+description: Как начать изучение Предварительная версия Standard XAML в Xamarin.Forms
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 287E6631-D1C5-46C5-8905-AB53D34E365D
@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 11/15/2017
-ms.openlocfilehash: b044cb849f9a8e591a8db5907211a55f77d6e45f
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 084da9cbb06c7ec9bbab6ea4dc6a1a7b15ffe692
+ms.sourcegitcommit: 17a9cf246a4d33cfa232016992b308df540c8e4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="xaml-standard-preview-controls"></a>Элементы управления XAML Standard (Предварительная версия)
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="properties-and-enumerations"></a>Свойства и перечисления
 
-|Xamarin.FormsControls с обновленные свойства|Xamarin.FormsProperty или Enum|XAML StandardEquivalent|
+|Элементы управления Xamarin.Forms с обновленные свойства|Свойство Xamarin.Forms или enum|Стандартная XAML эквивалент|
 |--- |--- |--- |
 |Кнопка, запись, метки, DatePicker, редактор, SearchBar, TimePicker|TextColor|Foreground|
 |VisualElement|BackgroundColor|Фон *|
