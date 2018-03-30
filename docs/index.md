@@ -1,8 +1,8 @@
 ---
 layout: HubPage
-hide_bc: 
-title: "Документация по Xamarin"
-description: "Xamarin позволяет создавать собственные приложения для Android, iOS и macOS с помощью кода .NET и пользовательских интерфейсов платформы. Xamarin.Forms позволяет создавать собственные приложения с общим кодом пользовательского интерфейса на C# или XAML."
+hide_bc: true
+title: Документация по Xamarin
+description: Xamarin позволяет создавать собственные приложения для Android, iOS и macOS с помощью кода .NET и пользовательских интерфейсов платформы. Xamarin.Forms позволяет создавать собственные приложения с общим кодом пользовательского интерфейса на C# или XAML.
 featureFlags:
 - clicktale
 ms.openlocfilehash: d73b8165fc1a71fbfe3202f694c4653788ccfb28
