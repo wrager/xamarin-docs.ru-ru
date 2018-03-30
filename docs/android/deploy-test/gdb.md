@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/05/2018
-ms.openlocfilehash: 55d72a49f90095a33577279d018e1696dda8fc42
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 246dd135b8a6e8a60bca9ba38e91ca8fd2d43674
+ms.sourcegitcommit: 20ca85ff638dbe3a85e601b5eb09b2f95bda2807
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="gdb"></a>GDB
 
@@ -163,7 +163,7 @@ GNU gdb (GDB) 7.3.1-gg2
 
 ### <a name="monopmip-doesnt-work"></a>`mono_pmip` не работает.
 
-Функция `mono_pmip` (она полезна для [получения кадров управляемого стека](http://www.mono-project.com/Debugging#Debugging_with_GDB)), экспортируется из `libmonosgen-2.0.so`, который в настоящее время не запрашивается целевым устройством `_Gdb`. (Эта ошибка будет исправлена в будущих выпусках.)
+Функция `mono_pmip` (она полезна для [получения кадров управляемого стека](http://www.mono-project.com/docs/debug+profile/debug/#debugging-with-gdb)), экспортируется из `libmonosgen-2.0.so`, который в настоящее время не запрашивается целевым устройством `_Gdb`. (Эта ошибка будет исправлена в будущих выпусках.)
 
 Чтобы включить вызов функций, расположенных в файле `libmonosgen-2.0.so`, скопируйте его с целевого устройства в каталог `gdb-symbols`:
 
