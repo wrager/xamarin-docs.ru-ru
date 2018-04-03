@@ -1,18 +1,18 @@
 ---
-title: "Android речи"
-description: "В этой статье описываются основные принципы использования очень мощный Android.Speech пространства имен. С момента ее создания Android была возможность распознавания речи и выводят их как текст. Это относительно простой процесс. Для преобразования текста в речь, однако процесс является более сложным, как только не речи нужно принимать во внимание, но также языков, доступных и установленных в системе преобразования текста в речь (TTS)."
+title: Android речи
+description: В этой статье описываются основные принципы использования очень мощный Android.Speech пространства имен. С момента ее создания Android была возможность распознавания речи и выводят их как текст. Это относительно простой процесс. Для преобразования текста в речь, однако процесс является более сложным, как только не речи нужно принимать во внимание, но также языков, доступных и установленных в системе преобразования текста в речь (TTS).
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: FA3B8EC4-34D2-47E3-ACEA-BD34B28115B9
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/09/2018
-ms.openlocfilehash: e8e56afbdf0b68ecc49a89b08b2e67a9715f2aef
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.date: 04/02/2018
+ms.openlocfilehash: acc64fee37e1a6046991355389a09a29e1889993
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="android-speech"></a>Android речи
 
@@ -158,15 +158,21 @@ foreach (var locale in localesAvailable)
 langAvailable = langAvailable.OrderBy(t => t).Distinct().ToList();
 ```
 
+Этот код вызывает [TextToSpeech.IsLanguageAvailable](https://developer.xamarin.com/api/member/Android.Speech.Tts.TextToSpeech.IsLanguageAvailable/p/Java.Util.Locale/) для проверки, если языковой пакет для заданного языкового стандарта уже присутствует на устройстве. Этот метод возвращает [LanguageAvailableResult](https://developer.xamarin.com/api/type/Android.Speech.Tts.LanguageAvailableResult/), указывающее, доступен ли переданный язык. Если `LanguageAvailableResult` указывает, что язык `NotSupported`, отсутствует пакет нет голоса (даже для загрузки) для этого языка. Если `LanguageAvailableResult` равно `MissingData`, а затем можно загрузить новый языковой пакет, как описано ниже в шаге 4.
+
 ### <a name="step-3---setting-the-speed-and-pitch"></a>Шаг 3. Установка скорости и наклон
 
 Android позволяет пользователю изменить звуковой речи, изменение `SpeechRate` и `Pitch` (коэффициент скорости и тон речи). Это переходит от 0 до 1, с «normal» речи, 1 для обоих.
 
 ### <a name="step-4---testing-and-loading-new-languages"></a>Шаг 4. тестирование и загрузке новых языков
 
-Это делается с помощью `Intent` с результатом, который интерпретируется в `OnActivityResult`. В отличие от примера речи в текст, который используется `RecognizerIntent` как `PutExtra` параметр `Intent`, установку, назначение использует `Action`.
+Загрузка нового языка выполняется с помощью `Intent`. Это назначение приводит [OnActivityResult](https://developer.xamarin.com/api/member/Android.App.Activity.OnActivityResult/) вызываемого метода. В отличие от примера речи в текст (который используется [RecognizerIntent](https://developer.xamarin.com/api/type/Android.Speech.RecognizerIntent/) как `PutExtra` параметр `Intent`), тестирования и загрузке `Intent`являются `Action`-на основе:
 
-Можно установить новый язык из Google, используя следующий код. Результат `Activity` проверяет, при необходимости язык, и если это так, устанавливает язык после запроса для загрузки или делать это.
+-   [TextToSpeech.Engine.ActionCheckTtsData](https://developer.xamarin.com/api/field/Android.Speech.Tts.TextToSpeech+Engine.ActionCheckTtsData/) &ndash; запускает действие из платформы `TextToSpeech` механизм для проверки правильности установки и доступность языковые ресурсы на устройстве.
+
+-   [TextToSpeech.Engine.ActionInstallTtsData](https://developer.xamarin.com/api/field/Android.Speech.Tts.TextToSpeech+Engine.ActionInstallTtsData/) &ndash; запускает действие, которое предлагает пользователю загрузить необходимые языки.
+
+В следующем примере кода показано, как использовать эти действия для тестирования языковых ресурсов и загрузки нового языка.
 
 ```csharp
 var checkTTSIntent = new Intent();
@@ -183,6 +189,19 @@ protected override void OnActivityResult(int req, Result res, Intent data)
     }
 }
 ```
+
+`TextToSpeech.Engine.ActionCheckTtsData` проверяет доступность языковые ресурсы. `OnActivityResult` вызывается после завершения этого теста. Если языковые ресурсы необходимо загрузить, `OnActivityResult` запускает `TextToSpeech.Engine.ActionInstallTtsData` действия, чтобы запустить действие, которое позволяет пользователю загрузить необходимые языки. Обратите внимание, это `OnActivityResult` реализации не проверяет `Result` кода, так как в этом упрощенном примере определение уже выполнен языкового пакета необходимо загрузить.
+
+`TextToSpeech.Engine.ActionInstallTtsData` Причины действие **Google TTS голосовых данных** действия должны быть представлены пользователю для выбора языков для загрузки:
+
+![Google TTS голосовых данных действия](speech-images/01-google-tts-voice-data.png)
+
+В качестве примера пользователь может выбрать французский и щелкните значок загрузки для загрузки французский голосовых данных:
+
+![Пример загрузки французского языка](speech-images/02-selecting-french.png)
+
+Установка этих данных происходит автоматически после завершения загрузки.
+
 
 ### <a name="step-5---the-ioninitlistener"></a>Шаг 5 - IOnInitListener
 

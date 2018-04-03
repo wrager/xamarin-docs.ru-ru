@@ -1,6 +1,6 @@
 ---
-title: "Рисование окружности простой"
-description: "Основные сведения о документе SkiaSharp, включая полотна и рисования"
+title: Рисование окружности простой
+description: Основные сведения о документе SkiaSharp, включая полотна и рисования
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
@@ -8,11 +8,11 @@ ms.assetid: E3A4E373-F65D-45C8-8E77-577A804AC3F8
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 10f741e853603ef22cd45004a6c726ae579f3675
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 402470c3a27ba4327afa6e77336d60748abad436
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="drawing-a-simple-circle"></a>Рисование окружности простой
 
@@ -20,7 +20,7 @@ _Основные сведения о документе SkiaSharp, включа
 
 В этой статье описаны основные понятия графики в Xamarin.Forms с помощью SkiaSharp, включая создание `SKCanvasView` объектов для размещения графики, обработка `PaintSurface` событий и использование `SKPaint` объект для задания цвета и другие графические атрибуты.
 
-[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/) программа содержит все образцы кода для этой серии статей SkiaSharp. Имеет право на первой странице **круг простой** и вызывает класс страницы [ `SimpleCirclePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs). Этот код показано, как Рисование окружности в центре страницы с радиусом 100 пикселей. Структура круга красного цвета, и внутреннюю часть круга — синим.
+[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программа содержит все образцы кода для этой серии статей SkiaSharp. Имеет право на первой странице **круг простой** и вызывает класс страницы [ `SimpleCirclePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs). Этот код показано, как Рисование окружности в центре страницы с радиусом 100 пикселей. Структура круга красного цвета, и внутреннюю часть круга — синим.
 
 ![](circle-images/circleexample.png "Голубой круг выделено красным цветом")
 
@@ -154,4 +154,4 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://developer.xamarin.com/api/root/SkiaSharp/)
-- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/)
+- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/)

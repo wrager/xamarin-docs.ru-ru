@@ -53,6 +53,7 @@
 #### [Отправка в Mac App Store](deploy-test/publishing-to-the-app-store/uploading.md)
 ## [Дополнительные понятия и внутренние компоненты](internals/index.md)
 ### [AOT](internals/aot.md)
+### [Доступные сборки](~/cross-platform/internals/available-assemblies.md?context=xamarin/mac)
 ### [Архитектура Mac](internals/architecture.md)
 ### [Как работает Xamarin.Mac](internals/how-it-works.md)
 ### [Платформы](internals/frameworks.md)

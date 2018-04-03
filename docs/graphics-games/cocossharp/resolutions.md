@@ -1,6 +1,6 @@
 ---
-title: "Обработка нескольких разрешений в CocosSharp"
-description: "В этом руководстве показано, как работать с CocosSharp для разработки игр, правильно отображаться на устройствах для различных разрешений экрана."
+title: Обработка нескольких разрешений в CocosSharp
+description: В этом руководстве показано, как работать с CocosSharp для разработки игр, правильно отображаться на устройствах для различных разрешений экрана.
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 859ABF98-2646-431A-A4A8-3E7E48DA5A43
@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 9b76376bdbcf10bf35768cfdb79b6823388e303c
-ms.sourcegitcommit: d450ae06065d8f8c80f3588bc5a614cfd97b5a67
+ms.openlocfilehash: 772b0d6408a5ba438c5eb0be04a9b549e29b40f9
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="handling-multiple-resolutions-in-cocossharp"></a>Обработка нескольких разрешений в CocosSharp
 
@@ -32,7 +32,7 @@ CocosSharp предоставляет методы для стандартиза
 В этом документе рассматриваются способы использования CocosSharp для устранения проблемы, перечисленные в таблице выше. То есть мы обсудим, как сделать устройство отображения, как показано в первой строке — вне зависимости от разрешения экрана.
 
 
-# <a name="working-with-setdesignresolutionsize"></a>Работа с SetDesignResolutionSize
+## <a name="working-with-setdesignresolutionsize"></a>Работа с SetDesignResolutionSize
 
 `CCScene` Класс обычно используется как корневой контейнер для всех визуальных объектов, но он также предоставляет статический метод с именем `SetDesignResolutionSize` для указания размера по умолчанию для всех сцены. Другими словами `SetDesignResolutionSize` метод разработчики могут разрабатывать игры, которые будет правильно отображаться на различного оборудования разрешения. Шаблоны проектов CocosSharp используйте этот метод, чтобы задать размеру проекта по умолчанию 1024 x 768, как показано в следующем коде:
 
@@ -77,7 +77,7 @@ public override void ApplicationDidFinishLaunching (CCApplication application, C
 ```
 
 
-# <a name="ccsceneresolutionpolicy"></a>CCSceneResolutionPolicy
+## <a name="ccsceneresolutionpolicy"></a>CCSceneResolutionPolicy
 
 `SetDesignResolutionSize` позволяет указать, как изменяется окна игры в нужное разрешение. В следующих разделах приводится способ отображения изображения 500 x 500 с различными `CCSceneResolutonPolicy` значения, передаваемые в `SetDesignResolutionSize` метод. Предоставляет следующие значения по `CCSceneResolutionPolicy` перечисления:
 
@@ -93,7 +93,7 @@ public override void ApplicationDidFinishLaunching (CCApplication application, C
 ![](resolutions-images/image4.png "Все снимки экрана создаются при разрешении iPhone 4s 960 x 640 в альбомной ориентации и использовать это изображение")
 
 
-## <a name="ccsceneresolutionpolicyshowall"></a>CCSceneResolutionPolicy.ShowAll
+### <a name="ccsceneresolutionpolicyshowall"></a>CCSceneResolutionPolicy.ShowAll
 
 `ShowAll` Указывает, будут видны на экране всей игры разрешения, но может отображать *появлению* (черные полосы), чтобы компенсировать различным соотношением сторон. Эта политика обычно используется, как он гарантирует, что все игры представление будет отображаться на экране без искажений, любой.
 
@@ -109,7 +109,7 @@ CCScene.SetDesignResolutionSize (500.0f, 500.0f, CCSceneResolutionPolicy.ShowAll
 ![](resolutions-images/image5.png "Этого отображается слева и справа от изображения с учетом физических пропорции, шире, чем нужное разрешение")
 
 
-## <a name="ccsceneresolutionpolicyexactfit"></a>CCSceneResolutionPolicy.ExactFit
+### <a name="ccsceneresolutionpolicyexactfit"></a>CCSceneResolutionPolicy.ExactFit
 
 `ExactFit` Указывает, что весь игры разрешения будут видны на экране с не допустить появления пустых участков. Искажается видимой области (соотношение сторон может не поддерживаться) согласно пропорции оборудования.
 
@@ -125,7 +125,7 @@ CCScene.SetDesignResolutionSize (500.0f, 500.0f, CCSceneResolutionPolicy.ExactFi
 ![](resolutions-images/image6.png "Не допустить появления пустых участков видима, но искажается, так как разрешение устройства составляет прямоугольный представлении игры")
 
 
-## <a name="ccsceneresolutionpolicyfixedwidth"></a>CCSceneResolutionPolicy.FixedWidth
+### <a name="ccsceneresolutionpolicyfixedwidth"></a>CCSceneResolutionPolicy.FixedWidth
 
 `FixedWidth` Указывает, что ширина представления будет соответствовать ширина значение, передаваемое `SetDesignResolutionSize`, но для просмотра высоту регулируется пропорции физического устройства. Значение высоты, передаваемое `SetDesignResolutionSize` игнорируется, так как он будет вычисляться во время выполнения в зависимости от физического устройства пропорции. Это означает, что вычисленную ширину может быть меньше, чем требуемую высоту (что приводит в частях игры представления выполняется вне экрана) или вычисляемую высоту может быть больше, чем требуемую высоту (что приводит к дополнительному игры отображаемого представления). Так как это может привести к более отображаемых игры, затем может показаться, как если бы этого произошло; Тем не менее дополнительное пространство не обязательно черный, если любой визуальный объект появится там. 
 
@@ -141,7 +141,7 @@ IPhone 4s имеет пропорции 3:2, поэтому вычисленну
 ![](resolutions-images/image7.png "IPhone 4s имеет пропорции 3:2, поэтому вычисленную ширину составляет приблизительно 333 единиц")
 
 
-## <a name="ccsceneresolutionpolicyfixedheight"></a>CCSceneResolutionPolicy.FixedHeight
+### <a name="ccsceneresolutionpolicyfixedheight"></a>CCSceneResolutionPolicy.FixedHeight
 
 По существу `FixedHeight` ведет себя так же, как `FixedWidth` — игры будут соответствовать значение высоты, передаваемое `SetDesignResolutionSize,` , но вычислит ширину во время выполнения на основе этих физического разрешения. Как сказано выше, это означает, что ширина отображаемой быть требуемую ширину, возникающие в процессе игры, больше или меньше off экрана или несколько игры, при отображении соответственно.
 
@@ -157,7 +157,7 @@ CCScene.SetDesignResolutionSize (500.0f, 500.0f, CCSceneResolutionPolicy.FixedHe
 ![](resolutions-images/image8.png "Этот параметр сохраняет значение X 0 по левому краю, поэтому дополнительное разрешение для просмотра в правой части экрана")
 
 
-## <a name="ccsceneresolutionpolicynoborder"></a>CCSceneResolutionPolicy.NoBorder
+### <a name="ccsceneresolutionpolicynoborder"></a>CCSceneResolutionPolicy.NoBorder
 
 `NoBorder` пытается отобразить приложения с не допустить появления пустых участков сохранением первоначальных пропорций (без искажений). Если запрошенное разрешение пропорции соответствует пропорции физического устройства, затем отсечение выполнено не будет. Если пропорции не совпадают, затем отсекает возникнет.
 
@@ -173,7 +173,7 @@ CCScene.SetDesignResolutionSize (500.0f, 500.0f, CCSceneResolutionPolicy.FixedHe
 ![](resolutions-images/image9.png "Этот снимок экрана отображает верхней и нижней части экрана обрезается, пока все 500 пикселей от ширины экрана отображаются")
 
 
-## <a name="ccsceneresolutionpolicycustom"></a>CCSceneResolutionPolicy.Custom
+### <a name="ccsceneresolutionpolicycustom"></a>CCSceneResolutionPolicy.Custom
 
 `Custom` позволяет каждой `CCScene` чтобы указать свой собственный пользовательский просмотра относительно разрешения, указанные в `SetDesignResolutionSize`.
 
@@ -207,7 +207,7 @@ scene.Viewport = new CCViewport (rectangle);
 ![](resolutions-images/image10.png "Приведенный выше результаты на этом снимке экрана")
 
 
-# <a name="defaulttexeltocontentsizeratio"></a>DefaultTexelToContentSizeRatio
+## <a name="defaulttexeltocontentsizeratio"></a>DefaultTexelToContentSizeRatio
 
 `DefaultTexelToContentSizeRatio` Упрощает использование текстур с более высоким разрешением на устройствах с помощью экранов с высоким разрешением. В частности это свойство позволяет игры для использования более высоким разрешением средств без необходимости изменять размер или расположение визуальных элементов. 
 
@@ -249,7 +249,7 @@ public override void ApplicationDidFinishLaunching (CCApplication application, C
 ```
 
 
-## <a name="defaulttexeltocontentsizeratio-example"></a>Пример DefaultTexelToContentSizeRatio
+### <a name="defaulttexeltocontentsizeratio-example"></a>Пример DefaultTexelToContentSizeRatio
 
 Чтобы увидеть как `DefaultTexelToContentSizeRatio` влияет на размер визуальных элементов, рассмотрим код, представленные выше:
 
@@ -278,7 +278,7 @@ CCSprite.DefaultTexelToContentSizeRatio = 2;
 ![](resolutions-images/image12.png "Теперь если мы запустим игры текстуры 1000 x 1000 будет полностью отображены")
 
 
-## <a name="defaulttexeltocontentsizeratio-details"></a>Сведения о DefaultTexelToContentSizeRatio
+### <a name="defaulttexeltocontentsizeratio-details"></a>Сведения о DefaultTexelToContentSizeRatio
 
 `DefaultTexelToContentSizeRatio` Свойство `static,` означающее все спрайтов в приложении будет иметь одинаковое значение. Типичный подход для игр с помощью средств, предназначенных для различных разрешений экрана должно содержать полный набор средств для каждой категории разрешения. По умолчанию CocosSharp Visual Studio для Mac шаблонов предоставляют **ld** и **hd** папок для средств, которые будут использоваться для поддержки двух наборов текстур игр. Пример содержимого папки с содержимым может иметь вид:
 
@@ -313,11 +313,11 @@ backgroundSprite  = new CCSprite ("background");
 ```
 
 
-# <a name="summary"></a>Сводка
+## <a name="summary"></a>Сводка
 
 В этой статье описывается, как для создания игр, в которых отображается неправильно, вне зависимости от разрешения устройства. Приводятся примеры использования различных `CCSceneResolutionPolicy` значений для изменения размеров игры согласно разрешения устройства. Он также предоставляет пример `DefaultTexelToContentSizeRatio` может использоваться для размещения несколько наборов содержимого, не требуя визуальные элементы к изменению размера по отдельности.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Введение CocosSharp](~/graphics-games/cocossharp/first-game/index.md)
+- [Введение CocosSharp](~/graphics-games/cocossharp/index.md)
 - [Документация по CocosSharp API](https://developer.xamarin.com/api/namespace/CocosSharp/)

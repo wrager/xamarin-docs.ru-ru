@@ -1,6 +1,6 @@
 ---
-title: "SkiaSharp строки и пути"
-description: "Используйте SkiaSharp для рисования линий и графики пути"
+title: SkiaSharp строки и пути
+description: Используйте SkiaSharp для рисования линий и графики пути
 ms.topic: article
 ms.prod: xamarin
 ms.assetid: 316A15FE-383D-4D06-8641-BAC7EE7474CA
@@ -8,11 +8,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: b94091afc459866d072bd3c4adc3947f6be258b1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 897e3bbe0375a425709ec63edf25088ac35106e5
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="skiasharp-lines-and-paths"></a>SkiaSharp строки и пути
 
@@ -22,7 +22,7 @@ _Используйте SkiaSharp для рисования линий и гра
 
 Путь графики является наиболее общий способ рисования линий и кривых в SkiaSharp. Этот раздел описывает использование `SKPath` для рисования прямых линий и использовать коллекцию очень мала прямых линий (называется *ломаной линии*) для рисования кривых, которые вы можете определить математически. Ниже будут рассматриваются различные виды поддерживается кривых `SKPath`.
 
-Примеры программ в этом разделе отображаются под заголовком **строки и пути** на домашней странице [ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/) программы и в [ **Пути** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Paths) папку решения.
+Примеры программ в этом разделе отображаются под заголовком **строки и пути** на домашней странице [ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программы и в [ **Пути** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Paths) папку решения.
 
 ## <a name="lines-and-stroke-capslinesmd"></a>[Линии и концы штрихов](lines.md)
 
@@ -52,4 +52,4 @@ _Используйте SkiaSharp для рисования линий и гра
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://developer.xamarin.com/api/root/SkiaSharp/)
-- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/)
+- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/)

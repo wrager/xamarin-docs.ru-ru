@@ -1,6 +1,6 @@
 ---
-title: "Пикселей и аппаратно независимых единицах"
-description: "Ознакомьтесь с различиями между SkiaSharp координаты и Xamarin.Forms"
+title: Пикселей и аппаратно независимых единицах
+description: Ознакомьтесь с различиями между SkiaSharp координаты и Xamarin.Forms
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
@@ -8,11 +8,11 @@ ms.assetid: 26C25BB8-FBE8-4B77-B01D-16A163A16890
 author: charlespetzold
 ms.author: chape
 ms.date: 02/09/2017
-ms.openlocfilehash: 5e07377584996694aa8597af79317957c51050ec
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 1698c18eafdce0585daa81c9462ee038c15586bd
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="pixels-and-device-independent-units"></a>Пикселей и аппаратно независимых единицах
 
@@ -26,7 +26,7 @@ _Ознакомьтесь с различиями между SkiaSharp коор�
 
 Эти круги *,* небольших по сравнению с размерами Xamarin.Forms. По умолчанию SkiaSharp рисует в единицах точек во время Xamarin.Forms сформирует координаты и размеры на аппаратно независимая единица, заданные в базовой платформы. (Дополнительные сведения о системе координат Xamarin.Forms можно найти в [Глава 5. Работа с размерами](~/xamarin-forms/creating-mobile-apps-xamarin-forms/summaries/chapter05.md) книги *Создание мобильных приложений с помощью Xamarin.Forms*.)
 
-Страницы в [ **SkewSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/) программы под названием **размер поверхности** используется SkiaSharp выходного текста для отображения размер отображаемой области из трех различных источников:
+Страницы в [ **SkewSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программы под названием **размер поверхности** используется SkiaSharp выходного текста для отображения размер отображаемой области из трех различных источников:
 
 - Обычный Xamarin.Forms [ `Width` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Width/) и [ `Height` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Height/) свойства `SKCanvasView` объекта.
 - [ `CanvasSize` ](https://developer.xamarin.com/api/property/SkiaSharp.Views.Forms.SKCanvasView.CanvasSize/) Свойство `SKCanvasView` объекта.
@@ -165,4 +165,4 @@ canvas.DrawOval(rect, paint);
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://developer.xamarin.com/api/root/SkiaSharp/)
-- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/)
+- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/)

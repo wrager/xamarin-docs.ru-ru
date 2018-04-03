@@ -1,6 +1,6 @@
 ---
-title: "Рисование пальцем"
-description: "Пальцы используются для закрашивания на холсте."
+title: Рисование пальцем
+description: Пальцы используются для закрашивания на холсте.
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
@@ -8,11 +8,11 @@ ms.assetid: 56929D74-8F2C-44C6-90E6-3FBABCDC0A4B
 author: charlespetzold
 ms.author: chape
 ms.date: 04/05/2017
-ms.openlocfilehash: b4213d71c2eca6c2552ac674a0203d7a2cc36e1b
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: dacb9f399ad044d2d5e9c960bce398092766020c
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="finger-painting"></a>Рисование пальцем
 
@@ -24,7 +24,7 @@ _Пальцы используются для закрашивания на хо
 
 Поддержка сенсорного ввода в Xamarin.Forms не позволяет отслеживания отдельных пальцев на экране, поэтому эффекта отслеживания touch Xamarin.Forms были разработаны для поддержки дополнительных сенсорный ввод. Этот эффект, описанное в статье [ **вызов события из эффекты**](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md). Образец программы [ **демонстрации эффекта отслеживания Touch** ](https://developer.xamarin.com/samples/xamarin-forms/Effects/TouchTrackingEffectDemos/) включает две страницы, использующие SkiaSharp, включая finger-painting программы.
 
-[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/) решение включает в себя это событие отслеживания сенсорный ввод. Включает проекта переносимой библиотеки классов `TouchEffect` класса `TouchActionType` перечисления, `TouchActionEventHandler` делегата и `TouchActionEventArgs` класса. Проекты каждой из платформ включают `TouchEffect` класса для этой платформы; iOS проект также содержит `TouchRecognizer` класса.
+[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) решение включает в себя это событие отслеживания сенсорный ввод. Включает проекта переносимой библиотеки классов `TouchEffect` класса `TouchActionType` перечисления, `TouchActionEventHandler` делегата и `TouchActionEventArgs` класса. Проекты каждой из платформ включают `TouchEffect` класса для этой платформы; iOS проект также содержит `TouchRecognizer` класса.
 
 **Paint пальцем** страницы в **SkiaSharpFormsDemos** — это упрощенная реализация Рисование пальцем. Не выбора цвета и ширины обводки, нет возможности снимите на холст и Конечно не удается сохранить иллюстрации.
 
@@ -169,6 +169,6 @@ public partial class FingerPaintPage : ContentPage
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://developer.xamarin.com/api/root/SkiaSharp/)
-- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/)
+- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/)
 - [Демонстрации эффекта отслеживания сенсорного ввода (пример)](https://developer.xamarin.com/samples/xamarin-forms/Effects/TouchTrackingEffectDemos/)
 - [Вызов события из эффектов](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md)

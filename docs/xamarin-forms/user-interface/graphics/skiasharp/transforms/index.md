@@ -1,6 +1,6 @@
 ---
-title: "SkiaSharp преобразования"
-description: "Дополнительные сведения о преобразованиях при отображении графики SkiaSharp"
+title: SkiaSharp преобразования
+description: Дополнительные сведения о преобразованиях при отображении графики SkiaSharp
 ms.topic: article
 ms.prod: xamarin
 ms.technology: xamarin-forms
@@ -8,11 +8,11 @@ ms.assetid: E9BE322E-ECB3-4395-AFE4-4474A0F25551
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 10b23975fab8aa87019b9d0fed42decdc6adddfb
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 668488ab7efae66f1777e9ae6ded1f725833fe16
+ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="skiasharp-transforms"></a>SkiaSharp преобразования
 
@@ -49,7 +49,7 @@ Xamarin.Forms также поддерживает преобразований, 
 
 Действительно Существенная разница в том, что преобразователи SKiaSharp — *методы* во время преобразования Xamarin.Forms *свойства*. Это семантической разницы за пределами различии: преобразований SkiaSharp выполнить операцию во время преобразования Xamarin.Forms задать состояние. SkiaSharp преобразования применяются к объектов впоследствии графических элементов, но не на графические объекты, которые отрисовываются до применения преобразования. Напротив Xamarin.Forms преобразование применяется к ранее отображаемого элемента, как только это свойство имеет значение. SkiaSharp преобразований являются накопительными, во время вызова методов; Xamarin.Forms преобразований перемещаются в том случае, если свойство имеет значение с другим значением.
 
-Примеры программ в этом разделе отображаются под заголовком **преобразует** на домашней странице [ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/) программы и в [ **Преобразует** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms) папку решения.
+Примеры программ в этом разделе отображаются под заголовком **преобразует** на домашней странице [ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программы и в [ **Преобразует** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms) папку решения.
 
 ## <a name="the-translate-transformtranslatemd"></a>[Преобразование переноса](translate.md)
 
@@ -87,4 +87,4 @@ Xamarin.Forms также поддерживает преобразований, 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [API-интерфейсы SkiaSharp](https://developer.xamarin.com/api/root/SkiaSharp/)
-- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SkiaSharpFormsDemos/)
+- [SkiaSharpFormsDemos (пример)](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/)
