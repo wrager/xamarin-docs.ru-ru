@@ -1,18 +1,17 @@
 ---
-title: "Работа с собственные типы в кросс платформенных приложений"
-description: "В этой статье описывается использование новых iOS единой API, собственные типы (nint, nuint, nfloat) в приложении кросс платформенных, где код используется совместно с устройства без iOS, таким как Android или ОС Windows Phone."
-ms.topic: article
+title: Работа с собственные типы в кросс платформенных приложений
+description: В этой статье описывается использование новых iOS единой API, собственные типы (nint, nuint, nfloat) в приложении кросс платформенных, где код используется совместно с устройства без iOS, таким как Android или ОС Windows Phone.
 ms.prod: xamarin
 ms.assetid: B9C56C3B-E196-4ADA-A1DE-AC10D1001C2A
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/07/2016
-ms.openlocfilehash: 2e177afa9124095f00edacbeb71512d5cd9bb219
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0b32cb68174183fd094f72a7ab20f7ed52b278ee
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="working-with-native-types-in-cross-platform-apps"></a>Работа с собственные типы в кросс платформенных приложений
 
@@ -249,7 +248,7 @@ Console.WriteLine ("Rectangle Area: {0}", Transformations.CalculateArea ((Rectan
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Универсальный интерфейс API](~/cross-platform/macios/unified/index.md)
+- [Unified API](~/cross-platform/macios/unified/index.md)
 - [Собственные типы](~/cross-platform/macios/nativetypes.md)
 - [Параметры совместного использования кода](~/cross-platform/app-fundamentals/code-sharing.md)
 - [Пример совместного использования кода](https://developer.xamarin.com/samples/mobile/SharingCode/)

@@ -1,18 +1,17 @@
 ---
-title: "Часть 1 — Создание MonoGame кроссплатформенный"
-description: "В этом пошаговом руководстве показано, как создать новый проект для iOS и Android с помощью MonoGame. Результатом является Visual Studio для Mac решения проект общего кода для нескольких платформ, а также один проект для каждой платформы. Этот проект будет отображать пустой синий экран при выполнении."
-ms.topic: article
+title: Часть 1 — Создание MonoGame кроссплатформенный
+description: В этом пошаговом руководстве показано, как создать новый проект для iOS и Android с помощью MonoGame. Результатом является Visual Studio для Mac решения проект общего кода для нескольких платформ, а также один проект для каждой платформы. Этот проект будет отображать пустой синий экран при выполнении.
 ms.prod: xamarin
 ms.assetid: FC69E69B-04D4-45DF-9BBF-2A6CDEAD9B2F
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 0d1352b4129dc1cf8be42e813787b9b73f80cd3e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 0cd12f23f8cb269b2a41a08bf641db08e18fb82b
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="part-1--creating-a-cross-platform-monogame"></a>Часть 1 — Создание MonoGame кроссплатформенный
 

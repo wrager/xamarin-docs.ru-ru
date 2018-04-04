@@ -1,18 +1,17 @@
 ---
-title: "Добавление данных в средстве выбора элементов коллекции"
-description: "Представление выбора является элементом управления для выбора элемента из списка данных. В этой статье объясняется, как заполнять выбора с данными, добавив его в коллекцию элементов и реакция на выбор элемента пользователем."
-ms.topic: article
+title: Добавление данных в средстве выбора элементов коллекции
+description: Представление выбора является элементом управления для выбора элемента из списка данных. В этой статье объясняется, как заполнять выбора с данными, добавив его в коллекцию элементов и реакция на выбор элемента пользователем.
 ms.prod: xamarin
 ms.assetid: 3C840F64-A430-457D-A4B2-3D7AF46F9DBE
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/11/2017
-ms.openlocfilehash: 3468e38d8ef46dfef870a05bf72d93c28195dae7
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 63a72861895f79d2d0154297f88610ddb8bb8beb
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="adding-data-to-a-pickers-items-collection"></a>Добавление данных в средстве выбора элементов коллекции
 

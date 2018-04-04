@@ -1,16 +1,16 @@
 ---
-title: "Ошибка IBTool: Не удалось завершить операцию."
-ms.topic: article
+title: 'Ошибка IBTool: Не удалось завершить операцию.'
+ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: A804EBC4-2BBF-4A98-A4E8-A455DB2E8A17
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: dd668859428da1abfa3a8e46a0810b2de6645fe2
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 4647227ad208bfa968f8282a966220a09ab7f4a6
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="ibtool-error-the-operation-couldnt-be-completed"></a>Ошибка IBTool: Не удалось завершить операцию.
 
@@ -54,7 +54,7 @@ Apple [фиксированной](https://developer.apple.com/library/content/d
 </BundleResource>
 ```
 
-В Visual Studio для Mac `LogicalName` можно также задать с помощью `Resource ID` для образа в разделе **представление > дополняет > свойства**. (См. также: [http://stackoverflow.com/questions/16938250/xamarin-studio-folder-structure-issue-in-ios-project/16951545#16951545](http://stackoverflow.com/questions/16938250/xamarin-studio-folder-structure-issue-in-ios-project/16951545#16951545))
+В Visual Studio для Mac `LogicalName` можно также задать с помощью `Resource ID` для образа в разделе **представление > дополняет > свойства**. (См. также: [ http://stackoverflow.com/questions/16938250/xamarin-studio-folder-structure-issue-in-ios-project/16951545#16951545 ](http://stackoverflow.com/questions/16938250/xamarin-studio-folder-structure-issue-in-ios-project/16951545#16951545))
 
 После этого изменения будет необходимо обновить раскадровки и `.xib` файлы для использования нового пути образа верхнего уровня. Visual Studio для Mac автоматически обновит список autocompletions для `Image` свойства в конструкторе iOS. В Visual Studio необходимо будет вручную изменить путь. Конструктор iOS, будет выведено это как образ отсутствует, но проект построения и запуска правильно.
 

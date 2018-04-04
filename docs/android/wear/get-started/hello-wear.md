@@ -1,18 +1,17 @@
 ---
-title: "Привет, износ"
-description: "Создание первого приложения Android носят и запустите его на устройстве или эмуляторе одежды. Это пошаговое руководство содержит пошаговые инструкции по созданию небольшой проект Android носят, обрабатывает нажатие кнопки и отображает счетчика щелкните на устройстве одежды. В этом примере описана отладка приложения с помощью эмулятора износ или износ устройства, подключенного через Bluetooth на телефоне с Android. Он также предоставляет набор отладки советы для Android с."
-ms.topic: article
+title: Привет, износ
+description: Создание первого приложения Android носят и запустите его на устройстве или эмуляторе одежды. Это пошаговое руководство содержит пошаговые инструкции по созданию небольшой проект Android носят, обрабатывает нажатие кнопки и отображает счетчика щелкните на устройстве одежды. В этом примере описана отладка приложения с помощью эмулятора износ или износ устройства, подключенного через Bluetooth на телефоне с Android. Он также предоставляет набор отладки советы для Android с.
 ms.prod: xamarin
 ms.assetid: 86BCD0E7-E9DC-40F1-9B44-887BC51BB48D
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 8eed2d6b825a6e6dd7e956bf901246b9a630081a
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 742a10ce0042d2bbf6d5690cb7a7a6eca529a57e
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="hello-wear"></a>Привет, износ
 

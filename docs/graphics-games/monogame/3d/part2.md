@@ -1,18 +1,17 @@
 ---
-title: "Рисование трехмерной графики с вершины в MonoGame"
-description: "MonoGame поддерживает использование массивов вершин для определения просмотру трехмерный объект отдельно для каждой точки. Пользователи могут воспользоваться преимуществами массивы вершин для создания динамических geometry, реализовать специальные эффекты и повысить эффективность их отрисовки через отбора."
-ms.topic: article
+title: Рисование трехмерной графики с вершины в MonoGame
+description: MonoGame поддерживает использование массивов вершин для определения просмотру трехмерный объект отдельно для каждой точки. Пользователи могут воспользоваться преимуществами массивы вершин для создания динамических geometry, реализовать специальные эффекты и повысить эффективность их отрисовки через отбора.
 ms.prod: xamarin
 ms.assetid: 932AF5C2-884D-46E1-9455-4C359FD7C092
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 1b139e460a4841f2174df166bf50bb276802d8d3
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 25a05bcd094011042b3dc33a1b837460d5893be0
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="drawing-3d-graphics-with-vertices-in-monogame"></a>Рисование трехмерной графики с вершины в MonoGame
 

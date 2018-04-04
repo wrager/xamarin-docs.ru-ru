@@ -1,18 +1,17 @@
 ---
-title: "Запуска экранов"
-description: "В этой статье описывается создание приложения запуска экрана для всех устройств iOS в любой разрешение и ориентацию, с помощью одной единой раскадровки."
-ms.topic: article
+title: Запуска экранов
+description: В этой статье описывается создание приложения запуска экрана для всех устройств iOS в любой разрешение и ориентацию, с помощью одной единой раскадровки.
 ms.prod: xamarin
 ms.assetid: 31A489CA-756B-4B9B-B386-4BADF18EDD33
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/19/2018
-ms.openlocfilehash: e07a6b72f2821e8cc65e0b0d690dbadf1a6713b6
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: 991c2f30bcca1969e336f7269ad2a22ce6245b95
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="launch-screens"></a>Запуска экранов
 

@@ -1,17 +1,17 @@
 ---
-title: "Можно ли подключиться к эмуляторы Android выполняется на компьютере Mac с виртуальной Машины Windows?"
-ms.topic: article
+title: Можно ли подключиться к эмуляторы Android выполняется на компьютере Mac с виртуальной Машины Windows?
+ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: 7B6752BB-8E4C-4690-B275-7E425A051F45
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 2f0ef027d8a2d40ccf85e35d5a85eba4cd7c7ccc
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a04258e6056b4572856d4ec05c40effec4e51910
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="is-it-possible-to-connect-to-android-emulators-running-on-a-mac-from-a-windows-vm"></a>Можно ли подключиться к эмуляторы Android выполняется на компьютере Mac с виртуальной Машины Windows?
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/27/2018
     emulator6 94105 macuser   21u  IPv4 0xa8dacfb1d845a51f      0t0  TCP localhost:5554 (LISTEN)
     ```
 
-    Порт нечетных — используется для подключения к `adb`. См. также [http://developer.android.com/tools/devices/emulator.html#emulatornetworking](http://developer.android.com/tools/devices/emulator.html#emulatornetworking).
+    Порт нечетных — используется для подключения к `adb`. См. также [ http://developer.android.com/tools/devices/emulator.html#emulatornetworking ](http://developer.android.com/tools/devices/emulator.html#emulatornetworking).
 
 4.  _Вариант 1_: использование [ `nc` ](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/nc.1.html) для вперед входящих пакетов TCP полученных извне через порт 5555 (или любой другой порт по своему усмотрению) к порту нечетных интерфейс замыкания на себя (**127.0.0.1 5555** в этом примере), и на пересылку исходящих пакетов другим способом:
 
@@ -92,13 +92,13 @@ ms.lasthandoff: 02/27/2018
 
 ### <a name="alternate-technique-using-adb--h-is-not-yet-supported"></a>Второй подход с использованием `adb -H` еще не поддерживается
 
-В теории, можно использовать другой подход `adb`встроенные возможности для подключения к `adb` сервера, работающего на удаленном компьютере (например в разделе [http://stackoverflow.com/a/18551325](http://stackoverflow.com/a/18551325)).
+В теории, можно использовать другой подход `adb`встроенные возможности для подключения к `adb` сервера, работающего на удаленном компьютере (например в разделе [ http://stackoverflow.com/a/18551325 ](http://stackoverflow.com/a/18551325)).
 Но расширения Xamarin.Android интегрированной среды разработки в настоящее время не предоставляют способ настройки этого параметра.
 
 ## <a name="contact-information"></a>Контактные данные
 
 В этом документе рассматриваются текущее поведение на марта 2016 г. Метода, описанного в этом документе не является частью стабильный проверочный набор для Xamarin, поэтому он может быть поврежден.
 
-Если вы заметили, что метод больше не работает, или при наличии каких-либо ошибок в документе, вы можете добавить в следующем потоке форум обсуждения: [http://forums.xamarin.com/discussion/33702/ Android-Emulator-FROM-Host-Device-Inside-Windows-VM](http://forums.xamarin.com/discussion/33702/android-emulator-from-host-device-inside-windows-vm).
+Если вы заметили, что метод больше не работает, или при наличии каких-либо ошибок в документе, вы можете добавить в следующем потоке форум обсуждения: [ http://forums.xamarin.com/discussion/33702/android-emulator-from-host-device-inside-windows-vm ](http://forums.xamarin.com/discussion/33702/android-emulator-from-host-device-inside-windows-vm).
 Спасибо!
 

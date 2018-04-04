@@ -1,18 +1,17 @@
 ---
-title: "Устранение неполадок"
-description: "В этой статье предоставляет несколько советов по устранению неполадок для работы с iOS 9 в Xamarin.iOS приложений."
-ms.topic: article
+title: Устранение неполадок
+description: В этой статье предоставляет несколько советов по устранению неполадок для работы с iOS 9 в Xamarin.iOS приложений.
 ms.prod: xamarin
 ms.assetid: DCE83E36-CBD9-4D96-8E7F-384CB8A54563
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: ca3697b355a45e06f941a6dfd610cd19f922ca75
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 1b335fc6b19d87a46059511baf866433691b1b4d
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -150,7 +149,7 @@ Dyld Message: no cach image with name (/System/Library/PrivateFrameworks/JavaScr
 3. В разделе **устройств** боковая панель, выберите устройства, щелкните правой кнопкой мыши и выберите **Показать профили подготовки...** : 
 
     [![](troubleshooting-images/untrusted03.png "Профили подготовки SShow")](troubleshooting-images/untrusted03.png#lightbox)
-4. Выберите каждый профиль подготовки в настоящее время на устройстве и нажмите кнопку  **-**  кнопку, чтобы удалить его: 
+4. Выберите каждый профиль подготовки в настоящее время на устройстве и нажмите кнопку **-** кнопку, чтобы удалить его: 
 
     [![](troubleshooting-images/untrusted04.png "Удаление профиля подготовки")](troubleshooting-images/untrusted04.png#lightbox)
 5. Из **Xcode** последовательно выберите пункты **установки...**  и **учетные записи**: 

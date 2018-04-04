@@ -1,18 +1,17 @@
 ---
-title: "Модуль подготовки отчетов базовых классов и собственные элементы управления"
-description: "Каждый элемент управления Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены модуль подготовки отчетов и классы собственного элемента управления, которые реализуют каждого Xamarin.Forms страницы, макет, представления и ячейки."
-ms.topic: article
+title: Модуль подготовки отчетов базовых классов и собственные элементы управления
+description: Каждый элемент управления Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. В этой статье перечислены модуль подготовки отчетов и классы собственного элемента управления, которые реализуют каждого Xamarin.Forms страницы, макет, представления и ячейки.
 ms.prod: xamarin
 ms.assetid: A8909AE3-ED0E-4D24-BF96-B49E732E3B93
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/15/2016
-ms.openlocfilehash: 06887e6c1a39dd695fdaddb2fade8a463d9d4580
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 9402bd53ab3bfb0b11182eb700aa560e8f962de3
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="renderer-base-classes-and-native-controls"></a>Модуль подготовки отчетов базовых классов и собственные элементы управления
 

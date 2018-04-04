@@ -1,18 +1,17 @@
 ---
-title: "Поиск данных в облаке"
-description: "Поиск Azure — облачной службы, которая предоставляет индексирования и запросов возможности загруженные данные. Требования к инфраструктуре и сложности алгоритма поиска, обычно связанные с реализации функциональности поиска в приложении будут удалены."
-ms.topic: article
+title: Поиск данных в облаке
+description: Поиск Azure — облачной службы, которая предоставляет индексирования и запросов возможности загруженные данные. Требования к инфраструктуре и сложности алгоритма поиска, обычно связанные с реализации функциональности поиска в приложении будут удалены.
 ms.prod: xamarin
 ms.assetid: 0891F0D5-25C7-4D64-B39B-00D2C613CE05
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/05/2016
-ms.openlocfilehash: 06c4affb7f38de3a03df7f7fdb1d99c629c4be46
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: c8baad56ca685685b6f637bc1aa377f0c4f80985
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="searching-data-in-the-cloud"></a>Поиск данных в облаке
 

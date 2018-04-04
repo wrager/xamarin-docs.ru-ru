@@ -1,18 +1,17 @@
 ---
-title: "Общие сведения об интеграции Java"
-description: "Экосистема Java включает в себя различные и огромную компонентов. Многие из этих компонентов можно использовать, чтобы сократить время, необходимое для разработки приложения. В этом документе будет вводят и содержат обобщенный обзор некоторых из способов, что разработчики могут использовать эти существующие компоненты Java для повышения удобства их Xamarin.Android для разработки приложений."
-ms.topic: article
+title: Общие сведения об интеграции Java
+description: Экосистема Java включает в себя различные и огромную компонентов. Многие из этих компонентов можно использовать, чтобы сократить время, необходимое для разработки приложения. В этом документе будет вводят и содержат обобщенный обзор некоторых из способов, что разработчики могут использовать эти существующие компоненты Java для повышения удобства их Xamarin.Android для разработки приложений.
 ms.prod: xamarin
 ms.assetid: 7B5B8695-1C49-19BF-AE99-948CDCBD2A20
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 01/18/2017
-ms.openlocfilehash: 213702d289adefe966f07c3ad0174156cbc69ee1
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: dbaf17479ae077fced425df5ac31bdbbc4e06b64
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="java-integration-overview"></a>Общие сведения об интеграции Java
 

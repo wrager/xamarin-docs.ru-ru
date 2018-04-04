@@ -1,18 +1,17 @@
 ---
-title: "Установка значений специальных возможностей на элементы пользовательского интерфейса"
-description: "Xamarin.Forms позволяет задать на элементах пользовательского интерфейса с помощью вложенные свойства в классе AutomationProperties, который в свою очередь собственные специальные значения набора специальные значения. В этой статье объясняется, как использовать класс AutomationProperties, чтобы средство чтения с экрана могут согласовать об элементах на странице."
-ms.topic: article
+title: Установка значений специальных возможностей на элементы пользовательского интерфейса
+description: Xamarin.Forms позволяет задать на элементах пользовательского интерфейса с помощью вложенные свойства в классе AutomationProperties, который в свою очередь собственные специальные значения набора специальные значения. В этой статье объясняется, как использовать класс AutomationProperties, чтобы средство чтения с экрана могут согласовать об элементах на странице.
 ms.prod: xamarin
 ms.assetid: c0bb6893-fd26-47e7-88e5-3c333c9f786c
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2017
-ms.openlocfilehash: 4aeeea7f946a121b12741d2da217daf531935849
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: cf9071684061b584e1cb75cfd50b33212f42bf79
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="setting-accessibility-values-on-user-interface-elements"></a>Установка значений специальных возможностей на элементы пользовательского интерфейса
 

@@ -1,18 +1,17 @@
 ---
-title: "Связывание приложения в Android"
-description: "В этом руководстве будут рассматриваться как Android 6.0 поддерживает приложения связь, это способ, который позволяет мобильных приложений для ответа на URL-адреса на веб-сайтах. Рассмотрим, какие связывание приложения является, как реализовать приложение связывания в приложении Android 6.0 и настройка веб-сайта, чтобы предоставить разрешения на мобильное приложение для домена."
-ms.topic: article
+title: Связывание приложения в Android
+description: В этом руководстве будут рассматриваться как Android 6.0 поддерживает приложения связь, это способ, который позволяет мобильных приложений для ответа на URL-адреса на веб-сайтах. Рассмотрим, какие связывание приложения является, как реализовать приложение связывания в приложении Android 6.0 и настройка веб-сайта, чтобы предоставить разрешения на мобильное приложение для домена.
 ms.prod: xamarin
 ms.assetid: 48174E39-19FD-43BC-B54C-9AF11D4B1F91
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 78fef780728ba1c2a3b9978504058f7a386b0e7d
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 2ef6b8044387d759e26d05c1468caaad7efb9bdc
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="app-linking-in-android"></a>Связывание приложения в Android
 
@@ -56,7 +55,7 @@ Android 6.0 позволяет с помощью автоматического 
 Это необходимо для настройки намерения фильтр, который сопоставляет URI (или возможные набор кодов URI) с веб-сайта с действием из приложения. В Xamarin.Android, эта связь устанавливается с Декорирование действие с [IntentFilterAttribute](https://developer.xamarin.com/api/type/Android.App.IntentFilterAttribute/). Блокировка с намерением фильтра необходимо объявить следующие сведения:
 
 * **`Intent.ActionView`** &ndash; Регистрирует намерения фильтр, чтобы отвечать на запросы для просмотра сведений
-* **`Categories`** &ndash;  Блокировка с намерением фильтра необходимо зарегистрировать обе  **[Intent.CategoryBrowsable](https://developer.xamarin.com/api/field/Android.Content.Intent.CategoryBrowsable/)**  и  **[Intent.CategoryDefault](https://developer.xamarin.com/api/field/Android.Content.Intent.CategoryDefault/)**  возможность правильно обрабатывать URI веб-сайте.
+* **`Categories`** &ndash;  Блокировка с намерением фильтра необходимо зарегистрировать обе **[Intent.CategoryBrowsable](https://developer.xamarin.com/api/field/Android.Content.Intent.CategoryBrowsable/)** и **[Intent.CategoryDefault](https://developer.xamarin.com/api/field/Android.Content.Intent.CategoryDefault/)** возможность правильно обрабатывать URI веб-сайте.
 * **`DataScheme`** &ndash; Блокировка с намерением фильтра необходимо объявить `http` и/или `https`. Это единственные допустимые схемы.
 * **`DataHost`** &ndash; Это домен, который будет инициироваться URL-адреса.
 * **`DataPathPrefix`** &ndash; Это дополнительный путь к ресурсам веб-сайта.

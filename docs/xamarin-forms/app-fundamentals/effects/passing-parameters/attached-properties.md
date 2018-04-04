@@ -1,18 +1,17 @@
 ---
-title: "Передача параметров эффект, как вложенные свойства"
-description: "Вложенные свойства можно использовать для определения параметров эффекта, реагирующие на изменения свойств в среде выполнения. В этой статье демонстрируется использование присоединенных свойств для передачи параметров эффекта и изменения параметров во время выполнения."
-ms.topic: article
+title: Передача параметров эффект, как вложенные свойства
+description: Вложенные свойства можно использовать для определения параметров эффекта, реагирующие на изменения свойств в среде выполнения. В этой статье демонстрируется использование присоединенных свойств для передачи параметров эффекта и изменения параметров во время выполнения.
 ms.prod: xamarin
 ms.assetid: DFCDCB9F-17DD-4117-BD53-B4FB206BB387
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/05/2016
-ms.openlocfilehash: 585d0422b4dc2b35fc8ba50ed82d2d34e53a784e
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c02929c49d9757f0814208d5f4fce7d258a689bd
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="passing-effect-parameters-as-attached-properties"></a>Передача параметров эффект, как вложенные свойства
 

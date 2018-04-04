@@ -1,18 +1,17 @@
 ---
-title: "Удаленный уведомления с Firebase облако обмена сообщениями"
-description: "Это пошаговое руководство содержит пошаговое объяснение того, как реализуется с помощью Firebase Cloud Messaging удаленного уведомлений (также называемые push-уведомлений) в приложении Xamarin.Android. Описание для реализации различных классах, которые необходимы для обмена данными с сообщениями Firebase облака (FCM), предоставляет примеры того, как настроить Android манифеста для доступа к FCM и демонстрирует подчиненных обмена сообщениями с использованием Firebase Консоль."
-ms.topic: article
+title: Удаленный уведомления с Firebase облако обмена сообщениями
+description: Это пошаговое руководство содержит пошаговое объяснение того, как реализуется с помощью Firebase Cloud Messaging удаленного уведомлений (также называемые push-уведомлений) в приложении Xamarin.Android. Описание для реализации различных классах, которые необходимы для обмена данными с сообщениями Firebase облака (FCM), предоставляет примеры того, как настроить Android манифеста для доступа к FCM и демонстрирует подчиненных обмена сообщениями с использованием Firebase Консоль.
 ms.prod: xamarin
 ms.assetid: 4D7C5F46-C997-49F6-AFDA-6763E68CDC90
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 7e107fc9ced62027bc793c97a388344d74becd66
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c6e1d36d871b4bb41a1e53d6e58ba8940813b29f
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="remote-notifications-with-firebase-cloud-messaging"></a>Удаленный уведомления с Firebase облако обмена сообщениями
 

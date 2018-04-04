@@ -1,18 +1,17 @@
 ---
-title: "Представления коллекций"
-description: "Представления коллекций разрешить доступ к содержимому будет отображаться с использованием произвольного макеты. Они позволяют легко компоновке вид сетки без дополнительной настройки, поддерживая пользовательских макетов."
-ms.topic: article
+title: Представления коллекций
+description: Представления коллекций разрешить доступ к содержимому будет отображаться с использованием произвольного макеты. Они позволяют легко компоновке вид сетки без дополнительной настройки, поддерживая пользовательских макетов.
 ms.prod: xamarin
 ms.assetid: F4B85F25-0CB5-4FEA-A3B5-D22FCDC81AE4
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 7048eb9c478d7ae10787e158f18b764b258da171
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 75ad331a265c14892f101b1aa7956d2cde3beec8
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="collection-views"></a>Представления коллекций
 
@@ -140,7 +139,7 @@ public override UICollectionReusableView GetViewForSupplementaryElement (UIColle
 
 ## <a name="data-source"></a>источника данных
 
-Как и в других частях операций ввода-вывода, таких как `UITableView` и `MKMapView`, `UICollectionView` получает данные от *источника данных*, предоставляемый в Xamarin.iOS через  **`UICollectionViewDataSource`**  класса. Этот класс отвечает за предоставление содержимого `UICollectionView` такие как:
+Как и в других частях операций ввода-вывода, таких как `UITableView` и `MKMapView`, `UICollectionView` получает данные от *источника данных*, предоставляемый в Xamarin.iOS через **`UICollectionViewDataSource`** класса. Этот класс отвечает за предоставление содержимого `UICollectionView` такие как:
 
 -  **Ячейки** — возвращаемые `GetCell` метод.
 -  **Дополнительные представления** — возвращаемые `GetViewForSupplementaryElement` метод.

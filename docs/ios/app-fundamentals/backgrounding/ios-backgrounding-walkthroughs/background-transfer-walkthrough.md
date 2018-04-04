@@ -1,18 +1,17 @@
 ---
-title: "Пошаговое руководство. Использование фоновая служба передачи и NSURLSession"
-description: "В этом пошаговом руководстве мы используем фоновой службы передачи данных и NSURLSession API с началом загрузки большое изображение, которое продолжает загружать во время работы приложения в фоновом режиме."
-ms.topic: article
+title: Пошаговое руководство. Использование фоновая служба передачи и NSURLSession
+description: В этом пошаговом руководстве мы используем фоновой службы передачи данных и NSURLSession API с началом загрузки большое изображение, которое продолжает загружать во время работы приложения в фоновом режиме.
 ms.prod: xamarin
 ms.assetid: 6960E025-3D5C-457A-B893-25B734F8626D
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 4ab11239caf5986bba52f080945d90a91ea9453e
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: bedfb6298e63ed06063707178af1ca48179d0dd7
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="walkthrough---using-background-transfer-service-and-nsurlsession"></a>Пошаговое руководство. Использование фоновая служба передачи и NSURLSession
 

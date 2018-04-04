@@ -1,18 +1,17 @@
 ---
-title: "Введение в iOS 8"
-description: "С iOS 8 Apple предоставляет множество новых платформ и API-интерфейсы для excite и порадовать разработчиков. В этом руководстве мы вводят эти новые интерфейсы API и разделе преимуществах iOS 8 разработчиков и пользователей."
-ms.topic: article
+title: Введение в iOS 8
+description: С iOS 8 Apple предоставляет множество новых платформ и API-интерфейсы для excite и порадовать разработчиков. В этом руководстве мы вводят эти новые интерфейсы API и разделе преимуществах iOS 8 разработчиков и пользователей.
 ms.prod: xamarin
 ms.assetid: 33AD66C0-3743-49FE-9DCE-88ED3A16BA63
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/14/2017
-ms.openlocfilehash: 8a4fabd5cc63434950f4646336b06676f6eb915b
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 2f57547356adcbafd01851bc54e42a14454ccd6a
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="introduction-to-ios-8"></a>Введение в iOS 8
 

@@ -1,18 +1,17 @@
 ---
-title: "Фрагменты"
-description: "Android 3.0 появились фрагментов, показывающий, как для поддержки более гибкие макеты много разными размерами экранов на телефоны и планшетные ПК. В этой статье будут рассмотрены способы использования фрагментов для разработки приложений Xamarin.Android, а также поддерживает фрагментов на предварительно 3.0 (API уровня 11) устройствах."
-ms.topic: article
+title: Фрагменты
+description: Android 3.0 появились фрагментов, показывающий, как для поддержки более гибкие макеты много разными размерами экранов на телефоны и планшетные ПК. В этой статье будут рассмотрены способы использования фрагментов для разработки приложений Xamarin.Android, а также поддерживает фрагментов на предварительно 3.0 (API уровня 11) устройствах.
 ms.prod: xamarin
 ms.assetid: 1AFB4242-A337-F8E0-83D9-B8D850D7F384
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/15/2018
-ms.openlocfilehash: 0a9a1f41810fe113ac3d88d2533411ac537840ab
-ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
+ms.openlocfilehash: 08c2edb3acc15518c7d5a69f227fb9ef819887be
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="fragments"></a>Фрагменты
 

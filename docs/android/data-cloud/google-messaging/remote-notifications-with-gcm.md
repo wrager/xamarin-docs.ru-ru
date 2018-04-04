@@ -1,18 +1,17 @@
 ---
-title: "Удаленный уведомления с Google Cloud Messaging"
-description: "Это пошаговое руководство содержит пошаговое объяснение того, как реализуется с помощью Google Cloud Messaging удаленного уведомлений (также называемые push-уведомлений) в приложении Xamarin.Android. Здесь описываются различные классы, которые необходимо реализовать для обмена данными с Google Cloud Messaging (GCM), здесь объясняется, как настраивать разрешения в Android манифеста для доступа к GCM, а также демонстрирует конца в конец обмен сообщениями с образцом программы тестирования."
-ms.topic: article
+title: Удаленный уведомления с Google Cloud Messaging
+description: Это пошаговое руководство содержит пошаговое объяснение того, как реализуется с помощью Google Cloud Messaging удаленного уведомлений (также называемые push-уведомлений) в приложении Xamarin.Android. Здесь описываются различные классы, которые необходимо реализовать для обмена данными с Google Cloud Messaging (GCM), здесь объясняется, как настраивать разрешения в Android манифеста для доступа к GCM, а также демонстрирует конца в конец обмен сообщениями с образцом программы тестирования.
 ms.prod: xamarin
 ms.assetid: 4FC3C774-EF93-41B2-A81E-C6A08F32C09B
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/13/2018
-ms.openlocfilehash: 823fad163e837adab5490446c23ab2f492679114
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 969b1b36659ac52782d30a1840ba352524e5e3c6
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="remote-notifications-with-google-cloud-messaging"></a>Удаленный уведомления с Google Cloud Messaging
 
@@ -507,7 +506,7 @@ SendNotification (message);
 
 Давайте рассмотрим, что делает каждый параметр в этот XML-код:
 
-|Параметр|Описание:|
+|Параметр|Описание|
 |---|---|
 |`com.google.android.gms.gcm.GcmReceiver`|Объявляет, что нашего приложения реализует приемник GCM, который перехватывает и обрабатывает входящие сообщения push-уведомлений.|
 |`com.google.android.c2dm.permission.SEND`|Объявляет, что только серверы GCM может посылать сообщения этому приложению.|

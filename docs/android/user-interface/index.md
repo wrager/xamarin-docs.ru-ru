@@ -1,28 +1,27 @@
 ---
-title: "Пользовательский интерфейс"
-description: "Создание пользовательских интерфейсов для Xamarin.Android приложений"
-ms.topic: article
+title: Пользовательский интерфейс
+description: Создание пользовательских интерфейсов для Xamarin.Android приложений
 ms.prod: xamarin
 ms.assetid: F67B7C33-BC53-2BB6-CDA7-16E4AB4A9EFB
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 08/18/2017
-ms.openlocfilehash: 40d02def5c0aae3334ae59cec78f6d22a1d5d772
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 152f5551e2f539e8ab93121c35c2acca7eb7f2e9
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="user-interface"></a>Пользовательский интерфейс
 
 Ниже описаны различные инструменты и стандартные блоки, которые используются для создания пользовательского интерфейса в приложениях Xamarin.Android.
 
-## <a name="android-designerandroiduser-interfaceandroid-designerindexmd"></a>[Конструктор Android](~/android/user-interface/android-designer/index.md)
+## <a name="android-designerandroiduser-interfaceandroid-designerindexmd"></a>[Android Designer](~/android/user-interface/android-designer/index.md)
 
 В этом разделе объясняется, как использовать конструктор Android для размещения элементов управления визуально и изменения свойств. Здесь также объясняется, как использовать конструктор для работы с ресурсами и пользовательские интерфейсы на различные конфигурации, такие как темы, языки и аппаратных конфигураций, а также как разработать альтернативные представления, как альбомной и портретной.
 
-## <a name="material-themeandroiduser-interfacematerial-thememd"></a>[Существенные темы](~/android/user-interface/material-theme.md)
+## <a name="material-themeandroiduser-interfacematerial-thememd"></a>[Тема материала](~/android/user-interface/material-theme.md)
 
 *Существенные темы* является стиль интерфейса пользователя, который определяет внешний вид представления и действий в Android. Существенные темы встроено в Android, используемым пользовательский Интерфейс системы и приложения. В этом руководстве представлены принципы проектирования материал, а также объясняется, как темы приложения с помощью встроенных материал темы или пользовательские темы.
 

@@ -1,18 +1,17 @@
 ---
-title: "Доступ к данным Xamarin.Android"
-description: "Большинство приложений имеют некоторые требования, чтобы сохранить данные на устройстве локально. Если объем данных элементарно мал, это обычно требуется базы данных и уровнем данных в приложении для управления доступом к базе данных.  Android имеет ядро базы данных SQLite «встроенные» и доступа для хранения и извлечения данных стало проще благодаря платформе Xamarin. В этом документе показано, как получить доступ к базе данных SQLite образом кросс платформенных."
-ms.topic: article
+title: Доступ к данным Xamarin.Android
+description: Большинство приложений имеют некоторые требования, чтобы сохранить данные на устройстве локально. Если объем данных элементарно мал, это обычно требуется базы данных и уровнем данных в приложении для управления доступом к базе данных.  Android имеет ядро базы данных SQLite «встроенные» и доступа для хранения и извлечения данных стало проще благодаря платформе Xamarin. В этом документе показано, как получить доступ к базе данных SQLite образом кросс платформенных.
 ms.prod: xamarin
 ms.assetid: 6B47E864-C6E7-4AA2-8DEF-2C8BF551D17C
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 301c4330afe6ff7808ca7b09f6cc5260517aae43
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 508a8f54723bfdd30b1c8ea8d4b6c1d422ae24e9
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="xamarinandroid-data-access"></a>Доступ к данным Xamarin.Android
 

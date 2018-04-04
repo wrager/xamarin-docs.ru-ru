@@ -1,17 +1,16 @@
 ---
-title: "iOS дополнительные основные понятия и внутренние компоненты"
-description: "В данном разделе рассматриваются в MonoTouch API проектирования, сборки и классы из .NET библиотеке базовых классов (BCL), и как Visual Studio для Mac интегрируется с Xcode интерфейс построителя и инструментов Apple."
-ms.topic: article
+title: iOS дополнительные основные понятия и внутренние компоненты
+description: В данном разделе рассматриваются в MonoTouch API проектирования, сборки и классы из .NET библиотеке базовых классов (BCL), и как Visual Studio для Mac интегрируется с Xcode интерфейс построителя и инструментов Apple.
 ms.prod: xamarin
 ms.assetid: 951713CD-D6AD-981C-A09E-4F2C98588D8B
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 00e5d84cd39312cdf6ac0107b4c7ffedcd82f3c0
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: 6befe8dcbfda74e19d7967e4804c530fe866cebe
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="ios-advanced-concepts-and-internals"></a>iOS дополнительные основные понятия и внутренние компоненты
 

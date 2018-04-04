@@ -1,18 +1,17 @@
 ---
-title: "Элементы управления"
-description: "Строительными блоками при создании Xamarin.Android пользовательские интерфейсы"
-ms.topic: article
+title: Элементы управления
+description: Строительными блоками при создании Xamarin.Android пользовательские интерфейсы
 ms.prod: xamarin
 ms.assetid: B7A82166-B920-4672-B7A2-20DD5E0B5AEF
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 25afd284fc88df4f23aaa3dfa1f47a3dc4fee551
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 8994a8988c0e32e85aedcd9110e3583195843862
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="controls"></a>Элементы управления
 
@@ -26,7 +25,7 @@ Xamarin.Android предоставляет все собственные эле�
 ![Пример панели действий](images/action-bar.png)
 
 
-## <a name="auto-completeandroiduser-interfacecontrolsauto-completemd"></a>[Автозавершение](~/android/user-interface/controls/auto-complete.md)
+## <a name="auto-completeandroiduser-interfacecontrolsauto-completemd"></a>[Автозаполнение](~/android/user-interface/controls/auto-complete.md)
 
 `AutoCompleteTextView` — Это элемент представление для редактирования текста, показывающая завершение предложения автоматически во время ввода пользователя. В раскрывающемся меню, из которого пользователь может выбрать элемент для замены содержимого поля ввода с отображается список предложений.
 
@@ -62,7 +61,7 @@ Xamarin.Android предоставляет все собственные эле�
 ![Пример редактирования текста](images/edit-text.png)
 
 
-## <a name="galleryandroiduser-interfacecontrolsgallerymd"></a>[Коллекции](~/android/user-interface/controls/gallery.md)
+## <a name="galleryandroiduser-interfacecontrolsgallerymd"></a>[Коллекция](~/android/user-interface/controls/gallery.md)
 
 `Gallery` Представляет макет графического элемента, который используется для отображения элементов в списке горизонтальной прокруткой; он помещает текущее выделение в центре представления.
 
@@ -90,7 +89,7 @@ Xamarin.Android предоставляет все собственные эле�
 ![Пример всплывающего меню](images/popup-menu.png)
 
 
-## <a name="spinnerandroiduser-interfacecontrolsspinnermd"></a>[Spinner](~/android/user-interface/controls/spinner.md)
+## <a name="spinnerandroiduser-interfacecontrolsspinnermd"></a>[Вертушка](~/android/user-interface/controls/spinner.md)
 
 `Spinner` — Это элемент пользовательского интерфейса, который предоставляет быстрый способ выбора одно значение из набора. Это simmilar в раскрывающемся списке. 
 

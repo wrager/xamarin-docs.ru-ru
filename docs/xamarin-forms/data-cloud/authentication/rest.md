@@ -1,18 +1,17 @@
 ---
-title: "Проверка подлинности веб-службы RESTful"
-description: "Протокол HTTP поддерживает использование нескольких механизмов проверки подлинности для управления доступом к ресурсам. Обычная проверка подлинности предоставляет доступ к ресурсам только клиенты, которые имеют правильные учетные данные. В этой статье показано, как использовать обычную проверку подлинности для защиты доступа к ресурсам RESTful веб-службы."
-ms.topic: article
+title: Проверка подлинности веб-службы RESTful
+description: Протокол HTTP поддерживает использование нескольких механизмов проверки подлинности для управления доступом к ресурсам. Обычная проверка подлинности предоставляет доступ к ресурсам только клиенты, которые имеют правильные учетные данные. В этой статье показано, как использовать обычную проверку подлинности для защиты доступа к ресурсам RESTful веб-службы.
 ms.prod: xamarin
 ms.assetid: 7B5FFDC4-F2AA-4B12-A30A-1DACC7FECBF1
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/22/2017
-ms.openlocfilehash: 7aea74f95e8738cc415eaac3a5ac4f86b069d0f7
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 3160fcced190f74fcfb44c6259451e00995de0fa
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="authenticating-a-restful-web-service"></a>Проверка подлинности веб-службы RESTful
 

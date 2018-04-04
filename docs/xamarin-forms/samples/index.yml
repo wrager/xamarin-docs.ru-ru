@@ -1,23 +1,23 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: "Образцы Xamarin.Forms"
+title: Образцы Xamarin.Forms
 metadata:
-  description: "Примеры приложений Xamarin.Forms и образцы кода для разработчиков мобильных приложений."
+  description: Примеры приложений Xamarin.Forms и образцы кода для разработчиков мобильных приложений.
   author: conceptdev
   ms.author: crdun
   ms.date: 02/17/2018
-  ms.topic: article
-  ms.openlocfilehash: 2cd0a8019df09c8da0f19812b5217bcad5f0c2e9
-  ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+  ms.topic: sample
+  ms.openlocfilehash: 9a30de76dcdf1fc9c286f3511695e1468d6bfe0a
+  ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/28/2018
+  ms.lasthandoff: 04/04/2018
 abstract:
-  description: "Примеры приложений Xamarin.Forms и образцы кода помогут вам начать работу с платформой Xamarin.Forms и понять ее концепции."
+  description: Примеры приложений Xamarin.Forms и образцы кода помогут вам начать работу с платформой Xamarin.Forms и понять ее концепции.
   menu:
     items:
     - href: https://developer.xamarin.com/samples/xamarin-forms/all/
-      text: "Образцы Xamarin.Forms"
+      text: Образцы Xamarin.Forms
 sections:
 - title: 
   items:
@@ -26,44 +26,44 @@ sections:
     className: cardsW
     items:
     - href: https://developer.xamarin.com/samples/xamarin-forms/Todo/
-      html: "В этом примере представлен список приложений списка задач. Их данные сохраняются в локальной базе данных SQLite."
+      html: В этом примере представлен список приложений списка задач. Их данные сохраняются в локальной базе данных SQLite.
       image:
         src: images/todo.png
         href: https://developer.xamarin.com/samples/xamarin-forms/Todo/
-      title: "Список задач"
+      title: Список задач
     - href: https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/
-      html: "Это знакомая всем игра с некоторыми изменениями. Десять ошибок, скрытые в сетке плиток (9 x 9). Чтобы выиграть, необходимо найти и пометить все ошибки."
+      html: Это знакомая всем игра с некоторыми изменениями. Десять ошибок, скрытые в сетке плиток (9 x 9). Чтобы выиграть, необходимо найти и пометить все ошибки.
       image:
         src: images/bugsweeper.png
         href: https://developer.xamarin.com/samples/mobile/LivePlayer/BugSweeperLP/
       title: BugSweeper
     - href: https://developer.xamarin.com/samples/xamarin-forms/RpnCalculator/
-      html: "Калькулятор RPN (обратная польская нотация) позволяет вводить числа и выполнять операции без использования клавиши скобок или знака равенства."
+      html: Калькулятор RPN (обратная польская нотация) позволяет вводить числа и выполнять операции без использования клавиши скобок или знака равенства.
       image:
         src: images/rpncalc.png
         href: https://developer.xamarin.com/samples/xamarin-forms/RpnCalculator/
-      title: "Калькулятор RPN"
+      title: Калькулятор RPN
     - href: https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SpinPaint/
-      html: "Программа имитирует циклический диск, чтобы вы могли рисовать касанием пальца. Программа SpinPaint реагирует на касание, рисуя линию, но она также дублирует эту линию в трех зеркальных отображениях в других трех квадрантах диска."
+      html: Программа имитирует циклический диск, чтобы вы могли рисовать касанием пальца. Программа SpinPaint реагирует на касание, рисуя линию, но она также дублирует эту линию в трех зеркальных отображениях в других трех квадрантах диска.
       image:
         src: images/spinpaint.png
         href: https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/SpinPaint/
       title: SpinPaint
     - href: https://developer.xamarin.com/samples/xamarin-forms/XamlSamples/
-      html: "XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода."
+      html: XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода.
       image:
         src: images/xaml.png
         href: https://developer.xamarin.com/samples/xamarin-forms/XamlSamples/
-      title: "Образцы XAML"
+      title: Образцы XAML
     - href: https://developer.xamarin.com/samples/mobile/LivePlayer/XamagonXuzzleLP/
-      html: "XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода."
+      html: XAML (расширяемый язык разметки для приложений) позволяет разработчикам определить пользовательские интерфейсы приложений Xamarin.Forms с помощью разметки вместо кода.
       image:
         src: images/xuzzle.png
         href: https://developer.xamarin.com/samples/mobile/LivePlayer/XamagonXuzzleLP/
       title: Xuzzle
     - href: https://developer.xamarin.com/samples/xamarin-forms/all/
-      html: "Полный набор примеров приложений Xamarin.Forms и образцов кода."
+      html: Полный набор примеров приложений Xamarin.Forms и образцов кода.
       image:
         src: ~/media/shared/sample-download.svg
         href: https://developer.xamarin.com/samples/xamarin-forms/all/
-      title: "Образцы Xamarin.Forms"
+      title: Образцы Xamarin.Forms

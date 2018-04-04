@@ -1,18 +1,17 @@
 ---
-title: "Начало работы"
-description: "Узнайте, как установка Xamarin поддержку для tvOS и быстро приступить к работе в tvOS разработки."
-ms.topic: article
+title: Начало работы
+description: Узнайте, как установка Xamarin поддержку для tvOS и быстро приступить к работе в tvOS разработки.
 ms.prod: xamarin
 ms.assetid: 1A3D8211-A689-41D9-BCFE-AF8398992031
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/07/2016
-ms.openlocfilehash: 401f322a2baf684f4b91dfaf80a87e358c166a8c
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d348cfe00c1099d2e845d93c4e31ff33ae9efc75
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="getting-started-with-xamarintvos"></a>Приступая к работе с Xamarin.tvOS
 
@@ -24,14 +23,14 @@ Xamarin.tvOS позволяет создавать приложения для �
 
 Чтобы построить tvOS приложений с помощью Xamarin, установите последняя стабильная версия Xamarin.iOS, поддерживающей tvOS 11 и watchOS 4.
 
-## <a name="hello-tvos-quick-start-guideiostvosget-startedhello-tvosmd"></a>[Привет, tvOS краткое руководство](~/ios/tvos/get-started/hello-tvos.md)
+## <a name="hello-tvos-quick-start-guideiostvosget-startedhello-tvosmd"></a>[Краткое руководство по tvOS](~/ios/tvos/get-started/hello-tvos.md)
 
 Эта статья содержит быстро приступить к разработке приложений для tvOS путем создания простого приложения «Hello, tvOS». Рассматриваются основные устройства tvOS подготовки и создания интерфейса и программированию для tvOS тестирование в симуляторе tvOS и на реальных tvOS оборудования.
 
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Образцы tvOS](https://developer.xamarin.com/samples/tvos/all/)
+- [Примеры tvOS](https://developer.xamarin.com/samples/tvos/all/)
 - [tvOS](https://developer.apple.com/tvos/)
 - [tvOS человека направляющие интерфейса](https://developer.apple.com/tvos/human-interface-guidelines/)
 - [Приложение руководство по программированию для tvOS](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/AppleTV_PG/)

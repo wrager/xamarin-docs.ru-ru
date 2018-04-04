@@ -1,18 +1,17 @@
 ---
-title: "Устранение неполадок привязки"
-description: "В этой статье приведены несколько распространенных ошибок, которые могут возникнуть при создании привязки, а также возможные причины и предлагаемые способы их устранения."
-ms.topic: article
+title: Устранение неполадок привязки
+description: В этой статье приведены несколько распространенных ошибок, которые могут возникнуть при создании привязки, а также возможные причины и предлагаемые способы их устранения.
 ms.prod: xamarin
 ms.assetid: BB81FCCF-F7BF-4C78-884E-F02C49AA819A
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 6d31e2a22c63f8d46893dd1928b561e1a06b19b4
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: da6286eed091114c117c723f462bbb8cac77034b
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="troubleshooting-bindings"></a>Устранение неполадок привязки
 
@@ -51,7 +50,7 @@ _В этой статье приведены несколько распрост
 
 - **Классы, которые имеют характеристики запутывания** &ndash; перечислены характеристики неопределенные классы:
 
-    - Имя class содержит  **$** , т. е. **$.class**
+    - Имя class содержит **$**, т. е. **$.class**
     - Имя класса полностью скомпрометированы символов нижнего регистра, т. е. **a.class**      
 
 - **`import` операторы без ссылки библиотек** &ndash; неиспользуемые библиотеки идентифицировать и добавить эти зависимости проекта Xamarin.Android привязки с **действие при построении** из **ReferenceJar**  или **EmbedddedReferenceJar**.

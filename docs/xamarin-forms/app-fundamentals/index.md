@@ -1,18 +1,17 @@
 ---
-title: "Принципы работы приложения"
-description: "Изучение основ разработки приложений Xamarin.Forms"
-ms.topic: article
+title: Принципы работы приложения
+description: Изучение основ разработки приложений Xamarin.Forms
 ms.prod: xamarin
 ms.assetid: 7B516BBC-F7E1-4387-9779-7754E2E69723
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/28/2017
-ms.openlocfilehash: afa3bf25b1448d98c49c95a66bd0f4dc55bde39e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 5a53c15ebad6081dae2ebc4bd782bcc3644620fe
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="application-fundamentals"></a>Принципы работы приложения
 
@@ -20,7 +19,7 @@ ms.lasthandoff: 02/27/2018
 
 Советы для включения возможности доступа (например, при поддержке средств чтения с экрана) с помощью Xamarin.Forms.
 
-## <a name="app-classapplication-classmd"></a>[Класс App](application-class.md)
+## <a name="app-classapplication-classmd"></a>[Класс приложения](application-class.md)
 
 `Application` Класса является отправной точкой для Xamarin.Forms — каждого приложения, должен реализовывать подкласс `App` начальной страницы. Он также предоставляет `Properties` коллекцию для хранения данных. Он может быть определен в C# или XAML.
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 02/27/2018
 
 Элементы управления пользовательского интерфейса можно легко расширить, без создания подкласса с помощью поведений для расширения функциональности.
 
-## <a name="custom-rendererscustom-rendererindexmd"></a>[Пользовательские модули подготовки отчетов](custom-renderer/index.md)
+## <a name="custom-rendererscustom-rendererindexmd"></a>[Пользовательские отрисовщики](custom-renderer/index.md)
 
 Пользовательские модули подготовки позволяют разработчикам переопределять отрисовки по умолчанию элементов управления Xamarin.Forms и настроить их внешний вид и поведение для каждой платформы (с помощью собственного пакетов SDK, при необходимости).
 
@@ -48,7 +47,7 @@ ms.lasthandoff: 02/27/2018
 
 Эффекты позволяют собственные элементы управления на каждой платформе, которую нужно изменить и обычно используются для изменения небольшой стилей.
 
-## <a name="gesturesgesturesindexmd"></a>[жесты](gestures/index.md)
+## <a name="gesturesgesturesindexmd"></a>[Жесты](gestures/index.md)
 
 Xamarin.Forms [ `GestureRecognizer` ](https://developer.xamarin.com/api/type/Xamarin.Forms.GestureRecognizer/) класс поддерживает tap, сжатие и сдвиг жестов на элементы управления пользовательского интерфейса.
 
@@ -64,7 +63,7 @@ Xamarin.Forms поддерживает приложения на основе б
 
 Xamarin.Forms `MessagingCenter` позволяет просматривать модели и другие компоненты для взаимодействия с даже не зная ничего о друг с другом помимо простого контракта сообщения.
 
-## <a name="navigationnavigationindexmd"></a>[Navigation](navigation/index.md)
+## <a name="navigationnavigationindexmd"></a>[Навигация](navigation/index.md)
 
 Xamarin.Forms предоставляет ряд возможностей навигации другую страницу, в зависимости от того `Page` типа.
 

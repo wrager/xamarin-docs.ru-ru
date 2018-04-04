@@ -1,19 +1,18 @@
 ---
-title: "Привязка Objective c."
-ms.topic: article
+title: Привязка Objective-C
 ms.prod: xamarin
 ms.assetid: DBBAA086-BB0F-8161-DF44-632F4F5DFE5D
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 01/25/2016
-ms.openlocfilehash: e836081d79d904e2d0952386e536eefdabe361e1
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: fef2826f536042dc9be830a4c0dc358658c359d9
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="binding-objective-c"></a>Привязка Objective c.
+# <a name="binding-objective-c"></a>Привязка Objective-C
 
 Этот раздел содержит различные документы, которые охватывают Создание привязки к библиотекам Objective-C, поэтому их можно вызывать из приложения C#, созданные с помощью Xamarin.iOS или Xamarin.Mac.
 
@@ -21,7 +20,7 @@ ms.lasthandoff: 02/27/2018
 
 Этот документ содержит некоторые из внутренних принцип осуществления привязки. Это документ дополнительные технические сведения.
 
-##  <a name="binding-objective-c-librariescross-platformmaciosbindingobjective-c-librariesmd"></a>[Библиотеки C цель привязки](~/cross-platform/macios/binding/objective-c-libraries.md)
+##  <a name="binding-objective-c-librariescross-platformmaciosbindingobjective-c-librariesmd"></a>[Привязка библиотек Objective-C](~/cross-platform/macios/binding/objective-c-libraries.md)
 
 В этом документе описан процесс, который используется для создания привязок C# Objective-C API и сопоставление идиом в Objective-C идиом, используемых в .NET.
 При связывании просто C API-интерфейсы для этого платформа P/Invoke следует использовать стандартный механизм .NET.
@@ -31,7 +30,7 @@ ms.lasthandoff: 02/27/2018
 Это руководство, которая описывает все атрибуты, доступные для авторов привязки для управления процессом создания привязки.
 
 
-## <a name="objective-sharpiecross-platformmaciosbindingobjective-sharpieindexmd"></a>[Цели Sharpie](~/cross-platform/macios/binding/objective-sharpie/index.md)
+## <a name="objective-sharpiecross-platformmaciosbindingobjective-sharpieindexmd"></a>[Objective Sharpie](~/cross-platform/macios/binding/objective-sharpie/index.md)
 
 Цели Sharpie — это средство командной строки для начальной загрузки на первом этапе привязки. Он работает путем синтаксического анализа заголовочные файлы для сопоставления открытого API-интерфейса в собственной библиотеки [определения привязки](~/cross-platform/macios/binding/objective-c-libraries.md) (этот процесс, можно также вручную).
 

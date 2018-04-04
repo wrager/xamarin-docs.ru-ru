@@ -1,18 +1,17 @@
 ---
-title: "Расширенные сообщения приложения расширения"
-description: "В этой статье показано Дополнительно приемы работы с расширений сообщений приложения в решении Xamarin.iOS, которое интегрируется с приложением сообщения и представляет новые функциональные возможности для пользователя."
-ms.topic: article
+title: Расширенные сообщения приложения расширения
+description: В этой статье показано Дополнительно приемы работы с расширений сообщений приложения в решении Xamarin.iOS, которое интегрируется с приложением сообщения и представляет новые функциональные возможности для пользователя.
 ms.prod: xamarin
 ms.assetid: 394A1FDA-AF70-4493-9B2C-4CFE4BE791B6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: fcfd1fd2ec9271bb5e8d9e09b43b7dc4cf3b3f12
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: cd2cabf98c83bba7502e8533e482713a9c43f67a
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="advanced-message-app-extensions"></a>Расширенные сообщения приложения расширения
 

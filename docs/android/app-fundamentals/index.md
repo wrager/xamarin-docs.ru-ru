@@ -1,18 +1,17 @@
 ---
-title: "Принципы работы приложения"
-description: "Основные понятия приложения"
-ms.topic: article
+title: Принципы работы приложения
+description: Основные понятия приложения
 ms.prod: xamarin
 ms.assetid: 935B8BFE-23B7-4239-5C87-F4A503B889CB
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 4abb8c823c62bc62fd2e6f717cc1b5bde9057e4e
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cfb31fa6cac7c4848054cd58a1e144c2ac944262
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="application-fundamentals"></a>Принципы работы приложения
 
@@ -47,7 +46,7 @@ ms.lasthandoff: 02/27/2018
 
 В этой статье рассматриваются Android службы, являющиеся Android компонентов, которые позволяют выполнить в фоновом режиме. Он описаны различные сценарии, подходящие для службы и показано, как реализовать их как для выполнения фоновой долго выполняющихся заданий, а также относительно предоставить интерфейс для удаленных вызовов процедур.
 
-## <a name="broadcast-receiversandroidapp-fundamentalsbroadcast-receiversmd"></a>[Приемники широковещательных пакетов](~/android/app-fundamentals/broadcast-receivers.md)
+## <a name="broadcast-receiversandroidapp-fundamentalsbroadcast-receiversmd"></a>[Широковещательные приемники](~/android/app-fundamentals/broadcast-receivers.md)
 
 В этом руководстве описывается создание и использование широковещательных приемники Android компонент, который отвечает на уровне системы широковещательные рассылки, в Xamarin.Android.
 
@@ -59,12 +58,12 @@ ms.lasthandoff: 02/27/2018
 
 
 
-##  <a name="graphics-and-animationandroidapp-fundamentalsgraphics-and-animationmd"></a>[Графики и анимации](~/android/app-fundamentals/graphics-and-animation.md)
+##  <a name="graphics-and-animationandroidapp-fundamentalsgraphics-and-animationmd"></a>[Графика и анимация](~/android/app-fundamentals/graphics-and-animation.md)
 
 Android предоставляет очень широкие и разнообразные платформу для поддержки 2D-графики и анимации. В этом документе представлены такие платформы и описывает, как создать пользовательский графики и анимации и использовать их в приложении Xamarin.Android.
 
 
-##  <a name="cpu-architecturesandroidapp-fundamentalscpu-architecturesmd"></a>[Архитектуры ЦП](~/android/app-fundamentals/cpu-architectures.md)
+##  <a name="cpu-architecturesandroidapp-fundamentalscpu-architecturesmd"></a>[Архитектуры процессоров](~/android/app-fundamentals/cpu-architectures.md)
 
 Xamarin.Android поддерживает несколько архитектуры ЦП, включая устройства с 32-разрядных и 64-разрядной. В этой статье объясняется, как для нацеливания на приложение в один или несколько архитектуры ЦП поддерживается Android.
 
@@ -90,7 +89,7 @@ Xamarin.Android поддерживает несколько архитектур
 
 
 
-##  <a name="touchandroidapp-fundamentalstouchindexmd"></a>[Сенсорный ввод](~/android/app-fundamentals/touch/index.md)
+##  <a name="touchandroidapp-fundamentalstouchindexmd"></a>[Сенсорные технологии](~/android/app-fundamentals/touch/index.md)
 
 В этом разделе объясняется, что основные понятия и сведения о реализации сенсорные жесты на Android. API-интерфейсы сенсорный ввод появились и объясняются следовали исследования распознавателей жестов.
 

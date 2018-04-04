@@ -1,18 +1,17 @@
 ---
-title: "Подключаемые модули"
-description: "Легко добавлять собственные функции в Xamarin.Forms приложений"
-ms.topic: article
+title: Подключаемые модули
+description: Легко добавлять собственные функции в Xamarin.Forms приложений
 ms.prod: xamarin
 ms.assetid: 8A06A420-A9D0-4BCB-B9AF-3AEA6A648A8B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/07/2016
-ms.openlocfilehash: ad338e655c1aeb475122c837ca5c805e491f84bc
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 5770d13c46998872752820b7a0cbb222a04c3ff8
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="plugins"></a>Подключаемые модули
 
@@ -35,7 +34,7 @@ Xamarin сообщества создал многих подключаемых 
 
 Например, список ниже подключаемых модулей являются все открытым исходным кодом, и они соответствуют примеров в [ `DependencyService` ](~/xamarin-forms/app-fundamentals/dependency-service/index.md) раздела:
 
-- **Преобразования текста в речь** , Джеймсом Монтеманьо &ndash; [GitHub](https://github.com/jamesmontemagno/Xamarin.Plugins/tree/master/TextToSpeech) и [NuGet  ](https://www.nuget.org/packages/Xam.Plugin.Battery)
+- **Преобразования текста в речь** , Джеймсом Монтеманьо &ndash; [GitHub](https://github.com/jamesmontemagno/Xamarin.Plugins/tree/master/TextToSpeech) и [NuGet](https://www.nuget.org/packages/Xam.Plugin.Battery)
 - **Состояние батареи** , Джеймсом Монтеманьо &ndash; [GitHub](https://github.com/jamesmontemagno/Xamarin.Plugins/tree/master/Battery) и [NuGet](https://www.nuget.org/packages/Xam.Plugins.TextToSpeech/)
 
 Эти проекты Github можно указать хорошей отправной точкой для создания собственных кросс платформенных подключаемых модулей, как выполнять эти инструкции для [Создание подключаемого модуля для Xamarin](https://github.com/xamarin/plugins#create-a-plugin-for-xamarin).

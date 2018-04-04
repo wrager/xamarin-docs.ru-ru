@@ -1,17 +1,17 @@
 ---
-title: "Как скопировать выходные файлы IPA транзитный каталог TFS?"
-ms.topic: article
+title: Как скопировать выходные файлы IPA транзитный каталог TFS?
+ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: B0F1E09E-7315-45BA-B7FF-44D2063EE19C
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: c89d81434cac43505c4f0341a10aaf4fc99407fe
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 2139be01b95a0a4287bba43b8a2ebad537ac7a4f
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-can-i-copy-ipa-output-files-to-the-tfs-drop-folder"></a>Как скопировать выходные файлы IPA транзитный каталог TFS?
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/27/2018
 
 -   Это же общего метода, описанного в [можно изменить путь выходного файла IPA?](~/ios/troubleshooting/questions/ipa-output-path.md). Два важных аспекта, чтобы задать `$(TF_BUILD_BINARIESDIRECTORY)` качестве конечной папки и добавлять дополнительное условие так `CopyIpa` будет выполняться только для сборок TFS.
 
--   Описание `TF_BUILD_BINARIESDIRECTORY` разделе [https://msdn.microsoft.com/en-us/library/hh850448.aspx](https://msdn.microsoft.com/en-us/library/hh850448.aspx).
+-   Описание `TF_BUILD_BINARIESDIRECTORY` разделе [ https://msdn.microsoft.com/en-us/library/hh850448.aspx ](https://msdn.microsoft.com/en-us/library/hh850448.aspx).
 
 ## <a name="additional-references"></a>Дополнительные ссылки
 

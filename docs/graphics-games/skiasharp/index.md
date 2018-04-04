@@ -1,18 +1,17 @@
 ---
-title: "2D рисования"
-description: "CROSS платформы 2D Рисование с SkiaSharp"
-ms.topic: article
+title: 2D рисования
+description: CROSS платформы 2D Рисование с SkiaSharp
 ms.prod: xamarin
 ms.assetid: A8A61421-4544-422A-A7E0-9355C67DF21E
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 09/14/2017
-ms.openlocfilehash: ee0625f22062fef3c27a697ce33488274abc24d9
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: a6249525e8a5f85284c462888a7698312321642f
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="2d-drawing"></a>2D рисования
 
@@ -74,4 +73,4 @@ SkiaSharp является переносимой библиотеки и удо
 
 SkiaSharp является незавершенным, мы совместное использование с нашего сообщества. Хотя привязку важные части Skia API, объем работы остается сделать. Мы используем стабильный API C, отображаются Skia, и мы планируем будет продолжаться, добавляющие нашей работе для привязок C Skia раскрывается полностью API-интерфейсам.
 
-Чтобы помочь нам руководства наши усилия привязки, оставьте комментарии и предложения как проблемы в репозитории GitHub [http://github.com/mono/SkiaSharp](http://github.com/mono/SkiaSharp).
+Чтобы помочь нам руководства наши усилия привязки, оставьте комментарии и предложения как проблемы в репозитории GitHub [ http://github.com/mono/SkiaSharp ](http://github.com/mono/SkiaSharp).

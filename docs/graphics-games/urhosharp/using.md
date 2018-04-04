@@ -1,17 +1,16 @@
 ---
-title: "С помощью UrhoSharp"
-description: "Обзор подсистемы UrhoSharp"
-ms.topic: article
+title: С помощью UrhoSharp
+description: Обзор подсистемы UrhoSharp
 ms.prod: xamarin
 ms.assetid: D9BEAD83-1D9E-41C3-AD4B-3D87E13674A0
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
-ms.openlocfilehash: cd30f17d631216a3ea119a262aca6d294394a77f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: cdb32c0fe9aa1a267bda5768b9026667723d694c
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="using-urhosharp"></a>С помощью UrhoSharp
 
@@ -497,7 +496,7 @@ healthBar.SetTexture(ResourceCache.GetTexture2D("Textures/HealthBarBorder.png"))
 
 Urho3D пытается использовать существующие форматы файлов, когда это возможно и определить настраиваемые форматы файлов только при крайней необходимости, например для моделей (*.mdl) и для анимации (*.ani). Для этих типов средств Urho предоставляет преобразователь - [AssetImporter](http://urho3d.github.io/documentation/1.4/_tools.html) которых требует многие популярные 3D форматы, такие как fbx, dae, 3ds и obj, и т. д.
 
-Имеется также удобно надстройки для Blender [https://github.com/reattiva/Urho3D-Blender](https://github.com/reattiva/Urho3D-Blender) , можно экспортировать в формате, который подходит для Urho3D Blender активов.
+Имеется также удобно надстройки для Blender [ https://github.com/reattiva/Urho3D-Blender ](https://github.com/reattiva/Urho3D-Blender) , можно экспортировать в формате, который подходит для Urho3D Blender активов.
 
 ## <a name="background-loading-of-resources"></a>Фоновую загрузку ресурсов
 
@@ -529,7 +528,7 @@ soundSource.AutoRemove = true;
 
 # <a name="particles"></a>Примитивы
 
-Примитивы предоставляют простой способ добавления некоторые эффекты, простой и недорогой в приложение.  Можно использовать примитивы, которые хранятся в формате PEX, с помощью таких средств, как [http://onebyonedesign.com/flash/particleeditor/](http://onebyonedesign.com/flash/particleeditor/).
+Примитивы предоставляют простой способ добавления некоторые эффекты, простой и недорогой в приложение.  Можно использовать примитивы, которые хранятся в формате PEX, с помощью таких средств, как [ http://onebyonedesign.com/flash/particleeditor/ ](http://onebyonedesign.com/flash/particleeditor/).
 
 Примитивы, компоненты, которые могут быть добавлены в узел.  Необходимо вызвать узла `CreateComponent<ParticleEmitter2D>` способ создать фрагмент, а затем настройте примитив, задав свойство эффект 2D эффект загружается из кэша ресурса.
 

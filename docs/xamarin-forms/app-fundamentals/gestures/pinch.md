@@ -1,18 +1,17 @@
 ---
-title: "Добавление распознавателя жестом сжатия"
-description: "Жест сжатие используется для выполнения интерактивных масштаба и реализуется с помощью класса PinchGestureRecognizer. Обычный сценарий для жестов жестом сжатия — для выполнения интерактивных масштаба изображения на месте жестом сжатия. Это достигается путем масштабирования окна просмотра содержимого и описанные в этой статье."
-ms.topic: article
+title: Добавление распознавателя жестом сжатия
+description: Жест сжатие используется для выполнения интерактивных масштаба и реализуется с помощью класса PinchGestureRecognizer. Обычный сценарий для жестов жестом сжатия — для выполнения интерактивных масштаба изображения на месте жестом сжатия. Это достигается путем масштабирования окна просмотра содержимого и описанные в этой статье.
 ms.prod: xamarin
 ms.assetid: 832F7810-F0CF-441A-B04A-3975F3FB8B29
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/21/2016
-ms.openlocfilehash: 38e46af1d928a3d4e5dc33e2a46fe04cd169ed60
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: f8f81418cf5284b288f29fd2363b6b8f2d9d5fdd
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="adding-a-pinch-gesture-recognizer"></a>Добавление распознавателя жестом сжатия
 

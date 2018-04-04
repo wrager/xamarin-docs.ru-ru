@@ -1,17 +1,16 @@
 ---
-title: "Перемещение вручную"
-description: "В этой статье рассматриваются работа перемещение вручную в приложения Xamarin.iOS для передачи действий пользователей между приложений, выполняющихся на пользователя в других устройствах."
-ms.topic: article
+title: Перемещение вручную
+description: В этой статье рассматриваются работа перемещение вручную в приложения Xamarin.iOS для передачи действий пользователей между приложений, выполняющихся на пользователя в других устройствах.
 ms.prod: xamarin
 ms.assetid: 405F966A-4085-4621-AA15-33D663AD15CD
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 25220f37433037b55f13c4de5a07c0c09173a269
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: bb665c7ffd4241fac14be13ebd8f113d11afd417
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="handoff"></a>Перемещение вручную
 
@@ -463,7 +462,7 @@ JSON-файл содержит словарь, содержащий список
 }
 ```
 
-Для подписания файла JSON (так, что он содержит правильные `Content-Type` из `application/pkcs7-mime`), используйте **терминалов** приложение и `openssl` с сертификата и ключа, выданного центром сертификации, доверенным для операций ввода-вывода (см. [ http://support.Apple.com/kb/ht5012](http://support.apple.com/kb/ht5012) список). Пример:
+Для подписания файла JSON (так, что он содержит правильные `Content-Type` из `application/pkcs7-mime`), используйте **терминалов** приложение и `openssl` с сертификата и ключа, выданного центром сертификации, доверенным для операций ввода-вывода (см. [ http://support.apple.com/kb/ht5012 ](http://support.apple.com/kb/ht5012) список). Пример:
 
 ```csharp
 echo '{"activitycontinuation":{"apps":["YWBN8XTPBJ.com.company.FirstApp",

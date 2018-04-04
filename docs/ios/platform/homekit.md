@@ -1,18 +1,17 @@
 ---
 title: HomeKit
-description: "HomeKit — Apple платформа для управления устройствами автоматизации дома. В этой статье представлены HomeKit и рассматриваются Настройка стандартные теста в симуляторе стандартную программу HomeKit и написания простого приложения Xamarin.iOS для взаимодействия с эти стандартные."
-ms.topic: article
+description: HomeKit — Apple платформа для управления устройствами автоматизации дома. В этой статье представлены HomeKit и рассматриваются Настройка стандартные теста в симуляторе стандартную программу HomeKit и написания простого приложения Xamarin.iOS для взаимодействия с эти стандартные.
 ms.prod: xamarin
 ms.assetid: 90C0C553-916B-46B1-AD52-1E7332792283
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 02116e8e11cb6ff050e2c885338777e1fd25c4cb
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: 5699465330a4d2a5b983ec7661f80c1ed4f14bde
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="homekit"></a>HomeKit
 
@@ -104,7 +103,7 @@ Apple предоставляет имитатор HomeKit стандартную
 1. В папке приложения запустите симулятор стандартную программу HomeKit: 
 
     [![](homekit-images/simulator02.png "Имитатор аксессуаров HomeKit")](homekit-images/simulator02.png#lightbox)
-2. Нажмите кнопку  **+**  и выберите пункт **нового вспомогательного компонента...** : 
+2. Нажмите кнопку **+** и выберите пункт **нового вспомогательного компонента...** : 
 
     [![](homekit-images/simulator03.png "Добавление нового вспомогательного компонента")](homekit-images/simulator03.png#lightbox)
 3. Введите сведения о новых стандартную программу и нажмите кнопку **Готово** кнопки: 

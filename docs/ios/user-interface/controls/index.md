@@ -1,18 +1,17 @@
 ---
-title: "Элементы управления"
-description: "Xamarin.iOS предоставляет все объекты собственного пользовательского интерфейса компании Apple. Они легко добавлены Xamarin.iOS приложений с помощью конструктора, iOS и Xcode интерфейс построителя или программными средствами. Независимо от выбранного метода Xamarin.iOS предоставляет все свойства объекта пользовательского интерфейса и методы в языке C#."
-ms.topic: article
+title: Элементы управления
+description: Xamarin.iOS предоставляет все объекты собственного пользовательского интерфейса компании Apple. Они легко добавлены Xamarin.iOS приложений с помощью конструктора, iOS и Xcode интерфейс построителя или программными средствами. Независимо от выбранного метода Xamarin.iOS предоставляет все свойства объекта пользовательского интерфейса и методы в языке C#.
 ms.prod: xamarin
 ms.assetid: C00EA232-ADCC-42AD-BF86-B526414A21C6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: d661cf873baad43a51b40fb59fecd5bc298bcac4
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 82b2998319d4e78ee4f58a6d024032a509724537
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="controls"></a>Элементы управления
 

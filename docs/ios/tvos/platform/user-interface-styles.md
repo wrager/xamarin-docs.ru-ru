@@ -1,18 +1,17 @@
 ---
-title: "Новые стили пользовательского интерфейса"
-description: "В этой статье рассматриваются светлой и темной темы пользовательского интерфейса, Apple добавил tvOS 10 и способы их реализации в приложении Xamarin.tvOS."
-ms.topic: article
+title: Новые стили пользовательского интерфейса
+description: В этой статье рассматриваются светлой и темной темы пользовательского интерфейса, Apple добавил tvOS 10 и способы их реализации в приложении Xamarin.tvOS.
 ms.prod: xamarin
 ms.assetid: 8BC37683-AD9E-45CD-BE40-96965618AD1D
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: e400a72f4c759662e70bfecc372134f8fda05ad6
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: da75a99e842b13d42251cdd1c5195ec66ff4a513
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="new-user-interface-styles"></a>Новые стили пользовательского интерфейса
 
@@ -186,7 +185,7 @@ SetOverrideTraitCollection (trait, this);
 
 * Разработчик может указать различные виды элементы пользовательского интерфейса на основе темы пользовательского интерфейса в **инспектора атрибут**:
     
-    * Теперь имеют несколько свойств  **+**  рядом с ними, которые можно выбрать для добавления определенной версии тема пользовательского интерфейса: 
+    * Теперь имеют несколько свойств **+** рядом с ними, которые можно выбрать для добавления определенной версии тема пользовательского интерфейса: 
 
         [![](user-interface-styles-images/theme08.png "Добавьте определенную версию темы пользовательского интерфейса")](user-interface-styles-images/theme08.png#lightbox) 
     

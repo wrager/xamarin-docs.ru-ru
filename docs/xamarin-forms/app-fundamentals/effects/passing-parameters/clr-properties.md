@@ -1,18 +1,17 @@
 ---
-title: "Передача параметров эффект, как общие свойства среды выполнения языка"
-description: "Общие свойства Language Runtime (CLR) можно использовать для определения влияния параметров, не отвечайте на изменения свойств в среде выполнения. В этой статье демонстрируется использование свойств CLR для передачи параметров в силу."
-ms.topic: article
+title: Передача параметров эффект, как общие свойства среды выполнения языка
+description: Общие свойства Language Runtime (CLR) можно использовать для определения влияния параметров, не отвечайте на изменения свойств в среде выполнения. В этой статье демонстрируется использование свойств CLR для передачи параметров в силу.
 ms.prod: xamarin
 ms.assetid: 4B50466C-5DBD-45DD-B1E6-BE9524C92F27
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/05/2016
-ms.openlocfilehash: afe30ae87aa2e465013eb7fef3089cf701d98da6
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 78d14b9764ab0c7cafb9f09fa1c8acea3f45afde
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="passing-effect-parameters-as-common-language-runtime-properties"></a>Передача параметров эффект, как общие свойства среды выполнения языка
 
@@ -239,7 +238,7 @@ namespace EffectsDemo.WinPhone81
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Пользовательские модули подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
+- [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
 - [Effect](https://developer.xamarin.com/api/type/Xamarin.Forms.Effect/)
 - [PlatformEffect](https://developer.xamarin.com/api/type/Xamarin.Forms.PlatformEffect%3CTContainer,TControl%3E/)
 - [RoutingEffect](https://developer.xamarin.com/api/type/Xamarin.Forms.RoutingEffect/)

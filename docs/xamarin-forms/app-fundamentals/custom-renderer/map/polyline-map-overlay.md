@@ -1,18 +1,17 @@
 ---
-title: "Выделение маршрута на карте"
-description: "В этой статье описывается добавление наложения ломаной линии на карту. Наложение ломаной линии — это ряд сегментов линии, которые обычно используются для отображения на карте маршрута или форме любой фигуры, необходимый."
-ms.topic: article
+title: Выделение маршрута на карте
+description: В этой статье описывается добавление наложения ломаной линии на карту. Наложение ломаной линии — это ряд сегментов линии, которые обычно используются для отображения на карте маршрута или форме любой фигуры, необходимый.
 ms.prod: xamarin
 ms.assetid: FBFDC715-1654-4188-82A0-FC522548BCFF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: c7becef16009596148b4de28e4e8f6892cb44fe1
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: f781a472a63d97c8859aff36b28e0fd4fa0c7756
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="highlighting-a-route-on-a-map"></a>Выделение маршрута на карте
 
@@ -31,7 +30,7 @@ _В этой статье описывается добавление налож
 1. [Настройка](#Customizing_the_Map) карты путем создания пользовательского средства отрисовки карты для каждой платформы.
 
 > [!NOTE]
-> [`Xamarin.Forms.Maps`](https://developer.xamarin.com/api/namespace/Xamarin.Forms.Maps/) необходимо инициализировать и настроить перед использованием. Дополнительные сведения см. в разделе [ `Maps Control` ](~/xamarin-forms/user-interface/map.md).
+> [`Xamarin.Forms.Maps`](https://developer.xamarin.com/api/namespace/Xamarin.Forms.Maps/) необходимо инициализировать и настроить перед использованием. Дополнительные сведения см. на веб-сайте [`Maps Control`](~/xamarin-forms/user-interface/map.md).
 
 Сведения о настройке карты с помощью пользовательского средства отрисовки см. в разделе [Настройка ПИН-код карты](~/xamarin-forms/app-fundamentals/custom-renderer/map/customized-pin.md).
 

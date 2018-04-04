@@ -1,18 +1,17 @@
 ---
-title: "Функции быть, с ягодами jelly"
-description: "В этом документе предоставит общий обзор новых возможностей для разработчиков, которые впервые появились в Android 4.1. Эти возможности включают: расширенный уведомления, обновления для Android луч для совместного использования больших файлов мультимедиа, одноранговая сеть сетевого обнаружения, анимацию, новые разрешения обновлений."
-ms.topic: article
+title: Функции быть, с ягодами jelly
+description: 'В этом документе предоставит общий обзор новых возможностей для разработчиков, которые впервые появились в Android 4.1. Эти возможности включают: расширенный уведомления, обновления для Android луч для совместного использования больших файлов мультимедиа, одноранговая сеть сетевого обнаружения, анимацию, новые разрешения обновлений.'
 ms.prod: xamarin
 ms.assetid: 23F57634-2EF9-5C15-C710-B3E19A5AF7E1
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 136484644779ac40e661f50ff19cf15884c864c2
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 1d8068ccfc8d0f159a88704370261ec5f20d8b7c
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="jelly-bean-features"></a>Функции быть, с ягодами jelly
 

@@ -1,18 +1,17 @@
 ---
-title: "«Песочница» для приложения Xamarin.Mac"
-description: "В этой статье рассматриваются песочницы приложении Xamarin.Mac для выпуска в магазине приложений. Она охватывает все элементы, входящие в «песочницы» для контейнера каталоги, прав, определенного пользователем разрешения, разделение прав доступа и принудительного применения ядра."
-ms.topic: article
+title: «Песочница» для приложения Xamarin.Mac
+description: В этой статье рассматриваются песочницы приложении Xamarin.Mac для выпуска в магазине приложений. Она охватывает все элементы, входящие в «песочницы» для контейнера каталоги, прав, определенного пользователем разрешения, разделение прав доступа и принудительного применения ядра.
 ms.prod: xamarin
 ms.assetid: 06A2CA8D-1E46-410F-8C31-00EA36F0735D
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 71f076bb0dc7d552a041d48a6ce531dcff444de6
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: a02d7639975de092b05f31bacedd6bde4c9392f9
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sandboxing-a-xamarinmac-app"></a>«Песочница» для приложения Xamarin.Mac
 

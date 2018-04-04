@@ -1,18 +1,17 @@
 ---
-title: "Работа с JNI"
-description: "Xamarin.Android разрешает создание приложений Android в C# вместо Java. Некоторые сборки предоставляется Xamarin.Android, предоставляющие привязок для библиотеки Java, включая Mono.Android.dll и Mono.Android.GoogleMaps.dll. Однако привязки для каждой возможности библиотеки Java не предоставляются и привязок, предоставляемых не может выполнить привязку, все типы Java и члены. Использование несвязанного Java типы и члены, могут использоваться собственного интерфейса Java (JNI). В этой статье показано, как использовать JNI для взаимодействия с Java типов и членов из Xamarin.Android приложений."
-ms.topic: article
+title: Работа с JNI
+description: Xamarin.Android разрешает создание приложений Android в C# вместо Java. Некоторые сборки предоставляется Xamarin.Android, предоставляющие привязок для библиотеки Java, включая Mono.Android.dll и Mono.Android.GoogleMaps.dll. Однако привязки для каждой возможности библиотеки Java не предоставляются и привязок, предоставляемых не может выполнить привязку, все типы Java и члены. Использование несвязанного Java типы и члены, могут использоваться собственного интерфейса Java (JNI). В этой статье показано, как использовать JNI для взаимодействия с Java типов и членов из Xamarin.Android приложений.
 ms.prod: xamarin
 ms.assetid: A417DEE9-7B7B-4E35-A79C-284739E3838E
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/09/2018
-ms.openlocfilehash: f14d456cba66142c51e0755cdfd3c6795bd1cf73
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 4b5874a0f0e4289201f68299e2e37660cabc9ecf
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="working-with-jni"></a>Работа с JNI
 

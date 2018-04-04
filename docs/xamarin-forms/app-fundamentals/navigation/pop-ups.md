@@ -1,18 +1,17 @@
 ---
-title: "Отображение всплывающих окон"
-description: "Xamarin.Forms предоставляет два pop повышение подобные элементы пользовательского интерфейса — предупреждение и листом действия. В этой статье демонстрируется использование предупреждения и действие листом API-интерфейсы простые вопросы пользователей и проводят пользователя через задачи."
-ms.topic: article
+title: Отображение всплывающих окон
+description: Xamarin.Forms предоставляет два pop повышение подобные элементы пользовательского интерфейса — предупреждение и листом действия. В этой статье демонстрируется использование предупреждения и действие листом API-интерфейсы простые вопросы пользователей и проводят пользователя через задачи.
 ms.prod: xamarin
 ms.assetid: 46AB0D5E-0025-4A8A-9D00-3E66C3D0BA2E
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 87b20dfd8882bf7da58b1bd078930fb69c46a79d
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 2e0a5ff433de034da0170e3aa9a19ab50ddc3cb6
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="displaying-pop-ups"></a>Отображение всплывающих окон
 

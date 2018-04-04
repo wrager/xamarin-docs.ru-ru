@@ -1,18 +1,17 @@
 ---
 title: Изображения
 description: Образы могут совместно использоваться платформы с помощью Xamarin.Forms, их можно загрузить специально для каждой платформы, или их можно загрузить для отображения.
-ms.topic: article
 ms.prod: xamarin
 ms.assetid: C025AB53-05CC-49BA-9815-75D6DF9E40B7
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/15/2017
-ms.openlocfilehash: b2cc302cf45527319bb22a4942290e0b0ac414d7
-ms.sourcegitcommit: 7b76c3d761b3ffb49541e2e2bcf292de6587c4e7
+ms.openlocfilehash: ddbcb74d34f09c7bb60891148bd50b36bc5094c3
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="images"></a>Изображения
 

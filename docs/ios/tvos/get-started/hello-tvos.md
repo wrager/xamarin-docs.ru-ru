@@ -1,18 +1,17 @@
 ---
-title: "Привет, tvOS краткое руководство"
-description: "В этом руководстве описывается создание первого приложения Xamarin.tvOS и его инструментов разработки. Поддерживает также конструктор Xamarin, который предоставляет элементы управления пользовательского интерфейса для кода и показывает, как построить, выполнять и тестировать приложения Xamarin.tvOS."
-ms.topic: article
+title: Привет, tvOS краткое руководство
+description: В этом руководстве описывается создание первого приложения Xamarin.tvOS и его инструментов разработки. Поддерживает также конструктор Xamarin, который предоставляет элементы управления пользовательского интерфейса для кода и показывает, как построить, выполнять и тестировать приложения Xamarin.tvOS.
 ms.prod: xamarin
 ms.assetid: 6E0AFE58-A13B-492F-861E-D5D73EB1C4A3
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 02/02/2018
-ms.openlocfilehash: 5eccb36b3c6a437ddc1ec055e779d8f78460643e
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 0adf6e326dd29db15b6bd90626f424b803dc0bc9
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="hello-tvos-quick-start-guide"></a>Привет, tvOS краткое руководство
 
@@ -52,7 +51,7 @@ Xamarin.tvOS позволяет разрабатывать полностью с
 1. Запустите Visual Studio для Mac:
 
     [![](hello-tvos-images/setup01.png "Visual Studio для Mac")](hello-tvos-images/setup01.png#lightbox)
-2. Щелкните **новое решение...**  ссылку в верхний левый угол экрана, чтобы открыть **новый проект** диалоговое окно.
+2. Щелкните **новое решение... ** ссылку в верхний левый угол экрана, чтобы открыть **новый проект** диалоговое окно.
 3. Выберите **tvOS** > **приложения** > **одного представления приложения** и нажмите кнопку **Далее** кнопки:
 
     [![](hello-tvos-images/setup02.png "Выберите приложение, одно представление")](hello-tvos-images/setup02.png#lightbox)
@@ -253,7 +252,7 @@ namespace HellotvOS
 
 Чтобы начать создание пользовательского интерфейса, давайте дважды щелкните `Main.storyboard` файла в **обозревателе решений** чтобы открыть его для редактирования в конструкторе iOS:
 
-[![](hello-tvos-images/designer01.png "В обозревателе решений файл Main.storyboard")](hello-tvos-images/designer01.png#lightbox)
+[![](hello-tvos-images/designer01.png "Файл Main.storyboard в обозревателе решений")](hello-tvos-images/designer01.png#lightbox)
 
 Это следует запустить конструктор и выглядеть следующим образом:
 
@@ -368,7 +367,7 @@ namespace HellotvOS
 
 ### <a name="how-controls-are-accessed"></a>Способ доступа к элементам управления
 
-При выборе `ViewController.designer.cs` в **обозревателе решений** будете иметь возможность просматривать как `ClickedLabel` метки и `Clicked` обработчик событий были сопоставлены с **розетки** и  **Действие** в C#:
+При выборе `ViewController.designer.cs` в **обозревателе решений** будете иметь возможность просматривать как `ClickedLabel` метки и `Clicked` обработчик событий были сопоставлены с **розетки** и ** Действие** в C#:
 
 [![](hello-tvos-images/accesscontrol.png "Выходы и действия")](hello-tvos-images/accesscontrol.png#lightbox)
 

@@ -1,28 +1,27 @@
 ---
-title: "Возможности платформы"
-description: "Функции кросс платформенные приложения и основные понятия."
-ms.topic: article
+title: Функции платформы
+description: Функции кросс платформенные приложения и основные понятия.
 ms.prod: xamarin
 ms.assetid: CEE8C464-67D7-45F4-9614-EAEF5217CACC
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 02/18/2018
-ms.openlocfilehash: 26b33b1fbf546f734e6661380f63b574cccbcae5
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a1699c8bde336c040253a5560a2979de8b3fabf5
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="platform-features"></a>Возможности платформы
+# <a name="platform-features"></a>Функции платформы
 
 Этот раздел содержит документы, в которых объясняются некоторые более сложные функции кросс платформенные приложения и основные понятия.
 
-##  <a name="async-support-overviewcross-platformplatformasyncmd"></a>[Общие сведения о поддержке Async](~/cross-platform/platform/async.md)
+##  <a name="async-support-overviewcross-platformplatformasyncmd"></a>[Общие сведения о поддержке асинхронного выполнения](~/cross-platform/platform/async.md)
 
 Версия 5 C# появились два новых ключевых слов для выражения асинхронных операций: async и await. Эти ключевые слова можно написать простой код, который использует библиотеку параллельных задач для выполнения длительных операций (например, доступ к сети) в другом потоке и легко получить доступ к результатам по завершении. Последние версии Xamarin.iOS и Xamarin.Android поддерживают async и await — в этом документе приводятся разъяснения и пример использования нового синтаксиса с помощью Xamarin.
 
-## <a name="c-6-language-featurescross-platformplatformcsharp-sixmd"></a>[Возможности C# 6](~/cross-platform/platform/csharp-six.md)
+## <a name="c-6-language-featurescross-platformplatformcsharp-sixmd"></a>[6 возможностей языка C#](~/cross-platform/platform/csharp-six.md)
 
 Последнюю версию языка C# — версия 6 – постоянно развивается языка меньше стандартных действий, улучшен и согласованность. Сжимаемая синтаксис инициализации, возможность использования `await` в `catch/finally` блоки и условием null `?` оператор особенно полезны.
 

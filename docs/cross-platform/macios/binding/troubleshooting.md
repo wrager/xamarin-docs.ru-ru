@@ -1,18 +1,17 @@
 ---
-title: "Привязки, устранение неполадок"
-description: "В этом руководстве рассказывается, что делать, если у вас возникли трудности, привязка цель библиотеки."
-ms.topic: article
+title: Привязки, устранение неполадок
+description: В этом руководстве рассказывается, что делать, если у вас возникли трудности, привязка цель библиотеки.
 ms.prod: xamarin
 ms.assetid: 7C65A55C-71FA-46C5-A1B4-955B82559844
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 10/19/2016
-ms.openlocfilehash: 2db7fe30f05224f6b74b4d2189606da59946bda0
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7ea3e3802ec2e0baf0fe8355a41e806bacabc9ac
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="binding-troubleshooting"></a>Привязки, устранение неполадок
 
@@ -45,15 +44,15 @@ ms.lasthandoff: 02/27/2018
 
 Ваши отзывы очень важны для нас. Если проблемы с Xamarin.Mac обнаружены:
 
-- Проверьте [Xamarin.Mac форумы](https://forums.xamarin.com/categories/mac)
-- Поиск [проблема репозитория](https://github.com/xamarin/xamarin-macios/issues) 
-- Перед переходом к проблемам GitHub Xamarin проблемы были отслежены на [Bugzilla](https://bugzilla.xamarin.com/describecomponents.cgi). Выполните поиск существует соответствующих проблем.
-- Если не удается найти соответствующий проблемы, отправьте новый выпуск в [репозитории GitHub проблема](https://github.com/xamarin/xamarin-macios/issues/new).
+- Проверьте [форумы Xamarin.Mac](https://forums.xamarin.com/categories/mac).
+- Проверьте [репозиторий проблем](https://github.com/xamarin/xamarin-macios/issues). 
+- До перехода на GitHub проблемы Xamarin отслеживались в [Bugzilla](https://bugzilla.xamarin.com/describecomponents.cgi). Попробуйте найти там похожие проблемы.
+- Если вы не можете найти проблему, с которой столкнулись, поместите ее описание в [репозиторий проблем GitHub](https://github.com/xamarin/xamarin-macios/issues/new).
 
-Вопросы GitHub, все открытые. Скрыть комментарии или вложения невозможна. 
+Все проблемы GitHub находятся в открытом доступе. Здесь нет возможности скрыть комментарии или вложения. 
 
-Укажите объем следующие возможности:
+Предоставьте следующие сведения с максимально возможными подробностями.
 
-- Простой пример воспроизведения проблемы. Это **бесценным** там, где это возможно. 
-- Трассировка стека полного сбоя.
-- Код C# вокруг сбоя. 
+- Простой пример, воспроизводящий проблему, если это возможно. Такая помощь будет **бесценной**. 
+- Полная трассировка стека после сбоя.
+- Код C#, относящийся к проявлению сбоя. 

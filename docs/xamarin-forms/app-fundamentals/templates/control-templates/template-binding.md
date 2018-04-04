@@ -1,18 +1,17 @@
 ---
-title: "Привязки на основе шаблона элемента управления"
-description: "Привязки шаблонов позволяют привязать элементы управления в шаблоне элемента управления к данным открытым свойствам Включение значения свойств для элементов управления в шаблоне элемента управления должен быть легко изменен. В этой статье показано, с помощью привязки шаблонов, чтобы выполнить привязку данных с помощью шаблона элемента управления."
-ms.topic: article
+title: Привязки на основе шаблона элемента управления
+description: Привязки шаблонов позволяют привязать элементы управления в шаблоне элемента управления к данным открытым свойствам Включение значения свойств для элементов управления в шаблоне элемента управления должен быть легко изменен. В этой статье показано, с помощью привязки шаблонов, чтобы выполнить привязку данных с помощью шаблона элемента управления.
 ms.prod: xamarin
 ms.assetid: 794A663C-3A8D-438A-BD02-8E97C919B55F
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: 5b330c448a135cbcf8fc2745debc48924e29c103
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3b306c79aea9bd2192aa73eddcf95790a9b24353
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="binding-from-a-controltemplate"></a>Привязки на основе шаблона элемента управления
 
@@ -68,7 +67,7 @@ public string FooterText {
 
 ![](template-binding-images/teal-theme.png "С помощью привязки шаблонов бирюзовой шаблон элемента управления")
 
-## <a name="creating-a-templatebinding-in-c35"></a>Создание TemplateBinding нов &#35;
+## <a name="creating-a-templatebinding-in-c35"></a>Создание TemplateBinding в C&#35;
 
 В C# [ `TemplateBinding` ](https://developer.xamarin.com/api/type/Xamarin.Forms.TemplateBinding/) создается с помощью `TemplateBinding` конструктора, как показано в следующем примере кода:
 

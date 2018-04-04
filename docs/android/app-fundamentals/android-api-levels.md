@@ -1,18 +1,17 @@
 ---
-title: "Основные сведения об уровнях Android API"
-description: "Xamarin.Android имеет несколько параметров уровня Android API, которые определяют совместимости приложения с несколькими версиями Android. В этом руководстве объясняется, что означают эти параметры, способ их настройки и том, как они имеют в приложении во время выполнения."
-ms.topic: article
+title: Основные сведения об уровнях Android API
+description: Xamarin.Android имеет несколько параметров уровня Android API, которые определяют совместимости приложения с несколькими версиями Android. В этом руководстве объясняется, что означают эти параметры, способ их настройки и том, как они имеют в приложении во время выполнения.
 ms.prod: xamarin
 ms.assetid: 58CB7B34-3140-4BEB-BE2E-209928C1878C
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 907af0948e9d081f05cc201c49f94629a513c935
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 8f284fefd260764c6f09d78d2518bfd115782cd2
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="understanding-android-api-levels"></a>Основные сведения об уровнях Android API
 

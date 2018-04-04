@@ -1,18 +1,17 @@
 ---
-title: "Архитектура процессора"
-description: "Xamarin.Android поддерживает несколько архитектуры ЦП, включая устройства с 32-разрядных и 64-разрядной. В этой статье объясняется, как для нацеливания на приложение в один или несколько архитектуры ЦП поддерживается Android."
-ms.topic: article
+title: Архитектура процессора
+description: Xamarin.Android поддерживает несколько архитектуры ЦП, включая устройства с 32-разрядных и 64-разрядной. В этой статье объясняется, как для нацеливания на приложение в один или несколько архитектуры ЦП поддерживается Android.
 ms.prod: xamarin
 ms.assetid: D4BC889D-9164-49BB-9B7B-F6C4E4E109F1
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 3df6dc72eaed74ad335596d55db8b1295b16f3c2
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: dea5aaa16891893f649d5ec56f3e6b1ee9a18683
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="cpu-architectures"></a>Архитектура процессора
 

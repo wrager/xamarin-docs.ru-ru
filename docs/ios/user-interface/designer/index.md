@@ -1,18 +1,17 @@
 ---
-title: "Конструктор iOS"
-description: "Конструктор Xamarin для операций ввода-вывода — это визуальный конструктор для iOS раскадровки и интерфейс построителя форматы, полностью интегрирован с Visual Studio для Mac и Visual Studio. IOS конструктор поддерживает полной совместимости с форматами and.xib раскадровки, поэтому файлы можно редактировать в Visual Studio для Mac или Visual Studio, в дополнение к Xcode интерфейс построителя. Кроме того конструктор Xamarin iOS поддерживает дополнительные функции, такие как пользовательские элементы управления, которые отображаются во время разработки в редакторе."
-ms.topic: article
+title: Конструктор iOS
+description: Конструктор Xamarin для операций ввода-вывода — это визуальный конструктор для iOS раскадровки и интерфейс построителя форматы, полностью интегрирован с Visual Studio для Mac и Visual Studio. IOS конструктор поддерживает полной совместимости с форматами and.xib раскадровки, поэтому файлы можно редактировать в Visual Studio для Mac или Visual Studio, в дополнение к Xcode интерфейс построителя. Кроме того конструктор Xamarin iOS поддерживает дополнительные функции, такие как пользовательские элементы управления, которые отображаются во время разработки в редакторе.
 ms.prod: xamarin
 ms.assetid: E35EFB69-EBBA-40E3-ADBE-CB8016F17127
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 884811e4035aabd831f851015db098a0243a2388
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 98d11b54ace70d4c4a82b2caebbe97cff02e0544
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="ios-designer"></a>Конструктор iOS
 

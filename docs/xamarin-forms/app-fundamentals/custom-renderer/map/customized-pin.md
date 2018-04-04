@@ -1,18 +1,17 @@
 ---
-title: "Настройка ПИН-код карты"
-description: "В этой статье показано, как создать пользовательское средство отрисовки для элемента управления карты, который отображает собственного карты с настроенные ПИН-код и настраиваемое представление данных ПИН-код для каждой платформы."
-ms.topic: article
+title: Настройка ПИН-код карты
+description: В этой статье показано, как создать пользовательское средство отрисовки для элемента управления карты, который отображает собственного карты с настроенные ПИН-код и настраиваемое представление данных ПИН-код для каждой платформы.
 ms.prod: xamarin
 ms.assetid: C5481D86-80E9-4E3D-9FB6-57B0F93711A6
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 312bda44a6b390c6ba486d5a3d60dfe4fb770a2e
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: 353575bad91c9bade0207a0aa271d9de7ec50240
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="customizing-a-map-pin"></a>Настройка ПИН-код карты
 
@@ -33,7 +32,7 @@ _В этой статье показано, как создать пользов
 Каждый элемент теперь обсуждаются в свою очередь, чтобы реализовать `CustomMap` модуля подготовки отчетов, отображающий собственного карту с настроенные ПИН-код и настраиваемое представление данных ПИН-код для каждой платформы.
 
 > [!NOTE]
-> [`Xamarin.Forms.Maps`](https://developer.xamarin.com/api/namespace/Xamarin.Forms.Maps/) необходимо инициализировать и настроить перед использованием. Дополнительные сведения см. в разделе [ `Maps Control` ](~/xamarin-forms/user-interface/map.md).
+> [`Xamarin.Forms.Maps`](https://developer.xamarin.com/api/namespace/Xamarin.Forms.Maps/) необходимо инициализировать и настроить перед использованием. Дополнительные сведения см. на веб-сайте [`Maps Control`](~/xamarin-forms/user-interface/map.md).
 
 <a name="Creating_the_Custom_Map" />
 

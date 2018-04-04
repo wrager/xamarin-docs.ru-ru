@@ -1,18 +1,17 @@
 ---
-title: "Реализация SiriKit"
-description: "В этой статье рассматриваются действия, необходимые для реализации поддержки SiriKit в приложениях Xamarin.iOS."
-ms.topic: article
+title: Реализация SiriKit
+description: В этой статье рассматриваются действия, необходимые для реализации поддержки SiriKit в приложениях Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 20FFB981-EB10-48BA-BF79-40F37F0291EB
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 76787ecda1c2cd043b81482dcdbe3751d012ef74
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: 5fdc05de19799ce7b553428c23f860186909bcbb
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="implementing-sirikit"></a>Реализация SiriKit
 
@@ -73,7 +72,7 @@ SiriKit построена на расширения, тем не менее, п
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. Запустите Visual Studio для Mac и откройте приложение MonkeyChat.
-2. Щелкните правой кнопкой мыши имя решения в **Pad решения** и выберите **добавить** > **новый проект...** : 
+2. Щелкните правой кнопкой мыши имя решения в **Pad решения** и выберите **добавить** > **новый проект... **: 
 
     [![](implementing-sirikit-images/prep01.png "Добавление нового проекта")](implementing-sirikit-images/prep01.png#lightbox)
 3. Выберите **iOS** > **библиотеки** > **библиотеки классов** и нажмите кнопку **Далее** кнопки: 
@@ -82,7 +81,7 @@ SiriKit построена на расширения, тем не менее, п
 4. Введите `MonkeyChatCommon` для **имя** и нажмите кнопку **создать** кнопки: 
 
     [![](implementing-sirikit-images/prep03.png "Введите MonkeyChatCommon имени")](implementing-sirikit-images/prep03.png#lightbox)
-5. Щелкните правой кнопкой мыши **ссылки** папку основного приложения в **обозревателе решений** и выберите **изменить ссылки...** . Проверьте **MonkeyChatCommon** проекта и нажмите кнопку **ОК** кнопки: 
+5. Щелкните правой кнопкой мыши **ссылки** папку основного приложения в **обозревателе решений** и выберите **изменить ссылки... **. Проверьте **MonkeyChatCommon** проекта и нажмите кнопку **ОК** кнопки: 
 
     [![](implementing-sirikit-images/prep05.png "Проверка проекта MonkeyChatCommon")](implementing-sirikit-images/prep05.png#lightbox)
 6. В **обозревателе решений**, перетащите общий код из основного приложения в собственной библиотеки.
@@ -93,12 +92,12 @@ SiriKit построена на расширения, тем не менее, п
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 1. Запустите Visual Studio и откройте приложение MonkeyChat.
-2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **добавить** > **новый проект...** .
+2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **добавить** > **новый проект... **.
 3. Выберите **Visual C#** > **общий проект** и нажмите кнопку **Далее** кнопки: 
 
     [![](implementing-sirikit-images/prep02w.png "Выбор библиотеки классов")](implementing-sirikit-images/prep02w.png#lightbox)
 4. Введите `MonkeyChatCommon` для **имя** и нажмите кнопку **создать** кнопки.
-5. Щелкните правой кнопкой мыши **ссылки** папку основного приложения в **обозревателе решений** и выберите **изменить ссылки...** . Проверьте **MonkeyChatCommon** проекта и нажмите кнопку **ОК** кнопки: 
+5. Щелкните правой кнопкой мыши **ссылки** папку основного приложения в **обозревателе решений** и выберите **изменить ссылки... **. Проверьте **MonkeyChatCommon** проекта и нажмите кнопку **ОК** кнопки: 
 
     [![](implementing-sirikit-images/prep05w.png "Проверка проекта MonkeyChatCommon")](implementing-sirikit-images/prep05w.png#lightbox)
 6. В **обозревателе решений**, перетащите общий код из основного приложения в общий проект.
@@ -213,14 +212,14 @@ namespace MonkeyChat
 
 1. В веб-браузер, перейдите к [ http://developer.apple.com ](http://developer.apple.com) и журналов в учетную запись.
 2. Щелкните **сертификаты**, **идентификаторы** и **профилей**.
-3. Выберите **профили подготовки** и выберите **идентификаторы приложений**, нажмите кнопку  **+**  кнопки.
+3. Выберите **профили подготовки** и выберите **идентификаторы приложений**, нажмите кнопку ** + ** кнопки.
 4. Введите **имя** нового профиля.
 5. Введите **идентификатор пакета** следующие Apple именования элемента рекомендации.
 6. Прокрутите вниз до **службы приложений** выберите **SiriKit** и нажмите кнопку **Продолжить** кнопки: 
 
     [![](implementing-sirikit-images/setup03.png "Выберите SiriKit")](implementing-sirikit-images/setup03.png#lightbox)
 7. Проверьте все параметры, затем **отправить** идентификатор приложения.
-8. Выберите **профили подготовки** > **разработки**, нажмите кнопку  **+**  кнопку, выберите **Apple ID**, Нажмите кнопку **Продолжить**.
+8. Выберите **профили подготовки** > **разработки**, нажмите кнопку ** + ** кнопку, выберите **Apple ID**, Нажмите кнопку **Продолжить**.
 9. Выберите **все**, нажмите кнопку **Продолжить**.
 10. Нажмите кнопку **выделить все** еще раз, нажмите кнопку **Продолжить**.
 11. Введите **имя профиля** с помощью Apple именования элемента предложения, нажмите кнопку **Продолжить**.
@@ -458,20 +457,20 @@ namespace MonkeyChat
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **добавить** > **новый файл...**   >  **iOS**:
+1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **добавить** > **новый файл... **  >  **iOS**:
 
     [![](implementing-sirikit-images/plist01.png "Добавьте список свойств")](implementing-sirikit-images/plist01.png#lightbox) 
 2. Дважды щелкните `AppIntentVocabulary.plist` файла в **обозревателе решений** чтобы открыть его для редактирования.
-3. Нажмите кнопку  **+**  для добавления раздела, установите **имя** для `ParameterVocabularies` и **тип** для `Array`:
+3. Нажмите кнопку ** + ** для добавления раздела, установите **имя** для `ParameterVocabularies` и **тип** для `Array`:
 
     [![](implementing-sirikit-images/plist02.png "Задайте имя ParameterVocabularies и тип массива")](implementing-sirikit-images/plist02.png#lightbox)
-4. Разверните `ParameterVocabularies` и нажмите кнопку  **+**  кнопку и задайте **тип** для `Dictionary`:
+4. Разверните `ParameterVocabularies` и нажмите кнопку ** + ** кнопку и задайте **тип** для `Dictionary`:
 
     [![](implementing-sirikit-images/plist03.png "Задайте тип словаря")](implementing-sirikit-images/plist03.png#lightbox)
-5. Нажмите кнопку  **+**  Чтобы добавить новый раздел, задайте **имя** для `ParameterNames` и **тип** для `Array`:
+5. Нажмите кнопку ** + ** Чтобы добавить новый раздел, задайте **имя** для `ParameterNames` и **тип** для `Array`:
 
     [![](implementing-sirikit-images/plist04.png "Задайте имя ParameterNames и тип массива")](implementing-sirikit-images/plist04.png#lightbox)
-6. Нажмите кнопку  **+**  Чтобы добавить новый раздел со **тип** из `String` и значение как один из доступных имен параметров. Например `INStartWorkoutIntent.workoutName`:
+6. Нажмите кнопку ** + ** Чтобы добавить новый раздел со **тип** из `String` и значение как один из доступных имен параметров. Например `INStartWorkoutIntent.workoutName`:
 
     [![](implementing-sirikit-images/plist05.png "Ключ INStartWorkoutIntent.workoutName")](implementing-sirikit-images/plist05.png#lightbox)
 7. Добавить `ParameterVocabulary` ключа для `ParameterVocabularies` ключа с **тип** из `Array`:
@@ -522,20 +521,20 @@ namespace MonkeyChat
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **добавить** > **новый файл...**   >  **iOS**:
+1. Щелкните правой кнопкой мыши имя проекта в **обозревателе решений** и выберите **добавить** > **новый файл... **  >  **iOS**:
 
     [![](implementing-sirikit-images/plist01w.png "Добавить новый Info.plist")](implementing-sirikit-images/plist01w.png#lightbox) 
 2. Дважды щелкните `AppIntentVocabulary.plist` файла в **обозревателе решений** чтобы открыть его для редактирования.
-3. Нажмите кнопку  **+**  для добавления раздела, установите **имя** для `ParameterVocabularies` и **тип** для `Array`:
+3. Нажмите кнопку ** + ** для добавления раздела, установите **имя** для `ParameterVocabularies` и **тип** для `Array`:
 
     [![](implementing-sirikit-images/plist02w.png "Задайте имя ParameterVocabularies и тип массива")](implementing-sirikit-images/plist02w.png#lightbox)
-4. Разверните `ParameterVocabularies` и нажмите кнопку  **+**  кнопку и задайте **тип** для `Dictionary`:
+4. Разверните `ParameterVocabularies` и нажмите кнопку ** + ** кнопку и задайте **тип** для `Dictionary`:
 
     [![](implementing-sirikit-images/plist03w.png "Задайте тип словаря")](implementing-sirikit-images/plist03w.png#lightbox)
-5. Нажмите кнопку  **+**  Чтобы добавить новый раздел, задайте **имя** для `ParameterNames` и **тип** для `Array`:
+5. Нажмите кнопку ** + ** Чтобы добавить новый раздел, задайте **имя** для `ParameterNames` и **тип** для `Array`:
 
     [![](implementing-sirikit-images/plist04w.png "Задайте имя ParameterNames и тип массива")](implementing-sirikit-images/plist04w.png#lightbox)
-6. Нажмите кнопку  **+**  Чтобы добавить новый раздел со **тип** из `String` и значение как один из доступных имен параметров. Например `INStartWorkoutIntent.workoutName`:
+6. Нажмите кнопку ** + ** Чтобы добавить новый раздел со **тип** из `String` и значение как один из доступных имен параметров. Например `INStartWorkoutIntent.workoutName`:
 
     [![](implementing-sirikit-images/plist05w.png "Ключ INStartWorkoutIntent.workoutName")](implementing-sirikit-images/plist05w.png#lightbox)
 7. Добавить `ParameterVocabulary` ключа для `ParameterVocabularies` ключа с **тип** из `Array`:
@@ -609,7 +608,7 @@ namespace MonkeyChat
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-1. Щелкните правой кнопкой мыши **имя решения** в **Pad решения** и выберите **добавить** > **добавить новый проект...** .
+1. Щелкните правой кнопкой мыши **имя решения** в **Pad решения** и выберите **добавить** > **добавить новый проект... **.
 2. В диалоговом окне выберите **iOS** > **расширения** > **цель расширения** и нажмите кнопку **Далее** кнопки: 
 
     [![](implementing-sirikit-images/intents05.png "Выберите расширение намерений")](implementing-sirikit-images/intents05.png#lightbox)
@@ -625,7 +624,7 @@ namespace MonkeyChat
     
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-1. Щелкните правой кнопкой мыши **имя решения** в **обозревателе решений** и выберите **добавить** > **добавить новый проект...** .
+1. Щелкните правой кнопкой мыши **имя решения** в **обозревателе решений** и выберите **добавить** > **добавить новый проект... **.
 2. В диалоговом окне выберите **iOS** > **расширения** > **цель расширения** и нажмите кнопку **Далее** кнопки: 
 
     [![](implementing-sirikit-images/intents05w.png "Выберите расширение намерений")](implementing-sirikit-images/intents05w.png#lightbox)
@@ -873,7 +872,7 @@ public void HandleSetMessageAttribute (INSetMessageAttributeIntent intent, Actio
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-1. Щелкните правой кнопкой мыши **имя решения** в **Pad решения** и выберите **добавить** > **добавить новый проект...** .
+1. Щелкните правой кнопкой мыши **имя решения** в **Pad решения** и выберите **добавить** > **добавить новый проект... **.
 2. В диалоговом окне выберите **iOS** > **расширения** > **расширения пользовательского интерфейса намерение** и нажмите кнопку **Далее** кнопки: 
 
     [![](implementing-sirikit-images/intents11.png "Выберите расширение намерения пользовательского интерфейса")](implementing-sirikit-images/intents11.png#lightbox)

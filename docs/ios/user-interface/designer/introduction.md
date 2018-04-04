@@ -1,18 +1,17 @@
 ---
-title: "Основные сведения о конструкторе iOS"
-description: "В этом руководстве описаны в конструкторе Xamarin iOS. Он демонстрирует, как использовать конструктор iOS для размещения элементов управления визуально, как получить доступ к этих элементов управления в коде и изменение свойств."
-ms.topic: article
+title: Основные сведения о конструкторе iOS
+description: В этом руководстве описаны в конструкторе Xamarin iOS. Он демонстрирует, как использовать конструктор iOS для размещения элементов управления визуально, как получить доступ к этих элементов управления в коде и изменение свойств.
 ms.prod: xamarin
 ms.assetid: E7045E41-0DEF-416B-BCDB-52502350F61C
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/31/2018
-ms.openlocfilehash: a2445e49005175f62e4d7cd8aadccb5f596177bf
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 7e36a402619813214e821f3060e053d76c99cfb7
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="ios-designer-basics"></a>Основные сведения о конструкторе iOS
 

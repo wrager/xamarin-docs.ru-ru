@@ -1,18 +1,17 @@
 ---
-title: "Привязка. AAR"
-description: "Это пошаговое руководство содержит пошаговые инструкции для создания библиотеки привязок Java Xamarin.Android из Android. AAR-файл."
-ms.topic: article
+title: Привязка. AAR
+description: Это пошаговое руководство содержит пошаговые инструкции для создания библиотеки привязок Java Xamarin.Android из Android. AAR-файл.
 ms.prod: xamarin
 ms.assetid: 380413B8-6A99-4BB8-B64C-3EAF9F359C22
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: ae209f8099925cc160e16cb5365625e48e6c384d
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 101fb28add97749549de9c44292a1ef99a717dde
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="binding-an-aar"></a>Привязка. AAR
 
@@ -284,7 +283,7 @@ var a = new ArrayAdapter<string>(this, Resource.Layout.row_layout, ...);
 
 **Textanalyzer.aar** пример содержит файл образа, который находится в **res/drawable/monkey.png**. Давайте доступа к этому ресурсу изображения и использовать его в нашем примере приложении:
 
-Изменить **BindingTest** макета (**Main.axml**) и добавьте `ImageView` в конец `LinearLayout` контейнера. Это `ImageView` отображает изображение в  **@drawable/monkey** ; этот образ будет загружен из раздела ресурсов **textanalyzer.aar**:
+Изменить **BindingTest** макета (**Main.axml**) и добавьте `ImageView` в конец `LinearLayout` контейнера. Это `ImageView` отображает изображение в **@drawable/monkey**; этот образ будет загружен из раздела ресурсов **textanalyzer.aar**:
 
 ```xml
     ...

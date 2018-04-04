@@ -1,18 +1,17 @@
 ---
-title: "Безопасности транспортного уровня (TLS)"
-description: "Включение TLS 1.2 для проектов Xamarin на Android, iOS и Mac"
-ms.topic: article
+title: Безопасности транспортного уровня (TLS)
+description: Включение TLS 1.2 для проектов Xamarin на Android, iOS и Mac
 ms.prod: xamarin
 ms.assetid: 399F71C6-16A4-4ABC-B30D-AF17D066A5FA
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 10/10/2017
-ms.openlocfilehash: b0f205c5ab2c65f0e2a99f912f3961f12a4f2b7a
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 8b2d0288248f2468e6976ad4f7c46255690116c0
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="transport-layer-security-tls"></a>Безопасности транспортного уровня (TLS)
 

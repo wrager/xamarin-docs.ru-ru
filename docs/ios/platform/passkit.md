@@ -1,18 +1,17 @@
 ---
 title: PassKit
-description: "Бумажника представляет собой систему iOS приложение хранит и отображает штрих-код и другие сведения для связи клиента транзакции на свой телефон с реальной жизни."
-ms.topic: article
+description: Бумажника представляет собой систему iOS приложение хранит и отображает штрих-код и другие сведения для связи клиента транзакции на свой телефон с реальной жизни.
 ms.prod: xamarin
 ms.assetid: 74B9973B-C1E8-B727-3F6D-59C1F98BAB3A
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 279b5bc1188c973fddc033f9b592e9acec703a59
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: f1c8ac92c5ff7eed5116587ed13755ddee74a877
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="passkit"></a>PassKit
 
@@ -238,7 +237,7 @@ JSON является форматом, поскольку передает об
 
 Первым шагом является настройка передать идентификатор типа для каждая новая _тип_ этапа для поддержки. Передайте идентификатор (или идентификатор типа передачи) создает уникальный идентификатор этапа. Мы будем использовать этот идентификатор для связи с учетной записью разработчика, с помощью сертификата на передачи.
 
-1. В [сертификаты, идентификаторы и профили раздел портал Провизионирования iOS](https://developer.apple.com/account/overview.action), перейдите к **идентификаторы** и выберите **передать идентификаторы типов** . Выберите  **+**  кнопку, чтобы создать новый тип этапа: [ ![ ] (passkit-images/passid.png "Создание типа pass")](passkit-images/passid.png#lightbox)
+1. В [сертификаты, идентификаторы и профили раздел портал Провизионирования iOS](https://developer.apple.com/account/overview.action), перейдите к **идентификаторы** и выберите **передать идентификаторы типов** . Выберите **+** кнопку, чтобы создать новый тип этапа: [ ![ ] (passkit-images/passid.png "Создание типа pass")](passkit-images/passid.png#lightbox)
 
 2.   Укажите **описание** (имя) и **идентификатор** (уникальная строка) для прохода. Обратите внимание, что все идентификаторы типов для передачи должна начинаться со строки `pass.` в этом примере мы используем `pass.com.xamarin.coupon.banana` : [ ![ ] (passkit-images/register.png "указать описание и идентификатор")](passkit-images/register.png#lightbox)
 

@@ -1,18 +1,17 @@
 ---
 title: Игры подробностями времени разработки
 description: Здесь вы найдете сведения о реализации в игре времени разработки, включая работе с картами плитки, создание сущностей, анимация спрайтов и реализации эффективного конфликтов.
-ms.topic: article
 ms.prod: xamarin
 ms.assetid: 5D285684-0417-4E16-BD14-2D1F6DEFBB8B
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/24/2017
-ms.openlocfilehash: 8c33b74af80a14df1626ab39ba8c055a81259194
-ms.sourcegitcommit: 4f1b508caa8e7b6ccf85d167ea700a5d28b0347e
+ms.openlocfilehash: 07a43dbf5f3095d1735d57fdbb13499532bfe415
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="coin-time-game-details"></a>Игры подробностями времени разработки
 

@@ -1,18 +1,17 @@
 ---
-title: "Подробные сведения о платформе SkiaSharp"
-description: "Сведения об использовании SkiaSharp в используемой платформы. Brief: предоставляют подробные сведения о том, как перенести содержимое вашего SkSurface в собственное приложение."
-ms.topic: article
+title: Подробные сведения о платформе SkiaSharp
+description: 'Сведения об использовании SkiaSharp в используемой платформы. Brief: предоставляют подробные сведения о том, как перенести содержимое вашего SkSurface в собственное приложение.'
 ms.prod: xamarin
 ms.assetid: 1D90E0B3-A3A8-4286-BC54-9D67188A1C6C
 ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/24/2017
-ms.openlocfilehash: a7a1d6618e359422cf6fb22f49648ac69b95072f
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 3f3eedc58284ffd10fb0352dd24e1605913f58c1
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="platform-specific-integration"></a>Интеграция определенные платформы
 

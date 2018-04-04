@@ -1,18 +1,17 @@
 ---
-title: "Часть 4. Основные сведения о привязке данных"
-description: "Привязки данных позволяют свойства двух объектов должна быть установлена связь, чтобы изменение одного приводит к изменению в другой. Это очень ценным инструментом, и во время привязки данных можно определить полностью в коде, XAML предоставляет ярлыки и удобства. Следовательно одним из наиболее важных расширений разметки в Xamarin.Forms привязки."
-ms.topic: article
+title: Часть 4. Основные сведения о привязке данных
+description: Привязки данных позволяют свойства двух объектов должна быть установлена связь, чтобы изменение одного приводит к изменению в другой. Это очень ценным инструментом, и во время привязки данных можно определить полностью в коде, XAML предоставляет ярлыки и удобства. Следовательно одним из наиболее важных расширений разметки в Xamarin.Forms привязки.
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: 342288C3-BB4C-4924-B178-72E112D777BA
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: dbbbe051aab065a5b71905459f577fcacefd8bc5
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 2aa6fd2f54c09921621a12af9401a6f84ae37ffa
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="part-4-data-binding-basics"></a>Часть 4. Основные сведения о привязке данных
 

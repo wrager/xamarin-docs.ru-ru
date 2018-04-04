@@ -1,18 +1,17 @@
 ---
-title: "Связанные службы в Xamarin.Android"
-description: "Связанные службы являются Android служб, которые обеспечивают интерфейс клиент сервер, который может взаимодействовать клиент (например, Android действия). В этом руководстве обсуждаются основные компоненты, связанной с созданием привязанной службы и способ его использования в приложении Xamarin.Android."
-ms.topic: article
+title: Связанные службы в Xamarin.Android
+description: Связанные службы являются Android служб, которые обеспечивают интерфейс клиент сервер, который может взаимодействовать клиент (например, Android действия). В этом руководстве обсуждаются основные компоненты, связанной с созданием привязанной службы и способ его использования в приложении Xamarin.Android.
 ms.prod: xamarin
 ms.assetid: 809ECE88-EF08-4E9A-B389-A2DC08C51A6E
 ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
 ms.date: 02/16/2018
-ms.openlocfilehash: 04307eab1bc8dc28fa69315809e254c920fb6d56
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: 18cfe6acae08efac85223c9c121a12f102f846cc
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="bound-services-in-xamarinandroid"></a>Связанные службы в Xamarin.Android
 
@@ -34,7 +33,7 @@ _Связанные службы являются Android служб, котор
 
 ![Схема, показывающая, как компоненты службы связаны друг с другом](bound-services-images/bound-services-02.png "схема, показывающая, как компоненты службы связаны друг с другом.")
 
-В этом руководстве описывается, как расширить `Service` класса для реализации привязанной службы. Также рассматривается реализация `IServiceConnection` и расширение `Binder` позволяет клиенту взаимодействовать со службой. Пример приложения сопровождающий это руководство, которой содержат решения с именем одного проекта Xamarin.Android  **[BoundServiceDemo](https://github.com/xamarin/monodroid-samples/tree/master/ApplicationFundamentals/ServiceSamples/BoundServiceDemo)**  . Это очень простое приложение, который демонстрирует реализацию службы и привязать действие к нему. Связанные службы имеет очень простой API с только один метод `GetFormattedTimestamp`, который возвращает строку, которая информирует пользователя, если служба запущена и срок ее выполнения. Приложение также позволяет пользователю вручную отменить привязку и привязки к службе.
+В этом руководстве описывается, как расширить `Service` класса для реализации привязанной службы. Также рассматривается реализация `IServiceConnection` и расширение `Binder` позволяет клиенту взаимодействовать со службой. Пример приложения сопровождающий это руководство, которой содержат решения с именем одного проекта Xamarin.Android **[BoundServiceDemo](https://github.com/xamarin/monodroid-samples/tree/master/ApplicationFundamentals/ServiceSamples/BoundServiceDemo)** . Это очень простое приложение, который демонстрирует реализацию службы и привязать действие к нему. Связанные службы имеет очень простой API с только один метод `GetFormattedTimestamp`, который возвращает строку, которая информирует пользователя, если служба запущена и срок ее выполнения. Приложение также позволяет пользователю вручную отменить привязку и привязки к службе.
 
 [![Снимок экрана приложения, запущенного на телефоне с Android](bound-services-images/bound-services-03-sml.png)](bound-services-images/bound-services-03.png#lightbox)
 

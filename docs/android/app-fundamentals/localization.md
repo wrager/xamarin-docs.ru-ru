@@ -1,24 +1,23 @@
 ---
-title: "Android локализации"
-description: "В этом документе рассматриваются возможности локализации пакета SDK для Android и способах доступа к ним с помощью Xamarin."
-ms.topic: article
+title: Android локализации
+description: В этом документе рассматриваются возможности локализации пакета SDK для Android и способах доступа к ним с помощью Xamarin.
 ms.prod: xamarin
 ms.assetid: D1277939-A1E8-468E-B136-820D816AF853
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: c4800c1fe844a03c20b28079640a5ddab8046b1f
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 6924cc9989c8ab1ca66472b628cdab677e546a3e
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="android-localization"></a>Android локализации
 
 _В этом документе рассматриваются возможности локализации пакета SDK для Android и способах доступа к ним с помощью Xamarin._
 
-## <a name="android-platform-features"></a>Компоненты платформы Android
+## <a name="android-platform-features"></a>Возможности на платформе Android
 
 Этот раздел описывает функции основной локализации Android. Перейдите к [разделу](#basics) определенный код и примеры.
 

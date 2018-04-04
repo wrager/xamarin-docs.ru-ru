@@ -1,18 +1,17 @@
 ---
-title: "Параметры совместного использования кода"
-description: "В этом документе сравнивается совместное использование кода между кросс платформенные проекты различных методов: общие проекты, переносимые библиотеки классов и .NET Standard, включая преимущества и недостатки каждого из них."
-ms.topic: article
+title: Параметры совместного использования кода
+description: 'В этом документе сравнивается совместное использование кода между кросс платформенные проекты различных методов: общие проекты, переносимые библиотеки классов и .NET Standard, включая преимущества и недостатки каждого из них.'
 ms.prod: xamarin
 ms.assetid: B73675D2-09A3-14C1-E41E-20352B819B53
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: e7289d92043bdbe9e4ec55776835530f8ccec526
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 7531a8a21b6895de6113f5edd85d09a5e150877e
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sharing-code-options"></a>Параметры совместного использования кода
 

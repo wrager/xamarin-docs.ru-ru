@@ -1,18 +1,17 @@
 ---
-title: "Публикации в магазине приложений Apple TV"
-description: "В этой статье показано, как настройка, построение и публикация приложения Xamarin.tvOS для распространения через ТВ Apple App Store. Он включает Пошаговое руководство, описывается Подготовка приложения для распространения, как использовать средства Apple для отправки приложения для просмотра и, наконец, как публиковать приложение в магазине приложений Apple TV."
-ms.topic: article
+title: Публикации в магазине приложений Apple TV
+description: В этой статье показано, как настройка, построение и публикация приложения Xamarin.tvOS для распространения через ТВ Apple App Store. Он включает Пошаговое руководство, описывается Подготовка приложения для распространения, как использовать средства Apple для отправки приложения для просмотра и, наконец, как публиковать приложение в магазине приложений Apple TV.
 ms.prod: xamarin
 ms.assetid: 52448C93-DC19-40FA-BF8C-608AE680FF49
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: abb8ee30828e5d9856b9fd72cca8adb669959818
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: c72b161845f6d8492a47d95e51a80cf0b4f30271
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="publishing-to-the-apple-tv-app-store"></a>Публикации в магазине приложений Apple TV
 
@@ -114,7 +113,7 @@ Apple предоставляет набор специальных служб п
 Чтобы выполнить подготовку на портале подготовки для iOS компании Apple, выполните следующие действия:
 
 1.  Выберите **Provisioning** > **Distribution** (Подготовка > Распространение).
-2.  Нажмите кнопку  **+**  кнопку и выберите тип профиля распределения, который требуется создать как **магазина Apple TV**.
+2.  Нажмите кнопку **+** кнопку и выберите тип профиля распределения, который требуется создать как **магазина Apple TV**.
 3.  Выберите в раскрывающемся списке **App ID** (Идентификатор приложения), для которого требуется создать профиль распространения.
 4.  Выберите сертификат, необходимый для подписи приложения.
 5.  Заполните поле **Name** (Имя) для нового элемента **Distribution Profile** (Профиль распространения) и создайте профиль.
@@ -154,7 +153,7 @@ Apple предоставляет набор специальных служб п
     ![](app-store-publishing-images/buildxs01new.png "Выберите конфигурации выпуска")
 2. В меню **Сборка** выберите **Архивировать для публикации**:
 
-    [![](app-store-publishing-images/buildxs02new.png "Выберите архив для публикации")](app-store-publishing-images/buildxs02new.png#lightbox)
+    [![](app-store-publishing-images/buildxs02new.png "Выбор элемента "Архивировать для публикации"")](app-store-publishing-images/buildxs02new.png#lightbox)
 3. После создания архива появится представление **Архивы**:
 
     [![](app-store-publishing-images/buildxs03new.png "Представление архивы")](app-store-publishing-images/buildxs03new.png#lightbox)
@@ -196,7 +195,7 @@ Apple предоставляет набор специальных служб п
 
 2. Щелкните *Deliver Your App* (Доставить приложение) и нажмите кнопку *Choose* (Выбрать):
 
-    [![](app-store-publishing-images/publishvs01.png "Выберите доставка приложения")](app-store-publishing-images/publishvs01.png#lightbox)
+    [![](app-store-publishing-images/publishvs01.png "Выбор команды "Доставить приложение"")](app-store-publishing-images/publishvs01.png#lightbox)
 
 3. Выберите ранее созданный ZIP- или IPA-файл и нажмите кнопку **OK**.
 4. Загрузчик приложения выполнит проверку файла:

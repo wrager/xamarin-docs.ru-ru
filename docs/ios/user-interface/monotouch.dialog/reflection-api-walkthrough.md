@@ -1,17 +1,16 @@
 ---
-title: "Пошаговое руководство: Создание приложения с помощью API отражения"
-description: "Помимо элементы API, MonoTouch.Dialog (машинного перевода. D) также включает API отражения на основе атрибутов. API отражения делает создание экранов с машинного перевода. D так же легко, как декорирования классов с атрибутами. В этой статье подробно рассматриваются для создания приложения с помощью API-интерфейса отражения."
-ms.topic: article
+title: 'Пошаговое руководство: Создание приложения с помощью API отражения'
+description: Помимо элементы API, MonoTouch.Dialog (машинного перевода. D) также включает API отражения на основе атрибутов. API отражения делает создание экранов с машинного перевода. D так же легко, как декорирования классов с атрибутами. В этой статье подробно рассматриваются для создания приложения с помощью API-интерфейса отражения.
 ms.prod: xamarin
 ms.assetid: C0F923D2-300E-DB9D-F390-9FA71B22DFD6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: ec5ca2883c6e109a67ee8a4ecb25fe938d0df4ec
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: e56eaeccb2e09d9f1ad84245bf41e2a4bf1b56f1
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="walkthrough-creating-an-application-using-the-reflection-api"></a>Пошаговое руководство: Создание приложения с помощью API отражения
 

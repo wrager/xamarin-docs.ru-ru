@@ -1,18 +1,17 @@
 ---
 title: CardView
-description: "Мини-приложение Cardview является компонентом пользовательского интерфейса, который представляет содержимое text и image в представления, которые похожи на картах. Это руководство содержит описание использования и настройки CardView в приложениях Xamarin.Android, поддерживая обратную совместимость с более ранних версиях Android."
-ms.topic: article
+description: Мини-приложение Cardview является компонентом пользовательского интерфейса, который представляет содержимое text и image в представления, которые похожи на картах. Это руководство содержит описание использования и настройки CardView в приложениях Xamarin.Android, поддерживая обратную совместимость с более ранних версиях Android.
 ms.prod: xamarin
 ms.assetid: CF12FE85-D03A-4E64-95D2-D7115061A500
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 46eec10bbabec74719affabce1e8033a083680be
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 21e2a2e8ef04936664344cb4fb758bc2af3b4d05
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="cardview"></a>CardView
 

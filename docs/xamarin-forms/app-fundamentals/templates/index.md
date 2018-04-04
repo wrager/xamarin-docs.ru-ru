@@ -1,18 +1,17 @@
 ---
-title: "Шаблоны"
-description: "Как использовать шаблоны поддержки, обеспечиваемой Xamarin.Forms"
-ms.topic: article
+title: Шаблоны
+description: Как использовать шаблоны поддержки, обеспечиваемой Xamarin.Forms
 ms.prod: xamarin
 ms.assetid: 4453C209-C068-47D5-A49B-0ECC95C0FB3B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/05/2016
-ms.openlocfilehash: 230b9db31809e7d8c31bf834fa1a29358eebb478
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: a37a82e008093d90dcf18bc46abada0d406b3815
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="templates"></a>Шаблоны
 
@@ -29,5 +28,5 @@ Xamarin.Forms шаблонов элементов управления пред�
 
 - [Введение в Xamarin.Forms](~/xamarin-forms/get-started/introduction-to-xamarin-forms.md)
 - [Коллекция Xamarin.Forms (пример)](https://developer.xamarin.com/samples/FormsGallery/)
-- [Образцы Xamarin.Forms](https://developer.xamarin.com/samples/tag/Xamarin.Forms/)
+- [Примеры Xamarin.Forms](https://developer.xamarin.com/samples/tag/Xamarin.Forms/)
 - [Документация по API-интерфейса Xamarin.Forms](https://developer.xamarin.com/api/namespace/Xamarin.Forms/)

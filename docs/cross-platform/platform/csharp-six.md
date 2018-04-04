@@ -1,7 +1,6 @@
 ---
-title: "Возможности C# 6 новые общие сведения"
-description: "Последнюю версию языка C# — версия 6 – постоянно развивается языка меньше стандартных действий, улучшен и согласованность. Синтаксис инициализации очистки, возможность использования await в блоках catch/finally и условием null? оператор особенно полезны."
-ms.topic: article
+title: Возможности C# 6 новые общие сведения
+description: Последнюю версию языка C# — версия 6 – постоянно развивается языка меньше стандартных действий, улучшен и согласованность. Синтаксис инициализации очистки, возможность использования await в блоках catch/finally и условием null? оператор особенно полезны.
 ms.prod: xamarin
 ms.assetid: 4B4E41A8-68BA-4E2B-9539-881AC19971B
 ms.technology: xamarin-cross-platform
@@ -9,11 +8,11 @@ ms.custom: xamu-video
 author: asb3993
 ms.author: amburns
 ms.date: 03/22/2017
-ms.openlocfilehash: 80456287c92913b048b73f40d2db6dcb16cc270d
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 2a189a19280576876e5d5a6a4fa34d2d00cab330
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="c-6-new-features-overview"></a>Возможности C# 6 новые общие сведения
 
@@ -52,7 +51,7 @@ Visual Studio для Mac автоматически обновляет моно 
 
 Пользователи Windows должны иметь [Visual Studio 2015 или 2017 г ^](https://www.visualstudio.com/) установлен для компиляции кода C# 6 (даже если выбор Xamarin Studio для Windows, как интерфейс IDE).
 
-^ или  *[2015 средства построения Microsoft](http://www.microsoft.com/en-us/download/details.aspx?id=48159)*  для командной строки компиляции или серверы сборки, например.
+^ или *[2015 средства построения Microsoft](http://www.microsoft.com/en-us/download/details.aspx?id=48159)* для командной строки компиляции или серверы сборки, например.
 
 ## <a name="using-c-6"></a>С помощью C# 6
 

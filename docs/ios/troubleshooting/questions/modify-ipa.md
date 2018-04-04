@@ -1,16 +1,16 @@
 ---
-title: "Можно добавить файлы или удалите файлы из файла IPA после его создания в Visual Studio?"
-ms.topic: article
+title: Можно добавить файлы или удалите файлы из файла IPA после его создания в Visual Studio?
+ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: 6C3082FB-C3F1-4661-BE45-64570E56DE7C
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: be792c95de7aa66d64278e47b2ca6b354e611273
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: b8b61ba38491b2085233dd1b30a82bc57d2baaed
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="can-i-add-files-to-or-remove-files-from-an-ipa-file-after-building-it-in-visual-studio"></a>Можно добавить файлы или удалите файлы из файла IPA после его создания в Visual Studio?
 
@@ -86,4 +86,4 @@ file missing: /Users/macuser/Library/Caches/Xamarin/mtbs/builds/iPhoneApp1/cc530
 
 И в процессе проверки магазина сообщает сообщение об ошибке:
 
-> Ошибка ITMS-90035: «Недопустимая подпись. Запечатанный ресурса отсутствует или является недопустимым. Двоичный файл по пути [iPhoneApp1.app/iPhoneApp1] содержит недопустимую подпись. Убедитесь, что подписаны сертификатом распространения, не нерегламентированных сертификат или сертификат разработки приложения. Проверьте параметры подписывания кода в Xcode на уровне целевых (которые переопределяют любые значения на уровне проекта). Кроме того убедитесь, что пакет, который вы отправляете был создан с помощью целевой версии в Xcode, не симулятор целевого объекта. Если вы уверены, что выбраны правильные значения параметров подписывания кода, выберите «Очистить все» в Xcode, удалить каталог «сборка» в системе поиска и перестроить целевой версии. Дополнительные сведения см. в [https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html](https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html)»
+> Ошибка ITMS-90035: «Недопустимая подпись. Запечатанный ресурса отсутствует или является недопустимым. Двоичный файл по пути [iPhoneApp1.app/iPhoneApp1] содержит недопустимую подпись. Убедитесь, что подписаны сертификатом распространения, не нерегламентированных сертификат или сертификат разработки приложения. Проверьте параметры подписывания кода в Xcode на уровне целевых (которые переопределяют любые значения на уровне проекта). Кроме того убедитесь, что пакет, который вы отправляете был создан с помощью целевой версии в Xcode, не симулятор целевого объекта. Если вы уверены, что выбраны правильные значения параметров подписывания кода, выберите «Очистить все» в Xcode, удалить каталог «сборка» в системе поиска и перестроить целевой версии. Дополнительные сведения см. в [ https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html ](https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html)»

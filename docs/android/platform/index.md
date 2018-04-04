@@ -1,18 +1,17 @@
 ---
-title: "Функции платформы"
-description: "Документы в этом разделе рассматриваются функции, связанные с Android. Здесь вы найдете подразделы, такие как с помощью фрагментов, работе с картами и инкапсуляции данных с помощью поставщиков содержимого."
-ms.topic: article
+title: Функции платформы
+description: Документы в этом разделе рассматриваются функции, связанные с Android. Здесь вы найдете подразделы, такие как с помощью фрагментов, работе с картами и инкапсуляции данных с помощью поставщиков содержимого.
 ms.prod: xamarin
 ms.assetid: DDE54082-6E2B-9ED9-05FB-D9C1D1B1258E
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/06/2018
-ms.openlocfilehash: 2cc8121664afa5130efd2f138a8ea8567948bea5
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 69a70fe399bc95a9d8b24cc839382f2f3bee553e
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="platform-features"></a>Функции платформы
 

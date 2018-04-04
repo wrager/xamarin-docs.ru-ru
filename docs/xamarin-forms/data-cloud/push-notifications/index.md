@@ -1,18 +1,17 @@
 ---
-title: "Отправка Push-уведомлений"
-description: "Push-уведомлений используются для передачи из серверной системе приложения на мобильном устройстве, чтобы увеличить engagement приложения и сведения, такие как сообщения. Уведомления могут отправляться в любое время, даже в том случае, если пользователь не использует активно целевого приложения."
-ms.topic: article
+title: Отправка Push-уведомлений
+description: Push-уведомлений используются для передачи из серверной системе приложения на мобильном устройстве, чтобы увеличить engagement приложения и сведения, такие как сообщения. Уведомления могут отправляться в любое время, даже в том случае, если пользователь не использует активно целевого приложения.
 ms.prod: xamarin
 ms.assetid: F58D2D81-FFAF-43DD-8A9B-3684DFEAA99D
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/02/2017
-ms.openlocfilehash: 07995fe53387e9939d21f86ddcf7f9fb494b1a98
-ms.sourcegitcommit: 61f5ecc5a2b5dcfbefdef91664d7460c0ee2f357
+ms.openlocfilehash: 595c7db89bf8804c34657a6119d7c3427fc1d2b3
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sending-push-notifications"></a>Отправка Push-уведомлений
 

@@ -1,18 +1,17 @@
 ---
-title: "Функции nougat"
-description: "Как приступить к работе с Xamarin.Android для разработки приложений для Android Nougat."
-ms.topic: article
+title: Функции nougat
+description: Как приступить к работе с Xamarin.Android для разработки приложений для Android Nougat.
 ms.prod: xamarin
 ms.assetid: 5C74ABE2-C862-4ED0-8EA5-C7FEE5251D4B
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: c666b7d5b680eab3c990950569868eacdb6f30af
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: fe544f8ac677987f8921ccb1c11b8930811b9553
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="nougat-features"></a>Функции nougat
 
@@ -56,7 +55,7 @@ Android Nougat предоставляют множество новых функ
 -   **Java Developer Kit** &ndash; требует разработки Xamarin Android 7.0 [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) или более поздней версии, если вы разрабатываете API уровня 24 или выше (JDK 8 также поддерживает уровни API более ранних, чем 24). 64-разрядной версии JDK 8 является обязательным, если вы используете пользовательские элементы управления или средство предварительного просмотра формы.
 
 > [!IMPORTANT]
-> Xamarin.Android не поддерживает JDK 9.
+> Xamarin.Android не поддерживает пакет JDK 9.
 
 Обратите внимание, что приложения должны быть перестроены Xamarin C6SR4 или более поздней версии для надежной работы с Android Nougat. Поскольку Android Nougat можно связать только с [NDK собственного библиотеках](https://developer.android.com/about/versions/nougat/android-7.0-changes.html), существующие приложения, такие как использование библиотек **Mono.Data.Sqlite.dll** аварийно завершает работу при работе в Android Nougat, если они не правильно Перестроить.
 

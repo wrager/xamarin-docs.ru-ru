@@ -1,17 +1,16 @@
 ---
 title: Apple Pay
-description: "В этом руководстве описывается настройка Xamarin.iOS среды для использования с Apple Pay платить за физических товаров, например пищевых продуктов, развлечения и членства в приложении. Он содержит сведения о необходимых идентификаторы, сертификаты и прав."
-ms.topic: article
+description: В этом руководстве описывается настройка Xamarin.iOS среды для использования с Apple Pay платить за физических товаров, например пищевых продуктов, развлечения и членства в приложении. Он содержит сведения о необходимых идентификаторы, сертификаты и прав.
 ms.prod: xamarin
 ms.assetid: A25AE660-B145-465F-9CCE-8D82BFD614C6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: af899bb1c5708e3fc0be88db6224d9127f5a5c6d
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: fc7c247e5edcdc25d53c34c922801a5497b8c367
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="apple-pay"></a>Apple Pay
 

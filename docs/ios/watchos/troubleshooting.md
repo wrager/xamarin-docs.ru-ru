@@ -1,18 +1,18 @@
 ---
-title: "watchOS Устранение неполадок"
-description: "Известные проблемы и способы решения проблем разработки watchOS."
-ms.topic: article
+title: watchOS Устранение неполадок
+description: Известные проблемы и способы решения проблем разработки watchOS.
+ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: 27C31DB8-451E-4888-BBC1-CE0DFC2F9DEC
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 4a6b916f991b337d8a28764f1482ddd837bad460
-ms.sourcegitcommit: 73bd0c7e5f237f0a1be70a6c1384309bb26609d5
+ms.openlocfilehash: 6e7a7dd09d65b88831136662d8718886aaf483c5
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="watchos-troubleshooting"></a>watchOS Устранение неполадок
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/22/2018
 <a name="deploy" />
 
 - Более ранних версиях Visual Studio для Mac неправильно отображается одно из **AppleCompanionSettings** значки, как если бы 88 x 88 точек; что приводит к **отсутствует значок ошибки** при попытке отправить в приложение Хранилище.
-    Этот значок должны иметь размер 87 x 87 (29 единицы измерения для  **@3x**  Сетчатка экраны). Не удается устранить эту проблему в Visual Studio для Mac - либо изменение ресурса изображения в Xcode или вручную изменить **Contents.json** файла (для соответствия [в этом примере](https://github.com/xamarin/monotouch-samples/blob/master/WatchKit/WatchKitCatalog/WatchApp/Resources/Images.xcassets/AppIcons.appiconset/Contents.json#L126-L132)).
+    Этот значок должны иметь размер 87 x 87 (29 единицы измерения для **@3x** Сетчатка экраны). Не удается устранить эту проблему в Visual Studio для Mac - либо изменение ресурса изображения в Xcode или вручную изменить **Contents.json** файла (для соответствия [в этом примере](https://github.com/xamarin/monotouch-samples/blob/master/WatchKit/WatchKitCatalog/WatchApp/Resources/Images.xcassets/AppIcons.appiconset/Contents.json#L126-L132)).
 
 - Если проект расширения Контрольные значения **Info.plist > идентификатор пакета WKApp** не [правильно установить](~/ios/watchos/get-started/project-references.md) для сопоставления приложения Контрольные значения **идентификатор пакета**, отладчик не удастся подключиться и Visual Будет ожидать Studio для Mac с сообщением *«Ожидание подключения отладчика»*.
 

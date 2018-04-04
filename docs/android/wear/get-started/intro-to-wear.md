@@ -1,18 +1,17 @@
 ---
-title: "Введение в Android износ"
-description: "С появлением Google Android носят вы больше не ограничиваются лишь телефоны и планшеты когда речь заходит о разработке отличных приложений Android. Поддержка Android носят Xamarin.Android делает возможным для выполнения кода на языке C# на ваш манжеты! Это введение предоставляет Android носят общий обзор, описывает ее основные компоненты и предлагает обзор функции, доступные в версии 2.0 с Android. Его перечислены некоторые популярные устройства с Android, а также ссылки на основные Google Android носят документацию для дальнейшего изучения."
-ms.topic: article
+title: Введение в Android износ
+description: С появлением Google Android носят вы больше не ограничиваются лишь телефоны и планшеты когда речь заходит о разработке отличных приложений Android. Поддержка Android носят Xamarin.Android делает возможным для выполнения кода на языке C# на ваш манжеты! Это введение предоставляет Android носят общий обзор, описывает ее основные компоненты и предлагает обзор функции, доступные в версии 2.0 с Android. Его перечислены некоторые популярные устройства с Android, а также ссылки на основные Google Android носят документацию для дальнейшего изучения.
 ms.prod: xamarin
 ms.assetid: EAEF99F0-8FBE-47E4-8644-E7244CFAF464
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 4f6cfe61b5f91fb6703fdcdd20513ce6bc2dc161
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 0ab166bb71c23d456cb70d35a2794717110642fd
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="introduction-to-android-wear"></a>Введение в Android износ
 

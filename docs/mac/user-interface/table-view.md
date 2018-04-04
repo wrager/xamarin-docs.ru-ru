@@ -1,18 +1,17 @@
 ---
-title: "Представления таблиц"
-description: "В этой статье рассматривается работа с представлениями таблицы в приложении Xamarin.Mac. Он описывает создание представлений таблиц в Xcode и интерфейс построителя и работать с ними в коде."
-ms.topic: article
+title: Представления таблиц
+description: В этой статье рассматривается работа с представлениями таблицы в приложении Xamarin.Mac. Он описывает создание представлений таблиц в Xcode и интерфейс построителя и работать с ними в коде.
 ms.prod: xamarin
 ms.assetid: 3B55B858-4769-4331-966A-7F53B3B7C720
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 4764a4babc9f6b06c7a9299feab1320971b0bf75
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: c274405613f079cb61ad9c96497a9effdc7173f5
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="table-views"></a>Представления таблиц
 

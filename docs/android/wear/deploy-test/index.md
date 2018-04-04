@@ -1,18 +1,17 @@
 ---
-title: "Развертывание и тестирование"
-description: "Как тестировать приложение на устройстве Android (или эмулятора) Износ и подготовить его для развертывания."
-ms.topic: article
+title: Развертывание и тестирование
+description: Как тестировать приложение на устройстве Android (или эмулятора) Износ и подготовить его для развертывания.
 ms.prod: xamarin
 ms.assetid: 3D8E5A97-F719-4E8C-B777-108DFF20C91F
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 12/19/2017
-ms.openlocfilehash: f80be1c61d28ce73342399a0b4f2346007cd14de
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: e6472b3bf07750338d9ada7ca62f0a5c9e2c8a7c
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="deployment-and-testing"></a>Развертывание и тестирование
 
@@ -23,7 +22,7 @@ ms.lasthandoff: 02/27/2018
 
 Способы отладки износ Xamarin.Android приложения в эмуляторе Android SDK.
 
-## <a name="debug-on-a-wear-deviceandroidweardeploy-testdebug-on-devicemd"></a>[Отладка на устройстве износ](~/android/wear/deploy-test/debug-on-device.md)
+## <a name="debug-on-a-wear-deviceandroidweardeploy-testdebug-on-devicemd"></a>[Отладка в устройстве Android Wear](~/android/wear/deploy-test/debug-on-device.md)
 
 Настройка устройства Android, чтобы Xamarin.Android износ приложения могут развертываться на него непосредственно из Visual Studio или Visual Studio для Mac.
 

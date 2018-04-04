@@ -1,18 +1,17 @@
 ---
-title: "Меню"
-description: "В этой статье рассматривается работа с меню в приложении Xamarin.Mac. Здесь описывается создание и обслуживание меню и элементов меню в Xcode и интерфейс построителя и работа с ними программным способом."
-ms.topic: article
+title: Меню
+description: В этой статье рассматривается работа с меню в приложении Xamarin.Mac. Здесь описывается создание и обслуживание меню и элементов меню в Xcode и интерфейс построителя и работа с ними программным способом.
 ms.prod: xamarin
 ms.assetid: 5D367F8E-3A76-4995-8A89-488530FAD802
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 52a9fc206a2c303d13d80be4de743d98056f7684
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 50c9cf333ff7965bbdfbb964a2301e677eb6aa59
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="menus"></a>Меню
 
@@ -439,7 +438,7 @@ public void defineKeyword (NSObject sender) {
 
 ![Атрибуты инспектора](menu-images/action01.png "инспектора атрибуты")
 
-Нажмите кнопку  **+**  кнопки в нижней части **атрибуты инспектора** для добавления нового настраиваемого действия:
+Нажмите кнопку **+** кнопки в нижней части **атрибуты инспектора** для добавления нового настраиваемого действия:
 
 ![Добавление нового действия](menu-images/action02.png "Добавление нового действия")
 

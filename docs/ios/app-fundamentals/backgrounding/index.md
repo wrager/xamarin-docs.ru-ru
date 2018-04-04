@@ -1,17 +1,16 @@
 ---
 title: Backgrounding
-description: "Фоновая обработка или backgrounding — это процесс, позволяющий приложениям выполнять задачи в фоновом режиме, пока другое приложение выполняется на переднем плане. Данное руководство служит вводные сведения о фоновой обработки в iOS."
-ms.topic: article
+description: Фоновая обработка или backgrounding — это процесс, позволяющий приложениям выполнять задачи в фоновом режиме, пока другое приложение выполняется на переднем плане. Данное руководство служит вводные сведения о фоновой обработки в iOS.
 ms.prod: xamarin
 ms.assetid: F377440C-C5D9-4267-85D8-2C816E3A0300
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 2bba7c0908fb78ca199cc654adad645afaf47a02
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: ae3e732008c6503f511dc4be9cad874ecfe1272d
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="backgrounding"></a>Backgrounding
 

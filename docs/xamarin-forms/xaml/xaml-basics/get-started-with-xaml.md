@@ -1,18 +1,17 @@
 ---
-title: "Часть 1. Начало работы с XAML"
-description: "В приложении Xamarin.Forms XAML в основном используется для определения визуального содержимого страницы. Файл XAML всегда связан с помощью файла кода C#, обеспечивающий поддержку кода для разметки. Вместе эти два файла участвовать в определении класса, включающего дочерние представления и инициализации свойств. В файле XAML классы и свойства, на которые имеются ссылки с XML-элементы и атрибуты и связи между разметки и кода создаются."
-ms.topic: article
+title: Часть 1. Начало работы с XAML
+description: В приложении Xamarin.Forms XAML в основном используется для определения визуального содержимого страницы. Файл XAML всегда связан с помощью файла кода C#, обеспечивающий поддержку кода для разметки. Вместе эти два файла участвовать в определении класса, включающего дочерние представления и инициализации свойств. В файле XAML классы и свойства, на которые имеются ссылки с XML-элементы и атрибуты и связи между разметки и кода создаются.
 ms.prod: xamarin
 ms.assetid: 9073FA0E-BD5A-4492-8A93-54C466F6EDB9
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: 55c4fa73044b1c37e879ed7731161269bdbf8ba8
-ms.sourcegitcommit: 0fdb243b46cf21be47584900805cadcd077121bf
+ms.openlocfilehash: f1d347cc37ab065e09cb2627ee2122797280f3c1
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="part-1-getting-started-with-xaml"></a>Часть 1. Начало работы с XAML
 
