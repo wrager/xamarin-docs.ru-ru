@@ -7,11 +7,11 @@ ms.assetid: E3A4E373-F65D-45C8-8E77-577A804AC3F8
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: a718d051c2bf04e75c87b0e4a18aced4824802ba
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9e5b18bd6a565639e2ca22f4637a67c4f48717f6
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="drawing-a-simple-circle"></a>Рисование окружности простой
 
@@ -19,11 +19,11 @@ _Основные сведения о документе SkiaSharp, включа
 
 В этой статье описаны основные понятия графики в Xamarin.Forms с помощью SkiaSharp, включая создание `SKCanvasView` объектов для размещения графики, обработка `PaintSurface` событий и использование `SKPaint` объект для задания цвета и другие графические атрибуты.
 
-[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программа содержит все образцы кода для этой серии статей SkiaSharp. Имеет право на первой странице **круг простой** и вызывает класс страницы [ `SimpleCirclePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs). Этот код показано, как Рисование окружности в центре страницы с радиусом 100 пикселей. Структура круга красного цвета, и внутреннюю часть круга — синим.
+[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программа содержит все образцы кода для этой серии статей SkiaSharp. Имеет право на первой странице **круг простой** и вызывает класс страницы [ `SimpleCirclePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs). Этот код показано, как Рисование окружности в центре страницы с радиусом 100 пикселей. Структура круга красного цвета, и внутреннюю часть круга — синим.
 
 ![](circle-images/circleexample.png "Голубой круг выделено красным цветом")
 
-[ `SimpleCirle` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs) Страницы класс является производным от `ContentPage` и содержит два `using` директивы для пространства имен SkiaSharp:
+[ `SimpleCirle` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/SimpleCirclePage.cs) Страницы класс является производным от `ContentPage` и содержит два `using` директивы для пространства имен SkiaSharp:
 
 ```csharp
 using SkiaSharp;

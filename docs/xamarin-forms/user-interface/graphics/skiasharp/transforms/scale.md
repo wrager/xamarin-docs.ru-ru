@@ -7,11 +7,11 @@ ms.assetid: 54A43F3D-9DA8-44A7-9AE4-7E3025129A0B
 author: charlespetzold
 ms.author: chape
 ms.date: 03/23/2017
-ms.openlocfilehash: 4c2650d4586f210b121c4c72b79e92ce72d135fe
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 09a81cd84f145512b9fbbf0db009335eac8a95a9
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="the-scale-transform"></a>Преобразование изменения масштаба
 
@@ -60,7 +60,7 @@ public void Scale (SKPoint size)
 
 Четвертый `Scale` скоро будет описан метод.
 
-**Основные шкалы** странице демонстрируется `Scale` метод. [ **BasicScalePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/BasicScalePage.xaml) XAML-файл содержит два `Slider` элементы, которые позволяют выбрать коэффициенты вертикального и горизонтального масштабирования от 0 до 10. [ **BasicScalePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/BasicScalePage.xaml.cs) файл кода программной части использует эти значения для вызова `Scale` до отображения прямоугольник с закругленными углами вычерчивании пунктиром уместиться некоторый текст в левом верхнем углу угол холста:
+**Основные шкалы** странице демонстрируется `Scale` метод. [ **BasicScalePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/BasicScalePage.xaml) XAML-файл содержит два `Slider` элементы, которые позволяют выбрать коэффициенты вертикального и горизонтального масштабирования от 0 до 10. [ **BasicScalePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/BasicScalePage.xaml.cs) файл кода программной части использует эти значения для вызова `Scale` до отображения прямоугольник с закругленными углами вычерчивании пунктиром уместиться некоторый текст в левом верхнем углу угол холста:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -120,7 +120,7 @@ public void Scale (Single sx, Single sy, Single px, Single py)
 
 `px` И `py` параметры определяют точку, которая иногда называется *масштабирование center* , но в SkiaSharp документации называется *сводить точки*. Это правило относительно левого верхнего угла холста, масштабирование не затрагивается. Масштабирование все происходит относительно данного центра.
 
-[ **По центру шкалы** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/CenteredScalePage.xaml.cs) показывается, как это работает. `PaintSurface` Обработчик похож **основные шкалы** программы разницей, что `margin` значение вычисляется Центрирование текста по горизонтали, это означает, что программа лучше работает в книжной ориентации:
+[ **По центру шкалы** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/CenteredScalePage.xaml.cs) показывается, как это работает. `PaintSurface` Обработчик похож **основные шкалы** программы разницей, что `margin` значение вычисляется Центрирование текста по горизонтали, это означает, что программа лучше работает в книжной ориентации:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -216,7 +216,7 @@ canvas.Scale(sx, sy, px, py);
 
 `SKPath` Класса определяет только для чтения [ `Bounds` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPath.Bounds/) свойство, которое возвращает `SKRect` определение пространства координат в пути. Например, если `Bounds` свойства извлекается из hendecagram путь, созданный ранее, `Left` и `Top` Свойства прямоугольника, – приблизительно 100 `Right` и `Bottom` свойства приблизительно 100 и `Width` и `Height` свойства — около 200. (Большинство фактические значения являются немного меньше, поскольку точки звездочек определяются круг с радиусом 100, но только в верхней точке параллельных с горизонтальной или вертикальной оси.)
 
-Доступность этой информации означает, возможно, наследования масштабирования и перевести факторов, подходящий для масштабирования путь к размер полотна. [ **Анизотропная масштабирование** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/AnisotropicScalingPage.cs) страницы это демонстрируется с 11 указывает звездочкой. *Анизотропная* шкалы означает, что равны в горизонтальном и вертикальном направлениях, это означает, что звезды не будет хранить исходные пропорции. Ниже приведен соответствующий код `PaintSurface` обработчика:
+Доступность этой информации означает, возможно, наследования масштабирования и перевести факторов, подходящий для масштабирования путь к размер полотна. [ **Анизотропная масштабирование** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/AnisotropicScalingPage.cs) страницы это демонстрируется с 11 указывает звездочкой. *Анизотропная* шкалы означает, что равны в горизонтальном и вертикальном направлениях, это означает, что звезды не будет хранить исходные пропорции. Ниже приведен соответствующий код `PaintSurface` обработчика:
 
 ```csharp
 SKPath path = HendecagramPage.HendecagramPath;
@@ -261,7 +261,7 @@ pathBounds.Inflate(strokePaint.StrokeWidth / 2,
 
 Это увеличивает `pathBounds` прямоугольник на 1,5 единиц по всем четырем сторонам. Это приемлемым решением только в том случае, когда соединение штриха округляется. Соединения среза может быть больше времени и сложен для вычисления.
 
-Можно также использовать подобный прием с текстом, как **анизотропная текст** демонстрирует страницы. Вот соответствующая часть `PaintSurface` обработчиком [ `AnisotropicTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/AnisotropicTextPage.cs) класса:
+Можно также использовать подобный прием с текстом, как **анизотропная текст** демонстрирует страницы. Вот соответствующая часть `PaintSurface` обработчиком [ `AnisotropicTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/AnisotropicTextPage.cs) класса:
 
 ```csharp
 using (SKPaint textPaint = new SKPaint
@@ -297,7 +297,7 @@ using (SKPaint textPaint = new SKPaint
 - Масштабирование объекта, на основании минимального значения размеров страницы горизонтальные и вертикальные, деленное графический объект измерения.
 - Перевод центра масштабируемого объекта относительно центральной части страницы.
 
-[ `IsotropicScalingPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/skia-sharp-forms/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/IsotropicScalingPage.cs) Выполняет следующие действия перед отображением звезды в обратном порядке:
+[ `IsotropicScalingPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/skia-sharp-forms/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/IsotropicScalingPage.cs) Выполняет следующие действия перед отображением звезды в обратном порядке:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)

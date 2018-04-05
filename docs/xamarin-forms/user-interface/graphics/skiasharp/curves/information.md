@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 09/12/2017
-ms.openlocfilehash: 998c804f02eed808c0a1493b054e754a7670aa70
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 82ac4ea49462c7520219e1a621ea3946297b1b45
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисления
 
@@ -31,7 +31,7 @@ _Получение сведений о пути и перечисление с�
 
 [ `SKPathMeasure` ](https://developer.xamarin.com/api/type/SkiaSharp.SKPathMeasure/) Класс может помочь. [Конструктор](https://developer.xamarin.com/api/constructor/SkiaSharp.SKPathMeasure.SKPathMeasure/p/SkiaSharp.SKPath/System.Boolean/System.Single/) принимает `SKPath` аргумента и [ `Length` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPathMeasure.Length/) свойство открывает его длину.
 
-Это показано в **длина пути** пример, который основан на **кривой Безье** страницы. [ **PathLengthPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathLengthPage.xaml) файла является производным от `InteractivePage` и включает сенсорный интерфейс:
+Это показано в **длина пути** пример, который основан на **кривой Безье** страницы. [ **PathLengthPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathLengthPage.xaml) файла является производным от `InteractivePage` и включает сенсорный интерфейс:
 
 ```xaml
 <local:InteractivePage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -52,7 +52,7 @@ _Получение сведений о пути и перечисление с�
 </local:InteractivePage>
 ```
 
-[ **PathLengthPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathLengthPage.xaml.cs) файл кода программной части позволяет перемещать четыре точки касания для определения конечных точек и контрольные точки кривой Безье третьего порядка. Три поля определяют строку текста `SKPaint` объекта и рассчитанную ширину текста:
+[ **PathLengthPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathLengthPage.xaml.cs) файл кода программной части позволяет перемещать четыре точки касания для определения конечных точек и контрольные точки кривой Безье третьего порядка. Три поля определяют строку текста `SKPaint` объекта и рассчитанную ширину текста:
 
 ```csharp
 public partial class PathLengthPage : InteractivePage
@@ -242,7 +242,7 @@ SKPathVerb pathVerb = rawIterator.Next(points);
 
 Проблемный команда, однако является `Close`. Эта команда рисует прямую линию от текущей позиции в начало контуру установлено ранее с помощью `Move` команды. В идеальном случае `Close` команды должен предоставить эти две точки, а не всего одну точку. Что еще хуже является то, что сопутствующий точки `Close` команда всегда является (0, 0). Это означает, что при перечислении через путь, скорее всего, необходимо сохранить `Move` точки и текущей позиции.
 
-Статический [ `PathExtensions` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathExtensions.cs) класс содержит несколько методов, которые преобразуют три вида кривых Безье в ряд очень мала прямые линии, которые приближения кривой. (Параметрического формулы были представлены в статье [ **трех типов кривых Безье**](~/xamarin-forms/user-interface/graphics/skiasharp/curves/beziers.md).) `Interpolate` Метод разбивает прямую линию в многочисленные коротких строк, которые только одна единица длина:
+Статический [ `PathExtensions` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathExtensions.cs) класс содержит несколько методов, которые преобразуют три вида кривых Безье в ряд очень мала прямые линии, которые приближения кривой. (Параметрического формулы были представлены в статье [ **трех типов кривых Безье**](~/xamarin-forms/user-interface/graphics/skiasharp/curves/beziers.md).) `Interpolate` Метод разбивает прямую линию в многочисленные коротких строк, которые только одна единица длина:
 
 ```csharp
 static class PathExtensions
@@ -426,7 +426,7 @@ static class PathExtensions
 
 [![](information-images/globulartext-small.png "Тройной снимок экрана со страницей Globular текст")](information-images/globulartext-large.png#lightbox "тройной снимок экрана со страницей Globular текста")
 
-[ `GlobularTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/GlobularTextPage.cs) Конструктор класса выполняет это преобразование. Он создает `SKPaint` объекта для текста, а затем происходит получение `SKPath` объекта из `GetTextPath` метод. — Это путь, переданный `CloneWithTransform` метод расширения, а также функцию преобразования: 
+[ `GlobularTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/GlobularTextPage.cs) Конструктор класса выполняет это преобразование. Он создает `SKPaint` объекта для текста, а затем происходит получение `SKPath` объекта из `GetTextPath` метод. — Это путь, переданный `CloneWithTransform` метод расширения, а также функцию преобразования: 
 
 ```csharp
 public class GlobularTextPage : ContentPage

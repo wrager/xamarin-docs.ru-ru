@@ -7,11 +7,11 @@ ms.assetid: F1DA55E4-0182-4388-863C-5C340213BF3C
 author: charlespetzold
 ms.author: chape
 ms.date: 05/10/2017
-ms.openlocfilehash: 668b1f437b78535bd4cdf3bb3f80154dbf281a02
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c6fd0f905aceb9dddc4047abc6ad2722adf2d8e9
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="three-ways-to-draw-an-arc"></a>Три способа, чтобы нарисовать дугу
 
@@ -73,7 +73,7 @@ path.ArcTo (oval, startAngle, sweepAngle, false);
 
 Эта версия `ArcTo` проводит линию, начиная с текущей позиции в начало дуги. Это означает, что дуги может быть где-нибудь середине большего профиль.
 
-**Угол дуги** страница позволяет использовать два ползунки для задания начала и углы поворота. В файле XAML создает два `Slider` элементы и `SKCanvasView`. `PaintCanvas` Обработчик в [ **AngleArcPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/AngleArcPage.xaml.cs) файл рисует Овал и дуги с использованием двух `SKPaint` объекты, определенные как поля:
+**Угол дуги** страница позволяет использовать два ползунки для задания начала и углы поворота. В файле XAML создает два `Slider` элементы и `SKCanvasView`. `PaintCanvas` Обработчик в [ **AngleArcPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/AngleArcPage.xaml.cs) файл рисует Овал и дуги с использованием двух `SKPaint` объекты, определенные как поля:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -110,7 +110,7 @@ y = oval. MidY + (овал. Высота / 2) * sin(angle)
 
 `angle` Значение `startAngle` или `startAngle + sweepAngle`.
 
-Использование двух углов для определения дугу лучше всего подходит для случаев, когда вы знаете углового длина окружности, необходимого для отрисовки, например, чтобы убедиться в круговой диаграмме. **Разрезанная круговая диаграмма** страницы это показано. [ `ExplodedPieChartPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ExplodedPieChartPage.cs) Класс использует внутренний класс для определения некоторых данных создано и цвета:
+Использование двух углов для определения дугу лучше всего подходит для случаев, когда вы знаете углового длина окружности, необходимого для отрисовки, например, чтобы убедиться в круговой диаграмме. **Разрезанная круговая диаграмма** страницы это показано. [ `ExplodedPieChartPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ExplodedPieChartPage.cs) Класс использует внутренний класс для определения некоторых данных создано и цвета:
 
 ```csharp
 class ChartData
@@ -259,7 +259,7 @@ public void ArcTo (Single x1, Single y1, Single x2, Single y2, Single radius)
 
 Профиль может быть продолжен из второй точке касания.
 
-**Дуги тангенс** страницы позволяет экспериментировать с касательной дуги. Это первое из нескольких страниц, которые являются производными от [ `InteractivePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/InteractivePage.cs), который определяет несколько удобных `SKPaint` объектов и выполняет `TouchPoint` обработки:
+**Дуги тангенс** страницы позволяет экспериментировать с касательной дуги. Это первое из нескольких страниц, которые являются производными от [ `InteractivePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/InteractivePage.cs), который определяет несколько удобных `SKPaint` объектов и выполняет `TouchPoint` обработки:
 
 ```csharp
 public class InteractivePage : ContentPage
@@ -309,7 +309,7 @@ public class InteractivePage : ContentPage
 }
 ```
 
-Класс `TangentArcPage` является производным от класса `InteractivePage`. Конструктор в [ **TangentArcPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml.cs) файла отвечает за создание и инициализация `touchPoints` массива, а параметр `baseCanvasView` (в `InteractivePage`) для `SKCanvasView` создать экземпляр объекта в [ **TangentArcPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml) файла:
+Класс `TangentArcPage` является производным от класса `InteractivePage`. Конструктор в [ **TangentArcPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml.cs) файла отвечает за создание и инициализация `touchPoints` массива, а параметр `baseCanvasView` (в `InteractivePage`) для `SKCanvasView` создать экземпляр объекта в [ **TangentArcPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TangentArcPage.xaml) файла:
 
 ```csharp
 public partial class TangentArcPage : InteractivePage
@@ -419,7 +419,7 @@ public partial class TangentArcPage : InteractivePage
 
 Касательной дуги идеально подходит для создания прямоугольника с закругленными углами, например прямоугольник с закругленными углами. Поскольку `SKPath` уже включает в себя `AddRoundedRect` метод, **округленное Heptagon** страницы демонстрируется использование `ArcTo` для округления углов семь сторонний многоугольник. (Для любого правильного многоугольника обобщенный код.)
 
-`PaintSurface` Обработчик [ `RoundedHeptagonPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/RoundedHeptagonPage.cs) класса содержит один `for` цикл для вычисления координат семь вершины heptagon и второй для вычисления средние семь сторон этих вершины. Затем эти средние точки используются для построения пути:
+`PaintSurface` Обработчик [ `RoundedHeptagonPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/RoundedHeptagonPage.cs) класса содержит один `for` цикл для вычисления координат семь вершины heptagon и второй для вычисления средние семь сторон этих вершины. Затем эти средние точки используются для построения пути:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -543,7 +543,7 @@ public void ArcTo (Single rx, Single ry, Single xAxisRotate, SKPathArcSize large
 
 Несмотря на то, что этот подход к определению дугу звучит сложных при первом возникновении, это единственный подход, который позволяет определить дуги с поворотом эллипса и часто является простой подход при необходимости интегрировать с другими частями контуру дуги.
 
-**Эллиптической дуги** страница позволяет интерактивно установить две точки и размер и поворот эллипса. `EllipticalArcPage` Класс является производным от `InteractivePage`и `PaintSurface` обработчик в [ **EllipticalArcPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/EllipticalArcPage.xaml.cs) четыре дуги строит файл кода программной части:
+**Эллиптической дуги** страница позволяет интерактивно установить две точки и размер и поворот эллипса. `EllipticalArcPage` Класс является производным от `InteractivePage`и `PaintSurface` обработчик в [ **EllipticalArcPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/EllipticalArcPage.xaml.cs) четыре дуги строит файл кода программной части:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -613,7 +613,7 @@ y = 112·sin(41.8) = 75
 
 ![](arcs-images/infinitycoordinates.png "Два круга с касательные и координаты")
 
-`PaintSurface` Обработчик в [ `ArcInfinityPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ArcInfinityPage.cs) класс размещает знак бесконечности, чтобы (0, 0) точка располагается по центру страницы и масштабирует путь, по размеру экрана:
+`PaintSurface` Обработчик в [ `ArcInfinityPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ArcInfinityPage.cs) класс размещает знак бесконечности, чтобы (0, 0) точка располагается по центру страницы и масштабирует путь, по размеру экрана:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)

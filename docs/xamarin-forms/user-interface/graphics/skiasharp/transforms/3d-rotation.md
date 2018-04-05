@@ -7,11 +7,11 @@ ms.assetid: B5894EA0-C415-41F9-93A4-BBF6EC72AFB9
 author: charlespetzold
 ms.author: chape
 ms.date: 04/14/2017
-ms.openlocfilehash: 47daca2ab94f718aeb5ce474c87edce3c3bd77a4
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2f5562475db17b7451fe7cb2ee8bbf4ccb782a87
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="3d-rotations"></a>3D поворотов
 
@@ -221,7 +221,7 @@ y» = y / ((sin (α) или глубину) ·x + 1)
 
 При использовании `SKMatrix44`, выполнять все операции перспективы и трехмерного поворота путем умножения различных `SKMatrix44` значений. Затем можно извлечь Двухмерная матрица 3 x 3 из 4 x 4 с помощью матрицы [ `Matrix` ](https://developer.xamarin.com/api/property/SkiaSharp.SKMatrix44.Matrix/) свойство `SKMatrix44` класса. Это свойство возвращает привычной `SKMatrix` значение.
 
-**Объемные эффекты поворота** страницы позволяет экспериментировать с трехмерного поворота. [ **Rotation3DPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/Rotation3DPage.xaml) файл создает четыре ползунка значение поворота вокруг оси X, Y и Z и задать значение глубины:
+**Объемные эффекты поворота** страницы позволяет экспериментировать с трехмерного поворота. [ **Rotation3DPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/Rotation3DPage.xaml) файл создает четыре ползунка значение поворота вокруг оси X, Y и Z и задать значение глубины:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -302,7 +302,7 @@ y» = y / ((sin (α) или глубину) ·x + 1)
 
 Обратите внимание, что `depthSlider` инициализируется с `Minimum` значение 250. Это означает, что 2D объект поворачиваемых здесь имеет координаты X и Y, ограничена круга определенного radius 250 пикселей вокруг начала координат. Значения координат меньше, чем 250 всегда приведет к любой поворота этого объекта в трехмерном пространстве.
 
-[ **Rotation3DPage.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/Rotation3DPage.xaml.cs) загружает файл кода программной части в точечном рисунке квадратный 300 пикселей:
+[ **Rotation3DPage.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/Rotation3DPage.xaml.cs) загружает файл кода программной части в точечном рисунке квадратный 300 пикселей:
 
 ```csharp
 public partial class Rotation3DPage : ContentPage

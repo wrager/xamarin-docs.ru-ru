@@ -7,11 +7,11 @@ ms.assetid: FDD16186-E3B7-4FF6-9BC2-8A2974BFF616
 author: charlespetzold
 ms.author: chape
 ms.date: 03/20/2017
-ms.openlocfilehash: c9f5f9f20296b1c2443a8addeebd4d12ccaa1ab4
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 39547ebaf301a9b6dca6a90cb5ede831b19862cf
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="the-skew-transform"></a>Наклон преобразования
 
@@ -39,7 +39,7 @@ public void Skew (SKPoint skew)
 
 Однако маловероятно, что вы будете использовать один из этих двух методов в изоляции.
 
-**Наклон поэкспериментировать** странице позволяет экспериментировать с наклон значений в диапазоне от –10 до 10. Текстовая строка располагается в левом верхнем углу страницы, с отклонение значений, полученных из двух `Slider` элементов. Вот `PaintSurface` обработчик в [ `SkewExperimentPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/SkewExperimentPage.xaml.cs) класса:
+**Наклон поэкспериментировать** странице позволяет экспериментировать с наклон значений в диапазоне от –10 до 10. Текстовая строка располагается в левом верхнем углу страницы, с отклонение значений, полученных из двух `Slider` элементов. Вот `PaintSurface` обработчик в [ `SkewExperimentPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/SkewExperimentPage.xaml.cs) класса:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -109,7 +109,7 @@ y "= ySkew · (x — px) + y
 
 Коэффициент shift 150 пикселей на вертикальную 100 пикселов градуса тангенс угла, в этом примере 56.3.
 
-XAML-файл **эксперимента угол наклона** страница подобна **угол наклона** страницы разницей, что `Slider` элементов в диапазоне от – 90 до 90 градусов. [ `SkewAngleExperiment` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/SkewAngleExperimentPage.xaml.cs) Файл кода программной части Центрирует текст на странице и использует `Translate` для установки центра наклон относительно центральной части страницы. Короткие `SkewDegrees` метод в нижней части код преобразует угол наклона значения:
+XAML-файл **эксперимента угол наклона** страница подобна **угол наклона** страницы разницей, что `Slider` элементов в диапазоне от – 90 до 90 градусов. [ `SkewAngleExperiment` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/SkewAngleExperimentPage.xaml.cs) Файл кода программной части Центрирует текст на странице и использует `Translate` для установки центра наклон относительно центральной части страницы. Короткие `SkewDegrees` метод в нижней части код преобразует угол наклона значения:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -154,7 +154,7 @@ void SkewDegrees(SKCanvas canvas, double xDegrees, double yDegrees)
 
 [![](skew-images/skewangleexperiment-small.png "Тройной снимок экрана со страницей эксперимента угол наклона")](skew-images/skewangleexperiment-large.png#lightbox "тройной снимок экрана со страницей эксперимента угол наклона")
 
-Небольшой отрицательное горизонтальный наклон может имитировать наклонный или курсивом текста, как **наклонный текст** демонстрирует страницы. [ `ObliqueTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/ObliqueTextPage.cs) Класс показано, как это можно сделать:
+Небольшой отрицательное горизонтальный наклон может имитировать наклонный или курсивом текста, как **наклонный текст** демонстрирует страницы. [ `ObliqueTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/ObliqueTextPage.cs) Класс показано, как это можно сделать:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)

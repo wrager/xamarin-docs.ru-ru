@@ -7,11 +7,11 @@ ms.assetid: 781937AA-AA1C-469C-AA92-D42D08B58635
 author: charlespetzold
 ms.author: chape
 ms.date: 05/24/2017
-ms.openlocfilehash: 0bd13cc58d4f15b46edc03eda35f04d7ca866dec
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2b730690e508c29e9bee45ccfdd05d5dd6e92d7b
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="skiasharp-curves-and-paths"></a>SkiaSharp кривых и контуров
 
@@ -19,7 +19,7 @@ _Сведения об использовании SkiaSharp для рисова�
 
 Исследования [ `SKPath` ](https://developer.xamarin.com/api/type/SkiaSharp.SKPath/) методы и свойства началась в [SkiaSharp строки и пути](~/xamarin-forms/user-interface/graphics/skiasharp/paths/index.md) статьи. Продолжение статей здесь методы, добавляющие кривых, чтобы `SKPath` объекты и использовать другие средства мощные пути. Вы увидите, как можно указать полный путь четкими текстовой строки, используйте путь эффекты и детализировать внутренние компоненты пути.
 
-Примеры программ в этом разделе отображаются под заголовком **кривых и другие пути** на домашней странице [ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программы и в [ **Кривых** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves) папку решения.
+Примеры программ в этом разделе отображаются под заголовком **кривых и другие пути** на домашней странице [ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) программы и в [ **Кривых** ](https://github.com/xamarin/xamarin-forms-samples/tree/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves) папку решения.
 
 ## <a name="three-ways-to-draw-an-arcarcsmd"></a>[Три способа нарисовать дугу](arcs.md)
 

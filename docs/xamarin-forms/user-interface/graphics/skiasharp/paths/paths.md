@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 3a828baccda83822237d2564d771bcd89c9099e5
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b2881148631435c9082b42cad0e784100b010b46
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="path-basics"></a>Основные сведения о пути
 
@@ -50,7 +50,7 @@ _Просмотр объектов SkiaSharp SKPath для объединени�
 
 Профиль заканчивается другой вызов `MoveTo` или `RMoveTo`, что позволяет начать новый контур, или вызов `Close`, которой закрывает контуру. `Close` Метод автоматически добавляет прямую линию от текущей точки до первой точки контуру и отмечает путь как закрытые, это означает, что он будет изображен без все прописные штриха.
 
-Различие между открытые и закрытые профили поясняет **двух контуров треугольник** страницы, которая использует `SKPath` объекта с помощью двух контуров для подготовки к просмотру двух треугольников. Первый профиль открыт и закрывается за секунду. Вот [ `TwoTriangleContours` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/LinesAndPaths/TwoTriangleContoursPage.cs) класса:
+Различие между открытые и закрытые профили поясняет **двух контуров треугольник** страницы, которая использует `SKPath` объекта с помощью двух контуров для подготовки к просмотру двух треугольников. Первый профиль открыт и закрывается за секунду. Вот [ `TwoTriangleContours` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/LinesAndPaths/TwoTriangleContoursPage.cs) класса:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -122,7 +122,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 - [`Round`](https://developer.xamarin.com/api/field/SkiaSharp.SKStrokeJoin.Round/) для соединения со скругленными
 - [`Bevel`](https://developer.xamarin.com/api/field/SkiaSharp.SKStrokeJoin.Bevel/) для объединения жесткому off
 
-**Соединения штриха** страниц отображает этих трех вычерчивания соединения с помощью кода, чтобы **штриха Caps** страницы. Это `PaintSurface` обработчик событий в [ `StrokeJoinsPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/LinesAndPaths/StrokeJoinsPage.cs) класса:
+**Соединения штриха** страниц отображает этих трех вычерчивания соединения с помощью кода, чтобы **штриха Caps** страницы. Это `PaintSurface` обработчик событий в [ `StrokeJoinsPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/LinesAndPaths/StrokeJoinsPage.cs) класса:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)

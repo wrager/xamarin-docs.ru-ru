@@ -7,11 +7,11 @@ ms.assetid: 8FE0F6DC-16BC-435F-9626-DD1790C0145A
 author: charlespetzold
 ms.author: chape
 ms.date: 05/25/2017
-ms.openlocfilehash: 312d487111f8e36170c97ca7a29fb91556c72569
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c5142a3abcc6d461bc277faeb02e3aacd9727bca
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="three-types-of-bzier-curves"></a>Три типа кривых Безье
 
@@ -46,7 +46,7 @@ public void CubicTo (Single x1, Single y1, Single x2, Single y2, Single x3, Sing
 
 Результирующая Кривая начинается начальную точку и заканчивается в конечной точке. Кривая обычно не проходит через две контрольные точки; Вместо этого они работают много like магниты опрос кривой к их.
 
-Лучший способ почувствовать кривой Безье третьего порядка предусмотрено экспериментов. Это назначение **кривой Безье** страницы, который является производным от `InteractivePage`. [ **BezierCurvePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/BezierCurvePage.xaml) создает файл `SKCanvasView` и `TouchEffect`. [ **BezierCurvePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/BezierCurvePage.xaml.cs) файл кода программной части создаются четыре `TouchPoint` объектов в конструкторе. `PaintSurface` Обработчик событий создает `SKPath` для подготовки к просмотру кривую Безье, в зависимости от четыре `TouchPoint` объектов, а также выводит пунктирная касательные из точки управления для конечных точек:
+Лучший способ почувствовать кривой Безье третьего порядка предусмотрено экспериментов. Это назначение **кривой Безье** страницы, который является производным от `InteractivePage`. [ **BezierCurvePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/BezierCurvePage.xaml) создает файл `SKCanvasView` и `TouchEffect`. [ **BezierCurvePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/BezierCurvePage.xaml.cs) файл кода программной части создаются четыре `TouchPoint` объектов в конструкторе. `PaintSurface` Обработчик событий создает `SKPath` для подготовки к просмотру кривую Безье, в зависимости от четыре `TouchPoint` объектов, а также выводит пунктирная касательные из точки управления для конечных точек:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -128,7 +128,7 @@ L = 4 × tan(α / 4) / 3
 
 На рисунке углом в 45 градусов, поэтому L равно 0.265. В коде это значение будет будет умножено на нужный радиус окружности.
 
-**Безье дуги** страницы позволяет экспериментировать с определением кривую Безье, для приближения дуги для углов диапазоне до 180 градусов. [ **BezierCircularArcPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/BezierCircularArcPage.xaml) создает файл `SKCanvasView` и `Slider` для выбора угол. `PaintSurface` Обработчик событий в [ **BezierCircularArgPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/BezierCircularArcPage.xaml.cs) кода преобразования для установки используется точка (0, 0) в центре полотна. Рисование окружности с центром в точке для сравнения и затем вычисляет две контрольные точки кривой Безье:
+**Безье дуги** страницы позволяет экспериментировать с определением кривую Безье, для приближения дуги для углов диапазоне до 180 градусов. [ **BezierCircularArcPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/BezierCircularArcPage.xaml) создает файл `SKCanvasView` и `Slider` для выбора угол. `PaintSurface` Обработчик событий в [ **BezierCircularArgPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/BezierCircularArcPage.xaml.cs) кода преобразования для установки используется точка (0, 0) в центре полотна. Рисование окружности с центром в точке для сравнения и затем вычисляет две контрольные точки кривой Безье:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -216,7 +216,7 @@ float Magnitude(SKPoint v)
 
 Если радиус окружности равен 100, затем *L* – 55, и это номеру легко запомнить.
 
-**Возведение в квадрат круга** страницы анимирует рисунок между круг и квадрат. Круг приблизительно оценить по четыре кривых Безье, координаты которого отображаются в первом столбце это определение массива в [ `SquaringTheCirclePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/SquaringTheCirclePage.cs) класса:
+**Возведение в квадрат круга** страницы анимирует рисунок между круг и квадрат. Круг приблизительно оценить по четыре кривых Безье, координаты которого отображаются в первом столбце это определение массива в [ `SquaringTheCirclePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/SquaringTheCirclePage.cs) класса:
 
 ```csharp
 public class SquaringTheCirclePage : ContentPage
@@ -292,7 +292,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Такие анимации бы невозможно без кривых, типовой гибки, отображаются как дуги и прямых линий.
 
-**Безье бесконечность** страницы также использует возможности кривую Безье для приближения дуги. Вот `PaintSurface` обработчиком [ `BezierInfinityPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/BezierInfinityPage.cs) класса:
+**Безье бесконечность** страницы также использует возможности кривую Безье для приближения дуги. Вот `PaintSurface` обработчиком [ `BezierInfinityPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/BezierInfinityPage.cs) класса:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -359,7 +359,7 @@ public void QuadTo (Single x1, Single y1, Single x2, Single y2)
 
 Методы добавления кривой с текущей позицией с целью `point2` с `point1` в качестве точки управления.
 
-Можно поэкспериментировать с кривых Безье второго порядка с **квадратичной кривой** страницу, которая очень похожа на **кривой Безье** страницы, отличаясь только наличием только три точки касания. Вот `PaintSurface` обработчик в [ **QuadraticCurve.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/QuadraticCurvePage.xaml.cs) файл кода программной части:
+Можно поэкспериментировать с кривых Безье второго порядка с **квадратичной кривой** страницу, которая очень похожа на **кривой Безье** страницы, отличаясь только наличием только три точки касания. Вот `PaintSurface` обработчик в [ **QuadraticCurve.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/QuadraticCurvePage.xaml.cs) файл кода программной части:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -436,7 +436,7 @@ public void ConicTo (Single x1, Single y1, Single x2, Single y2, Single weight)
 
 Обратите внимание, конечное `weight` параметра.
 
-**Conic кривой** страницы позволяет экспериментировать с этих кривых. Класс `ConicCurvePage` является производным от класса `InteractivePage`. [ **ConicCurvePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml) создает файл `Slider` установите значение веса от – 2 до 2. [ **ConicCurvePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml.cs) файл кода программной части создает три `TouchPoint` объектов и `PaintSurface` обработчик просто отображает результирующий кривой с касательные к элементу управления точки:
+**Conic кривой** страницы позволяет экспериментировать с этих кривых. Класс `ConicCurvePage` является производным от класса `InteractivePage`. [ **ConicCurvePage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml) создает файл `Slider` установите значение веса от – 2 до 2. [ **ConicCurvePage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCurvePage.xaml.cs) файл кода программной части создает три `TouchPoint` объектов и `PaintSurface` обработчик просто отображает результирующий кривой с касательные к элементу управления точки:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -490,7 +490,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Тригонометрические функции можно использовать для определения расстояния контрольной точки из центра окружности: это радиус окружности, деленное косинус угла половину α. Чтобы нарисовать дугу между начальной и конечной точек, задайте вес для этой же косинус половину угла. Обратите внимание, что если угол 180 градусов, затем касательные никогда не соответствовать вес равно нулю. Однако для углов меньше, чем 180 градусов, математические работает отлично.
 
-**Conic дуги** страницы это показано. [ **ConicCircularArc.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ConicCircularArcPage.xaml) создает файл `Slider` для выбора угол. `PaintSurface` Обработчик в [ **ConicCircularArc.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ConicCircularArcPage.xaml.cs) файл кода вычисляет контрольную точку и вес:
+**Conic дуги** страницы это показано. [ **ConicCircularArc.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCircularArcPage.xaml) создает файл `Slider` для выбора угол. `PaintSurface` Обработчик в [ **ConicCircularArc.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConicCircularArcPage.xaml.cs) файл кода вычисляет контрольную точку и вес:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)

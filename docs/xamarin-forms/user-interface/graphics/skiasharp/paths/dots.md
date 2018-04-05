@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 274c8e9a79fa3fadff14f1174d86aad04d902b05
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 46ab21aa5156a6deab5952f165917cc299b500ac
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="dots-and-dashes"></a>Точек и тире
 
@@ -29,7 +29,7 @@ SkiaSharp позволяет рисования линий, которые не 
 
 Тем не менее `StrokeCap` параметра `SKPaint` объекта также влияет на эти точки и дефисы. Как вы увидите, что оказывает влияние на элементы исходного массива.
 
-Точечные и пунктирными линиями показаны на **точек и тире** страницы. [ **DotsAndDashesPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/LinesAndPaths/DotsAndDashesPage.xaml) файл создает два `Picker` просматривает, один для возможности выбирать окончаний обводки, а второй — выберите массив тире:
+Точечные и пунктирными линиями показаны на **точек и тире** страницы. [ **DotsAndDashesPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/LinesAndPaths/DotsAndDashesPage.xaml) файл создает два `Picker` просматривает, один для возможности выбирать окончаний обводки, а второй — выберите массив тире:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -92,7 +92,7 @@ SkiaSharp позволяет рисования линий, которые не 
 
 Первые три элемента в `dashArrayPicker` Предположим, что ширина штриха 10 точек. {10, 10} массив — пунктирная линия, {30, 10} — пунктирная линия и {10, 10, 30, 10} для точки штриховой линией. (Остальные три обсуждаются вскоре.)
 
-[ `DotsAndDashesPage` Файл кода программной части](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/LinesAndPaths/DotsAndDashesPage.xaml.cs) содержит `PaintSurface` обработчик событий и ряд вспомогательные процедуры для доступа к `Picker` представления:
+[ `DotsAndDashesPage` Файл кода программной части](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/LinesAndPaths/DotsAndDashesPage.xaml.cs) содержит `PaintSurface` обработчик событий и ряд вспомогательные процедуры для доступа к `Picker` представления:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -168,7 +168,7 @@ float[] GetPickerArray(Picker picker)
 
 До сих не указываются не выполнена для второго параметра `SKPathEffect.CreateDash` метод. Этот параметр называется `phase` и он ссылается на смещение в шаблон и пунктирная для начало строки. Например, если массив тире {10, 10} и `phase` равно 10, то строка начинается с пробел, а не точки.
 
-Одно из интересных применений `phase` параметр находится в анимации. **Анимированы спирали** страница подобна **спирали Archimedean** страницы, за исключением случаев, [ `AnimatedSpiralPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/LinesAndPaths/AnimatedSpiralPage.cs) класс анимирует `phase` параметр. Этой странице также показан другой подход для анимации. Предыдущий пример из [ `PulsatingEllipsePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml.cs) используется `Task.Delay` способом управления анимации. В этом примере используется вместо Xamarin.Forms `Device.Timer` метод:
+Одно из интересных применений `phase` параметр находится в анимации. **Анимированы спирали** страница подобна **спирали Archimedean** страницы, за исключением случаев, [ `AnimatedSpiralPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/LinesAndPaths/AnimatedSpiralPage.cs) класс анимирует `phase` параметр. Этой странице также показан другой подход для анимации. Предыдущий пример из [ `PulsatingEllipsePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Basics/PulsatingEllipsePage.xaml.cs) используется `Task.Delay` способом управления анимации. В этом примере используется вместо Xamarin.Forms `Device.Timer` метод:
 
 
 ```csharp
