@@ -7,11 +7,11 @@ ms.assetid: 95167D1F-A718-405A-AFCC-90E596D422F3
 author: charlespetzold
 ms.author: chape
 ms.date: 07/29/2017
-ms.openlocfilehash: 4097aea4079555b26b586db5ec63fa261d5e7946
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 47f5a6fdcfb6ee795f84ca8e19c0954b68a2fae9
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="path-effects"></a>Путь эффекты
 
@@ -50,7 +50,7 @@ public static SKPathEffect CreateDash (Single[] intervals, Single phase)
 
 [![](effects-images/animateddottedtext-small.png "Тройной снимок экрана со страницей анимации текста с точками")](effects-images/animateddottedtext-large.png#lightbox "тройной снимок экрана со страницей анимации текста с точками")
 
-[ `AnimatedDottedTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/DotDashMorphPage.cs) Класс начинается определение нескольких констант и также переопределяет `OnAppearing` и `OnDisappearing` методы для анимации:
+[ `AnimatedDottedTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/DotDashMorphPage.cs) Класс начинается определение нескольких констант и также переопределяет `OnAppearing` и `OnDisappearing` методы для анимации:
 
 ```csharp
 public class AnimatedDottedTextPage : ContentPage
@@ -158,7 +158,7 @@ public class AnimatedDottedTextPage : ContentPage
 
 [![](effects-images/dotdashmorph-small.png "Тройной снимок экрана со страницей Morph тире точка")](effects-images/dotdashmorph-large.png#lightbox "тройной снимок экрана со страницей Morph точка тире")
 
-[ `DotDashMorphPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/DotDashMorphPage.cs) Класса переопределения `OnAppearing` и `OnDisappearing` так же, как было в предыдущей программе, но этот класс определяет методы `SKPaint` объект как поле:
+[ `DotDashMorphPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/DotDashMorphPage.cs) Класса переопределения `OnAppearing` и `OnDisappearing` так же, как было в предыдущей программе, но этот класс определяет методы `SKPaint` объект как поле:
 
 ```csharp
 public class DotDashMorphPage : ContentPage
@@ -287,7 +287,7 @@ public static SKPathEffect Create1DPath (SKPath path, Single advance,
 
 `Translate` Член вызывает путь должен оставаться в ту же ориентацию, как они реплицируются вдоль линии или формы. Для `Rotate`, путь поворачивается основании касательной кривой. Путь содержит его нормальную ориентацию для горизонтальных линий. `Morph` Аналогично `Rotate` , но сам путь также изгиб сопоставляемое кривизны вычерчивании строки.
 
-**Эффект пути 1 D** страницы демонстрирует следующие три варианта. [ **OneDimensionalPathEffectPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/OneDimensionalPathEffectPage.xaml) файл Определяет палитра, содержащая три элементы, соответствующие три члена перечисления:
+**Эффект пути 1 D** страницы демонстрирует следующие три варианта. [ **OneDimensionalPathEffectPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/OneDimensionalPathEffectPage.xaml) файл Определяет палитра, содержащая три элементы, соответствующие три члена перечисления:
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -323,7 +323,7 @@ public static SKPathEffect Create1DPath (SKPath path, Single advance,
 </ContentPage>
 ```
 
-[ **OneDimensionalPathEffectPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/OneDimensionalPathEffectPage.xaml.cs) файл кода определяет три `SKPathEffect` объекты в виде полей. Они создаются с помощью `SKPathEffect.Create1DPath` с `SKPath` объекты, созданные с помощью `SKPath.ParseSvgPathData`. Во-первых, простое окно, второй — в форме ромбовидной фигуры и третий — прямоугольник. Эти значения используются для демонстрации три эффект стили:
+[ **OneDimensionalPathEffectPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/OneDimensionalPathEffectPage.xaml.cs) файл кода определяет три `SKPathEffect` объекты в виде полей. Они создаются с помощью `SKPathEffect.Create1DPath` с `SKPath` объекты, созданные с помощью `SKPath.ParseSvgPathData`. Во-первых, простое окно, второй — в форме ромбовидной фигуры и третий — прямоугольник. Эти значения используются для демонстрации три эффект стили:
 
 ```csharp
 public partial class OneDimensionalPathEffectPage : ContentPage
@@ -422,7 +422,7 @@ y = · Cosh(x / a)
 
 Cosh (w/2 /) = 1 + h /
 
-Следующий метод в [ `LinkedChainPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/LinkedChainPage.cs) класс включает в себя равенства, ссылаясь на два выражения слева и справа от знака равенства как `left` и `right`. Для небольших значений *a*, `left` больше, чем `right`; для больших значений *a*, `left` — меньше, чем `right`. `while` Сужается цикла в на оптимальное значение *a*:
+Следующий метод в [ `LinkedChainPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/LinkedChainPage.cs) класс включает в себя равенства, ссылаясь на два выражения слева и справа от знака равенства как `left` и `right`. Для небольших значений *a*, `left` больше, чем `right`; для больших значений *a*, `left` — меньше, чем `right`. `while` Сужается цикла в на оптимальное значение *a*:
 
 ```csharp
 float FindOptimumA(float width, float height)
@@ -551,7 +551,7 @@ public class LinkedChainPage : ContentPage
 
 (0, 0) точка сегмента пути — дескриптор, поэтому после `phase` аргумент анимировано, контейнеров, по-видимому, связана с конвейерная лента, возможно scooping копирование воды внизу и сохранение его в верхней.
 
-[ `ConveyorBeltPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/ConveyorBeltPage.cs) Класс реализует анимации с помощью переопределений `OnAppearing` и `OnDisappearing` методы. На странице конструктора задан путь для контейнера:
+[ `ConveyorBeltPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/ConveyorBeltPage.cs) Класс реализует анимации с помощью переопределений `OnAppearing` и `OnDisappearing` методы. На странице конструктора задан путь для контейнера:
 
 ```csharp
 public class ConveyorBeltPage : ContentPage
@@ -712,7 +712,7 @@ public static SKPathEffect Create2DLine (Single width, SKMatrix matrix)
 
 По умолчанию штриховка горизонтальной. Если `matrix` параметр содержит поворота, штриховка поворачиваются по часовой стрелке.
 
-**Штриховки заполнения** странице демонстрируется эффект этого пути. [ `HatchFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/HatchFillPage.cs) Класс определяет три пути эффекты, как поля, первый Горизонтальная штриховка с шириной 3 пикселя коэффициента масштабирования, указывающую, что они размещены через равные интервалы 6 пикселей друг от друга. Разделение строк таким образом, 3 пикселей. Второй путь действует для вертикальной штриховка шириной 6 пикселей на расстоянии друг от друга (поэтому разделение — 18 пикселей), 24 точки и третий — для штриховой диагональный строк 12 расширенный расстоянии друг от друга 36 пикселей друг от друга. 
+**Штриховки заполнения** странице демонстрируется эффект этого пути. [ `HatchFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/HatchFillPage.cs) Класс определяет три пути эффекты, как поля, первый Горизонтальная штриховка с шириной 3 пикселя коэффициента масштабирования, указывающую, что они размещены через равные интервалы 6 пикселей друг от друга. Разделение строк таким образом, 3 пикселей. Второй путь действует для вертикальной штриховка шириной 6 пикселей на расстоянии друг от друга (поэтому разделение — 18 пикселей), 24 точки и третий — для штриховой диагональный строк 12 расширенный расстоянии друг от друга 36 пикселей друг от друга. 
 
 ```csharp
 public class HatchFillPage : ContentPage
@@ -812,7 +812,7 @@ public static SKPathEffect Create2DPath (SKMatrix matrix, SKPath path)
 
 Реплицированные путь обычно выравнивается левую и верхнюю края экрана, а не заполняемая область. Это поведение можно переопределить, предоставив коэффициенты преобразования между 0 и коэффициенты масштабирования, чтобы задать горизонтальное и вертикальное смещение из сторон левую и верхнюю.
 
-**Путь заполняет** странице демонстрируется эффект этого пути. Путь, используемый для заполнения области определяется как поле в [ `PathFileFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathTileFillPage.cs) класса. Горизонтальной и вертикальной координате диапазоном от: от -40 до 40, это означает, что этот путь квадратный 80 пикселей: 
+**Путь заполняет** странице демонстрируется эффект этого пути. Путь, используемый для заполнения области определяется как поле в [ `PathFileFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathTileFillPage.cs) класса. Горизонтальной и вертикальной координате диапазоном от: от -40 до 40, это означает, что этот путь квадратный 80 пикселей: 
 
 ```csharp
 public class PathTileFillPage : ContentPage
@@ -868,7 +868,7 @@ public static SKPathEffect CreateCorner (Single radius)
 
 Несмотря на то, что один аргумент называется `radius` ему необходимо присвоить половину радиус нужного угла. (Это характеристика основного кода Skia).
 
-Вот `PaintSurface` обработчик в [ `AnotherRoundedHeptagonPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/AnotherRoundedHeptagonPage.cs) класса:
+Вот `PaintSurface` обработчик в [ `AnotherRoundedHeptagonPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/AnotherRoundedHeptagonPage.cs) класса:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -944,7 +944,7 @@ public static SKPathEffect CreateDiscrete (Single segLength, Single deviation, U
 
 [![](effects-images/jitterexperiment-small.png "Тройное снимок экрана со страницей Флуктуаций эксперимента")](effects-images/jitterexperiment-large.png#lightbox "Triple screenshot of the JitterExperiment page")
 
-Программе не то такую ошибку очень. [ **JitterExperimentPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/JitterExperimentPage.xaml) файл создает два `Slider` элементы и `SKCanvasView`:
+Программе не то такую ошибку очень. [ **JitterExperimentPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/JitterExperimentPage.xaml) файл создает два `Slider` элементы и `SKCanvasView`:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -1000,7 +1000,7 @@ public static SKPathEffect CreateDiscrete (Single segLength, Single deviation, U
 </ContentPage>
 ```
 
-`PaintSurface` Обработчик в [ **JitterExperimentPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/JitterExperimentPage.xaml.cs) файл кода программной части вызывается всякий раз, когда `Slider` изменении значения. Он вызывает `SKPathEffect.CreateDiscrete` с помощью двух `Slider` значения и использует его для вычерчивания прямоугольника:
+`PaintSurface` Обработчик в [ **JitterExperimentPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/JitterExperimentPage.xaml.cs) файл кода программной части вызывается всякий раз, когда `Slider` изменении значения. Он вызывает `SKPathEffect.CreateDiscrete` с помощью двух `Slider` значения и использует его для вычерчивания прямоугольника:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -1031,7 +1031,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 }
 ```
 
-Этот эффект можно использовать для заполнения, а также в этом случае очертания области, заполненные регулируется эти случайные отклонения. **Флуктуаций текст** страницы демонстрируется использование этот эффект пути для отображения текста. Большая часть кода в `PaintSurface` обработчик [ `JitterTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/JitterTextPage.cs) класса, предназначенного для изменения размера и Центрирование текста:
+Этот эффект можно использовать для заполнения, а также в этом случае очертания области, заполненные регулируется эти случайные отклонения. **Флуктуаций текст** страницы демонстрируется использование этот эффект пути для отображения текста. Большая часть кода в `PaintSurface` обработчик [ `JitterTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/JitterTextPage.cs) класса, предназначенного для изменения размера и Центрирование текста:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -1086,7 +1086,7 @@ public Boolean GetFillPath (SKPath src, SKPath dst, SKRect cullRect, Single resS
 
 Например если `src` путь отображается в виде простого круга радиуса 500 и `SKPaint` объект задает толщину штриха, 100, то `dst` путь стал двух концентрических окружностей с радиусом 450, а другой с радиусом 550. Этот метод вызывается `GetFillPath` из-за заполнения это `dst` путь совпадает со значением срезом `src` пути. Но можно также выполнить обводку `dst` путь к видна пути.
 
-**Коснитесь, чтобы структуры путь** это показано. `SKCanvasView` И `TapGestureRecognizer` создаются в [ **TapToOutlineThePathPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/TapToOutlineThePathPage.xaml) файла. [ **TapToOutlineThePathPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/TapToOutlineThePathPage.xaml.cs) файл кода определяет три `SKPaint` объекты, как поля, два для срезом с вычерчивания ширина 100 и 20, а третий для заполнения:
+**Коснитесь, чтобы структуры путь** это показано. `SKCanvasView` И `TapGestureRecognizer` создаются в [ **TapToOutlineThePathPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TapToOutlineThePathPage.xaml) файла. [ **TapToOutlineThePathPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/TapToOutlineThePathPage.xaml.cs) файл кода определяет три `SKPaint` объекты, как поля, два для срезом с вычерчивания ширина 100 и 20, а третий для заполнения:
 
 ```csharp
 public partial class TapToOutlineThePathPage : ContentPage
@@ -1239,7 +1239,7 @@ public static SKPathEffect CreateCompose (SKPathEffect outer, SKPathEffect inner
 
 [![](effects-images/catsinframe-small.png "Тройной снимок экрана со страницей Cats в кадр")](effects-images/catsinframe-large.png#lightbox "тройной снимок экрана со страницей Cats в рамки")
 
-[ `CatsInFramePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/CatsInFramePage.cs) Класса начинается с определения нескольких полей. Может распознать первого поля из [ `PathDataCatPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathDataCatPage.cs) класса из [ **данные пути SVG** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/path-data.md) статьи. Второй путь основано на строки и дуги для шаблона Зубцы кадра.
+[ `CatsInFramePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/CatsInFramePage.cs) Класса начинается с определения нескольких полей. Может распознать первого поля из [ `PathDataCatPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathDataCatPage.cs) класса из [ **данные пути SVG** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/path-data.md) статьи. Второй путь основано на строки и дуги для шаблона Зубцы кадра.
 
 ```csharp
 public class CatsInFramePage : ContentPage
@@ -1353,7 +1353,7 @@ public class CatsInFramePage : ContentPage
 
 Это обычно используется `SKPathEffect.CreateCompose` некоторые флуктуации добавляемый другой эффект пути. Определенно можно поэкспериментировать самостоятельно, но ниже приведен пример, немного отличаются:
 
-**Пунктирных линий штриховки** заполняет штриховка, которые являются штриховая эллипса. Большая часть работы в [ `DashedHatchLinesPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/DashedHatchLinesPage.cs) класса выполняется непосредственно в определения полей. Эти поля определяют эффекта тире и эффекта штриховки. Они определяются как `static` так, как они будут использоваться далее в `SKPathEffect.CreateCompose` вызов в `SKPaint` определение:
+**Пунктирных линий штриховки** заполняет штриховка, которые являются штриховая эллипса. Большая часть работы в [ `DashedHatchLinesPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/DashedHatchLinesPage.cs) класса выполняется непосредственно в определения полей. Эти поля определяют эффекта тире и эффекта штриховки. Они определяются как `static` так, как они будут использоваться далее в `SKPathEffect.CreateCompose` вызов в `SKPaint` определение:
 
 ```csharp
 public class DashedHatchLinesPage : ContentPage

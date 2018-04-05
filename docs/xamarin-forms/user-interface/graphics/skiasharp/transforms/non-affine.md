@@ -7,11 +7,11 @@ ms.assetid: 785F4D13-7430-492E-B24E-3B45C560E9F1
 author: charlespetzold
 ms.author: chape
 ms.date: 04/14/2017
-ms.openlocfilehash: 52bed94724d330b74a9604c54fcfebad1e562267
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 8c3d39038fbaf5ed6601102a0aa16860c7a5a7a6
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="non-affine-transforms"></a>Аффинные преобразования
 
@@ -95,7 +95,7 @@ y "= y-(0.01·x + 1)
 
 `Persp` Часть из этих имен ячейки ссылается на «перспективы», поскольку foreshortening предполагает, что поле теперь наклонена с правой стороны от средства просмотра.
 
-**Перспективы "Тест"** страницы позволяет вам поэкспериментировать со значениями `Persp0` и `Pers1` чтобы понять, как они работают. Приемлемые значения этих ячеек матрицы так малы, `Slider` в универсальной платформы Windows не может правильно их обработки. Для размещения проблемы UWP, два `Slider` элементов в [ **TestPerspective.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/TestPerspectivePage.xaml) должны быть инициализированы в диапазоне от – 1 до 1:
+**Перспективы "Тест"** страницы позволяет вам поэкспериментировать со значениями `Persp0` и `Pers1` чтобы понять, как они работают. Приемлемые значения этих ячеек матрицы так малы, `Slider` в универсальной платформы Windows не может правильно их обработки. Для размещения проблемы UWP, два `Slider` элементов в [ **TestPerspective.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/TestPerspectivePage.xaml) должны быть инициализированы в диапазоне от – 1 до 1:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -149,7 +149,7 @@ y "= y-(0.01·x + 1)
 </ContentPage>
 ```
 
-Обработчики событий для ползунков в [ `TestPerspectivePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/TestPerspectivePage.xaml.cs) файл кода программной части разделить значения 100, чтобы они в диапазоне между –0.01 и 0,01. Кроме того конструктор загружает в точечном рисунке:
+Обработчики событий для ползунков в [ `TestPerspectivePage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/TestPerspectivePage.xaml.cs) файл кода программной части разделить значения 100, чтобы они в диапазоне между –0.01 и 0,01. Кроме того конструктор загружает в точечном рисунке:
 
 ```csharp
 public partial class TestPerspectivePage : ContentPage
@@ -240,7 +240,7 @@ z' = Persp0·x + Persp1·y + 1
 
 ![](non-affine-images/tapertransform.png "Поле, которое подвергается конический преобразования")
 
-[ `TaperTransform` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/TaperTransform.cs) Класс выполняет обобщенный вычисления на основе этих параметров не аффинного преобразования:
+[ `TaperTransform` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/TaperTransform.cs) Класс выполняет обобщенный вычисления на основе этих параметров не аффинного преобразования:
 
 - размер прямоугольной преобразуемые, изображения
 - Перечисление, указывающее стороны прямоугольника, истончается,
@@ -349,7 +349,7 @@ static class TaperTransform
 }
 ```
 
-Этот класс используется в **конический преобразования** страницы. В файле XAML создает два `Picker` элементов для выбора значений перечисления и `Slider` по выбору конический дробной части. [ `PaintSurface` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/TaperTransformPage.xaml.cs#L55) Обработчик объединяет конический преобразования с двумя перевести преобразования вносить преобразование относительно верхнего левого угла изображения:
+Этот класс используется в **конический преобразования** страницы. В файле XAML создает два `Picker` элементов для выбора значений перечисления и `Slider` по выбору конический дробной части. [ `PaintSurface` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/TaperTransformPage.xaml.cs#L55) Обработчик объединяет конический преобразования с двумя перевести преобразования вносить преобразование относительно верхнего левого угла изображения:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -398,7 +398,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 [![](non-affine-images/shownonaffinematrix-small.png "Тройной снимок экрана со страницей Показать Non-аффинное")](non-affine-images/shownonaffinematrix-large.png#lightbox "тройной снимок экрана со страницей Показать Non-аффинное")
 
-При условии, что не пытайтесь создайте внутреннюю угол один из углов точечного рисунка больше 180 градусов или две стороны пересекать друг друга, успешно вычисляется преобразование с помощью данного метода из [ `ShowNonAffineMatrixPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/ShowNonAffineMatrixPage.xaml.cs) класса:
+При условии, что не пытайтесь создайте внутреннюю угол один из углов точечного рисунка больше 180 градусов или две стороны пересекать друг друга, успешно вычисляется преобразование с помощью данного метода из [ `ShowNonAffineMatrixPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/ShowNonAffineMatrixPage.xaml.cs) класса:
 
 ```csharp
 static SKMatrix ComputeMatrix(SKSize size, SKPoint ptUL, SKPoint ptUR, SKPoint ptLL, SKPoint ptLR)
@@ -459,7 +459,7 @@ static SKMatrix ComputeMatrix(SKSize size, SKPoint ptUL, SKPoint ptUR, SKPoint p
 
 Окончательный координаты справа указываются четыре точки, связанные с точками четыре касания. Это окончательный координаты углов растрового изображения.
 
-W и H представляют ширина и Высота растрового изображения. Первое (`S`) просто масштабирует точечный рисунок в 1 пиксель квадрат. Второе преобразование является преобразование неаффинных `N`, а третий — аффинного преобразования `A`. Это аффинное преобразование основана на три точки, поэтому это просто как ранее аффинного [ `ComputeMatrix` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/ShowAffineMatrixPage.xaml.cs#L68) метод и не включает четвертой строки с (a, b) точки.
+W и H представляют ширина и Высота растрового изображения. Первое (`S`) просто масштабирует точечный рисунок в 1 пиксель квадрат. Второе преобразование является преобразование неаффинных `N`, а третий — аффинного преобразования `A`. Это аффинное преобразование основана на три точки, поэтому это просто как ранее аффинного [ `ComputeMatrix` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/ShowAffineMatrixPage.xaml.cs#L68) метод и не включает четвертой строки с (a, b) точки.
 
 `a` И `b` значения вычисляются так, чтобы аффинное преобразование третьего. Код получает аффинное преобразование, обратное, а затем использует, чтобы сопоставить нижнего правого угла. Это точка (a, b).
 

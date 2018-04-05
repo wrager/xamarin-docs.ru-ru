@@ -7,11 +7,11 @@ ms.assetid: 9EDED6A0-F0BF-4471-A9EF-E0D6C5954AE4
 author: charlespetzold
 ms.author: chape
 ms.date: 04/12/2017
-ms.openlocfilehash: 87bddc8d541167cef350658ac69f8aaac6d6a2ee
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 6f7de8724a16e8c9c900123ce7da79d33b51a08c
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="matrix-transforms"></a>Матрица преобразования
 
@@ -321,7 +321,7 @@ SKMatrix.RotateDegrees(ref R, degrees, px, py);
 
 Эти методы выполняют *не* объединения преобразование, поворот существующее преобразование. Методы задать все ячейки матрицы. Они являются функционально идентичен `MakeRotation` и `MakeRotationDegrees` методы, но они не создать `SKMatrix` значение.
 
-Предположим, что имеется `SKPath` объект, который будет отображаться, но вы предпочитаете, чтобы она имела немного отличаются ориентации или другая центральная точка. Все координаты этот путь можно изменить путем вызова [ `Transform` ](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.Transform/p/SkiaSharp.SKMatrix/) метод `SKPath` с `SKMatrix` аргумент. **Преобразовать путь** страницы показано, как это сделать. [ `PathTransform` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/PathTransformPage.cs) Класса ссылки `HendecagramPath` объекта в поле только использует его конструктор, чтобы применить преобразование к этому пути:
+Предположим, что имеется `SKPath` объект, который будет отображаться, но вы предпочитаете, чтобы она имела немного отличаются ориентации или другая центральная точка. Все координаты этот путь можно изменить путем вызова [ `Transform` ](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.Transform/p/SkiaSharp.SKMatrix/) метод `SKPath` с `SKMatrix` аргумент. **Преобразовать путь** страницы показано, как это сделать. [ `PathTransform` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/PathTransformPage.cs) Класса ссылки `HendecagramPath` объекта в поле только использует его конструктор, чтобы применить преобразование к этому пути:
 
 ```csharp
 public class PathTransformPage : ContentPage
@@ -438,15 +438,15 @@ SKRect transformedRect = matrix.MapRect(rect);
 
 Один из способов понять аффинного преобразования является интерактивно перемещение трех углов растрового изображения по экрану и видеть, какие преобразования результатов. Это имеет смысл **Показать аффинное** страницы. Для этой страницы требуется два класса, которые также используются в других демонстрации:
 
-[ `TouchPoint` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/TouchPoint.cs) Класс отображает полупрозрачные кружок, который можно перетаскивать по экрану. `TouchPoint` требуется `SKCanvasView` или элемент, который является родительским для `SKCanvasView` имеют [ `TouchEffect` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/TouchEffect.cs) присоединен. Задайте для свойства `Capture` значение `true`. В `TouchAction` обработчика событий, необходимо вызвать программу `ProcessTouchEvent` метод в `TouchPoint` для каждого `TouchPoint` экземпляр. Метод возвращает `true` Если события касания привело к точке касания перемещение. Кроме того `PaintSurface` необходимо вызвать обработчик `Paint` метод в каждом `TouchPoint` экземпляра, передавая ей `SKCanvas` объекта.
+[ `TouchPoint` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/TouchPoint.cs) Класс отображает полупрозрачные кружок, который можно перетаскивать по экрану. `TouchPoint` требуется `SKCanvasView` или элемент, который является родительским для `SKCanvasView` имеют [ `TouchEffect` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/TouchEffect.cs) присоединен. Задайте для свойства `Capture` значение `true`. В `TouchAction` обработчика событий, необходимо вызвать программу `ProcessTouchEvent` метод в `TouchPoint` для каждого `TouchPoint` экземпляр. Метод возвращает `true` Если события касания привело к точке касания перемещение. Кроме того `PaintSurface` необходимо вызвать обработчик `Paint` метод в каждом `TouchPoint` экземпляра, передавая ей `SKCanvas` объекта.
 
 `TouchPoint` показывает общий способ, что SkiaSharp visual можно инкапсулировать в отдельном классе. В классе можно определить свойства для указания характеристики визуального элемента, и метод с именем `Paint` с `SKCanvas` аргумент его подготовки.
 
 `Center` Свойство `TouchPoint` указывает расположение объекта. Это свойство можно задать для инициализации расположение; изменения свойств, когда пользователь перетаскивает кружок вокруг холста.
 
-**Показать страницу аффинного матрицы** также требует [ `MatrixDisplay` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/MatrixDisplay.cs) класса. Этот класс отображает ячейки `SKMatrix` объекта. Он имеет два открытых метода: `Measure` получить размеры подготовленной матрицы и `Paint` для его отображения. Класс содержит `MatrixPaint` свойство типа `SKPaint` , можно заменить другой размер шрифта или цвета.
+**Показать страницу аффинного матрицы** также требует [ `MatrixDisplay` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/MatrixDisplay.cs) класса. Этот класс отображает ячейки `SKMatrix` объекта. Он имеет два открытых метода: `Measure` получить размеры подготовленной матрицы и `Paint` для его отображения. Класс содержит `MatrixPaint` свойство типа `SKPaint` , можно заменить другой размер шрифта или цвета.
 
-[ **ShowAffineMatrixPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/ShowAffineMatrixPage.xaml) создает файл `SKCanvasView` и присоединяет `TouchEffect`. [ **ShowAffineMatrixPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/ShowAffineMatrixPage.xaml.cs) файл кода программной части создает три `TouchPoint` объекты и устанавливает их в место, соответствующее трех углов точечного рисунка, который загружает из внедренного ресурс:
+[ **ShowAffineMatrixPage.xaml** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/ShowAffineMatrixPage.xaml) создает файл `SKCanvasView` и присоединяет `TouchEffect`. [ **ShowAffineMatrixPage.xaml.cs** ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/ShowAffineMatrixPage.xaml.cs) файл кода программной части создает три `TouchPoint` объекты и устанавливает их в место, соответствующее трех углов точечного рисунка, который загружает из внедренного ресурс:
 
 ```csharp
 public partial class ShowAffineMatrixPage : ContentPage

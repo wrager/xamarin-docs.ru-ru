@@ -7,11 +7,11 @@ ms.assetid: CBB3CD72-4377-4EA3-A768-0C4228229FC2
 author: charlespetzold
 ms.author: chape
 ms.date: 03/23/2017
-ms.openlocfilehash: 177437ef016a25849e7c34d0a26270ce14173b7d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 354844f69c0b8755a15a3325c39e35b97d44f94d
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="the-rotate-transform"></a>Преобразования вращения
 
@@ -39,7 +39,7 @@ x' = x•cos(α) — y•sin(α)
 
 y "= x•sin(α) + y•cos(α)
 
-**Основные Поворот** странице демонстрируется `RotateDegrees` метод. [ `BasicRotate.xaml.cs` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/BasicRotatePage.xaml.cs) Файл выводит текст с базового плана в центре страницы и поворачивает ее на основе `Slider` в диапазоне от –360 до 360. Вот соответствующая часть `PaintSurface` обработчика:
+**Основные Поворот** странице демонстрируется `RotateDegrees` метод. [ `BasicRotate.xaml.cs` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/BasicRotatePage.xaml.cs) Файл выводит текст с базового плана в центре страницы и поворачивает ее на основе `Slider` в диапазоне от –360 до 360. Вот соответствующая часть `PaintSurface` обработчика:
 
 ```csharp
 using (SKPaint textPaint = new SKPaint
@@ -141,7 +141,7 @@ canvas.DrawText(Title, 0, 0, textPaint);
 
 [![](rotate-images/rotatedtext-small.png "Тройной снимок экрана со страницей поворачивать текст")](rotate-images/rotatedtext-large.png#lightbox "тройной снимок экрана со страницей поворачивать текст")
 
-Вот `PaintSurface` обработчик [ `RotatedTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/RotatedTextPage.cs) класса:
+Вот `PaintSurface` обработчик [ `RotatedTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/RotatedTextPage.cs) класса:
 
 ```csharp
 static readonly string text = "    ROTATE";

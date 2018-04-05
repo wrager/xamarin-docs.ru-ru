@@ -7,11 +7,11 @@ ms.assetid: BD28ADA1-49F9-44E2-A548-46024A29882F
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 573848186a8f389ac18e22ea4c3b7d4fe1503449
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 98bf81df3eed951893c6bb717d933cfb61e029d3
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="the-translate-transform"></a>Преобразования для преобразования
 
@@ -35,7 +35,7 @@ public void Translate (Single dx, Single dy)
 public void Translate (SKPoint point)
 ```
 
-**Накапливаются преобразовать** страница [ **SkiaSharpForms** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) образце демонстрируется, нескольких вызовах `Translate` метод являются накопительными. [ `AccumulatedTranslate` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/AccumulatedTranslatePage.cs) Класс отображает 20 версии того же прямоугольника, каждый из них смещение от предыдущего прямоугольника достаточно, поэтому они растянуть по диагонали. Вот `PaintSurface` обработчик событий:
+**Накапливаются преобразовать** страница [ **SkiaSharpForms** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) образце демонстрируется, нескольких вызовах `Translate` метод являются накопительными. [ `AccumulatedTranslate` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/AccumulatedTranslatePage.cs) Класс отображает 20 версии того же прямоугольника, каждый из них смещение от предыдущего прямоугольника достаточно, поэтому они растянуть по диагонали. Вот `PaintSurface` обработчик событий:
 
 ```csharp
 void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -78,7 +78,7 @@ y "= y + dy
 
 Эти функции известны как *Преобразование формул* для перевода. Значение по умолчанию `dx` и `dy` новый `SKCanvas` равны 0.
 
-Обычно использовать преобразования для преобразования для эффекта теней и сходные методы, как **преобразования текстовых эффектов** демонстрирует страницы. Вот соответствующая часть `PaintSurface` обработчик в [ `TranslateTextEffectsPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/TranslateTextEffectsPage.cs) класса:
+Обычно использовать преобразования для преобразования для эффекта теней и сходные методы, как **преобразования текстовых эффектов** демонстрирует страницы. Вот соответствующая часть `PaintSurface` обработчик в [ `TranslateTextEffectsPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/TranslateTextEffectsPage.cs) класса:
 
 ```csharp
 float textSize = 150;
@@ -137,7 +137,7 @@ using (SKPaint textPaint = new SKPaint())
 
 Тем не менее, можно не беспокоиться о преобразованиях, переносятся из одного вызова из `PaintSurface` обработчика к следующему. Каждый новый вызов `PaintSurface` предоставляет новый `SKCanvas` объект с преобразования по умолчанию.
 
-Другим распространенным применением `Translate` преобразование — для отрисовки визуального объекта, который был изначально создан с помощью координат, удобны для рисования. Например может потребоваться задать координаты аналогично часам с центром в точке (0, 0). Затем можно использовать преобразования для его отображения нужное место. Это показано в [**Hendecagram массива**] страницы. [ `HendecagramArrayPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/HendecagramPage.cs) Класса начинается с создания `SKPath` объекта для звездочка указывает 11. `HendecagramPath` Объекта определено как открытый, статический и только для чтения таким образом, может осуществляться из других программ демонстрации. Он создается в статическом конструкторе:
+Другим распространенным применением `Translate` преобразование — для отрисовки визуального объекта, который был изначально создан с помощью координат, удобны для рисования. Например может потребоваться задать координаты аналогично часам с центром в точке (0, 0). Затем можно использовать преобразования для его отображения нужное место. Это показано в [**Hendecagram массива**] страницы. [ `HendecagramArrayPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/HendecagramPage.cs) Класса начинается с создания `SKPath` объекта для звездочка указывает 11. `HendecagramPath` Объекта определено как открытый, статический и только для чтения таким образом, может осуществляться из других программ демонстрации. Он создается в статическом конструкторе:
 
 ```csharp
 public class HendecagramArrayPage : ContentPage
@@ -211,7 +211,7 @@ public class HendecagramArrayPage : ContentPage
 
 [![](translate-images/hendecagramarray-small.png "Тройной снимок экрана со страницей массива Hendecagram")](translate-images/hendecagramarray-large.png#lightbox "тройной снимок экрана со страницей Hendecagram массива")
 
-Анимация часто требует преобразования. **Hendecagram анимации** страницы перемещаются звездочка указывает 11 в кружке. [ `HendecagramAnimationPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Transforms/HendecagramAnimationPage.cs) Класс начинается с некоторые поля и переопределений `OnAppearing` и `OnDisappearing` методы для запуска и остановки таймера Xamarin.Forms:
+Анимация часто требует преобразования. **Hendecagram анимации** страницы перемещаются звездочка указывает 11 в кружке. [ `HendecagramAnimationPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Transforms/HendecagramAnimationPage.cs) Класс начинается с некоторые поля и переопределений `OnAppearing` и `OnDisappearing` методы для запуска и остановки таймера Xamarin.Forms:
 
 ```csharp
 public class HendecagramAnimationPage : ContentPage

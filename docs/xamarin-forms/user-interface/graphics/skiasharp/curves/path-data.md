@@ -7,11 +7,11 @@ ms.assetid: 1D53067B-3502-4D74-B89D-7EC496901AE2
 author: charlespetzold
 ms.author: chape
 ms.date: 05/24/2017
-ms.openlocfilehash: 7ea99612f85a853bcd045b773df0a01f33427a89
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: fe9699894224d9a33b3a79e9b5bcd4cd41c635dd
+ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="svg-path-data"></a>Путь данных SVG
 
@@ -147,7 +147,7 @@ T x2 y2 ...
 
 [ `ToSvgPathData` ](https://developer.xamarin.com/api/member/SkiaSharp.SKPath.ToSvgPathData()/) Метод удобно использовать для получения данных SVG пути из существующего `SKPath` объекта для передачи в другую программу или для сохранения в формате текстового файла, например XML. ( `ToSvgPathData` Метод не показан в примере кода в этой статье.) Сделать *не* ожидать `ToSvgPathData` для возврата строки, точно соответствующие вызовы методов, которые созданы путь. В частности, вы обнаружите, что дуги преобразуются к нескольким `QuadTo` команды, и как они отображаются в путь данные, возвращенные из `ToSvgPathData`.
 
-**Путь данных Hello** страницу spells слово «HELLO» с использованием данных пути SVG. Как `SKPath` и `SKPaint` объекты определены как поля в [ `PathDataHelloPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathDataHelloPage.cs) класса:
+**Путь данных Hello** страницу spells слово «HELLO» с использованием данных пути SVG. Как `SKPath` и `SKPaint` объекты определены как поля в [ `PathDataHelloPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathDataHelloPage.cs) класса:
 
 ```csharp
 public class PathDataHelloPage : ContentPage
@@ -218,7 +218,7 @@ public class PathDataHelloPage : ContentPage
 
 [![](path-data-images/pathdatahello-small.png "Тройной снимок экрана со страницей пути данных Hello")](path-data-images/pathdatahello-large.png#lightbox "тройной снимок экрана со страницей пути данных Hello")
 
-**Путь данных Cat** аналогичен страницы. Путь и paint объекты определены как поля в [ `PathDataCatPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PathDataCatPage.cs) класса:
+**Путь данных Cat** аналогичен страницы. Путь и paint объекты определены как поля в [ `PathDataCatPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathDataCatPage.cs) класса:
 
 ```csharp
 public class PathDataCatPage : ContentPage
@@ -291,7 +291,7 @@ public class PathDataCatPage : ContentPage
 
 Как правило, когда `SKPath` объект определен как поле, контуров путь должен быть определен в конструктор или другой метод. При использовании данных SVG пути, однако вы познакомились с пути можно указать полностью в определении поля.
 
-Более ранним **сложный часов аналогом** в [ **преобразование поворота** ](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/rotate.md) статье отображаются стрелки часов в виде простых строк. **Довольно аналогом часы** следующая программа заменяет эти строки с `SKPath` объекты, определенные в виде полей [ `PrettyAnalogClockPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/SkiaSharpFormsDemos/SkiaSharpFormsDemos/SkiaSharpFormsDemos/Curves/PrettyAnalogClockPage.cs) класса вместе с `SKPaint` объектов:
+Более ранним **сложный часов аналогом** в [ **преобразование поворота** ](~/xamarin-forms/user-interface/graphics/skiasharp/transforms/rotate.md) статье отображаются стрелки часов в виде простых строк. **Довольно аналогом часы** следующая программа заменяет эти строки с `SKPath` объекты, определенные в виде полей [ `PrettyAnalogClockPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PrettyAnalogClockPage.cs) класса вместе с `SKPaint` объектов:
 
 ```csharp
 public class PrettyAnalogClockPage : ContentPage
