@@ -1,18 +1,17 @@
 ---
-title: "Введение в Xamarin.Forms"
-description: "Xamarin.Forms — это кроссплатформенный слой абстракции пользовательского интерфейса с собственной поддержкой, позволяющий легко создавать пользовательские интерфейсы, которые можно использовать в Android, iOS, Windows и Windows Phone. Пользовательские интерфейсы отрисовываются с помощью собственных элементов управления целевой платформы, обеспечивая единообразный внешний вид приложений Xamarin.Forms на каждой платформе. В этой статье приводятся основные сведения о наборе средств Xamarin.Forms и начале создания приложений с его помощью."
-ms.topic: article
+title: Введение в Xamarin.Forms
+description: Xamarin.Forms — это кроссплатформенный слой абстракции пользовательского интерфейса с собственной поддержкой, позволяющий легко создавать пользовательские интерфейсы, которые можно использовать в Android, iOS, Windows и Windows Phone. Пользовательские интерфейсы отрисовываются с помощью собственных элементов управления целевой платформы, обеспечивая единообразный внешний вид приложений Xamarin.Forms на каждой платформе. В этой статье приводятся основные сведения о наборе средств Xamarin.Forms и начале создания приложений с его помощью.
 ms.prod: xamarin
 ms.assetid: f619595f-3ee7-439b-a1bc-d13e5106e6e9
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/02/2016
-ms.openlocfilehash: be4b0c907774c33dfcd1818da167acb2dc3b04dd
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 6428f1658245ec5ecf47e474bc5ffd5d49663bf2
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="an-introduction-to-xamarinforms"></a>Введение в Xamarin.Forms
 

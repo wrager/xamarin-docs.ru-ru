@@ -1,18 +1,17 @@
 ---
-title: "Развертывание и тестирование"
-description: "В этом разделе перечислены руководства, в которых рассматриваются вопросы тестирования приложения, оптимизации его производительности, подготовки к выпуску, подписывания с помощью сертификата и публикации в магазине приложений."
-ms.topic: article
+title: Развертывание и тестирование
+description: В этом разделе перечислены руководства, в которых рассматриваются вопросы тестирования приложения, оптимизации его производительности, подготовки к выпуску, подписывания с помощью сертификата и публикации в магазине приложений.
 ms.prod: xamarin
 ms.assetid: 568C0B85-EFF3-AF6F-5605-95055193D367
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 5ddc2a258ad09de2cdd8214dceb533441812ae54
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: d7453af3721cbdb6b93d884322cee1cd5115c317
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="deployment-and-testing"></a>Развертывание и тестирование
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 02/27/2018
 
 Сведения в руководствах в этом разделе будут полезны при отладке приложения с помощью эмуляторов Android, реальных устройств Android и журнала отладки.
 
-##  <a name="setting-the-debuggable-attributeandroiddeploy-testdebuggable-attributemd"></a>[Setting the Debuggable Attribute](~/android/deploy-test/debuggable-attribute.md) (Установка атрибута Debuggable)
+##  <a name="setting-the-debuggable-attributeandroiddeploy-testdebuggable-attributemd"></a>[Установка атрибута Debuggable](~/android/deploy-test/debuggable-attribute.md)
 
 В этой статье объясняется, как задать атрибут Debuggable, чтобы `adb` и другие средства могли взаимодействовать с виртуальной машиной Java.
 

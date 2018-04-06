@@ -1,17 +1,16 @@
 ---
-title: "Процесс сборки"
-ms.topic: article
+title: Процесс сборки
 ms.prod: xamarin
 ms.assetid: 3BE5EE1E-3FF6-4E95-7C9F-7B443EE3E94C
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/14/2018
-ms.openlocfilehash: 1f3f9316aec4ebfa0bb0868dd341abbfaa613cbc
-ms.sourcegitcommit: 028936cd2fe547963c1cf82343c3ee16f658089a
+ms.openlocfilehash: 2833c645a07a3717d9baeeec11e5fa7f9087725a
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="build-process"></a>Процесс сборки
 
@@ -84,7 +83,7 @@ ms.lasthandoff: 03/16/2018
 
     Выбор конфигурации по умолчанию `Release` приведет к тому, что целевые объекты `Install` и `SignAndroidPackage` создадут пакет Android, который является *автономным* и может использоваться без установки каких-либо других пакетов или файлов.
 
--    **DebugSymbols**  — логическое значение, которое определяет, является ли пакет Android *отлаживаемым*, в сочетании со свойством `$(DebugType)`. Отлаживаемый пакет содержит отладочные символы, устанавливает для атрибута `//application/@android:debuggable` значение `true` и автоматически добавляет разрешение `INTERNET`, чтобы отладчик мог подключиться к процессу. Приложение отлаживается, если `DebugSymbols` имеет значение `True` *, а* `DebugType` является пустой строкой или имеет значение `Full`.
+-   **DebugSymbols** — логическое значение, которое определяет, является ли пакет Android *отлаживаемым*, в сочетании со свойством `$(DebugType)`. Отлаживаемый пакет содержит отладочные символы, устанавливает для атрибута `//application/@android:debuggable` значение `true` и автоматически добавляет разрешение `INTERNET`, чтобы отладчик мог подключиться к процессу. Приложение отлаживается, если `DebugSymbols` имеет значение `True` *, а* `DebugType` является пустой строкой или имеет значение `Full`.
 
 -   **DebugType** — определяет &ndash;[тип отладочных символов ](http://msdn.microsoft.com/en-us/library/s5c8athz.aspx), которые следует создать как часть сборки, что также влияет на возможность отладки приложения. Возможные допустимые значения приведены ниже.
 

@@ -1,17 +1,16 @@
 ---
-title: "Xamarin для разработчиков на Objective-C"
-description: "Как разработчик Objective-C, вы можете применять свои навыки работы с существующим кодом Objective-C на платформе Xamarin, получая возможность повторно использовать код C#. Этот раздел является стартовой точкой для начала работы с Xamarin.iOS. Здесь вы найдете ссылки на документацию по использованию существующего кода Objective-C из C#."
-ms.topic: article
+title: Xamarin для разработчиков на Objective-C
+description: Как разработчик Objective-C, вы можете применять свои навыки работы с существующим кодом Objective-C на платформе Xamarin, получая возможность повторно использовать код C#. Этот раздел является стартовой точкой для начала работы с Xamarin.iOS. Здесь вы найдете ссылки на документацию по использованию существующего кода Objective-C из C#.
 ms.prod: xamarin
 ms.assetid: 9F3C86A3-403E-4025-99CA-99FCA86DC828
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 275cce891801cd542d202960efc3da668fa8f07b
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: e29762fb258f7d796878c85bfe6f7aaa93207c5e
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="xamarin-for-objective-c-developers"></a>Xamarin для разработчиков на Objective-C
 

@@ -1,18 +1,18 @@
 ---
-title: "Привет, iOS (несколько экранов)"
-description: "В этом руководстве из двух частей мы расширим функционал приложения Phoneword, созданного в руководстве по началу работы с iOS, для работы со вторым экраном. В этом руководстве мы расскажем о конструктивном шаблоне модель-представление-контроллер, реализуем нашу первую навигацию iOS и углубим понимание структуры и работы приложения iOS."
-ms.topic: article
+title: Привет, iOS (несколько экранов)
+description: В этом руководстве из двух частей мы расширим функционал приложения Phoneword, созданного в руководстве по началу работы с iOS, для работы со вторым экраном. В этом руководстве мы расскажем о конструктивном шаблоне модель-представление-контроллер, реализуем нашу первую навигацию iOS и углубим понимание структуры и работы приложения iOS.
+ms.topic: quickstart
 ms.prod: xamarin
 ms.assetid: 79f57ac0-37d0-4593-9dcf-fca93ad0be65
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 12/02/2016
-ms.openlocfilehash: d727667685d72de1bd42a9dc7e6f2be77f740cf3
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 95be7bd39aced5dad680efbae0bd7e0f4d040f7c
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="hello-ios-multiscreen"></a>Привет, iOS (несколько экранов)
 
@@ -29,6 +29,6 @@ ms.lasthandoff: 02/27/2018
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Hello, iOS (пример)](https://developer.xamarin.com/samples/monotouch/Hello_iOS/)
+- [Привет, iOS (пример)](https://developer.xamarin.com/samples/monotouch/Hello_iOS/)
 - [Рекомендации по работе с человеческим интерфейсом iOS](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html)
 - [Портал подготовки iOS](https://developer.apple.com/ios/manage/overview/index.action)

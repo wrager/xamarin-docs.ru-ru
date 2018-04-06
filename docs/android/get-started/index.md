@@ -1,7 +1,6 @@
 ---
-title: "Начало работы с Android"
-description: "Xamarin.Android позволяет вам создавать собственные приложения Android с помощью тех же элементов управления пользовательского интерфейса, что и в Java. В свое распоряжение вы получаете гибкий и элегантный современный язык (C#), эффективную библиотеку базовых классов (BCL) .NET и первоклассную интегрированную среду разработки (Visual Studio). В этой серии документов представлены основы разработки Xamarin.Android. Вы пройдете все этапы — от настройки и установки до создания первого приложения."
-ms.topic: article
+title: Начало работы с Android
+description: Xamarin.Android позволяет вам создавать собственные приложения Android с помощью тех же элементов управления пользовательского интерфейса, что и в Java. В свое распоряжение вы получаете гибкий и элегантный современный язык (C#), эффективную библиотеку базовых классов (BCL) .NET и первоклассную интегрированную среду разработки (Visual Studio). В этой серии документов представлены основы разработки Xamarin.Android. Вы пройдете все этапы — от настройки и установки до создания первого приложения.
 ms.prod: xamarin
 ms.assetid: D3BC68C5-87C1-50AF-ED0A-55EBF07CBD8B
 ms.technology: xamarin-android
@@ -9,11 +8,11 @@ ms.custom: xamu-video
 author: mgmclemore
 ms.author: mamcle
 ms.date: 05/25/2017
-ms.openlocfilehash: c07ab37bc88b52bbff0ddc0fb7bf1faa4d97bb2a
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 8a9abb7e9a5640994d67c1fb33d15d8405442b6c
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="getting-started-series"></a>Материалы по началу работы
 

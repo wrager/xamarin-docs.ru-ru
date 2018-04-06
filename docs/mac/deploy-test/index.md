@@ -1,24 +1,23 @@
 ---
-title: "Развертывание и тестирование"
-description: "Этот документ содержит ссылки на руководства по значкам, производительности и публикациям в Магазине приложений."
-ms.topic: article
+title: Развертывание и тестирование
+description: Этот документ содержит ссылки на руководства по значкам, производительности и публикациям в Магазине приложений.
 ms.prod: xamarin
 ms.assetid: 2FF314C7-D926-9FEC-57A6-F421A0ED3A46
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 02/17/2018
-ms.openlocfilehash: 93d6396fff74ce82c4a171e567d864c6ca41da73
-ms.sourcegitcommit: 6cd40d190abe38edd50fc74331be15324a845a28
+ms.openlocfilehash: 7e0af30b412a0a4c9d73009dad5d66d7762edbb9
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="deployment-and-testing"></a>Развертывание и тестирование
 
 ## <a name="application-iconapp-iconmd"></a>[Значок приложения](app-icon.md)
 
-В этой статье описано, как создавать изображения, необходимые для использования значков приложения Хamarin.Mac, объединения изображений в файл .icns file и включения значков в проект Xamarin.Mac.
+В этой статье описано, как создавать изображения, необходимые для использования значков приложения Хamarin.Mac, объединения изображений в файл ICNS и включения значков в проект Xamarin.Mac.
 
 ## <a name="performanceperformancemd"></a>[Производительность](performance.md)
 

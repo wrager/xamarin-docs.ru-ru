@@ -1,18 +1,17 @@
 ---
-title: "Xamarin для разработчиков Java"
-description: "Если вы разработчик Java, вы можете применять свои навыки работы с существующим кодом на платформе Xamarin, получая возможность повторно использовать код C#. Вы заметите, что синтаксис C# очень напоминает синтаксис Java и что оба языка обеспечивают очень схожие функции. Кроме того, вы ознакомитесь с уникальными функциями C#, которые упрощают разработку."
-ms.topic: article
+title: Xamarin для разработчиков Java
+description: Если вы разработчик Java, вы можете применять свои навыки работы с существующим кодом на платформе Xamarin, получая возможность повторно использовать код C#. Вы заметите, что синтаксис C# очень напоминает синтаксис Java и что оба языка обеспечивают очень схожие функции. Кроме того, вы ознакомитесь с уникальными функциями C#, которые упрощают разработку.
 ms.prod: xamarin
 ms.assetid: A3B6C041-4052-4E7D-999C-C4FA10BE3D67
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/13/2018
-ms.openlocfilehash: 7abcaa218c6755a58e6f35e982a1144060df0b3b
-ms.sourcegitcommit: 8e722d72c5d1384889f70adb26c5675544897b1f
+ms.openlocfilehash: 29fc698e6ed1cfe02ce329813342916d5e7a1651
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="xamarin-for-java-developers"></a>Xamarin для разработчиков Java
 

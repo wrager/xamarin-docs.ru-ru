@@ -1,18 +1,17 @@
 ---
 title: ProGuard
-description: "ProGuard — это средство для сокращения, оптимизации, скрытия и предварительной проверки файла класса Java. Оно обнаруживает и удаляет неиспользуемый код, анализирует и оптимизирует байт-код, а затем скрывает классы и члены классов. В этом руководстве описываются принципы работы ProGuard, включение этого средства в проекте и его настройка. Здесь также приводится несколько примеров конфигураций ProGuard."
-ms.topic: article
+description: ProGuard — это средство для сокращения, оптимизации, скрытия и предварительной проверки файла класса Java. Оно обнаруживает и удаляет неиспользуемый код, анализирует и оптимизирует байт-код, а затем скрывает классы и члены классов. В этом руководстве описываются принципы работы ProGuard, включение этого средства в проекте и его настройка. Здесь также приводится несколько примеров конфигураций ProGuard.
 ms.prod: xamarin
 ms.assetid: 29C0E850-3A49-4618-9078-D59BE0284D5A
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 10744d7c4fbcc5a8935a1fe1e60b6c96ec828815
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: e65c78633ae91318bd8e9cce949bac9cc12675c0
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="proguard"></a>ProGuard
 
