@@ -189,7 +189,6 @@
 ##### [Удаленные уведомления](platform/user-notifications/deprecated/remote-notifications-in-ios.md)
 ### [Широкая цветовая палитра](platform/wide-color.md)
 ## [Данные и облачные службы](data-cloud/index.md)
-### [Подключенные к Azure службы](~/cross-platform/data-cloud/connected-services.md?context=xamarin/ios)
 ### [Azure Active Directory](~/cross-platform/data-cloud/active-directory/index.md?context=xamarin/ios)
 #### [Начало работы](~/cross-platform/data-cloud/active-directory/get-started/index.md?context=xamarin/ios)
 ##### [Шаг 1. Регистрация](~/cross-platform/data-cloud/active-directory/get-started/register.md?context=xamarin/ios)

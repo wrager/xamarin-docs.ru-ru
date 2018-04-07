@@ -166,7 +166,6 @@
 ### [Использование собственных библиотек](platform/native-libraries.md)
 ### [Renderscript](platform/renderscript.md)
 ## [Данные и облачные службы](data-cloud/index.md)
-### [Подключенные к Azure службы](~/cross-platform/data-cloud/connected-services.md?context=xamarin/android)
 ### [Azure Active Directory](~/cross-platform/data-cloud/active-directory/index.md?context=xamarin/android)
 #### [Начало работы](~/cross-platform/data-cloud/active-directory/get-started/index.md?context=xamarin/android)
 ##### [Шаг 1. Регистрация](~/cross-platform/data-cloud/active-directory/get-started/register.md?context=xamarin/android)
