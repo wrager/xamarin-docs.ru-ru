@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 6ec46a5e098ba14925102211a27fcce8c27970e9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d9d70c37de5cb91c4cd1fdc77e27942d851c346b
+ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="touch-id"></a>Touch ID
 
@@ -121,47 +121,46 @@ Touch ID впервые появился в iOS 7, с точки зрения п
 
 Так что давайте рассмотрим добавление некоторые Authentication Touch ID для нашего приложения. В этом пошаговом руководстве мы будем использовать [таблицы раскадровки](https://developer.xamarin.com/samples/StoryboardTable/) образца. Мы хотели бы убедиться, что только владельцу устройства можно добавить что-то в этот список, мы не хотим загромождать, позволяя всем добавить элемент!
 
-1.  Загрузить пример, а затем запустите его в Visual Studio для Mac.
-2.  Дважды щелкните `MainStoryboard.Storyboard` Открытие образца в конструкторе iOS. В этом примере мы хотим добавить новый экран для нашего приложения, который будет управлять проверки подлинности. Это будет отправлена до текущей `MasterViewController`.
-3.  Перетащите новую **View Controller** из **элементов** для **конструктора**. Задать как **корневой View Controller** по **клавишу Ctrl при перетаскивании** из **навигации контроллера**:
+1. Загрузить пример, а затем запустите его в Visual Studio для Mac.
+2. Дважды щелкните `MainStoryboard.Storyboard` Открытие образца в конструкторе iOS. В этом примере мы хотим добавить новый экран для нашего приложения, который будет управлять проверки подлинности. Это будет отправлена до текущей `MasterViewController`.
+3. Перетащите новую **View Controller** из **элементов** для **конструктора**. Задать как **корневой View Controller** по **клавишу Ctrl при перетаскивании** из **навигации контроллера**:
 
     [![](touchid-images/image4.png "Задайте корневой View Controller")](touchid-images/image4.png#lightbox)
 4.  Имя нового представления контроллера `AuthenticationViewController`.
-5.  Затем перетащите кнопку и поместите ее на `AuthenticationViewController`. Эта `AuthenticateButton`и назначьте ему текст `Add a Chore`.
-6.  Создать событие на `AuthenticateButton` вызывается `AuthenticateMe`.
-7.  Создать вручную перейти из `AuthenticationViewController` , щелкнув черная полоса внизу и **клавишу Ctrl при перетаскивании** из панели, чтобы `MasterViewController` и выбрав **принудительной** (или **Показать** При использовании классов размер):
+5. Затем перетащите кнопку и поместите ее на `AuthenticationViewController`. Эта `AuthenticateButton`и назначьте ему текст `Add a Chore`.
+6. Создать событие на `AuthenticateButton` вызывается `AuthenticateMe`.
+7. Создать вручную перейти из `AuthenticationViewController` , щелкнув черная полоса внизу и **клавишу Ctrl при перетаскивании** из панели, чтобы `MasterViewController` и выбрав **принудительной** (или **Показать** При использовании классов размер):
 
     [![](touchid-images/image5.png "Перетащите из панели MasterViewController и кнопки принудительной или Показать")](touchid-images/image6.png#lightbox)
-8.  Щелкните только что созданный перейти и присвойте ему идентификатор `AuthenticationSegue`, как показано ниже:
+8. Щелкните только что созданный перейти и присвойте ему идентификатор `AuthenticationSegue`, как показано ниже:
 
     [![](touchid-images/image7.png "Значение идентификатора segue AuthenticationSegue")](touchid-images/image7.png#lightbox)
-9.  Добавьте следующий код в файл `AuthenticationViewController`:
+9. Добавьте следующий код в файл `AuthenticationViewController`:
 
-    ```
+    ```csharp
     partial void AuthenticateMe (UIButton sender)
-        {
-            var context = new LAContext();
-            NSError AuthError;
-            var myReason = new NSString("To add a new chore");
+    {
+        var context = new LAContext();
+        NSError AuthError;
+        var myReason = new NSString("To add a new chore");
 
-
-            if (context.CanEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, out AuthError)){
-                var replyHandler = new LAContextReplyHandler((success, error) => {
-
-                    this.InvokeOnMainThread(()=>{
-                        if(success){
-                            Console.WriteLine("You logged in!");
-                            PerformSegue("AuthenticationSegue", this);
-                        }
-                        else{
-                            //Show fallback mechanism here
-                        }
-                    });
-
+        if (context.CanEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, out AuthError)){
+            var replyHandler = new LAContextReplyHandler((success, error) => {
+                this.InvokeOnMainThread(()=> {
+                    if(success)
+                    {
+                        Console.WriteLine("You logged in!");
+                        PerformSegue("AuthenticationSegue", this);
+                    }
+                    else
+                    {
+                        // Show fallback mechanism here
+                    }
                 });
-                context.EvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, myReason, replyHandler);
-            };
-        }
+            });
+            context.EvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, myReason, replyHandler);
+        };
+    }
     ```
 
 Это весь код, необходимо реализовать проверку подлинности Touch ID, с использованием локальной проверки подлинности. Выделенные линии на рисунке ниже показано использование локальной проверки подлинности:

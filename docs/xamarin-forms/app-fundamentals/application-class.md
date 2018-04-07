@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/19/2016
-ms.openlocfilehash: db8b767d6e7a6c5e5badc1c74703825a66ea2ab8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 1e1039f513534885dffe9fef348d567243651e22
+ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="app-class"></a>Класс App
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 04/04/2018
 * Постоянные [ `Properties` словарь](#Properties_Dictionary) для хранения простых значений через изменения состояния жизненного цикла.
 * Статический `Current` свойство, которое содержит ссылку на текущий объект приложения.
 
-Если также предоставляет [методов жизненного цикла](~/xamarin-forms/app-fundamentals/app-lifecycle.md) например `OnStart`, `OnSleep`, и `OnResume` а также события модальное навигации.
+Также предоставляет [методов жизненного цикла](~/xamarin-forms/app-fundamentals/app-lifecycle.md) например `OnStart`, `OnSleep`, и `OnResume` а также события модальное навигации.
 
 В зависимости от того, шаблон, который вы выбрали, `App` класса, можно задать одним из двух способов:
 
