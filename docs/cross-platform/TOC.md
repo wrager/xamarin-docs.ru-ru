@@ -83,7 +83,6 @@
 ### [HttpClient Stack и селектор реализации SSL и TLS](macios/http-stack.md)
 ## [Устранение неполадок](troubleshooting/index.md)
 ### [Часто задаваемые вопросы](troubleshooting/questions/index.md)
-#### [Можно ли использовать релиз-кандидат Visual Studio 2017 с Xamarin](troubleshooting/questions/visualstudio-2017-rc.md)
 #### [Как можно просмотреть, какие библиотеки поддерживаются в PCL](troubleshooting/questions/pcl-support-libraries.md)
 #### [API отражения PCL](troubleshooting/questions/pcl-reflection.md)
 #### [Практический пример PCL. Как устранять проблемы, связанные с System.Diagnostics.Tracing для пакета NuGet потока данных библиотеки параллельных задач Майкрософт](troubleshooting/questions/pcl-case-study.md)
@@ -96,12 +95,14 @@
 #### [Когда и как следует указывать отчет об ошибке](troubleshooting/questions/howto-file-bug.md)
 #### [Почему Xamarin не поддерживает Jenkins](troubleshooting/questions/xamarin-jenkins.md)
 #### [Какие параметры проекта нужны отладчику](troubleshooting/questions/debugger-settings.md)
+
+### Вопросы по Visual Studio
+#### [Отключены флажки развертывания в Configuration Manager](troubleshooting/questions/deploy-checkboxes.md)
+#### [Отсутствуют расширения Visual Studio после установки](troubleshooting/questions/missing-vs-extensions.md)
+#### [Как полностью удалить Xamarin для Visual Studio?](troubleshooting/questions/uninstall-xamarin-vs.md)
+#### [Как собрать текущие стеки вызовов процесса Visual Studio?](troubleshooting/questions/vs-callstack.md)
+#### [Почему Visual Studio не включает проект библиотеки в сборку, которая на него ссылается?](troubleshooting/questions/vs-config-manager.md)
+
 ### [Обновление ссылок на компоненты в NuGet](troubleshooting/component-nuget.md)
 ### [Варианты поддержки](troubleshooting/support-options.md)
-### [Вопросы по лицензированию устаревших версий](troubleshooting/legacy-licenses/index.md)
-#### [Команда управления платформой Xamarin](troubleshooting/legacy-licenses/team-management.md)
-#### [Как изменить адрес электронной почты учетной записи](troubleshooting/legacy-licenses/change-email.md)
-#### [Как вручную повторно синхронизировать лицензии Xamarin](troubleshooting/legacy-licenses/resync-licenses.md)
-#### [Некоторые конкретные ошибки лицензирования](troubleshooting/legacy-licenses/licensing-errors.md)
-#### [Почему нельзя войти в Xamarin в Visual Studio или в Visual Studio для Mac](troubleshooting/legacy-licenses/login-troubleshooting.md)
 ## [Примеры](samples/index.yml)

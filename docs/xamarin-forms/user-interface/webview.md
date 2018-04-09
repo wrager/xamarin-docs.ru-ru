@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: 54c70fda22782dfa9b6617c0832f2c17f0169b57
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: a96c57b66e5debbbb7318c22e33a21eb9b998395
+ms.sourcegitcommit: 271d3f7ea4abfcf87734d2c747a68cb8114d743c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="webview"></a>Веб-представление
 
@@ -399,6 +399,8 @@ void webOnEndNavigating (object sender, WebNavigatedEventArgs e)
 Современного видели каждого из популярных веб-браузеры внедрению технологии, как с аппаратным ускорением подготовки к просмотру и компиляции JavaScript. К сожалению, из-за ограничений безопасности, большая часть этих улучшений не были доступны в equaivalent iOS из `WebView`, `UIWebView`. Xamarin.Forms `WebView` использует `UIWebView`. Если это проблема, необходимо написать пользовательское средство отрисовки, использующий `WKWebView`, которая поддерживает быстрый просмотр. Обратите внимание, что `WKWebView` поддерживается только для iOS 8 и более поздних.
 
 Веб-представление на Android по умолчанию почти так же быстро, как встроенного браузера.
+
+[UWP WebView](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/web-view) использует модуль подготовки отчетов Microsoft Edge. Настольных и планшетных устройств увидите такую же производительность, как с помощью браузера Edge сам.
 
 `WebBrowser` Элемент управления на Windows Phone 8 и Windows Phone 8.1 выполняет не функции поддержки последней HTML5 и часто может иметь низкую производительность. Помните о том, как сайты будут отображаться в Windows Phone `WebView`. Недостаточно для тестирования в Internet Explorer.
 

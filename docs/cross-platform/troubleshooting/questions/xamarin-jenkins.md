@@ -6,11 +6,11 @@ ms.assetid: 9951F980-2C6C-47C0-8A35-A78F06C20BEB
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: 8112f9bfc8975b12e3c300c0c981d21749173f7c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: befcdcbee3114e760cec94a61a84106fddc72cf9
+ms.sourcegitcommit: 271d3f7ea4abfcf87734d2c747a68cb8114d743c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="why-isnt-jenkins-supported-by-xamarin"></a>Почему не поддерживается Jenkins с Xamarin
 
@@ -51,7 +51,3 @@ Jenkins — это набор элементов конфигурации отк
 > Ошибка: Starter Edition Xamarin.iOS не поддерживает построение вне Xamarin Studio 
 
 Наиболее распространенной причиной этого сценария является использование Jenkins при входе с помощью учетной записи пользователя, не связанные с лицензию Xamarin. Разрешения, проще всего установить Jenkins как приложение напрямую через учетную запись пользователя. Здесь описаны этого процесса и некоторые дополнительные соображения. [https://forums.xamarin.com/discussion/comment/99397/#Comment_99397](https://forums.xamarin.com/discussion/comment/99397/#Comment_99397)
-
-Другая возможность заключается в том, что данные лицензии Xamarin каким-либо образом повреждена, можно использовать [Resync лицензий Xamarin руководство](~/cross-platform/troubleshooting/legacy-licenses/resync-licenses.md) для устранения неполадок в этом сценарии.
-
-

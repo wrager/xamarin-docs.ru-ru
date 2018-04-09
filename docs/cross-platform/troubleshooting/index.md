@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 02/18/2018
-ms.openlocfilehash: e7776ed249307e7a6ba4401bfb409f749c4581e8
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: babdce968dc74117a19d64755790da57c32d26aa
+ms.sourcegitcommit: 271d3f7ea4abfcf87734d2c747a68cb8114d743c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="troubleshooting"></a>Устранение неполадок
 
@@ -28,21 +28,8 @@ ms.lasthandoff: 04/06/2018
 
 Параметры поддержки для продуктов Xamarin.
 
-### <a name="legacy-license-questionslegacy-licensesindexmd"></a>[Вопросы по лицензированию устаревших версий](legacy-licenses/index.md)
-
-Статьи по устранению неполадок для Xamarin пользователей с лицензиями прежних версий платформы. (Владельцы лицензия MSDN должны ссылаться на это [описываются варианты лицензирования](~/cross-platform/get-started/requirements.md) вместо.)
-
 ## <a name="product-specific-questions"></a>Вопросы о конкретных продуктов
 
 - [Android](~/android/troubleshooting/questions/index.md)
 - [iOS](~/ios/troubleshooting/questions/index.md)
 - [Xamarin.Forms](~/xamarin-forms/troubleshooting/questions/index.md)
-
-
-
-## <a name="related-links"></a>Связанные ссылки
-
-- [Часто задаваемые вопросы по Android](~/android/troubleshooting/questions/index.md)
-- [операций ввода-вывода часто задаваемые вопросы](~/ios/troubleshooting/questions/index.md)
-- [Часто задаваемые вопросы о Xamarin.Forms](~/xamarin-forms/troubleshooting/questions/index.md)
-- [Часто задаваемые вопросы о Xamarin.UITest](https://developer.xamarin.com~/testcloud/uitest/questions/)

@@ -1,7 +1,6 @@
 ---
-title: "Начало работы"
-description: "Узнайте, как разрабатывать мобильные приложения с нуля до развертывания с помощью сведений в этих подробных руководствах."
-ms.topic: article
+title: Начало работы
+description: Узнайте, как разрабатывать мобильные приложения с нуля до развертывания с помощью сведений в этих подробных руководствах.
 ms.prod: xamarin
 ms.assetid: 13FCAE14-E73D-C1A4-1D22-A433AD827C07
 ms.technology: xamarin-cross-platform
@@ -9,11 +8,11 @@ ms.custom: xamu-video
 author: asb3993
 ms.author: amburns
 ms.date: 04/10/2017
-ms.openlocfilehash: 8d9acbf5fa53c2fa94d1a15d51de9d3db48a16fe
-ms.sourcegitcommit: 30055c534d9caf5dffcfdeafd6f08e666fb870a8
+ms.openlocfilehash: 2178d567f1ccfe803ebce8b7b623c31c290999bc
+ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="getting-started"></a>Начало работы
 
@@ -23,11 +22,13 @@ _Сведения о разработке мобильных приложени�
 
 ## <a name="build-your-first-app"></a>Создание первого приложения
 
-Чтобы немедленно приступить к написанию кода, выберите краткое руководство по созданию первого приложения:
+> [!div class="nextstepaction"]
+> [Краткое руководство по Xamarin.Forms](~/xamarin-forms/get-started/hello-xamarin-forms/quickstart.md)
+
+Если вы хотите создать приложение, используя для разработки интерфейса собственные технологии платформы (например, Android XML или Xcode Storyboards), воспользуйтесь следующими руководствами для конкретных платформ:
 
 * [Краткое руководство по Android](~/android/get-started/hello-android/hello-android-quickstart.md)
 * [Краткое руководство по iOS](~/ios/get-started/hello-ios/hello-ios-quickstart.md)
-* [Краткое руководство по iOS Xamarin.Forms](~/xamarin-forms/get-started/hello-xamarin-forms/quickstart.md)
 * [Начало работы с Mac](~/mac/get-started/hello-mac.md)
 
 ## <a name="getting-started-with-mobile-development"></a>Знакомство с разработкой мобильных приложений
@@ -47,7 +48,7 @@ _Сведения о разработке мобильных приложени�
 Этот документ содержит общие сведения об интегрированной среде разработки Visual Studio для Mac.
 
 
-## <a name="xamarin-university-video"></a>Видео от Xamarin University
+## <a name="get-started-with-xamarin-university"></a>Начало работы вместе с Xamarin University
 
 > [!VIDEO https://youtube.com/embed/NGvn-pGZFPA]
 
