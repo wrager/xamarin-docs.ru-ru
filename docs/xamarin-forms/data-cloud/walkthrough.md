@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/28/2017
-ms.openlocfilehash: e9738a766762dd64cdfbb034d4eaa54f76aca311
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 703441e3fc58beeb33e519f3781387a59c1c1cef
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-the-sample"></a>Основные сведения об образце
 
@@ -86,7 +86,7 @@ public class TodoItem
 
 Кроме того, некоторые примеры приложений содержат дополнительные методы в `TodoItemManager` классе, которое используется для управления процессом проверки подлинности пользователя.
 
-Вместо того чтобы вызывать операции веб-службы непосредственно, `TodoItemManager` методы вызова методов в зависимых класс, который вставляется в `TodoItemManager` конструктора. Например, один образец приложения внедряет `SimpleDBStorage` класса в `TodoItemManager` конструктор для реализации, который вызывает операции службы Amazon SimpleDB.
+Вместо того чтобы вызывать операции веб-службы непосредственно, `TodoItemManager` методы вызова методов в зависимых класс, который вставляется в `TodoItemManager` конструктора. Например, один образец приложения внедряет `RestService` класса в `TodoItemManager` конструктор для реализации, который использует API-интерфейс REST для доступа к данным.
 
 ### <a name="translating-text-to-speech"></a>Преобразование текста в речь
 
@@ -113,4 +113,3 @@ void OnSpeakActivated (object sender, EventArgs e)
 - [Версия WCF (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoWCF)
 - [Версия REST (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoREST)
 - [Azure версии (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoAzure)
-- [Версия Amazon Web Services (пример)](https://developer.xamarin.com/samples/xamarin-forms/WebServices/TodoAWS)

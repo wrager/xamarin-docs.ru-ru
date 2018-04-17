@@ -6,165 +6,84 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/14/2017
-ms.openlocfilehash: c129079aad14ac9e8aad6f73670ce9a43a36f222
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f75ced921cd240e280b5dd6f7366ccceefb5e40e
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-macos"></a>Приступая к работе с macOS
 
 
 ## <a name="what-you-will-need"></a>Необходимо будет
 
-* Следуйте инструкциям в нашем [Приступая к работе с Objective-C](~/tools/dotnet-embedding/get-started/objective-c/index.md) руководства.
+* Следуйте инструкциям в разделе [Приступая к работе с Objective-C](~/tools/dotnet-embedding/get-started/objective-c/index.md) руководства.
 
-* Сборки .NET для использования с **Embeddinator 4000**.
+## <a name="hello-world"></a>Здравствуй, мир
 
-* MacOS Cocoa приложения
+Сначала нужно создать простой hello world-пример на языке C#.
 
-Продолжайте после выполнения инструкции в нашем [Приступая к работе с Objective-C](~/tools/dotnet-embedding/get-started/objective-c/index.md) руководства. Если уже имеется сборка .NET можно пропустить непосредственно в **с помощью Embeddinator-4000** раздела.
+### <a name="create-c-sample"></a>Создайте пример на C#
 
-## <a name="creating-a-net-assembly"></a>Создание сборки .NET
+Откройте Visual Studio для Mac, создайте новый проект библиотеки классов для Mac с именем **hello из c#**и сохраните файл в **~/Projects/hello-from-csharp**.
 
-Для создания сборки .NET, вам потребуется открыть [Visual Studio для Mac](https://www.visualstudio.com/vs/visual-studio-mac/) и создайте новый **проекта библиотеки .NET** во время работы *файл > новое решение > других > .NET > Библиотека*. Нажмите кнопку Далее и предоставьте *погоды* как *имя проекта*и выберите команду *создать*.
-
-Выполните следующие шаги.
-
-1. Удалить **MyClass.cs** файла и **свойства** папки.
-
-2. Щелкните правой кнопкой мыши *погоды проект > Добавить > новый файл.*
-
-3. Выберите *пустым классом* и использовать **XAMWeatherFetcher** как имя, затем нажмите кнопку Создать.
-
-4. Замените содержимое *XAMWeatherFetcher.cs* следующим кодом:
+Замените код в `MyClass.cs` файла с помощью следующего фрагмента:
 
 ```csharp
-using System;
-using System.Json;
-using System.Net;
-
-public class XAMWeatherFetcher {
-
-    static string urlTemplate = @"https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22{0}%2C%20{1}%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
-    public string City { get; private set; }
-    public string State { get; private set; }
-
-    public XAMWeatherFetcher (string city, string state)
+using AppKit;
+public class MyNSView : NSTextView
+{
+    public MyNSView ()
     {
-        City = city;
-        State = state;
-    }
-
-    public XAMWeatherResult GetWeather ()
-    {
-        try {
-            using (var wc = new WebClient ()) {
-                var url = string.Format (urlTemplate, City, State);
-                var str = wc.DownloadString (url);
-                var json = JsonValue.Parse (str)["query"]["results"]["channel"]["item"]["condition"];
-                var result = new XAMWeatherResult (json["temp"], json["text"]);
-                return result;
-            }
-        }
-        catch (Exception ex) {
-            // Log some of the exception messages
-            Console.WriteLine (ex.Message);
-            Console.WriteLine (ex.InnerException?.Message);
-            Console.WriteLine (ex.InnerException?.InnerException?.Message);
-
-            return null;
-        }
-
-    }
-}
-
-public class XAMWeatherResult {
-    public string Temp { get; private set; }
-    public string Text { get; private set; }
-
-    public XAMWeatherResult (string temp, string text)
-    {
-        Temp = temp;
-        Text = text;
+        Value = "Hello from C#";
     }
 }
 ```
 
-Можно будет заметить, что `Using System.Json;` приводит к возникновению ошибки; Чтобы исправить это необходимо сделать следующее:
+Выполните построение проекта. Результирующую сборку будет сохранена как **~/Projects/hello-from-csharp/hello-from-csharp/bin/Debug/hello-from-csharp.dll**.
 
-1. Дважды щелкните **ссылки** папки.
+### <a name="bind-the-managed-assembly"></a>Привязать управляемой сборки
 
-2. Щелкните **пакетов** вкладки.
-
-3. Проверьте **System.Json**.
-
-4. Click **Ok**.
-
-После указанных выше мы нужно лишь собирается нашей сборки .NET, щелкнув *меню "Построение" > собрать все* или ⌘ + b. Построение неудачным, в строке состояния top должно появиться сообщение.
-
-Теперь щелкните правой кнопкой мыши *погоды* узел проекта и выберите *отобразить в средстве поиска*. В системе поиска перейдите к *bin/Debug* папки; внутри его найти **Weather.dll.**
-
-## <a name="using-embeddinator-4000"></a>С помощью Embeddinator 4000
-
-Если вы установили Embeddinator 4000, с помощью наших установщика pkg и запущен новый сеанс терминала после установки можно будет использовать **objcgen** команды (в противном случае можно использовать абсолютный путь к нему: `/Library/Frameworks/Xamarin.Embeddinator-4000.framework/Commands/objcgen`); **objcgen** средство, которое необходимо для создания собственной библиотеки из сборки .NET.
-
-Откройте терминалов `cd` в папку, содержащую Weather.dll и выполнение **objcgen** с аргументами, показано ниже:
+Выполните embeddinator для создания собственного платформы для управляемой сборки.
 
 ```shell
-cd /Users/Alex/Projects/Weather/Weather/bin/Debug
-
-objcgen --debug --outdir=output -c Weather.dll
+cd ~/Projects/hello-from-csharp
+objcgen ~/Projects/hello-from-csharp/hello-from-csharp/bin/Debug/hello-from-csharp.dll --target=framework --platform=macOS-modern --abi=x86_64 --outdir=output -c --debug
 ```
 
-Все, что вы должны будут помещены в **вывода** каталоге рядом с *Weather.dll*. Если у вас есть сборки .NET, замените *Weather.dll* с ним и необходимо выполнить действия, то выше.
+Платформа будет помещен в **~/Projects/hello-from-csharp/output/hello-from-csharp.framework**.
 
-## <a name="using-the-generated-output-in-an-xcode-project"></a>С помощью созданные выходные данные проекта Xcode
+### <a name="use-the-generated-output-in-an-xcode-project"></a>Использовать созданные выходные данные в проекте Xcode
 
-Откройте в Xcode, а затем создайте **macOS приложения Cocoa** и назовите его **MyWeather**. Щелкните правой кнопкой мыши *узел проекта MyWeather*выберите *добавить файлы для «MyWeather»*, перейдите к **выходные данные** каталога, созданных *Embeddinator 4000* и добавьте следующие файлы:
+Откройте Xcode и создайте новое приложение Cocoa. Назовите его **hello из c#** и выберите **Objective-C** языка.
 
-* Bindings.h
-* embeddinator.h
-* glib.h
-* моно support.h
-* mono_embeddinator.h
-* objc support.h
-* libWeather.dylib
-* Weather.dll
+Откройте **~/Projects/hello-from-csharp/output** каталог в системе поиска выберите **hello из csharp.framework**, перетащите его к проекту Xcode и поместите его непосредственно над **hello из c#**  папки в проекте.
 
-Убедитесь, что **копирование элементов при необходимости** проверяется в панели «Параметры» диалогового окна файла.
+![Перетаскивание framework](macos-images/hello-from-csharp-mac-drag-drop-framework.png)
 
-Теперь нам нужно убедиться, что **libWeather.dylib** и **Weather.dll** завладеть набора приложений:
+Убедитесь, что **копирование элементов при необходимости** проверяется в появившемся окне и нажмите кнопку **Готово**.
 
-* Щелкните *узел проекта MyWeather*.
-* Выберите *этапов построения* вкладки.
-* Добавьте новый *этап копирования файлов*.
-* На *назначения* выберите **платформ** и добавьте **libWeather.dylib**.
-* Добавьте новый *этап копирования файлов*.
-* На *назначения* выберите **исполняемые файлы**, добавьте **Weather.dll** и убедитесь, что *кода вход копирования* проверяется.
+![Копирование элементов при необходимости](macos-images/hello-from-csharp-mac-copy-items-if-needed.png)
 
-Теперь откройте **ViewController.m** и заменить его содержимое:
+Выберите **hello из c#** проекта и перейдите к **hello из c#** целевого объекта **Общие** вкладки. В **внедренные двоичный** добавьте **hello из csharp.framework**.
 
-```objective-c
+![Внедренные двоичных файлов](macos-images/hello-from-csharp-mac-embedded-binaries.png)
+
+Откройте **ViewController.m**и замените содержимое с:
+
+```objc
 #import "ViewController.h"
-#import "bindings.h"
+
+#include "hello-from-csharp/hello-from-csharp.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    XAMWeatherFetcher * fetcher = [[XAMWeatherFetcher alloc] initWithCity:@"Boston" state:@"MA"];
-    XAMWeatherResult * weather = [fetcher getWeather];
-
-    NSString * result;
-    if (weather)
-        result = [NSString stringWithFormat:@"%@ °F - %@", weather.temp, weather.text];
-    else
-        result = @"An error occured";
-
-    NSTextField * textField = [NSTextField labelWithString:result];
-    [self.view addSubview:textField];
+    
+    MyNSView *view = [[MyNSView alloc] init];
+    view.frame = CGRectMake(0, 200, 200, 200);
+    [self.view addSubview: view];
 }
 
 @end
@@ -172,6 +91,6 @@ objcgen --debug --outdir=output -c Weather.dll
 
 Наконец, запустите проект Xcode и будут отображаться примерно следующим образом:
 
-![Запуск образца MyWeather](macos-images/weather-from-csharp-macos.png)
+![Hello из примера для C# в симуляторе](macos-images/hello-from-csharp-mac.png)
 
-Пример более полным и изготовление стильной доступен [здесь](https://github.com/mono/Embeddinator-4000/tree/objc/samples/mac/weather).
+Пример более полным и улучшение доступен [здесь](https://github.com/mono/Embeddinator-4000/tree/objc/samples/mac/weather).

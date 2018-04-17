@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/20/2016
-ms.openlocfilehash: df0e188efd2791b03a63c31b715ed1da77079230
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: bc34cf265885708fa6392936a8dbc9d82796e2fd
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authenticating-access-to-web-services"></a>Проверка подлинности при доступе к веб-службам
 
@@ -36,11 +36,6 @@ Azure Active Directory B2C — это Облачное решение управ
 ## <a name="integrating-azure-active-directory-b2c-with-azure-mobile-appsazure-ad-b2c-mobile-appmd"></a>[Интеграция Azure Active Directory B2C с мобильными приложениями Azure](azure-ad-b2c-mobile-app.md)
 
 Azure Active Directory B2C может использоваться для управления процессом проверки подлинности для мобильных приложений Azure. При таком подходе процедуру управления удостоверениями полностью определен в облаке и может изменяться без изменения кода приложений для мобильных устройств. В этой статье показано, как использовать Azure Active Directory B2C для проверки подлинности и авторизации к экземпляру мобильных приложений Azure с помощью Xamarin.Forms.
-
-## <a name="authenticating-users-with-an-amazon-simpledb-serviceawsmd"></a>[Проверка подлинности пользователей с помощью службы Amazon SimpleDB](aws.md)
-
-Amazon SimpleDB не предоставляет собственную систему разрешения на основе ресурсов. Вместо этого можно использовать проверки подлинности поставщика удостоверений, чтобы убедиться, что пользователи имеют только доступ к собственным данным в домене SimpleDB. В этой статье объясняется, как ограничить доступ пользователей к их собственным данным SimpleDB.
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

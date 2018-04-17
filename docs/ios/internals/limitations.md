@@ -5,11 +5,12 @@ ms.assetid: 5AC28F21-4567-278C-7F63-9C2142C6E06A
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: a75d76ad1292955003705a5ddc1d52381addc796
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/09/2018
+ms.openlocfilehash: 8bd4ce464adf316517e2e1f2299006913bc68736
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations"></a>Ограничения
 
@@ -106,6 +107,18 @@ class GenericType<T> {
 
 Но весь API отражения, включая Type.GetType («someClass»), список методов, список свойств, выборка атрибуты и значения работает нормально.
 
+### <a name="using-delegates-to-call-native-functions"></a>Использование делегатов для вызова собственной функции
+
+Чтобы вызвать собственную функцию в делегате C#, объявление делегата должен быть снабжен атрибутом один из следующих атрибутов:
+
+- [UnmanagedFunctionPointerAttribute](https://developer.xamarin.com/api/type/System.Runtime.InteropServices.UnmanagedFunctionPointerAttribute/) (предпочтительно, так как это кросс платформенных и совместимы с .NET Standard 1.1 +)
+- [MonoNativeFunctionWrapperAttribute](https://developer.xamarin.com/api/type/ObjCRuntime.MonoNativeFunctionWrapperAttribute)
+
+Если клиент не получит один из этих атрибутов приведет ошибку во время выполнения, такие как:
+
+```
+System.ExecutionEngineException: Attempting to JIT compile method '(wrapper managed-to-native) YourClass/YourDelegate:wrapper_aot_native(object,intptr,intptr)' while running in aot-only mode.
+```
  
  <a name="Reverse_Callbacks" />
 

@@ -6,12 +6,12 @@ ms.assetid: 4D7C5F46-C997-49F6-AFDA-6763E68CDC90
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/01/2018
-ms.openlocfilehash: c6e1d36d871b4bb41a1e53d6e58ba8940813b29f
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/12/2018
+ms.openlocfilehash: e2f25504b971a0332dc51dc9b017c9c83222ec57
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-notifications-with-firebase-cloud-messaging"></a>Удаленный уведомления с Firebase облако обмена сообщениями
 
@@ -427,7 +427,7 @@ if (Intent.Extras != null)
 Помеченные длинную строку **маркера** токен идентификатор экземпляра, вставляемого в консоль Firebase &ndash; выберите и скопируйте строку в буфер обмена. Если вы не видите маркер идентификатора экземпляра, добавьте следующую строку в начало `OnCreate` метод, чтобы убедиться, что **google services.json** правильно проанализировать:
 
 ```csharp
-Log.Debug(TAG, "google app id: " + Resource.String.google_app_id);
+Log.Debug(TAG, "google app id: " + GetString(Resource.String.google_app_id));
 ```
 
 `google_app_id` Значение записи в окне вывода должен соответствовать `mobilesdk_app_id` значение записывается в **google services.json**. 
@@ -683,6 +683,27 @@ SendNotification(message.GetNotification().Body, message.Data);
 При открытии уведомления, вы увидите, что последнее сообщение, отправленное из графического интерфейса Firebase консоли уведомления: 
 
 [![Передний план уведомлений отображается со значком переднего плана](remote-notifications-with-fcm-images/23-foreground-msg-sml.png)](remote-notifications-with-fcm-images/23-foreground-msg.png#lightbox)
+
+
+## <a name="disconnecting-from-fcm"></a>Отключение от FCM
+
+Чтобы отменить подписку на раздел, вызовите [UnsubscribeFromTopic](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessaging.html#unsubscribeFromTopic%28java.lang.String%29) метод [FirebaseMessaging](https://firebase.google.com/docs/reference/android/com/google/firebase/messaging/FirebaseMessaging) класса. Например, чтобы отказаться от подписки _новостей_ разделе Подписка на более ранних версиях **Unsubscribe** кнопка может быть добавлен к макету, с помощью следующего кода обработчика:
+
+```csharp
+var unSubscribeButton = FindViewById<Button>(Resource.Id.unsubscribeButton);
+unSubscribeButton.Click += delegate {
+    FirebaseMessaging.Instance.UnsubscribeFromTopic("news");
+    Log.Debug(TAG, "Unsubscribed from remote notifications");
+};
+```
+
+Чтобы отменить регистрацию устройства в полном FCM, удалить идентификатор экземпляра, вызвав [DeleteInstanceId](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId.html#deleteInstanceId%28%29) метод [FirebaseInstanceId](https://firebase.google.com/docs/reference/android/com/google/firebase/iid/FirebaseInstanceId) класса. Пример:
+
+```csharp
+FirebaseInstanceId.Instance.DeleteInstanceId();
+```
+
+Вызов этого метода удаляет идентификатор экземпляра и связанные с ним данные. В результате прекращается периодической отправки FCM данных на устройстве.
 
  
 ## <a name="troubleshooting"></a>Устранение неполадок

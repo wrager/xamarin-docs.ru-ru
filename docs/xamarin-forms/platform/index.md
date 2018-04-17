@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/20/2017
-ms.openlocfilehash: 454969d8a59128423d632452033b8ba84ee0bc98
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: fd46411f3662652ef26addc76f273d6071401a6f
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="platform-features"></a>Функции платформы
 
@@ -33,9 +33,17 @@ Xamarin.Forms является расширяемым и позволяет об
 
 Некоторые стили операций ввода-вывода выполняемые с помощью **Info.plist** и `UIAppearance` API. Данное руководство содержит примеры использования для включения в приложения iOS решения Xamarin.Forms, включая поиску Spotlight основные функции iOS 9.
 
+## <a name="gtkgtkmd"></a>[GTK](gtk.md)
+
+Xamarin.Forms теперь имеет поддержку GTK # приложений в предварительной версии.
+
 ## <a name="macmacmd"></a>[Mac](mac.md)
 
 Xamarin.Forms теперь имеет поддержку macOS приложений в предварительной версии.
+
+## <a name="wpfwpfmd"></a>[WPF](wpf.md)
+
+Xamarin.Forms теперь имеет поддержку предварительного просмотра для приложений Windows Presentation Foundation (WPF).
 
 ## <a name="native-formsnative-formsmd"></a>[Исходные формы](native-forms.md)
 

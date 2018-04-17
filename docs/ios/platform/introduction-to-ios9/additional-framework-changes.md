@@ -6,11 +6,11 @@ ms.assetid: CFDE1FC4-9327-402B-95A0-581D4AA0E9D5
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 5561cccfd0968c309526aae1e5dc90831ca681b4
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 0ae286ddbc61f48cbdd257dc453a2d9680bba703
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-ios-9-frameworks-changes"></a>Изменения платформы дополнительных iOS 9
 
@@ -64,6 +64,9 @@ CloudKit framework упрощает разработку приложений, i
 - [Справочник по JS CloudKit](https://developer.apple.com/library/prerelease/ios/documentation/CloudKitJS/Reference/CloudKitJavaScriptReference/index.html#//apple_ref/doc/uid/TP40015359) -CloudKit JS документации компании Apple.
 - [CloudKit веб-службы ссылки](https://developer.apple.com/library/prerelease/ios/documentation/DataManagement/Conceptual/CloutKitWebServicesReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015240) -Apple ссылку, которая описывает интерфейс для CloudKit HTTP.
 - [Каталог CloudKit: Введение в CloudKit (Cocoa и JavaScript)](https://developer.apple.com/library/prerelease/ios/samplecode/CloudAtlas/Introduction/Intro.html#//apple_ref/doc/uid/TP40014599) -Apple примера приложения, с помощью CloudKit и CloudKit JS.
+
+> [!IMPORTANT]
+> Apple [предоставляет средства](https://developer.apple.com/support/allowing-users-to-manage-data/) для помощи разработчикам правильно обрабатывать Европейского Союза общие данные защиты стабилизации (GDPR).
 
 ## <a name="foundation-framework-additions"></a>Дополнения Framework Foundation
 

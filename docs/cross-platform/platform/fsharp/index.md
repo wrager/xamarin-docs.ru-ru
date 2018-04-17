@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/24/2017
-ms.openlocfilehash: ed934e4a5896a004e0f226d156109df182cfebd3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 20d5a81a6a33465e5b883e495600b57400adf199
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="f35"></a>F&AMP;#35;
 
@@ -21,7 +21,7 @@ F # объединяет succinctness, функциональность и во�
 
 F # — доступны в качестве языка программирования для Xamarin пользователей на всех платформах поддерживается Xamarin: Android, iOS и macOS.
 
-- [Руководство по языку F#](https://docs.microsoft.com/en-us/dotnet/fsharp/)
+- [Руководство по языку F#](https://docs.microsoft.com/dotnet/fsharp/)
 - [Начало работы с F # и Xamarin](overview.md)
 - [Примеры F # мобильных устройств](samples.md)
 
@@ -36,4 +36,3 @@ F # — это поддерживаемый язык в Visual Studio для Mac
 - Выделение синтаксиса в F # Interactive
 - F # шаблоны Xamarin.Forms, iOS и Android
 - [*и многое другое...*](https://developer.xamarin.com/releases/studio/xamarin.studio_6.0/xamarin.studio_6.0/#F_Enhancements)
-

@@ -5,15 +5,14 @@ ms.assetid: 3F543FC5-FDED-47F8-8D2C-481FCC98BFDA
 ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
-ms.date: 03/09/2018
-ms.openlocfilehash: d4ad9dde4004440985ff247d2f986ede385f981f
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/13/2018
+ms.openlocfilehash: 086576ea7d806bb0768fbe4563df7fca99244ccb
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts"></a>Шрифты
-
 
 ## <a name="overview"></a>Обзор
 
@@ -41,7 +40,7 @@ V26 библиотеку поддержки Android будут backport подд
             app:fontStyle="normal" 
             app:fontWeight="400" />
 
-</font-family>    
+</font-family>
 ```
 
 При условии, что шрифтов предоставляются для приложения должным образом, они могут быть применены к графического пользовательского интерфейса, задав [ `fontFamily` атрибут](https://developer.android.com/reference/android/widget/TextView.html#attr_android:fontFamily). Например следующий фрагмент кода демонстрирует отображения шрифта в текстового представления:
@@ -49,8 +48,8 @@ V26 библиотеку поддержки Android будут backport подд
 ```xml
 <TextView
     android:text="The quick brown fox jumped over the lazy dog."
-    android:fontFamily="@font/caveat_bold"
-    app:fontFamily="@font/caveat_bold"
+    android:fontFamily="@font/sourcesanspro_regular"
+    app:fontFamily="@font/sourcesanspro_regular"
     android:textAppearance="?android:attr/textAppearanceLarge"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
@@ -58,14 +57,12 @@ V26 библиотеку поддержки Android будут backport подд
 
 В этом руководстве рассматривается использование шрифтов Android ресурс и затем перейти к описывают, как загрузить шрифты во время выполнения.
 
-
 ## <a name="fonts-as-a-resource"></a>Шрифты в виде ресурса
 
 Упаковка шрифта в Android apk-ФАЙЛ гарантирует, что он будет доступны для приложения. Файл шрифта (либо. TTF или. Файл OTF) добавляется к приложению Xamarin.Android так же, как и любой другой ресурс путем копирования файлов на подкаталог в **ресурсов** папку проекта Xamarin.Android. Шрифты ресурсы хранятся в **шрифта** из подкаталога **ресурсов** папку проекта. 
 
-
 > [!NOTE]
->  Шрифты должны иметь **действие при построении** из **AndroidResource** или они не будет упакован в окончательный APK. Действие построения автоматически задается в интегрированной среде разработки.
+> Шрифты должны иметь **действие при построении** из **AndroidResource** или они не будет упакован в окончательный APK. Действие построения автоматически задается в интегрированной среде разработки.
 
 При наличии многих аналогичных файлов шрифта (например, тот же шрифт с разные веса нагрузки или стили) можно объединить их в семейство шрифтов.
 
@@ -75,7 +72,7 @@ V26 библиотеку поддержки Android будут backport подд
 
 Семейство шрифтов — это набор шрифтов, которые имеют разные веса нагрузки и стили. Например может возникнуть файлы шрифта для шрифтов полужирным шрифтом или курсивом. Семейство шрифтов определяется `font` элементов в XML-файл, который сохраняется в **ресурсы или шрифта** каталога. Каждое семейство шрифтов должен иметь собственный XML-файл.
 
-Для создания семейства шрифтов, сначала добавить все шрифты в **ресурсы или шрифта** папки. Затем создайте новый XML-файл в папке шрифта для семейства шрифтов. Этот XML-файл будет иметь корневой `font-family` элемент, который содержит один или несколько `font` элементов. Каждый `font` элемент объявляет атрибуты шрифта. 
+Для создания семейства шрифтов, сначала добавить все шрифты в **ресурсы или шрифта** папки. Затем создайте новый XML-файл в папке шрифта для семейства шрифтов. Имя XML-файла не имеет сходство или отношения к шрифтам, на которую выполняется ссылка; файл ресурсов может быть любое имя файла ресурсов юридических Android. Этот XML-файл будет иметь корневой `font-family` элемент, который содержит один или несколько `font` элементов. Каждый `font` элемент объявляет атрибуты шрифта.
 
 Следующий XML-код является примером семейство шрифтов для _источников Sans Pro_ шрифт, который определяет множество весовых значений другой шрифт. Он сохраняется в виде файла в **ресурсы или шрифта** папку с именем **sourcesanspro.xml**:
 
@@ -86,7 +83,7 @@ V26 библиотеку поддержки Android будут backport подд
     <font android:font="@font/sourcesanspro_regular" 
           android:fontStyle="normal" 
           android:fontWeight="400"
-          app:font="@font/sourcesanspro_" 
+          app:font="@font/sourcesanspro_regular" 
           app:fontStyle="normal" 
           app:fontWeight="400" />
     <font android:font="@font/sourcesanspro_bold" 
@@ -118,7 +115,7 @@ V26 библиотеку поддержки Android будут backport подд
 * **Средний** &ndash; 500
 * **Полусоединения полужирным** &ndash; 600
 * **Bold** &ndash; 700
-* **Extra Bold** &ndash; 800
+* **Жирный** &ndash; 800
 * **Черный** &ndash; 900
 
 После определения семейство шрифтов, он может использоваться декларативно, задав `fontFamily`, `textStyle`, и `fontWeight` атрибутов в файл макета.  Например в следующем фрагменте XML устанавливает (обычные) 400 Вес шрифта и стиля текста курсивом.
@@ -135,7 +132,6 @@ V26 библиотеку поддержки Android будут backport подд
     android:textStyle="italic"
     />
 ```
-
 
 ### <a name="programmatically-assigning-fonts"></a>Назначение шрифты программным способом
 
@@ -154,14 +150,13 @@ var typeface = Typeface.Create("<FONT FAMILY NAME>", Android.Graphics.TypefaceSt
 textView1.Typeface = typeface;
 ```
 
-
 ## <a name="downloading-fonts"></a>Загрузка шрифтов
 
 Вместо шрифтов упаковки в качестве ресурса приложения Android можно загрузить шрифты из удаленного источника. Это отразится желательно уменьшения размера APK. 
 
 Шрифты загружаются с помощью _поставщика шрифта_. Это специализированный поставщик содержимого, управляющий загрузкой и кэшированием шрифтов для всех приложений на устройстве. Android 8.0 включает поставщик шрифта для загрузки всех шрифтов из [Google шрифта репозитория](http://fonts.google.com). Этот поставщик шрифта по умолчанию — backported уровень API 14 v26 библиотеку поддержки Android.
- 
- Когда приложение выполняет запрос для шрифта, поставщик шрифта сначала проверит шрифт ли уже на устройстве. В противном случае он предпримет попытку загрузить шрифт. Если шрифт не может быть загруженного, затем Android будет использовать системный шрифт по умолчанию. После загрузки шрифт будет доступен для всех приложений на устройстве, а не только приложения, который создал запрос на начальной.
+
+Когда приложение выполняет запрос для шрифта, поставщик шрифта сначала проверит шрифт ли уже на устройстве. В противном случае он предпримет попытку загрузить шрифт. Если шрифт не может быть загруженного, затем Android будет использовать системный шрифт по умолчанию. После загрузки шрифт будет доступен для всех приложений на устройстве, а не только приложения, который создал запрос на начальной.
 
 При выполнении запроса для загрузки шрифта, приложение не запрашивает поставщика шрифта напрямую. Вместо этого приложения будут использовать экземпляр [ `FontsContract` ](https://developer.android.com/reference/android/provider/FontsContract.html) API (или [ `FontsContractCompat` ](https://developer.android.com/reference/android/support/v4/provider/FontsContractCompat.html) при использовании 26 библиотеки поддержки).  
 
@@ -184,19 +179,18 @@ Android 8.0 поддерживает загрузку шрифты двумя с
              app:fontProviderPackage="com.google.android.gms" 
              app:fontProviderQuery="VT323"
              app:fontProviderCerts="@array/com_google_android_gms_fonts_certs"
-    >
+>
 </font-family>
 ```
 
 `font-family` Элемент содержит следующие атрибуты, объявляющий сведения, что Android требуется их загрузке:
- 
+
 1. **fontProviderAuthority** &ndash; центра поставщика шрифта, который будет использоваться для запроса.
 2. **fontPackage** &ndash; пакета для поставщика шрифт, используемый для запроса. Используется для проверки подлинности поставщика.
 3. **fontQuery** &ndash; это строка, которая поможет найти требуемый шрифт поставщик шрифта. Сведения о запросе шрифта характерные для поставщика шрифта. [ `QueryBuilder` ](https://github.com/xamarin/monodroid-samples/blob/master/android-o/DownloadableFonts/DownloadableFonts/QueryBuilder.cs) Класса в [загружаемые шрифты](https://github.com/xamarin/monodroid-samples/blob/master/android-o/DownloadableFonts/) пример приложения приведены некоторые сведения о формата запроса шрифты Google шрифты откройте исходной коллекции.
 4. **fontProviderCerts** &ndash; массиву ресурсов со списком наборов хэша для сертификата, поставщик должен быть подписан.
 
 После определения шрифты может оказаться необходимым предоставить сведения о _сертификаты шрифта_ на загрузку.
-
 
 ### <a name="font-certificates"></a>Сертификаты шрифта
 
@@ -226,7 +220,6 @@ Android 8.0 поддерживает загрузку шрифты двумя с
 
 С этими файлами ресурсов в месте приложение может выполнять загрузку шрифты.
 
-
 ### <a name="declaring-downloadable-fonts-as-resources"></a>Объявление загружаемые шрифты как ресурсы
 
 Путем перечисления загружаемые шрифты в **AndroidManifest.XML**, Android асинхронно загружает шрифты при первом запуске приложения. Шрифт в сами, перечислены в файле ресурсов массива, следующим образом: 
@@ -238,14 +231,13 @@ Android 8.0 поддерживает загрузку шрифты двумя с
         <item>@font/vt323</item>
     </array>
 </resources>
-```        
+```
 
 Чтобы загрузить эти шрифты, они должны быть объявлены в **AndroidManifest.XML** путем добавления `meta-data` как дочерний `application` элемента. Например, если загружаемые шрифты, объявляются в файле ресурсов на **Resources/values/downloadable_fonts.xml**, а затем этот фрагмент необходимо будет добавлен в манифест: 
 
 ```xml
 <meta-data android:name="downloadable_fonts" android:resource="@array/downloadable_fonts" />
 ```
-
 
 ### <a name="downloading-a-font-with-the-font-apis"></a>Загрузка шрифта с интерфейсами API шрифта
 
@@ -269,17 +261,16 @@ FontRequest request = new FontRequest("com.google.android.gms.fonts", "com.googl
 Перед передачей `FontRequest` для `FontContractCompat.RequestFont` метода, имеется два объекта, которые должны быть созданы:
 
 * **`FontsContractCompat.FontRequestCallback`** &ndash; Это абстрактный класс, который должен быть расширен. Это обратный вызов, который будет вызываться при `RequestFont` завершения работы. Подкласс необходимо приложение Xamarin.Android `FontsContractCompat.FontRequestCallback` и Переопределите `OnTypefaceRequestFailed` и `OnTypefaceRetrieved`, предоставляя действия, выполняемые при загрузке проходит или не проходит соответственно.
-* **`Handler`** &ndash; Это `Handler` который будет использоваться `RequestFont` для загрузки шрифта в потоке. Шрифты должны **не** загружаться в потоке пользовательского интерфейса.  
+* **`Handler`** &ndash; Это `Handler` который будет использоваться `RequestFont` для загрузки шрифта в потоке. Шрифты должны **не** загружаться в потоке пользовательского интерфейса.
 
 Ниже приведен пример класса C#, который асинхронно загрузит шрифта с открытым исходным кодом шрифты Google коллекции. Он реализует `FontRequestCallback` интерфейсов и вызывает событие C# при `FontRequest` завершения. 
-
 
 ```csharp
 public class FontDownloadHelper : FontsContractCompat.FontRequestCallback
 {
     // A very simple font query; replace as necessary
     public static readonly String FontToDownload = "Courgette";
-    
+
     Android.OS.Handler Handler = null;
 
     public event EventHandler<FontDownloadEventArg> FontDownloaded = delegate
@@ -305,7 +296,7 @@ public class FontDownloadHelper : FontsContractCompat.FontRequestCallback
         base.OnTypefaceRetrieved(typeface);
         FontDownloaded(this, new FontDownloadEventArg(typeface));
     }
-    
+
     Handler GetHandlerThreadHandler()
     {
         if (Handler == null)
@@ -335,9 +326,8 @@ public class FontDownloadEventArg : EventArgs
 }
 ```
 
-
-
 Для использования этого вспомогательного объекта новый `FontDownloadHelper` создания и назначения обработчика событий:  
+
 ```csharp
 var fontHelper = new FontDownloadHelper();
 
@@ -348,15 +338,13 @@ fontHelper.FontDownloaded += (object sender, FontDownloadEventArg e) =>
 fontHelper.DownloadFonts(this); // this is an Android Context instance.
 ```
 
-
 ## <a name="summary"></a>Сводка
 
-В этом руководстве рассматриваются новые интерфейсы API в Android 8.0, для поддержки загрузки и шрифты как ресурсы. Он рассматривается как внедрение шрифтов, существующих в apk-ФАЙЛ и использовать их в макете. Также рассматривается, как Android 8.0 поддерживает загрузку шрифты от поставщика шрифта, программным путем или путем объявления шрифта метаданных в файлах ресурсов. 
-
+В этом руководстве рассматриваются новые интерфейсы API в Android 8.0, для поддержки загрузки и шрифты как ресурсы. Он рассматривается как внедрение шрифтов, существующих в apk-ФАЙЛ и использовать их в макете. Также рассматривается, как Android 8.0 поддерживает загрузку шрифты от поставщика шрифта, программным путем или путем объявления шрифта метаданных в файлах ресурсов.
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [fontFamily](https://developer.android.com/reference/android/widget/TextView.html#attr_android:fontFamily)
+- [Семейство FontFamily](https://developer.android.com/reference/android/widget/TextView.html#attr_android:fontFamily)
 - [FontConfig](https://developer.android.com/reference/android/text/FontConfig.html)
 - [FontRequest](https://developer.android.com/reference/android/support/v4/provider/FontRequest.html)
 - [FontsContractCompat](https://developer.android.com/reference/android/support/v4/provider/FontsContractCompat.html)

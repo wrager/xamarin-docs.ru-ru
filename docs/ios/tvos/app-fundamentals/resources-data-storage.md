@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: b4d96ef50498b454da583a955169b9d51c29dd01
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 8103dcc1c2e1e8c2375a86d51580b1ea3fcce432
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-and-data-storage"></a>Ресурсы и хранилище данных
 
@@ -55,6 +55,9 @@ _В этой статье рассматривается работа с рес�
 
 - **Значение ключа хранилища (KVS) iCloud** — для небольших участков, что приложения могут потребовать (как персональных настроек пользователя), можно использовать iCloud KVS хранилища данных (меньше 1 МБ). iCloud KVS данных автоматически синхронизирован в облако и всех устройств пользователя, под управлением одного приложения. Дополнительные сведения см. в разделе [хранилища ключ-значение](~/ios/data-cloud/introduction-to-icloud.md) часть наших [введение в iCloud](~/ios/data-cloud/introduction-to-icloud.md) документа или Apple [проектирование для ключа и значения данных в iCloud](https://developer.apple.com/library/prerelease/tvos/documentation/General/Conceptual/iCloudDesignGuide/Chapters/DesigningForKey-ValueDataIniCloud.html#//apple_ref/doc/uid/TP40012094-CH7) документация.
 - **CloudKit** — для хранения большего размера блока данных (больше 1 МБ), используйте Apple CloudKit Framework. В отличие от iCloud KVS хранения CloudKit данные могут передаваться среди всех пользователей приложения (а также как закрытый одним пользователем). Формируют Дополнительные сведения см. наш [введение в CloudKit](~/ios/data-cloud/intro-to-cloudkit.md) документации или Apple [CloudKit быстрый запуск](https://developer.apple.com/library/prerelease/tvos/documentation/DataManagement/Conceptual/CloudKitQuickStart/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014987).
+
+> [!IMPORTANT]
+> Apple [предоставляет средства](https://developer.apple.com/support/allowing-users-to-manage-data/) для помощи разработчикам правильно обрабатывать Европейского Союза общие данные защиты стабилизации (GDPR).
 
 <a name="On-Demand-Resources" />
 
