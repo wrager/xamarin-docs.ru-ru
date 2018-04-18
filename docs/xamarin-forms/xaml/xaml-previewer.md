@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 02/24/2017
-ms.openlocfilehash: 77f9873259a2a44426007c50efbd7ff83c8a0ccb
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d23f89ed8ad7956f7a366280a14ccc12ba3dac0c
+ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="xaml-previewer-for-xamarinforms"></a>Средство предварительного просмотра XAML для Xamarin.Forms
 
@@ -33,7 +33,7 @@ _В разделе отображаются при вводе макеты Xamar
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-**Предварительного просмотра** кнопку можно отобразить в редакторе, щелкнув правой кнопкой мыши XAML-файл, а затем выбрав **открыть с помощью > средства просмотра XAML**. Затем в области предварительного просмотра можно отображать и скрывать, нажав клавишу **предварительного просмотра** кнопку в правом верхнем углу любого окна документа XAML:
+**Предварительного просмотра** кнопку можно отобразить в редакторе, щелкнув правой кнопкой мыши XAML-файл, а затем выбрав **открыть с помощью > средство предварительного просмотра формы**. Затем в области предварительного просмотра можно отображать и скрывать, нажав клавишу **предварительного просмотра** кнопку в правом верхнем углу любого окна документа XAML:
 
 [![Предварительная версия элемента управления ListView в Visual Studio для Mac](xaml-previewer-images/xamlp-list-sml.png "средство предварительного просмотра форм в Visual Studio для Mac")](xaml-previewer-images/xamlp-list.png#lightbox "средство предварительного просмотра форм в Visual Studio для Mac")
 

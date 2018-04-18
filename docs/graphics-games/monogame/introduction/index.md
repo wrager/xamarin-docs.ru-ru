@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 9fb19b86ca303f8be3506d267dd75dc9db6cfca6
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c94ed2e06ee57b67745b6a02692df2360aeb9754
+ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="introduction-to-game-development-with-monogame"></a>Общие сведения о разработке игр с MonoGame
 
@@ -27,16 +27,16 @@ MonoGame является кросс платформенных, с аппара
 
 Ниже показан результат выполнения данного пошагового руководства:
 
-![](images/image1.gif "Приложения, который должен быть построен в этом руководстве")
+![Анимация пример игры символ указателя мыши](images/image1.gif)
 
-# <a name="monogame-and-xna"></a>Monogame и XNA
+## <a name="monogame-and-xna"></a>Monogame и XNA
 
 Библиотека MonoGame предназначен для имитации библиотеки Microsoft XNA в синтаксис и функции.  Все объекты MonoGame существует в пространстве имен Microsoft.Xna — что большая часть кода XNA для использования в MonoGame без изменения. 
 
 Разработчики, знакомые с XNA уже будут знакомы с синтаксисом MonoGame и разработчиков, Дополнительные сведения о работе с MonoGame смогут обращаться к существующей документации XNA пошаговые руководства, документация по API и обсуждения.
 
 
-# <a name="walkthrough-parts"></a>Части пошагового руководства
+## <a name="walkthrough-parts"></a>Части пошагового руководства
 
 - [Часть 1 – Создание проекта MonoGame кроссплатформенный](~/graphics-games/monogame/introduction/part1.md)
 - [Часть 2 — реализация WalkingGame](~/graphics-games/monogame/introduction/part2.md)

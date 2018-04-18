@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: efee4847397db0e89a8d10211e13d61ce13824fb
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ee4ee83c07cf01d1324b5f127d4f77ced0df2afe
+ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="creating-a-monogame-uwp-project"></a>Создание проекта MonoGame UWP
 
@@ -21,23 +21,21 @@ _MonoGame можно использовать для создания игр и 
 
 В этом примере создается пустой проект, который отображает *cornflower синей* фона (цвет фона традиционных приложений XNA).
 
-
-# <a name="requirements"></a>Требования
+## <a name="requirements"></a>Требования
 
 Разработка приложений MonoGame UWP требует:
 
- - Операционная система Windows 10
- - Любой версии Visual Studio 2015
- - Средства разработки Windows 10
- - Настройка устройства в режим разработчика
+- Операционная система Windows 10
+- Любой версии Visual Studio 2015
+- Средства разработки Windows 10
+- Настройка устройства в режим разработчика
 - [3.5 MonoGame для Visual Studio](http://www.monogame.net/2016/03/17/monogame-3-5/) или более поздней версии
 
 Дополнительные сведения см. в этой [страницы по настройке для разработки приложений Windows 10 UWP](https://msdn.microsoft.com/en-us/windows/uwp/get-started/get-set-up).
 
 Игры Xbox One могут разрабатываться на оборудовании Xbox One розничной торговли. Требуется дополнительное программное обеспечение на Компьютере разработки и Xbox One. Сведения о настройке Xbox One для разработки игр просмотреть эту страницу на [Настройка Xbox One](https://msdn.microsoft.com/en-us/windows/uwp/xbox-apps/index).
 
-
-# <a name="creating-an-empty-template"></a>Создание пустого шаблона
+## <a name="creating-an-empty-template"></a>Создание пустого шаблона
 
 Как только будут установлены все необходимые ресурсы и включен режим разработчика на компьютере Windows 10, можно создать новый проект MonoGame, с помощью Visual Studio, выполните следующие действия:
 
@@ -51,7 +49,7 @@ _MonoGame можно использовать для создания игр и 
     ![](uwp-images/image2.png "Выберите параметр универсального проекта MonoGame Windows 10")
 
 1. Введите имя для нового проекта и нажмите кнопку **ОК**.
-Если Visual Studio отображает любые ошибки, после нажатия кнопки ОК, убедитесь, что установлены средства Windows 10, а устройство находится в режиме разработчика. 
+Если Visual Studio отображает любые ошибки, после нажатия кнопки ОК, убедитесь, что установлены средства Windows 10, а устройство находится в режиме разработчика.
 
 После завершения выполнения Visual Studio, создание шаблона, мы можно запустить, чтобы увидеть пустой проект под управлением:
 
@@ -72,7 +70,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     ...
 ```
 
-# <a name="running-on-xbox-one"></a>На один Xbox
+## <a name="running-on-xbox-one"></a>На один Xbox
 
 Проекты UWP можно развернуть на любом устройстве Windows 10 из одного проекта. После настройки компьютера разработки Windows 10 и Xbox One, можно развернуть приложения UWP, переключение целевой объект на удаленном компьютере и введя Xbox One IP-адрес:
 
@@ -82,7 +80,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ![](uwp-images/safearea.png "На Xbox One белая граница представляет области без safe для телевизоры")
 
-## <a name="safe-area-on-xbox-one"></a>Зарезервированная область на Xbox один
+### <a name="safe-area-on-xbox-one"></a>Зарезервированная область на Xbox один
 
 Разработка игр для консолей требует рассмотрении безопасном область, которая представляет собой область, в центре экрана, который должен содержать все важные визуальные элементы (например, пользовательский Интерфейс или HUD). Область за пределами безопасного области не обязательно будут отображаться на всех телевизор, поэтому визуальные элементы в этой области может быть полностью или частично невидимыми для некоторых дисплеев.
 
@@ -90,15 +88,13 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ![](uwp-images/clientbounds.png "Обратите внимание, что высота границ клиента 1016, несмотря на разрешение 1920 x 1080 экрана")
 
-
-# <a name="referencing-content-in-uwp-projects"></a>Создание ссылок на содержимое в проектах UWP
+## <a name="referencing-content-in-uwp-projects"></a>Создание ссылок на содержимое в проектах UWP
 
 Содержимое в проектах MonoGame можно ссылаться непосредственно из файла или посредством [конвейера содержимого MonoGame](~/graphics-games/cocossharp/content-pipeline/index.md). Небольших проектов игры может дать преимущества простота из файла. Крупных проектов будут усовершенствованы благодаря использованию конвейера содержимого для оптимизации содержимого, чтобы уменьшить размер и время загрузки. В отличие от XNA на Xbox 360 `System.IO.File` класс можно найти в приложениях UWP один Xbox.
 
 Дополнительные сведения о загрузке содержимого с помощью конвейера содержимого см. в разделе [содержимое руководства конвейера](~/graphics-games/cocossharp/content-pipeline/index.md). 
 
-
-## <a name="loading-content-from-file"></a>Загрузка содержимого из файла
+### <a name="loading-content-from-file"></a>Загрузка содержимого из файла
 
 В отличие от iOS и Android проекты UWP могут ссылаться на файлы относительно исполняемого файла. Простой игры без необходимости это содержимое нагрузки прием можно использовать для изменения и постройте проект конвейера содержимого.
 
@@ -119,7 +115,6 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 Дополнительные сведения об использовании `Texture2D`, в разделе [введение в руководство по MonoGame](~/graphics-games/monogame/introduction/index.md).
 
-
-# <a name="summary"></a>Сводка
+## <a name="summary"></a>Сводка
 
 В этом руководстве описывается создание нового проекта UWP и UWP рекомендациям при загрузке файлов. Разработчики, интересует создание полной UWP игры можно прочитать подробнее о MonoGame в [введение в руководство по MonoGame](~/graphics-games/monogame/introduction/index.md).

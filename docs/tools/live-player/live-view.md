@@ -8,11 +8,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 12/21/2017
-ms.openlocfilehash: 721266e1ddfe927b33529a9f4d0eb55a008dd4e8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c96777666d7601412c1d2e3be1c7fe23131fc9d4
+ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="xaml-live-previewing"></a>XAML Live предварительного просмотра
 
@@ -150,4 +150,4 @@ ms.lasthandoff: 04/04/2018
 
 - [Общие сведения о динамической проигрыватель Xamarin](https://xamarin.com/live)
 - [запись блога](https://blog.xamarin.com/live-player/)
-- [Образцы динамической проигрыватель Xamarin](~/tools/livehttps://developer.xamarin.com/samples.md)
+- [Образцы динамической проигрыватель Xamarin](~/tools/live-player/samples.md)

@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 59aab811a51517d052902b40cb9e43a7cda6d654
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 603128db1df85e0dabb041d1eb79f250eb5d3872
+ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="introduction-to-3d-graphics-with-monogame"></a>Введение в трехмерной графики с помощью MonoGame
 
@@ -24,7 +24,7 @@ MonoGame является практически идентичен Microsoft XN
 Первый раздел описывается добавление игру трехмерной модели из файла .fbx. В следующем разделе рассматривается процесс создания трехмерной камеры, который включает стандартные элементы управления, такие как перемещение и поиск. Последний раздел принимает подробно изучить `VertexBuffer` класс, который обеспечивает больший контроль над трехмерной отрисовки, по сравнению с моделями отрисовки загружаются из .fbx файлов.
 
 
-# <a name="subsections"></a>Подразделы
+## <a name="topics"></a>Разделы
 
 - [С помощью класса модели](~/graphics-games/monogame/3d/part1.md)
 - [Рисование трехмерной графики с вершины](~/graphics-games/monogame/3d/part2.md)
