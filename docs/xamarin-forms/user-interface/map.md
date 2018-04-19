@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 7dcf3cba72a07b06236e29ddf2603745fd348596
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.openlocfilehash: 050e37d208c3ba5a330d7ecc6df9d106e14f8bb9
+ms.sourcegitcommit: f52aa66de4d07bc00931ac8af791d4c33ee1ea04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="map"></a>Карта
 
@@ -72,15 +72,26 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 ### <a name="ios"></a>iOS
 
-На iOS 7 карты управлять «просто работает», если как `FormsMaps.Init()` выполнен вызов.
+Для доступа к службам обнаружения расположения на iOS, необходимо задать следующие ключи в **Info.plist**:
 
-Для iOS 8 два ключа должны быть добавлены к **Info.plist** файла: [ `NSLocationAlwaysUsageDescription` ](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW18) и [ `NSLocationWhenInUseUsageDescription` ](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26). Ниже приведен XML-представление - следует обновить `string` значения в том, как приложение использует сведения о расположении:
+- iOS 11
+    - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26) — При использовании приложения, с помощью служб обнаружения расположения
+    - [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization?language=objc) — с помощью служб обнаружения расположения все время
+- iOS 10 и более ранних версий
+    - [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26) — При использовании приложения, с помощью служб обнаружения расположения
+    - [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW18) — с помощью служб обнаружения расположения все время    
+    
+Для обеспечения поддержки iOS 11 и более ранних версий, можно включить все три ключа: `NSLocationWhenInUseUsageDescription`, `NSLocationAlwaysAndWhenInUseUsageDescription`, и `NSLocationAlwaysUsageDescription`.
+
+В XML-представление этих ключей в **Info.plist** показано ниже. Необходимо обновить `string` значения в том, как приложение использует сведения о расположении:
 
 ```xml
 <key>NSLocationAlwaysUsageDescription</key>
-    <string>Can we use your location</string>
+<string>Can we use your location at all times?</string>
 <key>NSLocationWhenInUseUsageDescription</key>
-    <string>We are using your location</string>
+<string>Can we use your location when your app is being used?</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Can we use your location at all times?</string>
 ```
 
 **Info.plist** записи также могут добавляться в **источника** представления при редактировании **Info.plist** файла:

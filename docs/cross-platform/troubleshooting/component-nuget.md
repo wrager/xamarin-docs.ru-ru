@@ -7,28 +7,21 @@ ms.assetid: 9E6C986F-3FBA-4599-8367-FB0C565C0ADE
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
-ms.date: 11/22/2017
-ms.openlocfilehash: a76adab41e9f7de5abb391e69a5b27783e0c3a63
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/18/2018
+ms.openlocfilehash: e3adee1b56b833442a8c927672cf903d45d03e84
+ms.sourcegitcommit: f52aa66de4d07bc00931ac8af791d4c33ee1ea04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="updating-component-references-to-nuget"></a>Обновление ссылок на компоненты для NuGet
 
-_Замените обращается Ваш компонент пакеты NuGet, чтобы в будущем приложений._
+> [!NOTE]
+> Компоненты Xamarin больше не поддерживается в Visual Studio и следует заменить на пакеты NuGet. Следуйте инструкциям ниже, чтобы вручную удалить ссылки на компоненты из проектов.
 
-В этом руководстве объясняется, как обновить существующие решения Xamarin для изменения компонента ссылки на пакеты NuGet.
+Обратитесь к инструкциям для добавления пакетов NuGet на [Windows](https://docs.microsoft.com/nuget/quickstart/use-a-package) или [Mac](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough).
 
-- [Компоненты, которые содержат пакеты NuGet](#contain)
-- [Компоненты с замен NuGet](#replace)
-
-Большинство компонентов относятся к одному из этих категорий.
-Если вы используете это компонент, который не включает пакет NuGet эквивалент, ознакомьтесь со статьей [компоненты без пути миграции NuGet](#require-update) разделе ниже.
-
-Ссылаться на эти страницы более подробные инструкции по добавлению на пакеты NuGet [Windows](https://docs.microsoft.com/nuget/quickstart/use-a-package) или [Mac](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough).
-
-## <a name="opening-a-project-containing-a-component"></a>Открытие проекта, содержащего компонент
+## <a name="manually-removing-component-references"></a>Ручное удаление ссылок на компоненты
 
 В ноябре 2017 г., было [было объявлено](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) , хранилище компонентов Xamarin будет прекращена. С целью обеспечения sunsetting компонентов 15.6 выпуск Visual Studio и 7.4 выпуск Visual Studio для Mac больше не поддерживают компоненты в проекте. 
 
@@ -40,7 +33,7 @@ _Замените обращается Ваш компонент пакеты Nu
 
 Чтобы удалить компонент из проекта:
 
-1. Откройте CSPROJ-файл. Для этого щелкните правой кнопкой мыши имя проекта и выберите **выгрузить проект**. 
+1. Откройте **.csproj** файла. Для этого щелкните правой кнопкой мыши имя проекта и выберите **выгрузить проект**. 
 
 2. Снова щелкните правой кнопкой мыши выгрузить проект и выберите **изменить CSPROJ {ваш проект name}**.
 
@@ -100,9 +93,21 @@ _Замените обращается Ваш компонент пакеты Nu
 
 3. Удалите ссылки на `XamarinComponentReference` и сохраните файл. В приведенном выше примере можно безопасно удалить весь `ItemGroup`
 
-4. Повторите предыдущие шаги для каждого проекта в решении. 
+4. Повторите предыдущие шаги для каждого проекта в решении.
 
 -----
+
+> [!WARNING]
+> Приведенные ниже инструкции работать только с более ранними версиями Visual Studio.
+> **Компоненты** узла больше не доступен в текущих выпусках 2017 г. Visual Studio или Visual Studio для Mac.
+
+Ниже описан способ обновить существующие решения Xamarin для изменения компонента ссылки на пакеты NuGet.
+
+- [Компоненты, которые содержат пакеты NuGet](#contain)
+- [Компоненты с замен NuGet](#replace)
+
+Большинство компонентов относятся к одному из этих категорий.
+Если вы используете это компонент, который не включает пакет NuGet эквивалент, ознакомьтесь со статьей [компоненты без пути миграции NuGet](#require-update) разделе ниже.
 
 <a name="contain" />
 
@@ -147,14 +152,12 @@ _Замените обращается Ваш компонент пакеты Nu
 
 _Он может содержать зависимостей NuGet, но их можно проигнорировать._
 
-
 Чтобы подтвердить замену существует пакет NuGet, найдите на [NuGet.org](https://www.nuget.org/packages), с помощью имени компонента, или в качестве альтернативы автором.
 
 Например, можно найти популярный **sqlite-net-pcl** пакета путем поиска:
 
 - [`sqlite-net-pcl`](https://www.nuget.org/packages?q=sqlite-net-pcl) — Имя продукта.
 - [`praeclarum`](https://www.nuget.org/packages?q=praeclarum) — имя автора профиля.
-
 
 ### <a name="updating-the-solution"></a>Обновление решения
 
