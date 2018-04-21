@@ -7,19 +7,19 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 04/18/2018
-ms.openlocfilehash: 00a937204147c418ada5570cf8021ebe1e6cfa28
-ms.sourcegitcommit: f52aa66de4d07bc00931ac8af791d4c33ee1ea04
+ms.openlocfilehash: e8e6e98cb6ada8d8da494e408e8db66ad5038799
+ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="using-sqlitenet"></a>С помощью SQLite.NET
+# <a name="using-sqlitenet-with-android"></a>С помощью SQLite.NET с Android
 
 SQLite.NET библиотеки, в которой Xamarin рекомендует использовать является очень простым ORM, который позволяет легко хранить и извлекать объекты в локальной базе данных SQLite на устройстве с Android. Объектно-реляционные Преобразователи расшифровывается реляционное сопоставление объекта &ndash; API, который позволяет сохранять и извлекать «объекты» из базы данных без написания инструкций SQL.
 
 Чтобы включить библиотеку SQLite.NET в приложение Xamarin, добавьте следующий пакет NuGet в проект:
 
-- **Имя пакета:** PCL SQLite net
+- **Имя пакета:** sqlite net переносимую библиотеку классов
 - **Автор:** Krueger Михаил A.
 - **Идентификатор:** sqlite net переносимую библиотеку классов
 - **URL-адрес:** [nuget.org/packages/sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)

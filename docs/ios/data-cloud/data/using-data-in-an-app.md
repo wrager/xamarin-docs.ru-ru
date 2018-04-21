@@ -1,18 +1,18 @@
 ---
-title: С помощью данных в приложении
+title: Использование данных в приложение iOS
 ms.prod: xamarin
 ms.assetid: 2CB8150E-CD2C-4E97-8605-1EE8CBACFEEC
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/11/2016
-ms.openlocfilehash: 3366b78479712dffee74448dcc51e193cd07564d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: eded0918c6994481cdc82fe7662a985ea243b24d
+ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="using-data-in-an-app"></a>С помощью данных в приложении
+# <a name="using-data-in-an-ios-app"></a>Использование данных в приложение iOS
 
 **DataAccess_Adv** приведен пример рабочее приложение, которое допускает ввод данных пользователем и *CRUD* функциональность базы данных (Создание, чтение, обновление и удаление). Приложение состоит из двух экранах: список и форму для ввода данных. Все код доступа к данным многократно используемые в iOS и Android без изменений.
 

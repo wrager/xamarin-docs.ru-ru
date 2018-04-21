@@ -6,17 +6,16 @@ ms.assetid: B2727160-12F2-43EE-84B5-0B15C8FCF4BD
 ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
-ms.date: 03/19/2018
-ms.openlocfilehash: 75d42da4ba01aaefded0081da02b8e1651695f46
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/20/2018
+ms.openlocfilehash: 9c17641312384634983c2cbb34fa923a9416c9f7
+ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="broadcast-receivers-in-xamarinandroid"></a>Рассылка приемников в Xamarin.Android
 
 _В этом разделе описывается использование приемником широковещательных пакетов._
-
 
 ## <a name="broadcast-receiver-overview"></a>Общие сведения о широковещательных получателя
 
@@ -55,7 +54,7 @@ public class SampleReceiver : BroadcastReceiver
     public override void OnReceive(Context context, Intent intent)
     {
         // Do stuff here.
-        
+
         String value = intent.GetStringExtra("key");
     }
 }
@@ -97,9 +96,9 @@ public class MySampleBroadcastReceiver : BroadcastReceiver
 }
 ```
 
-Приложения, предназначенные Android 8.0 (API уровня 26) или более поздней версии не может зарегистрировать статически неявное широковещательной рассылки. Приложения по-прежнему статически может зарегистрироваться для явного широковещательной рассылки. Имеется небольшой список неявных пакетов, которые будут исключены из этих ограничений. Эти исключения описаны в [неявное широковещательных исключения](https://developer.android.com/guide/components/broadcast-exceptions.html) руководство по документации по Android. Приложения, которые интересуют неявное широковещательных рассылок необходимо выполнить динамически с помощью `RegisterReceiver` метод. Это описано далее.  
+Приложения, предназначенные Android 8.0 (API уровня 26) или более поздней версии не может зарегистрировать статически неявное широковещательной рассылки. Приложения по-прежнему статически может зарегистрироваться для явного широковещательной рассылки. Имеется небольшой список неявных пакетов, которые будут исключены из этих ограничений. Эти исключения описаны в [неявное широковещательных исключения](https://developer.android.com/guide/components/broadcast-exceptions.html) руководство по документации по Android. Приложения, которые интересуют неявное широковещательных рассылок необходимо выполнить динамически с помощью `RegisterReceiver` метод. Это описано далее.
 
-### <a name="context-registering-a-broadcast-receiver"></a>Регистрация контекста широковещательных получателя 
+### <a name="context-registering-a-broadcast-receiver"></a>Регистрация контекста широковещательных получателя
 
 Контекст регистрации (также называется динамической регистрации) приемника выполняется путем вызова `RegisterReceiver` метод и широковещательной рассылки получателя должны быть отменена с помощью вызова `UnregisterReceiver` метод. Чтобы предотвратить происходит утечка ресурсов, важно отменять регистрацию получателя, если он больше не нужны для контекста (действие или службы). Например служба может широковещательных пакетов целью для информирования действие, которое обновления становятся доступными для отображения пользователю. При запуске действия будет зарегистрирован для этих целей. Когда действие перемещается в фоновом режиме и больше не отображается для пользователя, его необходимо отменить регистрацию получателя, так как пользовательский Интерфейс для отображения обновлений больше не отображается. В следующем фрагменте кода приведен пример того, как регистрировать и отменять регистрацию широковещательных получателя в контексте действия:
 
@@ -108,22 +107,22 @@ public class MySampleBroadcastReceiver : BroadcastReceiver
 public class MainActivity: Activity 
 {
     MySampleBroadcastReceiver receiver;
-    
+
     protected override void OnCreate(Bundle savedInstanceState)
     {
         base.OnCreate(savedInstanceState);
         receiver = new MySampleBroadcastReceiver()
-        
+
         // Code omitted for clarity
     }
-    
+
     protected override OnResume() 
     {
         base.OnResume();
         RegisterReceiver(receiver, new IntentFilter("com.xamarin.example.TEST"));
         // Code omitted for clarity
     }
-    
+
     protected override OnPause() 
     {
         UnregisterReceiver(receiver);
@@ -150,28 +149,32 @@ public class MainActivity: Activity
    ```
 
     В этом фрагменте еще один пример отправки вещания с помощью `Intent.SetAction` метод для идентификации действия:
-    
+
     ```csharp 
     Intent intent = new Intent();
     intent.SetAction("com.xamarin.example.TEST");
     intent.PutExtra("key", "value");
     SendBroadcast(intent);
     ```
-   
+
 2. **Context.SendOrderedBroadcast** &ndash; этот метод является очень похоже на `Context.SendBroadcast`, отличие состоит, намерение будет опубликованных один во время получателям, в том порядке, что recievers были зарегистрированы.
-   
+
 ### <a name="localbroadcastmanager"></a>LocalBroadcastManager
 
-[V4 библиотека поддержки Xamarin](https://www.nuget.org/packages/Xamarin.Android.Support.v4/) предоставляет вспомогательный класс с именем [ `LocalBroadcastManager` ](https://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html). `LocalBroadcastManager` Предназначен для приложений, которые вы хотите отправлять или получать широковещательные пакеты из других приложений на устройстве. `LocalBroadcastManager` Будет публиковать только сообщения в контексте приложения. Другие приложения на устройстве не может получать сообщения, которые публикуются с `LocalBroadcastManager`. 
+[V4 библиотека поддержки Xamarin](https://www.nuget.org/packages/Xamarin.Android.Support.v4/) предоставляет вспомогательный класс с именем [ `LocalBroadcastManager` ](https://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html). `LocalBroadcastManager` Предназначен для приложений, которые вы хотите отправлять или получать широковещательные пакеты из других приложений на устройстве. `LocalBroadcastManager` Только будет публиковать сообщения в контексте приложения и только для этих широковещательных приемников, которые зарегистрированы с помощью `LocalBroadcastManager`. Этот фрагмент кода входит пример регистрации широковещательных приемника с `LocalBroadcastManager`:
 
-Этот фрагмент кода показывает, как для перенаправления с намерением с помощью `LocalBroadcastManager`:
+```csharp
+Android.Support.V4.Content.LocalBroadcastManager.GetInstance(this). RegisterReceiver(receiver, new IntentFilter("com.xamarin.example.TEST"));
+```
+
+Другие приложения на устройстве не может получать сообщения, которые публикуются с `LocalBroadcastManager`. Этот фрагмент кода показывает, как для перенаправления с намерением с помощью `LocalBroadcastManager`:
 
 ```csharp
 Intent message = new Intent("com.xamarin.example.TEST");
 // If desired, pass some values to the broadcast receiver.
 intent.PutExtra("key", "value");
 Android.Support.V4.Content.LocalBroadcastManager.GetInstance(this).SendBroadcast(message);
-``` 
+```
 
 ## <a name="related-links"></a>Связанные ссылки
 
@@ -179,7 +182,7 @@ Android.Support.V4.Content.LocalBroadcastManager.GetInstance(this).SendBroadcast
 - [Context.RegisterReceiver](https://developer.xamarin.com/api/member/Android.Content.Context.RegisterReceiver/p/Android.Content.BroadcastReceiver/Android.Content.IntentFilter/System.String/Android.OS.Handler/)
 - [Context.SendBroadcast](https://developer.xamarin.com/api/member/Android.Content.Context.SendBroadcast/p/Android.Content.Intent/)
 - [Context.UnregisterReceiver](https://developer.xamarin.com/api/member/Android.Content.Context.UnregisterReceiver/p/Android.Content.BroadcastReceiver/)
-- [Intent](https://developer.xamarin.com/api/type/Android.Content.Intent/)
+- [Назначение](https://developer.xamarin.com/api/type/Android.Content.Intent/)
 - [IntentFilter](https://developer.xamarin.com/api/type/Android.App.IntentFilterAttribute/)
 - [LocalBroadcastManager](https://developer.android.com/reference/android/support/v4/content/LocalBroadcastManager.html#sendBroadcast(android.content.Intent))
 - [Локальный уведомления в Android](~/android/app-fundamentals/notifications/local-notifications.md)

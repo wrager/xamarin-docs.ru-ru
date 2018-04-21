@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: e7ce8320441f6b248b183a8698a4f41c78bf2d64
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.openlocfilehash: ac87ee44163d53b11c15538f382379aae962cbb2
+ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="monogame-gamepad-reference"></a>Справочник по игровой MonoGame
 
@@ -25,7 +25,7 @@ _Игровой — это стандартные, кросс платформе
 
 ## <a name="reading-input-from-gamepad"></a>Чтение входных данных из игровой
 
-`GameController` Класс предоставляет стандартный способ чтения входных данных на любой платформе MonoGame. Он предоставляет сведения двумя способами:
+`GamePad` Класс предоставляет стандартный способ чтения входных данных на любой платформе MonoGame. Он предоставляет сведения двумя способами:
 
 - `GetState` — Возвращает текущее состояние кнопок, аналоговый накопители и d pad контроллера.
 - `GetCapabilities` — Возвращает сведения о возможностях оборудования, такие как контроллер, имеет ли некоторые кнопки или поддерживает вибрация.
