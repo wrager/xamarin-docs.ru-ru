@@ -8,11 +8,11 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/27/2018
-ms.openlocfilehash: df6a848023febcb7fc65cf6616aeae3b43b39262
-ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
+ms.openlocfilehash: 7f0d40e4adb16e47db18d0796afa42c66af096ce
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xamarinmac-error-messages-mmp"></a>Сообщения об ошибках Xamarin.Mac (mmp)
 
@@ -34,19 +34,19 @@ ms.lasthandoff: 04/20/2018
 
 <a name="MM0001" />
 
-#### <a name="mm0001-this-version-of-xamarinmac-requires-mono-0-the-current-mono-version-is-1-please-update-the-monoframework-from-httpmono-projectcomdownloads"></a>MM0001: В этой версии Xamarin.Mac требуется моно {0} (текущая версия моно: {1}). Обновите Mono.framework из http://mono-project.com/Downloads
+#### <a name="mm0001-this-version-of-xamarinmac-requires-mono-0-the-current-mono-version-is-1-please-update-the-monoframework-from-httpmono-projectcomdownloads"></a>MM0001: В этой версии Xamarin.Mac требуется моно {0} (текущая версия Mono — {1}). Обновите Mono.framework из http://mono-project.com/Downloads
 
 <a name="MM0003" />
 
-#### <a name="mm0003-application-name-0exe-conflicts-with-an-sdk-or-product-assembly-dll-name"></a>MM0003: Имя «{0} .exe» конфликтов приложений с именем сборки (DLL) пакета SDK или продукта.
+#### <a name="mm0003-application-name-0exe-conflicts-with-an-sdk-or-product-assembly-dll-name"></a>MM0003: Имя приложения "{0}.exe" конфликтует с именем сборки (DLL) пакета SDK или продукта.
 
 <a name="MM0007" />
 
-#### <a name="mm0007-the-root-assembly-0-does-not-exist"></a>MM0007: Корневой сборки «{0}» не существует
+#### <a name="mm0007-the-root-assembly-0-does-not-exist"></a>MM0007: Корневой сборки "{0}" не существует
 
 <a name="MM0008" />
 
-#### <a name="mm0008-you-should-provide-one-root-assembly-only-found-0-assemblies-1"></a>MM0008: Необходимо указать один корневые сборки только, найдено {0} сборки: «{1}»
+#### <a name="mm0008-you-should-provide-one-root-assembly-only-found-0-assemblies-1"></a>MM0008: Необходимо указать один корневой сборки только, найдено {0} сборки: "{1}"
 
 <a name="MM0010" />
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 04/20/2018
 
 <a name="MM0016" />
 
-#### <a name="mm0016-the-option-0-has-been-deprecated"></a>MM0016: Параметр «{0}» является устаревшим.
+#### <a name="mm0016-the-option-0-has-been-deprecated"></a>MM0016: Параметр "{0}" является устаревшим.
 
 <a name="MM0017" />
 
@@ -64,19 +64,19 @@ ms.lasthandoff: 04/20/2018
 
 <a name="MM0018" />
 
-#### <a name="mm0018-unknown-command-line-argument-0"></a>MM0018: Неизвестный параметр командной строки: «{0}»
+#### <a name="mm0018-unknown-command-line-argument-0"></a>MM0018: Неизвестный параметр командной строки: "{0}"
 
 <a name="MM0020" />
 
-#### <a name="mm0020-the-valid-options-for-0-are-1"></a>MM0020: Допустимые параметры для «{0}», «{1}».
+#### <a name="mm0020-the-valid-options-for-0-are-1"></a>MM0020: Допустимые параметры для "{0}«,»{1}".
 
 <a name="MM0023" />
 
-#### <a name="mm0023-application-name-0exe-conflicts-with-another-user-assembly"></a>MM0023: Приложения имя «{0} .exe», конфликтует с другой пользователь сборки.
+#### <a name="mm0023-application-name-0exe-conflicts-with-another-user-assembly"></a>MM0023: Имя приложения "{0}.exe" конфликтует с другой пользователь сборки.
 
 <a name="MM0026" />
 
-#### <a name="mm0026-could-not-parse-the-command-line-argument-0-1"></a>MM0026: Не удалось выполнить синтаксический анализ аргументов командной строки «{0}»: {1}
+#### <a name="mm0026-could-not-parse-the-command-line-argument-0-1"></a>MM0026: Не удалось выполнить синтаксический анализ аргументов командной строки "{0}": {1}
 
 <a name="MM0043" />
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 04/20/2018
 
 <a name="MM0060" />
 
-#### <a name="mm0060-could-not-find-the-currently-selected-xcode-on-the-system-xcode-select---print-path-returned-0-but-that-directory-does-not-exist"></a>MM0060: Не удалось найти выбранный Xcode в системе. «xcode выберите--путь печати» вернул «{0}», но этот каталог не существует.
+#### <a name="mm0060-could-not-find-the-currently-selected-xcode-on-the-system-xcode-select---print-path-returned-0-but-that-directory-does-not-exist"></a>MM0060: Не удалось найти выбранный Xcode в системе. «xcode выберите--печати путь» вернул "{0}", но этот каталог не существует.
 
 <a name="MM0068" />
 
@@ -141,7 +141,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM0097" />
 
-#### <a name="mm0097-machineconfig-file-0-can-not-be-found"></a>MM0097: файл machine.config «{0}» не найден.
+#### <a name="mm0097-machineconfig-file-0-can-not-be-found"></a>MM0097: файл machine.config "{0}" не может быть найден.
 
 <a name="MM0098" />
 
@@ -165,31 +165,31 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM1401" />
 
-#### <a name="mm1401-the-required-0-assembly-is-missing-from-the-references"></a>MM1401: Сборки требуется «{0}» отсутствует в ссылки
+#### <a name="mm1401-the-required-0-assembly-is-missing-from-the-references"></a>MM1401: Требуется "{0}" отсутствует сборки из ссылок
 
 <a name="MM1402" />
 
-#### <a name="mm1402-the-assembly-0-is-not-compatible-with-this-tool"></a>MM1402: Сборка «{0}» не совместима с помощью этого инструмента
+#### <a name="mm1402-the-assembly-0-is-not-compatible-with-this-tool"></a>MM1402: Сборка "{0}" не совместим с помощью этого инструмента
 
 <a name="MM1403" />
 
-#### <a name="mm1403-0-1-could-not-be-found-target-framework-0-is-unusable-to-package-the-application"></a>MM1403: не удается найти {0} «{1}». Требуемая версия .NET framework «{0}» не может использоваться для упаковки приложения.
+#### <a name="mm1403-0-1-could-not-be-found-target-framework-0-is-unusable-to-package-the-application"></a>MM1403: {0} "{1}" не найден. Требуемая версия .NET framework "{0}" не может использоваться для упаковки приложения.
 
 <a name="MM1404" />
 
-#### <a name="mm1404-target-framework-0-is-invalid"></a>MM1404: Недопустимый целевой платформы «{0}».
+#### <a name="mm1404-target-framework-0-is-invalid"></a>MM1404: Требуемая версия .NET framework "{0}" является недопустимым.
 
 <a name="MM1405" />
 
-#### <a name="mm1405-usefullxammacframework-must-always-target-framework-net-45-not-0-which-is-invalid"></a>MM1405: useFullXamMacFramework всегда должны предназначаться для framework .NET 4.5, не «{0}» является недопустимой
+#### <a name="mm1405-usefullxammacframework-must-always-target-framework-net-45-not-0-which-is-invalid"></a>MM1405: useFullXamMacFramework должны всегда быть предназначены .NET 4.5 framework не "{0}" что не допускается
 
 <a name="MM1406" />
 
-#### <a name="mm1406-target-framework-0-is-invalid-when-targetting-xamarinmac-45-net-framwork"></a>MM1406: Требуемая версия .NET framework «{0}» является недопустимым при framwork Xamarin.Mac 4.5 .NET для различных версий.
+#### <a name="mm1406-target-framework-0-is-invalid-when-targetting-xamarinmac-45-net-framwork"></a>MM1406: Требуемая версия .NET framework "{0}" недопустим, если для различных версий Xamarin.Mac 4.5 .NET framwork.
 
 <a name="MM1407" />
 
-#### <a name="mm1407-mismatch-between-xamarinmac-reference-0-and-target-framework-selected-1"></a>MM1407: Несоответствие между Xamarin.Mac framework ссылка «{0}» и целевой выбран «{1}».
+#### <a name="mm1407-mismatch-between-xamarinmac-reference-0-and-target-framework-selected-1"></a>MM1407: Несоответствие между Xamarin.Mac ссылку "{0}«и требуемая версия .NET framework выбран»{1}".
 
 ### <a name="mm15xx-assembly-gathering-not-requiring-linker-errors"></a>MM15xx: Ошибки сбора данных (не требуя компоновщика) сборки
 
@@ -201,19 +201,19 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM1600" />
 
-#### <a name="mm1600-not-a-mach-o-dynamic-library-unknown-header-0x0-1"></a>MM1600: Не соответствие-O динамическую библиотеку (Неизвестный заголовок "0 x {0}"): {1}.
+#### <a name="mm1600-not-a-mach-o-dynamic-library-unknown-header-0x0-1"></a>MM1600: Не соответствие-O динамическую библиотеку (Неизвестный заголовок "0 x{0}"): {1}.
 
 <a name="MM1601" />
 
-#### <a name="mm1601-not-a-static-library-unknown-header-0-1"></a>MM1601: Не статической библиотеки (Неизвестный заголовок) «{0}»: {1}.
+#### <a name="mm1601-not-a-static-library-unknown-header-0-1"></a>MM1601: Не статической библиотеки (Неизвестный заголовок "{0}"): {1}.
 
 <a name="MM1602" />
 
-#### <a name="mm1602-not-a-mach-o-dynamic-library-unknown-header-0x0-1"></a>MM1602: Не соответствие-O динамическую библиотеку (Неизвестный заголовок "0 x {0}"): {1}.
+#### <a name="mm1602-not-a-mach-o-dynamic-library-unknown-header-0x0-1"></a>MM1602: Не соответствие-O динамическую библиотеку (Неизвестный заголовок "0 x{0}"): {1}.
 
 <a name="MM1603" />
 
-#### <a name="mm1603-unknown-format-for-fat-entry-at-position-0-in-1"></a>MM1603: Неизвестный формат fat запись находится в позиции {0} в {1}.
+#### <a name="mm1603-unknown-format-for-fat-entry-at-position-0-in-1"></a>MM1603: Неизвестный формат fat записи в позиции {0} в {1}.
 
 <a name="MM1604" />
 
@@ -233,19 +233,19 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM2003" />
 
-#### <a name="mm2003-option-0-will-be-ignored-since-linking-is-disabled"></a>MM2003: Параметр «{0}» будет игнорироваться, так как компоновка отключена
+#### <a name="mm2003-option-0-will-be-ignored-since-linking-is-disabled"></a>MM2003: Параметр "{0}" будет игнорироваться, так как компоновка отключена
 
 <a name="MM2004" />
 
-#### <a name="mm2004-extra-linker-definitions-file-0-could-not-be-located"></a>MM2004: Лишний компоновщика определения «{0}» не удалось найти файл.
+#### <a name="mm2004-extra-linker-definitions-file-0-could-not-be-located"></a>MM2004: Файл определения компоновщика дополнительный "{0}" не удалось найти.
 
 <a name="MM2005" />
 
-#### <a name="mm2005-definitions-from-0-could-not-be-parsed"></a>MM2005: Не удалось разобрать определений из «{0}».
+#### <a name="mm2005-definitions-from-0-could-not-be-parsed"></a>MM2005: Определения из "{0}" не может быть проанализировано.
 
 <a name="MM2006" />
 
-#### <a name="mm2006-native-library-0-was-referenced-but-could-not-be-found"></a>MM2006: Собственной библиотеки «{0}» указан, но не удалось найти.
+#### <a name="mm2006-native-library-0-was-referenced-but-could-not-be-found"></a>MM2006: Собственная библиотека "{0}" указан, но не удалось найти.
 
 <a name="MM2007" />
 
@@ -253,7 +253,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM2009" />
 
-#### <a name="mm2009-referenced-by-01------this-message-is-related-to-mm2006-"></a>MM2009: Ссылается {0}. \ {1\\} ** это сообщение относится к MM2006 **
+#### <a name="mm2009-referenced-by-01------this-message-is-related-to-mm2006-"></a>MM2009: Ссылается {0}.{1}     ** Это сообщение относится к MM2006 **
 
 <a name="MM2010" />
 
@@ -265,11 +265,11 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM2012" />
 
-#### <a name="mm2012-only-first-0-of-1-referenced-by-warnings-shown--this-message-related-to-2009-"></a>MM2012: Только первый {0} для {1} «ссылается на» предупреждений, отображаемых. ** Это сообщение относится к 2009 г. **
+#### <a name="mm2012-only-first-0-of-1-referenced-by-warnings-shown--this-message-related-to-2009-"></a>MM2012: Только первые {0} из {1} «Ссылается» предупреждений, отображаемых. ** Это сообщение относится к 2009 г. **
 
 <a name="MM2013" />
 
-#### <a name="mm2013-failed-to-resolve-the-reference-to-0-referenced-in-1-the-app-will-not-include-the-referenced-assembly-and-may-fail-at-runtime"></a>MM2013: Не удалось разрешить ссылку на «{0}», на который ссылается «{1}». Приложение не будет содержать ссылочной сборки и может завершиться ошибкой во время выполнения.
+#### <a name="mm2013-failed-to-resolve-the-reference-to-0-referenced-in-1-the-app-will-not-include-the-referenced-assembly-and-may-fail-at-runtime"></a>MM2013: Не удалось разрешить ссылку на «{0}«, на который ссылается»{1}«. Приложение не будет содержать ссылочной сборки и может завершиться ошибкой во время выполнения.
 
 <a name="MM2014" />
 
@@ -303,11 +303,11 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM2104" />
 
-#### <a name="mm2104-unable-to-link-assembly-0-as-it-is-mixed-mode"></a>MM2104: Не удалось связать сборки «{0}», как и смешанном режиме.
+#### <a name="mm2104-unable-to-link-assembly-0-as-it-is-mixed-mode"></a>MM2104: Не удалось связать сборки "{0}" как смешанный режим.
 
 Сборки смешанного режима не могут обрабатываться компоновщиком.
 
-В разделе https://msdn.microsoft.com/en-us/library/x0w2664k.aspx Дополнительные сведения о смешанных сборках.
+В разделе https://msdn.microsoft.com/library/x0w2664k.aspx Дополнительные сведения о смешанных сборках.
 
 ## <a name="mm3xxx-aot"></a>MM3xxx: AOT
 
@@ -315,7 +315,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM3001" />
 
-#### <a name="mm3001-could-not-aot-the-assembly-0"></a>MM3001: Не удалось AOT сборки «{0}»
+#### <a name="mm3001-could-not-aot-the-assembly-0"></a>MM3001: Не удалось AOT сборки "{0}"
 
 <!-- 3002 used by mtouch -->
 <!-- 3003 used by mtouch -->
@@ -327,11 +327,11 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM3009" />
 
-#### <a name="mm3009-aot-of-0-was-requested-but-was-not-found"></a>MM3009: AOT «{0}» был запрошен, однако не найден
+#### <a name="mm3009-aot-of-0-was-requested-but-was-not-found"></a>MM3009: AOT из "{0}" запрошено, но не найден
 
 <a name="MM3010" />
 
-#### <a name="mm3010-exclusion-of-aot-of-0-was-requested-but-was-not-found"></a>MM3010: Исключение AOT «{0}» был запрошен, однако не найден
+#### <a name="mm3010-exclusion-of-aot-of-0-was-requested-but-was-not-found"></a>MM3010: При исключении AOT из "{0}" запрошено, но не найден
 
 ## <a name="mm4xxx-code-generation"></a>MM4xxx: создание кода
 
@@ -345,7 +345,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM4134" />
 
-#### <a name="mm4134-your-application-is-using-the-0-framework-which-isnt-included-in-the-macos-sdk-youre-using-to-build-your-app-this-framework-was-introduced-in-osx-2-while-youre-building-with-the-macos-1-sdk-this-configuration-is-not-supported-with-the-static-registrar-pass---registrardynamic-as-an-additional-mmp-argument-in-your-projects-mac-build-option-to-select-alternatively-select-a-newer-sdk-in-your-apps-mac-build-options"></a>MM4134: Приложение использует «{0}» платформу, которая не содержится в пакете SDK MacOS используется для построения приложения (эта структура впервые появился в OSX {2} при построении с MacOS {1} SDK.) Эта конфигурация не поддерживается статических регистратора (pass--регистратора: динамические дополнительные mmp в качестве аргумента параметр Mac построение проекта, чтобы выбрать). Также можно выберите новую SDK в параметры Mac сборки приложения.
+#### <a name="mm4134-your-application-is-using-the-0-framework-which-isnt-included-in-the-macos-sdk-youre-using-to-build-your-app-this-framework-was-introduced-in-osx-2-while-youre-building-with-the-macos-1-sdk-this-configuration-is-not-supported-with-the-static-registrar-pass---registrardynamic-as-an-additional-mmp-argument-in-your-projects-mac-build-option-to-select-alternatively-select-a-newer-sdk-in-your-apps-mac-build-options"></a>MM4134: Приложение использует "{0}" платформу, которая не содержится в пакете SDK MacOS используется для построения приложения (эта платформа была введена в OSX {2}, при построении с MacOS {1} SDK.) Эта конфигурация не поддерживается статических регистратора (pass--регистратора: динамические дополнительные mmp в качестве аргумента параметр Mac построение проекта, чтобы выбрать). Также можно выберите новую SDK в параметры Mac сборки приложения.
 
 ## <a name="mm5xxx-gcc-and-toolchain"></a>MM5xxx: GCC и инструментов
 
@@ -353,7 +353,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM5101" />
 
-#### <a name="mm5101-missing-0-compiler-please-install-xcode-command-line-tools-component"></a>MM5101: Отсутствует «{0}» компилятора. Установите компонент «Средства командной строки» Xcode.
+#### <a name="mm5101-missing-0-compiler-please-install-xcode-command-line-tools-component"></a>MM5101: Отсутствует "{0}" компилятора. Установите компонент «Средства командной строки» Xcode.
 
 <!-- 5102 used by mtouch -->
 
@@ -379,7 +379,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM5205" />
 
-#### <a name="mm5205-invalid-architecture-0-valid-architectures-are-i386-and-x8664-when---profilemobile"></a>MM5205: Недопустимая архитектура «{0}». Допустимые архитектуры: i386 и x86_64 (когда--профиль = мобильных устройств).
+#### <a name="mm5205-invalid-architecture-0-valid-architectures-are-i386-and-x8664-when---profilemobile"></a>MM5205: Недопустимая архитектура "{0}". Допустимые архитектуры: i386 и x86_64 (когда--профиль = мобильных устройств).
 
 <a name="MM5218" />
 
@@ -428,7 +428,7 @@ Xamarin.Mac требует файлы заголовков, из пакета SD
 
 <a name="MM5310" />
 
-#### <a name="mm5310-installnametool-failed-with-an-error-code-0-check-build-log-for-details"></a>MM5310: install_name_tool сбой с кодом ошибки «{0}». Проверьте подробности в журнале сборки.
+#### <a name="mm5310-installnametool-failed-with-an-error-code-0-check-build-log-for-details"></a>MM5310: install_name_tool сбой с кодом ошибки "{0}". Проверьте подробности в журнале сборки.
 
 <!-- MM6xxx: mmp internal tools -->
 <!-- MM7xxx: reserved -->

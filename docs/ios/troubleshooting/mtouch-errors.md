@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/06/2018
-ms.openlocfilehash: 0187b65e4c10e7cc03715a997a90fbddab9bd532
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 71cddc07863002a887cada2bb0db0f8d25fd1a17
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xamarinios-errors"></a>Ошибки Xamarin.iOS
 
@@ -631,7 +631,7 @@ Xamarin.iOS требует файлы заголовков, из пакета SD
 
 <a name="MT0109" />
 
-### <a name="mt0109-the-assembly-0-was-loaded-from-a-different-path-than-the-provided-path-provided-path-1-actual-path-2"></a>MT0109: Сборка «{0}» была загружена из путь, отличный по указанному пути (указанный путь: {1}, фактический путь: {2}).
+### <a name="mt0109-the-assembly-0-was-loaded-from-a-different-path-than-the-provided-path-provided-path-1-actual-path-2"></a>MT0109: Сборка "{0}" была загружена из путь, отличный по указанному пути (указанный путь: {1}, фактический путь: {2}).
 
 Это предупреждение о том, что сборки ссылается приложение была загружена из другого места, чем запрошено.
 
@@ -1653,11 +1653,11 @@ Parameter name: instruction
 
 <a name="MT2104" />
 
-### <a name="mm2104-unable-to-link-assembly-0-as-it-is-mixed-mode"></a>MM2104: Не удалось связать сборки «{0}», как и смешанном режиме.
+### <a name="mm2104-unable-to-link-assembly-0-as-it-is-mixed-mode"></a>MM2104: Не удалось связать сборки "{0}" как смешанный режим.
 
 Сборки смешанного режима не могут обрабатываться компоновщиком.
 
-В разделе https://msdn.microsoft.com/en-us/library/x0w2664k.aspx Дополнительные сведения о смешанных сборках.
+В разделе https://msdn.microsoft.com/library/x0w2664k.aspx Дополнительные сведения о смешанных сборках.
 
 ## <a name="mt3xxx-aot-error-messages"></a>MT3xxx: Сообщения об ошибках AOT
 
@@ -2060,7 +2060,7 @@ class MyCustomNSObject : MyNSObject
 
 <a name="MT4161" />
 
-### <a name="mt4161-the-registrar-found-an-unsupported-structure--all-fields-in-a-structure-must-also-be-structures-field--with-type-2-is-not-a-structure"></a>MT4161: Регистратора найден неподдерживаемый структуры "\*": все поля структуры должны иметь структуры (поле "\*" с типом «{2}» не является структурой).
+### <a name="mt4161-the-registrar-found-an-unsupported-structure--all-fields-in-a-structure-must-also-be-structures-field--with-type-2-is-not-a-structure"></a>MT4161: Регистратора найден неподдерживаемый структуры "\*": все поля структуры должны иметь структуры (поле "\*«с типом»{2}" не является структурой).
 
 Регистратор найти структуру с поля не поддерживается.
 
@@ -2953,7 +2953,7 @@ Xamarin.iOS не удалось найти обязательный метод �
 
 <a name="MT8014" />
 
-### <a name="mt8014-invalid-delegateproxyattribute-for-the-return-value-for-the-method--the-delegatetypes-2-handler-field-is-null-please-file-a-bug-at-httpbugzillaxamarincom"></a>MT8014: Недопустимый DelegateProxyAttribute для возвращаемого значения для метода *.*: Тип_делегата элемента ({2}) в поле «Обработчик» имеет значение null. Можно зарегистрировать ошибку на http://bugzilla.xamarin.com.
+### <a name="mt8014-invalid-delegateproxyattribute-for-the-return-value-for-the-method--the-delegatetypes-2-handler-field-is-null-please-file-a-bug-at-httpbugzillaxamarincom"></a>MT8014: Недопустимый DelegateProxyAttribute для возвращаемого значения для метода *.*: Тип_делегата ({2}) поле «Обработчик» имеет значение null. Можно зарегистрировать ошибку на http://bugzilla.xamarin.com.
 
 Недопустимый атрибут DelegateProxy для метода в вопросе.
 
@@ -2961,7 +2961,7 @@ Xamarin.iOS не удалось найти обязательный метод �
 
 <a name="MT8015" />
 
-### <a name="mt8015-invalid-delegateproxyattribute-for-the-return-value-for-the-method--the-delegatetypes-2-handler-field-is-not-a-delegate-its-a--please-file-a-bug-at-httpbugzillaxamarincom"></a>MT8015: Недопустимый DelegateProxyAttribute для возвращаемого значения для метода *.*: Тип_делегата элемента ({2}) в поле «Обработчик» не является делегатом, это *. Можно зарегистрировать ошибку на http://bugzilla.xamarin.com.
+### <a name="mt8015-invalid-delegateproxyattribute-for-the-return-value-for-the-method--the-delegatetypes-2-handler-field-is-not-a-delegate-its-a--please-file-a-bug-at-httpbugzillaxamarincom"></a>MT8015: Недопустимый DelegateProxyAttribute для возвращаемого значения для метода *.*: Тип_делегата ({2}) поле «Обработчик» не является делегатом, это *. Можно зарегистрировать ошибку на http://bugzilla.xamarin.com.
 
 Недопустимый атрибут DelegateProxy для метода в вопросе.
 

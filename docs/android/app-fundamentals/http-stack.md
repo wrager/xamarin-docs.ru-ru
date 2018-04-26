@@ -6,83 +6,79 @@ ms.assetid: D7ABAFAB-5CA2-443D-B902-2C7F3AD69CE2
 ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
-ms.date: 03/09/2018
-ms.openlocfilehash: 2bc9b2a454b306f0794ef3704daa7e0fe6d04ef8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/20/2018
+ms.openlocfilehash: bedcf0603fffc9886155881f91972203104ba155
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="httpclient-stack-and-ssltls-implementation-selector-for-android"></a>Стек HttpClient и селектор реализации SSL/TLS для Android
 
-_Селекторы стека HttpClient и реализации SSL/TLS определить будет использоваться в приложениях Xamarin.Android реализацию класса HttpClient и SSL/TLS._
+Селекторы стека HttpClient и реализации SSL/TLS определить будет использоваться в приложениях Xamarin.Android реализацию класса HttpClient и SSL/TLS.
 
-## <a name="overview"></a>Обзор
+Проекты должны ссылаться на **System.Net.Http** сборки.
 
-Xamarin.Android предоставляет два поля со списком, определяющих параметры TLS для приложения Android. Одно поле со списком будут определять `HttpMessageHandler` будет использовать при создании экземпляра `HttpClient` , пока объект другого определяет, какая реализация TLS будут использоваться веб-запросов.
+> [!WARNING]
+> **Апрель, 2018** — из-за повышения уровня безопасности, включающие соответствие стандартам PCI основные поставщиков облачных служб и веб-серверов требуется остановить, поддерживающей протокол TLS версий старше версии 1.2.  Xamarin проекты, созданные в предыдущих версиях Visual Studio по умолчанию для использования более ранних версий TLS.
+>
+> Чтобы продолжить работу с этих серверов и служб, приложений **следует обновить проекты Xamarin с `Android HttpClient` и `Native TLS 1.2` параметры, показанный ниже, затем повторное построение и повторного развертывания приложения** для вашей пользователи.
 
-> [!NOTE]
-> Проекты должны ссылаться на **System.Net.Http** сборки.
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+Конфигурация Xamarin.Android HttpClient **параметры проекта > Параметры Android**, нажмите кнопку **Дополнительно** кнопки.
 
-Параметры для стека HttpClient находятся в параметрах проекта для проекта Xamarin.Android. Щелкните **параметры Android** , а затем щелкните на **Дополнительно** кнопки. При этом отобразится **Android Дополнительно** диалоговое окно, которое имеет два поля со списком: для реализации HttpClient и для реализации SSL/TLS:
+Ниже приведены рекомендуемые параметры для поддержки TLS 1.2:
 
-
-[![Параметры Android в Visual Studio](http-stack-images/tls07-vs-sml.png)](http-stack-images/tls07-vs.png#lightbox)
-
-## <a name="httpclient-stack-selector"></a>Выбор HttpClient стека
-
-Этот параметр проекта управляет которой `HttpMessageHandler` реализация будет использоваться при каждом `HttpClient` экземпляра объекта. По умолчанию это управляемый `HttpClientHandler`.
-
-[![Android HttpClient реализации со списком в Visual Studio](http-stack-images/tls04-vs-sml.png)](http-stack-images/tls04-vs.png#lightbox) 
+[![Параметры Android в Visual Studio](http-stack-images/android-win-sml.png)](http-stack-images/android-win.png#lightbox)
 
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
-Параметры для стека HttpClient находятся в параметрах проекта для проекта Xamarin.Android. Щелкните **сборки > Android построения** параметры и нажмите кнопку **Общие** вкладки:
+Конфигурация Xamarin.Android HttpClient **параметры проекта > сборки > Android построения** параметры и нажмите кнопку **Общие** вкладку.
 
-[![Visual Studio для Android параметры Mac](http-stack-images/tls07-xs-sml.png)](http-stack-images/tls07-xs.png#lightbox)
+Ниже приведены рекомендуемые параметры для поддержки TLS 1.2:
 
-## <a name="httpclient-stack-selector"></a>Выбор HttpClient стека
-
-Этот параметр проекта управляет которой `HttpMessageHandler` реализация будет использоваться при каждом `HttpClient` экземпляра объекта. По умолчанию это управляемый `HttpClientHandler`.
-
-![Android HttpClient реализации со списком в Visual Studio для Mac](http-stack-images/tls04-xs.png )
+[![Visual Studio для Android параметры Mac](http-stack-images/android-mac-sml.png)](http-stack-images/android-mac.png#lightbox)
 
 -----
+
+## <a name="alternative-configuration-options"></a>Альтернативная конфигурация параметров
+
+### <a name="androidclienthandler"></a>AndroidClientHandler
+
+AndroidClientHandler — новый обработчик, который делегирует в машинный код Java/OS вместо реализации все данные в управляемом коде.
+**Это рекомендуемый параметр.**
+
+#### <a name="pros"></a>Преимущества
+
+- Используйте собственный API для повышения производительности и меньший размер исполняемого файла.
+- Поддержка последние стандарты, например. TLS ВЕРСИИ 1.2.
+
+#### <a name="cons"></a>Недостатки
+
+- Требуется Android 5.0 или более поздней версии.
+- Некоторые функции HttpClient и параметры недоступны.
 
 ### <a name="managed-httpclienthandler"></a>Управляемый (HttpClientHandler)
 
 Управляемый обработчик является полностью управляемым HttpClient обработчик, который будет отправлен с предыдущими версиями Xamarin.Android.
 
-#### <a name="pros"></a>Преимущества:
+#### <a name="pros"></a>Преимущества
 
 - Это наиболее совместимой (компоненты) с MS .NET и более ранних версий Xamarin.
 
-#### <a name="cons"></a>Недостатки:
+#### <a name="cons"></a>Недостатки
 
 - Он не полностью интегрирована с операционной Системой (например) ограничено TLS 1.0).
 - Это обычно гораздо медленнее, (например) шифрование) чем собственный API.
 - Она требует более управляемый код, создание более крупных приложений.
 
-### <a name="androidclienthandler"></a>AndroidClientHandler
 
-AndroidClientHandler — новый обработчик, который делегирует в машинный код Java/OS вместо реализации все данные в управляемом коде.
-
-#### <a name="pros"></a>Преимущества:
-
-- Используйте собственный API для повышения производительности и меньший размер исполняемого файла.
-- Поддержка последние стандарты, например. TLS 1.2.
-
-#### <a name="cons"></a>Недостатки:
-
-- Требуется Android 5.0 или более поздней версии.
-- Некоторые функции HttpClient и параметры недоступны.
 
 ### <a name="choosing-a-handler"></a>Выбор обработчик
 
-Выбор между `AndroidClientHandler` и `HttpClientHandler` зависит от требований приложения. `AndroidClientHandler` является хорошим выбором, если применяются все из следующих действий:
+Выбор между `AndroidClientHandler` и `HttpClientHandler` зависит от требований приложения. `AndroidClientHandler` рекомендуется для наиболее актуальные поддержку безопасности, например.
 
 -   Требуется поддержка TLS 1.2 +.
 -   Целевое приложение Android 5.0 (API 21) или более поздней версии.
@@ -122,11 +118,11 @@ HttpClient client = new HttpClient(new Xamarin.Android.Net.AndroidClientHandler 
 
 Этот параметр проекта управляет базовой библиотеки TLS будут использоваться все веб-запроса и `HttpClient` и `WebRequest`. По умолчанию выбран TLS 1.2:
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
 [![Поле со списком реализации TLS/SSL в Visual Studio](http-stack-images/tls06-vs.png)](http-stack-images/tls05-vs.png#lightbox)
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
 [![Поле со списком реализации TLS/SSL в Visual Studio для Mac](http-stack-images/tls06-xs.png)](http-stack-images/tls05-xs.png#lightbox)
 
@@ -158,13 +154,13 @@ var client = new HttpClient();
 
 Существует две переменные среды, которые связаны с использованием TLS в Xamarin.Android:
 
--   `XA_HTTP_CLIENT_HANDLER_TYPE` &ndash; Значение по умолчанию объявляет эту переменную среды `HttpMessageHandler` , будет использоваться приложением. Пример:
+- `XA_HTTP_CLIENT_HANDLER_TYPE` &ndash; Значение по умолчанию объявляет эту переменную среды `HttpMessageHandler` , будет использоваться приложением. Пример:
 
     ```csharp
     XA_HTTP_CLIENT_HANDLER_TYPE=Xamarin.Android.Net.AndroidClientHandler
     ```
 
--   `XA_TLS_PROVIDER` &ndash; Эта переменная среды будет объявлять TLS библиотеку, в которой будет использоваться, либо `btls`, `legacy`, или `default` (который является таким же, как пропуск этой переменной):
+- `XA_TLS_PROVIDER` &ndash; Эта переменная среды будет объявлять TLS библиотеку, в которой будет использоваться, либо `btls`, `legacy`, или `default` (который является таким же, как пропуск этой переменной):
 
     ```csharp
     XA_TLS_PROVIDER=btls
@@ -172,11 +168,11 @@ var client = new HttpClient();
 
 Эта переменная среды, устанавливается путем добавления _файла среды_ в проект. Файл среды — это файл текстовый формат Unix с действием построения **AndroidEnvironment**:
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+# <a name="visual-studiotabwindows"></a>[Visual Studio](#tab/windows)
 
 ![Снимок экрана AndroidEnvironment действие построения в Visual Studio.](http-stack-images/tls03-vs.png)
 
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+# <a name="visual-studio-for-mactabmacos"></a>[Visual Studio для Mac](#tab/macos)
 
 ![Снимок экрана AndroidEnvironment построить действие в Visual Studio для Mac.](http-stack-images/tls03-xs.png)
 

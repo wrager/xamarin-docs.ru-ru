@@ -6,11 +6,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: d5f639cffc8ff2d134731374bd72663fec81c6a0
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 6f6b88bf29e94a221b2ef58b3299348eb08d33fa
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="part-5---practical-code-sharing-strategies"></a>Часть 5 - практические кода стратегии для управления доступом
 
@@ -200,7 +200,7 @@ await FileIO.WriteTextAsync(storageFile, "Contents of text file");
 
 Он представляет собой механизм по умолчанию для доступа к файлам в Windows Phone (Silverlight), которое было реализовано в Xamarin.iOS и Xamarin.Android разрешить общий доступ к файлам код для записи. `System.IO.IsolatedStorage` Ссылка на класс для всех трех платформ в [общий проект](~/cross-platform/app-fundamentals/shared-projects.md).
 
-Ссылаться на [изолированного хранения Обзор для Windows Phone](http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402541(v=vs.105).aspx) для получения дополнительной информации.
+Ссылаться на [изолированного хранения Обзор для Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/ff402541(v=vs.105).aspx) для получения дополнительной информации.
 
 API-интерфейсы изолированного хранения не доступны в [переносимой библиотеки классов](~/cross-platform/app-fundamentals/pcl.md). — Альтернатива PCL [PCLStorage NuGet](https://pclstorage.codeplex.com/)
 

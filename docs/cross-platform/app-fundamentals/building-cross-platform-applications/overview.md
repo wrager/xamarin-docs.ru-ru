@@ -6,17 +6,17 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 48aa53595d7ab0ccd5fb8f3dab57198199d65b8e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b3b15736b5ec750e0b8db078cf428a7f573bc435
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="building-cross-platform-applications-overview"></a>Создание кросс-Общие сведения о платформе приложений
 
 В этом руководстве описывается платформе Xamarin и кросс платформенные приложения, для повышения повторного использования кода и предоставления собственным взаимодействием высокое качество на всех основных мобильных платформ: iOS, Android и Windows Phone.
 
-Этот подход используется в этом документе обычно применяется к и повышения производительности приложения и игры, однако основное внимание уделяется производительности и полезности (отличных от игры приложения). В разделе [введение в документе MonoGame](https://developer.xamarin.com/guides/cross-platform/game_development/monogame/introduction/) или извлеките [средств Visual Studio для Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/visual-studio-tools-for-unity) рекомендации для разработки кросс платформенных игр.
+Этот подход используется в этом документе обычно применяется к и повышения производительности приложения и игры, однако основное внимание уделяется производительности и полезности (отличных от игры приложения). В разделе [введение в документе MonoGame](~/graphics-games/monogame/introduction/index.md) или извлеките [средств Visual Studio для Unity](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-tools-for-unity) рекомендации для разработки кросс платформенных игр.
 
 Фразы «запись-один раз, работающие» часто используется для превознесите достоинства один codebase, без изменений выполняется на нескольких платформах. Хотя он имеет преимущество повторного использования кода, этот подход часто приводит к приложений, имеющих наименьшее общий знаменатель набор функций и выглядящих универсального интерфейса пользователя, который не помещается хорошо в любой из целевых платформ.
 

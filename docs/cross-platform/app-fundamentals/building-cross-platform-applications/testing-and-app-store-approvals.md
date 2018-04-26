@@ -6,11 +6,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 67f61da09861fac6f45faf80efde40302c05bfed
-ms.sourcegitcommit: f52aa66de4d07bc00931ac8af791d4c33ee1ea04
+ms.openlocfilehash: efe0f20207f6e4ec990af736f1d8e930445e59b9
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="part-6---testing-and-app-store-approvals"></a>Часть 6. тестирование и утверждение магазина
 
@@ -75,7 +75,7 @@ Apple и Майкрософт работают только хранилище �
 
 - [Публикация в компании Apple iOS App Store](~/ios/deploy-test/app-distribution/app-store-distribution/publishing-to-the-app-store.md)
 - [Подготовка приложения для Google Play](~/android/deploy-test/publishing/publishing-to-google-play/index.md)
-- Разработчики Windows следует посетить [центра разработчиков Windows](https://developer.microsoft.com/en-us/windows/windows-apps) для чтения об отправке свои приложения.
+- Разработчики Windows следует посетить [центра разработчиков Windows](https://developer.microsoft.com/windows/windows-apps) для чтения об отправке свои приложения.
 
 В оставшейся части в этом разделе рассматриваются задачи, которые можно принять во внимание чтобы убедиться, что приложение утверждается без любой из-за.
 

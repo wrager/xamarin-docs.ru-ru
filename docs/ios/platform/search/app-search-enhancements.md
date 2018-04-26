@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/15/2017
-ms.openlocfilehash: 036dbc6a33126d4ade1a68e853ca6ddb4b7c83cc
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 0df51429ea9655b0a72d9f4c1e413fa7e37410ac
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="app-search-enhancements"></a>Усовершенствования приложения поиска
 
@@ -107,7 +107,7 @@ Apple [средством проверки API поиска приложения
 1. Создайте расширение сообщений приложения.
 2. Добавить `com.apple.developer.associated-domains` правах приложения и включают список веб-доменах, на которых размещены образы, расширение сообщения приложения для управления доступом. Для каждого домена, укажите `spotlight-image-search` службы.
 3. Добавить `apple-app-site-association` файл на веб-сайт, на котором размещается изображений. Этот файл содержит словарь для `spotlight-image-search` службы и включает идентификатор приложения, — это префикс идентификатора группы или идентификатор приложения, следуют идентификатор пакета. Файл может содержать до 500 пути и шаблонов, которые будут проиндексирован Spotlight и включены в поиск популярных изображения. Дополнительные сведения см. в разделе Apple [Создание и отправка файла сопоставлений](https://developer.apple.com/library/prerelease/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html#//apple_ref/doc/uid/TP40016308-CH12-SW4) документации.
-4. Разрешить Applebot обхода веб-сайтов. См. в разделе Apple [Applebot о](https://support.apple.com/en-us/HT204683) документации.
+4. Разрешить Applebot обхода веб-сайтов. См. в разделе Apple [Applebot о](https://support.apple.com/HT204683) документации.
 
 См. наш [интеграция приложения сообщений](~/ios/platform/message-app-integration/index.md) документации для получения дополнительных сведений.
 

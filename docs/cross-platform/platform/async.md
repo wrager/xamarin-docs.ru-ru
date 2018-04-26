@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/22/2017
-ms.openlocfilehash: 0ecad6259cb0d472ac39afb0a6be980d4582812c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 638e16a47d30e1d4d61fe9e7d19a0245261e5d7f
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="async-support-overview"></a>Обзор поддержки асинхронного выполнения
 
@@ -23,7 +23,7 @@ _Последнюю версию языка C# — версия 5 — появи
 
 В этом документе появился новый async и await ключевые слова, а затем последовательно описан простые примеры реализации асинхронных методов в Xamarin.iOS и Xamarin.Android.
 
-Более полное обсуждение новые асинхронные возможности C# 5 (включая большое количество примеров и различных сценариев использования) см. в документации MSDN [асинхронное программирование с использованием ключевых слов Async и Await](http://msdn.microsoft.com/en-us/library/vstudio/hh191443.aspx).
+Более полное обсуждение новые асинхронные возможности C# 5 (включая большое количество примеров и различных сценариев использования) см. в документации MSDN [асинхронное программирование с использованием ключевых слов Async и Await](http://msdn.microsoft.com/library/vstudio/hh191443.aspx).
 
 Образец приложения создает простой асинхронного веб-запроса (не блокируя основной поток), а затем обновляет пользовательский Интерфейс с загруженный html и количество символов.
 
@@ -69,7 +69,7 @@ _Последнюю версию языка C# — версия 5 — появи
 
 По завершении задачи метод возобновляет выполнение в той же точке в коде. Сюда входят возврат в область действия try блока try-catch-finally (при его наличии). await нельзя использовать в блоке catch или finally.
 
-Дополнительные сведения о [await в библиотеке MSDN](http://msdn.microsoft.com/en-us/library/vstudio/hh156528.aspx).
+Дополнительные сведения о [await в библиотеке MSDN](http://msdn.microsoft.com/library/vstudio/hh156528.aspx).
 
 ## <a name="exception-handling"></a>Обработка исключений
 
@@ -85,7 +85,7 @@ _Последнюю версию языка C# — версия 5 — появи
 
 Затем задача отменяет саму себя и подтверждает отмену.
 
-Дополнительные сведения об отмене см. в разделе [Отмена асинхронной задачи](http://msdn.microsoft.com/en-us/library/vstudio/jj155761.aspx) на сайте MSDN.
+Дополнительные сведения об отмене см. в разделе [Отмена асинхронной задачи](http://msdn.microsoft.com/library/vstudio/jj155761.aspx) на сайте MSDN.
 
 ## <a name="example"></a>Пример
 
@@ -202,9 +202,9 @@ async void HandleTouchUpInside (object sender, EventArgs e)
 - [HttpClient (iOS) (пример)](https://developer.xamarin.com/samples/monotouch/HttpClient/)
 - [MapKitSearch (iOS) (пример)](https://github.com/xamarin/monotouch-samples/tree/master/MapKitSearch)
 - [Веб-семинар: C# Async в iOS и Android (видео)](http://xamarin.wistia.com/medias/k27mc627xz)
-- [Асинхронное программирование с использованием Async и Await (MSDN)](http://msdn.microsoft.com/en-us/library/vstudio/hh191443.aspx)
-- [Точная настройка асинхронного приложения (MSDN)](http://msdn.microsoft.com/en-us/library/vstudio/jj155761.aspx)
+- [Асинхронное программирование с использованием Async и Await (MSDN)](http://msdn.microsoft.com/library/vstudio/hh191443.aspx)
+- [Точная настройка асинхронного приложения (MSDN)](http://msdn.microsoft.com/library/vstudio/jj155761.aspx)
 - [Await, а пользовательский Интерфейс и взаимоблокировки. Вот это да! (MSDN)](http://blogs.msdn.com/b/pfxteam/archive/2011/01/13/10115163.aspx)
 - [Обработка задач по мере завершения (MSDN)](http://blogs.msdn.com/b/pfxteam/archive/2012/08/02/processing-tasks-as-they-complete.aspx)
-- [Task-based Asynchronous Pattern (TAP)](http://msdn.microsoft.com/en-us/library/hh873175.aspx) (Асинхронный шаблон, основанный на задачах (TAP))
+- [Task-based Asynchronous Pattern (TAP)](http://msdn.microsoft.com/library/hh873175.aspx) (Асинхронный шаблон, основанный на задачах (TAP))
 - [Асинхронности в C# 5 (Eric Липперта по) — о введении ключевые слова](http://blogs.msdn.com/b/ericlippert/archive/2010/11/11/whither-async.aspx)

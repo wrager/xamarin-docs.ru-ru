@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: f8e663ab2e274bff1ae8b700586d4c6749f04545
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 690edabd53752ff0347fdb232a4bbfcb1ba6e84d
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="case-study-tasky"></a>Практический пример: Tasky
 
@@ -166,7 +166,7 @@ public T GetItem<T> (int id) where T : BL.Contracts.IBusinessEntity, new ()
 
 #### <a name="locking-to-prevent-concurrent-access"></a>Блокировки для предотвращения одновременного доступа
 
-Объект [блокировки](http://msdn.microsoft.com/en-us/library/c5kehkcz(v=vs.100).aspx) реализуется в `TaskItemDatabase` класса, чтобы предотвратить одновременный доступ к базе данных. Это гарантирует сериализуется одновременный доступ из различных потоков (в противном случае компонент пользовательского интерфейса может пытаться чтение из базы данных, в то же время, обновляется в фоновом потоке). Здесь показан пример реализации блокировки:
+Объект [блокировки](http://msdn.microsoft.com/library/c5kehkcz(v=vs.100).aspx) реализуется в `TaskItemDatabase` класса, чтобы предотвратить одновременный доступ к базе данных. Это гарантирует сериализуется одновременный доступ из различных потоков (в противном случае компонент пользовательского интерфейса может пытаться чтение из базы данных, в то же время, обновляется в фоновом потоке). Здесь показан пример реализации блокировки:
 
 ```csharp
 static object locker = new object ();
@@ -357,7 +357,7 @@ public class TaskDialog {
 
  <a name="Android_App" />
 
-## <a name="android-app"></a>Android App
+## <a name="android-app"></a>Приложение Android
 
 Весь проект полностью Xamarin.Android показанные на рисунке ниже:
 

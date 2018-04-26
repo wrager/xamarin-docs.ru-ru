@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 930b52e5b2a532e71594f26af79035db2cc5fb25
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 85dc675a9b18b974f21532298e4d3028bdecd0b7
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ios-architecture"></a>Архитектура iOS
 
@@ -23,14 +23,14 @@ Xamarin.iOS приложения выполняются в среде Mono и и
 
 ## <a name="native-and-managed-code-an-explanation"></a>Машинного и управляемого кода: описание
 
-При разработке для Xamarin условия *машинного и управляемого* кода часто используются. [Управляемый код](https://blogs.msdn.microsoft.com/brada/2004/01/09/what-is-managed-code/) — это код, выполнение управляется [.NET Framework Common Language Runtime](https://msdn.microsoft.com/en-us/library/8bs2ecf4(v=vs.110).aspx), или в случае Xamarin: Mono среды выполнения. Это так называемый промежуточного языка.
+При разработке для Xamarin условия *машинного и управляемого* кода часто используются. [Управляемый код](https://blogs.msdn.microsoft.com/brada/2004/01/09/what-is-managed-code/) — это код, выполнение управляется [.NET Framework Common Language Runtime](https://msdn.microsoft.com/library/8bs2ecf4(v=vs.110).aspx), или в случае Xamarin: Mono среды выполнения. Это так называемый промежуточного языка.
 
 Машинный код является код, который будет запускать на конкретную платформу (например, Objective-C или даже AOT компилируются в код, на микросхеме ARM). В этом руководстве рассматриваются как AOT компилирует управляемого кода в машинный код и объясняется, как работает приложение Xamarin.iOS, интенсивно использовать API-интерфейсы iOS Apple с помощью привязки, сохранив доступ к. В NET BCL и сложные языка, например C#.
 
 
 ## <a name="aot"></a>AOT
 
-При компиляции любого приложения платформа Xamarin компилятора моно C# (или F #) будет выполнен и компиляции кода C# и F # в Майкрософт промежуточного языка MSIL. Если вы используете Xamarin.Android, приложение Xamarin.Mac или даже Xamarin.iOS приложения в имитаторе, [.NET Common Language Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4(v=vs.110).aspx) компиляции MSIL с помощью непосредственно в компиляторе Time (JIT). Во время выполнения это компилируется в машинный код, который можно запустить на правильной архитектуры для вашего приложения.
+При компиляции любого приложения платформа Xamarin компилятора моно C# (или F #) будет выполнен и компиляции кода C# и F # в Майкрософт промежуточного языка MSIL. Если вы используете Xamarin.Android, приложение Xamarin.Mac или даже Xamarin.iOS приложения в имитаторе, [.NET Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4(v=vs.110).aspx) компиляции MSIL с помощью непосредственно в компиляторе Time (JIT). Во время выполнения это компилируется в машинный код, который можно запустить на правильной архитектуры для вашего приложения.
 
 Однако есть ограничения безопасности на iOS, заданные Apple, который запрещает выполнение динамически создаваемый код на устройстве.
 Чтобы убедиться, что придерживаться эти протоколы безопасности, Xamarin.iOS вместо использует вперед от времени АОТ компилятора для компиляции управляемого кода. В результате получается машинным кодом iOS двоичных данных, при необходимости оптимизирован с LLVM для устройств, которые могут быть развернуты на процессоре ARM под управлением Apple. Ниже показана грубой схемы как это сочетается друг с другом.
@@ -69,7 +69,7 @@ Xamarin.iOS приложения выполняются в среде Mono и и
  }
 ```
 
-**Objective-C:**
+**Цель — C:**
 
 ```objectivec
 @interface MyViewController : UIViewController { }

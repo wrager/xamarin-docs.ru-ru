@@ -8,11 +8,11 @@ ms.custom: xamu-video
 author: asb3993
 ms.author: amburns
 ms.date: 03/22/2017
-ms.openlocfilehash: 2a189a19280576876e5d5a6a4fa34d2d00cab330
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: de6fdab62a57dddb6fcf48302b7ff9f5ec2bc9a2
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="c-6-new-features-overview"></a>Возможности C# 6 новые общие сведения
 
@@ -51,7 +51,7 @@ Visual Studio для Mac автоматически обновляет моно 
 
 Пользователи Windows должны иметь [Visual Studio 2015 или 2017 г ^](https://www.visualstudio.com/) установлен для компиляции кода C# 6 (даже если выбор Xamarin Studio для Windows, как интерфейс IDE).
 
-^ или *[2015 средства построения Microsoft](http://www.microsoft.com/en-us/download/details.aspx?id=48159)* для командной строки компиляции или серверы сборки, например.
+^ или *[2015 средства построения Microsoft](http://www.microsoft.com/download/details.aspx?id=48159)* для командной строки компиляции или серверы сборки, например.
 
 ## <a name="using-c-6"></a>С помощью C# 6
 

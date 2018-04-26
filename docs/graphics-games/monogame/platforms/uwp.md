@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: ee4ee83c07cf01d1324b5f127d4f77ced0df2afe
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.openlocfilehash: e28823165188d1046142e31490967367d3246422
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-monogame-uwp-project"></a>Создание проекта MonoGame UWP
 
@@ -31,9 +31,9 @@ _MonoGame можно использовать для создания игр и 
 - Настройка устройства в режим разработчика
 - [3.5 MonoGame для Visual Studio](http://www.monogame.net/2016/03/17/monogame-3-5/) или более поздней версии
 
-Дополнительные сведения см. в этой [страницы по настройке для разработки приложений Windows 10 UWP](https://msdn.microsoft.com/en-us/windows/uwp/get-started/get-set-up).
+Дополнительные сведения см. в этой [страницы по настройке для разработки приложений Windows 10 UWP](https://msdn.microsoft.com/windows/uwp/get-started/get-set-up).
 
-Игры Xbox One могут разрабатываться на оборудовании Xbox One розничной торговли. Требуется дополнительное программное обеспечение на Компьютере разработки и Xbox One. Сведения о настройке Xbox One для разработки игр просмотреть эту страницу на [Настройка Xbox One](https://msdn.microsoft.com/en-us/windows/uwp/xbox-apps/index).
+Игры Xbox One могут разрабатываться на оборудовании Xbox One розничной торговли. Требуется дополнительное программное обеспечение на Компьютере разработки и Xbox One. Сведения о настройке Xbox One для разработки игр просмотреть эту страницу на [Настройка Xbox One](https://msdn.microsoft.com/windows/uwp/xbox-apps/index).
 
 ## <a name="creating-an-empty-template"></a>Создание пустого шаблона
 

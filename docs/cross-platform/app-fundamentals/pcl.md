@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: feef0a4083d2455cc189ddab6ed22762c044d848
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 799ee198f776b963bb8779d71bacc322001e2882
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introduction-to-portable-class-libraries"></a>Введение в переносимые библиотеки классов
 
@@ -55,7 +55,7 @@ _В этой статье представлены проекты перенос
 -  Windows Phone 8
 -  Приложения универсальной платформы Windows
 
-Вы можете прочитать больше о возможностях разных профилей на [веб-сайта корпорации Майкрософт](http://msdn.microsoft.com/en-us/library/gg597391(v=vs.110).aspx) и другой член сообщества см [сводки профиля PCL](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY) включающее поддерживается framework сведения и другие примечания.
+Вы можете прочитать больше о возможностях разных профилей на [веб-сайта корпорации Майкрософт](http://msdn.microsoft.com/library/gg597391(v=vs.110).aspx) и другой член сообщества см [сводки профиля PCL](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY) включающее поддерживается framework сведения и другие примечания.
 
 
 
@@ -429,4 +429,4 @@ public static Result Close(Sqlite3.sqlite3 db)
 - [Переносимый Visual Basic](~/cross-platform/platform/visual-basic/index.md)
 - [Общие проекты](~/cross-platform/app-fundamentals/shared-projects.md)
 - [Параметры совместного использования кода](~/cross-platform/app-fundamentals/code-sharing.md)
-- [Межплатформенная разработка в .NET Framework (Майкрософт)](http://msdn.microsoft.com/en-us/library/gg597391(v=vs.110).aspx)
+- [Межплатформенная разработка в .NET Framework (Майкрософт)](http://msdn.microsoft.com/library/gg597391(v=vs.110).aspx)

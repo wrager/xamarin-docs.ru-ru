@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 10/09/2017
-ms.openlocfilehash: 13868864813a2f120857fb6347924197e374638c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ab449a58cc87699b97a1ade7721a08f771c4f55d
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-azure"></a>Microsoft Azure
 
@@ -31,7 +31,7 @@ _Документация и примеры кода, загружаемые ф�
 Что представляет собой коллекцию [документации мобильные приложения Azure](~/cross-platform/data-cloud/mobile-apps.md) , помогает выполнить процесс реализации [клиент Azure Mobile](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client/).
 Xamarin также предлагает пакеты NuGet обмена сообщениями Azure для [iOS](https://www.nuget.org/packages/Xamarin.Azure.NotificationHubs.iOS/) и [Android](https://www.nuget.org/packages/Xamarin.Azure.NotificationHubs.Android/) Чтобы реализовать извещающие уведомления в разных платформах.
 
-Настройка приложения на [портал служб Azure приложения](https://portal.azure.com/) для доступа к мобильным приложениям, веб-API, хранения и многое другое. Дополнительные сведения о [чем отличаются службы приложений](http://azure.microsoft.com/en-us/updates/whats-new-with-azure-app-service/) и посмотрите в [эти видеоматериалы корпорации Майкрософт](http://azure.microsoft.com/en-us/campaigns/azure-march-announcement/).
+Настройка приложения на [портал служб Azure приложения](https://portal.azure.com/) для доступа к мобильным приложениям, веб-API, хранения и многое другое. Дополнительные сведения о [чем отличаются службы приложений](http://azure.microsoft.com/updates/whats-new-with-azure-app-service/) и посмотрите в [эти видеоматериалы корпорации Майкрософт](http://azure.microsoft.com/campaigns/azure-march-announcement/).
 
 ## <a name="active-directory-authentication"></a>Проверка подлинности Active Directory
 
@@ -58,7 +58,7 @@ Xamarin также предлагает пакеты NuGet обмена сооб
 - [MyShoppe](https://github.com/jamesmontemagno/MyShoppe) -мобильные приложения Azure.
 
 - [eShop](https://github.com/dotnet-architecture/eShopOnContainers) — образец для [рядов архитектура](https://www.microsoft.com/net/learn/architecture) из книг.
-- [MyDriving](https://azure.microsoft.com/en-us/campaigns/mydriving/) — Azure + IoT выборки из 2016 сборки.
+- [MyDriving](https://azure.microsoft.com/campaigns/mydriving/) — Azure + IoT выборки из 2016 сборки.
 
 
 ## <a name="related-links"></a>Связанные ссылки

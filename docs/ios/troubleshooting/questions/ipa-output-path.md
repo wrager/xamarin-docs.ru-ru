@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 06074566b3d3a05e05a1646c70de211f908f3aa9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9c80a209279a2f032eb6c9efcba1398ca0e267a5
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="can-i-change-the-output-path-of-the-ipa-file"></a>Можно изменить путь выходного файла IPA
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/04/2018
 2. Значение DestinationFolder требуемой папке выходных данных. В обычном режиме может использовать свойства MSBuild (например, $(OutputPath)) в пределах этого аргумента при необходимости.
 
 ## <a name="notes"></a>Примечания
-- `CreateIpaDependsOn` Свойство определено в `Xamarin.iOS.Common.targets` файл, который является частью Xamarin.iOS. Он ведет себя, как описано в разделе *переопределение свойства «DependsOn»* на [ https://msdn.microsoft.com/en-us/library/ms366724.aspx ](https://msdn.microsoft.com/en-us/library/ms366724.aspx).
+- `CreateIpaDependsOn` Свойство определено в `Xamarin.iOS.Common.targets` файл, который является частью Xamarin.iOS. Он ведет себя, как описано в разделе *переопределение свойства «DependsOn»* на [ https://msdn.microsoft.com/library/ms366724.aspx ](https://msdn.microsoft.com/library/ms366724.aspx).
 
 - Можно использовать **переместить** задач, а не **копирования** задач, если предпочтительный. Если выбран этот вариант и выполняется построение в Windows, необходимо использовать имя задачи полное `<Microsoft.Build.Tasks.Move>` во избежание неоднозначности XamarinVS задачи построения.
 
@@ -78,6 +78,6 @@ ms.lasthandoff: 04/04/2018
 2. Задать `DestinationFolder` к требуемой папке выходных данных. В обычном режиме может использовать свойства MSBuild (как `$(OutputPath)`) в рамках этого аргумента при необходимости.
 
 ## <a name="notes"></a>Примечания
-- `CreateIpaDependsOn` Свойство определено в `Xamarin.iOS.Common.targets` файл, который является частью Xamarin.iOS. Он ведет себя, как описано в разделе *переопределение свойства «DependsOn»* на [ https://msdn.microsoft.com/en-us/library/ms366724.aspx ](https://msdn.microsoft.com/en-us/library/ms366724.aspx).
+- `CreateIpaDependsOn` Свойство определено в `Xamarin.iOS.Common.targets` файл, который является частью Xamarin.iOS. Он ведет себя, как описано в разделе *переопределение свойства «DependsOn»* на [ https://msdn.microsoft.com/library/ms366724.aspx ](https://msdn.microsoft.com/library/ms366724.aspx).
 
 - Можно использовать **переместить** задач, а не **копирования** задач, если предпочтительный. Если выбран этот вариант и выполняется построение в Windows, необходимо использовать имя задачи полное `<Microsoft.Build.Tasks.Move>` во избежание неоднозначности XamarinVS задачи построения.

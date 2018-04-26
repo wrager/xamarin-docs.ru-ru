@@ -6,11 +6,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 33551a924af1b7ca9c465514c704a0c1445fc2c4
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 76b0e9ea6e13ed053a53971b6dbe9f65bb436a4e
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="part-1--understanding-the-xamarin-mobile-platform"></a>Часть 1 – основные сведения о платформе Xamarin Mobile
 
@@ -173,7 +173,7 @@ Xamarin предоставляет единый установщик, котор
 
 -   **iOS** — [рекомендациям Apple по интерфейсам](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html)
 -   **Android** — [Google рекомендации по пользовательскому интерфейсу](http://developer.android.com/guide/practices/ui_guidelines/index.html)
--   **Windows** — [рекомендации по пользовательскому интерфейсу конструктора, для Windows](https://developer.microsoft.com/en-us/windows/design)
+-   **Windows** — [рекомендации по пользовательскому интерфейсу конструктора, для Windows](https://developer.microsoft.com/windows/design)
 
 
  <a name="Library_and_Code_Re-use" />
