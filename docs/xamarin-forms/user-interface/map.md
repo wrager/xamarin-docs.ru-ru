@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 050e37d208c3ba5a330d7ecc6df9d106e14f8bb9
-ms.sourcegitcommit: f52aa66de4d07bc00931ac8af791d4c33ee1ea04
+ms.openlocfilehash: e296ca79ee03e7fc61532758219b65946a8d4381
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="map"></a>Карта
 
@@ -50,7 +50,7 @@ Xamarin.FormsMaps.Init();
 Xamarin.FormsMaps.Init(this, bundle);
 ```
 
-Для среды выполнения Windows (WinRT) и универсальной платформы Windows (UWP) используйте следующий код:
+Для универсальной платформы Windows (UWP), используйте следующий код:
 
 ```csharp
 Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
@@ -60,7 +60,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 -  **iOS** -AppDelegate.cs файл `FinishedLaunching` метод.
 -  **Android** -MainActivity.cs файл `OnCreate` метод.
--  **WinRT и UWP** -MainPage.xaml.cs файл `MainPage` конструктор.
+-  **UWP** -MainPage.xaml.cs файл `MainPage` конструктор.
 
 После добавления пакета NuGet и вызвать метод инициализации в пределах каждого applcation `Xamarin.Forms.Maps` интерфейсы API, которые могут использоваться в коде общих PCL или общий проект.
 
@@ -132,9 +132,9 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 
 Последние две являются обязательными, так как приложения требуют подключения к сети для загрузки данных карты. Узнайте, как Android [разрешений](http://developer.android.com/reference/android/Manifest.permission.html) для получения дополнительных сведений.
 
-### <a name="windows-runtime-and-universal-windows-platform"></a>Среда выполнения Windows и универсальной платформы Windows
+### <a name="universal-windows-platform"></a>Универсальная платформа Windows 
 
-Для работы с картами в среде выполнения Windows и универсальной платформы Windows необходимо создать маркер авторизации. Дополнительные сведения см. в разделе [запроса ключа проверки подлинности maps](https://msdn.microsoft.com/library/windows/apps/mt219694.aspx) на сайте MSDN.
+Для работы с картами на универсальной платформе Windows необходимо создать маркер авторизации. Дополнительные сведения см. в разделе [запроса ключа проверки подлинности maps](https://msdn.microsoft.com/library/windows/apps/mt219694.aspx) на сайте MSDN.
 
 Токен проверки подлинности должна задаваться в `FormsMaps.Init("AUTHORIZATION_TOKEN")` вызова метода, для проверки подлинности приложения с помощью Bing Maps.
 
@@ -255,7 +255,7 @@ MyMap.MoveToRegion(
 
 ## <a name="summary"></a>Сводка
 
-Xamarin.Forms.Maps является отдельной NuGet, которые необходимо добавить в каждый проект в решение Xamarin.Forms. Как и некоторые действия по настройке iOS, Android, WinRT и UWP требуется дополнительный код инициализации.
+Xamarin.Forms.Maps является отдельной NuGet, которые необходимо добавить в каждый проект в решение Xamarin.Forms. Как и некоторые действия по настройке iOS, Android и UWP требуется дополнительный код инициализации.
 
 После настройки сопоставляет API можно использовать для отображения карты с маркерами ПИН-код в нескольких строк кода. Карты можно улучшить с [пользовательское средство отрисовки](~/xamarin-forms/app-fundamentals/custom-renderer/map/index.md).
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: 76a5c96d0e7bb85f0e6b313e2dbc058b8c2aae6d
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: f1f0bb0ce282479a7b185257880244863bb67a60
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="list-appearance"></a>Внешний список
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/06/2018
 - Задать `ListView` `ItemsSource` к этому списку.
 - Задать `IsGroupingEnabled` значение true.
 - Задать [ `GroupDisplayBinding` ](http://developer.xamarin.com/api/property/Xamarin.Forms.ListView.GroupDisplayBinding/) привязку к свойству групп, который используется в качестве заголовка группы.
-- [Необязательно] Задать [ `GroupShortNameBinding` ](http://developer.xamarin.com/api/property/Xamarin.Forms.ListView.GroupShortNameBinding/) привязку к свойству групп, который используется в качестве краткого имени для группы. Короткое имя используется для списки переходов (стороне rigt столбец на iOS, ячеек на Windows Phone).
+- [Необязательно] Задать [ `GroupShortNameBinding` ](http://developer.xamarin.com/api/property/Xamarin.Forms.ListView.GroupShortNameBinding/) привязку к свойству групп, который используется в качестве краткого имени для группы. Короткое имя используется для списки переходов (правого столбца на iOS).
 
 Начните с создания класса для групп:
 
@@ -120,7 +120,7 @@ x:Class="DemoListView.GroupingViewPage"
 
 Если группирование была включена в списке, можно настроить и в заголовке группы.
 
-Аналогично тому, как `ListView` имеет `ItemTemplate` для определения отображения строк, `ListView` имеет `GroupHeaderTemplate`. 
+Аналогично тому, как `ListView` имеет `ItemTemplate` для определения отображения строк, `ListView` имеет `GroupHeaderTemplate`.
 
 Ниже показан пример настройки заголовка группы в XAML:
 
@@ -206,7 +206,7 @@ ListView HeaderList = new ListView() {
 <a name="Row_Separators" />
 
 ## <a name="row-separators"></a>Разделители строк
-Разделитель строк отображаются между `ListView` элементы по умолчанию на iOS и Android. Windows Phone не поддерживает разделитель строк, на этой платформы руководствах. Если вы предпочитаете скрыть линии разделителя в iOS и Android, задать `SeparatorVisibility` свойства в ListView. Параметры для `SeparatorVisibility` являются:
+Разделитель строк отображаются между `ListView` элементы по умолчанию на iOS и Android. Если вы предпочитаете скрыть линии разделителя в iOS и Android, задать `SeparatorVisibility` свойства в ListView. Параметры для `SeparatorVisibility` являются:
 
 * **По умолчанию** -показана строка разделителя в iOS и Android.
 * **Нет** -скрывает разделителя на всех платформах.

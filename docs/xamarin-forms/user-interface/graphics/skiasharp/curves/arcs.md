@@ -7,11 +7,11 @@ ms.assetid: F1DA55E4-0182-4388-863C-5C340213BF3C
 author: charlespetzold
 ms.author: chape
 ms.date: 05/10/2017
-ms.openlocfilehash: c6fd0f905aceb9dddc4047abc6ad2722adf2d8e9
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: aba193ca38d60db52298fdf239d936310a4ac193
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="three-ways-to-draw-an-arc"></a>Три способа, чтобы нарисовать дугу
 
@@ -414,8 +414,6 @@ public partial class TangentArcPage : InteractivePage
 Вот **дуги тангенс** страница, выполняемая на всех трех платформах:
 
 [![](arcs-images/tangentarc-small.png "Тройной снимок экрана со страницей дуги тангенс")](arcs-images/tangentarc-large.png#lightbox "тройной снимок экрана со страницей тангенс дуги")
-
-На устройстве с Windows Mobile почти colinear тремя точками и дуги очень мал.
 
 Касательной дуги идеально подходит для создания прямоугольника с закругленными углами, например прямоугольник с закругленными углами. Поскольку `SKPath` уже включает в себя `AddRoundedRect` метод, **округленное Heptagon** страницы демонстрируется использование `ArcTo` для округления углов семь сторонний многоугольник. (Для любого правильного многоугольника обобщенный код.)
 

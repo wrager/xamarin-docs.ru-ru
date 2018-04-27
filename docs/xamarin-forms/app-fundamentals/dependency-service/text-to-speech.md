@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/18/2017
-ms.openlocfilehash: 67e392bb3672e54a1e2fe709af9cf5deb3dae5e8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c9cf700ea798ac316e806c40cb90eedc7ded9fa5
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="implementing-text-to-speech"></a>Реализация преобразования текста в речь
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 04/04/2018
 - **[Создание интерфейса](#Creating_the_Interface)**  &ndash; понять, как интерфейс создается в общем коде.
 - **[Реализация iOS](#iOS_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинный код для iOS.
 - **[Реализация Android](#Android_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для Android.
-- **[Реализация Windows](#WindowsImplementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для Windows Phone и универсальной платформы Windows (UWP).
+- **[Реализация UWP](#WindowsImplementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для универсальной платформы Windows (UWP).
 - **[Реализация в общем коде](#Implementing_in_Shared_Code)**  &ndash; использование `DependencyService` вызывать собственную реализацию из общего кода.
 
 Приложения с помощью `DependencyService` будет иметь следующую структуру:
@@ -122,9 +122,9 @@ namespace DependencyServiceSample.Droid
 
 <a name="WindowsImplementation" />
 
-## <a name="windows-phone-and-universal-windows-platform-implementation"></a>Windows Phone и реализации платформы универсальных приложений Windows
+## <a name="universal-windows-platform-implementation"></a>Реализация платформы универсальных приложений Windows
 
-Windows Phone и универсальная платформа Windows имеют речи API в `Windows.Media.SpeechSynthesis` пространства имен. Единственная оговорка заключается в запомнить, для деления **микрофон** возможность в манифесте, в противном случае доступ к речи, API-интерфейсы, блокируются.
+Универсальная платформа Windows имеет речи API в `Windows.Media.SpeechSynthesis` пространства имен. Единственная оговорка заключается в запомнить, для деления **микрофон** возможность в манифесте, в противном случае доступ к речи, API-интерфейсы, блокируются.
 
 ```csharp
 [assembly:Dependency(typeof(TextToSpeechImplementation))]
@@ -165,7 +165,7 @@ public MainPage ()
 }
 ```
 
-Выполнение этого приложения на iOS, Android, или платформ Windows и нажатие кнопки приведет к разговора можно с помощью собственного speech SDK на каждой платформе приложения.
+Запуск этого приложения в iOS, Android или UWP и нажав кнопку приведет к разговора можно с помощью собственного speech SDK на каждой платформе приложения.
 
  ![iOS и Android озвучивания текста кнопки](text-to-speech-images/running.png "пример преобразования текста в речь")
 

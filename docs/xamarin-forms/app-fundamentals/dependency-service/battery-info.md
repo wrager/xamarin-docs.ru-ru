@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: 3f098e7f403a4f5e9fd924b8745348197cd4f843
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9b437b42c1cb4dd8cbe7612a680032d84e852ff6
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="checking-battery-status"></a>Проверка состояния батареи
 
@@ -22,7 +22,6 @@ ms.lasthandoff: 04/04/2018
 - **[Создание интерфейса](#Creating_the_Interface)**  &ndash; понять, как интерфейс создается в общем коде.
 - **[Реализация iOS](#iOS_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинный код для iOS.
 - **[Реализация Android](#Android_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для Android.
-- **[Реализация Windows Phone](#Windows_Phone_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для Windows Phone.
 - **[Универсальные реализации платформы Windows](#UWPImplementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для универсальной платформы Windows (UWP).
 - **[Реализация в общем коде](#Implementing_in_Shared_Code)**  &ndash; использование `DependencyService` вызывать собственную реализацию из общего кода.
 
@@ -311,74 +310,6 @@ namespace DependencyServiceSample.Droid
 
 Этот атрибут класс регистрируется как реализация `IBattery` интерфейс, который означает, что `DependencyService.Get<IBattery>` может использоваться в общий код можно создать его экземпляр.
 
-<a name="Windows_Phone_Implementation" />
-
-## <a name="windows-phone-implementation"></a>Реализация Windows Phone
-
-Эта реализация ограничено по сравнению с версии iOS и Android, так как API управления питанием Windows Phone предоставляет меньше сведений, чем эквиваленты iOS и Android.
-
-```csharp
-using System;
-using Windows.ApplicationModel.Core;
-using DependencyServiceSample.WinPhone;
-
-namespace DependencyServiceSample.WinPhone
-{
-  public class BatteryImplementation : IBattery
-  {
-    private int last;
-    private BatteryStatus status = BatteryStatus.Unknown;
-
-    public BatteryImplementation()
-    {
-      last = DefaultBattery.RemainingChargePercent;
-    }
-
-    Windows.Phone.Devices.Power.Battery battery;
-    private Windows.Phone.Devices.Power.Battery DefaultBattery
-    {
-      get { return battery ?? (battery = Windows.Phone.Devices.Power.Battery.GetDefault()); }
-    }
-    public int RemainingChargePercent
-    {
-      get
-      { return DefaultBattery.RemainingChargePercent; }
-    }
-
-    public  BatteryStatus Status
-    {
-      get { return status; }
-    }
-
-    public PowerSource PowerSource
-    {
-      get
-      {
-        if (status == BatteryStatus.Full || status == BatteryStatus.Charging)
-          return PowerSource.Ac;
-
-        return PowerSource.Battery;
-      }
-    }
-  }
-}
-```
-
-Добавьте это `[assembly]` атрибута выше класса (и за пределами любого пространства имен, которые были определены), включая все необходимые `using` инструкции.
-
-```csharp
-using System;
-using Windows.ApplicationModel.Core;
-using DependencyServiceSample.WinPhone;
-
-[assembly: Xamarin.Forms.Dependency (typeof (BatteryImplementation))]
-namespace DependencyServiceSample.WinPhone {
-  public class BatteryImplementation : IBattery {
-    ...
-```
-
-Этот атрибут класс регистрируется как реализация `IBattery` интерфейс, который означает, что `DependencyService.Get<IBattery>` может использоваться в общий код для создания его экземпляра.
-
 <a name="UWPImplementation" />
 
 ## <a name="universal-windows-platform-implementation"></a>Реализация платформы универсальных приложений Windows
@@ -537,7 +468,7 @@ public MainPage ()
 }
 ```
 
-Текст кнопки, обновление, чтобы отразить текущее состояние питания устройства приведет к запуска этого приложения на iOS, Android или платформ Windows и нажатие кнопки.
+Запуск этого приложения в iOS, Android или UWP и нажав кнопку приведет к текст кнопки, обновление, чтобы отразить текущее состояние питания устройства.
 
 ![](battery-info-images/battery.png "Пример состояние батареи")
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/15/2016
-ms.openlocfilehash: 9402bd53ab3bfb0b11182eb700aa560e8f962de3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 513b9b3738b9481444cdad10daa9b11a8441c9dd
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="renderer-base-classes-and-native-controls"></a>Модуль подготовки отчетов базовых классов и собственные элементы управления
 
@@ -20,7 +20,7 @@ _Каждый элемент управления Xamarin.Forms имеет со�
 За исключением элемента `MapRenderer` платформой модулей подготовки отчетов класса, можно найти в следующих пространств имен:
 
 - **iOS** – Xamarin.Forms.Platform.iOS
-- **Android** – Xamarin.Forms.Platform.Android
+- **Android** — Xamarin.Forms.Platform.Android
 - **Android (AppCompat)** – Xamarin.Forms.Platform.Android.AppCompat
 - **Универсальная платформа Windows (UWP)** – Xamarin.Forms.Platform.UWP
 
@@ -66,7 +66,7 @@ _Каждый элемент управления Xamarin.Forms имеет со�
 |Представления|Модуль подготовки отчетов|iOS|Android|Android (AppCompat)|UWP|
 |--- |--- |--- |--- |--- |--- |
 |[`ActivityIndicator`](https://developer.xamarin.com/api/type/Xamarin.Forms.ActivityIndicator/)|ActivityIndicatorRenderer|UIActivityIndicator|ProgressBar||ProgressBar|
-|[`BoxView`](https://developer.xamarin.com/api/type/Xamarin.Forms.BoxView/)|BoxRenderer (iOS и Android), BoxViewRenderer (Windows Phone и WinRT)|UIView|Группе ViewGroup||Прямоугольник|
+|[`BoxView`](https://developer.xamarin.com/api/type/Xamarin.Forms.BoxView/)|BoxRenderer (iOS и Android), BoxViewRenderer (UWP)|UIView|Группе ViewGroup||Прямоугольник|
 |[`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/)|ButtonRenderer|UIButton|Кнопка|AppCompatButton|Кнопка|
 |[`CarouselView`](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselView/)|CarouselViewRenderer|UIScrollView|RecyclerView||FlipView|
 |[`DatePicker`](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/)|DatePickerRenderer|UITextField|EditText||DatePicker|

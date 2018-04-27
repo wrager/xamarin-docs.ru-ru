@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 4adff8a95f9981dbecc44bf177dcd98b7984a3a9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ffb013c355db34ef7456404d6f9dcaec75743420
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="implementing-a-hybridwebview"></a>Реализация HybridWebView
 
 _Элементы управления Xamarin.Forms настраиваемого пользовательского интерфейса должен быть производным от класса представления, который используется для размещения макетов и элементов управления на экране. В этой статье показано, как создать пользовательское средство отрисовки для HybridWebView пользовательского элемента управления, где показано, как улучшить веб-платформой элементы управления для разрешения кода C#, вызываемую из JavaScript._
 
-Каждый Xamarin.Forms представление имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `View` ](https://developer.xamarin.com/api/type/Xamarin.Forms.View/) визуализируется в Xamarin.Forms приложение в iOS, `ViewRenderer` создается экземпляр класса, который в свою очередь создает собственный `UIView` элемента управления. На платформе Android `ViewRenderer` класс создает экземпляры `View` элемента управления. В Windows Phone и универсальной платформы Windows (UWP) `ViewRenderer` класс создает экземпляр собственного `FrameworkElement` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
+Каждый Xamarin.Forms представление имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `View` ](https://developer.xamarin.com/api/type/Xamarin.Forms.View/) визуализируется в Xamarin.Forms приложение в iOS, `ViewRenderer` создается экземпляр класса, который в свою очередь создает собственный `UIView` элемента управления. На платформе Android `ViewRenderer` класс создает экземпляры `View` элемента управления. В универсальной платформы Windows (UWP), `ViewRenderer` класс создает экземпляр собственного `FrameworkElement` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
 
 На следующей схеме показана связь между [ `View` ](https://developer.xamarin.com/api/type/Xamarin.Forms.View/) и соответствующие собственные элементы управления, которые реализуют:
 
@@ -417,13 +417,13 @@ public class JSBridge : Java.Lang.Object
 > [!IMPORTANT]
 > Android Oreo и убедитесь, что задает манифеста Android **Android целевой версии** для **автоматического**. В противном случае выполнение этого кода приведет к ошибка сообщение «invokeCSharpAction не определена».
 
-### <a name="creating-the-custom-renderer-on-windows-phone-and-uwp"></a>Создание пользовательского средства визуализации на Windows Phone и UWP
+### <a name="creating-the-custom-renderer-on-uwp"></a>Создание пользовательского средства визуализации на UWP
 
-В следующем примере кода показано пользовательское средство отрисовки для Windows Phone и UWP.
+В следующем примере кода показано пользовательское средство отрисовки для UWP.
 
 ```csharp
 [assembly: ExportRenderer(typeof(HybridWebView), typeof(HybridWebViewRenderer))]
-namespace CustomRenderer.WinPhone81
+namespace CustomRenderer.UWP
 {
     public class HybridWebViewRenderer : ViewRenderer<HybridWebView, Windows.UI.Xaml.Controls.WebView>
     {

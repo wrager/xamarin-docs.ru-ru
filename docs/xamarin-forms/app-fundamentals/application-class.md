@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/19/2016
-ms.openlocfilehash: 1e1039f513534885dffe9fef348d567243651e22
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: 5c9eed8f48a40bc7feaadd0c644610f691713e9b
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="app-class"></a>Класс App
 
@@ -198,70 +198,9 @@ public class MainActivity :
 > Имеется более новом [ `FormsAppCompatActivity` ](~/xamarin-forms/platform/android/appcompat.md) базовый класс, который может использоваться для лучшей поддержки Android материал конструктора.
 > Это значение станет Android шаблон по умолчанию в будущем, но можно сделать [эти инструкции](~/xamarin-forms/platform/android/appcompat.md) для обновления существующих приложений Android.
 
-
-### <a name="windows-phone-project"></a>Проект Windows Phone
-
-Главной странице в проекте Windows Phone (на основе Silverlight) должен быть производным от `FormsApplicationPage`. Это означает, XAML и C# для `MainPage` ссылки `FormsApplicationPage` класса, как показано.
-
-XAML использует пользовательского пространства имен так, чтобы использовалось корневой элемент `FormsApplicationPage` класса:
-
-```xaml
-<winPhone:FormsApplicationPage
-   ...
-   xmlns:winPhone="clr-namespace:Xamarin.Forms.Platform.WinPhone;assembly=Xamarin.Forms.Platform.WP8"
-    ...>
-</winPhone:FormsApplicationPage>
-```
-
-C# наследует от `FormsApplicationPage` класса и вызывает `LoadApplication` для создания экземпляра вашей Xamarin.Forms `App`. Обратите внимание, что рекомендуется всегда явно использовать пространство имен приложения для уточнения `App` поскольку приложения Windows Phone, также имеют свои собственные `App` класса, не связанным с помощью Xamarin.Forms.
-
-```csharp
-public partial class MainPage :
-    global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage // superclass new in 1.3
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
-
-        global::Xamarin.Forms.Forms.Init();
-        LoadApplication(new YOUR_APP_NAMESPACE.App()); // new in 1.3, use the correct namespace
-    }
- }
-```
-
-### <a name="windows-81-project"></a>Проект Windows 8.1
-
-Главной странице в [Windows 8.1 (на основе WinRT)](~/xamarin-forms/platform/windows/installation/tablet.md) проектов теперь должен быть производным от `WindowsPage`. Это означает XAML для `MainPage` ссылки `WindowsPage` класса, как показано:
-
-XAML использует пользовательского пространства имен так, чтобы использовалось корневой элемент `FormsApplicationPage` класса:
-
-```xaml
-<forms:WindowsPage
-   ...
-   xmlns:forms="using:Xamarin.Forms.Platform.WinRT"
-   ...>
-</forms:WindowsPage>
-```
-
-Построение codebehind C# необходимо вызвать `LoadApplication` для создания экземпляра вашей Xamarin.Forms `App`. Обратите внимание, что рекомендуется всегда явно использовать пространство имен приложения для уточнения `App` потому, что приложения UWP также свои собственные `App` класса, не связанным с помощью Xamarin.Forms.
-
-```csharp
-public partial class MainPage
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        LoadApplication(new YOUR_APP_NAMESPACE.App());
-    }
- }
-```
-
-Обратите внимание, что `Forms.Init()` должен вызываться **App.xaml.cs** около строки 65.
-
 ### <a name="universal-windows-project-uwp-for-windows-10"></a>Проект универсального приложения Windows (UWP) для Windows 10
 
-[Универсальных проектов Windows](~/xamarin-forms/platform/windows/installation/universal.md) поддержки в Xamarin.Forms в настоящее время находится в предварительной версии.
+В разделе [проекты установки Windows](~/xamarin-forms/platform/windows/installation/index.md) сведения о поддержке UWP в Xamarin.Forms.
 
 Главной странице в проекте UWP, должен быть производным от `WindowsPage`. Это означает, XAML и C# для `MainPage` ссылки `FormsApplicationPage` класса, как показано.
 

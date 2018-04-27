@@ -5,12 +5,12 @@ ms.assetid: 7DC22A08-808A-DC0C-B331-2794DD1F9229
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: f4be88a1eabb3fa3cca733690a3f097a03516272
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/25/2018
+ms.openlocfilehash: 9ce1d790f5dea00ac47d5639ae8424793006445a
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architecture"></a>Архитектура
 
@@ -70,7 +70,7 @@ Xamarin.Android приложения также содержат *Android с п�
 Подклассы управляемого вызываемой оболочки, где «Город» логикой конкретных приложений может находиться. К ним относятся пользовательские [Android.App.Activity](https://developer.xamarin.com/api/type/Android.App.Activity/) подклассы (такие как [Activity1](https://github.com/xamarin/monodroid-samples/blob/master/HelloM4A/Activity1.cs#L13) типа в шаблоне проекта по умолчанию). (В частности, это любой *Java.Lang.Object* подклассов, которые выполняют *не* содержат [RegisterAttribute](https://developer.xamarin.com/api/type/Android.Runtime.RegisterAttribute/) настраиваемого атрибута или [ RegisterAttribute.DoNotGenerateAcw](https://developer.xamarin.com/api/property/Android.Runtime.RegisterAttribute.DoNotGenerateAcw/) — *false*, используемого по умолчанию.)
 
 Как управлять вызываемых оболочек, управляемых подклассов вызываемой оболочки также содержать глобальной ссылки, доступные через [Java.Lang.Object.Handle](https://developer.xamarin.com/api/property/Java.Lang.Object.Handle/) свойство. Так же, как с помощью управляемого вызываемых оболочек глобальной ссылки можно явно освободить путем вызова [Java.Lang.Object.Dispose()](https://developer.xamarin.com/api/member/Java.Lang.Object.Dispose/).
-В отличие от управляемого вызываемых оболочек *следить за* должно выполняться перед удалением из таких экземпляров как *Dispose()*ing экземпляра нарушит сопоставление между экземплярами Java (экземпляр Android вызываемую оболочку) и управляемый экземпляр.
+В отличие от управляемого вызываемых оболочек *следить за* должно выполняться перед удалением из таких экземпляров как *Dispose()* ing экземпляра нарушит сопоставление между экземплярами Java (экземпляр Android вызываемую оболочку) и управляемый экземпляр.
 
 
 ### <a name="java-activation"></a>Активация Java
@@ -115,11 +115,7 @@ Xamarin.Android приложения также содержат *Android с п�
 
 11. *LogTextBox (контекста IAttributeSet, int)* конструктор выполняет *на том же экземпляре, созданные в (7)* .
 
-12. ...
-
-
-Если (IntPtr, JniHandleOwnership) не удалось найти конструктор, а затем [System.MissingMethodException](https://developer.xamarin.com/api/type/System.MissingMethodException/) будет создано.
-
+12. Если (IntPtr, JniHandleOwnership) не удалось найти конструктор, затем System.MissingMethodException] (https://developer.xamarin.com/api/type/System.MissingMethodException/) будет создано.
 
 <a name="Premature_Dispose_Calls" />
 

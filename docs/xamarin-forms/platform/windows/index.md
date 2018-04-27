@@ -6,11 +6,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/20/2017
-ms.openlocfilehash: ab6b12738028b4f3439629f334ed5429244f4d5a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5056caf9ae5d9b738ec8de8cb42b7a7d7a7b110f
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="windows-platform-features"></a>Компоненты платформы Windows
 
@@ -20,19 +20,10 @@ ms.lasthandoff: 04/04/2018
 
 ## <a name="platform-support"></a>Поддержка платформ
 
-Xamarin.Forms шаблоны, доступные в Visual Studio содержат один проект Windows по умолчанию:
-
-* **Приложениях универсальной платформы Windows** -Xamarin.Forms приложения также могут быть оптимизированы для Windows 10. Универсальные приложения (UWP) можно запускать на телефон, планшетных и настольных компьютеров.
-
-Если вы установили параметры правильные разработки в Visual Studio, его можно также [добавить](installation/index.md) проектов этих типов для поддержки более старых версий Windows:
-
-* **Windows 8.1** — вы можете развертывать приложения Xamarin.Forms для планшетных и настольных конструктивных приложение Windows 8.1 как проект с помощью элементов управления WinRT.
-* **Windows Phone 8.1** -Xamarin.Forms имеет полную поддержку для платформы Windows Phone 8.1 с помощью WinRT. Внешний вид приложений с помощью поддержки Windows Phone 8.1 могут быть различными в более ранних приложения Windows Phone Xamarin.Forms, которые были основаны на Silverlight.
-
+Xamarin.Forms шаблоны, доступные в Visual Studio, содержат проект универсальной платформы Windows (UWP).
 
 > [!NOTE]
-> Поддержка 1.x и 2.x Xamarin.Forms _Windows Phone 8 Silverlight_ разработки приложений, однако рекомендуется к использованию этого типа проекта.
-
+> Поддержка 1.x и 2.x Xamarin.Forms _Windows Phone 8 Silverlight_, _Windows Phone 8.1_, и _Windows 8.1_ разработки приложений. Тем не менее являются устаревшими в этих типах проектов.
 
 ## <a name="getting-started"></a>Начало работы
 
@@ -41,13 +32,11 @@ Xamarin.Forms шаблоны, доступные в Visual Studio содержа
 Старые решения Xamarin.Forms, так и созданных на macOS, не будет иметь все проекты Windows, перечисленных выше (но они должны быть добавлены вручную).
 Если в вашем решении, посетите еще на платформу Windows, требуется выбрать [инструкции по установке](installation/index.md) добавить нужные Windows проектов типа в секунду.
 
-
 ## <a name="samples"></a>Примеры
 
-[Все образцы](https://github.com/xamarin/xamarin-forms-book-preview-2) Чарльз Петцольд книги [ *Создание мобильных приложений с помощью Xamarin.Forms* ](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) включают Windows Phone 8.1, Windows 8.1 и проектах универсальной платформы Windows (для Windows 10).
+[Все образцы](https://github.com/xamarin/xamarin-forms-book-preview-2) Чарльз Петцольд книги [ *Создание мобильных приложений с помощью Xamarin.Forms* ](~/xamarin-forms/creating-mobile-apps-xamarin-forms/index.md) проекты универсальной платформы Windows (для Windows 10).
 
 [«Скотт Хансельман» демонстрационных приложений](https://github.com/jamesmontemagno/Hanselman.Forms) доступна отдельно, а также включает проекты Apple Watch и Android с (с помощью Xamarin.iOS и Xamarin.Android соответственно, Xamarin.Forms не выполняется на этих платформах).
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

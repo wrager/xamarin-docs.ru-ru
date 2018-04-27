@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: 598136f43a23070d8bab04c18106738c9e6b0a52
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7b859dd58551675c121c5600ba9c691e4280a03b
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="introduction-to-effects"></a>Общие сведения о эффекты
 
@@ -41,7 +41,6 @@ Xamarin.Forms [страниц, макеты и элементы управлен
 |--- |--- |--- |--- |
 |iOS|Xamarin.Forms.Platform.iOS|UIView|UIView|
 |Android|Xamarin.Forms.Platform.Android|Группе ViewGroup|Просмотр|
-|Windows Phone 8.1|Xamarin.Forms.Platform.WinRT|FrameworkElement|FrameworkElement|
 |Универсальная платформа Windows (UWP)|Xamarin.Forms.Platform.UWP|FrameworkElement|FrameworkElement|
 
 Каждый платформой `PlatformEffect` класс предоставляет следующие свойства:

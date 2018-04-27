@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 9d822444196479dabd19f43f45f289117f64c05e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 964e2302c290930ec62752e51e7de388cb42ee32
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="customizing-a-listview"></a>Настройка ListView
 
 _Xamarin.Forms ListView — это представление, в которой отображается коллекция данных в вертикальном списке. В этой статье показано, как создать пользовательское средство отрисовки, инкапсулирующий список платформ и компоновок собственного ячейки, что позволяет лучше контролировать производительность собственный список управления._
 
-Каждый Xamarin.Forms представление имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) отрисовывается приложением Xamarin.Forms в iOS `ListViewRenderer` создается экземпляр класса, который в свою очередь создает собственный `UITableView` элемента управления. На платформе Android `ListViewRenderer` класс создает экземпляр собственного `ListView` элемента управления. В Windows Phone и универсальной платформы Windows (UWP) `ListViewRenderer` класс создает экземпляр собственного `ListView` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
+Каждый Xamarin.Forms представление имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) отрисовывается приложением Xamarin.Forms в iOS `ListViewRenderer` создается экземпляр класса, который в свою очередь создает собственный `UITableView` элемента управления. На платформе Android `ListViewRenderer` класс создает экземпляр собственного `ListView` элемента управления. В универсальной платформы Windows (UWP), `ListViewRenderer` класс создает экземпляр собственного `ListView` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
 
 На следующей схеме показана связь между [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) управления и соответствующие собственные элементы управления, которые реализуют:
 
@@ -467,15 +467,15 @@ protected override void OnElementPropertyChanged (object sender, System.Componen
 
 Метод создает новый экземпляр `NativeAndroidListViewAdapter` класс, предоставляющий данные собственному `ListView` управления, при условии, что привязываемых `NativeListView.Items` измененное свойство.
 
-### <a name="creating-the-custom-renderer-on-windows-phone-and-uwp"></a>Создание пользовательского средства визуализации на Windows Phone и UWP
+### <a name="creating-the-custom-renderer-on-uwp"></a>Создание пользовательского средства визуализации на UWP
 
-В следующем примере кода показано пользовательское средство отрисовки для Windows Phone и UWP.
+В следующем примере кода показано пользовательское средство отрисовки для UWP.
 
 ```csharp
-[assembly: ExportRenderer (typeof(NativeListView), typeof(NativeWinPhoneListViewRenderer))]
-namespace CustomRenderer.WinPhone81
+[assembly: ExportRenderer(typeof(NativeListView), typeof(NativeUWPListViewRenderer))]
+namespace CustomRenderer.UWP
 {
-    public class NativeWinPhoneListViewRenderer : ListViewRenderer
+    public class NativeUWPListViewRenderer : ListViewRenderer
     {
         ListView listView;
 

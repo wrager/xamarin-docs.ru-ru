@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/22/2017
-ms.openlocfilehash: 8315f1a0056c6a6f084ebfe2c29f0c0c2bb30330
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 02bea7e2ec927277a92c0732b25f590b5ae6704b
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="files"></a>Файлы
 
@@ -99,9 +99,6 @@ var resourcePrefix = "WorkingWithFiles.iOS.";
 #if __ANDROID__
 var resourcePrefix = "WorkingWithFiles.Droid.";
 #endif
-#if WINDOWS_PHONE
-var resourcePrefix = "WorkingWithFiles.WinPhone.";
-#endif
 
 Debug.WriteLine("Using this resource prefix: " + resourcePrefix);
 // note that the prefix includes the trailing period '.' that is required
@@ -142,7 +139,7 @@ foreach (var res in assembly.GetManifestResourceNames()) {
 
  [![Сохранение и загрузка текст](files-images/saveandload-sml.png "сохранение и загрузка файлов в приложении")](files-images/saveandload.png#lightbox "сохранение и загрузка файлов в приложении")
 
-Каждая платформа имеет структуру каталогов немного отличается и другую файловую систему возможности — например Xamarin.iOS и Xamarin.Android поддерживают большинство `System.IO` функции, но Windows Phone поддерживает только `IsolatedStorage` и [ `Windows.Storage` ](http://msdn.microsoft.com/library/windowsphone/develop/jj681698(v=vs.105).aspx) API-интерфейсы.
+Каждая платформа имеет структуру каталогов немного отличается и другую файловую систему возможности — например Xamarin.iOS и Xamarin.Android поддерживают большинство `System.IO` функции, но универсальной платформы Windows поддерживает только [ `Windows.Storage` ](/uwp/api/windows.storage/) API-интерфейсы.
 
 Чтобы обойти эту проблему, в примере приложения определяет интерфейс, в Xamarin.Forms PCL для загрузки и сохранения файлов. Он предоставляет простой API для загрузки и сохранения текстовых файлов, которое будет храниться на устройстве.
 
@@ -190,9 +187,9 @@ namespace WorkingWithFiles {
 }
 ```
 
-### <a name="universal-windows-platform-uwp-windows-81-and-windows-phone-81"></a>Универсальная платформа Windows (UWP), Windows 8.1 и Windows Phone 8.1
+### <a name="universal-windows-platform-uwp"></a>Универсальная платформа Windows (UWP)
 
-Эти платформы имеют другую файловую систему API — [ `Windows.Storage` ](/windows/uwp/files/quickstart-reading-and-writing-files/) — то есть используется для сохранения и загрузки файлов.
+UWP имеет другую файловую систему API — [ `Windows.Storage` ](/windows/uwp/files/quickstart-reading-and-writing-files/) — то есть используется для сохранения и загрузки файлов.
 `ISaveAndLoad` Интерфейс может быть реализован, как показано ниже:
 
 ```csharp
@@ -226,7 +223,6 @@ namespace WindowsApp
     }
 }
 ```
-
 
 <a name="Saving_and_Loading_in_Shared_Projects" />
 

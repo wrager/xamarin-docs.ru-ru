@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2016
-ms.openlocfilehash: 3e5f4f2d4c4025cce21026cc611af650616e69e2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4d1d4323e42df6240fee7be42ae8fac70a2b3f1f
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="customizing-a-viewcell"></a>Настройка ViewCell
 
 _Xamarin.Forms ViewCell — это ячейка, который может быть добавлен в ListView или TableView, которая содержит представления, определяемые разработчиком. В этой статье показано, как создать пользовательское средство отрисовки для ViewCell, который размещается в элементе управления Xamarin.Forms ListView. Это предотвратит вычисления макета Xamarin.Forms не вызывается несколько раз во время прокрутки ListView._
 
-Каждая ячейка Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `ViewCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) отрисовывается приложением Xamarin.Forms в iOS `ViewCellRenderer` создается экземпляр класса, который в свою очередь создает собственный `UITableViewCell` элемента управления. На платформе Android `ViewCellRenderer` класс создает экземпляр собственного `View` элемента управления. В Windows Phone и универсальной платформы Windows (UWP) `ViewCellRenderer` класс создает экземпляр собственного `DataTemplate`. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
+Каждая ячейка Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `ViewCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) отрисовывается приложением Xamarin.Forms в iOS `ViewCellRenderer` создается экземпляр класса, который в свою очередь создает собственный `UITableViewCell` элемента управления. На платформе Android `ViewCellRenderer` класс создает экземпляр собственного `View` элемента управления. В универсальной платформы Windows (UWP), `ViewCellRenderer` класс создает экземпляр собственного `DataTemplate`. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
 
 На следующей схеме показана связь между [ `ViewCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ViewCell/) и соответствующие собственные элементы управления, которые реализуют:
 
@@ -169,7 +169,7 @@ Xamarin.Forms [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Form
 
 ![](viewcell-images/screenshots.png "NativeCell на каждой платформе")
 
-`ViewCellRenderer` Класс предоставляет методы платформой для отрисовки пользовательских ячеек. Это `GetCell` метод на платформе iOS `GetCellCore` метод на платформе Android и `GetTemplate` метод на платформе Windows Phone.
+`ViewCellRenderer` Класс предоставляет методы платформой для отрисовки пользовательских ячеек. Это `GetCell` метод на платформе iOS `GetCellCore` метод на платформе Android и `GetTemplate` метод на UWP.
 
 Каждый класс пользовательского средства отрисовки снабжен `ExportRenderer` атрибут, который регистрирует модуль подготовки отчетов с помощью Xamarin.Forms. Атрибут принимает два параметра — имя типа ячейки Xamarin.Forms готовится к просмотру и имя типа пользовательского средства отрисовки. `assembly` Префикс в атрибут указывает, что атрибут применяется ко всей сборке.
 
@@ -519,15 +519,15 @@ internal class NativeAndroidCell : LinearLayout, INativeElementView
 
 Для этой структуры указывает два `TextView` элементов управления и `ImageView` управления используются для отображения содержимого ячейки. Два `TextView` элементы управления являются вертикально в `LinearLayout` управления со всеми элементами, которые включены в `RelativeLayout`.
 
-### <a name="creating-the-custom-renderer-on-windows-phone-and-uwp"></a>Создание пользовательского средства визуализации на Windows Phone и UWP
+### <a name="creating-the-custom-renderer-on-uwp"></a>Создание пользовательского средства визуализации на UWP
 
-В следующем примере кода показано пользовательское средство отрисовки для Windows Phone и UWP.
+В следующем примере кода показано пользовательское средство отрисовки для UWP.
 
 ```csharp
-[assembly: ExportRenderer(typeof(NativeCell), typeof(NativeWinPhoneCellRenderer))]
-namespace CustomRenderer.WinPhone81
+[assembly: ExportRenderer(typeof(NativeCell), typeof(NativeUWPCellRenderer))]
+namespace CustomRenderer.UWP
 {
-    public class NativeWinPhoneCellRenderer : ViewCellRenderer
+    public class NativeUWPCellRenderer : ViewCellRenderer
     {
         public override Windows.UI.Xaml.DataTemplate GetTemplate(Cell cell)
         {

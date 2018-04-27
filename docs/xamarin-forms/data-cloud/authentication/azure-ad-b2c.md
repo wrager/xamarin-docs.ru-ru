@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/07/2017
-ms.openlocfilehash: f17a6ad012aff81674db943b7d65e65ba77dca52
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 627c6773c099c9cf45f871a9bb73a201bf98271a
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="authenticating-users-with-azure-active-directory-b2c"></a>Проверка подлинности пользователей с Azure Active Directory B2C
 
@@ -60,7 +60,7 @@ MSAL использует веб-браузере устройства для п
 
 ### <a name="portable-class-library"></a>Переносимая библиотека классов
 
-MSAL не поддерживает Windows Phone 8.1, и поэтому PCLs, которые используют MSAL будет необходимо удалить этот целевой объект. Это можно сделать путем PCLs использовать Profile7 целевой платформы. Дополнительные сведения о переносимых библиотеках классов см. в разделе [Введение в переносимые библиотеки классов](~/cross-platform/app-fundamentals/pcl.md).
+PCLs, которые используют MSAL нужно будет изменена для использования Profile7. Дополнительные сведения о переносимых библиотеках классов см. в разделе [Введение в переносимые библиотеки классов](~/cross-platform/app-fundamentals/pcl.md).
 
 ### <a name="ios"></a>iOS
 

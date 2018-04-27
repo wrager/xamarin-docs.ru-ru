@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/05/2016
-ms.openlocfilehash: 78d14b9764ab0c7cafb9f09fa1c8acea3f45afde
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c913ea56af423631c48fb9ee6d8dcb95028a4144
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="passing-effect-parameters-as-common-language-runtime-properties"></a>Передача параметров эффект, как общие свойства среды выполнения языка
 
@@ -184,14 +184,14 @@ namespace EffectsDemo.Droid
 
 `OnAttached` Метод извлекает `ShadowEffect` экземпляра и вызовы [ `TextView.SetShadowLayer` ](https://developer.xamarin.com/api/member/Android.Widget.TextView.SetShadowLayer/p/System.Single/System.Single/System.Single/Android.Graphics.Color/) способ создания тени, используя заданные значения свойств. Эта функциональность упаковывается в `try` / `catch` блокировать, если элемент управления, присоединенный к эффект не `Control.Layer` свойства. Отсутствует реализация обеспечивается `OnDetached` метод так, как очистка не требуется.
 
-### <a name="windows-phone--universal-windows-platform-projects"></a>Windows Phone & проекты платформы универсальных приложений Windows
+### <a name="universal-windows-platform-project"></a>Платформа проекта универсального приложения Windows
 
-В следующем примере кода показан `LabelShadowEffect` реализации для проектов Windows Phone и универсальной платформы Windows (UWP):
+В следующем примере кода показан `LabelShadowEffect` реализации проекта универсальной платформы Windows (UWP):
 
 ```csharp
 [assembly: ResolutionGroupName ("Xamarin")]
 [assembly: ExportEffect (typeof(LabelShadowEffect), "LabelShadowEffect")]
-namespace EffectsDemo.WinPhone81
+namespace EffectsDemo.UWP
 {
     public class LabelShadowEffect : PlatformEffect
     {
@@ -229,7 +229,7 @@ namespace EffectsDemo.WinPhone81
 }
 ```
 
-Среды выполнения Windows и универсальной платформе Windows не предоставляют эффект тени и поэтому `LabelShadowEffect` имитирует реализации на обеих платформах путем добавления второго смещения [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) за основной `Label`. `OnAttached` Метод извлекает `ShadowEffect` , создает новый экземпляр `Label`и задает некоторые свойства макета `Label`. Затем он создает тени, задав [ `TextColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Label.TextColor/), [ `TranslationX` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.TranslationX/), и [ `TranslationY` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.TranslationY/) свойства, управляющие цвет и расположение `Label`. `shadowLabel` Затем вставляется смещение за основной `Label`. Эта функциональность упаковывается в `try` / `catch` блокировать, если элемент управления, присоединенный к эффект не `Control.Layer` свойства. Отсутствует реализация обеспечивается `OnDetached` метод так, как очистка не требуется.
+Универсальная платформа Windows не предоставляет эффект тени и поэтому `LabelShadowEffect` имитирует реализации на обеих платформах путем добавления второго смещения [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) за основной `Label`. `OnAttached` Метод извлекает `ShadowEffect` , создает новый экземпляр `Label`и задает некоторые свойства макета `Label`. Затем он создает тени, задав [ `TextColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Label.TextColor/), [ `TranslationX` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.TranslationX/), и [ `TranslationY` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.TranslationY/) свойства, управляющие цвет и расположение `Label`. `shadowLabel` Затем вставляется смещение за основной `Label`. Эта функциональность упаковывается в `try` / `catch` блокировать, если элемент управления, присоединенный к эффект не `Control.Layer` свойства. Отсутствует реализация обеспечивается `OnDetached` метод так, как очистка не требуется.
 
 ## <a name="summary"></a>Сводка
 
@@ -239,7 +239,7 @@ namespace EffectsDemo.WinPhone81
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
-- [Effect](https://developer.xamarin.com/api/type/Xamarin.Forms.Effect/)
+- [Эффект](https://developer.xamarin.com/api/type/Xamarin.Forms.Effect/)
 - [PlatformEffect](https://developer.xamarin.com/api/type/Xamarin.Forms.PlatformEffect%3CTContainer,TControl%3E/)
 - [RoutingEffect](https://developer.xamarin.com/api/type/Xamarin.Forms.RoutingEffect/)
 - [Эффект тени (пример)](https://developer.xamarin.com/samples/xamarin-forms/effects/shadoweffect/)

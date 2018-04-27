@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/22/2017
-ms.openlocfilehash: 09328e1c6d884898aed86f2cb8ab1b84bf6d5cab
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: 52c86c63c328729211c4fbd22bd10b5eb1e56615
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="fonts"></a>Шрифты
 
@@ -51,9 +51,9 @@ label.FontSize = 24;
 Можно также использовать `NamedSize` перечисления, который имеет четыре встроенных возможностей; Xamarin.Forms выбирает оптимальный размер для каждой платформы.
 
 -  **Micro**
--  **Small**
+-  **Небольшой**
 -  **Средний**
--  **Large**
+-  **Большой**
 
 
 `NamedSize` Перечисления можно использовать везде, где `FontSize` можно задать с помощью `Device.GetNamedSize` метод, чтобы преобразовать значение в `double`:
@@ -70,7 +70,7 @@ label.FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
 
 -  **None**
 -  **Полужирный**
--  **Italic**
+-  **курсив**
 
 `FontAttribute` Перечисления можно использовать следующим образом (можно указать один атрибут или `OR` их вместе):
 
@@ -166,7 +166,7 @@ Xamarin.Forms элементы управления, отображаемого 
         <OnPlatform x:TypeArguments="x:String">
                 <On Platform="iOS" Value="MarkerFelt-Thin" />
                 <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                <On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
         </OnPlatform>
     </Label.FontFamily>
 </Label>
@@ -178,7 +178,7 @@ Xamarin.Forms элементы управления, отображаемого 
 
 ## <a name="using-a-custom-font"></a>С помощью пользовательского шрифта
 
-С помощью отличных от встроенных гарнитуры шрифта требует определенную кодировку конкретную платформу. На этом снимке экрана показан пользовательский шрифт **Lobster** из [Google открытая шрифты](https://www.google.com/fonts) к просмотру на iOS, Android и Windows Phone с помощью Xamarin.Forms.
+С помощью отличных от встроенных гарнитуры шрифта требует определенную кодировку конкретную платформу. На этом снимке экрана показан пользовательский шрифт **Lobster** из [Google открытая шрифты](https://www.google.com/fonts) к просмотру с помощью Xamarin.Forms.
 
  [![Пользовательский шрифт в iOS и Android](fonts-images/custom-sml.png "пользовательские шрифты пример")](fonts-images/custom.png#lightbox "примере пользовательские шрифты")
 
@@ -240,7 +240,7 @@ new Label
         <OnPlatform x:TypeArguments="x:String">
                 <On Platform="iOS" Value="Lobster-Regular" />
                 <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                <On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
         </OnPlatform>
     </Label.FontFamily>
 </Label>

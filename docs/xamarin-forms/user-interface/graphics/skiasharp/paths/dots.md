@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 46ab21aa5156a6deab5952f165917cc299b500ac
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: 1e295ac424c311472ff175d4627c5fb12641d31f
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="dots-and-dashes"></a>Точек и тире
 
@@ -164,7 +164,7 @@ float[] GetPickerArray(Picker picker)
 - {30, 10} становится {20, 20} для пунктирная линия
 - {10, 10, 30, 10} становится {0, 20, 20, 20} пунктирная и штриховой линии
 
-Ограничения максимального экрана показывает Windows, точечные и пунктирных линий для штриха из `Round`. `Round` Окончаний обводки часто обеспечивает лучший вида точек и тире толстой линии.
+Ограничения максимального экрана показывает UWP, точечные и пунктирных линий для штриха из `Round`. `Round` Окончаний обводки часто обеспечивает лучший вида точек и тире толстой линии.
 
 До сих не указываются не выполнена для второго параметра `SKPathEffect.CreateDash` метод. Этот параметр называется `phase` и он ссылается на смещение в шаблон и пунктирная для начало строки. Например, если массив тире {10, 10} и `phase` равно 10, то строка начинается с пробел, а не точки.
 

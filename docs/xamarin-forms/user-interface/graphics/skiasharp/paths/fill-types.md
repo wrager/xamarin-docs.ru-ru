@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 6288a773fb7122c16b405b8a5056b23b7a59fb6d
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: d22ebf0e150c064835fa73765a65025f10ef4c2a
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="the-path-fill-types"></a>Типы заполнения путь
 
@@ -165,7 +165,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 [![](fill-types-images/fivepointedstar-small.png "Тройной снимок экрана со страницей звезда Five-Pointed")](fill-types-images/fivepointedstar-large.png#lightbox "тройной снимок экрана со страницей Five-Pointed звезда")
 
-Снимки мобильных устройств Android и Windows показаны типичные эффекты четный и поворота, но порядок обводки и заливки также влияет на результаты.
+Снимки экрана Android и UWP показаны типичные эффекты четный и поворота, но порядок обводки и заливки также влияет на результаты.
 
 Алгоритм поворота является зависимым от оси отображаются линии. Обычно при создании пути, можно управлять, направление задаются нарисовать линии из одной точки в другую. Тем не менее `SKPath` класс также определяет методы, такие как `AddRect` и `AddCircle` , нарисуйте все профили. Чтобы контролировать способ рисования эти объекты, методы включают параметр типа [ `SKPathDirection` ](https://developer.xamarin.com/api/type/SkiaSharp.SKPathDirection/), который имеет два члена:
 

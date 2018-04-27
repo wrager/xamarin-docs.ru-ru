@@ -7,12 +7,12 @@ ms.assetid: 44007FA1-3ABC-4935-BF52-4613AF0553A6
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/08/2018
-ms.openlocfilehash: c5937cc86a8a1f8506b14774b0429bee3c8aa594
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/25/2018
+ms.openlocfilehash: 44c3e4b0f05526560ff4b32808ba476110ce5e8f
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="hello-android-quickstart"></a>Привет, Android: краткое руководство
 
@@ -185,11 +185,10 @@ namespace Core
 (Resource.Layout.Main)`. Сначала измените код шаблона, чтобы метод `OnCreate` принял следующий вид:
 
 ```csharp
-using System;
 using Android.App;
-using Android.Content;
-using Android.Widget;
 using Android.OS;
+using Android.Widget;
+using Core;
 
 namespace Phoneword
 {
@@ -420,13 +419,10 @@ namespace Core
 Сначала добавьте обработчик событий для кнопки **Translate** (Преобразование). В классе `MainActivity` найдите метод `OnCreate`. Добавьте код кнопки в `OnCreate`, под вызовами `base.OnCreate(bundle)` и `SetContentView (Resource.Layout.Main)`. Удалите код обработки кнопки шаблона, чтобы метод `OnCreate` принял следующий вид:
 
 ```csharp
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using Android.Widget;
+using Core;
 
 namespace Phoneword
 {

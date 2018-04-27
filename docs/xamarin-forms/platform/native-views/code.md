@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 7979e43cdde60b1b0248118e591c096295847acb
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 46284fd1b0863f904e9f24f125aef75fe3eb8caa
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="native-views-in-c"></a>Собственные представления в C#
 
@@ -33,8 +33,7 @@ _Собственные представления из iOS, Android и UWP мо
 С помощью этих методов в общем проекте Xamarin.Forms требует импорта соответствующего пространства имен Xamarin.Forms платформ:
 
 - **iOS** – Xamarin.Forms.Platform.iOS
-- **Android** – Xamarin.Forms.Platform.Android
-- **Среда выполнения Windows** – Xamarin.Forms.Platform.WinRT
+- **Android** — Xamarin.Forms.Platform.Android
 - **Универсальная платформа Windows (UWP)** – Xamarin.Forms.Platform.UWP
 
 ## <a name="adding-platform-specific-views-on-each-platform"></a>Добавление представлений платформой на каждой платформе
@@ -70,7 +69,7 @@ contentView.Content = textView.ToView();
 
 Предполагается, что `stackLayout` и `contentView` экземпляры ранее были созданы в XAML и C#.
 
-### <a name="windows-runtime-and-universal-windows-platform"></a>Среда выполнения Windows и универсальной платформы Windows
+### <a name="universal-windows-platform"></a>Универсальная платформа Windows 
 
 В следующем примере кода показано, как добавить `TextBlock` для [ `StackLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/) и [ `ContentView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentView/):
 

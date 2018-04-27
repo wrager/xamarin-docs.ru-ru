@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 05/10/2017
-ms.openlocfilehash: 2ddaba4541af52ae119fbf504fdcc66ba357c113
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: e3205d83ba207322d4c53c4c6e98d4890ad48a77
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="xamarin-live-player-app"></a>Приложение динамической проигрыватель Xamarin
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 04/04/2018
 
 Xamarin Live Player доступен для Android в Google Play:
 
-[ ![Доступно на Google Play](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.xamarin.live)
+[![Доступно на Google Play](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.xamarin.live)
 
 Для устройств Android без Google Play Xamarin Live Player доступна через [HockeyApp](https://aka.ms/xlp-hockeyapp) распространения. Кроме того, предварительной версии сборки для Android можно установить непосредственно из Google Play с включением защиты для [открыть бета-версии программы](https://play.google.com/apps/testing/com.xamarin.live)
 
@@ -53,7 +53,7 @@ Xamarin Live Player доступен для Android в Google Play:
 
 Нажмите кнопку "Сведения" **(i)** в нижней части приложения, чтобы раскрыть **параметры** меню:
 
-[ ![Снимок экрана: меню «Параметры»](player-images/options-sml.png)](player-images/options.png#lightbox)
+[![Снимок экрана: меню «Параметры»](player-images/options-sml.png)](player-images/options.png#lightbox)
 
 ### <a name="logs"></a>Журналы
 
@@ -61,11 +61,11 @@ Xamarin Live Player доступен для Android в Google Play:
 
 ### <a name="settings"></a>Параметры
 
-* Показать или скрыть ошибки компиляции и времени выполнения.
-* Сведения о версии.
-* Отправьте отзыв.
+- Показать или скрыть ошибки компиляции и времени выполнения.
+- Сведения о версии.
+- Отправьте отзыв.
 
-[ ![Снимок экрана: параметры](player-images/settings-sml.png)](player-images/settings.png#lightbox)
+[![Снимок экрана: параметры](player-images/settings-sml.png)](player-images/settings.png#lightbox)
 
 ## <a name="managing-devices"></a>Управление устройствами
 
@@ -107,9 +107,8 @@ Xamarin Live Player доступен для Android в Google Play:
 
 При возникновении любой проблемы см. в разделе [ограничения и устранение неполадок](~/tools/live-player/troubleshooting.md).
 
-
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Ограничения](~/tools/live-player/limitations.md)
 - [Устранение неполадок](~/tools/live-player/troubleshooting.md)
-- [Образцы динамической проигрыватель Xamarin](~/tools/livehttps://developer.xamarin.com/samples.md)
+- [Образцы динамической проигрыватель Xamarin](samples.md)

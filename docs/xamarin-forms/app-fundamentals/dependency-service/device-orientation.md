@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: b8392dad578f94380e90da24cbf44120d38f754d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 09cd92b436be97f5490ac74890e4b0723bcd5701
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="checking-device-orientation"></a>Проверка ориентации устройства
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 04/04/2018
 - **[Создание интерфейса](#Creating_the_Interface)**  &ndash; понять, как интерфейс создается в общем коде.
 - **[Реализация iOS](#iOS_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинный код для iOS.
 - **[Реализация Android](#Android_Implementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для Android.
-- **[Реализация Windows](#WindowsImplementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для Windows Phone и универсальной платформы Windows (UWP).
+- **[Реализация UWP](#WindowsImplementation)**  &ndash; Узнайте, как реализовать интерфейс в машинном коде для универсальной платформы Windows (UWP).
 - **[Реализация в общем коде](#Implementing_in_Shared_Code)**  &ndash; использование `DependencyService` вызывать собственную реализацию из общего кода.
 
 Приложения с помощью `DependencyService` будет иметь следующую структуру:
@@ -145,9 +145,9 @@ namespace DependencyServiceSample.Droid {
 
 <a name="WindowsImplementation" />
 
-## <a name="windows-phone-and-universal-windows-platform-implementation"></a>Windows Phone и реализации платформы универсальных приложений Windows
+## <a name="universal-windows-platform-implementation"></a>Реализация платформы универсальных приложений Windows
 
-В следующем коде реализуется `IDeviceOrientation` интерфейса на Windows Phone и универсальной платформе Windows:
+В следующем коде реализуется `IDeviceOrientation` интерфейса на универсальной платформе Windows:
 
 ```csharp
 namespace DependencyServiceSample.WindowsPhone

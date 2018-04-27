@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/25/2015
-ms.openlocfilehash: d07026fbcc43a43a9f26d85ad15d5a4e3165e2ef
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 110c608558059ba0f207b4cff343b428125e1784
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="absolutelayout"></a>AbsoluteLayout
 
@@ -282,11 +282,7 @@ Title="AbsoluteLayout">
 
 ![](absolute-layout-images/abs.png "Сложные AbsoluteLayout")
 
-Обратите внимание, что связано с различиями в подготовку к просмотру кнопок с Windows Phone, некоторые из кругов были заменены boxviews на снимке экрана Windows Phone.
-
 Обратите внимание, что `AbsoluteLayout`вложены s, так как в некоторых случаях вложенности макеты может оказаться удобнее, чем представления все элементы в тот же макет.
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

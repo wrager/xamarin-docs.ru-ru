@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: 511a7052b07a853279f91211b3e3b1219f125c59
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d16c45b7f7cb7eef67a905b6fbcb9b8675b0b2ba
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="listview-interactivity"></a>Интерактивность ListView
 
@@ -53,12 +53,10 @@ SelectionDemoList.ItemSelected += (sender, e) => {
 
 ![](interactivity-images/selection-default.png "ListView с поддерживает выбор")
 
-Обратите внимание, что на Windows Phone, некоторые ячейки, включая `SwitchCell` не обновлять их визуальное состояние в ответ на выбор.
-
 <a name="Context_Actions" />
 
 ## <a name="context-actions"></a>Контекст действия
-Часто пользователи будет нужно предпринять действия на элемент в `ListView`. Например рассмотрим список адресов электронной почты в почтовом приложении. На iOS можно проведите, чтобы удалить сообщение и на Windows Phone можно долго press сообщения и затем удалите его.
+Часто пользователи будет нужно предпринять действия на элемент в `ListView`. Например рассмотрим список адресов электронной почты в почтовом приложении. На iOS, могут проведите для удаления сообщения:
 
 ![](interactivity-images/context-default.png "ListView с действиями контекста")
 
@@ -149,8 +147,6 @@ listView.IsPullToRefreshEnabled = true;
 ![](interactivity-images/refresh-start.png "Запросите ListView, чтобы обновить в процессе выполнения")
 
 Запросу на обновление имени пользователя был выпущен запросу. Это то, что пользователь видит при обновлении списка: ![ ] (interactivity-images/refresh-in-progress.png "запросу ListView для завершения обновления")
-
-Обратите внимание, что на момент Xamarin.Forms 1.4.3 запросу на обновление не поддерживается в Windows Phone 8.1. В Windows phone 8 запросу, чтобы обновить не возможность собственной платформы, поэтому реализация запросу, чтобы обновить обеспечивается Xamarin.Forms. Помните, что запросу на обновление не будет работать на Windows Phone, если все элементы в списке может поместиться на экране (другими словами, если прокрутка по вертикали не требуется).
 
 ListView предоставляет несколько событий, которые позволяют реагировать на события запросу на обновление.
 

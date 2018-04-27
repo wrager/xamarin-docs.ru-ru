@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 1e8ef47ceb381a0e4e163aaa24795d46264195da
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c120add5a301e440911bd9794da77732e7787cc0
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="customizing-an-entry"></a>Настройка записи
 
 _Управление ввода Xamarin.Forms позволяет одну строку текста, который нужно изменить. В этой статье показано, как создать пользовательское средство отрисовки для элемента управления ввода, что позволяет разработчикам переопределять собственного отрисовку по умолчанию с свои собственные настройки конкретную платформу._
 
-Каждый элемент управления Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) элемент управления отрисовывается приложением Xamarin.Forms в iOS `EntryRenderer` создается экземпляр класса, который в свою очередь, приводит создает собственный `UITextField` элемента управления. На платформе Android `EntryRenderer` класс создает экземпляры `EditText` элемента управления. В Windows Phone и универсальной платформы Windows (UWP) `EntryRenderer` класс создает экземпляры `TextBox` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
+Каждый элемент управления Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) элемент управления отрисовывается приложением Xamarin.Forms в iOS `EntryRenderer` создается экземпляр класса, который в свою очередь, приводит создает собственный `UITextField` элемента управления. На платформе Android `EntryRenderer` класс создает экземпляры `EditText` элемента управления. В универсальной платформы Windows (UWP), `EntryRenderer` класс создает экземпляры `TextBox` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
 
 На следующей схеме показана связь между [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) управления и соответствующие собственные элементы управления, которые реализуют:
 
@@ -178,13 +178,13 @@ namespace CustomRenderer.Android
 
 Вызов базового класса `OnElementChanged` метод создает Android `EditText` управления со ссылкой на элемент управления, назначаемый модуль подготовки отчетов `Control` свойство. Цвет фона устанавливается в светло-зеленый с `Control.SetBackgroundColor` метод.
 
-### <a name="creating-the-custom-renderer-on-windows-phone-and-uwp"></a>Создание пользовательского средства визуализации на Windows Phone и UWP
+### <a name="creating-the-custom-renderer-on-uwp"></a>Создание пользовательского средства визуализации на UWP
 
-В следующем примере кода показано пользовательское средство отрисовки для Windows Phone и UWP.
+В следующем примере кода показано пользовательское средство отрисовки для UWP.
 
 ```csharp
 [assembly: ExportRenderer(typeof(MyEntry), typeof(MyEntryRenderer))]
-namespace CustomRenderer.WinPhone81
+namespace CustomRenderer.UWP
 {
     public class MyEntryRenderer : EntryRenderer
     {

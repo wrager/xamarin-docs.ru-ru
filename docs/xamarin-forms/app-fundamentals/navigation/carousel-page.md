@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: d55d8c8d98828097c842cc383037db88097b963d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 035254f87e52801d5ff7419f9ad9d5503f060020
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="carousel-page"></a>Страница «карусель»
 
@@ -45,7 +45,7 @@ _Xamarin.Forms CarouselPage — это страница, пользовател�
 - [Заполнение](#Populating_a_CarouselPage_with_a_Page_Collection) `CarouselPage` с коллекцию дочерних [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров.
 - [Назначьте](#Populating_a_CarouselPage_with_a_Template) коллекции [ `ItemsSource` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%601.ItemsSource/) свойство и назначить [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/) для [ `ItemTemplate` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%601.ItemTemplate/) свойство для возврата [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров объектов в коллекции.
 
-Используя оба способа `CarouselPage` будет затем отображения каждой страницы в свою очередь, проведите участия, перемещение на следующую страницу для отображения. Эти возможности навигации будут испытывать естественным и знакомые пользователям Windows Phone.
+Используя оба способа `CarouselPage` будет затем отображения каждой страницы в свою очередь, проведите участия, перемещение на следующую страницу для отображения. 
 
 > [!NOTE]
 > Объект [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) можно заполнять атрибутами [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров, или `ContentPage` производных продуктов.
@@ -246,7 +246,7 @@ public class MainPageCS : CarouselPage
 
 ## <a name="summary"></a>Сводка
 
-В этой статье показано, как использовать [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) для перемещения по коллекции страниц. `CarouselPage` — Это страница, пользователи могут проведите стороны перемещаться по страницам содержимого, такие как коллекции и предоставляет возможности навигации, в том числе естественным и знакомые пользователям Windows Phone.
+В этой статье показано, как использовать [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) для перемещения по коллекции страниц. `CarouselPage` — Это страница, пользователи могут проведите из стороны в сторону для перемещения по страницам содержимого, так же как коллекция.
 
 
 ## <a name="related-links"></a>Связанные ссылки

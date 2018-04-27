@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 58f5a64f85dbe5a6889e6ff598c14fdfd9b0a5df
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: da3025f2616c91488ec70e25836351b08e957494
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="customizing-a-contentpage"></a>Настройка ContentPage
 
 _ContentPage является визуальный элемент, который отображает одно представление и занимает большую часть экрана. В этой статье показано, как создать пользовательское средство отрисовки страницы ContentPage, позволяя разработчикам выполнять переопределить свои собственные настройки платформой собственного отрисовки по умолчанию._
 
-Каждый элемент управления Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) отрисовывается приложением Xamarin.Forms в iOS `PageRenderer` создается экземпляр класса, который в свою очередь создает собственный `UIViewController` элемента управления. На платформе Android `PageRenderer` класс создает экземпляры `ViewGroup` элемента управления. В Windows Phone и универсальной платформы Windows (UWP) `PageRenderer` класс создает экземпляры `FrameworkElement` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
+Каждый элемент управления Xamarin.Forms имеет сопутствующий модуль подготовки отчетов для каждой платформы, который создает экземпляр собственного элемента управления. Когда [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) отрисовывается приложением Xamarin.Forms в iOS `PageRenderer` создается экземпляр класса, который в свою очередь создает собственный `UIViewController` элемента управления. На платформе Android `PageRenderer` класс создает экземпляры `ViewGroup` элемента управления. В универсальной платформы Windows (UWP), `PageRenderer` класс создает экземпляры `FrameworkElement` элемента управления. Дополнительные сведения о модуль подготовки отчетов и классы собственный элемент управления, которые сопоставляются с элементами управления Xamarin.Forms см [подготовки базовых классов и собственные элементы управления](~/xamarin-forms/app-fundamentals/custom-renderer/renderers.md).
 
 На следующей схеме показана связь между [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) и соответствующие собственные элементы управления, которые реализуют:
 
@@ -197,57 +197,6 @@ namespace CustomRenderer.Droid
 Вызов базового класса `OnElementChanged` метод создает Android `ViewGroup` элемента управления, который представляет собой группу представления. Поток динамической камеры только подготавливается к просмотру условии, что модуль подготовки отчетов, уже не присоединяется к существующим элементом Xamarin.Forms и при условии, что существует экземпляр страницы, который отображается пользовательского модуля подготовки отчетов.
 
 Затем пользовательские страницы путем вызова ряд методов, использующих `Camera` API, чтобы предоставить динамический поток из камеры и собирать фотографии, перед `AddView` вызова метода для добавления динамической камеры потока пользовательского интерфейса для `ViewGroup`.
-
-### <a name="creating-the-page-renderer-on-windows-phone"></a>Создание страницы модуля подготовки отчетов для Windows Phone
-
-В следующем примере кода показано разрывами страниц для платформы Windows Phone.
-
-```csharp
-[assembly: ExportRenderer (typeof(CameraPage), typeof(CameraPageRenderer))]
-namespace CustomRenderer.WinPhone81
-{
-    public class CameraPageRenderer : PageRenderer
-    {
-        ...
-
-        protected override void OnElementChanged (VisualElementChangedEventArgs e)
-        {
-            base.OnElementChanged (e);
-
-            if (e.OldElement != null || Element == null) {
-                return;
-            }
-
-            try {
-                ...
-                var container = ContainerElement as Canvas;
-
-                SetupUserInterface ();
-                SetupEventHandlers ();
-                SetupLiveCameraStream ();
-                container.Children.Add (page);
-            }
-            ...
-        }
-
-        protected override Size ArrangeOverride(Size finalSize)
-        {
-            page.Arrange(new Windows.Foundation.Rect(0, 0, finalSize.Width, finalSize.Height));
-            return finalSize;
-        }
-        ...
-    }
-}
-```
-
-Вызов базового класса `OnElementChanged` метод создает Windows Phone `Canvas` управления, отображении страницы. Поток динамической камеры только подготавливается к просмотру условии, что модуль подготовки отчетов, уже не присоединяется к существующим элементом Xamarin.Forms и при условии, что существует экземпляр страницы, который отображается пользовательского модуля подготовки отчетов.
-
-На платформе Windows Phone типизированную ссылку на страницу машинный код, который используется на платформе можно получить с помощью `ContainerElement` свойства, с `Canvas` контролируют типизированную ссылку на `FrameworkElement`. Затем пользовательские страницы путем вызова ряд методов, использующих `MediaCapture` API, чтобы предоставить динамический поток из камеры и собирать фотографии, перед добавлением настроенной страницы `Canvas` для отображения.
-
-При реализации пользовательского средства отрисовки, который является производным от `PageRenderer` на среду выполнения Windows `ArrangeOverride` метод также должен быть реализован для размещения элементов управления страницы, так как базовый модуль подготовки отчетов не знает, что с ними делать. В противном случае — пустая страница результатов. Таким образом, в этом примере `ArrangeOverride` вызовы метода `Arrange` метод `Page` экземпляра.
-
-> [!NOTE]
-> Очень важно для остановки и удаления объектов, которые обеспечивают доступ к камере в приложения Windows Phone 8.1 WinRT. Невыполнение этого требования может повлиять на другие приложения, которые пытаются получить доступ к камере устройства. Дополнительные сведения см. в разделе `CleanUpCaptureResourcesAsync` метода в проекте Windows Phone в образце решения и [краткое руководство: запись видео с помощью MediaCapture API](https://msdn.microsoft.com/library/windows/apps/xaml/dn642092.aspx).
 
 ### <a name="creating-the-page-renderer-on-uwp"></a>Создание страницы модуля подготовки отчетов на UWP
 

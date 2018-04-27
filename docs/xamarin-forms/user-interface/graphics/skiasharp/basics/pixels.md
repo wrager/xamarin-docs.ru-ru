@@ -7,11 +7,11 @@ ms.assetid: 26C25BB8-FBE8-4B77-B01D-16A163A16890
 author: charlespetzold
 ms.author: chape
 ms.date: 02/09/2017
-ms.openlocfilehash: e01d3e228a0684865fb09dd7a4cbb0e2f0b49125
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: 95f782fd4670782217d8ce4bc055341747a71170
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="pixels-and-device-independent-units"></a>Пикселей и аппаратно независимых единицах
 
@@ -102,7 +102,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
 Как видите, `CanvasSize` свойство `SKCanvasView` и `Size` свойство `SKImageInfo` значение согласованы в отчетности в пикселах. `Height` И `Width` свойства `SKCanvasView` являются свойства Xamarin.Forms и отчет, размер представления в аппаратно независимых единицах, определенные платформой.
 
-Имитатор iOS 7 слева имеет 2 пикселя в аппаратно независимая единица, Android 5 хранилища в центре имеет 3 точки на единицу и 925 Lumia Nokia справа имеет 2,25 пикселей на единицу. Что почему простой circle показано ранее выглядит о одинакового размера для iPhone и Windows phone, но меньше на телефоне Android.
+Имитатор iOS 7 слева имеет 2 пикселя в аппаратно независимая единица и Android 5 хранилища в центре 3 пикселей на единицу. Вот почему простого круга, показанного выше имеет разные размеры на разных платформах.
 
 Если вы предпочитаете работать полностью в аппаратно независимых единицах, это можно сделать, задав `IgnorePixelScaling` свойство `SKCanvasView` для `true`. Тем не менее могут не устроит результат. SkiaSharp отображает графики на поверхности меньшего размера устройства равен размеру представления в аппаратно независимых единицах размера пикселей. (Например, SkiaSharp будет использоваться отображаемой области 360 x 512 пикселей на 5 хранилища.) Затем масштабировании изображения в размер, что jaggies заметно растрового изображения.
 

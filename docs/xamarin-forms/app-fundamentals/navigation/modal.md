@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 909a04398043a3c2f0c30e4da82d174a6bfaf148
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 00d52aa69372ab5ec3073e2355a43521b515ca8b
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="modal-pages"></a>Модальные страниц
 
@@ -100,7 +100,7 @@ async void OnDismissButtonClicked (object sender, EventArgs args)
 
 ### <a name="disabling-the-back-button"></a>Отключение кнопки "Назад"
 
-На Android и Windows Phone, пользователь всегда можно вернуться на предыдущую страницу, нажав клавишу стандартной *обратно* кнопку на устройстве. Если модальные страницы требуется пользователь должен выполнить задачу самодостаточным перед выходом из страницы, необходимо отключить приложение *обратно* кнопки. Это можно сделать путем переопределения [ `Page.OnBackButtonPressed` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Page.OnBackButtonPressed/) метода на странице модальным. Дополнительные сведения см. [Глава 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) Чарльз Петцольд Xamarin.Forms книги.
+В Android пользователь всегда можно вернуться на предыдущую страницу, нажав клавишу стандартной *обратно* кнопку на устройстве. Если модальные страницы требуется пользователь должен выполнить задачу самодостаточным перед выходом из страницы, необходимо отключить приложение *обратно* кнопки. Это можно сделать путем переопределения [ `Page.OnBackButtonPressed` ](https://developer.xamarin.com/api/member/Xamarin.Forms.Page.OnBackButtonPressed/) метода на странице модальным. Дополнительные сведения см. [Глава 24](https://developer.xamarin.com/r/xamarin-forms/book/chapter24.pdf) Чарльз Петцольд Xamarin.Forms книги.
 
 ### <a name="animating-page-transitions"></a>Страница проходит анимации
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/25/2015
-ms.openlocfilehash: 638243958fce34871089b10185f150492dbd2b0d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c27f94302037e4e19c9d72131e7137c8a4004d5c
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="stacklayout"></a>StackLayout
 
@@ -215,8 +215,6 @@ Title="StackLayouts">
 Приведенный выше код результатов в следующем формате:
 
 ![](stack-layout-images/stack.png "Сложные StackLayout")
-
-Обратите внимание, что связано с различиями в подготовку к просмотру кнопок с Windows Phone, некоторые из кругов были заменены boxviews на снимке экрана Windows Phone.
 
 Обратите внимание, что `StackLayouts`вложены s, так как в некоторых случаях вложенности макеты может оказаться удобнее, чем представления все элементы в тот же макет. Также Обратите внимание, что, поскольку `StackLayout` не поддерживает перекрывающиеся элементы не имеют некоторые изысканных возможностей макета найти страницу на страницах для других макетов.
 

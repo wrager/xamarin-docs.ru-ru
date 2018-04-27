@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/25/2015
-ms.openlocfilehash: 2edd7a982d0307475933a234e7e1fbb8dd8d6a34
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 924aa88d29379c98204fd810c651de56ff757971
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="relativelayout"></a>RelativeLayout
 
@@ -221,8 +221,6 @@ Title="RelativeLayout">
 Приведенный выше код результатов в следующем формате:
 
 ![](relative-layout-images/relative.png "Сложные RelativeLayout")
-
-Обратите внимание, что связано с различиями в подготовку к просмотру кнопок с Windows Phone, некоторые из кругов были заменены boxviews на снимке экрана Windows Phone.
 
 Обратите внимание, что `RelativeLayouts`вложены s, так как в некоторых случаях вложенности макеты может оказаться удобнее, чем представления все элементы в тот же макет. Также Обратите внимание, что некоторые элементы `RelativeToView`, так как, обеспечивает простой и интуитивно макет при связи между представлениями руководства позиционирования.
 

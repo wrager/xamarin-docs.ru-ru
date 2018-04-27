@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2016
-ms.openlocfilehash: 773636cf879439477a6f71e44f13ae66b8f10ea8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 6138bd1f9211248b3a260795c2ef9d3db87580be
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="creating-an-effect"></a>Создание эффекта
 
@@ -150,17 +150,17 @@ namespace EffectsDemo.Droid
 
 `OnElementPropertyChanged` Переопределения реагирует на изменения привязываемые свойства элемента управления Xamarin.Forms. Когда [ `IsFocused` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.IsFocused/) изменения свойств, цвет фона элемента управления изменяется на белый, если элемент управления имеет фокус, в противном случае он изменяется на светло-зеленый. Эта функциональность упаковывается в `try` / `catch` блокировки в случае элементом управления, эффект присоединяется к не `BackgroundColor` свойство.
 
-## <a name="windows-phone--universal-windows-platform-projects"></a>Windows Phone & проекты платформы универсальных приложений Windows
+## <a name="universal-windows-platform-projects"></a>Проекты платформы универсальных приложений Windows
 
-В следующем примере кода показан `FocusEffect` реализации для проектов Windows Phone и универсальной платформы Windows (UWP):
+В следующем примере кода показан `FocusEffect` реализацию проекты универсальной платформы Windows (UWP):
 
 ```csharp
 using Xamarin.Forms;
-using Xamarin.Forms.Platform.WinRT;
+using Xamarin.Forms.Platform.UWP;
 
 [assembly: ResolutionGroupName("MyCompany")]
 [assembly: ExportEffect(typeof(FocusEffect), "FocusEffect")]
-namespace EffectsDemo.WinPhone81
+namespace EffectsDemo.UWP
 {
     public class FocusEffect : PlatformEffect
     {
@@ -256,7 +256,7 @@ public HomePageCS ()
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Пользовательские отрисовщики](~/xamarin-forms/app-fundamentals/custom-renderer/index.md)
-- [Effect](https://developer.xamarin.com/api/type/Xamarin.Forms.Effect/)
+- [Эффект](https://developer.xamarin.com/api/type/Xamarin.Forms.Effect/)
 - [PlatformEffect](https://developer.xamarin.com/api/type/Xamarin.Forms.PlatformEffect%3CTContainer,TControl%3E/)
 - [Фоновый цвет эффект (пример)](https://developer.xamarin.com/samples/xamarin-forms/effects/backgroundcoloreffect/)
 - [Эффект фокусировки (пример)](https://developer.xamarin.com/samples/xamarin-forms/effects/focuseffect/)

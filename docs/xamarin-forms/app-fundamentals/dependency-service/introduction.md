@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/06/2017
-ms.openlocfilehash: 01953d55a104a70b0451c9b796c732254afb081e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 88821c5315fc338b5195e42ea4b2bc3e648e6ea1
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="introduction-to-dependencyservice"></a>Знакомство с помощью DependencyService
 
@@ -48,53 +48,64 @@ public interface ITextToSpeech {
 
 ### <a name="implementation-per-platform"></a>Реализация каждой платформы
 
-После подходящий интерфейс было разработано, этот интерфейс должен быть реализован для каждой платформы, которая будет использоваться в проекте. Например, следующие классы реализуют `ITextToSpeech` интерфейса на Windows Phone:
+После подходящий интерфейс было разработано, этот интерфейс должен быть реализован для каждой платформы, которая будет использоваться в проекте. Например, следующий класс реализует `ITextToSpeech` интерфейса на iOS:
 
 ```csharp
-namespace TextToSpeech.WinPhone
+namespace UsingDependencyService.iOS
 {
-  public class TextToSpeechImplementation : ITextToSpeech
-  {
-      public TextToSpeechImplementation() {}
+    public class TextToSpeech_iOS : ITextToSpeech
+    {
+        public void Speak (string text)
+        {
+            var speechSynthesizer = new AVSpeechSynthesizer ();
 
-      public async void Speak(string text)
-      {
-          SpeechSynthesizer synth = new SpeechSynthesizer();
-          await synth.SpeakTextAsync(text);
-      }
-  }
+            var speechUtterance = new AVSpeechUtterance (text) {
+                Rate = AVSpeechUtterance.MaximumSpeechRate/4,
+                Voice = AVSpeechSynthesisVoice.FromLanguage ("en-US"),
+                Volume = 0.5f,
+                PitchMultiplier = 1.0f
+            };
+
+            speechSynthesizer.SpeakUtterance (speechUtterance);
+        }
+    }
 }
 ```
 
-Обратите внимание, что в каждой реализации должны конструктор по умолчанию (без параметров) в порядке для `DependencyService` чтобы иметь возможность создать его экземпляр. Конструкторы без параметров не может определяться в интерфейсе.
-
 ### <a name="registration"></a>Регистрация
 
-Каждая реализация интерфейса должен быть зарегистрирован с `DependencyService` с помощью атрибута метаданных. Следующий код регистрирует реализацию для Windows Phone:
+Каждая реализация интерфейса должен быть зарегистрирован с `DependencyService` с помощью атрибута метаданных. Следующий код регистрирует реализацию для iOS:
 
 ```csharp
-using TextToSpeech.WinPhone;
-
-[assembly: Xamarin.Forms.Dependency (typeof (TextToSpeechImplementation))]
-namespace TextToSpeech.WinPhone {
+[assembly: Dependency (typeof (TextToSpeech_iOS))]
+namespace UsingDependencyService.iOS
+{
   ...
+}
 ```
 
 Подведение итогов, специфический для платформы реализация выглядит следующим образом:
 
 ```csharp
-[assembly: Xamarin.Forms.Dependency (typeof (TextToSpeechImplementation))]
-namespace TextToSpeech.WinPhone {
-  public class TextToSpeechImplementation : ITextToSpeech
-  {
-      public TextToSpeechImplementation() {}
+[assembly: Dependency (typeof (TextToSpeech_iOS))]
+namespace UsingDependencyService.iOS
+{
+    public class TextToSpeech_iOS : ITextToSpeech
+    {
+        public void Speak (string text)
+        {
+            var speechSynthesizer = new AVSpeechSynthesizer ();
 
-      public async void Speak(string text)
-      {
-          SpeechSynthesizer synth = new SpeechSynthesizer();
-          await synth.SpeakTextAsync(text);
-      }
-  }
+            var speechUtterance = new AVSpeechUtterance (text) {
+                Rate = AVSpeechUtterance.MaximumSpeechRate/4,
+                Voice = AVSpeechSynthesisVoice.FromLanguage ("en-US"),
+                Volume = 0.5f,
+                PitchMultiplier = 1.0f
+            };
+
+            speechSynthesizer.SpeakUtterance (speechUtterance);
+        }
+    }
 }
 ```
 
@@ -102,7 +113,7 @@ namespace TextToSpeech.WinPhone {
 
 #### <a name="universal-windows-platform-net-native-compilation"></a>Универсальные приложения для Windows платформа .NET компиляция в собственном коде
 
-Проекты UWP, используйте параметр компиляции машинного кода .NET, должны соответствовать [немного другой конфигурации](~/xamarin-forms/platform/windows/installation/universal.md#target-invocation-exception) при инициализации Xamarin.Forms. Компиляция машинного кода .NET также требует немного отличается регистрации для зависимых служб.
+Проекты UWP, используйте параметр компиляции машинного кода .NET, должны соответствовать [немного другой конфигурации](~/xamarin-forms/platform/windows/installation/index.md#target-invocation-exception) при инициализации Xamarin.Forms. Компиляция машинного кода .NET также требует немного отличается регистрации для зависимых служб.
 
 В **App.xaml.cs** файла, вручную зарегистрировать каждой службы зависимостей, определенных в проекте UWP с помощью `Register<T>` метода, как показано ниже:
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/09/2015
-ms.openlocfilehash: 9d1b10925f1455c303950eff342764b1fbc9275d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b06b17ce8f19f7f7cabe35c23de5b61db8f71dbe
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="device-orientation"></a>Ориентации устройства
 
@@ -28,9 +28,6 @@ ms.lasthandoff: 04/04/2018
 ## <a name="controlling-orientation"></a>Управление ориентации
 
 Используя Xamarin.Forms, поддерживаемый метод управления ориентацией устройства — использовать параметры для каждого отдельного проекта.
-
-> [!NOTE]
-> Начиная с Xamarin.Forms 1.5.0 есть ошибки, который не позволяет пытается управлять ориентацией сбой пользовательского модуля подготовки отчетов под управлением. В разделе [данного обсуждения](https://forums.xamarin.com/discussion/46653/forcing-landscape-for-a-single-page-in-ios#latest)данного обсуждения в форумах Xamarin для получения дополнительной информации.
 
 ### <a name="ios"></a>iOS
 
@@ -57,7 +54,6 @@ ms.lasthandoff: 04/04/2018
 ![Поддерживаемые ориентации устройства в Visual Studio для Mac](device-orientation-images/orientation-xam-source.png)
 
 -----
-
 
 ### <a name="android"></a>Android
 
@@ -93,27 +89,9 @@ Xamarin.Android поддерживает несколько параметров
 
 Обратите внимание, что собственных API Android обеспечивают значительную степень контроля над управление ориентации, включая параметры, которые явно указана другая пользователя выражено предпочтения.
 
-### <a name="windows-phone"></a>Windows Phone
+### <a name="universal-windows-platform"></a>Универсальная платформа Windows
 
-В Windows Phone RT, поддерживаемые ориентации задаются в <span class="UIItem">Package.appxmanifest</span> файла. Открытия манифеста раскроют панель конфигурации, где можно выбрать поддерживаемые ориентации:
-
-![](device-orientation-images/vs-winrt-config.png "Редактор Visual Package.appxmanifest")
-
-В Windows Phone 8 (Silverlight), поддерживаемые ориентации задаются в коде в <span class="UIItem">MainPage.xaml.cs</span> файла. В шаблоне проекта по умолчанию значение уже имеет следующую строку кода:
-
-```csharp
-SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
-```
-
-Чтобы указать параметры ориентации на Windows Phone, замените, код, чтобы обеспечить ориентацию, которые нужно:
-
-```csharp
-SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
-SupportedOrientations = SupportedPageOrientation.Portrait; // portrait only
-SupportedOrientations = SupportedPageOrientation.Landscape; // landscape only
-```
-
-Обратите внимание, что Windows Phone поддерживает альбомная представления в обоих (как показано с книжной) ориентации слева направо и справа налево. Укажите используемый невозможна.
+В универсальной платформы Windows (UWP), поддерживаемые ориентации задаются в **Package.appxmanifest** файла. Открытия манифеста раскроют панель конфигурации, где можно выбрать поддерживаемые ориентации.
 
 <a name="Reacting_to_Changes_in_Orientation" />
 

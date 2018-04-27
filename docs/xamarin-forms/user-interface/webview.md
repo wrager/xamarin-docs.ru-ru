@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: a96c57b66e5debbbb7318c22e33a21eb9b998395
-ms.sourcegitcommit: 271d3f7ea4abfcf87734d2c747a68cb8114d743c
+ms.openlocfilehash: ed37e723d4b1a7997890c41886df8d117425e270
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="webview"></a>Веб-представление
 
@@ -33,12 +33,12 @@ ms.lasthandoff: 04/08/2018
 Веб-представление содержит поддержки для следующих типов содержимого.
 
 - Веб-сайтов HTML и CSS &ndash; WebView имеет полную поддержку для веб-сайтов, написанные с использованием HTML и CSS, включая поддержку JavaScript.
-- Документы &ndash; WebView реализована с помощью собственных компонентов на каждой платформе, WebView способен отображать документы, которые могут быть отображены на каждой платформе. Что означает, что PDF-файлами, работать на iOS и Android, но не для Windows Phone.
+- Документы &ndash; WebView реализована с помощью собственных компонентов на каждой платформе, WebView способен отображать документы, которые могут быть отображены на каждой платформе. Это означает, что PDF-файлов выполняется в iOS и Android.
 - Строк HTML &ndash; WebView можно показать строки HTML из памяти.
 - Локальные файлы &ndash; WebView может представлять любой из типов содержимого выше внедренных в приложение.
 
 > [!NOTE]
-> `WebView` в Windows и Windows Phone не поддерживает Silverlight, Flash или элементы управления ActiveX, даже если они поддерживаются в Internet Explorer на этой платформе.
+> `WebView` в Windows не поддерживает Silverlight, Flash или элементы управления ActiveX, даже если они поддерживаются в Internet Explorer на этой платформе.
 
 ### <a name="websites"></a>Веб-сайты
 
@@ -231,28 +231,9 @@ using (var streamReader = new StreamReader (assetManager.Open ("local.html"))) {
 }
 ```
 
-#### <a name="windows-phone"></a>Windows Phone
+#### <a name="universal-windows-platform"></a>Универсальная платформа Windows 
 
-В Windows Phone, поместите HTML, CSS и изображения в корневом каталоге проекта с действием сборки *содержимого* как показано ниже:
-
-![](webview-images/windows-vs.png "Локальные файлы на Windows Phone")
-
-На Windows Phone `BaseUrl` должно быть присвоено `""`:
-
-```csharp
-[assembly: Dependency (typeof(BaseUrl_Windows))]
-namespace WorkingWithWebview.Windows {
-  public class BaseUrl_Windows : IBaseUrl {
-    public string Get() {
-      return "";
-    }
-  }
-}
-```
-
-#### <a name="windows-runtime-and-universal-windows-platform"></a>Среда выполнения Windows и универсальной платформы Windows
-
-В проектах среды выполнения Windows и универсальной платформы Windows (UWP), поместите HTML, CSS и изображения в корневом каталоге проекта с действием сборки *содержимого*.
+В проектах универсальной платформы Windows (UWP), поместите HTML, CSS и изображения в корневом каталоге проекта с действием сборки *содержимого*.
 
 `BaseUrl` Должно быть присвоено `"ms-appx-web:///"`:
 
@@ -402,14 +383,11 @@ void webOnEndNavigating (object sender, WebNavigatedEventArgs e)
 
 [UWP WebView](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/web-view) использует модуль подготовки отчетов Microsoft Edge. Настольных и планшетных устройств увидите такую же производительность, как с помощью браузера Edge сам.
 
-`WebBrowser` Элемент управления на Windows Phone 8 и Windows Phone 8.1 выполняет не функции поддержки последней HTML5 и часто может иметь низкую производительность. Помните о том, как сайты будут отображаться в Windows Phone `WebView`. Недостаточно для тестирования в Internet Explorer.
-
 ## <a name="permissions"></a>Разрешения
 
 Чтобы `WebView` для работы, необходимо проверить, что разрешения заданы для каждой платформы. Обратите внимание, что на некоторых платформах `WebView` работает в режиме отладки, но не при построении для выпуска. Это, так как некоторые разрешения, как и для доступа к Интернету на Android, устанавливаются по умолчанию в Visual Studio для Mac в режиме отладки.
 
-- **Windows Phone 8.0** &ndash; требует `ID_CAP_WEBBROWSERCOMPONENT` для элемента управления и `ID_CAP_NETWORKING` для доступа к Интернету.
-- **Windows Phone 8.1 и UWP** &ndash; требуется возможность Интернет (клиент и сервер), при отображении содержимого в сети.
+- **UWP** &ndash; требуется возможность Интернет (клиент и сервер), при отображении содержимого в сети.
 - **Android** &ndash; требует `INTERNET` только в том случае, при отображении содержимого из сети. Локальное содержимое не требует специальных разрешений.
 - **iOS** &ndash; не требует специальных разрешений.
 

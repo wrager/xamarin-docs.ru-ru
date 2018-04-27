@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2016
-ms.openlocfilehash: df0e113f0c76ea9bde58da7a7ceccd50edd5b227
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 74f65021c23515e78e630f907a89ffde74de4da4
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="cell-appearance"></a>Внешнего вида ячеек
 
@@ -62,8 +62,6 @@ TextCells подготавливаются к просмотру как собс
 - `TextColor` &ndash; цвет текста
 - `DetailColor` &ndash; цвет текста детализации
 - `ImageSource` &ndash; изображение, отображаемое рядом с текстом
-
-Обратите внимание, что при разработке для Windows Phone 8.1, `ImageCell` не будет выполнено масштабирование изображений по умолчанию. Кроме того Обратите внимание, что Windows Phone 8.1 только платформа, на которые детализируют данные отображаются в одном цветов и шрифтов как основной текст по умолчанию. Windows Phone 8.0 отображает `ImageCell` как показано ниже:
 
 ![](customizing-cell-appearance-images/image-cell-default.png "Пример ImageCell по умолчанию")
 
