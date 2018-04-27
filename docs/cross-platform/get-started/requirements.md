@@ -7,11 +7,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 08/28/2017
-ms.openlocfilehash: fe15e96780df7e47ce0530acbb04605ad48bf5ee
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ed9992eb162b57cd9c0dd1bc9f4abda4235bac12
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="system-requirements"></a>Требования к системе
 
@@ -82,14 +82,14 @@ _Предварительные требования к использовани
 
 > [!NOTE]
 >
->* [Файлы для скачивания эмулятора Windows Phone 8.1](https://www.microsoft.com/en-us/download/details.aspx?id=43719).
+>* [Файлы для скачивания эмулятора Windows Phone 8.1](https://www.microsoft.com/download/details.aspx?id=43719).
 >* Эмулятор Windows Phone 10 входит в пакет SDK для UWP для Visual Studio 2015.
 
 <a name="install" />
 
 ## <a name="installation-instructions"></a>Инструкции по установке
 
-Последний выпуск Xamarin для macOS можно скачать на веб-странице [xamarin.com/download](http://xamarin.com/download). В Windows следуйте инструкциям по установке [Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio).
+Последний выпуск Xamarin для macOS можно скачать на веб-странице [xamarin.com/download](http://xamarin.com/download). В Windows следуйте инструкциям по установке [Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
 
 Полный список текущих версий продукта можно найти на [странице текущих выпусков](http://developer.xamarin.com/releases/current/). На этой странице также приводятся версии отдельных продуктов (и ссылки на заметки о выпуске) для альфа- и бета-каналов.
 

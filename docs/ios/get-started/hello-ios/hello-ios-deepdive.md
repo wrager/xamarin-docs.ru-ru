@@ -8,11 +8,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 5ca2918a0348254407fcbfff030def6c36af4988
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 71bfccdcab73b651f458dd8d9c5396bffd55004b
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="hello-ios-deep-dive"></a>Привет, iOS: теперь подробнее
 
@@ -85,7 +85,7 @@ Visual Studio — это полнофункциональная интегри�
 
 В пошаговом руководстве [Привет, iOS](~/ios/get-started/hello-ios/hello-ios-quickstart.md) вы создали решение **Phoneword** и поместили внутрь него проект iOS — **Phoneword_iOS**. Ниже перечислены элементы, входящие в проект:
 
--  **References** — содержит сборки, необходимые для создания и запуска приложения. Разверните этот каталог, чтобы отобразить ссылки на сборки .NET, такие как [System](http://msdn.microsoft.com/en-us/library/system%28v=vs.110%29.aspx), System.Core и [System.Xml](http://msdn.microsoft.com/en-us/library/system.xml%28v=vs.110%29.aspx), а также ссылку на сборку Xamarin.iOS Xamarin.
+-  **References** — содержит сборки, необходимые для создания и запуска приложения. Разверните этот каталог, чтобы отобразить ссылки на сборки .NET, такие как [System](http://msdn.microsoft.com/library/system%28v=vs.110%29.aspx), System.Core и [System.Xml](http://msdn.microsoft.com/library/system.xml%28v=vs.110%29.aspx), а также ссылку на сборку Xamarin.iOS Xamarin.
 -  **Packages** — каталог Packages содержит готовые пакеты NuGet.
 -  **Resources** — в папке Resources хранятся другие файлы мультимедиа.
 -  **Main.cs** — это файл содержит главную точку входа для приложения. Для запуска приложения имя главного класса приложения передается в `AppDelegate`.
