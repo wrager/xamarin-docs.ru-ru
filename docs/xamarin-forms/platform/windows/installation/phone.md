@@ -7,10 +7,10 @@ author: davidbritch
 ms.author: dabritch
 ms.date: 02/16/2016
 ms.openlocfilehash: 55bd4bdcfde4c91ad5c9b94bef486207466e135d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="adding-a-windows-phone-app"></a>Добавление приложения Windows Phone
 
@@ -36,7 +36,7 @@ Xamarin.Forms.Forms.Init (e); // requires LaunchActivatedEventArgs
 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated) {}
 ```
 
- 5 . Изменить **MainPage.xaml** -измените корневой элемент `<Page` для `<forms:WindowsPhonePage` *и* определить `xmlns:forms` , он использует:
+ 5. Изменить **MainPage.xaml** -измените корневой элемент `<Page` для `<forms:WindowsPhonePage` *и* определить `xmlns:forms` , он использует:
 
 ```xaml
 <forms:WindowsPhonePage
@@ -46,13 +46,13 @@ if (e.PreviousExecutionState == ApplicationExecutionState.Terminated) {}
 </forms:WindowsPhonePage>
 ```
 
- 6 . Изменить **MainPage.xaml.cs** удаление `: PhonePage` описатель наследования для имени класса.
+ 6. Изменить **MainPage.xaml.cs** удаление `: PhonePage` описатель наследования для имени класса.
 
 ```csharp
 public sealed partial class MainPage  // REMOVE ": PhonePage"
 ```
 
- 7 . В по-прежнему **MainPage.xaml.cs**, добавьте `LoadApplication` вызов в `MainPage` конструктор (около строки 28) для запуска приложения Xamarin.Forms:
+ 7. В по-прежнему **MainPage.xaml.cs**, добавьте `LoadApplication` вызов в `MainPage` конструктор (около строки 28) для запуска приложения Xamarin.Forms:
 
 ```csharp
 // below this existing line
@@ -61,9 +61,9 @@ this.InitializeComponent();
 LoadApplication(new YOUR_NAMESPACE.App());
 ```
 
-8 . Дважды щелкните **Package.appxmanifest** для задания этих возможностей, которые часто требуются:
+8. Дважды щелкните **Package.appxmanifest** для задания этих возможностей, которые часто требуются:
 
   * Интернет (клиент и сервер)
 
-9 . Наконец добавьте все локальные ресурсы (например) файлы изображений) с существующие проекты платформы, которые необходимы.
+9. Наконец добавьте все локальные ресурсы (например) файлы изображений) с существующие проекты платформы, которые необходимы.
 

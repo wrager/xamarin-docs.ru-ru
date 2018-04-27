@@ -8,10 +8,10 @@ author: davidbritch
 ms.author: dabritch
 ms.date: 02/16/2016
 ms.openlocfilehash: f851c1ca241be9e3c94a70b1f63135a46575d471
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="adding-a-universal-windows-platform-uwp-app"></a>Добавление универсального платформы (UWP) приложения Windows
 
@@ -25,25 +25,25 @@ UWP в Xamarin.Forms 2.1 и более поздней версии и Xamarin.Fo
 
 Выполните следующие действия, чтобы добавить приложение UWP, которая будет выполняться на телефонах, планшетных ПК и рабочим столам Windows 10.
 
- 1 . Щелкните правой кнопкой мыши решение и выберите пункт **Добавить > Новый проект...**  и добавьте **пустое приложение (универсальные приложения Windows)** проекта:
+ 1. Щелкните правой кнопкой мыши решение и выберите пункт **Добавить > Новый проект...**  и добавьте **пустое приложение (универсальные приложения Windows)** проекта:
 
   ![](universal-images/add-wu.png "Добавить диалоговое окно нового проекта")
 
- 2 . В **нового проекта универсальной платформы Windows** диалоговое окно, выберите минимальное и целевой версии Windows 10, в которой будет выполняться приложение:
+ 2. В **нового проекта универсальной платформы Windows** диалоговое окно, выберите минимальное и целевой версии Windows 10, в которой будет выполняться приложение:
 
   ![](universal-images/target-version.png "Универсальные приложения для Windows платформа диалоговое окно нового проекта")
 
- 3 . Правой кнопкой мыши проект UWP и выберите **управление пакетами NuGet...**  и добавьте **Xamarin.Forms** пакета. Убедитесь, что другие проекты в решении, также будут обновлены до той же версии пакета Xamarin.Forms.
+ 3. Правой кнопкой мыши проект UWP и выберите **управление пакетами NuGet...**  и добавьте **Xamarin.Forms** пакета. Убедитесь, что другие проекты в решении, также будут обновлены до той же версии пакета Xamarin.Forms.
 
- 4 . Убедитесь, что будет строиться проект UWP **сборки > Configuration Manager** окна (это возможно, не произойти по умолчанию). Деления **построения** и **развернуть** поля для универсальных проектов:
+ 4. Убедитесь, что будет строиться проект UWP **сборки > Configuration Manager** окна (это возможно, не произойти по умолчанию). Деления **построения** и **развернуть** поля для универсальных проектов:
 
   [![](universal-images/configuration-sml.png "Окно диспетчера конфигурации")](universal-images/configuration.png#lightbox "окно диспетчера конфигурации")
 
- 5 . Щелкните правой кнопкой мыши проект и выберите пункт **Добавить > справочник** и создать ссылку на проект приложения Xamarin.Forms (PCL, .NET Standard или общий проект).
+ 5. Щелкните правой кнопкой мыши проект и выберите пункт **Добавить > справочник** и создать ссылку на проект приложения Xamarin.Forms (PCL, .NET Standard или общий проект).
 
   ![](universal-images/addref-sml.png "Диалоговое окно диспетчера ссылок")
 
- 6 . В проекте UWP изменить **App.xaml.cs** для включения `Init` вызова метода внутри `OnLaunched` метод около строки 52:
+ 6. В проекте UWP изменить **App.xaml.cs** для включения `Init` вызова метода внутри `OnLaunched` метод около строки 52:
 
 ```csharp
 // under this line
@@ -52,15 +52,15 @@ rootFrame.NavigationFailed += OnNavigationFailed;
 Xamarin.Forms.Forms.Init (e); // requires the `e` parameter
 ```
 
- 7 . В проекте UWP изменить **MainPage.xaml** , удалив `Grid` внутри `Page` элемента.
+ 7. В проекте UWP изменить **MainPage.xaml** , удалив `Grid` внутри `Page` элемента.
 
- 8 . В **MainPage.xaml**, добавьте новый `xmlns` запись для `Xamarin.Forms.Platform.UWP`:
+ 8. В **MainPage.xaml**, добавьте новый `xmlns` запись для `Xamarin.Forms.Platform.UWP`:
 
 ```csharp
 xmlns:forms="using:Xamarin.Forms.Platform.UWP"
 ```
 
- 9 . В **MainPage.xaml**, изменения корневого `<Page` элемент `<forms:WindowsPage`:
+ 9. В **MainPage.xaml**, изменения корневого `<Page` элемент `<forms:WindowsPage`:
 
 ```xaml
 <forms:WindowsPage
@@ -70,13 +70,13 @@ xmlns:forms="using:Xamarin.Forms.Platform.UWP"
 </forms:WindowsPage>
 ```
 
- 10 . В проекте UWP, изменить **MainPage.xaml.cs** удаление `: Page` описатель наследования для имени класса (так как теперь будет наследоваться от `WindowsPage` из-за изменения, сделанные на предыдущем шаге):
+ 10. В проекте UWP, изменить **MainPage.xaml.cs** удаление `: Page` описатель наследования для имени класса (так как теперь будет наследоваться от `WindowsPage` из-за изменения, сделанные на предыдущем шаге):
 
 ```csharp
 public sealed partial class MainPage  // REMOVE ": Page"
 ```
 
- 11 . В **MainPage.xaml.cs**, добавьте `LoadApplication` вызов в `MainPage` конструктор для запуска приложения Xamarin.Forms:
+ 11. В **MainPage.xaml.cs**, добавьте `LoadApplication` вызов в `MainPage` конструктор для запуска приложения Xamarin.Forms:
 
 ```csharp
 // below this existing line
@@ -95,7 +95,7 @@ LoadApplication(new YOUR_NAMESPACE.App());
   * Location
 -->
 
-12 . Добавьте любые локальные ресурсы (например) файлы изображений) с существующие проекты платформы, которые необходимы.
+12. Добавьте любые локальные ресурсы (например) файлы изображений) с существующие проекты платформы, которые необходимы.
 
 <a name="troubleshooting" />
 
