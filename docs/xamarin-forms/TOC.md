@@ -16,6 +16,7 @@
 #### [Часть 4. Основы привязки данных](xaml/xaml-basics/data-binding-basics.md)
 #### [Часть 5. От привязки данных до MVVM](xaml/xaml-basics/data-bindings-to-mvvm.md)
 ### [Компиляция XAML](xaml/xamlc.md)
+### [Динамическая перезагрузка](xaml/live-reload.md)
 ### [Средство предварительного просмотра XAML](xaml/xaml-previewer.md)
 ### [Пространства имен языка XAML](xaml/namespaces.md)
 ### [Расширения разметки XAML](xaml/markup-extensions/index.md)
