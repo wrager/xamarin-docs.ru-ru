@@ -6,12 +6,12 @@ ms.assetid: 3f2f9c2d-d204-43bc-8c8a-a55ce1e6d2c8
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 02/06/2018
-ms.openlocfilehash: e8d1064e76c2ccdeb14302d30428cd932444a0f5
-ms.sourcegitcommit: 271d3f7ea4abfcf87734d2c747a68cb8114d743c
+ms.date: 04/26/2018
+ms.openlocfilehash: f5c05ce308a10747ad3e18e4a1d141d29fd6c8a1
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="xamarinforms-quickstart"></a>Краткое руководство по Xamarin.Forms
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/08/2018
 
     ![](quickstart-images/vs/new-project.png "Шаблоны кроссплатформенных проектов")
 
-4. В диалоговом окне **Новое кроссплатформенное приложение** щелкните **Пустое приложение**, выберите **Xamarin.Forms** в качестве технологии пользовательского интерфейса и **.NET Standard** в качестве стратегии совместного использования кода, а затем нажмите кнопку **ОК**:
+4. В диалоговом окне **Новое кроссплатформенное приложение** щелкните **Пустое приложение**, выберите **.NET Standard** в качестве стратегии совместного использования кода, а затем нажмите кнопку **OK**:
 
     ![](quickstart-images/vs/new-app.png "Новое кроссплатформенное приложение")
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/08/2018
         <ContentPage.Padding>
             <OnPlatform x:TypeArguments="Thickness">
                 <On Platform="iOS" Value="20, 40, 20, 20" />
-                <On Platform="Android, WinPhone, Windows" Value="20" />
+                <On Platform="Android, UWP" Value="20" />
             </OnPlatform>
         </ContentPage.Padding>
         <StackLayout>
@@ -523,7 +523,7 @@ ms.lasthandoff: 04/08/2018
         <ContentPage.Padding>
             <OnPlatform x:TypeArguments="Thickness">
                 <On Platform="iOS" Value="20, 40, 20, 20" />
-                <On Platform="Android, WinPhone, Windows" Value="20" />
+                <On Platform="Android, UWP" Value="20" />
             </OnPlatform>
         </ContentPage.Padding>
         <StackLayout>
@@ -630,9 +630,9 @@ ms.lasthandoff: 04/08/2018
     }
     ```
 
-    Сохраните изменения в **Phoneword.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
+    Сохраните изменения в файле **App.xaml.cs**, выбрав **Файл > Сохранить** или нажав клавиши **&#8984;+S**, и закройте файл.
 
-13. На **Панели решения** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый файл...**:
+13. На **Панели решения** щелкните правой кнопкой мыши проект **Phoneword** и выберите **Добавить > Новый файл...**:
 
     ![](quickstart-images/xs/add-new-translator-file.png "Добавление нового файла")
 

@@ -1,227 +1,64 @@
 ---
 title: Установка Xamarin.iOS в Windows
-description: В этой статье показано, как установить Xamarin.iOS для Visual Studio. В ней рассматривается процесс установки расширения Xamarin для Visual Studio и подключения к пакету SDK Apple, установленному на компьютере Mac.
+description: В этой статье описывается настройка компьютера Windows и узла сборки Mac для разработки Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: abf85d3e-a365-44a2-b1a4-6c572c7f76dd
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.date: 09/29/2017
-ms.openlocfilehash: 02c4b27f12382d3c3d3eed778d1bfd92ae3f1e79
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/16/2018
+ms.openlocfilehash: e6f50a48481be3ca5c64332f5a182e44715740c0
+ms.sourcegitcommit: dc6ccf87223942088ca926c0dadd5b5478c683cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="installing-xamarinios-on-windows"></a>Установка Xamarin.iOS в Windows
 
-_В этой статье показано, как установить Xamarin.iOS для Visual Studio. Здесь описано, как установить расширение Xamarin для Visual Studio и подключиться к пакету SDK Apple, установленному на компьютере Mac._
+_В этой статье описывается настройка компьютера Windows и узла сборки Mac для разработки Xamarin.iOS._
 
 ## <a name="overview"></a>Обзор
 
-Расширение Xamarin.iOS для Visual Studio позволяет разрабатывать и тестировать приложения iOS на компьютерах Windows с использованием подключенного к сети компьютера Mac, который предоставляет службу сборки и развертывания.
+Для сборки приложений Xamarin.iOS с помощью Visual Studio 2017 в Windows вам потребуются следующие компоненты.
+ 
+-  Компьютер Windows с установленной Visual Studio 2017. Это может быть физический компьютер или виртуальная машина.
+    - [Требования к системе Windows](~/cross-platform/get-started/requirements.md#windows-requirements)
+    
+-  Доступный по сети компьютер Mac, на котором настроены средства сборки Apple и Xamarin.iOS. Visual Studio 2017 обращается к этому компьютеру по сети, чтобы использовать средства сборки Apple, которые необходимы для компиляции приложений в машинном коде iOS. 
+    - [Требования к системе Mac](~/cross-platform/get-started/requirements.md#macos-requirements)
 
-Разработка приложений для iOS в Visual Studio обеспечивает следующие возможности:
+## <a name="setup"></a>Установка
 
-- создание кроссплатформенных решений для приложений iOS, Android и Windows;
-- использование средств Visual Studio (таких как *Resharper* и *Team Foundation Server*) для всех кроссплатформенных проектов, включая исходный код iOS;
-- работа в знакомой интегрированной среде (IDE) с использованием привязок Xamarin.iOS ко всем интерфейсам API Apple.
+Процедура настройки для разработки Xamarin.iOS в Visual Studio 2017 включает следующие этапы.
 
-Xamarin.iOS для Visual Studio поддерживает конфигурацию, в которой Visual Studio выполняется в виртуальной машине Windows на компьютере Mac (с использованием Parallels или VMWare), и конфигурацию с размещением Visual Studio на отдельном компьютере в одной сети с компьютером Mac. Независимо от выбранной конфигурации, Visual Studio быстро и безопасно подключается к компьютеру Mac по протоколу SSH.
+1. Настройка Windows (установка Visual Studio 2017)
 
-В этой статье приводятся инструкции по установке и настройке средств Xamarin.iOS как на компьютере Mac, так и на компьютере Windows, а также инструкции по подключению к узлу Mac, что позволяет разработчикам разрабатывать, отлаживать и развертывать приложения Xamarin.iOS с помощью Visual Studio.
+    Xamarin.iOS поддерживает выпуски Visual Studio 2017 Community, Professional и Enterprise на изолированном компьютере или виртуальной машине.
+    
+    - [Установите Visual Studio 2017](~/cross-platform/get-started/installation/windows.md).
 
-На схеме ниже представлен рабочий процесс разработки с помощью Xamarin.iOS в общей форме:
+2. Настройка Mac (установка Xcode и Visual Studio для Mac)
 
-[![Рабочий процесс разработки с помощью Xamarin.iOS](images/xma2.png)](images/xma2.png#lightbox)
+    Для сборки, отладки и подписывания приложений iOS для распространения Visual Studio 2017 необходим сетевой доступ к узлу сборки Mac, на котором настроены средства разработчика Apple (Xcode) и Xamarin.iOS.
 
-> [!IMPORTANT]
-> Для сборки проектов Visual Studio запускает отдельный процесс MSBuild. Этот процесс создает новое подключение к компьютеру Mac, то есть во время выполнения сборки в среде Visual Studio между компьютерами Windows и Mac имеются два подключения SSH. При сборке из [командной строки](~/ios/get-started/installation/windows/connecting-to-mac/index.md) создается только один процесс MSBuild. Для простоты все подключения на схеме представлены одной стрелкой.
+    - [Скачайте и установите Xcode из магазина Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12). 
+    - [Установите Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation), при этом также устанавливается Xamarin.iOS.
 
-## <a name="requirements"></a>Требования
+    > [!NOTE] 
+    > Если вы не хотите устанавливать Visual Studio для Mac, начиная с [Visual Studio 2017 версии 15.6](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#automatic-macos-provisioning) поддерживается автоматическая настройка на узле сборки Mac программного обеспечения, необходимого для сборки приложений Xamarin.iOS. Дополнительные сведения см. в разделе [Автоматическая подготовка Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md#automatic-mac-provisioning).
 
-Расширение Xamarin.iOS для Visual Studio дает удивительную возможность: оно позволяет разработчикам создавать, выполнять сборку и отладку приложений iOS на компьютере Windows с помощью интегрированной среды разработки Visual Studio. Однако оно не может использоваться отдельно — приложения iOS невозможно создавать без компилятора Apple и развертывать без сертификатов и средств подписывания кода Apple. Это означает, что расширению Xamarin.iOS для Visual Studio требуется подключение к подключенному к сети компьютеру с Mac OS X для выполнения этих задач. После настройки работа со средствами Xamarin максимально удобна.
+3. Связывание с компьютером Mac (подключение Visual Studio 2017 к Mac)
 
+    Чтобы в Visual Studio 2017 можно было использовать средства сборки iOS на компьютере Mac, необходимо действующее сетевое подключение.
 
-<a name="system-requirements"/>
-
-### <a name="system-requirements"></a>Требования к системе
-
-Ниже приведены требования к системе:
-
-### <a name="windows"></a>Windows
-
-1. Windows 7 или более поздней версии.
-
-2. Visual Studio 2015 Professional или более поздней версии.
-
-    1. Если у вас корпоративная лицензия, необходимо установить Visual Studio Enterprise.
-
-3. Xamarin для Visual Studio.
-
-Средства Xamarin не могут использоваться с экспресс-выпусками Visual Studio из-за отсутствия поддержки подключаемого модуля. Xamarin поддерживается в Visual Studio Community.
-
-### <a name="mac"></a>Mac
-
-1. Компьютер Mac с macOS Sierra (10.12) или более поздней версии (рекомендуется последняя стабильная версия).
-
-2. Пакет SDK Xamarin iOS. Он устанавливается при скачивании Visual Studio для Mac.
-
-3. Интегрированная среда разработки Apple Xcode и пакет SDK iOS (рекомендуется последняя стабильная версия, доступная в Mac App Store).
-
-**Компьютер Windows должен иметь возможность подключения к компьютеру Mac по сети.**
-
-### <a name="apple-developer-account"></a>Учетная запись разработчика Apple
-
-Для развертывания приложений на устройстве или их отправки в App Store требуется учетная запись разработчика Apple. Чтобы расширение Xamarin.iOS для Visual Studio могло работать, на подключенном к сети компьютере Mac должны быть созданы и установлены соответствующие сертификаты разработчика и профили подготовки. Инструкции по получению сертификата разработки и подготовке устройства см. в статье [Подготовка устройств](~/ios/get-started/installation/device-provisioning/index.md).
-
-## <a name="features"></a>Функции 
-
-Xamarin.iOS для Visual Studio позволяет создавать, редактировать, выполнять сборку и развертывать проекты Xamarin.iOS из Windows. Сюда относятся следующие возможности:
-
-- создание проектов iOS;
-
-- изменение проектов iOS и кроссплатформенных решений, которые также включают проекты Xamarin.Android и универсальной платформы Windows;
-
-- компиляция проектов iOS и кроссплатформенных решений, которые включают проекты Xamarin.Android и универсальной платформы Windows;
-
-- поддержка раскадровки и файлов XIB благодаря iOS Designer;
-
-- развертывание и отладка приложений iOS в симуляторе или на устройстве, подключенном к компьютеру Mac;
-
-- симулятор iOS в Windows; дополнительные сведения об использовании симулятора iOS в Windows см. в [этом руководстве](~/tools/ios-simulator.md).
-
-<a name="configuring" />
-
-## <a name="configuring-your-mac"></a>Настройка компьютера Mac
-
-<a name="installation"/>
-
-### <a name="installation"></a>Установка
-
-Чтобы установить средства Xamarin.iOS на компьютере Mac, сначала нужно [установить Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation).
-
-После установки программного обеспечения следуйте инструкциям в следующем разделе, чтобы настроить расширение Xamarin.iOS в системе macOS так, чтобы к нему могла подключаться среда Xamarin для Visual Studio.
-
-> [!IMPORTANT]
-> На компьютере Windows должна использоваться та же версия Xamarin.iOS, что и на компьютере Mac, к которому он подключается. Для этого должно выполняться указанное ниже требование:
->
-> - **Visual Studio 2015 и более ранние версии**: необходимо использовать тот же [канал обновлений](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/), что и для Visual Studio для Mac.
->
-> - **Visual Studio 2017, версия выпуска**: необходимо использовать канал **Стабильный** Visual Studio для Mac.
->
-> - **Visual Studio 2017, предварительная версия**: необходимо использовать канал **Альфа** Visual Studio для Mac.
-
-<a name="configuration" />
-
-
-### <a name="configuration"></a>Конфигурация
-
-Для обеспечения взаимодействия между расширением Xamarin для Visual Studio и компьютером Mac необходимо разрешить **удаленный вход** на компьютере Mac. Для этого выполните указанные ниже действия:
-
-1. Откройте *Spotlight* (**CMD+ПРОБЕЛ**), выполните поиск по запросу **Удаленный вход** и выберите результат **Общий доступ**. Откроется панель **Общий доступ** в программе **Системные настройки**.
-
-![Поиск удаленного входа в Spotlight](images/spotlight.png)
-
-2. В списке **Служба** в левой части окна установите флажок **Удаленный вход**, чтобы разрешить Xamarin для Visual Studio подключаться к компьютеру Mac.
-
-![Установка флажка "Удаленный вход" в списке "Служба"](images/sharing.png)
-
-3. Для параметра **Удаленный вход** необходимо разрешить доступ **всем пользователям** либо включить свое имя пользователя Mac или группу в список разрешенных пользователей справа.
-
-Компьютер Mac теперь должен обнаруживаться средой Visual Studio, если они находятся в одной сети.
-
-> [!NOTE]
-> Если в брандмауэре macOS настроено блокирование подписанных приложений по умолчанию, вам следует разрешить программе `mono-sgen` принимать входящие подключения. В этом случае появляется диалоговое окно с соответствующим предупреждением.
-
-<a name="developersetup"/>
-
-### <a name="ios-developer-setup"></a>Настройка для разработки iOS
-
-С целью разработки для iOS на компьютере Mac необходимо настроить соответствующие удостоверения подписывания. Это позволит правильно подписывать приложения для распространения через App Store или Ad Hoc. Чтобы получить инструкции по настройке компьютера Mac для разработки приложений для iOS с помощью Xamarin, перейдите по следующей ссылке:
-
-- [Подготовка устройств](~/ios/get-started/installation/device-provisioning/index.md?ide=vs)
-
-Настроив компьютер Mac, можно приступать к настройке компьютера Windows.
-
-<a name="windowsinstallation"/>
-
-## <a name="windows-installation"></a>Установка в Windows
-
-Xamarin можно установить в составе установки Visual Studio 2017 или 2015. Сведения об установке средств Visual Studio для Xamarin см. в руководстве по [установке в Windows](~/cross-platform/get-started/installation/windows.md).
-
-## <a name="installation-complete"></a>Завершение установки
-
-После завершения процесса установки нужно выполнить еще ряд действий, чтобы подготовить систему к работе:
-
-- [Подключите Visual Studio к компьютеру Mac](#connectingtomac) — для сборки проектов Xamarin.iOS среду Visual Studio необходимо подключить к узлу сборки Mac.
-- [Настройте панель инструментов Visual Studio](#toolbar) — это позволит легко получать доступ к функциям Xamarin.iOS в Visual Studio.
-
-<a name="connectingtomac" /> 
-
-### <a name="connecting-to-the-mac"></a>Подключение к компьютеру Mac
-
-Xamarin.iOS для Visual Studio подключается к узлу сборки Mac по протоколу SSH. Дополнительные сведения о подключении см. в руководстве [Подключение к компьютеру Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
-
-Чтобы подключиться к компьютеру Mac, выполните указанные ниже действия:
-
-- Выберите пункт меню **Сервис > Параметры**, а затем в узле **Xamarin** выберите элемент **Параметры iOS**:
-
-  [![Экран параметров iOS](images/image2.png)](images/image2.png#lightbox)
-
-- Если на компьютере Mac правильно [настроен](#configuration) **удаленный вход**, вы сможете выбрать этот компьютер в списке.
-
-  [![Диалоговое окно выбора удаленного узла](images/xma3.png)](images/xma3.png#lightbox)
-
-- Появится запрос на ввод учетных данных администратора узла Mac:
-
-  [![Диалоговое окно входа](images/xma4.png)](images/xma4.png#lightbox)
-
-- После подключения рядом с именем компьютера появится значок "Подключение выполнено успешно":
-
-  [![Диалоговое окно удаленного узла со значком успешного подключения рядом с именем компьютера](images/image6.png)](images/image6.png#lightbox)
-
-При каждом запуске Visual Studio подключение будет устанавливаться повторно.
-
-<a name="toolbar" />
-
-## <a name="visual-studio-toolbar-configuration"></a>Настройка панели инструментов Visual Studio
-
-При открытии проекта iOS панель инструментов iOS отображается по умолчанию и не требует настройки.
-
-Если панель инструментов для iOS не отображается, можно сделать следующее.
-
-Чтобы настроить панель инструментов, сначала откройте меню **Вид > Панели инструментов** и убедитесь в том, что пункт **iOS** выбран. Чтобы панель инструментов отображалась, пункт меню должен быть отмечен, как показано на снимке экрана:
-
-[![Выберите "Панели инструментов" > "iOS"](images/image31.png)](images/image31.png#lightbox)
-
-### <a name="visual-studio-2015"></a>Visual Studio 2015
-
-В версиях, предшествующих версии Visual Studio 2017, на стандартную панель инструментов может потребоваться добавить кнопку **Платформы решения**. Это позволит выбирать устройство iOS или симулятор iOS при отладке. Чтобы добавить кнопку, выполните приведенные ниже действия.
-
-Нажмите кнопку меню в правой части стандартной панели:
-
-- Выберите пункт **Добавить или удалить кнопки**
-- Выберите элемент **Платформы решения**
-
-[![Выберите элемент "Платформы решения"](images/image35.png)](images/image35.png#lightbox)
-
-Панели элементов **Стандартная** и **iOS** теперь должны выглядеть примерно так, как показано на этом снимке экрана:
-
-[![Панели элементов "Стандартная" и "iOS" теперь должны выглядеть примерно так, как показано на этом снимке экрана](images/image36.png)](images/image36.png#lightbox)
-
-Завершив настройку панели инструментов, можно приступать к использованию Xamarin iOS для Visual Studio.
+    - [Прочитайте руководство по связыванию с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
 
 ## <a name="summary"></a>Сводка
 
-В этой статье представлено пошаговое руководство по установке, настройке и использованию Xamarin iOS для Visual Studio.
+В этой статье описывается настройка компьютера Windows и связанного узла сборки Mac для разработки Xamarin.iOS.
 
-В ней рассматривались установка и настройка необходимых средств в Windows и Mac OS X.
+## <a name="next-steps"></a>Следующие шаги
 
-
-## <a name="related-links"></a>Связанные ссылки
-
-- [Установка](~/cross-platform/get-started/installation/windows.md)
+- [Введение в Xamarin.iOS для Visual Studio](introduction-to-xamarin-ios-for-visual-studio.md)
+- [Настройка Visual Studio 2017](config-options.md)
 - [Подготовка устройств](~/ios/get-started/installation/device-provisioning/index.md)
-- [Введение в Xamarin.iOS для Visual Studio](~/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio.md)
-- [Подключение компьютера Mac к среде Visual Studio с помощью XMA (видео)](https://university.xamarin.com/lightninglectures/xamarin-mac-agent)

@@ -6,11 +6,11 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/28/2017
-ms.openlocfilehash: 2f3950509134d3f643f0ea63b6725c1b4fe38409
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 6be97162d1c371b9215d59ef77a7a5044e04f6b1
+ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introduction-to-mobile-development"></a>Введение в разработку мобильных приложений
 
@@ -42,7 +42,7 @@ Xamarin является уникальным в этом пространств
 
 
 > [!NOTE]
-> В этой серии руководств по началу работы основное внимание уделяется вопросам создания приложений iOS и Android. Предлагаемые корпорацией Майкрософт учебники по разработке приложений Windows Phone можно найти [здесь](http://dev.windowsphone.com/en-us/develop). Дополнительные сведения о кроссплатформенной разработке с помощью Xamarin (включая приложения UWP для Windows) см. в [руководстве по созданию кроссплатформенных приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/index.md).
+> В этой серии руководств по началу работы основное внимание уделяется вопросам создания приложений iOS и Android. Корпорация Майкрософт предлагает сведения о [разработке приложений универсальной платформы Windows (UWP)](https://docs.microsoft.com/windows/uwp/develop/) для планшетных и настольных ПК. Дополнительные сведения о кроссплатформенной разработке с помощью Xamarin (включая приложения UWP для Windows) см. в [руководстве по созданию кроссплатформенных приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/index.md).
 
 
 

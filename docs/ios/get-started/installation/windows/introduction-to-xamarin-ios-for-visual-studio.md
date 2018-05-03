@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: a8264d3ebd5f294b1b77fbbafd660825d5ce5180
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 859f84fbe329d79e9e1e6a8b7445fe2a7f03af23
+ms.sourcegitcommit: dc6ccf87223942088ca926c0dadd5b5478c683cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="introduction-to-xamarinios-for-visual-studio"></a>Введение в Xamarin.iOS для Visual Studio
 
@@ -36,39 +36,25 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 Доступно несколько конфигураций, из которых вы можете выбрать наиболее подходящую под ваши потребности. Эти конфигурации перечислены ниже:
 
--  Компьютер Mac используется в качестве главного компьютера разработки, а среда Visual Studio установлена в виртуальной машине Windows. Мы рекомендуем использовать для создания виртуальной машины такое программное обеспечение, как [Parallels](http://www.parallels.com/products/desktop/) или [VMWare](http://www.vmware.com/products/fusion/).
--  Компьютер Mac используется только в качестве узла сборки. В этом сценарии он просто подключается к той же сети, в которой находится компьютер Windows с установленными [необходимыми](~/cross-platform/get-started/installation/windows.md#installation) средствами.
+-  Компьютер Mac используется в качестве главного компьютера разработки, а среда Visual Studio установлена на виртуальной машине Windows. Мы рекомендуем использовать для создания виртуальной машины такое программное обеспечение, как [Parallels](http://www.parallels.com/products/desktop/) или [VMWare](http://www.vmware.com/products/fusion/).
+-  Компьютер Mac используется только в качестве узла сборки. В этом сценарии он подключается к той же сети, в которой находится компьютер Windows с установленными [необходимыми](~/cross-platform/get-started/installation/windows.md#installation) средствами.
 
 
 В любом случае необходимо выполнить указанные ниже действия:
 
-- [Установка инструментов Xamarin.iOS на компьютере Mac](https://docs.microsoft.com/visualstudio/mac/installation)
-- [Настройте компьютер Mac](~/ios/get-started/installation/windows/index.md#configuring)
+- [Установка Visual Studio для Mac](https://docs.microsoft.com/visualstudio/mac/installation)
 - [Установите средства Xamarin в Windows](~/cross-platform/get-started/installation/windows.md)
-
-Для разработки с помощью Xamarin в Visual Studio необходимо использовать **по крайней мере** Visual Studio 2015 Professional или более поздней версии. Xamarin **не работает** с экспресс-выпусками Visual Studio, так как они не поддерживают надстройки.
 
 ## <a name="connecting-to-the-mac"></a>Подключение к компьютеру Mac
 
-Подключиться к узлу сборки Mac можно с помощью значка на панели инструментов Visual Studio (при условии, что приложение iOS открыто):
+Для подключения Visual Studio к узлу сборки Mac выполните инструкции в руководстве [Связывание с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
 
-[![](introduction-to-xamarin-ios-for-visual-studio-images/xma1a.png "Значок подключения к Mac")](introduction-to-xamarin-ios-for-visual-studio-images/xma1a.png#lightbox)
-
-Вы также можете выбрать в Visual Studio пункт меню **Сервис > Параметры**, а затем выбрать элемент **Xamarin > Параметры iOS**:
-
- [![](introduction-to-xamarin-ios-for-visual-studio-images/xma-ios-options.png "Параметр iOS")](introduction-to-xamarin-ios-for-visual-studio-images/xma-ios-options.png#lightbox)
-
-Вы можете изменить узел сборки Mac, нажав кнопку **Найти Xamarin Mac Agent**. Появится следующий экран, на котором можно изменить узел сборки Mac:
-
-  [![](introduction-to-xamarin-ios-for-visual-studio-images/xma-dialog.png "Диалоговое окно Xamarin Mac Agent")](introduction-to-xamarin-ios-for-visual-studio-images/xma-dialog.png#lightbox)
 
 
 ## <a name="visual-studio-toolbar-overview"></a>Обзор панели инструментов Visual Studio
 
 При установке Xamarin iOS для Visual Studio добавляются элементы на стандартную панель инструментов и на новую панель инструментов iOS.
 Назначение этих панелей инструментов описывается ниже.
-
-
 
 ### <a name="standard-toolbar"></a>Стандартная панель инструментов
 
@@ -174,7 +160,7 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 ### <a name="device-logging"></a>Ведение журнала устройства
 
-В Visual Studio 2015 и более поздних версиях используются единые панели журналов Android и iOS.
+В Visual Studio 2017 используются единые панели журналов Android и iOS.
 
 Журналы для устройств Android и iOS можно просматривать в новом окне средства журнала устройств для Visual Studio. Чтобы открыть это окно, нужно выполнить одну из указанных ниже последовательностей команд:
 

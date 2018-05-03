@@ -6,19 +6,18 @@ ms.assetid: ECB327F3-FF1C-45CC-9FA6-9C11032BD5EF
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/20/2018
-ms.openlocfilehash: 3dd67f25e389adda1af31f4a2b85abd4cfd751d0
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/26/2018
+ms.openlocfilehash: 94f82c9f893e22074ba95c052b57ce6ff18eaa1e
+ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="xamarin-android-device-manager"></a>Диспетчер устройств Xamarin Android
 
 _Диспетчер устройств Xamarin Android, который сейчас доступен в режиме предварительной версии, используется для замены устаревшего диспетчера устройств Google. Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запускать и тестировать приложение без использования физического устройства._
 
 ![Сейчас находится на этапе предварительной версии](~/media/shared/preview.png)
-
  
 ## <a name="overview"></a>Обзор
 
@@ -57,25 +56,24 @@ Xamarin Studio не совместим с диспетчером устройс
 
 Чтобы использовать диспетчер устройств Xamarin Android, необходимо следующее:
 
--   Visual Studio 2017 версии 15.5 или более поздней. Поддерживается Visual Studio Community и более поздние выпуски.
+- Visual Studio 2017 версии 15.5 или более поздней. Поддерживается Visual Studio Community и более поздние выпуски.
 
--   Xamarin для Visual Studio версии 4.8 или более поздней. Сведения об обновлении Xamarin см. в разделе [Смена канала обновления](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
+- Xamarin для Visual Studio версии 4.8 или более поздней. Сведения об обновлении Xamarin см. в разделе [Смена канала обновления](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
 
--   Последняя версия [установщика диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865528) для Windows.
+- Последняя версия [установщика диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865528) для Windows.
 
--   **Пакет SDK для Android** &ndash; нужно установить пакет SDK для Android (см. раздел [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md)) и SDK Tools версии 26.0, как описано в следующем разделе. Обязательно установите пакет SDK для Android в следующее расположение (если это еще не сделано): **C:\\Program Files (x86)\\Android\\android-sdk**.
+- **Пакет SDK для Android** &ndash; нужно установить пакет SDK для Android (см. раздел [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md)) и SDK Tools версии 26.0, как описано в следующем разделе. Обязательно установите пакет SDK для Android в следующее расположение (если это еще не сделано): **C:\\Program Files (x86)\\Android\\android-sdk**.
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
--   Visual Studio для Mac 7.4 или более поздней версии.
+- Visual Studio для Mac 7.4 или более поздней версии.
 
--   Последняя версия [установщика диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865527) для macOS.
+- Последняя версия [установщика диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865527) для macOS.
 
--   **Пакет SDK для Android** &ndash; нужно установить пакет SDK для Android 8.0 (API 26) или более поздней версии через диспетчер пакетов SDK.
+- **Пакет SDK для Android** &ndash; — нужно установить пакет SDK для Android 8.0 (API 26) или более поздней версии через диспетчер пакетов SDK.
 
 -----
 
- 
 ## <a name="installing-the-device-manager"></a>Установка диспетчера устройств
 
 Чтобы установить диспетчер устройств Xamarin Android, сделайте следующее:
@@ -88,6 +86,10 @@ Xamarin Studio не совместим с диспетчером устройс
 
     ![Мастер установки для диспетчера устройств Xamarin Android](xamarin-device-manager-images/win/30-installer.png)
 
+
+> [!NOTE]
+> Начиная с [Visual Studio 2017 предварительная версия 5](https://www.visualstudio.com/vs/preview/) Android Device Manager будет распространяться в рамках установщика VS2017. Нет необходимости загружать отдельный установщик, чтобы получить Xamarin Android Device Manager в Visual Studio 2017, предварительная версия 5.
+
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. Скачайте [установщик диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865527) для macOS.
@@ -97,8 +99,6 @@ Xamarin Studio не совместим с диспетчером устройс
     [![Мастер установки для диспетчера устройств Xamarin Android](xamarin-device-manager-images/mac/30-installer-sml.png)](xamarin-device-manager-images/mac/30-installer.png#lightbox)
 
 -----
-
- 
 ## <a name="launching-the-device-manager"></a>Запуск диспетчера устройств
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -125,7 +125,6 @@ Xamarin Studio не совместим с диспетчером устройс
 
 [![Диспетчер устройств Xamarin Android в средстве поиска](xamarin-device-manager-images/mac/31-location-in-finder-sml.png)](xamarin-device-manager-images/mac/31-location-in-finder.png#lightbox)
 
-
 -----
 
 Прежде чем использовать диспетчер устройств Android, нужно установить Android SDK Tools версии 26.0.0 или более поздней. При отсутствии Android SDK Tools версии 26.0.0 или более поздней при запуске появляется следующее диалоговое окно ошибки:
@@ -142,7 +141,6 @@ Xamarin Studio не совместим с диспетчером устройс
 
 Если вы видите это диалоговое окно ошибки, нажмите кнопку **ОК**, чтобы открыть диспетчер пакетов SDK для Android. В диспетчере пакетов SDK для Android откройте вкладку **Сервис** и установите **Android SDK Tools 26.0.2** или более поздней версии, **инструменты платформы SDK для Android 26.0.0** или более поздней версии и **инструменты сборки SDK для Android 26.0.0** или более поздней версии:
 
-
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 [![Установка Android SDK Tools 26.0](xamarin-device-manager-images/win/03-sdk-tools-sml.png)](xamarin-device-manager-images/win/03-sdk-tools.png#lightbox)
@@ -155,7 +153,6 @@ Xamarin Studio не совместим с диспетчером устройс
 
 -----
 
- 
 ## <a name="main-screen"></a>Главный экран
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -181,9 +178,9 @@ Xamarin Studio не совместим с диспетчером устройс
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Нажмите **Воспроизвести**, чтобы запустить эмулятор с выбранным виртуальным устройством:
- 
+
 [![Кнопка "Запустить" для образа устройства](xamarin-device-manager-images/mac/06-start-button-sml.png)](xamarin-device-manager-images/mac/06-start-button.png#lightbox)
- 
+
 -----
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -195,12 +192,11 @@ Xamarin Studio не совместим с диспетчером устройс
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 После запуска эмулятора с выбранным виртуальным устройством кнопка **Воспроизвести** изменяется на кнопку **Остановить**, позволяющую остановить эмулятор:
- 
+
 [![Кнопка "Остановить" для работающего устройства](xamarin-device-manager-images/mac/07-stop-button-sml.png)](xamarin-device-manager-images/mac/07-stop-button.png#lightbox)
- 
+
 -----
 
- 
 ### <a name="new-device"></a>Создание устройства
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -212,9 +208,9 @@ Xamarin Studio не совместим с диспетчером устройс
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 Чтобы создать устройство, нажмите кнопку **Создать устройство** в верхней правой части экрана:
- 
+
 [![Кнопка "Создать" для создания устройства](xamarin-device-manager-images/mac/08-new-button-sml.png)](xamarin-device-manager-images/mac/08-new-button.png#lightbox)
- 
+
 -----
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)

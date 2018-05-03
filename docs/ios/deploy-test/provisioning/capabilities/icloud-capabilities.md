@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/15/2017
-ms.openlocfilehash: 7e18bff7f32303cb0c5016e4ade4b39723921534
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: e426423854e7c569576c374ea1284c4de099a2d1
+ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="icloud-capabilities"></a>Возможности iCloud
 
@@ -21,14 +21,8 @@ iCloud позволяет пользователям iOS легко и удоб�
 
 Добавление возможности iCloud в приложение немного сложнее по сравнению с другими службами приложений из-за _контейнеров_. Контейнеры применяются в iCloud для хранения данных приложения и позволяют разделять данные, содержащиеся в одной учетной записи iCloud, как при использовании песочницы на устройстве iOS пользователя. Дополнительные сведения о контейнерах см. в руководстве [Введение в CloudKit](~/ios/data-cloud/intro-to-cloudkit.md).
 
-<!--# Xcode
-
-The steps in section [Adding App Services ](~/ios/deploy-test/provisioning/capabilities/index.md) above can be used to toggle the required iCloud capability. Depending on which means of storage is being used in your app, you may need to do additional setup. The image below shows the iCloud capabilities pane:
-
- ![iCloud Capability section](icloud-capabilities-images/image21.png)
-
-First select the required service. If iCloud Documents or CloudKit have been selected, you must select a container. Selecting the default container will create a new container that is unique to the app. Alternatively, if you have created a container either via Xcode or the developer portal, select it here.
--->
+> [!IMPORTANT]
+> Компания Apple [предоставляет инструменты](https://developer.apple.com/support/allowing-users-to-manage-data/), которые помогают разработчикам надлежащим образом соблюдать Общий регламент по защите данных Европейского союза (GDPR).
 
 <a name="icloud-developer-center" />
 
