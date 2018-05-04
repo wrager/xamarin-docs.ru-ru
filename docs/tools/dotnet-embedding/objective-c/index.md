@@ -6,11 +6,11 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/14/2017
-ms.openlocfilehash: 515185ca7be8b6e24c92c9f44eb6dadbaf6d9219
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.openlocfilehash: 2a4a235dcb885364fdc5add5970e61f46b6e5d08
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="objective-c-support"></a>Поддержка Objective c.
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 04/18/2018
 
 ### <a name="automatic-reference-counting"></a>Подсчет автоматических ссылок
 
-Использование из автоматического подсчета ссылок (Окружности) — это **необходимые** для вызова созданных привязок. Проект, использующий библиотеку на основе embeddinator должна быть скомпилирована с `-fobjc-arc`.
+Использование из автоматического подсчета ссылок (Окружности) — это **необходимые** для вызова созданных привязок. С помощью библиотеки .NET внедрения зависимости проекта должны быть скомпилированы с `-fobjc-arc`.
 
 ### <a name="nsstring-support"></a>Поддержка NSString
 

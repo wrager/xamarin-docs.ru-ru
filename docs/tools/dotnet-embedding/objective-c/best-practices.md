@@ -1,18 +1,18 @@
 ---
-title: Рекомендации по ObjC Embeddinator 4000
+title: Внедрение советы и рекомендации для Objective-C .NET
 ms.prod: xamarin
 ms.assetid: 63C7F5D2-8933-4D4A-8348-E9CBDA45C472
 ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/14/2017
-ms.openlocfilehash: ca5face9865c60fabe8359c2bf356d5d5555f517
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.openlocfilehash: 9f31190d54b187e1dc298fe1c2a8d443862f10de
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="embeddinator-4000-best-practices-for-objc"></a>Рекомендации по ObjC Embeddinator 4000
+# <a name="net-embedding-best-practices-for-objective-c"></a>Внедрение .NET советы и рекомендации для Objective-C
 
 Это черновик, возможно, не синхронизован с функциями поддерживается в настоящее время с помощью средства. Мы надеемся, что в этом документе будет развиваться отдельно и в конечном итоге совпадают окончательного средство, т. е. будет предлагать рекомендации долгосрочные - не немедленного решения.
 
@@ -106,7 +106,7 @@ id reader = [[XAMXmlConfigReader alloc] init];
 
 ## <a name="exceptions"></a>Исключения
 
-Это довольно commont в .NET, чтобы использовать исключения широко отправку отчетов об ошибках. Тем не менее они медленным и довольно идентичными в ObjC. По возможности их следует скрыть от разработчика Objective-C.
+Это довольно часто встречается в .NET, чтобы использовать исключения широко отправку отчетов об ошибках. Тем не менее они являются медленным и довольно идентичными в цель-C. По возможности их следует скрыть от разработчика Objective-C.
 
 Например, .NET `Try` модель будет гораздо проще использовать из кода Objective-C:
 
@@ -138,6 +138,6 @@ public bool TryParse (string number, out int value)
 
 Objective-C не допускает операторы можно перегружать как C#, поэтому они преобразуются в значения выбора классов.
 
-[«Понятное»](/dotnet/standard/design-guidelines/operator-overloads/) именованный метод создаются предпочтительнее, чем перегрузки операторов при найдено и может привести к более поздних API.
+[«Понятное»](https://docs.microsoft.com/dotnet/standard/design-guidelines/operator-overloads) , создаются именованные методы предпочтительнее, чем перегрузки операторов при найдено и может привести к более поздних API.
 
 Классы, которые переопределяют операторы `==` и (или) `!=` должны переопределять также стандартный метод Equals (объект).

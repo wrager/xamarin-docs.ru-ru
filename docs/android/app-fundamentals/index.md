@@ -1,5 +1,5 @@
 ---
-title: Принципы работы приложения
+title: Принципы работы приложения Xamarin.Android
 description: Основные понятия приложения
 ms.prod: xamarin
 ms.assetid: 935B8BFE-23B7-4239-5C87-F4A503B889CB
@@ -7,13 +7,13 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: cfb31fa6cac7c4848054cd58a1e144c2ac944262
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: caa51fa0a70da1b799d56c706e6de974f61a14d9
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="application-fundamentals"></a>Принципы работы приложения
+# <a name="xamarinandroid-application-fundamentals"></a>Принципы работы приложения Xamarin.Android
 
 В этом разделе содержится руководство для некоторых наиболее распространенных задач действия или концепции, разработчики должны иметь в виду при разработке приложений Android.
 

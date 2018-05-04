@@ -1,5 +1,5 @@
 ---
-title: Принципы работы приложения
+title: Совместное использование кода
 description: Основные понятия приложения
 ms.prod: xamarin
 ms.assetid: 7D179ACF-09A6-46EE-B49D-E27AB5F09CD4
@@ -7,33 +7,19 @@ ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 02/18/2018
-ms.openlocfilehash: f5bd66cfcfb6ee06abac7bec9151e7325ebb32a2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 01116a35dca80cd92ea16232a2abb127f60d9f0a
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="application-fundamentals"></a>Принципы работы приложения
+# <a name="sharing-code"></a>Совместное использование кода
 
 В этом разделе содержится руководство для некоторых наиболее распространенных задач действия или концепции, разработчики должны иметь в виду при разработке приложений для мобильных устройств.
 
-##  <a name="building-cross-platform-applicationscross-platformapp-fundamentalsbuilding-cross-platform-applicationsindexmd"></a>[Создание кроссплатформенных приложений](~/cross-platform/app-fundamentals/building-cross-platform-applications/index.md)
-
-Выбор Xamarin и регулярно несколько вещей помнить при проектировании и разработке приложений для мобильных устройств, можно реализовать огромный объем кода, совместное использование на мобильных платформах, Сократите время выхода на рынок, использовать существующий talent, требований пользователей для мобильного доступа и уменьшить сложность между различными платформами. &nbsp;В этом документе перечислены ключевые рекомендации для понимания этих преимуществ для служебной программы и повышения производительности приложений.
-
-## <a name="code-sharing-optionscode-sharingmd"></a>[Варианты общего доступа к коду](code-sharing.md)
+## <a name="code-sharing-overviewcode-sharingmd"></a>[Общие сведения о совместное использование кода](code-sharing.md)
 
 Дополнительные сведения о различных кода, параметры, доступные для проектов Xamarin, включая переносимой библиотеки классов (PCLs), общих проектов и стандартные библиотеки .NET для управления доступом.
-
-
-## <a name="accessibilityaccessibilitymd"></a>[Специальные возможности](accessibility.md)
-
-Советы по созданию приложений со специальными возможностями.
-
-
-## <a name="localizationlocalizationmd"></a>[Локализация](localization.md)
-
-Рекомендации, обеспечивающие языковой стандарт приложений, которые могут быть переведены на несколько языков.
 
 
 ##  <a name="portable-class-librariescross-platformapp-fundamentalspclmd"></a>[Переносимые библиотеки классов](~/cross-platform/app-fundamentals/pcl.md)
@@ -55,18 +41,3 @@ ms.lasthandoff: 04/04/2018
 ##  <a name="manually-creating-nuget-packages-for-xamarincross-platformapp-fundamentalsnuget-manualmd"></a>[Создание вручную пакетов NuGet для Xamarin](~/cross-platform/app-fundamentals/nuget-manual.md)
 
 Советы по созданию пакеты NuGet, которые работают с платформе Xamarin.
-
-##  <a name="cross-platform-data-accessxamarin-formsdata-cloudindexmd"></a>[Междоменный доступ платформы данных](~/xamarin-forms/data-cloud/index.md)
-
-Большинство приложений имеют некоторые требования, чтобы сохранить данные на устройстве локально. Если объем данных элементарно мал, это обычно требуется базы данных и уровнем данных в приложении для управления доступом к базе данных. iOS и Android установлен компонент database engine SQLite, «встроенные» и доступа для хранения и извлечения данных стало проще благодаря платформе Xamarin. [Доступа к данным Android](~/android/data-cloud/data-access/index.md), [доступа к данным для операций ввода-вывода](~/ios/data-cloud/data/index.md), и [доступа к данным Xamarin.Forms](~/xamarin-forms/data-cloud/index.md) руководства содержат примеры того, как получить доступ к SQLite для каждой платформы.
-
-
-##  <a name="transport-layer-securitytransport-layer-securitymd"></a>[Протокол TLS](transport-layer-security.md)
-
-Сведения о selectingthe правильной реализации SSL/TLS для защиты приложения сетевое подключение.
-
-
-##  <a name="notificationsxamarin-formsdata-cloudpush-notificationsindexmd"></a>[Уведомления](~/xamarin-forms/data-cloud/push-notifications/index.md)
-
-Мобильные приложения используют уведомления ненавязчивого способ информирования пользователя, который был выполнен некоторые события конкретного приложения. Обычно уведомления используются для уведомления пользователя о состоянии процесса приложения, на котором выполняется в фоновом режиме. Примером этого может загружать большой файл. Этот файл может занять много времени для загрузки, поэтому это действие должно выполняться в фоновом режиме. Когда загрузка завершена, пользователь уведомляется факта по уведомление.
-Кроме того уведомления ares не только к локальным приложениям. Можно также для серверных приложений для публикации уведомлений для приложений для мобильных устройств. В этой статье рассматривается использование уведомлений в iOS и Android.

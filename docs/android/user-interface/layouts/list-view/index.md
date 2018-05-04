@@ -1,17 +1,17 @@
 ---
-title: ListView
+title: Использование в Xamarin.Android ListView
 description: ListView является важным компонентом пользовательского интерфейса приложений Android; он используется везде из коротких списков параметров меню в длинных списках контакты и Избранное. Он предоставляет простой способ представления прокрутки списка строк, которые может быть отформатирован с помощью встроенного стиля или настроить активно.
 ms.prod: xamarin
 ms.assetid: C2BA2705-9B20-01C2-468D-860BDFEDC157
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/21/2018
-ms.openlocfilehash: 8499b9f186c12df22518893b6677cab22f0a3568
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/25/2018
+ms.openlocfilehash: c5c8222df16b265f3b44f3ee3fcd9053d827cf6a
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="listview"></a>ListView
 

@@ -6,14 +6,13 @@ ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 11/14/2017
-ms.openlocfilehash: f75ced921cd240e280b5dd6f7366ccceefb5e40e
-ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
+ms.openlocfilehash: 3620312ff3fbf9d7aa879ae6d318f0b39eec386a
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-started-with-macos"></a>Приступая к работе с macOS
-
 
 ## <a name="what-you-will-need"></a>Необходимо будет
 
@@ -25,9 +24,9 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="create-c-sample"></a>Создайте пример на C#
 
-Откройте Visual Studio для Mac, создайте новый проект библиотеки классов для Mac с именем **hello из c#**и сохраните файл в **~/Projects/hello-from-csharp**.
+Откройте Visual Studio для Mac, создайте новый проект библиотеки классов для Mac с именем **hello из c#** и сохраните файл в **~/Projects/hello-from-csharp**.
 
-Замените код в `MyClass.cs` файла с помощью следующего фрагмента:
+Замените код в **MyClass.cs** файла с помощью следующего фрагмента:
 
 ```csharp
 using AppKit;
@@ -44,7 +43,9 @@ public class MyNSView : NSTextView
 
 ### <a name="bind-the-managed-assembly"></a>Привязать управляемой сборки
 
-Выполните embeddinator для создания собственного платформы для управляемой сборки.
+Когда управляемая сборка, привяжите его путем вызова внедрения .NET.
+
+Как описано в [установки](~/tools/dotnet-embedding/get-started/install/install.md) руководстве, это можно сделать в качестве шага после сборки в проекте с пользовательской целевой объект MSBuild, или вручную:
 
 ```shell
 cd ~/Projects/hello-from-csharp
@@ -93,4 +94,4 @@ objcgen ~/Projects/hello-from-csharp/hello-from-csharp/bin/Debug/hello-from-csha
 
 ![Hello из примера для C# в симуляторе](macos-images/hello-from-csharp-mac.png)
 
-Пример более полным и улучшение доступен [здесь](https://github.com/mono/Embeddinator-4000/tree/objc/samples/mac/weather).
+Пример более полным и улучшение [доступен здесь](https://github.com/mono/Embeddinator-4000/tree/objc/samples/mac/weather).

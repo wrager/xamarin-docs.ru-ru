@@ -1,16 +1,16 @@
 ---
-title: Внедрение ошибок .NET
+title: Ошибки, внедрение .NET
 ms.prod: xamarin
 ms.assetid: 932C3F0C-D968-42D1-BB14-D97C73361983
 ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 04/11/2018
-ms.openlocfilehash: 0bc4451d8eb93b826fc673bc4e163c9b7b68c36e
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: 677242ea12f8fd87d82f337eafd96a1743ad806a
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="net-embedding-errors"></a>Внедрение ошибок .NET
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/26/2018
 
 Средство не удалось объединить платформы, упомянутые в сообщении об ошибке, так как между ними общих файлов.
 
-Это может указывать на ошибку в Embeddinator 4000; Отправьте отчет об ошибках в [ https://github.com/mono/Embeddinator-4000/issues ](https://github.com/mono/Embeddinator-4000/issues) с тестовым случаем.
+Это может указывать на ошибку в внедрения .NET; Отправьте отчет об ошибках в [ https://github.com/mono/Embeddinator-4000/issues ](https://github.com/mono/Embeddinator-4000/issues) с тестовым случаем.
 
 <a name="EM0011" />
 
@@ -142,9 +142,9 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="em0099-internal-error--please-file-a-bug-report-with-a-test-case-httpsgithubcommonoembeddinator-4000issues"></a>EM0099: Внутренняя ошибка *. Отправьте отчет об ошибках с тестовым случаем (https://github.com/mono/Embeddinator-4000/issues).
 
-Это сообщение об ошибке появляется в том случае, когда проверка внутренней согласованности в Embeddinator-4000 завершается неудачно.
+Это сообщение об ошибке появляется в том случае, когда возврата внедрения .NET внутренней согласованности завершается сбоем.
 
-Это указывает на ошибку в Embeddinator 4000; Отправьте отчет об ошибках в [ https://github.com/mono/Embeddinator-4000/issues ](https://github.com/mono/Embeddinator-4000/issues) с тестовым случаем.
+Это указывает на ошибку в внедрения .NET; Отправьте отчет об ошибках в [ https://github.com/mono/Embeddinator-4000/issues ](https://github.com/mono/Embeddinator-4000/issues) с тестовым случаем.
 
 <!-- 1xxx: code processing -->
 
@@ -236,7 +236,7 @@ public class MyType {
 
 ### <a name="em1034-extension-method-m-is-not-generated-inside-a-category-because-they-cannot-be-created-on-primitive-type-t-a-normal-static-method-was-generated"></a>EM1034: Метод расширения `M` не создается внутри категории, так как они не могут создаваться на тип-примитив `T`. Создан обычный, статический метод.
 
-Это **предупреждение** , метод расширения primivite типа (например `System.Int32`) был найден. В ObjC не можно создать категории на тип-примитив. Вместо этого генератор будет создавать нормальный, статический метод.
+Это **предупреждение** , метод расширения primivite типа (например `System.Int32`) был найден. В Objective-C не можно создать категории на тип-примитив. Вместо этого генератор будет создавать нормальный, статический метод.
 
 <a name="EM1040" />
 
@@ -286,7 +286,7 @@ public class MyType {
 
 Это **предупреждение** , предназначенные `E` считается не поддерживается для Xamarin.iOS и Xamarin.Mac варианты использования. 
 
-Использование статической или динамической библиотеки Embeddinator может потребовать дополнительной работы действия или модификации и в большинстве случаев использования следует избегать.
+Потребление статической или динамической библиотеки .NET внедрение может потребовать дополнительной работы действия или модификации и в большинстве случаев использования следует избегать.
 
 Рассмотрите возможность удаления вашей `--target` параметра или передайте `--target=framework` вместо него.
 
