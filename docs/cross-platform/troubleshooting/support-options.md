@@ -6,11 +6,11 @@ ms.assetid: E4EF7E0F-ED86-44C9-9F98-38ECF881C7E2
 ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: 500b4c63131ab850b4b9d7c6a0aec49b313ec426
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: 47480adfdff5ee3282c1c7fa422260184f91c071
+ms.sourcegitcommit: c9ebf456e1c6924956bedb13f4ea78ff09f7b1a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="what-support-options-are-available-for-xamarin"></a>Какие варианты поддержки доступны для Xamarin?
 
@@ -33,8 +33,6 @@ ms.lasthandoff: 04/26/2018
 ### <a name="visual-studio-email-support-incidents-for-xamarin-topics"></a>Обращения в службу поддержки по электронной почте Visual Studio разделов Xamarin
 
 Компоненты пакета SDK для Xamarin и IDE пригодны для обращения в службу технической поддержки, как часть [преимущества для подписчиков Visual Studio](https://msdn.microsoft.com/subscriptions/bb266240) и [Microsoft Premier Support](https://www.microsoft.com/microsoftservices/support.aspx).  Это соответствует политики для других платформ разработки в Visual Studio, такие как UWP и ASP.NET.  Xamarin инцидентов отправить таким образом будут назначены в группу поддержки Xamarin.  В разделе [ответы поддержки Microsoft](https://support.microsoft.com/gp/offerprophone) Дополнительные сведения о политиках, для подобных случаев.
-
-Для Xamarin Test Cloud можно отправлять в службу поддержки, перейдя к [страницы входа Test Cloud](https://testcloud.xamarin.com/login) и открытие **поддерживает** ссылку.
 
 ### <a name="information-for-users-migrating-from-expired-xamarin-subscriptions-to-visual-studio-subscriptions"></a>Сведения для пользователей при миграции из подписки с истекшим сроком Xamarin в Visual Studio подписок
 

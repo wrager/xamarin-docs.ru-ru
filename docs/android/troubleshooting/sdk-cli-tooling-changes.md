@@ -7,25 +7,20 @@ ms.assetid: 5AC61C00-0FF6-4C2D-80E7-D67A3EE30A5A
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/08/2018
-ms.openlocfilehash: 4156d712b91ad069d482debdf0731be8b649287a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/02/2018
+ms.openlocfilehash: b5de9d673a348ddd4b939ae387257f835b37117a
+ms.sourcegitcommit: c9ebf456e1c6924956bedb13f4ea78ff09f7b1a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="changes-to-the-android-sdk-tooling"></a>Изменения в Android SDK Tools
 
 _Изменения в управлении Android SDK установлен уровни API и Avd._
 
-## <a name="changes-to--android-sdk-tooling"></a>Изменения средств пакета SDK для Android
+## <a name="changes-to-android-sdk-tooling"></a>Изменения средств пакета SDK для Android
 
-В современных версиях средств пакета SDK для Android компания Google отменила существующих диспетчеров AVD и SDK in favour of новые инструменты CLI (интерфейс командной строки). Первый **android** программа была удалена и диспетчеры GUI (графический интерфейс пользователя) в Visual Studio для Mac и более ранних версий Xamarin для Visual Studio больше не будет работать в более ранней версией 25.2.5 средств пакета SDK для Android.
-
-
-![Android меню интегрированной среды разработки Visual Studio](sdk-cli-tooling-changes-images/android-ide-menu.png)
-
-Попытка использовать **android** программы командной строки приведет к сообщение об ошибке следующего вида:
+В последних версиях средств пакета SDK для Android Google был удален из существующих диспетчеров AVD и SDK им следует предпочесть новые инструменты CLI (интерфейс командной строки). **Android** программа была удалена и диспетчеры Google GUI (графический интерфейс пользователя) в Visual Studio для Mac и более ранних версий Xamarin для Visual Studio больше не будет работать в более ранней версией 25.2.5 средств пакета SDK для Android. Например, при попытке использовать **android** программы командной строки приведет к сообщение об ошибке следующего вида:
 
 ```shell
 The "android" command is deprecated.
@@ -34,11 +29,21 @@ For command-line tools, use tools\bin\sdkmanager.bat
 and tools\bin\avdmanager.bat
 ```
 
-Таким образом необходимо использовать средства интерфейса командной строки для управления и обновления эмуляторов и пакета SDK для Android.
+Следующие разделы описывают управления пакета SDK для Android и Android виртуальные устройства, с помощью пакета SDK для Android 25.3.0 и более поздних версий.
+
+### <a name="ui-tools"></a>Средства пользовательского интерфейса
+
+Visual Studio и Visual Studio для Mac теперь предоставляют Xamarin на замену неподдерживаемые диспетчеры Google Графическим пользовательским интерфейсом:
+
+-   Чтобы загрузить средства пакета SDK для Android, платформы и другие компоненты, которые необходимы для разработки приложений Xamarin.Android, используйте [Xamarin Android SDK Manager](~/android/get-started/installation/android-sdk.md) вместо прежних версий пакета SDK Manager Google.
+
+-   Для создания и настройки виртуальных устройств Android, используйте [диспетчер устройств Android Xamarin](~/android/get-started/installation/android-emulator/xamarin-device-manager.md) вместо устаревших Google диспетчера эмуляторов.
+
+Эти средства функционально эквивалентны на основе графического интерфейса пользователя Google диспетчеры, они заменяют.
 
 ### <a name="cli-tools"></a>Средства интерфейса командной строки
 
-Следующие программы теперь составляют интерфейс командной строки для средства пакета SDK для Android:
+Кроме того можно использовать средства интерфейса командной строки для управления и обновления эмуляторов и пакета SDK для Android. Следующие программы теперь составляют интерфейс командной строки для средства пакета SDK для Android:
 
 #### <a name="sdkmanager"></a>sdkmanager
 
@@ -64,6 +69,7 @@ and tools\bin\avdmanager.bat
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md)
+- [Диспетчер устройств Android](~/android/get-started/installation/android-emulator/xamarin-device-manager.md)
 - [Общие сведения об уровнях API Android](~/android/app-fundamentals/android-api-levels.md)
 - [Заметки о выпуске пакета SDK Tools (Google)](https://developer.android.com/studio/releases/sdk-tools.html)
 - [sdkmanager](https://developer.android.com/studio/command-line/sdkmanager.html)
