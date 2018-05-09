@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2017
-ms.openlocfilehash: 83fb7a03b3426631fcf772bcb3605fea44fd4f2b
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 3485a7ebf9c54c2aa084dd11f32cd028cbc68aff
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="user-interface"></a>Пользовательский интерфейс
 
@@ -51,7 +51,7 @@ DataPages предоставляют API, чтобы быстро и легко 
 
 ## <a name="layoutslayoutsindexmd"></a>[Макеты](layouts/index.md)
 
-Xamarin.Forms имеет несколько макетов для организации на экране содержимого. `StackLayout`, `Grid`, `AbsoluteLayout`, `ScrollView`, и `RelativeLayout` каждого используется для создания привлекательных, скорость реагирования пользовательского интерфейса.
+Xamarin.Forms имеет несколько макетов для организации на экране содержимого. `StackLayout`, `Grid`, `FlexLayout`, `AbsoluteLayout`, `ScrollView`, и `RelativeLayout` каждого используется для создания привлекательных, скорость реагирования пользовательского интерфейса.
 
 ## <a name="listviewlistviewindexmd"></a>[ListView](listview/index.md)
 
@@ -84,6 +84,10 @@ Xamarin.Forms имеет несколько представлений для п
 ## <a name="themesthemesindexmd"></a>[Темы](themes/index.md)
 
 Xamarin.Forms темы определяют определенный внешний вид для стандартных элементов управления. После добавления в словарь ресурсов приложения темы, изменится вида стандартных элементов управления.
+
+## <a name="visual-state-managervisual-state-managermd"></a>[Диспетчер визуальных состояний](visual-state-manager.md)
+
+Диспетчер визуальных состояний предоставляет структурированный способ вызывают изменения в пользовательском интерфейсе из кода, включая макет, адаптация к изменениям в ориентации устройства или размеру.
 
 ## <a name="webviewwebviewmd"></a>[WebView](webview.md)
 

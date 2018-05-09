@@ -1,44 +1,24 @@
 ---
-title: Стили
+title: Стили Xamarin.Forms приложений
 description: С помощью стилей для настройки внешнего вида
 ms.prod: xamarin
-ms.assetid: 344A34AA-B19A-4765-BC8A-875D9A6B5EA8
+ms.assetid: EABF5072-B89B-4356-B7B3-1C6B40358926
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 02/17/2016
-ms.openlocfilehash: 7a19f7597ee17282bc8b41e7f0e7e3ade2361a50
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 28/04/2018
+ms.openlocfilehash: f6a80084ea68bb57a0c8aa61ad15d16dd67c6fc4
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="styles"></a>Стили
+# <a name="styling-xamarinforms-apps"></a>Стили Xamarin.Forms приложений
 
-## <a name="introductionintroductionmd"></a>[Введение](introduction.md)
+## <a name="styling-xamarinforms-apps-using-xaml-stylesxamlindexmd"></a>[Задание стиля Xamarin.Forms приложения, использующие XAML стили](xaml/index.md)
 
-Xamarin.Forms приложения часто содержат несколько элементов управления, имеющих идентичным внешним видом. Настройка внешнего вида каждого отдельного элемента управления может быть повторяющихся и подвержены ошибкам. Вместо этого стили можно создать, настроить внешний вид элемента управления путем группирования и параметры свойств, доступных на типе элемента управления.
+Задание стиля приложения Xamarin.Forms обычно осуществляется с помощью [ `Style` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) класса для группировки коллекцию значений свойств в один объект, который затем можно применить к нескольким экземплярам визуального элемента. Это помогает сократить повторяющихся разметки и позволяет внешний вид приложения проще изменять.
 
-## <a name="explicit-stylesexplicitmd"></a>[Явные стили](explicit.md)
+## <a name="styling-xamarinforms-apps-using-cascading-style-sheetscssindexmd"></a>[Задание стиля Xamarin.Forms приложений, с помощью каскадных таблиц стилей](css/index.md)
 
-*Явных* стиль — это сервер, выборочно применять к элементам управления, установив их [ `Style` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Style/) свойства.
-
-## <a name="implicit-stylesimplicitmd"></a>[Неявные стили](implicit.md)
-
-*Неявное* стиль является тот, который используется для всех элементов управления в одной и той же [ `TargetType` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Style.TargetType/), без необходимости каждый элемент управления для ссылки на стиль.
-
-## <a name="global-stylesapplicationmd"></a>[Глобальные стили](application.md)
-
-Стили можно сделать доступными глобально, добавив их в приложение [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/). Это помогает избежать дублирования стилей всех страниц или элементов управления.
-
-## <a name="style-inheritanceinheritancemd"></a>[Наследование стилей](inheritance.md)
-
-Стили можно наследовать другие стили, чтобы сократить дублирование и включить повторное использование.
-
-## <a name="dynamic-stylesdynamicmd"></a>[Динамические стили](dynamic.md)
-
-Стили не реагировать на изменения свойств и остаются неизменными в течение всего приложения. Тем не менее приложения можно реагировать на изменения стиля динамически во время выполнения с помощью динамического ресурсов.
-
-## <a name="device-stylesdevicemd"></a>[Стили устройства](device.md)
-
-Xamarin.Forms включает шесть *динамическое* стили, известный как *устройства* стили в [ `Devices.Styles` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Device+Styles/) класса. Все шесть стили могут применяться к [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) только экземпляр.
+Xamarin.Forms поддерживает стили визуальных элементов с помощью каскадных таблиц стилей (CSS). Таблица стилей содержит список правил, состоящий из одного или нескольких селекторы и блок объявления.

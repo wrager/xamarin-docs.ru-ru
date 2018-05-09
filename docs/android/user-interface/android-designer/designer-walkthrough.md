@@ -6,12 +6,12 @@ ms.assetid: 70FF2F9A-71BD-317E-C881-A44D82DF1BD8
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 01/29/2018
-ms.openlocfilehash: ea3d4a7f848847d6a9f7341faec47294a4cab3f8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/10/2018
+ms.openlocfilehash: 8d1dc410d5336d9c2505a18720cc7f734e838c39
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="using-the-android-designer"></a>С помощью конструктора Android
 
@@ -36,9 +36,9 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-Запустите Visual Studio и нажмите кнопку **новый проект...**  выберите **Visual C\# > Android > пустое приложение (Android)** шаблона:
+Запустите Visual Studio и нажмите кнопку **новый проект...**  выберите **Visual C\# > Android > приложения Android (Xamarin)** шаблона:
 
-[![Пустое приложение Android](designer-walkthrough-images/vs/01-android-app-sml.png)](designer-walkthrough-images/vs/01-android-app.png#lightbox)
+[![Пустое приложение Android](designer-walkthrough-images/vs/01-android-app-sml.w157.png)](designer-walkthrough-images/vs/01-android-app.w157.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
@@ -74,7 +74,7 @@ Android пользовательские интерфейсы могут соз�
 
 В Visual Studio щелкните правой кнопкой мыши **ресурсы и макет** в **обозревателе решений** и выберите **Добавить > новый элемент...** . В **Добавление нового элемента** диалогового окна выберите **Android макета**. Назовите файл **ListItem.axml** и нажмите кнопку **добавить**:
 
-[![Новый макет](designer-walkthrough-images/vs/03-new-layout-sml.png)](designer-walkthrough-images/vs/03-new-layout.png#lightbox)
+[![Новый макет](designer-walkthrough-images/vs/03-new-layout-sml.w157.png)](designer-walkthrough-images/vs/03-new-layout.w157.png#lightbox)
 
 Новый **ListItem** макет отображается в конструкторе:
 
@@ -363,7 +363,7 @@ Android пользовательские интерфейсы могут соз�
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-![New ListView](designer-walkthrough-images/vs/23-new-listview.png "New ListView")
+![Новый ListView](designer-walkthrough-images/vs/23-new-listview.png "новый ListView")
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 6bac16a8ce9859e819299689489d9aad982c1f7f
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: a8201301fc0437ecb79a81f40e865f14dc6af020
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="designer-basics"></a>Основы конструктора
 
@@ -37,7 +37,7 @@ _В этом разделе рассматриваются возможност�
 
 Аналогичным образом, можно добавить новый макет, щелкнув правой кнопкой мыши **макета** папки в **обозревателе решений** и выбрав **Добавить > новый элемент... > Android макета**:
 
-[![Диалоговое окно добавления нового элемента](designer-basics-images/vs/02-add-new-layout-sml.png)](designer-basics-images/vs/02-add-new-layout.png#lightbox)
+[![Диалоговое окно добавления нового элемента](designer-basics-images/vs/02-add-new-layout-sml.w157.png)](designer-basics-images/vs/02-add-new-layout.w157.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 

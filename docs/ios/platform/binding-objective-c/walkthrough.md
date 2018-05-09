@@ -6,12 +6,12 @@ ms.assetid: D3F6FFA0-3C4B-4969-9B83-B6020B522F57
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.date: 03/18/2017
-ms.openlocfilehash: 6a43b9ad3c9af0a4118c40fb128f8890ac0ffe40
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.date: 05/02/2017
+ms.openlocfilehash: 5954d705e403a3c8230c3125efcf836c3930c459
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-binding-an-ios-objective-c-library"></a>Пошаговое руководство: Привязка библиотеки Objective-C iOS
 
@@ -128,6 +128,7 @@ _В этой статье предоставляет практические р
 3. Выберите **Framework & Библиотека**, **Cocoa Touch статическая библиотека** шаблона и нажмите кнопку **Далее** кнопки:
 
     [![](walkthrough-images/image05.png "Выберите шаблон Cocoa Touch статической библиотеки")](walkthrough-images/image05.png#lightbox)
+
 4. Введите `InfColorPicker` для **имя проекта** и нажмите кнопку **Далее** кнопки:
 
     [![](walkthrough-images/image06.png "Введите имя проекта InfColorPicker")](walkthrough-images/image06.png#lightbox)
@@ -276,11 +277,11 @@ Architectures in the fat file: libInfColorPicker.a are: i386 armv7 x86_64 arm64
 
 1. Из **файл** последовательно выберите пункты **New** > **проекта...** :
 
-    ![](walkthrough-images/bind01vs.png "Запуск нового проекта")
+    ![Запуск нового проекта](walkthrough-images/bind01vs.png "запуске нового проекта")
 
-1. В диалоговом окне нового проекта выберите **iOS** > **привязки библиотеки**:
+1. В диалоговом окне нового проекта выберите **Visual C# > iPhone & iPad > iOS привязки библиотеки (Xamarin)**:
 
-    ![](walkthrough-images/bind02vs.png "Выберите привязки библиотеке iOS")
+    [![Выберите привязки библиотеке iOS](walkthrough-images/bind02.w157-sml.png)](walkthrough-images/bind02.w157.png#lightbox)
 
 1. Введите «InfColorPickerBinding» в качестве **имя** и нажмите кнопку **ОК** кнопку, чтобы создать решения.
 
@@ -289,8 +290,6 @@ Architectures in the fat file: libInfColorPicker.a are: i386 armv7 x86_64 arm64
 ![](walkthrough-images/bind03vs.png "Структура решения в обозревателе решений")
 
 -----
-
-
 
 - **ApiDefinition.cs** -этот файл содержит контракты, которые определяют, как будет вставлено Objective-C API в C#.
 - **Structs.cs** — этот файл будет содержать все структуры или значения перечисления, которые требуются интерфейсы и делегаты.
@@ -332,8 +331,7 @@ Architectures in the fat file: libInfColorPicker.a are: i386 armv7 x86_64 arm64
 
 -----
 
-
-При добавлении в проект файла. это автоматически установит Xamarin.iOS **действие при построении** файла **ObjcBindingNativeLibrary**и создать специальный файл с именем `libInfColorPickerSDK.linkwith.cs`.
+При **.a** файл добавляется в проект автоматически установит Xamarin.iOS **действие при построении** файла **ObjcBindingNativeLibrary**и создать особый файл с расширением вызывается `libInfColorPickerSDK.linkwith.cs`.
 
 
 Этот файл содержит `LinkWith` атрибут, который сообщает Xamarin.iOS как дескриптор статической библиотеки, который мы только что добавлен. Содержимое этого файла показано в следующем фрагменте кода:
@@ -536,6 +534,7 @@ Europa:Resources kmullins$
 1. **Создание пользовательского интерфейса iPhone** -дважды щелкните **MainStoryboard.storyboard** файла в **InfColorPickerSample** проекта для редактирования в конструкторе iOS. Добавить **кнопку** к представлению и вызывать его `ChangeColorButton`, как показано ниже:
 
     ![](walkthrough-images/use03.png "Добавление кнопки в представлении")
+
 1. **Добавить InfColorPickerView.xib** -InfColorPicker Objective-C-библиотека содержит **.xib** файла. Xamarin.iOS не будет содержать это **.xib** в проекте привязки, что вызовет ошибки во время выполнения в приложении образца. Решением этой проблемы является добавление **.xib** файл наш Xamarin.iOS проект. Выберите проект Xamarin.iOS, щелкните правой кнопкой мыши и выберите **Добавить > Добавить файлы**и добавьте **.xib** файла, как показано на следующем снимке экрана:
 
     ![](walkthrough-images/use04.png "Добавить InfColorPickerView.xib")
@@ -544,10 +543,11 @@ Europa:Resources kmullins$
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
+1. **Создание проекта Xamarin.iOS** -добавить новый проект Xamarin.iOS, с именем **InfColorPickerSample** с помощью **одного представления приложения** шаблона:
 
-1. **Создание проекта Xamarin.iOS** — добавить новый проект с именем Xamarin.iOS **InfColorPickerSample** в решение, как показано на следующем снимке экрана:
+    [![проект приложения (Xamarin) iOS](walkthrough-images/use01.w157-sml.png)](walkthrough-images/use01.w157.png#lightbox)
 
-    ![](walkthrough-images/use01vs.png "Создание проекта Xamarin.iOS")
+    [![Выберите шаблон](walkthrough-images/use01-2.w157-sml.png)](walkthrough-images/use01-2.w157.png#lightbox)
 
 1. **Добавьте ссылку на проект привязки** -обновление **InfColorPickerSample** проекта, чтобы он содержит ссылку на **InfColorPickerBinding** проекта:
 
@@ -559,10 +559,7 @@ Europa:Resources kmullins$
 
 1. **Добавить InfColorPickerView.xib** -InfColorPicker Objective-C-библиотека содержит **.xib** файла. Xamarin.iOS не будет содержать это **.xib** в проекте привязки, что вызовет ошибки во время выполнения в приложении образца. Решением этой проблемы является добавление **.xib** файл к проекту нашей Xamarin.iOS из наших **узла построения Mac**. Выберите проект Xamarin.iOS, щелкните правой кнопкой мыши и выберите **добавить** > **существующий элемент...** и добавьте **.xib** файла.
 
-
 -----
-
-
 
 Теперь давайте кратко рассмотрим протоколов в Objective-C и как мы их обработки в привязке и код C#.
 

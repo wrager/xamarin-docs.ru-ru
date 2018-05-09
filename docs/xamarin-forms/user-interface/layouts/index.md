@@ -8,11 +8,11 @@ ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/26/2017
-ms.openlocfilehash: 864e81b6955fd5138c4055a3f202695803139ac6
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 2f57ac5b5b54b2606618c5e59fb544cae7c77e88
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="layouts"></a>Макеты
 
@@ -28,6 +28,7 @@ Xamarin.Forms имеет несколько макетов и возможнос
 * **[AbsoluteLayout](absolute-layout.md)**  &ndash; позволяет расположить представления, задав координаты & размер с точки зрения абсолютные значения или соотношений. Можно использовать AbsoluteLayout слоя представления, а также привязывать их к слева, справа или center.
 * **[RelativeLayout](relative-layout.md)**  &ndash; используется для размещения представлений, задав ограничения относительно их родительского измерения и положение.
 * **[Сетка](grid.md)**  &ndash; используется для размещения представления в виде сетки. С точки зрения абсолютные значения или соотношений, можно указать строки и столбцы.
+* **[FlexLayout](flex-layout.md)**  &ndash; используется для размещения представления по горизонтали или вертикали с разбивкой на строки.
 * **[ScrollView](scroll-view.md)**  &ndash; используется для предоставления прокрутку, если представление не может поместиться полностью в пределах границ экрана.
 * **[LayoutOptions](layout-options.md)**  &ndash; определяют выравнивание и расширение для представления, относительно его родительского элемента.
 * **[Входной прозрачности](#input_transparency)**  &ndash; определяет, получает ли элемент входных данных.
@@ -59,6 +60,23 @@ Xamarin.Forms имеет несколько макетов и возможнос
   <Button HorizontalOptions="End" Text="Button" />
 </StackLayout>
 ```
+
+### <a name="flexlayoutflex-layoutmd"></a>[FlexLayout](flex-layout.md)
+
+`FlexLayout` Аналогичен `StackLayout` в том, что он отображает дочерние представления по горизонтали или по вертикали:
+
+```xaml
+<FlexLayout Direction="Column"
+            AlignItems="Center"
+            JustifyContent="SpaceEvenly">
+        
+    <Label Text="FlexLayout in Action" />
+    <Button Text="Button" />
+    <Label Text="Another Label" />
+</FlexLayout>
+```
+
+Однако, если существует слишком много дочерних элементов, которые помещаются в одной строке или столбцу, `FlexLayout` поддерживает упаковки эти представления. `FlexLayout` основан на модуле CSS гибкие поле макет и имеется много таких же встроенные возможности для размещения и выравнивания его дочерних элементов.
 
 ### <a name="absolutelayoutabsolute-layoutmd"></a>[AbsoluteLayout](absolute-layout.md)
 

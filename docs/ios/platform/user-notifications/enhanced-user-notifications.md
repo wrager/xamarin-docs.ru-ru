@@ -6,12 +6,12 @@ ms.assetid: 4E1FF652-28F0-4566-B383-9D12664401A4
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.date: 03/17/2017
-ms.openlocfilehash: 9fd3ff17dc9af3fd30a7d5b31e8cea7ff8669a51
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/02/2017
+ms.openlocfilehash: b27d415240f3b8cd25c4bc54f6d176c50e42a250
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="enhanced-user-notifications"></a>Улучшенный пользовательский уведомления
 
@@ -548,10 +548,10 @@ namespace MonkeyNotification
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 1. Откройте решение для приложения в Visual Studio.
-2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **добавить** > **Добавление нового проекта**.
-3. Выберите **iOS** > **расширения** > **расширения службы уведомлений**: 
+2. Щелкните правой кнопкой мыши имя решения в **обозревателе решений** и выберите **Добавить > Новый проект...** .
+3. Выберите **Visual C# > iOS расширения > расширение службы уведомлений**:
 
-    [![](enhanced-user-notifications-images/extension01w.png "Выберите расширения службы уведомлений")](enhanced-user-notifications-images/extension01w.png#lightbox)
+    [![](enhanced-user-notifications-images/extension01.w157-sml.png "Выберите расширения службы уведомлений")](enhanced-user-notifications-images/extension01.w157.png#lightbox)
 4. Введите **имя** расширение и нажмите кнопку **ОК** кнопки.
 
 -----

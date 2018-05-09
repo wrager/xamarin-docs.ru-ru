@@ -6,12 +6,12 @@ ms.assetid: 9073FA0E-BD5A-4492-8A93-54C466F6EDB9
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
-ms.date: 10/25/2017
-ms.openlocfilehash: f8032966b49f6f023642b0d1338e8c5d740b66e0
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.date: 04/10/2018
+ms.openlocfilehash: bc535160816ad186baaa5e802eceb6ae40347d75
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="part-1-getting-started-with-xaml"></a>Часть 1. Начало работы с XAML
 
@@ -23,9 +23,9 @@ _В приложении Xamarin.Forms XAML в основном использу
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-В Windows, с помощью Visual Studio выберите **файл > Создать > проект** в меню. В **новый проект** диалогового окна выберите **Visual C# > кроссплатформенный** слева, а затем **Cross (Xamarin.Forms или машинный код) приложения платформы** из списка в центре. 
+В Windows, с помощью Visual Studio выберите **файл > Создать > проект** в меню. В **новый проект** диалогового окна выберите **Visual C# > кроссплатформенный** слева, а затем **мобильное приложение (Xamarin.Forms)** из списка в центре. 
 
-![](get-started-with-xaml-images/win/newprojectdialog.png "Диалоговое окно нового проекта")
+![](get-started-with-xaml-images/win/newprojectdialog.w157.png "Диалоговое окно нового проекта")
 
 Выберите расположение для решения, присвойте ему имя **XamlSamples** (или любые желаемые) и нажмите клавишу **ОК**.
 
@@ -226,7 +226,7 @@ MainPage = new MainPage();
 
 Чтобы добавить другие XAML-приложения `ContentPage` классов в проект, выберите **XamlSamples** PCL проекта и вызова неуправляемого кода **проект > Добавить новый элемент** пункта меню. В левой части **Добавление нового элемента** диалогового окна выберите **Visual C#** и **Xamarin.Forms**. Выберите из списка **страницы содержимого** (не **содержимого страницы (C#)**, который создает код только страницы, или **представление содержимого**, которой не является страницей). Присвойте странице имя, например, **HelloXamlPage.xaml**:
 
-![](get-started-with-xaml-images/win/addnewitemdialog.png "Новое диалоговое окно добавления элемента")
+![](get-started-with-xaml-images/win/addnewitemdialog.w157.png "Новое диалоговое окно добавления элемента")
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 

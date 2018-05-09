@@ -1,232 +1,280 @@
 ---
-title: Пошаговое руководство
+title: Пошаговое руководство по фрагментам Xamarin.Android — часть 1
 ms.prod: xamarin
+ms.topic: tutorial
 ms.assetid: ED368FA9-A34E-DC39-D535-5C34C32B9761
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/15/2018
-ms.openlocfilehash: cc5c05fce9b9c3dd974afe027cc7cbb60085c621
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/26/2018
+ms.openlocfilehash: 4dae59d113671c9ba1ac35dd8e4189d05a7c319a
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="walkthrough"></a>Пошаговое руководство
+# <a name="fragments-walkthrough-ndash-phone"></a>Пошаговое руководство фрагменты &ndash; phone]
 
-В следующих шагах базовое приложение создается с помощью фрагментов. Первым шагом является создание нового Xamarin.Android для проекта Android.
+Это первая часть Пошаговое руководство, которое создаст Xamarin.Android приложение, предназначенное для устройства Android в книжной ориентации. В этом пошаговом руководстве обсудим Создание фрагментов в Xamarin.Android и добавление их в выборке.
 
-## <a name="1-create-a-project"></a>1. Создание проекта
+[![](./images/intro-screenshot-phone-sml.png)](./images/intro-screenshot-phone.png#lightbox)
 
-Создайте новый проект с именем Xamarin.Android **FragmentSample**. **Android минимум** версия должна быть задана, для Android 3.1 или более поздней версии, как показано на рисунке ниже:
+Для этого приложения будут созданы следующие классы:
 
-[![Установка Android Минимальная версия](walkthrough-images/00.png)](walkthrough-images/00.png#lightbox)
+1. `PlayQuoteFragment` &nbsp; Этот фрагмент выдаст сообщение предложения из play с верные. Будут размещаться на `PlayQuoteActivity`.
+1. `Shakespeare` &nbsp; Этот класс будет содержать два массива жестко закодировано как свойства.
+1. `TitlesFragment` &nbsp; Этот фрагмент выдаст сообщение список названий воспроизведения, которые были созданы с верные. Будут размещаться на `MainActivity`.
+1. `PlayQuoteActivity` &nbsp; `TitlesFragment` Запустится `PlayQuoteActivity` в ответ на выбор воспроизведения в `TitlesFragment`.
 
+## <a name="1-create-the-android-project"></a>1. Создание проекта Android
 
-## <a name="2-create-the-mainactivity"></a>2. Создание MainActivity
+Создайте новый проект с именем Xamarin.Android **FragmentSample**.
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-Теперь нам нужны для создания `MainActivity` класса. Это действие при запуске приложения. Это действие будет размещаться одного или обоих фрагментов, в зависимости от размера экрана. `MainActivity` Это необходимо сделать по загрузке файла макет, который подходит для устройства.
+[![Создание нового проекта Xamarin.Android](./walkthrough-images/01-newproject.w157-sml.png)](./walkthrough-images/01-newproject.w157.png#lightbox)
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
+[![Создание нового проекта Xamarin.Android](./walkthrough-images/01-newproject.m742-sml.png)](./walkthrough-images/01-newproject.m742.png#lightbox)
+
+Рекомендуется выбрать **Разработка современных приложений** в данном пошаговом руководстве.
+
+После создания проекта, переименуйте файл **layout/Main.axml** для **layout/activity_main.axml**.
+
+-----
+
+## <a name="2-add-the-data"></a>2. Добавление данных
+
+Данные для этого приложения будет храниться в двух массивах строка жестко, являющихся свойствами элемента имени класса `Shakespeare`:
+
+* `Shakespeare.Titles` &nbsp; Этот массив будет содержать список воспроизведения из верные. Это является источником данных для `TitlesFragment`.
+* `Shakespeare.Dialogue` &nbsp; Этот массив будет содержать список квот из какого-либо играет, содержащихся в `Shakespeare.Titles`. Это является источником данных для `PlayQuoteFragment`.
+
+Добавьте новый класс C# для **FragmentSample** проект и назовите его **Shakespeare.cs**. Внутри этого файла, создайте новый C# класс с именем `Shakespeare` со следующим содержимым
 
 ```csharp
-[Activity(Label = "Fragments Walkthrough", MainLauncher = true, Icon = "@drawable/launcher")]
-public class MainActivity : Activity
+class Shakespeare
 {
-   protected override void OnCreate(Bundle bundle)
-   {
-       base.OnCreate(bundle);
-       SetContentView(Resource.Layout.activity_main);
-   }
+    public static string[] Titles = {
+                                      "Henry IV (1)",
+                                      "Henry V",
+                                      "Henry VIII",
+                                      "Richard II",
+                                      "Richard III",
+                                      "Merchant of Venice",
+                                      "Othello",
+                                      "King Lear"
+                                    };
+
+    public static string[] Dialogue = {
+                                        "So shaken as we are, so wan with care, Find we a time for frighted peace to pant, And breathe short-winded accents of new broils To be commenced in strands afar remote. No more the thirsty entrance of this soil Shall daub her lips with her own children's blood; Nor more shall trenching war channel her fields, Nor bruise her flowerets with the armed hoofs Of hostile paces: those opposed eyes, Which, like the meteors of a troubled heaven, All of one nature, of one substance bred, Did lately meet in the intestine shock And furious close of civil butchery Shall now, in mutual well-beseeming ranks, March all one way and be no more opposed Against acquaintance, kindred and allies: The edge of war, like an ill-sheathed knife, No more shall cut his master. Therefore, friends, As far as to the sepulchre of Christ, Whose soldier now, under whose blessed cross We are impressed and engaged to fight, Forthwith a power of English shall we levy; Whose arms were moulded in their mothers' womb To chase these pagans in those holy fields Over whose acres walk'd those blessed feet Which fourteen hundred years ago were nail'd For our advantage on the bitter cross. But this our purpose now is twelve month old, And bootless 'tis to tell you we will go: Therefore we meet not now. Then let me hear Of you, my gentle cousin Westmoreland, What yesternight our council did decree In forwarding this dear expedience.",
+                                        "Hear him but reason in divinity, And all-admiring with an inward wish You would desire the king were made a prelate: Hear him debate of commonwealth affairs, You would say it hath been all in all his study: List his discourse of war, and you shall hear A fearful battle render'd you in music: Turn him to any cause of policy, The Gordian knot of it he will unloose, Familiar as his garter: that, when he speaks, The air, a charter'd libertine, is still, And the mute wonder lurketh in men's ears, To steal his sweet and honey'd sentences; So that the art and practic part of life Must be the mistress to this theoric: Which is a wonder how his grace should glean it, Since his addiction was to courses vain, His companies unletter'd, rude and shallow, His hours fill'd up with riots, banquets, sports, And never noted in him any study, Any retirement, any sequestration From open haunts and popularity.",
+                                        "I come no more to make you laugh: things now, That bear a weighty and a serious brow, Sad, high, and working, full of state and woe, Such noble scenes as draw the eye to flow, We now present. Those that can pity, here May, if they think it well, let fall a tear; The subject will deserve it. Such as give Their money out of hope they may believe, May here find truth too. Those that come to see Only a show or two, and so agree The play may pass, if they be still and willing, I'll undertake may see away their shilling Richly in two short hours. Only they That come to hear a merry bawdy play, A noise of targets, or to see a fellow In a long motley coat guarded with yellow, Will be deceived; for, gentle hearers, know, To rank our chosen truth with such a show As fool and fight is, beside forfeiting Our own brains, and the opinion that we bring, To make that only true we now intend, Will leave us never an understanding friend. Therefore, for goodness' sake, and as you are known The first and happiest hearers of the town, Be sad, as we would make ye: think ye see The very persons of our noble story As they were living; think you see them great, And follow'd with the general throng and sweat Of thousand friends; then in a moment, see How soon this mightiness meets misery: And, if you can be merry then, I'll say A man may weep upon his wedding-day.",
+                                        "First, heaven be the record to my speech! In the devotion of a subject's love, Tendering the precious safety of my prince, And free from other misbegotten hate, Come I appellant to this princely presence. Now, Thomas Mowbray, do I turn to thee, And mark my greeting well; for what I speak My body shall make good upon this earth, Or my divine soul answer it in heaven. Thou art a traitor and a miscreant, Too good to be so and too bad to live, Since the more fair and crystal is the sky, The uglier seem the clouds that in it fly. Once more, the more to aggravate the note, With a foul traitor's name stuff I thy throat; And wish, so please my sovereign, ere I move, What my tongue speaks my right drawn sword may prove.",
+                                        "Now is the winter of our discontent Made glorious summer by this sun of York; And all the clouds that lour'd upon our house In the deep bosom of the ocean buried. Now are our brows bound with victorious wreaths; Our bruised arms hung up for monuments; Our stern alarums changed to merry meetings, Our dreadful marches to delightful measures. Grim-visaged war hath smooth'd his wrinkled front; And now, instead of mounting barded steeds To fright the souls of fearful adversaries, He capers nimbly in a lady's chamber To the lascivious pleasing of a lute. But I, that am not shaped for sportive tricks, Nor made to court an amorous looking-glass; I, that am rudely stamp'd, and want love's majesty To strut before a wanton ambling nymph; I, that am curtail'd of this fair proportion, Cheated of feature by dissembling nature, Deformed, unfinish'd, sent before my time Into this breathing world, scarce half made up, And that so lamely and unfashionable That dogs bark at me as I halt by them; Why, I, in this weak piping time of peace, Have no delight to pass away the time, Unless to spy my shadow in the sun And descant on mine own deformity: And therefore, since I cannot prove a lover, To entertain these fair well-spoken days, I am determined to prove a villain And hate the idle pleasures of these days. Plots have I laid, inductions dangerous, By drunken prophecies, libels and dreams, To set my brother Clarence and the king In deadly hate the one against the other: And if King Edward be as true and just As I am subtle, false and treacherous, This day should Clarence closely be mew'd up, About a prophecy, which says that 'G' Of Edward's heirs the murderer shall be. Dive, thoughts, down to my soul: here Clarence comes.",
+                                        "To bait fish withal: if it will feed nothing else, it will feed my revenge. He hath disgraced me, and hindered me half a million; laughed at my losses, mocked at my gains, scorned my nation, thwarted my bargains, cooled my friends, heated mine enemies; and what's his reason? I am a Jew. Hath not a Jew eyes? hath not a Jew hands, organs, dimensions, senses, affections, passions? fed with the same food, hurt with the same weapons, subject to the same diseases, healed by the same means, warmed and cooled by the same winter and summer, as a Christian is? If you prick us, do we not bleed? if you tickle us, do we not laugh? if you poison us, do we not die? and if you wrong us, shall we not revenge? If we are like you in the rest, we will resemble you in that. If a Jew wrong a Christian, what is his humility? Revenge. If a Christian wrong a Jew, what should his sufferance be by Christian example? Why, revenge. The villany you teach me, I will execute, and it shall go hard but I will better the instruction.",
+                                        "Virtue! a fig! 'tis in ourselves that we are thus or thus. Our bodies are our gardens, to the which our wills are gardeners: so that if we will plant nettles, or sow lettuce, set hyssop and weed up thyme, supply it with one gender of herbs, or distract it with many, either to have it sterile with idleness, or manured with industry, why, the power and corrigible authority of this lies in our wills. If the balance of our lives had not one scale of reason to poise another of sensuality, the blood and baseness of our natures would conduct us to most preposterous conclusions: but we have reason to cool our raging motions, our carnal stings, our unbitted lusts, whereof I take this that you call love to be a sect or scion.",
+                                        "Blow, winds, and crack your cheeks! rage! blow! You cataracts and hurricanoes, spout Till you have drench'd our steeples, drown'd the cocks! You sulphurous and thought-executing fires, Vaunt-couriers to oak-cleaving thunderbolts, Singe my white head! And thou, all-shaking thunder, Smite flat the thick rotundity o' the world! Crack nature's moulds, an germens spill at once, That make ingrateful man!" 
+                                    };
 }
+```
+
+## <a name="3-create-the-playquotefragment"></a>3. Создание PlayQuoteFragment
+
+`PlayQuoteFragment` Является фрагментом Android, отображающий квоту для воспроизведения верные, выбранное пользователем ранее в приложении, этот фрагмент не будет использовать файл Android макета, вместо этого он будет динамически создать свой пользовательский интерфейс. Добавьте новый `Fragment` класс с именем `PlayQuoteFragment` в проект:
+
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+
+[![Добавьте новый класс C#](./walkthrough-images/04-addfragment.w157-sml.png)](./walkthrough-images/02-addclass.w157.png#lightbox)
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
+[![Добавьте новый класс C#](./walkthrough-images/04-addfragment.m742-sml.png)](./walkthrough-images/02-addclass.m742.png#lightbox)
+
+-----
+
+Измените код для фрагмента выглядеть этот фрагмент кода:
+
+```csharp
+public class PlayQuoteFragment : Fragment
+{
+    public int PlayId => Arguments.GetInt("current_play_id", 0);
+
+    public static PlayQuoteFragment NewInstance(int playId)
+    {
+        var bundle = new Bundle();
+        bundle.PutInt("current_play_id", playId);
+        return new PlayQuoteFragment {Arguments = bundle};
+    }
+
+    public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        if (container == null)
+        {
+            return null;
+        }
+
+        var textView = new TextView(Activity);
+        var padding = Convert.ToInt32(TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Activity.Resources.DisplayMetrics));
+        textView.SetPadding(padding, padding, padding, padding);
+        textView.TextSize = 24;
+        textView.Text = Shakespeare.Dialogue[PlayId];
+
+        var scroller = new ScrollView(Activity);
+        scroller.AddView(textView);
+
+        return scroller;
+    }
+}
+```
+
+Это общий шаблон в приложения Android для предоставления фабричный метод, который создает экземпляр фрагмента. Это гарантирует, что фрагмент будет создан с необходимыми параметрами для правильной работы. В этом пошаговом руководстве, приложение должно использовать `PlayQuoteFragment.NewInstance` метод, чтобы создать новый фрагмент при каждом выборе предложения. `NewInstance` Метод принимает один параметр &ndash; индекс квоты для отображения.
+
+`OnCreateView` Метод будет вызываться системой Android, когда все готово для подготовки к просмотру в фрагменте на экране. Он вернет Android `View` объект, являющийся фрагмента. Этот фрагмент не использует файл макета для создания представления. Вместо этого он будет программное создание представления путем создания экземпляра **TextView** для хранения кавычки и будет отображен, мини-приложение в **ScrollView**.
+
+> [!NOTE]
+> Вложенные классы фрагмент должен иметь открытый конструктор по умолчанию, не имеющий параметров.
+
+## <a name="4-create-the-playquoteactivity"></a>4. Создание PlayQuoteActivity
+
+Фрагменты должны размещаться внутри действия, поэтому для этого приложения требуется действие, которое будет размещаться `PlayQuoteFragment`. Действие будет динамически добавлять фрагмента в макете во время выполнения. Добавьте новое действие в приложение и назовите его `PlayQuoteActivity`:
+
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+
+[![Добавьте в проект Android действия](./walkthrough-images/03-addactivity.w157-sml.png)](./walkthrough-images/03-addactivity.w157.png#lightbox)
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
+[![Добавьте в проект Android действия](./walkthrough-images/03-addactivity.m742-sml.png)](./walkthrough-images/03-addactivity.m742.png#lightbox)
+
+-----
+
+Редактировать код в `PlayQuoteActivity`:
+
+```csharp
+[Activity(Label = "PlayQuoteActivity")]
+public class PlayQuoteActivity : Activity
+{
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+        base.OnCreate(savedInstanceState);
+
+        var playId = Intent.Extras.GetInt("current_play_id", 0);
+
+        var detailsFrag = PlayQuoteFragment.NewInstance(playId);
+        FragmentManager.BeginTransaction()
+                        .Add(Android.Resource.Id.Content, detailsFrag)
+                        .Commit();
+    }
+}
+```
+
+При `PlayQuoteActivity` будет создан, он будет создавать новый `PlayQuoteFragment` и загрузить этот фрагмент в его корневым представлением в контексте `FragmentTransaction`. Обратите внимание, что это действие не загружает файл Android макет для своего пользовательского интерфейса. Вместо этого новый `PlayQuoteFragment` добавляется представление корневого приложения. Идентификатор ресурса `Android.Resource.Id.Content` используется для ссылки на представление корневого действия, не зная его определенный идентификатор.
+
+## <a name="5-create-titlesfragment"></a>5. Создание TitlesFragment
+
+`TitlesFragment` Будет специализированные фрагмент, известный как подкласс `ListFragment` который инкапсулирует логику для отображения `ListView` в фрагменте. Объект `ListFragment` предоставляет `ListAdapter` свойство (используемые `ListView` для отображения ее содержимого) и обработчик событий с именем `OnListItemClick` разрешающее фрагмент реакция на щелчок мыши для строки, которая отображается по `ListView`. 
+
+Чтобы приступить к работе, добавьте новый фрагмент в проект и назовите его **TitlesFragment**:
+
+# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
+
+[![Добавить Android фрагмента в проект](./walkthrough-images/04-addfragment.w157-sml.png)](./walkthrough-images/04-addfragment.w157.png#lightbox)
+
+# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
+
+[![Добавить Android фрагмента в проект](./walkthrough-images/04-addfragment.m742-sml.png)](./walkthrough-images/04-addfragment.m742.png#lightbox)
+
+-----
+
+Измените код внутри фрагмента:
+
+```csharp
+public class TitlesFragment : ListFragment
+{
+    int selectedPlayId;
+
+    public TitlesFragment()
+    {
+        // Being explicit about the requirement for a default constructor.
+    }
+
+    public override void OnActivityCreated(Bundle savedInstanceState)
+    {
+        base.OnActivityCreated(savedInstanceState);
+        ListAdapter = new ArrayAdapter<String>(Activity, Android.Resource.Layout.SimpleListItemActivated1, Shakespeare.Titles);
+
+        if (savedInstanceState != null)
+        {
+            selectedPlayId = savedInstanceState.GetInt("current_play_id", 0);
+        }
+    }
+
+    public override void OnSaveInstanceState(Bundle outState)
+    {
+        base.OnSaveInstanceState(outState);
+        outState.PutInt("current_play_id", selectedPlayId);
+    }
+
+    public override void OnListItemClick(ListView l, View v, int position, long id)
+    {
+        ShowPlayQuote(position);
+    }
+
+    void ShowPlayQuote(int playId)
+    {
+        var intent = new Intent(Activity, typeof(PlayQuoteActivity));
+        intent.PutExtra("current_play_id", playId);
+        StartActivity(intent);
+    }
+}
+```
+
+При создании действия будут вызывать Android `OnActivityCreated` метод фрагмента; это место, куда адаптер списка для `ListView` создается.  `ShowQuoteFromPlay` Метод будет запустить экземпляр `PlayQuoteActivity` для отображения квоты для выбранного воспроизведения.
+
+## <a name="display-titlesfragment-in-mainactivity"></a>Отображение TitlesFragment в MainActivity
+
+Последним шагом является отображение `TitlesFragment` в `MainActivity`. Действие не динамически загрузить фрагмент. Вместо этого фрагмента статически загружается, объявив его в файл макета с помощью действия `fragment` элемента. Фрагмент для загрузки определяется `android:name` класс фрагмента (includeing пространство имен типа) атрибут. Например, чтобы использовать `TitlesFragment`, затем `android:name` будет равен `FragmentSample.TitlesFragment`.
+
+Измените файл макета **activity_mail.axml**, замените существующий код XML со следующими:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:name="FragmentSample.TitleFragment"
+        android:id="@+id/titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
 ```
 
 > [!NOTE]
-> `Note:` Вложенные классы фрагмент должен иметь открытый стандартный конструктор без аргументов.
+> `class` Атрибут является допустимым заменой `android:name`. Нет формальных руководство на форму, которая является предпочтительной, существует множество примеров баз кода, которые будут использовать `class` взаимозаменяемо с `android:name`.
 
-## <a name="3-create-the-layout-files"></a>3. Создавать файлы макета
-
-Два разных размеров требуется два файла другой макет. Поэтому давайте создадим новую папку **ресурсы или макет-большого**и создайте новый макет **activity_main.axml**. Мы также будем переименовать файл макета по умолчанию как **Resources/Layout/activity_main.axml**. После внесения этих изменений макета папки должен быть похож на следующем снимке экрана.
-
-[![Снимок экрана: макет папки в Интегрированной среде разработки](walkthrough-images/01.png)](walkthrough-images/01.png#lightbox)
-
-
-Все устройства будет загрузить и использовать файл макета в **ресурсы и макет**.
-Это очень простой макет, который просто отображает `TitlesFragment`:
-
-```xml
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-       android:orientation="horizontal"
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent">
- <fragment class="com.xamarin.sample.fragments.supportlib.TitlesFragment"
-           android:id="@+id/titles_fragment"
-           android:layout_width="fill_parent"
-           android:layout_height="fill_parent" />
-</LinearLayout>
-```
-
-Для устройств с большим экраном, Android будет загружать файл макета в **ресурсы или макет-большого**. Содержимое макета для планшетных ПК выглядит следующим образом:
-
-```xml
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-       android:orientation="horizontal"
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent">
- <fragment class="com.xamarin.sample.fragments.supportlib.TitlesFragment"
-           android:id="@+id/titles_fragment"
-           android:layout_weight="1"
-           android:layout_width="0px"
-           android:layout_height="match_parent" />
- <FrameLayout android:id="@+id/details"
-              android:layout_weight="1"
-              android:layout_width="0px"
-              android:layout_height="match_parent" />
-</LinearLayout>
-```
-
-Файл макета для больших экранов немного отличается. Не только `TitlesFragment` отображаются в этом файле макета, но `FrameLayout` добавляется рядом с фрагмента. На больших экранах `DetailsFragment` программным образом добавляется `MainActivity` при выборе пользователем воспроизведения. Позднее будут описаны более подробно как это сделать.
-
-Android 3.2 появился новый способ указания макеты экрана. Эти новые квалификаторы укажите объем пространства, должен макета, а не размера экрана. Если это приложение был предназначен для работы только в Android 3.2 или более поздней версии, мы создадим **ресурсов, макет sw600dp** папку (вместо папке **ресурсов или макет-большого**) для файла макета  **activity_main.AXML**. Этот файл ресурсов будет загружаться все устройства, которые имеют ширину экрана 600 зависящий от плотности пикселей. Тем не менее, как это приложение использует только задать целевой объект Android 3.1 или более поздней версии, более старые квалификатором ресурса.
-
-## <a name="4-create-the-titlesfragment"></a>4. Создание TitlesFragment
-
-`TitlesFragment` будет отображать названия различных играет, так что давайте Добавление новый фрагмент в проект с именем `TitlesFragment`:
-
-[![Добавление в проект TitlesFragment новый фрагмент](walkthrough-images/02.png)](walkthrough-images/02.png#lightbox)
-
-После `TitlesFragment` была добавлена, нам нужно изменить класс, наследующий от `Android.App.ListFragment`. `ListFragment` — Это тип специализированные фрагмент, включающий список функциональные возможности.
-`TitlesFragment` также переопределяют `OnActivityCreated` (другой метод фрагмент жизненного цикла) и предоставить `Adapter` , `ListFragment` будет использоваться для заполнения списка:
+Нет необходимых для MainActivity изменений кода. Код в этом классе должен быть очень похожа на следующий фрагмент:
 
 ```csharp
-public override void OnActivityCreated(Bundle savedInstanceState)
+[Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+public class MainActivity : Activity
 {
-   base.OnActivityCreated(savedInstanceState);
-   var adapter = new ArrayAdapter<String>(Activity, Android.Resource.Layout.SimpleListItemChecked, Shakespeare.Titles);
-   ListAdapter = adapter;
-   if (savedInstanceState != null)
-   {
-       _currentPlayId = savedInstanceState.GetInt("current_play_id", 0);
-   }
-   var detailsFrame = Activity.FindViewById<View>(Resource.Id.details);
-   _isDualPane = detailsFrame != null && detailsFrame.Visibility == ViewStates.Visible;
-   if (_isDualPane)
-   {
-       ListView.ChoiceMode = (int) ChoiceMode.Single;
-       ShowDetails(_currentPlayId);
-   }
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+        base.OnCreate(savedInstanceState);
+        SetContentView(Resource.Layout.activity_main);
+    }
 }
 ```
 
-Как упоминалось ранее, наше приложение имеет два макеты для `MainActivity`. Код в `OnActivityCreated` определяет наличие `FrameLayout` и определяет, какой файл макета был загружен. Если `FrameLayout` существует в макете, то `_isDualPane` флаг имеет значение `true`. `_isDualPane` Флаг используется в другом месте в действии, в частности `ShowDetails` метод. `ShowDetails` Метод рассматриваются более подробно ниже.
+## <a name="run-the-app"></a>Запуск приложения
 
-`TitlesFragment` приведен список и должна реагировать на выборе пользователя в списке. Чтобы сделать это, `TitlesFragment` переопределит метод `OnListItemClick`. Внутри `OnListItemClick`, новый `DetailsFragment` будет создан и отображен в `FrameLayout`, программными средствами. Соответствующий код внутри `TitlesFragment` является:
+Теперь, когда код завершения, запустите приложение на устройстве, чтобы просмотреть его в действие.
 
-```csharp
-public override void OnListItemClick(ListView l, View v, int position, long id)
-{
-   ShowDetails(position);
-}
-private void ShowDetails(int playId)
-{
-   _currentPlayId = playId;
-   if (_isDualPane)
-   {
-       // We can display everything in place with fragments.
-       // Have the list highlight this item and show the data.
-       ListView.SetItemChecked(playId, true);
-       // Check what fragment is shown, replace if needed.
-       var details = FragmentManager.FindFragmentById(Resource.Id.details) as DetailsFragment;
-       if (details == null || details.ShownPlayId != playId)
-       {
-           // Make new fragment to show this selection.
-           details = DetailsFragment.NewInstance(playId);
-           // Execute a transaction, replacing any existing
-           // fragment with this one inside the frame.
-           var ft = FragmentManager.BeginTransaction();
-           ft.Replace(Resource.Id.details, details);
-           ft.SetTransition(FragmentTransaction.TransitFragmentFade);
-           ft.Commit();
-       }
-   }
-   else
-   {
-       // Otherwise we need to launch a new Activity to display
-       // the dialog fragment with selected text.
-       var intent = new Intent();
-       intent.SetClass(Activity, typeof (DetailsActivity));
-       intent.PutExtra("current_play_id", playId);
-       StartActivity(intent);
-   }
-}
-```
+[![Снимки экрана для приложения, работающего на телефоне.](./walkthrough-images/05-app-screenshots-sml.png)](./walkthrough-images/05-app-screenshots.png#lightbox)
 
-Код с устройства определяет способ форматирования и отображения выбранного play с кавычками. В случае планшетных ПК `_isDualPane` флагу будет присвоено `true`, и поэтому квоты будет отображаться рядом с `TitlesFragment`. Если выбранного play `id` еще не отображается, выберите новый `DetailsFragment` создается и затем загружается в `FrameLayout` в действии. Для других устройств, не имеющих большом мониторе &ndash; телефонов, например &ndash; `isDualPane` будет присвоено `false` , новый `DetailsActivity` будет запущена.
-
-
-## <a name="5-create-the-detailsactivity"></a>5. Создание DetailsActivity
-
-`DetailsActivity` Отображает `DetailsFragment` для более мелких устройств. Чтобы увидеть это, сначала мы добавим новое действие в проект с именем `DetailsActivity`. `DetailsActivity` — Это очень простое действие. Создает и затем разместить новый `DetailsFragment` для воспроизведения `id` , был отправлен:
-
-```csharp
-[Activity(Label = "Details Activity")]
-public class DetailsActivity : Activity
-{
-   protected override void OnCreate(Bundle bundle)
-   {
-       base.OnCreate(bundle);
-       var index = Intent.Extras.GetInt("current_play_id", 0);
-
-       var details = DetailsFragment.NewInstance(index); // DetailsFragment.NewInstance is a factory method to create a Details Fragment
-       var fragmentTransaction = FragmentManager.BeginTransaction();
-       fragmentTransaction.Add(Android.Resource.Id.Content, details);
-       fragmentTransaction.Commit();
-   }
-}
-```
-
-Обратите внимание, что файл разметки не загружаются для `DetailsActivity`. Вместо этого `DetailsFragment` загружается в представлении корневого действия. В этом представлении корневой имеет специальный идентификатор `Android.Resource.Id.Content`. Новый `DetailFragment` , которая затем добавляется к этому представлению корневой внутри `FragmentTransaction` , создаваемый с помощью этого действия `FragmentManager`.
-
-
-## <a name="6-create-the-detailsfragment"></a>6. Создание DetailsFragment
-
-Теперь добавим в приложение с именем другой фрагмент `DetailsFragment`. Этот фрагмент выдаст сообщение предложения из выбранного play. В следующем коде показано полное `DetailsFragment`:
-
-```csharp
-internal class DetailsFragment : Fragment
-{
-   public static DetailsFragment NewInstance(int playId)
-   {
-       var detailsFrag = new DetailsFragment {Arguments = new Bundle()};
-       detailsFrag.Arguments.PutInt("current_play_id", playId);
-       return detailsFrag;
-   }
-   public int ShownPlayId
-   {
-       get { return Arguments.GetInt("current_play_id", 0); }
-   }
-   public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-   {
-       if (container == null)
-       {
-           // Currently in a layout without a container, so no reason to create our view.
-           return null;
-       }
-       var scroller = new ScrollView(Activity);
-       var text = new TextView(Activity);
-       var padding = Convert.ToInt32(TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Activity.Resources.DisplayMetrics));
-       text.SetPadding(padding, padding, padding, padding);
-       text.TextSize = 24;
-       text.Text = Shakespeare.Dialogue[ShownPlayId];
-       scroller.AddView(text);
-       return scroller;
-   }
-}
-```
-
-Чтобы `DetailsFragment` для правильной работы функций, они должны иметь индекс, игры, который выбран в `TitlesFragment`. Существует много способов предоставить это значение, чтобы `DetailsFragment`; в этом примере воспроизведение `Id` помещаются в пакет и которое пакет хранится свойство Arguments экземпляра `DetailsFragment`. Свойство `ShownPlayId` предоставляется для удобства &ndash; будет использоваться для экземпляров `DetailsFragment` для извлечения значения из пакета.
-
-`OnCreateView` вызывается, когда этот фрагмент необходимо нарисовать свой пользовательский интерфейс и должен возвращать `Android.Views.View` объекта. В большинстве случаев это `View` завышенными из существующего файла разметки. В случае приведенном выше примере фрагмент будет программного построения представление, которое будет использоваться для отображения.
-
-Поздравляем! Теперь вы создали приложение, использующее фрагментов для упрощения разработки через форм-факторов.
-
-В [следующий раздел](supporting-pre-honeycomb.md), мы собираемся расширить это приложение, чтобы он будет работать на устройствах Android перед 3.0.
-
+[Вторая часть данного пошагового руководства](./walkthrough-landscape.md) будет optimtize этого приложения для устройств под управлением в альбомной ориентации.

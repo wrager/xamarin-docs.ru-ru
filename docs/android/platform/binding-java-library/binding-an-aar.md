@@ -6,12 +6,12 @@ ms.assetid: 380413B8-6A99-4BB8-B64C-3EAF9F359C22
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/06/2018
-ms.openlocfilehash: 101fb28add97749549de9c44292a1ef99a717dde
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/11/2018
+ms.openlocfilehash: 54708a7cfd071f77968991c9fe4e52938697c9bb
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="binding-an-aar"></a>Привязка. AAR
 
@@ -82,7 +82,7 @@ public class TextCounter
 
 1.  Создайте новый проект библиотеки привязок, начиная с библиотеки Android привязок шаблонов. Можно использовать Visual Studio для Mac или Visual Studio (на снимке экрана ниже Показать Visual Studio, но очень похожа Visual Studio для Mac). Присвойте решению имя **AarBinding**:
 
-    [![Создание проекта AarBindings](binding-an-aar-images/01-new-bindings-library-vs-sml.png)](binding-an-aar-images/01-new-bindings-library-vs.png#lightbox)
+    [![Создание проекта AarBindings](binding-an-aar-images/01-new-bindings-library-vs-sml.w157.png)](binding-an-aar-images/01-new-bindings-library-vs.w157.png#lightbox)
 
 2.  Шаблон включает **JAR-файлов** папки, которые добавляются к. AAR(s) на проект библиотеки привязок. Щелкните правой кнопкой мыши **JAR-файлов** папку и выберите **Добавить > существующий элемент**:
 
@@ -118,7 +118,7 @@ public class TextCounter
 
 1.  В том же решении, как библиотека привязок для упрощения в данном пошаговом руководстве мы создаем этого приложения. (Приложения, использующего библиотеку привязки также может располагаться в другом решении.) Создайте новое приложение Xamarin.Android: щелкните правой кнопкой мыши решение и выберите **Добавление нового проекта**. Имя для нового проекта **BindingTest**:
 
-    [![Создание нового проекта BindingTest](binding-an-aar-images/07-add-new-project-vs-sml.png)](binding-an-aar-images/07-add-new-project-vs.png#lightbox)
+    [![Создание нового проекта BindingTest](binding-an-aar-images/07-add-new-project-vs-sml.w157.png)](binding-an-aar-images/07-add-new-project-vs.w157.png#lightbox)
 
 2.  Щелкните правой кнопкой мыши **ссылки** узел **BindingTest** проект и выберите **добавить ссылку...** :
 

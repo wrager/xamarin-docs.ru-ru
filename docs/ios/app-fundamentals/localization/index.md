@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 04/28/2017
-ms.openlocfilehash: 96ee8343bb2b99fdc0be9437aaa7737a70b8c19c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5ee04614a500618846ad3acf2a38f279351d6e9d
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="ios-localization"></a>iOS локализации
 
@@ -166,7 +166,7 @@ var lang = NSBundle.MainBundle.PreferredLocalizations[0];
 
 2. Поместите файл изображения по умолчанию **flag.png** в **Base.lproj** (каталог CLR собственной разработки).
 
-3. При необходимости установите локализованные версии изображения в **.lproj** папки для каждого языка (например) **es.lproj**, **ja.lproj**). Используйте это имя **flag.png** в каждом каталоге языка.
+3. При необходимости установите локализованные версии изображения в **.lproj** папки для каждого языка (например) **ES.lproj**, **ja.lproj**). Используйте это имя **flag.png** в каждом каталоге языка.
 
 Если изображение не отображается для определенного языка, iOS переключиться на родном языке папку по умолчанию и загрузить изображение из него.
 
@@ -359,5 +359,5 @@ someControl.Text = localizedString;
 - [Tasky (локализованные раскадровки) (пример)](https://github.com/conceptdev/xamarin-samples/tree/master/TaskyL10nStoryboard)
 - [Руководство по локализации Apple](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/InternationalizingYourUserInterface/InternationalizingYourUserInterface.html)
 - [Общие сведения о локализации](~/cross-platform/app-fundamentals/localization.md)
-- [Локализация Xamarin.Forms](~/xamarin-forms/app-fundamentals/localization.md)
+- [Локализация Xamarin.Forms](~/xamarin-forms/app-fundamentals/localization/index.md)
 - [Android локализации](~/android/app-fundamentals/localization.md)

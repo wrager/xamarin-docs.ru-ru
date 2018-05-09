@@ -4,14 +4,14 @@ description: Поток данных между исходной и целево
 ms.prod: xamarin
 ms.assetid: D087C389-2E9E-47B9-A341-5B14AC732C45
 ms.technology: xamarin-forms
-author: davidbritch
-ms.author: dabritch
-ms.date: 01/05/2018
-ms.openlocfilehash: fdcba9b680bd548371883788af9e4eda755d91df
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+author: charlespetzold
+ms.author: chape
+ms.date: 05/01/2018
+ms.openlocfilehash: 1aa612d8b855158f09bc0aeaad1520a44b3d9637
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="binding-mode"></a>Режим привязки
 
@@ -58,6 +58,7 @@ ms.lasthandoff: 04/04/2018
 - [`TwoWay`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.TwoWay/) &ndash; данных переходит в обоих направлениях между источником и целью
 - [`OneWay`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.OneWay/) &ndash; данные отправляются из источника в целевую
 - [`OneWayToSource`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.OneWayToSource/) &ndash; данные отправляются от целевого объекта в источник
+- [`OneTime`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.OneWayToSource/) &ndash; данные отправляются из источника в целевую, но только если `BindingContext` изменения (новые возможности Xamarin.Forms 3.0)
 
 Каждое свойство, связываемое имеет режим привязки, который задается при создании привязываемые свойства по умолчанию и которая доступна из [ `DefaultBindingMode` ](https://developer.xamarin.com/api/property/Xamarin.Forms.BindableProperty.DefaultBindingMode/) свойство `BindableProperty` объекта. Этот режим привязки по умолчанию действует указывает режим, если это свойство является целевым объектом привязки данных.
 
@@ -94,6 +95,15 @@ ms.lasthandoff: 04/04/2018
 - `SelectedItem` Свойство `ListView`
 
 Основной причиной является, привязки на `SelectedItem` свойство следует привести параметр источника привязки. Пример далее в этой статье переопределяет это поведение.
+
+### <a name="one-time-bindings"></a>Одноразовый привязок
+
+Некоторые свойства имеют режима привязки по умолчанию `OneTime`. Эти особые значения приведены ниже.
+
+- `IsTextPredictionEnabled` Свойство `Entry`
+- `Text`, `BackgroundColor`, и `Style` свойства `Span`.
+
+Целевые свойства с режимом привязки `OneTime` обновляются только при изменении контекста привязки. Для привязок, эти свойства целевого объекта это упрощает инфраструктура привязки, поскольку нет необходимости отслеживать изменения в свойствах источника.
 
 ## <a name="viewmodels-and-property-change-notifications"></a>ViewModels и уведомления об изменении свойства
 
@@ -198,6 +208,8 @@ public class HslColorViewModel : INotifyPropertyChanged
 При `Color` изменения свойств, статический `GetNearestColorName` метод в `NamedColor` класса (также включаются в **DataBindingDemos** решения) Получает ближайший именованный цвет и задает `Name` свойства. Это `Name` свойство имеет закрытый `set` метод доступа, поэтому его нельзя установить из вне класса.
 
 Когда ViewModel задается как источник привязки, инфраструктура привязки задается обработчик `PropertyChanged` событий. Таким образом можно получать уведомления об изменениях свойств привязки и затем можно задать свойства целевого объекта из измененные значения.
+
+Тем не менее если целевое свойство (или `Binding` определения на целевое свойство) имеет `BindingMode` из `OneTime`, необязательно для инфраструктуры привязки следует присоединить обработчик на `PropertyChanged` событий. Целевое свойство обновляется только если `BindingContext` изменения и не само свойство источника изменения. 
 
 **Простой селектор цвета** файла XAML создает `HslColorViewModel` в словарь ресурсов на странице, а также инициализирует `Color` свойство. `BindingContext` Свойство `Grid` задано значение `StaticResource` привязки расширение для ссылки на этот ресурс:
 

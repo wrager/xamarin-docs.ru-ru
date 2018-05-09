@@ -6,12 +6,12 @@ ms.assetid: 7CB1FEAE-0BB3-4CDC-9076-5BD555003F1D
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.date: 03/18/2017
-ms.openlocfilehash: 7e8460d2c946159a9869322d6d4944d213d3d801
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/03/2018
+ms.openlocfilehash: e2f377b11cfb1ff5027cc704de694184d2208c97
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-ios-user-interfaces-in-code"></a>Создание операций ввода-вывода пользовательских интерфейсов в коде
 
@@ -33,9 +33,7 @@ _Xamarin.iOS предоставляет два способа создания �
 
 [![](ios-code-only-images/image9.png "На этой диаграмме показаны связи между окна, представлений, представлений и View Controller")](ios-code-only-images/image9.png#lightbox)
 
-
 Эти представления иерархии может быть создан с помощью [Xamarin конструктор для операций ввода-вывода](~/ios/user-interface/designer/index.md) в Visual Studio для Mac, однако полезно иметь фундаментальное понимание работы полностью в коде. В этой статье рассматриваются некоторые основные точки для получения и работает с разработки интерфейса пользователя только для кода.
-
 
 -----
 
@@ -45,16 +43,17 @@ _Xamarin.iOS предоставляет два способа создания �
 
 ## <a name="ios-blank-project-template"></a>Пустой шаблон проекта iOS
 
-Сначала создайте проект iOS в Visual Studio с помощью iPhone **пустой проект** шаблон, показанный ниже, который мы расширим Добавление контроллеров и представлений.
+Сначала создайте проект iOS в Visual Studio с помощью **файл > Новый проект > Visual C# > iPhone & iPad > (Xamarin) приложение iOS** проекта, показано ниже:
 
+[![Диалоговое окно нового проекта](ios-code-only-images/blankapp.w157-sml.png)](ios-code-only-images/blankapp.w157.png#lightbox)
 
-[![](ios-code-only-images/blankapp-vs.png "Диалоговое окно нового проекта")](ios-code-only-images/blankapp-vs.png#lightbox)
+Выберите **пустое приложение** шаблона проекта:
 
+[![Выберите диалоговое окно шаблона](ios-code-only-images/blankapp-2.w157-sml.png)](ios-code-only-images/blankapp-2.w157.png#lightbox)
 
 Шаблон пустого проекта добавляет 4 файлы в проект.
 
-
-[![](ios-code-only-images/empty-project.png "Файлы проекта")](ios-code-only-images/empty-project.png#lightbox)
+[![Файлы проекта](ios-code-only-images/empty-project.w157-sml.png "файлы проекта")](ios-code-only-images/empty-project.w157.png#lightbox)
 
 
 1. **AppDelegate.cs** -содержит `UIApplicationDelegate` подкласс, `AppDelegate` , который используется для обработки событий приложения от операций ввода-вывода. Окно приложения создается в `AppDelegate` `FinishedLaunching` метод.
@@ -99,18 +98,12 @@ Visual Studio для Mac не предоставляет пустой шабло
             return true;
         }
 
+Код, который был добавлен в `FinishedLaunching` на этапе 5 выше, в противном случае минимальный объем кода, необходимого для создания окна для приложения iOS.
+
 
 -----
 
-## <a name="creating-a-window"></a>Создание окна
 
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
-
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
-
-Код, который был добавлен в `FinishedLaunching` в шаге 3 выше, в противном случае минимальный объем кода, необходимого для создания окна для приложения iOS.  
-
------
 
 iOS-приложений с помощью [шаблона MVC](~/ios/get-started/hello-ios-multiscreen/hello-ios-multiscreen-deepdive.md#Model_View_Controller). На первом экране отображается приложение создается на основе контроллера представления корневого окна. В разделе [Привет, iOS (несколько экранов)](~/ios/get-started/hello-ios-multiscreen/index.md) руководства для шаблона Дополнительные сведения о MVC сам.
 
@@ -223,7 +216,7 @@ public class AppDelegate : UIApplicationDelegate
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-[![](ios-code-only-images/customviewcontroller.png "Добавьте новый класс с именем CustomViewController")](ios-code-only-images/customviewcontroller.png#lightbox)
+[![](ios-code-only-images/customviewcontroller.w157-sml.png "Добавьте новый класс с именем CustomViewController")](ios-code-only-images/customviewcontroller.w157.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 

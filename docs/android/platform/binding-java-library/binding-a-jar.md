@@ -6,12 +6,12 @@ ms.assetid: 93F1D5C5-E2AF-46EA-8460-485A0860C176
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/15/2018
-ms.openlocfilehash: a6cb08f19aac46ffa089914e28c732660caa52b2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/11/2018
+ms.openlocfilehash: 2d9f2198dbb88e7614944ac73729a4e6eca42647
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="binding-a-jar"></a>Привязка. JAR-ФАЙЛ
 
@@ -81,7 +81,7 @@ Picasso.With (this)
 
 Во-первых создайте новый проект библиотеки привязок. В Visual Studio для Mac или Visual Studio создайте новое решение и выберите *библиотеки Android привязки* шаблона. (В этом пошаговом руководстве снимки экрана с помощью Visual Studio, но Visual Studio для Mac очень похожа.) Присвойте решению имя **JarBinding**: 
 
-[![Создание проекта библиотеки JarBinding](binding-a-jar-images/01-new-bindings-library-sml.png)](binding-a-jar-images/01-new-bindings-library.png#lightbox)
+[![Создание проекта библиотеки JarBinding](binding-a-jar-images/01-new-bindings-library-sml.w157.png)](binding-a-jar-images/01-new-bindings-library.w157.png#lightbox)
 
 Шаблон включает **JAR-файлов** папки, которые добавляются к. JAR(s) на проект библиотеки привязок. Щелкните правой кнопкой мыши **JAR-файлов** папку и выберите **Добавить > существующий элемент**: 
 
@@ -130,7 +130,7 @@ Picasso.With (this)
 
 Во-первых создайте новое Xamarin.Android приложение, использующее библиотеку привязок. Щелкните правой кнопкой мыши решение и выберите **Добавление нового проекта**; для нового проекта имя **BindingTest**. Мы создаем это приложение в том же решении, что библиотека привязок для упрощения этого пошагового руководства; Однако приложение, использующее библиотеку привязок вместо этого находятся в другом решении: 
 
-[![Добавление нового проекта BindingTest](binding-a-jar-images/07-add-new-project-sml.png)](binding-a-jar-images/07-add-new-project.png#lightbox)
+[![Добавление нового проекта BindingTest](binding-a-jar-images/07-add-new-project-sml.w157.png)](binding-a-jar-images/07-add-new-project.w157.png#lightbox)
 
 Щелкните правой кнопкой мыши **ссылки** узел **BindingTest** проект и выберите **добавить ссылку...** :
 

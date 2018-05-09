@@ -8,10 +8,10 @@ author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
 ms.openlocfilehash: 453c4d6edafd6493272f8ca0435fcc86e2f3b2f7
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introduction-to-styles"></a>Введение в стили
 
@@ -142,5 +142,5 @@ Xamarin.Forms приложения часто содержат нескольк�
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Расширения разметки XAML](~/xamarin-forms/xaml/xaml-basics/xaml-markup-extensions.md)
-- [Style](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/)
-- [Setter](https://developer.xamarin.com/api/type/Xamarin.Forms.Setter/)
+- [стиль](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/)
+- [Метод задания](https://developer.xamarin.com/api/type/Xamarin.Forms.Setter/)

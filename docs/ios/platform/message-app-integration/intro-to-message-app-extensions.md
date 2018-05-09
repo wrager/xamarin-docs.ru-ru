@@ -6,12 +6,12 @@ ms.assetid: 0CFB494C-376C-449D-B714-9E82644F9DA3
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.date: 03/16/2017
-ms.openlocfilehash: 492b06420d27f902faf7240003ebe5e16416a5cb
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/02/2017
+ms.openlocfilehash: 73ca0974a42bf661a89327148b68341114297084
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="message-app-extension-basics"></a>Основы сообщений расширения приложения
 
@@ -131,11 +131,12 @@ Apple предлагает тестирование активы изображ�
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 1. Запустите Visual Studio.
-2. Откройте решение для добавления расширения приложения для сообщения. 
-3. Выберите **iOS** > **расширения** > **iMessage расширения** и нажмите кнопку **Далее** кнопки: 
+2. Откройте решение, чтобы добавить расширение сообщений приложения.
+3. Выберите ** iOS расширения > iMessage расширения (iOS) ** и нажмите кнопку **Далее** кнопки:
 
-    [![](intro-to-message-app-extensions-images/message01w.png "Выберите iMessage расширения")](intro-to-message-app-extensions-images/message01.png#lightbox)
-4. Введите **имя расширения** и нажмите кнопку **ОК** кнопки
+    [![Выберите iMessage расширения (iOS)](intro-to-message-app-extensions-images/message01.w157-sml.png)](intro-to-message-app-extensions-images/message01.w157.png#lightbox)
+
+4. Введите **имя** и нажмите кнопку **ОК** кнопки
 
 -----
 
@@ -166,7 +167,7 @@ Apple предлагает тестирование активы изображ�
 1. В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта расширения и выберите **добавить** > **новый файл...**   >  **iOS | Apple Watch** > **интерфейс контроллера**.
 2. Введите `StickerBrowserViewController` для **имя** и нажмите кнопку **New** кнопки: 
 
-    [![](intro-to-message-app-extensions-images/browser01w.png "Введите StickerBrowserViewController имени")](intro-to-message-app-extensions-images/browser01.png#lightbox)
+    [![](intro-to-message-app-extensions-images/browser01.w157-sml.png "Введите StickerBrowserViewController имени")](intro-to-message-app-extensions-images/browser01.w157.png#lightbox)
 3. Откройте `StickerBrowserViewController.cs` файл для редактирования.
 
 -----
