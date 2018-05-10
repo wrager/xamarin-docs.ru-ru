@@ -84,6 +84,7 @@
 #### [Обновление единых приложений Xamarin.Mac для 64-разрядных платформ](~/cross-platform/macios/32-and-64/mac-64-bit.md?context=xamarin/mac)
 ### [Работа с собственными типами в кроссплатформенных приложениях](~/cross-platform/macios/native-types-cross-platform.md?context=xamarin/mac)
 ### [HttpClient Stack и селектор реализации SSL и TLS](~/cross-platform/macios/http-stack.md?context=xamarin/mac)
+### [Оптимизация сборки](~/cross-platform/macios/optimizations.md?context=xamarin/mac)
 ## [Дополнительные понятия и внутренние компоненты](internals/index.md)
 ### [AOT](internals/aot.md)
 ### [Доступные сборки](~/cross-platform/internals/available-assemblies.md?context=xamarin/mac)
