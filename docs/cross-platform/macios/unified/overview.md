@@ -3,15 +3,14 @@ title: Общие сведения о единой API
 description: Новый стиль API упрощает его могут совместно использовать код Mac и iOS, а также позволяя для поддержки 32- и 64 разрядных приложений с тем же двоичный.
 ms.prod: xamarin
 ms.assetid: 5F0CEC18-5EF6-4A99-9DCF-1A3B57EA157C
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: c36682ba038c18dfb872e76f338ea1d9881cca10
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 0bdbf4a41ad5737603fccc7e78bc588a2f3acee3
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="unified-api-overview"></a>Общие сведения о единой API
 
@@ -215,11 +214,11 @@ UITapGestureRecognizer singleTap = new UITapGestureRecognizer (() => ShowDropDow
 
 В некоторых случаях была изменена из некоторых констант `string` для `NSString`, например `UITableViewCell`
 
-**Classic**
+**Классический**
 
     public virtual string ReuseIdentifier { get; }
 
-**Unified**
+**Единой**
 
     public virtual NSString ReuseIdentifier { get; }
 
@@ -233,11 +232,11 @@ UITapGestureRecognizer singleTap = new UITapGestureRecognizer (() => ShowDropDow
 
 Эти ограничения были удалены и очистить на единой API-интерфейсы. Большинство изменений будут выглядеть следующим образом:
 
-**Classic**
+**Классический**
 
     public virtual AVAssetResourceLoaderDelegate Delegate { get; }
 
-**Unified**
+**Единой**
 
     public virtual IAVAssetResourceLoaderDelegate Delegate { get; }
 
@@ -245,11 +244,11 @@ UITapGestureRecognizer singleTap = new UITapGestureRecognizer (() => ShowDropDow
 
 Его также можно использовать некоторые API для более точного и простые в использовании, например:
 
-**Classic**
+**Классический**
 
     public virtual void SelectionDidChange (NSObject uiTextInput);
 
-**Unified**
+**Единой**
 
     public virtual void SelectionDidChange (IUITextInput uiTextInput);
 

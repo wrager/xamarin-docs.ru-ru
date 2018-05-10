@@ -2,15 +2,14 @@
 title: Преобразования текста в речь Xamarin.Essentials
 description: Класс TextToSpeech позволяет приложению использовать встроенный обработчиков чтения текста вслух оперировать назад текст с устройства, а также доступные языки запросов, поддерживающие ядро.
 ms.assetid: AEEF03AE-A047-4DF0-B0E8-CC8D9A7B8351
-ms.technology: xamarin-crossplatform
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: e5ee5a324c6e753d389f7e80df106dbf4af1a8ca
-ms.sourcegitcommit: 46d3c9daa45350bdd536d9e105517f3c1c753c5b
-ms.translationtype: HT
+ms.openlocfilehash: 2fcb97eafda15a73e2b7e5441f1d6c94f75af0ce
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="xamarinessentials-text-to-speech"></a>Преобразования текста в речь Xamarin.Essentials
 

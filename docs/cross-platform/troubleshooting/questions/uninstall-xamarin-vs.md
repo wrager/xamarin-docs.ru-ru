@@ -3,15 +3,14 @@ title: Как выполнять тщательную удаление для Xa
 ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: c1742239-05ea-449d-9c99-611e5e5a90e4
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 12/02/2016
-ms.openlocfilehash: 49577961026d9895912d2848975e71a9f7eebbd8
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: 99fde9330498ee62d3cf6b5910c2cbfae39cfdeb
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="how-do-i-perform-a-thorough-uninstall-for-xamarin-for-visual-studio"></a>Как выполнять тщательную удаление для Xamarin для Visual Studio?
 
@@ -30,7 +29,7 @@ ms.lasthandoff: 04/06/2018
 
 3.  Удалите каталог кэша компонент MEF Visual Studio также:
 
-    _%LOCALAPPDATA%\\Microsoft\\VisualStudio\\1\*.0\\ComponentModelCache_
+    _% LOCALAPPDATA %\\Microsoft\\VisualStudio\\1\*.0\\ComponentModelCache_
 
     На самом деле этот шаг сам по себе, обычно достаточно для устранения ошибок, таких как:
 
@@ -56,19 +55,19 @@ ms.lasthandoff: 04/06/2018
 
     _Раздел HKEY\_ЛОКАЛЬНОГО\_МАШИНЫ\\программного обеспечения\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\SharedDlls_
 
-7.  Найдите и удалите все записи, которые соответствуют этому шаблону.
+7.  Найдите и удалите все записи, соответствующие этому шаблону.
 
     _C:\\программные файлы\*\\Microsoft Visual Studio 1\*.0\\Common7\\IDE\\расширения\\Xamarin_
 
-8.  Поиск этого ключа:
+8.  Найдите следующий раздел.
 
-    _HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\1\*.0\\ExtensionManager\\PendingDeletions_
+    _Раздел HKEY\_текущей\_пользователя\\программного обеспечения\\Microsoft\\VisualStudio\\1\*.0\\ExtensionManager\\PendingDeletions_
 
-9.  Удалите все параметры, которые будут выглядеть как они могут быть связаны с Xamarin.  Например вот, использовать стать причиной проблем в более старых версий Xamarin:
+9.  Удалите все записи, которые могут иметь отношение к Xamarin.  Например вот, использовать стать причиной проблем в более старых версий Xamarin:
 
     _Mono.VisualStudio.Shell,1.0_
 
-10. Откройте администратор `cmd.exe` командную строку, а затем запустите `devenv /setup` и `devenv /updateconfiguration` команды для каждой установленной версии Visual Studio.  Например для Visual Studio 2015:
+10. Откройте администратор `cmd.exe` командную строку, а затем запустите `devenv /setup` и `devenv /updateconfiguration` команды для каждой установленной версии Visual Studio.  Например, для Visual Studio 2015:
 
     ```
     "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" /setup

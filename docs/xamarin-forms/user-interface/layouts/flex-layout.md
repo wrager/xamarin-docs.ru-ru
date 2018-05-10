@@ -7,18 +7,18 @@ ms.technology: xamarin-forms
 ms.custom: xamu-video
 author: charlespetzold
 ms.author: chape
-ms.date: 05/01/2018
-ms.openlocfilehash: 4aa2ea21c9cf2e9e646465ab7ad4aa0a01de433e
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.date: 05/07/2018
+ms.openlocfilehash: bba5007acb54852b9427c57c26aba6358c4c5771
+ms.sourcegitcommit: daa089d41cfe1ed0456d6de2f8134cf96ae072b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="the-xamarinforms-flexlayout"></a>Xamarin.Forms FlexLayout
 
 _Используйте FlexLayout для размещения или упаковки коллекцию дочерних представлений._
 
-Xamarin.Forms [ `FlexLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexLayout/) новые возможности в Xamarin.Forms версии 3.0. Он основан на CSS [гибкие поле Макет модуля](http://www.w3.org/TR/css-flexbox-1/), которая часто называется _гибкий макет_ или _flex поле_, так называемые, поскольку в нем содержится много гибкие средства для упорядочивания дочерних элементов в макете.
+Xamarin.Forms [ `FlexLayout` ](xref:Xamarin.Forms.FlexLayout) новые возможности в Xamarin.Forms версии 3.0. Он основан на CSS [гибкие поле Макет модуля](http://www.w3.org/TR/css-flexbox-1/), которая часто называется _гибкий макет_ или _flex поле_, так называемые, поскольку в нем содержится много гибкие средства для упорядочивания дочерних элементов в макете.
 
 `FlexLayout` Аналогично Xamarin.Forms [ `StackLayout` ](~/xamarin-forms/user-interface/layouts/stack-layout.md) в том, что его можно упорядочить свои дочерние элементы по горизонтали и вертикали в виде стека. Однако `FlexLayout` способен также упаковки его дочерних элементов, если имеется слишком много, чтобы уместиться в одной строке или столбце, а также существует множество вариантов ориентацию, выравнивание и адаптации к экранах различных размеров.
 
@@ -65,11 +65,11 @@ Xamarin.Forms [ `FlexLayout` ](https://developer.xamarin.com/api/type/Xamarin.Fo
 
 Три свойства `FlexLayout` отображаются в **SimpleStackPage.xaml** файла:
 
-- [ `Direction` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Direction/) Свойству присвоено значение [ `FlexDirection` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexDirection/) перечисления. Значение по умолчанию — `Row`. Свойства `Column` дочерние элементы из `FlexLayout` располагаются в одном столбце элементов.
+- [ `Direction` ](xref:Xamarin.Forms.FlexLayout.Direction) Свойству присвоено значение [ `FlexDirection` ](xref:Xamarin.Forms.FlexDirection) перечисления. Значение по умолчанию — `Row`. Свойства `Column` дочерние элементы из `FlexLayout` располагаются в одном столбце элементов.
 
     Когда элементы в `FlexLayout` упорядочены в столбце, `FlexLayout` говорят вертикальной _основной оси_ и горизонтальной _ось_.
 
-- [ `AlignItems` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.AlignItems/) Свойство относится к типу [ `FlexAlignItems` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexAlignItems/) и указывает способ выравнивания элементов в перекрестной оси. `Center` Вынуждает пунктом горизонтально по центру.
+- [ `AlignItems` ](xref:Xamarin.Forms.FlexLayout.AlignItems) Свойство относится к типу [ `FlexAlignItems` ](xref:Xamarin.Forms.FlexAlignItems) и указывает способ выравнивания элементов в перекрестной оси. `Center` Вынуждает пунктом горизонтально по центру.
 
     При использовании `StackLayout` вместо `FlexLayout` для этой задачи будет выровнять все элементы путем назначения `HorizontalOptions` свойство каждого элемента в `Center`. `HorizontalOptions` Свойство не работает для дочерних элементов `FlexLayout`, но этот один `AlignItems` свойство достичь той же цели. Если необходимо, можно использовать `AlignSelf` присоединенного свойства привязки для переопределения `AlignItems` свойства для отдельных элементов:
 
@@ -81,7 +81,7 @@ Xamarin.Forms [ `FlexLayout` ](https://developer.xamarin.com/api/type/Xamarin.Fo
 
     С данным изменением, это один `Label` расположено на левой границе `FlexLayout` при порядок чтения справа налево.
 
-- [ `JustifyContent` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.JustifyContent/) Свойство относится к типу [ `FlexJustify` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexJustify/)и указывает, как элементы располагаются на основной оси. `SpaceEvenly` Параметр размещает все оставшиеся интервал по вертикали между элементами и выше первого элемента и ниже последнего элемента.
+- [ `JustifyContent` ](xref:Xamarin.Forms.FlexLayout.JustifyContent) Свойство относится к типу [ `FlexJustify` ](xref:Xamarin.Forms.FlexJustify)и указывает, как элементы располагаются на основной оси. `SpaceEvenly` Параметр размещает все оставшиеся интервал по вертикали между элементами и выше первого элемента и ниже последнего элемента.
 
     При использовании `StackLayout`, необходимо назначить `VerticalOptions` свойство для каждого элемента `CenterAndExpand` для достижения аналогичного эффекта. Но `CenterAndExpand` параметр будет выделить вдвое больше места между каждым элементом, чем до первого элемента и после последнего элемента. Можно имитировать `CenterAndExpand` параметр `VerticalOptions` , установив `JustifyContent` свойство `FlexLayout` для `SpaceAround`.
 
@@ -112,7 +112,7 @@ Xamarin.Forms [ `FlexLayout` ](https://developer.xamarin.com/api/type/Xamarin.Fo
 
 `Direction` Этого `FlexLayout` не задано, поэтому он содержит значение по умолчанию `Row`, то есть дочерние элементы располагаются в строках, а горизонтальная основной оси.
 
-[ `Wrap` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Wrap/) Свойство имеет тип перечисления [ `FlexWrap` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexWrap/). Если имеется слишком много элементов помещается на строки, значение этого свойства вызывает элементы перенос на следующую строку.
+[ `Wrap` ](xref:Xamarin.Forms.FlexLayout.Wrap) Свойство имеет тип перечисления [ `FlexWrap` ](xref:Xamarin.Forms.FlexWrap). Если имеется слишком много элементов помещается на строки, значение этого свойства вызывает элементы перенос на следующую строку.
 
 Обратите внимание, что `FlexLayout` является дочерним элементом `ScrollView`. При наличии слишком много строк, чтобы уместиться на странице, то `ScrollView` имеет значение по умолчанию `Orientation` свойство `Vertical` и позволяет вертикальную прокрутку.
 
@@ -398,14 +398,14 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="the-direction-property"></a>Свойство Direction
 
-[ `Direction` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Direction/) Свойство относится к типу [ `FlexDirection` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexDirection/), перечисление с четырьмя элементами:
+[ `Direction` ](xref:Xamarin.Forms.FlexLayout.Direction) Свойство относится к типу [ `FlexDirection` ](xref:Xamarin.Forms.FlexDirection), перечисление с четырьмя элементами:
 
 - `Column`
 - `ColumnReverse` (или «столбец возвратов» в языке XAML)
 - `Row`, значение по умолчанию
 - `RowReverse` (или «строка возвратов» в языке XAML)
 
-В языке XAML можно указать значение этого свойства, используя имена членов перечисления в нижнем регистре, верхнем регистре, или смешанный регистр, или же можно использовать две дополнительные строки, показывается в скобках, которые являются одинаковыми как индикаторы CSS. (Строки «возвратов столбца» и «строки обратное» определяются в [ `FlexDirectionTypeConverter` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexDirectionTypeConverter/) класс, используемый средством синтаксического анализа XAML.)
+В языке XAML можно указать значение этого свойства, используя имена членов перечисления в нижнем регистре, верхнем регистре, или смешанный регистр, или же можно использовать две дополнительные строки, показывается в скобках, которые являются одинаковыми как индикаторы CSS. (Строки «возвратов столбца» и «строки обратное» определяются в [ `FlexDirectionTypeConverter` ](xref:Xamarin.Forms.FlexDirectionTypeConverter) класс, используемый средством синтаксического анализа XAML.)
 
 Вот **эксперимента** (слева направо), страница `Row` направление, `Column` направление, и `ColumnReverse` направление:
 
@@ -417,7 +417,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="the-wrap-property"></a>Свойство Wrap
 
-[ `Wrap` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Wrap/) Свойство относится к типу [ `FlexWrap` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexWrap/), перечисление с три члена:
+[ `Wrap` ](xref:Xamarin.Forms.FlexLayout.Wrap) Свойство относится к типу [ `FlexWrap` ](xref:Xamarin.Forms.FlexWrap), перечисление с три члена:
 
 - `NoWrap`, значение по умолчанию
 - `Wrap`
@@ -433,7 +433,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="the-justifycontent-property"></a>Свойство JustifyContent
 
-[ `JustifyContent` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.JustifyContent/) Свойство относится к типу [ `FlexJustify` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexJustify/), перечисление с шесть членов:
+[ `JustifyContent` ](xref:Xamarin.Forms.FlexLayout.JustifyContent) Свойство относится к типу [ `FlexJustify` ](xref:Xamarin.Forms.FlexJustify), перечисление с шесть членов:
 
 - `Start` (или «flex-start», в языке XAML), значение по умолчанию
 - `Center`
@@ -452,7 +452,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="the-alignitems-property"></a>Свойство AlignItems
 
-[ `AlignItems` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.AlignItems/) Свойство относится к типу [ `FlexAlignItems` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexAlignItems/), перечисление с четырьмя элементами:
+[ `AlignItems` ](xref:Xamarin.Forms.FlexLayout.AlignItems) Свойство относится к типу [ `FlexAlignItems` ](xref:Xamarin.Forms.FlexAlignItems), перечисление с четырьмя элементами:
 
 - `Stretch`, значение по умолчанию
 - `Center`
@@ -471,7 +471,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="the-aligncontent-property"></a>Свойство AlignContent
 
-[ `AlignContent` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.AlignContent/) Свойство относится к типу [ `FlexAlignContent` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexAlignContent/), перечисление с семи элементов:
+[ `AlignContent` ](xref:Xamarin.Forms.FlexLayout.AlignContent) Свойство относится к типу [ `FlexAlignContent` ](xref:Xamarin.Forms.FlexAlignContent), перечисление с семи элементов:
 
 - `Stretch`, значение по умолчанию
 - `Center`
@@ -501,7 +501,7 @@ public partial class PhotoWrappingPage : ContentPage
 
 ### <a name="the-alignself-property"></a>Свойство AlignSelf
 
-[ `AlignSelf` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.AlignSelf/) Вложенное свойство привязки имеет тип [ `FlexAlignSelf` ](https://developer.xamarin.com/api/type/Xamarin.Forms.FlexAlignContent/), перечисление с пять элементов:
+[ `AlignSelf` ](xref:Xamarin.Forms.FlexLayout.AlignSelfProperty) Вложенное свойство привязки имеет тип [ `FlexAlignSelf` ](xref:Xamarin.Forms.FlexAlignContent), перечисление с пять элементов:
 
 - `Auto`, значение по умолчанию
 - `Stretch`
@@ -525,15 +525,15 @@ FlexAlign.SetAlignSelf(label, FlexAlignSelf.Center);
 
 ### <a name="the-order-property"></a>Свойства Order
 
-[ `Order` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Order/) Свойство относится к типу `int`. Значение по умолчанию — 0.
+[ `Order` ](xref:Xamarin.Forms.FlexLayout.OrderProperty) Свойство относится к типу `int`. Значение по умолчанию — 0.
 
 `Order` Позволяет изменить порядок, дочерние элементы `FlexLayout` упорядочены. Как правило, дочерние элементы `FlexLayout` упорядочиваются находится в том же порядке, в котором они появляются в `Children` коллекции. Этот порядок можно переопределить, задав `Order` присоединенного привязываемые свойства ненулевое целочисленное значение на один или несколько дочерних элементов. `FlexLayout` Затем упорядочивает свои дочерние элементы, в зависимости от настройки `Order` свойство для каждого дочернего, но дочерних элементов с одинаковым `Order` параметр организованы в порядке, в котором они появляются в `Children` коллекции.
 
 ### <a name="the-basis-property"></a>Свойство основы
 
-[ `Basis` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Basis/) Вложенное свойство привязки указывает объем пространства, выделенного для дочернего элемента `FlexLayout` на основной оси. Указанная команда размер по `Basis` свойство — это размер вдоль оси основного родительского `FlexLayout`. Другими словами `Basis` указывает ширину дочерний элемент, если дочерние элементы расположены в строках или высоту при дочерние элементы упорядочиваются в столбцы.
+[ `Basis` ](xref:Xamarin.Forms.FlexLayout.BasisProperty) Вложенное свойство привязки указывает объем пространства, выделенного для дочернего элемента `FlexLayout` на основной оси. Указанная команда размер по `Basis` свойство — это размер вдоль оси основного родительского `FlexLayout`. Другими словами `Basis` указывает ширину дочерний элемент, если дочерние элементы расположены в строках или высоту при дочерние элементы упорядочиваются в столбцы.
 
-`Basis` Свойство относится к типу [ `FlexBasis` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexBasis/), структуру. Можно указать размер в аппаратно независимых единицах или в процентах от размера `FlexLayout`. Значение по умолчанию `Basis` свойство является статическое свойство `FlexBasis.Auto`, что означает наличие дочернего элемента запроса используется ширины или высоты.
+`Basis` Свойство относится к типу [ `FlexBasis` ](xref:Xamarin.Forms.FlexBasis), структуру. Можно указать размер в аппаратно независимых единицах или в процентах от размера `FlexLayout`. Значение по умолчанию `Basis` свойство является статическое свойство `FlexBasis.Auto`, что означает наличие дочернего элемента запроса используется ширины или высоты.
 
 В коде, можно задать `Basis` свойство `Label` с именем `label` на 40 аппаратно независимых единицах следующим образом:
 
@@ -581,7 +581,7 @@ FlexLayout.SetBasis(label, new FlexBasis(0.25f, true));
 
 ### <a name="the-grow-property"></a>Увеличение свойство
 
-[ `Grow` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Grow/) Свойство относится к типу `int`. Значение по умолчанию — 0, а значение должно быть больше или равно 0.
+[ `Grow` ](xref:Xamarin.Forms.FlexLayout.GrowProperty) Вложенное свойство привязки имеет тип `int`. Значение по умолчанию — 0, а значение должно быть больше или равно 0.
 
 `Grow` Свойство играет роль при `Wrap` свойству `NoWrap` , строки дочерних элементов общая ширина меньше, чем ширина `FlexLayout`, или столбец дочерних элементов имеет короткий высоту, чем `FlexLayout`. `Grow` Свойство указывает, как распределять оставшееся пространство среди дочерних элементов.
 
@@ -597,7 +597,7 @@ FlexLayout.SetBasis(label, new FlexBasis(0.25f, true));
 
 ### <a name="the-shrink-property"></a>Свойство сжатия
 
-[ `Shrink` ](https://developer.xamarin.com/api/property/Xamarin.Forms.FlexLayout.Shrink/) Свойство относится к типу `int`. Значение по умолчанию — 1, а значение должно быть больше или равно 0.
+[ `Shrink` ](xref:Xamarin.Forms.FlexLayout.ShrinkProperty) Вложенное свойство привязки имеет тип `int`. Значение по умолчанию — 1, а значение должно быть больше или равно 0.
 
 `Shrink` Свойство играет роль при `Wrap` свойству `NoWrap` и статистические ширину строки дочерних элементов больше, чем ширина `FlexLayout`, или агрегатные высота дочерних элементов одного столбца больше, чем Высота `FlexLayout`. Обычно `FlexLayout` будет отображать эти дочерние элементы с constricting их размеров. `Shrink` Свойства можно указать, какие дочерние элементы, получают приоритет в отображении в их полный размер.
 

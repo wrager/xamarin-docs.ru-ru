@@ -3,15 +3,14 @@ title: Введение в переносимые библиотеки клас�
 description: В этой статье представлены проекты переносимой библиотеки классов (PCL) и описывается создание и использование Классов проектов в Visual Studio для Mac и Visual Studio.
 ms.prod: xamarin
 ms.assetid: 76ba8f7a-9b6e-40f5-9a29-ff1274ece4f2
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: 799ee198f776b963bb8779d71bacc322001e2882
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: d80a4125d7447b19f001c349aff006dc4744f4a6
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="introduction-to-portable-class-libraries"></a>Введение в переносимые библиотеки классов
 

@@ -3,15 +3,14 @@ title: Устраните проблемы, связанные с System.Diagnos
 description: 'PCL практический пример: как устранить проблемы, связанные с System.Diagnostics.Tracing для пакета NuGet потоков данных TPL Майкрософт?'
 ms.prod: xamarin
 ms.assetid: 7986A556-382D-4D00-ACCF-3589B4029DE8
-ms.technology: xamarin-cross-platform
 ms.date: 04/17/2018
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: b1b56b0e831edbb6327f3ca66f6ec8dc780b46f2
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.openlocfilehash: 1acc9ccc78ad14198a59e74d1fae845790d66b16
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="pcl-case-study-how-can-i-resolve-problems-related-to-systemdiagnosticstracing-for-the-microsoft-tpl-dataflow-nuget-package"></a>PCL практический пример: как устранить проблемы, связанные с System.Diagnostics.Tracing для пакета NuGet потоков данных TPL Майкрософт?
 
@@ -118,7 +117,7 @@ _В частности можно устранить эту проблему, с
 
 #### <a name="answer"></a>Ответов
 
-Нет, «System.Diagnostics.Tracing» пакета NuGet 3.0 включает только реализации специфический для платформы «DNXCore50» и «netcore50». Он явно _опускает_ реализации («MonoAndroid») Xamarin.Android и Xamarin.iOS («MonoTouch» и «xamarinios»). Это означает, что установка пакета будет иметь _не влияет_ для проектов Xamarin.Android и Xamarin.iOS. Пакет NuGet предполагает, что обе эти платформы предоставляют свои _собственной_ реализации типов. Это предположение «правильный», в том смысле, что у _моно_ реализации пространства имен, а также как описано в разделе точек \#2 и \#3 из «Подробности о 3 уровни ошибок» выше, реализация в настоящее время неполон. Таким образом, соответствующие исправления для устранения моно командой [ошибки 27337](https://bugzilla.xamarin.com/show_bug.cgi?id=27337) и [ошибки 34890](https://bugzilla.xamarin.com/show_bug.cgi?id=34890).
+Нет, «System.Diagnostics.Tracing» пакета NuGet 3.0 включает только реализации специфический для платформы «DNXCore50» и «netcore50». Он явно _опускает_ реализации («MonoAndroid») Xamarin.Android и Xamarin.iOS («MonoTouch» и «xamarinios»). Это означает, что установка пакета будет иметь _не влияет_ для проектов Xamarin.Android и Xamarin.iOS. Пакет NuGet предполагает, что обе эти платформы предоставляют свои _собственной_ реализации типов. Это предположение «правильный», в том смысле, что у _моно_ реализации пространства имен, а также как описано в разделе точек \#2 и \#3 из «Сведения о трех уровней ошибок» выше, Реализация в настоящее время неполон. Таким образом, соответствующие исправления для устранения моно командой [ошибки 27337](https://bugzilla.xamarin.com/show_bug.cgi?id=27337) и [ошибки 34890](https://bugzilla.xamarin.com/show_bug.cgi?id=34890).
 
 ## <a name="next-steps"></a>Следующие шаги
 

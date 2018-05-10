@@ -6,12 +6,12 @@ ms.assetid: DF103686-4A92-40FA-9CF1-A9376293B13C
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
-ms.date: 05/02/2018
-ms.openlocfilehash: ee3e4c984072fc019fe3719aab650a44d3899911
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
-ms.translationtype: HT
+ms.date: 05/07/2018
+ms.openlocfilehash: bfdfeda5821b020d7948e583a63bf9ec7e8ee324
+ms.sourcegitcommit: daa089d41cfe1ed0456d6de2f8134cf96ae072b1
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="resource-dictionaries"></a>Словари ресурсов
 
@@ -21,16 +21,16 @@ _Ресурсы XAML — определения объектов, которые
 
 ## <a name="overview"></a>Обзор
 
-Объект [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) является репозиторием для ресурсов, используемых приложением Xamarin.Forms. Стандартные ресурсы, которые хранятся в `ResourceDictionary` включают [стили](~/xamarin-forms/user-interface/styles/index.md), [шаблоны элементов управления](~/xamarin-forms/app-fundamentals/templates/control-templates/index.md), [шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md), цвета и преобразователи типов.
+Объект [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary) является репозиторием для ресурсов, используемых приложением Xamarin.Forms. Стандартные ресурсы, которые хранятся в `ResourceDictionary` включают [стили](~/xamarin-forms/user-interface/styles/index.md), [шаблоны элементов управления](~/xamarin-forms/app-fundamentals/templates/control-templates/index.md), [шаблоны данных](~/xamarin-forms/app-fundamentals/templates/data-templates/index.md), цвета и преобразователи типов.
 
 В языке XAML, ресурсов, хранящихся в `ResourceDictionary` можно получить и применить к элементам с помощью `StaticResource` расширения разметки. В C#, ресурсы можно также определять в `ResourceDictionary` получить и применяется к элементам с помощью индексатора, на основе строки. Однако нет большой пользы, с помощью `ResourceDictionary` в C#, как общие объекты можно просто хранятся в виде полей или свойств и использовать непосредственно, без необходимости первого получения их из словаря.
 
 ## <a name="creating-and-consuming-a-resourcedictionary"></a>Создание и использование ResourceDictionary
 
-Ресурсы определяются в [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) , затем присвойте одно из следующих `Resources` свойства:
+Ресурсы определяются в [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary) , затем присвойте одно из следующих `Resources` свойства:
 
-- [ `Resources` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Application.Resources/) Свойство класса, производного от [`Application`](https://developer.xamarin.com/api/type/Xamarin.Forms.Application/)
-- [ `Resources` ](https://developer.xamarin.com/api/property/Xamarin.Forms.VisualElement.Resources/) Свойство класса, производного от [«VisualElement»](https://developer.xamarin.com/api/type/Xamarin.Forms.Application/)
+- [ `Resources` ](xref:Xamarin.Forms.Application.Resources) Свойство класса, производного от [`Application`](xref:Xamarin.Forms.Application)
+- [ `Resources` ](xref:Xamarin.Forms.VisualElement.Resources) Свойство класса, производного от [«VisualElement»](xref:Xamarin.Forms.Application)
 
 Программа Xamarin.Forms содержит только один класс, производный от `Application` , но часто используется во многих классах, производных от `VisualElement`, в том числе элементов управления, страниц и макетов. Любые из этих объектов могут иметь его `Resources` свойство `ResourceDictionary`. Выбор места для размещения конкретного `ResourceDictionary` влияет на использование ресурсов:
 
@@ -58,7 +58,7 @@ _Ресурсы XAML — определения объектов, которые
 </Application>
 ```
 
-Это `ResourceDictionary` определяет три [ `Color` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Color/) ресурсы и [ `Style` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Style/) ресурсов. Дополнительные сведения о `App` см. в описании [класса приложения](~/xamarin-forms/app-fundamentals/application-class.md).
+Это `ResourceDictionary` определяет три [ `Color` ](xref:Xamarin.Forms.Color) ресурсы и [ `Style` ](xref:Xamarin.Forms.Style) ресурсов. Дополнительные сведения о `App` см. в описании [класса приложения](~/xamarin-forms/app-fundamentals/application-class.md).
 
 Начиная с версии 3.0 Xamarin.Forms, явные `ResourceDictionary` теги не являются обязательными. `ResourceDictionary` Автоматически создается объект и ресурсы можно вставить непосредственно между `Resources` теги элементов свойства:
 
@@ -77,7 +77,7 @@ _Ресурсы XAML — определения объектов, которые
 </Application>
 ```
 
-Каждый ресурс имеет ключ, который задается с помощью `x:Key` атрибут, который становится его ключ словаря в `ResourceDictionary`. Этот ключ используется для извлечения ресурсов из `ResourceDictionary` по [ `StaticResource` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.StaticResourceExtension/) расширения разметки, как показано в следующем примере кода XAML, показывающий дополнительные ресурсы, определенные в `StackLayout`:
+Каждый ресурс имеет ключ, который задается с помощью `x:Key` атрибут, который становится его ключ словаря в `ResourceDictionary`. Этот ключ используется для извлечения ресурсов из `ResourceDictionary` по [ `StaticResource` ](xref:Xamarin.Forms.Xaml.StaticResourceExtension) расширения разметки, как показано в следующем примере кода XAML, показывающий дополнительные ресурсы, определенные в `StackLayout`:
 
 ```xaml
 <StackLayout Margin="0,20,0,0">
@@ -105,7 +105,7 @@ _Ресурсы XAML — определения объектов, которые
 </StackLayout>
 ```
 
-Первый [ `Label` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Label/) экземпляр получает и использует `LabelPageHeadingStyle` ресурсов, которые определены на уровне приложения `ResourceDictionary`, со вторым `Label` экземпляра получение и использование `LabelNormalStyle`ресурсов, которые определены на уровне элемента управления `ResourceDictionary`. Аналогичным образом [ `Button` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) экземпляр получает и использует `NormalTextColor` ресурсов, которые определены на уровне приложения `ResourceDictionary`и `MediumBoldText` ресурсов, которые определены на уровне элемента управления `ResourceDictionary`. Это приводит к появлению показано на следующем снимке экрана:
+Первый [ `Label` ](xref:Xamarin.Forms.Label) экземпляр получает и использует `LabelPageHeadingStyle` ресурсов, которые определены на уровне приложения `ResourceDictionary`, со вторым `Label` экземпляра получение и использование `LabelNormalStyle`ресурсов, которые определены на уровне элемента управления `ResourceDictionary`. Аналогичным образом [ `Button` ](xref:Xamarin.Forms.Button) экземпляр получает и использует `NormalTextColor` ресурсов, которые определены на уровне приложения `ResourceDictionary`и `MediumBoldText` ресурсов, которые определены на уровне элемента управления `ResourceDictionary`. Это приводит к появлению показано на следующем снимке экрана:
 
 [![](resource-dictionaries-images/screenshots-sml.png "Потребление ресурсов ResourceDictionary")](resource-dictionaries-images/screenshots.png#lightbox "потребление ресурсов ResourceDictionary")
 
@@ -144,7 +144,7 @@ _Ресурсы XAML — определения объектов, которые
 
 [![](resource-dictionaries-images/overridding-screenshots-sml.png "Переопределение ресурсы ResourceDictionary")](resource-dictionaries-images/overridding-screenshots.png#lightbox "переопределение ResourceDictionary ресурсы")
 
-Тем не менее, обратите внимание, что в фоновом режиме окна [ `NavigationPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.NavigationPage/) по-прежнему желтый, так как [ `BarBackgroundColor` ](https://developer.xamarin.com/api/property/Xamarin.Forms.NavigationPage.BarBackgroundColor/) свойству присвоено значение `PageBackgroundColor` ресурсов, определенных в приложении уровень `ResourceDictionary`.
+Тем не менее, обратите внимание, что в фоновом режиме окна [ `NavigationPage` ](xref:Xamarin.Forms.NavigationPage) по-прежнему желтый, так как [ `BarBackgroundColor` ](xref:Xamarin.Forms.NavigationPage.BarBackgroundColor) свойству присвоено значение `PageBackgroundColor` ресурсов, определенных в приложении уровень `ResourceDictionary`.
 
 Другим способом, нужно принять во внимание `ResourceDictionary` приоритет: средство синтаксического анализа XAML при обнаружении `StaticResource`, он выполняет поиск совпадающего ключа, передаваемых вверх по дереву visual, с помощью первого совпадения находит. Если поиск заканчивается на странице, ключ еще не удалось найти средство синтаксического анализа XAML выполняет `ResourceDictionary` присоединяется к `App` объекта. Если ключ не найден, возникает исключение.
 
@@ -154,7 +154,7 @@ _Ресурсы XAML — определения объектов, которые
 
 Чтобы создать такой файл, добавьте новый **представление содержимого** или **страницы содержимого** в проект (, но не **представление содержимого** или **страницы содержимого** с только файл C#). В XAML-файл и файл C#, измените имя базового класса из `ContentView` или `ContentPage` для `ResourceDictionary`. В XAML-файле имя базового класса является элементом верхнего уровня.
 
-В следующем примере показан XAML [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) с именем `MyResourceDictionary`:
+В следующем примере показан XAML [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary) с именем `MyResourceDictionary`:
 
 ```xaml
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
@@ -198,10 +198,10 @@ _Ресурсы XAML — определения объектов, которые
 
 ## <a name="merged-resource-dictionaries"></a>Объединенные словари ресурсов
 
-Объединенные словари ресурсов объединения одного или нескольких `ResourceDictionary` экземпляры в другой `ResourceDictionary`. Можно сделать это в XAML-файле, установив [ `MergedDictionaries` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ResourceDictionary.MergedDictionaries/) свойства словари ресурсов, которые будут объединены в приложение, страницы или уровень управления `ResourceDictionary`.
+Объединенные словари ресурсов объединения одного или нескольких `ResourceDictionary` экземпляры в другой `ResourceDictionary`. Можно сделать это в XAML-файле, установив [ `MergedDictionaries` ](xref:Xamarin.Forms.ResourceDictionary.MergedDictionaries) свойства словари ресурсов, которые будут объединены в приложение, страницы или уровень управления `ResourceDictionary`.
 
 > [!IMPORTANT]
-> `ResourceDictionary` также определяет [ `MergedWith` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ResourceDictionary.MergedWith/) свойство. Не используйте это свойство; она считается устаревшей начиная с Xamarin.Forms 3.0.
+> `ResourceDictionary` также определяет [ `MergedWith` ](xref:Xamarin.Forms.ResourceDictionary.MergedWith) свойство. Не используйте это свойство; она считается устаревшей начиная с Xamarin.Forms 3.0.
 
 И экземпляр `MyResourceDictionary` могут быть объединены в любое приложение, страницы или уровень управления `ResourceDictionary`. В следующем примере кода XAML отображает их в уровне страниц `ResourceDictionary` с помощью `MergedDictionaries` свойство:
 
@@ -247,10 +247,10 @@ _Ресурсы XAML — определения объектов, которые
 
 Может быть только один `MergedDictionaries` статьи `ResourceDictionary`, но ее можно поместить столько `ResourceDictionary` экземпляров в него необходимо.
 
-При слиянии [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/) ресурсы используют одинаковые `x:Key` значений атрибутов, Xamarin.Forms используется следующий приоритет ресурса:
+При слиянии [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary) ресурсы используют одинаковые `x:Key` значений атрибутов, Xamarin.Forms используется следующий приоритет ресурса:
 
 1. Ресурсы локального словарь ресурсов.
-1. Ресурсы, содержащиеся в словаре ресурсов, которая была объединена через устаревшие [ `MergedWith` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ResourceDictionary.MergedWith/) свойство.
+1. Ресурсы, содержащиеся в словаре ресурсов, которая была объединена через устаревшие [ `MergedWith` ](xref:Xamarin.Forms.ResourceDictionary.MergedWith) свойство.
 1. Ресурсы, содержащиеся в словарях ресурсов, которые были объединены через `MergedDictionaries` коллекции в порядке их перечисления в `MergedDictionaries` свойство.
 
 > [!NOTE]
@@ -258,7 +258,7 @@ _Ресурсы XAML — определения объектов, которые
 
 ## <a name="merging-dictionaries-in-xamarinforms-30"></a>Объединение словарей в Xamarin.Forms 3.0
 
-Начиная с версии 3.0 Xamarin.Forms, процесс слияния `ResourceDictionaries` становится немного проще и гибче. `MergedDictionaries` Теги элементов свойства более не нужны. Вместо этого добавить словарь ресурсов другой `ResourceDictionary` тег с новым [ `Source` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ResourceDictionary.Source/) , имеющим значение имени файла XAML-файла с ресурсами:
+Начиная с версии 3.0 Xamarin.Forms, процесс слияния `ResourceDictionaries` становится немного проще и гибче. `MergedDictionaries` Теги элементов свойства более не нужны. Вместо этого добавить словарь ресурсов другой `ResourceDictionary` тег с новым [ `Source` ](xref:Xamarin.Forms.ResourceDictionary.Source) , имеющим значение имени файла XAML-файла с ресурсами:
 
 ```xaml
 <ContentPage ...>
@@ -298,10 +298,10 @@ _Ресурсы XAML — определения объектов, которые
 
 ## <a name="summary"></a>Сводка
 
-В этой статье описано, как создать и использовать [ `ResourceDictionary` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/)и способ слияния словари ресурсов. Объект `ResourceDictionary` позволяет определить в одном месте и повторно используются в приложении Xamarin.Forms ресурсы.
+В этой статье описано, как создать и использовать [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary)и способ слияния словари ресурсов. Объект `ResourceDictionary` позволяет определить в одном месте и повторно используются в приложении Xamarin.Forms ресурсы.
 
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Словари ресурсов (пример)](https://developer.xamarin.com/samples/xamarin-forms/xaml/resourcedictionaries/)
 - [Стили](~/xamarin-forms/user-interface/styles/index.md)
-- [ResourceDictionary](https://developer.xamarin.com/api/type/Xamarin.Forms.ResourceDictionary/)
+- [ResourceDictionary](xref:Xamarin.Forms.ResourceDictionary)

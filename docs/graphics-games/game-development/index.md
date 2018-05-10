@@ -3,15 +3,14 @@ title: Общие сведения о разработке игр с помощ�
 description: Характер разработки игр могут значительно отличаться от разработки других типов приложений. Эта статья содержит общие сведения о разработке игр на базе технологий, которые могут использоваться с Xamarin.iOS и Xamarin.Android. Он предоставляет высокоуровневая обсуждение выполняются как игры и выборки, доступный для использования технологий Xamarin.iOS и Xamarin.Android.
 ms.prod: xamarin
 ms.assetid: 0E3CDCD2-FBE4-49F5-A70E-8A7B937BAF1D
-ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/24/2017
-ms.openlocfilehash: b2df6d431004bbfa140b6cae1d069404af92c1df
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 543d3e2d4e53d1b88213ac82689073a9fb925820
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="introduction-to-game-development-with-xamarin"></a>Общие сведения о разработке игр с помощью Xamarin
 
@@ -153,7 +152,7 @@ FEZ:
 
 Бастиона:
 
-![](images/image8.jpg "Bastion")
+![](images/image8.jpg "Бастиона")
 
 Чтобы приступить к работе с MonoGame, перейдите к нашей [MonoGame направляющие](~/graphics-games/monogame/index.md).
 

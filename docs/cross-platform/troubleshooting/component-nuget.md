@@ -4,15 +4,14 @@ description: Замените обращается Ваш компонент п�
 ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: 9E6C986F-3FBA-4599-8367-FB0C565C0ADE
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 04/18/2018
-ms.openlocfilehash: e3adee1b56b833442a8c927672cf903d45d03e84
-ms.sourcegitcommit: f52aa66de4d07bc00931ac8af791d4c33ee1ea04
+ms.openlocfilehash: 020a5a2182458e759626b9bdbf45b62b6e13d71a
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="updating-component-references-to-nuget"></a>Обновление ссылок на компоненты для NuGet
 

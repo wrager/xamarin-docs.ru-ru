@@ -3,15 +3,14 @@ title: Обработка нескольких разрешений в CocosShar
 description: В этом руководстве показано, как работать с CocosSharp для разработки игр, правильно отображаться на устройствах для различных разрешений экрана.
 ms.prod: xamarin
 ms.assetid: 859ABF98-2646-431A-A4A8-3E7E48DA5A43
-ms.technology: xamarin-cross-platform
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 4077af2351b8ab3ef718a71cc672add54b6ef05a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 577a3edbd106b6fba298b3ee5999265ef955f9dd
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="handling-multiple-resolutions-in-cocossharp"></a>Обработка нескольких разрешений в CocosSharp
 
@@ -22,7 +21,7 @@ CocosSharp предоставляет методы для стандартиза
 По умолчанию разрешения из CocosSharp выполняется в соответствии с координатами в игре физических пикселях. В следующей таблице показаны как различные устройства будет отображен спрайт фон среды с шириной и высотой 368 x 240. Первая строка является технически не само устройство, но вместо ожидаемого отрисовку спрайта, независимо от того, разрешение устройства:
 
 
-| **Device** | **Разрешение экрана** | **Снимок экрана примера** |
+| **Устройство** | **Разрешение экрана** | **Снимок экрана примера** |
 |--- | --- |--- |
 |Нужную форму|368 x 240 (с черной полосы для пропорции)| ![368 x 240 (с черной полосы для пропорции)](resolutions-images/image1.png) |
 |iPhone 4s|960x640| ![iPhone 4s 960 x 640](resolutions-images/image2.png) |

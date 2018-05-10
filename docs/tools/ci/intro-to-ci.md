@@ -3,15 +3,14 @@ title: Введение в непрерывной интеграции с Xamari
 description: Непрерывная интеграция рекомендуется применять программного обеспечения в котором компилируется автоматизированной сборки и при необходимости проверяет приложения, когда добавляется или изменяется разработчиками в хранилище контроля версий проекта кода. В этой статье обсуждается основные принципы использования непрерывной интеграции и некоторые параметры, доступные для непрерывной интеграции с Xamarin проектами.
 ms.prod: xamarin
 ms.assetid: C034200E-2947-4309-9DDD-80DAC505C43F
-ms.technology: xamarin-cross-platform
 author: topgenorth
 ms.author: toopge
 ms.date: 07/19/2017
-ms.openlocfilehash: 5e4720ac44876620783b32f731c44afe5a623231
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: e441e3a2f967bf7bed0a236375ce708966fdb6eb
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="introduction-to-continuous-integration-with-xamarin"></a>Введение в непрерывной интеграции с Xamarin
 

@@ -3,15 +3,14 @@ title: Миграция привязку к унифицированный ин�
 description: В этой статье рассматриваются действия, необходимые для обновления существующего Xamarin привязки проекта для поддержки единого API-интерфейсы для приложений, Xamarin.IOS и Xamarin.Mac.
 ms.prod: xamarin
 ms.assetid: 5E2A3251-D17F-4F9C-9EA0-6321FEBE8577
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 25641671992a125e97bf7feff84b754423527da6
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2d57f27bf0d3aaa2a7ba14f23481a8f2bb2d87f2
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="migrating-a-binding-to-the-unified-api"></a>Миграция привязку к унифицированный интерфейс API
 

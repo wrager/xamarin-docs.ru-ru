@@ -6,24 +6,38 @@ ms.assetid: CB8607B9-FFDA-4617-8210-8E43EC512588
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: ce60c19ab0b680e00338f517e5a3f17f725ed329
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/09/2018
+ms.openlocfilehash: 60d897be8739ff5b78a322bc4ea3f43011785bb5
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="where-can-i-find-the-dsym-file-to-symbolicate-ios-crash-logs"></a>Где найти файл .dSYM symbolicate журналы аварийного завершения операций ввода-вывода
 
-При построении приложений iOS из visual studio, .dSYM файл, можно использовать для отчетов о сбоях symbolicate заканчивается на узле сборки по пути:
-```
-    /Users/<username>/Library/Caches/Xamarin/mtbs/builds/<appname>/<guid>/bin/iPhone/<configuration>
-```
+При построении приложения iOS с помощью Visual Studio для Mac или Visual Studio 2017 г., файл .dSYM для symbolicate отчеты о сбоях будут располагаться в той же иерархии каталогов, как файл проекта приложения (CSPROJ-файл). Точное расположение зависит от параметров построения проекта.
 
-Обратите внимание, что `~/Library` папка является скрытой по умолчанию в средстве поиска, поэтому, если требуется использовать Finder **Go > перейдите в папку** меню и введите: `~/Library/Caches/Xamarin/mtbs/builds/` открыть папку.  
+- При наличии сборок конкретного устройства .dSYM можно найти в следующем каталоге:
 
-В качестве альтернативы можно отобразить `~/Library` папки с помощью **Показать параметры представления** панели домашней папки. При выборе домашней папке на боковой панели в Finder и воспользоваться меню поиска **представление > Показать параметры представления** (или cmd-j), затем появится флажок для **показывать папку библиотеки**.
+    **&lt;каталог проекта&gt;/bin/&lt;платформы&gt;/&lt;конфигурации&gt;/device-builds /&lt;устройства&gt; - &lt; версия ОС&gt;/**
 
+    Пример:
+  
+    **TestApp/bin/iPhone/Release/device-builds/iphone8.4-11.3.1/**
 
-### <a name="see-also"></a>См. также
-- Отчеты об аварийном завершении расширенные действия для symbolicating iOS: [http://jmillerdev.net/symbolicating-ios-crash-files-xamarin-ios/](http://jmillerdev.net/symbolicating-ios-crash-files-xamarin-ios/)
+- Если не включена сборок конкретного устройства, .dSYM можно найти в следующем каталоге:
+
+    **&lt;каталог проекта&gt;/bin/&lt;платформы&gt;/&lt;конфигурации&gt;/**
+
+    Пример:
+
+    **TestApp/bin/iPhone/Release /**
+
+> [!NOTE]
+> В рамках процесса построения 2017 г. Visual Studio копирует файл .dSYM между узлом построения Mac и Windows. Если отсутствует файл .dSYM в Windows, убедитесь, что вы настроили параметры сборки приложения, чтобы [создать IPA-файл](~/ios/deploy-test/app-distribution/ipa-support.md).
+
+## <a name="see-also"></a>См. также
+
+- [Symbolicating операций ввода-вывода файлов приводит к сбою (Xamarin.iOS)](http://jmillerdev.net/symbolicating-ios-crash-files-xamarin-ios/)
 - [Функции приводит к сбою журналах приложения iOS](https://www.raywenderlich.com/23704/demystifying-ios-application-crash-logs)
+

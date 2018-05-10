@@ -6,12 +6,12 @@ ms.assetid: 4917273d-32f9-401a-a52c-5cfb53a2170d
 ms.technology: xamarin-forms
 author: pierceboggan
 ms.author: piboggan
-ms.date: 04/23/2018
-ms.openlocfilehash: 627225fdeef781a8b24a79e9b46627a739fd15af
-ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
+ms.date: 05/08/2018
+ms.openlocfilehash: 96054505af44c5d3e198c2b9e7e7cb30d39b02b1
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="xamarin-live-reload"></a>Перезагрузить динамической Xamarin
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="requirements"></a>Требования
 
-* [Visual Studio 2017 г 15,7 Preview 4](https://www.visualstudio.com/vs/preview/) или более поздней версии с **Разработка мобильных приложений в .NET Framework** рабочей нагрузки.
-* [Xamarin.Forms 3.0.354232-pre3](https://www.nuget.org/packages/Xamarin.Forms/3.0.0.354232-pre3) или более поздней версии.
+* [Версии 15,7 2017 г. Visual Studio или более поздней версии](https://www.visualstudio.com/vs/) или более поздней версии с **Разработка мобильных приложений в .NET Framework** рабочей нагрузки.
+* [Xamarin.Forms 3.0.0 или более поздней версии](https://www.nuget.org/packages/Xamarin.Forms/) или более поздней версии.
 
 ## <a name="getting-started"></a>Начало работы
 ### <a name="1-install-xamarin-live-reload-from-the-visual-studio-marketplace"></a>1. Установка динамической перезагрузить Xamarin в Visual Studio Marketplace
@@ -45,8 +45,13 @@ ms.lasthandoff: 05/03/2018
 
 Добавление Live перезагрузить существующие мобильные приложения может выполняться в три этапа:
 
-1. Убедитесь, все проекты обновляются для использования [Xamarin.Forms 3.0.354232-pre3](https://www.nuget.org/packages/Xamarin.Forms/3.0.0.354232-pre3) или более поздней версии.
-2. Установка **Xamarin.LiveReload** NuGet в библиотеку .NET Standard 2.0. Это необходимо установить в проектах платформы. Убедитесь, что **источник пакета** равно **все**.
+1. Убедитесь, все проекты обновляются для использования [Xamarin.Forms 3.0.0 или более поздней версии](https://www.nuget.org/packages/Xamarin.Forms/) или более поздней версии.
+
+2. Добавить **Xamarin.LiveReload** пакет NuGet:
+
+    1. **.NET standard** — установить **Xamarin.LiveReload** NuGet в библиотеку .NET Standard 2.0. Это необходимо установить в проектах платформы. Убедитесь, что **источник пакета** равно **все**.
+    
+    2. **Общие проекты** — установить **Xamarin.LiveReload** NuGet на всех проектов платформы (например, Android, iOS, UWP, и т. д.). Убедитесь, что **источник пакета** равно **все**.
 
 ![Добавить Xamarin динамической перезагрузить NuGet с помощью диспетчера пакетов NuGet](images/addlivereloadnuget.png)
 
@@ -85,7 +90,7 @@ public partial class App : Application
 
 ### <a name="what-changes-does-live-reload-redeploy"></a>Какие изменения Live перезагрузить повторно развернуть? 
 
-Динамическая перезагрузить применяется только изменения, внесенные в XAML. При внесении изменений в файле C# потребуется повторную компиляцию. Поддержка перезагрузки C# планируется в будущих выпусках.
+Динамическая перезагрузить применяется только изменения, внесенные в XAML или CSS. При внесении изменений в файле C# потребуется повторную компиляцию. Поддержка перезагрузки C# планируется в будущих выпусках.
 
 ### <a name="what-platforms-are-supported"></a>Какие платформы поддерживаются? 
 
@@ -111,8 +116,6 @@ public partial class App : Application
 ## <a name="known-issues"></a>Известные проблемы
 
 * Поддерживается только в Visual Studio.
-* Работает только с библиотеками .NET Standard. Эта проблема будет устранена в следующей версии предварительного просмотра.
-* Таблицы стилей CSS не поддерживаются. Эта проблема будет устранена в следующей версии предварительного просмотра.
 * Повторная загрузка ресурсы на уровне приложения (т. е. **App.xaml** или Общие словари ресурсов), сброс навигации приложения. Эта проблема будет устранена в следующей версии предварительного просмотра.
 * Редактирование XAML во время отладки UWP могут вызвать сбой среды выполнения. Решение: Используйте **Запуск без отладки (Ctrl + F5)** вместо **начать отладку (F5)**.
 
@@ -131,8 +134,6 @@ public partial class App : Application
 * **XLR003**: *пакет nuget Live перезагрузить требует установки расширения Xamarin Live перезагрузить Visual Studio.*
 
   Попытка построить проект, который ссылается пакет nuget Live перезагрузки, но не устанавливается расширение Visual.  
-
-
 
 ### <a name="app-doesnt-connect"></a>Приложение не подключаться
 
