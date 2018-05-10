@@ -1,5 +1,5 @@
 ---
-title: Диспетчер устройств Xamarin Android
+title: Управление эмуляторами Android с помощью диспетчера устройств Xamarin Android
 description: Диспетчер устройств Xamarin Android, который сейчас находится на этапе предварительной версии, предназначен для замены устаревшего диспетчера устройств Google. Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запустить и протестировать приложение без использования физического устройства.
 ms.prod: xamarin
 ms.assetid: ECB327F3-FF1C-45CC-9FA6-9C11032BD5EF
@@ -7,11 +7,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 04/26/2018
-ms.openlocfilehash: 94f82c9f893e22074ba95c052b57ce6ff18eaa1e
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 2b41c23bb880ca6150fa5f3f487eb00d8a7a19d8
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xamarin-android-device-manager"></a>Диспетчер устройств Xamarin Android
 

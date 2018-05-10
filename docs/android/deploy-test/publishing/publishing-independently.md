@@ -6,11 +6,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/21/2017
-ms.openlocfilehash: 6d278f3ae046a31be6e4335119572fb509672a66
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f7ba0620a4639ff62e2d75d7cf8f02fcc01faac5
+ms.sourcegitcommit: c9ebf456e1c6924956bedb13f4ea78ff09f7b1a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="publishing-independently"></a>Независимая публикация
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/04/2018
 
 -   **Visual Studio Professional** &ndash; для индивидуальных разработчиков или небольших команд (только для Windows). Эта лицензия предлагает стандартную подписку или подписку на облачную службу, доступ к дополнительным материалам Xamarin University и не накладывает ограничения на использование.
 
--   **Visual Studio Enterprise** &ndash; для команд любого размера (только для Windows). Эта лицензия предлагает возможности уровня предприятия, стандартную подписку или подписку на облачную службу и скидку 25 % на Xamarin Test Cloud.
+-   **Visual Studio Enterprise** &ndash; для команд любого размера (только для Windows). Эта лицензия предлагает возможности корпоративного уровня, стандартную подписку или подписку на облачную службу.
 
 Посетите веб-сайт [visualstudio.com](https://www.visualstudio.com/xamarin/), чтобы скачать Community Edition или получить дополнительные сведения о приобретении выпусков Professional и Enterprise.
 

@@ -1,5 +1,5 @@
 ---
-title: Установка пакета SDK для Android
+title: Настройка пакета SDK для Android для Xamarin.Android
 description: В состав Visual Studio входит диспетчер пакетов SDK для Android, который заменяет автономный диспетчер пакетов SDK от Google. Это руководство содержит сведения об использовании диспетчера пакетов SDK для скачивания инструментов, платформ и других компонентов пакета SDK для Android, необходимых для разработки приложений Xamarin.Android.
 ms.prod: xamarin
 ms.assetid: 9A857F52-2EC1-414F-8010-CEE67B60A4B4
@@ -7,13 +7,13 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: 45ab1930300ac704da0a1fee25c08d40aa35ac5c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5c2259ad32f341094f6cdc440edb2053987374b1
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="android-sdk-setup"></a>Установка пакета SDK для Android
+# <a name="setting-up-the-android-sdk-for-xamarinandroid"></a>Настройка пакета SDK для Android для Xamarin.Android
 
 _Visual Studio включает диспетчер пакетов SDK для Android, который заменяет автономный диспетчер пакетов SDK от Google. В этом руководстве описано, как использовать диспетчер пакетов SDK для скачивания инструментов, платформ и других компонентов пакета SDK для Android, необходимых для разработки приложений Xamarin.Android._
 
@@ -36,7 +36,7 @@ _Visual Studio включает диспетчер пакетов SDK для And
 Диспетчер пакетов SDK Xamarin Android помогает скачивать новейшие компоненты Android, необходимые для разработки приложения Xamarin.Android.
 Он заменяет автономный диспетчер пакетов SDK от Google, который был признан нерекомендуемым.
 
-Почему следует использовать диспетчер пакетов SDK Xamarin Android вместо диспетчера пакетов SDK, входящего в состав пакета SDK для Android? В версии 25.2.3 пакета Android SDK Tools компания Google ввела новый инструмент для обслуживания пакета SDK для Android. Этот новый инструмент — **[sdkmanager](https://developer.android.com/studio/command-line/sdkmanager.html)** — является программой командной строки, которая заменяет автономный диспетчер на базе пользовательского интерфейса для пакета SDK для Android. Таким образом, если вы выполняете обновление до SDK Tools версии 26.0.1 (требуется для Android 8.0) или более поздней версии и хотите и дальше управлять пакетом SDK для Android через пользовательский интерфейс, нужно использовать диспетчер пакетов SDK Xamarin Android.
+Почему следует использовать диспетчер пакетов SDK Xamarin Android вместо диспетчера пакетов SDK, входящего в состав пакета SDK для Android? В версии 25.2.3 пакета Android SDK Tools компания Google ввела новый инструмент для обслуживания пакета SDK для Android. Этот новый инструмент — **[sdkmanager](https://developer.android.com/studio/command-line/sdkmanager.html)**  — является программой командной строки, которая заменяет автономный диспетчер на базе пользовательского интерфейса для пакета SDK для Android. Таким образом, если вы выполняете обновление до SDK Tools версии 26.0.1 (требуется для Android 8.0) или более поздней версии и хотите и дальше управлять пакетом SDK для Android через пользовательский интерфейс, нужно использовать диспетчер пакетов SDK Xamarin Android.
 
 ## <a name="requirements"></a>Требования
 

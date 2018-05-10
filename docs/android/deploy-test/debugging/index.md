@@ -1,23 +1,24 @@
 ---
-title: Отладка
+title: Отладка Xamarin.Android на устройствах и эмуляторах
 description: Тестирование и отладка приложения Xamarin.Android
 ms.prod: xamarin
 ms.assetid: A355A471-8195-4391-93FE-0000BCB17923
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/16/2018
-ms.openlocfilehash: 429a369ddcd11829920f9fb932a737d1a53cec10
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 04/25/2018
+ms.openlocfilehash: 4b51b10965f3f6e77420d657bc0f7f7d25fc6569
+ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="debugging"></a>Отладка
 
+В этом разделе описываются принципы отладки приложения Xamarin.Android на устройствах или эмуляторах.
 ## <a name="debugging-overview"></a>Общие сведения об отладке
 
-При разработке приложений Android приложения требуется запускать либо на физическом оборудовании, либо с помощью эмулятора или симулятора. Использование оборудования является лучшим, но не всегда самым целесообразным вариантом. Во многих случаях может быть проще и рентабельнее смоделировать или сэмулировать оборудование Android с помощью одного из описанных ниже эмуляторов.
+При разработке приложений Android приложения требуется запускать либо на физическом оборудовании, либо с помощью эмулятора. Использование оборудования является лучшим, но не всегда самым целесообразным вариантом. Во многих случаях может быть проще и рентабельнее смоделировать или сэмулировать оборудование Android с помощью одного из описанных ниже эмуляторов.
 
 
 ### <a name="android-sdk-emulatorandroiddeploy-testdebuggingandroid-sdk-emulatorindexmd"></a>[Эмулятор SDK для Android](~/android/deploy-test/debugging/android-sdk-emulator/index.md)
