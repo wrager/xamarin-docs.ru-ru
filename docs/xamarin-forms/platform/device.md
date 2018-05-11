@@ -6,11 +6,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2017
-ms.openlocfilehash: 1fc3fb17ec97ce9028abbf63cdedbfc5fec12204
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: 520982491803fa0a909008ee60730a4149a75296
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="device-class"></a>Класс устройства
 
@@ -155,7 +155,7 @@ Device.OpenUri(new Uri("https://evolve.xamarin.com/"));
 
 ## <a name="devicestarttimer"></a>Device.StartTimer
 
-`Device` Класс также содержит `StartTimer` метод, который предоставляет простой способ для запуска задачи зависят от времени, который работает в Xamarin.Forms общий код (включая PCLs). Передайте `TimeSpan` Чтобы задать интервал и возвращать `true` для сохранения таймер или `false` остановить процесс после текущего вызова.
+`Device` Класс также содержит `StartTimer` метод, который предоставляет простой способ запуска задачи зависят от времени, работающий в Xamarin.Forms общий код, включая библиотеку .NET Standard. Передайте `TimeSpan` Чтобы задать интервал и возвращать `true` для сохранения таймер или `false` остановить процесс после текущего вызова.
 
 ```csharp
 Device.StartTimer (new TimeSpan (0, 0, 60), () => {
@@ -184,7 +184,7 @@ Device.BeginInvokeOnMainThread ( () => {
 
 ## <a name="summary"></a>Сводка
 
-Xamarin.Forms `Device` класс предоставляет возможность точного управления функциональные возможности и макеты отдельно для каждой платформы — даже общего кода (PCL или общие проекты).
+Xamarin.Forms `Device` класс предоставляет возможность точного управления функциональные возможности и макеты отдельно для каждой платформы — даже общего кода (.NET Standard проектов библиотек или общие проекты).
 
 
 ## <a name="related-links"></a>Связанные ссылки

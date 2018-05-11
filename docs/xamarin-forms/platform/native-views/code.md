@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: 46284fd1b0863f904e9f24f125aef75fe3eb8caa
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: c3a79947b02e0f877fd4ea1b0ddb72486c222719
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="native-views-in-c"></a>Собственные представления в C#
 
@@ -19,7 +19,7 @@ _Собственные представления из iOS, Android и UWP мо
 
 ## <a name="overview"></a>Обзор
 
-Любой элемент управления Xamarin.Forms, который позволяет `Content` Чтобы задать, а также `Children` коллекции, можно добавить представления конкретную платформу. Например, iOS `UILabel` могут напрямую добавляться [ `ContentView.Content` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ContentView.Content/) свойства, или к [ `StackLayout.Children` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Layout%3CT%3E.Children/) коллекции. Однако обратите внимание, что эта функциональность требует использования `#if` определяет в решениях Xamarin.Forms общий проект и не доступна из решения Xamarin.Forms Переносимая библиотека классов (PCL).
+Любой элемент управления Xamarin.Forms, который позволяет `Content` Чтобы задать, а также `Children` коллекции, можно добавить представления конкретную платформу. Например, iOS `UILabel` могут напрямую добавляться [ `ContentView.Content` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ContentView.Content/) свойства, или к [ `StackLayout.Children` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Layout%3CT%3E.Children/) коллекции. Однако обратите внимание, что эта функциональность требует использования `#if` определяет в решениях Xamarin.Forms общий проект и не доступна из решения Xamarin.Forms .NET стандартные библиотеки.
 
 Следующих снимках экрана показано платформой представления были добавлены в Xamarin.Forms [ `StackLayout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.StackLayout/):
 

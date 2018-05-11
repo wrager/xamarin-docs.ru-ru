@@ -7,39 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/10/2018
-ms.openlocfilehash: b6ea988aa8c058fe5a92a17e9b72f81e0ccb12db
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: aed240dd403957e5935666d4179a6d642c411b86
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="setup-windows-projects"></a>Проекты установки Windows
 
 _Добавление новых проектов Windows в существующее решение Xamarin.Forms_
 
 Старые решения Xamarin.Forms (или тех, которые созданы на macOS) не будет иметь проекты приложений универсальной платформы Windows (UWP). Таким образом необходимо вручную добавить проект UWP для создания приложений Windows 10 (UWP).
-
-<a name="pcl" />
-
-## <a name="update-the-pcl-profile"></a>Обновление профиля PCL
-
-Если существующие приложения Xamarin.Forms шаблона переносимой библиотеки классов (PCL), необходимо обновить его профиль.
-
-1. **Щелкните правой кнопкой мыши > свойства** (существующие параметры могут отличаться)
-
-  ![](images/targets.png "Целевые объекты PCL")
-
-2. Щелкните **изменений...**  кнопки
-
-3. Убедитесь, **Windows 8** и **Windows Phone 8.1** выбраны параметры (и **Silveright Windows Phone** — *свертывание*):
-
-  ![](images/pcl.png "PCL Target-параметры")
-
-4. Нажмите клавишу **ОК** и сохраните изменения.
-
-Это равнозначно **111 профиль** при настройке вашего PCL в Visual Studio для Mac с помощью раскрывающегося списка.
-
-  ![](images/pcl-xs.png "Профиль PCL 111")
 
 ## <a name="add-a-universal-windows-platform-app"></a>Добавить универсальную платформу Windows приложения платформы
 
@@ -65,7 +43,7 @@ UWP в Xamarin.Forms 2.1 и более поздней версии и Xamarin.Fo
 
   [![](universal-images/configuration-sml.png "Окно диспетчера конфигурации")](universal-images/configuration.png#lightbox "окно диспетчера конфигурации")
 
- 5. Щелкните правой кнопкой мыши проект и выберите пункт **Добавить > справочник** и создать ссылку на проект приложения Xamarin.Forms (PCL, .NET Standard или общий проект).
+ 5. Щелкните правой кнопкой мыши проект и выберите пункт **Добавить > справочник** и создать ссылку на проект приложения Xamarin.Forms (.NET Standard или общий проект).
 
   ![](universal-images/addref-sml.png "Диалоговое окно диспетчера ссылок")
 

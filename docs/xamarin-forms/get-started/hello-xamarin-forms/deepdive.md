@@ -6,12 +6,12 @@ ms.assetid: d97aa580-1eb9-48b3-b15b-0d7421ea7ae
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 02/06/2018
-ms.openlocfilehash: e254aa14f5889cee6b5bee452f5275fd579eb8fc
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.date: 04/10/2018
+ms.openlocfilehash: 9bb368ca72909489ca267794035a4c4d0883f109
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="xamarinforms-deep-dive"></a>Подробное знакомство с Xamarin.Forms
 
@@ -54,7 +54,7 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 Решение содержит следующие проекты:
 
-- Phoneword — это проект переносимой библиотеки классов (PCL), который содержит весь общий код и общий пользовательский интерфейс.
+- Phoneword — это проект библиотеки .NET Standard, который содержит весь общий код и общий пользовательский интерфейс.
 - Phoneword.Droid — этот проект содержит код для Android и представляет собой точку входа для приложений Android.
 - Phoneword.iOS — этот проект содержит код для iOS и представляет собой точку входа для приложений iOS.
 
@@ -94,7 +94,7 @@ Visual Studio для Mac — это бесплатная интегрирова
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-По своей архитектуре приложения Xamarin.Forms не отличаются от традиционных кроссплатформенных приложений. Общий код обычно помещается в переносимую библиотеку классов (PCL) и используется приложениями для конкретных платформ. На следующей схеме показаны эти взаимосвязи для приложения Phoneword:
+По своей архитектуре приложения Xamarin.Forms не отличаются от традиционных кроссплатформенных приложений. Общий код обычно помещается в библиотеку .NET Standard и используется приложениями для конкретных платформ. На следующей схеме показаны эти взаимосвязи для приложения Phoneword:
 
 ![](deepdive-images/xs/architecture.png "Архитектура приложения Phoneword")
 

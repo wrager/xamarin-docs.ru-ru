@@ -3,15 +3,14 @@ title: Кроссплатформенная производительность
 description: Существует множество методов повышения производительности приложений, созданных на платформе Xamarin. Вместе они могут значительно снизить загрузку ЦП и сократить объем памяти, используемой приложением. Эти методы описаны в данной статье.
 ms.prod: xamarin
 ms.assetid: 9ce61f18-22ac-4b93-91be-5b499677d661
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/24/2017
-ms.openlocfilehash: 98b4b4a9e7bc28dd444cfdcb1afdfbe64cb1aee0
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: f011a92b4789da7328827f184449fd957abdf3ba
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="cross-platform-performance"></a>Кроссплатформенная производительность
 
@@ -168,7 +167,7 @@ public class Subscriber : IDisposable
 ## <a name="use-weak-references-to-prevent-immortal-objects"></a>Использование слабых ссылок для предотвращения возникновения неуничтожимых объектов
 
 > [!NOTE]
-> Чтобы обеспечить эффективное использование памяти приложениями для iOS, их разработчикам следует ознакомиться с документацией, в которой описывается, как [избежать циклических ссылок в iOS](~/ios/deploy-test/performance.md#avoidcircularreferences).
+> Чтобы обеспечить эффективное использование памяти приложениями для iOS, их разработчикам следует ознакомиться с документацией, в которой описывается, как [избежать циклических ссылок в iOS](~/ios/deploy-test/performance.md#avoid-strong-circular-references).
 
 <a name="lazy" />
 

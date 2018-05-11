@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2016
-ms.openlocfilehash: 6138bd1f9211248b3a260795c2ef9d3db87580be
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 12b8906dd4562e58dede181e773e4046b8434214
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="creating-an-effect"></a>Создание эффекта
 
@@ -188,7 +188,7 @@ namespace EffectsDemo.UWP
 
 ## <a name="consuming-the-effect"></a>Использование эффекта
 
-Использование эффекта с Xamarin.Forms Переносимая библиотека классов (PCL) или проекта библиотеки общих выполняется следующим образом:
+Использование эффекта с Xamarin.Forms .NET стандартной библиотеки или общую библиотеку проекта выполняется следующим образом:
 
 1. Объявите элемент управления, который будет настраиваться эффект.
 1. Присоединение эффект к элементу управления, добавьте его в элемент управления [ `Effects` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Element.Effects/) коллекции.
@@ -209,7 +209,7 @@ namespace EffectsDemo.UWP
 </Entry>
 ```
 
-`FocusEffect` Класс в PCL поддерживает использование эффекта в XAML и показано в следующем примере кода:
+`FocusEffect` Класса в библиотеке .NET Standard поддерживает использование эффекта в XAML и показано в следующем примере кода:
 
 ```csharp
 public class FocusEffect : RoutingEffect

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/08/2017
-ms.openlocfilehash: 41bd79b22aa193dd5303847997bc07e8e8d12e58
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 259be743a706c9316e2e275ff305a0fe5ad97906
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="spell-checking-using-the-bing-spell-check-api"></a>Проверка орфографии, с помощью API проверки правописания Bing
 
@@ -90,7 +90,7 @@ async Task<string> SendRequestAsync(string url)
 }
 ```
 
-Этот метод создает запрос GET, добавив ключ API в качестве значения `Ocp-Apim-Subscription-Key` заголовок. Затем отправляется запрос GET `SpellCheck` API с URL-АДРЕСЕ запроса задания текста преобразования и режим проверки орфографии. Ответ считывается и возвращается вызывающему методу.
+Этот метод отправляет запрос GET для `SpellCheck` API с URL-АДРЕСЕ запроса задания текста преобразования и режим проверки орфографии. Ответ считывается и возвращается вызывающему методу.
 
 `SpellCheck` API отправит код состояния HTTP 200 (ОК) в ответе, что запрос допустим, указывающая, что запрос выполнен успешно, и что запрашиваемые данные находятся в ответе. Список объектов ответа см. в разделе [объектов ответа](/rest/api/cognitiveservices/bing-spell-check-api-v7-reference#response-objects).
 

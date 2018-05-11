@@ -7,11 +7,11 @@ ms.assetid: 56929D74-8F2C-44C6-90E6-3FBABCDC0A4B
 author: charlespetzold
 ms.author: chape
 ms.date: 04/05/2017
-ms.openlocfilehash: 95c023d702d165b7a8a0ba392b2f87af58bfae07
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: 6180eb61e7850b7739c5514461796fb0aacbc4ff
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="finger-painting"></a>Рисование пальцем
 
@@ -23,7 +23,7 @@ _Пальцы используются для закрашивания на хо
 
 Поддержка сенсорного ввода в Xamarin.Forms не позволяет отслеживания отдельных пальцев на экране, поэтому эффекта отслеживания touch Xamarin.Forms были разработаны для поддержки дополнительных сенсорный ввод. Этот эффект, описанное в статье [ **вызов события из эффекты**](~/xamarin-forms/app-fundamentals/effects/touch-tracking.md). Образец программы [ **демонстрации эффекта отслеживания Touch** ](https://developer.xamarin.com/samples/xamarin-forms/Effects/TouchTrackingEffectDemos/) включает две страницы, использующие SkiaSharp, включая finger-painting программы.
 
-[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) решение включает в себя это событие отслеживания сенсорный ввод. Включает проекта переносимой библиотеки классов `TouchEffect` класса `TouchActionType` перечисления, `TouchActionEventHandler` делегата и `TouchActionEventArgs` класса. Проекты каждой из платформ включают `TouchEffect` класса для этой платформы; iOS проект также содержит `TouchRecognizer` класса.
+[ **SkiaSharpFormsDemos** ](https://developer.xamarin.com/samples/xamarin-forms/SkiaSharpForms/Demos/) решение включает в себя это событие отслеживания сенсорный ввод. Включает в себя .NET Standard проекта библиотеки `TouchEffect` класса, `TouchActionType` перечисления, `TouchActionEventHandler` делегата и `TouchActionEventArgs` класса. Проекты каждой из платформ включают `TouchEffect` класса для этой платформы; iOS проект также содержит `TouchRecognizer` класса.
 
 **Paint пальцем** страницы в **SkiaSharpFormsDemos** — это упрощенная реализация Рисование пальцем. Не выбора цвета и ширины обводки, нет возможности снимите на холст и Конечно не удается сохранить иллюстрации.
 

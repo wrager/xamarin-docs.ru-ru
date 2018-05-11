@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: ffb013c355db34ef7456404d6f9dcaec75743420
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: af0dbef84d8ceb178fe5c1ac6fc7194c178141dc
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="implementing-a-hybridwebview"></a>Реализация HybridWebView
 
@@ -74,7 +74,7 @@ public class HybridWebView : View
 }
 ```
 
-`HybridWebView` Пользовательский элемент управления создается в проекта переносимой библиотеки классов (PCL) и определяет следующий API для элемента управления:
+`HybridWebView` Пользовательского элемента управления в проекте библиотеки .NET Standard и определяет следующий API для элемента управления:
 
 - Объект `Uri` свойство, которое указывает адрес веб-страницы для загрузки.
 - Объект `RegisterAction` метод, который регистрирует `Action` с элементом управления. Зарегистрированных действий будет вызываться из JavaScript, содержащиеся в файле HTML для ссылок на `Uri` свойство.
@@ -85,7 +85,7 @@ public class HybridWebView : View
 
 ## <a name="consuming-the-hybridwebview"></a>Использование HybridWebView
 
-`HybridWebView` Пользовательский элемент управления может ссылаться на языке XAML в проект PCL объявление пространства имен для его расположения и с помощью префикса пространства имен на пользовательский элемент управления. В следующем примере кода показан способ `HybridWebView` пользовательский элемент управления может использоваться XAML-страницы:
+`HybridWebView` Пользовательский элемент управления может ссылаться на языке XAML в проекте библиотеки .NET Standard объявление пространства имен для его расположения и с помощью префикса пространства имен на пользовательский элемент управления. В следующем примере кода показан способ `HybridWebView` пользовательский элемент управления может использоваться XAML-страницы:
 
 ```xaml
 <ContentPage ...

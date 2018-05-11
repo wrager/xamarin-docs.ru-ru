@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 353575bad91c9bade0207a0aa271d9de7ec50240
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 04d3d99a5d85dd77c93e9b926e8952cc3d8a771e
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-a-map-pin"></a>Настройка ПИН-код карты
 
@@ -47,7 +47,7 @@ public class CustomMap : Map
 }
 ```
 
-`CustomMap` Элемент управления создается в проекта переносимой библиотеки классов (PCL) и определяет API для пользовательской карты. Обеспечивает доступ к пользовательской карте `CustomPins` свойство, которое представляет коллекцию `CustomPin` объекты, которые будут отображены элементом управления собственного карты на каждой платформе. `CustomPin` В следующем примере кода показан класс:
+`CustomMap` Элемента управления в проекте библиотеки .NET Standard и определяет API для пользовательской карты. Обеспечивает доступ к пользовательской карте `CustomPins` свойство, которое представляет коллекцию `CustomPin` объекты, которые будут отображены элементом управления собственного карты на каждой платформе. `CustomPin` В следующем примере кода показан класс:
 
 ```csharp
 public class CustomPin : Pin
@@ -62,7 +62,7 @@ public class CustomPin : Pin
 
 ## <a name="consuming-the-custom-map"></a>Использование пользовательской карты
 
-`CustomMap` Элемент управления может ссылаться на языке XAML в проект PCL объявление пространства имен для его расположения и с помощью префикса пространства имен в элементе управления пользовательской карты. В следующем примере кода показан способ `CustomMap` управления могут быть использованы XAML-страницы:
+`CustomMap` Элемент управления может ссылаться на языке XAML в проекте библиотеки .NET Standard объявление пространства имен для его расположения и с помощью префикса пространства имен в элементе управления пользовательской карты. В следующем примере кода показан способ `CustomMap` управления могут быть использованы XAML-страницы:
 
 ```xaml
 <ContentPage ...
@@ -322,7 +322,7 @@ void OnCalloutAccessoryControlTapped (object sender, MKMapViewAccessoryTappedEve
 }
 ```
 
-Этот метод открывает веб-браузер и переходит к адресу, сохраненному в `CustomMKAnnotationView.Url` свойство. Обратите внимание, что адрес был определен при создании `CustomPin` коллекции в проект PCL.
+Этот метод открывает веб-браузер и переходит к адресу, сохраненному в `CustomMKAnnotationView.Url` свойство. Обратите внимание, что адрес был определен при создании `CustomPin` коллекции в проекте библиотеки .NET Standard.
 
 <a name="Deselecting_the_Annotation" />
 
@@ -499,7 +499,7 @@ void OnInfoWindowClick (object sender, GoogleMap.InfoWindowClickEventArgs e)
 }
 ```
 
-Этот метод открывает веб-браузер и переходит к адресу, сохраненному в `Url` из извлеченного `CustomPin` экземпляра для `Marker`. Обратите внимание, что адрес был определен при создании `CustomPin` коллекции в проект PCL.
+Этот метод открывает веб-браузер и переходит к адресу, сохраненному в `Url` из извлеченного `CustomPin` экземпляра для `Marker`. Обратите внимание, что адрес был определен при создании `CustomPin` коллекции в проекте библиотеки .NET Standard.
 
 Дополнительные сведения о настройке `MapView` см. в разделе [Maps API](~/android/platform/maps-and-location/maps/maps-api.md).
 
@@ -645,7 +645,7 @@ private async void OnInfoButtonTapped(object sender, TappedRoutedEventArgs e)
 }
 ```
 
-Этот метод открывает веб-браузер и переходит к адресу, сохраненному в `Url` свойство `CustomPin` экземпляра. Обратите внимание, что адрес был определен при создании `CustomPin` коллекции в проект PCL.
+Этот метод открывает веб-браузер и переходит к адресу, сохраненному в `Url` свойство `CustomPin` экземпляра. Обратите внимание, что адрес был определен при создании `CustomPin` коллекции в проекте библиотеки .NET Standard.
 
 Дополнительные сведения о настройке `MapControl` см. в разделе [карты и общие сведения о расположении](https://msdn.microsoft.com/library/windows/apps/mt219699.aspx) на сайте MSDN.
 

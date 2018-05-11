@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2016
-ms.openlocfilehash: 4d1d4323e42df6240fee7be42ae8fac70a2b3f1f
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: fd96770caf92eb30e669133f592f5d780146be59
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-a-viewcell"></a>Настройка ViewCell
 
@@ -65,13 +65,13 @@ public class NativeCell : ViewCell
   }
 }
 ```
-`NativeCell` Класса в проекта переносимой библиотеки классов (PCL) и определяет API-Интерфейс для пользовательских ячеек. Предоставляет ячейки пользовательского `Name`, `Category`, и `ImageFilename` свойства, которые могут быть отображены через привязку данных. Дополнительные сведения о привязке данных см. в статье [Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
+`NativeCell` Класса в проекте библиотеки .NET Standard и определяет API-Интерфейс для пользовательских ячеек. Предоставляет ячейки пользовательского `Name`, `Category`, и `ImageFilename` свойства, которые могут быть отображены через привязку данных. Дополнительные сведения о привязке данных см. в статье [Основы привязки данных](~/xamarin-forms/xaml/xaml-basics/data-binding-basics.md).
 
 <a name="Consuming_the_Custom_Cell" />
 
 ## <a name="consuming-the-custom-cell"></a>Использование пользовательских ячеек
 
-`NativeCell` Пользовательских ячеек может ссылаться на языке Xaml в проект PCL объявление пространства имен для его расположения и с помощью префикса пространства имен для пользовательских ячеек элемента. В следующем примере кода показан способ `NativeCell` пользовательские ячейки могут быть использованы XAML-страницы:
+`NativeCell` Пользовательских ячеек может ссылаться на языке Xaml в проекте библиотеки .NET Standard объявление пространства имен для его расположения и с помощью префикса пространства имен для пользовательских ячеек элемента. В следующем примере кода показан способ `NativeCell` пользовательские ячейки могут быть использованы XAML-страницы:
 
 ```xaml
 <ContentPage ...

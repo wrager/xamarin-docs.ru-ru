@@ -2,22 +2,21 @@
 title: Установка предварительной версии Xamarin в ОС Windows
 ms.prod: xamarin
 ms.assetid: 9F730444-06E8-4B3F-8A19-CA95CD484FFA
-ms.technology: xamarin-cross-platform
 author: asb3993
 ms.author: amburns
 ms.date: 03/20/2018
-ms.openlocfilehash: 4f89b888faace39e050e0994f7de9de45415a49a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 20b9bbfcdcc698f19c6400cd738ba7f6d5db7e44
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="installing-xamarin-preview-on-windows"></a>Установка предварительной версии Xamarin в ОС Windows
 
 Visual Studio 2017 не поддерживает альфа- и бета-каналы и стабильные каналы так, как предыдущие версии. Вместо этого есть два варианта:
 
 - **выпуск** — эквивалент _стабильного_ канала в Visual Studio для Mac;
-- **предварительная версия** — эквивалент _альфа-_ и _бета-_каналов в Visual Studio для Mac.
+- **предварительная версия** — эквивалент _альфа-_ и _бета-_ каналов в Visual Studio для Mac.
 
 > [!TIP] 
 > Для пробного использования функций предварительной версии следует [скачать установщик предварительной версии Visual Studio 2017](https://www.visualstudio.com/vs/preview/), который предложит установить **предварительные версии** Visual Studio параллельно со стабильной версией (версией выпуска). Дополнительные сведения о новых возможностях Visual Studio 2017 можно найти в [заметках о выпуске](/visualstudio/releasenotes/vs2017-preview-relnotes).

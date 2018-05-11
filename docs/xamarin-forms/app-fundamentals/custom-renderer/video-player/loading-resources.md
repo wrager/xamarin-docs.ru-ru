@@ -6,15 +6,15 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: a9dbf77b85fe7f39c152d4dfb33bdd44c72dca40
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 89c424ee80a4ebf6363a836e752b72ee9bc5cd5a
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="loading-application-resource-videos"></a>Загрузка видео ресурсов приложения
 
-Пользовательские модули подготовки отчетов для `VideoPlayer` представления можно использовать для воспроизведения видео файлов, внедренных в проектах отдельных платформы как ресурсы приложения. Однако текущая версия `VideoPlayer` сможет подключиться к ресурсам, внедренных в переносимой библиотеке классов.
+Пользовательские модули подготовки отчетов для `VideoPlayer` представления можно использовать для воспроизведения видео файлов, внедренных в проектах отдельных платформы как ресурсы приложения. Однако текущая версия `VideoPlayer` сможет подключиться к ресурсам, внедренных в библиотеке .NET Standard.
 
 Чтобы загрузить эти ресурсы, создайте экземпляр `ResourceVideoSource` , установив `Path` свойство имени файла (или в папку и имя файла) ресурса. Кроме того, вы можете вызвать статический `VideoSource.FromResource` метод, чтобы создать ссылку на ресурс. Затем задайте `ResourceVideoSource` объект `Source` свойство `VideoPlayer`. 
 

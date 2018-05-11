@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/06/2017
-ms.openlocfilehash: 6945d64e37bc7e0de930093d8a3f71590026182d
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: e552a0bf76572d50eb0d4618af69fc1179979f97
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="picking-a-photo-from-the-picture-library"></a>Подбор фотографию из библиотеки рисунков
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="creating-the-interface"></a>Создание интерфейса
 
-Сначала необходимо Создайте интерфейс в общий код, который выражает нужной функции. В случае с приложением фото комплектации требуется только один метод. Это определяется в [ `IPicturePicker` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/DependencyService/DependencyServiceSample/DependencyServiceSample/IPicturePicker.cs) интерфейса в переносимой библиотеки классов для примера кода:
+Сначала необходимо Создайте интерфейс в общий код, который выражает нужной функции. В случае с приложением фото комплектации требуется только один метод. Это определяется в [ `IPicturePicker` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/DependencyService/DependencyServiceSample/DependencyServiceSample/IPicturePicker.cs) интерфейс в библиотеке .NET Standard этого примера кода:
 
 ```csharp
 namespace DependencyServiceSample
@@ -261,7 +261,7 @@ namespace DependencyServiceSample.UWP
 
 ## <a name="implementing-in-shared-code"></a>Реализация в общий код
 
-Теперь, когда интерфейс реализован для каждой платформы, приложение в общих переносимой библиотеки классов можно использовать его.
+Теперь, когда интерфейс реализован для каждой платформы, приложение в библиотеке .NET Standard сможете использовать его.
 
 [ `App` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/DependencyService/DependencyServiceSample/DependencyServiceSample/DependencyServiceSample.cs) Класс создает `Button` выбирает фотографию:
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/11/2016
-ms.openlocfilehash: 8421355e0630a637589cb4f08c2fec4ea9cdab24
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 1a982078f7a3fb2ba462cd7d6f1420b1d27618f7
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="using-urhosharp-in-xamarinforms"></a>С помощью UrhoSharp в Xamarin.Forms
 
@@ -27,10 +27,10 @@ UrhoSharp можно использовать для отображения гр
 
 ## <a name="adding-the-urhosharp-nuget-packages"></a>Добавление пакетов UrhoSharp Nuget
 
-Прежде чем использовать UrhoSharp, разработчики должны добавить пакет UrhoSharp Nuget их решения. В этом руководстве предполагается Xamarin.Forms проект с iOS, Android и PCL проекта. Весь код будет записан в проект переносимой библиотеки Классов; но UrhoSharp Nuget необходимо добавить в iOS и Android проекты слишком.
+Прежде чем использовать UrhoSharp, разработчики должны добавить пакет UrhoSharp Nuget их решения. В этом руководстве предполагается Xamarin.Forms проект с iOS, Android и .NET Standard проекта библиотеки. Весь код будет записан в проекте .NET стандартные библиотеки; но UrhoSharp Nuget необходимо добавить в iOS и Android проекты слишком.
 
 Пакет UrhoSharp.Forms Nuget содержит все объекты, необходимые для создания объектов UrhoSharp. Пакет nuget UrhoSharp.Forms включает `UrhoSurface` класс, который используется для размещения UrhoSharp в Xamarin.Forms.
-Чтобы начать, щелкните правой кнопкой мыши на PCL **пакетов** папку и выберите **Добавление пакетов...** . Введите условие поиска **UrhoSharp.Forms**выберите **UrhoSharp для Xamarin.Forms**, нажмите кнопку **добавить пакет**.
+Чтобы начать, щелкните правой кнопкой мыши **пакетов** папки в проект .NET стандартные библиотеки и выберите **Добавление пакетов...** . Введите условие поиска **UrhoSharp.Forms**выберите **UrhoSharp для Xamarin.Forms**, нажмите кнопку **добавить пакет**.
 
 [![](urhosharp-images/add-package-sml.png "Пакеты диалоговое окно добавления")](urhosharp-images/add-package.png#lightbox "пакетов диалоговое окно добавления")
 

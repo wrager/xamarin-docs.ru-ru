@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: e296ca79ee03e7fc61532758219b65946a8d4381
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 6063732e08680974b8d4a2358bfd85b176b36aec
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="map"></a>Карта
 
@@ -62,7 +62,7 @@ Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
 -  **Android** -MainActivity.cs файл `OnCreate` метод.
 -  **UWP** -MainPage.xaml.cs файл `MainPage` конструктор.
 
-После добавления пакета NuGet и вызвать метод инициализации в пределах каждого applcation `Xamarin.Forms.Maps` интерфейсы API, которые могут использоваться в коде общих PCL или общий проект.
+После добавления пакета NuGet и вызвать метод инициализации в пределах каждого applcation `Xamarin.Forms.Maps` интерфейсы API, которые могут использоваться в общий проект .NET Standard библиотеки или общий проект кода.
 
 <a name="Platform_Configuration" />
 

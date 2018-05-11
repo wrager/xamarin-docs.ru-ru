@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 11/15/2017
-ms.openlocfilehash: 7cb2a79fffda40f09ee75a12d6287b162566741d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b16d146c5ad1097f38c41763a3ae111e7439256f
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="xaml-standard-preview"></a>Стандарт XAML (Предварительная версия)
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 04/04/2018
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
 1. Загрузить [предварительного просмотра здесь пакет NuGet](https://aka.ms/xf-xamlstandard-nuget).
-2. Добавить **Xamarin.Forms.Alias** пакета NuGet в проект Xamarin.Forms PCL .NET Standard и платформы.
+2. Добавить **Xamarin.Forms.Alias** пакет NuGet Xamarin.Forms .NET Standard и платформы проектов.
 3. Инициализировать пакет с `Alias.Init()`
 4. Добавить `xmlns:a` ссылки `xmlns:a="clr-namespace:Xamarin.Forms.Alias;assembly=Xamarin.Forms.Alias"`
 5. Использовать типы в XAML - в разделе [Справочник элементов управления](controls.md) для получения дополнительной информации.
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/04/2018
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
 1. Загрузить [предварительного просмотра здесь пакет NuGet](https://aka.ms/xf-xamlstandard-nuget).
-2. Добавить **Xamarin.Forms.Alias** пакета NuGet в проект Xamarin.Forms PCL .NET Standard и платформы.
+2. Добавить **Xamarin.Forms.Alias** пакет NuGet Xamarin.Forms .NET Standard и платформы проектов.
 3. Инициализировать пакет с `Alias.Init()`
 4. Добавить `xmlns:a` ссылки `xmlns:a="clr-namespace:Xamarin.Forms.Alias;assembly=Xamarin.Forms.Alias"`
 5. Использовать типы в XAML - в разделе [Справочник элементов управления](controls.md) для получения дополнительной информации.

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/15/2017
-ms.openlocfilehash: 5e8ad5ba3bdfa61ae1b2f4404016f204a8c1747c
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: caa7884920e842a8f83e2b0fdb5e0fa4b358ca8e
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="images"></a>Изображения
 
@@ -39,7 +39,7 @@ Xamarin.Forms использует [ `Image` ](https://developer.xamarin.com/api
 
 - [`FromFile`](https://developer.xamarin.com/api/member/Xamarin.Forms.ImageSource.FromFile/p/System.String/) -Требуется имя файла или путь к файлу, которые могут быть разрешены на каждой платформе.
 - [`FromUri`](https://developer.xamarin.com/api/member/Xamarin.Forms.ImageSource.FromUri/p/System.Uri/) -Требуется объект Uri, например.  `new Uri("http://server.com/image.jpg")` .
-- [`FromResource`](https://developer.xamarin.com/api/member/Xamarin.Forms.ImageSource.FromResource/p/System.String/) — Требуется идентификатор ресурса в файл изображения, внедренной в приложение или PCL, **действие построения: EmbeddedResource**.
+- [`FromResource`](https://developer.xamarin.com/api/member/Xamarin.Forms.ImageSource.FromResource/p/System.String/) — Требуется идентификатор ресурса в файл изображения, внедренной в приложение или проект библиотеки .NET Standard, **действие построения: EmbeddedResource**.
 - [`FromStream`](https://developer.xamarin.com/api/member/Xamarin.Forms.ImageSource.FromStream/p/System.Func%7BSystem.IO.Stream%7D/) -Требует поток, предоставляющий данные изображения.
 
 [ `Aspect` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Image.Aspect/) Свойство определяет, как изображение будет масштабироваться в соответствии с отображаемой области:

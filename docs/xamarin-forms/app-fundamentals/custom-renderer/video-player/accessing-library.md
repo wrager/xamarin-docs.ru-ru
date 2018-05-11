@@ -6,11 +6,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: eb3d66630613225c9b2becaa20f73a82f409ce7e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d0f58a4a53d41c23e993f8b8b89b3fca44e0733d
+ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="accessing-the-devices-video-library"></a>Доступ к видеотеке устройства
 
@@ -20,7 +20,7 @@ ms.lasthandoff: 04/04/2018
 
 Каждый из трех платформ включает средство, позволяющее пользователю выбрать фото или видео из библиотеки изображений устройства. Первым этапом воспроизведение видео из библиотеки изображений устройства создание зависимостей службы, которая вызывает выбор изображений для каждой платформы. Службы зависимостей, описанной ниже очень похож на один определенный в [ **комплектации фотографию из библиотеки рисунков** ](~/xamarin-forms/app-fundamentals/dependency-service/photo-picker.md) статьи, за исключением того, что видео выбора возвращает имя файла, а не `Stream`объекта.
 
-Проект PCL определяет интерфейс с именем `IVideoPicker` для зависимостей службы:
+Проект .NET Standard библиотеки определяет интерфейс с именем `IVideoPicker` для зависимостей службы:
 
 ```csharp
 namespace FormsVideoLibrary
