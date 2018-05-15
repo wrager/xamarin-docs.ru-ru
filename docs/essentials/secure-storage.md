@@ -5,17 +5,39 @@ ms.assetid: 78856C0D-76BB-406E-A880-D5A3987B7D64
 author: redth
 ms.author: jodick
 ms.date: 05/04/2018
-ms.openlocfilehash: 24d1e29ba0203aaafc3e21533478f6c505cc09b3
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: e64160a5579bffa8e9e9820db1a3ba39bdf7304e
+ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="xamarinessentials-secure-storage"></a>Xamarin.Essentials защищенного хранилища
 
 ![Предварительная версия NuGet](~/media/shared/pre-release.png)
 
 **SecureStorage** класс помогает обеспечить безопасное хранение пар «ключ значение».
+
+## <a name="getting-started"></a>Начало работы
+
+Чтобы получить доступ к **SecureStorage** функциональные возможности, требуется следующая настройка платформ:
+
+# <a name="androidtabandroid"></a>[Android](#tab/android)
+
+Дополнительная настройка не требуется.
+
+# <a name="iostabios"></a>[iOS](#tab/ios)
+
+При разработке приложения в симуляторе iOS, включите **цепочки ключей** правах и добавить группу доступа к цепочке ключей для идентификатора пакета приложения.
+
+Откройте **Entitlements.plist** в проекте iOS и найти **цепочки ключей** правах и включите ее. Идентификатор приложения автоматически добавляются в группу.
+
+В свойствах проекта в разделе **подписывание пакета iOS** задать **пользовательские права** для **Entitlements.plist**.
+
+# <a name="uwptabuwp"></a>[UWP](#tab/uwp)
+
+Дополнительная настройка не требуется.
+
+-----
 
 ## <a name="using-secure-storage"></a>С помощью защищенного хранилища
 
@@ -75,5 +97,5 @@ Encryped значения хранятся в `ApplicationData.Current.LocalSett
 
 ## <a name="api"></a>API
 
-- [SecureStorage исходного кода](https://github.com/xamarin/Essentials/tree/master/Essentials/SecureStorage)
+- [SecureStorage исходного кода](https://github.com/xamarin/Essentials/tree/master/Xamarin.Essentials/SecureStorage)
 - [Документация по SecureStorage API](xref:Xamarin.Essentials.SecureStorage)

@@ -5,34 +5,16 @@ ms.prod: xamarin
 ms.assetid: A7EB73C1-38D7-46C5-9AF6-4C571C168BE7
 author: topgenorth
 ms.author: toopge
-ms.date: 05/10/2017
-ms.openlocfilehash: 2e2a3e80c121688f9a8bfff0afe4184f19fc6619
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.date: 05/14/2017
+ms.openlocfilehash: 3d4d34c6945387f5878ea708faf630d2545a750e
+ms.sourcegitcommit: b706fbe05344f7201fbe8f82d9dbbceb66060637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="xamarin-live-player-app"></a>Приложение динамической проигрыватель Xamarin
 
 ![Функция предварительного просмотра](~/media/shared/preview.png)
-
-## <a name="get-the-app"></a>Получение приложения
-
-# <a name="androidtabandroid"></a>[Android](#tab/android)
-
-Xamarin Live Player доступен для Android в Google Play:
-
-[![Доступно на Google Play](images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.xamarin.live)
-
-Для устройств Android без Google Play Xamarin Live Player доступна через [HockeyApp](https://aka.ms/xlp-hockeyapp) распространения. Кроме того, предварительной версии сборки для Android можно установить непосредственно из Google Play с включением защиты для [открыть бета-версии программы](https://play.google.com/apps/testing/com.xamarin.live)
-
-# <a name="iostabios"></a>[iOS](#tab/ios)
-
-Мы рекомендуем пользователям присоединяться к [приложения Xamarin Live Player _iOS предварительного просмотра_ ](https://aka.ms/liveplayeralpha) более быстрый доступ к последним усовершенствованиям через TestFlight.
-
------
-
-## <a name="using-the-app"></a>С помощью приложения
 
 После установки приложения на телефоне, выполните [инструкции по установке](~/tools/live-player/install.md) для подключения к компьютеру. Попробуйте выполнить одно из [образец приложения](~/tools/live-player/samples.md) для его запуска.
 

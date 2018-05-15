@@ -6,12 +6,12 @@ ms.assetid: 4917273d-32f9-401a-a52c-5cfb53a2170d
 ms.technology: xamarin-forms
 author: pierceboggan
 ms.author: piboggan
-ms.date: 05/08/2018
-ms.openlocfilehash: 96054505af44c5d3e198c2b9e7e7cb30d39b02b1
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.date: 05/11/2018
+ms.openlocfilehash: ca359e5ea700ef09249a2d8a299b6604f91e9149
+ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="xamarin-live-reload"></a>Перезагрузить динамической Xamarin
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 05/09/2018
     
     2. **Общие проекты** — установить **Xamarin.LiveReload** NuGet на всех проектов платформы (например, Android, iOS, UWP, и т. д.). Убедитесь, что **источник пакета** равно **все**.
 
-![Добавить Xamarin динамической перезагрузить NuGet с помощью диспетчера пакетов NuGet](images/addlivereloadnuget.png)
+    [![Добавить Xamarin динамической перезагрузить NuGet с помощью диспетчера пакетов NuGet](images/addlivereloadnuget.w157-sml.png)](images/addlivereloadnuget.w157.png#lightbox)
 
 3. Добавить `LiveReload.Init();` конструктору в `Application` класса, как показано в следующем фрагменте кода:
 
