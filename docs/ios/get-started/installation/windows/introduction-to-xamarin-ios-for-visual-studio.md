@@ -6,12 +6,12 @@ ms.assetid: bf3c779f-959f-428d-babb-428f363f7e4e
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.date: 03/19/2017
-ms.openlocfilehash: 859f84fbe329d79e9e1e6a8b7445fe2a7f03af23
-ms.sourcegitcommit: dc6ccf87223942088ca926c0dadd5b5478c683cb
+ms.date: 05/02/2018
+ms.openlocfilehash: fbd48deb0b18dcd3ac0d40e379e21d5967f81e0d
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introduction-to-xamarinios-for-visual-studio"></a>Введение в Xamarin.iOS для Visual Studio
 
@@ -48,8 +48,6 @@ Xamarin для Windows позволяет разрабатывать и тест
 ## <a name="connecting-to-the-mac"></a>Подключение к компьютеру Mac
 
 Для подключения Visual Studio к узлу сборки Mac выполните инструкции в руководстве [Связывание с компьютером Mac](~/ios/get-started/installation/windows/connecting-to-mac/index.md).
-
-
 
 ## <a name="visual-studio-toolbar-overview"></a>Обзор панели инструментов Visual Studio
 
@@ -136,14 +134,17 @@ Xamarin для Windows позволяет разрабатывать и тест
 
 ## <a name="creating-a-new-project-for-ios-applications"></a>Создание проекта для приложений iOS
 
-Проект iOS создается в Visual Studio так же, как проект любого другого типа. Выберите пункт меню **Файл > Новый проект**, чтобы открыть показанное ниже диалоговое окно, на котором представлены некоторые доступные шаблоны для создания проекта iOS:
+Проект iOS создается в Visual Studio так же, как проект любого другого типа. Выберите пункт меню **Файл > Новый проект**, чтобы открыть показанное ниже диалоговое окно, на котором представлены некоторые доступные типы проектов для создания проекта iOS:
 
+![Создание нового проекта](introduction-to-xamarin-ios-for-visual-studio-images/newproject.w157.png)
 
-![](introduction-to-xamarin-ios-for-visual-studio-images/newproject.png "Создание проекта")
+Выберите **Приложение iOS (Xamarin)**, чтобы отобразить список следующих шаблонов для создания приложения Xamarin.iOS:
+
+![Выбор шаблона для приложения iOS](introduction-to-xamarin-ios-for-visual-studio-images/newproject-2.w157.png)
 
 Раскадровку и файлы XIB можно редактировать в Visual Studio с помощью iOS Designer. Чтобы создать раскадровку, выберите один из шаблонов раскадровки. В **обозревателе решений** будет создан файл **Main.storyboard**, как показано на снимке экрана ниже.
 
-![](introduction-to-xamarin-ios-for-visual-studio-images/solution-explorer-new.png "Файл Main.storyboard в обозревателе решений")
+![Файл Main.storyboard в обозревателе решений](introduction-to-xamarin-ios-for-visual-studio-images/solution-explorer-new.w157.png)
 
 Чтобы приступить к созданию или редактированию раскадровки, дважды щелкните файл `Main.storyboard`. Он откроется в iOS Designer:
 

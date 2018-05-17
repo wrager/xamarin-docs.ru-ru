@@ -1,21 +1,21 @@
 ---
-title: Эмулятор SDK для Android
-description: В этом руководстве описано, как использовать эмулятор пакета SDK для Android Google в Visual Studio.
+title: Эмулятор Google Android
+description: В этом руководстве описано, как использовать эмулятор Google Android в Visual Studio.
 ms.prod: xamarin
 ms.assetid: 8913bb90-1340-409d-b7bb-71a06914923a
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: bdae9f2189f91a6768419fd930a4ad5ce4b6e0ad
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: aca71284c7d51936ce2addf143edb9980d9536fc
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="android-sdk-emulator"></a>Эмулятор SDK для Android
+# <a name="google-android-emulator"></a>Эмулятор Google Android
 
-_В этом руководстве описано, как использовать эмулятор пакета SDK для Android Google в Visual Studio._
+_В этом руководстве описано, как использовать эмулятор Google Android в Visual Studio._
 
 
 ## <a name="overview"></a>Обзор
@@ -27,13 +27,13 @@ _В этом руководстве описано, как использова�
 
 ### <a name="running-the-emulatorandroiddeploy-testdebuggingandroid-sdk-emulatorrunning-the-emulatormd"></a>[Запуск эмулятора](~/android/deploy-test/debugging/android-sdk-emulator/running-the-emulator.md)
 
-Сведения о запуске эмулятора SDK для Android из Visual Studio.
+Запуск эмулятора Google Android из Visual Studio.
 
 ### <a name="troubleshootingandroiddeploy-testdebuggingandroid-sdk-emulatortroubleshootingmd"></a>[Устранение неполадок](~/android/deploy-test/debugging/android-sdk-emulator/troubleshooting.md)
 
-Сведения об определении и устранении распространенных проблем с эмулятором SDK для Android.
+Сведения об определении и устранении распространенных проблем с эмулятором Google Android.
 
-Информацию о настройке эмулятора SDK для Android и создании виртуальных устройств см. в статье [Настройка эмулятора Android](~/android/get-started/installation/android-emulator/index.md).
+Информацию о настройке эмулятора Google Android и создании виртуальных устройств см. в статье [Настройка эмулятора Android](~/android/get-started/installation/android-emulator/index.md).
 
 
 

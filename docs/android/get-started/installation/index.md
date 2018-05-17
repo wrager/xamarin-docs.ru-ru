@@ -6,11 +6,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 04/25/2018
-ms.openlocfilehash: 269b5a06796ae748da93f7c65b23598d9e9311df
-ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
+ms.openlocfilehash: b2f83c8f8ab6ab730a586b30394454f6bf6f6ba9
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="setup-and-installation"></a>Настройка и установка
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="android-emulator-setupandroidget-startedinstallationandroid-emulatorindexmd"></a>[Настройка эмулятора Android](~/android/get-started/installation/android-emulator/index.md)
 
-В этих статьях объясняется настройка эмулятора SDK для Android для тестирования и отладки приложений Xamarin.Android.
+В этих статьях объясняется настройка эмулятора Google Android для тестирования и отладки приложений Xamarin.Android.
 
 ## <a name="android-device-setupandroidget-startedinstallationset-up-device-for-developmentmd"></a>[Настройка устройства Android](~/android/get-started/installation/set-up-device-for-development.md)
 

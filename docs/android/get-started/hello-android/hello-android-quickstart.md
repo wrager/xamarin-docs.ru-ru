@@ -8,11 +8,11 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 04/25/2018
-ms.openlocfilehash: 44c3e4b0f05526560ff4b32808ba476110ce5e8f
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 7faf4ef090815ea799209e76816113f06889bd21
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="hello-android-quickstart"></a>Привет, Android: краткое руководство
 
@@ -64,10 +64,10 @@ _В этом руководстве из двух частей описано, �
 
 Запустите Visual Studio.  Щелкните **Файл > Создать > Проект**, чтобы создать проект.
 
-В диалоговом окне **Новый проект** нажмите щелкните шаблон **Пустое приложение (Android)**.
+В диалоговом окне **Новый проект** выберите шаблон **Приложение Android**.
 Присвойте проекту имя `Phoneword`. Нажмите кнопку **ОК** для создания проекта:
 
-[![Новый проект называется Phoneword](hello-android-quickstart-images/vs/02-new-project-name-sml.png)](hello-android-quickstart-images/vs/02-new-project-name.png#lightbox)
+[![Новый проект называется Phoneword](hello-android-quickstart-images/vs/02-new-project-name-sml.w157.png)](hello-android-quickstart-images/vs/02-new-project-name.w157.png#lightbox)
 
 ### <a name="creating-the-layout"></a>Создание макета
 
@@ -112,9 +112,9 @@ _В этом руководстве из двух частей описано, �
 
 [![Добавление нового элемента](hello-android-quickstart-images/vs/12-add-new-item-sml.png)](hello-android-quickstart-images/vs/12-add-new-item.png#lightbox)
 
-В диалоговом окне **Добавление нового элемента** выберите **Visual C# > Код** и назовите новый файл кода **PhoneTranslator.cs**:
+В диалоговом окне **Добавить новый элемент** выберите **Visual C# > Код > Файл кода** и назовите новый файл кода **PhoneTranslator.cs**:
 
-[![Добавление PhoneTranslator.cs](hello-android-quickstart-images/vs/14-add-class-sml.png)](hello-android-quickstart-images/vs/14-add-class.png#lightbox)
+[![Добавление PhoneTranslator.cs](hello-android-quickstart-images/vs/14-add-class-sml.w157.png)](hello-android-quickstart-images/vs/14-add-class.w157.png#lightbox)
 
 Создается пустой класс C#. Вставьте в этот файл следующий код:
 
@@ -185,10 +185,11 @@ namespace Core
 (Resource.Layout.Main)`. Сначала измените код шаблона, чтобы метод `OnCreate` принял следующий вид:
 
 ```csharp
+using System;
 using Android.App;
-using Android.OS;
+using Android.Content;
 using Android.Widget;
-using Core;
+using Android.OS;
 
 namespace Phoneword
 {
@@ -419,10 +420,13 @@ namespace Core
 Сначала добавьте обработчик событий для кнопки **Translate** (Преобразование). В классе `MainActivity` найдите метод `OnCreate`. Добавьте код кнопки в `OnCreate`, под вызовами `base.OnCreate(bundle)` и `SetContentView (Resource.Layout.Main)`. Удалите код обработки кнопки шаблона, чтобы метод `OnCreate` принял следующий вид:
 
 ```csharp
+using System;
 using Android.App;
-using Android.OS;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
 using Android.Widget;
-using Core;
+using Android.OS;
 
 namespace Phoneword
 {

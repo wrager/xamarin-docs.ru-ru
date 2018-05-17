@@ -1,41 +1,36 @@
 ---
 title: Управление эмуляторами Android с помощью диспетчера устройств Xamarin Android
-description: Диспетчер устройств Xamarin Android, который сейчас находится на этапе предварительной версии, предназначен для замены устаревшего диспетчера устройств Google. Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запустить и протестировать приложение без использования физического устройства.
+description: Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запустить и протестировать приложение без использования физического устройства.
 ms.prod: xamarin
 ms.assetid: ECB327F3-FF1C-45CC-9FA6-9C11032BD5EF
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 04/26/2018
-ms.openlocfilehash: 2b41c23bb880ca6150fa5f3f487eb00d8a7a19d8
-ms.sourcegitcommit: 4b0582a0f06598f3ff8ad5b817946459fed3c42a
+ms.date: 05/03/2018
+ms.openlocfilehash: 420ffc905659c6fd6245dc8cc3bdae4cb9401a63
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="xamarin-android-device-manager"></a>Диспетчер устройств Xamarin Android
 
-_Диспетчер устройств Xamarin Android, который сейчас доступен в режиме предварительной версии, используется для замены устаревшего диспетчера устройств Google. Это руководство описывает использование диспетчера устройств Xamarin Android для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запускать и тестировать приложение без использования физического устройства._
+_Это руководство описывает использование Xamarin Android Device Manager для создания и настройки виртуальных устройств Android (AVD), эмулирующих устройства Android. Эти виртуальные устройства позволяют запускать и тестировать приложение без использования физического устройства._
 
-![Сейчас находится на этапе предварительной версии](~/media/shared/preview.png)
- 
 ## <a name="overview"></a>Обзор
 
-Следующим шагом после проверки включения аппаратного ускорения (как описано в статье [Аппаратное ускорение](~/android/get-started/installation/android-emulator/hardware-acceleration.md)) является создание виртуальных устройств, которые будут использоваться для тестирования и отладки приложения. С помощью диспетчера устройств Xamarin Android можно создавать виртуальные устройства для использования с эмулятором SDK для Android.
-
-Почему следует использовать диспетчер устройств Xamarin Android вместо [диспетчера устройств Google](~/android/get-started/installation/android-emulator/google-emulator-manager.md)?
-В Android SDK Tools версии 26.0.1 компания Google исключила поддержку существующих диспетчеров AVD и SDK, основанных на пользовательском интерфейсе, заменив их новыми средствами интерфейса командной строки (CLI). Из-за этого изменения вам нужно использовать [диспетчер пакетов SDK Xamarin](~/android/get-started/installation/android-sdk.md) и диспетчер устройств Xamarin Android при обновлении до Android SDK Tools 26.0.1 и более поздних версий (это необходимо для разработки приложений на базе Android 8.0 Oreo).
+После проверки включения аппаратного ускорения (как описано в статье [Аппаратное ускорение](~/android/get-started/installation/android-emulator/hardware-acceleration.md)) с помощью Xamarin Android Device Manager создайте виртуальные устройства, которые будут использоваться для тестирования и отладки приложения.
 
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-Это руководство описывает, как установить и использовать диспетчер устройств Xamarin Android для Visual Studio в Windows (или [для Mac](?tabs=vsmac)):
+Это руководство описывает, как использовать Xamarin Android Device Manager для Visual Studio для Windows (или [Mac](?tabs=vsmac)):
 
 [![Снимок экрана с диспетчером устройств Xamarin Android на вкладке устройств](xamarin-device-manager-images/win/01-devices-dialog-sml.png)](xamarin-device-manager-images/win/01-devices-dialog.png#lightbox)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-Это руководство описывает, как установить и использовать диспетчер устройств Xamarin Android для Visual Studio для Mac (или [для Windows](?tabs=vswin)):
+Это руководство описывает, как использовать Xamarin Android Device Manager для Visual Studio для Mac (или [Windows](?tabs=vswin)):
 
 [![Снимок экрана с диспетчером устройств Xamarin Android на вкладке устройств](xamarin-device-manager-images/mac/01-devices-dialog-sml.png)](xamarin-device-manager-images/mac/01-devices-dialog.png#lightbox)
 
@@ -48,7 +43,7 @@ Xamarin Studio не совместим с диспетчером устройс
 Диспетчер устройств Xamarin Android предназначен для создания и настройки *виртуальных устройств Android* (AVD), запускаемых в [эмуляторе SDK для Android](~/android/deploy-test/debugging/android-sdk-emulator/index.md).
 Каждое AVD является конфигурацией эмулятора, имитирующей физическое устройство Android. Это позволяет запускать и тестировать приложение в различных конфигурациях, имитирующих различные физические устройства Android. Диспетчер устройств Xamarin Android заменяет автономный диспетчер устройств AVD от Google (который был признан нерекомендуемым).
 
-В этом руководстве вы узнаете, как установить и запустить диспетчер устройств Android. Вы научитесь создавать, дублировать, настраивать и запускать виртуальные устройства. Это руководство также описывает, как настроить свойства для каждого виртуального устройства (например, уровень API, ЦП, память и разрешение) для включения или отключения имитируемых датчиков, таких как акселерометр, GPS, датчики ориентации и освещенности, а также настройки типа аппаратного ускорения, используемого этим виртуальным устройством.
+В этом руководстве вы научитесь создавать, дублировать, настраивать и запускать виртуальные устройства с помощью Android Device Manager. Это руководство также описывает, как настроить свойства для каждого виртуального устройства (например, уровень API, ЦП, память и разрешение) для включения или отключения имитируемых датчиков, таких как акселерометр, GPS, датчики ориентации и освещенности, а также настройки типа аппаратного ускорения, используемого этим виртуальным устройством.
 
 ## <a name="requirements"></a>Требования
 
@@ -56,74 +51,37 @@ Xamarin Studio не совместим с диспетчером устройс
 
 Чтобы использовать диспетчер устройств Xamarin Android, необходимо следующее:
 
-- Visual Studio 2017 версии 15.5 или более поздней. Поддерживается Visual Studio Community и более поздние выпуски.
+- Требуется Visual Studio 2017 версии 15.7 или более поздней. Поддерживается Visual Studio Community и более поздние выпуски.
 
-- Xamarin для Visual Studio версии 4.8 или более поздней. Сведения об обновлении Xamarin см. в разделе [Смена канала обновления](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
+- Xamarin для Visual Studio версии 4.9 или более поздней. Сведения об обновлении Xamarin см. в разделе [Смена канала обновления](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
 
-- Последняя версия [установщика диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865528) для Windows.
-
-- **Пакет SDK для Android** &ndash; нужно установить пакет SDK для Android (см. раздел [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md)) и SDK Tools версии 26.0, как описано в следующем разделе. Обязательно установите пакет SDK для Android в следующее расположение (если это еще не сделано): **C:\\Program Files (x86)\\Android\\android-sdk**.
+- **Пакет SDK для Android** &ndash; Нужно установить пакет SDK для Android (см. раздел [Установка пакета SDK для Android](~/android/get-started/installation/android-sdk.md)) и SDK Tools версии 26.0 или более поздней, как описано в следующем разделе. Обязательно установите пакет SDK для Android в следующее расположение (если это еще не сделано): **C:\\Program Files (x86)\\Android\\android-sdk**.
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-- Visual Studio для Mac 7.4 или более поздней версии.
-
-- Последняя версия [установщика диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865527) для macOS.
+- Visual Studio для Mac 7.5 или более поздней версии.
 
 - **Пакет SDK для Android** &ndash; — нужно установить пакет SDK для Android 8.0 (API 26) или более поздней версии через диспетчер пакетов SDK.
 
 -----
 
-## <a name="installing-the-device-manager"></a>Установка диспетчера устройств
-
-Чтобы установить диспетчер устройств Xamarin Android, сделайте следующее:
-
-# <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
-
-1. Скачайте [установщик диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865528) для Windows.
-
-2. Дважды щелкните **Xamarin.DeviceManager.msi** и следуйте инструкциям: 
-
-    ![Мастер установки для диспетчера устройств Xamarin Android](xamarin-device-manager-images/win/30-installer.png)
-
-
-> [!NOTE]
-> Начиная с [Visual Studio 2017 предварительная версия 5](https://www.visualstudio.com/vs/preview/) Android Device Manager будет распространяться в рамках установщика VS2017. Нет необходимости загружать отдельный установщик, чтобы получить Xamarin Android Device Manager в Visual Studio 2017, предварительная версия 5.
-
-# <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
-
-1. Скачайте [установщик диспетчера устройств Xamarin](https://go.microsoft.com/fwlink/?linkid=865527) для macOS.
-
-2. Дважды щелкните **AndroidDevices.pkg** и следуйте инструкциям по установке: 
-
-    [![Мастер установки для диспетчера устройств Xamarin Android](xamarin-device-manager-images/mac/30-installer-sml.png)](xamarin-device-manager-images/mac/30-installer.png#lightbox)
-
------
 ## <a name="launching-the-device-manager"></a>Запуск диспетчера устройств
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-В Visual Studio 15.6 Preview 3 и более поздних версиях можно запустить диспетчер устройств Xamarin Android из меню **Сервис**. Если вы используете Visual Studio 15.6 Preview 3 или более поздней версии, запустите диспетчер устройств, выбрав **Сервис > Диспетчер эмуляторов Android**:
+Запустите Xamarin Android Device Manager в меню **Сервис**, выбрав **Сервис > Диспетчер эмулятора Android**:
 
 [![Запуск из меню "Сервис"](xamarin-device-manager-images/win/04-tools-menu-sml.png)](xamarin-device-manager-images/win/04-tools-menu.png#lightbox)
 
-При использовании более ранней версии Visual Studio диспетчер устройств Xamarin Android нужно запускать из меню **Пуск** Windows.
-
-![Диспетчер устройств Xamarin Android в меню "Пуск"](xamarin-device-manager-images/win/31-start-menu.png)
-
-Щелкните правой кнопкой мыши элемент **Xamarin Android Device Manager** (Диспетчер устройств Android Xamarin) и выберите **Дополнительно > Запуск от имени администратора**. Если вы видите следующее диалоговое окно ошибки при запуске, см. инструкции по обходу в разделе [Устранение неполадок](#troubleshooting):
+Если вы видите следующее диалоговое окно ошибки при запуске, см. инструкции по обходу в разделе [Устранение неполадок](#troubleshooting):
 
 ![Ошибка экземпляра SDK для Android](xamarin-device-manager-images/win/32-sdk-error.png)
 
 # <a name="visual-studio-for-mactabvsmac"></a>[Visual Studio для Mac](#tab/vsmac)
 
-В Visual Studio для Mac 7.6 Preview 3 (сейчас находится в альфа-канале) или более поздней версии можно запустить диспетчер устройств Xamarin Android, выбрав **Сервис > Диспетчер эмуляторов**:
+В Visual Studio для Mac запустите Xamarin Android Device Manager, выбрав **Сервис > Диспетчер эмуляторов**:
 
 [![Запуск из меню "Сервис"](xamarin-device-manager-images/mac/16-tools-menu-sml.png)](xamarin-device-manager-images/mac/16-tools-menu.png#lightbox)
-
-При использовании более ранней версии Visual Studio для Mac диспетчер устройств Xamarin Android нужно запускать независимо. Найдите элемент **Устройства Android** в папке **Приложения** и дважды щелкните его, чтобы запустить:
-
-[![Диспетчер устройств Xamarin Android в средстве поиска](xamarin-device-manager-images/mac/31-location-in-finder-sml.png)](xamarin-device-manager-images/mac/31-location-in-finder.png#lightbox)
 
 -----
 

@@ -7,22 +7,26 @@ ms.assetid: 9E6C986F-3FBA-4599-8367-FB0C565C0ADE
 author: asb3993
 ms.author: amburns
 ms.date: 04/18/2018
-ms.openlocfilehash: 020a5a2182458e759626b9bdbf45b62b6e13d71a
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 31660ff1255878dbae15bda601da8e628aabd459
+ms.sourcegitcommit: c5bb1045b2f4607dafe3101ad1ea6ade23e44342
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="updating-component-references-to-nuget"></a>Обновление ссылок на компоненты для NuGet
 
-> [!NOTE]
+> [!IMPORTANT]
+> Начиная с 15 мая 2018 прекращена хранилище компонентов (это закрытие было изначально [было объявлено](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) в ноябре 2017 г.).
+>
 > Компоненты Xamarin больше не поддерживается в Visual Studio и следует заменить на пакеты NuGet. Следуйте инструкциям ниже, чтобы вручную удалить ссылки на компоненты из проектов.
 
 Обратитесь к инструкциям для добавления пакетов NuGet на [Windows](https://docs.microsoft.com/nuget/quickstart/use-a-package) или [Mac](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough).
 
+Список популярных Xamarin [подключаемых модулей и библиотеки](https://github.com/xamarin/XamarinComponents/blob/master/README.md) поможет найти альтернативные варианты для компонентов, которые недоступны в качестве NuGet pacakges.
+
 ## <a name="manually-removing-component-references"></a>Ручное удаление ссылок на компоненты
 
-В ноябре 2017 г., было [было объявлено](https://blog.xamarin.com/hello-nuget-new-home-xamarin-components/) , хранилище компонентов Xamarin будет прекращена. С целью обеспечения sunsetting компонентов 15.6 выпуск Visual Studio и 7.4 выпуск Visual Studio для Mac больше не поддерживают компоненты в проекте. 
+15.6 выпуск Visual Studio и 7.4 выпуск Visual Studio для Mac больше не поддерживает компоненты в вашем проекте. 
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
@@ -199,6 +203,6 @@ _Он может содержать зависимостей NuGet, но их м
 
 
 ## <a name="related-links"></a>Связанные ссылки
-
+- [Список популярных Xamarin подключаемых модулей и библиотек](https://github.com/xamarin/XamarinComponents/blob/master/README.md)
 - [Установка и использование пакета NuGet (Windows)](https://docs.microsoft.com/nuget/quickstart/use-a-package)
 - [Включая пакет NuGet (Mac)](https://docs.microsoft.com/visualstudio/mac/nuget-walkthrough)

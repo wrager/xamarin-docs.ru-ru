@@ -1,42 +1,28 @@
 ---
 title: Производительность Xamarin.iOS
-description: Существует множество методов повышения производительности приложений, созданных с помощью Xamarin.iOS. Вместе они могут значительно снизить загрузку ЦП и сократить объем памяти, используемой приложением. Эти методы описаны в данной статье.
+description: В этом документе описываются методы, с помощью которых можно повысить производительность и использование памяти в приложениях Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 02b1f628-52d9-49de-8479-f2696546ca3f
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/29/2016
-ms.openlocfilehash: 3fc6263aa99edb94ae69f1ce8f87835043477392
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: afff9d3924c673edc363292efa1a9b7df43a9218
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="xamarinios-performance"></a>Производительность Xamarin.iOS
 
-_Существует множество методов повышения производительности приложений, созданных с помощью Xamarin.iOS. Вместе они могут значительно снизить загрузку ЦП и сократить объем памяти, используемой приложением. Все они описаны в этой статье._
+Низкая производительность приложения проявляется по-разному. Из-за нее приложение может переставать отвечать на запросы, могут возникать задержки при прокрутке и сокращаться время работы батареи. Однако оптимизация производительности предусматривает не только правильную реализацию кода. Необходимо также учитывать эффективность работы пользователей. Например, чтобы повысить удобство работы, необходимо сделать так, чтобы выполнение операций не мешало пользователю выполнять другие действия. 
 
-Низкая производительность приложения проявляется по-разному. Из-за нее приложение может переставать отвечать на запросы, могут возникать задержки при прокрутке и сокращаться время работы батареи. Однако оптимизация производительности предусматривает не только правильную реализацию кода. Необходимо также учитывать эффективность работы пользователей. Например, чтобы повысить удобство работы, необходимо сделать так, чтобы выполнение операций не мешало пользователю выполнять другие действия.
-
-Существует ряд методов повышения производительности приложений, созданных на платформе Xamarin.iOS, в том числе воспринимаемой пользователем. В их число входят следующее.
-
-- [Избежание циклических строгих ссылок](#avoidcircularreferences)
-- [Оптимизация табличных представлений](#optimizetableviews)
-- [Использование непрозрачных представлений](#opaqueviews)
-- [Избежание толстых файлов XIB](#avoidfatxibs)
-- [Оптимизация графических ресурсов](#optimizeimages)
-- [Тестирование на устройствах](#testondevices)
-- [Синхронизация анимации с обновлением экрана](#synchronizeanimations)
-- [Избежание прозрачности в базовой анимации](#avoidtransparency)
-- [Избежание создания кода](#avoidcodegeneration)
+В этом документе описываются методы, с помощью которых можно повысить производительность и использование памяти в приложениях Xamarin.iOS.
 
 > [!NOTE]
 > Прежде чем прочитать эту статью, ознакомьтесь со статьей [Кроссплатформенная производительность](~/cross-platform/deploy-test/memory-perf-best-practices.md), в которой описываются универсальные для всех платформ способы оптимизации использования памяти и повышения производительности приложений, построенных с помощью платформы Xamarin.
 
-<a name="avoidcircularreferences" />
-
-## <a name="avoid-strong-circular-references"></a>Избежание циклических строгих ссылок
+## <a name="avoid-strong-circular-references"></a>Устранение циклических строгих ссылок
 
 В некоторых ситуациях могут образовываться циклы строгих ссылок, из-за которых память, занимаемая объектами, может не освобождаться сборщиком мусора. Например, рассмотрим ситуацию, когда подкласс, производный от [`NSObject`](https://developer.xamarin.com/api/type/Foundation.NSObject/), например класс, наследуемый от [`UIView`](https://developer.xamarin.com/api/type/UIKit.UIView/), добавляется в контейнер, производный от `NSObject`, и на него имеется строгая ссылка из Objective-C, как показано в следующем примере кода:
 
@@ -82,14 +68,14 @@ container.AddSubview (new MyView (container));
 
 ### <a name="using-weakreferences"></a>Использование слабых ссылок
 
-Одним из способов предотвратить образование цикла является использование слабых ссылок из дочернего объекта на родительский. Например, приведенный выше код можно изменить следующим образом:
+Чтобы предотвратить возникновение цикла, можно использовать слабую ссылку из дочернего в родительский элемент. Например, приведенный выше код можно записать следующим образом:
 
 ```csharp
 class Container : UIView
 {
     public void Poke ()
     {
-    // Call this method to poke this object
+        // Call this method to poke this object
     }
 }
 
@@ -112,11 +98,76 @@ var container = new Container ();
 container.AddSubview (new MyView (container));
 ```
 
-Это означает, что содержащийся объект не будет поддерживать родительский в активном состоянии. Только родительский объект поддерживает дочерний в активном состоянии посредством вызова `container.AddSubView`.
+Здесь содержащийся объект не проверяет активности родительского элемента. Однако родительский элемент проверяет активность дочернего путем вызова к `container.AddSubView`.
 
-Такая идиома также применяется в интерфейсах API iOS на основе шаблона делегата или источника данных, где равноправный класс содержит реализацию, например при задании свойства [`Delegate`](https://developer.xamarin.com/api/property/MonoTouch.UIKit.UITableView.Delegate/) или [`DataSource`](https://developer.xamarin.com/api/property/MonoTouch.UIKit.UITableView.DataSource/) класса [`UITableView`](https://developer.xamarin.com/api/type/UIKit.UITableView/).
+Это происходит и в интерфейсах API iOS на основе шаблона делегата или источника данных, где равноправный класс содержит реализацию, например при задании свойства [`Delegate`](https://developer.xamarin.com/api/property/MonoTouch.UIKit.UITableView.Delegate/) или [`DataSource`](https://developer.xamarin.com/api/property/MonoTouch.UIKit.UITableView.DataSource/) в классе [`UITableView`](https://developer.xamarin.com/api/type/UIKit.UITableView/).
 
 В случае с классами, которые создаются исключительно для реализации протокола, например [`IUITableViewDataSource`](https://developer.xamarin.com/api/type/MonoTouch.UIKit.IUITableViewDataSource/), вместо создания подкласса вы можете просто реализовать интерфейс в классе, переопределить метод и присвоить свойство `DataSource` указателю `this`.
+
+#### <a name="weak-attribute"></a>Слабый атрибут
+
+В [Xamarin.iOS 11.10](https://developer.xamarin.com/releases/ios/xamarin.ios_11/xamarin.ios_11.10/#WeakAttribute) появился атрибут `[Weak]`. Как и `WeakReference <T>`, `[Weak]` можно использовать для прерывания [строгих циклических ссылок](https://docs.microsoft.com/en-us/xamarin/ios/deploy-test/performance#avoid-strong-circular-references) с помощью еще более краткого фрагмента кода.
+
+Рассмотрим приведенный ниже код, где используется `WeakReference <T>`:
+
+```csharp
+public class MyFooDelegate : FooDelegate {
+    WeakReference<MyViewController> controller;
+    public MyFooDelegate (MyViewController ctrl) => controller = new WeakReference<MyViewController> (ctrl);
+    public void CallDoSomething ()
+    {
+        MyViewController ctrl;
+        if (controller.TryGetTarget (out ctrl)) {
+            ctrl.DoSomething ();
+        }
+    }
+}
+```
+
+Эквивалентный код с `[Weak]` гораздо короче:
+
+```csharp
+public class MyFooDelegate : FooDelegate {
+    [Weak] MyViewController controller;
+    public MyFooDelegate (MyViewController ctrl) => controller = ctrl;
+    public void CallDoSomething () => controller.DoSomething ();
+}
+```
+
+Ниже приведен еще один пример использования `[Weak]` в контексте шаблона [делегирования](https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html):
+
+```csharp
+public class MyViewController : UIViewController 
+{
+    WKWebView webView;
+
+    protected MyViewController (IntPtr handle) : base (handle) { }
+
+    public override void ViewDidLoad ()
+    {
+        base.ViewDidLoad ();
+        webView = new WKWebView (View.Bounds, new WKWebViewConfiguration ());
+        webView.UIDelegate = new UIDelegate (this);
+        View.AddSubview (webView);
+    }
+}
+
+public class UIDelegate : WKUIDelegate 
+{
+    [Weak] MyViewController controller;
+
+    public UIDelegate (MyViewController ctrl) => controller = ctrl;
+
+    public override void RunJavaScriptAlertPanel (WKWebView webView, string message, WKFrameInfo frame, Action completionHandler)
+    {
+        var msg = $"Hello from: {controller.Title}";
+        var alertController = UIAlertController.Create (null, msg, UIAlertControllerStyle.Alert);
+        alertController.AddAction (UIAlertAction.Create ("Ok", UIAlertActionStyle.Default, null));
+        controller.PresentViewController (alertController, true, null);
+        completionHandler ();
+    }
+}
+```
 
 ### <a name="disposing-of-objects-with-strong-references"></a>Освобождение объектов со строгими ссылками
 
@@ -142,7 +193,8 @@ class MyContainer : UIView
 В случае с дочерним объектом, сохраняющим строгую ссылку на свой родительский объект, очистите ссылку на родительский объект в реализации `Dispose`:
 
 ```csharp
-    class MyChild : UIView {
+class MyChild : UIView 
+{
     MyContainer container;
     public MyChild (MyContainer container)
     {
@@ -162,9 +214,6 @@ class MyContainer : UIView
 
 Дополнительные сведения см. в записи [Rules to Avoid Retain Cycles](http://www.cocoawithlove.com/2009/07/rules-to-avoid-retain-cycles.html) (Правила по избежанию сохраняемых циклов) в блоге Cocoa With Love, на странице [Is this a bug in MonoTouch GC](http://stackoverflow.com/questions/13058521/is-this-a-bug-in-monotouch-gc) (Является ли это ошибкой в сборщике мусора MonoTouch) на сайте StackOverflow и на странице [Why can't MonoTouch GC kill managed objects with refcount > 1?](http://stackoverflow.com/questions/13064669/why-cant-monotouch-gc-kill-managed-objects-with-refcount-1) (Почему сборщик мусора MonoTouch не может уничтожать управляемые объекты с refcount > 1?) на сайте StackOverflow.
 
-
-<a name="optimizetableviews" />
-
 ## <a name="optimize-table-views"></a>Оптимизация табличных представлений
 
 Пользователи рассчитывают на быструю прокрутку и загрузку экземпляров [`UITableView`](https://developer.xamarin.com/api/type/UIKit.UITableView/). Если ячейки будут содержать иерархии представлений с глубоким уровнем вложения или сложные макеты, производительность прокрутки может заметно снижаться. Тем не менее существует несколько способов повысить производительность `UITableView`:
@@ -177,8 +226,6 @@ class MyContainer : UIView
 - Избежание масштабирования изображения и градиентов.
 
 Совместное применение этих способов позволяет обеспечить плавную прокрутку экземпляров [`UITableView`](https://developer.xamarin.com/api/type/UIKit.UITableView/).
-
-<a name="reusecells" />
 
 ### <a name="reuse-cells"></a>Повторное использование ячеек
 
@@ -204,19 +251,13 @@ class MyTableSource : UITableViewSource
 
 Дополнительные сведения см. в разделе [Повторное использование ячеек](~/ios/user-interface/controls/tables/populating-a-table-with-data.md) статьи [Заполнение таблицы данными](~/ios/user-interface/controls/tables/populating-a-table-with-data.md).
 
-<a name="opaqueviews" />
-
 ## <a name="use-opaque-views"></a>Использование непрозрачных представлений
 
 Убедитесь в том, что у всех представлений, для которых не определена прозрачность, задано свойство [`Opaque`](https://developer.xamarin.com/api/property/UIKit.UIView.Opaque/). Это позволит обеспечить оптимальное преобразование представлений для просмотра системой отрисовки. Это особенно важно, если представление внедрено в [`UIScrollView`](https://developer.xamarin.com/api/type/UIKit.UIScrollView/) или является частью сложной анимации. В противном случае система отрисовки будет сочетать представления с другим содержимым, что может заметно сказаться на производительности.
 
-<a name="avoidfatxibs" />
-
-## <a name="avoid-fat-xibs"></a>Избежание толстых файлов XIB
+## <a name="avoid-fat-xibs"></a>Избежание толстых файлов XIB
 
 Хотя файлы XIB были в основном заменены раскадровками, они по-прежнему могут применяться в некоторых ситуациях. Когда файл XIB загружается в память, все его содержимое, включая изображения, также загружается в память. Если файл XIB содержит представление, которое не используется немедленно, оно напрасно занимает память. Поэтому при использовании файлов XIB необходимо делать так, чтобы на каждый контроллер представления приходился только один файл XIB, и по возможности разделять иерархию контроллеров представлений на отдельные файлы XIB.
-
-<a name="optimizeimages" />
 
 ## <a name="optimize-image-resources"></a>Оптимизация графических ресурсов
 
@@ -224,15 +265,11 @@ class MyTableSource : UITableViewSource
 
 Дополнительные сведения см. в разделе [Оптимизация графических ресурсов](~/cross-platform/deploy-test/memory-perf-best-practices.md#optimizeimages) в руководстве [Кроссплатформенная производительность](~/cross-platform/deploy-test/memory-perf-best-practices.md).
 
-<a name="testondevices" />
-
 ## <a name="test-on-devices"></a>Тестирование на устройствах
 
 К развертыванию и тестированию приложения на физических устройствах следует приступать как можно раньше. Симуляторы не отражают особенности работы и ограничения устройств с абсолютной точностью, поэтому важно проводить тесты на реальных устройствах начиная с самых ранних этапов разработки.
 
 В частности, симулятор никоим образом не воссоздает ограничения памяти и ЦП физического устройства.
-
-<a name="synchronizeanimations" />
 
 ## <a name="synchronize-animations-with-the-display-refresh"></a>Синхронизация анимации с обновлением экрана
 
@@ -240,13 +277,9 @@ class MyTableSource : UITableViewSource
 
 Однако сервер дисплея производит его обновление с максимальной частотой шестьдесят раз в секунду. Поэтому попытка обновлять экран чаще может привести к разрывам изображения и небольшим задержкам. Код лучше структурировать так, чтобы обновление экрана было синхронизировано с обновлением дисплея. Этого можно достичь с помощью класса [`CoreAnimation.CADisplayLink`](https://developer.xamarin.com/api/type/CoreAnimation.CADisplayLink/), который представляет собой таймер, подходящий для визуализации и игр с частотой обновления шестьдесят кадров в секунду.
 
-<a name="avoidtransparency" />
-
 ## <a name="avoid-core-animation-transparency"></a>Избежание прозрачности в базовой анимации
 
 Избегайте прозрачности в базовой анимации, чтобы повысить производительность компоновки растровых изображений. Как правило, следует по возможности избегать прозрачных слоев и размытых границ.
-
-<a name="avoidcodegeneration" />
 
 ## <a name="avoid-code-generation"></a>Избежание создания кода
 

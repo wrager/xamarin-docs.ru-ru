@@ -1,21 +1,21 @@
 ---
-title: Запуск эмулятора SDK для Android
-description: Отладка приложения с помощью эмулятора SDK для Android
+title: Запуск эмулятора Google Android
+description: Отладка приложения с помощью эмулятора Google Android
 ms.prod: xamarin
 ms.assetid: AEA165A4-D81A-411B-91DF-2DED2EED27B5
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 02/16/2018
-ms.openlocfilehash: 630520f88dd23d3860b5f42fbb9bc4eb35ca2c4b
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 0e290b24c0d7a98b1abaf647fe76e56867042645
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="running-the-android-sdk-emulator"></a>Запуск эмулятора SDK для Android
+# <a name="running-the-google-android-emulator"></a>Запуск эмулятора Google Android
 
-Из этого руководства вы узнаете, как запускать виртуальное устройство в эмуляторе SDK для Android для отладки и тестирования вашего приложения.
+Из этого руководства вы узнаете, как запускать виртуальное устройство в эмуляторе Google Android для отладки и тестирования вашего приложения.
 
 ## <a name="using-a-pre-configured-virtual-device"></a>Использование предварительно настроенного виртуального устройства
 
@@ -80,13 +80,13 @@ ms.lasthandoff: 04/04/2018
 
 -----
 
-После запуска эмулятора Android Xamarin.Android развернет приложение в эмуляторе. Эмулятор выполняет приложение с настроенным образом виртуального устройства. Ниже приведен пример снимка экрана эмулятора SDK для Android (в эмуляторе выполняется пустое приложение **MyApp**):
+После запуска эмулятора Android Xamarin.Android развернет приложение в эмуляторе. Эмулятор выполняет приложение с настроенным образом виртуального устройства. Ниже приведен пример снимка экрана эмулятора Google Android (в эмуляторе выполняется пустое приложение **MyApp**):
 
 ![Эмулятор, выполняющий пустое приложение](running-the-emulator-images/emulator-running.png)
 
 Эмулятор можно оставить в рабочем режиме. Необязательно завершать его работу и перезапускать при каждом запуске приложения. При первом запуске приложения Xamarin.Android в эмуляторе устанавливается общая среда выполнения Xamarin.Android для целевого уровня API, после чего устанавливается приложение. Установка среды выполнения может занять несколько минут. Установка среды выполнения происходит только при первом развертывании приложения Xamarin.Android в эмуляторе &ndash;, последующие развертывания выполняются быстрее, поскольку в эмулятор копируется только приложение.
 
-Дополнительные сведения об использовании эмулятора SDK для Android см. в следующих разделах для разработчика Android:
+Дополнительные сведения об использовании эмулятора Google Android см. в следующих разделах для разработчика Android:
 
 -   [Навигация по экрану](https://developer.android.com/studio/run/emulator.html#navigate)
 

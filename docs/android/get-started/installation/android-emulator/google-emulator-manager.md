@@ -7,15 +7,15 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 03/01/2018
-ms.openlocfilehash: a399aa1c314f1e93377a7831b430e563d9fd1b13
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c42ebdca44e47e29ac74a263f0d11d4d4c120586
+ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="google-emulator-manager"></a>Диспетчер эмуляторов Google
 
-Следующим шагом после проверки включения аппаратного ускорения (как описано в статье [Аппаратное ускорение эмулятора Android](~/android/get-started/installation/android-emulator/hardware-acceleration.md)) является создание виртуальных устройств, которые будут использоваться для тестирования и отладки приложения. Создавать виртуальные устройства для эмулятора SDK для Android можно с помощью устаревшего диспетчера эмуляторов Google (также известного как *диспетчер виртуальных устройств Android (AVD)*).
+Следующим шагом после проверки включения аппаратного ускорения (как описано в статье [Аппаратное ускорение эмулятора Android](~/android/get-started/installation/android-emulator/hardware-acceleration.md)) является создание виртуальных устройств, которые будут использоваться для тестирования и отладки приложения. Создавать виртуальные устройства для эмулятора Google Android можно с помощью устаревшего диспетчера эмуляторов Google (также известного как *диспетчер виртуальных устройств Android [AVD]*).
 
 > [!NOTE]
 > Если вы работаете с Android 8.0 Oreo, для создания и настройки виртуальных устройств необходимо использовать [диспетчер устройств Xamarin Android](~/android/get-started/installation/android-emulator/xamarin-device-manager.md).

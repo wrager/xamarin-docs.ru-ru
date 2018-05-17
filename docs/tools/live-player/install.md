@@ -5,12 +5,12 @@ ms.prod: xamarin
 ms.assetid: 5DDF9203-8826-4B04-93F5-B8D07EDE3873
 author: topgenorth
 ms.author: toopge
-ms.date: 11/22/2017
-ms.openlocfilehash: 0f343e253a57de33d7e19e648862e6d11fa5af5f
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.date: 05/14/2018
+ms.openlocfilehash: bbc935c2770fab1a853bb12fba2b7eb0283bb258
+ms.sourcegitcommit: b706fbe05344f7201fbe8f82d9dbbceb66060637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="xamarin-live-player-setup"></a>Настройка динамической проигрыватель Xamarin
 
@@ -30,7 +30,9 @@ Xamarin Live Player доступен для Android в Google Play:
 
 # <a name="iostabios"></a>[iOS](#tab/ios)
 
-Мы рекомендуем пользователям присоединяться к [приложения Xamarin Live Player _iOS предварительного просмотра_ ](https://aka.ms/liveplayeralpha) более быстрый доступ к последним усовершенствованиям через TestFlight.
+Мы рекомендуем пользователям присоединяться к предварительной версии, более быстрый доступ к последним усовершенствованиям через TestFlight Xamarin Live Player приложения iOS. Обратившись Live Xamarin Player, вы соглашаетесь на корпорации Майкрософт [условия использования](https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx) & [заявление о конфиденциальности](https://privacy.microsoft.com/en-us/privacystatement). Корпорация Майкрософт может использовать свои контактные данные для предоставления обновлений и специальных предложений о Xamarin и других продуктов и служб Майкрософт. Вы можете отменить подписку в любое время.
+
+Для доступа к предварительной версии iOS Xamarin Live Player, заполните [TestFlight регистрационную информацию](https://fastring.xamarinliveplayer.com/), после чего вы получите сообщение электронной почты от TestFlight по установке iOS Xamarin Live Player предварительного просмотра.
 
 -----
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-ios
 author: asb3993
 ms.author: amburns
 ms.date: 07/15/2017
-ms.openlocfilehash: 3f321366b3afc814aef1c586af2707b1caeef4c7
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f604d41990a7a592a3d5207e7a12075c35ae661f
+ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manual-provisioning"></a>Подготовка вручную
 
@@ -254,7 +254,10 @@ Apple предоставляет ряд специальных служб при
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 
-1. Подключите устройство к компьютеру Mac.
+> [!IMPORTANT]
+> Для начала выберите схему **Подготовка вручную** в разделе **Проект > Свойства подготовки…**.
+
+1. Подключите устройство к узлу сборки Mac.
 2. В файле **Info.plist** проекта проверьте, соответствует ли идентификатор пакета идентификатору приложения:
 
   ![](manual-provisioning-images/servicevs01.png "Ввод идентификатора")

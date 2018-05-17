@@ -6,12 +6,12 @@ ms.assetid: 26480465-CE19-71CD-FC7D-69D0990D05DE
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 05/11/2018
-ms.openlocfilehash: 431cc359f4191ab2b247b3cacf0f54c3ba44cd57
-ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
-ms.translationtype: HT
+ms.date: 05/14/2018
+ms.openlocfilehash: 6200a04bb4d82174d36a48beab7c63709ac39187
+ms.sourcegitcommit: c5bb1045b2f4607dafe3101ad1ea6ade23e44342
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="splash-screen"></a>Заставка
 
@@ -159,7 +159,7 @@ public class MainActivity : AppCompatActivity
 
 Чтобы добавить экран-заставку для альбомном режиме, выполните следующие действия:
 
-1. В **ресурсы или drawable** папки, добавьте изображение экрана-заставки, необходимо использовать версию альбомная. В этом примере **splash_logo_land.png** версия альбомная логотип, который использовался в приведенных выше примерах (он использует черным текстом вместо синий).
+1. В **ресурсы или drawable** папки, добавьте изображение экрана-заставки, необходимо использовать версию альбомная. В этом примере **splash_logo_land.png** версия альбомная логотип, который использовался в приведенных выше примерах (он использует белым текстом вместо синий).
 
 2. В **ресурсы или drawable** папки, создайте версию Альбомная `layer-list` drawable, определенное ранее (например, **splash_screen_land.xml**). В этот файл задайте путь точечный рисунок до версии альбомная изображение экрана-заставки. В следующем примере **splash_screen_land.xml** использует **splash_logo_land.png**:
 
@@ -176,7 +176,6 @@ public class MainActivity : AppCompatActivity
             android:gravity="center"/>
       </item>
     </layer-list>
-
     ```
 
 3.  Создание **ресурсы, значения контактном** папку, если он еще не существует.
@@ -201,7 +200,7 @@ public class MainActivity : AppCompatActivity
     </resources>
     ```
 
-6.  Изменить **значения Землиcolors.xml/** Настройка цветов, необходимо использовать версию альбомной ориентации экрана-заставки. В этом примере фоновый цвет заставки меняется на желтый для альбомном режиме:
+6.  Изменить **значения Землиcolors.xml/** Настройка цветов, необходимо использовать версию альбомной ориентации экрана-заставки. В этом примере цвет фона заставки изменяется на синий для альбомном режиме:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -210,7 +209,7 @@ public class MainActivity : AppCompatActivity
       <color name="primaryDark">#1976D2</color>
       <color name="accent">#FFC107</color>
       <color name="window_background">#F5F5F5</color>
-      <color name="splash_background">#FFFF00</color>
+      <color name="splash_background">#3498DB</color>
     </resources>
     ```
 
