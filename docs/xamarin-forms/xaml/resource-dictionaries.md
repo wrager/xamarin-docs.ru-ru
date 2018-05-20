@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 05/07/2018
-ms.openlocfilehash: bfdfeda5821b020d7948e583a63bf9ec7e8ee324
-ms.sourcegitcommit: daa089d41cfe1ed0456d6de2f8134cf96ae072b1
+ms.openlocfilehash: 47cca2f726b0af396ea1eb287cfa4e1f1bf19724
+ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="resource-dictionaries"></a>Словари ресурсов
 
@@ -35,7 +35,7 @@ _Ресурсы XAML — определения объектов, которые
 Программа Xamarin.Forms содержит только один класс, производный от `Application` , но часто используется во многих классах, производных от `VisualElement`, в том числе элементов управления, страниц и макетов. Любые из этих объектов могут иметь его `Resources` свойство `ResourceDictionary`. Выбор места для размещения конкретного `ResourceDictionary` влияет на использование ресурсов:
 
 - Ресурсы в `ResourceDictionary` , присоединен к представлению, таких как `Button` или `Label` может применяться только для конкретного объекта, поэтому это не очень удобен.
-- Ресурсы в `ResourceDictionary` присоединенного к макету, таких как `StackLayout` или `Grid` может применяться к макет и все дочерние элементы макета. 
+- Ресурсы в `ResourceDictionary` присоединенного к макету, таких как `StackLayout` или `Grid` может применяться к макет и все дочерние элементы макета.
 - Ресурсы в `ResourceDictionary` определены на странице уровня могут применяться для страницы и всех его дочерних узлов.
 - Ресурсы в `ResourceDictionary` определенный уровень приложения может применяться в приложении.
 
@@ -187,7 +187,7 @@ _Ресурсы XAML — определения объектов, которые
         <local:MyResourceDictionary />
     </ContentPage.Resources>
     ...
-</ContentPage>  
+</ContentPage>
 ```
 
 Экземпляр `MyResourceDictionary` равно `Resources` свойство `ContentPage` объекта.
@@ -258,7 +258,7 @@ _Ресурсы XAML — определения объектов, которые
 
 ## <a name="merging-dictionaries-in-xamarinforms-30"></a>Объединение словарей в Xamarin.Forms 3.0
 
-Начиная с версии 3.0 Xamarin.Forms, процесс слияния `ResourceDictionaries` становится немного проще и гибче. `MergedDictionaries` Теги элементов свойства более не нужны. Вместо этого добавить словарь ресурсов другой `ResourceDictionary` тег с новым [ `Source` ](xref:Xamarin.Forms.ResourceDictionary.Source) , имеющим значение имени файла XAML-файла с ресурсами:
+Начиная с версии 3.0 Xamarin.Forms, процесс слияния [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary) становится немного проще и гибче экземпляров. `MergedDictionaries` Теги элементов свойства более не нужны. Вместо этого добавить словарь ресурсов другой `ResourceDictionary` тег с новым [ `Source` ](xref:Xamarin.Forms.ResourceDictionary.Source) , имеющим значение имени файла XAML-файла с ресурсами:
 
 ```xaml
 <ContentPage ...>
@@ -294,7 +294,7 @@ _Ресурсы XAML — определения объектов, которые
 </ContentPage>
 ```
 
-Этот новый синтаксис _не_ создать экземпляр `MyResourceDictionary` класса. Вместо этого он ссылается на файл XAML. По этой причине файл кода (**MyResourceDictionary.xaml.cs**) больше не требуется. Можно также удалить `x:Class` атрибут в корневом теге **MyResourceDictionary.xaml** файла. 
+Этот новый синтаксис _не_ создать экземпляр `MyResourceDictionary` класса. Вместо этого он ссылается на файл XAML. По этой причине файл кода (**MyResourceDictionary.xaml.cs**) больше не требуется. Можно также удалить `x:Class` атрибут в корневом теге **MyResourceDictionary.xaml** файла.
 
 ## <a name="summary"></a>Сводка
 

@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/17/2017
-ms.openlocfilehash: dfc46b5caa14c1c02d1c2afaffecc701fea59e2c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 8aa17c868ce1d0343eab6758c03aaf042c27130e
+ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="android-platform-specifics"></a>Android платформы подробные сведения
 
@@ -135,7 +135,7 @@ On<Android>().SetOffscreenPageLimit(2)
 
 ## <a name="controlling-the-elevation-of-visual-elements"></a>Управление повышение визуальных элементов
 
-Этой платформой, используемых для управления повышения уровня или Z-порядка визуальных элементов в приложениях, предназначенных для API 21 или больше. Повышение визуальный элемент определяет его рисования порядке, в котором визуальные элементы с более высоким значением Z occluding визуальные элементы с более низкими значениями Z. Он используется в языке XAML, задав `Elevation.Elevation` присоединенному свойству `boolean` значение:
+Этой платформой, используемых для управления повышения уровня или Z-порядка визуальных элементов в приложениях, предназначенных для API 21 или больше. Повышение визуальный элемент определяет его рисования порядке, в котором визуальные элементы с более высоким значением Z occluding визуальные элементы с более низкими значениями Z. Он используется в языке XAML, задав `VisualElement.Elevation` присоединенному свойству `boolean` значение:
 
 ```xaml
 <ContentPage ...
@@ -147,7 +147,7 @@ On<Android>().SetOffscreenPageLimit(2)
             <BoxView Color="Red" Opacity="0.2" HeightRequest="50" />
         </Grid>        
         <Grid Margin="0,20,0,0">
-            <Button Text="Button Above BoxView - Click Me" android:Elevation.Elevation="10"/>
+            <Button Text="Button Above BoxView - Click Me" android:VisualElement.Elevation="10"/>
             <BoxView Color="Red" Opacity="0.2" HeightRequest="50" />
         </Grid>
     </StackLayout>
@@ -196,7 +196,7 @@ public class AndroidElevationPageCS : ContentPage
 }
 ```
 
-`Button.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. `Elevation.SetElevation` Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](https://developer.xamarin.com/api/namespace/Xamarin.Forms.PlatformConfiguration.AndroidSpecific/) пространства имен, используемый для задания повышение визуальный элемент значения NULL `float`. Кроме того `Elevation.GetElevation` метод может использоваться для получения значения высоты визуального элемента.
+`Button.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. `VisualElement.SetElevation` Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](https://developer.xamarin.com/api/namespace/Xamarin.Forms.PlatformConfiguration.AndroidSpecific/) пространства имен, используемый для задания повышение визуальный элемент значения NULL `float`. Кроме того `VisualElement.GetElevation` метод может использоваться для получения значения высоты визуального элемента.
 
 Получается, что повышение визуальные элементы можно управлять, чтобы визуальные элементы с более высоким значением Z скрывать визуальные элементы с более низкими значениями Z. Таким образом, в этом примере второй [ `Button` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) отображается над [ `BoxView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BoxView/) , так как он имеет более высокое значение повышения прав:
 

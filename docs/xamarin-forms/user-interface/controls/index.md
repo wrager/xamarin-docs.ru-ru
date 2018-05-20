@@ -7,17 +7,17 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/12/2016
-ms.openlocfilehash: fb6620e160af4c2c844fa694649c95abdac123f9
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: 270904b87b1e37d4c4a74d997af50517fd6ffc5f
+ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="controls-reference"></a>Справочник по элементам управления
 
 _Описание всех визуальных элементов, используемый для создания приложения Xamarin.Forms._
 
-Визуальный интерфейс Xamarin.Forms приложения состоит из объектов, которые сопоставляются собственные элементы управления для каждой целевой платформы. Это позволяет приложениям специфический для платформы iOS, Android и универсальной платформы Windows для использования Xamarin.Forms кода, содержащегося в [стандартной библиотеки .NET](~/cross-platform/app-fundamentals/net-standard.md) или [общий проект](~/cross-platform/app-fundamentals/shared-projects.md).
+Визуальный интерфейс Xamarin.Forms приложения состоит из объектов, которые сопоставляются собственные элементы управления для каждой целевой платформы. Это позволяет приложениям специфический для платформы iOS, Android и универсальной платформы Windows для использования Xamarin.Forms кода, содержащегося в [.NET стандартной библиотеки](~/cross-platform/app-fundamentals/net-standard.md) или [общий проект](~/cross-platform/app-fundamentals/shared-projects.md).
 
 В следующих статьях на четыре показаны четыре группы главный элемент управления, используемый для создания пользовательского интерфейса приложения Xamarin.Forms:
 
