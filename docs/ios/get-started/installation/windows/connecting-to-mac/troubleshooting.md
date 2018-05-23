@@ -44,7 +44,7 @@ _В этом руководстве приводятся инструкции п
 
 2. Проверьте, включена ли на компьютере Mac функция **Удаленный вход**. Разрешите доступ **Только этим пользователям** и убедитесь в том, что ваш пользователь Mac включен в список или группу:
 
-    [![](troubleshooting-images/troubleshooting-image1.png "Разрешение доступа "Только этим пользователям"")](troubleshooting-images/troubleshooting-image1.png#lightbox)
+    [![](troubleshooting-images/troubleshooting-image1.png "Разрешение доступа \"Только этим пользователям\"")](troubleshooting-images/troubleshooting-image1.png#lightbox)
 
 3. Проверьте в брандмауэре, разрешены ли входящие подключения через порт 22 (порт по умолчанию для протокола SSH):
 
@@ -52,7 +52,7 @@ _В этом руководстве приводятся инструкции п
 
     Если параметр **Автоматически разрешать подписанному ПО входящие подключения** отключен, во время связывания в системе OS X будет появляться диалоговое окно с запросом, следует ли разрешить программе `mono-sgen` или `mono-sgen32` принимать входящие подключения. В этом диалоговом окне необходимо нажать кнопку **Разрешить**:
 
-    [![](troubleshooting-images/troubleshooting-image4a.png "Нажмите кнопку "Разрешить"")](troubleshooting-images/troubleshooting-image4a.png#lightbox)
+    [![](troubleshooting-images/troubleshooting-image4a.png "Нажмите кнопку \"Разрешить\"")](troubleshooting-images/troubleshooting-image4a.png#lightbox)
 
 4. Убедитесь, что на компьютере Mac выполнен вход в учетную запись пользователя и запущен сеанс работы с графическим пользовательским интерфейсом.
 
@@ -67,7 +67,7 @@ _В этом руководстве приводятся инструкции п
 
 6. Проверьте правильность IP-адреса, используемого для компьютера Mac. Чтобы узнать IP-адрес, на компьютере Mac последовательно выберите **Системные настройки > Общий доступ > Удаленный вход**.
 
-    [![](troubleshooting-images/troubleshooting-image17.png "IP-адрес в приложении "Системные настройки"")](troubleshooting-images/troubleshooting-image17.png#lightbox)
+    [![](troubleshooting-images/troubleshooting-image17.png "IP-адрес в приложении \"Системные настройки\"")](troubleshooting-images/troubleshooting-image17.png#lightbox)
 
 7. Подтвердив IP-адрес компьютера Mac, попробуйте выполнить запрос `ping` к этому адресу в программе `cmd.exe` в Windows:
 
@@ -159,7 +159,7 @@ _В этом руководстве приводятся инструкции п
 
     1. Проверьте расположение файла **sshd\_config**, выполнив команды `ls /etc/ssh/sshd_config` и `ls /etc/sshd_config` в окне командной строки Terminal. При выполнении дальнейших инструкций используйте расположение, которое _не_ возвращает результат "Нет такого файла или каталога".
 
-        [![](troubleshooting-images/troubleshooting-image18.png "Выполнение команд "ls /etc/ssh/sshd_config" и "ls /etc/sshd_config" в программе Terminal")](troubleshooting-images/troubleshooting-image18.png#lightbox)
+        [![](troubleshooting-images/troubleshooting-image18.png "Выполнение команд \"ls /etc/ssh/sshd_config\" и \"ls /etc/sshd_config\" в программе Terminal")](troubleshooting-images/troubleshooting-image18.png#lightbox)
 
     3. Выполните команду `cp /etc/ssh/sshd_config "$HOME/Desktop/"` в программе Terminal, чтобы скопировать файл на рабочий стол.
 
@@ -233,7 +233,7 @@ _В этом руководстве приводятся инструкции п
 2. Откройте раскрывающееся меню **Показать выходные данные из**.
 3. Выберите пункт **Xamarin**.
 
-[![](troubleshooting-images/troubleshooting-image11.png "Выбор Xamarin на вкладке "Вывод"")](troubleshooting-images/troubleshooting-image11.png#lightbox)
+[![](troubleshooting-images/troubleshooting-image11.png "Выбор Xamarin на вкладке \"Вывод\"")](troubleshooting-images/troubleshooting-image11.png#lightbox)
 
 #### <a name="log-files"></a>Файлы журнала
 
@@ -248,7 +248,7 @@ _В этом руководстве приводятся инструкции п
 
 3. После того как в Visual Studio произойдет ошибка подключения, соберите журналы с помощью команды **Справка > Xamarin > Запаковать журналы**:
 
-    [![](troubleshooting-images/troubleshooting-image12.png "Сбор журналов с помощью команды "Справка > Xamarin > Запаковать журналы"")](troubleshooting-images/troubleshooting-image12.png#lightbox)
+    [![](troubleshooting-images/troubleshooting-image12.png "Сбор журналов с помощью команды \"Справка > Xamarin > Запаковать журналы\"")](troubleshooting-images/troubleshooting-image12.png#lightbox)
 
 4. Когда вы откроете файл ZIP, вы увидите список файлов, как в примере ниже. Для ошибок подключения наиболее важными файлами являются **\*Ide.log** и **\*Ide.svclog**. Эти файлы содержат одни и те же сообщения в двух немного разных форматах. Файл **SVCLOG** содержит данные в формате XML и полезен для просмотра сообщений. Файл **LOG** содержит обычный текст и полезен для фильтрации сообщений с помощью программ командной строки.
 
@@ -258,7 +258,7 @@ _В этом руководстве приводятся инструкции п
 
 5. Файл **SVCLOG** откроется в программе **Microsoft Service Trace Viewer**. Сообщения можно группировать в потоки для просмотра связанных сообщений. Для просмотра по потокам выберите вкладку **Диаграмма** и в раскрывающемся меню **Режим макета** выберите пункт **Поток**:
 
-    [![](troubleshooting-images/troubleshooting-image14.png "Выбор пункта "Поток" в раскрывающемся меню "Режим макета"")](troubleshooting-images/troubleshooting-image14.png#lightbox)
+    [![](troubleshooting-images/troubleshooting-image14.png "Выбор пункта \"Поток\" в раскрывающемся меню \"Режим макета\"")](troubleshooting-images/troubleshooting-image14.png#lightbox)
 
 <a name="verboselogs" />
 
