@@ -6,11 +6,11 @@ ms.assetid: 19B1F126-866E-4672-92D2-BE2B70ACF0F1
 author: topgenorth
 ms.author: toopge
 ms.date: 05/10/2017
-ms.openlocfilehash: b5301e499a3b85087f19449f8a25b107b8ec1e4b
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: dd179fb1d1ce3ca57cdf6e27bb86a12e2f9ef03f
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="xamarin-live-player-for-xamarinforms"></a>Xamarin динамической проигрывателя для Xamarin.Forms
 
@@ -22,7 +22,7 @@ Xamarin Live Player разработана как Приступая к рабо
 
 [![Xamarin Player в режиме реального времени: Кода, тест сканирования](images/xamarin-live.png)](images/xamarin-live-sml.png#lightbox)
 
-1. Скачайте приложение, проходящих [установки Xamarin Live Player](install.md) инструкции.
+1. Загрузите приложение, следуя [установки Xamarin Live Player](install.md) инструкции.
 2. Включить *Xamarin Live Player* в **предпочтения**, затем выберите устройство из **устройств** списка.
 2. Управление устройствами Live проигрывателя для сканирования QR-код для сопряжения Visual Studio на устройстве.
 3. Приложение запускается прямо на телефоне или планшете.

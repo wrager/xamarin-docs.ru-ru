@@ -8,11 +8,11 @@ ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/07/2018
-ms.openlocfilehash: ff9814291d5a28ec9e0bbb3c2a6fc6cce5d8ee25
-ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
+ms.openlocfilehash: 92ca58374292c829df4098274abae870b355a7b0
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="right-to-left-localization"></a>Локализация справа налево
 
@@ -24,7 +24,7 @@ _Локализация справа налево добавляет подде�
 Направление потока имеет направление, в котором проверяются элементы пользовательского интерфейса на странице глаза. Некоторые языки, например арабском или иврите, требует, что элементы пользовательского интерфейса располагаются в направлении справа налево. Это можно сделать, задав [ `VisualElement.FlowDirection` ](xref:Xamarin.Forms.VisualElement.FlowDirection) свойство. Это свойство Возвращает или задает направление, в которую проходят элементы пользовательского интерфейса в родительском элементе, определяющем их размещение и должно быть присвоено одно из [ `FlowDirection` ](xref:Xamarin.Forms.FlowDirection) значения перечисления:
 
 - [`LeftToRight`](xref:Xamarin.Forms.FlowDirection.LeftToRight)
-- [`RightToRight`](xref:Xamarin.Forms.FlowDirection.RightToLeft)
+- [`RightToLeft`](xref:Xamarin.Forms.FlowDirection.RightToLeft)
 - [`MatchParent`](xref:Xamarin.Forms.FlowDirection.MatchParent)
 
 Установка [ `FlowDirection` ](xref:Xamarin.Forms.VisualElement.FlowDirection) свойства [ `RightToLeft` ](xref:Xamarin.Forms.FlowDirection.RightToLeft) на элементе обычно задает способ выравнивания вправо, порядок чтения справа налево и макет элемента управления из потока справа налево:

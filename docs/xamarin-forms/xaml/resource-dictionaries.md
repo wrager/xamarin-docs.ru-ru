@@ -6,12 +6,12 @@ ms.assetid: DF103686-4A92-40FA-9CF1-A9376293B13C
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
-ms.date: 05/07/2018
-ms.openlocfilehash: 47cca2f726b0af396ea1eb287cfa4e1f1bf19724
-ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
+ms.date: 05/21/2018
+ms.openlocfilehash: b9c15357895bae64176ef34a848b968917035f3d
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="resource-dictionaries"></a>Словари ресурсов
 
@@ -30,7 +30,7 @@ _Ресурсы XAML — определения объектов, которые
 Ресурсы определяются в [ `ResourceDictionary` ](xref:Xamarin.Forms.ResourceDictionary) , затем присвойте одно из следующих `Resources` свойства:
 
 - [ `Resources` ](xref:Xamarin.Forms.Application.Resources) Свойство класса, производного от [`Application`](xref:Xamarin.Forms.Application)
-- [ `Resources` ](xref:Xamarin.Forms.VisualElement.Resources) Свойство класса, производного от [«VisualElement»](xref:Xamarin.Forms.Application)
+- [ `Resources` ](xref:Xamarin.Forms.VisualElement.Resources) Свойство класса, производного от [`VisualElement`](xref:Xamarin.Forms.Application)
 
 Программа Xamarin.Forms содержит только один класс, производный от `Application` , но часто используется во многих классах, производных от `VisualElement`, в том числе элементов управления, страниц и макетов. Любые из этих объектов могут иметь его `Resources` свойство `ResourceDictionary`. Выбор места для размещения конкретного `ResourceDictionary` влияет на использование ресурсов:
 

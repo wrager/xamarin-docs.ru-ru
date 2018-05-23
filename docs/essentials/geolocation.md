@@ -5,13 +5,13 @@ ms.assetid: 8F66092C-13F0-4FEE-8AA5-901D5F79B357
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: ead498113f432e766fbd77ae2f01bc67c2273b60
-ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
+ms.openlocfilehash: bf0fa7d2caf7c8857bc1272f4471def04100383f
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="xamarinessentials-geocoding"></a>Геокодирования Xamarin.Essentials
+# <a name="xamarinessentials-geolocation"></a>Географическое положение Xamarin.Essentials
 
 ![Предварительная версия NuGet](~/media/shared/pre-release.png)
 
@@ -19,7 +19,7 @@ ms.lasthandoff: 05/12/2018
 
 ## <a name="getting-started"></a>Начало работы
 
-Чтобы получить доступ к **Geolocation** требуется функциональность следующие платформы определенные настройки.
+Чтобы получить доступ к **Geolocation** функциональные возможности, требуется следующая настройка платформ:
 
 # <a name="androidtabandroid"></a>[Android](#tab/android)
 
@@ -35,9 +35,9 @@ ms.lasthandoff: 05/12/2018
 [assembly: UsesFeature("android.hardware.location.network", Required = false)]
 ```
 
-ИЛИ обновление манифеста Android.
+Или обновление манифеста Android.
 
-Откройте **AndroidManifest.xml** файл **свойства** папки и добавьте следующий код внутри блока **манифеста** узла.
+Откройте **AndroidManifest.xml** файл **свойства** папки и добавьте следующий код внутри блока **манифеста** узла:
 
 ```xml
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -47,15 +47,15 @@ ms.lasthandoff: 05/12/2018
 <uses-feature android:name="android.hardware.location.network" android:required="false" />
 ```
 
-Или щелкните правой кнопкой мыши проект Anroid и откройте свойства проекта. В разделе **Android манифеста** найти **требуемые разрешения:** области и проверка **ACCESS_COARSE_LOCATION** и **ACCESS_FINE_LOCATION**разрешения. Будет автоматически обновлена **AndroidManifest.xml** файла.
+Или щелкните правой кнопкой мыши проект Android и откройте свойства проекта. В разделе **Android манифеста** найти **требуемые разрешения:** области и проверка **ACCESS_COARSE_LOCATION** и **ACCESS_FINE_LOCATION**разрешения. Будет автоматически обновлена **AndroidManifest.xml** файла.
 
 # <a name="iostabios"></a>[iOS](#tab/ios)
 
-Приложения требуется наличие ключей вашей **Info.plist** для NSLocationWhenInUseUsageDescription, чтобы получить доступ к расположению устройства.
+Ваше приложение **Info.plist** должен содержать `NSLocationWhenInUseUsageDescription` ключом, чтобы получить доступ к расположению устройства.
 
 Откройте редактор plist-файл и добавьте **конфиденциальность - расположение при в используйте Описание использования** свойство и введите значение для отображения пользователю.
 
-ИЛИ вручную изменить файл и добавьте следующие строки:
+Или вручную изменить файл и добавьте следующие строки:
 
 ```xml
 <key>NSLocationWhenInUseUsageDescription</key>
@@ -64,7 +64,7 @@ ms.lasthandoff: 05/12/2018
 
 # <a name="uwptabuwp"></a>[UWP](#tab/uwp)
 
-Необходимо задать `Location` разрешение для приложения. Это можно сделать путем открытия **Package.appxmanifest** и выбрав команду **возможности** вкладка и проверка **расположение**.
+Необходимо задать `Location` разрешение для приложения. Это можно сделать, открыв **Package.appxmanifest** и выбрав команду **возможности** вкладка и проверка **расположение**.
 
 -----
 
@@ -104,7 +104,7 @@ catch (Exception ex)
 }
 ```
 
-Чтобы запросить текущего устройства [расположение](xref:Xamarin.Essentials.Location) координаты `GetLocationAsync` может использоваться. Рекомендуется для передачи полной `GeolocationRequest` и `CancellationToken` , так как он может занять некоторое время, чтобы получить расположение устройства.
+Чтобы запросить текущего устройства [расположение](xref:Xamarin.Essentials.Location) координаты, `GetLocationAsync` может использоваться. Следует передать в полной `GeolocationRequest` и `CancellationToken` , так как он может занять некоторое время, чтобы получить расположение устройства.
 
 ```csharp
 try
@@ -133,7 +133,7 @@ catch (Exception ex)
 
 ## <a name="geolocation-accuracy"></a>Точность определения географического положения
 
-В следующей таблице приведены точность каждой платформы
+В следующей таблице приведены точность каждой платформы:
 
 ### <a name="lowest"></a>Наименьшая
 

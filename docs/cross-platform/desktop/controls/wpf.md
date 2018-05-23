@@ -4,11 +4,11 @@ title: 'WPF и. Xamarin.Forms: Сходства и различия'
 author: asb3993
 ms.author: amburns
 ms.date: 04/26/2017
-ms.openlocfilehash: 21ffca65ee72308d1340a1db43471228b2adbe91
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: ac30a29a2b4982b2f995c9f717cf1893ca5d8b8a
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="wpf-vs-xamarinforms-similarities--differences"></a>WPF и. Xamarin.Forms: Сходства и различия
 
@@ -33,7 +33,7 @@ XAML используется как декларативный язык раз�
 
 - Поддерживает Xamarin.Forms [спецификации XAML 2009](/dotnet/framework/xaml-services/xaml-2009-language-features/); это упрощает определение данных, таких как `string`s, `int`s, т. д. так как определение универсальных типов и передача аргументов в конструкторы.
 
-- Сейчас нет способа загрузки dyanmically XAML как WPF с `XamlReader`. Можно получить те же функциональные с [пакет NuGet](https://www.nuget.org/packages/Xamarin.Forms.Dynamic/) на то, что.
+- В настоящее время нет возможности для динамической загрузки XAML как WPF с `XamlReader`. Можно получить те же функциональные с [пакет NuGet](https://www.nuget.org/packages/Xamarin.Forms.Dynamic/) на то, что.
 
 ### <a name="markup-extensions"></a>Расширения разметки
 
