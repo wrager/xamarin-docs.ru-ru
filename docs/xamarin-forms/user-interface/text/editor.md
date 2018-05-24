@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/22/2017
-ms.openlocfilehash: dc83defcb3eb69cf53c205793ce77029c0947c2f
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 035365a22c487039ff811756d91ca0a8d392d628
+ms.sourcegitcommit: c024f29ff730ae20c15e99bfe0268a0e1c9d41e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="editor"></a>Редактор
 
@@ -19,8 +19,8 @@ _Ввод многострочного текста_
 
 `Editor` Элемент управления используется для ввода нескольких строк. В этой статье рассматривается:
 
-- **[Настройка](#Customization)**  &ndash; параметры клавиатуры и цвета.
-- **[Интерактивные возможности](#Interactivity)**  &ndash; события, которые можно прослушивать для обеспечения интерактивности.
+- **[Настройка](#customization)**  &ndash; параметры клавиатуры и цвета.
+- **[Интерактивные возможности](#interactivity)**  &ndash; события, которые можно прослушивать для обеспечения интерактивности.
 
 ## <a name="customization"></a>Настройка
 

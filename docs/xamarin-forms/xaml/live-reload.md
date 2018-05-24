@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: pierceboggan
 ms.author: piboggan
 ms.date: 05/11/2018
-ms.openlocfilehash: ca359e5ea700ef09249a2d8a299b6604f91e9149
-ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
+ms.openlocfilehash: d2aee2d6421b06f9147c656debdd58bdfe21be72
+ms.sourcegitcommit: c024f29ff730ae20c15e99bfe0268a0e1c9d41e5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="xamarin-live-reload"></a>Перезагрузить динамической Xamarin
 
@@ -63,8 +63,10 @@ public partial class App : Application
     public App ()
     {
         // Initialize Live Reload.
+        #if DEBUG
         LiveReload.Init();
-    
+        #endif
+        
         InitializeComponent();
         MainPage = new MainPage();
     }
@@ -134,6 +136,10 @@ public partial class App : Application
 * **XLR003**: *пакет nuget Live перезагрузить требует установки расширения Xamarin Live перезагрузить Visual Studio.*
 
   Попытка построить проект, который ссылается пакет nuget Live перезагрузки, но не устанавливается расширение Visual.  
+
+* *Возникло исключение при загрузке сборки: System.IO.FileNotFoundException: не удалось загрузить сборку "Xamarin.Live.Reload, версия = 0.3.27.0, язык и региональные параметры = neutral, PublicKeyToken =".*
+
+  Следует использовать проект ведущего `PackageReference` вместо `packages.config`
 
 ### <a name="app-doesnt-connect"></a>Приложение не подключаться
 
