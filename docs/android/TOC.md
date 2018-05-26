@@ -232,6 +232,7 @@
 ### [Параметры настраиваемого компоновщика](deploy-test/linker.md)
 ### [Устройства с многоядерными процессорами](deploy-test/multicore-devices.md)
 ### [Производительность](deploy-test/performance.md)
+### [Профилирование](deploy-test/profiling.md)
 ### [Подготовка к выпуску](deploy-test/release-prep/index.md)
 #### [ProGuard](deploy-test/release-prep/proguard.md)
 ### [Подписывание пакета APK](deploy-test/signing/index.md)
