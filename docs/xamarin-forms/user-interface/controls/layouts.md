@@ -6,12 +6,12 @@ ms.assetid: F4180997-BA21-453A-9958-D1E2940DF050
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 01/12/2016
-ms.openlocfilehash: e9a4a661e694b5a885f202a36f9a2916c6c339fd
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.date: 05/21/2018
+ms.openlocfilehash: ca48ad6fb7d5aae53f972f6e3b5257919d140a8d
+ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="xamarinforms-layouts"></a>Макеты Xamarin.Forms
 
@@ -19,7 +19,7 @@ _Xamarin.Forms макеты используются для создания э�
 
 [ `Layout` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout) И [ `Layout<T>` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Layout%3CT%3E/) классы в Xamarin.Forms — это специализированный подтипы представлений, которые действуют как контейнеры для представления и другие макеты. `Layout` Сам класс является производным от [ `View` ](views.md). Объект `Layout` производный класс обычно содержит логику, чтобы задать положение и размеры дочерних элементов в приложениях Xamarin.Forms.
 
- [ ![](layouts-images/layouts-sml.png "Типы макета Xamarin.Forms")](layouts-images/layouts.png#lightbox "типы макета Xamarin.Forms")
+[![Типы макета Xamarin.Forms](layouts-images/layouts-sml.png "типы макета Xamarin.Forms")](layouts-images/layouts.png#lightbox "типы макета Xamarin.Forms")
 
 Классы, производные от `Layout` можно разделить на две категории:
 
@@ -101,7 +101,14 @@ _Xamarin.Forms макеты используются для создания э�
 
 |     |     |
 | --- | --- |
-| [`RelativeLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/) размещает дочерние элементы относительно `RelativeLayout` себя или своих одноуровневых элементов. Позиции дочерней таблицы указывается с помощью [вложенные свойства](~/xamarin-forms/xaml/attached-properties.md) , которые задаются для объектов типа [ `Constraint` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/) и [ `BoundsConstraint` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/)/ [руководство](~/xamarin-forms/user-interface/layouts/relative-layout.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/) | [![Пример RelativeLayout](layouts-images/RelativeLayout.png "пример RelativeLayout")](layouts-images/RelativeLayout-Large.png#lightbox "RelativeLayout пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/RelativeLayoutDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/RelativeLayoutDemoPage.xaml) |
+| [`RelativeLayout`](https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/) размещает дочерние элементы относительно `RelativeLayout` себя или своих одноуровневых элементов. Позиции дочерней таблицы указывается с помощью [вложенные свойства](~/xamarin-forms/xaml/attached-properties.md) , которые задаются для объектов типа [ `Constraint` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/) и [ `BoundsConstraint` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Constraint/).<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.RelativeLayout/) / [руководство](~/xamarin-forms/user-interface/layouts/relative-layout.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/Layout/) | [![Пример RelativeLayout](layouts-images/RelativeLayout.png "пример RelativeLayout")](layouts-images/RelativeLayout-Large.png#lightbox "RelativeLayout пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/RelativeLayoutDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/RelativeLayoutDemoPage.xaml) |
+|     |     |
+
+### <a name="flexlayout"></a>FlexLayout
+
+|     |     |
+| --- | --- |
+| [`FlexLayout`](xref:Xamarin.Forms.FlexLayout) основан на CSS [гибкие поле Макет модуля](http://www.w3.org/TR/css-flexbox-1/), которая часто называется _гибкий макет_ или _flex поле_. `FlexLayout` Определяет шесть привязываемые свойства и пять вложенного привязываемые свойства, позволяющие дочерние элементы с накоплением и оболочку множество вариантов выравнивания и ориентацию.<br /><br />[Документация по API](xref:Xamarin.Forms.FlexLayout) / [руководство](~/xamarin-forms/user-interface/layouts/flex-layout.md) / [образца](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/FlexLayoutDemos/) | [![Пример FlexLayout](layouts-images/FlexLayout.png "пример FlexLayout")](layouts-images/FlexLayout-Large.png#lightbox "FlexLayout пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/FlexLayoutDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/FlexLayoutDemoPage.xaml) |
 |     |     |
 
 ## <a name="related-links"></a>Связанные ссылки

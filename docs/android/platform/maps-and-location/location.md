@@ -6,12 +6,12 @@ ms.assetid: 0008682B-6CEF-0C1D-3200-56ECF58F5D3C
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 02/16/2018
-ms.openlocfilehash: 366c75db49a7e0f4f559b13c0871071dee2f08e3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/22/2018
+ms.openlocfilehash: b509f6892b27afa053a6ee913826d913d7ad54a8
+ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="location-services"></a>Службы определения местоположения
 
@@ -83,9 +83,15 @@ else
  
 API-Интерфейс поставщика плавким расположение предоставляет широкий набор средств для расширения возможностей привязанный к местонахождению приложений, включая зонирование и мониторинг активности. В этом разделе мы собираемся фокус по основам настройки `LocationClient`, создав поставщиков и получение расположения пользователя.
 
-Поставщик плавким расположение является частью [службы Google Play](http://developer.android.com/google/play-services/index.html). Пакет службы Google Play должно быть установлено и настроено в API-Интерфейс поставщика плавким расположение для работы приложения и устройство должно иметь Google воспроизвести служб APK установлен.
+Поставщик плавким расположение является частью [службы Google Play](http://developer.android.com/google/play-services/index.html).
+Пакет службы Google Play должно быть установлено и настроено в API-Интерфейс поставщика плавким расположение для работы приложения и устройство должно иметь Google воспроизвести служб APK установлен.
 
-Прежде чем Xamarin.Android приложение может использовать поставщик плавким расположения, его необходимо добавить **Xamarin.GooglePlayServices.Maps** в проект.
+Прежде чем Xamarin.Android приложение может использовать поставщик плавким расположения, его необходимо добавить **Xamarin.GooglePlayServices.Maps** пакета в проект. Кроме того, следующие `using` инструкции должны быть добавлены в любой исходные файлы, которые ссылаются на классы, описанные ниже:
+
+```csharp
+using Android.Gms.Common;
+using Android.Gms.Location;
+```
 
 ### <a name="checking-if-google-play-services-is-installed"></a>Проверка, установлены ли службы Google Play
 

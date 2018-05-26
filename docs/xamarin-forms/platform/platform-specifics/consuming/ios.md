@@ -6,12 +6,12 @@ ms.assetid: C0837996-A1E8-47F9-B3A8-98EE43B4A675
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 11/16/2017
-ms.openlocfilehash: 7826962cd3bf9595a63841e3f2d9fb377d1a0574
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/23/2018
+ms.openlocfilehash: cc6cb282565e08f7ce4401e5317fba518a74a8f3
+ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="ios-platform-specifics"></a>Специфический для платформы iOS
 
@@ -28,6 +28,7 @@ _Особенности платформы позволяют использов
 - Управление, когда происходит выбор элементов в [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/). Дополнительные сведения см. в разделе [управление Выбор элемента](#picker_update_mode).
 - Настройка видимости панели состояния на [ `Page` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/). Дополнительные сведения см. в разделе [установки видимость строки состояния на странице](#set_status_bar_visibility).
 - Управление ли [ `ScrollView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) жест касания обрабатывает или передает его на его содержимое. Дополнительные сведения см. в разделе [задержки содержимого штрихи в ScrollView](#delay_content_touches).
+- Установка на стиль разделителя [ `ListView` ](xref:Xamarin.Forms.ListView). Дополнительные сведения см. в разделе [параметр стиль разделителя для ListView](#listview-separatorstyle).
 
 <a name="blur" />
 
@@ -302,7 +303,6 @@ IsPresentedChanged += (sender, e) =>
 Это специфический для платформы используется для масштабирования размер шрифта для [ `Entry` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Entry/) чтобы убедиться, что введено текст помещается в элемент управления. Он используется в языке XAML, задав [ `Entry.AdjustsFontSizeToFitWidth` ](https://developer.xamarin.com/api/field/Xamarin.Forms.PlatformConfiguration.iOSSpecific.Entry.AdjustsFontSizeToFitWidthProperty/) присоединенному свойству `boolean` значение:
 
 ```xaml
-<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage ...
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     <StackLayout Margin="20">
@@ -393,7 +393,6 @@ switch (picker.On<iOS>().UpdateMode())
 Этой платформой используется для задания видимость строки состояния на [ `Page` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/), а также возможность управлять как строка состояния или выходе из `Page`. Он используется в языке XAML, задав `Page.PrefersStatusBarHidden` вложенное свойство в значение `StatusBarHiddenMode` перечисления и при необходимости `Page.PreferredStatusBarUpdateAnimation` вложенное свойство в значение `UIStatusBarAnimation` перечисления:
 
 ```xaml
-<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage ...
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.PrefersStatusBarHidden="True"
@@ -468,6 +467,45 @@ scrollView.On<iOS>().SetShouldDelayContentTouches(!scrollView.On<iOS>().ShouldDe
 В результате [ `ScrollView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) можно отключить задержки, поэтому получение содержимого штрихи, в этом сценарии [ `Slider` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Slider/) получает жест вместо [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.Detail/) страница [ `MasterDetailPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.MasterDetailPage/):
 
 [![](ios-images/scrollview-delay-content-touches.png "Задержка ScrollView содержимое касается определяемых платформой")](ios-images/scrollview-delay-content-touches-large.png#lightbox "ScrollView Delay Content Touches Plaform-Specific")
+
+<a name="listview-separatorstyle" />
+
+## <a name="setting-the-separator-style-on-a-listview"></a>Параметр стиль разделителя для ListView
+
+Управляет этой платформой ли в ячейках разделителя между [ `ListView` ](xref:Xamarin.Forms.ListView) использует всю ширину `ListView`. Он используется в языке XAML, задав [ `ListView.SeparatorStyle` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SeparatorStyleProperty) вложенное свойство в значение [ `SeparatorStyle` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) перечисления:
+
+```xaml
+<ContentPage ...
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
+    <StackLayout Margin="20">
+        <ListView ... ios:ListView.SeparatorStyle="FullWidth">
+            ...
+        </ListView>
+    </StackLayout>
+</ContentPage>
+```
+
+Кроме того он может использоваться из C# с помощью плавного API:
+
+```csharp
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+...
+
+listView.On<iOS>().SetSeparatorStyle(SeparatorStyle.FullWidth);
+```
+
+`ListView.On<iOS>` Метод указывает, что этой платформой будет запускаться только в iOS. [ `ListView.SetSeparatorStyle` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.ListView.SetSeparatorStyle(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.ListView},Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle)) Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен используется для управления ли разделитель в ячейках [ `ListView` ](xref:Xamarin.Forms.ListView) использует полный Ширина `ListView`, с [ `SeparatorStyle` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) перечисления, предоставляя два возможных значения:
+
+- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle.Default) — Задает поведение разделителя по умолчанию для операций ввода-вывода. Это поведение по умолчанию в Xamarin.Forms.
+- [`FullWidth`](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle.FullWidth) — Указывает, что в качестве разделителей получаются от одного края `ListView` в другой.
+
+Результатом является то, что указанный [ `SeparatorStyle` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.SeparatorStyle) применяется значение [ `ListView` ](xref:Xamarin.Forms.ListView), который управляет ширину разделителя между ячейками:
+
+![](ios-images/listview-separatorstyle.png "ListView SeparatorStyle платформы")
+
+> [!NOTE]
+> После настройки стиль разделителя `FullWidth`, не может изменить его статус на `Default` во время выполнения.
 
 ## <a name="summary"></a>Сводка
 

@@ -6,12 +6,12 @@ ms.assetid: C5D4AA65-9BAA-4008-8A1E-36CDB78A435D
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 11/17/2017
-ms.openlocfilehash: 8aa17c868ce1d0343eab6758c03aaf042c27130e
-ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
+ms.date: 05/23/2018
+ms.openlocfilehash: 8d7ec3f2f64fdb8be903fd13bd72bcf545265a3d
+ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="android-platform-specifics"></a>Android платформы подробные сведения
 
@@ -24,6 +24,8 @@ _Особенности платформы позволяют использов
 - Включение считывания между страницами в [ `TabbedPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.TabbedPage/). Дополнительные сведения см. в разделе [Включение считывания между страницами в TabbedPage](#enable_swipe_paging).
 - Управление Z-порядка визуальных элементов, чтобы определить порядок отображения. Дополнительные сведения см. в разделе [управление повышение визуальные элементы](#elevation).
 - Отключение [ `Disappearing` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Page.Appearing/) и [ `Appearing` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Page.Appearing/) страницы события жизненного цикла на приостановить и возобновить соответственно, для приложений, использующих совместимости приложений. Дополнительные сведения см. в разделе [отключение Disappearing и появления событий жизненного цикла страницы](#disable_lifecycle_events).
+- Управление ли [ `WebView` ](xref:Xamarin.Forms.WebView) может отображать смешанное содержимое. Дополнительные сведения см. в разделе [Включение смешанного содержимого в WebView](#webview-mixed-content).
+- Установка метода ввода параметров редактора для программируемой клавиатуры для [ `Entry` ](xref:Xamarin.Forms.Entry). Дополнительные сведения см. в разделе [параметры редактора метода ввода для параметра записи](#entry-imeoptions).
 
 <a name="soft_input_mode" />
 
@@ -245,10 +247,88 @@ Xamarin.Forms.Application.Current.On<Android>()
 
 [![](android-images/keyboard-on-resume.png "Жизненный цикл события платформы")](android-images/keyboard-on-resume-large.png#lightbox "жизненного цикла события платформы")
 
+<a name="webview-mixed-content" />
+
+## <a name="enabling-mixed-content-in-a-webview"></a>Включение смешанного содержимого в WebView
+
+Это управляет платформой ли [ `WebView` ](xref:Xamarin.Forms.WebView) можно Отображение разнородного содержимого в приложениях, предназначенных API 21 или выше. Смешанный содержимое является начальной загрузке через HTTPS-соединение, но подключения по протоколу HTTP, который загружает ресурсы (например, изображения, аудио, видео, таблицы стилей, сценарии). Он используется в языке XAML, задав [ `WebView.MixedContentMode` ](x:ref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.MixedContentModeProperty) вложенное свойство в значение [ `MixedContentHandling` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling) перечисления:
+
+```xaml
+<ContentPage ...
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
+    <WebView ... android:WebView.MixedContentMode="AlwaysAllow" />
+</ContentPage>
+```
+
+Кроме того он может использоваться из C# с помощью плавного API:
+
+```csharp
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+...
+
+webView.On<Android>().SetMixedContentMode(MixedContentHandling.AlwaysAllow);
+```
+
+`WebView.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. [ `WebView.SetMixedContentMode` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WebView.SetMixedContentMode(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.WebView},Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling)) Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен используется для управления ли смешанное содержимое может отображаться, с [ `MixedContentHandling` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling) Перечисление, предоставляя три возможных значения:
+
+- [`AlwaysAllow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.AlwaysAllow) — Указывает, что [ `WebView` ](xref:Xamarin.Forms.WebView) позволит источник HTTPS для загрузки содержимого из источника HTTP.
+- [`NeverAllow`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.NeverAllow) — Указывает, что [ `WebView` ](xref:Xamarin.Forms.WebView) не разрешит источник HTTPS для загрузки содержимого из источника HTTP.
+- [`CompatibilityMode`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling.CompatibilityMode) — Указывает, что [ `WebView` ](xref:Xamarin.Forms.WebView) попытается несовместима с данным подходом последние веб-браузере устройства. Часть содержимого HTTP может быть разрешен загружается источник HTTPS и других типов содержимого будет заблокирован. Типы содержимого, которые заблокированы или разрешены могут изменяться при каждом выпуске операционной системы.
+
+Результатом является то, что указанный [ `MixedContentHandling` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.MixedContentHandling) применяется значение [ `WebView` ](xref:Xamarin.Forms.WebView), который управляет отображением смешанное содержимое:
+
+[![WebView смешанный платформой обработки содержимого](android-images/webview-mixedcontent.png "WebView смешанный платформой обработки содержимого")](android-images/webview-mixedcontent-large.png#lightbox "WebView смешанный платформой обработки содержимого")
+
+<a name="entry-imeoptions" />
+
+## <a name="setting-entry-input-method-editor-options"></a>Параметры редактора метода ввода для параметра записи
+
+Этой платформой задает метод ввода параметров редактора (IME) для программируемой клавиатуры для [ `Entry` ](xref:Xamarin.Forms.Entry). Это включает настройку кнопки действия пользователя в нижнем углу Экранная клавиатура и взаимодействие с `Entry`. Он используется в языке XAML, задав [ `Entry.ImeOptions` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Entry.ImeOptionsProperty) вложенное свойство в значение [ `ImeFlags` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags) перечисления:
+
+```xaml
+<ContentPage ...
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
+    <StackLayout ...>
+        <Entry ... android:Entry.ImeOptions="Send" />
+        ...
+    </StackLayout>
+</ContentPage>
+```
+
+Кроме того он может использоваться из C# с помощью плавного API:
+
+```csharp
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+...
+
+entry.On<Android>().SetImeOptions(ImeFlags.Send);
+```
+
+`Entry.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. [ `Entry.SetImeOptions` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Entry.SetImeOptions(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Entry},Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags)) Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен используется для задания параметра действие метода ввода для программируемой клавиатуры для [ `Entry` ](xref:Xamarin.Forms.Entry), с [ `ImeFlags` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags) перечисления, предоставляя следующие значения:
+
+- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Default) — Указывает, что ключ не определенное действие не требуется и что базового элемента управления выведет самостоятельно при можно.
+- [`None`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.None) — Указывает, что ключ не действия будут доступны.
+- [`Go`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Go) — Указывает, что ключ действия будет выполнять операцию «go», выполнив пользователю целевой текст они введены.
+- [`Search`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Search) — Указывает, что ключ действия выполняет операцию «поиск», принимающий пользователю результаты поиска в тексте введено.
+- [`Send`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Send) — Указывает, что ключ действия будет выполнять операцию «отправить», доставка текст на целевой объект.
+- [`Next`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Next) — Указывает, что ключ действия выполнит операцию «Далее» получение пользователя к следующему полю, принимается текста.
+- [`Done`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Done) — Указывает, что ключ действия выполнит операцию «Готово» закрывает экранную клавиатуру.
+- [`Previous`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Previous) — Указывает, что ключ действия выполнит операцию «раньше» пользователь с переводом в предыдущем поле, которое будет принимать текст.
+- [`ImeMaskAction`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.ImeMaskAction) — маску для выбора параметров действия.
+- [`NoPersonalizedLearning`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.NoPersonalizedLearning) — Указывает, что средство проверки орфографии будет ни сведения от пользователя, а также предложить исправления, основанные на то, что данные ранее, введенные пользователем.
+- [`NoFullscreen`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.NoFullscreen) — Указывает, что пользовательский Интерфейс не должны во весь экран.
+- [`NoExtractUi`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.NoExtractUi) — Указывает, что пользовательский Интерфейс не будет отображаться для извлеченного текста.
+- [`NoAccessoryAction`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.NoAccessoryAction) — Указывает, что пользовательский Интерфейс не будет отображаться для пользовательских действий.
+
+Результатом является то, что указанный [ `ImeFlags` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags) значение применяется к Экранная клавиатура для [ `Entry` ](xref:Xamarin.Forms.Entry), который задает параметры редактора метода ввода:
+
+[![Платформой редактора метода ввода записи](android-images/entry-imeoptions.png "платформой редактора метода ввода записи")](android-images/entry-imeoptions-large.png#lightbox "платформой редактора метода ввода записи")
+
 ## <a name="summary"></a>Сводка
 
 В этой статье показано, как использовать Android платформы особенности, которые встроены в Xamarin.Forms. Особенности платформы позволяют использовать функциональные возможности, доступные только на определенной платформе, без реализации пользовательских модулей подготовки отчетов или эффекты.
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

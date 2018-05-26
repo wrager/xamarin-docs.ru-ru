@@ -7,11 +7,11 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/25/2017
-ms.openlocfilehash: 1f82f16429ca23a4ba6806f775310dd90126096e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 43088beba6c6a86330cac164856be98d88f07fe2
+ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="why-doesnt-the-visual-studio-xaml-designer-work-for-xamarinforms-xaml-files"></a>Почему не работает в конструкторе Visual Studio XAML для Xamarin.Forms XAML-файлов
 
@@ -22,3 +22,5 @@ Xamarin.Forms не в настоящее время поддерживает в�
 Это ограничение описан в [Обзор](~/xamarin-forms/xaml/xaml-basics/index.md#Overview) раздел [основы XAML Xamarin.Forms](~/xamarin-forms/xaml/xaml-basics/index.md) руководства:
 
 > «Не существует, пока визуальный конструктор для создания XAML в Xamarin.Forms приложений, поэтому вся XAML должен быть рукописный».
+
+Тем не менее, могут отображаться средство предварительного просмотра XAML Xamarin.Forms, выбрав **представление > Другие окна > средство предварительного просмотра Xamarin.Forms** пункт меню.
