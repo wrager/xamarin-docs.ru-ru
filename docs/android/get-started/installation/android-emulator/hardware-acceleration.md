@@ -7,11 +7,12 @@ ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
 ms.date: 05/10/2018
-ms.openlocfilehash: b5c20eb9f40bb4c4981d6b60b9fd4bc75fd29336
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: 2f0bb6f1371b9ce1b925b876851d58f3c4d01419
+ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34311719"
 ---
 # <a name="android-emulator-hardware-acceleration"></a>Аппаратное ускорение эмулятора Android
 
@@ -46,9 +47,9 @@ ms.lasthandoff: 05/10/2018
 
     Возможно, потребуется перезагрузить Windows после включения Hyper-V и платформы гипервизора Windows.
 
-3. **Установите [Visual Studio 15.8, предварительная версия 1](https://aka.ms/hyperv-emulator-dl)** &ndash; В этой версии Visual Studio поддерживается интегрированная среда разработки для запуска эмулятора Google Android с поддержкой Hyper-V.
+3. **Установите [Visual Studio 15.8 предварительной версии 1 или выше](https://www.visualstudio.com/vs/preview/)** &ndash; в этой версии Visual Studio поддерживается интегрированная среда разработки для запуска эмулятора Google Android Emulator с поддержкой Hyper-V.
 
-4. **Установите пакет эмулятора Google Android 27.2.7 или более поздней версии** &ndash; Для установки пакета перейдите в раздел **Сервис > Android > Диспетчер пакетов SDK для Android** в Visual Studio. Откройте вкладку **Инструменты** и убедитесь, что установлена версия эмулятора Android не ранее 27.2.7.
+4. **Установите пакет Google Android Emulator 27.2.7 или более поздней версии** &ndash; для установки пакета последовательно выберите **Сервис > Android > Диспетчер пакетов SDK для Android** в Visual Studio. Откройте вкладку **Инструменты** и убедитесь, что установлена версия эмулятора Android не ранее 27.2.7.
 
     [![Диалоговое окно "Пакеты SDK и инструменты для Android"](hardware-acceleration-images/win/14-sdk-manager.w158-sml.png)](hardware-acceleration-images/win/14-sdk-manager.w158.png#lightbox)
 

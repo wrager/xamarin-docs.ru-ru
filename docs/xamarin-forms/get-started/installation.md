@@ -6,12 +6,13 @@ ms.assetid: eecaf6a5-567c-49b2-ac83-2a195596c5bf
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/19/2018
-ms.openlocfilehash: ce3f2bcf6acc36239fc431bb7f5edece15d2e139
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.date: 05/23/2018
+ms.openlocfilehash: 75e6d25f95a0a3f18c83fe73f67ad4a7797f0924
+ms.sourcegitcommit: c024f29ff730ae20c15e99bfe0268a0e1c9d41e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34470334"
 ---
 # <a name="xamarinforms-requirements"></a>Требования к Xamarin.Forms
 
@@ -23,15 +24,27 @@ _Требования к платформе и системные требова
 
 Приложения Xamarin.Forms могут быть написаны для следующих операционных систем:
 
--  iOS 8 или более поздние версии;
--  Android 4.0.3 (API 15) или более поздние версии ([подробнее](#android));
--  универсальная платформа Windows для Windows 10 ([подробнее](#windows10));
--  *Windows 8.1 или Windows Phone 8.1 WinRT (не рекомендуется)*
--  *Windows Phone 8 Silverlight (не рекомендуется)*.
+- iOS 8 или более поздние версии;
+- Android 4.0.3 (API 15) или более поздние версии ([подробнее](#android));
+- универсальная платформа Windows для Windows 10 ([подробнее](#windows10));
 
-Предполагается, что разработчики знакомы с [переносимыми библиотеками классов](~/cross-platform/app-fundamentals/pcl.md) и [общими проектами](~/cross-platform/app-fundamentals/shared-projects.md).
+Предполагается, что разработчики знакомы с [.NET Standard](~/cross-platform/app-fundamentals/net-standard.md) и [общими проектами](~/cross-platform/app-fundamentals/shared-projects.md).
 
-<a name="android" />
+### <a name="additional-platform-support"></a>Поддержка дополнительных платформ
+
+Сведения о состоянии этих платформ можно найти на странице [Xamarin.Forms в GitHub](https://github.com/xamarin/Xamarin.Forms/wiki/Platform-Support):
+
+- Samsung Tizen;
+- macOS
+- GTK#
+- WPF
+
+### <a name="platforms-from-earlier-versions"></a>Платформы для более ранних версий
+
+Эти платформы не поддерживаются при использовании Xamarin.Forms 3.0:
+
+- *Windows 8.1 или Windows Phone 8.1 WinRT;*
+- *Windows Phone 8 Silverlight.*
 
 ### <a name="android"></a>Android
 
@@ -57,12 +70,6 @@ _Требования к платформе и системные требова
 
 -----
 
-<a name="windows10" />
-
-### <a name="universal-windows-platform"></a>Универсальная платформа Windows 
-
-Если решение создается в macOS, проекты универсальной платформы Windows для Windows 10 не добавляются. Инструкции по добавлению этих проектов в существующее решение см. в руководстве по [настройке проектов Windows](~/xamarin-forms/platform/windows/installation/index.md).
-
 ## <a name="development-system-requirements"></a>Требования к системе для разработки
 
 Приложения Xamarin.Forms можно разрабатывать в ОС в macOS и Windows. Однако для создания Windows-версий приложения требуются Windows и Visual Studio.
@@ -78,15 +85,17 @@ Visual Studio для Mac можно использовать для разраб
 
 Приложения Xamarin.Forms для iOS и Android можно создавать в любой установке Windows, которая поддерживает возможности разработки Xamarin. Для этого в ОС Windows 7 и более поздних версиях следует установить Visual Studio 2017 или более позднюю версию. Для разработки в iOS требуется подключенный к сети компьютер Mac.
 
+<a name="windows10" />
+
 ### <a name="universal-windows-platform-uwp"></a>Универсальная платформа Windows (UWP)
 
 Для разработки приложений Xamarin.Forms для UWP требуются следующие компоненты:
 
-* Windows 10 (рекомендуется Fall Creators Update)
+- Windows 10 (рекомендуется Fall Creators Update)
 
-* Visual Studio 2017
+- Visual Studio 2017
 
-* [Пакет средств разработки Windows 10](https://dev.windows.com/downloads/windows-10-sdk)
+- [Пакет средств разработки Windows 10](https://dev.windows.com/downloads/windows-10-sdk)
 
-Проекты UWP включены в решения Xamarin.Forms, созданные в Visual Studio 2015 и Visual Studio 2017.
-[Приложение универсальной платформы Windows (UWP) можно добавить](~/xamarin-forms/platform/windows/installation/index.md) в существующее решение Xamarin.Forms.
+Проекты UWP включены в решения Xamarin.Forms, созданные в Visual Studio 2017 (но не в Visual Studio для Mac).
+[Приложение универсальной платформы Windows (UWP) можно добавить](~/xamarin-forms/platform/windows/installation/index.md) в существующее решение Xamarin.Forms в любое время.

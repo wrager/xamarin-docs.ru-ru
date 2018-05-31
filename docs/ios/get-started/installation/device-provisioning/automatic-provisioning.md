@@ -6,12 +6,13 @@ ms.assetid: 81FCB2ED-687C-40BC-ABF1-FB4303034D01
 ms.technology: xamarin-ios
 author: asb3993
 ms.author: amburns
-ms.date: 05/06/2018
-ms.openlocfilehash: 0e2ce758da2951efa0508e76cdf4eaac5384fa6b
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.date: 05/22/2018
+ms.openlocfilehash: d324e469ba392b14c635990d607bf04c949ad5db
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34458584"
 ---
 # <a name="automatic-provisioning"></a>Автоматическая подготовка
 
@@ -37,6 +38,14 @@ _Установив Xamarin.iOS для разработки приложений
 ## <a name="enabling-automatic-signing"></a>Включение автоматического подписывания
 
 Прежде чем начинать процесс автоматического подписывания, следует убедиться, что в Visual Studio добавлен идентификатор Apple, как описано в руководстве [Управление учетными записями Apple](~/cross-platform/macios/apple-account-management.md). После добавления идентификатора Apple вы можете использовать любую связанную _команду_. Это позволяет создавать сертификаты, профили и другие идентификаторы для этой группы. На основе идентификатора команды также создается префикс для идентификатора приложения, который будет включен в профиль подготовки. Это позволяет компании Apple подтверждать вашу личность.
+
+> [!IMPORTANT]
+> Перед началом работы обязательно посетите сайт [iTunes Connect](https://itunesconnect.apple.com/) или [appleid.apple.com](https://appleid.apple.com), чтобы проверить, принята ли последняя версия политик учетных записей Apple. Если поступит соответствующий запрос, примите новые условия соглашений об использовании учетных записей от Apple. Если не приняты условия соглашения о конфиденциальности, вышедшего в мае 2018 г., при попытке подготовки устройства поступит следующее оповещение:
+> ```
+> Unexpected authentication failure. Reason: {
+> "authType" : "sa"
+>}
+>```
 
 Чтобы автоматически подписать приложение для развертывания на устройстве iOS, выполните указанные ниже действия:
 

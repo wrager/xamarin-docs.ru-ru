@@ -5,12 +5,13 @@ ms.assetid: 8E3EFBB2-F8AD-C126-5F32-7FD140791E53
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 01/26/2018
-ms.openlocfilehash: ba936137dd868e9ba5eabc6df89bb98a0a178ba2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/21/2018
+ms.openlocfilehash: 6a4164ea4a56ee7c1b3c1abd05f7b1bb95aede4f
+ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34458805"
 ---
 # <a name="signing-the-android-application-package"></a>Подписывание пакета приложения для Android
 
@@ -113,9 +114,9 @@ ms.lasthandoff: 04/04/2018
 
 [![Диалоговое окно "Пароль для подписывания"](images/vs/07-signing-password-vs-sml.png)](images/vs/07-signing-password-vs.png#lightbox)
 
-После подписывания файла нажмите **Открыть папку**:
+После подписания файла щелкните **Открытое распространение**:
 
-[![Кнопка "Открыть папку"](images/vs/08-open-folder-vs-sml.png)](images/vs/08-open-folder-vs.png#lightbox)
+[![Кнопка "Открытое распространение"](images/vs/08-open-distribution-sml.png)](images/vs/08-open-distribution.png#lightbox)
 
 В результате проводник Windows откроет папку, содержащую сформированный APK-файл. На этом этапе Visual Studio завершает компиляцию приложения Xamarin.Android в APK-файл, готовый к распространению.
 На рисунке ниже изображен пример готового к публикации приложения **MyApp.MyApp.apk**:
