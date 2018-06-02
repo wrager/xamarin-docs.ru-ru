@@ -7,11 +7,12 @@ ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
 ms.date: 04/20/2018
-ms.openlocfilehash: bedcf0603fffc9886155881f91972203104ba155
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: 765c51346ac63a00838fec52bde87b38091e2dd9
+ms.sourcegitcommit: a4c2a63ba76b839cda99e4474e7ab46fe307cd39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34689478"
 ---
 # <a name="httpclient-stack-and-ssltls-implementation-selector-for-android"></a>Стек HttpClient и селектор реализации SSL/TLS для Android
 
@@ -89,9 +90,9 @@ AndroidClientHandler — новый обработчик, который дел�
 
 Начиная с Xamarin.Android 8.3 `HttpClientHandler` скучных SSL, по умолчанию используется (`btls`) как базовый поставщик TLS. Поставщик скучных SSL TLS обеспечивает следующие преимущества:
 
--   Он поддерживает TLS 1.2.
+-   Он поддерживает TLS 1.2 +.
 -   Он поддерживает все версии Android.
--   Он поддерживает TLS 1.2 для обоих `HttpClient` и `WebClient`.
+-   Он предоставляет оба поддержка TLS 1.2 + `HttpClient` и `WebClient`.
 
 Недостаток использования скучных SSL в качестве базового поставщика TLS, его можно увеличить размер результирующей APK (добавляет дополнительный размер APK на поддерживаемых ABI около 1 МБ).
 

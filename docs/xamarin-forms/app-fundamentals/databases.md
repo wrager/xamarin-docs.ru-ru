@@ -6,12 +6,13 @@ ms.assetid: F687B24B-7DF0-4F8E-A21A-A9BB507480EB
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 10/23/2017
-ms.openlocfilehash: d1f11ed1b52354dedbdb8893a96e0ae7589d5389
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.date: 05/31/2018
+ms.openlocfilehash: d97fc792e2eb14f7e432d377811d1318c99b9602
+ms.sourcegitcommit: a4c2a63ba76b839cda99e4474e7ab46fe307cd39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34689452"
 ---
 # <a name="local-databases"></a>Локальные базы данных
 
@@ -33,17 +34,20 @@ Xamarin.Forms приложения могут использовать [SQLite.N
 
 <a name="XamarinForms_PCL_Project" />
 
-### <a name="xamarinsforms-pcl-project"></a>Проект Xamarins.Forms PCL
+### <a name="xamarinsforms-net-standard-or-pcl-project"></a>Xamarins.Forms .NET Standard или проект переносимой библиотеки Классов
 
-Чтобы добавить поддержку SQLite в проект Xamarin.Forms PCL, с помощью функции поиска NuGet найти **sqlite-net-pcl** и установить пакет:
+Чтобы добавить поддержку SQLite проект Xamarin.Forms, с помощью функции поиска NuGet найти **sqlite-net-pcl** и установить пакет:
 
-![](databases-images/vs2017-sqlite-pcl-nuget.png "Добавьте пакет NuGet SQLite.NET PCL")
+![Добавьте пакет NuGet SQLite.NET PCL](databases-images/vs2017-sqlite-pcl-nuget.png "добавьте пакет NuGet SQLite.NET PCL")
 
 Существует несколько пакетов NuGet с одинаковыми именами, правильный пакет имеет следующие атрибуты:
 
 - **Созданные:** Krueger Михаил A.
 - **Идентификатор:** sqlite net переносимую библиотеку классов
 - **NuGet ссылку:** [sqlite net переносимую библиотеку классов](https://www.nuget.org/packages/sqlite-net-pcl/)
+
+> [!TIP]
+> Используйте **sqlite-net-pcl** NuGet даже в проектах .NET Standard.
 
 После добавления ссылки писать интерфейс абстрактными функции специфический для платформы, которые необходимо определить расположение файла базы данных. Интерфейс, используемый в данном примере определяет единственный метод:
 
@@ -130,7 +134,7 @@ public Task<int> DeleteItemAsync(TodoItem item)
 
 Чтобы настроить приложение iOS, добавьте один и тот же пакет NuGet для проекта iOS с помощью *NuGet* окна:
 
-![](databases-images/vsmac-sqlite-nuget.png "Добавьте пакет NuGet SQLite.NET PCL")
+![Добавьте пакет NuGet SQLite.NET PCL](databases-images/vsmac-sqlite-nuget.png "добавьте пакет NuGet SQLite.NET PCL")
 
 — Только код, необходимый `IFileHelper` реализацию, которая определяет путь к файлу данных. Следующий код помещает файл базы данных SQLite **библиотеки или баз данных** папки в изолированной среде приложения. В разделе [iOS работа с файловой системой](~/ios/app-fundamentals/file-system.md) Дополнительные сведения в разных каталогах, которые доступны для хранилища.
 
@@ -138,21 +142,21 @@ public Task<int> DeleteItemAsync(TodoItem item)
 [assembly: Dependency(typeof(FileHelper))]
 namespace Todo.iOS
 {
-    public class FileHelper : IFileHelper
+  public class FileHelper : IFileHelper
+  {
+    public string GetLocalFilePath(string filename)
     {
-        public string GetLocalFilePath(string filename)
-        {
-            string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string libFolder = Path.Combine(docFolder, "..", "Library", "Databases");
+      string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+      string libFolder = Path.Combine(docFolder, "..", "Library", "Databases");
 
-            if (!Directory.Exists(libFolder))
-            {
-                Directory.CreateDirectory(libFolder);
-            }
+      if (!Directory.Exists(libFolder))
+      {
+        Directory.CreateDirectory(libFolder);
+      }
 
-            return Path.Combine(libFolder, filename);
-        }
+      return Path.Combine(libFolder, filename);
     }
+  }
 }
 ```
 
@@ -172,14 +176,14 @@ namespace Todo.iOS
 [assembly: Dependency(typeof(FileHelper))]
 namespace Todo.Droid
 {
-    public class FileHelper : IFileHelper
+  public class FileHelper : IFileHelper
+  {
+    public string GetLocalFilePath(string filename)
     {
-        public string GetLocalFilePath(string filename)
-        {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            return Path.Combine(path, filename);
-        }
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        return Path.Combine(path, filename);
     }
+  }
 }
 ```
 
@@ -189,7 +193,7 @@ namespace Todo.Droid
 
 Чтобы настроить приложения UWP, добавьте один и тот же пакет NuGet для проекта UWP с помощью *NuGet* окна:
 
-![](databases-images/vs2017-sqlite-uwp-nuget.png "Добавьте пакет NuGet SQLite.NET PCL")
+![Добавьте пакет NuGet SQLite.NET PCL](databases-images/vs2017-sqlite-uwp-nuget.png "добавьте пакет NuGet SQLite.NET PCL")
 
 После добавления ссылки реализовать `IFileHelper` интерфейса с помощью платформы `Windows.Storage` API, чтобы определить путь к файлу данных.
 
@@ -200,23 +204,21 @@ using Windows.Storage;
 [assembly: Dependency(typeof(FileHelper))]
 namespace Todo.UWP
 {
-    public class FileHelper : IFileHelper
+  public class FileHelper : IFileHelper
+  {
+    public string GetLocalFilePath(string filename)
     {
-        public string GetLocalFilePath(string filename)
-        {
-            return Path.Combine(ApplicationData.Current.LocalFolder.Path, filename);
-        }
+      return Path.Combine(ApplicationData.Current.LocalFolder.Path, filename);
     }
+  }
 }
-
 ```
 
 ## <a name="summary"></a>Сводка
 
 Xamarin.Forms поддерживает приложения на основе базы данных, используя компонент database engine SQLite, что делает возможным для загрузки и сохранения объектов в общем коде.
 
-В этой статье основное внимание уделено **доступ к** в базу данных SQLite, с помощью Xamarin.Forms. Дополнительные сведения о работе с самой SQLite.Net посвящены [доступа к данным: с помощью SQLite.NET](~/cross-platform/app-fundamentals/index.md) документации. Большая часть кода SQLite.Net общий для всех платформ; Простая настройка расположение файла базы данных SQLite требуется функциональность конкретную платформу.
-
+В этой статье основное внимание уделено **доступ к** в базу данных SQLite, с помощью Xamarin.Forms. Дополнительные сведения о работе с самой SQLite.Net посвящены [SQLite.NET на Android](~/android/data-cloud/data-access/using-sqlite-orm.md) или [SQLite.NET на iOS](~/ios/data-cloud/data/using-sqlite-orm.md) документации. Большая часть кода SQLite.Net общий для всех платформ; Простая настройка расположение файла базы данных SQLite требуется функциональность конкретную платформу.
 
 ## <a name="related-links"></a>Связанные ссылки
 
