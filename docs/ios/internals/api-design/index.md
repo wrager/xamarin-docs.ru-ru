@@ -1,19 +1,20 @@
 ---
-title: Структура API
-description: Перспектива в области конструктора Xamarin.iOS API
+title: Структура API Xamarin.iOS
+description: В этом документе описываются некоторые руководящие принципы, используемые в API-интерфейсы Xamarin.iOS и как они связаны с целью-C.
 ms.prod: xamarin
 ms.assetid: 322D2724-AF27-6FFE-BD21-AA1CFE8C0545
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: da827c5bdd25bf841f5396b10d1eeb70e132dfeb
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: a7e508ddd086936a3ffea9d76cde7d896fe4d1f3
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787358"
 ---
-# <a name="api-design"></a>Структура API
+# <a name="xamarinios-api-design"></a>Структура API Xamarin.iOS
 
 Помимо базовых библиотеках базовых классов, которые являются частью моно [Xamarin.iOS](http://www.xamarin.com/iOS) поставляется с привязок для различных iOS интерфейсы API, позволяющие разработчикам создавать приложения с машинным кодом iOS с моно.
 

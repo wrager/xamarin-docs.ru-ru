@@ -1,5 +1,5 @@
 ---
-title: Заметки и наложения
+title: Заметки и перекрытия в Xamarin.iOS
 description: Эта статья содержит пошаговое руководство, показывающий, как пользоваться возможностями пометку и наложение комплект средств для карты. В этом примере показано добавление карты для приложения, который отображает пометку и наложение в расположении конференции 2013 развивать Xamarin.
 ms.prod: xamarin
 ms.assetid: 1BC4F7FC-AE3C-46D7-A4D3-18E142F55B8E
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 9defbade6fafefb26d87e88665c491b3a559c1ae
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7d224f034afc9b841bbf82b2b15b92db2d7820c7
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789584"
 ---
-# <a name="annotations-and-overlays--walkthrough"></a>Заметки и наложения — Пошаговое руководство
+# <a name="annotations-and-overlays-in-xamarinios"></a>Заметки и перекрытия в Xamarin.iOS
 
 Приложение, которое мы собираемся в данном пошаговом руководстве показан ниже:
 

@@ -1,18 +1,20 @@
 ---
-title: Основы Покупка из приложения и конфигурации
+title: Основы Покупка из приложения и конфигурации в Xamarin.iOS
+description: В этом документе описывается покупки из приложений в Xamarin.iOS, посвященные важные сведения о правилах, конфигурации и iTunes Connect.
 ms.prod: xamarin
 ms.assetid: 11FB7F02-41B3-2B34-5A4F-69F12897FE10
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: c08d27ce2f5d41b7de1d08ea73232e92f9fa8144
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9ded160ad4b31346c400e63d739a3dc21f6304d3
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787247"
 ---
-# <a name="in-app-purchase-basics-and-configuration"></a>Основы Покупка из приложения и конфигурации
+# <a name="in-app-purchase-basics-and-configuration-in-xamarinios"></a>Основы Покупка из приложения и конфигурации в Xamarin.iOS
 
 Для реализации покупки из приложений требуется приложению использовать API StoreKit на устройстве. StoreKit управляет весь обмен данными с серверами Apple iTunes, чтобы получить сведения о продукте и выполнения транзакций. Профиль подготовки должен быть настроен для совершения покупки из приложений и сведения о продукте, которые должны вводиться в iTunes Connect.
 

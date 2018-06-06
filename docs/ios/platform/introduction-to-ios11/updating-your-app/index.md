@@ -1,21 +1,20 @@
 ---
 title: Обновление приложения для iOS 11
-description: Обзор новых возможностей iOS 11
+description: Документ содержит ссылки на различные руководства, описывающие новые возможности, доступные разработчикам Xamarin.iOS с выпуском iOS 11. Например изменяет App Store обновлений визуального проектирования, и обновляет значка приложения.
 ms.prod: xamarin
 ms.assetid: EC809504-9CF6-4949-B6EE-36384297E744
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/13/2016
-ms.openlocfilehash: 2581f729d85787021763f50f005e84d6bbb5db01
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ea57acbd6165f7b1abd8b9bd69873670c179f411
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787576"
 ---
 # <a name="updating-your-app-to-ios-11"></a>Обновление приложения для iOS 11
-
-_Обзор новых возможностей iOS 11_
 
 В iOS 11 Apple внес архитектура обновления, новые визуальные изменения и процесс обновленные iTunes Connect. В этом руководстве изучает каждое из этих изменений, помогая приложения Xamarin.iOS обновлен для iOS 11.
 

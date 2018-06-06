@@ -1,5 +1,5 @@
 ---
-title: Предупреждения
+title: Оповещения в Xamarin.Mac
 description: В этой статье рассматривается работа с оповещениями в приложении Xamarin.Mac. Здесь описывается создание и отображение оповещений из кода C# и отвечать на запросы на взаимодействие с пользователем.
 ms.prod: xamarin
 ms.assetid: F1DB93A1-7549-4540-AD5E-D7605CCD8435
@@ -7,13 +7,14 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: a451d0a5535915d9e52f687ae07ea028c0ccd5ef
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 1eb781fe02213de6a994f56e321316b93a128b60
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792646"
 ---
-# <a name="alerts"></a>Предупреждения
+# <a name="alerts-in-xamarinmac"></a>Оповещения в Xamarin.Mac
 
 _В этой статье рассматривается работа с оповещениями в приложении Xamarin.Mac. Здесь описывается создание и отображение оповещений из кода C# и отвечать на запросы на взаимодействие с пользователем._
 
@@ -59,7 +60,7 @@ alert.RunModal ();
 
 Приведенный выше код выводит на экран оповещение со значком приложения, наложенные на значок предупреждения, заголовок, предупреждающее сообщение и один **ОК** кнопки:
 
-[![](alert-images/alert01.png "Предупреждение с кнопка "ОК"")](alert-images/alert01.png#lightbox)
+[![](alert-images/alert01.png "Предупреждение с кнопка \"ОК\"")](alert-images/alert01.png#lightbox)
 
 Apple предоставляет несколько свойств, которые можно использовать для настройки предупреждения:
 

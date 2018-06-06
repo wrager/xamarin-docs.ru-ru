@@ -1,5 +1,5 @@
 ---
-title: Расширенные сообщения приложения расширения
+title: Расширения дополнительных сообщений приложения в Xamarin.iOS
 description: В этой статье показано Дополнительно приемы работы с расширений сообщений приложения в решении Xamarin.iOS, которое интегрируется с приложением сообщения и представляет новые функциональные возможности для пользователя.
 ms.prod: xamarin
 ms.assetid: 394A1FDA-AF70-4493-9B2C-4CFE4BE791B6
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: cd2cabf98c83bba7502e8533e482713a9c43f67a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: eca3dcc19714251184092fbe136d0078f1ca8d54
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788030"
 ---
-# <a name="advanced-message-app-extensions"></a>Расширенные сообщения приложения расширения
+# <a name="advanced-message-app-extensions-in-xamarinios"></a>Расширения дополнительных сообщений приложения в Xamarin.iOS
 
 _В этой статье показано Дополнительно приемы работы с расширений сообщений приложения в решении Xamarin.iOS, которое интегрируется с приложением сообщения и представляет новые функциональные возможности для пользователя._
 
@@ -170,7 +171,7 @@ public void SendMessage (MSMessage message)
 
 Кроме того расширение можно отправить различные типы данных для диалога, такие как:
 
-- **Text** - `ActiveConversation.InsertText ("Message", (error) => {...});`
+- **текст** - `ActiveConversation.InsertText ("Message", (error) => {...});`
 - **Вложения** - `ActiveConversation.InsertAttachment (new NSUrl ("path"), "filename", (error) => {...});`
 - **Наклейки**  -  `ActiveConversation.InsertSticker (sticker, (obj) => {...});` где `sticker` — `MSSticker`.
 

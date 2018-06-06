@@ -1,20 +1,20 @@
 ---
-title: Работа с таблицами и ячеек
-description: Отображение данных с помощью UITableView с Xamarin.iOS
+title: Работа с таблицами и ячейками в Xamarin.iOS
+description: Документ содержит ссылки на различные руководства, описывающие, как отображать данные с помощью элемента управления UITableView в приложения Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 04DF47DD-4E17-75D7-AC7C-8CF4A574CD21
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 01/06/2016
-ms.openlocfilehash: a1cda3632a75c7e462e763a34fdb5b586237b670
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ebdad2cc8e3083bee5acc127660b5641f42c731f
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790020"
 ---
-# <a name="working-with-tables-and-cells"></a>Работа с таблицами и ячеек
-
+# <a name="working-with-tables-and-cells-in-xamarinios"></a>Работа с таблицами и ячейками в Xamarin.iOS
 
 В этом разделе представлены классы, используемые для создания и отображения таблиц, а затем приводятся примеры их использования в Xamarin.iOS. Мы рассмотрим, используя внешний вид по умолчанию для таблиц, Настройка макета, реализация редактирования и с помощью Xamarin iOS конструктор для визуального создания таблицы. Иногда отображение очевидно, список строк (например, приложение Music) и в других случаях, которые трудно распознавать управления таблицы (например, изменения в приложении «контакты» или диалога в приложении сообщения).
 
@@ -26,7 +26,6 @@ ms.lasthandoff: 04/04/2018
 -   **Отображение данных в таблицах** , демонстрирующий, как создать и заполнить таблицу данными, используйте различные стили таблиц и ячеек и избежать проблем с памятью, повторное использование объектов ячейки. 
 -   **Расширенное использование** — построение пользовательские ячейки и с помощью возможности редактирования UITableView класса. 
 -   **Создание таблицы в визуально** — с помощью конструктора Xamarin для операций ввода-вывода для создания интерфейса на основе таблицы с раскадровкой. 
-
 
 ## <a name="contents"></a>Описание
 
@@ -43,7 +42,6 @@ ms.lasthandoff: 04/04/2018
  [Создание таблиц в раскадровку](~/ios/user-interface/controls/tables/creating-tables-in-a-storyboard.md)
  
  [Автоматическое изменение высоты строки](~/ios/user-interface/controls/tables/autosizing-row-height.md)
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

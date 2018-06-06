@@ -1,21 +1,20 @@
 ---
-title: Работа с контроллером панель вкладок
-description: В этой статье описывается проектирование и работа с вкладки панели контроллера внутри приложения Xamarin.tvOS.
+title: Работа с tvOS вкладки панели контроллеров в Xamarin
+description: В этом документе описывается работа с контроллерами вкладку панели в приложении tvOS, созданных с помощью Xamarin. Он обеспечивает высокий уровень представления полос вкладку и описывает элементы панели вкладки, интеграция раскадровки и вкладки панели элементов.
 ms.prod: xamarin
 ms.assetid: 99A2D7C6-0324-4DE5-B6E9-D39D0BAD8370
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 1536e37830f3b2a1e2a83c7bf5039909062d092b
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ea782fc8d6a2ccef2cdd687ec467be6d49793fc0
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789324"
 ---
-# <a name="working-with-tab-bar-controller"></a>Работа с контроллером панель вкладок
-
-_В этой статье описывается проектирование и работа с вкладки панели контроллера внутри приложения Xamarin.tvOS._
+# <a name="working-with-tvos-tab-bar-controllers-in-xamarin"></a>Работа с tvOS вкладки панели контроллеров в Xamarin
 
 Для многих типов приложений tvOS переходов будет представлено в виде панели вкладок под управлением в верхней части экрана. Пользователь предъявляет влево и вправо по списку возможных категорий и область содержимого ниже изменения в соответствии с выбранным пользователем.
 

@@ -1,18 +1,20 @@
 ---
-title: Элемент управления изображения
+title: watchOS элементы управления изображением в Xamarin
+description: В этом документе описывается использование элементов управления image в приложении watchOS, созданных с помощью Xamarin. В нем описывается элемент управления WKInterfaceImage, SetImage-метод, добавление изображений в расширении watch, анимации и многое другое.
 ms.prod: xamarin
 ms.assetid: B741C207-3427-46F3-9C90-A52BF8933FA4
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 370b9f2a57716de876c7e883afdaf445186fb577
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: eb58c587f737a5991a21f0efe9964353a8ab0399
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791255"
 ---
-# <a name="image-control"></a>Элемент управления изображения
+# <a name="watchos-image-controls-in-xamarin"></a>watchOS элементы управления изображением в Xamarin
 
 предоставляет watchOS [ `WKInterfaceImage` ](https://developer.xamarin.com/api/type/WatchKit.WKInterfaceImage/) управления для отображения изображений и простых анимаций. Некоторые элементы управления могут также иметь фоновое изображение (например, кнопки, группы и контроллеры интерфейс).
 

@@ -1,19 +1,20 @@
 ---
-title: Средство выбора
-description: В настоящем руководстве описывается проектирование и работа с выбора в приложения Xamarin.iOS.
+title: Выбор элемента управления в Xamarin.iOS
+description: Этот документ описывает, как проектировать и работать с элементами управления средства выбора приложения Xamarin.iOS. В этом примере рассматривается реализация элемент выбора в коде и в конструкторе iOS.
 ms.prod: xamarin
 ms.assetid: A2369EFC-285A-44DD-9E80-EC65BC3DF041
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/02/2017
-ms.openlocfilehash: e213124e870f1cca96a6078fd26bc7eeb1af55a1
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7f46d354af86027d1e2656171c6595562d3555a6
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789916"
 ---
-# <a name="picker"></a>Средство выбора
+# <a name="picker-control-in-xamarinios"></a>Выбор элемента управления в Xamarin.iOS
 
 Элемент управления выбора отображает «колесо по принципу» элемент управления, содержащий прокручиваемый список значений со значением выделена. Пользователи вращайте колесико мыши, выберите параметр нужные им.
 

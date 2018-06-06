@@ -1,23 +1,23 @@
 ---
-title: Устранение неполадок
-description: Известные проблемы с Xamarin Live Player и способы их устранения.
+title: Устранение неполадок динамической проигрыватель Xamarin
+description: В этом документе описаны известные проблемы с Xamarin Live Player и потенциальных ошибок. Он описывает проблемы с подключением, проблемы с конфигурацией и многое другое.
 ms.prod: xamarin
 ms.assetid: 29A97ADA-80E0-40A1-8B26-C68FFABE7D26
 author: topgenorth
 ms.author: toopge
 ms.date: 05/17/2017
-ms.openlocfilehash: 147ce43d3fe764f71f27dce46b699142dfb99872
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 3db14db2c64e024ef1c04275661f610f9407dfb7
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793759"
 ---
-# <a name="troubleshooting"></a>Устранение неполадок
+# <a name="troubleshooting-xamarin-live-player"></a>Устранение неполадок динамической проигрыватель Xamarin
 
 ![Функция предварительного просмотра](~/media/shared/preview.png)
 
 В этой статье описываются некоторые общие проблемы и приводятся действия по их устранению.
-
 
 ## <a name="mobile-device-does-not-connect-after-scanning-barcode-or-entering-code"></a>Мобильное устройство не подключается после сканирования штрихкода (или написания кода)
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 05/09/2018
   - Если компьютер также подключен к проводной сети, попробуйте отключить проводное подключение.
 - Сети может быть тесно защищены (например, в некоторых сетях предприятия), блокирует порты, необходимые Live проигрывателем Xamarin.
 - Закрытие приложения Xamarin Live Player и перезапустите ее.
-
 
 ## <a name="error-while-trying-to-deploy-message-in-ide"></a>Сообщение «Ошибка при попытке развернуть» в интегрированной среде разработки
 
@@ -67,7 +66,6 @@ ms.lasthandoff: 05/09/2018
 
 Последовательно выберите пункты: https://www.guidgenerator.com/online-guid-generator.aspx и сформировать новый идентификатор guid и убедитесь, что включен верхний регистр.
 
-
 **Шаг 5: Настройка устройства**
 
 Откройте **PlayerDeviceList.xml** вверх в редакторе, например Visual Studio или Visual Studio Code. Необходимо вручную настроить устройства в этом файле. По умолчанию, файл должен содержать следующий пустой `Devices` XML-элемента:
@@ -98,7 +96,6 @@ ms.lasthandoff: 05/09/2018
 </PlayerDevice>
 ```
 
-
 **Добавьте устройства Android:**
 
 ```xml
@@ -118,7 +115,6 @@ ms.lasthandoff: 05/09/2018
 ```
 
 **Закройте и снова откройте Visual Studio.** Устройство должно отображаться в списке.
-
 
 ## <a name="type-or-namespace-cannot-be-found-message-in-ide"></a>Сообщение «тип или пространство имен не найден» в интегрированной среде разработки
 
@@ -141,9 +137,7 @@ public class SomeCustomButton : Xamarin.Forms.Button { ... }
 
 Проекты Xamarin.Forms Android необходимо использовать «Toolbar.axml» и «Tabbar.axml» для имен файлов, соответствующих макета. Шаблон по умолчанию использует эти имена. Переименование вызовет проблемы отрисовки.
 
-
 Сообщите ли дополнительные проблемы на [bugzilla](https://aka.ms/live-player-report-issue).
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

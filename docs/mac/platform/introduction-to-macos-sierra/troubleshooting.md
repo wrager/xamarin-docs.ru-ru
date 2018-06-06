@@ -1,30 +1,31 @@
 ---
-title: Устранение неполадок
-description: В этой статье предоставляет несколько советов по устранению неполадок для работы с macOS Сьерра в Xamarin.Mac приложениях.
+title: Xamarin.Mac - macOS Сьерра Устранение неполадок
+description: Этот документ содержит несколько советов по устранению неполадок для работы с macOS Сьерра в Xamarin.Mac приложениях. Советы относятся к Mac App Store, Apple Pay, совместимости с двоичными данными, CFNetwork, CloudKit и многое другое.
 ms.prod: xamarin
 ms.assetid: 323DD5EE-87CE-48E4-B234-1CF61B45A019
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/22/2016
-ms.openlocfilehash: 7ea4ec48399b42ce69b0346b1a88a1d9fb9fbf6e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5b2571d9562fd137257e2dd0ea2ada8f071bab92
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792333"
 ---
-# <a name="troubleshooting"></a>Устранение неполадок
+# <a name="xamarinmac---macos-sierra-troubleshooting"></a>Xamarin.Mac - macOS Сьерра Устранение неполадок
 
 _В этой статье предоставляет несколько советов по устранению неполадок для работы с macOS Сьерра в Xamarin.Mac приложениях._
 
-он в следующих разделах перечислены некоторые известные проблемы, которые могут возникнуть при использовании macOS Сьерра с Xamarin.mac и решения этих проблем:
+В следующих разделах перечислены некоторые известные проблемы, которые могут возникнуть при использовании macOS Сьерра с Xamarin.mac и решения этих проблем:
 
 - [Магазин приложений](#App-Store)
 - [Apple Pay](#Apple-Pay)
 - [Двоичная совместимость](#Binary-Compatibility)
 - [Протокол HTTP CFNetwork](#CFNetwork-HTTP-Protocol)
 - [CloudKit](#CloudKit)
-- [CoreImage](#CoreImage)
+- [Образ Core](#CoreImage)
 - [Уведомления](#Notifications)
 - [NSUserActivity](#NSUserActivity)
 - [Safari](#Safari)
@@ -69,7 +70,7 @@ _В этой статье предоставляет несколько сове
 
 <a name="CoreImage" />
 
-## <a name="coreimage"></a>CoreImage
+## <a name="core-image"></a>Образ Core
 
 `CIImageProcessor` API теперь поддерживает числа произвольных входного образа. `CIImageProcessor` API, который был включен в macOS Сьерра бета-версия 1 будут удалены.
 

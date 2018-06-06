@@ -1,29 +1,28 @@
 ---
-title: Устранение неполадок
-description: В этой статье предоставляет несколько советов по устранению неполадок для работы с tvOS 10 в Xamarin.tvOS приложениях.
+title: Устранение неполадок tvOS 10 приложений, созданных с помощью Xamarin
+description: В этой статье предоставляет несколько советов по устранению неполадок для работы с tvOS 10 в приложениях Xamarin. Он описывает проблемы, связанные с App Store, совместимости с двоичными данными, CFNetwork HttpProtocol, CloudKit, образ Core, NSUserActivity и UIKit.
 ms.prod: xamarin
 ms.assetid: EA5564BB-C415-49A2-B70C-3DBF5E0F3FAB
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 8875e658ead17820655a2401079627875c14958b
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4332caca2804da52bb565fe382932af691c39dab
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788814"
 ---
-# <a name="troubleshooting"></a>Устранение неполадок
+# <a name="troubleshooting-tvos-10-apps-built-with-xamarin"></a>Устранение неполадок tvOS 10 приложений, созданных с помощью Xamarin
 
-_В этой статье предоставляет несколько советов по устранению неполадок для работы с tvOS 10 в Xamarin.tvOS приложениях._
-
-В следующих разделах перечислены некоторые известные проблемы, которые могут возникнуть при использовании tvOS 10 с Xamarin.tvOS и решения этих проблем:
+В следующих разделах перечислены некоторые известные проблемы, которые могут возникнуть при использовании tvOS 10 с помощью Xamarin и решения этих проблем:
 
 - [Магазин приложений](#App-Store)
 - [Двоичная совместимость](#Binary-Compatibility)
 - [Протокол HTTP CFNetwork](#CFNetwork-HTTP-Protocol)
 - [CloudKit](#CloudKit)
-- [CoreImage](#CoreImage)
+- [Образ Core](#CoreImage)
 - [NSUserActivity](#NSUserActivity)
 - [UIKit](#UIKit)
 
@@ -62,7 +61,7 @@ _В этой статье предоставляет несколько сове
 
 <a name="CoreImage" />
 
-## <a name="coreimage"></a>CoreImage
+## <a name="core-image"></a>Образ Core
 
 `CIImageProcessor` API теперь поддерживает числа произвольных входного образа. `CIImageProcessor` API, который был включен в tvOS 10 бета-версия 1 будут удалены.
 
@@ -84,10 +83,6 @@ _В этой статье предоставляет несколько сове
  - tvOS 10 случае разработчику необходимо вызвать `base.AwakeFromNib` для подклассов `UIViewController` и переопределение `AwakeFromNib` метод.
  - Приложения с пользовательским `UIView` подклассов, которые переопределяют `LayoutSubviews` и измененные макет перед вызовом `base.LayoutSubviews` может запускать макета бесконечный цикл в tvOS 10.
  - Средства конкретного направление или flippable изображений — зеркального отображения при назначении `UIButton` объектов.
-
-
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

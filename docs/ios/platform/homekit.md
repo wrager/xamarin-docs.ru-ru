@@ -1,5 +1,5 @@
 ---
-title: HomeKit
+title: HomeKit в Xamarin.iOS
 description: HomeKit — Apple платформа для управления устройствами автоматизации дома. В этой статье представлены HomeKit и рассматриваются Настройка стандартные теста в симуляторе стандартную программу HomeKit и написания простого приложения Xamarin.iOS для взаимодействия с эти стандартные.
 ms.prod: xamarin
 ms.assetid: 90C0C553-916B-46B1-AD52-1E7332792283
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 5699465330a4d2a5b983ec7661f80c1ed4f14bde
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 0dfc6e9ba5098df66a72292d6c8b89ea1bbd1f97
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787465"
 ---
-# <a name="homekit"></a>HomeKit
+# <a name="homekit-in-xamarinios"></a>HomeKit в Xamarin.iOS
 
 _HomeKit — Apple платформа для управления устройствами автоматизации дома. В этой статье представлены HomeKit и рассматриваются Настройка стандартные теста в симуляторе стандартную программу HomeKit и написания простого приложения Xamarin.iOS для взаимодействия с эти стандартные._
 

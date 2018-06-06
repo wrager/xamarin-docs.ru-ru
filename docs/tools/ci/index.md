@@ -1,23 +1,21 @@
 ---
 title: Введение в непрерывной интеграции с Xamarin
-description: Непрерывная интеграция рекомендуется применять программного обеспечения в котором компилируется автоматизированной сборки и при необходимости проверяет приложения, когда добавляется или изменяется разработчиками в хранилище контроля версий проекта кода. В этой статье обсуждается основные принципы использования непрерывной интеграции и некоторые параметры, доступные для непрерывной интеграции с Xamarin проектами.
+description: Документ содержит ссылки на руководства, описывающие непрерывной интеграции с Xamarin. Связанное содержимое обзор непрерывной интеграции и описание приложения центра сборки, TeamCity и Jenkins.
 ms.prod: xamarin
 ms.assetid: 99484E96-DC69-4697-8BBB-1B44C5CBB5ED
 author: topgenorth
 ms.author: toopge
 ms.date: 05/04/2017
-ms.openlocfilehash: 34838a1527cb3661e8e5ed51b5950f26026e9433
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 1a38160b4f1536c0e0e393cb9ec3482624a40681
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793748"
 ---
 # <a name="introduction-to-continuous-integration-with-xamarin"></a>Введение в непрерывной интеграции с Xamarin
 
-_Непрерывная интеграция рекомендуется применять программного обеспечения в котором компилируется автоматизированной сборки и при необходимости проверяет приложения, когда добавляется или изменяется разработчиками в хранилище контроля версий проекта кода. В этой статье обсуждается основные принципы использования непрерывной интеграции и некоторые параметры, доступные для непрерывной интеграции с Xamarin проектами._
-
 > [!Video https://youtube.com/embed/wXgnh2Q7Uv8]
-
 
 ##  <a name="introduction-to-continuous-integrationtoolsciintro-to-cimd"></a>[Введение в непрерывной интеграции](~/tools/ci/intro-to-ci.md)
 
@@ -26,7 +24,6 @@ _Непрерывная интеграция рекомендуется прим
 [!include[](~/tools/ci/includes/firewall-information.md)]
 
 ## <a name="working-with-continuous-integration-environments"></a>Работа с непрерывной интеграции среды
-
 
 ### <a name="using-app-center-build-with-xamarinappcenterbuildxamarin"></a>[Использование Центра приложений для разработки с Xamarin](/appcenter/build/xamarin/)
 

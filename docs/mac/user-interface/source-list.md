@@ -1,5 +1,5 @@
 ---
-title: Списки источника
+title: Списки источника в Xamarin.Mac
 description: В этой статье рассматривается работа со списками источника в приложении Xamarin.Mac. Он описывает создание и поддержание списки источника в Xcode и интерфейс построителя и работать с ними в коде C#.
 ms.prod: xamarin
 ms.assetid: 651A3649-5AA8-4133-94D6-4873D99F7FCC
@@ -7,13 +7,14 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: a8d3a67768b9e47833d1819c3bf44774a52d2438
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c93d4b0855fb96897da2018596766b16e5385ab4
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792776"
 ---
-# <a name="source-lists"></a>Списки источника
+# <a name="source-lists-in-xamarinmac"></a>Списки источника в Xamarin.Mac
 
 _В этой статье рассматривается работа со списками источника в приложении Xamarin.Mac. Он описывает создание и поддержание списки источника в Xcode и интерфейс построителя и работать с ними в коде C#._
 

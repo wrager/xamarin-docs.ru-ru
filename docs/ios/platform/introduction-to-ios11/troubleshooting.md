@@ -1,21 +1,20 @@
 ---
-title: Устранение неполадок
-description: В этой статье предоставляет несколько советов по устранению неполадок для работы с iOS 11 в Xamarin.iOS приложений.
+title: Устранение неполадок iOS 11 приложений, созданных с помощью Xamarin.iOS
+description: Данная статья содержит ресурсы, которые могут использоваться для устранения неполадок при разработке приложения Xamarin.iOS. В нем описывается отчетность об ошибках заметок о выпуске, в блоге Xamarin выпуски и варианты поддержки.
 ms.prod: xamarin
 ms.assetid: A90493BF-5298-4A5D-A5D5-8A8FCD078FF7
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/31/2017
-ms.openlocfilehash: 181f0a1c66d05e0adf2b682f2df971f5d7d67dfb
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ace24cae139c97a8735558c82e22143adbc9c064
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787550"
 ---
-# <a name="troubleshooting"></a>Устранение неполадок
-
-_В этой статье предоставляет несколько советов по устранению неполадок для работы с iOS 11 в Xamarin.iOS приложений._
+# <a name="troubleshooting-ios-11-apps-built-with-xamarinios"></a>Устранение неполадок iOS 11 приложений, созданных с помощью Xamarin.iOS
 
 В следующих разделах перечислены некоторые известные проблемы, которые могут возникнуть при использовании операций ввода-вывода 11 с Xamarin.iOS и, где это возможно, в этом решении этих проблем:
 

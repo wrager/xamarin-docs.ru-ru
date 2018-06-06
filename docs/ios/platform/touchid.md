@@ -1,19 +1,20 @@
 ---
-title: Touch ID
-description: Touch ID используется для Apple отпечатков пальцев биометрической проверки подлинности.
+title: Touch ID в Xamarin.iOS
+description: В этом документе описывается использование Touch ID технологии проверки подлинности Apple биометрические отпечатков пальцев, в приложениях Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 4BC8EFD6-52FC-4793-BA69-D6BFF850FE5F
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: d9d70c37de5cb91c4cd1fdc77e27942d851c346b
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: b5db80d280d7ad3c43a438d5caae57fbd1928896
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788593"
 ---
-# <a name="touch-id"></a>Touch ID
+# <a name="touch-id-in-xamarinios"></a>Touch ID в Xamarin.iOS
 
 Touch ID впервые появился в iOS 7, с точки зрения проверки подлинности пользователя — аналогично секретный код. Тем не менее он был ограничен разблокировки устройства, с помощью магазина приложений, с помощью iTunes и проверки подлинности только к цепочке ключей iCloud.
 

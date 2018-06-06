@@ -1,6 +1,6 @@
 ---
-title: Устранение неполадок
-description: В этой статье описаны известные проблемы. могут возникнуть при работе с поддержкой tvOS Xamarin.
+title: Устранение неполадок tvOS приложений с использованием Xamarin
+description: Эта статья содержит различные советы для помощи в устранении во время разработки приложения tvOS, созданных с помощью Xamarin. Описываются известные проблемы и ошибки.
 ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: 124E4953-4DFA-42B0-BCFC-3227508FE4A6
@@ -8,13 +8,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 86106fa5ca53e93ccffb4dd141914c01ab65a506
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: e69157cf9c8a9b9405e31edb2906754328653ccb
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789207"
 ---
-# <a name="troubleshooting"></a>Устранение неполадок
+# <a name="troubleshooting-tvos-apps-built-with-xamarin"></a>Устранение неполадок tvOS приложений с использованием Xamarin
 
 _В этой статье описаны известные проблемы. могут возникнуть при работе с поддержкой tvOS Xamarin._
 

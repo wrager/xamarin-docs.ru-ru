@@ -1,23 +1,20 @@
 ---
-title: Работа с текстом и поля поиска
-description: В этой статье рассматриваются разработки и работы с текстом и поля внутри приложения Xamarin.tvOS.
+title: Работа с tvOS текста и полей поиска в Xamarin
+description: В этом документе описывается работа с полями текст и поиска в приложении tvOS, созданных с помощью Xamarin. Общий обзор полей, текста и поиска и обсуждаются клавиатуры, интеграция раскадровки, поиска данных моделей и многое другое.
 ms.prod: xamarin
 ms.assetid: 9EE63CA6-2F31-4EE0-AAE5-82E18CFAC06C
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 220c6e3d1c6f358c67a2f596c977f4d2132298a8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4bf71df62bd6ffd88f42d31809444cd7b3350b66
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789726"
 ---
-# <a name="working-with-text-and-search-fields"></a>Работа с текстом и поля поиска
-
-_В этой статье рассматриваются разработки и работы с текстом и поля внутри приложения Xamarin.tvOS._
-
-
+# <a name="working-with-tvos-text-and-search-fields-in-xamarin"></a>Работа с tvOS текста и полей поиска в Xamarin
 
 При необходимости, Xamarin.tvOS приложения могут запрашивать небольшие части текста от пользователя (например, идентификаторы пользователей и пароли) с помощью текстового поля и экранной клавиатуры:
 

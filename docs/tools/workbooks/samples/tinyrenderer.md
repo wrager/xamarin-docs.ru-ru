@@ -1,15 +1,17 @@
 ---
 title: TinyRenderer книги
+description: В этом документе описывается TinyRenderer книг, которые работают с OpenGL. Эти книги выполнения в Windows и Mac.
 ms.prod: xamarin
 ms.assetid: E4E17836-94C2-436F-ADD8-104AC574D22B
 author: topgenorth
 ms.author: toopge
 ms.date: 03/30/2017
-ms.openlocfilehash: fc0716fc3babd0b2ee835b839ae816f2cb815b0f
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 10704044042ea38dd3a5297c46371f9f9c27936c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34794141"
 ---
 # <a name="tinyrenderer-workbooks"></a>TinyRenderer книги
 
@@ -31,7 +33,6 @@ ms.lasthandoff: 05/09/2018
 [![](tinyrenderer-images/tinyrenderer-sml.png "Пример каркас подготовки к просмотру")](tinyrenderer-images/tinyrenderer.png#lightbox)
 
 Код в этих книгах основан на этом открытым кодом [кода C++](https://github.com/ssloy/tinyrenderer) , а текст не из этого [вики-сайте](https://github.com/ssloy/tinyrenderer/wiki/). Мы ценим, исходная работа доступен по лицензии, что позволило нам стать набора книг.
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

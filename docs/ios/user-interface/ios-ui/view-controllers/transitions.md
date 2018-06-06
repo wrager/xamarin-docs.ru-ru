@@ -1,18 +1,20 @@
 ---
-title: Представление Переходы контроллера
+title: Представление переходов контроллера в Xamarin.iOS
+description: В этом документе описывается настройка анимировать переходы между Просмотр контроллеров в Xamarin.iOS приложениях.
 ms.prod: xamarin
 ms.assetid: CB3AC8E2-8A47-4839-AFA5-AE33047BB26C
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/14/2017
-ms.openlocfilehash: 253a2556872ea9186eec832a84f4cfff9cb1c209
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 35795002310cd79a1897061fe6e3e41b48b45b4d
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790452"
 ---
-# <a name="view-controller-transitions"></a>Представление Переходы контроллера
+# <a name="view-controller-transitions-in-xamarinios"></a>Представление переходов контроллера в Xamarin.iOS
 
 UIKit добавляет поддержку для настройки анимированных перехода, возникающее при представлении Просмотр контроллеров. Эта поддержка входит в состав встроенных контроллеров, а также любые пользовательские контроллеров-наследников непосредственно `UIViewController`. Кроме того `UICollectionViewController` использует преимущества настройки переход контроллера для использования анимации в макетах представления коллекции.
 

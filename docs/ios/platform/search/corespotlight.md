@@ -1,18 +1,20 @@
 ---
-title: Поиск с Core Spotlight
+title: Поиск с Spotlight ядра в Xamarin.iOS
+description: В этом документе описывается использование основных Spotlight в приложении Xamarin.iOS для предоставления ссылок на содержимое в приложении. Он описывается создание, восстановление, обновление и удаление элементов с возможностью поиска.
 ms.prod: xamarin
 ms.assetid: 1374914C-0F63-41BF-BD97-EBCEE86E57B1
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 0074cfcdc4a80f66f64d12f8e5c0a5e81ab2b8a1
-ms.sourcegitcommit: c9ebf456e1c6924956bedb13f4ea78ff09f7b1a0
+ms.openlocfilehash: a8bc3aaa43d7830b0a3baa0768d495458b1ecfad
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788043"
 ---
-# <a name="search-with-core-spotlight"></a>Поиск с Core Spotlight
+# <a name="search-with-core-spotlight-in-xamarinios"></a>Поиск с Spotlight ядра в Xamarin.iOS
 
 Обзор основных компонентов — это новая платформа предоставляет API базы данных, чтобы добавить, изменить или удалить ссылки на содержимое в приложении IOS 9. Элементы, которые были добавлены с помощью основных Spotlight будут доступны в поиску Spotlight на устройстве iOS.
 

@@ -1,17 +1,18 @@
 ---
 title: Специальные возможности на macOS
-description: Это руководство описывает средства для построения Xamarin.Mac-приложении со специальными возможностями.
+description: В этом документе описывается работа с macOS специальные возможности в приложении Xamarin.Mac. В нем описывается описания элементов пользовательского интерфейса в раскадровках и кода, пользовательские элементы управления и тестирования специальных возможностей.
 ms.prod: xamarin
 ms.assetid: D7F4892B-501A-4271-A7E0-BDD1586B63AD
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: ad04e0276c046f133a6f71abb38912343d2d86b6
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b2406654a46428e8c22284f5c7d114b07a463251
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791167"
 ---
 # <a name="accessibility-on-macos"></a>Специальные возможности на macOS
 

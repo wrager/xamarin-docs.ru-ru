@@ -1,6 +1,6 @@
 ---
 title: watchOS Устранение неполадок
-description: Известные проблемы и способы решения проблем разработки watchOS.
+description: В этом документе рассматриваются известные проблемы и решения для разработки watchOS с помощью Xamarin. Он описывает изображений с проблем, вручную добавлять файлы контроллер интерфейса, запустив приложение watch из командной строки и многое другое.
 ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: 27C31DB8-451E-4888-BBC1-CE0DFC2F9DEC
@@ -8,11 +8,12 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 6e7a7dd09d65b88831136662d8718886aaf483c5
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4e84028336669738c40da9e37cd22f32ba11dfc1
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791769"
 ---
 # <a name="watchos-troubleshooting"></a>watchOS Устранение неполадок
 
@@ -96,7 +97,7 @@ with an alpha channel. Icons should not have an alpha channel.
 
 2. Перетащите новую `InterfaceController` на раскадровку:
 
-    ![](troubleshooting-images/add-1.png "A InterfaceController")
+    ![](troubleshooting-images/add-1.png "InterfaceController")
 
 3. Теперь можно перетаскивать элементы управления на контроллер интерфейса (например) подписи и кнопки), но нельзя создать розетки или действия еще, так как не **.h** файл заголовка. Следующие шаги вызовет необходимая **.h** создания файла заголовка.
 

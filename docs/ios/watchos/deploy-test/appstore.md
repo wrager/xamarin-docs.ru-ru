@@ -1,19 +1,20 @@
 ---
-title: Развертывание в магазине приложений
-description: Развертывание приложений Контрольные значения к магазину приложения
+title: Развертывание watchOS приложений в магазине приложений
+description: В этом документе описывается развертывание watchOS приложений, созданных с помощью Xamarin в магазине приложений. Он смотрит на профили подготовки распространения и iTunes Connect и также предоставляет некоторые советы по устранению неполадок.
 ms.prod: xamarin
 ms.assetid: DBE16040-70D2-4F61-B5F3-C8D213DBC754
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: a3c68a0720fbe18f35731cf1a19248c00f748877
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 70613c79c2ec0c81f1dbdc218b747f809f859767
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790988"
 ---
-# <a name="deploying-to-the-app-store"></a>Развертывание в магазине приложений
+# <a name="deploying-watchos-apps-to-the-app-store"></a>Развертывание watchOS приложений в магазине приложений
 
 > [!IMPORTANT]
 > Обязательно ознакомьтесь с [отправки Apple Watch руководства](https://developer.apple.com/app-store/watch/)и в разделе [Устранение](#Troubleshooting) проблемы, вам, возможно.
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/04/2018
 
 3. Выберите **сборки > архив** пункт меню, чтобы начать процесс архива:
 
-  ![](appstore-images/xs-archive.png "Меню "Построение"")
+  ![](appstore-images/xs-archive.png "Меню \"Построение\"")
 
 Вы также можете **представление > архивы...**  элемента меню, чтобы увидеть архивы, которые были созданы ранее.
 

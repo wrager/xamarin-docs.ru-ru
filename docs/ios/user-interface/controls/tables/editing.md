@@ -1,18 +1,20 @@
 ---
-title: Редактирование
+title: Редактирование таблиц с помощью Xamarin.iOS
+description: В этом документе описывается изменение таблиц в Xamarin.iOS. В нем описывается проведите для удаления, режим правки и вставки строки.
 ms.prod: xamarin
 ms.assetid: EC197F25-E865-AFA3-E5CF-B33FAB7744A0
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 161de0209217dde671b976afad90eaad18d8c7b0
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 28ebf1157a1bfc9f7bd910fd11365b29cecb9529
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789994"
 ---
-# <a name="editing"></a>Редактирование
+# <a name="editing-tables-with-xamarinios"></a>Редактирование таблиц с помощью Xamarin.iOS
 
 Возможности редактирования в таблице включены путем переопределения методов в `UITableViewSource` подкласс. Простой режим редактирования жест проведите для удаления, можно реализовать с помощью переопределения одного метода.
 Более сложные изменения (включая перемещение строк) можно сделать с таблицей в режиме редактирования.

@@ -1,21 +1,20 @@
 ---
 title: Общие сведения о watchOS 4
-description: Новые возможности для разработчиков, использующих Xamarin для watchOS 4.
+description: Этот документ содержит высокоуровневое описание watchOS 4, описывающие новые возможности, которые теперь доступны для разработчиков Xamarin.
 ms.prod: xamarin
 ms.assetid: 753A9993-A951-40A2-9270-37F000A01BC9
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/07/2017
-ms.openlocfilehash: d3377b503273dc84cfe07227c4b007c8e073f1a0
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 550cf57f6b89a8fd5726ae55cb5eaaa54d6d2692
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791271"
 ---
 # <a name="introduction-to-watchos-4"></a>Общие сведения о watchOS 4
-
-_Новые возможности для разработчиков, использующих Xamarin для watchOS 4._
 
 Доступа к новым функциям watchOS 4 в приложениях:
 
@@ -29,7 +28,6 @@ _Новые возможности для разработчиков, испол
 
 * Код приложения и пользовательского интерфейса выполняются в одном процессе.
 * Расположение разрешения могут быть предоставлены на часах (нет необходимости запрашивать у пользователя, чтобы принять на свой телефон).
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

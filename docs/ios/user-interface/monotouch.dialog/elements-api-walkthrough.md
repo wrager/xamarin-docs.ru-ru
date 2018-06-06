@@ -1,18 +1,19 @@
 ---
-title: Пошаговое руководство. Создание приложения с помощью API элементов
+title: Создание приложения Xamarin.iOS, с помощью API элементов
 description: В этой статье содержатся сведения о сведения, представленные в вводной статье MonoTouch диалогового окна. В нем представлено пошаговое руководство, которое показывает, как использовать MonoTouch.Dialog (машинного перевода. D) элементы API, чтобы быстро приступить к созданию приложения с помощью машинного перевода. Г.
 ms.prod: xamarin
 ms.assetid: F1124734-DF44-F1F3-0832-46F52A788CDC
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: e4fbf744c6f967d09e0033212024c2e2398fb768
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 64f407288da72dbf51fb3388ddf36caea377f09c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790436"
 ---
-# <a name="walkthrough---creating-an-application-using-the-elements-api"></a>Пошаговое руководство. Создание приложения с помощью API элементов
+# <a name="creating-a-xamarinios-application-using-the-elements-api"></a>Создание приложения Xamarin.iOS, с помощью API элементов
 
 _В этой статье содержатся сведения о сведения, представленные в вводной статье MonoTouch диалогового окна. В нем представлено пошаговое руководство, которое показывает, как использовать MonoTouch.Dialog (машинного перевода. D) элементы API, чтобы быстро приступить к созданию приложения с помощью машинного перевода. Г._
 

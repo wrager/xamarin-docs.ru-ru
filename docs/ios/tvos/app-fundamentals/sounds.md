@@ -1,21 +1,20 @@
 ---
-title: Воспроизведение звука с AVAudioPlayer
-description: В этой статье показано, как использовать вспомогательный класс для управления воспроизведение звука с помощью AVAudioPlayer.
+title: Воспроизведение звука в tvOS с AVAudioPlayer в Xamarin
+description: В этой статье показано, как использовать вспомогательный класс для управления воспроизведение звука с помощью AVAudioPlayer Xamarin.iOS приложения.
 ms.prod: xamarin
 ms.assetid: E0305572-DC64-48BB-BD97-0A5096E6CA04
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: c50aea9c4c35e91c2baa98c94db2fd7c61136d69
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7d95a8ea6c22c0d897d8ccfe0c2ca401f6523783
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788638"
 ---
-# <a name="playing-sound-with-avaudioplayer"></a>Воспроизведение звука с AVAudioPlayer
-
-_В этой статье показано, как использовать вспомогательный класс для управления воспроизведение звука с помощью AVAudioPlayer._
+# <a name="playing-sound-in-tvos-with-avaudioplayer-in-xamarin"></a>Воспроизведение звука в tvOS с AVAudioPlayer в Xamarin
 
 ## <a name="about-the-avaudioplayer"></a>О AVAudioPlayer
 

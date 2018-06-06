@@ -1,17 +1,19 @@
 ---
 title: Улучшенные возможности интеграции разделы
+description: В этом документе описываются дополнительные разделы, относящиеся к интеграции книги Xamarin. В нем описывается пакет Xamarin.Workbook.Integrations NuGet и раскрытия API в пределах книги Xamarin.
 ms.prod: xamarin
 ms.assetid: 002CE0B1-96CC-4AD7-97B7-43B233EF57A6
 author: topgenorth
 ms.author: toopge
 ms.date: 03/30/2017
-ms.openlocfilehash: fc108c3d7f6f4c0fbd948182b4e60a3eee0aea0a
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 1aa6b5d0ca574345e1d349ea53df96f554c06bc4
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793840"
 ---
-# <a name="external-integrations"></a>Внешние интеграции
+# <a name="advanced-integration-topics"></a>Улучшенные возможности интеграции разделы
 
 Интеграция сборки должны ссылаться [ `Xamarin.Workbooks.Integrations` NuGet][nuget]. Извлечение нашей [Быстрая документация](~/tools/workbooks/sdk/index.md) Дополнительные сведения о начале работы с пакетом NuGet.
 

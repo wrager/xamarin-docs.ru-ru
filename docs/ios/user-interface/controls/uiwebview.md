@@ -1,19 +1,20 @@
 ---
-title: Веб-представления
-description: Неоднозначными iOS параметры веб-представления документа
+title: Веб-представления в Xamarin.iOS
+description: Этот документ описывает различные способы приложения Xamarin.iOS можно отобразить веб-содержимого. Он описывает UIWebView, WKWebView, SFSafariViewController, Safari и безопасность транспорта для приложения.
 ms.prod: xamarin
 ms.assetid: 84886CF4-2B2B-4540-AD92-7F0B791952D1
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 787b5594476b3a1b5b3f6a0e8151a98c97443d00
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f720eae68415ab9efe021e53c9da4875209cd221
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790500"
 ---
-# <a name="web-views"></a>Веб-представления
+# <a name="web-views-in-xamarinios"></a>Веб-представления в Xamarin.iOS
 
 В течение времени существования iOS Apple был выпущен целый ряд способов для разработки приложений для включения веб-функций представления в своих приложениях. Большинство пользователей использовать встроенный веб-браузера Safari на устройстве iOS и ожидать, функциональные возможности веб-представление из других приложений согласуется с данного интерфейса. Ожидают, что те же жесты для работы, производительность совпадать на линейку и функциональные возможности.
 

@@ -1,16 +1,18 @@
 ---
 title: Использование данных в приложение iOS
+description: В этом документе описывается DataAccess_Adv, пример, где показано, как для сбора входных данных пользователя и выполнения создания, чтения, обновления и удаления (CRUD) операций в приложении Xamarin.iOS базы данных.
 ms.prod: xamarin
 ms.assetid: 2CB8150E-CD2C-4E97-8605-1EE8CBACFEEC
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/11/2016
-ms.openlocfilehash: eded0918c6994481cdc82fe7662a985ea243b24d
-ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
+ms.openlocfilehash: 5c9eab9316539ecf5988c8768bef9ef2cd61513e
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784544"
 ---
 # <a name="using-data-in-an-ios-app"></a>Использование данных в приложение iOS
 

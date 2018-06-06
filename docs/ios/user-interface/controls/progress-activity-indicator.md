@@ -1,18 +1,20 @@
 ---
-title: Ход выполнения и индикаторы активности
+title: Ход выполнения и индикаторы активности в Xamarin.iOS
+description: В этом документе описывается, как использовать индикаторы хода выполнения и действия в Xamarin.iOS. Он описывает, как использовать их программно и с помощью раскадровки.
 ms.prod: xamarin
 ms.assetid: 7AA887E4-51F7-4867-82C5-A8D2EA48AE07
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 07/11/2017
-ms.openlocfilehash: 58a492bed81a1d96a482c1396718da1c5e4af589
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 27ee788ec40bfd158dbc0d9926245b166e2954a9
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790059"
 ---
-# <a name="progress-and-activity-indicators"></a>Ход выполнения и индикаторы активности
+# <a name="progress-and-activity-indicators-in-xamarinios"></a>Ход выполнения и индикаторы активности в Xamarin.iOS
 
 Вполне вероятно, что приложение будет выполнять долго выполняемых задач, например загрузки или обработки данных и что эта задержка может привести к задержке при обновлении пользовательского интерфейса. В течение этого времени следует всегда использовать индикатор хода выполнения для заверить пользователя, что система занята работой. Это предоставляет пользовательский элемент управления, приложение работает при их запросе, который не ждет их входных данных и может обеспечивать подробные сведения о точности как долго они имеют ожидания.
 

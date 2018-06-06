@@ -1,20 +1,19 @@
 ---
 title: Профилировщик Xamarin, устранение неполадок
-description: Устранение неполадок профилировщик Xamarin
+description: Этот документ содержит сведения об устранении неполадок, связанных с профилировщик Xamarin. Он описывает проблемы, связанные с ведения журнала и диагностики, интегрированной среды разработки и другим темам.
 ms.prod: xamarin
 ms.assetid: 0060E9D1-C003-4E4C-ADE8-B406978FE891
 author: topgenorth
 ms.author: toopge
 ms.date: 10/27/2017
-ms.openlocfilehash: 9e2f9a35f37513ce0cb785f2bd922aeccf42dd8e
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 247a18cf7f645ea90d100cb3f4900f30ac7754cc
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793860"
 ---
 # <a name="xamarin-profiler-troubleshooting"></a>Профилировщик Xamarin, устранение неполадок
-
-_Устранение неполадок профилировщик Xamarin_
 
 ## <a name="logging-and-diagnostics"></a>Ведение журнала и диагностики
 
@@ -25,6 +24,7 @@ _Устранение неполадок профилировщик Xamarin_
 - **.Mlpd** , генерируемых для сеанса профилирования (см. ниже).
 
 ### <a name="getting-log-outputs"></a>Получение выходных данных журнала
+
 На Mac для сохранения журналов `~/Library/Logs/Xamarin.Profiler/Profiler.<date>.log`.
 
 В Windows, они сохраняются в `%appdata%Local//Xamarin/Log/Xamarin.Profiler/Profiler.<date>.log` при каждой отправке проблемы включите последнего журнала.
@@ -49,7 +49,6 @@ _Устранение неполадок профилировщик Xamarin_
 
 ![](troubleshooting-images/image17-vs.png "Сохранение файла .mlpd в Visual Studio")
 
-
 Важно обратить внимание, что **.mlpd** содержат большой объем сведений, а размер файла будет большой.
 
 ## <a name="troubleshooting"></a>Устранение неполадок
@@ -70,7 +69,6 @@ _Устранение неполадок профилировщик Xamarin_
 - Убедитесь, что вы вошли в и должным образом проверку подлинности.
 - [Visual Studio] Необходимо использовать [Visual Studio Enterprise](https://www.visualstudio.com/vs/enterprise/) и иметь действующую лицензию Enterprise.
 
-
 #### <a name="i-get-an-error-when-i-try-to-launch-the-profiler"></a>Произошла ошибка при попытке запуска профилировщика
 
 Если при запуске в это поле ошибки с помощью профилировщика в Visual Studio:
@@ -83,14 +81,11 @@ _Устранение неполадок профилировщик Xamarin_
 
 Если поток, который вы хотите посмотреть специально, было бы идеальным для имени потока в самом начиная ее создания, чтобы получить get `ThreadName` вместо `0x0`. Например задать имя потока в качестве пользовательского интерфейса можно использовать следующий код:
 
-
 ```csharp
 RunOnUiThread (() => {
   Thread.CurrentThread.Name  = "UI";
 });
 ```
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

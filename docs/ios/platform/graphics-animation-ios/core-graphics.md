@@ -1,5 +1,5 @@
 ---
-title: Основные графики
+title: Графические объекты ядра в Xamarin.iOS
 description: В этой статье рассматриваются платформ iOS двухмерной графики. В этом примере показано использование двухмерной графики для рисования геометрии, изображения и PDF-файлов.
 ms.prod: xamarin
 ms.assetid: 4A30F480-0723-4B8A-9049-7CEB6211304A
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: e7b28ae8014928d82628bd8069d30ca88a4be05f
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7d7124c7d09ca4e36ce22d60f578ea4a75d4a05b
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786760"
 ---
-# <a name="core-graphics"></a>Основные графики
+# <a name="core-graphics-in-xamarinios"></a>Графические объекты ядра в Xamarin.iOS
 
 _В этой статье рассматриваются платформ iOS двухмерной графики. В этом примере показано использование двухмерной графики для рисования геометрии, изображения и PDF-файлов._
 

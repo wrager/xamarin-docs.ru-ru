@@ -1,22 +1,20 @@
 ---
-title: Работа с кнопками
-description: В этой статье описывается проектирование и работа с кнопками внутри приложения Xamarin.tvOS.
+title: Работа с кнопками tvOS в Xamarin
+description: В этом документе описывается работа с кнопками в приложении tvOS, созданных с помощью Xamarin. Он описывается работа с кнопками в коде, а также в раскадровках и рассматривается стиля кнопки.
 ms.prod: xamarin
 ms.assetid: DA6EF400-A4E3-4245-A0D4-F2398CAE2C9B
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/07/2017
-ms.openlocfilehash: e915e96690fe67f0e704ec558313427f01753438
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 3de732e9eee696ce21ffc5526afd44f29695a313
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789389"
 ---
-# <a name="working-with-buttons"></a>Работа с кнопками
-
-_В этой статье описывается проектирование и работа с кнопками внутри приложения Xamarin.tvOS._
-
+# <a name="working-with-tvos-buttons-in-xamarin"></a>Работа с кнопками tvOS в Xamarin
 
 Использовать экземпляр `UIButton` класс для создания может иметь фокус, доступный для выбора кнопки в окне tvOS. Когда пользователь выбирает кнопку, он отправляет сообщение действия целевого объекта разрешить входных ваш ответ приложения Xamarin.tvOS для пользователя.
 

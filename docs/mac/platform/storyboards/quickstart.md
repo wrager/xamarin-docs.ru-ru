@@ -1,19 +1,20 @@
 ---
-title: Быстрый запуск раскадровки
-description: Получение macOS запущен построение пользовательских интерфейсов с помощью раскадровки.
+title: Раскадровки в Xamarin.Mac — краткое руководство
+description: Этот документ содержит краткое введение в построение пользовательских интерфейсов с помощью раскадровки в Xamarin.Mac macOS. Здесь описана процедура создания segue и создать окно установки.
 ms.prod: xamarin
 ms.assetid: 20719B5D-8147-4E8A-A23C-8D575C7ACCEE
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/02/2017
-ms.openlocfilehash: 0c366de844b119736763f7d419d6bc9bb3fbfc0a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2bf91a51a55583e2ba8ca1fc09eb3dcd0d9986cf
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792576"
 ---
-# <a name="starting-a-new-storyboard-based-project"></a>Начало новую раскадровку зависимости проекта
+# <a name="storyboards-in-xamarinmac--quick-start"></a>Раскадровки в Xamarin.Mac — краткое руководство
 
 Как краткое введение в использование раскадровки для определения пользовательского интерфейса приложения Xamarin.Mac давайте начнем Xamarin.Mac новый проект. Выберите **Mac** > **Приложения** > **Приложение Cocoa** и нажмите кнопку **Далее**:
 

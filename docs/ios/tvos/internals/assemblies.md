@@ -1,18 +1,20 @@
 ---
-title: Сборки
+title: Поддерживаются сборок Xamarin для tvOS
+description: Чтобы прояснить функций, доступных для tvOS приложений этот документ предоставляет список сборок, для разработки tvOS поддерживает Xamarin.
 ms.prod: xamarin
 ms.assetid: 0B1ACF06-65FF-49E2-B6BC-7AEC55638ED8
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/07/2016
-ms.openlocfilehash: 7d0ee27cfa2ae153ef481f943402f5fcfc5d04e4
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 217ec5ea81b304555bcaf19e53c8132628628627
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788827"
 ---
-# <a name="assemblies"></a>Сборки
+# <a name="assemblies-supported-by-xamarin-for-tvos"></a>Поддерживаются сборок Xamarin для tvOS
 
 ## <a name="supported-assemblies"></a>Поддерживаемых сборок
 
@@ -46,8 +48,6 @@ ms.lasthandoff: 04/04/2018
 ## <a name="portable-class-libraries"></a>Переносимые библиотеки классов
 
 Помимо привязки Mac можно использовать Xamarin.tvOS [переносимой библиотеки классов .NET](~/cross-platform/app-fundamentals/pcl.md).
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

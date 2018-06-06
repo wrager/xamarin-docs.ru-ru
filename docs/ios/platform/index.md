@@ -1,34 +1,32 @@
 ---
-title: Функции платформы
-description: Документы в этом разделе рассматриваются функции, связанные с iOS.
+title: Возможности на платформе iOS
+description: Документ содержит ссылки на различные руководства, описывающие возможности, появившиеся в различных версиях операций ввода-вывода и другие возможности платформы iOS.
 ms.prod: xamarin
 ms.assetid: 9F6A27E5-8A87-ADE2-D1EF-5684E7B8C999
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/15/2017
-ms.openlocfilehash: 0a76ed52f52de144bb3da1e7be6e215ce0dfe0ab
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 95053faa4bab0a65660772aeea39405e4a80a042
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787091"
 ---
-# <a name="platform-features"></a>Функции платформы
+# <a name="ios-platform-features"></a>Возможности на платформе iOS
 
 ##  <a name="introduction-to-ios-11iosplatformintroduction-to-ios11indexmd"></a>[Введение в iOS 11](~/ios/platform/introduction-to-ios11/index.md)
 
 Описывается установка и начало работы с бета-версии Xcode 9 и предварительного просмотра поддержки 11 Xamarin iOS.
 
-
 ##  <a name="introduction-to-ios-10iosplatformintroduction-to-ios10indexmd"></a>[Введение в iOS 10](~/ios/platform/introduction-to-ios10/index.md)
 
 Apple iOS 10 содержит несколько новых API-интерфейсов и служб, которые позволяют разрабатывать приложения с помощью новых функций и возможностей. Благодаря iOS 10 приложения имеют новые возможности, таких как расширение карты, сообщения, Phone и Siri. В этом разделе показано реализует, чтобы воспользоваться преимуществами этих функций в приложении Xamarin.iOS.
 
-
 ##  <a name="introduction-to-ios-9iosplatformintroduction-to-ios9indexmd"></a>[Введение в iOS 9](~/ios/platform/introduction-to-ios9/index.md)
 
 В этом разделе определяет изменения, внесенные в iOS 9, при обновлении с iOS 8 и способы использования этих возможностей в приложении Xamarin.iOS.
-
 
 ##  <a name="introduction-to-ios-8iosplatformintroduction-to-ios8md"></a>[Введение в iOS 8](~/ios/platform/introduction-to-ios8.md)
 
@@ -147,8 +145,6 @@ Touch ID впервые появился в iOS 7, с точки зрения п
 ##  <a name="wide-coloriosplatformwide-colormd"></a>[Широкая цветовая палитра](~/ios/platform/wide-color.md)
 
 iOS 10 и macOS Сьерра улучшает поддержку форматов пикселей расширенный диапазон и широким пробелов во всей системе, включая платформы, например Core графики, образ Core, системы и AVFoundation. Поддержка устройства с дисплеями широкую цветовую дальнейшей упрощают, предоставляя это поведение во всем стеке всей графики.
-
-
 
 ##  <a name="binding-objective-cbinding-objective-cindexmd"></a>[Привязка Objective-C](binding-objective-c/index.md)
 

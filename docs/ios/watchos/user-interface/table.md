@@ -1,18 +1,20 @@
 ---
-title: Элемент управления Table
+title: watchOS таблицы элементов управления в Xamarin
+description: В этом документе описывается использование элементов управления watchOS таблицы в Xamarin. Он описывает таблицу, добавив контроллера строки, создание и заполнение строк, отвечать на нажатия и многое другое.
 ms.prod: xamarin
 ms.assetid: 7C14126D-9591-4387-A588-3C4521F11C55
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 3f596b424292dd0f4db08429bc7c5d4a885d3954
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: afb8f9a96fa14877cbd0352869e23972719a4480
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791362"
 ---
-# <a name="table-control"></a>Элемент управления Table
+# <a name="watchos-table-controls-in-xamarin"></a>watchOS таблицы элементов управления в Xamarin
 
 WatchOS `WKInterfaceTable` управления гораздо проще, чем их аналоги операций ввода-вывода, но выполняет ту же роль. Он создает прокрутки список строк, может иметь пользовательские макеты и который реагировать на события касания.
 

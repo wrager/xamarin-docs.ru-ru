@@ -1,20 +1,21 @@
 ---
-title: Новые API поиска
+title: API поиска в Xamarin.iOS
 description: В этой статье описан с помощью нового API поиска приложения, предоставленные iOS 9 позволяет пользователям искать сведения и функции внутри приложения Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 7323EB3D-A78F-4BF0-9990-3160C7E83CF0
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 5dcd3d9665befaa82fd0f5677a4a662f633ed45b
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: bc62ad34af0b9b98f0475599a08946122badd21e
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788180"
 ---
-# <a name="new-search-apis"></a>Новые API поиска
+# <a name="search-apis-in-xamarinios"></a>API поиска в Xamarin.iOS
 
-_В этой статье описан с помощью нового API поиска приложения, предоставленные iOS 9 позволяет пользователям искать сведения и функции внутри приложения Xamarin.iOS._
+_В этой статье описан с помощью API поиска приложения, предоставленные iOS 9, чтобы разрешить пользователям искать данным и функциям внутри приложения Xamarin.iOS._
 
 Поиск была расширена в iOS 9, чтобы предоставить новые способы доступа к данным и функциям внутри приложения Xamarin.iOS. С помощью новых API поиска приложения, содержимое приложения становится доступным для поиска Spotlight и Safari результатов поиска, передачи и Siri напоминаний и предложения. Это дает пользователям возможность быстрого доступа к действия и сведения глубокой в приложении.
 

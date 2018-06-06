@@ -1,19 +1,20 @@
 ---
-title: Настройка и установка
-description: Настройка для разработки watchOS
+title: Установка и использование watchOS в Xamarin
+description: Этот документ описывает, как установить и использовать watchOS с помощью Xamarin. В нем описывается установка проекта watchOS структуры, как использовать конструктор операций ввода-вывода, интеграция Xcode и предоставляет советы по устранению неполадок.
 ms.prod: xamarin
 ms.assetid: 69F21F15-198D-4B42-A703-21D35CAB0CCA
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 12/05/2017
-ms.openlocfilehash: 976b7a78b70522e6ca9942c286792b53e4f11ae5
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ea0c7b6a68077cde83fa211e4e6f3432b3e39d5c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791242"
 ---
-# <a name="installation"></a>Установка
+# <a name="installing-and-using-watchos-in-xamarin"></a>Установка и использование watchOS в Xamarin
 
 watchOS 4 требует macOS Сьерра (10.12) с Xcode 9.
 

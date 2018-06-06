@@ -1,21 +1,20 @@
 ---
-title: Обновления для визуального проектирования
-description: Обзор новых возможностей iOS 11
+title: Обновления визуальных элементов конструктора в iOS 11
+description: В этом документе описывается обновления появились в iOS 11 визуальной разработки. Он рассматриваются изменения в панели навигации, поиска контроллеров, поля, содержимое в полноэкранном режиме и представления таблицы.
 ms.prod: xamarin
 ms.assetid: 7C300B94-0FAF-492E-A326-877419A1824B
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/13/2016
-ms.openlocfilehash: 50858592ec6246fe825e80a3039f3640ebf708a9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5bc29e021e30910c7fcc4c3b451d0a4dfe187d05
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787855"
 ---
-# <a name="visual-design-updates"></a>Обновления для визуального проектирования
-
-_Обзор новых возможностей iOS 11_
+# <a name="visual-design-updates-in-ios-11"></a>Обновления визуальных элементов конструктора в iOS 11
 
 В iOS 11 Apple появился новый визуальные изменения, включая обновления для панели навигации, панель поиска и представления таблицы. Кроме того внесены изменения для обеспечения дополнительной гибкости через поля и содержимого на весь экран. В этом руководстве описаны эти изменения.
 

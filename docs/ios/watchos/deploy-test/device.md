@@ -1,19 +1,20 @@
 ---
-title: Тестирование на устройствах Контрольное значение
-description: Развертывание приложений для проверки на ваш Apple Watch
+title: Тестирование на устройствах Apple Watch
+description: В этом документе описывается развертывание watchOS приложения, созданного с помощью Xamarin для тестирования на фактическое Apple Watch. Он рассматривается устройств, профили, тестирования, подготовки и приводятся некоторые советы по устранению неполадок.
 ms.prod: xamarin
 ms.assetid: A72A7D38-FAE8-4DD2-843D-54B74C5078D7
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: d1d00a4d561551435e7d2333520dc614a79dcad3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: a960d81d41ff127fa3316e6190dfbf4881305c02
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790865"
 ---
-# <a name="testing-on-watch-devices"></a>Тестирование на устройствах Контрольное значение
+# <a name="testing-on-apple-watch-devices"></a>Тестирование на устройствах Apple Watch
 
 После [шагов развертывания](~/ios/watchos/deploy-test/index.md) Чтобы создать идентификаторы приложений и групп приложений (при необходимости), выполните инструкции на этой странице:
 

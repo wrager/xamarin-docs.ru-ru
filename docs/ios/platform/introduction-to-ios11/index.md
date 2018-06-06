@@ -1,17 +1,18 @@
 ---
 title: Введение в iOS 11
-description: Повторите iOS новый 11 API-интерфейсы, с помощью Xamarin.
+description: Документ содержит ссылки на различные руководства, описывающие функции iOS 11, включая ARKit, CoreML, MapKit, PDFKit, SiriKit, framework концепции и многое другое.
 ms.prod: xamarin
 ms.assetid: 22C38EA6-6DA9-4B92-B41B-814E589033F6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/19/2016
-ms.openlocfilehash: 0b3993f09b6516c9c0d4f13a82d97d3cf289330c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: dca4d9889d90f10626840dfc722e439fd60c5756
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787511"
 ---
 # <a name="introduction-to-ios-11"></a>Введение в iOS 11
 

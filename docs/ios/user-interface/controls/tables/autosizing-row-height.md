@@ -1,18 +1,20 @@
 ---
-title: Высота строки автоматического изменения размера
+title: Высота строки автоматического изменения размера в Xamarin.iOS
+description: В этом документе описывается добавление в приложения Xamarin.iOS строк таблицы представления, высота которого изменения на основе содержимого. В нем описывается макет ячейки в конструкторе iOS и включить автоматическое изменение размеров высоты.
 ms.prod: xamarin
 ms.assetid: CE45A385-D40A-482A-90A0-E8382C2BFFB9
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: 73e16c3381b639645463e3e8aaeed35224b67861
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 3c6beb112947f5423de200fd5c8957ef28dd48f9
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789971"
 ---
-# <a name="auto-sizing-row-height"></a>Высота строки автоматического изменения размера
+# <a name="auto-sizing-row-height-in-xamarinios"></a>Высота строки автоматического изменения размера в Xamarin.iOS
 
 Начиная с iOS 8, Apple появилась возможность создания представления таблицы (`UITableView`), может автоматически увеличиваться или уменьшаться высота данной строки, в соответствии с размером его содержимого с помощью автоматический макет, размер классы и ограничений.
 

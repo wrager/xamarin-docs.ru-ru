@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о раскадровки
+title: Общие сведения о раскадровки в Xamarin.Mac
 description: В этой статье содержатся вводные сведения о работе с раскадровки в приложении Xamarin.Mac. В ней описывается создание и обслуживание пользовательского интерфейса приложения с помощью раскадровок и конструктора Interface Builder.
 ms.prod: xamarin
 ms.assetid: F37BA503-0B25-489F-80A8-58C493291A55
@@ -7,13 +7,14 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: c5d69e1d11fb59afe3cdcbe11391af7eced733b3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 027998d6aff8aba4e5621b1cde51a24e18821ff9
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792669"
 ---
-# <a name="introduction-to-storyboards"></a>Общие сведения о раскадровки
+# <a name="introduction-to-storyboards-in-xamarinmac"></a>Общие сведения о раскадровки в Xamarin.Mac
 
 _В этой статье содержатся вводные сведения о работе с раскадровки в приложении Xamarin.Mac. Она охватывает создания и обслуживания пользовательского интерфейса приложения, с помощью раскадровки и интерфейс построителя в Xcode._
 

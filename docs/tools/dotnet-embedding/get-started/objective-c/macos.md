@@ -1,15 +1,17 @@
 ---
 title: Приступая к работе с macOS
+description: В этом документе описывается как приступить к использованию с macOS внедрения .NET. Обсуждаются требования и представляет пример приложения, чтобы продемонстрировать, как привязать управляемую сборку, и использовать созданные выходные данные в проекте Xcode.
 ms.prod: xamarin
 ms.assetid: AE51F523-74F4-4EC0-B531-30B71C4D36DF
 author: topgenorth
 ms.author: toopge
 ms.date: 11/14/2017
-ms.openlocfilehash: 85510168f37e724563eae59dfca438177b4feffe
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 38049eae5e420e5f3610341c2682fa92d2ac426e
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793693"
 ---
 # <a name="getting-started-with-macos"></a>Приступая к работе с macOS
 

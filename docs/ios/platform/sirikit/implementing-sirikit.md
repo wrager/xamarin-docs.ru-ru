@@ -1,23 +1,22 @@
 ---
-title: Реализация SiriKit
-description: В этой статье рассматриваются действия, необходимые для реализации поддержки SiriKit в приложениях Xamarin.iOS.
+title: Реализация SiriKit в Xamarin.iOS
+description: В этом документе описываются шаги, необходимые для реализации поддержки SiriKit в приложения Xamarin.iOS. Он описывает способы расширения и расширения пользовательского интерфейса целей.
 ms.prod: xamarin
 ms.assetid: 20FFB981-EB10-48BA-BF79-40F37F0291EB
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/03/2018
-ms.openlocfilehash: a4f38e93cae3c9577a0b1e32067da2cfd2e4796d
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: f0e5e05828305bd3656d70105b6e2ad06f9fdc81
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788853"
 ---
-# <a name="implementing-sirikit"></a>Реализация SiriKit
+# <a name="implementing-sirikit-in-xamarinios"></a>Реализация SiriKit в Xamarin.iOS
 
 _В этой статье рассматриваются действия, необходимые для реализации поддержки SiriKit в приложениях Xamarin.iOS._
-
-
 
 Новые для iOS 10 SiriKit позволяет приложения Xamarin.iOS для предоставления служб, которые доступны пользователю, с помощью Siri и Maps приложения на устройстве iOS. В этой статье рассматриваются действия, необходимые для реализации поддержки SiriKit в Xamarin.iOS приложений, добавив необходимые расширения целей, способы расширения пользовательского интерфейса и словаря.
 

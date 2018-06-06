@@ -1,21 +1,20 @@
 ---
-title: Воспроизведение звука с AVAudioPlayer
-description: В этой статье показано, как использовать вспомогательный класс для управления воспроизведение звука с помощью AVAudioPlayer.
+title: Воспроизведение звука с AVAudioPlayer в Xamarin.Mac
+description: В этом документе описывается воспроизведение звука с AVAudioPlayer в приложении Xamarin.Mac. В нем описывается AVAudioPlayer на общем уровне ссылки на другие документацию, более подробно рассматривается его более подробно.
 ms.prod: xamarin
 ms.assetid: 4A683A94-F75D-4EAF-8497-E9443653250B
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/19/2016
-ms.openlocfilehash: 25e3285a1da1b6a112629001d5412fdd0788c705
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9e5b9ec43189999f8a0aee29eb50221b494e2133
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791859"
 ---
-# <a name="playing-sound-with-avaudioplayer"></a>Воспроизведение звука с AVAudioPlayer
-
-_В этой статье показано, как использовать вспомогательный класс для управления воспроизведение звука с помощью AVAudioPlayer._
+# <a name="playing-sound-with-avaudioplayer-in-xamarinmac"></a>Воспроизведение звука с AVAudioPlayer в Xamarin.Mac
 
 ## <a name="about-the-avaudioplayer"></a>О AVAudioPlayer
 
@@ -34,8 +33,6 @@ _В этой статье показано, как использовать вс
 ## <a name="playing-sounds-in-macos"></a>Воспроизведение звуков в macOS
 
 Поскольку macOS поддерживает те же классы звуковых элементов, поскольку iOS, см. в разделе iOS [игральной звука с AVAudioPlayer](https://developer.xamarin.com/recipes/ios/media/sound/avaudioplayer/) документации полные сведения о воспроизведение аудио в приложении Xamarin.Mac.
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

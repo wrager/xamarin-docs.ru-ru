@@ -1,16 +1,17 @@
 ---
-title: Live проигрывателя для Xamarin.Forms
-description: Запустите быстро обучения Xamarin, сборка и запуск приложений на устройстве Android или iOS.
+title: Xamarin динамической проигрывателя для Xamarin.Forms
+description: В этом документе рассматриваются Live Xamarin Player для Xamarin.Forms, описывающий установки приложения Xamarin Live Player, образцы для использования с Xamarin Player Live, ограничения и устранение неполадок.
 ms.prod: xamarin
 ms.assetid: 19B1F126-866E-4672-92D2-BE2B70ACF0F1
 author: topgenorth
 ms.author: toopge
 ms.date: 05/10/2017
-ms.openlocfilehash: dd179fb1d1ce3ca57cdf6e27bb86a12e2f9ef03f
-ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
+ms.openlocfilehash: 79cf2c790789963189d3eedd6645a6b6ae6503b6
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793142"
 ---
 # <a name="xamarin-live-player-for-xamarinforms"></a>Xamarin динамической проигрывателя для Xamarin.Forms
 
@@ -46,7 +47,6 @@ Xamarin Live Player имеет некоторые ограничения на в
 ## <a name="troubleshootingtroubleshootingmd"></a>[Устранение неполадок](troubleshooting.md)
 
 Поиск справки в случае сбоя.
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

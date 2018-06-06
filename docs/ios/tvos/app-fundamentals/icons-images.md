@@ -1,21 +1,20 @@
 ---
-title: Работа со значками и изображений
-description: В этой статье описывается проектирование и работы со значками и изображений в приложении Xamarin.tvOS.
+title: Работа с tvOS значки и изображений в Xamarin
+description: В этом документе описывается работа со значками и изображений в приложении tvOS, созданных с помощью Xamarin. Он описывает запуска изображений, слоев изображения, значка приложения и многое другое.
 ms.prod: xamarin
 ms.assetid: A2DA4347-0563-4C72-A8D7-5B9DE9E28712
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: c888ecf3d7e0f21734f2b89176eed56bf778dbf9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 59cbc53acf3ab7da12826b9d3cffb821631a0500
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788801"
 ---
-# <a name="working-with-icons-and-images"></a>Работа со значками и изображений
-
-_В этой статье описывается проектирование и работы со значками и изображений в приложении Xamarin.tvOS._
+# <a name="working-with-tvos-icons-and-images-in-xamarin"></a>Работа с tvOS значки и изображений в Xamarin
 
 Создание зрительными значки и изображения являются важной частью разработки впечатляющие опыта для Apple TV приложений. В этом руководстве мы рассмотрим шаги, необходимые для создания и включения необходимых графических ресурсов для приложений Xamarin.tvOS:
 

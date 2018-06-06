@@ -1,17 +1,18 @@
 ---
 redirect_url: /xamarin/tools/live-player/
 title: XAML Live предварительного просмотра
-description: Протестируйте изменения кода приложения в реальном времени на устройства iOS или Android
+description: В этом документе описывается использование Xamarin Live Player live предварительного просмотра XAML-страницы, внести изменения в XAML и увидеть изменения мгновенно отображаются на устройстве.
 ms.prod: xamarin
 ms.assetid: 86E9A179-21F8-4F3A-A9CE-36F0FC5DB4A8
 author: topgenorth
 ms.author: toopge
 ms.date: 12/21/2017
-ms.openlocfilehash: e485ea596d9c6c7aee378d50ae41d13faa7c0a80
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: cc68044342fca84e62e3b17770170e1d7a23f677
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793706"
 ---
 # <a name="xaml-live-previewing"></a>XAML Live предварительного просмотра
 
@@ -30,8 +31,6 @@ ms.lasthandoff: 05/09/2018
 2. Visual Studio для Mac 7.2 или более поздней версии. Мы рекомендуем последнюю версию.
 
 -----
-
-
 
 <a name="deploydevice" />
 
@@ -69,13 +68,6 @@ ms.lasthandoff: 05/09/2018
 
 -----
 
-
-
-
-
-
-
-
 ## <a name="deploying-to-android-emulator"></a>Развертывание в эмуляторе Android
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -108,10 +100,6 @@ ms.lasthandoff: 05/09/2018
 
 -----
 
-
-
-
-
 ## <a name="deploying-to-ios-simulator"></a>Развертывание на эмуляторе iOS
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
@@ -137,13 +125,6 @@ ms.lasthandoff: 05/09/2018
     ![](live-view-images/image5.png)  
 
 -----
-
-
-
-
-
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

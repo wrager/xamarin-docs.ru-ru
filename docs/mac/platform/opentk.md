@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о OpenTK
+title: Общие сведения о OpenTK в Xamarin.Mac
 description: В этой статье содержатся вводные сведения о работе с OpenTK в приложении Xamarin.Mac. Она охватывает Создание и поддержание окна игры, Подготовка к просмотру простого объекта и отображение объекта для пользователя.
 ms.prod: xamarin
 ms.assetid: BDE05645-7273-49D3-809B-8642347678D2
@@ -7,13 +7,14 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: d5f19dac8dc362e1ac4a36cbe5cf5db3e31ae363
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 448b8bdba8ccedbb732a73a265d0ce76bb589190
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792610"
 ---
-# <a name="introduction-to-opentk"></a>Общие сведения о OpenTK
+# <a name="introduction-to-opentk-in-xamarinmac"></a>Общие сведения о OpenTK в Xamarin.Mac
 
 OpenTK (открыть набор) — дополнительно, низкоуровневые C# библиотека, которая упрощает работу с OpenGL и OpenCL OpenAL. OpenTK может использоваться для игр, научных приложений или другие проекты, которые требуют трехмерной графики, аудио- или вычислительные функции. В этой статье дается краткое введение в использование в приложении Xamarin.Mac OpenTK.
 

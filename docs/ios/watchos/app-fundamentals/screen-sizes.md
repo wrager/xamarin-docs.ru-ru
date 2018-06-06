@@ -1,18 +1,20 @@
 ---
-title: Работа с размерами экранов
+title: Работа с watchOS размерами экранов в Xamarin
+description: В этом документе описывается работа с различными размерами экранов watchOS. В нем описывается watchOS конструктора интерфейса, watchOS симулятора, а ресурсы изображений.
 ms.prod: xamarin
 ms.assetid: 840DF939-2F59-4ABA-87D8-92AAC8A92BC4
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 600b3de6cbf31bd4c3221eb1bf81eda7b4678c09
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 30866c70879950acd8f43fd5880b1b24ba127fa4
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790715"
 ---
-# <a name="working-with-screen-sizes"></a>Работа с размерами экранов
+# <a name="working-with-watchos-screen-sizes-in-xamarin"></a>Работа с watchOS размерами экранов в Xamarin
 
 Apple Watch доступен в двух размеров:
 

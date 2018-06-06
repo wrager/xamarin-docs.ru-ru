@@ -1,5 +1,5 @@
 ---
-title: Диалоговые окна
+title: Диалоговые окна в Xamarin.Mac
 description: В этой статье рассматривается работа с диалоговые окна и модальные окна в приложении Xamarin.Mac. Он описывает создание модальных окон в Xcode и интерфейс построителя, работа с стандартных диалоговых окон и работать с этими элементами управления в коде C#.
 ms.prod: xamarin
 ms.assetid: 55451990-B77B-4D44-B8BB-F874EC503B0C
@@ -7,13 +7,14 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: cd0b57cc40d3f7cffd4d5711ec04a7225be870e9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7d9a93c8503d7e25f098e871378a22455b597e90
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792698"
 ---
-# <a name="dialogs"></a>Диалоговые окна
+# <a name="dialogs-in-xamarinmac"></a>Диалоговые окна в Xamarin.Mac
 
 При работе с C# и .NET в приложении Xamarin.Mac, имеется доступ к одним и тем же диалоговые окна и модальных окон, работающий в *Objective-C* и *Xcode* does. Поскольку Xamarin.Mac напрямую интегрируется с Xcode, можно использовать в Xcode _интерфейс построителя_ для создания и поддержания модальных окон (или их при необходимости создать непосредственно в код C#).
 

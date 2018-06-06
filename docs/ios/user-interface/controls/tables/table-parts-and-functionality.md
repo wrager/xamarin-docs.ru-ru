@@ -1,18 +1,20 @@
 ---
-title: Таблицы частей и функциональные возможности
+title: Таблицы частей и функциональных возможностей в Xamarin.iOS
+description: В этом документе описываются различные части UITableView в iOS. Он описывает заголовки, ячейки, нижние колонтитулы раздел, индекса и режим редактирования.
 ms.prod: xamarin
 ms.assetid: B4139C8B-28F2-4C0F-297F-BF5432C5A915
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: be8ad21847aed3d8ad9bda7ac45b070e5ad868bc
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c7c9f810798c3d02078b48e17a2ab951cb36aa12
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789880"
 ---
-# <a name="table-parts-and-functionality"></a>Таблицы частей и функциональные возможности
+# <a name="table-parts-and-functionality-in-xamarinios"></a>Таблицы частей и функциональных возможностей в Xamarin.iOS
 
 UITableView может быть стиля «сгруппированные» или «простой» и состоит из следующих частей:
 

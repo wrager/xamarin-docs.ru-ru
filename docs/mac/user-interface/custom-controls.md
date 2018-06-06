@@ -1,21 +1,20 @@
 ---
-title: Создание пользовательских элементов управления
-description: В этой статье описываются способы создания пользовательских элементов управления и работы с ними в построителе интерфейса.
+title: Создание пользовательских элементов управления в Xamarin.Mac
+description: В этом документе описывается создание пользовательских элементов управления в Xamarin.Mac. Показано, как построить пользовательский элемент управления, отслеживать его состояние, его интерфейс реагировать на действия пользователя и использовать элемент управления в приложение.
 ms.prod: xamarin
 ms.assetid: 004534B1-5AEE-452C-BBBE-8C2673FD49B7
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: e1ab3977df96e241fa2a5a80f6cabd74d7d775f8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: e4c2b2c9ee7bae3d6489fec6b22881653ec53043
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792682"
 ---
-# <a name="creating-custom-controls"></a>Создание пользовательских элементов управления
-
-_В этой статье описываются способы создания пользовательских элементов управления и работы с ними в построителе интерфейса._
+# <a name="creating-custom-controls-in-xamarinmac"></a>Создание пользовательских элементов управления в Xamarin.Mac
 
 При работе с C# и .NET в приложении Xamarin.Mac, имеется доступ к тому же пользовательские элементы управления, работающий в *Objective-C*, *Swift* и *Xcode* does . Поскольку Xamarin.Mac напрямую интегрируется с Xcode, можно использовать в Xcode _интерфейс построителя_ создавать и поддерживать свои пользовательские элементы управления (или при необходимости их непосредственно в коде C#).
 
