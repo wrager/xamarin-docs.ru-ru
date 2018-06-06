@@ -1,5 +1,5 @@
 ---
-title: .Storyboard/.xib-less пользовательского интерфейса
+title: .Storyboard/.xib-less пользовательского интерфейса в Xamarin.Mac
 description: В этой статье описывается создание пользовательского интерфейса в приложении Xamarin.Mac непосредственно из кода C#, без .storyboard файлы, файлы .xib или интерфейс построителя.
 ms.prod: xamarin
 ms.assetid: 02310F58-DCF1-4589-9F4A-065DF64FC0E1
@@ -7,16 +7,16 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 66725b02d3e351e74fa79ae5336a7db3a9f2b534
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 239133c8a5bcce97aca0c4444624fe0541600354
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792405"
 ---
-# <a name="storyboardxib-less-user-interface-design"></a>.Storyboard/.xib-less пользовательского интерфейса
+# <a name="storyboardxib-less-user-interface-design-in-xamarinmac"></a>.Storyboard/.xib-less пользовательского интерфейса в Xamarin.Mac
 
 _В этой статье описывается создание пользовательского интерфейса в приложении Xamarin.Mac непосредственно из кода C#, без .storyboard файлы, файлы .xib или интерфейс построителя._
-
 
 ## <a name="overview"></a>Обзор
 

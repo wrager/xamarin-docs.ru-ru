@@ -1,22 +1,22 @@
 ---
-title: Работа с оповещениями
-description: В этой статье рассматривается работа с UIAlertController для отображения пользователю в Xamarin.tvOS предупреждающее сообщение.
+title: Работа с оповещениями tvOS в Xamarin
+description: В этом документе описывается работа с оповещениями tvOS в Xamarin. В нем описывается, отображая оповещения, добавлении текстовых полей и вспомогательный класс.
 ms.prod: xamarin
 ms.assetid: F969BB28-FF2C-4A7D-88CA-F8076AD48538
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: da4d2d952687c7e39276ca76af413b83c4519eea
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b5125f150a4d57ed27041da2944f4c161434cf93
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789087"
 ---
-# <a name="working-with-alerts"></a>Работа с оповещениями
+# <a name="working-with-tvos-alerts-in-xamarin"></a>Работа с оповещениями tvOS в Xamarin
 
 _В этой статье рассматривается работа с UIAlertController для отображения пользователю в Xamarin.tvOS предупреждающее сообщение._
-
 
 Если необходимо привлечь внимание пользователей tvOS или задать разрешения на выполнение разрушительных действия (например, при удалении файла), могут быть представлены предупреждающее сообщение с помощью `UIAlertViewController`:
 

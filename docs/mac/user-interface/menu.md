@@ -1,5 +1,5 @@
 ---
-title: Меню
+title: Меню в Xamarin.Mac
 description: В этой статье рассматривается работа с меню в приложении Xamarin.Mac. Здесь описывается создание и обслуживание меню и элементов меню в Xcode и интерфейс построителя и работа с ними программным способом.
 ms.prod: xamarin
 ms.assetid: 5D367F8E-3A76-4995-8A89-488530FAD802
@@ -7,13 +7,14 @@ ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 50c9cf333ff7965bbdfbb964a2301e677eb6aa59
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: cb89d1df60bafe14dcc989666f0eeb5d757e4017
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792925"
 ---
-# <a name="menus"></a>Меню
+# <a name="menus-in-xamarinmac"></a>Меню в Xamarin.Mac
 
 _В этой статье рассматривается работа с меню в приложении Xamarin.Mac. Здесь описывается создание и обслуживание меню и элементов меню в Xcode и интерфейс построителя и работа с ними программным способом._
 
@@ -196,7 +197,7 @@ void OpenDialog (NSObject sender)
 
 Давайте запустите приложение и откройте **файл** меню: 
 
-![Меню "файл"](menu-images/appmenu09.png "меню "файл"")
+![Меню "файл"](menu-images/appmenu09.png "меню \"файл\"")
 
 Обратите внимание, что **откройте** теперь включен элемент меню. Если мы выбираем ее, откройте диалоговое окно будет отображаться:
 

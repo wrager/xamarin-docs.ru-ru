@@ -1,5 +1,5 @@
 ---
-title: Контакты и ContactsUI
+title: Контакты и ContactsUI в Xamarin.iOS
 description: В этой статье описывается работа с новых контактов и контактов пользовательского интерфейса платформы в приложения Xamarin.iOS. Эти платформы заменить существующий адресной книги и пользовательского интерфейса книги адрес, используемый в предыдущих версиях iOS.
 ms.prod: xamarin
 ms.assetid: 7b6fb66a-5e19-4a5a-9ed2-f6b02af099af
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: ca4235f7fb67c26ade6171d91870e74407aedbd3
-ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
+ms.openlocfilehash: 60b59023e937215bc640aeb4e9858baa0533db14
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786682"
 ---
-# <a name="contacts-and-contactsui"></a>Контакты и ContactsUI
+# <a name="contacts-and-contactsui-in-xamarinios"></a>Контакты и ContactsUI в Xamarin.iOS
 
 _В этой статье описывается работа с новых контактов и контактов пользовательского интерфейса платформы в приложения Xamarin.iOS. Эти платформы заменить существующий адресной книги и пользовательского интерфейса книги адрес, используемый в предыдущих версиях iOS._
 

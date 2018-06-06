@@ -1,19 +1,20 @@
 ---
-title: Работа с индикаторами хода выполнения
-description: В этой статье описывается проектирование и работа с индикаторами хода выполнения внутри приложения Xamarin.tvOS.
+title: Работа с tvOS индикаторов хода выполнения в Xamarin
+description: В этом документе описывается работа с индикаторами хода выполнения в приложении tvOS, созданных с помощью Xamarin. В нем описывается, как индикаторы выполнения, так и индикаторы активности.
 ms.prod: xamarin
 ms.assetid: 582B6D0C-1F16-4299-A9A6-5651E76009FE
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 04/25/2018
-ms.openlocfilehash: d512dfddb3a6c81767f937272a4ffb1ab1a35372
-ms.sourcegitcommit: dc882e9631b4ed52596b944a6fbbdde309346943
+ms.openlocfilehash: f8812f6b3f8a461487dcaf548637c84b16631d6b
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789220"
 ---
-# <a name="working-with-progress-indicators"></a>Работа с индикаторами хода выполнения
+# <a name="working-with-tvos-progress-indicators-in-xamarin"></a>Работа с tvOS индикаторов хода выполнения в Xamarin
 
 _В этой статье описывается проектирование и работа с индикаторами хода выполнения внутри приложения Xamarin.tvOS._
 

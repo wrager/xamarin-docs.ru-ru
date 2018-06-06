@@ -1,19 +1,20 @@
 ---
-title: Принципы работы приложения
-description: Основные понятия приложения
+title: Принципы работы приложения Xamarin.iOS
+description: Документ содержит ссылки на различные руководства, описывающие основные понятия фундаментальные для разработки Xamarin.iOS, такие как безопасность транспорта для приложения, backgrounding события и работа с потоками.
 ms.prod: xamarin
 ms.assetid: 608403AE-B09F-4D9C-8F59-F9DE9F0B1CF1
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/21/2017
-ms.openlocfilehash: d8dc1e25de527357fe6ad3ad1328a930e0e4dc70
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: cdace50d851b2c99f9241b869f248e58d5b93377
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784501"
 ---
-# <a name="application-fundamentals"></a>Принципы работы приложения
+# <a name="xamarinios-application-fundamentals"></a>Принципы работы приложения Xamarin.iOS
 
 В этом разделе содержится руководство для некоторых наиболее распространенных задач действия или концепции, разработчики должны иметь в виду при разработке приложений Xamarin.iOS (прежнее название — MonoTouch).
 

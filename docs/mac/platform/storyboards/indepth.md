@@ -1,19 +1,20 @@
 ---
-title: Работа с раскадровки
-description: Построение macOS пользовательских интерфейсов с помощью раскадровки с помощью Xcode.
+title: Работа с раскадровки в Xamarin.Mac
+description: В этом документе описывается работа с помощью раскадровки в Xamarin.Mac, как загружать их из кода, жизненный цикл контроллера представления, респондент цепочки проверки, segues окна контроллеров, распознавателей жестов и многое другое.
 ms.prod: xamarin
 ms.assetid: DF4DF7C2-DDD7-4A32-B375-5C5446301EC5
 ms.technology: xamarin-mac
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/14/2017
-ms.openlocfilehash: 3b72affd9b101b0a139301fec9f2bed343310507
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 72986ed4247c3b6f66f6f1813d74bf0a95d0de53
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792844"
 ---
-# <a name="storyboards"></a>Элементы Storyboard
+# <a name="working-with-storyboards-in-xamarinmac"></a>Работа с раскадровки в Xamarin.Mac
 
 Раскадровка определяет все пользовательского интерфейса для данного приложения, разбитый на режим работы Общие сведения о его просмотр контроллеров. В построителе интерфейса в Xcode каждый из этих контроллеров живет в свой собственный сцены.
 

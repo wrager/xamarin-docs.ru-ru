@@ -1,21 +1,21 @@
 ---
 title: Требования к установке инспектора и
-description: Как загружать, устанавливать и использовать инспектор Xamarin.
+description: В этом документе описывается установка инспектора Xamarin и описание поддерживаемых операционных систем, интегрированных средах разработки и платформах для приложений.
 ms.prod: xamarin
 ms.assetid: 81174493-02D3-4FF5-AD57-04F3288A7F94
 author: topgenorth
 ms.author: toopge
 ms.date: 03/29/2017
-ms.openlocfilehash: 5bbd5c64f53e191d5ac629e20df87c2b7ca4ec00
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 80bf3cb4e8e27355ccf6213dbfd07a17e992961b
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34793812"
 ---
 # <a name="inspector-installation-and-requirements"></a>Требования к установке инспектора и
 
 ## <a name="download-and-installation"></a>Загрузка и установка
-
 
 # <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
@@ -55,7 +55,6 @@ ms.lasthandoff: 05/09/2018
 |операций ввода-вывода (единый)|Поддерживается в Visual Studio и XS|Проверка приложений iOS из Windows требуется одна и та же версия инспектор также будет установлен на узле Mac сборки.|
 |Android|Поддерживается в Visual Studio и XS|Должны быть предназначены Android > = 4.0.3, с **fastdev** включена.<br />Необходимо использовать эмуляторы Google, Visual Studio и Xamarin Android. Эмуляторы Android 7 не может разрешить проверки в данный момент.|
 |WPF|Поддерживается только в Visual Studio в Windows|
-
 
 <a name="reporting-bugs" />
 
@@ -167,6 +166,5 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 1. Приложение Workbooks в `"/Applications/Xamarin Workbooks.app"`
 2. Приложение Inspector в `"Applications/Xamarin Inspector.app"`
-2. Надстройки `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` и `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-3. Inspector и вспомогательные файлы `/Library/Frameworks/Xamarin.Interactive.framework` и `/Library/Frameworks/Xamarin.Inspector.framework`
-
+3. Надстройки `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` и `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+4. Inspector и вспомогательные файлы `/Library/Frameworks/Xamarin.Interactive.framework` и `/Library/Frameworks/Xamarin.Inspector.framework`

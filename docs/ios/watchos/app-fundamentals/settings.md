@@ -1,18 +1,20 @@
 ---
-title: Работа с параметрами
+title: Работа с watchOS параметров в Xamarin
+description: В этом документе описывается работа с параметрами watchOS в Xamarin. В нем описывается добавление параметров в решение приложения Контрольные значения, с помощью этих параметров в Apple Watch приложения и приложения для iPhone.
 ms.prod: xamarin
 ms.assetid: 4B2EB192-F0A2-4010-B141-0431520594C0
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 6de70eae1eb1c498336a62b4d7be5e2805de11f9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 6cfbcf3b4383588819490838c2a54cdb4faf9403
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790881"
 ---
-# <a name="working-with-settings"></a>Работа с параметрами
+# <a name="working-with-watchos-settings-in-xamarin"></a>Работа с watchOS параметров в Xamarin
 
 Apple Watch приложений можно использовать те же параметры функции как приложения iOS - параметры пользовательского интерфейса отображается в **Apple Watch** приложение для iPhone, но значения доступны в приложении для iPhone и также расширение контрольных значений.
 

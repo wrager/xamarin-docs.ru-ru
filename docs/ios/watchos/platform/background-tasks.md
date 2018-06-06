@@ -1,21 +1,20 @@
 ---
-title: Фоновые задачи
-description: Используйте новый watchOS фоновые задачи 3 Чтобы убедиться, что приложение watch всегда имеет последних данных и моментальные снимки закрепления.
+title: watchOS фоновые задачи в Xamarin
+description: В этом документе описывается использование фоновых задач с watchOS в Xamarin, изучать типов фоновых задач, использование ресурсов, реализация фоновые задачи, планирования, советы и рекомендации и многое другое.
 ms.prod: xamarin
 ms.assetid: 2049C430-7566-45F8-9E3D-1446F484981E
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/13/2017
-ms.openlocfilehash: 0279aed1e694e3b38dcb8189819d88740c37b6ad
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5ab53d4aea32cf41c492e286c18cbe85a619889a
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34792051"
 ---
-# <a name="background-tasks"></a>Фоновые задачи
-
-_Используйте новый watchOS фоновые задачи 3 Чтобы убедиться, что приложение watch всегда имеет последних данных и моментальные снимки закрепления._
+# <a name="watchos-background-tasks-in-xamarin"></a>watchOS фоновые задачи в Xamarin
 
 С watchOS 3 существует, приложение watch можно обновлять сведения о его тремя разными способами: 
 
@@ -544,7 +543,7 @@ snapshotTask.SetTaskCompleted (false, expirationDate, userInfo);
 
 - Для выполнения любой задачи будет присвоено только через несколько секунд. Система учитывает не только время передано, но также объем ресурсов ЦП приложение использует для получения этого предела.
 - Любое приложение, которое превысит пределы будет завершен с следующие коды ошибок:
-    - **CPU** - 0xc51bad01
+    - **ЦП** -0xc51bad01
     - **Время** -0xc51bad02
 - Система будет применять различные ограничения в зависимости от типа приложения для выполнения запрошенных фоновой задачи. Например `WKApplicationRefreshBackgroundTask` и `WKURLSessionRefreshBackgroundTask` задачи, получают немного больше времени сред выполнения над другими типами фоновых задач.
 

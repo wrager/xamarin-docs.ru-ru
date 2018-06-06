@@ -1,22 +1,20 @@
 ---
-title: Работа с представлением с накоплением
-description: В этой статье описывается проектирование и работа с представлением с накоплением внутри приложения Xamarin.tvOS.
+title: Работа с представлениями в стеке tvOS в Xamarin
+description: В этом документе описывается работали с tvOS с накоплением представления в приложении, созданном с помощью Xamarin. Он предоставляет высокоуровневый обзор представлений с накоплением и обсуждаются автоматический макет, позиционирование и изменение размеров с накоплением представление, общие использует, интеграция с раскадровки и многое другое.
 ms.prod: xamarin
 ms.assetid: 00B07F85-F30B-4DD4-8664-A61D0A1CDB0E
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: a6300e4da47022199c0503e6be63b0c90f15654d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7e718e525c23e78fbf846209602a07bf0f3f386e
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789376"
 ---
-# <a name="working-with-stacked-view"></a>Работа с представлением с накоплением
-
-_В этой статье описывается проектирование и работа с представлением с накоплением внутри приложения Xamarin.tvOS._
-
+# <a name="working-with-tvos-stacked-views-in-xamarin"></a>Работа с представлениями в стеке tvOS в Xamarin
 
 Элемент управления View стека (`UIStackView`) использует возможности автоматический макет и размер классы для управления стек представлений, горизонтально или вертикально, который динамически реагирует на изменения содержимого и размера экрана устройства Apple TV.
 
