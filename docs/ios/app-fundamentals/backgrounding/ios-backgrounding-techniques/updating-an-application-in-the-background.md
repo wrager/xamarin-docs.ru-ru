@@ -1,18 +1,20 @@
 ---
-title: Обновление приложения в фоновом режиме
+title: Обновление приложения Xamarin.iOS в фоновом режиме
+description: В этом документе описываются различные способы обновления приложения Xamarin.iOS в фоновом режиме, как мониторинг области, выборку в фоновом режиме и удаленный уведомления.
 ms.prod: xamarin
 ms.assetid: A2B2231A-C045-4C11-8176-F9966485197A
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 370d1cba71fa695e4e01dfb93241536a8df01b11
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 973c18528eee2096b29ba86e82ceff31ecf3e207
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784069"
 ---
-# <a name="updating-an-application-in-the-background"></a>Обновление приложения в фоновом режиме
+# <a name="updating-a-xamarinios-app-in-the-background"></a>Обновление приложения Xamarin.iOS в фоновом режиме
 
 Обновления в фоновом режиме — это процесс пробуждение приложение, которое приостанавливается или не запущен и обновление его с новым содержимым. операций ввода-вывода обеспечивает три варианта обновление содержимого в фоновом режиме.
 

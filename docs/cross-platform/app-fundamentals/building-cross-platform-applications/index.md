@@ -1,24 +1,23 @@
 ---
-title: Создание кросс-платформы приложений
+title: Создание кросс платформенных приложений
 description: В этом разделе описывается, сводку, а также шесть частей построение приложений с помощью платформы разработки Xamarin — из Поняв, как работает Xamarin к разработке приложений для мобильных устройств, тестирование и развертывание в различных хранилищах приложения.
 ms.prod: xamarin
 ms.assetid: 442FC40A-84DD-A218-0D15-EAD86594B6D7
 author: asb3993
 ms.author: amburns
 ms.date: 01/28/2016
-ms.openlocfilehash: fba13ab921949cd2361e78535d5ffc96952a1336
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 3966b731531d617f105583210334a23071a6802b
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34780178"
 ---
-# <a name="sharing-code-options"></a>Параметры совместного использования кода
+# <a name="building-cross-platform-applications"></a>Создание кросс платформенных приложений
 
 Существует два варианта совместное использование кода между кросс платформенных мобильных приложений: общие проекты активов и переносимой библиотеки классов. Эти параметры являются [обсуждаемые здесь](~/cross-platform/app-fundamentals/code-sharing.md); Дополнительные сведения о [переносимой библиотеки классов](~/cross-platform/app-fundamentals/pcl.md) и [общие проекты](~/cross-platform/app-fundamentals/shared-projects.md) также доступна.
 
 <a name="Sections" />
-
-## <a name="building-cross-platform-mobile-apps"></a>Создание кросс-платформенные мобильные приложения
 
  [Обзор набора средств Visual Studio для Unity](~/cross-platform/app-fundamentals/building-cross-platform-applications/overview.md)
 
@@ -36,13 +35,11 @@ ms.lasthandoff: 05/10/2018
 
  <a name="Cross-Platform_Mobile_Application_Case_Studies" />
 
-
 ## <a name="case-studies"></a>Примеры использования
 
 Принципы, описанные в этом документе, помещаются в рекомендаций в демонстрационном приложении *Tasky*, а также [готовые приложения](https://xamarin.com/prebuilt) как [Xamarin CRM](https://xamarin.com/prebuilt/#xamarincrm).
 
  <a name="Tasky" />
-
 
 ### <a name="tasky"></a>Tasky
 
@@ -53,7 +50,6 @@ Tasky — это приложение список дел простой для 
 
 Чтение [Tasky практический пример](~/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky.md).
 
-
 ## <a name="summary"></a>Сводка
 
 В этом разделе представлены средства разработки приложений Xamarin и описывается создание приложений, предназначенных для нескольких мобильных платформ.
@@ -63,8 +59,6 @@ Tasky — это приложение список дел простой для 
 Примеры предоставляют общие функции приложения (например, файл и сетевые операции) и как они могут строиться кросс платформенных способом.
 
 Наконец он кратко рассматривается проверка и предоставляет ссылки на обучающий материал, помещает эти принципы в действие.
-
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

@@ -1,18 +1,20 @@
 ---
-title: С помощью ADO.NET с iOS
+title: С помощью ADO.NET с помощью Xamarin.iOS
+description: В этом документе описывается использование ADO.NET как метод для доступа к SQLite приложения Xamarin.iOS. Он описывает, ссылки на сборки, Mono.Data.Sqlite и BasicDataAccess образца.
 ms.prod: xamarin
 ms.assetid: 79078A4D-2D24-44F3-9543-B50418A7A000
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 7d8478c363da1e4362a8a837dafba7f9cf85872e
-ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
+ms.openlocfilehash: 8240e3052b4deb4bfdf0ec94e67fbd6827a34dab
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784833"
 ---
-# <a name="using-adonet-with-ios"></a>С помощью ADO.NET с iOS
+# <a name="using-adonet-with-xamarinios"></a>С помощью ADO.NET с помощью Xamarin.iOS
 
 Xamarin имеет встроенную поддержку базу данных SQLite, которая доступна на iOS, предоставляемых через знакомый синтаксис ADO.NET. С помощью этих API требует написания инструкций SQL, которые обрабатываются SQLite, такие как `CREATE TABLE`, `INSERT` и `SELECT` инструкции.
 

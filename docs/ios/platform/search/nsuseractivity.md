@@ -1,18 +1,20 @@
 ---
-title: Поиск с NSUserActivity
+title: Поиск с NSUserActivity в Xamarin.iOS
+description: В этом документе описывается индекса NSUserActivity, сделав его доступным для поиска Spotlight и Safari. В этом примере рассматривается реакция на выбор NSUserActivity в результатах поиска.
 ms.prod: xamarin
 ms.assetid: 0B28B284-C7C9-4C0D-A782-D471FBBC4CAE
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 803fcce359bbe27ea19901afa766f5b7f4692e0c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4b053f66e9b6b7715cbe52c4e43d9db32db48f4c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788212"
 ---
-# <a name="search-with-nsuseractivity"></a>Поиск с NSUserActivity
+# <a name="search-with-nsuseractivity-in-xamarinios"></a>Поиск с NSUserActivity в Xamarin.iOS
 
 `NSUserActivity` была введена в iOS 8 и используется для предоставления данных для обработки.
 Он позволяет создавать действия в определенные части приложения, которое затем можно передать из системы на другой экземпляр своего приложения, работающего на устройстве различных операций ввода-вывода. Принимающее устройство, затем можно продолжить действие запускается на устройстве предыдущего, комплектовать справа, где остановились пользователя. Дополнительные сведения об использовании перемещение вручную см. в разделе нашей [Общие сведения о переадресации](~/ios/platform/handoff.md) документации.

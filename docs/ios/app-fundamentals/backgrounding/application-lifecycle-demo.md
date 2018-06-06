@@ -1,18 +1,20 @@
 ---
-title: Демонстрация жизненного цикла приложения
+title: Демонстрация жизненного цикла приложений для Xamarin.iOS
+description: В этом документе рассматриваются различные события жизненного цикла, обрабатываются делегатом приложения в приложении iOS, демонстрации, когда и как эти события обрабатываются.
 ms.prod: xamarin
 ms.assetid: 5C8AACA6-49F8-4C6D-99C3-5F443C01B230
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: f03cd7d74d09fc40b88cfbf44bf54c6da5f4c149
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 64c695065012e4bf796c219c260324d9b6278ca5
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783588"
 ---
-# <a name="application-lifecycle-demo"></a>Демонстрация жизненного цикла приложения
+# <a name="application-lifecycle-demo-for-xamarinios"></a>Демонстрация жизненного цикла приложений для Xamarin.iOS
 
 В этом разделе мы будем исследовать приложения, демонстрирующий четыре состояния приложения и роль `AppDelegate` методы уведомления получить изменения состояния приложения. Приложение будет печататься обновления на консоль, каждый раз, когда приложение изменяет состояние:
 

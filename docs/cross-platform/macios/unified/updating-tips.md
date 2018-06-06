@@ -1,14 +1,16 @@
 ---
 title: Советы по обновлению кода до унифицированный интерфейс API
+description: В этом документе рассматриваются наиболее распространенных ошибок и различные подсказки полезны при обновлении приложения для использования API единой Xamarin.
 ms.prod: xamarin
 ms.assetid: 8DD34D21-342C-48E9-97AA-1B649DD8B61F
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: 640f95e0083c73288cc8e1f183b06bd28a7b4e07
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: cab27d5dc38eeab65728f242c6f11fd445601a88
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782122"
 ---
 # <a name="tips-for-updating-code-to-the-unified-api"></a>Советы по обновлению кода до унифицированный интерфейс API
 
@@ -20,7 +22,6 @@ ms.lasthandoff: 05/09/2018
 
 ```console
 Objective-C exception thrown. Name: NSInvalidArgumentException Reason: Could not find a storyboard named 'xxx' in bundle NSBundle...
-
 ```
 
 Необходимо выполнить следующую команду, чтобы решить эту проблему, найдите этот целевой файл сборки действий.
@@ -82,9 +83,9 @@ Objective-C exception thrown. Name: NSInvalidArgumentException Reason: Could not
     vidrec.WeakVideoSettings = new AVVideoSettings() { ... }.Dictionary;
     ```
 
- * NSObject `.ctor(IntPtr)` конструктор был изменен с открытым для защищенного ([чтобы предотвратить неправильное использование](~/cross-platform/macios/unified/index.md#NSObject_ctor)).
+ * NSObject `.ctor(IntPtr)` конструктор был изменен с открытым для защищенного ([чтобы предотвратить неправильное использование](~/cross-platform/macios/unified/overview.md#NSObject_ctor)).
 
- * `NSAction` было [заменить](~/cross-platform/macios/unified/index.md#NSAction) с starndard .NET `Action`. Некоторые делегаты простой (один параметр) также были заменены `Action<T>`.
+ * `NSAction` было [заменить](~/cross-platform/macios/unified/overview.md#NSAction) с starndard .NET `Action`. Некоторые делегаты простой (один параметр) также были заменены `Action<T>`.
 
 Наконец, см. [отличия API единой классический v](http://developer.xamarin.com/releases/ios/api_changes/classic-vs-unified-8.6.0/) для поиска изменения для API-интерфейсов в коде. Поиск [эту страницу](http://developer.xamarin.com/releases/ios/api_changes/classic-vs-unified-8.6.0/) поможет найти классический API и что они были обновлены, чтобы.
 

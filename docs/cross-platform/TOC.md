@@ -11,7 +11,7 @@
 ### [Введение в разработку мобильных приложений](get-started/introduction-to-mobile-development.md)
 ### [Введение в жизненный цикл программного обеспечения (SDLC) мобильных устройств](get-started/introduction-to-mobile-sdlc.md)
 
-### [Создание кроссплатформенных приложений](app-fundamentals/building-cross-platform-applications/index.md)
+### [Создание кросс платформенных приложений](app-fundamentals/building-cross-platform-applications/index.md)
 #### [Обзор набора средств Visual Studio для Unity](app-fundamentals/building-cross-platform-applications/overview.md)
 #### [Часть 1. Основные сведения о мобильной платформе Xamarin](app-fundamentals/building-cross-platform-applications/understanding-the-xamarin-mobile-platform.md)
 #### [Часть 2. Архитектура](app-fundamentals/building-cross-platform-applications/architecture.md)

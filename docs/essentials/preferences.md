@@ -1,17 +1,18 @@
 ---
-title: Параметры Xamarin.Essentials
-description: Класс установки сохраняет параметры приложения в хранилище ключей и значений.
+title: 'Xamarin.Essentials: параметры'
+description: Этот документ описывает класс предпочтения в Xamarin.Essentials, который сохраняет параметры приложения в хранилище ключей и значений. В этом примере рассматривается использование классов и типов данных, которые могут быть сохранены.
 ms.assetid: AA81BCBD-79BA-448F-942B-BA4415CA50FF
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: 882ff8e0f10948f4f88303f8bcc3d45b3cecf5fd
-ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
+ms.openlocfilehash: e453c04a953e60be2508670723d175bde3dc7c42
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782853"
 ---
-# <a name="xamarinessentials-preferences"></a>Параметры Xamarin.Essentials
+# <a name="xamarinessentials-preferences"></a>Xamarin.Essentials: параметры
 
 ![Предварительная версия NuGet](~/media/shared/pre-release.png)
 

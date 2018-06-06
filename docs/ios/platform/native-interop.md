@@ -1,18 +1,20 @@
 ---
-title: Создание ссылок на собственные библиотеки
+title: Создание ссылок на собственных библиотек в Xamarin.iOS
+description: В этом документе описывается связывание собственные библиотеки C в приложении Xamarin.iOS. Он описывается создание универсальной собственным библиотекам и доступ к методам C из C#.
 ms.prod: xamarin
 ms.assetid: 1DA80280-E78A-EC4B-8673-C249C8425CF5
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 07/28/2016
-ms.openlocfilehash: 4d58e869dc1357faef71ea88ed6b5ea30aaf960d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: bb27ba8b2d9c1b66448f22b7f80f17ba2e483544
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787731"
 ---
-# <a name="referencing-native-libraries"></a>Создание ссылок на собственные библиотеки
+# <a name="referencing-native-libraries-in-xamarinios"></a>Создание ссылок на собственных библиотек в Xamarin.iOS
 
 Xamarin.iOS поддерживает связь с собственные библиотеки C и Objective-C библиотеки. В этом документе рассматривается создание ссылок на собственные библиотеки C в проекте Xamarin.iOS. Сведения о выполнении то же самое для библиотеки Objective-C, см. Наши [типы привязки Objective-C](~/ios/platform/binding-objective-c/index.md) документа.
 

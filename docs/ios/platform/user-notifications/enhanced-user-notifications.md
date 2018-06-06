@@ -1,21 +1,20 @@
 ---
-title: Улучшенный пользовательский уведомления
-description: В этой статье описываются все способы, что пользователям уведомления были улучшены iOS 10 и способ их использования в приложении Xamarin.iOS.
+title: Улучшенный пользовательский уведомления в Xamarin.iOS
+description: В этой статье описываются framework уведомления для пользователей, которая появилась в iOS 10. Документ затрагивает уведомления локальной, удаленной уведомления, уведомлениями, действий по уведомлениям и многое другое.
 ms.prod: xamarin
 ms.assetid: 4E1FF652-28F0-4566-B383-9D12664401A4
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/02/2017
-ms.openlocfilehash: b27d415240f3b8cd25c4bc54f6d176c50e42a250
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: 29c529d57d35b0ab2b7bf2e80f8d295a8d059c5e
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788658"
 ---
-# <a name="enhanced-user-notifications"></a>Улучшенный пользовательский уведомления
-
-_В этой статье описываются все способы, что пользователям уведомления были улучшены iOS 10 и способ их использования в приложении Xamarin.iOS._
+# <a name="enhanced-user-notifications-in-xamarinios"></a>Улучшенный пользовательский уведомления в Xamarin.iOS
 
 Новые и iOS 10 уведомление пользователя, платформа дает для доставки и обработки локальных и удаленных уведомлений. С помощью этой платформы, приложения или расширения приложения можно запланировать доставки уведомлений, локальный, указав набор условий, таких как расположение или время дня.
 

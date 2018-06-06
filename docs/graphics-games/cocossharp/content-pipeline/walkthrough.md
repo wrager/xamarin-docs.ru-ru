@@ -1,20 +1,21 @@
 ---
-title: С помощью MonoGame PipelineTool
-description: Средство конвейера MonoGame служит для создания и управления MonoGame проектов. Файлы проектов обрабатываются с помощью средства Monogame конвейера и выводимые в виде .xnb файлов для использования в приложениях CocosSharp и MonoGame.
+title: С помощью средства MonoGame конвейера
+description: Средство конвейера MonoGame служит для создания и управления MonoGame проектов. Файлы проектов обрабатываются с помощью средства MonoGame конвейера и выводимые в виде .xnb файлов для использования в приложениях CocosSharp и MonoGame.
 ms.prod: xamarin
 ms.assetid: CACFBF5F-BBD4-4D46-8DDA-1F46466725FD
 author: charlespetzold
 ms.author: chape
 ms.date: 03/27/2017
-ms.openlocfilehash: 50e6c611e285cde9184eed242353ad08b2a941ee
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 347cb7e9d417f97cb6e8d78e67b1c76a378cd188
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783303"
 ---
 # <a name="using-the-monogame-pipeline-tool"></a>С помощью средства MonoGame конвейера
 
-_Средство конвейера MonoGame служит для создания и управления MonoGame проектов. Файлы проектов обрабатываются с помощью средства Monogame конвейера и выводимые в виде .xnb файлов для использования в приложениях CocosSharp и MonoGame._
+_Средство конвейера MonoGame служит для создания и управления MonoGame проектов. Файлы проектов обрабатываются с помощью средства MonoGame конвейера и выводимые в виде .xnb файлов для использования в приложениях CocosSharp и MonoGame._
 
 Средство конвейера MonoGame предоставляет среду для использования для преобразования содержимого файлов в **.xnb** файлов для использования в приложениях CocosSharp и MonoGame. Сведения о содержимого конвейеров и почему они полезны при разработке игры см [этот вводные сведения о конвейерах содержимого](~/graphics-games/cocossharp/content-pipeline/introduction.md)
 

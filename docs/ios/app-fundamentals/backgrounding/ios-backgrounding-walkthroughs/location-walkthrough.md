@@ -1,18 +1,20 @@
 ---
-title: Пошаговое руководство. Использование фона местоположения
+title: Пошаговое руководство. Фоновая расположение в Xamarin.iOS
+description: Этот документ содержит пошаговое руководство демонстрирует использование в приложении backgrounded Xamarin.iOS сведения о расположении. Он описывает, необходимые для установки, интерфейс пользователя и состояний приложения.
 ms.prod: xamarin
 ms.assetid: F8EEA0FD-5614-47FE-ADAC-80A5BCA6EB5F
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: e6c74d9ffba4f63682a905d6ebc06d02be81abf4
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: aef39ef435bbbad6f643b2376832d8f8132d6a4c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784098"
 ---
-# <a name="walkthrough---using-background-location"></a>Пошаговое руководство. Использование фона местоположения
+# <a name="walkthrough---background-location-in-xamarinios"></a>Пошаговое руководство. Фоновая расположение в Xamarin.iOS
 
 В этом примере мы собираемся сборку iOS расположение приложения, которое выводит сведения о нашем текущее расположение: широты, долготы и другие параметры на экране. Это приложение будет показано правильно выполнять обновления расположение, пока приложение находится в активном или Backgrounded.
 

@@ -1,18 +1,19 @@
 ---
-title: Подробные сведения о платформе SkiaSharp
-description: Сведения о том, как перенести содержимое вашего SKSurface в собственное приложение.
+title: Заметки о SkiaSharp платформы
+description: Этот документ описывает платформой детально SkiaSharp. Он предоставляет образец кода для iOS, Android, macOS, Windows и Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: 1D90E0B3-A3A8-4286-BC54-9D67188A1C6C
 author: charlespetzold
 ms.author: chape
 ms.date: 03/24/2017
-ms.openlocfilehash: 3f40c7ea0b118816b7be373617795db9158c1450
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: bcec8f2c850396f45cba795555b924d3cbc4ef22
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783533"
 ---
-# <a name="platform-specific-integration"></a>Интеграция определенные платформы
+# <a name="skiasharp-platform-specific-notes"></a>Заметки о SkiaSharp платформы
 
 В приведенных ниже примерах выделить буферы изображения вручную, это делается для того, чтобы проиллюстрировать общий шаблон платформы, используемого для отрисовки в существующий буфер RBGA, предоставляемых платформой.
 

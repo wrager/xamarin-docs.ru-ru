@@ -1,29 +1,26 @@
 ---
-title: Собственные ссылки
-description: Собственные ссылки дает возможность внедрения собственная платформа в Xamarin.iOS или Xamarin.Mac проект или проект привязки.
+title: Собственный ссылки на iOS, Mac и привязки проектов
+description: Собственные ссылки дает возможность внедрения собственная платформа в Xamarin.iOS, Xamarin.Mac или привязки проекта.
 ms.prod: xamarin
 ms.assetid: E53185FB-CEF5-4AB5-94F9-CC9B57C52300
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: c56e392420debb21998363cfffa288aec51691ea
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 3a497d0bb4674014b8063cb1fbc91eec6e7ae5ea
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781722"
 ---
-# <a name="native-references"></a>Собственные ссылки
+# <a name="native-references-in-ios-mac-and-bindings-projects"></a>Собственные ссылки в iOS, Mac и привязки проектов
 
 _Собственные ссылки дает возможность внедрения собственная платформа в Xamarin.iOS или Xamarin.Mac проект или проект привязки._
-
 
 Начиная с iOS 8.0 ее можно создать внедренный framework, могут совместно использовать код приложения расширения и основного приложения в Xcode. С помощью функции собственную ссылку он будет можно использовать такие внедренные платформы (созданные с помощью Xcode) в Xamarin.iOS.
  
 > [!IMPORTANT]
 > Создание внедренного платформы из любого типа Xamarin.iOS или Xamarin.Mac проектов будет невозможно, собственных ссылок разрешается только для использования из существующего собственного платформ (Objective-C).
-
-
-
 
 <a name="Terminology" />
 

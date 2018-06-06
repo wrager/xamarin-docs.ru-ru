@@ -1,15 +1,17 @@
 ---
 title: Разметка MonoTouch.Dialog Json
+description: В этом документе описывается синтаксис JSON, который может использоваться для построения Xamarin.iOS пользовательский интерфейс, с помощью MonoTouch.Dialog.
 ms.prod: xamarin
 ms.assetid: 59F3E18C-3A73-69B8-DA5E-21B19B9DFB98
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 02c95f06571a3c242481769846d7cab51450f2ca
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: dc3f4ea87bbd381a4a1767fb9179fb1bcf0c56d8
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790761"
 ---
 # <a name="monotouchdialog-json-markup"></a>Разметка MonoTouch.Dialog Json
 

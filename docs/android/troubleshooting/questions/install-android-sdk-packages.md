@@ -6,12 +6,13 @@ ms.assetid: F136AAE0-C6D2-4B0F-8F8C-7A6A94877266
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 01/02/2018
-ms.openlocfilehash: d1fc8a1c511e86615108d1df841c28256f23191f
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/30/2018
+ms.openlocfilehash: df359fae545079c7ac1d7106ec86e9297f183f90
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34732779"
 ---
 # <a name="which-android-sdk-packages-should-i-install"></a>Какие пакеты Android SDK следует установить?
 
@@ -42,11 +43,8 @@ ms.lasthandoff: 04/04/2018
 Необходимо установить пакет SDK платформы для API 15 и 23. Обратите внимание, что не устанавливать уровни API между минимальным и целевым (даже если backporting на этих уровнях API).
 
 ## <a name="system-images"></a>Образы системы
-Это только требуется, если вы хотите использовать эмуляторы Android out of box от Google. 
 
-- [Настройка эмулятора по умолчанию](~/android/get-started/installation/android-emulator/index.md)
-
-- [Как ускорить эмулятор по умолчанию](~/android/get-started/installation/android-emulator/index.md)
+Это только требуется, если вы хотите использовать эмуляторы Android out of box от Google. Дополнительные сведения см. в разделе [Android установки эмулятора](~/android/get-started/installation/android-emulator/index.md)
 
 ## <a name="extras"></a>Дополнения
 Android SDK дополнения обычно не являются обязательными; Однако полезно следует учитывать их, так как они могут потребоваться в зависимости от вашей варианта использования.

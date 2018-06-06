@@ -1,20 +1,19 @@
 ---
-title: С помощью UrhoSharp
-description: Обзор подсистемы UrhoSharp
+title: Использование UrhoSharp для создания трехмерных игр
+description: Этот документ предоставляет обзор UrhoSharp, описывающий сцен, компоненты, фигур, камеры, действия, ввод данных пользователем, звук и многое другое.
 ms.prod: xamarin
 ms.assetid: D9BEAD83-1D9E-41C3-AD4B-3D87E13674A0
 author: charlespetzold
 ms.author: chape
 ms.date: 03/29/2017
-ms.openlocfilehash: 8eed81817620b3f68510ab2e043c3aeaafb6e78a
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: eb1e93e47528e801da08f402f452e0e8ce5014d8
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784043"
 ---
-# <a name="using-urhosharp"></a>С помощью UrhoSharp
-
-_Обзор подсистемы UrhoSharp_
+# <a name="using-urhosharp-to-build-a-3d-game"></a>Использование UrhoSharp для создания трехмерных игр
 
 Перед тем как записывать первой игры, необходимо получить для начала ознакомьтесь с основами: Настройка сцены, загрузка ресурсов (содержит иллюстрации) и как создать простое взаимодействие для игры.
 

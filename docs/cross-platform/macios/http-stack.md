@@ -1,18 +1,19 @@
 ---
-title: Стек HttpClient и селектор реализации SSL/TLS для операций ввода-вывода и macOS
-description: Стек HttpClient и селектор реализации SSL/TLS определяет, будет использоваться приложением Xamarin iOS, tvOS или macOS реализацию класса HttpClient и SSL/TLS.
+title: HttpClient и селектор реализации SSL/TLS для операций ввода-вывода и macOS
+description: Стек HttpClient и SSL/TLS селектор реализация определяет HttpClient и SSL/TLS реализации, который будет использоваться в приложении iOS, tvOS или macOS Xamarin.
 ms.prod: xamarin
 ms.assetid: 12101297-BB04-4410-85F0-A0D41B7E6591
 author: asb3993
 ms.author: amburns
 ms.date: 04/20/2018
-ms.openlocfilehash: dcbdb4d20bca9764731b08e551a4d3b8a26a2ab4
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 9de2c97933bd33111a751be51e06dffe09794f15
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782272"
 ---
-# <a name="httpclient-stack-and-ssltls-implementation-selector-for-iosmacos"></a>Стек HttpClient и селектор реализации SSL/TLS для операций ввода-вывода и macOS
+# <a name="httpclient-and-ssltls-implementation-selector-for-iosmacos"></a>HttpClient и селектор реализации SSL/TLS для операций ввода-вывода и macOS
 
 **HttpClient реализация селектора** для Xamarin.iOS, Xamarin.tvOS и Xamarin.Mac элементов управления, который `HttpClient` реализации для использования. Можно переключиться к реализациям операций ввода-вывода, tvOS или macOS собственного транспортов (`NSUrlSession` или `CFNetwork`, в зависимости от операционной системы). Плюсом является двоичные файлы TLS 1.2 поддержки, меньше и быстрее загружает; Недостатком является то, что требуется для выполнения асинхронных операций для выполнения цикла событий.
 

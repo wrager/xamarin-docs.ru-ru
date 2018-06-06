@@ -1,18 +1,20 @@
 ---
-title: Текстовый ввод
+title: Ввод текста в Xamarin.iOS
+description: В этом документе описывается ввода текста в приложения Xamarin.iOS. В нем описывается использование UITextField и UITextVIew программно или в конструкторе iOS.
 ms.prod: xamarin
 ms.assetid: 03A7F1DC-017D-4501-91FD-82C78272CDB1
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 43f1f0318bceb3da8a3d6216a49ec2af48ac155c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5d8648f5830a7adcd32d253b92fae45098f12a83
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790218"
 ---
-# <a name="text-input"></a>Текстовый ввод
+# <a name="text-input-in-xamarinios"></a>Ввод текста в Xamarin.iOS
 
 Принимать ввод пользователем текста осуществляются с помощью `UITextField` для однострочного входов и UITextView для многострочного редактируемый текст. Можно перетащите один из этих элементов управления на экране и дважды щелкните, чтобы задать начальный текст.
 

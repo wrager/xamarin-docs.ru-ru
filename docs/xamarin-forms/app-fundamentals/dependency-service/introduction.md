@@ -7,11 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/06/2017
-ms.openlocfilehash: 88821c5315fc338b5195e42ea4b2bc3e648e6ea1
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 6a0544a58245efed696b92c543fbaf5e7e1b8365
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34732831"
 ---
 # <a name="introduction-to-dependencyservice"></a>Знакомство с помощью DependencyService
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="how-dependencyservice-works"></a>Работа с помощью DependencyService
 
-Xamarin.Forms приложения требуют три компонента для использования `DependencyService`:
+Xamarin.Forms приложения должны использовать четыре компонента `DependencyService`:
 
 - **Интерфейс** &ndash; требуемую функциональность определяется интерфейс в общем коде.
 - **Реализации на платформе** &ndash; классы, реализующие интерфейс должны добавляться к каждому проекту платформы.

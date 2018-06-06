@@ -1,21 +1,20 @@
 ---
 title: Публикации в магазине приложений Apple TV
-description: В этой статье показано, как настройка, построение и публикация приложения Xamarin.tvOS для распространения через ТВ Apple App Store. Он включает Пошаговое руководство, описывается Подготовка приложения для распространения, как использовать средства Apple для отправки приложения для просмотра и, наконец, как публиковать приложение в магазине приложений Apple TV.
+description: В этом документе описывается публикация приложений для Apple TV App Store. Он описывается настройка, подготовки, сборки и отправить tvOS приложений, созданных с помощью Xamarin.
 ms.prod: xamarin
 ms.assetid: 52448C93-DC19-40FA-BF8C-608AE680FF49
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: c72b161845f6d8492a47d95e51a80cf0b4f30271
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ac905caaf0bdefe7f0c5502be0bd63102ca5a813
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789308"
 ---
 # <a name="publishing-to-the-apple-tv-app-store"></a>Публикации в магазине приложений Apple TV
-
-_В этой статье показано, как настройка, построение и публикация приложения Xamarin.tvOS для распространения через ТВ Apple App Store. Он включает Пошаговое руководство, описывается Подготовка приложения для распространения, как использовать средства Apple для отправки приложения для просмотра и, наконец, как публиковать приложение в магазине приложений Apple TV._
 
 В порядке распространения приложений на всех устройствах Apple TV, Apple требует, чтобы опубликованных через приложение *магазина Apple TV*, делая корзину централизованно для tvOS приложений App Store. Разработчики многих типов приложений можно прописными значительных успех этой одной точки распространения. Apple App Store ТВ является готовое решение, предложения распространения "и" Оплата "систем разработки приложений.
 
@@ -153,7 +152,7 @@ Apple предоставляет набор специальных служб п
     ![](app-store-publishing-images/buildxs01new.png "Выберите конфигурации выпуска")
 2. В меню **Сборка** выберите **Архивировать для публикации**:
 
-    [![](app-store-publishing-images/buildxs02new.png "Выбор элемента "Архивировать для публикации"")](app-store-publishing-images/buildxs02new.png#lightbox)
+    [![](app-store-publishing-images/buildxs02new.png "Выбор элемента \"Архивировать для публикации\"")](app-store-publishing-images/buildxs02new.png#lightbox)
 3. После создания архива появится представление **Архивы**:
 
     [![](app-store-publishing-images/buildxs03new.png "Представление архивы")](app-store-publishing-images/buildxs03new.png#lightbox)
@@ -195,7 +194,7 @@ Apple предоставляет набор специальных служб п
 
 2. Щелкните *Deliver Your App* (Доставить приложение) и нажмите кнопку *Choose* (Выбрать):
 
-    [![](app-store-publishing-images/publishvs01.png "Выбор команды "Доставить приложение"")](app-store-publishing-images/publishvs01.png#lightbox)
+    [![](app-store-publishing-images/publishvs01.png "Выбор команды \"Доставить приложение\"")](app-store-publishing-images/publishvs01.png#lightbox)
 
 3. Выберите ранее созданный ZIP- или IPA-файл и нажмите кнопку **OK**.
 4. Загрузчик приложения выполнит проверку файла:

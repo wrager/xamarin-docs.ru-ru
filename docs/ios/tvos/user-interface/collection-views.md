@@ -1,21 +1,20 @@
 ---
-title: Работа с представлениями коллекции
-description: В этой статье описывается проектирование и работа с представлениями коллекции внутри приложения Xamarin.tvOS.
+title: Работа с tvOS представления коллекций в Xamarin
+description: В этом документе описывается работа с представлениями коллекции в приложении tvOS, созданных с помощью Xamarin. Она охватывает коллекции макеты, создание ячеек и дополнительных представления, реагирование на события пользователя и многое другое.
 ms.prod: xamarin
 ms.assetid: 5125C4C7-2DDF-4C19-A362-17BB2B079178
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 7fa38aa81e5929bdc88ceebd153d86cfcd92f20e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9b411ac6bb8d1492511f9e5d2234731ae64c3a82
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789282"
 ---
-# <a name="working-with-collection-views"></a>Работа с представлениями коллекции
-
-_В этой статье описывается проектирование и работа с представлениями коллекции внутри приложения Xamarin.tvOS._
+# <a name="working-with-tvos-collection-views-in-xamarin"></a>Работа с tvOS представления коллекций в Xamarin
 
 Представления коллекций позволяют группу содержимое будет отображаться с использованием произвольного макеты. С помощью встроенной поддержки, они позволяют легко создавать макеты вид сетки или линейного, поддерживая пользовательских макетов.
 

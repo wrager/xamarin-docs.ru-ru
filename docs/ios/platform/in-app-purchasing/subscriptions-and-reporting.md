@@ -1,26 +1,26 @@
 ---
-title: Подписки и отчетов
+title: Подписки и создания отчетов в Xamarin.iOS
+description: Этот документ описывает-обновление подписок, бесплатные подписки, автоматически обновляемый подписок и с помощью iTunes Connect для этих элементов отчета.
 ms.prod: xamarin
 ms.assetid: 27EE4234-07F5-D2CD-DC1C-86E27C20141E
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 7ba47e8f0ec114845c14269e81bb7f078a5d4936
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7e0873107a60b48e5ebfd8e159f3bf3b85d02867
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787035"
 ---
-# <a name="subscriptions-and-reporting"></a>Подписки и отчетов
+# <a name="subscriptions-and-reporting-in-xamarinios"></a>Подписки и создания отчетов в Xamarin.iOS
 
 ## <a name="about-non-renewing-subscriptions"></a>О не возобновление подписок
 
 Обновление без подписки предназначены для продуктов, которые представляют продажи службы с ограничениями времени, например (одна неделя доступ к приложению навигации) или временными архив данных.   
    
-   
-   
- Основные различия между-обновление подписок и других типов продукта.
+Основные различия между-обновление подписок и других типов продукта.
 
 -  Определение продукта в iTunes Connect не включает термин. Код приложения должен иметь возможность определять срок действия от идентификатора продукта. 
 -  Их можно приобрести несколько раз (например, к использованию продукта). Приложения необходимы для управления термин срока и обновления и запрет для пользователя на приобретение перекрывающиеся подписок. 
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/04/2018
 
 В iTunes Connect домашней странице выберите **Мои приложения**:   
    
- [![](subscriptions-and-reporting-images/image2.png "Выберите "Мои приложения"")](subscriptions-and-reporting-images/image2.png#lightbox)  
+ [![](subscriptions-and-reporting-images/image2.png "Выберите \"Мои приложения\"")](subscriptions-and-reporting-images/image2.png#lightbox)  
  
 Выберите приложение и щелкнуть **покупки из приложений** вкладки:
 

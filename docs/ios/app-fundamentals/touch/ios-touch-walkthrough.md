@@ -1,18 +1,20 @@
 ---
-title: Пошаговое руководство — с помощью сенсорного ввода в iOS
+title: 'Пошаговое руководство: Использование сенсорного ввода в Xamarin.iOS'
+description: Этот документ описывает способы обработки сенсорного ввода в приложениях, Xamarin.iOS, обсуждения образец touch взаимодействий, распознавателей жестов и распознаватели пользовательских жестов.
 ms.prod: xamarin
 ms.assetid: 13F8289B-7A80-4959-AF3F-57874D866DCA
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 58066ef0071c8105658f0d766e8f038b2bd3ddf2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: fff49599d3843bb09d407316d6964ca54b6a1004
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784794"
 ---
-# <a name="walkthrough--using-touch-in-ios"></a>Пошаговое руководство — с помощью сенсорного ввода в iOS
+# <a name="walkthrough-using-touch-in-xamarinios"></a>Пошаговое руководство: Использование сенсорного ввода в Xamarin.iOS
 
 В этом пошаговом руководстве показано, как написать код, который реагирует на различные виды событий сенсорного экрана. В каждом примере содержится в отдельный экран:
 

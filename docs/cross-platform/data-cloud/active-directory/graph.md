@@ -1,20 +1,19 @@
 ---
 title: Доступ к API Graph
-description: С помощью Active Directory для запроса Graph API, с помощью Xamarin
+description: В этом документе описывается добавление проверки подлинности Azure Active Directory для мобильных приложений, созданных с помощью Xamarin.
 ms.prod: xamarin
 ms.assetid: F94A9FF4-068E-4B71-81FE-46920745380D
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: e177ac680a100a2723732c2ee7252ea0c16ea972
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: c43dfa79831f22e55490b27c3c360602ae717627
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781134"
 ---
 # <a name="accessing-the-graph-api"></a>Доступ к API Graph
-
-_С помощью Active Directory для запроса Graph API, с помощью Xamarin_
 
 Выполните следующие действия, чтобы использовать API Graph из приложения Xamarin.
 

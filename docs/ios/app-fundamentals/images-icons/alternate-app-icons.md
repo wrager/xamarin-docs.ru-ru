@@ -1,19 +1,20 @@
 ---
-title: Значки альтернативный приложений
-description: В этой статье описан с помощью значков альтернативный приложения Xamarin.iOS.
+title: Значки альтернативный приложений в Xamarin.iOS
+description: В этом документе описывается использование альтернативного приложения значков в Xamarin.iOS. Его описание, как добавить в проект Xamarin.iOS эти значки, как изменить файл Info.plist и программно управлять значка приложения.
 ms.prod: xamarin
 ms.assetid: 302fa818-33b9-4ea1-ab63-0b2cb312299a
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/29/2017
-ms.openlocfilehash: 8d9f27d58a881878aabeda4326805eec726c247c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 1d37a29982454367c35bfdfad205abce0eb025af
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784114"
 ---
-# <a name="alternate-app-icons"></a>Значки альтернативный приложений
+# <a name="alternate-app-icons-in-xamarinios"></a>Значки альтернативный приложений в Xamarin.iOS
 
 _В этой статье описан с помощью значков альтернативный приложения Xamarin.iOS._
 

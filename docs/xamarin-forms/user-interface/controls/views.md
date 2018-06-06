@@ -7,11 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/12/2016
-ms.openlocfilehash: b370c27a212f876231764851c894bf683ae460c3
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: aafad29a30130c9ec088121e03a986034f002e1c
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34733091"
 ---
 # <a name="xamarinforms-views"></a>Xamarin.Forms представлений
 
@@ -69,7 +70,7 @@ _Xamarin.Forms представления являются составными 
 
 |     |     |
 | --- | --- |
-| [`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) представляет собой прямоугольный объект, который отображает текст, и которое запускается [ `Clicked` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Button.Clicked/) событие, если она нажата.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) | [![Пример кнопки](views-images/Button.png "кнопку пример")](views-images/Button-Large.png#lightbox "кнопку пример")<br /> [Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ButtonDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ButtonDemoPage.xaml) с [кода](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ButtonDemoPage.xaml.cs) |
+| [`Button`](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) представляет собой прямоугольный объект, который отображает текст, и которое запускается [ `Clicked` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Button.Clicked/) событие, если она нажата.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.Button/) / [руководство](~/xamarin-forms/user-interface/button.md) / [образца](https://developer.xamarin.com/samples/UserInterface/ButtonDemos/) | [![Пример кнопки](views-images/Button.png "кнопку пример")](views-images/Button-Large.png#lightbox "кнопку пример")<br /> [Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/ButtonDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ButtonDemoPage.xaml) с [кода](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/ButtonDemoPage.xaml.cs) |
 |     |     |
 
 ### <a name="searchbar"></a>SearchBar

@@ -1,18 +1,20 @@
 ---
-title: Поддерживаемые и неподдерживаемые платформы
+title: Поддерживаемые и неподдерживаемые платформы в tvOS
+description: 'Чтобы уточнить функций, доступных для tvOS приложений, этот документ содержит два списка Apple платформ: поддерживаемым tvOS, а также не поддерживается tvOS.'
 ms.prod: xamarin
 ms.assetid: 28EF1337-3D0E-47AB-8A13-1B333A964FB6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/07/2016
-ms.openlocfilehash: 4b368a8e4d449d8fa8d0d29dab19d227bb6eee4c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 8ba33d028263385eca50f8174124bbe629e3f951
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789126"
 ---
-# <a name="supported-and-unsupported-frameworks"></a>Поддерживаемые и неподдерживаемые платформы
+# <a name="supported-and-unsupported-frameworks-in-tvos"></a>Поддерживаемые и неподдерживаемые платформы в tvOS
 
 <a name="Supported-Frameworks" />
 

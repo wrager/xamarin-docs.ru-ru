@@ -7,11 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: 805b27139d644d0fac4a7c5a9e9b2c2c331d7130
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: 38805c09136405a7a241cfaeb8fa8cb6fb1a5d5f
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34732727"
 ---
 # <a name="introduction-to-effects"></a>Общие сведения о эффекты
 
@@ -53,7 +54,7 @@ Xamarin.Forms [страниц, макеты и элементы управлен
 
 Каждый платформой `PlatformEffect` класс предоставляет следующие методы, которые должны быть переопределены для реализации эффект:
 
-- [`OnAttached`](https://developer.xamarin.com/api/member/Xamarin.Forms.Effect.OnAttached()/) — вызывается, когда влияние присоединяется к элементу управления Xamarin.Forms. Переопределения этого метода в каждом классе конкретного платформенный эффект служит для выполнения настройки элемента управления, а также обработка исключений в случае, если результат не может применяться к указанному элементу управления Xamarin.Forms.
+- [`OnAttached`](https://developer.xamarin.com/api/member/Xamarin.Forms.Effect.OnAttached()/) — вызывается, когда эффект присоединяется к элементу управления Xamarin.Forms. Переопределения этого метода в каждом классе конкретного платформенный эффект служит для выполнения настройки элемента управления, а также обработка исключений в случае, если результат не может применяться к указанному элементу управления Xamarin.Forms.
 - [`OnDetached`](https://developer.xamarin.com/api/member/Xamarin.Forms.Effect.OnDetached()/) — вызывается, когда эффект отсоединяется от управления Xamarin.Forms. Переопределения этого метода в каждом классе эффект от платформы — это место, чтобы выполнить очистку эффект, например Отмена регистрации обработчика событий.
 
 Кроме того `PlatformEffect` предоставляет [ `OnElementPropertyChanged` ](https://developer.xamarin.com/api/member/Xamarin.Forms.PlatformEffect%3CTContainer,TControl%3E.OnElementPropertyChanged/p/System.ComponentModel.PropertyChangedEventArgs/) метод, который может быть переопределен. Этот метод вызывается при изменении свойства элемента. Переопределения этого метода в каждом классе эффект от платформы — это место для реагирования на изменения привязываемые свойства элемента управления Xamarin.Forms. Проверяет наличие измененного свойства должны быть выполнены, как это переопределение может быть вызван несколько раз.

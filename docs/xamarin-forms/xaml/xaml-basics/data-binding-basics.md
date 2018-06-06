@@ -7,11 +7,12 @@ ms.assetid: 342288C3-BB4C-4924-B178-72E112D777BA
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: 4e3e090d826aa46d503f8c612250fd5122bc703e
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: a8adc0c16043048ec919f5a0f9f7c5ce25f08ef9
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34733039"
 ---
 # <a name="part-4-data-binding-basics"></a>Часть 4. Основные сведения о привязке данных
 
@@ -388,7 +389,7 @@ namespace XamlSamples
 
 [![](data-binding-basics-images/listview3.png "Привязка к коллекции с DataTemplate и преобразователей")](data-binding-basics-images/listview3-large.png#lightbox "привязку в коллекцию с DataTemplate и преобразователи типов")
 
-`ListView` Достаточно сложная в обработка изменений, которые динамически могут возникнуть в базовых данных, но только если выполнить определенные действия. При присвоении коллекции элементов `ItemsSource` свойство `ListView` изменений во время выполнения —, если элементы могут быть добавлены или удалены из коллекции, используйте `ObservableCollection` класса для этих элементов. `ObservableCollection` реализует `INotifyCollectionChanged` интерфейс, и `ListView` установит обработчик `CollectionChanged` событий.
+`ListView` Достаточно сложная при обработке изменений может динамически в базовых данных, но только если выполнить определенные действия. При присвоении коллекции элементов `ItemsSource` свойство `ListView` изменений во время выполнения —, если элементы могут быть добавлены или удалены из коллекции, используйте `ObservableCollection` класса для этих элементов. `ObservableCollection` реализует `INotifyCollectionChanged` интерфейс, и `ListView` установит обработчик `CollectionChanged` событий.
 
 Если изменить свойства сами элементы во время выполнения, то элементы в коллекции должны реализовывать `INotifyPropertyChanged` изменения значений свойств с помощью интерфейса и сигнала `PropertyChanged` событий. Это показано в следующей части этой серии [. часть 5. Из привязка данных к MVVM](~/xamarin-forms/xaml/xaml-basics/data-bindings-to-mvvm.md).
 

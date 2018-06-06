@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/07/2016
-ms.openlocfilehash: e2e3843506061cc79ad911404468477bf49dfe56
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: c3c278666c5d57d00b4038ae6d3f2d7925e88537
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789028"
 ---
 # <a name="introduction-to-tvos-9"></a>Общие сведения о tvOS 9
 
 _В этой статье описаны все новые и измененные интерфейсы API и возможности, доступные в tvOS 9 для разработчиков Xamarin.tvOS._
-
 
 Apple выпустила 4-го поколения оборудования Apple TV, содержащих модернизированный, удаленное включение сенсорного ввода, новый tvOS операционной системой (с учетом iOS 9).
 

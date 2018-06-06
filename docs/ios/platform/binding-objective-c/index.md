@@ -1,6 +1,6 @@
 ---
 title: Привязка библиотеки iOS
-description: Том, как делать собственные библиотеки iOS (и CocoaPods) доступны в приложениях Xamarin.
+description: В этом документе описывается создание C# для привязки к код Objective-C, благодаря чему использовать собственные библиотеки и CocoaPods приложения Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: EBDC50DC-B44B-4003-AB2B-1EEB868A5E01
 ms.technology: xamarin-ios
@@ -8,15 +8,14 @@ ms.custom: xamu-video
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 268900c7ab7b317b0b20f4c1ead2360fd6f9bbf0
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: b054595568a34616a01f2c3f3c7d85f968c3f1fa
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787176"
 ---
 # <a name="binding-ios-libraries"></a>Привязка библиотеки iOS
-
-_Том, как делать собственные библиотеки iOS (и CocoaPods) доступны в приложениях Xamarin._
 
 Выполните эти ссылки на дополнительные сведения о привязке библиотеки Objective-C и CocoaPods Xamarin.iOS и Xamarin.Mac.
 

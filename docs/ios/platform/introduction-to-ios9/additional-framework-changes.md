@@ -1,16 +1,17 @@
 ---
 title: Изменения платформы дополнительных iOS 9
-description: В этой статье рассматриваются дополнительные, незначительные изменения или усовершенствования существующих платформ IOS 9.
+description: Этот документ описывает framework дополнительных изменений, внесенных в iOS 9. Он описывает AVFoundation, AVKit и CloudKit.
 ms.prod: xamarin
 ms.assetid: CFDE1FC4-9327-402B-95A0-581D4AA0E9D5
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 0ae286ddbc61f48cbdd257dc453a2d9680bba703
-ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
+ms.openlocfilehash: 15c9364cf3bdcb8c797882cc9ac76219959de439
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787712"
 ---
 # <a name="additional-ios-9-frameworks-changes"></a>Изменения платформы дополнительных iOS 9
 
@@ -20,9 +21,9 @@ _В этой статье рассматриваются дополнитель�
 
 Помимо основных изменений для операций ввода-вывода Apple внес изменения и усовершенствования несколько существующих инфраструктур в iOS 9.
 
-## <a name="av-foundation-framework-additions"></a>Дополнения Framework AV Foundation
+## <a name="avfoundation-framework-additions"></a>Дополнения AVFoundation Framework
 
-В платформе AV Foundation [AVSpeechSynthesisVoice](https://developer.xamarin.com/api/type/AVFoundation.AVSpeechSynthesisVoice/) класс теперь позволяет указать голос по идентификатору Помимо языка.
+В платформе AVFoundation [AVSpeechSynthesisVoice](https://developer.xamarin.com/api/type/AVFoundation.AVSpeechSynthesisVoice/) класс теперь позволяет указать голос по идентификатору Помимо языка.
 
 Например следующий код возвращает список всех доступных голоса:
 
@@ -66,7 +67,7 @@ CloudKit framework упрощает разработку приложений, i
 - [Каталог CloudKit: Введение в CloudKit (Cocoa и JavaScript)](https://developer.apple.com/library/prerelease/ios/samplecode/CloudAtlas/Introduction/Intro.html#//apple_ref/doc/uid/TP40014599) -Apple примера приложения, с помощью CloudKit и CloudKit JS.
 
 > [!IMPORTANT]
-> Apple [предоставляет средства](https://developer.apple.com/support/allowing-users-to-manage-data/) для помощи разработчикам правильно обрабатывать Европейского Союза общие данные защиты стабилизации (GDPR).
+> Компания Apple [предоставляет инструменты](https://developer.apple.com/support/allowing-users-to-manage-data/), которые помогают разработчикам надлежащим образом соблюдать Общий регламент по защите данных Европейского союза (GDPR).
 
 ## <a name="foundation-framework-additions"></a>Дополнения Framework Foundation
 

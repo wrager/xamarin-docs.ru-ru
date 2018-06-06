@@ -1,17 +1,18 @@
 ---
-title: Сведения об устройстве Xamarin.Essentials
-description: Класс DeviceInfo предоставляет сведения об устройстве, приложение работает на.
+title: 'Xamarin.Essentials: Сведения об устройстве'
+description: Этот документ описывает класс DeviceInfo в Xamarin.Essentials, который предоставляет сведения об устройстве, что приложение работает.
 ms.assetid: A1AC5373-926A-4FB6-8D7D-4B87EB8EB522
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: a398f2697b03cec26f2c786b11e7a3c332cb5f63
-ms.sourcegitcommit: 3e05b135b6ff0d607bc2378c1b6e66d2eebbcc3e
+ms.openlocfilehash: b7246afca19607ef2f70288d4643696f4ac35d52
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782402"
 ---
-# <a name="xamarinessentials-device-information"></a>Сведения об устройстве Xamarin.Essentials
+# <a name="xamarinessentials-device-information"></a>Xamarin.Essentials: Сведения об устройстве
 
 ![Предварительная версия NuGet](~/media/shared/pre-release.png)
 

@@ -1,17 +1,19 @@
 ---
-title: Работа со значками
+title: Работа с watchOS значки в Xamarin
+description: В этом документе описываются различные значки, необходимые для приложения watchOS и как настроить решение, чтобы включить эти значки.
 ms.prod: xamarin
 ms.assetid: EE3D45BD-8091-4C04-BA83-371371D8BEB9
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: a7cdecaa2ba6a8c9f28ef8598fec31506eee6852
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 150cca754de26edffcf97bb5d39b26166662c75b
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790670"
 ---
-# <a name="working-with-icons"></a>Работа со значками
+# <a name="working-with-watchos-icons-in-xamarin"></a>Работа с watchOS значки в Xamarin
 
 Apple Watch решений требуется два набора значков:
 

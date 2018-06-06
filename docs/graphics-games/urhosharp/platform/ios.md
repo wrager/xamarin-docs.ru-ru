@@ -1,20 +1,19 @@
 ---
 title: UrhoSharp iOS и tvOS поддержки
-description: iOS и tvOS определенные настройки, а также функции для UrhoSharp.
+description: В этом документе рассматриваются операций ввода-вывода и поддержку tvOS UrhoSharp. Он описывает, как создать проект, настроить и запустить Urho и выполнять пользовательский внедрения Urho.
 ms.prod: xamarin
 ms.assetid: 7B06567E-E789-4EA1-A2A9-F3B2212EDD23
 author: charlespetzold
 ms.author: chape
 ms.date: 03/29/2017
-ms.openlocfilehash: 322297e7782a06a2d900b12cd5afc5f469009f69
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 7e8975b6885f6c902634e05aafca0b8ee60a981c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783979"
 ---
 # <a name="urhosharp-ios-and-tvos-support"></a>UrhoSharp iOS и tvOS поддержки
-
-_iOS и tvOS определенные настройки и компоненты_
 
 Пока Urho переносимой библиотеке классов, и обеспечивает такой же API, используемые в нескольких различных платформ для логику игры по-прежнему необходимо инициализировать Urho в драйвере определенной платформы, а в некоторых случаях, необходимо воспользоваться преимуществами конкретных компонентов платформы .
 

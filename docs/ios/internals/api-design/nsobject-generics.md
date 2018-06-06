@@ -1,18 +1,20 @@
 ---
-title: Универсальный подклассов NSObject
+title: Универсальный подклассов NSObject в Xamarin.iOS
+description: В этом документе описывается создание Создание универсального подклассов NSObject. Он проверяет, что можно и не может быть выполнена, рассматриваются статических регистратора и смотрит на производительность.
 ms.prod: xamarin
 ms.assetid: BB99EBD7-308A-C865-1829-4DFFDB1BBCA4
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 89df751d74b9b54ae8138d2e1b24c61d82c3cac8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9caad9d4990225a0468be8ee4987eaa9fea0c118
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786487"
 ---
-# <a name="generic-subclasses-of-nsobject"></a>Универсальный подклассов NSObject
+# <a name="generic-subclasses-of-nsobject-in-xamarinios"></a>Универсальный подклассов NSObject в Xamarin.iOS
 
 ## <a name="using-generics-with-nsobjects"></a>Использование универсальных шаблонов с NSObjects
 
@@ -54,7 +56,7 @@ class Generic<T> : NSObject where T: NSObject
 
 **Причина**: параметр универсального типа является `NSObject`, поэтому подпись селектор для `myMethod:` безопасно доступные для Objective-C (всегда будет иметь `NSObject` или его подклассу).
 
-**Bad**:
+**Неверный**:
 
 ```csharp
 class Generic<T> : NSObject

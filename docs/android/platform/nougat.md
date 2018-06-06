@@ -6,12 +6,13 @@ ms.assetid: 5C74ABE2-C862-4ED0-8EA5-C7FEE5251D4B
 ms.technology: xamarin-android
 author: mgmclemore
 ms.author: mamcle
-ms.date: 03/01/2018
-ms.openlocfilehash: fe544f8ac677987f8921ccb1c11b8930811b9553
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 06/02/2018
+ms.openlocfilehash: 15698767ae71b68a26138169771f7f397bddd95a
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34732522"
 ---
 # <a name="nougat-features"></a>Функции nougat
 
@@ -46,7 +47,7 @@ Android Nougat предоставляют множество новых функ
 
 Для использования новых возможностей Android Nougat приложения на основе Xamarin требуется следующее.
 
--   **Visual Studio или Visual Studio для Mac** &ndash; Если вы используете Visual Studio версии 4.2.0.628 или более поздней Xamarin для Visual Studio не требуется. При использовании Visual Studio для Mac версии 6.1.0 или более поздней версии Visual Studio для Mac не требуется.
+-   **Visual Studio или Visual Studio для Mac** &ndash; Если вы используете Visual Studio версии 4.2.0.628 или более поздней версии набора средств Visual Studio для Xamarin является обязательным. При использовании Visual Studio для Mac версии 6.1.0 или более поздней версии Visual Studio для Mac не требуется.
 
 -   **Xamarin.Android** &ndash; Xamarin.Android 7.0 или более поздней версии необходимо установить и настроить с помощью Visual Studio или Visual Studio для Mac.
 

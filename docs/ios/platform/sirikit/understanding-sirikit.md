@@ -1,17 +1,18 @@
 ---
 title: Основные сведения о концепциях SiriKit
-description: В этой статье рассматриваются основные понятия, которые будут необходимы для работы с SiriKit приложения Xamarin.iOS.
+description: В этом документе рассматриваются основные понятия, необходимые для работы с SiriKit приложения Xamarin.iOS. Например, в нем рассматриваются способы и расширения пользовательского интерфейса целей, разрешения SiriKit проектирование прекрасные возможности и многое другое.
 ms.prod: xamarin
 ms.assetid: 99EC5C1E-484F-4371-8555-58C9F60DE37F
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/02/2017
-ms.openlocfilehash: 56325345204cd2017d688375d9d51c5c83f15e26
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: 62b612f2e2725e5856a39e1d4d3fc1288282167a
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788934"
 ---
 # <a name="understanding-sirikit-concepts"></a>Основные сведения о концепциях SiriKit
 

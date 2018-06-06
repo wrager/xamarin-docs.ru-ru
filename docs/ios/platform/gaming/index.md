@@ -1,5 +1,5 @@
 ---
-title: API-интерфейсы игровой iOS
+title: API игры в Xamarin.iOS iOS
 description: В этой статье рассматриваются усовершенствования игры, предоставляемые iOS 9, который может использоваться для улучшения графики игру Xamarin.iOS и звуковых функций.
 ms.prod: xamarin
 ms.assetid: 958D38FD-9240-482E-9A42-D6671ED8F2B0
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 34d3d6980819510a3390e2c30069818d6dfd721f
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 263c325816867e9eee32c92edf97f703b39bda7c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786864"
 ---
-# <a name="ios-gaming-apis"></a>API-интерфейсы игровой iOS
+# <a name="ios-gaming-apis-in-xamarinios"></a>API игры в Xamarin.iOS iOS
 
 _В этой статье рассматриваются усовершенствования игры, предоставляемые iOS 9, который может использоваться для улучшения графики игру Xamarin.iOS и звуковых функций._
 

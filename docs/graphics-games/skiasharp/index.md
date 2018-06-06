@@ -1,18 +1,19 @@
 ---
-title: 2D рисования
-description: CROSS платформы 2D Рисование с SkiaSharp
+title: 2D Рисование с SkiaSharp
+description: В этом документе Обзор двумерные кросс платформенных Рисование с SkiaSharp. Ссылки на различные руководства, описывающие SkiaSharp и его различных API-интерфейсов.
 ms.prod: xamarin
 ms.assetid: A8A61421-4544-422A-A7E0-9355C67DF21E
 author: charlespetzold
 ms.author: chape
 ms.date: 09/14/2017
-ms.openlocfilehash: f1a40b48ecfb7244aae77cf1b4110ae53490d98c
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 962fe657f25976f9b5069f2d434e92f816d249ca
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783296"
 ---
-# <a name="2d-drawing"></a>2D рисования
+# <a name="2d-drawing-with-skiasharp"></a>2D Рисование с SkiaSharp
 
 SkiaSharp предоставляет возможности API C# это двумерной графики. Питание включено [библиотеки Skia Google](http://skia.org), той же библиотеке, лежащих в основе графических стеки Google Chrome, Firefox и Android.
 

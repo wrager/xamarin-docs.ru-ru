@@ -1,24 +1,24 @@
 ---
-title: Пользовательский интерфейс
-description: Общие покрытия взаимодействие с пользователем (UX), включая элементы управления конструктора и принципы взаимодействия с Пользователем.
+title: Создание пользовательских интерфейсов с Xamarin.iOS
+description: В этом документе описывается создание пользовательского интерфейса в приложении Xamarin.iOS. Также предоставляет ссылки на руководства, посвященные конструктора операций ввода-вывода, раскадровки, iOS общие понятия интерфейса и операций ввода-вывода пользовательского интерфейса элементов управления.
 ms.prod: xamarin
 ms.assetid: 2B3E45FA-C30F-D708-0E8F-3EE02BD1A867
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 06/21/2017
-ms.openlocfilehash: a3d88c2698ebd290929ceca842c28b3a43aed6e0
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d1ea39fcc29752337d89c4a0e4a1869f0a3948f1
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790273"
 ---
-# <a name="user-interface"></a>Пользовательский интерфейс
+# <a name="building-user-interfaces-with-xamarinios"></a>Создание пользовательских интерфейсов с Xamarin.iOS
 
 ## <a name="ios-designeriosuser-interfacedesignerindexmd"></a>[Конструктор iOS](~/ios/user-interface/designer/index.md)
 
 Мы создали конструктор для формата раскадровки iOS полностью интегрированной в Visual Studio для Mac. Конструктор операций ввода-вывода поддерживает полной совместимости с форматом раскадровки, поэтому файлы можно редактировать в Visual Studio или Xcode для Mac. Кроме того редактор поддерживает дополнительные функции, такие как пользовательские элементы управления, которые отображаются во время разработки в редакторе.
-
 
 ## <a name="introduction-to-storyboardsiosuser-interfacestoryboardsindexmd"></a>[Введение в раскадровку](~/ios/user-interface/storyboards/index.md)
 
@@ -31,5 +31,3 @@ ms.lasthandoff: 04/04/2018
 ## <a name="user-interface-controlsiosuser-interfacecontrolsindexmd"></a>[Элементы управления пользовательского интерфейса](~/ios/user-interface/controls/index.md)
 
 Xamarin.iOS предоставляет все объекты собственного пользовательского интерфейса компании Apple. Они легко добавить Xamarin.iOS приложений, с помощью конструктора, iOS и Xcode интерфейс построителя или программными средствами. Независимо от выбранного метода Xamarin.iOS предоставляет все свойства объекта пользовательского интерфейса и методы в языке C#.
-
-

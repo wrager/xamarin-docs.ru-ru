@@ -1,5 +1,5 @@
 ---
-title: Социальные Framework
+title: Социальные Framework в Xamarin.iOS
 description: Социальные Framework предоставляет универсальный интерфейс API для взаимодействия с социальными сетями, включая Twitter и Facebook, а также SinaWeibo для пользователей в Китае.
 ms.prod: xamarin
 ms.assetid: A1C28E66-AA20-1C13-23AF-5A8712E6C752
@@ -7,16 +7,16 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/20/2017
-ms.openlocfilehash: 334e05ad653d766b48f7f6028a1e98b0a0548c0c
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9b7269282b18adc46f53b708a0af4934a1621d23
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788199"
 ---
-# <a name="social-framework"></a>Социальные Framework
+# <a name="social-framework-in-xamarinios"></a>Социальные Framework в Xamarin.iOS
 
 _Социальные Framework предоставляет универсальный интерфейс API для взаимодействия с социальными сетями, включая Twitter и Facebook, а также SinaWeibo для пользователей в Китае._
-
 
 С помощью социальных сетей платформы позволяет приложениям взаимодействовать с социальными сетями из единый интерфейс API без необходимости управлять проверкой подлинности. Он включает систему указано представление контроллер для составления сообщения, а также абстракция, разрешает использование API каждого социальной сети по протоколу HTTP.
 

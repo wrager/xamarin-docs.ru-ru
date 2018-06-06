@@ -1,16 +1,18 @@
 ---
 title: Где найти Мои сведения о версии и журналы?
+description: Этот документ описывает область поиска для поиска сведений о версии Xamarin и журналы. Эта информация полезна при диагностике проблем, отправляя сообщения об ошибках или получение поддержки.
 ms.topic: troubleshooting
 ms.prod: xamarin
 ms.assetid: CF386485-EAB0-4B9E-AA17-CB1B6462E505
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 9234ee0553b2cc9376c0e4e39ffc0700deaacda1
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 0164c5b5cad972b2d8854aefd4403e287a50a6e0
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782054"
 ---
 # <a name="where-can-i-find-my-version-information-and-logs"></a>Где найти Мои сведения о версии и журналы?
 
@@ -62,7 +64,7 @@ ms.lasthandoff: 05/09/2018
 
 Откройте диспетчер Android SDK и снимки экрана верхней **средства** раздела.
 
-![](https://kb.xamarin.com/customer/portal/attachments/337323 "Снимок экрана диспетчер Android SDK > папки "Tools"")
+![](https://kb.xamarin.com/customer/portal/attachments/337323 "Снимок экрана диспетчер Android SDK > папки \"Tools\"")
 
 #### <a name="visual-studio-for-mac"></a>Visual Studio для Mac
 

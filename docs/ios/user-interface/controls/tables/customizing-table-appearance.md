@@ -1,18 +1,20 @@
 ---
-title: Настройка внешнего вида таблицы
+title: Настройка внешнего вида таблицы в Xamarin.iOS
+description: В этом документе описываются способы настройки внешнего вида таблицы в Xamarin.iOS. Он описывает стили ячеек, стандартные, разделители ячейки и ячейки пользовательские макеты.
 ms.prod: xamarin
 ms.assetid: 8A83DE38-0028-CB61-66F9-0FB9DE552286
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/22/2017
-ms.openlocfilehash: a447c59e7384ce7da168efdd018bc23c2abb25c2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 03383c69afb6afa9282d44751475d74fdcd92d4a
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789958"
 ---
-# <a name="customizing-a-tables-appearance"></a>Настройка внешнего вида таблицы
+# <a name="customizing-a-tables-appearance-in-xamarinios"></a>Настройка внешнего вида таблицы в Xamarin.iOS
 
 Чтобы изменить внешний вид таблицы проще всего использовать стиль другую ячейку. Можно изменить стиль ячейки, который используется при создании каждой ячейки в `UITableViewSource` `GetCell` метод.
 

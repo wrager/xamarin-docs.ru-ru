@@ -1,5 +1,5 @@
 ---
-title: Основы сообщений расширения приложения
+title: Расширение приложения основы сообщений в Xamarin.iOS
 description: В этой статье показано как включать расширение сообщение приложения в решении Xamarin.iOS, которое интегрируется с приложением сообщения и представляет новые функциональные возможности для пользователя.
 ms.prod: xamarin
 ms.assetid: 0CFB494C-376C-449D-B714-9E82644F9DA3
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 05/02/2017
-ms.openlocfilehash: 73ca0974a42bf661a89327148b68341114297084
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: bc06d73543b9e0bd1e8715fc722b0a95af7d9f07
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787914"
 ---
-# <a name="message-app-extension-basics"></a>Основы сообщений расширения приложения
+# <a name="message-app-extension-basics-in-xamarinios"></a>Расширение приложения основы сообщений в Xamarin.iOS
 
 _В этой статье показано как включать расширение сообщение приложения в решении Xamarin.iOS, которое интегрируется с приложением сообщения и представляет новые функциональные возможности для пользователя._
 
@@ -126,7 +127,7 @@ Apple предлагает тестирование активы изображ�
     [![](intro-to-message-app-extensions-images/message02.png "Введите имя расширения")](intro-to-message-app-extensions-images/message02.png#lightbox)
 5. Нажмите кнопку **создать** кнопки для построения расширения: 
 
-    [![](intro-to-message-app-extensions-images/message03.png "Нажмите кнопку "Создать"")](intro-to-message-app-extensions-images/message03.png#lightbox)
+    [![](intro-to-message-app-extensions-images/message03.png "Нажмите кнопку \"Создать\"")](intro-to-message-app-extensions-images/message03.png#lightbox)
 
 # <a name="visual-studiotabvswin"></a>[Visual Studio](#tab/vswin)
 

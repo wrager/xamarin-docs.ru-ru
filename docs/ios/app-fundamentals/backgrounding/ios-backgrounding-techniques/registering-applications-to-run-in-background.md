@@ -1,18 +1,20 @@
 ---
-title: Регистрация приложений для работы в фоновом режиме
+title: Регистрация приложения Xamarin.iOS для запуска в фоновом режиме
+description: В этом документе описывается регистрация Xamarin.iOS приложению выполняться в фоновом режиме. Он описывает аудио приложений, VoIP приложений, внешний стандартные и bluetooth и более.
 ms.prod: xamarin
 ms.assetid: 8F89BE63-DDB5-4740-A69D-F60AEB21150D
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 58ee68f765372094d68c3cf30ed6a631a67fe313
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f4774f6b4f5412c44dc985bd40129a178b1e813c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783679"
 ---
-# <a name="registering-applications-to-run-in-the-background"></a>Регистрация приложений для работы в фоновом режиме
+# <a name="registering-xamarinios-apps-to-run-in-the-background"></a>Регистрация приложения Xamarin.iOS для запуска в фоновом режиме
 
 Регистрация отдельных задач для фона правами работает для некоторых приложений, но что произойдет, если приложение постоянно вызван для выполнения важных, длительные задачи, такие как получение указаний для пользователя с помощью GPS? Приложения, такие вместо этого должен быть зарегистрирован как известные фона необходимые приложения.
 

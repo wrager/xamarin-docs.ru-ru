@@ -1,18 +1,19 @@
 ---
-title: Специальные возможности
-description: Убедитесь, что ваши приложения готовый к применению самого широкого аудитории
+title: Специальные возможности в приложения Xamarin
+description: Различные советы для создания приложений, доступных в этом документе. Например он включает рекомендации по крупный шрифт, высокая контрастность, описывающий сам себя интерфейсы и многое другое.
 ms.prod: xamarin
 ms.assetid: E587F0CF-7C1D-41F8-B5A8-DA3E738EDA81
 author: asb3993
 ms.author: amburns
 ms.date: 03/22/2017
-ms.openlocfilehash: 48e9d760362e47d7046528c819959bfb14f71f91
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 97cd3655ac47a017d9590e1890b93d74f10a9c34
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34780308"
 ---
-# <a name="accessibility"></a>Специальные возможности
+# <a name="accessibility-in-xamarin-apps"></a>Специальные возможности в приложения Xamarin
 
 _Убедитесь, что ваши приложения готовый к применению самого широкого аудитории_
 

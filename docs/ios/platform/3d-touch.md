@@ -1,19 +1,20 @@
 ---
-title: Общие сведения о 3D Touch
-description: В этой статье описан с помощью нового iPhone 6s и iPhone 6s Plus 3D Touch жесты в вашем приложении.
+title: Общие сведения о 3D Touch в Xamarin.iOS
+description: В этой статье описывается использование объемных сенсорный ввод, представленных в iPhone 6s, iPhone 6s Plus. Включить эти жесты чувствительность к нажатию, считывания и pop и быстрых действий.
 ms.prod: xamarin
 ms.assetid: 806D051E-3791-40F7-9776-4E4D3E56F7F3
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: a0d89315b82f4931538cdabe64aade7986b2a42e
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f6eb71409317661cdd571c708db062e06e63ff55
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786587"
 ---
-# <a name="introduction-to-3d-touch"></a>Общие сведения о 3D Touch
+# <a name="introduction-to-3d-touch-in-xamarinios"></a>Общие сведения о 3D Touch в Xamarin.iOS
 
 _В этой статье описан с помощью нового iPhone 6s и iPhone 6s Plus 3D Touch жесты в вашем приложении._
 

@@ -1,14 +1,16 @@
 ---
 ms.assetid: 1BB412D1-FC3D-4E69-8B01-B976A3DB6328
 title: 'WPF и. Xamarin.Forms: Сходства и различия'
+description: В этом документе сравнивает и противопоставляет WPF в Xamarin.Forms. Он описывает шаблонов элементов управления, XAML, инфраструктура привязки, шаблоны данных, ItemsControl, пользовательских элементов управления, навигации и навигации URL-адрес.
 author: asb3993
 ms.author: amburns
 ms.date: 04/26/2017
-ms.openlocfilehash: ac30a29a2b4982b2f995c9f717cf1893ca5d8b8a
-ms.sourcegitcommit: 9f8e7393019791bbd6af4fefaa24a1602adabb4e
+ms.openlocfilehash: 232ddd5ea06891c70125adc9b8bf77f3e857dbd6
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781973"
 ---
 # <a name="wpf-vs-xamarinforms-similarities--differences"></a>WPF и. Xamarin.Forms: Сходства и различия
 

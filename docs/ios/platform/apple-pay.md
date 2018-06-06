@@ -1,24 +1,23 @@
 ---
-title: Apple Pay
+title: Apple оплаты в Xamarin.iOS
 description: В этом руководстве описывается настройка Xamarin.iOS среды для использования с Apple Pay платить за физических товаров, например пищевых продуктов, развлечения и членства в приложении. Он содержит сведения о необходимых идентификаторы, сертификаты и прав.
 ms.prod: xamarin
 ms.assetid: A25AE660-B145-465F-9CCE-8D82BFD614C6
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: fc7c247e5edcdc25d53c34c922801a5497b8c367
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7033373cddb2503e5912eb17b1e72ece759cc3ad
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786695"
 ---
-# <a name="apple-pay"></a>Apple Pay
+# <a name="apple-pay-in-xamarinios"></a>Apple оплаты в Xamarin.iOS
 
 _В этом руководстве описывается настройка Xamarin.iOS среды для использования с Apple Pay платить за физических товаров, например пищевых продуктов, развлечения и членства в приложении. Он содержит сведения о необходимых идентификаторы, сертификаты и прав._
 
-
 Apple Pay была введена вместе с iOS 8, позволяя пользователям оплатить физические товары, например пищевых продуктов, развлечения и членство через свои устройства iOS. Его можно найти на iPhone 6 и iPhone 6 плюс, а также может быть связан с Apple Watch для покупок в магазине. При использовании на iPhone, он использует Touch ID, чтобы подтвердить и авторизовать транзакции пользователя кредитной или дебетовой картой.
-
 
 ## <a name="requirements"></a>Требования
 
@@ -41,7 +40,6 @@ Apple Pay доступен только в пределах iOS 8 и более 
 
 С Apple Pay Apple [состояния](https://developer.apple.com/apple-pay/Getting-Started-with-Apple-Pay.pdf) , он «не плату пользователей, предпринимателей или разработчиков Apple оплаты для платежей». В отличие от этого Отзывах имеет плата 30% для каждой транзакции. Кроме того, с Apple Pay, транзакции не проходит через Apple вообще, вместо этого он проходит через платформа платежей.
 
-
 ## <a name="using-a-payment-processor-platform"></a>С помощью платформы процессора оплаты
 
 Одна из основных частей Apple Pay — обработки платежей. Хотя существует возможность сделать это самостоятельно, требуются значительные знания криптографии
@@ -53,7 +51,6 @@ Apple Pay доступен только в пределах iOS 8 и более 
 - **Stripe** -Зарегистрируйтесь на [Stripe.com](https://stripe.com/) для доступа к их интерфейсов API.
 
 - **JudoPay** -извлечь их [Xamarin образец кода на github](https://github.com/Judopay/Xamarin-Sample-App)и при регистрации [JudoPay.com](https://www.judopay.com/).
-
 
 ## <a name="provisioning-for-apple-pay"></a>Подготовка для оплаты Apple
 
@@ -70,13 +67,11 @@ Apple Pay доступен только в пределах iOS 8 и более 
 5. Добавьте Apple Pay прав:
     - Выберите право оплаты Apple описанных [здесь](~/ios/deploy-test/provisioning/entitlements.md), или вручную добавить в файл из пары ключ значение [здесь](~/ios/deploy-test/provisioning/entitlements.md)
 
-
 ## <a name="working-with-apple-pay"></a>Работа с Apple оплаты
 
 Apple iOS 10 разрешить пользователю безопасный выплатах с веб-сайтов и взаимодействии с Siri и карты предприняла ряд улучшений платить Apple.
 
 С iOS 10 ряд новых интерфейсов API были добавлены, работающие с iOS и watchOS для поддержки динамического оплаты сетей и среде тестирования новой "песочницы".
-
 
 ### <a name="apple-pay-website-integration"></a>Интеграция веб-сайте Apple оплаты
 
@@ -122,7 +117,6 @@ Apple iOS 10 разрешить пользователю безопасный в
 ## <a name="summary"></a>Сводка
 
 В этой статье мы анализировать различные элементы, необходимые для использования в приложении Apple Pay. Мы рассмотрели создание идентификатор продавца и способах ее использования в пределах **Entitlements.plist**, который необходимо изменить вручную.
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

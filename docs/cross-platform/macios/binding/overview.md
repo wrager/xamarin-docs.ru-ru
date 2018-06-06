@@ -1,17 +1,18 @@
 ---
-title: Обзор
-description: Сведения о принципах работы процесса привязки
+title: Общие сведения о привязках Objective-C
+description: В этом документе обзор различных способов создания привязок C# для кода Objective-C, включая командной строки привязки, привязка проектов и Sharpie к цели деятельности организации. Он также рассматривается, как работает привязка.
 ms.prod: xamarin
 ms.assetid: 9EE288C5-8952-C5A9-E542-0BD847300EC6
 author: asb3993
 ms.author: amburns
-ms.openlocfilehash: ce2e45a1985c64b5c479bd41140d7270fae97aee
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: f9f981a9024ad9b1f780efbadeeb7e1f1636a8ae
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781748"
 ---
-# <a name="overview"></a>Обзор
+# <a name="overview-of-objective-c-bindings"></a>Общие сведения о привязках Objective-C
 
 _Сведения о принципах работы процесса привязки_
 

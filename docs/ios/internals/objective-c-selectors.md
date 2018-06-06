@@ -1,17 +1,19 @@
 ---
-title: Селекторы Objective c.
+title: Селекторы Objective-C в Xamarin.iOS
+description: В этом документе описывается, как взаимодействовать с селекторы Objective-C из C#. Описываются способы вызова селекторы и технические вопросы, которые необходимо принимать во внимание при этом.
 ms.prod: xamarin
 ms.assetid: A80904C4-6A89-389B-0487-057AFEB70989
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 60f107bda29b351c119f5702b0ca797d7d16b0b1
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 25276851879ba828361d3236cbf7896cf748588c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787046"
 ---
-# <a name="objective-c-selectors"></a>Селекторы Objective c.
+# <a name="objective-c-selectors-in-xamarinios"></a>Селекторы Objective-C в Xamarin.iOS
 
 Создается на основе языка C целью *селекторы*. Селектора — это сообщение, которое может быть отправлено на объект или *класса*. [Xamarin.iOS](~/ios/internals/api-design/index.md) maps экземпляром селекторы для методов экземпляра и селекторы для статических методов класса.
 

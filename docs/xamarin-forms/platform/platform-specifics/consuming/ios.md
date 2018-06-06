@@ -6,12 +6,13 @@ ms.assetid: C0837996-A1E8-47F9-B3A8-98EE43B4A675
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/23/2018
-ms.openlocfilehash: cc6cb282565e08f7ce4401e5317fba518a74a8f3
-ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
+ms.date: 05/30/2018
+ms.openlocfilehash: 762a604186cf8657ce2f3732081cd82612b1b7ef
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34733000"
 ---
 # <a name="ios-platform-specifics"></a>Специфический для платформы iOS
 
@@ -29,6 +30,7 @@ _Особенности платформы позволяют использов
 - Настройка видимости панели состояния на [ `Page` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Page/). Дополнительные сведения см. в разделе [установки видимость строки состояния на странице](#set_status_bar_visibility).
 - Управление ли [ `ScrollView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ScrollView/) жест касания обрабатывает или передает его на его содержимое. Дополнительные сведения см. в разделе [задержки содержимого штрихи в ScrollView](#delay_content_touches).
 - Установка на стиль разделителя [ `ListView` ](xref:Xamarin.Forms.ListView). Дополнительные сведения см. в разделе [параметр стиль разделителя для ListView](#listview-separatorstyle).
+- Отключение режима устаревших цвета на поддерживаемой [ `VisualElement` ](xref:Xamarin.Forms.VisualElement). Дополнительные сведения см. в разделе [отключение цветовая маркировка прежних версий](#legacy-color-mode).
 
 <a name="blur" />
 
@@ -506,6 +508,47 @@ listView.On<iOS>().SetSeparatorStyle(SeparatorStyle.FullWidth);
 
 > [!NOTE]
 > После настройки стиль разделителя `FullWidth`, не может изменить его статус на `Default` во время выполнения.
+
+<a name="legacy-color-mode" />
+
+## <a name="disabling-legacy-color-mode"></a>Отключение режима цвет прежних версий
+
+Некоторые представления Xamarin.Forms признаков устаревших цветового режима. В этом режиме при [ `IsEnabled` ](xref:Xamarin.Forms.VisualElement.IsEnabled) представления свойству `false`, переопределяет цвета, установленные пользователем с помощью собственного цветов по умолчанию для отключенного состояния представления. Для обеспечения обратной совместимости, этот цвет устаревший режим остается поведение по умолчанию для поддерживаемых представлений.
+
+Этой платформой отключает этот режим устаревшего цвет, так что установленные пользователем для представления цветов остаются даже в том случае, если представление будет отключена. Он используется в языке XAML, задав [ `VisualElement.IsLegacyColorModeEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.VisualElement.IsLegacyColorModeEnabledProperty) присоединенному свойству `false`:
+
+```xaml
+<ContentPage ...
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
+    <StackLayout>
+        ...
+        <Button Text="Button"
+                TextColor="Blue"
+                BackgroundColor="Bisque"
+                ios:VisualElement.IsLegacyColorModeEnabled="False" />
+        ...
+    </StackLayout>
+</ContentPage>
+```
+
+Кроме того он может использоваться из C# с помощью плавного API:
+
+```csharp
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+...
+
+_legacyColorModeDisabledButton.On<iOS>().SetIsLegacyColorModeEnabled(false);
+```
+
+`VisualElement.On<iOS>` Метод указывает, что этой платформой будет запускаться только в iOS. [ `VisualElement.SetIsLegacyColorModeEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.VisualElement.SetIsLegacyColorModeEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement},System.Boolean)) Метод в [ `Xamarin.Forms.PlatformConfiguration.iOSSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific) пространства имен используется для управления ли цвет устаревший режим отключен. Кроме того [ `VisualElement.GetIsLegacyColorModeEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.iOSSpecific.VisualElement.GetIsLegacyColorModeEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.iOS,Xamarin.Forms.VisualElement})) метод может использоваться для возврата, не отключен ли устаревших цветового режима.
+
+Результатом является что цветовой устаревший режим может быть отключен, так, чтобы пользователь задал для представления цветов оставались даже при отключении представления:
+
+![](ios-images/legacy-color-mode-disabled.png "Цвет устаревший режим отключен")
+
+> [!NOTE]
+> При задании [ `VisualStateGroup` ](xref:Xamarin.Forms.VisualStateGroup) в представлении цветовой устаревший режим не оказывает никакого влияния. Дополнительные сведения о визуальных состояний см. в разделе [Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).
 
 ## <a name="summary"></a>Сводка
 

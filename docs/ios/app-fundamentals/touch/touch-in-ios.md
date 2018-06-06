@@ -1,19 +1,20 @@
 ---
-title: Touch в iOS
+title: Touch жестов в Xamarin.iOS и события
+description: В этом документе описывается работа с событий сенсорного экрана, мультисенсорные, жесты, несколько жестов и пользовательских жестов в приложениях Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: DA666DC9-446E-4CD1-B5A0-C6FFBC7E53AD
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 9ed90a9c4ddcd398d834cb8c91553a57e7bd5ad8
-ms.sourcegitcommit: a4c2a63ba76b839cda99e4474e7ab46fe307cd39
+ms.openlocfilehash: 34073474ef3ef74f2fddbf487b3377224dc1aa3e
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34689545"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784593"
 ---
-# <a name="touch-in-ios"></a>Touch в iOS
+# <a name="touch-events-and-gestures-in-xamarinios"></a>Touch жестов в Xamarin.iOS и события
 
 Важно понять события касания и touch API-интерфейсы в приложении iOS, как они имеют большое значение для всех физических взаимодействий с устройством. Включать все взаимодействия touch `UITouch` объекта. В этой статье будет показано, как использовать `UITouch` класс и его API-интерфейсы для поддержки касания. Более поздней версии мы расширим наших знаний, чтобы узнать, как поддержка жестов.
 

@@ -1,15 +1,16 @@
 ---
 title: Xamarin.Essentials
-description: Xamarin.Essentials предоставляет разработчикам API-интерфейсы кросс платформенных мобильных приложений.
+description: Документ содержит ссылки на различные руководства, которые описывают Xamarin.Essentials, который предоставляет разработчикам API-интерфейсы кросс платформенных мобильных приложений.
 ms.assetid: 4EDC9897-5FD1-44CA-A26D-2E5AB472C99A
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: a13017cbfe6039e623a95e147f563518f4c86c3e
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 5fec06fd6f0c13a75040d940a11811ef97c3bcc3
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782743"
 ---
 # <a name="xamarinessentials"></a>Xamarin.Essentials
 

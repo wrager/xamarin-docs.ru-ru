@@ -1,17 +1,19 @@
 ---
-title: Начало работы
+title: Приступая к работе с Sharpie цели
+description: Этот документ содержит общий обзор Sharpie цель, этот инструмент используется для автоматизации создания привязки C# для кода Objective-C.
 ms.prod: xamarin
 ms.assetid: 577512BF-1A90-41E5-89DE-9E056C478678
 author: asb3993
 ms.author: amburns
 ms.date: 10/11/2017
-ms.openlocfilehash: 5f61d0794e1f5a38370f0d840504720043f69590
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: a0431f8952055a55be24ae5f85381a4295206a40
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781820"
 ---
-# <a name="getting-started"></a>Начало работы
+# <a name="getting-started-with-objective-sharpie"></a>Приступая к работе с Sharpie цели
 
 > [!IMPORTANT]
 > Цели Sharpie — это средство для опытных разработчиков Xamarin, обладающие углубленными знаниями Objective-C (и по расширению, C). Прежде чем привязать цель библиотеки необходимо четко понимать, как выполнить сборку собственной библиотеки в командной строке (и полного понимания того, как работает собственной библиотеки).

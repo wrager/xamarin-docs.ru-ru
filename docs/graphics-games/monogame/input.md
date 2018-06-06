@@ -1,16 +1,17 @@
 ---
 title: Справочник по игровой MonoGame
-description: Игровой — это стандартные, кросс платформенных класс для доступа к устройствам ввода в MonoGame.
+description: В этом документе описывается игровой кросс платформенных класс для доступа к устройствам ввода в MonoGame. Он описывает, как при чтении входных данных из игровой и примеры кода.
 ms.prod: xamarin
 ms.assetid: 1F71F3E8-2397-4C6A-8163-6731ECFB7E03
 author: charlespetzold
 ms.author: chape
 ms.date: 03/28/2017
-ms.openlocfilehash: 0746cc0153e9e00309b7227ff3e8a683cdc46835
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: f8a833dbab2b8a69f328cd26cb69db84f3083222
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783328"
 ---
 # <a name="monogame-gamepad-reference"></a>Справочник по игровой MonoGame
 
@@ -106,7 +107,7 @@ Apple TV игры можно использовать удаленный Siri и
 
 Обратите внимание, что `GamePad` только чтения ввода из кнопку воспроизведения и touch область: 
 
-![](input-images/image2.png "Обратите внимание, что игровой можно только считывать входные данные из "Воспроизведение" touch поверхности")
+![](input-images/image2.png "Обратите внимание, что игровой можно только считывать входные данные из \"Воспроизведение\" touch поверхности")
 
 С момента сенсорный прочтите поверхности перемещения `DPad` свойства, значения передаются с помощью перемещения `ButtonState` класса. Другими словами, значения доступны только как `ButtonState.Pressed` или `ButtonState.Released`, в отличие от числовых значений или жесты.
 

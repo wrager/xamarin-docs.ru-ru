@@ -1,22 +1,22 @@
 ---
-title: Языковая поддержка
-description: Функции кросс платформенные приложения и основные понятия.
+title: Программирование языковой поддержке в Xamarin
+description: 'В этом документе описываются разные языки программирования, поддерживаемые Xamarin. Он описывает C#, F #, переносимый Visual Basic.NET и шаблонов Razor.'
 ms.prod: xamarin
 ms.assetid: CEE8C464-67D7-45F4-9614-EAEF5217CACC
 author: asb3993
 ms.author: amburns
 ms.date: 02/18/2018
-ms.openlocfilehash: 18d7e93d686f369dec4a98b5b5f6c77679119091
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 715f63a0be54ba3342bd63c1c76d89656313359a
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781680"
 ---
-# <a name="language-support"></a>Языковая поддержка
-
-Этот раздел содержит документы, в которых объясняются некоторые более сложные функции кросс платформенные приложения и основные понятия.
+# <a name="programming-language-support-in-xamarin"></a>Программирование языковой поддержке в Xamarin
 
 ## <a name="c"></a>C# 
+
 ###  <a name="async-support-overviewcross-platformplatformasyncmd"></a>[Общие сведения о поддержке асинхронного выполнения](~/cross-platform/platform/async.md)
 
 Версия 5 C# появились два новых ключевых слов для выражения асинхронных операций: async и await. Эти ключевые слова можно написать простой код, который использует библиотеку параллельных задач для выполнения длительных операций (например, доступ к сети) в другом потоке и легко получить доступ к результатам по завершении. Последние версии Xamarin.iOS и Xamarin.Android поддерживают async и await — в этом документе приводятся разъяснения и пример использования нового синтаксиса с помощью Xamarin.

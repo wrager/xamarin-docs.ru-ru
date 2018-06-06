@@ -1,16 +1,17 @@
 ---
-title: Параметры совместного использования кода
+title: Обзор кода для управления доступом
 description: 'В этом документе сравнивается совместное использование кода между кросс платформенные проекты различных методов: общие проекты, переносимые библиотеки классов и .NET Standard, включая преимущества и недостатки каждого из них.'
 ms.prod: xamarin
 ms.assetid: B73675D2-09A3-14C1-E41E-20352B819B53
 author: asb3993
 ms.author: amburns
 ms.date: 03/23/2017
-ms.openlocfilehash: de2e24b1746568510c84fb163efa8562ab47cf00
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 37b6465c06361f8e33c0ed191d08dbcc22cb16ce
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781436"
 ---
 # <a name="sharing-code-overview"></a>Обзор кода для управления доступом
 

@@ -1,21 +1,21 @@
 ---
-title: 'Пошаговое руководство: Использование элемента JSON для создания пользовательского интерфейса'
+title: Использование JSON для создания пользовательского интерфейса в Xamarin.iOS
 description: MonoTouch.Dialog (машинного перевода. D) включает поддержку динамическое создание пользовательского интерфейса через данных JSON. В этом учебнике мы рассмотрим способы использования JSONElement для создания пользовательского интерфейса из JSON, входящий в состав приложения, либо загрузить из URL-адрес удаленного.
 ms.prod: xamarin
 ms.assetid: E353DF14-51D7-98E3-59EA-16683C770C23
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
-ms.openlocfilehash: 322857295383d17da03507bdd5ac78753f8c0619
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f9ba2cce1650260aa889e8282c091012ef8bbddc
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790657"
 ---
-# <a name="walkthrough-using-a-json-element-to-create-a-user-interface"></a>Пошаговое руководство: Использование элемента JSON для создания пользовательского интерфейса
+# <a name="using-json-to-create-a-user-interface-in-xamarinios"></a>Использование JSON для создания пользовательского интерфейса в Xamarin.iOS
 
 _MonoTouch.Dialog (машинного перевода. D) включает поддержку динамическое создание пользовательского интерфейса через данных JSON. В этом учебнике мы рассмотрим способы использования JSONElement для создания пользовательского интерфейса из JSON, входящий в состав приложения, либо загрузить из URL-адрес удаленного._
-
 
 МАШИННОГО ПЕРЕВОДА. D поддерживает создание пользовательских интерфейсов, объявленных в JSON. При объявлении элементов с помощью JSON, машинного перевода. D будет автоматически создавать связанные элементы для вас. JSON можно загрузить из локального файла, проанализированный `JsonObject` экземпляра или даже удаленный URL-адрес.
 
@@ -177,7 +177,7 @@ _rootElement = new RootElement ("Json Example"){
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [MTDJsonDemo (sample)](https://developer.xamarin.com/samples/MTDJsonDemo/)
+- [MTDJsonDemo (пример)](https://developer.xamarin.com/samples/MTDJsonDemo/)
 - [Демонстрация - Icaza de Мигель создает экран входа iOS с MonoTouch.Dialog](http://youtu.be/3butqB1EG0c)
 - [Демонстрация - позволяет быстро создавать пользовательские интерфейсы iOS с MonoTouch.Dialog](http://youtu.be/j7OC5r8ZkYg)
 - [Общие сведения о MonoTouch.Dialog](~/ios/user-interface/monotouch.dialog/index.md)

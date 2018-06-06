@@ -1,18 +1,19 @@
 ---
-title: Цели Sharpie
+title: Создание привязок с целевой Sharpie
 description: В этом разделе содержатся вводные сведения о цели Sharpie, Xamarin средство командной строки, используемые для автоматизации процесса создания привязки в библиотеку Objective-C
 ms.prod: xamarin
 ms.assetid: 9C0A932C-7601-4357-B3F7-62ABAC835019
 author: asb3993
 ms.author: amburns
 ms.date: 10/11/2017
-ms.openlocfilehash: 62e75b3c987e48ea80291d790ef5e70e944725b0
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: ae644038aa8b54f0d57b61767882dec8754040c8
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34780761"
 ---
-# <a name="objective-sharpie"></a>Цели Sharpie
+# <a name="creating-bindings-with-objective-sharpie"></a>Создание привязок с целевой Sharpie
 
 _В этом разделе содержатся вводные сведения о цели Sharpie, Xamarin средство командной строки, используемые для автоматизации процесса создания привязки в библиотеку Objective-C_
 

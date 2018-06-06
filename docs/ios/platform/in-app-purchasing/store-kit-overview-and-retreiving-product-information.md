@@ -1,18 +1,20 @@
 ---
-title: Хранить Обзор пакета и извлечение сведений о продукции
+title: Общие сведения о StoreKit и получении сведения о продукте в Xamarin.iOS
+description: Этот документ содержит общие сведения о StoreKit. Он описывает классы, используемые с StoreKit тестирование StoreKit взаимодействий, отображения продуктов для продажи, обработка недопустимый продуктов и отображения локализованных цены.
 ms.prod: xamarin
 ms.assetid: FC21192E-6325-4389-C060-E92DBB5EBD87
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: f4ecd2942a99f80854fd340be454f9d8fefa5a36
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 964b97e82db8e79cb32598d0c955fac3ab122314
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787228"
 ---
-# <a name="store-kit-overview-and-retrieving-product-information"></a>Хранить Обзор пакета и извлечение сведений о продукции
+# <a name="storekit-overview-and-retrieving-product-info-in-xamarinios"></a>Общие сведения о StoreKit и получении сведения о продукте в Xamarin.iOS
 
 На снимке экрана ниже показан пользовательский интерфейс для покупок в приложении.
 Перед любой транзакции производится, приложение должно получить цену и описание для отображения продукта. Когда пользователь нажимает **купить**, приложение запрашивает StoreKit управляющему диалоговое окно подтверждения и идентификатор Apple ID входа. При условии, что затем транзакция завершается успешно, StoreKit уведомляет код приложения, который необходимо сохранить результат транзакции и предоставить пользователю доступ к покупке.   
@@ -75,7 +77,7 @@ ms.lasthandoff: 04/04/2018
 
 Выберите **тест-инженеры "песочницы"**
 
- [![](store-kit-overview-and-retreiving-product-information-images/image18.png "Выбор тест-инженеры "песочницы"")](store-kit-overview-and-retreiving-product-information-images/image18.png#lightbox)
+ [![](store-kit-overview-and-retreiving-product-information-images/image18.png "Выбор тест-инженеры \"песочницы\"")](store-kit-overview-and-retreiving-product-information-images/image18.png#lightbox)
 
 Отображается список существующих пользователей. Можно добавить нового пользователя или удалить существующую запись. Не поддерживает портала (в данный момент) позволяют просмотреть или изменить имеющиеся проверки пользователей, поэтому рекомендуется оставить хорошо запись каждого тестового пользователя, создается (особенно пароль назначения). После удаления тестового пользователя адрес электронной почты нельзя использовать повторно для другой учетной записи теста.  
    

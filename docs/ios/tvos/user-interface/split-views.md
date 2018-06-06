@@ -1,22 +1,20 @@
 ---
-title: Работа с разделением Просмотр контроллеров
-description: В этой статье описывается проектирование и работа с разделением Просмотр контроллеров внутри приложения Xamarin.tvOS.
+title: Работа с tvOS разбиение Просмотр контроллеров в Xamarin
+description: В этом документе описывается работа с tvOS разделять представления в приложении, созданном с помощью Xamarin. Он предоставляет высокоуровневый обзор разбиение Просмотр контроллеров, как использовать их с помощью раскадровки, доступ к представлениям master и сведений и отображение и скрытие главного представления.
 ms.prod: xamarin
 ms.assetid: 21248CFB-5A94-4C19-B223-C72E0DC5F1D5
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: 25151eb2929e2bc61dba27a9937ffdf4ee224626
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2dd07cd8a4e92d6d39be50ba670441d965ed4d13
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789435"
 ---
-# <a name="working-with-split-view-controllers"></a>Работа с разделением Просмотр контроллеров
-
-_В этой статье описывается проектирование и работа с разделением Просмотр контроллеров внутри приложения Xamarin.tvOS._
-
+# <a name="working-with-tvos-split-view-controllers-in-xamarin"></a>Работа с tvOS разбиение Просмотр контроллеров в Xamarin
 
 Контроллер представление Split представляется и управляет Master и подробное представление контроллер side-by-side, на экране, в то же время. Просмотр контроллеров разбиение используются для представления содержимого постоянное и может иметь фокус в образец (меньше раздел слева) и связанные сведения в представлении «Подробности» (больше раздел справа).
 

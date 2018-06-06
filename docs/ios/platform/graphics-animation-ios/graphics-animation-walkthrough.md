@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование CoreGraphics и CoreAnimation
+title: Использование основных графики и анимации ядра в Xamarin.iOS
 description: В этой статье шаг за шагом показано, как создать приложение, использующее Core графики и анимации Core. Показано, как рисовать на экране в ответ на сенсорный ввод пользователя, а также как анимация изображения, которое перемещаются по пути.
 ms.prod: xamarin
 ms.assetid: 4B96D5CD-1BF5-4520-AAA6-2B857C83815C
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: f857accfcdec4cb60e781936d1d0836dbf8d6ffb
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 7a4399a5d62e2000c2a15a65da8e0e427dc039e0
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787059"
 ---
-# <a name="drawing-and-animating-along-a-path"></a>Рисование и анимации в пути
+# <a name="using-core-graphics-and-core-animation-in-xamarinios"></a>Использование основных графики и анимации ядра в Xamarin.iOS
 
 В данном пошаговом руководстве мы собираемся рисование контура с помощью двухмерной графики в ответ на сенсорный ввод. Затем мы добавим `CALayer` содержит изображение, мы будет анимировать вдоль пути.
 

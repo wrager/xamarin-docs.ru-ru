@@ -1,16 +1,17 @@
 ---
 title: Обновление существующего приложений iOS
-description: Выполните следующие действия для обновления существующего приложения Xamarin.iOS для использования в единой API.
+description: Этот документ описывает действия, которые должны выполняться для обновления приложения Xamarin.iOS классический API в единой API.
 ms.prod: xamarin
 ms.assetid: 303C36A8-CBF4-48C0-9412-387E95024CAB
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 74534333bb0c4ae54dc6816312a5531f29a80ce5
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 4d506232903d4a94ac20a1fb9f93a39884d9099c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781882"
 ---
 # <a name="updating-existing-ios-apps"></a>Обновление существующего приложений iOS
 
@@ -32,7 +33,7 @@ Xamarin предоставляет средства для Visual Studio для 
 
 После устранения предупреждения, выберите существующий проект iOS в Visual Studio для Mac или Visual Studio и выберите **Миграция в единой API Xamarin.iOS** из **проекта** меню. Пример:
 
-![](updating-ios-apps-images/beta-tool1.png "Выбрать миграции Xamarin.iOS единой API из меню "проект"")
+![](updating-ios-apps-images/beta-tool1.png "Выбрать миграции Xamarin.iOS единой API из меню \"проект\"")
 
 Необходимо дать согласие на это предупреждение, перед запуском автоматической миграции (очевидно, что вам следует иметь резервные копии и системы управления версиями перед переходом на этом adventure):
 

@@ -1,18 +1,20 @@
 ---
-title: Приобретение к использованию продуктов
+title: Приобретение к использованию продуктов в Xamarin.iOS
+description: Этот документ описывает к использованию продуктов в Xamarin.iOS. К использованию продуктов — это фрагменты однократного использования функциональных возможностей, таких как валюты в играх.
 ms.prod: xamarin
 ms.assetid: E0CB4A0F-C3FA-3933-58A7-13246971D677
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 5c2c84c044ff41cced2c97e414502faff45341ec
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9c53af1055736512c42f83a58011b7b3a42bcd5b
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786981"
 ---
-# <a name="purchasing-consumable-products"></a>Приобретение к использованию продуктов
+# <a name="purchasing-consumable-products-in-xamarinios"></a>Приобретение к использованию продуктов в Xamarin.iOS
 
 Использовать продукты, проще всего реализовать, так как нет необходимости «восстановить». Они полезны для устройства, например валюты в игре или элемент однократного использования функциональности. Пользователи повторно можно приобрести к использованию продуктов over и over еще раз.
 
@@ -23,8 +25,6 @@ ms.lasthandoff: 04/04/2018
 [![Визуализация процесса покупки](purchasing-consumable-products-images/image26.png)](purchasing-consumable-products-images/image26.png#lightbox)     
    
  Ниже приведен простой рабочий процесс.   
-   
-   
    
  1. Добавляет приложение `SKPayment` в очередь. При необходимости пользователь будет запрашиваться их идентификатора Apple ID и запрос на подтверждение платеж.   
    

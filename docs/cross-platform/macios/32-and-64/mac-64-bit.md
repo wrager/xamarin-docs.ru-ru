@@ -1,16 +1,17 @@
 ---
 title: Обновление приложений единой Xamarin.Mac на 64-разрядную версию
-description: В этом руководстве описывается обновления Xamarin.Mac целевой 64-разрядных приложений
+description: В этом руководстве описывается обновления Xamarin.Mac целевой 64-разрядных приложений. Он также предоставляет примеры различных типов ошибок, которые могут возникнуть при этого изменения.
 ms.prod: xamarin
 ms.assetid: C3810A74-539C-4FFB-B47F-68CA5F7BCDAD
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 02/22/2018
-ms.openlocfilehash: 558edbdee5adfe57205c7f76b35a0538c78b927f
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: aa97f9a68ea4acc4234233a22d10c99cde3e6d6c
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34780702"
 ---
 # <a name="updating-xamarinmac-unified-applications-to-64-bit"></a>Обновление приложений единой Xamarin.Mac на 64-разрядную версию
 

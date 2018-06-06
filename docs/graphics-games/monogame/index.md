@@ -1,19 +1,21 @@
 ---
-title: Monogame
+title: Monogame Framework
+description: 'В этом документе ссылки на различные руководства, описывающие разработки игр с MonoGame: Общие сведения, обсуждение трехмерной графики и игровые планшеты и посмотрите на вопросы от платформы.'
 ms.prod: xamarin
 ms.assetid: 35EC29CE-538B-4844-BACC-E51823EFF3B5
 author: charlespetzold
 ms.author: chape
 ms.date: 03/29/2017
-ms.openlocfilehash: 8c5256f3e8f6a617362fe6721a0eaff897297100
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 1c398b7d20a8c28001c2f3371dd792ed4b017a5f
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783127"
 ---
-# <a name="monogame"></a>Monogame
+# <a name="monogame-framework"></a>Monogame Framework
 
-MonoGame является эффективным, гибкие различных платформах API для разработки игр 2D и 3D. Предоставляет основу для многих кросс платформенной игры ядер, но могут использоваться непосредственно в играх без помещения в игры ядра.
+MonoGame — это эффективный, гибкое и кросс платформенных API для разработки игр 2D и 3D. Предоставляет основу для многих кросс платформенной игры ядер, но могут использоваться непосредственно в играх без помещения в игры ядра.
 
 ## <a name="introduction-to-game-development-with-monogamegraphics-gamesmonogameintroductionindexmd"></a>[Общие сведения о разработке игр с MonoGame](~/graphics-games/monogame/introduction/index.md)
 

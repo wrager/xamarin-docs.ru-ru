@@ -1,5 +1,5 @@
 ---
-title: Основной анимации
+title: Основной анимации в Xamarin.iOS
 description: В этой статье рассматриваются framework Core анимации, показывающий, как высокая производительность, плавности анимации в UIKit, а также позволяет использовать их непосредственно в управления анимации более низкого уровня.
 ms.prod: xamarin
 ms.assetid: D4744147-FACB-415B-8155-3A6B3C35E527
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: b89b93a90e13072e36140b79081b90dcde1cdb05
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 5cc6019ed148b870e38659eb30ac7f2738481a50
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786824"
 ---
-# <a name="core-animation"></a>Основной анимации
+# <a name="core-animation-in-xamarinios"></a>Основной анимации в Xamarin.iOS
 
 _В этой статье рассматриваются framework Core анимации, показывающий, как высокая производительность, плавности анимации в UIKit, а также позволяет использовать их непосредственно в управления анимации более низкого уровня._
 

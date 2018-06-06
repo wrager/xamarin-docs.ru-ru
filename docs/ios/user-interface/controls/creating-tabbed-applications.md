@@ -1,21 +1,20 @@
 ---
-title: Полосы вкладки и панели вкладки контроллеров
-description: операций ввода-вывода с помощью интерфейса, навигацию по вкладкам-приложений с помощью класса UITabBarController. В этой статье мы рассмотрим настройке приложении с вкладками, содержащий несколько контроллеров и представлений. Затем мы изучим, как загрузить UITabBarController, если она не корневой контроллер, например после экрана входа в систему.
+title: Полосы вкладки и панели вкладки контроллеров в Xamarin.iOS
+description: Этот документ описывает iOS вкладки панели контроллеров и способ их использования с Xamarin.iOS. Он демонстрирует Настройка UITabBarController, работы с изображениями, задайте значения эмблемы, работа с событиями и многое другое.
 ms.prod: xamarin
 ms.assetid: 7C772899-2900-F139-D642-F3C4F3F14DDC
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: c3c57cceed7271ebbe707172db892a246003426b
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d8b096774e60ec0e0b69e109fa5da53c25e66d25
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789762"
 ---
-# <a name="tab-bars-and-tab-bar-controllers"></a>Полосы вкладки и панели вкладки контроллеров
-
-_операций ввода-вывода с помощью интерфейса, навигацию по вкладкам-приложений с помощью класса UITabBarController. В этой статье мы рассмотрим настройке приложении с вкладками, содержащий несколько контроллеров и представлений. Затем мы изучим, как загрузить UITabBarController, если она не корневой контроллер, например после экрана входа в систему._
+# <a name="tab-bars-and-tab-bar-controllers-in-xamarinios"></a>Полосы вкладки и панели вкладки контроллеров в Xamarin.iOS
 
 С вкладками приложения используются в iOS для поддержки пользовательских интерфейсов, где может быть доступно несколько экранов в произвольном порядке. Через `UITabBarController` класса приложения можно легко включить поддержку таких сценариев нескольких экранов. `UITabBarController` отвечает за управление нескольких экранов, позволяя разработчику приложения сосредоточить внимание на сведения о каждом экране.
 
@@ -373,5 +372,5 @@ public override void ViewDidLoad ()
 ## <a name="related-links"></a>Связанные ссылки
 
 - [Создание приложений с вкладками (пример)](https://developer.xamarin.com/samples/monotouch/CreatingTabbedApplications/)
-- [Images.zip](https://github.com/xamarin/ios-samples/blob/master/CreatingTabbedApplications/Resources/images.zip?raw=true)
+- [Images.ZIP](https://github.com/xamarin/ios-samples/blob/master/CreatingTabbedApplications/Resources/images.zip?raw=true)
 - [Ссылку на класс UITabBarController](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITabBarController_Class/Reference/Reference.html)

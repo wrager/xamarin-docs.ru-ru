@@ -1,20 +1,19 @@
 ---
 title: Доступных сборок
-description: Доступных сборок в Xamarin.iOS, Xamarin.Android и Xamarin.Mac
+description: В этом документе перечислены доступные для использования в Xamarin.iOS, Xamarin.Android и Xamarin.Mac сборки. Также приводятся ссылки на документацию по .NET стандартные библиотеки и переносимой библиотеки классов.
 ms.prod: xamarin
 ms.assetid: AEF4ED0E-391F-4FA4-9F18-842BC24C272D
 author: asb3993
 ms.author: amburns
 ms.date: 03/13/2018
-ms.openlocfilehash: ef1dde061ffce4082922cc2eb2af1ae9b045aedd
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: b73a818d3864c7c4d1d776e104d95090e87f5877
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781911"
 ---
 # <a name="available-assemblies"></a>Доступных сборок
-
-_Доступных сборок в Xamarin.iOS, Xamarin.Android и Xamarin.Mac_
 
 Xamarin.iOS, Xamarin.Android и Xamarin.Mac все поставляются с различных сборок. Так же, как Silverlight является расширенной подмножество системной сборки .NET, Xamarin платформы также является расширенной подмножество несколько Silverlight и сборками рабочего стола .NET.
 

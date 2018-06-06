@@ -1,18 +1,20 @@
 ---
-title: Введение в хранилище данных в iOS
+title: Введение в хранилище данных в приложениях Xamarin.iOS
+description: В этом документе описываются различные средства хранения данных в приложении Xamarin.iOS и предоставляет определенные сведения о преимуществах SQLite.
 ms.prod: xamarin
 ms.assetid: B1994468-FD06-4FD9-96B3-FCEBB13A972A
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 10/11/2016
-ms.openlocfilehash: 0da267502629ba30da59c26600ef0e7c605640aa
-ms.sourcegitcommit: 797597d902330652195931dec9ac3e0cc00792c5
+ms.openlocfilehash: 3fc82e2a1a2cf8d25d934ca2194ecd7de1b8b7df
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784707"
 ---
-# <a name="introduction"></a>Вступление
+# <a name="introduction-to-data-storage-in-xamarinios-apps"></a>Введение в хранилище данных в приложениях Xamarin.iOS
 
 ## <a name="when-to-use-a-database"></a>Когда следует использовать базу данных
 

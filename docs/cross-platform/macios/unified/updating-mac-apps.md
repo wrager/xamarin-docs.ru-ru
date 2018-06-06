@@ -1,20 +1,19 @@
 ---
 title: Обновление существующего приложения Mac
-description: Выполните следующие действия для обновления существующего приложения для использования API единой Xamarin.Mac.
+description: Этот документ описывает действия, которые должны выполняться для обновления приложения Xamarin.Mac классический API в единой API.
 ms.prod: xamarin
 ms.assetid: 26673CC5-C1E5-4BAC-BEF4-9A386B296FD5
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: a2e3df4db13ccbf8001b762bf29a3eb53cacd35a
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 5e6034b079bba5e884872e4f2096d677fd3641d0
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782415"
 ---
 # <a name="updating-existing-mac-apps"></a>Обновление существующего приложения Mac
-
-_Выполните следующие действия для обновления существующего приложения для использования API единой Xamarin.Mac._
 
 Обновление существующего приложения для использования API единой требует внесения изменений в самом файле проекта также относительно пространства имен и API, используемые в коде приложения.
 
@@ -32,7 +31,7 @@ Xamarin предоставляет средства для Visual Studio для 
 
 После устранения предупреждения, выберите существующий проект Mac в Visual Studio для Mac или Visual Studio и выберите **Миграция в единой API Xamarin.Mac** из **проекта** меню. Пример:
 
-![](updating-mac-apps-images/beta-tool1.png "Выбрать миграции Xamarin.Mac единой API из меню "проект"")
+![](updating-mac-apps-images/beta-tool1.png "Выбрать миграции Xamarin.Mac единой API из меню \"проект\"")
 
 Необходимо дать согласие на это предупреждение, перед запуском автоматической миграции (очевидно, что вам следует иметь резервные копии и системы управления версиями перед переходом на этом adventure):
 

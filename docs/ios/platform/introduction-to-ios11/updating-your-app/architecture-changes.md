@@ -1,21 +1,20 @@
 ---
-title: Изменения архитектуры
-description: Обзор новых возможностей iOS 11
+title: Изменения архитектуры в iOS 11
+description: В этом документе описывается об устаревании 32-разрядные приложения в iOS 11. В этом примере рассматривается обновлять приложения для целевых архитектур x 64.
 ms.prod: xamarin
 ms.assetid: 55F62F3F-8570-402B-B7D9-2875F76CB946
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/13/2016
-ms.openlocfilehash: 6dd874fd803d2b3de21b0b604cbc2bafa5bf1aec
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 09d528ceb0654debd7c0ac8818f19c622775eac2
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787439"
 ---
-# <a name="architecture-changes"></a>Изменения архитектуры
-
-_Обзор новых возможностей iOS 11_
+# <a name="architecture-changes-in-ios-11"></a>Изменения архитектуры в iOS 11
 
 Одна из крупнейших изменений, которые следует учитывать с iOS 11 — поддержки 32-разрядных приложений, как описано в [Apple](https://developer.apple.com/news/?id=06282017b) пресс-релизе. Все новые приложения и обновления для существующих приложений должен поддерживать 64-разрядной. 32-разрядных приложений **не запускаются** в iOS 11.
 

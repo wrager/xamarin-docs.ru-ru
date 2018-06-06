@@ -1,17 +1,19 @@
 ---
-title: Примеры
+title: Примеры цели Sharpie
+description: Документ содержит ссылки на различные руководства, описывающие, как использовать средство Sharpie цель, которая используется для автоматизации процесса создания привязки C# для кода Objective-C.
 ms.prod: xamarin
 ms.assetid: 1ACB0935-6D5F-4A5F-BE28-08DA1B675F0E
 author: asb3993
 ms.author: amburns
 ms.date: 03/29/2017
-ms.openlocfilehash: 5120626f6b95328108ecebfd3be4dff2b816006b
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 2c988e1399a3d8a1ec698c7cce44e73747bd22b7
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34780521"
 ---
-# <a name="examples"></a>Примеры
+# <a name="objective-sharpie-examples"></a>Примеры цели Sharpie
 
 Выполните эти примеры, чтобы лучше понять, как работает Sharpie цель.
 

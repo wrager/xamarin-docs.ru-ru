@@ -1,20 +1,19 @@
 ---
 title: Поддержка UrhoSharp Windows
-description: Определенные настройки Windows и компоненты для UrhoSharp.
+description: В этом документе рассматривается поддержка UrhoSharp в Windows. Он описывает, как создать проект, настроить и запустить Urho, интеграция с WPF и интегрировать UWP.
 ms.prod: xamarin
 ms.assetid: A4F36014-AE4E-4F07-A1AC-F264AAA68ACF
 author: charlespetzold
 ms.author: chape
 ms.date: 03/29/2017
-ms.openlocfilehash: ac563e18c714a276ebe94a491999e61630d53ef3
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 094eaf0ebe84ce8c1771bd6481ee897463349856
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783237"
 ---
 # <a name="urhosharp-windows-support"></a>Поддержка UrhoSharp Windows
-
-_Определенные настройки Windows и компоненты_
 
 Пока Urho переносимой библиотеке классов, и обеспечивает такой же API, используемые в нескольких различных платформ для логику игры по-прежнему необходимо инициализировать Urho в драйвере определенной платформы, а в некоторых случаях, необходимо воспользоваться преимуществами конкретных компонентов платформы .
 

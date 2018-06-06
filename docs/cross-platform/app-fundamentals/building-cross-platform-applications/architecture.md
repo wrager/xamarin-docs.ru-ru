@@ -1,15 +1,17 @@
 ---
 title: Часть 2 - архитектура
+description: В этом документе описываются шаблоны архитектуры, полезно для создания межплатформенных приложений. В нем описывается слои типичного приложения (уровень данных, уровень доступа к данным, т. д.) и Общие шаблоны мобильного программного обеспечения (MVVM, MVC, и т. д.)
 ms.prod: xamarin
 ms.assetid: 2176DB2D-E84A-3757-CFAB-04A586068D50
 author: asb3993
 ms.author: amburns
 ms.date: 03/27/2017
-ms.openlocfilehash: 94cd2ae09da2e36f8855d95dda883cd3b7819e5b
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: ebcfe8880a826c552d55e7a5567271a5a764fa1d
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34780879"
 ---
 # <a name="part-2---architecture"></a>Часть 2 - архитектура
 

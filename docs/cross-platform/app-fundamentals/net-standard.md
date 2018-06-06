@@ -1,19 +1,21 @@
 ---
-title: .NET Standard
+title: Совместное использование кода с помощью стандартных библиотек .NET
+description: В этом документе описывается использование стандартных библиотек .NET для совместного использования кода. Он описывает создание библиотеки .NET Standard, изменения его параметров и его использования в приложении.
 ms.prod: xamarin
 ms.assetid: 8C30F8D3-1920-453E-9E8B-D40696736FF2
 author: asb3993
 ms.author: amburns
 ms.date: 04/12/2017
-ms.openlocfilehash: c70a1cb1aa05426ba6d54d8af3787f014883bfa1
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 448bbc0630388f6bf45056c90cc75586996d0623
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781037"
 ---
-# <a name="net-standard"></a>.NET Standard
+# <a name="using-net-standard-libraries-to-share-code"></a>Совместное использование кода с помощью стандартных библиотек .NET
 
-## <a name="using-net-standard-library-projects-to-share-code"></a>С помощью стандартных проекты библиотеки .NET для совместного использования кода
+## <a name="net-standard"></a>.NET Standard
 
 Библиотека .NET Standard представляет собой формальную спецификацию интерфейсов API .NET, которые должны быть доступны во всех средах выполнения .NET. Целью введения библиотеки Standard является повышение уровня согласованности экосистемы .NET.
 [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) продолжает обеспечивать единообразие для среды выполнения .NET, однако аналогичные спецификации для библиотек базовых классов (BCL) .NET для реализаций библиотек .NET отсутствуют.
@@ -85,7 +87,7 @@ ms.lasthandoff: 05/09/2018
 
 После создания стандартной библиотеки .NET, можно добавить ссылку на него из любого совместимого проекта приложения или библиотеки таким же образом, обычно добавляются ссылки. В Visual Studio, щелкните правой кнопкой мыши узел "ссылки" и выберите `Add Reference...` переключитесь `Solution : Projects` вкладки, как показано:
 
-![](net-standard-images/vs04.png "В Visual Studio щелкните правой кнопкой мыши узел "ссылки" и выберите команду Добавить ссылку..., затем перейдите на вкладку проекты решения, как показано")
+![](net-standard-images/vs04.png "В Visual Studio щелкните правой кнопкой мыши узел \"ссылки\" и выберите команду Добавить ссылку..., затем перейдите на вкладку проекты решения, как показано")
 
 -----
 

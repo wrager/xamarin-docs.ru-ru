@@ -1,21 +1,20 @@
 ---
-title: Пошаговое руководство. Использование фоновая служба передачи и NSURLSession
-description: В этом пошаговом руководстве мы используем фоновой службы передачи данных и NSURLSession API с началом загрузки большое изображение, которое продолжает загружать во время работы приложения в фоновом режиме.
+title: Фоновая передача и NSURLSession в Xamarin.iOS
+description: Этот документ содержит пошаговое руководство, которое демонстрирует использование фоновая передача и NSUrlSession начнем загрузку большого изображения и продолжать, загрузки, если приложение размещается в фоновом режиме.
 ms.prod: xamarin
 ms.assetid: 6960E025-3D5C-457A-B893-25B734F8626D
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 51e1ae0a4314d0b23ec9e3236656321bd3dcb4e4
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 08a0ba1337c0d28d1f0d60d04394ccaf4a9ccfc7
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783743"
 ---
-# <a name="walkthrough---using-background-transfer-service-and-nsurlsession"></a>Пошаговое руководство. Использование фоновая служба передачи и NSURLSession
-
-_В этом пошаговом руководстве мы используем фоновой службы передачи данных и NSURLSession API с началом загрузки большое изображение, которое продолжает загружать во время работы приложения в фоновом режиме._
+# <a name="background-transfer-and-nsurlsession-in-xamarinios"></a>Фоновая передача и NSURLSession в Xamarin.iOS
 
 Фоновая передача инициируется путем настройки фона `NSURLSession` и устанавливая передачи или загрузки задачи. Если во время backgrounded, приостановки или завершения приложения выполнения задач, операций ввода-вывода будет уведомлять приложение, вызывая обработчик завершения приложения *AppDelegate*. Следующая диаграмма демонстрирует это в действии:
 

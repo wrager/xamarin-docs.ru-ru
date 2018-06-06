@@ -1,18 +1,20 @@
 ---
-title: Приобретение невоспроизводимых продуктов
+title: Приобретение невоспроизводимых продуктов в Xamarin.iOS
+description: В этом документе описываются продукты невоспроизводимых в Xamarin.iOS, которые приобрели пользователем функции, которые остаются доступными неопределенно долгое время, независимо от устройства.
 ms.prod: xamarin
 ms.assetid: 635D9CA2-6BCA-53E1-7B10-968029AA3493
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/18/2017
-ms.openlocfilehash: 0a581dc222e43f8d4742bd52dc56dc691449a8f2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: db193493ea11a7963fe5fc57f0c45978c26a7a74
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786955"
 ---
-# <a name="purchasing-non-consumable-products"></a>Приобретение невоспроизводимых продуктов
+# <a name="purchasing-non-consumable-products-in-xamarinios"></a>Приобретение невоспроизводимых продуктов в Xamarin.iOS
 
 Продукты не потребляемых «принадлежат» клиента. Ожидается, что они всегда будет доступ к ним, даже если устройство потеряно или украдено, или они приобрести его. Они полезны для книг, журнал проблем, игры уровни, фото фильтры, «pro компонентов», и т. д. Как только пользователь приобретал невоспроизводимых продукта, им не придется оплачивать его еще раз. Если код случайно позволяет его попробовать, StoreKit отобразится сообщение, которое оно уже было куплено.
 

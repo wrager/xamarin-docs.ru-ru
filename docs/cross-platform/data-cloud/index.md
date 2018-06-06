@@ -1,20 +1,19 @@
 ---
-title: Microsoft Azure
-description: Документация и примеры кода, загружаемые файлы для Azure.
+title: Microsoft Azure и Xamarin
+description: Документ содержит ссылки на документацию по подключенных служб в Visual Studio для Mac, мобильных приложений Azure, проверки подлинности Active Directory и WebAPI.
 ms.prod: xamarin
 ms.assetid: 7b9aa8d9-c181-4c33-8ab0-2f56e4dbfc04
 author: asb3993
 ms.author: amburns
 ms.date: 10/09/2017
-ms.openlocfilehash: 5a7c2e4e1bc8beff40984e66760a332e8b00f87d
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.openlocfilehash: 25eec247a0cb664897541a0e6e818a77018fda43
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34781082"
 ---
-# <a name="microsoft-azure"></a>Microsoft Azure
-
-_Документация и примеры кода, загружаемые файлы для Azure._
+# <a name="microsoft-azure-and-xamarin"></a>Microsoft Azure и Xamarin
 
 [ ![](images/evolve-mikej-azure-sml.png "Функции службы приложений Azure легко добавить для приложений Xamarin, включая Облачное хранилище данных и кросс платформенных push-уведомлений")](https://evolve.xamarin.com/session/56ec886fde91c6253c277bc6)
 
@@ -23,7 +22,6 @@ _Документация и примеры кода, загружаемые ф�
 ## <a name="connected-services-in-visual-studio-for-mac"></a>Подключенные службы в Visual Studio для Mac
 
 Новый [подключенные службы](connected-services.md) функции Visual Studio для Mac помогает разработчикам быстро и легко добавлять Azure функциональные возможности для мобильного приложения в Интегрированной среде разработки. В настоящее время доступны для тестирования в альфа-канала.
-
 
 ## <a name="azure-app-services"></a>Службы приложений Azure
 

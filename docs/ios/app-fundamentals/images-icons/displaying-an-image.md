@@ -1,5 +1,5 @@
 ---
-title: Отображение изображения
+title: Отображение изображения в Xamarin.iOS
 description: В этой статье рассматриваются включая образа ОС в приложения Xamarin.iOS и отображение этого образа с помощью кода C# или назначив для элемента управления в конструкторе iOS.
 ms.prod: xamarin
 ms.assetid: 60288B12-49E3-4E87-8690-D04A5EC7A664
@@ -7,13 +7,14 @@ ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 04/24/2018
-ms.openlocfilehash: f1f733fa91be7bf76e19896e78809d18494891d3
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: 3ae63bb30c7759a1915939a2199d5ffc7dc75d15
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784277"
 ---
-# <a name="displaying-an-image"></a>Отображение изображения
+# <a name="displaying-an-image-in-xamarinios"></a>Отображение изображения в Xamarin.iOS
 
 _В этой статье рассматриваются включая образа ОС в приложения Xamarin.iOS и отображение этого образа с помощью кода C# или назначив для элемента управления в конструкторе iOS._
 

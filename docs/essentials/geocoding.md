@@ -1,17 +1,18 @@
 ---
-title: Геокодирования Xamarin.Essentials
-description: Класс геокодирования, предоставляет API для geocode placemark позиционные координаты и обратная geocode coordincates на placemark.
+title: 'Xamarin.Essentials: геокодирования'
+description: Класс геокодирования в Xamarin.Essentials предоставляет API-интерфейсы для обоих geocode placemark позиционные координаты и обратная координаты geocode на placemark.
 ms.assetid: 3ADC440C-B000-4708-A2CC-296F5160AF90
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: 95301dad847887e867b220997ea9c34dba827982
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: 0b6cbf9ee5621466285656a5efee68ccc2c85211
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783032"
 ---
-# <a name="xamarinessentials-geocoding"></a>Геокодирования Xamarin.Essentials
+# <a name="xamarinessentials-geocoding"></a>Xamarin.Essentials: геокодирования
 
 ![Предварительная версия NuGet](~/media/shared/pre-release.png)
 

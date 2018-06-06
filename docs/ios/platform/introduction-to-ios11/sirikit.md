@@ -1,18 +1,20 @@
 ---
-title: SiriKit
+title: SiriKit обновлений в iOS 11
+description: В этом документе описывается работа с SiriKit в iOS 11. В частности он проверяет, как работать с задачами и примечания и как обеспечить альтернативные имена для приложения.
 ms.prod: xamarin
 ms.assetid: 8F75300B-B591-42ED-9D17-001992A5C381
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/07/2017
-ms.openlocfilehash: a712f7da0d57e81872d7f779cf0eb52c30ee3bc2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 28160b40c97b8cc62fae95d3643801f1c4cc5e93
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787589"
 ---
-# <a name="sirikit"></a>SiriKit
+# <a name="sirikit-updates-in-ios-11"></a>SiriKit обновлений в iOS 11
 
 SiriKit впервые появился в iOS 10, с количеством доменов службы (включая тренировки игнорировать резервирования и вызова). Ссылаться на [SiriKit раздел](~/ios/platform/sirikit/index.md) SiriKit основные понятия и как реализовать SiriKit в вашем приложении.
 

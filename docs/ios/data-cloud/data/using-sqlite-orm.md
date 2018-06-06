@@ -1,20 +1,20 @@
 ---
-title: С помощью SQLite.NET с iOS
-description: Библиотека SQLite.NET PCL NuGet предоставляет механизм доступа простых данных для приложения Xamarin.iOS.
+title: Использование SQLite.NET с Xamarin.iOS
+description: Библиотека SQLite.NET PCL NuGet предоставляет механизм доступа простых данных для приложения Xamarin.iOS. Этот документ содержит общие сведения о том, как использовать эту библиотеку.
 ms.prod: xamarin
 ms.assetid: 79813B09-42D7-47DD-AE71-A605E6B9EF24
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 04/18/2018
-ms.openlocfilehash: 861b024a7ff5dd07752662cc45306b6533cd38bd
-ms.sourcegitcommit: a4c2a63ba76b839cda99e4474e7ab46fe307cd39
+ms.openlocfilehash: 2a96a7c3f9bf02110bc5e2b21e26e71fe9d84d83
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34689505"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34784989"
 ---
-# <a name="using-sqlitenet-with-ios"></a>С помощью SQLite.NET с iOS
+# <a name="using-sqlitenet-with-xamarinios"></a>Использование SQLite.NET с Xamarin.iOS
 
 SQLite.NET библиотеки, в которой Xamarin рекомендует использовать является основные ORM, которая позволяет сохранять и извлекать объекты в локальной базе данных SQLite на устройстве iOS.
 Объектно-реляционные Преобразователи означает реляционное сопоставление объекта — API, который позволяет сохранять и извлекать «объекты» из базы данных без написания инструкций SQL.

@@ -1,19 +1,20 @@
 ---
-title: Запрос проверки приложения
-description: В этой статье описан метод RequestReview, Apple iOS 10 и его применение в Xamarin.iOS добавлены.
+title: Запрос проверки приложения в Xamarin.iOS
+description: В этой статье описывается метод RequestReview, Apple iOS 10 добавлен и описывает, как реализовать его в Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 6408e707-b7dc-4557-b931-16a4d79b8930
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/29/2017
-ms.openlocfilehash: 2fff227581d6eeca69d7a770308d9793a4831baf
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2b329ebad5faaa635d9a791f8760bd5f521de591
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788161"
 ---
-# <a name="request-app-review"></a>Запрос проверки приложения
+# <a name="request-app-review-in-xamarinios"></a>Запрос проверки приложения в Xamarin.iOS
 
 _В этой статье описан метод RequestReview, Apple iOS 10 и его применение в Xamarin.iOS добавлены._
 

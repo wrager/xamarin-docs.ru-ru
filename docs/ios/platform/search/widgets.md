@@ -1,22 +1,22 @@
 ---
-title: Поиска и улучшения мини-приложение на начальный экран
-description: В этой статье рассматриваются усовершенствования, внесенные в систему мини-приложения в iOS 10 Apple.
+title: Поиск и Главная усовершенствования экрана мини-приложения в iOS 10
+description: Этот документ описывает усовершенствования, сделанные Apple для мини-приложения в iOS 10, включая обновления для поиска и мини-приложений, начальный экран.
 ms.prod: xamarin
 ms.assetid: D66FD9E1-9E23-4BB6-825C-ED19B8F72A81
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: e7a64738f29ab2b5c62659d721beb50db7c9adb5
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 8383f167f8c85459e996b83368281fa243317948
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34788115"
 ---
-# <a name="search-and-home-screen-widget-enhancements"></a>Поиска и улучшения мини-приложение на начальный экран
+# <a name="search-and-home-screen-widget-enhancements-in-ios-10"></a>Поиск и Главная усовершенствования экрана мини-приложения в iOS 10
 
 _В этой статье рассматриваются усовершенствования, внесенные в систему мини-приложения в iOS 10 Apple._
-
 
 Apple был представлен ряд дополнительных возможностей для системы мини-приложения, чтобы гарантировать, что удобна в мини-приложений на фоновые, имеющиеся на новый iOS 10 экран блокировки. Кроме того, теперь содержат мини-приложения [NCWidgetDisplayMode](https://developer.apple.com/reference/notificationcenter/ncwidgetdisplaymode) свойство, которое позволяет разработчику для описания объем содержимого доступен и пользователь может разворачивать и сворачивать содержимое.
 

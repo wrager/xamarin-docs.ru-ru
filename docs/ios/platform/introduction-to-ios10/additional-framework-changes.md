@@ -1,17 +1,18 @@
 ---
 title: Изменения платформы iOS дополнительных 10
-description: В этой статье рассматриваются дополнительные, незначительные изменения или усовершенствования существующих инфраструктур для iOS 10.
+description: В этом документе описываются незначительные изменения и усовершенствования, внесенные в существующие платформы в iOS 10 и описывает, как сделать использование этих обновлений в Xamarin.iOS.
 ms.prod: xamarin
 ms.assetid: 0E2217F1-FC96-4D0A-ABAB-D40AD8F96502
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/29/2017
-ms.openlocfilehash: 33852ef62bd00368ef6544d07e60dd6de4c3b7d3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4b9a230157593b66446e2949e57a925d94208752
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787563"
 ---
 # <a name="additional-ios-10-frameworks-changes"></a>Изменения платформы iOS дополнительных 10
 

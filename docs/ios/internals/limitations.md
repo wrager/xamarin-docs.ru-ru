@@ -1,18 +1,20 @@
 ---
-title: Ограничения
+title: Ограничения Xamarin.iOS
+description: В этом документе описываются ограничения Xamarin.iOS в обсуждении универсальных шаблонов, универсальный подклассов NSObjects, P/Invoke в универсальных объектов и многое другое.
 ms.prod: xamarin
 ms.assetid: 5AC28F21-4567-278C-7F63-9C2142C6E06A
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 04/09/2018
-ms.openlocfilehash: 8bd4ce464adf316517e2e1f2299006913bc68736
-ms.sourcegitcommit: bc39d85b4585fcb291bd30b8004b3f7edcac4602
+ms.openlocfilehash: 8eb2cd5a749beab6f089479f5992fe3fbc16dd0a
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786233"
 ---
-# <a name="limitations"></a>Ограничения
+# <a name="limitations-of-xamarinios"></a>Ограничения Xamarin.iOS
 
 Поскольку приложения на iPhone, с помощью Xamarin.iOS компилируются для статического кода, не позволяет использовать все функции, для которых требуется создание кода во время выполнения.
 

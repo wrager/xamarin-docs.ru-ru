@@ -1,22 +1,20 @@
 ---
-title: Работа с элементами управления сегментированных
-description: В этой статье описывается проектирование и работа с элементами управления сегментированных внутри приложения Xamarin.tvOS.
+title: Работа с tvOS сегментированных элементов управления в Xamarin
+description: В этом документе описывается работа с tvOS сегментированных элементов управления в приложении, созданном с помощью Xamarin. В нем описывается сегмент значки и текст, события, изменение внешнего вида элемента управления и многое другое.
 ms.prod: xamarin
 ms.assetid: 23AD94CC-E93A-40B1-8E2B-ECD21FA355BE
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/16/2017
-ms.openlocfilehash: d4eac932c7fad628a0a65127bceb641f34ea5d79
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 8980f9fbf6996217dbcaec869e4c81598ac36552
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34789243"
 ---
-# <a name="working-with-segmented-controls"></a>Работа с элементами управления сегментированных
-
-_В этой статье описывается проектирование и работа с элементами управления сегментированных внутри приложения Xamarin.tvOS._
-
+# <a name="working-with-tvos-segmented-controls-in-xamarin"></a>Работа с tvOS сегментированных элементов управления в Xamarin
 
 Сегментированный управления предоставляет набор линейной элементов, каждый из которых может содержать значок или текст и используется, чтобы предоставить набор вариантов, связанные с пользователем.
 

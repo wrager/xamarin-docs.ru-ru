@@ -1,19 +1,20 @@
 ---
-title: Маршалинг исключения
-description: Xamarin.iOS содержит новые события для реагирования на исключения, особенно в машинном коде.
+title: Маршалинг в Xamarin.iOS исключение
+description: В этом документе описывается работа с машинного и управляемого исключения в приложении Xamarin.iOS. В нем описывается возникают проблемы и решения этих проблем.
 ms.prod: xamarin
 ms.assetid: BE4EE969-C075-4B9A-8465-E393556D8D90
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/05/2017
-ms.openlocfilehash: bb9c16985d958772193093434350435ce477956a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: dcf1074aacb6d139d107dac01fa86f459831d5f9
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34786747"
 ---
-# <a name="exception-marshaling"></a>Маршалинг исключения
+# <a name="exception-marshaling-in-xamarinios"></a>Маршалинг в Xamarin.iOS исключение
 
 _Xamarin.iOS содержит новые события для реагирования на исключения, особенно в машинном коде._
 
@@ -108,7 +109,7 @@ try {
 
 Пример кода:
 
-``` objective-c
+```objc
 -(id) setObject: (id) object forKey: (id) key
 {
     @try {
@@ -124,7 +125,7 @@ try {
 
 В варианте такого подхода является вызова управляемого исключения в управляемом коде и затем очистки через кадры машинного кода для получения первого управляемого `catch` предложения:
 
-``` csharp
+```csharp
 class AppDelegate : UIApplicationDelegate {
     public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
     {

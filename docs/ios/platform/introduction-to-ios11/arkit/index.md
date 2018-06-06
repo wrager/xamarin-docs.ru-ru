@@ -1,19 +1,20 @@
 ---
-title: Общие сведения о ARKit
-description: Режиме дополненной реальности для iOS 11
+title: Общие сведения о ARKit в Xamarin.iOS
+description: В этом документе описывается в режиме дополненной реальности в iOS 11 с ARKit. Он описывает способ добавления 3D-модели в приложение, настроить представление таким образом, реализации делегата сеанса, поместите 3D-модели в мире и приостановить сеанс режиме дополненной реальности.
 ms.prod: xamarin
 ms.assetid: 70291430-BCC1-445F-9D41-6FBABE87078E
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 08/30/2016
-ms.openlocfilehash: f48cdd48e63131fe234fef1bb60b555724dd8a92
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 55ef2004f66cb808f878b2215dfdd59a45015877
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787177"
 ---
-# <a name="introduction-to-arkit"></a>Общие сведения о ARKit
+# <a name="introduction-to-arkit-in-xamarinios"></a>Общие сведения о ARKit в Xamarin.iOS
 
 _Режиме дополненной реальности для iOS 11_
 

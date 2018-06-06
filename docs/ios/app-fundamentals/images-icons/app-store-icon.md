@@ -1,21 +1,20 @@
 ---
-title: Значок App Store
-description: Это статье рассматриваются включая и управлении ресурса изображения в приложении Xamarin.iOS для использования в качестве значка приложения магазина.
+title: Значки магазина в Xamarin.iOS
+description: В этом документе описывается использование средства каталоги для управления значок магазина приложений для приложения Xamarin.iOS. Ранее App Store значки осуществлялось с помощью iTunes Connect.
 ms.prod: xamarin
 ms.assetid: BFB5665A-F557-46E1-B35E-870CC2026AD9
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 09/26/2017
-ms.openlocfilehash: f8d993ccb23817e237b9cef8074b881f3ea4b3a2
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 749dbf01af382a54fe24652706f6a605ac7b20b4
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34783614"
 ---
-# <a name="app-store-icon"></a>Значок App Store
-
-_Это статье рассматриваются включая и управлении ресурса изображения в приложении Xamarin.iOS для использования в качестве значка приложения магазина._
+# <a name="app-store-icons-in-xamarinios"></a>Значки магазина в Xamarin.iOS
 
 Прежде чем Xcode 9 все значки магазина были добавлены через iTunes Connect. Однако это не так. Значки магазина приложений теперь должен быть включен как часть вашего проекта пакета и добавляются в каталоге активов. Приложения, которые не содержат значок App Store, будут отклонены Apple.
 

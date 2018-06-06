@@ -1,17 +1,18 @@
 ---
-title: Блокировка экрана Xamarin.Essentials
-description: Класс ScreenLock можно запросить для предотвращения неполадкой находится в спящем режиме, когда приложение выполняется на экране.
+title: 'Xamarin.Essentials: Блокировка экрана'
+description: Этот документ описывает класс ScreenLock в Xamarin.Essentials, который можно запросить для предотвращения неполадкой находится в спящем режиме, когда приложение выполняется на экране.
 ms.assetid: 6B67C114-315E-4199-AA72-3F90E85A4909
 author: jamesmontemagno
 ms.author: jamont
 ms.date: 05/04/2018
-ms.openlocfilehash: 0bdf75825d9c6dc594749fe7aa1e133207cfa0fa
-ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
+ms.openlocfilehash: 3c8110b7abc86fe1d12485579f134997718540e6
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34782912"
 ---
-# <a name="xamarinessentials-screen-lock"></a>Блокировка экрана Xamarin.Essentials
+# <a name="xamarinessentials-screen-lock"></a>Xamarin.Essentials: Блокировка экрана
 
 ![Предварительная версия NuGet](~/media/shared/pre-release.png)
 
@@ -32,7 +33,7 @@ public class ScreenLockTest
 {
     public void ToggleScreenLock()
     {
-        if (ScreenLock.IsActive)
+        if (!ScreenLock.IsActive)
             ScreenLock.RequestActive();
         else
             ScreenLock.RequestRelease();

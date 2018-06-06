@@ -1,18 +1,20 @@
 ---
-title: Элемент управления меню (Force Touch)
+title: watchOS управления Menu (Force Touch) в Xamarin
+description: В этом документе описывается использование жеста касания force watchOS в Xamarin. Он описывает, как реагировать на сенсорном force, как добавлять меню и изменение пунктов меню.
 ms.prod: xamarin
 ms.assetid: 5A7F83FB-9BC4-4812-92C5-CEC8DAE8211E
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/17/2017
-ms.openlocfilehash: 4895f140acbc8a622cfb91c2fe9db6c5e9d9d1d7
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 4b973b925b99189416087224644c376864c56871
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34791349"
 ---
-# <a name="menu-control-force-touch"></a>Элемент управления меню (Force Touch)
+# <a name="watchos-menu-control-force-touch-in-xamarin"></a>watchOS управления Menu (Force Touch) в Xamarin
 
 Контрольное значение обеспечивает принудительное Touch жестом, запускающим меню, при реализации на экране приложения Контрольные значения.
 

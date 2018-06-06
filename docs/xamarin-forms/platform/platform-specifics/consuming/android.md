@@ -6,12 +6,13 @@ ms.assetid: C5D4AA65-9BAA-4008-8A1E-36CDB78A435D
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/23/2018
-ms.openlocfilehash: 8d7ec3f2f64fdb8be903fd13bd72bcf545265a3d
-ms.sourcegitcommit: 4f646dc5c51db975b2936169547d625c78a22b30
+ms.date: 05/30/2018
+ms.openlocfilehash: 05f1fc6158e9a20892ab4a4b49b33e4eac6bc5e5
+ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34733065"
 ---
 # <a name="android-platform-specifics"></a>Android платформы подробные сведения
 
@@ -26,6 +27,8 @@ _Особенности платформы позволяют использов
 - Отключение [ `Disappearing` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Page.Appearing/) и [ `Appearing` ](https://developer.xamarin.com/api/event/Xamarin.Forms.Page.Appearing/) страницы события жизненного цикла на приостановить и возобновить соответственно, для приложений, использующих совместимости приложений. Дополнительные сведения см. в разделе [отключение Disappearing и появления событий жизненного цикла страницы](#disable_lifecycle_events).
 - Управление ли [ `WebView` ](xref:Xamarin.Forms.WebView) может отображать смешанное содержимое. Дополнительные сведения см. в разделе [Включение смешанного содержимого в WebView](#webview-mixed-content).
 - Установка метода ввода параметров редактора для программируемой клавиатуры для [ `Entry` ](xref:Xamarin.Forms.Entry). Дополнительные сведения см. в разделе [параметры редактора метода ввода для параметра записи](#entry-imeoptions).
+- Отключение режима устаревших цвета на поддерживаемой [ `VisualElement` ](xref:Xamarin.Forms.VisualElement). Дополнительные сведения см. в разделе [отключение цветовая маркировка прежних версий](#legacy-color-mode).
+- С помощью заполнения по умолчанию и значения Android кнопок. Дополнительные сведения см. в разделе [с помощью кнопок Android](#button-padding-shadow).
 
 <a name="soft_input_mode" />
 
@@ -308,7 +311,7 @@ entry.On<Android>().SetImeOptions(ImeFlags.Send);
 
 `Entry.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. [ `Entry.SetImeOptions` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Entry.SetImeOptions(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Entry},Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags)) Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен используется для задания параметра действие метода ввода для программируемой клавиатуры для [ `Entry` ](xref:Xamarin.Forms.Entry), с [ `ImeFlags` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags) перечисления, предоставляя следующие значения:
 
-- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Default) — Указывает, что ключ не определенное действие не требуется и что базового элемента управления выведет самостоятельно при можно.
+- [`Default`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Default) — Указывает, что ключ не определенное действие не требуется и что базового элемента управления выведет самостоятельно при можно. Это будет `Next` или `Done`.
 - [`None`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.None) — Указывает, что ключ не действия будут доступны.
 - [`Go`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Go) — Указывает, что ключ действия будет выполнять операцию «go», выполнив пользователю целевой текст они введены.
 - [`Search`](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags.Search) — Указывает, что ключ действия выполняет операцию «поиск», принимающий пользователю результаты поиска в тексте введено.
@@ -325,6 +328,83 @@ entry.On<Android>().SetImeOptions(ImeFlags.Send);
 Результатом является то, что указанный [ `ImeFlags` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.ImeFlags) значение применяется к Экранная клавиатура для [ `Entry` ](xref:Xamarin.Forms.Entry), который задает параметры редактора метода ввода:
 
 [![Платформой редактора метода ввода записи](android-images/entry-imeoptions.png "платформой редактора метода ввода записи")](android-images/entry-imeoptions-large.png#lightbox "платформой редактора метода ввода записи")
+
+<a name="legacy-color-mode" />
+
+## <a name="disabling-legacy-color-mode"></a>Отключение режима цвет прежних версий
+
+Некоторые представления Xamarin.Forms признаков устаревших цветового режима. В этом режиме при [ `IsEnabled` ](xref:Xamarin.Forms.VisualElement.IsEnabled) представления свойству `false`, переопределяет цвета, установленные пользователем с помощью собственного цветов по умолчанию для отключенного состояния представления. Для обеспечения обратной совместимости, этот цвет устаревший режим остается поведение по умолчанию для поддерживаемых представлений.
+
+Этой платформой отключает этот режим устаревшего цвет, так что установленные пользователем для представления цветов остаются даже в том случае, если представление будет отключена. Он используется в языке XAML, задав [ `VisualElement.IsLegacyColorModeEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.VisualElement.IsLegacyColorModeEnabledProperty) присоединенному свойству `false`:
+
+```xaml
+<ContentPage ...
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
+    <StackLayout>
+        ...
+        <Button Text="Button"
+                TextColor="Blue"
+                BackgroundColor="Bisque"
+                android:VisualElement.IsLegacyColorModeEnabled="False" />
+        ...
+    </StackLayout>
+</ContentPage>
+```
+
+Кроме того он может использоваться из C# с помощью плавного API:
+
+```csharp
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+...
+
+_legacyColorModeDisabledButton.On<Android>().SetIsLegacyColorModeEnabled(false);
+```
+
+`VisualElement.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. [ `VisualElement.SetIsLegacyColorModeEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.VisualElement.SetIsLegacyColorModeEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.VisualElement},System.Boolean)) Метод в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен используется для управления ли цвет устаревший режим отключен. Кроме того [ `VisualElement.GetIsLegacyColorModeEnabled` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.VisualElement.GetIsLegacyColorModeEnabled(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.VisualElement})) метод может использоваться для возврата, не отключен ли устаревших цветового режима.
+
+Результатом является что цветовой устаревший режим может быть отключен, так, чтобы пользователь задал для представления цветов оставались даже при отключении представления:
+
+![](android-images/legacy-color-mode-disabled.png "Цвет устаревший режим отключен")
+
+> [!NOTE]
+> При задании [ `VisualStateGroup` ](xref:Xamarin.Forms.VisualStateGroup) в представлении цветовой устаревший режим не оказывает никакого влияния. Дополнительные сведения о визуальных состояний см. в разделе [Xamarin.Forms Диспетчер визуальных состояний](~/xamarin-forms/user-interface/visual-state-manager.md).
+
+<a name="button-padding-shadow" />
+
+## <a name="using-android-buttons"></a>С помощью кнопок Android
+
+Этой платформой определяет, используется ли Xamarin.Forms кнопок заполнения по умолчанию и значения Android кнопок. Он используется в языке XAML, задав [ `Button.UseDefaultPadding` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPaddingProperty) и [ `Button.UseDefaultShadow` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadowProperty) присоединенных свойств для `boolean` значения:
+
+```xaml
+<ContentPage ...
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core">
+    <StackLayout>
+        ...
+        <Button ...
+                android:Button.UseDefaultPadding="true"
+                android:Button.UseDefaultShadow="true" />         
+    </StackLayout>
+</ContentPage>
+```
+
+Кроме того он может использоваться из C# с помощью плавного API:
+
+```csharp
+using Xamarin.Forms.PlatformConfiguration;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+...
+
+button.On<Android>().SetUseDefaultPadding(true).SetUseDefaultShadow(true);
+```
+
+`Button.On<Android>` Метод указывает, что этой платформой будет запускаться только в Android. [ `Button.SetUseDefaultPadding` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultPadding(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button},System.Boolean)) И[ `Button.SetUseDefaultShadow` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.SetUseDefaultShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button},System.Boolean)) методы в [ `Xamarin.Forms.PlatformConfiguration.AndroidSpecific` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific) пространства имен используются для управления ли кнопки Xamarin.Forms использовать значение по умолчанию Заполнение и значения Android кнопок. Кроме того [ `Button.UseDefaultPadding` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultPadding(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button})) и [ `Button.UseDefaultShadow` ](xref:Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Button.UseDefaultShadow(Xamarin.Forms.IPlatformElementConfiguration{Xamarin.Forms.PlatformConfiguration.Android,Xamarin.Forms.Button})) методы можно использовать для возврата, использует ли кнопки по умолчанию, заполнение значение и значение по умолчанию тень, соответственно.
+
+Результатом является использование кнопок Xamarin.Forms заполнения по умолчанию и значения Android кнопок:
+
+![](android-images/button-padding-and-shadow.png "Цвет устаревший режим отключен")
+
+Обратите внимание, что на снимке экрана выше [ `Button` ](xref:Xamarin.Forms.Button) с одинаковыми определениями, за исключением того, что правой `Button` использует значение заполнения по умолчанию и значения Android кнопок.
 
 ## <a name="summary"></a>Сводка
 
