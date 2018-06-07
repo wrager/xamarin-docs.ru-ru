@@ -1,31 +1,32 @@
 ---
-title: Ползунки, коммутаторы и Сегментированный элементов управления
+title: Ползунки, переключатели и сегментированных элементов управления в Xamarin.iOS
+description: В этом документе рассматриваются слайды, коммутаторы и Сегментированный элементов управления в Xamarin.iOS, в которых описываются способы работы с ними, как программным способом, так и в конструкторе iOS.
 ms.prod: xamarin
 ms.assetid: 85BF0EC8-E581-49CD-B9E7-98BE4C5A0F6B
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/21/2017
-ms.openlocfilehash: 3c98ea19b3f925e71f72b09d5356286d676a9f71
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 09a5d9e76c41eba4e16cab041daa67d3a5d8a584
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34790033"
 ---
-# <a name="sliders-switches-and-segmented-controls"></a>Ползунки, коммутаторы и Сегментированный элементов управления
+# <a name="sliders-switches-and-segmented-controls-in-xamarinios"></a>Ползунки, переключатели и сегментированных элементов управления в Xamarin.iOS
 
 <a name="Sliders" />
-
 
 ## <a name="sliders"></a>Ползунки
 
 Элемент управления "ползунок" позволяет простого выбора числовое значение в диапазоне. Элемент управления по умолчанию используется значение в диапазоне от 0 до 1, но можно настроить эти ограничения.
 
- [![](slider-switch-segmented-controls-images/image25a.png "Slider")](slider-switch-segmented-controls-images/image25a.png#lightbox)
+ [![](slider-switch-segmented-controls-images/image25a.png "Ползунок")](slider-switch-segmented-controls-images/image25a.png#lightbox)
 
 На следующем рисунке показан свойства, доступные для редактирования в конструкторе:
 
- [![](slider-switch-segmented-controls-images/image26a.png "Свойства "ползунок"")](slider-switch-segmented-controls-images/image25a.png#lightbox)
+ [![](slider-switch-segmented-controls-images/image26a.png "Свойства \"ползунок\"")](slider-switch-segmented-controls-images/image25a.png#lightbox)
 
 Эти значения можно задать в коде, как показано ниже, включая подключение обработчик для отображения выбранного значения в `UILabel` управления:
 
@@ -46,7 +47,7 @@ slider1.MaximumTrackTintColor = UIColor.Green;
 
 Настраиваемые ползунок выглядит следующим образом:
 
- [![](slider-switch-segmented-controls-images/image27a.png "Пользовательские "ползунок"")](slider-switch-segmented-controls-images/image28a.png#lightbox)
+ [![](slider-switch-segmented-controls-images/image27a.png "Пользовательские \"ползунок\"")](slider-switch-segmented-controls-images/image28a.png#lightbox)
 
 > [!IMPORTANT]
 > В данный момент [ошибки](http://stackoverflow.com/a/19496179) вызывает `ThumbTint` для подготовки к просмотру во время выполнения не должным образом. Можно добавить следующую строку кода **перед** приведенный выше, чтобы избежать этого. [[Источника](http://stackoverflow.com/a/21396794)]:
@@ -61,7 +62,7 @@ slider1.MaximumTrackTintColor = UIColor.Green;
 
 операций ввода-вывода использует `UISwitch` входных логическое значение, может быть представлен переключатель на других платформах. Пользователь может работать с элементом управления, перемещая *thumb* между **Вкл/Выкл** позиций.
 
- [![](slider-switch-segmented-controls-images/image28a.png "Switch")](slider-switch-segmented-controls-images/image28a.png#lightbox)
+ [![](slider-switch-segmented-controls-images/image28a.png "Коммутатор")](slider-switch-segmented-controls-images/image28a.png#lightbox)
 
 Возможности настройки внешнего вида коммутатора **панель свойств** конструктора, который позволит вам управлять состоянием по умолчанию **Вкл/Выкл оттенок** цвета и **ON/OFF изображение**. Это показано на рисунке ниже:
 

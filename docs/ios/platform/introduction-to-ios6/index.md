@@ -1,17 +1,18 @@
 ---
 title: Введение в iOS 6
-description: iOS 6 включает множество новых технологий для разработки приложений, которые Xamarin.iOS 6 предоставляет разработчикам C#.
+description: Документ содержит ссылки на руководства, которые описывают возможности, появившиеся в iOS 6. Представления коллекций, PassKit, платформа социальных сетей и изменения StoreKit обсуждаются.
 ms.prod: xamarin
 ms.assetid: 242DA7E3-8FD8-5F20-285D-603259CA622D
 ms.technology: xamarin-ios
 author: bradumbaugh
 ms.author: brumbaug
 ms.date: 03/19/2017
-ms.openlocfilehash: 8f3be80ffb8156c24c96b03fda8eac3907ca88bd
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: cf623c7788137106ddbb2c23c69465f205a5a400
+ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34787619"
 ---
 # <a name="introduction-to-ios-6"></a>Введение в iOS 6
 
@@ -28,12 +29,12 @@ IOS 6 и Xamarin.iOS 6 разработчики теперь имеют широ
 Представления коллекций разрешить доступ к содержимому будет отображаться с использованием произвольного макеты. Они позволяют легко компоновке вид сетки без дополнительной настройки, а также поддержку пользовательских макетов также. Дополнительные сведения см., [введение к представлениям коллекции](~/ios/user-interface/controls/uicollectionview.md) [ ](~/ios/user-interface/controls/uicollectionview.md)руководства.
 
 
-## <a name="introduction-to-pass-kitiosplatformpasskitmd"></a>[Общие сведения для передачи пакета](~/ios/platform/passkit.md)
+## <a name="introduction-to-passkitiosplatformpasskitmd"></a>[Введение в PassKit](~/ios/platform/passkit.md)
 
-Платформа передачи пакета позволяет приложениям взаимодействовать с цифровой передает, управление которыми осуществляется в расчетной книжке. Дополнительные сведения см., [введение в руководство по пакету передачи](~/ios/platform/passkit.md).
+Платформа PassKit позволяет приложениям взаимодействовать с цифровой передает, управление которыми осуществляется в расчетной книжке. Дополнительные сведения см., [введение в руководство по пакету передачи](~/ios/platform/passkit.md).
 
 
-##  <a name="introduction-to-event-kitiosplatformeventkitmd"></a>[Введение в набор событий](~/ios/platform/eventkit.md)
+##  <a name="introduction-to-eventkitiosplatformeventkitmd"></a>[Общие сведения о EventKit](~/ios/platform/eventkit.md)
 
 Платформа EventKit предоставляет способ доступа к календарям, событий календаря и напоминания данные хранятся в базе данных календаря. Доступ к календарям и календарь событий был доступен с iOS 4, но iOS 6 теперь предоставляет доступ к данным напоминания. Дополнительные сведения см. в разделе [я](~/ios/platform/eventkit.md) [ntroduction для EventKit](~/ios/platform/eventkit.md) руководства.
 
@@ -43,7 +44,7 @@ IOS 6 и Xamarin.iOS 6 разработчики теперь имеют широ
 Социальные Framework предоставляет универсальный интерфейс API для взаимодействия с социальными сетями, включая Twitter и Facebook, а также SinaWeibo для пользователей в Китае. Дополнительные сведения см., [Знакомство с платформой социальных](~/ios/platform/social-framework.md) руководства.
 
 
-##  <a name="changes-to-store-kitchanges-to-storekitmd"></a>[Изменения для хранения пакета](changes-to-storekit.md)
+##  <a name="changes-to-storekitchanges-to-storekitmd"></a>[Изменения в StoreKit](changes-to-storekit.md)
 
 Добавлены две новые функции в набор магазина Apple: приобретение и загрузке iTunes или App Store содержимого из приложения и размещение файлов содержимого для покупки из приложений. Дополнительные сведения см., [примет набор магазина](changes-to-storekit.md) руководства.
 
