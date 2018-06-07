@@ -6,18 +6,18 @@ ms.assetid: 3DB9C7A3-D351-481D-90C5-BEC25D1B9910
 ms.technology: xamarin-android
 author: topgenorth
 ms.author: toopge
-ms.date: 05/08/2018
-ms.openlocfilehash: a714ac55c3a49b91cb21e3ba1793b9bccd7d1be2
-ms.sourcegitcommit: 0a72c7dea020b965378b6314f558bf5360dbd066
+ms.date: 06/05/2018
+ms.openlocfilehash: 0d512342f1c978c84341d20c298a9fa750800d84
+ms.sourcegitcommit: 5db075bdd0b62d5d1d1567c267303a6a1888c8f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34806807"
 ---
 # <a name="firebase-job-dispatcher"></a>Диспетчер заданий firebase
 
 _В этом руководстве описывается планирование фоновой работы с помощью библиотеки диспетчера заданий Firebase от Google._
 
-![Диспетчер заданий firebase в режиме предварительного просмотра](~/media/shared/preview.png)
 
 ## <a name="overview"></a>Обзор
 
@@ -65,9 +65,6 @@ Android предоставляет следующие интерфейсы API �
 Чтобы приступить к работе с диспетчером Firebase задания, сначала добавьте [пакет Xamarin.Firebase.JobDispatcher NuGet](https://www.nuget.org/packages/Xamarin.Firebase.JobDispatcher) Xamarin.Android проект. Поиск диспетчера пакетов NuGet для **Xamarin.Firebase.JobDispatcher** пакета (который все еще находится в предварительной версии).
 
 После добавления в библиотеку диспетчера заданий Firebase, создайте `JobService` класса, а затем запланируйте выполнение с помощью экземпляра `FirebaseJobDispatcher`.
-
-> [!NOTE]
-> Текущей привязки для задания диспетчера Firebase предназначен для старой версии библиотеки. Является [известную ошибку [(https://bugzilla.xamarin.com/show_bug.cgi?id=59046)] предотвращает привязки обновление для более новой версии Firebase диспетчера заданий.
 
 
 ### <a name="creating-a-jobservice"></a>Создание JobService
@@ -293,7 +290,6 @@ int cancelResult = dispatcher.Cancel("unique-tag-for-job");
 
 ## <a name="related-links"></a>Связанные ссылки
 
-- [Генератор привязки завершается НЕОБРАБОТАННОЕ исключение с Неустранимая ошибка: System.ArgumentNullException: значение не может быть null.](https://bugzilla.xamarin.com/show_bug.cgi?id=59046)
 - [Xamarin.Firebase.JobDispatcher в NuGet](https://www.nuget.org/packages/Xamarin.Firebase.JobDispatcher)
 - [firebase задания — диспетчер на GitHub](https://github.com/firebase/firebase-jobdispatcher-android)
 - [Xamarin.Firebase.JobDispatcher привязки](https://github.com/xamarin/XamarinComponents/tree/master/Android/FirebaseJobDispatcher)

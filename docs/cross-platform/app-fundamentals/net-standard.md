@@ -6,12 +6,12 @@ ms.assetid: 8C30F8D3-1920-453E-9E8B-D40696736FF2
 author: asb3993
 ms.author: amburns
 ms.date: 04/12/2017
-ms.openlocfilehash: 448bbc0630388f6bf45056c90cc75586996d0623
-ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
+ms.openlocfilehash: 82a89309e6462462471f42c3504d109ff0722917
+ms.sourcegitcommit: 5db075bdd0b62d5d1d1567c267303a6a1888c8f2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34781037"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34806794"
 ---
 # <a name="using-net-standard-libraries-to-share-code"></a>Совместное использование кода с помощью стандартных библиотек .NET
 
@@ -37,7 +37,7 @@ ms.locfileid: "34781037"
 
   **Примечание:** этот шаблон будет переименован в `.NET Standard` в будущих версиях Visual Studio для Mac.
 
-  ![Создание библиотеки классов .NET Core](net-standard-images/vsm01.png)
+  ![Создание библиотеки классов .NET Core](net-standard-images/vsm01.png "Создание новой основной библиотеки классов .NET")
 
 2. Стандартная библиотека .NET проект будет отображаться, как показано в обозревателе решений. Узел зависимости покажет, что библиотека использует [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/).
 
@@ -47,7 +47,7 @@ ms.locfileid: "34781037"
 
 Параметры стандартной библиотеки .NET можно просмотреть и, щелкнув правой кнопкой мыши проект и выбрав команду `Options` как показано на этом снимке экрана:
 
-![Изменить .NET Standard требуемая версия .NET framework в параметрах проекта](net-standard-images/vsm03.png)
+![Изменить .NET Standard требуемая версия .NET framework в параметрах проекта](net-standard-images/vsm03.png "изменить версию платформы .NET Standard цели в параметрах проекта")
 
 Внутри вашей версии можно изменить `netstandard` , изменив `Target Framework` значение раскрывающегося списка.
 
@@ -67,17 +67,17 @@ ms.locfileid: "34781037"
 
 1. В диалоговом окне Добавление нового проекта выберите `.NET Standard` категории, а затем выберите `Class Library(.NET Standard)`.
 
-  ![](net-standard-images/vs01.png "Создайте новую библиотеку классов для .NET Standard")
+  ![Создание новой стандартной библиотеки классов .NET](net-standard-images/vs01.png "создать новый .NET Standard библиотеки классов")
 
 2. Стандартная библиотека .NET проект будет отображаться, как показано в обозревателе решений. Узел зависимости покажет, что библиотека использует [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/).
 
-  ![](net-standard-images/vs02.png ".NET стандартного проекта в решении")
+  ![NETStandard.Library в папке проекта](net-standard-images/vs02.png ".NET стандартного проекта в решении")
 
 #### <a name="editing-net-standard-library-settings"></a>Изменение параметров стандартной библиотеки .NET
 
 Параметры стандартной библиотеки .NET можно просмотреть и, щелкнув правой кнопкой мыши проект и выбрав команду `Properties` как показано на этом снимке экрана:
 
-![](net-standard-images/vs03.png "Ссылки на .NET Standard библиотеки так же, как другие проекты")
+![Изменить стандартные целевые платформы .NET в свойствах проекта](net-standard-images/vs03.png "ссылки .NET стандартную библиотеку так же, как другие проекты")
 
 Внутри вашей версии можно изменить `netstandard` , изменив `Target Framework` значение раскрывающегося списка.
 
@@ -87,7 +87,7 @@ ms.locfileid: "34781037"
 
 После создания стандартной библиотеки .NET, можно добавить ссылку на него из любого совместимого проекта приложения или библиотеки таким же образом, обычно добавляются ссылки. В Visual Studio, щелкните правой кнопкой мыши узел "ссылки" и выберите `Add Reference...` переключитесь `Solution : Projects` вкладки, как показано:
 
-![](net-standard-images/vs04.png "В Visual Studio щелкните правой кнопкой мыши узел \"ссылки\" и выберите команду Добавить ссылку..., затем перейдите на вкладку проекты решения, как показано")
+![Создание ссылок на стандартную библиотеку .NET](net-standard-images/vs04.png "в Visual Studio щелкните правой кнопкой мыши узел \"ссылки\" и выберите команду Добавить ссылку …, затем перейдите на вкладку проекты решения, как показано")
 
 -----
 
