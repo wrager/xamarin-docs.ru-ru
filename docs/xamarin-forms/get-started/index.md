@@ -25,7 +25,7 @@ _Xamarin.Forms — это кроссплатформенный набор ср�
 
 
 
-## <a name="requirementsinstallationmd"></a>[Requirements](installation.md)
+## <a name="requirementsinstallationmd"></a>[Требования к Xamarin.Forms](installation.md)
 
 Обзор требований к платформе для приложений, разработанных с помощью Xamarin.Forms, и минимальные системные требования для разработки с помощью Xamarin.Forms в Visual Studio для Mac и Visual Studio.
 
