@@ -7,11 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/06/2016
-ms.openlocfilehash: 2848b554d2dbd6d3d69ae864846247b3612d64e6
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 3a86e7713620eff90db995941eb35df7bc393a76
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848295"
 ---
 # <a name="xamarinforms-behaviors"></a>Xamarin.Forms поведения
 
@@ -210,5 +211,5 @@ entry.Behaviors.Clear();
 
 - [Поведение Xamarin.Forms (пример)](https://developer.xamarin.com/samples/xamarin-forms/behaviors/numericvalidationbehavior/)
 - [Поведение Xamarin.Forms применен стиль (пример)](https://developer.xamarin.com/samples/xamarin-forms/behaviors/numericvalidationbehaviorstyle/)
-- [Behavior](https://developer.xamarin.com/api/type/Xamarin.Forms.Behavior/)
-- [Behavior<T>](https://developer.xamarin.com/api/type/Xamarin.Forms.Behavior%3CT%3E/)
+- [Поведение](https://developer.xamarin.com/api/type/Xamarin.Forms.Behavior/)
+- [Поведение<T>](https://developer.xamarin.com/api/type/Xamarin.Forms.Behavior%3CT%3E/)

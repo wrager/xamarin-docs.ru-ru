@@ -6,12 +6,13 @@ ms.assetid: 2C6CE42C-E380-4BB9-90CC-D0F4E60C4C03
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 12/20/2017
-ms.openlocfilehash: be131bdbfeceabd72494708cdfe9a263da9bbbd8
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.date: 04/06/2018
+ms.openlocfilehash: 0609d15248f1827b892ae02a877382ca0ffbed18
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34847635"
 ---
 # <a name="platform-features"></a>Функции платформы
 
@@ -41,10 +42,6 @@ Xamarin.Forms теперь имеет поддержку GTK # приложен�
 
 Xamarin.Forms теперь имеет поддержку macOS приложений в предварительной версии.
 
-## <a name="wpfwpfmd"></a>[WPF](wpf.md)
-
-Xamarin.Forms теперь имеет поддержку предварительного просмотра для приложений Windows Presentation Foundation (WPF).
-
 ## <a name="native-formsnative-formsmd"></a>[Исходные формы](native-forms.md)
 
 Собственный формы позволяют Xamarin.Forms [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/)-производный страниц для использования собственных проектов Xamarin.iOS, Xamarin.Android и универсальной платформы Windows (UWP).
@@ -61,6 +58,14 @@ Xamarin.Forms теперь имеет поддержку предварител�
 
 В Github, Nuget и хранилище компонентов Xamarin, чтобы расширить Xamarin.Forms приложений доступны самые разнообразные подключаемые модули открытым исходным кодом.
 
+## <a name="tizentizenmd"></a>[Tizen](tizen.md)
+
+Tizen .NET позволяет создавать приложения .NET с Xamarin.Forms, Tizen .NET framework.
+
 ## <a name="windowswindowsindexmd"></a>[Windows](windows/index.md)
 
 Xamarin.Forms включает поддержку для универсальной платформы Windows (UWP) в Windows 10. В этой статье описывается добавление проекта UWP в существующее решение Xamarin.Forms.
+
+## <a name="wpfwpfmd"></a>[WPF](wpf.md)
+
+Xamarin.Forms теперь имеет поддержку предварительного просмотра для приложений Windows Presentation Foundation (WPF).

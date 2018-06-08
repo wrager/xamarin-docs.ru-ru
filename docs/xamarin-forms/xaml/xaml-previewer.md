@@ -6,12 +6,13 @@ ms.assetid: 84769ff1-72fd-4c44-8251-dd6d5bf8c7b2
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
-ms.date: 02/24/2017
-ms.openlocfilehash: d23f89ed8ad7956f7a366280a14ccc12ba3dac0c
-ms.sourcegitcommit: 775a7d1cbf04090eb75d0f822df57b8d8cff0c63
+ms.date: 05/31/2018
+ms.openlocfilehash: 9b87145773bf16b15c391c5c5d6d136b7aa76e39
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848360"
 ---
 # <a name="xaml-previewer-for-xamarinforms"></a>Средство предварительного просмотра XAML для Xamarin.Forms
 
@@ -55,6 +56,17 @@ _В разделе отображаются при вводе макеты Xamar
 Некоторые макеты, может быть трудно визуализировать без данных привязаны к элементам пользовательского интерфейса. Чтобы сделать на предварительную версию более полезными, назначьте некоторые статические данные элементы управления, жесткого задания контекст привязки (либо в кода или с помощью XAML).
 
 Ссылаться на Джеймсом Монтеманьо [в блоге о добавлении данных во время разработки](http://motzcod.es/post/143702671962/xamarinforms-xaml-previewer-design-time-data) чтобы узнать, как выполнить привязку к статическим ViewModel в XAML.
+
+## <a name="detecting-design-mode"></a>Обнаружение в режиме конструктора
+
+Статический [ `DesignMode.IsDesignModeEnabled` ](xref:Xamarin.Forms.DesignMode.IsDesignModeEnabled) свойства можно проанализировать, чтобы определить, выполняется ли приложение в предварительном просмотре. Это позволяет указать код, который выполняется только в том случае, когда приложение выполняется в предварительном просмотре:
+
+```csharp
+if (DesignMode.IsDesignModeEnabled)
+{
+  // Previewer only code  
+}
+```
 
 ## <a name="troubleshooting"></a>Устранение неполадок
 

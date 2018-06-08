@@ -6,18 +6,32 @@ ms.assetid: D4815A4B-104B-4294-951B-BD8F2EC33C86
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 04/11/2017
-ms.openlocfilehash: 9889502b635997dbb5e2b79a7654bf1ff0c99861
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 06/04/2018
+ms.openlocfilehash: 7f0050351ca28d7f8afeb82a85e82e51d399824b
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34847502"
 ---
 # <a name="picker"></a>Средство выбора
 
 _Представление выбора является элементом управления для выбора элемента из списка данных._
 
-Объект [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) отображает короткий список элементов, из которых может выбрать пользователь. Тем не менее [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) не показывает все данные при первом отображении. Вместо этого значение его [ `Title` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.Title/) свойство отображается как заполнитель для iOS и Android платформ:
+Xamarin.Forms [ `Picker` ](xref:Xamarin.Forms.Picker) отображает короткий список элементов, из которых пользователь может выбрать элемент. `Picker` Определяет восемь свойства:
+
+- [`Title`](xref:Xamarin.Forms.Picker.Title) Тип `string`, который по умолчанию `null`.
+- [`ItemsSource`](xref:Xamarin.Forms.Picker.ItemsSource) Тип `IList`, исходного списка элементов для отображения, которая по умолчанию `null`.
+- [`SelectedIndex`](xref:Xamarin.Forms.Picker.SelectedIndex) Тип `int`, индекс выбранного элемента по умолчанию — -1.
+- [`SelectedItem`](xref:Xamarin.Forms.Picker.SelectedItem) Тип `object`, выбранный элемент, значение по умолчанию `null`.
+- [`TextColor`](xref:Xamarin.Forms.Picker.TextColor) Тип [ `Color` ](xref:Xamarin.Forms.Color), цвет, используемый для отображения текста, который по умолчанию использует [ `Color.Default` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Color.Default/).
+- [`FontAttributes`](xref:Xamarin.Forms.Picker.FontAttributes) Тип [ `FontAttributes` ](xref:Xamarin.Forms.FontAttributes), который по умолчанию [ `FontAtributes.None` ](xref:Xamarin.Forms.FontAttributes.None).
+- [`FontFamily`](xref:Xamarin.Forms.Picker.FontFamily) Тип `string`, который по умолчанию `null`.
+- [`FontSize`](xref:Xamarin.Forms.Picker.FontSize) Тип `double`, который по умолчанию -1,0.
+
+Все восемь свойств, поддерживаемых [ `BindableProperty` ](xref:Xamarin.Forms.BindableProperty) объектов, что означает, что они могут быть со стилем и свойства могут являться целевыми для привязки данных. [ `SelectedIndex` ](xref:Xamarin.Forms.Picker.SelectedIndex) И [ `SelectedItem` ](xref:Xamarin.Forms.Picker.SelectedItem) свойства имеют режима привязки по умолчанию [ `BindingMode.TwoWay` ](xref:Xamarin.Forms.BindingMode.TwoWay), что означает, что они могут быть целями привязок данных в приложении, которое использует [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) архитектуры. Сведения о настройке свойств шрифта см. в разделе [шрифты](~/xamarin-forms/user-interface/text/fonts.md).
+
+Объект [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) не показывает все данные при первом отображении. Вместо этого значение его [ `Title` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.Title/) свойство отображается как заполнитель для iOS и Android платформ:
 
 [![](images/picker-initial.png "Начальный экран выбора")](images/picker-initial-large.png#lightbox "начальный экран выбора")
 
@@ -25,7 +39,7 @@ _Представление выбора является элементом у�
 
 [![](images/picker-selection.png "При выборе элемента выбора")](images/picker-selection-large.png#lightbox "при выборе элемента выбора")
 
-После выбора, выбранный элемент отображается с [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/):
+[ `Picker` ](xref:Xamarin.Forms.Picker) Активируется [ `SelectedIndexChanged` ](xref:Xamarin.Forms.Picker.SelectedIndexChanged) событие, когда пользователь выбирает элемент. После выбора, выбранный элемент отображается с `Picker`:
 
 ![](images/picker-after-selection.png "Средство выбора после выбора")
 
@@ -33,7 +47,6 @@ _Представление выбора является элементом у�
 
 - Установка [ `ItemsSource` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.ItemsSource/) свойство для отображения данных. Это рекомендуемая методика, которая была введена в Xamarin.Forms 2.3.4. Дополнительные сведения см. в разделе [свойства ItemsSource элемент выбора](populating-itemssource.md).
 - Добавление данных, отображаемых для [ `Items` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Picker.Items/) коллекции. Этот метод был исходного процесса заполнения [ `Picker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) с данными. Дополнительные сведения см. в разделе [Добавление данных в коллекцию элементов в средстве выбора](populating-items.md).
-
 
 ## <a name="related-links"></a>Связанные ссылки
 

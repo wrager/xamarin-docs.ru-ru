@@ -6,11 +6,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/01/2017
-ms.openlocfilehash: 91fabfa0538175f487c06750bbafbc9afd543512
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 676ed2d5f99c1f39904b2afe045cee21c0eab09c
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34847268"
 ---
 # <a name="dark-theme"></a>"Темной" теме
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/04/2018
 
 Ниже приведен пример кнопок и метки в темной темы, вместе с разметку, которая создает их.
 
-[![](dark-images/dark-theme-sml.png "Кнопки и метки в "темной" теме")](dark-images/dark-theme.png#lightbox "кнопки и метки в "темной" теме")
+[![](dark-images/dark-theme-sml.png "Кнопки и метки в \"темной\" теме")](dark-images/dark-theme.png#lightbox "кнопки и метки в \"темной\" теме")
 
 ```xaml
 <StackLayout Padding="20">

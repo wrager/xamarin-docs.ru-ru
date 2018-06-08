@@ -6,24 +6,25 @@ ms.assetid: 9923C541-3C10-4D14-BAB5-C4D6C514FB1E
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/22/2017
-ms.openlocfilehash: 2e40effa7bc54b7b7cf73edaa882256fed521a95
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 05/31/2018
+ms.openlocfilehash: a45a4edb93920cfe1d0289da44ee664e41c25cf1
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34847852"
 ---
 # <a name="entry"></a>Ввод
 
 _Однострочное текстовое или ввода пароля_
 
-Xamarin.Forms `Entry` используется для ввода одной строки текста. `Entry`, как и представление редактора поддерживает несколько типов клавиатуры. Кроме того `Entry` можно использовать в качестве поля пароля.
+Xamarin.Forms `Entry` используется для ввода одной строки текста. `Entry`, Таких как `Editor` Просмотр, поддерживает несколько типов клавиатуры. Кроме того `Entry` можно использовать в качестве поля пароля.
 
 ## <a name="display-customization"></a>Настройки отображения
 
 ### <a name="setting-and-reading-text"></a>Задание и чтение текста
 
-Запись, как и другие режимы представления текста, предоставляет `Text` свойство. `Text` можно использовать для задания и просмотрите сведения, представленные `Entry`. В следующем примере демонстрируется установка текст в XAML:
+`Entry`, Как и другие режимы представления текста, предоставляет `Text` свойство. Это свойство можно использовать для задания и просмотрите сведения, представленные `Entry`. В следующем примере показано задание `Text` свойства в XAML:
 
 ```xaml
 <Entry Text="I am an Entry" />
@@ -44,6 +45,20 @@ var text = MyEntry.Text;
 > [!NOTE]
 > Ширина `Entry` может быть задан путем установки его `WidthRequest` свойство. Не полагайтесь на ширину `Entry` , определенное на основе значения из его `Text` свойство.
 
+### <a name="limiting-input-length"></a>Ограничение длины ввода
+
+[ `MaxLength` ](xref:Xamarin.Forms.InputView.MaxLength) Свойство может использоваться для ограничения длины входных данных, допустимое для [ `Entry` ](xref:Xamarin.Forms.Entry). Это свойство должно быть присвоено положительное целое число:
+
+```xaml
+<Entry ... MaxLength="10" />
+```
+
+```csharp
+var entry = new Entry { ... MaxLength = 10 };
+```
+
+A [ `MaxLength` ](xref:Xamarin.Forms.InputView.MaxLength) свойства значение 0 указывает, что входные данные не будет разрешено и значение `int.MaxValue`, который является значением по умолчанию для [ `Entry` ](xref:Xamarin.Forms.Entry), указывает, что не действующие ограничения на число символов, которые могут быть введены.
+
 ### <a name="keyboards"></a>Клавиатура
 
 Сочетания, которое выводится, когда пользователи взаимодействуют с `Entry` могут быть заданы программно через `Keyboard` свойство.
@@ -58,6 +73,23 @@ var text = MyEntry.Text;
 - **URL-адрес** &ndash; используется для ввода пути к файлам и веб-адреса
 
 Отсутствует [пример каждого сочетания](https://developer.xamarin.com/recipes/cross-platform/xamarin-forms/choose-keyboard-for-entry/) в нашем разделе рецептами.
+
+### <a name="enabling-and-disabling-spell-checking"></a>Включение и отключение проверки орфографии
+
+[ `IsSpellCheckEnabled` ](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) Свойство, управляет ли проверка орфографии включена. По умолчанию свойство имеет значение `true`. При нажатии пользователем текст, отображаются ошибки.
+
+Однако в некоторых сценариях записи текста, например ввода имени пользователя, проверку орфографии предоставляет негативной и поэтому должны быть отключены, задав [ `IsSpellCheckEnabled` ](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) свойства `false`:
+
+```xaml
+<Entry ... IsSpellCheckEnabled="false" />
+```
+
+```csharp
+var entry = new Entry { ... IsSpellCheckEnabled = false };
+```
+
+> [!NOTE]
+> Когда [ `IsSpellCheckEnabled` ](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) свойству `false`и не используется пользовательских сочетаний, собственный орфографии будет отключена. Однако если [ `Keyboard` ](xref:Xamarin.Forms.Keyboard) имеет были набор, который отключает орфографии проверки, такие как [ `Keyboard.Chat` ](xref:Xamarin.Forms.Keyboard.Chat), `IsSpellCheckEnabled` свойство игнорируется. Таким образом, свойство не может использоваться, чтобы включить проверку орфографии для `Keyboard` , явно отключает его.
 
 ### <a name="placeholders"></a>Заполнители
 

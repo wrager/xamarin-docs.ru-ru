@@ -6,12 +6,13 @@ ms.assetid: 7074DB3A-30D2-4A6B-9A89-B029EEF20B07
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
-ms.date: 05/22/2017
-ms.openlocfilehash: 035365a22c487039ff811756d91ca0a8d392d628
-ms.sourcegitcommit: c024f29ff730ae20c15e99bfe0268a0e1c9d41e5
+ms.date: 05/31/2018
+ms.openlocfilehash: 317d4f140daeccc525c4267fca43e6164a8f7827
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848321"
 ---
 # <a name="editor"></a>Редактор
 
@@ -26,7 +27,7 @@ _Ввод многострочного текста_
 
 ### <a name="setting-and-reading-text"></a>Задание и чтение текста
 
-Предоставляет редакторе, таком как другими представлениями представления текста `Text` свойство. `Text` можно использовать для задания и просмотрите сведения, представленные `Editor`. В следующем примере показано задание текста в XAML:
+`Editor`, Как и другие режимы представления текста, предоставляет `Text` свойство. Это свойство можно использовать для задания и просмотрите сведения, представленные `Editor`. В следующем примере показано задание `Text` свойства в XAML:
 
 ```xaml
 <Editor Text="I am an Editor" />
@@ -44,6 +45,20 @@ var MyEditor = new Editor { Text = "I am an Editor" };
 var text = MyEditor.Text;
 ```
 
+### <a name="limiting-input-length"></a>Ограничение длины ввода
+
+[ `MaxLength` ](xref:Xamarin.Forms.InputView.MaxLength) Свойство может использоваться для ограничения длины входных данных, допустимое для [ `Editor` ](xref:Xamarin.Forms.Editor). Это свойство должно быть присвоено положительное целое число:
+
+```xaml
+<Editor ... MaxLength="10" />
+```
+
+```csharp
+var editor = new Editor { ... MaxLength = 10 };
+```
+
+A [ `MaxLength` ](xref:Xamarin.Forms.InputView.MaxLength) свойства значение 0 указывает, что входные данные не будет разрешено и значение `int.MaxValue`, который является значением по умолчанию для [ `Editor` ](xref:Xamarin.Forms.Editor), указывает, что не действующие ограничения на число символов, которые могут быть введены.
+
 ### <a name="keyboards"></a>Клавиатура
 
 Сочетания, которое выводится, когда пользователи взаимодействуют с `Editor` могут быть заданы программно через [ ``Keyboard`` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Keyboard/) свойство.
@@ -58,6 +73,23 @@ var text = MyEditor.Text;
 - **URL-адрес** &ndash; используется для ввода пути к файлам & веб-адреса
 
 Отсутствует [пример каждого сочетания](https://developer.xamarin.com/recipes/cross-platform/xamarin-forms/choose-keyboard-for-entry/) в нашем разделе рецептами.
+
+### <a name="enabling-and-disabling-spell-checking"></a>Включение и отключение проверки орфографии
+
+[ `IsSpellCheckEnabled` ](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) Свойство, управляет ли проверка орфографии включена. По умолчанию свойство имеет значение `true`. При нажатии пользователем текст, отображаются ошибки.
+
+Однако в некоторых сценариях записи текста, например ввода имени пользователя, проверку орфографии предоставляет негативной и поэтому должны быть отключены, задав [ `IsSpellCheckEnabled` ](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) свойства `false`:
+
+```xaml
+<Editor ... IsSpellCheckEnabled="false" />
+```
+
+```csharp
+var editor = new Editor { ... IsSpellCheckEnabled = false };
+```
+
+> [!NOTE]
+> Когда [ `IsSpellCheckEnabled` ](xref:Xamarin.Forms.InputView.IsSpellCheckEnabled) свойству `false`и не используется пользовательских сочетаний, собственный орфографии будет отключена. Однако если [ `Keyboard` ](xref:Xamarin.Forms.Keyboard) имеет были набор, который отключает орфографии проверки, такие как [ `Keyboard.Chat` ](xref:Xamarin.Forms.Keyboard.Chat), `IsSpellCheckEnabled` свойство игнорируется. Таким образом, свойство не может использоваться, чтобы включить проверку орфографии для `Keyboard` , явно отключает его.
 
 ### <a name="colors"></a>Цвета
 

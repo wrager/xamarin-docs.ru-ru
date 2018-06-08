@@ -6,11 +6,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/01/2017
-ms.openlocfilehash: c128e6130f0d8c2ba076a82ac85bda5aadea1ee9
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: fca5a0cb2e188df822efb15b090ef7986cf4a2d8
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848100"
 ---
 # <a name="themes"></a>Темы
 
@@ -47,7 +48,7 @@ Xamarin.Forms темы были объявлены в Evolve 2016 и досту�
 * Светлая тема (только небольшие отличия, что без темы)
 * Темная тема
 
-![](images/standard-none-sml.png "Элементы управления без использования тем") ![ ] (images/standard-light-sml.png "элементы управления со "светлой" теме") ![ ] (images/standard-dark-sml.png "элементов управления с "темной" теме")
+![](images/standard-none-sml.png "Элементы управления без использования тем") ![ ] (images/standard-light-sml.png "элементы управления со \"светлой\" теме") ![ ] (images/standard-dark-sml.png "элементов управления с \"темной\" теме")
 
 <a name="styleclass" />
 
@@ -67,7 +68,7 @@ Xamarin.Forms темы были объявлены в Evolve 2016 и досту�
 
 Это делает со светлой и темной следующим образом:
 
-![](images/boxview-light-sml.png "BoxView с StyleClass Светлая тема") ![ ] (images/boxview-dark-sml.png "BoxView с StyleClass "темной" теме")
+![](images/boxview-light-sml.png "BoxView с StyleClass Светлая тема") ![ ] (images/boxview-dark-sml.png "BoxView с StyleClass \"темной\" теме")
 
 <a name="builtin" />
 

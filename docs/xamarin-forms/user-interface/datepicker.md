@@ -6,24 +6,28 @@ ms.assetid: 68E8EF8A-42E7-4939-8ABE-64D060E609D9
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
-ms.date: 03/12/2018
-ms.openlocfilehash: 0ab9d3c83b849e5ab5aac8bce9c581abd0312237
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.date: 06/04/2018
+ms.openlocfilehash: 09b0bd788d9ac436e0270b447556ad2b0a848f99
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34848568"
 ---
 # <a name="using-datepicker"></a>С помощью DatePicker
 
 _Представление Xamarin.Forms, которое позволяет пользователю выбрать дату_
 
-Xamarin.Forms [ `DatePicker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) вызывает элемент управления выбора даты платформы и позволяет пользователю выбрать дату. `DatePicker` Определяет пять свойств:
+Xamarin.Forms [ `DatePicker` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) вызывает элемент управления выбора даты платформы и позволяет пользователю выбрать дату. `DatePicker` Определяет восемь свойства:
 
 - [`MinimumDate`](https://developer.xamarin.com/api/property/Xamarin.Forms.DatePicker.MinimumDate/) Тип [ `DateTime` ](https://developer.xamarin.com/api/type/System.DateTime/), который по умолчанию в первый день года 1900.
 - [`MaximumDate`](https://developer.xamarin.com/api/property/Xamarin.Forms.DatePicker.MaximumDate/) Тип `DateTime`, какие значения по умолчанию для последнего дня года 2100.
 - [`Date`](https://developer.xamarin.com/api/property/Xamarin.Forms.DatePicker.Date/) Тип `DateTime`, выбранной даты, по умолчанию используется значение [ `DateTime.Today` ](https://developer.xamarin.com/api/property/System.DateTime.Today/).
 - [`Format`](https://developer.xamarin.com/api/property/Xamarin.Forms.DatePicker.Format/) типа `string`, [Стандартная](/dotnet/standard/base-types/standard-date-and-time-format-strings/) или [пользовательские](/dotnet/standard/base-types/custom-date-and-time-format-strings/) .NET форматирования строки, которая по умолчанию «D», длинных Дата шаблон.
 - [`TextColor`](https://developer.xamarin.com/api/property/Xamarin.Forms.DatePicker.TextColor/) Тип [ `Color` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Color/), цвет, используемый для отображения выбранной даты, значение по умолчанию [ `Color.Default` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Color.Default/).
+- [`FontAttributes`](xref:Xamarin.Forms.DatePicker.FontAttributes) Тип [ `FontAttributes` ](xref:Xamarin.Forms.FontAttributes), который по умолчанию [ `FontAtributes.None` ](xref:Xamarin.Forms.FontAttributes.None).
+- [`FontFamily`](xref:Xamarin.Forms.DatePicker.FontFamily) Тип `string`, который по умолчанию `null`.
+- [`FontSize`](xref:Xamarin.Forms.DatePicker.FontSize) Тип `double`, который по умолчанию -1,0.
 
 `DatePicker` Активируется [ `DateSelected` ](https://developer.xamarin.com/api/event/Xamarin.Forms.DatePicker.DateSelected/) событие, когда пользователь выбирает дату.
 
@@ -32,7 +36,7 @@ Xamarin.Forms [ `DatePicker` ](https://developer.xamarin.com/api/type/Xamarin.Fo
 
 На внутреннем уровне `DatePicker` гарантирует, что `Date` между `MinimumDate` и `MaximumDate`включительно. Если `MinimumDate` или `MaximumDate` имеет значение, чтобы `Date` не между ними, `DatePicker` будет изменить значение параметра `Date`.
 
-Все пять свойств, поддерживаемых [ `BindableProperty` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BindableProperty/) объектов, что означает, что они могут быть со стилем и свойства могут являться целевыми для привязки данных. `Date` Свойство имеет режима привязки по умолчанию [ `BindingMode.TwoWay` ](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.TwoWay/), что означает, что он может быть целевым объектом привязки данных в приложение, использующее [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) архитектура.
+Все восемь свойств, поддерживаемых [ `BindableProperty` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BindableProperty/) объектов, что означает, что они могут быть со стилем и свойства могут являться целевыми для привязки данных. `Date` Свойство имеет режима привязки по умолчанию [ `BindingMode.TwoWay` ](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.TwoWay/), что означает, что он может быть целевым объектом привязки данных в приложение, использующее [Model-View-ViewModel (MVVM)](~/xamarin-forms/enterprise-application-patterns/mvvm.md) архитектура.
 
 ## <a name="initializing-the-datetime-properties"></a>Инициализация свойств даты и времени
 
@@ -67,13 +71,15 @@ DatePicker datePicker = new DatePicker
 
 Если `DatePicker` не содержит привязки на его `Date` свойства, приложению следует подключить обработчик `DateSelected` событие было в курсе, когда пользователь выбирает новую дату.
 
+Сведения о настройке свойств шрифта см. в разделе [шрифты](~/xamarin-forms/user-interface/text/fonts.md).
+
 ## <a name="datepicker-and-layout"></a>DatePicker и макет
 
 Можно использовать параметр неограниченного горизонтальном расположении, такие как `Center`, `Start`, или `End` с `DatePicker`:
 
 ```xaml
-<DatePicker ··· 
-            HorizontalOptions="Center" 
+<DatePicker ···
+            HorizontalOptions="Center"
             ··· />
 ```
 
@@ -138,7 +144,7 @@ DatePicker datePicker = new DatePicker
 </ContentPage>
 ```
 
-Каждый `DatePicker` назначается `Format` свойство «D» для длинный формат даты. Обратите внимание, что `endDatePicker` объект имеет привязку, которая обращается его `MinimumDate` свойство. Источник привязки является выбранного `Date` свойство `startDatePicker` объекта. Это гарантирует, что дата окончания всегда позже или равна дате начала. Помимо двух `DatePicker` объектов, `Switch` с меткой «Включить оба дня в итог». 
+Каждый `DatePicker` назначается `Format` свойство «D» для длинный формат даты. Обратите внимание, что `endDatePicker` объект имеет привязку, которая обращается его `MinimumDate` свойство. Источник привязки является выбранного `Date` свойство `startDatePicker` объекта. Это гарантирует, что дата окончания всегда позже или равна дате начала. Помимо двух `DatePicker` объектов, `Switch` с меткой «Включить оба дня в итог».
 
 Два `DatePicker` представления имеют прикреплены обработчики `DateSelected` события и `Switch` присоединен обработчик его `Toggled` событий. Эти обработчики событий в файле кода и запустит новое вычисление дней между двумя датами:
 
