@@ -7,11 +7,12 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 5cc35dde80e4a0c28315589f4db127a922ba5a41
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: bcc265c4d8410bb1aa2305f8a137c96a63c60fae
+ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34847723"
 ---
 # <a name="xamarinforms-performance"></a>Производительность Xamarin.Forms
 
@@ -247,16 +248,16 @@ XAMLC отключен по умолчанию для обеспечения о�
 
 ```xaml
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Resources.App">
      <Application.Resources>
-        <ResourceDictionary>
+         <ResourceDictionary>
             <Style x:Key="HeadingLabelStyle" TargetType="Label">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="TextColor" Value="Red" />
             </Style>
-        </ResourceDictionary>
+         </ResourceDictionary>
      </Application.Resources>
 </Application>
 ```
@@ -269,7 +270,7 @@ XAMLC отключен по умолчанию для обеспечения о�
              x:Class="Test.HomePage"
              Padding="0,20,0,0">
      <ContentPage.Resources>
-        <ResourceDictionary>
+          <ResourceDictionary>
             <Style x:Key="HeadingLabelStyle" TargetType="Label">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="FontSize" Value="Large" />
