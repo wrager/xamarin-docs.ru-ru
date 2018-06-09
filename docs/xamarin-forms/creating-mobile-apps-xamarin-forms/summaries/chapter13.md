@@ -1,16 +1,18 @@
 ---
 title: Сводка главе 13. Растровые изображения
+description: 'Создание мобильных приложений с помощью Xamarin.Forms: Сводка главе 13. Растровые изображения'
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: 5D153857-B6B7-4A14-8FB9-067DE198C2C7
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 76551057abc1abdd150591c0a1be39e9f68c4278
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d95e801f6a239e894c1f6baa68015659af9eba35
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241559"
 ---
 # <a name="summary-of-chapter-13-bitmaps"></a>Сводка главе 13. Растровые изображения
 
@@ -156,7 +158,7 @@ Xamarin.Forms [ `Image` ](https://developer.xamarin.com/api/type/Xamarin.Forms.I
 
 - MyImage.scale-200.jpg в квадрат 320 пикселей
 
-Допустимы только некоторые проценты. Примеры программ для этой книги включать только изображения с **масштаб 200** суффиксы, но текущего решения шаблоны Xamarin.Forms, которые включают **масштаб 100**, **шкалы 125**, **масштаб 150**, и **масштаб 400**. 
+Допустимы только некоторые проценты. Примеры программ для этой книги включать только изображения с **масштаб 200** суффиксы, но текущего решения шаблоны Xamarin.Forms, которые включают **масштаб 100**, **шкалы 125**, **масштаб 150**, и **масштаб 400**.
 
 При добавлении растровых изображений в проектах платформы **действие построения** должно быть:
 

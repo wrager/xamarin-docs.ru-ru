@@ -1,5 +1,5 @@
 ---
-title: Страница с вкладками
+title: Xamarin.Forms страницы с вкладками
 description: Xamarin.Forms TabbedPage состоит из список вкладок и увеличить область сведений, с каждой из вкладок загрузки содержимого в область данных. В этой статье демонстрируется использование TabbedPage для перемещения по коллекции страниц.
 ms.prod: xamarin
 ms.assetid: C946057F-C77C-412D-82A0-DAF475A24EF5
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 07/10/2017
-ms.openlocfilehash: 7af9248e706e615ea3e693a58a5f7664e8dc4daa
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: b7e3eb8539704fccd713af45490c35a6196b072f
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847816"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240383"
 ---
-# <a name="tabbed-page"></a>Страница с вкладками
+# <a name="xamarinforms-tabbed-page"></a>Xamarin.Forms страницы с вкладками
 
 _Xamarin.Forms TabbedPage состоит из список вкладок и увеличить область сведений, с каждой из вкладок загрузки содержимого в область данных. В этой статье демонстрируется использование TabbedPage для перемещения по коллекции страниц._
 

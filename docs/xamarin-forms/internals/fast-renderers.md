@@ -1,5 +1,5 @@
 ---
-title: Быстрые отрисовщики
+title: Xamarin.Forms Fast модулей подготовки отчетов
 description: В этой статье описаны быстрого модули подготовки отчетов, которые уменьшают индекс и затраты на отрисовку элемента управления Xamarin.Forms на Android путем сведения в итоге иерархия собственного элемента управления.
 ms.prod: xamarin
 ms.assetid: 097f87f2-d891-4f3c-be02-fb7d195a481a
@@ -7,13 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2017
-ms.openlocfilehash: 16807d890f12810ccc1d50cb8e506e104ec8e6a3
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 40cc095da41aaae5cb474987d8b03f7cf4a17322
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243065"
 ---
-# <a name="fast-renderers"></a>Быстрые отрисовщики
+# <a name="xamarinforms-fast-renderers"></a>Xamarin.Forms Fast модулей подготовки отчетов
 
 _В этой статье описаны быстрого модули подготовки отчетов, которые уменьшают индекс и затраты на отрисовку элемента управления Xamarin.Forms на Android путем сведения в итоге иерархия собственного элемента управления._
 

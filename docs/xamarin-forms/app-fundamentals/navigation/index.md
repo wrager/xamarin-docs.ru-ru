@@ -1,19 +1,20 @@
 ---
-title: Навигация
-description: Xamarin.Forms предоставляет ряд возможностей навигации другую страницу, в зависимости от используемого типа страницы.
+title: Xamarin.Forms навигации
+description: В этом руководстве объясняется, как выполнить переход в приложениях Xamarin.Forms. Xamarin.Forms предоставляет ряд возможностей навигации другую страницу, в зависимости от используемого типа страницы.
 ms.prod: xamarin
 ms.assetid: BC5D0C6C-D5A9-4B12-A492-ED1F570CEC87
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 1a184e1ebfd9d87ba82642ebdfc30a8d3f92cce1
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 90aedee42af7ed1788110e832fb3b435d870ee77
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241960"
 ---
-# <a name="navigation"></a>Навигация
+# <a name="xamarinforms-navigation"></a>Xamarin.Forms навигации
 
 _Xamarin.Forms предоставляет ряд возможностей навигации другую страницу, в зависимости от используемого типа страницы._
 
@@ -42,4 +43,3 @@ Xamarin.Forms также предоставляет поддержку для м
 ## <a name="displaying-pop-upspop-upsmd"></a>[Отображение всплывающих элементов](pop-ups.md)
 
 Xamarin.Forms предоставляет два pop повышение подобные элементы интерфейса: предупреждение и листом действия. Эти элементы интерфейса можно использовать простые вопросы пользователей и проводят пользователя через задачи.
-

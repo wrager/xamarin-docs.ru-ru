@@ -1,20 +1,20 @@
 ---
-title: Функции платформы
-description: Использовать преимущества платформ с помощью Xamarin.Forms
+title: Возможности платформы Xamarin.Forms
+description: В этом руководстве объясняется, как пользоваться преимуществами специфический для платформы функции в Xamarin.Forms приложений с помощью разных методов.
 ms.prod: xamarin
 ms.assetid: 2C6CE42C-E380-4BB9-90CC-D0F4E60C4C03
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/06/2018
-ms.openlocfilehash: 0609d15248f1827b892ae02a877382ca0ffbed18
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 2e8eb19411799e7723be338e9e3f6df35058eb8c
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847635"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35242804"
 ---
-# <a name="platform-features"></a>Функции платформы
+# <a name="xamarinforms-platform-features"></a>Возможности платформы Xamarin.Forms
 
 Xamarin.Forms является расширяемым и позволяет объединять компонентов платформой, с использованием [эффекты](~/xamarin-forms/app-fundamentals/effects/index.md), [пользовательские модули подготовки отчетов](~/xamarin-forms/app-fundamentals/custom-renderer/index.md), [помощью DependencyService](~/xamarin-forms/app-fundamentals/dependency-service/index.md), [MessagingCenter](~/xamarin-forms/app-fundamentals/messaging-center.md)и многое другое.
 

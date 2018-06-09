@@ -1,20 +1,20 @@
 ---
-title: Триггеры
-description: Реагирование на изменения интерфейса пользователя с XAML
+title: Xamarin.Forms триггеров
+description: В этой статье описывается использование триггеров Xamarin.Forms реагировать на изменения интерфейса пользователя с XAML. Триггеры позволяют указать действия декларативно в XAML, изменить внешний вид элементов управления на основе событий или изменения свойств.
 ms.prod: xamarin
 ms.assetid: 60460F57-63C6-4916-BBB5-A870F1DF53D7
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 07/01/2016
-ms.openlocfilehash: af5912736e2a2bd7d3347d4aa199faa3fdfe41c7
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: b28ebb8845b7eae0d818e1279b4d6eaef4ad5b8b
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846449"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241439"
 ---
-# <a name="triggers"></a>Триггеры
+# <a name="xamarinforms-triggers"></a>Xamarin.Forms триггеров
 
 Триггеры позволяют указать действия декларативно в XAML, изменить внешний вид элементов управления на основе событий или изменения свойств.
 

@@ -1,18 +1,18 @@
 ---
 title: Знакомство с помощью DependencyService
-description: Понять, как работает помощью DependencyService для доступа к функциям собственной платформы
+description: В этой статье описывается, как класс с помощью Xamarin.Forms DependencyService работает для доступа к функциям собственной платформы.
 ms.prod: xamarin
 ms.assetid: 5d019604-4f6f-4932-9b26-1fce3b4d88f8
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/06/2017
-ms.openlocfilehash: 1cf84203d78b0f41e506a3d9505da94b676184fe
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 0b81d429b0488603c7a487421cb7f32c1f3cf890
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846884"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240997"
 ---
 # <a name="introduction-to-dependencyservice"></a>Знакомство с помощью DependencyService
 

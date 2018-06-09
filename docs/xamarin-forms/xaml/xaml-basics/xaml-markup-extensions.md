@@ -1,17 +1,18 @@
 ---
 title: Часть 3. Расширения разметки XAML
-description: Расширения разметки XAML является важной характеристикой в XAML, который допускает свойства, чтобы указать на объекты или значения, которые косвенно ссылаться из других источников. Расширения разметки XAML особенно важны для совместное использование объектов, а также привязку константы, используемые во всем приложении, но их наибольшую программы можно найти привязки данных.
+description: Расширения разметки XAML является важной характеристикой в XAML, который допускает свойства, чтобы указать на объекты или значения, которые косвенно ссылаться из других источников.
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: F4A37564-B18B-42FF-B841-9A1949895AB6
 author: charlespetzold
 ms.author: chape
 ms.date: 3/27/2018
-ms.openlocfilehash: c110223eae2bb06f64adf3e09977d97cc7b5d71b
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: 6fcb051d2c24c7da169106b06ad5ebfc91edafa6
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245915"
 ---
 # <a name="part-3-xaml-markup-extensions"></a>Часть 3. Расширения разметки XAML
 
@@ -321,8 +322,8 @@ _Расширения разметки XAML является важной хар
 
 - открытое статическое поле
 - Общее статическое свойство
-- открытое поле константы 
-- член перечисления. 
+- открытое поле константы
+- член перечисления.
 
 `StaticResource` Расширение разметки поддерживается реализации XAML, которые определяют словарь ресурсов во время `x:Static` является неотъемлемой частью XAML, как `x` выявляет префикса.
 
@@ -366,7 +367,7 @@ namespace XamlSamples
                     PagePadding = new Thickness(5, 0, 5, 0);
                     TitleFont = Font.SystemFontOfSize(40, FontAttributes.Bold);
                     break;
-                    
+
                 case Device.UWP:
                     PagePadding = new Thickness(5, 0, 5, 0);
                     TitleFont = Font.SystemFontOfSize(50, FontAttributes.Bold);

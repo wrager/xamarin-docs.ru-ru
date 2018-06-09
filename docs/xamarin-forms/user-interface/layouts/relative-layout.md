@@ -1,20 +1,20 @@
 ---
-title: RelativeLayout
-description: Используйте RelativeLayout для создания пользовательских интерфейсов, которые масштабируются в соответствии с любой размер экрана.
+title: Xamarin.Forms RelativeLayout
+description: В этой статье объясняется, как использовать класс Xamarin.Forms RelativeLayout для создания пользовательских интерфейсов, которые масштабируются в соответствии с любой размер экрана.
 ms.prod: xamarin
 ms.assetid: 2530BCB8-01B8-4C4F-BF14-CA53659F1B5A
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/25/2015
-ms.openlocfilehash: f23c00fb40ba661cbc1633b61a898a9437fdee98
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 712092e58a7a7358ba1fa808614822c7988e6105
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847024"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245059"
 ---
-# <a name="relativelayout"></a>RelativeLayout
+# <a name="xamarinforms-relativelayout"></a>Xamarin.Forms RelativeLayout
 
 `RelativeLayout` используется положение и размер представления относительно свойств макета или дочерних представлений. В отличие от `AbsoluteLayout`, `RelativeLayout` не поддерживает концепцию скользящего привязки и не имеет возможности для размещения элементов относительно нижнего или правого края макета. `RelativeLayout` поддерживает размещение элементов за пределами свои собственные границы.
 

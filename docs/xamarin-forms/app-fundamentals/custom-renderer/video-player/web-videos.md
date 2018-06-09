@@ -1,17 +1,18 @@
 ---
 title: Воспроизведение видео в Интернете
+description: В этой статье объясняется, как для воспроизведения видео web в приложении видеопроигрывателя с помощью Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: 75781A10-865D-4BA8-8D6B-E3DA012922BC
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: 1d00861a9b6d7066212189aa4a59e786cb545f12
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: f9b52398efbd189153ca74ce80433863b25bd578
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846751"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240981"
 ---
 # <a name="playing-a-web-video"></a>Воспроизведение видео в Интернете
 
@@ -36,7 +37,7 @@ namespace FormsVideoLibrary
             set { SetValue(SourceProperty, value); }
             get { return (VideoSource)GetValue(SourceProperty); }
         }
-        
+
         // AutoPlay property
         public static readonly BindableProperty AutoPlayProperty =
             BindableProperty.Create(nameof(AutoPlay), typeof(bool), typeof(VideoPlayer), true);
@@ -169,7 +170,7 @@ namespace FormsVideoLibrary
             if (!String.IsNullOrWhiteSpace(value))
             {
                 Uri uri;
-                return Uri.TryCreate(value, UriKind.Absolute, out uri) && uri.Scheme != "file" ? 
+                return Uri.TryCreate(value, UriKind.Absolute, out uri) && uri.Scheme != "file" ?
                                 VideoSource.FromUri(value) : VideoSource.FromResource(value);
             }
 
@@ -482,7 +483,7 @@ namespace FormsVideoLibrary.UWP
                    AreTransportControlsEnabled="False" />
 ```
 
-Если заданы оба свойства `false`, видео не будет начать воспроизведение и будет невозможно запустить ее! Необходимо вызвать `Play` из файла кода или для создания собственных элементов управления транспорта, как описано в статье [элементы управления движением видео пользовательские реализации](custom-transport.md). 
+Если заданы оба свойства `false`, видео не будет начать воспроизведение и будет невозможно запустить ее! Необходимо вызвать `Play` из файла кода или для создания собственных элементов управления транспорта, как описано в статье [элементы управления движением видео пользовательские реализации](custom-transport.md).
 
 **App.xaml** файл содержит ресурсы для двух дополнительных видео:
 
@@ -502,7 +503,7 @@ namespace FormsVideoLibrary.UWP
 
             <video:UriVideoSource x:Key="Sintel"
                                   Uri="https://archive.org/download/Sintel/sintel-2048-stereo_512kb.mp4" />
-            
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -1,5 +1,5 @@
 ---
-title: Модальные страниц
+title: Xamarin.Forms Modal страниц
 description: Xamarin.Forms поддерживает модальные страницы. На модальной странице пользователь должен выполнить отдельную задачу, причем он не может уйти с этой страницы, пока задача не будет выполнена или отменена. В этой статье показано, как для перехода по страницам модальным.
 ms.prod: xamarin
 ms.assetid: 486CB7FD-2B9A-4DE3-94BD-C8D904E5D3C6
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 30d0371e0eaa31673561ae12c7a46b7a7819a647
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 4540ac006993a46cb0ead9346c1cb960ac631926
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847423"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240142"
 ---
-# <a name="modal-pages"></a>Модальные страниц
+# <a name="xamarinforms-modal-pages"></a>Xamarin.Forms Modal страниц
 
 _Xamarin.Forms предоставляет поддержку для модального страниц. На модальной странице пользователь должен выполнить отдельную задачу, причем он не может уйти с этой страницы, пока задача не будет выполнена или отменена. В этой статье показано, как для перехода по страницам модальным._
 

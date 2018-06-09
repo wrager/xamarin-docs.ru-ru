@@ -1,17 +1,18 @@
 ---
 title: Часть 2. Синтаксис Essential XAML
-description: XAML главным образом предназначен для создания и инициализации объектов. Но часто, необходимо задать свойства для сложных объектов, которые невозможно легко представить в виде строки XML и иногда в дочернем классе, в котором необходимо задать свойства, определенные один класс. Эти два потребности требуют основные функции проверки синтаксиса XAML свойства элементов и вложенных свойств.
+description: В этой статье описаны важные функции синтаксис XAML свойства элементов и вложенных свойств.
 ms.prod: xamarin
 ms.assetid: 4022F1DC-3802-4635-A553-688ABD3F0D5A
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: d0129ec9872d8e5270ed8f0072cff0035d4f5255
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 62223a4c56198271513b0b15587bb588e71b28cc
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245850"
 ---
 # <a name="part-2-essential-xaml-syntax"></a>Часть 2. Синтаксис Essential XAML
 

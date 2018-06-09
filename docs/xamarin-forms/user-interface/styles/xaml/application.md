@@ -1,5 +1,5 @@
 ---
-title: Глобальные стили
+title: Глобальные стили в Xamarin.Forms
 description: Стили можно сделать доступными глобально, добавив их в словарь ресурсов приложения. Это помогает избежать дублирования стилей всех страниц или элементов управления.
 ms.prod: xamarin
 ms.assetid: BDC65F82-65E0-4C8E-BB91-8E340EB2D15A
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/17/2016
-ms.openlocfilehash: 219973e26c5ee25accec57f1bebbd1753391e6de
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: c5ce0f3e4ff906f9bdef06e605e71d4ed64d2a68
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847908"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245352"
 ---
-# <a name="global-styles"></a>Глобальные стили
+# <a name="global-styles-in-xamarinforms"></a>Глобальные стили в Xamarin.Forms
 
 _Стили можно сделать доступными глобально, добавив их в словарь ресурсов приложения. Это помогает избежать дублирования стилей всех страниц или элементов управления._
 

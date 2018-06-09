@@ -1,17 +1,18 @@
 ---
 title: Поиск данных с поиском Azure
-description: Поиск Azure — облачной службы, которая предоставляет индексирования и запросов возможности загруженные данные. Требования к инфраструктуре и сложности алгоритма поиска, обычно связанные с реализации функциональности поиска в приложении будут удалены. В этой статье демонстрируется использование библиотеки поиска Microsoft Azure для интеграции поиска Azure в приложении Xamarin.Forms.
+description: В этой статье демонстрируется использование библиотеки поиска Microsoft Azure для интеграции поиска Azure в приложении Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: A4AEF233-3672-4174-9DBA-15BEE3030C0B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/05/2016
-ms.openlocfilehash: b0542b330e54a41a0cbe6ffe364def78ab6386b8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: bb1ebec25d747f1188f39e9c9032145bcdc3cb97
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35242132"
 ---
 # <a name="searching-data-with-azure-search"></a>Поиск данных с поиском Azure
 

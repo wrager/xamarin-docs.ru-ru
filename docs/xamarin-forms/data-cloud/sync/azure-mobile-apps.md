@@ -1,18 +1,18 @@
 ---
 title: Синхронизация данных вне сети с помощью Azure мобильных приложений
-description: Автономная синхронизация позволяет пользователям взаимодействовать с мобильного приложения, просмотр, добавление или изменение данных, даже в том случае, где нет сетевого подключения. Изменения сохраняются в локальной базе данных, и когда устройство подключено к сети, можно синхронизировать изменения с экземпляром мобильных приложений Azure. В этой статье описывается добавление автономной синхронизации функциональные возможности в Xamarin.Forms приложения.
+description: В этой статье объясняется, как добавление автономной синхронизации функциональности в приложение Xamarin.Forms, которое использует серверной части мобильных приложений Azure.
 ms.prod: xamarin
 ms.assetid: DBB343B0-2709-4C20-A669-5522B9956D9B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/02/2017
-ms.openlocfilehash: 8623127444836d3335f42f9ba7a40de6aedfef70
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: e8b0eeeb4f0033fccd7a61b4acb286bb8457e6c2
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848373"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243601"
 ---
 # <a name="synchronizing-offline-data-with-azure-mobile-apps"></a>Синхронизация данных вне сети с помощью Azure мобильных приложений
 

@@ -1,17 +1,18 @@
 ---
 title: Использование расширения разметки XAML
-description: Использование расширения разметки XAML, доступных в Xamarin.Forms
+description: В этой статье описывается использование расширения разметки Xamarin.Forms XAML для улучшения мощность и гибкость языка XAML, позволяя атрибуты элемента для задания из различных источников.
 ms.prod: xamarin
 ms.assetid: CE686893-609C-4EC3-9225-6C68D2A9F79C
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 01/05/2018
-ms.openlocfilehash: 25eada483e8bd2ce95cb3101dfe873ea38b283ab
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 278677d45f997ac446c2a20967dc3501179bf8da
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245941"
 ---
 # <a name="consuming-xaml-markup-extensions"></a>Использование расширения разметки XAML
 

@@ -1,19 +1,20 @@
 ---
-title: "\"Темной\" теме"
+title: Xamarin.Forms темной темы
+description: В этой статье объясняется, как использовать темной темами Xamarin.Forms в приложении.
 ms.prod: xamarin
 ms.assetid: 43A3798D-6F05-4734-AF5E-97235B46D9B9
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/01/2017
-ms.openlocfilehash: 676ed2d5f99c1f39904b2afe045cee21c0eab09c
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 1fc329f506afde04b0dc59dc637d999865aafbe1
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847268"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245928"
 ---
-# <a name="dark-theme"></a>"Темной" теме
+# <a name="xamarinforms-dark-theme"></a>Xamarin.Forms темной темы
 
 ![](~/media/shared/preview.png "Этот API в настоящее время находится в предварительной версии")
 
@@ -69,4 +70,3 @@ ms.locfileid: "34847268"
 ```
 
 [Полный список встроенных классов](~/xamarin-forms/user-interface/themes/index.md) показывает, какие стили доступны для некоторых общих элементов управления.
-

@@ -1,17 +1,18 @@
 ---
 title: Интеграция текста и графики
-description: Определение размер отображаемого текста строки для интеграции текста с графикой SkiaSharp
+description: В этой статье объясняется, как определить размер отображаемого текста строки для интеграции текста с графикой SkiaSharp в Xamarin.Forms приложения и это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: A0B5AC82-7736-4AD8-AA16-FE43E18D203C
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: dec1997d16afa1cb8235c47b125b113d7ff80a4d
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: eb3724c3520153a83e37932f8be0735337e27a4f
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243662"
 ---
 # <a name="integrating-text-and-graphics"></a>Интеграция текста и графики
 

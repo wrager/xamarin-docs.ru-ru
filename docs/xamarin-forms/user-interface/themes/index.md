@@ -1,19 +1,20 @@
 ---
-title: Темы
+title: Xamarin.Forms темы
+description: В этой статье описаны Xamarin.Forms темы, которые определяют конкретных визуальное представление для стандартных представлений.
 ms.prod: xamarin
 ms.assetid: 3DFB7C55-69F6-4980-A501-588719143482
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/01/2017
-ms.openlocfilehash: fca5a0cb2e188df822efb15b090ef7986cf4a2d8
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 0f49eeba072d6aeb7ead40d5d56d4af9e9bf5e27
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848100"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245736"
 ---
-# <a name="themes"></a>Темы
+# <a name="xamarinforms-themes"></a>Xamarin.Forms темы
 
 ![](~/media/shared/preview.png "Этот API в настоящее время находится в предварительной версии")
 

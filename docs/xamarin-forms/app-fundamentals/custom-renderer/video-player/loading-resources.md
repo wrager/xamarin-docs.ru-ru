@@ -1,22 +1,24 @@
 ---
 title: Загрузка видео ресурсов приложения
+description: В этой статье объясняется, как загрузить видео, хранимые как ресурсы приложения в приложении видеопроигрывателя с помощью Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: F75BD540-9354-4C17-A119-57F3DEC66D54
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/12/2018
-ms.openlocfilehash: 89c424ee80a4ebf6363a836e752b72ee9bc5cd5a
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: f28b0dc8e25cb2e498f4101175005f05a5c5a6ef
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241036"
 ---
 # <a name="loading-application-resource-videos"></a>Загрузка видео ресурсов приложения
 
 Пользовательские модули подготовки отчетов для `VideoPlayer` представления можно использовать для воспроизведения видео файлов, внедренных в проектах отдельных платформы как ресурсы приложения. Однако текущая версия `VideoPlayer` сможет подключиться к ресурсам, внедренных в библиотеке .NET Standard.
 
-Чтобы загрузить эти ресурсы, создайте экземпляр `ResourceVideoSource` , установив `Path` свойство имени файла (или в папку и имя файла) ресурса. Кроме того, вы можете вызвать статический `VideoSource.FromResource` метод, чтобы создать ссылку на ресурс. Затем задайте `ResourceVideoSource` объект `Source` свойство `VideoPlayer`. 
+Чтобы загрузить эти ресурсы, создайте экземпляр `ResourceVideoSource` , установив `Path` свойство имени файла (или в папку и имя файла) ресурса. Кроме того, вы можете вызвать статический `VideoSource.FromResource` метод, чтобы создать ссылку на ресурс. Затем задайте `ResourceVideoSource` объект `Source` свойство `VideoPlayer`.
 
 ## <a name="storing-the-video-files"></a>Хранение файлов видео
 
@@ -30,13 +32,13 @@ ms.lasthandoff: 05/10/2018
 
 ### <a name="android-video-resources"></a>Android видео-ресурсов
 
-В проекте Android видео должны храниться во вложенной **ресурсов** с именем **необработанные**. **Необработанные** папка не может содержать вложенные папки. Предоставьте видеофайл `Build Action` из `AndroidResource`. Задать `Path` свойство `ResourceVideoSource` к имени файла, например, **MyFile.mp4**. 
+В проекте Android видео должны храниться во вложенной **ресурсов** с именем **необработанные**. **Необработанные** папка не может содержать вложенные папки. Предоставьте видеофайл `Build Action` из `AndroidResource`. Задать `Path` свойство `ResourceVideoSource` к имени файла, например, **MyFile.mp4**.
 
-**VideoPlayerDemos.Android** проект содержит вложенную папку **ресурсов** с именем **необработанные**, которая содержит файл с именем **AndroidApiVideo.mp4**. 
+**VideoPlayerDemos.Android** проект содержит вложенную папку **ресурсов** с именем **необработанные**, которая содержит файл с именем **AndroidApiVideo.mp4**.
 
 ### <a name="uwp-video-resources"></a>Видеоресурсов UWP
 
-В проекте универсальной платформы Windows можно хранить видео в любой папке проекта. Дайте файлу `Build Action` из `Content`. Задать `Path` свойство `ResourceVideoSource` к папке и имя файла, например, **MyFolder/MyVideo.mp4**. 
+В проекте универсальной платформы Windows можно хранить видео в любой папке проекта. Дайте файлу `Build Action` из `Content`. Задать `Path` свойство `ResourceVideoSource` к папке и имя файла, например, **MyFolder/MyVideo.mp4**.
 
 **VideoPlayerDemos.UWP** проект содержит папку с именем **видео** с файлом **UWPApiVideo.mp4**.
 
@@ -169,7 +171,7 @@ namespace FormsVideoLibrary.UWP
 </ContentPage>
 ```
 
-Если ресурс операций ввода-вывода хранится в **ресурсов** папки, и если ресурс UWP хранится в корневой папке проекта, можно использовать такое же имя файла для трех платформ. Если это так, то это имя можно задать непосредственно в `Source` свойство `VideoPlayer`. 
+Если ресурс операций ввода-вывода хранится в **ресурсов** папки, и если ресурс UWP хранится в корневой папке проекта, можно использовать такое же имя файла для трех платформ. Если это так, то это имя можно задать непосредственно в `Source` свойство `VideoPlayer`.
 
 Вот этой страницы, работающих на трех платформ.
 

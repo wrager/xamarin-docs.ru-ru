@@ -1,19 +1,20 @@
 ---
-title: 3D поворотов
-description: Используйте неаффинных преобразования для поворота 2D объектов в трехмерном пространстве.
+title: 3D поворотов в SkiaSharp
+description: В этой статье объясняется, как использовать неаффинных преобразования для поворота 2D объектов в трехмерном пространстве и это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: B5894EA0-C415-41F9-93A4-BBF6EC72AFB9
 author: charlespetzold
 ms.author: chape
 ms.date: 04/14/2017
-ms.openlocfilehash: 2f5562475db17b7451fe7cb2ee8bbf4ccb782a87
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: ad4bce6eff7df65185fc3bd754c747fd0db0c9f1
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35244303"
 ---
-# <a name="3d-rotations"></a>3D поворотов
+# <a name="3d-rotations-in-skiasharp"></a>3D поворотов в SkiaSharp
 
 _Используйте неаффинных преобразования для поворота 2D объектов в трехмерном пространстве._
 
@@ -62,11 +63,11 @@ _Используйте неаффинных преобразования для
 
 x' = M11·x + M21·y + M31·z + M41
 
-y' = M12·x + M22·y + M32·z + M42
+y "= M12·x + M22·y + M32·z + M42
 
 z' = M13·x + M23·y + M33·z + M43
 
-w' = M14·x + M24·y + M34·z + M44
+w "= M14·x + M24·y + M34·z + M44
 
 Очевидно из формул преобразования, ячейки `M11`, `M22`, `M33` коэффициенты масштабирования в направлениях X, Y и Z и `M41`, `M42`, и `M43` факторов перевода в X, Y и Z инструкции.
 
@@ -74,11 +75,11 @@ w' = M14·x + M24·y + M34·z + M44
 
 x» = x "/ w"
 
-y" = y' / w'
+y» = y "/ w"
 
 z» = z "/ w"
 
-w" = w' / w' = 1
+w» = w "/ w" = 1
 
 Деление на w "предоставляет перспективы в трехмерном пространстве. Если w "значение 1, то Перспектива не происходит.
 
@@ -172,7 +173,7 @@ w "= M14·x + M24·y + M44
 
 x» = x "/ w"
 
-y" = y' / w'
+y» = y "/ w"
 
 Это означает, что третья строка *и* третьего столбца матрицы 4 x 4 можно игнорировать.
 

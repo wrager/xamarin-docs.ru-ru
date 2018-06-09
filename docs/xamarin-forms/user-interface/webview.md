@@ -1,20 +1,20 @@
 ---
-title: Веб-представление
-description: Представляет локальный или сетевой веб-содержимого и документы.
+title: Xamarin.Forms WebView
+description: Для пользователей в этой статье описываются способы использования класса Xamarin.Forms WebView для представления локального или сетевого веб-содержимого и документы.
 ms.prod: xamarin
 ms.assetid: E44F5D0F-DB8E-46C7-8789-114F1652A6C5
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/09/2016
-ms.openlocfilehash: 7ce48e48e41c3554094a12a220ae197cc4ec3fff
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: df004bd2a580e48137162d28ca3974521266ae7a
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847996"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245648"
 ---
-# <a name="webview"></a>Веб-представление
+# <a name="xamarinforms-webview"></a>Xamarin.Forms WebView
 
 [WebView](https://developer.xamarin.com/api/type/Xamarin.Forms.WebView/) — это представление для отображения HTML и веб-содержимого в приложении. В отличие от `OpenUri`, веб-браузер на устройстве, который принимает пользователь `WebView` отображает содержимое HTML в приложении.
 

@@ -1,23 +1,24 @@
 ---
 title: Xamarin.Forms ячеек
-description: Xamarin.Forms ячеек могут добавляться в представлениях ListView и TableViews.
+description: Xamarin.Forms ячеек могут добавляться в представлениях ListView и TableViews. В этой статье перечислены ячеек, включенных в Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: 77DA0C89-35D6-4C09-A072-3ADE53FD56CF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/12/2016
-ms.openlocfilehash: dbc28f3d58b43bb53db39da2dcdf1ba722169264
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 0947027b43eacd0bac269ebf7a779746e0d22866
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243360"
 ---
 # <a name="xamarinforms-cells"></a>Xamarin.Forms ячеек
 
 _Xamarin.Forms ячеек могут добавляться в представлениях ListView и TableViews._
 
-Объект *ячейки* — специализированные элемент, используемый для элементов в таблице и описывает, каким образом должна обрабатываться каждого элемента в списке. [ `Cell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Cell/) Класс является производным от [ `Element` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Element/), из которого [ `VisualElement` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Element/) также является производным. Ячейки сам по себе не является визуальный элемент; Вместо это шаблон для создания визуального элемента. 
+Объект *ячейки* — специализированные элемент, используемый для элементов в таблице и описывает, каким образом должна обрабатываться каждого элемента в списке. [ `Cell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Cell/) Класс является производным от [ `Element` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Element/), из которого [ `VisualElement` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Element/) также является производным. Ячейки сам по себе не является визуальный элемент; Вместо это шаблон для создания визуального элемента.
 
 `Cell` используется только с [ `ListView` ](views.md#listView) и [ `TableView` ](views.md#tableView) элементов управления. Чтобы узнать, как использовать и настраивать ячеек, обратитесь к [ `ListView` ](~/xamarin-forms/user-interface/listview/index.md) и [ `TableView` ](~/xamarin-forms/user-interface/tableview.md) документации.
 
@@ -31,7 +32,7 @@ Xamarin.Forms поддерживает следующие типы ячейки:
 
 |     |     |
 | --- | --- |
-| Объект [ `TextCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell) отображает один или два текстовых строк. Задать [ `Text` ](https://developer.xamarin.com/api/property/Xamarin.Forms.TextCell.Text/) свойство и, возможно, [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.TextCell.Detail/) свойство в эти текстовые строки.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell) / [руководства](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#TextCell) | [![TextCell Example](cells-images/TextCell.png "TextCell Example")](cells-images/TextCell-Large.png#lightbox "TextCell Example")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/TextCellDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/TextCellDemoPage.xaml) |
+| Объект [ `TextCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell) отображает один или два текстовых строк. Задать [ `Text` ](https://developer.xamarin.com/api/property/Xamarin.Forms.TextCell.Text/) свойство и, возможно, [ `Detail` ](https://developer.xamarin.com/api/property/Xamarin.Forms.TextCell.Detail/) свойство в эти текстовые строки.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell) / [руководства](~/xamarin-forms/user-interface/listview/customizing-cell-appearance.md#TextCell) | [![Пример TextCell](cells-images/TextCell.png "пример TextCell")](cells-images/TextCell-Large.png#lightbox "TextCell пример")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/TextCellDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/TextCellDemoPage.xaml) |
 |     |     |
 
 ### <a name="imagecell"></a>ImageCell

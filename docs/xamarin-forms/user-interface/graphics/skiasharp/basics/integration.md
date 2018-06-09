@@ -1,17 +1,18 @@
 ---
 title: Интеграция с помощью Xamarin.Forms
-description: Создание SkiaSharp графики, отвечающей на сенсорный ввод и элементы Xamarin.Forms
+description: В этой статье объясняется создание SkiaSharp графики, отвечающей на touch и Xamarin.Forms элементы и это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: 288224F1-7AEE-4148-A88D-A70C03F83D7A
 author: charlespetzold
 ms.author: chape
 ms.date: 02/09/2017
-ms.openlocfilehash: 3ebe153ead2bb62b19ad6b25bf0093e20bf15c04
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: 9233850686fa6b20f858bf3358fc46393685297f
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243509"
 ---
 # <a name="integrating-with-xamarinforms"></a>Интеграция с помощью Xamarin.Forms
 

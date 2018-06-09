@@ -1,19 +1,20 @@
 ---
-title: Режим привязки
-description: Поток данных между исходной и целевой элемент управления
+title: Режим привязки Xamarin.Forms
+description: В этой статье объясняется, как управлять потоком данных между источником и целью режиме привязки, который указывается с помощью члена перечисления BindingMode. Каждое свойство, связываемое имеет режим привязки по умолчанию, который фактически указывает режим, если это свойство является целевым объектом привязки данных.
 ms.prod: xamarin
 ms.assetid: D087C389-2E9E-47B9-A341-5B14AC732C45
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 05/01/2018
-ms.openlocfilehash: 1aa612d8b855158f09bc0aeaad1520a44b3d9637
-ms.sourcegitcommit: e16517edcf471b53b4e347cd3fd82e485923d482
+ms.openlocfilehash: 12e6416eee989b0d36a7b9fe0ca4dcd9b18b0ade
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241820"
 ---
-# <a name="binding-mode"></a>Режим привязки
+# <a name="xamarinforms-binding-mode"></a>Режим привязки Xamarin.Forms
 
 В [предыдущей статьи](basic-bindings.md), **привязки кода альтернативой** и **привязки XAML альтернативой** избранные страницы `Label` с его `Scale` свойство привязан к `Value` свойство `Slider`. Поскольку `Slider` начальное значение равно 0, это вызвано `Scale` свойство `Label` задано значение 0, а не 1 и `Label` не отображается.
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/07/2018
              Title="Reverse Binding">
     <StackLayout Padding="10, 0">
 
-        <Label x:Name="label" 
+        <Label x:Name="label"
                Text="TEXT"
                FontSize="80"
                HorizontalOptions="Center"
@@ -52,9 +53,9 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="the-default-binding-mode"></a>Режим привязки по умолчанию
 
-Режим привязки указывается с членом [ `BindingMode` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BindingMode/) перечисления: 
+Режим привязки указывается с членом [ `BindingMode` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BindingMode/) перечисления:
 
-- [`Default`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.Default/) 
+- [`Default`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.Default/)
 - [`TwoWay`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.TwoWay/) &ndash; данных переходит в обоих направлениях между источником и целью
 - [`OneWay`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.OneWay/) &ndash; данные отправляются из источника в целевую
 - [`OneWayToSource`](https://developer.xamarin.com/api/field/Xamarin.Forms.BindingMode.OneWayToSource/) &ndash; данные отправляются от целевого объекта в источник
@@ -78,11 +79,11 @@ ms.lasthandoff: 05/07/2018
 - `SelectedItem` Свойство `MultiPage`
 - `SelectedIndex` и `SelectedItem` свойства `Picker`
 - `Value` Свойство `Slider` и `Stepper`
-- `IsToggled` Свойство `Switch` 
+- `IsToggled` Свойство `Switch`
 - `On` Свойство `SwitchCell`
 - `Time` Свойство `TimePicker`
 
-Эти конкретные свойства определяются как `TwoWay` для веская причина: 
+Эти конкретные свойства определяются как `TwoWay` для веская причина:
 
 При использовании привязки данных с помощью архитектуры Model-View-ViewModel (MVVM) приложения ViewModel класс является источник привязки данных и представление, которое состоит из представления, такие как `Slider`, целевых объектов привязки данных. MVVM привязок напоминают **отменить привязку** образец несколько привязок в предыдущих примерах. Это очень вероятно, что требуется, чтобы каждое представление на странице, чтобы инициализировать значением соответствующего свойства в ViewModel, но изменения в представлении также влияет на свойства ViewModel.
 
@@ -117,7 +118,7 @@ ViewModel является источником привязки данных. V
 public class HslColorViewModel : INotifyPropertyChanged
 {
     Color color;
-    string name; 
+    string name;
 
     public event PropertyChangedEventHandler PropertyChanged;
 
@@ -130,7 +131,7 @@ public class HslColorViewModel : INotifyPropertyChanged
                 Color = Color.FromHsla(value, color.Saturation, color.Luminosity);
             }
         }
-        get 
+        get
         {
             return color.Hue;
         }
@@ -209,7 +210,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 
 Когда ViewModel задается как источник привязки, инфраструктура привязки задается обработчик `PropertyChanged` событий. Таким образом можно получать уведомления об изменениях свойств привязки и затем можно задать свойства целевого объекта из измененные значения.
 
-Тем не менее если целевое свойство (или `Binding` определения на целевое свойство) имеет `BindingMode` из `OneTime`, необязательно для инфраструктуры привязки следует присоединить обработчик на `PropertyChanged` событий. Целевое свойство обновляется только если `BindingContext` изменения и не само свойство источника изменения. 
+Тем не менее если целевое свойство (или `Binding` определения на целевое свойство) имеет `BindingMode` из `OneTime`, необязательно для инфраструктуры привязки следует присоединить обработчик на `PropertyChanged` событий. Целевое свойство обновляется только если `BindingContext` изменения и не само свойство источника изменения.
 
 **Простой селектор цвета** файла XAML создает `HslColorViewModel` в словарь ресурсов на странице, а также инициализирует `Color` свойство. `BindingContext` Свойство `Grid` задано значение `StaticResource` привязки расширение для ссылки на этот ресурс:
 
@@ -221,7 +222,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:HslColorViewModel x:Key="viewModel" 
+            <local:HslColorViewModel x:Key="viewModel"
                                      Color="MediumTurquoise" />
 
             <Style TargetType="Slider">
@@ -229,7 +230,7 @@ public class HslColorViewModel : INotifyPropertyChanged
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-        
+
     <Grid BindingContext="{StaticResource viewModel}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -246,7 +247,7 @@ public class HslColorViewModel : INotifyPropertyChanged
                    HorizontalTextAlignment="Center" />
 
             <Slider Value="{Binding Hue}" />
-    
+
             <Slider Value="{Binding Saturation}" />
 
             <Slider Value="{Binding Luminosity}" />
@@ -257,7 +258,7 @@ public class HslColorViewModel : INotifyPropertyChanged
 
 `BoxView`, `Label`И три `Slider` представления наследуют контекст привязки из `Grid`. Эти представления находятся все целевые объекты привязки, которые ссылаются на свойства источника в ViewModel. Для `Color` свойство `BoxView`и `Text` свойство `Label`, привязки данных, `OneWay`: в окне свойств в ViewModel устанавливаются свойства в представлении.
 
-`Value` Свойство `Slider`, однако `TwoWay`. Это позволит каждой `Slider` задаваемый из ViewModel, а также для ViewModel присвоить из каждого `Slider`. 
+`Value` Свойство `Slider`, однако `TwoWay`. Это позволит каждой `Slider` задаваемый из ViewModel, а также для ViewModel присвоить из каждого `Slider`.
 
 При запуске программы `BoxView`, `Label`и три `Slider` элементы имеют значение из ViewModel, в зависимости от первоначального `Color` значение свойства при создании экземпляра ViewModel. Это показано на снимке экрана iOS слева:
 
@@ -272,7 +273,7 @@ public class HslColorViewModel : INotifyPropertyChanged
     <Grid.BindingContext>
         <local:HslColorViewModel Color="MediumTurquoise" />
     </Grid.BindingContext>
-        
+
     ···
 
 </Grid>
@@ -408,9 +409,9 @@ public class SampleSettingsViewModel : INotifyPropertyChanged
 }
 ```
 
-Каждый параметр приложения является свойством, которое сохраняется в словарь свойств Xamarin.Forms в метод с именем `SaveState` и загружаются из этого словаря в конструкторе. В нижней части класса являются два метода, которые упрощают всей ViewModels и их менее подвержены возникновению ошибок. `OnPropertyChanged` Метод внизу имеет необязательный параметр, задайте свойству в вызовах. Это позволяет избежать орфографических ошибок, при указании имени свойства в виде строки. 
+Каждый параметр приложения является свойством, которое сохраняется в словарь свойств Xamarin.Forms в метод с именем `SaveState` и загружаются из этого словаря в конструкторе. В нижней части класса являются два метода, которые упрощают всей ViewModels и их менее подвержены возникновению ошибок. `OnPropertyChanged` Метод внизу имеет необязательный параметр, задайте свойству в вызовах. Это позволяет избежать орфографических ошибок, при указании имени свойства в виде строки.
 
-`SetProperty` Метод в классе делает более: он сравнивает значение, задаваемое для свойства со значением, храниться в виде поля и вызывает только `OnPropertyChanged` Если два значения не равны. 
+`SetProperty` Метод в классе делает более: он сравнивает значение, задаваемое для свойства со значением, храниться в виде поля и вызывает только `OnPropertyChanged` Если два значения не равны.
 
 `SampleSettingsViewModel` Класс определяет два свойства для цвета фона: `BackgroundNamedColor` свойство относится к типу `NamedColor`, который класс также входит в **DataBindingDemos** решения. `BackgroundColor` Свойство относится к типу `Color`и берется из `Color` свойство `NamedColor` объекта.
 
@@ -649,7 +650,7 @@ public partial class App : Application
 SelectedItem="{Binding BackgroundNamedColor, Mode=TwoWay}"
 ```
 
-Режим привязки по умолчанию для `SelectedItem` — `OneWayToSource`, который задает свойства ViewModel из выбранного элемента. `TwoWay` Режим позволяет `SelectedItem` инициализированную из ViewModel. 
+Режим привязки по умолчанию для `SelectedItem` — `OneWayToSource`, который задает свойства ViewModel из выбранного элемента. `TwoWay` Режим позволяет `SelectedItem` инициализированную из ViewModel.
 
 Тем не менее, когда `SelectedItem` задано таким образом, `ListView` не прокручивается автоматически для отображения выбранного элемента. Небольшой код в файле кода, который требуется:
 
@@ -662,13 +663,13 @@ public partial class SampleSettingsPage : ContentPage
 
         if (colorListView.SelectedItem != null)
         {
-            colorListView.ScrollTo(colorListView.SelectedItem, 
-                                   ScrollToPosition.MakeVisible, 
+            colorListView.ScrollTo(colorListView.SelectedItem,
+                                   ScrollToPosition.MakeVisible,
                                    false);
         }
     }
 }
-``` 
+```
 
 На снимке экрана iOS слева показано программой, при первом запуске. Конструктор в `SampleSettingsViewModel` инициализирует белый цвет фона и, что было выбрано `ListView`:
 

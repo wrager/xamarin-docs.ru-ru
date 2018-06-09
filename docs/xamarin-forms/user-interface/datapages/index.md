@@ -1,18 +1,20 @@
 ---
-title: DataPages
+title: Xamarin.Forms DataPages
+description: В этой статье описаны Xamarin.Forms DataPages, предоставляют API, чтобы быстро и легко привязать источник данных для встроенных представлений.
 ms.prod: xamarin
 ms.assetid: DF16EAEE-DB78-42CA-9C59-51D9D6CB6B95
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: e83efcd71eb9427f0b63749e8885a991a206febe
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 2a74b636a41a72b26776157a774f0a33ef45a075
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243334"
 ---
-# <a name="datapages"></a>DataPages
+# <a name="xamarinforms-datapages"></a>Xamarin.Forms DataPages
 
 ![](~/media/shared/preview.png "Этот API в настоящее время находится в предварительной версии")
 
@@ -72,4 +74,3 @@ Xamarin.Forms инфраструктуры взаимодействует с и�
 
 Существует два способа `MaskKey` и `UnmaskKey` , можно использовать, чтобы скрыть (или отобразить) свойства элемента данных (т. е. предотвращает их отображения).
 Ключ соответствует именованное свойство в объекте элемента данных.
-

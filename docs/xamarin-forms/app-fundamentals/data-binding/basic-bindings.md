@@ -1,19 +1,20 @@
 ---
-title: Основные привязок
-description: Целевые объекты привязки к данным, источники и контекст привязки
+title: Xamarin.Forms Basic привязок
+description: В этой статье описывается использование Xamarin.Forms привязки данных, связывает пару свойства между двумя объектами, по крайней мере один из которых обычно является объект пользовательского интерфейса. Эти два объекта, называются целевой объект и источник.
 ms.prod: xamarin
 ms.assetid: 96553DF7-12EA-4FB2-AE85-3D1D59382B40
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 065258acacb8469b90dd2ca04286f0686dc90063
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: f932b7dfbcccb8f1c6ccb726f5e48c2df6e93c6c
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241693"
 ---
-# <a name="basic-bindings"></a>Основные привязок
+# <a name="xamarinforms-basic-bindings"></a>Xamarin.Forms Basic привязок
 
 Привязка данных Xamarin.Forms связывает пару свойства между двумя объектами, по крайней мере один из которых обычно является объект пользовательского интерфейса. Эти два объекта, называются *целевой* и *источника*:
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/04/2018
 
 `Slider` Имеет значение для диапазона от 0 до 360. Цель данной программы — Поворот `Label` , управляя `Slider`.
 
-Без привязки данных, необходимо установить `ValueChanged` событие `Slider` обработчика событий, который обращается к `Value` свойство `Slider` и присваивает это значение `Rotation` свойство `Label`. Привязка данных позволяет автоматизировать задания; обработчик событий и код внутри его больше не требуется. 
+Без привязки данных, необходимо установить `ValueChanged` событие `Slider` обработчика событий, который обращается к `Value` свойство `Slider` и присваивает это значение `Rotation` свойство `Label`. Привязка данных позволяет автоматизировать задания; обработчик событий и код внутри его больше не требуется.
 
 Можно задать привязку на экземпляр класса, производного от [ `BindableObject` ](https://developer.xamarin.com/api/type/Xamarin.Forms.BindableObject/), включающее `Element`, `VisualElement`, `View`, и `View` производных продуктов.  Привязка всегда устанавливается в целевом объекте. Привязка связывает объект источника. Чтобы задать привязки данных, используйте следующие два члена целевого класса:
 
@@ -73,7 +74,7 @@ public partial class BasicCodeBindingPage : ContentPage
 
 `Label` Объект является целевого объекта привязки, то есть объекта, на которой это свойство имеет значение и в котором выполняется вызов метода. `BindingContext` Свойство указывает источник привязки, который является `Slider`.
 
-`SetBinding` Метод вызывается для целевого объекта привязки, но указывает целевое свойство и свойство source. Свойство target указывается как `BindableProperty` объект: `Label.RotationProperty`. Свойство источника указан как строка и указывает `Value` свойство `Slider`. 
+`SetBinding` Метод вызывается для целевого объекта привязки, но указывает целевое свойство и свойство source. Свойство target указывается как `BindableProperty` объект: `Label.RotationProperty`. Свойство источника указан как строка и указывает `Value` свойство `Slider`.
 
 `SetBinding` Метод раскрывает одно из наиболее важных правил привязки данных:
 
@@ -120,7 +121,7 @@ label.SetBinding(RotationProperty, "Value");
 Так же, как показано в коде, привязка данных имеет значение в целевом объекте, который является `Label`. Участвуют два расширения разметки XAML. Это мгновенно распознаваемым методом разделители фигурную скобку.
 
 - `x:Reference` Расширения разметки требуется для ссылки на исходный объект, который является `Slider` с именем `slider`.
-- `Binding` Ссылки расширения разметки `Rotation` свойство `Label` для `Value` свойство `Slider`. 
+- `Binding` Ссылки расширения разметки `Rotation` свойство `Label` для `Value` свойство `Slider`.
 
 См. в статье [расширения разметки XAML](~/xamarin-forms/xaml/markup-extensions/index.md) Дополнительные сведения о расширениях разметки XAML. `x:Reference` Поддерживается расширение разметки [ `ReferenceExtension` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.ReferenceExtension/) класса; `Binding` поддерживается [ `BindingExtension` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.BindingExtension/) класса. Как XML указывает префиксы пространства имен, `x:Reference` является частью спецификации XAML 2009 г., пока `Binding` является частью Xamarin.Forms. Обратите внимание, что отображаются без кавычек в фигурные скобки.
 
@@ -185,13 +186,13 @@ public partial class AlternativeCodeBindingPage : ContentPage
 }
 ```
 
-`Binding` Конструктор имеет 6 параметров, поэтому `source` с именованный аргумент указан параметр. Аргумент является `slider` объекта. 
+`Binding` Конструктор имеет 6 параметров, поэтому `source` с именованный аргумент указан параметр. Аргумент является `slider` объекта.
 
 Выполнение программы может быть немного неожиданным:
 
 [![Альтернативный образец программного кода привязки](basic-bindings-images/alternativecodebinding-small.png "альтернативный образец программного кода привязки")](basic-bindings-images/alternativecodebinding-large.png#lightbox "привязки альтернативный образец программного кода")
 
-В левой части экрана iOS показано экрана при первой загрузке страницы. Где является `Label`? 
+В левой части экрана iOS показано экрана при первой загрузке страницы. Где является `Label`?
 
 Проблема заключается в том `Slider` начальное значение 0. В результате `Scale` свойство `Label` требуется также задать значение 0, переопределив значения по умолчанию 1. В результате `Label` , изначально невидимыми. Как показано на снимке экрана Android и универсальной платформы Windows (UWP), можно управлять `Slider` вносить `Label` снова отображаются, но его исходный исчезновением толку.
 
@@ -246,7 +247,7 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
                  Path="Value" />
     </Label.Scale>
 </Label>
-``` 
+```
 
 Теперь `Source` и `Path` свойства являются обычные атрибуты XAML: значения отображаться в кавычках и атрибуты не разделяются запятыми. `x:Reference` Расширения разметки также может стать элемента объекта:
 
@@ -267,9 +268,9 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
 
 Этот синтаксис не стандартным, но иногда это необходимо при использовании сложных объектов.
 
-В примерах выше задается `BindingContext` свойство и `Source` свойство `Binding` для `x:Reference` расширения разметки для ссылки на другое представление, на странице. Эти свойства имеют тип `Object`, и их можно задать для любого объекта, который содержит свойства, которые подходят для источников привязки. 
+В примерах выше задается `BindingContext` свойство и `Source` свойство `Binding` для `x:Reference` расширения разметки для ссылки на другое представление, на странице. Эти свойства имеют тип `Object`, и их можно задать для любого объекта, который содержит свойства, которые подходят для источников привязки.
 
-В статьях вперед, вы обнаружите, что можно установить `BindingContext` или `Source` свойства `x:Static` расширения разметки для ссылки на значение статического свойства или поля, или `StaticResource` расширения разметки для ссылки на объект, сохраненный в словарь ресурсов, или непосредственно в объект, который является обычно (но не всегда) экземпляр ViewModel. 
+В статьях вперед, вы обнаружите, что можно установить `BindingContext` или `Source` свойства `x:Static` расширения разметки для ссылки на значение статического свойства или поля, или `StaticResource` расширения разметки для ссылки на объект, сохраненный в словарь ресурсов, или непосредственно в объект, который является обычно (но не всегда) экземпляр ViewModel.
 
 `BindingContext` Свойство также может быть присвоено `Binding` объекта, чтобы `Source` и `Path` свойства `Binding` определить контекст привязки.
 
@@ -294,7 +295,7 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
 
         <StackLayout VerticalOptions="FillAndExpand"
                      BindingContext="{x:Reference slider}">
-            
+
             <Label Text="TEXT"
                    FontSize="80"
                    HorizontalOptions="Center"
@@ -309,14 +310,14 @@ Scale="{Binding Value, Source={x:Reference slider}}" />
                      Rotation="{Binding Value}" />
         </StackLayout>
 
-        <Slider x:Name="slider" 
+        <Slider x:Name="slider"
                 Maximum="360" />
-        
+
     </StackLayout>
 </ContentPage>
 ```
 
-`BindingContext` Свойство `StackLayout` равно `slider` объекта. Этот контекст привязки наследуются оба `Label` и `BoxView`, оба о том, что их `Rotation` значение свойства `Value` свойства `Slider`: 
+`BindingContext` Свойство `StackLayout` равно `slider` объекта. Этот контекст привязки наследуются оба `Label` и `BoxView`, оба о том, что их `Rotation` значение свойства `Value` свойства `Slider`:
 
 [![Привязки наследования контекста](basic-bindings-images/bindingcontextinheritance-small.png "привязки наследования контекста")](basic-bindings-images/bindingcontextinheritance-large.png#lightbox "привязки наследования контекста")
 

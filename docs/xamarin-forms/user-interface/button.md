@@ -7,16 +7,16 @@ ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 06/01/2018
-ms.openlocfilehash: 1fed439ecb4bd79bd84974ea1397ca0ed1336b62
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: d74e0b2aa5be6e8eee2ce5cb54572dd4113d4d7d
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847957"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35244920"
 ---
 # <a name="xamarinforms-button"></a>Кнопка Xamarin.Forms
 
-_Кнопки отвечает касания или щелчка, который направляет приложения для выполнения определенной задачи._ 
+_Кнопки отвечает касания или щелчка, который направляет приложения для выполнения определенной задачи._
 
 [ `Button` ](xref:Xamarin.Forms.Button) Является наиболее фундаментальных интерактивного управления во всех Xamarin.Forms. `Button` Обычно отображает Короткая текстовая строка, указывающее, команды, но его можно также, чтобы отобразить растровое изображение, или сочетание текста и изображения. Пользователь нажимает `Button` пальцем или его щелкает мышью для запуска этой команды.
 
@@ -24,7 +24,7 @@ _Кнопки отвечает касания или щелчка, которы�
 
 ## <a name="handling-button-clicks"></a>Обработка кнопки щелкает
 
-`Button` Определяет [ `Clicked` ](xref:Xamarin.Forms.Button.Clicked) событие, возникающее, когда пользователь касается `Button` с указателем мыши или пальца. Событие при отпускании кнопки мыши или пальца поверхности от `Button`. `Button` Должен иметь его [ `IsEnabled` ](xref:Xamarin.Forms.VisualElement.IsEnabled) свойство `true` для него реагировать на нажатия. 
+`Button` Определяет [ `Clicked` ](xref:Xamarin.Forms.Button.Clicked) событие, возникающее, когда пользователь касается `Button` с указателем мыши или пальца. Событие при отпускании кнопки мыши или пальца поверхности от `Button`. `Button` Должен иметь его [ `IsEnabled` ](xref:Xamarin.Forms.VisualElement.IsEnabled) свойство `true` для него реагировать на нажатия.
 
 **Основные нажатие кнопки** страницы в [ **ButtonDemos** ](https://developer.xamarin.com/samples/xamarin-forms/UserInterface/ButtonDemos) образце показано, как создать экземпляр `Button` в XAML и обработки его `Clicked` событий. **BasicButtonClickPage.xaml** файл содержит `StackLayout` с обоими `Label` и `Button`:
 
@@ -34,18 +34,18 @@ _Кнопки отвечает касания или щелчка, которы�
              x:Class="ButtonDemos.BasicButtonClickPage"
              Title="Basic Button Click">
     <StackLayout>
-        
+
         <Label x:Name="label"
                Text="Click the Button below"
                FontSize="Large"
-               VerticalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
 
         <Button Text="Click to Rotate Text!"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="OnButtonClicked" />
-     
+
     </StackLayout>
 </ContentPage>
 ```
@@ -136,7 +136,8 @@ button.Clicked += OnButtonClicked;
 
 ## <a name="disabling-the-button"></a>Отключение кнопки
 
-Иногда приложение — в определенном состоянии, где определенной `Button` щелкните не является недопустимой операцией. В таких случаях `Button` следует отключить, присвоив его `IsEnabled` свойства `false`. Классический пример — `Entry` управления для имени файла, сопровождается Открытие файла `Button`: `Button` должно быть включено только в том случае, если было введено некоторый текст в `Entry`. Можно использовать `DataTrigger` для этой задачи, как показано в [ **триггеры данных** ](~/xamarin-forms/app-fundamentals/triggers.md#data-triggers) статьи.
+Иногда приложение — в определенном состоянии, где определенной `Button` щелкните не является недопустимой операцией. В таких случаях `Button` следует отключить, присвоив его `IsEnabled` свойства `false`. Классический пример — `Entry` управления для имени файла, сопровождается Открытие файла `Button`: `Button` должно быть включено только в том случае, если было введено некоторый текст в `Entry`.
+Можно использовать `DataTrigger` для этой задачи, как показано в [ **триггеры данных** ](~/xamarin-forms/app-fundamentals/triggers.md#data-triggers) статьи.
 
 ## <a name="using-the-command-interface"></a>С помощью интерфейса командной
 
@@ -199,15 +200,15 @@ class CommandDemoViewModel : INotifyPropertyChanged
              xmlns:local="clr-namespace:ButtonDemos"
              x:Class="ButtonDemos.BasicButtonCommandPage"
              Title="Basic Button Command">
-    
+
     <ContentPage.BindingContext>
         <local:CommandDemoViewModel />
     </ContentPage.BindingContext>
-    
+
     <StackLayout>
         <Label Text="{Binding Number, StringFormat='Value is now {0}'}"
                FontSize="Large"
-               VerticalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
 
         <Button Text="Multiply by 2"
@@ -355,7 +356,7 @@ public partial class MainPage : ContentPage
         <Label x:Name="label"
                Text="Press and hold the Button below"
                FontSize="Large"
-               VerticalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand"
                HorizontalOptions="Center" />
 
         <Button Text="Press to Rotate Text!"
@@ -406,7 +407,7 @@ public partial class PressAndReleaseButtonPage : ContentPage
 
 [![Нажмите и отпустите кнопку](button-images/PressAndReleaseButton.png "нажмите и отпустите кнопку")](button-images/PressAndReleaseButton-Large.png)
 
-Такое поведение имеет приложений для игр: палец на `Button` может стать объект на экране переместить в определенном направлении. 
+Такое поведение имеет приложений для игр: палец на `Button` может стать объект на экране переместить в определенном направлении.
 
 <a name="button-appearance" />
 
@@ -420,7 +421,7 @@ public partial class PressAndReleaseButtonPage : ContentPage
 - [`FontFamily`](xref:Xamarin.Forms.Button.FontFamily) используется семейство шрифта для текста
 - [`FontSize`](xref:Xamarin.Forms.Button.FontSize) размер текста
 - [`FontAttributes`](xref:Xamarin.Forms.Button.FontAttributes) Указывает, является ли текст курсивом или полужирным шрифтом
-- [`BorderWidth`](xref:Xamarin.Forms.Button.BorderWidth) Ширина границы 
+- [`BorderWidth`](xref:Xamarin.Forms.Button.BorderWidth) Ширина границы
 - [`CornerRadius`](xref:Xamarin.Forms.Button.CornerRadius) Округление углов
 
 Эффекты шесть из этих свойств (за исключением `FontFamily` и `FontAttributes`) демонстрируются в **внешний вид кнопки** страницы. Другое свойство, [ `Image` ](xref:Xamarin.Forms.Button.Image), описанным в разделе [ **посредством точечных рисунков с кнопкой**](#image-button).
@@ -447,7 +448,7 @@ public partial class PressAndReleaseButtonPage : ContentPage
 
         <StackLayout BindingContext="{x:Reference button}"
                      Padding="10">
-            
+
             <Slider x:Name="fontSizeSlider"
                     Maximum="48"
                     Minimum="1"
@@ -462,8 +463,8 @@ public partial class PressAndReleaseButtonPage : ContentPage
                     Minimum="-1"
                     Maximum="12"
                     Value="{Binding BorderWidth}" />
-            
-            <Label Text="{Binding Source={x:Reference borderWidthSlider}, 
+
+            <Label Text="{Binding Source={x:Reference borderWidthSlider},
                                   Path=Value,
                                   StringFormat='BorderWidth = {0:F0}'}"
                    HorizontalTextAlignment="Center" />
@@ -473,7 +474,7 @@ public partial class PressAndReleaseButtonPage : ContentPage
                     Maximum="24"
                     Value="{Binding CornerRadius}" />
 
-            <Label Text="{Binding Source={x:Reference cornerRadiusSlider}, 
+            <Label Text="{Binding Source={x:Reference cornerRadiusSlider},
                                   Path=Value,
                                   StringFormat='CornerRadius = {0:F0}'}"
                    HorizontalTextAlignment="Center" />
@@ -484,7 +485,7 @@ public partial class PressAndReleaseButtonPage : ContentPage
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -586,13 +587,13 @@ class ToggleButton : Button
 }
 ```
 
-`ToggleButton` Конструктор присоединяет обработчик для `Clicked` событий, так что он может изменить значение `IsToggled` свойства. `OnIsToggledChanged` Вызывается метод `Toggled` событий. 
+`ToggleButton` Конструктор присоединяет обработчик для `Clicked` событий, так что он может изменить значение `IsToggled` свойства. `OnIsToggledChanged` Вызывается метод `Toggled` событий.
 
-В последней строке `OnIsToggledChanged` метод вызывает статический `VisualStateManager.GoToState` метод с двумя текст строки «ToggledOn» и «ToggledOff». Можно прочитать о этот метод и каким образом приложение может отвечать на визуальных состояний в статье [ **Xamarin.Forms Диспетчер визуальных состояний**](~/xamarin-forms/user-interface/visual-state-manager.md). 
+В последней строке `OnIsToggledChanged` метод вызывает статический `VisualStateManager.GoToState` метод с двумя текст строки «ToggledOn» и «ToggledOff». Можно прочитать о этот метод и каким образом приложение может отвечать на визуальных состояний в статье [ **Xamarin.Forms Диспетчер визуальных состояний**](~/xamarin-forms/user-interface/visual-state-manager.md).
 
-Поскольку `ToggleButton` делает вызов `VisualStateManager.GoToState`, самого класса не должны включать все дополнительные функции, чтобы изменить внешний вид кнопки на основе его `IsToggled` состояния. То есть на себя ответственность за XAML, на котором размещена `ToggleButton`. 
+Поскольку `ToggleButton` делает вызов `VisualStateManager.GoToState`, самого класса не должны включать все дополнительные функции, чтобы изменить внешний вид кнопки на основе его `IsToggled` состояния. То есть на себя ответственность за XAML, на котором размещена `ToggleButton`.
 
-**Демонстрация кнопки переключателя** страница содержит два экземпляра `ToggleButton`, включая разметку Диспетчер визуальных состояний, который задает `Text`, `BackgroundColor`, и `TextColor` основании визуальное состояние кнопки: 
+**Демонстрация кнопки переключателя** страница содержит два экземпляра `ToggleButton`, включая разметку Диспетчер визуальных состояний, который задает `Text`, `BackgroundColor`, и `TextColor` основании визуальное состояние кнопки:
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -601,7 +602,7 @@ class ToggleButton : Button
              xmlns:local="clr-namespace:ButtonDemos"
              x:Class="ButtonDemos.ToggleButtonDemoPage"
              Title="Toggle Button Demo">
-    
+
     <ContentPage.Resources>
         <Style TargetType="local:ToggleButton">
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
@@ -620,7 +621,7 @@ class ToggleButton : Button
                             <Setter Property="TextColor" Value="Black" />
                         </VisualState.Setters>
                     </VisualState>
-                    
+
                     <VisualState Name="ToggledOn">
                         <VisualState.Setters>
                             <Setter Property="Text" Value=" Italic On " />
@@ -642,7 +643,7 @@ class ToggleButton : Button
                             <Setter Property="TextColor" Value="Black" />
                         </VisualState.Setters>
                     </VisualState>
-                    
+
                     <VisualState Name="ToggledOn">
                         <VisualState.Setters>
                             <Setter Property="Text" Value=" Bold On " />
@@ -710,9 +711,9 @@ public partial class ToggleButtonDemoPage : ContentPage
 
 `Button` Класс определяет [ `Image` ](xref:Xamarin.Forms.Button.Image) свойство, которое позволяет отобразить растровое изображение на `Button`, отдельно или в сочетании с текстом. Можно также указать расположение текста и изображения.
 
-`Image` Свойство относится к типу [ `FileImageSource` ](xref:Xamarin.Forms.FileImageSource), означающее, что точечные рисунки должен быть сохранен как ресурсы в проектах отдельных платформы и не в проекте библиотеки .NET Standard. 
+`Image` Свойство относится к типу [ `FileImageSource` ](xref:Xamarin.Forms.FileImageSource), означающее, что точечные рисунки должен быть сохранен как ресурсы в проектах отдельных платформы и не в проекте библиотеки .NET Standard.
 
-Каждой платформы, поддерживаемые Xamarin.Forms позволяет изображения для сохранения в нескольких размеров для различных разрешением различных устройств, которые приложение может работать на. Несколько точечные рисунки имеют с именем или хранятся таким образом, что операционной системы можно выбрать наиболее подходящие для видео устройства отображаются разрешения. 
+Каждой платформы, поддерживаемые Xamarin.Forms позволяет изображения для сохранения в нескольких размеров для различных разрешением различных устройств, которые приложение может работать на. Несколько точечные рисунки имеют с именем или хранятся таким образом, что операционной системы можно выбрать наиболее подходящие для видео устройства отображаются разрешения.
 
 Для изображения на `Button`, оптимальный размер обычно составляет 32- и 64 аппаратно независимых единицах, в зависимости от размера вам хотелось бы быть. Изображения, используемые в этом примере основаны на размер 48 аппаратно независимых единицах.
 
@@ -801,7 +802,7 @@ Button button = new Button
     <FlexLayout Direction="Column"
                 JustifyContent="SpaceEvenly"
                 AlignItems="Center">
-        
+
         <FlexLayout.Resources>
             <Style TargetType="Button">
                 <Setter Property="Image">
@@ -833,7 +834,7 @@ Button button = new Button
         <Button Text="Right - 20"
                 ContentLayout="Right, 20" />
 
-        <Button Text="Bottom - 20" 
+        <Button Text="Bottom - 20"
                 ContentLayout="Bottom, 20" />
     </FlexLayout>
 </ContentPage>

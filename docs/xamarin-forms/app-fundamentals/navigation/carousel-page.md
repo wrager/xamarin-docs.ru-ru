@@ -1,5 +1,5 @@
 ---
-title: Страница «карусель»
+title: Страница «Карусель» Xamarin.Forms
 description: Xamarin.Forms CarouselPage — это страница, пользователи могут проведите стороны перемещаться по страницам содержимого, такие как коллекции. В этой статье демонстрируется использование CarouselPage для перемещения по коллекции страниц.
 ms.prod: xamarin
 ms.assetid: 2D14FC9D-DF5F-427E-9006-2AAE61ECF8DC
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 9259e2a85a7375106891eaae5fe22d6babfa2fcf
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: daf19dbed2e98429280758125a19efce2d7fd9a1
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846462"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241755"
 ---
-# <a name="carousel-page"></a>Страница «карусель»
+# <a name="xamarinforms-carousel-page"></a>Страница «Карусель» Xamarin.Forms
 
 _Xamarin.Forms CarouselPage — это страница, пользователи могут проведите стороны перемещаться по страницам содержимого, такие как коллекции. В этой статье демонстрируется использование CarouselPage для перемещения по коллекции страниц._
 
@@ -46,7 +46,7 @@ _Xamarin.Forms CarouselPage — это страница, пользовател�
 - [Заполнение](#Populating_a_CarouselPage_with_a_Page_Collection) `CarouselPage` с коллекцию дочерних [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров.
 - [Назначьте](#Populating_a_CarouselPage_with_a_Template) коллекции [ `ItemsSource` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%601.ItemsSource/) свойство и назначить [ `DataTemplate` ](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplate/) для [ `ItemTemplate` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MultiPage%601.ItemTemplate/) свойство для возврата [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров объектов в коллекции.
 
-Используя оба способа `CarouselPage` будет затем отображения каждой страницы в свою очередь, проведите участия, перемещение на следующую страницу для отображения. 
+Используя оба способа `CarouselPage` будет затем отображения каждой страницы в свою очередь, проведите участия, перемещение на следующую страницу для отображения.
 
 > [!NOTE]
 > Объект [ `CarouselPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.CarouselPage/) можно заполнять атрибутами [ `ContentPage` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ContentPage/) экземпляров, или `ContentPage` производных продуктов.

@@ -1,19 +1,20 @@
 ---
-title: Преобразователи значений привязки
-description: Приведение или преобразование значений в пределах привязки данных
+title: Преобразователи значений привязки Xamarin.Forms
+description: В этой статье описывается приведения или преобразования значений в пределах привязку данных Xamarin.Forms путем реализации преобразователя значений (который называется также преобразователь привязки или преобразователь значений привязки).
 ms.prod: xamarin
 ms.assetid: 02B1BBE6-D804-490D-BDD4-8ACED8B70C92
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 260db2372977202df3d73e32645a358066146b40
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: a5bd52d43ef93013537f30c7d5e0c31cbf336d07
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241833"
 ---
-# <a name="binding-value-converters"></a>Преобразователи значений привязки
+# <a name="xamarinforms-binding-value-converters"></a>Преобразователи значений привязки Xamarin.Forms
 
 Данные привязки обычно передачи данных из исходного свойства к целевому свойству, а в некоторых случаях из целевого свойства к свойству источника. Эта передача нетрудно исходных и целевых свойств того же типа, или один тип может быть преобразован в тип путем неявного преобразования типов. Если это не так, преобразование типов необходимо будет выполнить.
 

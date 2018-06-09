@@ -1,17 +1,18 @@
 ---
 title: Добавление логики операций со службами Когнитивных
-description: Когнитивных Майкрософт — это набор API-интерфейсов, пакеты SDK и службы, доступные разработчикам, чтобы сделать свои приложения более разумно, добавляя такие возможности, например распознавание лиц, распознавание речи и основные сведения о языке. В этой статье содержатся вводные примера приложения, который демонстрирует вызов некоторых Когнитивных API службы Майкрософт.
+description: В этой статье содержатся вводные образец приложения, демонстрируется использование некоторых Когнитивных API службы Майкрософт.
 ms.prod: xamarin
 ms.assetid: 74121ADB-1322-4C1E-A103-F37257BC7CB0
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/08/2017
-ms.openlocfilehash: 86253e42db7da2da6eb8b03e2d4a4b3c943b7e17
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: c577aaf1991082baaf34248ee31899902f692d0b
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241527"
 ---
 # <a name="adding-intelligence-with-cognitive-services"></a>Добавление логики операций со службами Когнитивных
 

@@ -1,33 +1,25 @@
 ---
-title: Стили
-description: Стиль текста в Xamarin.Forms
+title: Стили текста Xamarin.Forms
+description: В этой статье описываются способы задания стиля текста в Xamarin.Forms приложений. Стили может быть определен один раз и используются несколько представлений, но стиль может использоваться только с представлениями одного типа.
 ms.prod: xamarin
 ms.assetid: 57C0CFD6-A568-46B8-ADA1-BF25681893CF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/22/2017
-ms.openlocfilehash: 42d5da5c4171347de8c4befc773e498803fd9f36
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: b8cc6493c3574180e7938050075c5a70ecebeebf
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848451"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245326"
 ---
-# <a name="styles"></a>Стили
+# <a name="xamarinforms-text-styles"></a>Стили текста Xamarin.Forms
 
 _Стиль текста в Xamarin.Forms_
 
-
 Стили можно настроить внешний вид меток, записи и редакторов. Стили может быть определен один раз и используются несколько представлений, но стиль может использоваться только с представлениями одного типа.
 Стили можно предоставить `Key` и применяются выборочно с помощью конкретного элемента управления `Style` свойство.
-
-В этой статье рассматриваются следующие темы:
-
-- **[Встроенные стили](#Built-In_Styles)**  &ndash; использовать встроенные стили для стиля текстового представления в приложении.
-- **[Пользовательские стили](#Custom_Styles)**  &ndash; определить пользовательские стили при встроенные возможности оказывается недостаточно.
-- **[Применение стилей](#Applying_Styles)**  &ndash; применять пользовательские и встроенные стили к представлениям.
-- **[Специальные возможности](#Accessibility)**  &ndash; убедитесь, что текст учитывает параметры специальных возможностей.
 
 <a name="Built-In_Styles" />
 

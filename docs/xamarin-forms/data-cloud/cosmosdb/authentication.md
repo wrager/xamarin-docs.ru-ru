@@ -1,17 +1,18 @@
 ---
 title: Проверка подлинности пользователей с базой данных Azure Cosmos DB документа
-description: Базы данных Azure Cosmos DB документа поддерживает секционированные коллекции, которые может охватывать несколько серверов и секции, одновременно поддерживая неограниченное хранение и пропускную способность. В этой статье объясняется, как для объединения с секционированных коллекций контроля доступа, чтобы пользователь имеет доступ только к своих собственных документов в приложении Xamarin.Forms.
+description: В этой статье объясняется, как для объединения с коллекциями Azure DB Cosmos секционированы, контроля доступа, чтобы пользователь имеет доступ только к своих собственных документов в приложении Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: 11ED4A4C-0F05-40B2-AB06-5A0F2188EF3D
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 06/16/2017
-ms.openlocfilehash: 0132f849a066976896295da8b8b67ed8bf3c3e8d
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 031a48e5e10100b2c57ac067a0dda916c93d20da
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241615"
 ---
 # <a name="authenticating-users-with-an-azure-cosmos-db-document-database"></a>Проверка подлинности пользователей с базой данных Azure Cosmos DB документа
 
@@ -145,7 +146,7 @@ var auth = new Xamarin.Auth.WebRedirectAuthenticator(
 
 В результате поток проверки подлинности OAuth инициировать между службой приложений Azure и Facebook, который отображает страницу входа в Facebook:
 
-![](authentication-images/login.png "Facebook Login")
+![](authentication-images/login.png "Имя входа Facebook")
 
 Имя входа можно отменить, нажав клавишу **отменить** кнопки на iOS или клавишу **обратно** кнопки на Android, в этом случае пользователь останется без проверки подлинности и пользовательский интерфейс поставщика удостоверений является удалить с экрана.
 

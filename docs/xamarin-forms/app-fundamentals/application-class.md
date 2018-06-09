@@ -1,20 +1,20 @@
 ---
-title: Класс App
-description: Возможности класса приложения по умолчанию, который может быть C# или XAML
+title: Класс App Xamarin.Forms
+description: В этой статье описаны функции класса приложения по умолчанию, который содержит свойство, задаваемое для начальной страницы для приложения, и постоянный словарь для хранения простых значений через изменения состояния жизненного цикла.
 ms.prod: xamarin
 ms.assetid: 421F8294-1944-46A4-8459-D2BD5AAABC9D
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 02/19/2016
-ms.openlocfilehash: 4b502b0d6eea37e0b5b374cfd4740cf6a5ced478
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 15fb866d2cde9409f401d6d021b22b8cb0468795
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846394"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240545"
 ---
-# <a name="app-class"></a>Класс App
+# <a name="xamarinforms-app-class"></a>Класс App Xamarin.Forms
 
 `Application` Базовый класс предоставляет следующие возможности, которые предоставляются в используемом по умолчанию проекты `App` подкласс:
 

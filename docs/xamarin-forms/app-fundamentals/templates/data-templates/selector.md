@@ -1,20 +1,20 @@
 ---
-title: Создание DataTemplateSelector
-description: DataTemplateSelector можно использовать для выбора DataTemplate во время выполнения на основе значения свойства с привязкой к данным. Благодаря этому несколько шаблоны DataTemplate, чтобы применить тот же тип объекта, чтобы настроить внешний вид определенных объектов. В этой статье показано, как создавать и использовать DataTemplateSelector.
+title: Создание Xamarin.Forms DataTemplateSelector
+description: В этой статье показано, как создавать и использовать DataTemplateSelector, который может использоваться для выбора DataTemplate во время выполнения на основе значения свойства с привязкой к данным.
 ms.prod: xamarin
 ms.assetid: A4629E8F-2BAF-45CE-A76E-DF225FE8D26C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: ad8cce32cb9cfe2ea5e78f11b1250440371a9851
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 5e1f9e4ef3aa7f9c415427e280d9bdd05dfbd13c
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847196"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240656"
 ---
-# <a name="creating-a-datatemplateselector"></a>Создание DataTemplateSelector
+# <a name="creating-a-xamarinforms-datatemplateselector"></a>Создание Xamarin.Forms DataTemplateSelector
 
 _DataTemplateSelector можно использовать для выбора DataTemplate во время выполнения на основе значения свойства с привязкой к данным. Благодаря этому несколько шаблоны DataTemplate, чтобы применить тот же тип объекта, чтобы настроить внешний вид определенных объектов. В этой статье показано, как создавать и использовать DataTemplateSelector._
 

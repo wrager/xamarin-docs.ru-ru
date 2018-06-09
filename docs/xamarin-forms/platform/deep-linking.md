@@ -1,6 +1,6 @@
 ---
 title: Индексирование приложения и глубокое связывание
-description: Индексирование приложения позволяет приложениям, в противном случае — забывается после использует несколько оставаться применимо, в результатах поиска. Глубокое связывание позволяет приложениям реагировать на результат поиска, который содержит данные приложений, как правило, перейдя на страницу, на которые ссылается прямая ссылка. В этой статье показано, как использовать приложение индексирования и глубокое связывание для предоставления доступа к содержимому приложения Xamarin.Forms для поиска на устройствах iOS и Android.
+description: В этой статье показано, как использовать приложение индексирования и глубокое связывание для предоставления доступа к содержимому приложения Xamarin.Forms для поиска на устройствах iOS и Android.
 ms.prod: xamarin
 ms.assetid: 410C5D19-AA3C-4E0D-B799-E288C5803226
 ms.technology: xamarin-forms
@@ -8,11 +8,12 @@ ms.custom: xamu-video
 author: davidbritch
 ms.author: dabritch
 ms.date: 07/11/2016
-ms.openlocfilehash: d302e24ee74290eecd3dd9ad3f81921d6654cc10
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9cc5177a585af1569385840ab8c370993984ca2b
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35242496"
 ---
 # <a name="application-indexing-and-deep-linking"></a>Индексирование приложения и глубокое связывание
 

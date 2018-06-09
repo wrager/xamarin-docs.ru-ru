@@ -1,22 +1,22 @@
 ---
 title: Создание расширений разметки XAML
-description: Определить собственные пользовательские расширения разметки XAML
+description: В этой статье объясняется, как для определения собственного пользовательского расширения разметки Xamarin.Forms XAML. Расширение разметки XAML является класс, реализующий интерфейс IMarkupExtension IMarkupExtension.
 ms.prod: xamarin
 ms.assetid: 797C1EF9-1C8E-4208-8610-9B79CCF17D46
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 01/05/2018
-ms.openlocfilehash: 1a484aa4a19473c5a4f60b3d7bab78af7a20eecd
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: b185ea3b7260ff2be8a4dec5dc713f24dc6e6095
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848256"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245707"
 ---
 # <a name="creating-xaml-markup-extensions"></a>Создание расширений разметки XAML
 
-На уровне программный расширение разметки XAML является класс, реализующий [ `IMarkupExtension` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.IMarkupExtension/) или [ `IMarkupExtension<T>` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.IMarkupExtension%3CT%3E/) интерфейса. Можно просмотреть исходный код расширения стандартной разметки описано ниже в [ **MarkupExtensions** каталога](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions) репозитория Xamarin.Forms GitHub. 
+На уровне программный расширение разметки XAML является класс, реализующий [ `IMarkupExtension` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.IMarkupExtension/) или [ `IMarkupExtension<T>` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.IMarkupExtension%3CT%3E/) интерфейса. Можно просмотреть исходный код расширения стандартной разметки описано ниже в [ **MarkupExtensions** каталога](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions) репозитория Xamarin.Forms GitHub.
 
 Также можно определить собственные пользовательские расширения разметки XAML путем наследования от `IMarkupExtension` или `IMarkupExtension<T>`. Используйте универсальную форму, если расширение разметки получает значение определенного типа. Это относится к несколько расширений разметки Xamarin.Forms:
 
@@ -26,7 +26,7 @@ ms.locfileid: "34848256"
 - `BindingExtension` является производным от `IMarkupExtension<BindingBase>`
 - `ConstraintExpression` является производным от `IMarkupExtension<Constraint>`
 
-Два `IMarkupExtension` интерфейсы определяют каждого, только один метод с именем `ProvideValue`: 
+Два `IMarkupExtension` интерфейсы определяют каждого, только один метод с именем `ProvideValue`:
 
 ```csharp
 public interface IMarkupExtension
@@ -92,7 +92,7 @@ public class HslColorExtension : IMarkupExtension<Color>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <StackLayout>
         <BoxView>
             <BoxView.Color>
@@ -121,7 +121,7 @@ public class HslColorExtension : IMarkupExtension<Color>
 
 ## <a name="a-markup-extension-for-accessing-bitmaps"></a>Расширения разметки для доступа к растровые изображения
 
-Аргумент `ProvideValue` — это объект, реализующий [ `IServiceProvider` ](https://developer.xamarin.com/api/type/System.IServiceProvider/) интерфейс, который определен в .NET `System` пространства имен. Этот интерфейс содержит один из элементов, метод с именем `GetService` с `Type` аргумент. 
+Аргумент `ProvideValue` — это объект, реализующий [ `IServiceProvider` ](https://developer.xamarin.com/api/type/System.IServiceProvider/) интерфейс, который определен в .NET `System` пространства имен. Этот интерфейс содержит один из элементов, метод с именем `GetService` с `Type` аргумент.
 
 `ImageResourceExtension` Класс, показанный ниже показан один из возможных способов использования `IServiceProvider` и `GetService` для получения `IXmlLineInfoProvider` объект, способный предоставлять строку и символ, данные для которых была обнаружена конкретной ошибки. В этом случае возникает исключение при `Source` не задано свойство:
 
@@ -152,7 +152,7 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
 }
 ```
 
-`ImageResourceExtension` полезно, когда XAML-файл должен быть доступ к файлу изображения хранятся в виде внедренного ресурса в проекте библиотеки .NET Standard. Она использует `Source` свойство для вызова статического `ImageSource.FromResource` метод. Этот метод требует ресурсов полное доменное имя, которое состоит из имени сборки, имя папки и имя файла, разделенных точками. `ImageResourceExtension` Не требуется имя сборки, части, так как он получает имя сборки, с помощью отражения и добавляет его в `Source` свойство. Независимо от того `ImageSource.FromResource` должна вызываться из сборки, содержащей растрового изображения, это означает, что это расширение ресурсов XAML не может быть частью внешней библиотеки Если образы также находятся в эту библиотеку. (См. [ **внедренные изображения** ](~/xamarin-forms/user-interface/images.md#embedded_images) для получения дополнительных сведений о доступе к растровые изображения, хранящиеся в виде внедренных ресурсов.) 
+`ImageResourceExtension` полезно, когда XAML-файл должен быть доступ к файлу изображения хранятся в виде внедренного ресурса в проекте библиотеки .NET Standard. Она использует `Source` свойство для вызова статического `ImageSource.FromResource` метод. Этот метод требует ресурсов полное доменное имя, которое состоит из имени сборки, имя папки и имя файла, разделенных точками. `ImageResourceExtension` Не требуется имя сборки, части, так как он получает имя сборки, с помощью отражения и добавляет его в `Source` свойство. Независимо от того `ImageSource.FromResource` должна вызываться из сборки, содержащей растрового изображения, это означает, что это расширение ресурсов XAML не может быть частью внешней библиотеки Если образы также находятся в эту библиотеку. (См. [ **внедренные изображения** ](~/xamarin-forms/user-interface/images.md#embedded_images) для получения дополнительных сведений о доступе к растровые изображения, хранящиеся в виде внедренных ресурсов.)
 
 Несмотря на то что `ImageResourceExtension` требует `Source` должно быть задано свойство `Source` свойство указывается в атрибуте как свойство содержимого класса. Это означает, что `Source=` можно опустить часть выражения в фигурных скобках. В **Демонстрация ресурса изображения** страницы, `Image` элементы выборки два изображения, используя имя папки и имя файла, разделенных точками:
 
@@ -167,7 +167,7 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
         <Image Source="{local:ImageResource Images.SeatedMonkey.jpg}"
                Grid.Row="0" />
 
@@ -198,7 +198,7 @@ class ImageResourceExtension : IMarkupExtension<ImageSource>
 
 ## <a name="conclusion"></a>Заключение
 
-Расширения разметки XAML играют важную роль в XAML, расширяя возможности задавать атрибуты из различных источников. Кроме того Если существующие расширения разметки XAML, не обеспечивают то, что вам нужно, можно также написать собственные. 
+Расширения разметки XAML играют важную роль в XAML, расширяя возможности задавать атрибуты из различных источников. Кроме того Если существующие расширения разметки XAML, не обеспечивают то, что вам нужно, можно также написать собственные.
 
 
 ## <a name="related-links"></a>Связанные ссылки

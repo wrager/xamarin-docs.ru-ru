@@ -1,19 +1,20 @@
 ---
-title: Путь привязки
-description: Использование привязки данных для вложенных свойств доступа и элементы коллекции
+title: Путь привязки Xamarin.Forms
+description: В этой статье объясняется, как использовать Xamarin.Forms привязки данных для доступа к подсвойств и элементы коллекции со свойством путь класса привязки.
 ms.prod: xamarin
 ms.assetid: 3CF721A5-E157-468B-AD3A-DA0A45E58E8D
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: f75cfcf4bfd5ffa71699f62b30145b732421d964
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: d7c3b1ba991380451b4a82c389c4d46e950bc914
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240477"
 ---
-# <a name="binding-path"></a>Путь привязки
+# <a name="xamarinforms-binding-path"></a>Путь привязки Xamarin.Forms
 
 Во всех предыдущих примерах привязки данных [ `Path` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Binding.Path/) свойство `Binding` класс (или [ `Path` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Xaml.BindingExtension.Path/) свойство `Binding` расширение разметки) установлен к одному свойству. Фактически можно задать `Path` для *подсвойств* (свойство свойство), или к члену коллекции.
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/04/2018
 {Binding Source={x:Reference timePicker},
          Path=Time.TotalSeconds}
 ```
-         
+
 `Time` Свойство относится к типу `TimeSpan`, который имеет `TotalSeconds` свойства. `Time` И `TotalSeconds` свойства simply связанных с периодом. Элементы в `Path` строка всегда относятся к свойствам, а не типы этих свойств.
 
 Пример и несколько других отображаются в **варианты путь** страницы:
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/04/2018
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <StackLayout Margin="10, 0">
         <TimePicker x:Name="timePicker" />
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/04/2018
         <Label Text="{Binding Source={x:Reference page},
                               Path=Content.Children.Count,
                               StringFormat='There are {0} children in this StackLayout'}" />
-        
+
         <Label Text="{Binding Source={x:Static globe:CultureInfo.CurrentCulture},
                               Path=DateTimeFormat.DayNames[3],
                               StringFormat='The middle day of the week is {0}'}" />
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/04/2018
 
 Тип `Content` свойство теперь получит доступ к быть `Xamarin.Forms.StackLayout`. Добавить `Children` свойства `Path` и тип `Xamarin.Forms.ElementCollection'1[Xamarin.Forms.View]`, — это класс, внутренний для Xamarin.Forms, но очевидно, что тип коллекции. Добавьте в этот индекс, а тип — `Xamarin.Forms.Label`. По-прежнему таким образом.
 
-Как Xamarin.Forms обрабатывает путь привязки, он устанавливает `PropertyChanged` обработчик для любого объекта в пути, реализующая `INotifyPropertyChanged` интерфейса. Например, последний привязки реагирует на изменения в первом `Label` из-за `Text` изменения свойств. 
+Как Xamarin.Forms обрабатывает путь привязки, он устанавливает `PropertyChanged` обработчик для любого объекта в пути, реализующая `INotifyPropertyChanged` интерфейса. Например, последний привязки реагирует на изменения в первом `Label` из-за `Text` изменения свойств.
 
 Если свойство в путь привязки не реализует `INotifyPropertyChanged`, любые изменения этого свойства будет игнорироваться. Некоторые изменения полностью может сделать недействительным путь привязки, поэтому этот способ следует использовать только в том случае, если строка свойства и подсвойства никогда не становятся недействительными.
 

@@ -1,17 +1,18 @@
 ---
 title: Основные сведения о Xamarin.Forms XAML
-description: Начало работы с кросс платформенных разметки для мобильных устройств
+description: В этом руководстве объясняется, как начало работы с кросс платформенных XAML для мобильных устройств. XAML позволяет разработчикам определение пользовательских интерфейсов в приложениях Xamarin.Forms, с помощью разметки, а не в коде.
 ms.prod: xamarin
 ms.assetid: 67CC2CD6-D10A-4B14-9696-1D3A410EFFBF
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 10/25/2017
-ms.openlocfilehash: 991d928c2c58f05098a41c84aba295a31636ab96
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 627267b95bb2d810a60f84c51e38bf5387fe1f99
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245967"
 ---
 # <a name="xamarinforms-xaml-basics"></a>Основные сведения о Xamarin.Forms XAML
 

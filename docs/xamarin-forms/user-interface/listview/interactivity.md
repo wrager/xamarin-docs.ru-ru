@@ -1,18 +1,18 @@
 ---
 title: Интерактивность ListView
-description: Добавление интерактивности ListView путем реализации выбора, проведите для удаления и потяните, чтобы обновить.
+description: В этой статье описывается добавление интерактивности в Xamarin.Forms ListView путем реализации выбора, проведите для удаления и потяните, чтобы обновить.
 ms.prod: xamarin
 ms.assetid: CD14EB90-B08C-4E8F-A314-DA0EEC76E647
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 06/01/2018
-ms.openlocfilehash: 5fe821e7e5254da8febbbde518b9fd42526bf262
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 64ffda681c51c21b7485f0865af4b740316edaaa
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848126"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245111"
 ---
 # <a name="listview-interactivity"></a>Интерактивность ListView
 

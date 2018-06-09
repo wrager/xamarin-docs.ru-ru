@@ -1,18 +1,20 @@
 ---
-title: Вступление
+title: Введение в разработку приложений предприятия
+description: В этой главе введение в разработку приложений предприятия и вводит eShopOnContainers мобильного приложения.
 ms.prod: xamarin
 ms.assetid: cbce0659-fa03-447a-86ec-140438143230
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/07/2017
-ms.openlocfilehash: a4f1f6ba820221be7553405f570911d3dc66a657
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 9deb685c92092ceb0e1c775a1e53ac1bce5a4a57
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35242964"
 ---
-# <a name="introduction"></a>Вступление
+# <a name="introduction-to-enterprise-app-development"></a>Введение в разработку приложений предприятия
 
 Вне зависимости от платформы разработчики приложений предприятия сталкиваются с проблемой несколько:
 
@@ -117,7 +119,7 @@ ms.lasthandoff: 04/04/2018
 
 Решения eShopOnContainers мобильного приложения организует исходного кода и другие ресурсы в проекты. Все проекты использовать папки для организации исходного кода и других ресурсов в категории. В следующей таблице приведены проекты, которые составляют eShopOnContainers мобильное приложение:
 
-|Проект|Описание|
+|Проект|Описание:|
 |--- |--- |
 |eShopOnContainers.Core|Этот проект является проекта переносимой библиотеки классов (PCL), содержащий общего кода и общий пользовательский Интерфейс.|
 |eShopOnContainers.Droid|Этот проект содержит Android определенный код и точка входа для приложения Android.|
@@ -134,7 +136,7 @@ ms.lasthandoff: 04/04/2018
 
 Проект PCL eShopOnContainers.Core содержит следующие папки:
 
-|Папка|Описание|
+|Папка|Описание:|
 |--- |--- |
 |Анимации|Содержит классы, позволяющие анимации для использования в языке XAML.|
 |поведения|Содержит поведения, которые доступны для просмотра классов.|

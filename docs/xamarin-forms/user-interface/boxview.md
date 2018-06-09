@@ -1,20 +1,20 @@
 ---
-title: BoxView
-description: Используйте цветного прямоугольника для оформления, графики и взаимодействия.
+title: Xamarin.Forms BoxView
+description: В этой статье описывается использование цветного прямоугольника для оформления, графики и взаимодействия в приложении Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: 4CBF703D-84A0-4CDF-A433-5926B587782A
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/07/2017
-ms.openlocfilehash: 356d0effe55638902b6ee599a0d9fb7e9b8ade2d
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: edb2785362f2cc7377d9adb0c1a89a6fa2b08111
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848412"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35244319"
 ---
-# <a name="boxview"></a>BoxView
+# <a name="xamarinforms-boxview"></a>Xamarin.Forms BoxView
 
 [`BoxView`](https://developer.xamarin.com/api/type/Xamarin.Forms.BoxView/) Подготавливает к просмотру простой прямоугольник заданную ширину, высоту и цвет. Можно использовать `BoxView` для оформления, ограниченные механизмы графики, а также для взаимодействия с пользователем с помощью сенсорного ввода.
 
@@ -45,7 +45,7 @@ ms.locfileid: "34848412"
 
 `WidthRequest` И `HeightRequest` свойства играют роль, только если `BoxView` — *произвольные* в макете. Это случается, когда контейнер макета, должно быть известно дочернего элемента размер, например, при `BoxView` является дочерним ячейки автоматически определяемым размером в `Grid` макета. Объект `BoxView` можно без ограничений, когда его `HorizontalOptions` и `VerticalOptions` свойствам присваиваются значения, отличного от `LayoutOptions.Fill`. Если `BoxView` — без ограничений, но `WidthRequest` и `HeightRequest` не задано, то ширина или высота присваиваются значения по умолчанию 40 единиц или около 1/4 дюйма на мобильных устройствах.
 
-`WidthRequest` И `HeightRequest` свойства игнорируются, если `BoxView` — *ограниченного* в формате, в котором регистр контейнера макета налагает на свой собственный размер `BoxView`. 
+`WidthRequest` И `HeightRequest` свойства игнорируются, если `BoxView` — *ограниченного* в формате, в котором регистр контейнера макета налагает на свой собственный размер `BoxView`.
 
 Объект `BoxView` в одном измерении ограниченное и неограниченное в другой. Например если `BoxView` является потомком вертикальной `StackLayout`, по вертикали `BoxView` — неограниченное и его горизонтальный размер обычно ограничен. Однако существуют исключения для этого измерения горизонтальной: Если `BoxView` имеет его `HorizontalOptions` свойства, значение, отличное от `LayoutOptions.Fill`, то горизонтальный размер также произвольные. Можно также для `StackLayout` сам иметь произвольные горизонтальный размер, в этом случае `BoxView` также будет горизонтально без ограничений.
 
@@ -60,7 +60,7 @@ ms.locfileid: "34848412"
     <BoxView Color="CornflowerBlue"
              WidthRequest="160"
              HeightRequest="160"
-             VerticalOptions="Center" 
+             VerticalOptions="Center"
              HorizontalOptions="Center" />
 
 </ContentPage>
@@ -149,7 +149,7 @@ ms.locfileid: "34848412"
 <BoxView HeightRequest="3" />
 ```
 
-Наконец, можно нарисовать вертикальной линии на одной стороне абзац текста путем заключения оба `BoxView` и `Label` в горизонтальной `StackLayout`. В данном случае высоту `BoxView` совпадает со значением высоты `StackLayout`, который управляется высоту `Label`: 
+Наконец, можно нарисовать вертикальной линии на одной стороне абзац текста путем заключения оба `BoxView` и `Label` в горизонтальной `StackLayout`. В данном случае высоту `BoxView` совпадает со значением высоты `StackLayout`, который управляется высоту `Label`:
 
 ```xaml
 <StackLayout Orientation="Horizontal">
@@ -242,7 +242,7 @@ public class NamedColor
 }
 ```
 
-Визуальные элементы программы описаны в файле XAML. `ItemsSource` Свойство `ListView` присваивается статический `NamedColor.All` свойство, которое означает, что `ListView` отображает все отдельные `NamedColor` объектов: 
+Визуальные элементы программы описаны в файле XAML. `ItemsSource` Свойство `ListView` присваивается статический `NamedColor.All` свойство, которое означает, что `ListView` отображает все отдельные `NamedColor` объектов:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -290,7 +290,7 @@ public class NamedColor
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-</ContentPage> 
+</ContentPage>
 ```
 
 `NamedColor` Объекты форматируются с `ViewCell` объект, заданный как шаблон данных `ListView`. Этот шаблон включает в себя `BoxView` которого `Color` свойство привязано к `Color` свойство `NamedColor` объекта.
@@ -388,15 +388,15 @@ public partial class MainPage : ContentPage
     static readonly int[, ,] numberPatterns = new int[10, 7, 5]
     {
         {
-            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 1, 0, 0, 1, 1}, { 1, 0, 1, 0, 1}, 
+            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 1, 0, 0, 1, 1}, { 1, 0, 1, 0, 1},
             { 1, 1, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0}
         },
         {
-            { 0, 0, 1, 0, 0}, { 0, 1, 1, 0, 0}, { 0, 0, 1, 0, 0}, { 0, 0, 1, 0, 0}, 
+            { 0, 0, 1, 0, 0}, { 0, 1, 1, 0, 0}, { 0, 0, 1, 0, 0}, { 0, 0, 1, 0, 0},
             { 0, 0, 1, 0, 0}, { 0, 0, 1, 0, 0}, { 0, 1, 1, 1, 0}
         },
         {
-            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 0, 0, 0, 0, 1}, { 0, 0, 0, 1, 0}, 
+            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 0, 0, 0, 0, 1}, { 0, 0, 0, 1, 0},
             { 0, 0, 1, 0, 0}, { 0, 1, 0, 0, 0}, { 1, 1, 1, 1, 1}
         },
         {
@@ -404,27 +404,27 @@ public partial class MainPage : ContentPage
             { 0, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0}
         },
         {
-            { 0, 0, 0, 1, 0}, { 0, 0, 1, 1, 0}, { 0, 1, 0, 1, 0}, { 1, 0, 0, 1, 0}, 
+            { 0, 0, 0, 1, 0}, { 0, 0, 1, 1, 0}, { 0, 1, 0, 1, 0}, { 1, 0, 0, 1, 0},
             { 1, 1, 1, 1, 1}, { 0, 0, 0, 1, 0}, { 0, 0, 0, 1, 0}
         },
         {
-            { 1, 1, 1, 1, 1}, { 1, 0, 0, 0, 0}, { 1, 1, 1, 1, 0}, { 0, 0, 0, 0, 1}, 
+            { 1, 1, 1, 1, 1}, { 1, 0, 0, 0, 0}, { 1, 1, 1, 1, 0}, { 0, 0, 0, 0, 1},
             { 0, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0}
         },
         {
-            { 0, 0, 1, 1, 0}, { 0, 1, 0, 0, 0}, { 1, 0, 0, 0, 0}, { 1, 1, 1, 1, 0}, 
+            { 0, 0, 1, 1, 0}, { 0, 1, 0, 0, 0}, { 1, 0, 0, 0, 0}, { 1, 1, 1, 1, 0},
             { 1, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0}
         },
         {
-            { 1, 1, 1, 1, 1}, { 0, 0, 0, 0, 1}, { 0, 0, 0, 1, 0}, { 0, 0, 1, 0, 0}, 
+            { 1, 1, 1, 1, 1}, { 0, 0, 0, 0, 1}, { 0, 0, 0, 1, 0}, { 0, 0, 1, 0, 0},
             { 0, 1, 0, 0, 0}, { 0, 1, 0, 0, 0}, { 0, 1, 0, 0, 0}
         },
         {
-            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0}, 
+            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0},
             { 1, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 0}
         },
         {
-            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 1}, 
+            { 0, 1, 1, 1, 0}, { 1, 0, 0, 0, 1}, { 1, 0, 0, 0, 1}, { 0, 1, 1, 1, 1},
             { 0, 0, 0, 0, 1}, { 0, 0, 0, 1, 0}, { 0, 1, 1, 0, 0}
         },
     };
@@ -528,24 +528,24 @@ public partial class MainPage : ContentPage
 }
 ```
 
-Эта программа использует относительное позиционирование и возможность изменения размера `AbsoluteLayout`. Ширина и Высота каждого `BoxView` присваиваются дробных значений, в частности 85% 1, деленное на число точек по горизонтали и вертикали. Позиции также присвоено дробных значений. 
+Эта программа использует относительное позиционирование и возможность изменения размера `AbsoluteLayout`. Ширина и Высота каждого `BoxView` присваиваются дробных значений, в частности 85% 1, деленное на число точек по горизонтали и вертикали. Позиции также присвоено дробных значений.
 
 Из-за расположения и размеров относительно общего объема `AbsoluteLayout`, `SizeChanged` обработчика необходимо задать только `HeightRequest` из `AbsoluteLayout`:
 
 ```csharp
 public partial class MainPage : ContentPage
 {
-    
+
     ···
-    
+
     void OnPageSizeChanged(object sender, EventArgs args)
     {
         // No chance a display will have an aspect ratio > 41:7
         absoluteLayout.HeightRequest = vertDots * Width / horzDots;
     }
-    
+
     ···
-    
+
 }
 ```
 
@@ -556,9 +556,9 @@ public partial class MainPage : ContentPage
 ```csharp
 public partial class MainPage : ContentPage
 {
-   
+
     ···
- 
+
     bool OnTimer()
     {
         DateTime dateTime = DateTime.Now;
@@ -596,7 +596,7 @@ public partial class MainPage : ContentPage
 
 [![Часы BoxView](boxview-images/boxviewclock-small.png "часы BoxView")](boxview-images/boxviewclock-large.png#lightbox "BoxView часов")
 
-Все визуальные элементы в [ **BoxViewClock** ](https://developer.xamarin.com/samples/xamarin-forms/BoxView/BoxViewClock/) программы являются потомками `AbsoluteLayout`. Эти элементы имеют размер с помощью `LayoutBounds` присоединенного свойства и повернутый с использованием `Rotation` свойство. 
+Все визуальные элементы в [ **BoxViewClock** ](https://developer.xamarin.com/samples/xamarin-forms/BoxView/BoxViewClock/) программы являются потомками `AbsoluteLayout`. Эти элементы имеют размер с помощью `LayoutBounds` присоединенного свойства и повернутый с использованием `Rotation` свойство.
 
 Три `BoxView` элементы для стрелки часов экземпляр в XAML-файле, но не располагается или размера:
 
@@ -613,13 +613,13 @@ public partial class MainPage : ContentPage
 
     <AbsoluteLayout x:Name="absoluteLayout"
                     SizeChanged="OnAbsoluteLayoutSizeChanged">
-        
+
         <BoxView x:Name="hourHand"
                  Color="Black" />
-        
+
         <BoxView x:Name="minuteHand"
                  Color="Black" />
-        
+
         <BoxView x:Name="secondHand"
                  Color="Black" />
     </AbsoluteLayout>
@@ -631,9 +631,9 @@ public partial class MainPage : ContentPage
 ```csharp
 public partial class MainPage : ContentPage
 {
-      
+
     ···
- 
+
     BoxView[] tickMarks = new BoxView[60];
 
     public MainPage()
@@ -649,9 +649,9 @@ public partial class MainPage : ContentPage
 
         Device.StartTimer(TimeSpan.FromSeconds(1.0 / 60), OnTimerTick);
     }
-  
+
     ···
- 
+
 }
 ```
 
@@ -678,9 +678,9 @@ public partial class MainPage : ContentPage
     static readonly HandParams secondParams = new HandParams(0.02, 1.1, 0.85);
     static readonly HandParams minuteParams = new HandParams(0.05, 0.8, 0.9);
     static readonly HandParams hourParams = new HandParams(0.125, 0.65, 0.9);
- 
+
     ···
- 
+
  }
 ```
 
@@ -689,9 +689,9 @@ public partial class MainPage : ContentPage
 ```csharp
 public partial class MainPage : ContentPage
 {
- 
+
     ···
- 
+
     void OnAbsoluteLayoutSizeChanged(object sender, EventArgs args)
     {
         // Get the center and radius of the AbsoluteLayout.
@@ -729,9 +729,9 @@ public partial class MainPage : ContentPage
         // Set the AnchorY property for rotations.
         boxView.AnchorY = handParams.Offset;
     }
- 
+
     ···
- 
+
 }
 ```
 
@@ -742,9 +742,9 @@ public partial class MainPage : ContentPage
 ```csharp
 public partial class MainPage : ContentPage
 {
- 
+
     ···
-     
+
     bool OnTimerTick()
     {
         // Set rotation angles for hour and minute hands.

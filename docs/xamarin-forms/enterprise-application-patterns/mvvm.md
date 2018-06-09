@@ -1,19 +1,20 @@
 ---
-title: MVVM
+title: Шаблон Model-View-ViewModel
+description: В этой главе описывается, как eShopOnContainers мобильное приложение использует шаблон MVVM для разделения бизнеса и презентации логику приложения из его пользовательский интерфейс без ошибок.
 ms.prod: xamarin
 ms.assetid: dd8c1813-df44-4947-bcee-1a1ff2334b87
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/07/2017
-ms.openlocfilehash: 03a3c411c7031ece32a8987b480f96ad39909201
-ms.sourcegitcommit: ea1dc12a3c2d7322f234997daacbfdb6ad542507
+ms.openlocfilehash: fe2cace6a0fc3a1d901f55556eed09380f8f2006
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34793961"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245436"
 ---
-# <a name="mvvm"></a>MVVM
+# <a name="the-model-view-viewmodel-pattern"></a>Шаблон Model-View-ViewModel
 
 Взаимодействие разработчика с Xamarin.Forms обычно включает создание пользовательского интерфейса в XAML и добавления кода, работающая в пользовательском интерфейсе. Приложения будут изменены и увеличиваются размер и область, сложное обслуживание проблемы могут возникнуть. Эти проблемы могут быть тесную связь между элементов управления пользовательского интерфейса и бизнес-логика, что приводит к росту затрат на реализацию изменения пользовательского интерфейса и сложность модульное тестирование такого кода.
 

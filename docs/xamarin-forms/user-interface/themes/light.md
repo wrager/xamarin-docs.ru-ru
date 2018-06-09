@@ -1,19 +1,20 @@
 ---
-title: "\"Светлой\" теме"
+title: Xamarin.Forms Светлая тема
+description: В этой статье объясняется, как использовать темы Xamarin.Forms света в приложении.
 ms.prod: xamarin
 ms.assetid: D5D16AE3-F51F-4359-B37A-E1087ECE512B
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 09/01/2017
-ms.openlocfilehash: 87c2a1a1003868aba10c7c1ec50856f307cc5bff
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 7f40e375d653acec60f8848627234ab46fcce8de
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848009"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245251"
 ---
-# <a name="light-theme"></a>"Светлой" теме
+# <a name="xamarinforms-light-theme"></a>Xamarin.Forms Светлая тема
 
 ![](~/media/shared/preview.png "Этот API в настоящее время находится в предварительной версии")
 
@@ -68,4 +69,3 @@ ms.locfileid: "34848009"
 ```
 
 [Полный список встроенных классов](~/xamarin-forms/user-interface/themes/index.md) показывает, какие стили доступны для некоторых общих элементов управления.
-

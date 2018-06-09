@@ -1,20 +1,20 @@
 ---
-title: Grid
-description: В сетке показаны представления.
+title: Xamarin.Forms сетки
+description: В этой статье объясняется, как использовать класс Xamarin.Forms сетки для отображения представления в сетки, которые обладать строк и столбцов.
 ms.prod: xamarin
 ms.assetid: 762B1802-D185-494C-B643-74EED55882FE
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/26/2017
-ms.openlocfilehash: 6ff36f511c5194017afd34601fc9ea2f89b1e2d4
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: a50144f5e0962bd74858bb7731e30cef5dd31b6d
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848113"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245157"
 ---
-# <a name="grid"></a>Grid
+# <a name="xamarinforms-grid"></a>Xamarin.Forms сетки
 
 [`Grid`](https://developer.xamarin.com/api/type/Xamarin.Forms.Grid/) поддерживает упорядочение по строкам и столбцам представлений. Строки и столбцы можно задать пропорционально размеры или абсолютные размеры. `Grid` Макет не следует путать с традиционных таблиц и не предназначен для представления табличных данных. `Grid` не поддерживает концепцию строк, столбцов или форматирование ячеек. В отличие от таблиц HTML `Grid` предназначен исключительно для расположения содержимого.
 

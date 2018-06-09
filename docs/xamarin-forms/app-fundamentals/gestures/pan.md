@@ -1,18 +1,18 @@
 ---
 title: Добавление распознавателя сдвиг
-description: Жест панорамирование используется для выявления перетаскивания и реализуется с помощью класса PanGestureRecognizer. Очень распространенный сценарий для панорамирования жестов является по горизонтали и вертикали, перетащите изображение, чтобы все содержимое изображения можно просмотреть при отображении в окне просмотра, меньше, чем размеры изображения. Это достигается путем перемещения изображения в области просмотра и описанные в этой статье.
+description: В этой статье объясняется, как использовать жест панорамирование по горизонтали и по вертикали, перетащите изображение, чтобы все содержимое изображения можно просмотреть, когда оно отображается в окне просмотра, меньше, чем размеры изображения.
 ms.prod: xamarin
 ms.assetid: 42CBD2CF-432D-4F19-A05E-D569BB7F8713
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/21/2016
-ms.openlocfilehash: 1f564fe14be0bcda08722bad11c9c5bd8152687a
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: d3e4dfc57678ff75fb8f9761360748d94aeefcc2
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846335"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35239988"
 ---
 # <a name="adding-a-pan-gesture-recognizer"></a>Добавление распознавателя сдвиг
 

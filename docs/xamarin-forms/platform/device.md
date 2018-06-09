@@ -1,18 +1,20 @@
 ---
-title: Класс устройства
+title: Класс Xamarin.Forms устройства
+description: В этой статье объясняется, как использовать класс Xamarin.Forms устройства, для точного управления функциональные возможности и макеты отдельно для каждой платформы.
 ms.prod: xamarin
 ms.assetid: 2F304AEC-8612-4833-81E5-B2F3F469B2DF
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 10/24/2017
-ms.openlocfilehash: 520982491803fa0a909008ee60730a4149a75296
-ms.sourcegitcommit: b0a1c3969ab2a7b7fe961f4f470d1aa57b1ff2c6
+ms.openlocfilehash: cdcd4bb08b9dac84d264f7c0c41e16d68380e1d0
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35242548"
 ---
-# <a name="device-class"></a>Класс устройства
+# <a name="xamarinforms-device-class"></a>Класс Xamarin.Forms устройства
 
 [ `Device` ](https://developer.xamarin.com/api/type/Xamarin.Forms.Device/) Класс содержит несколько свойств и методов, чтобы помочь разработчикам настраивать макет и функций на отдельно для каждой платформы.
 

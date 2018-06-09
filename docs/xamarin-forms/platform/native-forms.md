@@ -1,19 +1,20 @@
 ---
-title: Собственный форм
-description: Собственный формы позволяют производным Xamarin.Forms ContentPage страниц для использования собственных проектов Xamarin.iOS, Xamarin.Android и универсальной платформы Windows (UWP). Собственные проекты могут потреблять производный ContentPage страниц, которые напрямую добавляются в проект или из библиотеки .NET Standard, .NET стандартной библиотеки или общий проект. В этой статье описывается использование производных ContentPage страниц, которые напрямую добавляются в собственных проектах и перемещаться между ними.
+title: Xamarin.Forms в Xamarin Native проектов
+description: В этой статье описывается использование производных ContentPage страниц, которые напрямую добавляются в собственных проектах Xamarin и перемещаться между ними.
 ms.prod: xamarin
 ms.assetid: f343fc21-dfb1-4364-a332-9da6705d36bc
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/11/2018
-ms.openlocfilehash: a103d360221650ee4f679ee285dbedd65e62f947
-ms.sourcegitcommit: 4db5f5c93f79f273d8fc462de2f405458b62fc02
+ms.openlocfilehash: ca62b9fec3223e8da62d8e4cc6e1f69a58f335a0
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243279"
 ---
-# <a name="native-forms"></a>Собственный форм
+# <a name="xamarinforms-in-xamarin-native-projects"></a>Xamarin.Forms в Xamarin Native проектов
 
 _Собственный формы позволяют производным Xamarin.Forms ContentPage страниц для использования собственных проектов Xamarin.iOS, Xamarin.Android и универсальной платформы Windows (UWP). Собственные проекты могут потреблять производный ContentPage страниц, которые напрямую добавляются в проект или из библиотеки .NET Standard, .NET стандартной библиотеки или общий проект. В этой статье описывается использование производных ContentPage страниц, которые напрямую добавляются в собственных проектах и перемещаться между ними._
 

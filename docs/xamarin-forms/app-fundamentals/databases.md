@@ -1,5 +1,5 @@
 ---
-title: Локальные базы данных
+title: Xamarin.Forms локальной базы данных
 description: Xamarin.Forms поддерживает приложения на основе базы данных, используя компонент database engine SQLite, что делает возможным для загрузки и сохранения объектов в общем коде. В этой статье описывается, как Xamarin.Forms приложения могут читать и записывать данные к локальной базе данных SQLite, с помощью SQLite.Net.
 ms.prod: xamarin
 ms.assetid: F687B24B-7DF0-4F8E-A21A-A9BB507480EB
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 05/31/2018
-ms.openlocfilehash: d97fc792e2eb14f7e432d377811d1318c99b9602
-ms.sourcegitcommit: a4c2a63ba76b839cda99e4474e7ab46fe307cd39
+ms.openlocfilehash: 91df4d36dd8d98712063a30773f927a82676b18e
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689452"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243614"
 ---
-# <a name="local-databases"></a>Локальные базы данных
+# <a name="xamarinforms-local-databases"></a>Xamarin.Forms локальной базы данных
 
 _Xamarin.Forms поддерживает приложения на основе базы данных, используя компонент database engine SQLite, что делает возможным для загрузки и сохранения объектов в общем коде. В этой статье описывается, как Xamarin.Forms приложения могут читать и записывать данные к локальной базе данных SQLite, с помощью SQLite.Net._
 

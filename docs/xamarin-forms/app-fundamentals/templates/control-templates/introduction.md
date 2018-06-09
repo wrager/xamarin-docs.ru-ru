@@ -1,5 +1,5 @@
 ---
-title: Вступление
+title: Общие сведения о шаблонах элементов управления Xamarin.Forms
 description: Xamarin.Forms шаблонов элементов управления предоставляют возможность легко темы и re темы страницы приложения во время выполнения. В этой статье содержатся общие сведения о шаблонах элементов управления.
 ms.prod: xamarin
 ms.assetid: 8B8E2360-6531-44A3-A7C8-9A8808DE9B86
@@ -7,13 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/08/2016
-ms.openlocfilehash: 744419cbc457ffb6dab6b46d690151c08ca35d42
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: a8e5c84bfa2525a28e9af5343be0ee156564bdd6
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35242522"
 ---
-# <a name="introduction"></a>Вступление
+# <a name="introduction-to-xamarinforms-control-templates"></a>Общие сведения о шаблонах элементов управления Xamarin.Forms
 
 _Xamarin.Forms шаблонов элементов управления предоставляют возможность легко темы и re темы страницы приложения во время выполнения. В этой статье содержатся общие сведения о шаблонах элементов управления._
 

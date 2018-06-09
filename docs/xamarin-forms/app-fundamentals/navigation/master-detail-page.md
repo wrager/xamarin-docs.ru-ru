@@ -1,5 +1,5 @@
 ---
-title: Главные и подчиненные страницы
+title: Страница Xamarin.Forms основной подробности
 description: Xamarin.Forms MasterDetailPage — это страница, который управляет две связанные страницы данных — Главная страница, которая представляет элементы и страницу сведений, которая представляет сведения об элементах на главной странице. В этой статье объясняется, как использовать MasterDetailPage и перейти между страницами его сведения.
 ms.prod: xamarin
 ms.assetid: 119945E3-58B8-4630-A3D2-8B561529D53B
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: 20032cdf4789de3248ec30a8da5e21e1bd8e4bcd
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 80d86e1aa6a00d4a55c0fdba1b858bfef7bcbc84
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846381"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241348"
 ---
-# <a name="master-detail-page"></a>Главные и подчиненные страницы
+# <a name="xamarinforms-master-detail-page"></a>Страница Xamarin.Forms основной подробности
 
 _Xamarin.Forms MasterDetailPage — это страница, который управляет две связанные страницы данных — Главная страница, которая представляет элементы и страницу сведений, которая представляет сведения об элементах на главной странице. В этой статье объясняется, как использовать MasterDetailPage и перейти между страницами его сведения._
 

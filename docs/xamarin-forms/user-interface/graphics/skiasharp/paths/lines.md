@@ -1,17 +1,18 @@
 ---
 title: Строки и пунктирные завершения отрезков
-description: Сведения об использовании SkiaSharp для рисования линий с ограничениями различных штриха
+description: В этой статье объясняется, как использовать SkiaSharp для рисования линий с ограничениями различных stroke в приложениях Xamarin.Forms и это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.assetid: 1F854DDD-5D1B-4DE4-BD2D-584439429FDB
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 03/10/2017
-ms.openlocfilehash: 24bf7bd7fb2aa51968a96bdbf808030604665c26
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: f63d14ae0dff5f94580c86d1c5bfdfc66bbee7f9
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35244098"
 ---
 # <a name="lines-and-stroke-caps"></a>Строки и пунктирные завершения отрезков
 

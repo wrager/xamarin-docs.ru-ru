@@ -1,18 +1,18 @@
 ---
 title: Реализация HybridWebView
-description: Элементы управления Xamarin.Forms настраиваемого пользовательского интерфейса должен быть производным от класса представления, который используется для размещения макетов и элементов управления на экране. В этой статье показано, как создать пользовательское средство отрисовки для HybridWebView пользовательского элемента управления, где показано, как улучшить веб-платформой элементы управления для разрешения кода C#, вызываемую из JavaScript.
+description: В этой статье показано, как создать пользовательское средство отрисовки для HybridWebView пользовательского элемента управления, где показано, как улучшить веб-платформой элементы управления для разрешения кода C#, вызываемую из JavaScript.
 ms.prod: xamarin
 ms.assetid: 58DFFA52-4057-49A8-8682-50A58C7E842C
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 11/29/2017
-ms.openlocfilehash: 3926fd5c19ad187deef16c4beb0812b3947e9544
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: d2cce7598fde4cf59a91940161e605860847623e
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847245"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241303"
 ---
 # <a name="implementing-a-hybridwebview"></a>Реализация HybridWebView
 

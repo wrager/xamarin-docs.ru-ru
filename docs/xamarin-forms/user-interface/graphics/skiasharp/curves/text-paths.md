@@ -1,25 +1,26 @@
 ---
-title: Путей и текста
-description: Просмотр пересечение путей и текста
+title: Пути и текст в SkiaSharp
+description: В этой статье анализирует пересечение SkiaSharp пути и текст и это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.assetid: C14C07F6-4A84-4A8C-BDB4-CD61FBF0F79B
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 08/01/2017
-ms.openlocfilehash: 9b3f906a23ed0d51237a244f3944104acc76e259
-ms.sourcegitcommit: 6f7033a598407b3e77914a85a3f650544a4b6339
+ms.openlocfilehash: 305ee2946d3a291e6237d5a2860eda7331193b23
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243909"
 ---
-# <a name="paths-and-text"></a>Путей и текста
+# <a name="paths-and-text-in-skiasharp"></a>Пути и текст в SkiaSharp
 
 _Просмотр пересечение путей и текста_
 
-В современных графических систем шрифты текста являются коллекциями контуров символов, обычно определяется кривых Безье второго порядка. Следовательно для многих современных графических систем включают средства для преобразования символов текста в графический контур. 
+В современных графических систем шрифты текста являются коллекциями контуров символов, обычно определяется кривых Безье второго порядка. Следовательно для многих современных графических систем включают средства для преобразования символов текста в графический контур.
 
-Вы уже видели, вы может вычерчивания контуров символов текста а также их заполнения. Это позволяет отображать этих контуров символов с определенной толщина и даже эффект, как описано в [ **эффекты путь** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/effects.md) статьи. Но можно также преобразовать строку символов в `SKPath` объекта. Это означает, что рамку текста можно использовать для обрезки с методами, которые были описаны в [ **Обрезка с использованием пути и областей** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/clipping.md) статьи. 
+Вы уже видели, вы может вычерчивания контуров символов текста а также их заполнения. Это позволяет отображать этих контуров символов с определенной толщина и даже эффект, как описано в [ **эффекты путь** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/effects.md) статьи. Но можно также преобразовать строку символов в `SKPath` объекта. Это означает, что рамку текста можно использовать для обрезки с методами, которые были описаны в [ **Обрезка с использованием пути и областей** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/clipping.md) статьи.
 
 Помимо использования эффект пути для вычерчивания структуры символов, также можно создать путь эффекты, которые основаны на путях к являются производными от символьных строк и можно даже комбинировать два последствия:
 
@@ -37,7 +38,7 @@ _Просмотр пересечение путей и текста_
 public SKPath GetTextPath (String text, Single x, Single y)
 ```
 
-`x` И `y` аргументы указывает начальную точку показателя в левой части текста. Они играют ту же роль здесь в качестве `DrawText` метод `SKCanvas`. В пути базовых показателей в левой части текста будет иметь координаты (x, y). 
+`x` И `y` аргументы указывает начальную точку показателя в левой части текста. Они играют ту же роль здесь в качестве `DrawText` метод `SKCanvas`. В пути базовых показателей в левой части текста будет иметь координаты (x, y).
 
 `GetTextPath` Метод является избыточным, если требуется просто добавить заливку или обводку результирующий путь. Нормали `DrawText` метод позволяет это сделать. `GetTextPath` Метод более полезен для других задач, связанных с пути.
 
@@ -114,7 +115,7 @@ public class ClippingTextPage : ContentPage
 
         // Display bitmap to fill window but maintain aspect ratio
         SKRect rect = new SKRect(0, 0, info.Width, info.Height);
-        canvas.DrawBitmap(bitmap, 
+        canvas.DrawBitmap(bitmap,
             rect.AspectFill(new SKSize(bitmap.Width, bitmap.Height)));
     }
 }
@@ -141,7 +142,7 @@ public class TextPathEffectPage : ContentPage
         TextSize = littleSize
     };
 
-    SKPaint textPaint = new SKPaint 
+    SKPaint textPaint = new SKPaint
     {
         Style = SKPaintStyle.Stroke,
         Color = SKColors.Black
@@ -160,7 +161,7 @@ public class TextPathEffectPage : ContentPage
         textPathPaint.MeasureText(character, ref textPathPaintBounds);
 
         // Create textPath centered around (0, 0)
-        SKPath textPath = textPathPaint.GetTextPath(character, 
+        SKPath textPath = textPathPaint.GetTextPath(character,
                                                     -textPathPaintBounds.MidX,
                                                     -textPathPaintBounds.MidY);
         // Create the path effect
@@ -324,7 +325,7 @@ public class CircularTextPage : ContentPage
 
 [![](text-paths-images/circulartext-small.png "Тройной снимок экрана со страницей циклические текст")](text-paths-images/circulartext-large.png#lightbox "тройной снимок экрана со страницей циклические текста")
 
-Сам текст был выбран для так же оказаться довольно циклические: слова «circle», как субъект предложения и объект предложная фраза. 
+Сам текст был выбран для так же оказаться довольно циклические: слова «circle», как субъект предложения и объект предложная фраза.
 
 ## <a name="related-links"></a>Связанные ссылки
 

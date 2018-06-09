@@ -1,19 +1,20 @@
 ---
-title: Проверка
+title: Проверка в корпоративных приложений
+description: В этой главе объясняется, как eShopOnContainers мобильное приложение выполняет проверку вводимых пользователем данных. Это включает указание правила проверки, активируя проверку и отображения ошибок проверки.
 ms.prod: xamarin
 ms.assetid: 56e4f0fc-48d9-4033-91ec-173bb46a5e4d
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 08/07/2017
-ms.openlocfilehash: 484f3b3d45e41d0dd0406681250ac90943a1cdde
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 6a7f244b78d5b48dd219f59f1191993d62663bbf
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847593"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243181"
 ---
-# <a name="validation"></a>Проверка
+# <a name="validation-in-enterprise-apps"></a>Проверка в корпоративных приложений
 
 Любое приложение, которое принимает ввод от пользователей следует убедиться, что ввод был допустимым. Приложения например, проверьте наличие ввода, который содержит только символы в конкретном диапазоне имеет определенную длину и соответствует определенному формату. Без проверки пользователи могут вводить данные, приведет к сбою приложения. Проверка применяет бизнес-правил и не позволяет злоумышленнику вводится вредоносные данные.
 

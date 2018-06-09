@@ -1,16 +1,18 @@
 ---
 title: Сводка по 25 главы. Создание страницы
+description: 'Создание мобильных приложений с помощью Xamarin.Forms: Сводка главе 25. Создание страницы'
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: D1D348F2-6A44-4781-ADCE-A0B7BB9AEF89
 author: charlespetzold
 ms.author: chape
 ms.date: 11/07/2017
-ms.openlocfilehash: 951ae41763d8338d5adf73fb46ebc6defa64f8f8
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: ecee7866f4bf9ac1a4f706853434dce2b9cef7f6
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241159"
 ---
 # <a name="summary-of-chapter-25-page-varieties"></a>Сводка по 25 главы. Создание страницы
 
@@ -58,7 +60,7 @@ ms.lasthandoff: 04/04/2018
 
 ### <a name="your-own-user-interface"></a>Собственный пользовательский интерфейс
 
-Несмотря на то, что Xamarin.Forms предоставляет пользовательский интерфейс для переключения между представлениями master и сведений, можно создать собственные. Для этого:
+Несмотря на то, что Xamarin.Forms предоставляет пользовательский интерфейс для переключения между представлениями master и сведений, можно создать собственные. Для этого сделайте следующее:
 
 - Задать [ `IsGestureEnabled` ](https://developer.xamarin.com/api/property/Xamarin.Forms.MasterDetailPage.IsGestureEnabled/) свойства `false` отключение проведение пальцем по экрану
 - Переопределить [ `ShouldShowToolbarButton` ](https://developer.xamarin.com/api/member/Xamarin.Forms.MasterDetailPage.ShouldShowToolbarButton()/) метода и возврата `false` для скрытия кнопки панели инструментов в Windows 8.1 и Windows Phone 8.1.

@@ -1,5 +1,5 @@
 ---
-title: Введение в стили
+title: Введение в Xamarin.Forms стили
 description: Стили позволяют вида визуальные элементы, которые требуется настроить. Стили определены для конкретного типа и содержит значения для свойств, доступных для этого типа.
 ms.prod: xamarin
 ms.assetid: 3FF899C0-6CFB-4C1D-837D-9E9E10181967
@@ -7,14 +7,14 @@ ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 04/27/2016
-ms.openlocfilehash: f878641f9266da74d61eda8a85d4e16de193be0e
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 071cfa2ba145775c179bc85dce4fac29ba0bd8fa
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847970"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35245824"
 ---
-# <a name="introduction-to-styles"></a>Введение в стили
+# <a name="introduction-to-xamarinforms-styles"></a>Введение в Xamarin.Forms стили
 
 _Стили позволяют вида визуальные элементы, которые требуется настроить. Стили определены для конкретного типа и содержит значения для свойств, доступных для этого типа._
 

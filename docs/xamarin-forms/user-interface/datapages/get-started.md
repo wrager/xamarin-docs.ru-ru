@@ -1,17 +1,18 @@
 ---
 title: Приступая к работе с DataPages
+description: В этой статье объясняется, как приступить к созданию простой страницы управляемых данными, с помощью Xamarin.Forms DataPages.
 ms.prod: xamarin
 ms.assetid: 6416E5FA-6384-4298-BAA1-A89381E47210
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 12/01/2017
-ms.openlocfilehash: d5e73839f889234c816bfff08f3e46dade8dffc9
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: 1fb8a06111271d453c578cd3d2db97ec8689c995
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34846845"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243081"
 ---
 # <a name="getting-started-with-datapages"></a>Приступая к работе с DataPages
 
@@ -21,7 +22,7 @@ ms.locfileid: "34846845"
 > Требуется DataPages [Xamarin.Forms темы](~/xamarin-forms/user-interface/themes/index.md) ссылку для отображения.
 
 
-Чтобы приступить к созданию страницы простой-диск с данными, DataPages предварительную версию, выполните следующие действия. Этот демонстрационный используют жестко закодировано стиля («события») в области предварительного просмотра сборках, работает только с определенного формата JSON в коде.
+Чтобы приступить к созданию простой управляемой данными страницы DataPages предварительную версию, выполните следующие действия. Этот демонстрационный используют жестко закодировано стиля («события») в области предварительного просмотра сборках, работает только с определенного формата JSON в коде.
 
 [![](get-started-images/demo-sml.png "Образец DataPages приложения")](get-started-images/demo.png#lightbox "DataPages примера приложения")
 

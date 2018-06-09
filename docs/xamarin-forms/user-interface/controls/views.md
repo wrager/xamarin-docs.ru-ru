@@ -1,18 +1,18 @@
 ---
 title: Xamarin.Forms представлений
-description: Xamarin.Forms представления являются составными частями кросс платформенных мобильных пользовательских интерфейсов.
+description: Xamarin.Forms представления являются составными частями кросс платформенных мобильных пользовательских интерфейсов. В этой статье перечислены представления, которые включены в Xamarin.Forms.
 ms.prod: xamarin
 ms.assetid: AC070686-A423-4A98-8BB6-0B9F94C062CC
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/12/2016
-ms.openlocfilehash: aafad29a30130c9ec088121e03a986034f002e1c
-ms.sourcegitcommit: a7febc19102209b21e0696256c324f366faa444e
+ms.openlocfilehash: 414df933716c7ce5d9422e8a2b9be89ba7eff3a9
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34733091"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243522"
 ---
 # <a name="xamarinforms-views"></a>Xamarin.Forms представлений
 
@@ -80,7 +80,7 @@ _Xamarin.Forms представления являются составными 
 | [`SearchBar`](https://developer.xamarin.com/api/type/Xamarin.Forms.SearchBar/) Отображает область для пользователя тип текстовой строки и кнопка (или клавиши клавиатуры), который сообщает приложению для выполнения поиска. [ `Text` ](https://developer.xamarin.com/api/property/Xamarin.Forms.SearchBar.Text/) Свойство предоставляет доступ к тексту и [ `SearchButtonPressed` ](https://developer.xamarin.com/api/event/Xamarin.Forms.SearchBar.SearchButtonPressed/) событие означает, что была нажата кнопка.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.SearchBar/) | [![Пример SearchBar](views-images/SearchBar.png "пример SearchBar")](views-images/SearchBar-Large.png#lightbox "SearchBar пример")<br /> [Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/SearchBarDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/SearchBarDemoPage.xaml) с [кода](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/SearchBarDemoPage.xaml.cs) |
 |     |     |
 
-## <a name="views-for-setting-values"></a>Представления для задания значений 
+## <a name="views-for-setting-values"></a>Представления для задания значений
 
 ### <a name="slider"></a>Slider
 
@@ -96,7 +96,7 @@ _Xamarin.Forms представления являются составными 
 | [`Stepper`](https://developer.xamarin.com/api/type/Xamarin.Forms.Stepper/) позволяет пользователю выбрать `double` значение из диапазона добавочного значения, указанные с [ `Minimum` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Stepper.Minimum/), [ `Maximum` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Stepper.Maximum/), и [ `Increment` ](https://developer.xamarin.com/api/property/Xamarin.Forms.Stepper.Increment/) свойства.<br /><br />[Документация по API](https://developer.xamarin.com/api/type/Xamarin.Forms.Stepper/) | [![Пример с пошаговым](views-images/Stepper.png "пример с пошаговым")](views-images/Stepper-Large.png#lightbox "пример с пошаговым")<br />[Код C# для этой страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/CodeExamples/StepperDemoPage.cs) / [XAML-страницы](https://github.com/xamarin/xamarin-forms-samples/blob/master/FormsGallery/FormsGallery/FormsGallery/XamlExamples/StepperDemoPage.xaml) |
 |     |     |
 
-### <a name="switch"></a>Параметр 
+### <a name="switch"></a>Параметр
 
 |     |     |
 | --- | --- |

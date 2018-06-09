@@ -1,17 +1,18 @@
 ---
 title: Сведения о пути и перечисления
-description: Получение сведений о пути и перечисление содержимого
+description: В этой статье объясняется, как получить сведения о путях SkiaSharp и перечисление содержимого и это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.assetid: 8E8C5C6A-F324-4155-8652-7A77D231B3E5
 ms.technology: xamarin-forms
 author: charlespetzold
 ms.author: chape
 ms.date: 09/12/2017
-ms.openlocfilehash: 82ac4ea49462c7520219e1a621ea3946297b1b45
-ms.sourcegitcommit: 66807f8927d472fbfd0ff8bc77cea9b37e7b9a4f
+ms.openlocfilehash: 53d1fce20a0e3bc75ba34ab84b2549211567e222
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35243796"
 ---
 # <a name="path-information-and-enumeration"></a>Сведения о пути и перечисления
 
@@ -27,7 +28,7 @@ _Получение сведений о пути и перечисление с�
 
 ## <a name="getting-the-path-length"></a>Получение длины пути
 
-В статье [ **путей и текста** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/text-paths.md) вы узнали, как использовать [ `DrawTextOnPath` ](https://developer.xamarin.com/api/member/SkiaSharp.SKCanvas.DrawTextOnPath/p/System.String/SkiaSharp.SKPath/System.Single/System.Single/SkiaSharp.SKPaint/) метод для отображения которого базовые следует курса пути текстовой строки. Но что делать, если вы хотите размер текста, чтобы он точно соответствует пути? Для рисования текста, вокруг круга, это просто, так как простой для вычисления длины окружности. Однако длины окружности эллипс или длина кривую Безье не так просто. 
+В статье [ **путей и текста** ](~/xamarin-forms/user-interface/graphics/skiasharp/curves/text-paths.md) вы узнали, как использовать [ `DrawTextOnPath` ](https://developer.xamarin.com/api/member/SkiaSharp.SKCanvas.DrawTextOnPath/p/System.String/SkiaSharp.SKPath/System.Single/System.Single/SkiaSharp.SKPaint/) метод для отображения которого базовые следует курса пути текстовой строки. Но что делать, если вы хотите размер текста, чтобы он точно соответствует пути? Для рисования текста, вокруг круга, это просто, так как простой для вычисления длины окружности. Однако длины окружности эллипс или длина кривую Безье не так просто.
 
 [ `SKPathMeasure` ](https://developer.xamarin.com/api/type/SkiaSharp.SKPathMeasure/) Класс может помочь. [Конструктор](https://developer.xamarin.com/api/constructor/SkiaSharp.SKPathMeasure.SKPathMeasure/p/SkiaSharp.SKPath/System.Boolean/System.Single/) принимает `SKPath` аргумента и [ `Length` ](https://developer.xamarin.com/api/property/SkiaSharp.SKPathMeasure.Length/) свойство открывает его длину.
 
@@ -151,7 +152,7 @@ public class UnicycleHalfPipePage : ContentPage
     };
 
     SKPath unicyclePath = SKPath.ParseSvgPathData(
-        "M 0 0" + 
+        "M 0 0" +
         "A 25 25 0 0 0 0 -50" +
         "A 25 25 0 0 0 0 0 Z" +
         "M 0 -25 L 0 -100" +
@@ -179,7 +180,7 @@ public class UnicycleHalfPipePage : ContentPage
         using (SKPath pipePath = new SKPath())
         {
             pipePath.MoveTo(50, 50);
-            pipePath.CubicTo(0, 1.25f * info.Height, 
+            pipePath.CubicTo(0, 1.25f * info.Height,
                              info.Width - 0, 1.25f * info.Height,
                              info.Width - 50, 50);
 
@@ -197,7 +198,7 @@ public class UnicycleHalfPipePage : ContentPage
                 t = (float)((1 - Math.Cos(t * 2 * Math.PI)) / 2);
 
                 SKMatrix matrix;
-                pathMeasure.GetMatrix(t * length, out matrix, 
+                pathMeasure.GetMatrix(t * length, out matrix,
                                       SKPathMeasureMatrixFlags.GetPositionAndTangent);
 
                 canvas.SetMatrix(matrix);
@@ -426,7 +427,7 @@ static class PathExtensions
 
 [![](information-images/globulartext-small.png "Тройной снимок экрана со страницей Globular текст")](information-images/globulartext-large.png#lightbox "тройной снимок экрана со страницей Globular текста")
 
-[ `GlobularTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/GlobularTextPage.cs) Конструктор класса выполняет это преобразование. Он создает `SKPaint` объекта для текста, а затем происходит получение `SKPath` объекта из `GetTextPath` метод. — Это путь, переданный `CloneWithTransform` метод расширения, а также функцию преобразования: 
+[ `GlobularTextPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/GlobularTextPage.cs) Конструктор класса выполняет это преобразование. Он создает `SKPaint` объекта для текста, а затем происходит получение `SKPath` объекта из `GetTextPath` метод. — Это путь, переданный `CloneWithTransform` метод расширения, а также функцию преобразования:
 
 ```csharp
 public class GlobularTextPage : ContentPage
@@ -453,9 +454,9 @@ public class GlobularTextPage : ContentPage
 
                 globePath = textPath.CloneWithTransform((SKPoint pt) =>
                 {
-                    double longitude = (Math.PI / textPathBounds.Width) * 
+                    double longitude = (Math.PI / textPathBounds.Width) *
                                             (pt.X - textPathBounds.Left) - Math.PI / 2;
-                    double latitude = (Math.PI / textPathBounds.Height) * 
+                    double latitude = (Math.PI / textPathBounds.Height) *
                                             (pt.Y - textPathBounds.Top) - Math.PI / 2;
 
                     longitude *= 0.75;

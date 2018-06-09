@@ -1,18 +1,18 @@
 ---
 title: Создание пользовательских макетов
-description: Xamarin.Forms определяет четыре класса макета — StackLayout, AbsoluteLayout, RelativeLayout и сетку, и его дочерние элементы каждого упорядочивает по-разному. Тем не менее иногда бывает необходимо для организации содержимого страницы с использованием макета, не предусмотренная в Xamarin.Forms. В этой статье объясняется, как создать класс пользовательского макета и демонстрируется класса WrapLayout учетом ориентации, упорядочивает свои дочерние элементы горизонтально по странице и затем создает оболочку для отображения дополнительных строк последующие дочерние элементы.
+description: В этой статье объясняется, как создать класс пользовательского макета и демонстрируется класса WrapLayout учетом ориентации, упорядочивает свои дочерние элементы горизонтально по странице и затем создает оболочку для отображения дополнительных строк последующие дочерние элементы.
 ms.prod: xamarin
 ms.assetid: B0CFDB59-14E5-49E9-965A-3DCCEDAC2E31
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 03/29/2017
-ms.openlocfilehash: 7f2a443ded0d6b41db237e9842cd80e016bb5251
-ms.sourcegitcommit: d80d93957040a14b4638a91b0eac797cfaade840
+ms.openlocfilehash: f225a80a1c386668b71d1cdd47409eb017f19033
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34847751"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35244939"
 ---
 # <a name="creating-a-custom-layout"></a>Создание пользовательских макетов
 

@@ -1,19 +1,20 @@
 ---
-title: Строка форматирования
-description: Использование привязки данных для форматирования и отображения объектов в виде строк
+title: Форматирование строки Xamarin.Forms
+description: В этой статье описывается использование привязки данных Xamarin.FOrms для форматирования и отображения объектов в виде строк. Это достигается путем установки StringFormat привязки в стандартную строку форматирования .NET заполнителем.
 ms.prod: xamarin
 ms.assetid: 978C85B7-CB58-4483-A131-21B381A865E0
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 4e143f650c3cde7577def1a95e53b207608a088a
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: bdac74e4ec14797ec373f86b8a94c7af4d480951
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35240305"
 ---
-# <a name="string-formatting"></a>Строка форматирования
+# <a name="xamarinforms-string-formatting"></a>Форматирование строки Xamarin.Forms
 
 Иногда бывает удобно использовать привязки данных для отображения строковое представление объекта или значение. Например, может потребоваться использовать `Label` для отображения текущего значения `Slider`. В этой привязке данных `Slider` является исходным и целевым объектом является `Text` свойство `Label`.
 
