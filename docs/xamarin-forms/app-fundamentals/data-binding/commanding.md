@@ -1,21 +1,22 @@
 ---
-title: Интерфейс командной
-description: Реализуйте `Command` свойства привязки данных
+title: Интерфейс командной Xamarin.Forms
+description: В этой статье объясняется, как реализовать свойство команды с Xamarin.Forms привязки данных. Запрашивающая интерфейс предоставляет альтернативный подход к реализации команд, гораздо лучше подходит к архитектуре MVVM.
 ms.prod: xamarin
 ms.assetid: 69922284-F398-45C3-B4CC-B8E29BB4C533
 ms.technology: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 01/05/2018
-ms.openlocfilehash: 7f8b40624b9434347f69a473eed3bdff5c1d3d33
-ms.sourcegitcommit: 945df041e2180cb20af08b83cc703ecd1aedc6b0
+ms.openlocfilehash: 37fe5bbcfa3dbc6aa5483c89b49c1698a00ecbb6
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35241316"
 ---
-# <a name="the-command-interface"></a>Интерфейс командной
+# <a name="the-xamarinforms-command-interface"></a>Интерфейс командной Xamarin.Forms
 
-Архитектуры Model-View-ViewModel (MVVM) определены привязки данных между свойствами в ViewModel, который обычно является класс, производный от `INotifyPropertyChanged`и свойства в представлении, который обычно является файл XAML. Иногда приложение имеет потребностей, которые выходят за пределы эти свойства привязки, поскольку требует от пользователя запустить команды, влияющие на что-нибудь в ViewModel. Эти команды обычно обозначаются путем нажатия кнопки или пальца касания и в большинстве случаев они обрабатываются в файле кода в обработчик `Clicked` событие `Button` или `Tapped` событие `TapGestureRecognizer`. 
+Архитектуры Model-View-ViewModel (MVVM) определены привязки данных между свойствами в ViewModel, который обычно является класс, производный от `INotifyPropertyChanged`и свойства в представлении, который обычно является файл XAML. Иногда приложение имеет потребностей, которые выходят за пределы эти свойства привязки, поскольку требует от пользователя запустить команды, влияющие на что-нибудь в ViewModel. Эти команды обычно обозначаются путем нажатия кнопки или пальца касания и в большинстве случаев они обрабатываются в файле кода в обработчик `Clicked` событие `Button` или `Tapped` событие `TapGestureRecognizer`.
 
 Запрашивающая интерфейс предоставляет альтернативный подход к реализации команд, гораздо лучше подходит к архитектуре MVVM. ViewModel сам может содержать команды, которые представляют собой методы, которые выполняются в ответ на определенное действие в представлении, такие как `Button` нажмите кнопку. Между этими командами определены привязки данных и `Button`.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/04/2018
 - [`TextCell`](https://developer.xamarin.com/api/type/Xamarin.Forms.TextCell/) и, следовательно [ `ImageCell` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ImageCell/), который является производным от `TextCell`
 - [`TapGestureRecognizer`](https://developer.xamarin.com/api/type/Xamarin.Forms.TapGestureRecognizer/)
 
-[`SearchBar`](https://developer.xamarin.com/api/type/Xamarin.Forms.SearchBar/) Определяет [ `SearchCommand` ](https://developer.xamarin.com/api/property/Xamarin.Forms.SearchBar.SearchCommand/) свойство типа `ICommand` и [ `SearchCommandParameter` ](https://developer.xamarin.com/api/property/Xamarin.Forms.SearchBar.SearchCommandParameter/) свойство. [ `RefreshCommand` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ListView.RefreshCommand/) Свойство [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) также относится к типу `ICommand`. 
+[`SearchBar`](https://developer.xamarin.com/api/type/Xamarin.Forms.SearchBar/) Определяет [ `SearchCommand` ](https://developer.xamarin.com/api/property/Xamarin.Forms.SearchBar.SearchCommand/) свойство типа `ICommand` и [ `SearchCommandParameter` ](https://developer.xamarin.com/api/property/Xamarin.Forms.SearchBar.SearchCommandParameter/) свойство. [ `RefreshCommand` ](https://developer.xamarin.com/api/property/Xamarin.Forms.ListView.RefreshCommand/) Свойство [ `ListView` ](https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/) также относится к типу `ICommand`.
 
 Эти команды могут быть обработаны в рамках ViewModel таким способом, который не зависит от объекта конкретного пользовательского интерфейса в представлении.
 
@@ -57,7 +58,7 @@ public interface ICommand
 public ICommand MyCommand { private set; get; }
 ```
 
-ViewModel также должен ссылаться на класс, реализующий `ICommand` интерфейса. Этот класс будут описаны чуть ниже. В представлении `Command` свойство `Button` привязан к этому свойству: 
+ViewModel также должен ссылаться на класс, реализующий `ICommand` интерфейса. Этот класс будут описаны чуть ниже. В представлении `Command` свойство `Button` привязан к этому свойству:
 
 ```xaml
 <Button Text="Execute command"
@@ -136,7 +137,7 @@ public class PersonViewModel : INotifyPropertyChanged
 }
 ```
 
-`PersonCollectionViewModel` Показано ниже, создает новые объекты типа `PersonViewModel` и позволяет пользователю вводить данные. Для этой цели класс определяет свойства `IsEditing` типа `bool` и `PersonEdit` типа `PersonViewModel`. Кроме того, класс определяет трех свойств типа `ICommand` и свойство с именем `Persons` типа `IList<PersonViewModel>`: 
+`PersonCollectionViewModel` Показано ниже, создает новые объекты типа `PersonViewModel` и позволяет пользователю вводить данные. Для этой цели класс определяет свойства `IsEditing` типа `bool` и `PersonEdit` типа `PersonViewModel`. Кроме того, класс определяет трех свойств типа `ICommand` и свойство с именем `Persons` типа `IList<PersonViewModel>`:
 
 ```csharp
 public class PersonCollectionViewModel : INotifyPropertyChanged
@@ -199,7 +200,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
         <Grid.BindingContext>
             <local:PersonCollectionViewModel />
         </Grid.BindingContext>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -216,7 +217,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
         <!-- Entry Form -->
         <Grid Grid.Row="1"
               IsEnabled="{Binding IsEditing}">
-            
+
             <Grid BindingContext="{Binding PersonEdit}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -230,11 +231,11 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Name: " Grid.Row="0" Grid.Column="0" />
-                <Entry Text="{Binding Name}" 
+                <Entry Text="{Binding Name}"
                        Grid.Row="0" Grid.Column="1" />
 
                 <Label Text="Age: " Grid.Row="1" Grid.Column="0" />
-                <StackLayout Orientation="Horizontal" 
+                <StackLayout Orientation="Horizontal"
                              Grid.Row="1" Grid.Column="1">
                     <Stepper Value="{Binding Age}"
                              Maximum="100" />
@@ -278,7 +279,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
 
 На экране операций ввода-вывода в левом показан макет до входа допустимый возраст. Android и UWP экраны show **отправить** кнопка включена после задания age:
 
-[![Person Entry](commanding-images/personentry-small.png "Person Entry")](commanding-images/personentry-large.png#lightbox "Person Entry")
+[![Запись пользователя](commanding-images/personentry-small.png "входа пользователя")](commanding-images/personentry-large.png#lightbox "входа пользователя")
 
 Программа не поддерживает все средства для изменения существующих записей и не сохраняет записи, если покинуть страницу.
 
@@ -315,7 +316,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
     {
         (SubmitCommand as Command).ChangeCanExecute();
     }
-    
+
     void RefreshCanExecutes()
     {
         (NewCommand as Command).ChangeCanExecute();
@@ -359,9 +360,9 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
             },
             canExecute: () =>
             {
-                return PersonEdit != null && 
-                       PersonEdit.Name != null && 
-                       PersonEdit.Name.Length > 1 && 
+                return PersonEdit != null &&
+                       PersonEdit.Name != null &&
+                       PersonEdit.Name.Length > 1 &&
                        PersonEdit.Age > 0;
             });
 
@@ -373,7 +374,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
 }
 ```
 
-`canExecute` Функции для `SubmitCommand` вызывается каждый раз имеется свойство колебаниями `PersonViewModel` объект редактируется. Он возвращает `true` только если `Name` свойство имеет по крайней мере одного символа и `Age` больше 0. В этот момент **отправить** становится доступной кнопка. 
+`canExecute` Функции для `SubmitCommand` вызывается каждый раз имеется свойство колебаниями `PersonViewModel` объект редактируется. Он возвращает `true` только если `Name` свойство имеет по крайней мере одного символа и `Age` больше 0. В этот момент **отправить** становится доступной кнопка.
 
 `execute` Функции для **отправить** Удаляет обработчик изменения свойства из `PersonViewModel`, добавляет объект в `Persons` коллекции и возвращает содержимое начального условия.
 
@@ -401,7 +402,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
             canExecute: () =>
             {
                 return IsEditing;
-            }); 
+            });
     }
 
     ···
@@ -417,7 +418,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
 
 ## <a name="using-command-parameters"></a>С помощью параметров команды
 
-Иногда бывает удобно для одной или нескольких кнопок (или другие объекты пользовательского интерфейса) для одного и того же `ICommand` свойства ViewModel. В этом случае используется `CommandParameter` свойство для различения кнопок. 
+Иногда бывает удобно для одной или нескольких кнопок (или другие объекты пользовательского интерфейса) для одного и того же `ICommand` свойства ViewModel. В этом случае используется `CommandParameter` свойство для различения кнопок.
 
 Можно продолжать использовать `Command` класса для этих общих `ICommand` свойства. Этот класс определяет [альтернативный конструктор](https://developer.xamarin.com/api/constructor/Xamarin.Forms.Command.Command/p/System.Action%7BSystem.Object%7D/System.Func%7BSystem.Object,System.Boolean%7D/) , принимающий `execute` и `canExecute` методов с параметрами типа `Object`. Это как `CommandParameter` передаваемый для этих методов.
 
@@ -442,7 +443,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
         <Grid.BindingContext>
             <local:DecimalKeypadViewModel />
         </Grid.BindingContext>
-        
+
         <Grid.Resources>
             <ResourceDictionary>
                 <Style TargetType="Button">
@@ -465,51 +466,51 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
                 Command="{Binding ClearCommand}" />
 
         <Button Text="&#x21E6;"
-                Grid.Row="1" Grid.Column="2" 
+                Grid.Row="1" Grid.Column="2"
                 Command="{Binding BackspaceCommand}" />
 
         <Button Text="7"
-                Grid.Row="2" Grid.Column="0" 
+                Grid.Row="2" Grid.Column="0"
                 Command="{Binding DigitCommand}"
                 CommandParameter="7" />
 
         <Button Text="8"
-                Grid.Row="2" Grid.Column="1" 
+                Grid.Row="2" Grid.Column="1"
                 Command="{Binding DigitCommand}"
                 CommandParameter="8" />
-        
+
         <Button Text="9"
-                Grid.Row="2" Grid.Column="2" 
+                Grid.Row="2" Grid.Column="2"
                 Command="{Binding DigitCommand}"
                 CommandParameter="9" />
 
         <Button Text="4"
-                Grid.Row="3" Grid.Column="0" 
+                Grid.Row="3" Grid.Column="0"
                 Command="{Binding DigitCommand}"
                 CommandParameter="4" />
 
         <Button Text="5"
-                Grid.Row="3" Grid.Column="1" 
+                Grid.Row="3" Grid.Column="1"
                 Command="{Binding DigitCommand}"
                 CommandParameter="5" />
 
         <Button Text="6"
-                Grid.Row="3" Grid.Column="2" 
+                Grid.Row="3" Grid.Column="2"
                 Command="{Binding DigitCommand}"
                 CommandParameter="6" />
 
         <Button Text="1"
-                Grid.Row="4" Grid.Column="0" 
+                Grid.Row="4" Grid.Column="0"
                 Command="{Binding DigitCommand}"
                 CommandParameter="1" />
 
         <Button Text="2"
-                Grid.Row="4" Grid.Column="1" 
+                Grid.Row="4" Grid.Column="1"
                 Command="{Binding DigitCommand}"
                 CommandParameter="2" />
 
         <Button Text="3"
-                Grid.Row="4" Grid.Column="2" 
+                Grid.Row="4" Grid.Column="2"
                 Command="{Binding DigitCommand}"
                 CommandParameter="3" />
 
@@ -519,7 +520,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
                 CommandParameter="0" />
 
         <Button Text="&#x00B7;"
-                Grid.Row="5" Grid.Column="2" 
+                Grid.Row="5" Grid.Column="2"
                 Command="{Binding DigitCommand}"
                 CommandParameter="." />
     </Grid>
@@ -532,7 +533,7 @@ public class PersonCollectionViewModel : INotifyPropertyChanged
 
 [![Десятичное число клавиатуры](commanding-images/decimalkeyboard-small.png "десятичное клавиатуры")](commanding-images/decimalkeyboard-large.png#lightbox "десятичное клавиатуры")
 
-Обратите внимание, что кнопки для десятичной запятой в все три снимки экрана отключен, так как введенное число уже содержит десятичную точку. 
+Обратите внимание, что кнопки для десятичной запятой в все три снимки экрана отключен, так как введенное число уже содержит десятичную точку.
 
 `DecimalKeypadViewModel` Определяет `Entry` свойство типа `string` (который является единственным свойством, которое запускает `PropertyChanged` событий) и трех свойств типа `ICommand`:
 
@@ -587,7 +588,7 @@ public class DecimalKeypadViewModel : INotifyPropertyChanged
             });
 
         ···
-    
+
     }
 
     void RefreshCanExecutes()
@@ -597,7 +598,7 @@ public class DecimalKeypadViewModel : INotifyPropertyChanged
     }
 
     ···
-    
+
 }
 ```
 
@@ -638,7 +639,7 @@ public class DecimalKeypadViewModel : INotifyPropertyChanged
     }
 
     ···
-    
+
 }
 ```
 
@@ -674,13 +675,13 @@ public class DecimalKeypadViewModel : INotifyPropertyChanged
     }
 
     ···
-    
+
 }
 ```
 
 `execute` Метод добавляет строковый аргумент `Entry` свойство. Тем не менее, если результат начинается с нуля (но не ноль и десятичной запятой) затем этого начального нуля необходимо удалить, используя `Substring` функции.
 
-`canExecute` Возвращает `false` только в том случае, если аргумент является десятичной запятой (это означает, что нажатие десятичного разделителя) и `Entry` уже содержит десятичной запятой. 
+`canExecute` Возвращает `false` только в том случае, если аргумент является десятичной запятой (это означает, что нажатие десятичного разделителя) и `Entry` уже содержит десятичной запятой.
 
 Все `execute` вызов методов `RefreshCanExecutes`, который затем вызывает `ChangeCanExecute` для обоих `DigitCommand` и `ClearCommand`. Это гарантирует, что становятся активными кнопки backspace и десятичной запятой или отключена на основе текущей последовательности цифр, введенным.
 
@@ -753,13 +754,13 @@ public partial class MainPage : ContentPage
 }
 ```
 
-Конструктор наборов `NavigateCommand` свойства `execute` метод, создающий экземпляр `System.Type` параметра и затем переходит к нему. Поскольку `PushAsync` вызов требует `await` оператор, `execute` метод должен быть помечен как асинхронный. Это осуществляется с помощью `async` ключевое слово перед списком параметров. 
+Конструктор наборов `NavigateCommand` свойства `execute` метод, создающий экземпляр `System.Type` параметра и затем переходит к нему. Поскольку `PushAsync` вызов требует `await` оператор, `execute` метод должен быть помечен как асинхронный. Это осуществляется с помощью `async` ключевое слово перед списком параметров.
 
 Конструктор также задает `BindingContext` страницы к самому себе, что ссылки привязки `NavigateCommand` в этом классе.
 
 Порядок код в этот конструктор устанавливает различие: `InitializeComponent` вызов приводит XAML для синтаксического анализа, но в это время привязки к свойству с именем `NavigateCommand` не может быть разрешен, поскольку `BindingContext` равно `null`. Если `BindingContext` задать в конструкторе *перед* `NavigateCommand` имеет значение, то привязки можно разрешить при `BindingContext` имеет значение, но в этот момент `NavigateCommand` по-прежнему `null`. Установка `NavigateCommand` после `BindingContext` не повлияет на привязку из-за изменений в `NavigateCommand` не запускает `PropertyChanged` события и привязку, не знает, что `NavigateCommand` теперь является допустимой.
 
-Установка `NavigateCommand` и `BindingContext` (в любом порядке) до вызова `InitializeComponent` будут работать, поскольку оба компонента привязки заданы, когда средство синтаксического анализа XAML обнаруживает определение привязки. 
+Установка `NavigateCommand` и `BindingContext` (в любом порядке) до вызова `InitializeComponent` будут работать, поскольку оба компонента привязки заданы, когда средство синтаксического анализа XAML обнаруживает определение привязки.
 
 Привязки данных иногда может быть непростой задачей, но, как показано выше в этой серии статей, они мощным и гибким, поэтому помогают значительно организации кода, разделяя базовую логику из пользовательского интерфейса.
 
