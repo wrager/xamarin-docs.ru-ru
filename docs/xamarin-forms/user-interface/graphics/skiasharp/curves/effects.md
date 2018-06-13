@@ -1,19 +1,20 @@
 ---
-title: Путь эффекты
-description: Обнаружить различные пути эффекты, которые разрешены пути для срезом и заполнения
+title: Эффекты путь в SkiaSharp
+description: В этой статье описываются различные эффекты путь SkiaSharp, которые разрешены пути для срезом и заполнения, а это демонстрируется с примерами кода.
 ms.prod: xamarin
 ms.technology: xamarin-forms
 ms.assetid: 95167D1F-A718-405A-AFCC-90E596D422F3
 author: charlespetzold
 ms.author: chape
 ms.date: 07/29/2017
-ms.openlocfilehash: 76192f48bedebb183c64c83e34c3908cc85d591c
-ms.sourcegitcommit: 1561c8022c3585655229a869d9ef3510bf83f00a
+ms.openlocfilehash: 2071a2fb140d0e9c78d4c86d6aa70d3606dc1f98
+ms.sourcegitcommit: 66682dd8e93c0e4f5dee69f32b5fc5a96443e307
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35244114"
 ---
-# <a name="path-effects"></a>Путь эффекты
+# <a name="path-effects-in-skiasharp"></a>Эффекты путь в SkiaSharp
 
 _Обнаружить различные пути эффекты, которые разрешены пути для срезом и заполнения_
 
@@ -400,7 +401,7 @@ public partial class OneDimensionalPathEffectPage : ContentPage
 
 Путь, указанный в `SKPathEffect.Create1DPath` метод заполняется всегда. Путь, указанный в `DrawPath` метод вычерчивается всегда, если `SKPaint` объект имеет его `PathEffect` свойством, имеющим значение 1 D эффект. Обратите внимание, что `pathPaint` объект не имеет `Style` значение обычно по умолчанию для `Fill`, но путь вычерчивается независимо от.
 
-Поля, используемые в `Translate` пример — 20 пикселей квадратом и `advance` аргумента равно 24. Это различие вызывает разрыв между полями строке примерно: горизонтальная или вертикальная, когда поля немного перекрываются, если строка соответствует диагональный, поскольку диагонали поле 28.3 пикселей. 
+Поля, используемые в `Translate` пример — 20 пикселей квадратом и `advance` аргумента равно 24. Это различие вызывает разрыв между полями строке примерно: горизонтальная или вертикальная, когда поля немного перекрываются, если строка соответствует диагональный, поскольку диагонали поле 28.3 пикселей.
 
 Ромбовидной фигуры в `Rotate` примере также составляет 20 пикселов. `advance` Равен 20, чтобы продолжить точки касания как ромб поворачивается вместе с кривизны строки.
 
@@ -416,7 +417,7 @@ public partial class OneDimensionalPathEffectPage : ContentPage
 
 y = · Cosh(x / a)
 
-*Cosh* является функция гиперболический косинус. Для *x* равно 0, *cosh* равен нулю и *y* равняется *a*. Это Центр catenary. Как *косинус* функция, *cosh* считается *даже*, означающее, что *cosh(–x)* равняется *cosh(x)*, и значения увеличивают повышающее аргументы положительным или отрицательным. Эти значения описывают кривых, образующих сторон catenary.
+*Cosh* является функция гиперболический косинус. Для *x* равно 0, *cosh* равен нулю и *y* равняется **. Это Центр catenary. Как *косинус* функция, *cosh* считается *даже*, означающее, что *cosh(–x)* равняется *cosh(x)*, и значения увеличивают повышающее аргументы положительным или отрицательным. Эти значения описывают кривых, образующих сторон catenary.
 
 Поиск правильное значение для *a* в соответствии с catenary до размеров страницы телефона не прямой вычисления. Если *w* и *h* только ширину и высоту прямоугольника, оптимальное значение *a* удовлетворяет следующее уравнение:
 
@@ -585,9 +586,9 @@ public class ConveyorBeltPage : ContentPage
         bucketPath.AddRect(new SKRect(-5, -3, 25, 3));
 
         // Sides
-        bucketPath.AddRoundedRect(new SKRect(25, -19, 27, 18), 10, 10, 
+        bucketPath.AddRoundedRect(new SKRect(25, -19, 27, 18), 10, 10,
                                   SKPathDirection.CounterClockwise);
-        bucketPath.AddRoundedRect(new SKRect(63, -19, 65, 18), 10, 10, 
+        bucketPath.AddRoundedRect(new SKRect(63, -19, 65, 18), 10, 10,
                                   SKPathDirection.CounterClockwise);
 
         // Five slats
@@ -595,20 +596,20 @@ public class ConveyorBeltPage : ContentPage
         {
             bucketPath.MoveTo(25, -19 + 8 * i);
             bucketPath.LineTo(25, -13 + 8 * i);
-            bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small, 
+            bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small,
                              SKPathDirection.CounterClockwise, 65, -13 + 8 * i);
             bucketPath.LineTo(65, -19 + 8 * i);
-            bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small, 
+            bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small,
                              SKPathDirection.Clockwise, 25, -19 + 8 * i);
             bucketPath.Close();
         }
 
         // Arc to suggest the hidden side
         bucketPath.MoveTo(25, -17);
-        bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small, 
+        bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small,
                          SKPathDirection.Clockwise, 65, -17);
         bucketPath.LineTo(65, -19);
-        bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small, 
+        bucketPath.ArcTo(50, 50, 0, SKPathArcSize.Small,
                          SKPathDirection.CounterClockwise, 25, -19);
         bucketPath.Close();
 
@@ -619,7 +620,7 @@ public class ConveyorBeltPage : ContentPage
     ...
 ```
 
-Код создания контейнеров завершается с двумя преобразованиями, упрощающие немного больше контейнеров и включить его в альбомной ориентации. Применение этих преобразований было проще, чем настройка все координаты в предыдущем примере кода. 
+Код создания контейнеров завершается с двумя преобразованиями, упрощающие немного больше контейнеров и включить его в альбомной ориентации. Применение этих преобразований было проще, чем настройка все координаты в предыдущем примере кода.
 
 `PaintSurface` Обработчик начинается путем определения путь для конвейерной лентой, сам. Это просто пары строк и пары с окружности, отображаются с темно серый 20 пикселей всей строки:
 
@@ -642,10 +643,10 @@ public class ConveyorBeltPage : ContentPage
         {
             // Straight verticals capped by semicircles on top and bottom
             conveyerPath.MoveTo(width, verticalMargin);
-            conveyerPath.ArcTo(width / 2, width / 2, 0, SKPathArcSize.Large, 
+            conveyerPath.ArcTo(width / 2, width / 2, 0, SKPathArcSize.Large,
                                SKPathDirection.Clockwise, 2 * width, verticalMargin);
             conveyerPath.LineTo(2 * width, info.Height - verticalMargin);
-            conveyerPath.ArcTo(width / 2, width / 2, 0, SKPathArcSize.Large, 
+            conveyerPath.ArcTo(width / 2, width / 2, 0, SKPathArcSize.Large,
                                SKPathDirection.Clockwise, width, info.Height - verticalMargin);
             conveyerPath.Close();
 
@@ -665,8 +666,8 @@ public class ConveyorBeltPage : ContentPage
             float phase = -t * spacing;
 
             // Create the buckets PathEffect
-            using (SKPathEffect bucketsPathEffect = 
-                        SKPathEffect.Create1DPath(bucketPath, spacing, phase, 
+            using (SKPathEffect bucketsPathEffect =
+                        SKPathEffect.Create1DPath(bucketPath, spacing, phase,
                                                   SKPath1DPathEffectStyle.Rotate))
             {
                 // Set it to the Paint object and draw the path again
@@ -680,7 +681,7 @@ public class ConveyorBeltPage : ContentPage
 
 Логику для рисования конвейерная лента не работает в режиме альбомной ориентации.
 
-Контейнеры должны расположенные о 200 пикселей друг от друга на конвейерная лента. Конвейерная лента то, скорее всего, не кратно 200 пикселей по много времени, которая означает, что `phase` аргумент `SKPathEffect.Create1DPath` — анимировано, контейнеров отобразит в действие и из существование. 
+Контейнеры должны расположенные о 200 пикселей друг от друга на конвейерная лента. Конвейерная лента то, скорее всего, не кратно 200 пикселей по много времени, которая означает, что `phase` аргумент `SKPathEffect.Create1DPath` — анимировано, контейнеров отобразит в действие и из существование.
 
 По этой причине программа сначала вычисляет значение с именем `length` , длина конвейерная лента. Так как конвейерная лента состоит из прямых линий и точками окружности, это простых вычислений. Далее число контейнеров, вычисляется путем деления `length` по 200. Это округляется до ближайшего целого числа, а затем состоит номер из `length`. Результатом является интервалы для целого числа контейнеров. `phase` Аргумент является просто долю.
 
@@ -708,11 +709,11 @@ canvas.DrawPath(newPath, newPaint);
 public static SKPathEffect Create2DLine (Single width, SKMatrix matrix)
 ```
 
-`width` Аргумент задает толщину обводки линий штриховки. `matrix` Параметр представляет собой сочетание масштабирования и необязательные поворота. Коэффициент масштабирования указывает приращения пикселей, Skia для пространства штриховка. Разделение между строками — коэффициент масштабирования минус `width` аргумент. Если коэффициент масштабирования меньше или равно `width` значение, будут без пробела между штриховой линии и области будет отображаться для заполнения. Укажите то же значение для горизонтального и вертикального масштабирования. 
+`width` Аргумент задает толщину обводки линий штриховки. `matrix` Параметр представляет собой сочетание масштабирования и необязательные поворота. Коэффициент масштабирования указывает приращения пикселей, Skia для пространства штриховка. Разделение между строками — коэффициент масштабирования минус `width` аргумент. Если коэффициент масштабирования меньше или равно `width` значение, будут без пробела между штриховой линии и области будет отображаться для заполнения. Укажите то же значение для горизонтального и вертикального масштабирования.
 
 По умолчанию штриховка горизонтальной. Если `matrix` параметр содержит поворота, штриховка поворачиваются по часовой стрелке.
 
-**Штриховки заполнения** странице демонстрируется эффект этого пути. [ `HatchFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/HatchFillPage.cs) Класс определяет три пути эффекты, как поля, первый Горизонтальная штриховка с шириной 3 пикселя коэффициента масштабирования, указывающую, что они размещены через равные интервалы 6 пикселей друг от друга. Разделение строк таким образом, 3 пикселей. Второй путь действует для вертикальной штриховка шириной 6 пикселей на расстоянии друг от друга (поэтому разделение — 18 пикселей), 24 точки и третий — для штриховой диагональный строк 12 расширенный расстоянии друг от друга 36 пикселей друг от друга. 
+**Штриховки заполнения** странице демонстрируется эффект этого пути. [ `HatchFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/HatchFillPage.cs) Класс определяет три пути эффекты, как поля, первый Горизонтальная штриховка с шириной 3 пикселя коэффициента масштабирования, указывающую, что они размещены через равные интервалы 6 пикселей друг от друга. Разделение строк таким образом, 3 пикселей. Второй путь действует для вертикальной штриховка шириной 6 пикселей на расстоянии друг от друга (поэтому разделение — 18 пикселей), 24 точки и третий — для штриховой диагональный строк 12 расширенный расстоянии друг от друга 36 пикселей друг от друга.
 
 ```csharp
 public class HatchFillPage : ContentPage
@@ -721,10 +722,10 @@ public class HatchFillPage : ContentPage
 
     SKPathEffect horzLinesPath = SKPathEffect.Create2DLine(3, SKMatrix.MakeScale(6, 6));
 
-    SKPathEffect vertLinesPath = SKPathEffect.Create2DLine(6, 
+    SKPathEffect vertLinesPath = SKPathEffect.Create2DLine(6,
         Multiply(SKMatrix.MakeRotationDegrees(90), SKMatrix.MakeScale(24, 24)));
 
-    SKPathEffect diagLinesPath = SKPathEffect.Create2DLine(12, 
+    SKPathEffect diagLinesPath = SKPathEffect.Create2DLine(12,
         Multiply(SKMatrix.MakeScale(36, 36), SKMatrix.MakeRotationDegrees(45)));
 
     SKPaint strokePaint = new SKPaint
@@ -761,14 +762,14 @@ public class HatchFillPage : ContentPage
 
         using (SKPath roundRectPath = new SKPath())
         {
-            // Create a path 
+            // Create a path
             roundRectPath.AddRoundedRect(
                 new SKRect(50, 50, info.Width - 50, info.Height - 50), 100, 100);
 
             // Horizontal hatch marks
             fillPaint.PathEffect = horzLinesPath;
             fillPaint.Color = SKColors.Red;
-            canvas.DrawPath(roundRectPath, fillPaint); 
+            canvas.DrawPath(roundRectPath, fillPaint);
 
             // Vertical hatch marks
             fillPaint.PathEffect = vertLinesPath;
@@ -808,18 +809,18 @@ Android экрана выглядит не очень похожи: масшта
 public static SKPathEffect Create2DPath (SKMatrix matrix, SKPath path)
 ```
 
-`SKMatrix` Коэффициенты масштабирования указывают горизонтальным и вертикальным пространством реплицированных пути. Но невозможно повернуть путь, используя это `matrix` аргумент, следует ли поворачивать, путь поворот сам путь с помощью `Transform` метода, определенного `SKPath`. 
+`SKMatrix` Коэффициенты масштабирования указывают горизонтальным и вертикальным пространством реплицированных пути. Но невозможно повернуть путь, используя это `matrix` аргумент, следует ли поворачивать, путь поворот сам путь с помощью `Transform` метода, определенного `SKPath`.
 
 Реплицированные путь обычно выравнивается левую и верхнюю края экрана, а не заполняемая область. Это поведение можно переопределить, предоставив коэффициенты преобразования между 0 и коэффициенты масштабирования, чтобы задать горизонтальное и вертикальное смещение из сторон левую и верхнюю.
 
-**Путь заполняет** странице демонстрируется эффект этого пути. Путь, используемый для заполнения области определяется как поле в [ `PathFileFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathTileFillPage.cs) класса. Горизонтальной и вертикальной координате диапазоном от: от -40 до 40, это означает, что этот путь квадратный 80 пикселей: 
+**Путь заполняет** странице демонстрируется эффект этого пути. Путь, используемый для заполнения области определяется как поле в [ `PathFileFillPage` ](https://github.com/xamarin/xamarin-forms-samples/blob/master/SkiaSharpForms/Demos/Demos/SkiaSharpFormsDemos/Curves/PathTileFillPage.cs) класса. Горизонтальной и вертикальной координате диапазоном от: от -40 до 40, это означает, что этот путь квадратный 80 пикселей:
 
 ```csharp
 public class PathTileFillPage : ContentPage
 {
     SKPath tilePath = SKPath.ParseSvgPathData(
-        "M -20 -20 L 2 -20, 2 -40, 18 -40, 18 -20, 40 -20, " + 
-        "40 -12, 20 -12, 20 12, 40 12, 40 40, 22 40, 22 20, " + 
+        "M -20 -20 L 2 -20, 2 -40, 18 -40, 18 -20, 40 -20, " +
+        "40 -12, 20 -12, 20 12, 40 12, 40 40, 22 40, 22 20, " +
         "-2 20, -2 40, -20 40, -20 8, -40 8, -40 -8, -20 -8 Z");
     ...
     void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -840,7 +841,7 @@ public class PathTileFillPage : ContentPage
                 paint.PathEffect = pathEffect;
 
                 canvas.DrawRoundRect(
-                    new SKRect(50, 50, info.Width - 50, info.Height - 50), 
+                    new SKRect(50, 50, info.Width - 50, info.Height - 50),
                     100, 100, paint);
             }
         }
@@ -935,7 +936,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 public static SKPathEffect CreateDiscrete (Single segLength, Single deviation, UInt32 seedAssist)
 ```
 
-Этот эффект пути можно использовать для срезом или заполнения. Строки разделяются на соединенных сегментов — приблизительное длина которых определяется `segLength` — и расширять в другом направлении. Экстент отклонение от исходных строк определяется `deviation`. 
+Этот эффект пути можно использовать для срезом или заполнения. Строки разделяются на соединенных сегментов — приблизительное длина которых определяется `segLength` — и расширять в другом направлении. Экстент отклонение от исходных строк определяется `deviation`.
 
 Последний аргумент является начальное значение, используемое для формирования псевдослучайных последовательность, используемая для создания эффекта. Эффекта дрожания будет отличаться для различных начальных значений. Аргумент имеет значение по умолчанию равно нулю, это означает, что тот же эффект достигается при каждом запуске программы. Если требуется другой флуктуации всякий раз, когда окрашивание экрана, можно задать начальное значение `Millisecond` свойство `DataTime.Now` значение (например).
 
@@ -1016,7 +1017,7 @@ void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
 
     using (SKPaint paint = new SKPaint())
     {
-        paint.Style = SKPaintStyle.Stroke; 
+        paint.Style = SKPaintStyle.Stroke;
         paint.StrokeWidth = 5;
         paint.Color = SKColors.Blue;
 
@@ -1144,7 +1145,7 @@ public partial class TapToOutlineThePathPage : ContentPage
         using (SKPath circlePath = new SKPath())
         {
             circlePath.AddCircle(info.Width / 2, info.Height / 2,
-                                 Math.Min(info.Width / 2, info.Height / 2) - 
+                                 Math.Min(info.Width / 2, info.Height / 2) -
                                  redThickStroke.StrokeWidth);
 
             if (!outlineThePath)
@@ -1217,9 +1218,9 @@ using (SKPath linkPath = new SKPath())
 }
 ```
 
-`outlinePath` Объект становится получателя контур `linkPath` при вычерчивании ее с помощью свойств, указанных в `strokePaint`. 
+`outlinePath` Объект становится получателя контур `linkPath` при вычерчивании ее с помощью свойств, указанных в `strokePaint`.
 
-Другой пример, при использовании этого метода наступит для пути, используемого `SKPathEffect.Create2DPath` методы. 
+Другой пример, при использовании этого метода наступит для пути, используемого `SKPathEffect.Create2DPath` методы.
 
 ## <a name="combining-path-effects"></a>Объединяя эффекты путь
 
@@ -1270,7 +1271,7 @@ public class CatsInFramePage : ContentPage
         StrokeWidth = 5
     };
 
-    SKPath scallopPath = 
+    SKPath scallopPath =
         SKPath.ParseSvgPathData("M 0 0 L 50 0 A 60 60 0 0 1 -50 0 Z");
 
     SKPaint framePaint = new SKPaint
@@ -1316,7 +1317,7 @@ public class CatsInFramePage : ContentPage
             outlinedCatPath);
 
         // Create a 1D path effect from the scallop path
-        SKPathEffect strokeEffect = 
+        SKPathEffect strokeEffect =
             SKPathEffect.Create1DPath(scallopPath, 75, 0, SKPath1DPathEffectStyle.Rotate);
 
         // Set the sum the effects to frame paint
@@ -1358,11 +1359,11 @@ public class CatsInFramePage : ContentPage
 ```csharp
 public class DashedHatchLinesPage : ContentPage
 {
-    static SKPathEffect dashEffect = 
+    static SKPathEffect dashEffect =
         SKPathEffect.CreateDash(new float[] { 30, 30 }, 0);
 
     static SKPathEffect hatchEffect = SKPathEffect.Create2DLine(20,
-        Multiply(SKMatrix.MakeScale(60, 60), 
+        Multiply(SKMatrix.MakeScale(60, 60),
                  SKMatrix.MakeRotationDegrees(45)));
 
     SKPaint paint = new SKPaint()
@@ -1395,8 +1396,8 @@ public class DashedHatchLinesPage : ContentPage
 
         canvas.Clear();
 
-        canvas.DrawOval(info.Width / 2, info.Height / 2, 
-                        0.45f * info.Width, 0.45f * info.Height, 
+        canvas.DrawOval(info.Width / 2, info.Height / 2,
+                        0.45f * info.Width, 0.45f * info.Height,
                         paint);
     }
     ...
